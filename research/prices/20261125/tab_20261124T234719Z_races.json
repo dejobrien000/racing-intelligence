@@ -1,0 +1,51 @@
+{
+ "captured_utc": "2026-11-24T23:47:19Z",
+ "window_start_utc": null,
+ "source": "TAB racing info-service racecards",
+ "races": [
+  {
+   "meeting": "Geelong",
+   "race_no": 1,
+   "fixed_odds_update_utc": "2026-11-24T20:53:33.000Z",
+   "tote_update_utc": "null",
+   "has_fixed_odds": true,
+   "open_runners": 10,
+   "win_book": 1.272,
+   "quotes_held": false,
+   "note": null
+  },
+  {
+   "meeting": "Geelong",
+   "race_no": 2,
+   "fixed_odds_update_utc": null,
+   "tote_update_utc": "null",
+   "has_fixed_odds": false,
+   "open_runners": 0,
+   "win_book": null,
+   "quotes_held": false,
+   "note": "TAB fixed odds not offered at capture (hasFixedOdds=false)"
+  },
+  {
+   "meeting": "Strathalbyn",
+   "race_no": 1,
+   "fixed_odds_update_utc": "2026-11-24T03:36:58.000Z",
+   "tote_update_utc": "null",
+   "has_fixed_odds": true,
+   "open_runners": 10,
+   "win_book": 1.334,
+   "quotes_held": false,
+   "note": null
+  },
+  {
+   "meeting": "Strathalbyn",
+   "race_no": 2,
+   "fixed_odds_update_utc": "2026-11-24T20:39:59.000Z",
+   "tote_update_utc": "null",
+   "has_fixed_odds": true,
+   "open_runners": 12,
+   "win_book": 1.341,
+   "quotes_held": false,
+   "note": null
+  }
+ ]
+}

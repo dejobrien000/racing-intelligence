@@ -1,0 +1,50 @@
+# TEST SUBSTITUTE - NOT FETCHED IN THIS RUN. Live WebFetch of all four racecards failed (PROVENANCE_REQUIRED).
+# Built from repo data so the compute steps could be exercised: fields = collect/national/20261125/runners.csv (Breednet),
+# races = collect/national/20261125/races.csv, OPEN prices = prices/20261125/tab_20261124T205717Z.raw.txt (captured 20:57Z 24 Nov).
+# CAP field below is the substitute build time (2026-11-24T23:47:19Z), not a TAB capture time.
+MEET|GEL|GEELONG|VIC
+MEET|STR|STRATHALBYN|SA
+RACE|GEL|1|The Valley @ Geelong Mdn Plate|2026-11-25T03:30:00.000Z|1400|null|null|true|2026-11-24T20:53:33.000Z|2026-11-24T23:47:19Z
+1|BETTER SHAPE UP|5|59.5|0|Cian Macredmond|Taige Weir|false|15|2.7|Open|-
+2|BRUTAL TEMPO|2|59.5|0|Michael Dee|M and L Kavanagh|false|5.5|1.55|Open|-
+3|IRISH MASTER (NZ)|6|59.5|0|Joe Bowditch|M and L Kavanagh|false|34|4.8|Open|-
+4|THE TORONADO KID|10|59.5|0|Daniel Stackhouse|Chris Calthorpe|false|151|17|Open|-
+5|BLACKBELT|7|58|0|Jordan Childs|M, W and J Hawkes|false|1.7|1.1|Open|-
+6|PRIDE IN MOTION|4|58|0|Jason Webb|Danielle Loos|false|151|17|Open|-
+7|SUBSCRIPTION (NZ)|3|58|0|Dylan Dunn|D and C Feek|false|5.5|1.55|Open|-
+8|VIVID LEGEND (NZ)|8|58|0|Luke Currie|T and C McEvoy|false|6|1.65|Open|-
+9|MADAME MAKWELA|9|57.5|0|Declan Bates|Sara Ryan|false|31|4.4|Open|-
+10|MISS XTRAVAGANZA|1|57.5|3|Sarah Field|Rene Pompe|false|81|10|Open|-
+RACE|GEL|2|Ladbrokes Flex Your Multi Stays Alive Mdn Plate|2026-11-25T04:05:00.000Z|1400|null|null|false|null|2026-11-24T23:47:19Z
+1|BELLA BLAZE|5|57|0|Neil Farley|Michelle Payne|false|null|null|null|-
+2|FLYING CLOUD (NZ)|7|57|0|Carleen Hefel|Ciaron Maher|false|null|null|null|-
+3|JENNI THE FRENCH (NZ)|2|57|0|Declan Bates|Ciaron Maher|false|null|null|null|-
+4|LA DUPEUR|8|57|1.5|Jackson Radley|Patrick Kearney|false|null|null|null|-
+5|RUBICUBE|6|57|0|Daniel Stackhouse|Greg Eurell|false|null|null|null|-
+6|RUBY FROM ZADAR|1|57|0|Zac Spain|Paul Koumis|false|null|null|null|-
+7|SEAGOE|4|57|0|Jamie Mott|A and S Freedman|false|null|null|null|-
+8|VICTIMISED|3|57|0|Damian Lane|Lindsey Smith|false|null|null|null|-
+RACE|STR|1|Sportsbet Jockey Watch Mdn Plate|2026-11-25T04:20:00.000Z|1600|null|null|true|2026-11-24T03:36:58.000Z|2026-11-24T23:47:19Z
+1|WILLEBOB|4|58|0|Kayla Crowther|Sarah Rutten|false|10|2.2|Open|-
+2|BREWSTER BUCK|6|56.5|0|Connor Murtagh|Stephen Theodore|false|3.3|1.3|Open|-
+3|OPAL HERITAGE|5|56.5|0|Noel Callow|Phillip and Tommy Stokes|false|1.95|1.14|Open|-
+4|CATHAY EXPRESS|10|56|0|Jackson Murphy|A and N Bain and Taylor|false|4|1.4|Open|-
+5|EMBERANCE|8|56|0|Stacey Metcalfe|Bill Bogarts|false|81|10|Open|-
+6|FABULOUS ONE|1|56|2|Shayleigh Ingelse|Raharna McDonald|false|23|3.7|Open|-
+7|OLYMPIA FIELDS|3|56|0|Brooke King|Grant Kluske|false|26|4|Open|-
+8|SASSY SUMMER|7|56|0|Lauren Stojakovic|Millie Wallace|false|151|18|Open|-
+9|SEMINYAK SUNRISE|9|56|0|Margaret Collett|Brett Campbell|false|126|15|Open|-
+10|BELLA ZEPHYR|2|54.5|0|Taylor Johnstone|A and N Bain and Taylor|false|17|3|Open|-
+RACE|STR|2|Pestka Signs Mdn Plate|2026-11-25T04:55:00.000Z|1350|null|null|true|2026-11-24T20:39:59.000Z|2026-11-24T23:47:19Z
+1|ARIZONA WILDFIRE|10|58|0|Connor Murtagh|S and J Jaensch|false|13|3.5|Open|-
+2|CELTIC BHOY|11|58|0|Harry Grace|Scott Whittle|false|5|1.9|Open|-
+3|MEAN MAZZLE|6|58|0|Teagan Voorham|Dan Shepherd|false|4.6|1.8|Open|-
+4|MONARCHY LAD|7|58|0|Rochelle Milnes|L and C Jarvis and Paisley|false|12|3.3|Open|-
+5|WILD IS THE WIND|4|58|0|Lauren Stojakovic|Bill Peake|false|3|1.5|Open|-
+6|DOUGLAS HEAD (NZ)|2|56.5|0|Dylan Caboche|John Hyam|false|81|16|Open|-
+7|MARCH MAGIC|1|56.5|0|Will Price|Andrew Gluyas|false|14|3.7|Open|-
+8|LADY BIV|3|56|0|Jason Holder|S and J Jaensch|false|18|4.4|Open|-
+9|MOSTLY JOY|8|56|1.5|Tala Hutchinson|A and N Bain and Taylor|false|19|4.6|Open|-
+10|MYSTRIX|5|56|2|Jessica Booth|Stephen Theodore|false|5.5|2|Open|-
+11|STARLITE ZERPRISE|9|54.5|0|Shuichi Terachi|Kym Healy|false|81|16|Open|-
+12|TAI PO JEWEL|12|54.5|0|Stacey Metcalfe|Nicole Irwin|false|23|5|Open|-

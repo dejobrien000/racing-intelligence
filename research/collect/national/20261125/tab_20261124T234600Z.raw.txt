@@ -1,0 +1,12 @@
+# TEST run 2026-11-25 (scheduled cloud session). Calendar not fetched (test): MEET lines written by hand for GEL and STR.
+# Step 2 racecards: all four WebFetch attempts FAILED, nothing captured. Missing races listed below.
+# Error (each URL): PROVENANCE_REQUIRED - "The permission request for this URL was not answered in time. Do not retry."
+# MISSING|GEL|1 https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2026-11-25/meetings/R/GEL/races/1?jurisdiction=NSW&cb=1795563630gel1
+# MISSING|GEL|2 https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2026-11-25/meetings/R/GEL/races/2?jurisdiction=NSW&cb=1795563630gel2
+# MISSING|STR|1 https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2026-11-25/meetings/R/STR/races/1?jurisdiction=NSW&cb=1795563630str1
+# MISSING|STR|2 https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/2026-11-25/meetings/R/STR/races/2?jurisdiction=NSW&cb=1795563630str2
+# Fetch window 2026-11-24T23:40:30Z .. 2026-11-24T23:45:40Z (attempts timed out awaiting approval, ~306 s each, run in parallel)
+MEET|GEL|GEELONG|VIC
+RACES|GEL|1,2
+MEET|STR|STRATHALBYN|SA
+RACES|STR|1,2
