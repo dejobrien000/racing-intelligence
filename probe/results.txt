@@ -1,0 +1,7 @@
+run_utc=2026-11-24T23:21:05Z runner_ip=172.190.124.68
+TAB meetings|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
+TAB racecard|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
+Racing Queensland|200|241731|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
+Racing NSW FreeFields|200|24051|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
+Breednet|200|68856|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>    <!-- Google 
+racing.com|200|756227|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" 
