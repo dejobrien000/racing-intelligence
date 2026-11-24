@@ -1,0 +1,124 @@
+{
+ "retrieved_utc": "2026-11-24T20:57:17Z",
+ "source": "TAB racing info-service racecards, bettingStatus=LateScratched (captured 20:53-20:57Z); no official Victorian scratchings page is reachable from the cloud, and Breednet had not updated",
+ "after_close": true,
+ "conditions": {
+  "scratchings_last_published": "per TAB racecards 20:57Z"
+ },
+ "scratchings": [
+  {
+   "race_no": 3,
+   "saddlecloth": 11,
+   "horse": "CIRQUE DE COCO",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 4,
+   "horse": "ZERCARDY",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 8,
+   "horse": "FIERCE FIASCO",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 10,
+   "horse": "JULEP",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 2,
+   "horse": "MYSTIC REIGN",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 6,
+   "horse": "SUPERLIV",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 9,
+   "horse": "JACKIE'S MAID",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 12,
+   "horse": "HELLFIRE JESS",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 13,
+   "horse": "LADY OF POMPEII",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 17,
+   "horse": "TURN UP THE NIGHT",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 18,
+   "horse": "I'M DA BOSS",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 5,
+   "horse": "BIG VEE",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 8,
+   "horse": "VALEDICTORIAN",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 11,
+   "horse": "CIRCUS LIGHTS",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 13,
+   "horse": "VENETIAN CHOICE",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 14,
+   "horse": "MODEL GIGI",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 16,
+   "horse": "ROYAL INFANTRY",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 3,
+   "horse": "SWING YOUR MAGIC",
+   "when": "TAB LateScratched at capture"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 8,
+   "horse": "JUST MY LOT",
+   "when": "TAB LateScratched at capture"
+  }
+ ]
+}

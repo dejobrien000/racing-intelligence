@@ -1,0 +1,19 @@
+{
+ "scored_utc": "2026-11-24T20:23:58.460976+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/prerace/20261125/Geelong/pred_20261124T202130Z_20261124T202336Z_runners.csv",
+ "base_v1_sha256": "342b08fd1de0ead7fb1e644ac3988e9c05bbb2c657ef8e2711724ddc68fc06e7",
+ "snapshot_key": "vicpre:20261125:Geelong:20261124T202130Z",
+ "engine_manifest_sha256": "50b6f9aae0708d83524d0ae024d181037b4d829a745cd253c36803233352e417",
+ "code_sha256": {
+  "engine/score_v2.py": "abefb8b7b10fbf89bd2221105b09d8db1f00ae0b8bbeee6b34d5f5a846bd2513",
+  "engine/lab.py": "86fb1b68ab93a162c23a6062a36cee81ee75ebf3c94a6a20f0e9c0eb8bc3aca5",
+  "prerace/score_national_prerace.py": "016c0cce8a8b9c4ebeb21849d0a652516df41ab671f07f4ab99dcb5ba38ba0b1"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ]
+}

@@ -1,0 +1,1 @@
+Superseded 24 Nov 13:25Z (before racing): final rating was scaled by the rating's partial coefficient (inflated kg) and every race was labelled 'selection'. Replaced by the version using score_per_kg_total and descriptive strength tiers. Kept, not deleted.

@@ -1,0 +1,157 @@
+{
+ "scored_utc": "2026-11-24T20:59:50.274001+00:00",
+ "snapshot": {
+  "snapshot_key": "vicpre:20261125:Geelong:20261124T205717Z",
+  "date": "20261125",
+  "venue": "Geelong",
+  "retrieved_utc": "2026-11-24T20:57:17Z",
+  "acceptances_sha256": "e7223d921b35b73b712094d579b39ce54cc7df4dba49a40f3b7d0e77b2e8b95b",
+  "conditions": {
+   "track_condition": null,
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected.",
+   "scratchings_last_published": "per TAB racecards 20:57Z",
+   "after_final_scratchings": true,
+   "scratchings_source": "TAB racing info-service racecards, bettingStatus=LateScratched (captured 20:53-20:57Z); no official Victorian scratchings page is reachable from the cloud, and Breednet had not updated"
+  },
+  "scratchings_listed": 19
+ },
+ "snapshot_bundle": "vicpre_20261125_Geelong_snap20261124T205717Z.jsonl.gz",
+ "snapshot_bundle_sha256": "49bb48c286c8a5c16b39e2b902d25616df2ac3d564c36b72e4c393b9b5e6502b",
+ "not_scored": [
+  {
+   "race_no": 3,
+   "saddlecloth": 11,
+   "horse": "Cirque De Coco",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 4,
+   "horse": "Zercardy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 8,
+   "horse": "Fierce Fiasco",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 10,
+   "horse": "Julep",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 2,
+   "horse": "Mystic Reign",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 6,
+   "horse": "Superliv",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 9,
+   "horse": "Jackie's Maid",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 12,
+   "horse": "Hellfire Jess",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 13,
+   "horse": "Lady Of Pompeii",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 17,
+   "horse": "Turn Up The Night (NZ)",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 18,
+   "horse": "I'm Da Boss",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 5,
+   "horse": "Big Vee",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 8,
+   "horse": "Valedictorian",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 11,
+   "horse": "Circus Lights",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 13,
+   "horse": "Venetian Choice",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 14,
+   "horse": "Model Gigi",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 16,
+   "horse": "Royal Infantry",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 3,
+   "horse": "Swing Your Magic (NZ)",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 8,
+   "horse": "Just My Lot",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "016c0cce8a8b9c4ebeb21849d0a652516df41ab671f07f4ab99dcb5ba38ba0b1",
+  "dyn_rating.py": "df96739bf4d7e5b9d39d3fd8adceba483d52fafea60e932419fbd71b0a9b6e1b",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5f3e101e2ef041336079409fddefac3f1d3672b19c2a86568"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "b2f0d6fcbbe06879c873cd4bbcfab9ef73d65bfb80a4e508a4226b9660622cac",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "retrieved_utc": "2026-11-24T21:51:30Z",
+ "source": "Racing Queensland meeting page (official), read via WebFetch; scratchings closed Wed 25/11/26 07:30am; track Soft 5 (Pen 5.6) updated 7:40am",
+ "after_close": true,
+ "conditions": {
+  "track_condition": "Soft 5",
+  "penetrometer": "5.6",
+  "conditions_updated": "7:40am Wednesday 25 November",
+  "rating_updated": "Interim 25/11, 7.30am"
+ },
+ "scratchings": [
+  {
+   "race_no": 1,
+   "saddlecloth": 3,
+   "horse": "The Aviator",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 9,
+   "horse": "Enterprise Jamayka",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 13,
+   "horse": "Serene Legacy",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 4,
+   "horse": "Flying Forward",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 1,
+   "horse": "Auric Star",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 7,
+   "horse": "Maurijoy",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 10,
+   "horse": "Say You Will",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 12,
+   "horse": "She's Our Vega",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 14,
+   "horse": "Zoulini",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 6,
+   "horse": "California Grass",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 1,
+   "horse": "Luconi",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 2,
+   "horse": "Northern Decree (NZ)",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 12,
+   "horse": "Bold Blaze",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 15,
+   "horse": "Pink Dogwood",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 16,
+   "horse": "Tambourine Man",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 4,
+   "horse": "Zouthur (NZ)",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 6,
+   "horse": "Cool Panels",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 8,
+   "horse": "Fighting Idol",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 10,
+   "horse": "Chilliwack",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 16,
+   "horse": "Egmont",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 2,
+   "horse": "Wondereach",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 3,
+   "horse": "The Fixer",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 7,
+   "horse": "American Conquest",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 9,
+   "horse": "Rhuvaal",
+   "when": "listed at RQ final scratchings (closed 07:30am)"
+  }
+ ]
+}

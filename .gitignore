@@ -1,8 +1,7 @@
-# The master database lives in GitHub Release assets (versioned), never in git history.
+# The master database lives on branch "db" (versioned pack; previous version on "db-prev"), never in main history.
 *.duckdb
 *.parquet
-*.jsonl.gz
 *.tar.gz
 research/engine/frames/
-research/prospective/
 __pycache__/
+# history pack lives on branch db

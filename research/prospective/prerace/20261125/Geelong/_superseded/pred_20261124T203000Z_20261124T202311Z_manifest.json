@@ -1,0 +1,82 @@
+{
+ "scored_utc": "2026-11-24T20:23:11.149001+00:00",
+ "snapshot": {
+  "snapshot_key": "vicpre:20261125:Geelong:20261124T203000Z",
+  "date": "20261125",
+  "venue": "Geelong",
+  "retrieved_utc": "2026-11-24T20:30:00Z",
+  "acceptances_sha256": "e7223d921b35b73b712094d579b39ce54cc7df4dba49a40f3b7d0e77b2e8b95b",
+  "conditions": {
+   "track_condition": null,
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 2
+ },
+ "snapshot_bundle": "natpre_20261125_snap20261124T203000Z.jsonl.gz",
+ "snapshot_bundle_sha256": "54bbf7a858b8e7b3dfca0eda2fe2e0f8ac93f5108f3d9c06074d4c5a30b6df38",
+ "not_scored": [
+  {
+   "race_no": 3,
+   "saddlecloth": 11,
+   "horse": "Cirque De Coco",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 15,
+   "horse": "Pretty Panther",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 16,
+   "horse": "Pee Plater",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 17,
+   "horse": "Turn Up The Night (NZ)",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 18,
+   "horse": "I'm Da Boss",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 15,
+   "horse": "Romuald",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 16,
+   "horse": "Royal Infantry",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "016c0cce8a8b9c4ebeb21849d0a652516df41ab671f07f4ab99dcb5ba38ba0b1",
+  "dyn_rating.py": "df96739bf4d7e5b9d39d3fd8adceba483d52fafea60e932419fbd71b0a9b6e1b",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5f3e101e2ef041336079409fddefac3f1d3672b19c2a86568"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "b2f0d6fcbbe06879c873cd4bbcfab9ef73d65bfb80a4e508a4226b9660622cac",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

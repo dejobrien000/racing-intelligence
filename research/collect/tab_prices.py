@@ -13,8 +13,10 @@ D, STEM = sys.argv[1], sys.argv[2]; WSTART = sys.argv[3] if len(sys.argv) > 3 el
 DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; base = f'prices/{D}'
 CAP = re.search(r'(\d{8}T\d{6}Z)', STEM).group(1); CAP_ISO = f'{CAP[:4]}-{CAP[4:6]}-{CAP[6:8]}T{CAP[9:11]}:{CAP[11:13]}:{CAP[13:15]}Z'
 VENUE = {'IPS': 'Ipswich', 'WYO': 'Wyong', 'GEL': 'Geelong', 'STR': 'Strathalbyn', 'ABN': 'Albany', 'LAU': 'Launceston'}
+_cal = f'collect/national/{D}/calendar.json'
+if os.path.exists(_cal): VENUE.update({m['tab_code']: m['name'] for m in json.load(open(_cal))['meetings'] if m.get('tab_code')})
 nk = lambda s: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s).upper()))
-num = lambda x: None if x in ('', 'null', None) else float(x)
+num = lambda x: None if x in ('', 'null', 'None', 'NaN', None) else float(x)
 
 races, cur = [], None
 for line in open(f'{base}/{STEM}.raw.txt'):

@@ -1,11 +1,54 @@
-{"date": "2026-11-25",
+{
+ "date": "2026-11-25",
  "source": "breednet.com.au 'Select A Meeting' list for Wednesday 25 Nov 2026, read via WebFetch at about 20:10 UTC 24 Nov (single source; a Betfair market-catalogue cross-check is planned once API access exists)",
- "excluded": ["Happy Valley (Hong Kong)", "Te Aroha (New Zealand)"],
+ "excluded": [
+  "Happy Valley (Hong Kong)",
+  "Te Aroha (New Zealand)"
+ ],
  "act_nt": "No ACT or NT thoroughbred meeting listed for this date",
  "meetings": [
-  {"name": "Ipswich", "state": "QLD", "races": 7, "fields_source": "Racing Queensland (official)"},
-  {"name": "Wyong", "state": "NSW", "races": 7, "fields_source": "Racing NSW (official)"},
-  {"name": "Geelong", "state": "VIC", "races": 8, "fields_source": "Breednet race pages (secondary)"},
-  {"name": "Strathalbyn", "state": "SA", "races": 7, "fields_source": "Breednet race pages (secondary)"},
-  {"name": "Albany", "state": "WA", "races": 7, "fields_source": "Breednet race pages (secondary)"},
-  {"name": "Launceston", "state": "TAS", "races": 8, "fields_source": "Breednet race pages (secondary)"}]}
+  {
+   "name": "Ipswich",
+   "state": "QLD",
+   "races": 7,
+   "fields_source": "Racing Queensland (official)",
+   "tab_code": "IPS"
+  },
+  {
+   "name": "Wyong",
+   "state": "NSW",
+   "races": 7,
+   "fields_source": "Racing NSW (official)",
+   "tab_code": "WYO"
+  },
+  {
+   "name": "Geelong",
+   "state": "VIC",
+   "races": 8,
+   "fields_source": "Breednet race pages (secondary)",
+   "tab_code": "GEL"
+  },
+  {
+   "name": "Strathalbyn",
+   "state": "SA",
+   "races": 7,
+   "fields_source": "Breednet race pages (secondary)",
+   "tab_code": "STR"
+  },
+  {
+   "name": "Albany",
+   "state": "WA",
+   "races": 7,
+   "fields_source": "Breednet race pages (secondary)",
+   "tab_code": "ABN"
+  },
+  {
+   "name": "Launceston",
+   "state": "TAS",
+   "races": 8,
+   "fields_source": "Breednet race pages (secondary)",
+   "tab_code": "LAU"
+  }
+ ],
+ "cross_check": "TAB racing info-service meetings list for 2026-11-25 (read 20:50Z) lists the same six Australian thoroughbred meetings"
+}

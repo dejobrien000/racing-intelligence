@@ -1,0 +1,19 @@
+{
+ "scored_utc": "2026-11-24T14:27:51.534064+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/prerace/20261125/Wyong/pred_20261124T130322397Z_20261124T131039Z_runners.csv",
+ "base_v1_sha256": "e7365f6be9a303b2e7de469540207dba9cf089f688435956d5a8baf10fcc4232",
+ "snapshot_key": "nswpre:20261125:Wyong:20261124T130322397Z",
+ "engine_manifest_sha256": "50b6f9aae0708d83524d0ae024d181037b4d829a745cd253c36803233352e417",
+ "code_sha256": {
+  "engine/score_v2.py": "81a202a43243246129817bc3402ab1857180a1e03923dd78a08d0e82d86506ac",
+  "engine/lab.py": "86fb1b68ab93a162c23a6062a36cee81ee75ebf3c94a6a20f0e9c0eb8bc3aca5",
+  "prerace/score_national_prerace.py": "016c0cce8a8b9c4ebeb21849d0a652516df41ab671f07f4ab99dcb5ba38ba0b1"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ]
+}
