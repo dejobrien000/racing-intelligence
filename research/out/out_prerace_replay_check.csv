@@ -1,0 +1,2 @@
+runners_compared,runner_sets_identical,corr,mean_abs_diff_pts,max_abs_diff_pts,runners_days_since_differ
+73,True,0.99951,0.086,0.796,3

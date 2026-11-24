@@ -1,0 +1,4 @@
+comparison,gain_per_line,lo95,hi95,lines_scored,tau
+partial pooling vs pooled,-0.0,-3e-05,2e-05,58907,0.03
+independent courses vs pooled,-0.00049,-0.0008,-0.00018,58907,0.03
+partial pooling vs independent,0.00049,0.00021,0.00077,58907,0.03

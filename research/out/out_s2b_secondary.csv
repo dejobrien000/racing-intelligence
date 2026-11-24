@@ -1,0 +1,5 @@
+check,fit_gain_per_race,lo95,hi95,p_one_sided,top_pick_diff_pts,tp_lo95,tp_hi95
+(a) agreement votes added to the combined model,-0.0001,-0.0004,0.0002,0.786,0.0,-0.2,0.2
+(b) opposition strength faced (R18) beyond everything else,0.0044,0.0026,0.0061,0.0,0.1,-0.4,0.7
+(b) weight relative to the field (R49) beyond everything else,0.0074,0.0039,0.0107,0.0,0.2,-0.4,0.8
+(c) recency-weighted figure instead of the 3-run average,0.0054,0.0037,0.0071,0.0,0.4,-0.0,0.9

@@ -1,0 +1,333 @@
+venue_code,race_no,saddlecloth,horse,barrier,trainer,jockey,weight_kg,claim,age_sex,page_status
+geel,1,1,Better Shape Up,5,Taige Weir,Cian Macredmond,59.5,,5g,runner
+geel,1,2,Brutal Tempo,2,M and L Kavanagh,Michael Dee,59.5,,4g,runner
+geel,1,3,Irish Master (NZ),6,M and L Kavanagh,Joe Bowditch,59.5,,4g,runner
+geel,1,4,The Toronado Kid,10,Chris Calthorpe,Daniel Stackhouse,59.5,,5g,runner
+geel,1,5,Blackbelt,7,"M, W and J Hawkes",Jordan Childs,58,,3g,runner
+geel,1,6,Pride In Motion,4,Danielle Loos,Jason Webb,58,,3g,runner
+geel,1,7,Subscription (NZ),3,D and C Feek,Dylan Dunn,58,,3g,runner
+geel,1,8,Vivid Legend (NZ),8,T and C McEvoy,Luke Currie,58,,3g,runner
+geel,1,9,Madame Makwela,9,Sara Ryan,Declan Bates,57.5,,4m,runner
+geel,1,10,Miss Xtravaganza,1,Rene Pompe,Sarah Field,57.5,a3,6m,runner
+geel,2,1,Bella Blaze,5,Michelle Payne,Neil Farley,57,,3f,runner
+geel,2,2,Flying Cloud (NZ),7,Ciaron Maher,Carleen Hefel,57,,3f,runner
+geel,2,3,Jenni The French (NZ),2,Ciaron Maher,Declan Bates,57,,3f,runner
+geel,2,4,La Dupeur,8,Patrick Kearney,Jackson Radley,57,a1.5,3f,runner
+geel,2,5,Rubicube,6,Greg Eurell,Daniel Stackhouse,57,,3f,runner
+geel,2,6,Ruby From Zadar,1,Paul Koumis,Zac Spain,57,,3f,runner
+geel,2,7,Seagoe,4,A and S Freedman,Jamie Mott,57,,3f,runner
+geel,2,8,Victimised,3,Lindsey Smith,Damian Lane,57,,3f,runner
+geel,3,1,Brandon Bay,10,Clinton McDonald,Damian Lane,58,,3c,runner
+geel,3,2,Discmania,2,Andrew Noblet,Jye McNeil,58,,3g,runner
+geel,3,3,Famous Rosy,7,Patrick Kearney,Jake Noonan,58,,3g,runner
+geel,3,4,Gallantry,5,Phillip and Tommy Stokes,Lachlan Neindorf,58,,3g,runner
+geel,3,5,Gordacious,3,Phillip and Tommy Stokes,Luke Cartwright,58,a0,3g,runner
+geel,3,6,On Fire Zachariah (NZ),11,Denis Pagan,Luke Currie,58,,3g,runner
+geel,3,7,Our Bee Gee,9,Russell Cluning,Valentin Le Boeuf,58,,3g,runner
+geel,3,8,Perfect Dismount,6,Ciaron Maher,Jabez Johnstone,58,a1.5,3g,runner
+geel,3,9,Superwill,4,L and T and W Corstens and Larkin,Holly Durnan,58,a2,3g,runner
+geel,3,10,Tufflee,1,Grahame Begg,Jordan Childs,58,,3g,runner
+geel,3,11,Cirque De Coco,12,Clayton Douglas,,56,,3f,scratched
+geel,3,12,Loyalty,8,Ciaron Maher,Carleen Hefel,56,,3f,runner
+geel,4,1,Bjorson,9,Jamie Edwards,Zac Spain,59.5,,4g,runner
+geel,4,2,Brilliant Bull Ant,5,Olivia Osborne,Billy Egan,59.5,,4g,runner
+geel,4,3,Granite Hill,8,Paul Koumis,Neil Farley,59.5,,5g,runner
+geel,4,4,Zercardy,1,Maddie and Patrick Raymond and Bell,Tom Madden,59.5,,4g,runner
+geel,4,5,Alpine Point,4,"Ben, Will and Jd Hayes",Jamie Mott,58,,3g,runner
+geel,4,6,Carnevale,2,"Ben, Will and Jd Hayes",Michael Dee,58,,3c,runner
+geel,4,7,Lavancher,10,Julius Sandhu,Beau Mertens,58,,3g,runner
+geel,4,8,Rumours Fly,6,Rachael Frost,Joe Bowditch,58,,3g,runner
+geel,4,9,Flight Du Jour,7,Lloyd Kennewell,Carleen Hefel,57.5,,4m,runner
+geel,4,10,Gypsy Storm,3,Shannon Roughan,Damian Lane,57.5,,4m,runner
+geel,5,1,Sixty Grand (NZ),7,M G and M Price and Kent,Olivia East,61.5,a3,4g,runner
+geel,5,2,Mickio,3,Matthew Enright,Michael Dee,61,,6g,runner
+geel,5,3,Nicoffhome,8,Chris Calthorpe,Nadia Daniels,61,a2,6g,runner
+geel,5,4,Callawadda,4,Brady Cross,Jack Hill,60.5,,6g,runner
+geel,5,5,Chocolate Royal,5,P and H Carey and Walker,Rhys McLeod,59,,6g,runner
+geel,5,6,Molesworth,1,"Ben, Will and Jd Hayes",Jamie Mott,59,,4g,runner
+geel,5,7,Corona Lad,6,Nathan Dunn,Thomas Stockdale,58,,8g,runner
+geel,5,8,Fierce Fiasco,11,Andrew Noblet,Damian Lane,58,,4g,runner
+geel,5,9,Mozu Marcassin (JPN),2,Matt Cumani,Eoin Walsh,57.5,,7g,runner
+geel,5,10,Julep,13,Taige Weir,Dean Yendall,56.5,,4m,runner
+geel,5,11,Verifier (NZ),12,Nigel Blackiston,Neil Farley,56.5,,7g,runner
+geel,5,12,Pee Bee Noir,10,Joanne Mugavin,Cian Macredmond,56,,5m,runner
+geel,5,13,Bling Baby,9,Brian McGrath,Carleen Hefel,54,,5m,runner
+geel,6,1,Bold Bordeaux,5,"Ben, Will and Jd Hayes",Jackson Radley,62.5,a1.5,4g,runner
+geel,6,2,Mystic Reign,18,Charles Cassar,Neil Farley,61.5,,5m,runner
+geel,6,3,Hustle In Heels,3,Julius Sandhu,Caitlin Hollowood,61,a2,5m,runner
+geel,6,4,Just Bolts,12,Jamie Edwards,Teodore Nugent,60.5,,6g,runner
+geel,6,5,Egerton,9,Clifford I Brown,Luke Cartwright,59,a0,7m,runner
+geel,6,6,Superliv,15,L and T and W Corstens and Larkin,Holly Durnan,59,a2,4m,runner
+geel,6,7,Azzacool,8,Ciaron Maher,Jabez Johnstone,58.5,a1.5,4m,runner
+geel,6,8,Pocket Size,4,Bill Papazaharoudakis,Jamie Mott,58.5,,6m,runner
+geel,6,9,Jackie's Maid,17,Mitchell Freedman,Jye McNeil,58,,6m,runner
+geel,6,10,Satoshi,1,M G and M Price and Kent,Olivia East,58,a3,3g,runner
+geel,6,11,Unwavering,7,Grahame Begg,Jordan Childs,57,,3f,runner
+geel,6,12,Hellfire Jess,13,Tom Dabernig,Linda Meech,56.5,,3f,runner
+geel,6,13,Lady Of Pompeii,16,"Ben, Will and Jd Hayes",Luke Currie,56.5,,3f,runner
+geel,6,14,What Once Was,2,Lindsey Smith,Damian Lane,56,,3f,runner
+geel,6,15,Pretty Panther,10,Olivia Osborne,Billy Egan,58,,3g,runner
+geel,6,16,Pee Plater,6,Vincent Malady,,59.5,,4g,runner
+geel,6,17,Turn Up The Night (NZ),14,B and A McKnight,,59.5,,7g,scratched
+geel,6,18,I'm Da Boss,11,Vincent Malady,,59,,6g,runner
+geel,7,1,Jackpot Park,10,M and L Cerchi,Billy Egan,62,,4g,runner
+geel,7,2,Dollar Chaser,9,Bill Papazaharoudakis,Jamie Mott,61,,8g,runner
+geel,7,3,Move The Torana,13,Lindsey Smith,Stephanie Hateley,60.5,a3,5m,runner
+geel,7,4,Empressive Enuff,3,Reece Goodwin,Damian Lane,59.5,,8g,runner
+geel,7,5,Big Vee,12,Tom Dabernig,Jordan Childs,59,,4g,runner
+geel,7,6,Blondeau,4,Noni Shelton,Bailey Kinninmont,59,a3,9g,runner
+geel,7,7,Mykindakandy,2,Clifford I Brown,Jye McNeil,59,,4g,runner
+geel,7,8,Valedictorian,5,Julius Sandhu,Jake Noonan,59,,4g,runner
+geel,7,9,Watt On Earth,14,Anthony Cosgriff,Cian Macredmond,59,,4g,runner
+geel,7,10,Brazenga,6,Ciaron Maher,Zac Moore,58.5,a3,4g,runner
+geel,7,11,Circus Lights,11,Ciaron Maher,Jabez Johnstone,58.5,a1.5,4m,runner
+geel,7,12,Layla,7,"Ben, Will and Jd Hayes",Michael Dee,58.5,,4m,runner
+geel,7,13,Venetian Choice,16,Greg Eurell,Daniel Stackhouse,58,,4m,runner
+geel,7,14,Model Gigi,8,John McArdle,Zac Spain,56,,3f,runner
+geel,7,15,Romuald,1,Lindsey Smith,Luke Cartwright,58,a0,5g,runner
+geel,7,16,Royal Infantry,15,Patrick Kearney,Jackson Radley,62,a1.5,6g,runner
+geel,8,1,Il Cielo,11,Ciaron Maher,Zac Moore,62.5,a3,5g,runner
+geel,8,2,Albanian I Am,5,Paul Koumis,Neil Farley,60.5,,7g,runner
+geel,8,3,Swing Your Magic (NZ),2,Dominic Sutton,Sam Kennedy,60.5,a2,5g,runner
+geel,8,4,Weather Delay,7,Robert Hickmott,Ryan Hurdle,60.5,,5g,runner
+geel,8,5,Manhattan Empire,1,Michael Trotter,Jake Noonan,59,,5g,runner
+geel,8,6,Itsagiven (NZ),13,D and C Feek,Jason Maskiell,58.5,,4m,runner
+geel,8,7,Dame Of Dubai,6,Symon Wilde,Linda Meech,58,,4m,runner
+geel,8,8,Just My Lot,10,Tom Dabernig,Bailey Kinninmont,58,a3,4m,runner
+geel,8,9,M'lady Rose (NZ),3,T and C McEvoy,Luke Currie,58,,4m,runner
+geel,8,10,Two To Tango (NZ),9,"Ben, Will and Jd Hayes",Michael Dee,58,,4m,runner
+geel,8,11,Jenni Poppins,12,Lloyd Kennewell,Damian Lane,57.5,,4m,runner
+geel,8,12,Sara's Rocket,8,Jamie Edwards,Zac Spain,57,,5m,runner
+geel,8,13,Mickidamuzz,4,Matthew Enright,Teodore Nugent,55,,6g,runner
+sbyn,1,1,Willebob,4,Sarah Rutten,Kayla Crowther,58,,4g,runner
+sbyn,1,2,Brewster Buck,6,Stephen Theodore,Connor Murtagh,56.5,,3g,runner
+sbyn,1,3,Opal Heritage,5,Phillip and Tommy Stokes,Noel Callow,56.5,,3g,runner
+sbyn,1,4,Cathay Express,10,A and N Bain and Taylor,Jackson Murphy,56,,4m,runner
+sbyn,1,5,Emberance,8,Bill Bogarts,Stacey Metcalfe,56,,5m,runner
+sbyn,1,6,Fabulous One,1,Raharna McDonald,Shayleigh Ingelse,56,a2,5m,runner
+sbyn,1,7,Olympia Fields,3,Grant Kluske,Brooke King,56,a0,4m,runner
+sbyn,1,8,Sassy Summer,7,Millie Wallace,Lauren Stojakovic,56,,5m,runner
+sbyn,1,9,Seminyak Sunrise,9,Brett Campbell,Margaret Collett,56,,5m,runner
+sbyn,1,10,Bella Zephyr,2,A and N Bain and Taylor,Taylor Johnstone,54.5,,3f,runner
+sbyn,2,1,Arizona Wildfire,10,S and J Jaensch,Connor Murtagh,58,,4g,runner
+sbyn,2,2,Celtic Bhoy,11,Scott Whittle,Harry Grace,58,,4g,runner
+sbyn,2,3,Mean Mazzle,6,Dan Shepherd,Teagan Voorham,58,,4g,runner
+sbyn,2,4,Monarchy Lad,7,L and C Jarvis and Paisley,Rochelle Milnes,58,,4g,runner
+sbyn,2,5,Wild Is The Wind,4,Bill Peake,Lauren Stojakovic,58,,5g,runner
+sbyn,2,6,Douglas Head (NZ),2,John Hyam,Dylan Caboche,56.5,,3g,runner
+sbyn,2,7,March Magic,1,Andrew Gluyas,Will Price,56.5,,3g,runner
+sbyn,2,8,Lady Biv,3,S and J Jaensch,Jason Holder,56,,4m,runner
+sbyn,2,9,Mostly Joy,8,A and N Bain and Taylor,Tala Hutchinson,56,a1.5,4m,runner
+sbyn,2,10,Mystrix,5,Stephen Theodore,Jessica Booth,56,a2,4m,runner
+sbyn,2,11,Starlite Zerprise,9,Kym Healy,Shuichi Terachi,54.5,,3f,runner
+sbyn,2,12,Tai Po Jewel,12,Nicole Irwin,Stacey Metcalfe,54.5,,3f,runner
+sbyn,3,1,Sandastan,8,Garret Lynch,Connor Murtagh,61,,8g,runner
+sbyn,3,2,Starscream (NZ),6,A and N Bain and Taylor,Taylor Johnstone,60,,5g,runner
+sbyn,3,3,Tan Tat Gold,2,Bill Peake,Lauren Stojakovic,60,,6g,runner
+sbyn,3,4,Empirestateofmind,4,Travis Doudle,Ben Price,59,,5g,runner
+sbyn,3,5,Eaglelou,9,D and A Magro,Will Price,58,,8g,runner
+sbyn,3,6,Chartin (NZ),5,G and D Richards and Moyle,Noel Callow,57.5,,8g,runner
+sbyn,3,7,Tee Eight (NZ),10,Scott Whittle,Harry Grace,55,,5g,runner
+sbyn,3,8,Triora (NZ),7,Hannah Bryce,Jackson Murphy,55,,5m,runner
+sbyn,3,9,The Ice Cutter,3,Grant Kluske,Caitlin Tootell,54.5,a0,7g,runner
+sbyn,3,10,Shadow Hawk (NZ),1,Bill W Williams,Margaret Collett,54,,8g,runner
+sbyn,4,1,Ziggy Bama,2,Chris Bieg,Felicity Atkinson,62,a1.5,4g,runner
+sbyn,4,2,Summertime Madness,7,W F and Glen Francis and Kent,Connor Murtagh,59,,5g,runner
+sbyn,4,3,Kayla Kruzen,6,Matthew Seyers,Kayla Crowther,58.5,,4m,runner
+sbyn,4,4,Stylish Flipper,5,Paul Carey,Jason Holder,58.5,,4g,runner
+sbyn,4,5,Heaven Rocks,10,R and C Jolly,Jake Toeroek,57,,5g,runner
+sbyn,4,6,Bonavena,4,Lewis and Eliza Grantham,Dylan Caboche,55,,5m,runner
+sbyn,4,7,Capitalex,8,Jyi Lukey,Jemma Gutte,55,a3,5g,runner
+sbyn,4,8,Elegant Lilly,1,S and C Oxlade,Lauren Stojakovic,55,,4m,runner
+sbyn,4,9,Aramoso,3,Emma Hubbard,Rochelle Milnes,54.5,,6g,runner
+sbyn,4,10,Chess Master,9,Alexander Justice,Harry Grace,54,,5g,runner
+sbyn,5,1,Explicable,14,Garret Lynch,Tala Hutchinson,61,a1.5,6g,runner
+sbyn,5,2,Flying Ace,5,Luke O'Connor,Noel Callow,60,,7g,runner
+sbyn,5,3,The Better Husband,4,D and R Koch,Jason Holder,60,,4g,runner
+sbyn,5,4,Yarrawizardharry,13,Dan Shepherd,Todd Pannell,59.5,,4g,runner
+sbyn,5,5,Fiorente Rules,2,Bonny Tootell,Kayla Crowther,59,,5m,runner
+sbyn,5,6,Goochee Gal,6,Heath Montgomerie,Jemma Gutte,58.5,a3,5m,runner
+sbyn,5,7,Celtic Maley,9,Scott Whittle,Harry Grace,58,,4g,runner
+sbyn,5,8,Royal Muse,15,David and Justin Jolly and Potter,Lauren Stojakovic,58,,4m,runner
+sbyn,5,9,Ekanite,12,Grant Young,Polly Brewster,56,a3,5g,runner
+sbyn,5,10,Miss Trombari,3,Raharna McDonald,Shayleigh Ingelse,56,a2,5m,runner
+sbyn,5,11,The Tank,16,Grant Young,Will Price,56,,6g,runner
+sbyn,5,12,Heat Of The Night,1,Emma Hubbard,Dylan Caboche,54,,5m,runner
+sbyn,5,13,Magic Princess,10,Chris Bieg,Teagan Voorham,54,,5m,runner
+sbyn,5,14,Black Bugatti,8,Lee Creek,Rochelle Milnes,55.5,,5g,runner
+sbyn,5,15,Bush Inference,11,Byron Cozamanis,Felicity Atkinson,55,a1.5,6g,runner
+sbyn,5,16,Roll Start,7,Bill W Williams,Caitlyn Munro,54,a2,8m,runner
+sbyn,6,1,Rock Shot,13,Justin Pickering,Rochelle Milnes,59.5,,4g,runner
+sbyn,6,2,Big Mav,1,Sarah Rutten,Connor Murtagh,59,,6g,runner
+sbyn,6,3,Little Rocket,2,Sarah Rutten,Taylor Johnstone,59,,5g,runner
+sbyn,6,4,Mikki Tango,4,Mark Lewis,Will Price,59,,6g,runner
+sbyn,6,5,Voltage Point,5,Chris Bieg,Jake Toeroek,59,,6g,runner
+sbyn,6,6,Rhinestone Rory,9,J and L Dodgson,Polly Brewster,58.5,a3,6g,runner
+sbyn,6,7,Goodwin Guru,14,Andrew Gluyas,Rose Hammond,57,a2,4m,runner
+sbyn,6,8,Shalhavmusik,6,Grant Young,Jason Holder,57,,5m,runner
+sbyn,6,9,Blakmax,12,Raharna McDonald,Shayleigh Ingelse,56.5,a2,7g,runner
+sbyn,6,10,Lysander,7,Garret Lynch,Stacey Metcalfe,56.5,,7g,runner
+sbyn,6,11,Nolabell,8,A and N Bain and Taylor,Jackson Murphy,56.5,,3f,runner
+sbyn,6,12,Zarkana,11,W F and Glen Francis and Kent,Harry Grace,56.5,,6m,runner
+sbyn,6,13,Angry Berdi,10,S and J Jaensch,Margaret Collett,55,,3f,runner
+sbyn,6,14,Archdeacon,3,Garret Lynch,Tala Hutchinson,54,a1.5,8g,runner
+sbyn,7,1,Grinzinger Ace,18,Emma Hubbard,Dylan Caboche,61.5,,6g,runner
+sbyn,7,2,All Shot,13,Jon O'Connor,Caitlyn Munro,60,a2,5g,runner
+sbyn,7,3,Zuetoro,10,Scott Whittle,Connor Murtagh,60,,6g,runner
+sbyn,7,4,Fashizlemanizle,15,Shayne and Chelsea Cahill,Todd Pannell,59,,4g,runner
+sbyn,7,5,He's A Cool Cat,16,S and C Oxlade,Lauren Stojakovic,59,,5g,runner
+sbyn,7,6,Jasstar,5,Peter Nolan,Andrew Stead,58,,4m,runner
+sbyn,7,7,Cosmic Interlude,6,Sarah Rutten,Rochelle Milnes,57.5,,4m,runner
+sbyn,7,8,Rob The Bank,7,Jyi Lukey,Jemma Gutte,57.5,a3,6g,runner
+sbyn,7,9,Sahha Sweetie,9,W F and Glen Francis and Kent,Jake Toeroek,57.5,,5m,runner
+sbyn,7,10,I Am Piki,4,Grant Kluske,Brooke King,57,a0,5m,runner
+sbyn,7,11,Unpraised,17,Mark Lewis,Will Price,57,,6m,runner
+sbyn,7,12,Magic Island,3,Ms L Treloar,Harry Grace,56.5,,6m,runner
+sbyn,7,13,Dora Aurora,11,Justin Pickering,Margaret Collett,56,,5m,runner
+sbyn,7,14,Greatestofease,8,Garret Lynch,Alyssa Webb,56,a3,6m,runner
+sbyn,7,15,Justadexter,1,Ryan Hannemann,Anna Jordsjo,54.5,,6m,runner
+sbyn,7,16,Arc De Puissance,14,Grant Kluske,Brooke King,56,a0,7g,runner
+sbyn,7,17,Omaha Princess,2,Jan Taylor,,54,,5m,runner
+sbyn,7,18,Kindra Park,12,George Dimitropoulos,Stacey Metcalfe,55,,6g,runner
+abny,1,1,Hold My Wine,6,D and B Pearce,Natasha Faithfull,58,,4g,runner
+abny,1,2,Dolce Maschino,9,Roy Rogers,Rosie Mahony,58,,4g,runner
+abny,1,3,Box Of Ginger,3,Steve Wolfe,Sharni Webster,58,a2,4g,runner
+abny,1,4,Queen Cartel,8,Tim Stone,Jarrad Noske,56,,4m,runner
+abny,1,5,Heaps True Aye,5,Roy Rogers,Amy Jo Hayes,56,,4m,runner
+abny,1,6,Peigi,4,Steve Wolfe,Brayden Gaerth,56,,4m,runner
+abny,1,7,Automatic Man,7,Steve Wolfe,Dan McGillivray,56,,3g,runner
+abny,1,8,Tradings Over,2,Alan L Smith,Lisa Staples,56,,3g,runner
+abny,1,9,Is This Thing On,1,Paul Hunter,Patrick Carbery,54,,3f,runner
+abny,2,1,Sea Of Galilee,6,Steve Wolfe,Dan McGillivray,58,,5g,runner
+abny,2,2,War Trail,1,Tony Triscari,Jarrad Noske,58,,5g,runner
+abny,2,3,Twilight God,9,Maurice Sheridan,Lisa Staples,58,,6g,runner
+abny,2,4,No Comebacks,11,Steve Wolfe,Brayden Gaerth,58,,4g,runner
+abny,2,5,Token King,3,Sarah Searle,Casey Hunter,58,,5g,runner
+abny,2,6,Menomonee Brave,7,Steve Wolfe,Sharni Webster,58,a2,4g,runner
+abny,2,7,Through The Never,2,Ashleigh Woollett,Jason Whiting,58,,4g,runner
+abny,2,8,Zali's Gift,5,Brandon Fiore,Austin Galati,56,,4m,runner
+abny,2,9,Tasman Jewel (NZ),4,Samantha Faithfull,Natasha Faithfull,56,,5m,runner
+abny,2,10,Tasman Queen (NZ),8,Samantha Faithfull,Rosie Mahony,56,,5m,runner
+abny,2,11,Luz Del Sol,10,Roy Rogers,Bailey Webster,54,a3,3f,runner
+abny,2,12,Blue Symphony,12,Paul Hunter,Patrick Carbery,54,,3f,runner
+abny,3,1,Halatorion,8,Tim Stone,Bailey Webster,61,a3,9g,runner
+abny,3,2,Magic Mikey (NZ),3,Ashleigh Woollett,Jason Whiting,58,,8g,runner
+abny,3,3,Smart Energy,5,Alan L Smith,Lisa Staples,58,,5g,runner
+abny,3,4,Hang Glider,1,Steve Wolfe,Dan McGillivray,57,,7g,runner
+abny,3,5,Peanut Butter,2,Brandon Fiore,Austin Galati,55,,5g,runner
+abny,3,6,Lady Money Talk,4,Brandon Fiore,Patrick Carbery,54.5,,4m,runner
+abny,3,7,Jotopeli,6,Samantha Faithfull,Natasha Faithfull,54,,5g,runner
+abny,3,8,Rock Of Kaha,7,Jonathon Jachmann,Natika Portelli,54,a0,9g,runner
+abny,4,1,Manavendra,2,Tim Stone,Jarrad Noske,60,,7g,runner
+abny,4,2,Flick The Switch,1,Samantha Faithfull,Natasha Faithfull,58.5,,6m,runner
+abny,4,3,Head'em,6,Roy Rogers,Rosie Mahony,58,,8g,runner
+abny,4,4,Gift Of The Heart,4,Roy Rogers,Bailey Webster,57.5,a3,7g,runner
+abny,4,5,Playing Rio,7,Paul Hunter,Patrick Carbery,57.5,,7g,runner
+abny,4,6,Pray Again,8,Jonathon Jachmann,Natika Portelli,56,a0,8g,runner
+abny,4,7,Storm Away,3,Mitchell Pateman,Austin Galati,55,,4g,runner
+abny,4,8,Niccy's Affair,5,Roy Rogers,Amy Jo Hayes,54,,5m,runner
+abny,5,1,Red Top,7,Ashleigh Woollett,Jason Whiting,61,,7g,runner
+abny,5,2,Shazair,1,Paul Roberts,Austin Galati,58,,5m,runner
+abny,5,3,Here For Cheques,3,Alan McNamara,Natika Portelli,57.5,a0,7g,runner
+abny,5,4,Arafisio,2,Sarah Searle,Lisa Staples,56,,7m,runner
+abny,5,5,Hot Chatter,4,Sky Ballinger,Brayden Gaerth,56,,7m,runner
+abny,5,6,Kidding Me (NZ),5,Samantha Faithfull,Natasha Faithfull,56,,5m,runner
+abny,5,7,Polyvanova,6,Paul Hunter,Patrick Carbery,56,,5m,runner
+abny,5,8,Gingers Sister,8,Steve Wolfe,Dan McGillivray,54,,5m,runner
+abny,6,1,Jellybean Jones,8,Steve Wolfe,Jason Whiting,60,,,runner
+abny,6,2,Bondi Express,11,Paul Roberts,Natika Portelli,59.5,a0,,runner
+abny,6,3,Whiplash (NZ),4,Peter Western,Rosie Mahony,58.5,,,runner
+abny,6,4,Sharamoosh,5,D and B Pearce,Natasha Faithfull,58,,,runner
+abny,6,5,Crashed And Burned,9,Steve Wolfe,Dan McGillivray,57.5,,,runner
+abny,6,6,Shoot To Fame,6,Mack Hall,Sharni Webster,57.5,a2,,runner
+abny,6,7,Ravin' Ava,3,Roy Rogers,Austin Galati,57,,,runner
+abny,6,8,Date Withthe Devil,10,Stephen Sheehy,Patrick Carbery,56.5,,,runner
+abny,6,9,Great Deal,7,Alan L Smith,Lisa Staples,55.5,,,runner
+abny,6,10,Macho Arquero,1,Phillipa Elliott,Brayden Gaerth,55.5,,,runner
+abny,6,11,The Mighty Butch,2,Samantha Shirley,Bailey Webster,54.5,a3,,runner
+abny,7,1,Caladan,9,Roy Rogers,Rosie Mahony,61,,5g,runner
+abny,7,2,Scenic George,3,D and B Pearce,Jason Li,60,a3,5g,runner
+abny,7,3,Alebrije,4,Samantha Faithfull,Natasha Faithfull,59.5,,4m,runner
+abny,7,4,God'll Getya,7,Paul Hunter,Bailey Webster,59,,5g,runner
+abny,7,5,Twisted Trickster,8,Roy Rogers,Dan McGillivray,59,,5g,runner
+abny,7,6,Prasutagus,5,Steve Wolfe,Brayden Gaerth,58,,4g,runner
+abny,7,7,Brazen Bid,10,Stephen Sheehy,Lisa Staples,57.5,,5g,runner
+abny,7,8,Longtimebeliever,6,Paul Roberts,Natika Portelli,57,a0,5m,runner
+abny,7,9,Miss Rompin,1,Peter Western,Jason Whiting,57,,4m,runner
+abny,7,10,Lady Kiki (NZ),11,Brandon Fiore,Austin Galati,55.5,,5m,runner
+abny,7,11,Petite Vitesse,2,Jonathon Jachmann,Amy Jo Hayes,54,,6m,runner
+laun,1,1,Warrior Smile,2,John Blacker,Kelvin Sanderson,59,,4g,runner
+laun,1,2,Sounds Of Peace,5,Glenn Stevenson,Daniel Ganderton,57,,5m,runner
+laun,1,3,Talk Like That,3,Dylan Clark,Hayley McCarthy,55,,6m,runner
+laun,1,4,Nikolsky,7,Mark Ganderton,Codi Jordan,54.5,,6m,runner
+laun,1,5,Olindah,4,Jessie Bazan,Anthony Darmanin,54.5,,3f,runner
+laun,1,6,Seditious Award,1,John Luttrell,Craig Newitt,54.5,,5m,runner
+laun,1,7,Rapids Ahead,8,Graeme McCulloch,Erica Byrne Burke,54,,5g,runner
+laun,1,8,Alpine Honey,6,John Luttrell,Lauryn Bingley,54,a0,5g,runner
+laun,2,1,Tassie Power,6,Stuart Gandy,Kelvin Sanderson,59,,5g,runner
+laun,2,2,Eastcoast Miss,3,Jessie Bazan,Robyn Lynch,56.5,a4,6m,runner
+laun,2,3,Get 'em Warrior,1,Leon Wells,Craig Newitt,56.5,,5g,runner
+laun,2,4,Geegeehailstorm,7,Stuart Gandy,,56,,6m,scratched
+laun,2,5,Oxidize,5,Dylan Clark,Hayley McCarthy,55.5,,5m,runner
+laun,2,6,Platinum Reggae,4,Trent Wells,Codi Jordan,55,,6m,runner
+laun,2,7,Belpine Miss,2,Barry Baker,Lauryn Bingley,54.5,a0,8m,runner
+laun,3,1,Called Through,15,Alana Fulton,Hayley McCarthy,58.5,,5g,runner
+laun,3,2,Geegees Big Bird,3,Barry Baker,Anthony Darmanin,58.5,,7g,runner
+laun,3,3,Joejoe,12,Jessie Bazan,David Pires,58.5,,4g,runner
+laun,3,4,Midnight Wanderer,2,John Blacker,Craig Newitt,58.5,,4g,runner
+laun,3,5,Remis Award,5,John Blacker,,58.5,,5g,scratched
+laun,3,6,Rousing Levi,1,Leanne Gaffney,Erica Byrne Burke,58.5,,4h,runner
+laun,3,7,Timmie Lad,6,Brendan McShane,Lauryn Bingley,58.5,a0,4g,runner
+laun,3,8,Jock Rock,8,Yassy Nishitani,Luke P Dempsey,57,,3g,runner
+laun,3,9,Ramiro,14,Barry Campbell,Troy Baker,57,,3g,runner
+laun,3,10,Sh'bourne Top Gun,10,Stuart Gandy,Kelvin Sanderson,57,,3g,runner
+laun,3,11,Ms Surreal,9,Patrick Dargan,Kirra-Lee Lane,56.5,a2,4m,runner
+laun,3,12,Stratovision,13,Bradley Franklin,Codi Jordan,56.5,,4m,runner
+laun,3,13,Strip'n'tough,11,Bradley Franklin,Robyn Lynch,56.5,a4,4m,runner
+laun,3,14,Hot Moment,7,John Blacker,Chloe Wells,55,,3f,runner
+laun,3,15,Cheeky Tilly,4,Brendan McShane,,56.5,,5m,runner
+laun,4,1,Alla Rustica,7,Leanne Gaffney,Kirra-Lee Lane,58.5,a2,4g,runner
+laun,4,2,Alpine Whiskey,14,Bradley Franklin,Anthony Darmanin,58.5,,5g,runner
+laun,4,3,Luvubill,11,Glenn Stevenson,,58.5,,4g,runner
+laun,4,4,Dream Riot,5,John Blacker,Kelvin Sanderson,57,,3g,runner
+laun,4,5,Sovereign Dash,13,Adam Trinder,Luke P Dempsey,57,,3g,runner
+laun,4,6,Arianna's Gold,12,Sigrid Carr,Chloe Wells,56.5,,5m,runner
+laun,4,7,Graphite Power,10,Stuart Gandy,Troy Baker,56.5,,4m,runner
+laun,4,8,Nine Choirs,16,Stuart Gandy,,56.5,,4m,scratched
+laun,4,9,Roland View,4,Dylan Clark,Hayley McCarthy,56.5,,5m,runner
+laun,4,10,Royal Scene,6,Stephen Lockhart,Robyn Lynch,56.5,a4,5m,runner
+laun,4,11,The Red She Devil,15,Barry Baker,Craig Newitt,56.5,,5m,runner
+laun,4,12,Myrtle,8,Glenn Stevenson,,55,,3f,runner
+laun,4,13,Scarlet Bullet,3,Yassy Nishitani,Codi Jordan,55,,3f,runner
+laun,4,14,Zhavrafrost,9,Adam Trinder,Erica Byrne Burke,55,,3f,runner
+laun,4,15,Global Miracle,2,Brendan McShane,David Pires,56.5,,4m,runner
+laun,4,16,Onetimesometime,1,Graeme McCulloch,,57,,3g,runner
+laun,5,1,Vino Novello,2,John Blacker,Luke P Dempsey,59,,5g,runner
+laun,5,2,Obviously Good,6,Sigrid Carr,David Pires,57,,6g,runner
+laun,5,3,Ozonica,4,Adam Trinder,Erica Byrne Burke,57,,4g,runner
+laun,5,4,Taroona,1,Barry Campbell,Troy Baker,57,,4m,runner
+laun,5,5,Wolfy (NZ),3,John Blacker,Craig Newitt,57,,6g,runner
+laun,5,6,The Trine,5,Stuart Gandy,Anthony Darmanin,55,,5g,runner
+laun,6,1,Distrustful Award,9,John Luttrell,David Pires,60,,7g,runner
+laun,6,2,Fast Thinker,10,Kelvin Hamilton,Robyn Lynch,55.5,a4,10g,runner
+laun,6,3,Zulu Angel,4,John Blacker,Kirra-Lee Lane,55.5,a2,7g,runner
+laun,6,4,Earendel,7,Barry Campbell,Luke P Dempsey,55,,6g,runner
+laun,6,5,Coal River,3,Angela Brakey,Erica Byrne Burke,54,,5g,runner
+laun,6,6,Sh'bourne Midnight,1,Shaun Nichols,Craig Newitt,54,,7g,runner
+laun,6,7,Go Jeanie,5,Glenn Stevenson,Codi Jordan,54,,5m,runner
+laun,6,8,Zewinna,8,John Blacker,Chloe Wells,54,,8m,runner
+laun,6,9,Beneficiary,2,Barry Campbell,Anthony Darmanin,54,,6g,runner
+laun,6,10,Georgaroni,6,John Blacker,Lauryn Bingley,54,a0,5g,runner
+laun,7,1,Gee Gees Me Boy,7,Stuart Gandy,David Pires,59,,6g,runner
+laun,7,2,Elegantly Written,3,Glenn Stevenson,Kirra-Lee Lane,58.5,a2,6m,runner
+laun,7,3,Material Madam,1,Stuart Gandy,Chloe Wells,57.5,,6m,runner
+laun,7,4,Montezulu,4,John Blacker,Lauryn Bingley,57.5,a0,7g,runner
+laun,7,5,Brave Jet,2,Angela Brakey,Erica Byrne Burke,57,,4g,runner
+laun,7,6,Halen,5,Graeme McCulloch,Kelvin Sanderson,56,,5g,runner
+laun,7,7,I'm Chev,6,Glenn Stevenson,Craig Newitt,54.5,,5g,runner
+laun,8,1,Summit,4,Barry Campbell,Luke P Dempsey,58,,4g,runner
+laun,8,2,Rippington,3,Barry Campbell,Troy Baker,56.5,,5g,runner
+laun,8,3,Who's In Dev,2,Glenn Stevenson,Codi Jordan,56.5,,4m,runner
+laun,8,4,Judge Jenni,1,E C Batt,Anthony Darmanin,56,,6m,runner
+laun,8,5,Team Heist (NZ),5,Dylan Clark,Hayley McCarthy,56,,5m,runner
+laun,8,6,Cool Conquest,6,John Blacker,Craig Newitt,54,,6m,runner

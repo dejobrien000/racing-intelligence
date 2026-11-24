@@ -1,0 +1,10 @@
+   B8                          jump-outs / barrier trials flagged (excluded from analysis)            reported    2346 of 40497 races   INFO
+   B0                                                     meetings / states / races loaded                   -       5132 / 3 / 40497   INFO
+  B0b                                                                       runners loaded                   -                 381895   INFO
+   B1                                   meetings whose venue has no state (not in Betfair) few (picnic venues)                      0   PASS
+   B2                                            meetings also in Betfair: same race count                 all           4685 of 4722   FLAG
+   B3                                          meetings also in Betfair: same runner count          nearly all           3913 of 4722   FLAG
+   B4                                        winners that match Betfair (meetings in both)              >= 99%         36919 of 37064   PASS
+   B5                                              races with a plausible time / last 600m          nearly all 40254 / 32424 of 40409   PASS
+   B6                placed-behind runners with no margin (races only, jump-outs excluded)                 few          135 of 330181   PASS
+   B7 NSW overlap with Racing NSW results: same horse at same place, weight carried agrees                 all         17300 of 17303   PASS

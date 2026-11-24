@@ -1,0 +1,4 @@
+test,term,odds_ratio,lo95,hi95,p_two_sided,runs,horses
+Primary 4: B3 step up 200m+ (NSW form lines),step_up,0.927,0.872,0.985,0.0149,60965,5877
+B3 sensitivity: + NSW rating move,step_up,0.892,0.824,0.964,0.0042,40000,3832
+Primary 6: B4 weight drop 2kg+ (NSW form lines),drop2,0.863,0.802,0.928,0.0001,69882,5974

@@ -1,0 +1,11 @@
+measure,races,top_pick_win_%,top_pick_A/E,out_of_sample_R2_%
+Rating v0: best of last 3 figures (R15),1257,19.6,1.67,2.96
+Rating v0: last figure (R17),1257,19.4,1.65,3.45
+Rating v0: average of last 3 (R17),1257,20.0,1.71,3.72
+Baseline: last-start finishing position,1257,18.9,1.6,3.73
+Baseline: last-start beaten margin,1257,19.1,1.62,3.51
+"Baseline: average finishing position, last 3",1257,21.6,1.84,5.0
+Baseline: career win % before the race,1257,18.7,1.59,1.92
+Baseline: class of last race,1257,11.8,1.0,0.01
+Baseline: weight carried (handicaps only),1034,17.7,1.5,1.71
+Rating v0: best of last 3 figures (R15) (handicaps only),1034,19.0,1.6,2.43

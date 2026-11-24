@@ -1,0 +1,6 @@
+model,evaluation_log_loss
+M0 field size and margin only,0.32941
+M1 main effects,0.32692
+M2 main effects + interactions,0.32687
+Trees depth 1 (no interactions),0.32717
+Trees depth 3 (interactions allowed),0.32733

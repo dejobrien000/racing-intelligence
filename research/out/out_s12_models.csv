@@ -1,0 +1,8 @@
+model,races,fit_%,top_pick_%
+simple form (avg finish last 3),4730,4.57,19.8
+"v0 figure, recency-weighted",4730,4.14,20.8
+"PA1 pace-corrected figure, recency-weighted",4730,4.45,21.2
+dynamic opposition rating,4730,4.86,19.7
+dynamic rating + PA1 figure,4730,5.66,21.7
+combined_v1,4730,6.4,22.6
+combined_v1 + dynamic rating,4730,7.25,23.3

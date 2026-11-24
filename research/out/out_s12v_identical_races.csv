@@ -1,0 +1,6 @@
+model,races,fit_%,top_pick_%,winner_mean_rank,winner_in_top3_%,spearman_model_vs_finish
+combined_v1 (frozen benchmark),4730,6.4,22.5,3.92,53.6,0.313
+Qld dynamic rating alone,4730,4.86,19.7,4.11,50.5,0.291
+national dynamic rating alone,4730,4.98,20.4,4.09,50.4,0.291
+combined_v1 + Qld dynamic rating,4730,7.25,23.3,3.85,54.2,0.327
+combined_v1 + national dynamic rating,4730,7.51,23.6,3.84,54.8,0.336

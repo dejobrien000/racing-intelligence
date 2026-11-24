@@ -1,0 +1,8 @@
+# The master database lives in GitHub Release assets (versioned), never in git history.
+*.duckdb
+*.parquet
+*.jsonl.gz
+*.tar.gz
+research/engine/frames/
+research/prospective/
+__pycache__/

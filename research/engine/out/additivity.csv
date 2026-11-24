@@ -1,0 +1,12 @@
+model,family alone on top of v1,gain_lp,lo,hi,top_pick_pts,races,fit_%,top_pick_%,winner_in_top3_%,order_rho
+qld,Horse course/going/distance records,0.00457,0.00204,0.00697,0.08,,,,,
+qld,Jockey & trainer,0.04066,0.03157,0.05017,1.5,,,,,
+qld,SUM of the separate gains,0.04523,,,,,,,,
+qld,ALL TOGETHER (jointly fitted),0.04144,0.03237,0.0511,1.67,,,,,
+nat,Jockey & trainer,0.03214,0.02801,0.03633,1.17,,,,,
+nat,Age & sex,0.01492,0.01194,0.01818,0.52,,,,,
+nat,Form changes & head-to-head,0.00341,0.00198,0.00474,0.23,,,,,
+nat,Interactions (chosen on discovery data only),0.03243,0.0276,0.03783,1.68,,,,,
+nat,SUM of the separate gains,0.0829,,,,,,,,
+nat,ALL TOGETHER (jointly fitted),0.04579,0.04003,0.05218,2.23,,,,,
+nat,CHAIN START: common features only (no national rating),,,,,16489.0,8.96,24.88,56.24,0.335

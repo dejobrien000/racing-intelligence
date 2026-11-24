@@ -1,0 +1,13 @@
+class_move,weight,runs,next_win_%,A/E,lo95,hi95
+drops in class,drop 2kg+,1330,9.7,0.96,0.8,1.14
+drops in class,within 1.5kg,2411,9.5,0.94,0.83,1.07
+drops in class,rise 2kg+,3124,12.2,1.22,1.1,1.34
+same class,drop 2kg+,3930,9.2,0.91,0.82,1.01
+same class,within 1.5kg,22770,11.0,1.08,1.04,1.12
+same class,rise 2kg+,7836,12.8,1.23,1.15,1.31
+rises in class,drop 2kg+,2767,10.4,0.98,0.87,1.1
+rises in class,within 1.5kg,4679,11.0,1.06,0.97,1.16
+rises in class,rise 2kg+,2077,12.1,1.16,1.02,1.31
+all,drop 2kg+,8027,9.7,0.94,0.88,1.01
+all,within 1.5kg,29860,10.9,1.07,1.03,1.1
+all,rise 2kg+,13037,12.5,1.21,1.16,1.27

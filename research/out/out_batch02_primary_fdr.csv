@@ -1,0 +1,10 @@
+test,p,q_BH,passes_10pct_FDR
+P1 best rating variant matches/beats simple form,0.919,0.977,False
+P2 A ability and opposition beyond all,0.0005,0.0045,True
+P3 S sectional beyond all,0.425,0.6375,False
+P4 P race shape beyond all,0.041,0.0923,True
+P5 T track and distance beyond all,0.977,0.977,False
+P6 R fitness and recency beyond all,0.001,0.0045,True
+P7 combined vs stacked (two-sided),0.032,0.0923,True
+P8 race-shape interactions,0.086,0.1548,False
+P9 trees beat combined model,0.525,0.675,False

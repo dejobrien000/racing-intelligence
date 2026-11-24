@@ -1,0 +1,6 @@
+case,count,handling
+dead heats for first (Qld races),27,both winners margin 0; same performance; race left out of winner-only scoring (needs exactly one winner)
+dead heats for first (national races),143,as above
+non-finishers / no margin or weight (Qld runs),1089,get a pre-race rating; never update anyone; their uncertainty keeps growing from their last measured run
+first run in the data (Qld),19854,"start at field average of known horses minus 2.0 kg, sd 5.0 kg; flagged"
+runs after 180+ days off (Qld),4329,"uncertainty grows by q per day off (capped at the debut sd), so the next run moves the rating more"

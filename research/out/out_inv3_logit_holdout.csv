@@ -1,0 +1,6 @@
+term,Coef.,Std.Err.,P>|z|,odds_ratio
+Intercept,0.9623,0.3207,0.0027,2.62
+"C(l600_grp, Treatment(""rest""))[T.fastest L600 in race]",0.1536,0.106,0.1473,1.17
+"C(l600_grp, Treatment(""rest""))[T.2nd-3rd fastest]",0.1335,0.0749,0.0748,1.14
+np.log(margin_l + 0.5),-0.4972,0.0423,0.0,0.61
+np.log(next_field),-1.1465,0.1396,0.0,0.32

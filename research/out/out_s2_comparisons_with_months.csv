@@ -1,0 +1,14 @@
+test,comparison,fit_gain_per_race,lo95,hi95,p_one_sided,lo95_months,hi95_months,p_one_sided_months,top_pick_diff_pts,tp_lo95,tp_hi95
+,A ability and opposition: added to simple form,0.0337,0.0259,0.0417,0.0,0.0257,0.0419,0.0,1.8,0.8,3.0
+,S sectional: added to simple form,-0.0005,-0.0023,0.0013,0.695,-0.0025,0.0014,0.689,0.0,-0.5,0.6
+,P race shape: added to simple form,0.0034,0.0007,0.0062,0.008,0.0001,0.0065,0.02,0.8,0.1,1.5
+,T track and distance: added to simple form,-0.0018,-0.0051,0.0016,0.85,-0.0046,0.001,0.898,-0.1,-0.9,0.5
+,R fitness and recency: added to simple form,0.0042,0.002,0.0064,0.0,0.0017,0.0066,0.0,0.7,0.1,1.2
+P2,A ability and opposition: beyond form and all other groups,0.0306,0.0232,0.0382,0.0,0.0228,0.0385,0.0,2.1,1.1,3.1
+P3,S sectional: beyond form and all other groups,0.0003,-0.0022,0.0027,0.425,-0.0025,0.0032,0.391,0.1,-0.5,0.7
+P4,P race shape: beyond form and all other groups,0.0029,-0.0004,0.006,0.041,-0.0008,0.0065,0.053,0.1,-0.6,0.8
+P5,T track and distance: beyond form and all other groups,-0.0032,-0.0065,-0.0001,0.977,-0.0061,-0.0006,0.995,-0.3,-1.0,0.4
+P6,R fitness and recency: beyond form and all other groups,0.0029,0.001,0.0048,0.001,0.0006,0.0052,0.003,0.3,-0.1,0.8
+P8,Race-shape interactions beyond main effects,0.0004,-0.0002,0.0011,0.086,-0.0002,0.0011,0.102,-0.0,-0.3,0.2
+P7,One combined model vs stacked separate profiles (positive = combined better),0.0053,0.0008,0.0095,0.016,0.0011,0.009,0.006,0.3,-0.5,1.1
+P9,Trees vs combined conditional logit (positive = trees better),-0.0001,-0.0057,0.0051,0.525,-0.0053,0.0053,0.505,-0.5,-1.4,0.3

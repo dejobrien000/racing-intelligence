@@ -1,0 +1,2 @@
+population,races,R2_baselines_%,R2_plus_best3_%,gain_per_race,lo95,hi95
+"all 6+ races, missing filled + flag",4730,5.11,5.74,0.0142,0.0101,0.0179

@@ -1,0 +1,5 @@
+R40 next-start model (beaten runners),evaluation_log_loss,coef_class_delta,coef_fs_delta,runs_dev,runs_eval
+margin + field only,0.32557,,,21461,22088
++ class-label move,0.32507,-0.044,,21461,22088
++ field-strength move,0.32412,,-0.026,21461,22088
++ both,0.32389,-0.035,-0.023,21461,22088

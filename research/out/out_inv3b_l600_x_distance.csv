@@ -1,0 +1,17 @@
+term,Coef.,Std.Err.,P>|z|,split,n
+Intercept,0.9231,0.1679,0.0,explore_2022_2025,39211
+top_l600,0.1241,0.0678,0.0672,explore_2022_2025,39211
+step_up,-0.2042,0.0426,0.0,explore_2022_2025,39211
+top_l600:step_up,0.2252,0.1148,0.0497,explore_2022_2025,39211
+step_down,-0.0229,0.0622,0.7128,explore_2022_2025,39211
+top_l600:step_down,-0.0522,0.2544,0.8375,explore_2022_2025,39211
+np.log(margin_l + 0.5),-0.4302,0.0208,0.0,explore_2022_2025,39211
+np.log(next_field),-1.1248,0.0728,0.0,explore_2022_2025,39211
+Intercept,1.045,0.3186,0.001,holdout_2026,11643
+top_l600,-0.0806,0.131,0.5382,holdout_2026,11643
+step_up,-0.0066,0.0775,0.9322,holdout_2026,11643
+top_l600:step_up,0.5037,0.2095,0.0162,holdout_2026,11643
+step_down,0.0113,0.1131,0.9205,holdout_2026,11643
+top_l600:step_down,0.2189,0.4455,0.6232,holdout_2026,11643
+np.log(margin_l + 0.5),-0.5227,0.0407,0.0,holdout_2026,11643
+np.log(next_field),-1.1523,0.1396,0.0,holdout_2026,11643

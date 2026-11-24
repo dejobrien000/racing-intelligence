@@ -1,0 +1,4 @@
+third,runs,wins,win_pct,expected_wins,A/E,A/E_lo95,A/E_hi95
+inside third,25380.0,2859.0,11.3,2606.9,1.1,1.06,1.14
+middle third,20779.0,2094.0,10.1,2117.6,0.99,0.95,1.03
+outside third,22941.0,2141.0,9.3,2344.2,0.91,0.88,0.95

@@ -1,0 +1,41 @@
+model,races,n_races,fit_%,top_pick_%
+v0 recency-weighted alone,all,4730,4.14,20.8
+v0 recency-weighted alone,1400m+,1703,3.22,18.7
+v0 recency-weighted alone,under 1400m,3027,4.67,21.9
+v0 recency-weighted alone,metro,1289,3.05,19.9
+v0 recency-weighted alone,metro 1400m+,540,2.06,18.0
+PA1 recency-weighted alone,all,4730,4.45,21.2
+PA1 recency-weighted alone,1400m+,1703,3.86,19.4
+PA1 recency-weighted alone,under 1400m,3027,4.78,22.1
+PA1 recency-weighted alone,metro,1289,3.36,20.7
+PA1 recency-weighted alone,metro 1400m+,540,2.5,19.6
+PA2 blend recency-weighted alone,all,4730,3.66,20.2
+PA2 blend recency-weighted alone,1400m+,1703,3.54,19.3
+PA2 blend recency-weighted alone,under 1400m,3027,3.73,20.6
+PA2 blend recency-weighted alone,metro,1289,2.54,19.0
+PA2 blend recency-weighted alone,metro 1400m+,540,2.16,17.0
+late-section figure alone,all,4730,2.41,18.4
+late-section figure alone,1400m+,1703,2.55,18.4
+late-section figure alone,under 1400m,3027,2.32,18.3
+late-section figure alone,metro,1289,1.3,15.7
+late-section figure alone,metro 1400m+,540,1.23,14.1
+benchmark (frozen combined_v1),all,4730,6.4,22.5
+benchmark (frozen combined_v1),1400m+,1703,5.81,20.7
+benchmark (frozen combined_v1),under 1400m,3027,6.74,23.6
+benchmark (frozen combined_v1),metro,1289,5.34,21.3
+benchmark (frozen combined_v1),metro 1400m+,540,5.39,20.4
+"benchmark, PA1 in place of v0",all,4730,6.54,22.7
+"benchmark, PA1 in place of v0",1400m+,1703,6.01,21.3
+"benchmark, PA1 in place of v0",under 1400m,3027,6.84,23.4
+"benchmark, PA1 in place of v0",metro,1289,5.43,21.5
+"benchmark, PA1 in place of v0",metro 1400m+,540,5.51,21.3
+benchmark + late-section figure,all,4730,6.46,22.7
+benchmark + late-section figure,1400m+,1703,5.88,20.7
+benchmark + late-section figure,under 1400m,3027,6.8,23.8
+benchmark + late-section figure,metro,1289,5.36,21.4
+benchmark + late-section figure,metro 1400m+,540,5.38,20.9
+"benchmark + last-start run profile (early, late, tempo)",all,4730,6.52,22.8
+"benchmark + last-start run profile (early, late, tempo)",1400m+,1703,5.93,20.9
+"benchmark + last-start run profile (early, late, tempo)",under 1400m,3027,6.85,23.9
+"benchmark + last-start run profile (early, late, tempo)",metro,1289,5.36,21.7
+"benchmark + last-start run profile (early, late, tempo)",metro 1400m+,540,5.34,21.7

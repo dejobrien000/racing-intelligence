@@ -1,0 +1,950 @@
+date,venue,race_no,horse,side,evidence
+2022-11-01,kembla-grange,6,Zoucan Toucan,Betfair only,not in Breednet result: late scratching or name mismatch
+2022-12-19,corowa,1,Justonemore,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-03,werribee,9,Hes A Legend,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-06,muswellbrook,5,Final Statement,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-06,muswellbrook,7,Legris,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-09,pakenham,1,Fire Prince,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-10,canterbury,3,Essonne,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-10,moonee-valley,6,Balmagnus,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-11,orange,6,Bronx Bomber,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-11,randwick,6,Dorothy Gail,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-16,goulburn,8,Evita La Vie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-18,coffs-harbour,7,Prince Of Troy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-18,rosehill,2,True Crime,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-20,sapphire-coast,5,The Predictor,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-22,warwick-farm,7,Nipotino,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-24,moonee-valley,7,Acquiescent,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-26,tamworth,2,Antarctic Pride,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-02-26,terang,1,Raidaway,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-01,warwick-farm,5,Casino Time,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-04,flemington,7,Maximillius,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-04,flemington,7,Holymanz,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-05,grafton,1,Benetti,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-05,grafton,4,Pennies Destiny,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-09,newcastle,2,Missile Max,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-10,pakenham,6,Wandas Outlaw,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,edenhope,3,Ceres Mist,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,flemington,4,Flyball,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,flemington,4,Dubenenko,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,gosford,5,Razors,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,rosehill,10,Fathers Day,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-11,towong,1,Onemorekimmie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-14,moree,6,Graupel,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-16,wagga,5,Dodgeball,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-16,wagga,5,Gatchan,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-17,terang,2,Heroic Fighter,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-17,terang,2,Ruby Edition,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-17,terang,4,Historic,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-17,terang,4,Coleridge,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-18,moonee-valley,6,Florescent Star,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-18,rosehill,8,Learning To Fly,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-18,rosehill,8,Lazzago,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-21,ballina,1,Hedonie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-24,geelong,2,Black Samurai,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-24,geelong,3,Eagle Queen,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-26,armidale,7,Furphy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-27,grafton,1,Flying Moon,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-29,warwick-farm,3,Temple Of Artemis,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-03-31,benalla,5,Ferlaxing,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-01,randwick,3,Athabascan,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-01,taree,1,Testa Princess,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-02,hamilton,4,Blood And Sand,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-02,hamilton,4,Mapping,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-02,hamilton,4,The Beehive,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-02,mudgee,4,Divine Entity,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-05,hawkesbury,2,Quintillion,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-09,mudgee,2,Puja,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-15,lismore,1,Mofilo,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-15,werribee,1,Shadowheart,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-16,pakenham,1,Ourkhani,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-16,pakenham,4,Cheners,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-16,pakenham,5,Rexmont,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-17,swan-hill,3,Miahminx,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-22,hawkesbury,3,Sweet Mercy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-24,donald,1,Headingley,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-24,donald,1,Time To Rumble,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-25,bathurst,1,True Gem,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-27,seymour,5,Lady Whistledown,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-04-30,grafton,6,Zouhaven,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-01,bairnsdale,3,Egyptian Icon,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-01,bairnsdale,5,Marius,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,gunnedah,4,Cliffs Of Moher,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,warrnambool,2,Reserve Street,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,warrnambool,3,Rocky Raccoon,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,warrnambool,6,Inayforhay,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,warrnambool,6,St Arnicca,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-02,warrnambool,6,Bee Tee Junior,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-03,canterbury,3,Magnatear,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-03,warrnambool,4,Youl Dash For Cash,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-03,warrnambool,4,Mighty Oasis,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-03,warrnambool,4,So Belafonte,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-03,warrnambool,4,Lord Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-04,newcastle,5,Pride Of Dixie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-04,warrnambool,1,Cotton Eye Joe,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-04,warrnambool,7,Stern Idol,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-05,coffs-harbour,4,Princess Sparkles,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-08,quirindi,6,Epic Decision,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-12,albury,8,Gottaluvtrucks,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-13,echuca,1,Astropop,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-13,flemington,7,Camorra,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-13,tuncurry,1,Tabak,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-14,casterton,1,Booker Tee,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-14,casterton,2,Vividredsky,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-14,casterton,5,Laylite,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-14,casterton,5,Rosie Rose,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-19,canberra,1,Jamrock,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-21,sandown,4,Nelson,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-21,sandown,4,Bakery Hill,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-23,kembla-grange,2,Ohtani,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-23,mornington,5,Pride Of Galway,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-24,sale,6,Bells Bighouse,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-26,lismore,4,Dedicated Few,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,1,Chillios,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,1,The Rattlin Bog,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,1,Trepardoux,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,1,Hakuna Matata,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,2,Vividredsky,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,2,Fiorente Lass,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,2,Peace Process,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,3,Bell Ex One,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,4,Contradeel,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,4,Lord Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,4,Tom Foolery,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,4,Youl Dash For Cash,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,5,Historic,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,5,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-05-30,hamilton,5,Kharchin,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-04,geelong,1,Boom Boom Ray,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-07,sale,1,Johnny Buccaneer,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-07,sale,2,Poleaxed,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-07,sale,4,Youl Dash For Cash,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-07,sale,7,The Awesome Son,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-08,gosford,6,Vandelay Style,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-08,werribee,7,Gracie Turf,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-11,sapphire-coast,4,Wunambal,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-11,sapphire-coast,4,Jessandi,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-11,sapphire-coast,4,Duecourse,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-11,sapphire-coast,4,Alan,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-15,wyong,3,Prize Tulip,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-17,flemington,8,Bitcoin,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-17,narrandera,2,No Dixie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-18,warrnambool,3,Coleridge,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-18,warrnambool,3,Armansky,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-24,caulfield,8,No Effort,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-25,narrandera,4,Easy Road,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-30,geelong,1,Double Glazed,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-30,scone,4,You Have To Go,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-06-30,scone,6,Desert Safari,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-02,warrnambool,2,Stan The Caddy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-08,wellington,4,Freycinet,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-08,wellington,4,More Than Luck,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-13,grafton,5,Snazz N Charm,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-16,pakenham,1,Pierro Rosso,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-16,pakenham,5,Flying Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-17,goulburn,2,Angels Fox,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-20,pakenham,1,Azaly,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-21,donald,6,Pravro,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-23,casterton,1,Brozgottwinkletoes,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-23,casterton,2,Fantastic Rock,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-23,casterton,4,Master Poet,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-23,casterton,4,Laylite,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-24,ballarat,6,Rafhas Choice,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-25,bathurst,6,Petain,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-07-27,bendigo,10,Kermy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-05,gilgandra,7,Just Too Sweet,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-05,rosehill,8,Big Parade,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,sandown,1,Naval Academy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,sandown,2,Killourney,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,sandown,2,Rudimental,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,sandown,5,Wil John,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,sandown,5,Tamarack,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-06,scone,2,Chomeur,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-12,kembla-grange,6,Harley Street,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-12,kerang,3,Rockefeller Rain,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,1,Cadre Du Noir,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,2,El Campeon,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,2,Mungerannie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,2,Resolutions,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,4,Sollevare,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,5,Roland Garros,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,coleraine,5,Coleridge,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-13,moe,2,Southampton Dock,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-19,randwick,7,Mileva,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-22,ballarat,1,Stormie,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-25,geelong,1,City Limits,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,1,Ima Dozer,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,1,Non Presse,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,2,Resolutions,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,3,Once Were Lost,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,3,Laybuy,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,4,Sollevare,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,4,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,6,Stern Idol,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,6,San Remo,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,6,Count Zero,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,6,Crosshill,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-08-27,ballarat,6,Contradeel,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-01,wyong,4,Razors,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-01,wyong,7,Kalapour,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-01,wyong,7,The Mediterranean,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-01,wyong,7,Pretty Amazing,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-02,hawkesbury,7,Im A Shaker,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-02,warracknabeal,4,Reynaire,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-04,coffs-harbour,4,La Marsa,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-17,armidale,7,Pocket Picker,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-20,sandown,8,Senor Uno,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-20,warwick-farm,6,Lucky Variety,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-21,cranbourne,5,Clydebank Robber,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-22,ballarat,8,Teluk,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-22,ballarat,8,Sing A Rainbow,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-24,taree,3,Emaleah,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-29,moonee-valley,4,Fasuto,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-30,mornington,7,Dick Whittington,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-09-30,wagga,3,Military Manoeuver,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-02,ballarat,8,High Torque,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-06,warrnambool,3,Miss Tranqilla,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-07,kembla-grange,5,Zerkhan,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-07,murtoa,5,Yesugei,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-08,hawkesbury,5,Bobby Shiraz,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-13,coffs-harbour,6,Declutter,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-13,tamworth,2,Azzam,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-14,caulfield,6,Minsk Moment,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-19,echuca,3,Freedom,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-21,avoca,1,Bolshoi Princess,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-21,bendigo,4,Zente Dancer,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-23,warrnambool,6,Buddie Rippa,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-29,taree,6,Golden Breeze,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-29,taree,6,Mischievous Molly,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-29,taree,6,Balzando,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-10-29,taree,6,No Respect,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-07,flemington,7,Right You Are,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-12,ararat,6,Sign Seal Deliver,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-17,canterbury,5,Genetic Freak,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-18,caulfield,5,Outlaws Revenge,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-18,kembla-grange,3,Holdontoyasuper,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-19,donald,7,Edzel,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-20,kyneton,3,Count Ida,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-25,inverell,2,Spanish King,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-25,kembla-grange,10,So Say You,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-26,swan-hill,4,Tiny Rebel,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-11-28,albury,3,Sacred Shikoba,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-02,kempsey,4,Gypsy Mountain,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-05,narromine,4,Iron Fist,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-09,albury,1,Bowled Roamer,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-11,tuncurry,7,Dunoon,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-14,kembla-grange,7,Lunar Rising,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-15,murwillumbah,2,Max O Max,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-16,moree,6,Casino Moe,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-17,moruya,2,Manzoni,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-21,seymour,5,Aurolaa,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-24,tamworth,4,Benatari,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-27,geelong,1,Bings Dream,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-30,gilgandra,5,Smokin Soldier,Betfair only,not in Breednet result: late scratching or name mismatch
+2023-12-30,moonee-valley,6,Piaggio,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-03,seymour,5,Blesk,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-05,cranbourne,6,I Miss Margie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-06,werribee,2,Lady Assentior,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-13,glen-innes,6,Devils Where,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-13,kembla-grange,3,Rose To Win,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-13,rosehill,5,Billiondollarbaby,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-15,dubbo,4,Snitchnsnatching,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-16,wagga,4,Manhattan Valley,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-18,pakenham,8,Belmasai,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-20,camperdown,4,Divine Turf,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-21,cowra,2,Honjo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-27,newcastle,7,Uncaged,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-29,tuncurry,7,Mr Tabasco,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-01-31,sandown,6,Podente,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-03,caulfield,7,Captain Britain,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-03,kyneton,8,Swedish Duke,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-03,kyneton,8,Fi Style,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-05,dubbo,7,Apollo Star,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-06,grafton,6,Soju Session,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-06,stony-creek,1,Just Bolts,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-06,stony-creek,1,Nobiallo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-08,wyong,6,Hell Oh Baby,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-13,kyneton,4,Docconrad,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-17,flemington,10,Sorel Rising,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-17,newcastle,4,Royale Veloute,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-20,benalla,2,Monterey,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-22,stawell,3,Jalpido,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-24,orange,1,Hot Extraction,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-24,rosehill,5,Stroke Of Luck,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-02-29,ararat,8,Swedish Duke,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-02,newcastle,6,Thrill Of Brazil,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-05,wagga,1,Treeline,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-05,wagga,4,Roc The Wolf,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-08,ararat,5,Autumn Acquisition,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-08,ararat,6,Giallo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-08,dubbo,6,Irene Of Athens,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-09,hawkesbury,3,Il Tevere,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-12,warrnambool,1,Teofilo Star,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-12,warrnambool,1,Serenade The Stars,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-12,warrnambool,3,Nelson,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-12,warrnambool,3,Rudimental,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-13,caulfield,6,Annies Rose,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-14,bendigo,3,Have A Crack,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-20,canberra,3,Hardazhell,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-20,canberra,3,Dunjenni,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-20,canberra,3,Epic Statement,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-20,canberra,3,Hasime,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-22,cranbourne,1,Lucky By Jingo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-22,cranbourne,5,Sparkling Blue,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-22,horsham,1,Zouvier,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-22,horsham,6,Mister Businessman,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-22,horsham,8,Fair Go Fiona,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-23,rosehill,10,Tintookie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-24,orange,7,Canadian Express,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-25,warrnambool,1,Gambu,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-25,warrnambool,1,Grand Promenade,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-27,sandown,8,Bogues,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-30,moruya,6,Alan,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-30,wyong,7,Stars And Bars,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-31,mornington,7,Luv A Duck,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-03-31,stawell,2,National Diamond,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-02,moree,1,Kovu,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-06,avoca,6,Brenlyns Daisy,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-07,ballarat,1,Buffalo Bill,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-07,ballarat,1,Pick Me,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-07,ballarat,1,Ngorongoro,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-07,ballarat,1,Resolutions,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-07,ballarat,2,Crosshill,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-09,kembla-grange,1,Hiawatha,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-09,kembla-grange,2,Summons,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-14,pakenham,2,Portobello Road,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-14,pakenham,3,Hogan,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-14,pakenham,6,Tolemac,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-14,pakenham,6,Yulong Place,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-14,pakenham,6,Wolfe Tone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-17,canterbury,6,Smartawi,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-17,caulfield,7,Heed The Omens,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-21,wagga,8,Dreamwoman,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-24,newcastle,8,Skiesthelimit,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-25,randwick,4,Barellan Bandit,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-27,kyneton,4,Twotoodlou,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-27,kyneton,4,The Oyster,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-28,narromine,4,Mayapple,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-28,narromine,6,The Dramatist,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-30,warrnambool,1,Sir Peter,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-30,warrnambool,1,Mont Agel,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-04-30,warrnambool,3,Three Over Two,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-01,warrnambool,4,Fort Charles,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-01,warrnambool,6,Pure Deal,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-02,warrnambool,1,Abreed,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-02,warrnambool,7,Wolfe Tone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-02,warrnambool,7,Rudimental,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-03,muswellbrook,1,Thirteen Red,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-04,horsham,8,Dont Matta Me,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-07,wellington,5,Paziah,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-13,mornington,1,Ormond Road,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-13,mornington,4,Broken Promises,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-19,casterton,2,Rylstone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-19,casterton,2,Best Scenario,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-19,casterton,3,Teofilo Star,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-19,casterton,3,Wolfe Tone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-19,casterton,5,Aquileon,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-21,tamworth,4,Spicy Margherita,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-24,cranbourne,2,Jennizacinto,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-24,goulburn,4,Serenade Belle,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-25,dubbo,1,Moculta Warrior,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-26,mildura,7,Private Jet,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-28,ballarat,7,Mihrimah,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-30,hamilton,1,Davelliom,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-30,hamilton,1,Senza Dubbio,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-30,hamilton,4,Arassem,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-30,hamilton,4,Sandman,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-05-30,hamilton,4,Thinking Man,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-02,sandown,2,Count Zero,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-02,sandown,5,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-07,dubbo,1,Legless Hodges,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-10,canterbury,5,Eastern Glow,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-11,sale,1,Summerhill,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-11,scone,9,Shine Your Light,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-12,ballarat,8,Motitsi,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-13,echuca,3,Trapeze Dancer,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-17,pakenham,4,Caporiko,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-21,goulburn,4,Irradiance,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-22,flemington,2,Letsrollthedice,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,murwillumbah,4,Osaka Miss,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,1,Crux,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,1,Fatigues,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,1,Texas Holdem,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,1,Three Over Two,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,2,Allaboutattitude,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,2,Enzed Magic,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,2,Flying Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,2,The Awesome Son,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,2,Zed Leppelin,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,4,Tolemac,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,4,Custom Of The Sea,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-23,warrnambool,4,Abacus,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,ballina,2,Lady Tulessa,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,casterton,2,Killourney,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,casterton,2,Rising Renown,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,casterton,2,Maatsuyker,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,casterton,4,Arassem,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-06-30,dubbo,5,Leopardi,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-06,wangaratta,9,Bella Nights,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-07,warrnambool,4,Rider In The Snow,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-07,warrnambool,5,Abacus,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-07,warrnambool,6,Yulong Place,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-08,pakenham,6,Remuda,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-13,newcastle,6,Bodgie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-13,randwick,1,Veronas Cleopatra,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-16,newcastle,7,Eyeque,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-19,queanbeyan,2,Cougars,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-20,flemington,7,Born A King,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,grafton,7,Office Jim,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,1,Texas Holdem,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,2,Dandruff,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,4,Fabalot,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,4,Chains Of Honour,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,4,El Diez,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,5,Cleaver,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,5,Raise Your Sights,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,6,Carnamah,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-21,pakenham,6,Blood And Sand,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-23,taree,1,Ferrimo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-23,warren,2,All Too Zatso,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-24,canterbury,4,Maz Kanata,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-26,echuca,6,Australian Citizen,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,1,Alovelybrownhorse,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,1,Resolutions,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,2,Rising Renown,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,2,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,4,Mustang Harry,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,4,Fort Charles,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,casterton,4,Indian Doll,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-28,sale,7,Gimme A Buzz,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-07-30,bathurst,3,Careering Away,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-03,rosehill,6,Unanimous,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-04,sandown,1,Riding High,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-06,gundagai,3,Tornado Anwa,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-10,casino,5,Speedzone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,2,Auf Weidersehen,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,2,Diamondiferous,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,3,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,4,Crosshill,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,4,Tolemac,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-11,casterton,4,Johnny Buccaneer,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-15,terang,1,Crafty Boss,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-17,kembla-grange,7,Cotswolds,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-20,ballarat,3,Cool Charlie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-20,grafton,1,Max O Max,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-22,hawkesbury,3,Pro Velocity,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-22,hawkesbury,3,Crown Estate,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-23,geelong,3,Trinitys Doro,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-24,randwick,1,Smashing Eagle,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,1,Maserartie Bay,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,2,Buoyant,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,2,Chimed,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,2,Goondiwindi,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,4,Fabalot,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,4,Texas Holdem,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,4,Buffalo Bill,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,5,Historic,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,5,Indian Doll,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Stern Idol,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Bell Ex One,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Mighty Oasis,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Blandford Lad,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Blood And Sand,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Sky Hero,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-25,ballarat,6,Carnamah,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-29,newcastle,5,Tamar,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Aegipan,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Commandoro,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Forness,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Reward For Eric,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Completely Package,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Wandabyne,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Asuriito,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Consorting One,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-08-30,moruya,1,Downtown Bar,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-02,kempsey,1,Victor Bravo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-02,wellington,8,Taborca,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-10,muswellbrook,2,Star Of Kongo,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-10,muswellbrook,2,Tayla The Sailor,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-12,hawkesbury,3,Motorbike,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-12,lismore,4,Cacofonix,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-13,goulburn,6,Galactic Angel,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-15,bathurst,2,Tiffy,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-21,wagga,1,Chentileeno,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-22,flemington,2,Greta Moon,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-22,nowra,4,Kassicause,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-24,leeton,1,Plastun,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-27,coleraine,6,French Moon,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-09-29,port-macquarie,6,Commander Bell,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-01,grafton,6,Sixfootone,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-01,grafton,6,Endless River,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-03,ballarat,2,The Praised One,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-04,warrnambool,3,Squander,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-06,ballina,7,Al Ash Lad,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-06,cootamundra,8,Feng,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-08,goulburn,1,Bounty By Knight,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-11,cranbourne,5,Surfer John,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-12,forbes,1,Merry More,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-12,forbes,2,Alaskan Aura,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-12,kembla-grange,7,Empress Of Japan,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-18,moe,7,Seb Song,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-19,randwick,6,Think About It,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-23,geelong,7,Unusual Legacy,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-24,ballarat,3,Knight Of Wands,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-25,moonee-valley,3,Farhh Flung,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-25,moonee-valley,3,Piaggio,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-26,armidale,2,Pleasing Surprise,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-26,kembla-grange,1,Damona Goddess,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-10-26,st-arnaud,1,Girlpower,Breednet only,not in Betfair market (Breednet position 3)
+2024-10-28,quirindi,3,Maven,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-02,traralgon,4,Suddenly,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-08,hamilton,5,Inherently,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-14,port-macquarie,2,Solarosa,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-14,quirindi,6,Myalaby,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-19,scone,6,Zippo Idea,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-21,hawkesbury,2,Defying,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-21,hawkesbury,2,Exolent Choice,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-21,hawkesbury,4,Rebel Rhapsody,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-21,hawkesbury,4,Sweet Heaven,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-21,hawkesbury,4,Piankhi,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-22,moonee-valley,6,Pianist,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-23,cranbourne,6,Ceerseven,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-23,penshurst,4,Mylitlestarthatcan,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-23,wyong,7,Nymphadora,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-26,ararat,6,Chevalier Du Fau,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-11-28,caulfield,4,Rah Rah Rasputin,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-02,sapphire-coast,7,Skaifee,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-05,geelong,2,Chocolate Box,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-05,geelong,2,Draw Attention,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-06,moonee-valley,8,Royal Rosie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-07,gunnedah,7,Red Impulse,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-09,tuncurry,5,Outback Archie,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-11,wyong,2,Avoid Me,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-12,kyneton,1,Knight Of Wands,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-12,kyneton,4,Gold Relay,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-14,benalla,5,Super View,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-18,queanbeyan,2,Tomcat Flowers,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-21,pakenham,10,Global Harmony,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-22,sale,7,What A Journey,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-27,mornington,5,Rah Rah Rasputin,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-28,randwick,8,Ring Me Up,Betfair only,not in Breednet result: late scratching or name mismatch
+2024-12-29,port-macquarie,1,Orphan Ellie,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-01,flemington,6,Muramasa,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-07,taree,5,Nights Inferno,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-07,taree,6,Petroglyph,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-12,nowra,2,Debello,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-12,nowra,5,Battle Fleet,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-13,muswellbrook,6,Cunning Kitty,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-17,moruya,6,Blesstas,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-17,moruya,6,Rockathon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-17,moruya,6,The Boomerang,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-18,cranbourne,6,Party Whip,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-19,mornington,4,Chicago King,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-19,mornington,8,Eye For An Eye,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-24,kilmore,6,Sabar,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-24,queanbeyan,3,Wandaye,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-25,randwick,9,Step Aside,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-25,randwick,9,Shihab,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-29,kembla-grange,4,Footstepsonthemoon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-30,scone,6,Nimble Star,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-01-31,canterbury,4,Little Baia,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-07,colac,1,Poems,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-08,gilgandra,4,Gypsy Mountain,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-15,randwick,2,Night Patra,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-22,rosehill,2,Withstand,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-26,sandown,3,Flamboyant Lad,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-02-28,terang,4,Spaghetti Sauce,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-07,ballarat,3,Paythebelievers,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-08,randwick,6,Shelby Sixtysix,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-09,tamworth,6,Time Ruler,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-10,warrnambool,1,Red Zinnia,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-17,taree,6,Petroglyph,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-18,hawkesbury,3,Crown Estate,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-21,scone,7,Red Rags To Bulls,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-22,rosehill,8,Within The Law,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-25,ballarat,2,Prince Magnetite,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-28,warrnambool,3,Instigator,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-03-28,wellington,5,Unowho,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-04,cranbourne,4,Pray Day,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-06,ballarat,1,Hezafox,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-06,ballarat,1,Whiskey Tango,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-06,ballarat,1,Best Scenario,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-06,ballarat,2,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-12,queanbeyan,5,Denali Kai,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-13,pakenham,1,Valley Forge,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-13,pakenham,1,Whiskey Jack,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-13,pakenham,1,Zedstar,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-13,pakenham,1,The Vocalist,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-13,pakenham,3,Affluential,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-17,albury,6,Secret Glamour,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-19,moruya,6,Sassen,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-23,newcastle,8,Lets Go Johnny,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-24,pakenham,8,Imarichgirl,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-26,horsham,3,Rebels Idol,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-29,warrnambool,3,Balnarring Beach,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-29,warrnambool,3,Best Scenario,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-29,warrnambool,6,Leaderboard,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-29,warrnambool,6,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-30,warrnambool,4,Nelson,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-04-30,warrnambool,4,Aquileon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-01,warrnambool,7,Heir To The Throne,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-01,warrnambool,7,Freddy The Eagle,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-02,muswellbrook,3,Hesthechief,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-03,hawkesbury,1,Herb,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-04,sale,3,Big Dreamer,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-06,kembla-grange,4,This Is The Moment,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-08,goulburn,7,Spencers Spirit,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-09,grafton,1,Solar Power,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,1,Balinor,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,2,Hezafox,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,2,Summerhill,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,3,Alakahan,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,5,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-18,casterton,5,Flying Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-19,horsham,4,Mandino,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-21,sandown,2,Lonstar,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-24,randwick,2,Shehasattitude,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-27,albury,3,Rockini,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-29,gosford,8,Beluga Express,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-31,werribee,5,I Am Geronimo,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-05-31,werribee,5,My Boy Nick,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-01,sandown,2,Treasured Crown,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-01,sandown,2,Dr Dependable,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-01,sandown,4,Pure Deal,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-01,sandown,5,El Diez,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-02,warren,9,Thats Better,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-05,geelong,3,Wollemia Angel,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-09,grafton,1,Wannawinwin,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-11,randwick,3,Sun God,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,1,Balinor,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,1,Dreamflight,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,1,Mana Combat,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,1,Rapid Impact,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,2,Alakahan,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,2,Aquileon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,2,Balnarring Beach,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,2,Custom Of The Sea,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,2,Mokele Mbembe,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,3,Flying Pierro,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-15,terang,3,Lord Goldberg,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-21,queanbeyan,6,Fairness Is Best,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-23,narromine,6,Bylong,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-27,moruya,4,Sassy Missile,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-28,caulfield,8,Rolls,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-28,caulfield,8,King Frankel,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-28,wodonga,8,Boho Miss,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,1,Buoyant,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,1,Mana Combat,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,1,Wayed To Go,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,2,Chimed,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,3,Count Zero,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-06-29,casterton,3,Aquileon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-05,rosehill,7,Fleet Commander,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-05,wangaratta,2,Aussie Adaptor,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-07,wagga,8,Three Earls,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-08,goulburn,3,Juliettes Joy,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-08,muswellbrook,4,Paris Tycoon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-09,canterbury,4,Investment,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-11,scone,3,Celestial Breeze,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-15,ballarat,2,Leica Bella,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-16,sandown,7,St Vincents Garden,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-19,rosehill,3,Pony Soprano,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,1,King Frankel,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,1,Slomo,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,1,Tewkesbury,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,3,Big Ess,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,4,Alakahan,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,4,Normandy Bridge,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,5,Dubai Moon,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,5,Sky Hero,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,5,Nassak Diamond,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-20,hamilton,6,Mustang Harry,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-24,corowa,3,Not The Chops,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-26,caulfield,5,Quoin,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-27,casterton,2,Gambu,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-27,casterton,4,Pressfal,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-07-28,pakenham,7,Socially Sassy,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-02,hamilton,4,Usk Valley,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-03,sandown,4,The Cunning Fox,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-03,sandown,6,Aloysius,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-10,coleraine,1,Luckyheleft,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-10,coleraine,1,Amarantz,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-10,coleraine,1,Flying Witness,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-10,coleraine,2,King Frankel,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-10,coleraine,4,Carnamah,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-12,bairnsdale,5,Absolute Deel,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,1,Hes A Tiger,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,2,Tapa Capall,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,3,Golden Garden,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,4,Fabalot,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,4,Chains Of Honour,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,4,Farag,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,5,Field Of Lights,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,6,Noonday Gun,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-17,ballarat,6,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-18,casino,8,Torque Ti Amo,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-20,warwick-farm,5,American Starlet,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-25,scone,4,Cascan,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-29,gosford,7,Etude,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-29,pakenham,5,Typhoon Tony,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-08-30,rosehill,6,Tyreek,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-01,ballarat,5,Pharoahs Daughter,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-01,port-macquarie,4,Rock The Joint,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-12,geelong,2,Inquisitor,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-14,kilmore,4,Extreme Ally,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-15,hamilton,3,Wheres My Sock,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-18,mornington,6,Lims Smythe,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-19,ballarat,5,Saint Winifred,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-20,caulfield,8,Chorlton Lane,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-22,narromine,2,Bush Letter,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-22,narromine,6,Girrawheen,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-25,geelong,6,Weekend Lover,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-25,goulburn,4,Lovehunter,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-26,benalla,4,Mrs Secombe,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-27,gunnedah,6,Discreet Miss,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-30,grafton,4,Miss Chamonix,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-09-30,tamworth,1,Love You Anyway,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-02,newcastle,5,Florida Sky,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-06,muswellbrook,1,Dame Schwarzkopf,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-07,goulburn,3,Kenker,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-08,randwick,8,Big Opinion,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-10,canberra,4,Common Goal,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-12,bairnsdale,1,Far From A Cry,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-13,scone,5,Tootony,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-14,armidale,3,Graphic Image,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-20,echuca,7,Bon Shadow,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-10-26,port-macquarie,6,Last Bid Liam,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-01,dubbo,5,Naval Officer,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-01,randwick,10,Polyglot,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-04,flemington,9,Shes Got Pizzazz,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-04,kembla-grange,6,Mission Bravo,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-04,kembla-grange,7,King Charles,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-13,port-macquarie,3,Feelen Corny,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-15,newcastle,5,Rapbidash,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-16,donald,5,Solar Mist,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-16,wellington,1,Bedda Mia,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-26,wyong,6,Shambretta,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-28,muswellbrook,5,Spenzalot,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-28,wodonga,6,Dark Journey,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-30,warrnambool,4,Palace Green,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-11-30,warrnambool,5,Matthew Mark,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-05,cranbourne,3,Secret Elegance,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-06,ballarat,4,Angland,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-12,geelong,6,Thunder Point,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-16,terang,3,Dioscuri,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-17,warwick-farm,1,Ichiban Koji,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-18,seymour,3,Carry Trade,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-22,tamworth,2,Takethemoneyandrun,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-27,kerang,1,Black Rutile,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-30,corowa,5,Hot Toddy,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-31,nowra,2,Skiing,Betfair only,not in Breednet result: late scratching or name mismatch
+2025-12-31,warrnambool,8,Van Roy,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-04,stawell,1,MacAverty,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-12,werribee,2,Lunar Dream,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-18,wangaratta,5,Explosive Rosie,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-19,albury,3,Tycoon Artie,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-23,pakenham,7,Cannonball,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-23,port-macquarie,4,Immortelle,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-23,port-macquarie,7,Miss Rebel,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-24,parkes,3,Imasuperstar,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-26,hanging-rock,4,Gold Relay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-28,kembla-grange,5,Cap Dail,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-30,bathurst,1,Sharbino,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-01-31,sapphire-coast,1,Bombay Boom,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-01,werribee,4,Podente,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-02,dubbo,2,Kobold,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-03,seymour,3,Zoumania,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-07,kembla-grange,8,Dufresne,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-10,wyong,1,Red Deer,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-14,newcastle,4,Arctic Bright,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-14,orange,2,Earlington,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-18,caulfield,7,Kyle,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-20,cranbourne,3,Cool Victory,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-02-21,tuncurry,2,Petroglyph,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-06,dubbo,8,Torendosetta,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-06,newcastle,8,How Much Better,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-07,gunnedah,2,Cmon Donkey,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-07,randwick,7,Raging Force,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-08,muswellbrook,6,Harbour Gold,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-11,sandown,8,Champagne Jenni,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-14,gosford,3,Riga,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-15,swan-hill,7,Absolute Deel,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-23,ballina,2,Kairos Louie,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-26,warrnambool,2,Lucania,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-03-28,rosehill,5,Arcora,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-04,caulfield,5,Ethereum Girl,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-04,wyong,1,Oakfield Peewee,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-04,wyong,7,Radiant Tier,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-07,hamilton,1,Privileged Son,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-07,hamilton,1,Yellowtwinkletoes,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-07,hamilton,1,Lucania,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-07,hamilton,2,Zweig,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-10,wellington,8,Check Your Six,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-11,ballina,5,Decarbonise,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-11,randwick,2,Siragusa,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-12,swan-hill,1,Cortain,Breednet only,not in Betfair market (Breednet position 6)
+2026-04-12,wellington,6,Toes In The Water,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,1,Fathers Day,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,1,Lodbrok,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,1,Red Aces,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,2,Cherokee Brave,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,3,Eye For An Eye,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,4,Not Usual Dream,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,4,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-19,terang,5,Field Of Lights,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-21,taree,7,Gone To Cape York,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-22,geelong,8,Sorel Rising,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-27,goulburn,6,Smolenski,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-28,mornington,7,Montgomery Bay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-04-29,kembla-grange,2,Winters Kiss,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-05,warrnambool,1,Rocket Lad,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-05,warrnambool,3,Malborough Bay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-07,warrnambool,7,Count Zero,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-07,warrnambool,7,Bazini,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-07,warrnambool,7,Raise The Note,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-08,canberra,6,Button Up,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-11,quirindi,7,Whispering Muriel,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-13,randwick,1,Princely Edition,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-15,scone,2,Moonlight Odyssey,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-17,casterton,1,Shamarkand,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-17,casterton,2,Point Nepean,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-17,casterton,4,The Mighty Spar,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-31,sandown,1,Intuitu,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-05-31,sandown,4,Count Zero,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-04,wagga,1,Reds Express,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-05,taree,3,Kiwi Harmony,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-06,swan-hill,5,Danzagrunt,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-11,seymour,5,Ideelistic,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-12,bairnsdale,5,The Tazwegian,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,1,Mash And Gravy,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,3,Charlie Messy Hair,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,3,Last Card Louie,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,3,Lucky Chance,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,3,Slomo,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-14,warrnambool,4,Not Usual Dream,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-16,ballarat,7,Sierra Dee Jay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-23,taree,1,Gunshots,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-06-28,warrnambool,1,The Claimant,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-02,hawkesbury,6,Bernen Win,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-03,ballarat,1,Autumnheat,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,1,Thinking Sensation,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,1,Where's Poppy,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,1,Pacific Jewel,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,1,Dartboard,Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,1,Dusty's Deel,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,1,Elphaba,Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,1,The Bantam,Breednet only,not in Betfair market (Breednet position 8)
+2026-07-03,ballarat,1,Dandruff,Breednet only,not in Betfair market (Breednet position 9)
+2026-07-03,ballarat,2,Princess Toro,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,2,Corretto,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,2,Only Opera,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,2,Isle Aroha,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,2,An Poitin Still (NZ),Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,2,La Reel Deal,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,2,Key To Victory,Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,6,Gunnah's Conker,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,6,Nicconi/Chandon Apparel 2023,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,6,Thekingspalace,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,6,Aurora Mink,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,6,Fire In Your Heart,Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,6,Burrow,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,6,Diamond Burglar,Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,6,Istvan (NZ),Breednet only,not in Betfair market (Breednet position 8)
+2026-07-03,ballarat,6,Mistadeel,Breednet only,not in Betfair market (Breednet position 9)
+2026-07-03,ballarat,6,Sonny Cyclone,Breednet only,not in Betfair market (Breednet position 10)
+2026-07-03,ballarat,7,Sonic Bolt,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,7,Shanghai Express,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,7,Star Of Naantali,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,7,Massalia,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,7,Chromedome,Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,7,Rakiynn,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,7,Highly Regarded (NZ),Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,7,Peltre,Breednet only,not in Betfair market (Breednet position 8)
+2026-07-03,ballarat,7,Naughty Jamie,Breednet only,not in Betfair market (Breednet position 9)
+2026-07-03,ballarat,8,Miss Pantera,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,8,Yakapna,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,8,Ice Ice Daisy,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,8,She's Loaded,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,8,Titus Augustus,Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,8,Smart Eddie,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,8,Pretty Pnina,Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,8,Squamosa/Biancommand 2021,Breednet only,not in Betfair market (Breednet position 8)
+2026-07-03,ballarat,8,Squamosa/Demon Maggie 2020,Breednet only,not in Betfair market (Breednet position 9)
+2026-07-03,ballarat,9,Havana Moon,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-03,ballarat,9,Bozza,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-03,ballarat,9,Wunderlust,Breednet only,not in Betfair market (Breednet position 3)
+2026-07-03,ballarat,9,Aurum Star,Breednet only,not in Betfair market (Breednet position 4)
+2026-07-03,ballarat,9,Ferradura,Breednet only,not in Betfair market (Breednet position 5)
+2026-07-03,ballarat,9,Mysterious Master,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,9,Mysterious Master,Breednet only,not in Betfair market (Breednet position 6)
+2026-07-03,ballarat,9,Prestige Fantastic,Breednet only,not in Betfair market (Breednet position 7)
+2026-07-03,ballarat,9,The Cleaning Maid,Breednet only,not in Betfair market (Breednet position 8)
+2026-07-03,ballarat,9,Brother Bear,Breednet only,not in Betfair market (Breednet position 9)
+2026-07-03,ballarat,9,Barbie Piranha,Breednet only,not in Betfair market (Breednet position 10)
+2026-07-03,ballarat,9,Press Statement/Soul Secrets 2020,Breednet only,not in Betfair market (Breednet position 11)
+2026-07-05,casterton,1,Kawhia,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-05,casterton,2,Hula Beat,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-05,casterton,3,Not Usual Dream,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-05,casterton,3,Karburan,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-09,sale,7,Too Tough,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-09,taree,5,Gold Something,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-09,taree,5,Hardash,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-11,caulfield,5,Sir Atlas,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-12,hamilton,1,Shogun Express,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-12,hamilton,1,Slomo,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-12,hamilton,3,Malborough Bay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-12,hamilton,3,Mana Combat,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-12,hamilton,3,Last Card Louie,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-18,rosehill,5,Sounds Unusual,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-19,coleraine,1,Mash And Gravy,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-19,coleraine,3,Karburan,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-07-28,swan-hill,1,Ellie's Song,Breednet only,not in Betfair market (Breednet position 1)
+2026-07-28,swan-hill,1,Bower Boy,Breednet only,not in Betfair market (Breednet position 2)
+2026-07-28,swan-hill,1,Muppet,Breednet only,not in Betfair market (Breednet position 3)
+2026-08-01,gilgandra,3,Outback Cod,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-02,sandown,4,The Mighty Spar,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-08,kembla-grange,7,Hammering Away,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-09,casterton,1,Brynner,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-09,casterton,3,Lucky Chance,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-14,taree,3,Zenmode,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,1,Omeo,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,2,Frank Express,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,2,Palentino Heights,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,2,Royal Gala,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,2,Zikron,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,3,Thurmond,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,5,Charlie Messy Hair,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,5,Broadfield,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,6,Golden Garden,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-16,ballarat,6,The Mighty Spar,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-23,narromine,2,Windsor Road,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-24,pakenham,9,Urban Outlook,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-28,gosford,8,Remember Jack,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-29,grafton,5,Koojan,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-08-30,echuca,3,Apache Sunrise,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-06,moree,8,Dehorned Unicorn,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-12,rosehill,4,Bold Mac,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-14,hamilton,5,Glove Artist,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-21,narromine,2,Wootton Please,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-22,leeton,7,Martha Lavinia,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-23,geelong,7,Gold Relay,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-25,coleraine,2,Lady Colonist,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-09-25,coleraine,2,Sundaytoofaraway,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-01,warrnambool,2,Reddivo,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-04,ballina,7,Perfect Beth,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-08,orange,7,Inyun,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-08,orange,7,Share the Joy,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-09,cranbourne,6,Hydrothermal,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-11,coonamble,4,Yorkel,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-15,warrnambool,3,Monsoon Indi,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-16,bathurst,8,Violet And Blue,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-16,bathurst,8,Missile Defence,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-16,bathurst,8,Beauty Edge,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-17,caulfield,9,Half Yours,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-17,caulfield,9,Ohope Wins,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-21,geelong,1,The Claimant,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-23,scone,7,La Potenza,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-25,coonabarabran,5,Midnight In Minori,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-31,dubbo,9,Nannu,Betfair only,not in Breednet result: late scratching or name mismatch
+2026-10-31,flemington,8,Pondalowie,Betfair only,not in Breednet result: late scratching or name mismatch

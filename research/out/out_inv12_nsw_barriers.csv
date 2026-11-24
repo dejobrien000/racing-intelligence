@@ -1,0 +1,16 @@
+split,group,draw,runs,horses,win_%,A/E,lo95,hi95
+all,-,inside third,34601,5918,12.7,1.22,1.18,1.25
+all,-,middle third,28284,5757,12.1,1.17,1.13,1.21
+all,-,outside third,31845,5795,11.5,1.11,1.07,1.14
+usual running style,usually leads/on pace,inside third,4354,1725,15.2,1.45,1.35,1.57
+usual running style,usually leads/on pace,middle third,3484,1575,14.0,1.34,1.22,1.46
+usual running style,usually leads/on pace,outside third,3609,1569,14.1,1.36,1.24,1.48
+usual running style,handy,inside third,10102,3459,13.5,1.29,1.22,1.36
+usual running style,handy,middle third,8152,3259,12.9,1.25,1.18,1.33
+usual running style,handy,outside third,9422,3466,12.5,1.21,1.14,1.28
+usual running style,midfield,inside third,10581,3426,11.4,1.11,1.05,1.18
+usual running style,midfield,middle third,8833,3160,10.9,1.06,0.99,1.13
+usual running style,midfield,outside third,9989,3250,10.2,0.99,0.93,1.05
+usual running style,back,inside third,3289,1501,9.6,0.93,0.83,1.04
+usual running style,back,middle third,2650,1317,9.4,0.9,0.79,1.02
+usual running style,back,outside third,3061,1380,8.0,0.78,0.68,0.88

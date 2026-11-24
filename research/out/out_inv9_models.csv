@@ -1,0 +1,13 @@
+model,term,odds_ratio,lo95,hi95,p,runs
+"A: basic (as R9), all runs",top_l600,1.1,0.97,1.24,0.1431,44588
+"A: basic (as R9), all runs",step_up,0.84,0.78,0.91,0.0,44588
+"A: basic (as R9), all runs",top_l600:step_up,1.29,1.05,1.59,0.0166,44588
+"B: basic, complete-data subset",top_l600,1.09,0.96,1.24,0.1902,42131
+"B: basic, complete-data subset",step_up,0.87,0.8,0.94,0.0006,42131
+"B: basic, complete-data subset",top_l600:step_up,1.25,1.01,1.55,0.0417,42131
+"C: adjusted for class move, race strength, venue, distance, settling, days, tempo",top_l600,1.29,1.13,1.47,0.0002,42131
+"C: adjusted for class move, race strength, venue, distance, settling, days, tempo",step_up,0.9,0.83,0.98,0.0184,42131
+"C: adjusted for class move, race strength, venue, distance, settling, days, tempo",top_l600:step_up,1.21,0.98,1.51,0.0793,42131
+"C2: as C, clustered by next race",top_l600,1.29,1.13,1.47,0.0002,42131
+"C2: as C, clustered by next race",step_up,0.9,0.84,0.98,0.0108,42131
+"C2: as C, clustered by next race",top_l600:step_up,1.21,0.97,1.52,0.0869,42131

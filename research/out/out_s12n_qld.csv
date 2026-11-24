@@ -1,0 +1,3 @@
+comparison,gain,lo95,hi95,top_diff,fit_%,top_%
+combined_v1 + national dyn vs combined_v1 + Qld-only dyn,0.0059,0.0011,0.0105,0.3,,
+combined_v1 + national dyn vs combined_v1,0.0248,0.0178,0.0322,1.1,7.51,23.6

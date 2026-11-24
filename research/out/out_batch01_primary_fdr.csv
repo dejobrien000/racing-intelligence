@@ -1,0 +1,7 @@
+test,p,q_BH,passes_10pct_FDR
+1 B1 figure adds to baselines,0.001,0.002,True
+2 B2 interactions (logistic),0.36,0.432,False
+3 B2 interactions (trees),0.686,0.686,False
+4 B3 NSW step-up,0.0149,0.0224,True
+5 B4 Qld 2kg drop,0.0001,0.0003,True
+6 B4 NSW 2kg drop,0.0001,0.0003,True

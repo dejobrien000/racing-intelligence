@@ -1,0 +1,33 @@
+{
+ "frozen_utc": "2026-11-24T12:11:12.734828+00:00",
+ "plan": "batch05_plan.md",
+ "plan_sha256_16": "2337c96dbab4d3bb",
+ "base": "benchmarks/candidates_b4_national/manifest.json (offset)",
+ "records": {
+  "definition": "sum of earlier innovations of the national rating with the same key / (n + k)",
+  "k": 1,
+  "keys": {
+   "c_rec": "course configuration",
+   "g_rec": "going band",
+   "d_rec": "distance band"
+  }
+ },
+ "added_coefficients_per_dev_sd": {
+  "c_rec": 0.04290580833234655,
+  "g_rec": 0.04183669347231444,
+  "d_rec": 0.02888296042670497
+ },
+ "raw_dev_sd_after_race_centring": {
+  "c_rec": 1.8201285277589367,
+  "g_rec": 1.942663034251533,
+  "d_rec": 1.9253560641789742
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "e2f8f5c4cecbfae3",
+  "dyn_rating.py": "df96739bf4d7e5b9",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5",
+  "hier_tools.py": "cfb0967420edb60a",
+  "freeze_b5_records.py": "95807542f4468bf6"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit"
+}

@@ -1,0 +1,81 @@
+{
+ "name": "combined_v1",
+ "frozen_utc": "2026-11-24T06:20Z",
+ "description": "Batch 2 combined within-race conditional logit, all six evidence groups. Research benchmark only, not a production model.",
+ "model": "statsmodels ConditionalLogit, inputs race-centred and scaled by development sd, missing set to race average with flags",
+ "development": "Queensland tracked races before 2025-01-01 (4,652 races)",
+ "scored_on": "2025-01-01 to 2026-11-23 (4,730 races); chronological out-of-sample, not independent",
+ "result_at_freeze": {
+  "fit_pct": 6.4,
+  "top_pick_pct": 22.5,
+  "simple_form_fit_pct": 4.78,
+  "simple_form_top_pick_pct": 20.1
+ },
+ "groups": {
+  "F simple form": [
+   "f_avgfp3",
+   "f_lastfp",
+   "f_lastlm",
+   "f_cwin",
+   "f_lstarts",
+   "missform"
+  ],
+  "A ability and opposition": [
+   "a_avg3",
+   "a_best3",
+   "a_fs3",
+   "a_wt_rel",
+   "missfig"
+  ],
+  "S sectional": [
+   "s_gap600_last",
+   "s_gap600_avg3",
+   "s_top3_last",
+   "s_gap200_last",
+   "s_fsp_last",
+   "misssec"
+  ],
+  "P race shape": [
+   "p_style",
+   "p_leader",
+   "p_relbar",
+   "missstyle",
+   "p_bar_x_style",
+   "p_lead_x_press",
+   "p_lone"
+  ],
+  "T track and distance": [
+   "t_trk_starts",
+   "t_trk_win",
+   "t_db_starts",
+   "t_db_win",
+   "t_td_starts",
+   "t_td_win",
+   "t_going",
+   "t_dchange",
+   "t_dchange_abs",
+   "missgoing"
+  ],
+  "R fitness and recency": [
+   "r_debut",
+   "r_firstup",
+   "r_7_13",
+   "r_28_59",
+   "r_quick",
+   "r_prep",
+   "r_ldays"
+  ]
+ },
+ "rating_build": "python3 rating_v0.py runs.parquet runs_rated_dev.parquet --fit-until=2024-12-31",
+ "feature_build": "python3 features.py runs_rated_dev.parquet ../history/history.duckdb features.parquet",
+ "sha256": {
+  "rating_v0.py": "8a8d82735bcf7ce0e6e636bd36701b64f9c0b8c07013361966dca37e18ab824a",
+  "features.py": "6248b368bf1985100d0737fc720c7c0e80ca0a2e4f26278241234789be19511a",
+  "clogit_tools.py": "f24c1710bd4e5e0146ad1fe29abae99e0496c598c9e59ddc63f2410aa75f2aa0",
+  "inv18_evidence_groups.py": "4f3f699995e2a8088c3c377d6187f5448e4455e76295b5180a65cd65c77a3143",
+  "runs.parquet": "50d2dd23c68f6aa35abb790d2f019f9cb7693ef0ef515689b695f0559ef84695",
+  "runs_rated_dev.parquet": "5e386c249f21af32e3138431dec767005afb13168b06973789af4a4287ec785a",
+  "features.parquet": "50cd4b03e2f6b9ed794a4f4f56e9166cccb99dc131b3800d771354df91f72d03",
+  "batch02_plan.md": "6a3370ec4269fec1eb52fa2973073d165d6478d196a9d72d8f0005fc1ff2874e"
+ }
+}

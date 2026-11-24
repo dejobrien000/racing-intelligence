@@ -1,0 +1,7 @@
+metro races only,races,fit_gain_per_race,lo95,hi95
+Full vs Full - A ability and opposition,1289,0.026,0.0134,0.0382
+Full vs Full - S sectional,1289,-0.0011,-0.006,0.0042
+Full vs Full - P race shape,1289,0.0068,0.0008,0.0127
+Full vs Full - T track and distance,1289,-0.0102,-0.0164,-0.0041
+Full vs Full - R fitness and recency,1289,0.0056,0.0023,0.0094
+Full vs F,1289,0.0257,0.0082,0.0422

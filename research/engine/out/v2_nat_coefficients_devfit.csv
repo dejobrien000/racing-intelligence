@@ -1,0 +1,81 @@
+term,coef_per_sd
+j_surp,0.1269
+t_surp,0.1824
+jt_surp,0.0155
+j_change,0.0135
+age_n,-0.1634
+young,0.0729
+old,0.0064
+female,0.0362
+h2h,0.049
+abs_dist_change,-0.0298
+dist_change,-0.0126
+dyn_traj,-0.0103
+surprise_last,-0.0348
+bm_change,-0.0346
+wt_change,0.0404
+t_surp x vic,0.032
+j_surp x vic,0.0243
+j_surp x route,0.0072
+age_n x vic,0.0104
+t_surp x wet,-0.0065
+t_surp x route,-0.0302
+age_n x route,0.0244
+j_surp x wet,-0.0077
+age_n x wet,0.0218
+j_surp x big_field,0.0157
+t_surp x big_field,-0.0022
+j_surp x metro,0.0105
+age_n x big_field,0.0078
+t_surp x metro,0.0021
+age_n x metro,-0.0261
+j_surp x t_surp,-0.0076
+j_surp squared,0.032
+t_surp x age_n,-0.0036
+age_n squared,-0.0651
+f_lstarts x t_surp,-0.0149
+j_surp x age_n,-0.0001
+f_avgfp3 x j_surp,-0.0036
+f_avgfp3 x age_n,0.0047
+f_lstarts x j_surp,-0.0068
+dist_change squared,-0.0199
+dyn_nat x age_n,-0.0019
+dyn_nat x j_surp,-0.0096
+f_lstarts x a_fs3,0.0426
+a_best3 x age_n,0.0015
+a_best3 x t_surp,0.0135
+f_avgfp3 x t_surp,-0.0296
+surprise_last x dyn_traj,0.0451
+r_ldays x dist_change,0.0125
+dyn_traj x j_surp,0.0106
+dyn_nat x a_wt_rel,-0.0247
+dyn_traj x t_surp,0.0015
+surprise_last x age_n,-0.009
+surprise_last x t_surp,0.0074
+dyn_traj x age_n,0.0139
+dyn_nat x t_surp,-0.0261
+f_avgfp3 x a_wt_rel,-0.0169
+a_best3 x a_wt_rel,-0.0233
+f_lstarts squared,-0.0404
+a_fs3 x surprise_last,-0.0008
+r_ldays x t_surp,0.0379
+h2h x j_surp,-0.0011
+r_ldays x age_n,-0.0354
+surprise_last x j_surp,-0.0032
+ability x field strength,-0.0428
+f_avgfp3 x year,0.064
+f_lstarts x age_n,-0.0028
+a_best3 x r_ldays,-0.027
+a_wt_rel x surprise_last,-0.0042
+dyn_nat x route,0.0421
+a_fs3 squared,0.0019
+a_wt_rel x dyn_traj,-0.0185
+dyn_nat x f_avgfp3,-0.0063
+a_best3 x j_surp,-0.0307
+r_ldays squared,-0.0048
+r_ldays x route,-0.0303
+r_ldays x surprise_last,-0.0309
+r_ldays x j_surp,0.0214
+a_wt_rel x j_surp,-0.0167
+a_fs3 x dyn_traj,0.0052
+t_surp x dist_change,0.0256

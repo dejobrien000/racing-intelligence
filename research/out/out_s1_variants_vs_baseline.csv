@@ -1,0 +1,17 @@
+sample,variant,chosen_on_development,races,top_pick_%,baseline_top_pick_%,top_pick_diff_pts,tp_lo95,tp_hi95,fit_%,baseline_fit_%,fit_gain_per_race,fit_lo95,fit_hi95,p_one_sided
+complete-figure races,V1_best3,False,1260,19.9,21.8,-1.9,-4.7,1.0,3.11,5.13,-0.0439,-0.0669,-0.0192,1.0
+complete-figure races,V2_last,False,1260,19.6,21.8,-2.2,-5.0,0.7,3.56,5.13,-0.034,-0.0578,-0.0074,0.991
+complete-figure races,V3_avg3,False,1260,20.4,21.8,-1.4,-4.3,1.5,3.88,5.13,-0.0272,-0.051,-0.0,0.975
+complete-figure races,V4_recency,True,1260,21.3,21.8,-0.5,-3.4,2.5,4.9,5.13,-0.0051,-0.0303,0.0236,0.642
+complete-figure races,V5_shrunk,False,1260,18.7,21.8,-3.2,-6.1,-0.2,2.96,5.13,-0.0472,-0.075,-0.0186,0.999
+complete-figure races,V6_opposition,False,1260,19.5,21.8,-2.3,-4.9,0.7,3.71,5.13,-0.0309,-0.0565,-0.004,0.981
+complete-figure races,V7_wfa,False,1260,20.6,21.8,-1.2,-4.0,1.8,3.84,5.13,-0.0279,-0.0523,-0.0011,0.977
+complete-figure races,V8_avg3_plus_weight,False,1260,19.9,21.8,-1.9,-4.7,1.2,4.14,5.13,-0.0215,-0.0462,0.0063,0.937
+all eligible races (missing flagged),V1_best3,False,4730,18.8,19.8,-1.0,-2.5,0.4,2.62,4.57,-0.0435,-0.0553,-0.032,1.0
+all eligible races (missing flagged),V2_last,False,4730,18.6,19.8,-1.2,-2.6,0.3,2.89,4.57,-0.0374,-0.0487,-0.0252,1.0
+all eligible races (missing flagged),V3_avg3,False,4730,20.2,19.8,0.4,-0.9,1.8,3.44,4.57,-0.0252,-0.0372,-0.0133,1.0
+all eligible races (missing flagged),V4_recency,True,4730,20.7,19.8,1.0,-0.5,2.4,4.17,4.57,-0.0089,-0.0213,0.0036,0.919
+all eligible races (missing flagged),V5_shrunk,False,4730,18.8,19.8,-1.0,-2.4,0.3,2.81,4.57,-0.0393,-0.0528,-0.0265,1.0
+all eligible races (missing flagged),V6_opposition,False,4730,19.3,19.8,-0.4,-1.8,1.0,3.13,4.57,-0.032,-0.0447,-0.0201,1.0
+all eligible races (missing flagged),V7_wfa,False,4730,20.2,19.8,0.4,-1.0,1.9,3.42,4.57,-0.0257,-0.0381,-0.014,1.0
+all eligible races (missing flagged),V8_avg3_plus_weight,False,4730,20.3,19.8,0.5,-0.9,1.8,3.83,4.57,-0.0164,-0.0301,-0.0042,0.992

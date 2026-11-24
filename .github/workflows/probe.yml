@@ -1,0 +1,32 @@
+name: probe-sources
+# Can GitHub's servers reach each data source with ordinary, honestly identified requests?
+# No browser impersonation, no custom Origin/Referer, no cookie replay. Results are committed to probe/results.txt.
+on:
+  push:
+    paths: ['.github/workflows/probe.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reachability
+        run: |
+          mkdir -p probe; OUT=probe/results.txt; : > $OUT
+          D=$(TZ=Australia/Brisbane date +%F); DS=$(TZ=Australia/Brisbane date +%Y%m%d)
+          UA="RacingIntelligence-private/0.1 (personal research; github.com/dejobrien000)"
+          echo "run_utc=$(date -u +%FT%TZ) runner_ip=$(curl -s -m 10 https://api.ipify.org)" >> $OUT
+          check() { r=$(curl -s -o /tmp/body -w '%{http_code}|%{size_download}|%{content_type}' -m 30 -A "$UA" "$1" 2>&1) || r="ERR $?"; echo "$2|$r|$(head -c 100 /tmp/body 2>/dev/null | tr -d '\n\r')" >> $OUT; }
+          check "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/$D/meetings?jurisdiction=NSW" "TAB meetings"
+          check "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/$D/meetings/R/GEL/races/1?jurisdiction=NSW" "TAB racecard"
+          check "https://www.racingqueensland.com.au/racing/full-calendar/thoroughbred/meeting/ipsw/$DS" "Racing Queensland"
+          check "https://mdata.racingnsw.com.au/FreeFields/Scratchings.aspx?Key=2026Nov25%2CNSW%2CWyong" "Racing NSW FreeFields"
+          check "https://www.breednet.com.au/race-meeting/geel/251126/1" "Breednet"
+          check "https://www.racing.com/" "racing.com"
+          cat $OUT
+      - name: Save results
+        run: |
+          git config user.name 'github-actions'; git config user.email 'github-actions@users.noreply.github.com'
+          git add probe/results.txt && git commit -m 'probe results' && git push

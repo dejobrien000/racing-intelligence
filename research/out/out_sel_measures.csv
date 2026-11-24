@@ -1,0 +1,8 @@
+measure,coef,p_value_2025,test_loglik_2026,gain_vs_top_chance_only
+(model top chance only),,,-0.5203,0.0
+gap,-1.552,0.11,-0.5204,-0.0002
+top_sd,-0.024,0.699,-0.5203,-0.0001
+share_new,0.814,0.003,-0.5199,0.0004
+share_full,-0.675,0.013,-0.5207,-0.0005
+agree,0.147,0.028,-0.5208,-0.0006
+reliability,1.266,0.014,-0.5188,0.0014

@@ -1,0 +1,7 @@
+model,term,odds_ratio,lo95,hi95,p,runs
+C on figure subset,top_l600,1.29,1.12,1.48,0.0005,36198
+C on figure subset,step_up,0.89,0.81,0.98,0.0161,36198
+C on figure subset,top_l600:step_up,1.26,1.0,1.6,0.0524,36198
+D: C + the run figure + pre-race best of last 3,top_l600,1.28,1.11,1.48,0.0006,36198
+D: C + the run figure + pre-race best of last 3,step_up,0.89,0.82,0.98,0.0181,36198
+D: C + the run figure + pre-race best of last 3,top_l600:step_up,1.24,0.98,1.58,0.0685,36198

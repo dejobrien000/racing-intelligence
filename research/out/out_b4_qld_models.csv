@@ -1,0 +1,11 @@
+model,term,odds_ratio,lo95,hi95,p,runs
+"Primary 5: adjusted (class change, figure, won, margin, next field)",drop2,0.78,0.716,0.85,0.0,49824
+"Primary 5: adjusted (class change, figure, won, margin, next field)",rise2,1.099,1.027,1.175,0.0062,49824
+unadjusted except margin and next field,drop2,0.825,0.757,0.898,0.0,49824
+unadjusted except margin and next field,rise2,1.131,1.058,1.209,0.0003,49824
+"handicaps only (next race), adjusted",drop2,0.759,0.69,0.836,0.0,36889
+"handicaps only (next race), adjusted",rise2,1.199,1.111,1.293,0.0,36889
+"weight x class move interaction, adjusted",drop2,0.702,0.567,0.87,0.0012,49824
+"weight x class move interaction, adjusted",drop2:C(class_move)[T.same class],1.109,0.873,1.408,0.3963,49824
+"weight x class move interaction, adjusted",drop2:C(class_move)[T.rises in class],1.225,0.946,1.586,0.1241,49824
+"weight x class move interaction, adjusted",rise2,1.104,1.032,1.183,0.0044,49824

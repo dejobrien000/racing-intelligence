@@ -1,0 +1,5 @@
+comparison,fit_gain_per_race,lo95,hi95,lo95_months,hi95_months,top_pick_diff_pts,tp_lo95,tp_hi95
+"dynamic opposition rating vs v0 figure, recency-weighted",0.016,0.0042,0.0271,0.0041,0.0292,-1.1,-2.4,0.2
+dynamic opposition rating vs simple form (avg finish last 3),0.0064,-0.0078,0.0211,-0.0129,0.0268,-0.1,-1.5,1.2
+"dynamic rating + PA1 figure vs PA1 pace-corrected figure, recency-weighted",0.0271,0.0183,0.0358,0.0188,0.036,0.6,-0.5,1.6
+combined_v1 + dynamic rating vs combined_v1,0.019,0.0132,0.025,0.0131,0.0247,0.8,-0.1,1.6

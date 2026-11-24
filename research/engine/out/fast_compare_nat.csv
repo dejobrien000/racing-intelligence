@@ -1,0 +1,5 @@
+model,races,fit_%,top_pick_%,winner_in_top3_%,order_rho,vs_M0_lp,vs_M0_lp_lo,vs_M0_lp_hi,vs_M0_hit,vs_M0_hit_lo,vs_M0_hit_hi,vs_M0_top3,vs_M0_top3_lo,vs_M0_top3_hi,vs_M0_rho,vs_M0_rho_lo,vs_M0_rho_hi
+M0 operational,16489,10.27,25.85,57.21,0.3557,,,,,,,,,,,,
+M1 faster rating,16489,10.25,26.08,57.21,0.3558,-0.00043,-0.00092,7e-05,0.24,0.05,0.41,0.0,-0.21,0.2,0.00013,-0.00054,0.00077
+M2 operational + surprise/trajectory,16489,10.29,25.88,57.21,0.3559,0.00059,7e-05,0.0011,0.03,-0.14,0.21,0.0,-0.22,0.18,0.00021,-0.00053,0.00081
+M3 faster rating + surprise/trajectory,16489,10.27,26.01,57.28,0.3559,9e-05,-0.00056,0.00075,0.16,-0.05,0.36,0.07,-0.15,0.29,0.00018,-0.00066,0.00099

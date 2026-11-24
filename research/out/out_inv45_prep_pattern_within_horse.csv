@@ -1,0 +1,4 @@
+comparison,horses_preps,mean_finish_pct_change,se,share_improved
+run 2 vs run 1 of prep,12038,-0.003,0.0034,0.479
+run 3 vs run 2 of prep,9628,0.0212,0.0039,0.452
+run 4 vs run 3 of prep,7397,0.0269,0.0046,0.454

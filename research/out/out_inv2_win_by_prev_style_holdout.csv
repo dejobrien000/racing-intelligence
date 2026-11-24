@@ -1,0 +1,5 @@
+prev_style,runs,wins,win_pct,expected_wins,A/E,A/E_lo95,A/E_hi95
+led last start,1516.0,201.0,13.3,162.6,1.24,1.07,1.42
+handy (top quarter),2543.0,323.0,12.7,265.8,1.22,1.09,1.36
+midfield,4513.0,505.0,11.2,470.3,1.07,0.98,1.17
+back,5781.0,546.0,9.4,600.7,0.91,0.83,0.99

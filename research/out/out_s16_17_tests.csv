@@ -1,0 +1,7 @@
+test,races,coef_per_sd,fit_gain_per_race,lo95_meetings,hi95_meetings,lo95_months,hi95_months,p_meetings,top_pick_diff_pts
+P5 16 horse-course record (Qld),4730,{'c_rec': np.float64(0.067)},0.00354,0.0017,0.00544,0.00181,0.00519,0.0,0.04
+P7 17 going + distance records (Qld),4730,"{'g_rec': np.float64(0.053), 'd_rec': np.float64(0.039)}",0.00272,0.0004,0.00494,0.00011,0.00538,0.006,-0.06
+sec home track (Qld),4730,{'at_home': np.float64(-0.005)},-3e-05,-0.0002,0.00014,-0.00019,0.00013,0.622,-0.15
+P6 16 horse-course record (NSW/Vic),16489,{'c_rec': np.float64(0.073)},0.00317,0.00207,0.00424,0.0017,0.00436,0.0,0.39
+P8 17 going + distance records (NSW/Vic),16489,"{'g_rec': np.float64(0.048), 'd_rec': np.float64(0.035)}",0.00189,0.00098,0.00277,0.00108,0.00276,0.0,0.24
+sec home track (NSW/Vic),16489,{'at_home': np.float64(0.003)},9e-05,5e-05,0.00014,4e-05,0.00014,0.0,-0.02

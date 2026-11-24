@@ -1,0 +1,4 @@
+model,out_of_sample_R2_%,gain_in_log_lik_per_race_vs_baselines,lo95,hi95,p_one_sided
+all baselines,5.71,0.0,0.0,0.0,
+baselines + best of 3,6.41,0.0152,0.0059,0.0241,0.001
+baselines + all three figure measures,6.54,0.0181,0.0035,0.0312,0.005

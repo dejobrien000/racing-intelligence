@@ -1,0 +1,18 @@
+split,group,races,figure_minus_form_fit_per_race
+tier,country,1596,-0.016
+tier,metro,1289,-0.0377
+tier,provincial,1845,-0.0244
+dist,1200-1450,2221,-0.0198
+dist,1500-1750,725,-0.0583
+dist,1800+,483,-0.0877
+dist,<=1150,1267,0.006
+going,Firm,4,-0.4358
+going,Good,2352,-0.0243
+going,Heavy,274,-0.0286
+going,Soft,2047,-0.024
+going,Synthetic,53,-0.0648
+maiden,False,3513,-0.0361
+maiden,True,1217,0.0062
+first-up share,few first-up,2067,-0.0457
+first-up share,some,1777,-0.013
+first-up share,many first-up,886,-0.0019

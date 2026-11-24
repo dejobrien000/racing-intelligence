@@ -1,0 +1,9 @@
+test,comparison,races,fit_gain_per_race,lo95_meetings,hi95_meetings,lo95_months,hi95_months,p_meetings,p_months,top_pick_diff_pts
+P1,D hierarchical (partial pooling) vs A pooled (combined_v1),4730,9e-05,-8e-05,0.00027,-8e-05,0.00028,0.121,0.172,-0.02
+P2,D hierarchical (partial pooling) vs C independent courses,4730,0.00104,-0.00048,0.00268,-0.00075,0.00296,0.095,0.125,-0.06
+P3,D hierarchical (partial pooling) vs A pooled (combined_v1),1289,0.00012,-0.0001,0.00034,-7e-05,0.00031,0.129,0.103,0.0
+P4,E hierarchical + course x distance vs D hierarchical (partial pooling),4730,7e-05,-7e-05,0.00021,-8e-05,0.00025,0.163,0.198,0.15
+P5,Rail hierarchical + rail x barrier vs D hierarchical (partial pooling),4730,0.00026,-0.00079,0.00138,-0.00101,0.00138,0.343,0.34,0.04
+sec,C independent courses vs A pooled (combined_v1),4730,-0.00095,-0.00279,0.00081,-0.00312,0.0011,0.855,0.831,0.04
+sec,E hierarchical + course x distance vs A pooled (combined_v1),4730,0.00017,-9e-05,0.00041,-0.00013,0.00046,0.104,0.156,0.13
+sec,Rail hierarchical + rail x barrier vs A pooled (combined_v1),4730,0.00036,-0.00083,0.0015,-0.0009,0.00166,0.26,0.31,0.02

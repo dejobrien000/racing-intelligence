@@ -1,0 +1,10 @@
+model,fit_%,top_pick_%
+F simple form alone,4.78,20.1
+A ability and opposition alone,3.76,20.0
+S sectional alone,2.33,17.3
+P race shape alone,0.59,14.0
+T track and distance alone,1.19,16.1
+R fitness and recency alone,0.29,12.1
+Full (all groups),6.4,22.5
+Stacked separate profiles,6.16,22.2
+"Trees (depth 2, 150 rounds)",6.39,22.0

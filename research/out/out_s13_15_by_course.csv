@@ -1,0 +1,71 @@
+study,course,dev_races,pooled_coef,dev_partial,sd,dev_independent,kept_%,clear_of_pool_95,indep_2022_23,indep_2024
+P1 13a course x going suitability,Doomben,731,-0.0,-0.029,0.026,-0.107,27.0,False,-0.075,-0.123
+P1 13a course x going suitability,Eagle_Farm,623,-0.0,-0.006,0.027,-0.029,19.0,False,0.12,-0.106
+P1 13a course x going suitability,Ipswich,732,-0.0,-0.011,0.025,-0.033,33.0,False,-0.105,-0.005
+P1 13a course x going suitability,Ladbrokes_Cannon_Park,199,-0.0,0.001,0.029,0.016,8.0,False,0.149,-0.037
+P1 13a course x going suitability,Mackay,253,-0.0,-0.006,0.029,-0.068,9.0,False,-0.135,-0.061
+P1 13a course x going suitability,Rockhampton,183,-0.0,0.009,0.028,0.088,10.0,False,0.0,0.088
+P1 13a course x going suitability,Sunshine_Coast,924,-0.0,0.023,0.024,0.061,38.0,False,0.06,0.063
+P1 13a course x going suitability,Sunshine_Coast_Poly_Track,74,-0.0,0.001,0.03,0.035,3.0,False,0.0,0.035
+P1 13a course x going suitability,Toowoomba,647,-0.0,0.015,0.027,0.078,20.0,False,0.123,0.058
+P1 13a course x going suitability,Townsville,288,-0.0,0.001,0.028,0.01,14.0,False,-0.192,0.036
+P2 14a course x running position,Doomben,731,0.019,-0.013,0.041,-0.014,98.0,False,-0.036,0.008
+P2 14a course x running position,Eagle_Farm,623,0.019,-0.012,0.043,-0.012,98.0,False,-0.039,0.019
+P2 14a course x running position,Ipswich,732,0.019,-0.026,0.043,-0.027,98.0,False,-0.019,-0.036
+P2 14a course x running position,Ladbrokes_Cannon_Park,199,0.019,0.105,0.083,0.113,92.0,False,0.156,0.089
+P2 14a course x running position,Mackay,253,0.019,-0.026,0.071,-0.028,94.0,False,0.021,-0.049
+P2 14a course x running position,Rockhampton,183,0.019,-0.044,0.078,-0.047,93.0,False,0.0,-0.047
+P2 14a course x running position,Sunshine_Coast,924,0.019,-0.057,0.038,-0.058,98.0,False,-0.05,-0.071
+P2 14a course x running position,Sunshine_Coast_Poly_Track,74,0.019,0.054,0.123,0.065,83.0,False,0.0,0.065
+P2 14a course x running position,Toowoomba,647,0.019,0.073,0.045,0.075,98.0,False,0.086,0.063
+P2 14a course x running position,Townsville,288,0.019,0.117,0.067,0.123,95.0,False,0.052,0.141
+P3 14b course x pace pressure,Doomben,731,-0.025,-0.001,0.01,-0.018,7.0,False,-0.015,-0.019
+P3 14b course x pace pressure,Eagle_Farm,623,-0.025,-0.0,0.01,-0.001,4.0,False,-0.005,0.003
+P3 14b course x pace pressure,Ipswich,732,-0.025,0.003,0.01,0.046,5.0,False,0.007,0.071
+P3 14b course x pace pressure,Ladbrokes_Cannon_Park,199,-0.025,0.0,0.01,0.025,2.0,False,0.213,-0.12
+P3 14b course x pace pressure,Mackay,253,-0.025,-0.001,0.01,-0.045,1.0,False,-0.136,-0.018
+P3 14b course x pace pressure,Rockhampton,183,-0.025,0.0,0.01,0.003,2.0,False,0.0,0.003
+P3 14b course x pace pressure,Sunshine_Coast,924,-0.025,-0.002,0.01,-0.029,6.0,False,0.013,-0.107
+P3 14b course x pace pressure,Sunshine_Coast_Poly_Track,74,-0.025,0.001,0.01,0.21,0.0,False,0.0,0.21
+P3 14b course x pace pressure,Toowoomba,647,-0.025,-0.0,0.01,-0.013,4.0,False,-0.077,0.063
+P3 14b course x pace pressure,Townsville,288,-0.025,0.001,0.01,0.027,2.0,False,0.014,0.031
+P4 15a course x late speed,Doomben,731,0.052,0.007,0.026,0.029,25.0,False,0.092,-0.021
+P4 15a course x late speed,Eagle_Farm,623,0.052,0.017,0.027,0.082,21.0,False,0.155,0.018
+P4 15a course x late speed,Ipswich,732,0.052,-0.015,0.025,-0.051,29.0,False,-0.087,-0.015
+P4 15a course x late speed,Ladbrokes_Cannon_Park,199,0.052,-0.012,0.029,-0.122,10.0,False,-0.417,0.022
+P4 15a course x late speed,Mackay,253,0.052,-0.004,0.028,-0.038,12.0,False,-0.155,0.015
+P4 15a course x late speed,Rockhampton,183,0.052,-0.011,0.029,-0.116,9.0,False,0.0,-0.116
+P4 15a course x late speed,Sunshine_Coast,924,0.052,0.04,0.025,0.133,30.0,False,0.193,0.047
+P4 15a course x late speed,Sunshine_Coast_Poly_Track,74,0.052,0.003,0.029,0.08,4.0,False,0.0,0.08
+P4 15a course x late speed,Toowoomba,647,0.052,-0.026,0.026,-0.096,27.0,False,-0.115,-0.077
+P4 15a course x late speed,Townsville,288,0.052,-0.006,0.028,-0.052,12.0,False,-0.003,-0.065
+sec 13b course x going band x running position,Doomben|good,731,0.019,-0.0,0.01,-0.002,3.0,False,-0.035,0.043
+sec 13b course x going band x running position,Doomben|soft,731,0.019,-0.001,0.01,-0.031,2.0,False,-0.067,-0.009
+sec 13b course x going band x running position,Doomben|heavy,731,0.019,0.0,0.01,0.006,0.0,False,0.253,-0.194
+sec 13b course x going band x running position,Eagle_Farm|good,623,0.019,-0.001,0.01,-0.017,4.0,False,-0.068,0.07
+sec 13b course x going band x running position,Eagle_Farm|soft,623,0.019,0.0,0.01,0.037,1.0,False,0.149,-0.008
+sec 13b course x going band x running position,Eagle_Farm|heavy,623,0.019,-0.0,0.01,-0.319,0.0,False,0.0,-0.319
+sec 13b course x going band x running position,Ipswich|good,732,0.019,-0.0,0.01,-0.01,3.0,False,0.054,-0.1
+sec 13b course x going band x running position,Ipswich|soft,732,0.019,-0.001,0.01,-0.057,2.0,False,-0.211,0.059
+sec 13b course x going band x running position,Ipswich|heavy,732,0.019,-0.0,0.01,-0.02,0.0,False,0.068,-0.144
+sec 13b course x going band x running position,Ladbrokes_Cannon_Park|good,199,0.019,0.001,0.01,0.412,0.0,False,-0.009,0.758
+sec 13b course x going band x running position,Ladbrokes_Cannon_Park|soft,199,0.019,-0.0,0.01,-0.009,1.0,False,0.054,-0.04
+sec 13b course x going band x running position,Ladbrokes_Cannon_Park|heavy,199,0.019,0.0,0.01,0.315,0.0,False,1.146,-0.166
+sec 13b course x going band x running position,Mackay|good,253,0.019,-0.001,0.01,-0.039,2.0,False,0.021,-0.071
+sec 13b course x going band x running position,Mackay|soft,253,0.019,0.0,0.01,0.065,0.0,False,0.0,0.065
+sec 13b course x going band x running position,Mackay|heavy,253,0.019,0.0,0.01,0.0,,False,0.0,0.0
+sec 13b course x going band x running position,Rockhampton|good,183,0.019,0.0,0.01,0.086,0.0,False,0.0,0.087
+sec 13b course x going band x running position,Rockhampton|soft,183,0.019,-0.001,0.01,-0.07,1.0,False,0.0,-0.07
+sec 13b course x going band x running position,Rockhampton|heavy,183,0.019,-0.0,0.01,-0.131,0.0,False,0.0,-0.131
+sec 13b course x going band x running position,Sunshine_Coast|good,924,0.019,-0.004,0.01,-0.116,4.0,False,-0.119,-0.105
+sec 13b course x going band x running position,Sunshine_Coast|soft,924,0.019,0.002,0.01,0.099,2.0,False,0.115,0.08
+sec 13b course x going band x running position,Sunshine_Coast|heavy,924,0.019,-0.002,0.01,-0.214,1.0,False,0.511,-0.242
+sec 13b course x going band x running position,Sunshine_Coast_Poly_Track|good,74,0.019,0.0,0.01,0.065,1.0,False,0.0,0.065
+sec 13b course x going band x running position,Sunshine_Coast_Poly_Track|soft,74,0.019,0.0,0.01,0.0,,False,0.0,0.0
+sec 13b course x going band x running position,Sunshine_Coast_Poly_Track|heavy,74,0.019,0.0,0.01,0.0,,False,0.0,0.0
+sec 13b course x going band x running position,Toowoomba|good,647,0.019,0.002,0.01,0.055,4.0,False,0.076,0.026
+sec 13b course x going band x running position,Toowoomba|soft,647,0.019,0.002,0.01,0.215,1.0,False,0.18,0.228
+sec 13b course x going band x running position,Toowoomba|heavy,647,0.019,-0.0,0.01,-0.291,0.0,False,0.0,-0.291
+sec 13b course x going band x running position,Townsville|good,288,0.019,0.001,0.01,0.075,1.0,False,0.013,0.107
+sec 13b course x going band x running position,Townsville|soft,288,0.019,0.002,0.01,0.157,1.0,False,0.151,0.158
+sec 13b course x going band x running position,Townsville|heavy,288,0.019,0.0,0.01,0.0,,False,0.0,0.0

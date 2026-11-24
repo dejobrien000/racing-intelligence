@@ -1,0 +1,11 @@
+course,dev_races,eval_races,barrier_dev_D,barrier_dev_sd,barrier_dev_independent_C,shrinkage_kept_%,style_x_barrier_dev_D,style_dev_sd,inside_vs_outside_win_odds_midfield,departs_from_pool_95,D_vs_A_gain_per_race,lo95,hi95
+Sunshine_Coast,924,658,-0.001,0.017,0.002,-64.0,0.002,0.018,1.15,False,-0.0,-0.0002,0.0002
+Ipswich,732,593,0.001,0.018,0.008,6.0,0.001,0.018,1.16,False,-0.0,-0.0001,0.0001
+Doomben,731,638,0.007,0.018,0.066,11.0,0.003,0.018,1.18,False,0.0002,-0.0003,0.0006
+Toowoomba,646,533,-0.01,0.018,-0.079,13.0,-0.002,0.019,1.12,False,0.0001,-0.0008,0.001
+Eagle_Farm,623,651,-0.001,0.018,-0.015,5.0,-0.002,0.019,1.15,False,0.0,-0.0,0.0001
+Townsville,287,412,-0.001,0.019,-0.058,2.0,-0.004,0.019,1.15,False,-0.0002,-0.0004,0.0001
+Mackay,253,276,0.01,0.019,0.144,7.0,-0.004,0.019,1.19,False,0.0001,-0.0014,0.0015
+Ladbrokes_Cannon_Park,199,236,-0.008,0.019,-0.179,5.0,0.001,0.02,1.13,False,0.0006,-0.0008,0.0021
+Rockhampton,183,375,0.003,0.019,0.112,3.0,0.001,0.02,1.17,False,0.0004,0.0001,0.0007
+Sunshine_Coast_Poly_Track,74,53,0.001,0.02,,,0.001,0.02,1.16,False,0.0001,-0.0001,0.0004

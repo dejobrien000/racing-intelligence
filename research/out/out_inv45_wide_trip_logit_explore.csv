@@ -1,0 +1,5 @@
+term,Coef.,Std.Err.,P>|z|,odds_ratio
+Intercept,0.9008,0.1662,0.0,2.46
+I(ground_extra >= 8)[T.True],0.1127,0.037,0.0023,1.12
+np.log(margin_l + 0.5),-0.4524,0.0198,0.0,0.64
+np.log(next_field),-1.134,0.0722,0.0,0.32

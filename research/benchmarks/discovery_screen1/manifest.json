@@ -1,0 +1,440 @@
+{
+ "frozen_utc": "2026-11-24T13:27:18.973663+00:00",
+ "screen": "Discovery screen 1, Qld tracked races",
+ "design": "one term at a time on top of frozen combined_v1 + national dynamic rating (offset); discovery = races before 2025-01-01; confirmation = 2025-01-01..2026-11-23; BH 10% at discovery + same sign in 2022-23 and 2024 halves; confirmation = meeting-bootstrap 95% CI of fit gain > 0",
+ "tested": 593,
+ "passed_discovery": 72,
+ "confirmed": 7,
+ "promoted_for_future_test": [
+  {
+   "name": "rec_rating_pa1 x surprise_last",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0788,
+   "se": 0.0211,
+   "confirm_gain_per_race": 0.0023,
+   "confirm_lo95": 0.00029,
+   "confirm_hi95": 0.00452
+  },
+  {
+   "name": "c_rec x rec_rating_pa1 x metro",
+   "family": "D three-factor",
+   "coef_per_sd": 0.0508,
+   "se": 0.0136,
+   "confirm_gain_per_race": 0.00189,
+   "confirm_lo95": 0.00032,
+   "confirm_hi95": 0.00427
+  },
+  {
+   "name": "rec_rating_pa1 x dyn_traj",
+   "family": "B pairwise",
+   "coef_per_sd": 0.065,
+   "se": 0.0198,
+   "confirm_gain_per_race": 0.00194,
+   "confirm_lo95": 0.00036,
+   "confirm_hi95": 0.00353
+  },
+  {
+   "name": "fig_traj x surprise_last",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0547,
+   "se": 0.0174,
+   "confirm_gain_per_race": 0.00185,
+   "confirm_lo95": 0.00021,
+   "confirm_hi95": 0.00357
+  },
+  {
+   "name": "surprise_last x metro",
+   "family": "C context",
+   "coef_per_sd": 0.0445,
+   "se": 0.0169,
+   "confirm_gain_per_race": 0.00114,
+   "confirm_lo95": 0.00017,
+   "confirm_hi95": 0.00219
+  },
+  {
+   "name": "surprise_last x route",
+   "family": "C context",
+   "coef_per_sd": 0.0458,
+   "se": 0.0175,
+   "confirm_gain_per_race": 0.00136,
+   "confirm_lo95": 0.00013,
+   "confirm_hi95": 0.00251
+  },
+  {
+   "name": "a_avg3 x dyn_traj",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0511,
+   "se": 0.0202,
+   "confirm_gain_per_race": 0.00123,
+   "confirm_lo95": 1e-05,
+   "confirm_hi95": 0.00254
+  }
+ ],
+ "watch_list_positive_in_confirmation_only": [
+  {
+   "name": "a_best3 x dyn_traj",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0436,
+   "bh_discovery_q": 0.1070469961836359,
+   "confirm_gain_per_race": 0.00146,
+   "confirm_lo95": 0.00039
+  },
+  {
+   "name": "dyn_traj (main effect)",
+   "family": "M new feature",
+   "coef_per_sd": 0.0391,
+   "bh_discovery_q": 0.1219090827674982,
+   "confirm_gain_per_race": 0.00138,
+   "confirm_lo95": 8e-05
+  },
+  {
+   "name": "h2h x big_field",
+   "family": "C context",
+   "coef_per_sd": 0.0406,
+   "bh_discovery_q": 0.125891831475881,
+   "confirm_gain_per_race": 0.00109,
+   "confirm_lo95": 0.00012
+  },
+  {
+   "name": "10b head-to-head record (main effect)",
+   "family": "A directed",
+   "coef_per_sd": 0.0335,
+   "bh_discovery_q": 0.1487979537362281,
+   "confirm_gain_per_race": 0.00122,
+   "confirm_lo95": 8e-05
+  },
+  {
+   "name": "a_wt_rel x f_avgfp3",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0323,
+   "bh_discovery_q": 0.1505157883734172,
+   "confirm_gain_per_race": 0.00113,
+   "confirm_lo95": 0.00014
+  },
+  {
+   "name": "a_best3 x surprise_last",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0459,
+   "bh_discovery_q": 0.1573418476476509,
+   "confirm_gain_per_race": 0.00147,
+   "confirm_lo95": 0.0003
+  },
+  {
+   "name": "dyn_nat x a_wt_rel",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0303,
+   "bh_discovery_q": 0.1672577596799221,
+   "confirm_gain_per_race": 0.00156,
+   "confirm_lo95": 0.00058
+  },
+  {
+   "name": "surprise_last (main effect)",
+   "family": "M new feature",
+   "coef_per_sd": 0.0359,
+   "bh_discovery_q": 0.1751012404559675,
+   "confirm_gain_per_race": 0.00122,
+   "confirm_lo95": 9e-05
+  },
+  {
+   "name": "14 class advantage x weight carried",
+   "family": "A directed",
+   "coef_per_sd": -0.0307,
+   "bh_discovery_q": 0.1772820737487863,
+   "confirm_gain_per_race": 0.00136,
+   "confirm_lo95": 0.00037
+  },
+  {
+   "name": "a_cls_gap x a_wt_rel",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0307,
+   "bh_discovery_q": 0.1772820737487863,
+   "confirm_gain_per_race": 0.00136,
+   "confirm_lo95": 0.00044
+  },
+  {
+   "name": "a_avg3 x a_wt_rel",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0307,
+   "bh_discovery_q": 0.1772820737487863,
+   "confirm_gain_per_race": 0.00137,
+   "confirm_lo95": 0.0004
+  },
+  {
+   "name": "s_fsp_last x route",
+   "family": "C context",
+   "coef_per_sd": 0.029,
+   "bh_discovery_q": 0.3148523766885881,
+   "confirm_gain_per_race": 0.00088,
+   "confirm_lo95": 0.00011
+  },
+  {
+   "name": "fig_traj x tempo_last",
+   "family": "B pairwise",
+   "coef_per_sd": 0.032,
+   "bh_discovery_q": 0.3186600664611863,
+   "confirm_gain_per_race": 0.00047,
+   "confirm_lo95": 6e-05
+  },
+  {
+   "name": "a_wt_rel x rec_rating_pa1",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0245,
+   "bh_discovery_q": 0.3226280808302892,
+   "confirm_gain_per_race": 0.00099,
+   "confirm_lo95": 0.00017
+  },
+  {
+   "name": "dyn_traj x h2h",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0239,
+   "bh_discovery_q": 0.3383954984353709,
+   "confirm_gain_per_race": 0.00085,
+   "confirm_lo95": 0.0001
+  },
+  {
+   "name": "s_gap600_last x route",
+   "family": "C context",
+   "coef_per_sd": 0.0284,
+   "bh_discovery_q": 0.3449817150067008,
+   "confirm_gain_per_race": 0.00074,
+   "confirm_lo95": 5e-05
+  },
+  {
+   "name": "surprise_avg3 (main effect)",
+   "family": "M new feature",
+   "coef_per_sd": 0.0257,
+   "bh_discovery_q": 0.3537125159512592,
+   "confirm_gain_per_race": 0.00084,
+   "confirm_lo95": 7e-05
+  },
+  {
+   "name": "12 ability x field strength (within-race slope)",
+   "family": "A directed",
+   "coef_per_sd": -0.0242,
+   "bh_discovery_q": 0.3926692334727718,
+   "confirm_gain_per_race": 0.00124,
+   "confirm_lo95": 0.0002
+  },
+  {
+   "name": "surprise_last x big_field",
+   "family": "C context",
+   "coef_per_sd": 0.0277,
+   "bh_discovery_q": 0.3992213909477891,
+   "confirm_gain_per_race": 0.00089,
+   "confirm_lo95": 0.00035
+  },
+  {
+   "name": "a_best3 x a_wt_rel",
+   "family": "B pairwise",
+   "coef_per_sd": -0.019,
+   "bh_discovery_q": 0.4264599662300664,
+   "confirm_gain_per_race": 0.00077,
+   "confirm_lo95": 0.00021
+  },
+  {
+   "name": "dyn_nat x gb_wet",
+   "family": "C context",
+   "coef_per_sd": -0.0225,
+   "bh_discovery_q": 0.439410221748182,
+   "confirm_gain_per_race": 0.00106,
+   "confirm_lo95": 0.00027
+  },
+  {
+   "name": "a_best3 x route",
+   "family": "C context",
+   "coef_per_sd": -0.0184,
+   "bh_discovery_q": 0.5134386344465547,
+   "confirm_gain_per_race": 0.00042,
+   "confirm_lo95": 5e-05
+  },
+  {
+   "name": "a_wt_rel x wt_change",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0157,
+   "bh_discovery_q": 0.5388441685189794,
+   "confirm_gain_per_race": 0.00094,
+   "confirm_lo95": 0.00041
+  },
+  {
+   "name": "rec_rating_pa1 x h2h",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0151,
+   "bh_discovery_q": 0.5675221101641906,
+   "confirm_gain_per_race": 0.00061,
+   "confirm_lo95": 6e-05
+  },
+  {
+   "name": "r_prep x route",
+   "family": "C context",
+   "coef_per_sd": -0.016,
+   "bh_discovery_q": 0.5733308694465465,
+   "confirm_gain_per_race": 0.00052,
+   "confirm_lo95": 0.00013
+  },
+  {
+   "name": "dyn_traj x gb_wet",
+   "family": "C context",
+   "coef_per_sd": 0.0162,
+   "bh_discovery_q": 0.6000550033789559,
+   "confirm_gain_per_race": 0.00056,
+   "confirm_lo95": 5e-05
+  },
+  {
+   "name": "c_rec x big_field",
+   "family": "C context",
+   "coef_per_sd": 0.0164,
+   "bh_discovery_q": 0.6359446982045421,
+   "confirm_gain_per_race": 0.00038,
+   "confirm_lo95": 5e-05
+  },
+  {
+   "name": "r_prep x cls_change",
+   "family": "B pairwise",
+   "coef_per_sd": -0.013,
+   "bh_discovery_q": 0.6585183571650712,
+   "confirm_gain_per_race": 0.00041,
+   "confirm_lo95": 3e-05
+  },
+  {
+   "name": "a_wt_rel x route",
+   "family": "C context",
+   "coef_per_sd": -0.0106,
+   "bh_discovery_q": 0.7432720907948304,
+   "confirm_gain_per_race": 0.00056,
+   "confirm_lo95": 0.00025
+  },
+  {
+   "name": "cls_change x wt_change",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0103,
+   "bh_discovery_q": 0.7707345620033027,
+   "confirm_gain_per_race": 0.00049,
+   "confirm_lo95": 0.00019
+  },
+  {
+   "name": "t_dchange x route",
+   "family": "C context",
+   "coef_per_sd": 0.0109,
+   "bh_discovery_q": 0.7786583495399862,
+   "confirm_gain_per_race": 0.00031,
+   "confirm_lo95": 1e-05
+  },
+  {
+   "name": "dyn_traj x metro",
+   "family": "C context",
+   "coef_per_sd": 0.0105,
+   "bh_discovery_q": 0.7786583495399862,
+   "confirm_gain_per_race": 0.00039,
+   "confirm_lo95": 7e-05
+  },
+  {
+   "name": "dyn_traj x big_field",
+   "family": "C context",
+   "coef_per_sd": 0.0118,
+   "bh_discovery_q": 0.7786583495399862,
+   "confirm_gain_per_race": 0.00036,
+   "confirm_lo95": 7e-05
+  },
+  {
+   "name": "s_gap600_avg3 x h2h",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0085,
+   "bh_discovery_q": 0.8230653758151135,
+   "confirm_gain_per_race": 0.00028,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "a_wt_rel x r_prep",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0075,
+   "bh_discovery_q": 0.8297832987350882,
+   "confirm_gain_per_race": 0.00025,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "a_cls_gap x h2h",
+   "family": "B pairwise",
+   "coef_per_sd": 0.0055,
+   "bh_discovery_q": 0.8820955527345403,
+   "confirm_gain_per_race": 0.00019,
+   "confirm_lo95": 1e-05
+  },
+  {
+   "name": "a_best3 x p_relbar",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0029,
+   "bh_discovery_q": 0.9369859897789726,
+   "confirm_gain_per_race": 0.0001,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "f_lastlm x route",
+   "family": "C context",
+   "coef_per_sd": 0.0031,
+   "bh_discovery_q": 0.9369859897789726,
+   "confirm_gain_per_race": 0.00013,
+   "confirm_lo95": 4e-05
+  },
+  {
+   "name": "a_avg3 x route",
+   "family": "C context",
+   "coef_per_sd": -0.0023,
+   "bh_discovery_q": 0.9474212500419776,
+   "confirm_gain_per_race": 0.0001,
+   "confirm_lo95": 4e-05
+  },
+  {
+   "name": "a_cls_gap x route",
+   "family": "C context",
+   "coef_per_sd": -0.0023,
+   "bh_discovery_q": 0.9474212500419776,
+   "confirm_gain_per_race": 9e-05,
+   "confirm_lo95": 3e-05
+  },
+  {
+   "name": "r_ldays x fig_traj",
+   "family": "B pairwise",
+   "coef_per_sd": -0.0022,
+   "bh_discovery_q": 0.9474212500419776,
+   "confirm_gain_per_race": 9e-05,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "a_avg3 x rec_rating_pa1",
+   "family": "B pairwise",
+   "coef_per_sd": 0.001,
+   "bh_discovery_q": 0.9745368887757212,
+   "confirm_gain_per_race": 5e-05,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "a_cls_gap x rec_rating_pa1",
+   "family": "B pairwise",
+   "coef_per_sd": 0.001,
+   "bh_discovery_q": 0.9745368887757212,
+   "confirm_gain_per_race": 5e-05,
+   "confirm_lo95": 2e-05
+  },
+  {
+   "name": "a_wt_rel x gb_wet",
+   "family": "C context",
+   "coef_per_sd": -0.0002,
+   "bh_discovery_q": 0.9930044301202862,
+   "confirm_gain_per_race": 1e-05,
+   "confirm_lo95": 1e-05
+  }
+ ],
+ "future_test_rule": "races from 2026-11-25; coefficients above are fixed; a term is kept only if it adds on future races scored before racing",
+ "code_sha256_16": {
+  "discovery/screen_qld.py": "6ab9d663277bf3ad",
+  "dyn_rating.py": "df96739bf4d7e5b9",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5",
+  "hier_tools.py": "cfb0967420edb60a"
+ },
+ "data_sha256_16": {
+  "features.parquet": "50cd4b03e2f6b9ed",
+  "national_runs.parquet": "b2f0d6fcbbe06879",
+  "runs_rated_dev.parquet": "5e386c249f21af32",
+  "pace_figures.parquet": "d6eb6b5653535fb3"
+ }
+}

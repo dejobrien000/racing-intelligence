@@ -1,0 +1,13 @@
+test,comparison,races,n_races,fit_gain_per_race,lo95_meetings,hi95_meetings,lo95_months,hi95_months,p_one_sided_meetings,p_one_sided_months,top_pick_diff_pts,tp_lo95,tp_hi95
+P1,PA1 recency-weighted alone vs v0 recency-weighted alone,1400m+,1703,0.0143,0.0039,0.025,0.0041,0.0247,0.002,0.003,0.7,-0.9,2.2
+P2,PA1 recency-weighted alone vs v0 recency-weighted alone,all,4730,0.0068,0.0012,0.0124,0.0011,0.0125,0.011,0.006,0.4,-0.5,1.4
+P3,"benchmark, PA1 in place of v0 vs benchmark (frozen combined_v1)",1400m+,1703,0.0047,-0.0025,0.0111,-0.003,0.0124,0.108,0.109,0.6,-0.4,1.6
+P4,"benchmark, PA1 in place of v0 vs benchmark (frozen combined_v1)",metro,1289,0.0022,-0.0034,0.0077,-0.0021,0.0066,0.211,0.157,0.2,-0.9,1.2
+P5,benchmark + late-section figure vs benchmark (frozen combined_v1),1400m+,1703,0.0016,0.0002,0.0031,0.0003,0.003,0.013,0.008,0.0,-0.4,0.4
+sec,PA2 blend recency-weighted alone vs v0 recency-weighted alone,1400m+,1703,0.0072,-0.0018,0.0159,-0.0011,0.016,0.052,0.047,0.6,-1.0,2.2
+sec,late-section figure alone vs v0 recency-weighted alone,1400m+,1703,-0.0151,-0.0306,0.0006,-0.0297,-0.0,0.97,0.975,-0.3,-2.4,1.9
+sec,"benchmark, PA1 in place of v0 vs benchmark (frozen combined_v1)",all,4730,0.0031,-0.0004,0.0066,-0.0013,0.0074,0.046,0.087,0.1,-0.4,0.7
+sec,"benchmark, PA1 in place of v0 vs benchmark (frozen combined_v1)",metro 1400m+,540,0.0027,-0.0077,0.0119,-0.0048,0.0107,0.297,0.243,0.9,-0.8,2.6
+sec,benchmark + late-section figure vs benchmark (frozen combined_v1),all,4730,0.0014,0.0002,0.0025,0.0004,0.0023,0.007,0.001,0.2,-0.1,0.5
+sec,"benchmark + last-start run profile (early, late, tempo) vs benchmark (frozen combined_v1)",all,4730,0.0026,0.0011,0.0039,0.0016,0.0036,0.0,0.0,0.3,-0.2,0.7
+sec,"benchmark + last-start run profile (early, late, tempo) vs benchmark (frozen combined_v1)",1400m+,1703,0.0027,0.0006,0.0049,0.0011,0.0043,0.003,0.001,0.2,-0.6,0.9
