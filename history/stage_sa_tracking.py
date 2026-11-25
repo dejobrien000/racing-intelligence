@@ -36,13 +36,17 @@ for _, f in ok_files.iterrows():
     t = texts.get(f.url)
     if not t: PROB.append({'url': f.url, 'problem': 'no text kept'}); continue
     p0 = t['pages'][0] if t['pages'] else ''
-    fmt = 'tripleSdata' if re.search(r'^Section Overall', p0, re.M) else ('daily_sectionals' if 'IVR' in p0 or 'DAILY SECTIONAL' in p0 else 'other')
+    alltxt = '\n'.join(t['pages'])
+    fmt = ('tripleSdata_2026' if 'TRIPLESDATA GPS SECTIONALS' in p0 else 'tripleSdata' if ('Horse/Jockey Name' in alltxt and re.search(r'^Section (?:Overall|L\d+)', alltxt, re.M))
+           else ('daily_sectionals' if 'IVR' in p0 or 'DAILY SECTIONAL' in p0 else 'other'))
     FMT.append({'url': f.url, 'meeting_date': f.meeting_date, 'slug': f.slug, 'format': fmt})
-    if fmt != 'tripleSdata': continue          # older race-level/late-split reports: text kept, not staged as tracking
-    race, runners, segs, probs = PS.parse(t['pages'])
+    if fmt not in ('tripleSdata', 'tripleSdata_2026'): continue          # older race-level/late-split reports: text kept, not staged as tracking
+    race, runners, segs, probs = (PS.parse_2026 if fmt == 'tripleSdata_2026' else PS.parse)(t['pages'])
     for p in probs: PROB.append({'url': f.url, 'problem': p})
-    if not race.get('date_text') or not runners: continue
-    dd = pd.to_datetime(race['date_text'], format='%d %b %Y').date()
+    if not race.get('date_text') or not runners or not race.get('race_no'):
+        PROB.append({'url': f.url, 'problem': 'header or runners not parsed'}); continue
+    try: dd = pd.to_datetime(race['date_text'], format='%d %B %Y').date()
+    except ValueError: dd = pd.to_datetime(race['date_text'], format='%d %b %Y').date()
     if str(dd) != f.meeting_date: PROB.append({'url': f.url, 'problem': f'date in report {dd} != requested {f.meeting_date}'}); continue
     trk, slug = track_of(race.get('venue'), f.slug)
     rid = f"{dd.strftime('%Y%m%d')}-{trk}-R{race['race_no']}"
@@ -51,6 +55,14 @@ for _, f in ok_files.iterrows():
                  'race_time_s': race.get('race_time_s'), 'slug': slug, 'venue_pdf': race.get('venue'), 'weather': race.get('weather'), 'sectional_m': race.get('sectional_m'),
                  'report_created': race.get('report_created'), 'source_url': f.url, 'sha256': f.sha256})
     b = bn[(bn.d == f.meeting_date) & (bn.slug == slug) & (bn.race_no == race['race_no'])].set_index('saddlecloth')
+    byname = {nk(h): sc_ for sc_, h in b.horse.items()}
+    for r in runners:                       # saddlecloth not in the results table: take it from Breednet by name (same race)
+        if r.get('saddlecloth') is None:
+            r['saddlecloth'] = byname.get(nk(r['horse'])); r['saddlecloth_from'] = 'breednet'
+            for sg_ in segs:
+                if sg_['horse'] == r['horse']: sg_['saddlecloth'] = r['saddlecloth']
+    if any(r.get('saddlecloth') is None for r in runners): PROB.append({'url': f.url, 'problem': 'runner without saddlecloth after Breednet lookup'})
+    runners = [r for r in runners if r.get('saddlecloth') is not None]; segs = [x for x in segs if x['saddlecloth'] is not None]
     bd = bnr[(bnr.d == f.meeting_date) & (bnr.slug == slug) & (bnr.race_no == race['race_no'])].distance_m
     sg = pd.DataFrame(segs)
     nmatch = npos = 0; split_ok = []; pos_disagree = 0
@@ -65,7 +77,7 @@ for _, f in ok_files.iterrows():
         rs = sg[sg.saddlecloth == sc] if len(sg) else sg
         if len(rs) and r.get('finish_time_s') and rs.split_s.notna().all(): split_ok.append(abs(rs.split_s.sum() - r['finish_time_s']) <= 0.06)
         ST.append({'meeting_date': dd, 'track': trk, 'race_no': race['race_no'], 'race_id': rid, 'saddlecloth': sc, 'name': r['horse'].title(), 'name_key': nk(r['horse']),
-                   'horse_code': None, 'scratched': False, 'finish_pos': fp, 'margin_l': r.get('margin_l'), 'finish_time_s': r.get('finish_time_s'), 'ground_m': None,
+                   'horse_code': None, 'scratched': False, 'finish_pos': fp, 'margin_l': r.get('margin_l'), 'finish_time_s': r.get('finish_time_s'), 'ground_m': r.get('ground_m'),
                    'result_state': r.get('race_state') or ('Finished' if fp else None), 'result_substate': None if fp else r.get('finish_pos_text'), 'barrier': r.get('barrier'),
                    'weight_kg': None, 'jockey': r.get('jockey'), 'trainer': br.trainer if mt and 'trainer' in br else None, 'emergency': None, 'name_fields': r['horse'],
                    'ground_rel_winner_m': r.get('ground_rel_winner_m'), 'top_speed_ms': round(r['top_speed_kmh'] / 3.6, 3) if r.get('top_speed_kmh') else None,
@@ -77,19 +89,21 @@ for _, f in ok_files.iterrows():
                     'split_s': s['split_s'], 'avg_speed_ms': s['avg_speed_ms'], 'top_speed_ms': s['top_speed_ms'], 'stride_freq_hz': s['stride_freq_hz'],
                     'stride_len_m': s['stride_len_m'], 'dist_to_rail_m': s['dist_to_rail_m'], 'seg_len_m': s['seg_len_m'], 'col': s['col']})
     # checks
-    perm_ok = True
+    perm_ok = True; ties = 0
     if len(sg):
         for col, g in sg.groupby('col'):
-            p = sorted(x for x in g.position if pd.notna(x))
-            if p and p != list(range(1, len(p) + 1)): perm_ok = False
-        st = sg.dropna(subset=['avg_speed_ms', 'stride_freq_hz', 'stride_len_m']); st = st[(st.seg_len_m >= 200) & (st.avg_speed_ms > 0)]
+            p = [int(x) for x in g.position if pd.notna(x)]
+            if p and (min(p) < 1 or max(p) > len(g)): perm_ok = False
+            ties += len(p) - len(set(p))
+        if ties > 2: perm_ok = False
+        st = sg.dropna(subset=['avg_speed_ms', 'stride_freq_hz', 'stride_len_m']) if len(sg) else sg; st = st[(st.seg_len_m >= 200) & (st.avg_speed_ms > 0)]
         stride_err = float((abs(st.stride_freq_hz * st.stride_len_m - st.avg_speed_ms) / st.avg_speed_ms).median()) if len(st) else None
     else: stride_err = None
     win = next((r for r in runners if r.get('finish_pos_text') == '1'), None)
     CHK.append({'race_id': rid, 'url': f.url, 'runners': len(runners), 'runners_with_segments': sg.saddlecloth.nunique() if len(sg) else 0,
                 'bn_runners': len(b), 'bn_name_matched': nmatch, 'bn_finish_agree': npos, 'bn_finish_disagree': pos_disagree,
                 'distance_pdf': race.get('distance_m'), 'distance_bn': int(bd.iloc[0]) if len(bd) else None,
-                'split_sum_ok_share': round(sum(split_ok) / len(split_ok), 3) if split_ok else None, 'positions_ok': perm_ok,
+                'split_sum_ok_share': round(sum(split_ok) / len(split_ok), 3) if split_ok else None, 'positions_ok': perm_ok, 'position_ties': ties if len(sg) else None, 'layout': fmt,
                 'stride_median_rel_err': round(stride_err, 4) if stride_err is not None else None,
                 'winner_time_eq_race_time': (abs(win['finish_time_s'] - race['race_time_s']) < 0.011) if (win and win.get('finish_time_s') and race.get('race_time_s')) else None,
                 'parse_problems': sum(1 for p in PROB if p['url'] == f.url)})

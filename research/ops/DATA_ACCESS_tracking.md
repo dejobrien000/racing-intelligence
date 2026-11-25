@@ -121,3 +121,16 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
   relative to the winner); weight is not in the report (Breednet's carried weight is kept separately).
 - Weekly incremental (after a release decision): the Monday job adds the SA meetings of the previous 7 days from the Breednet
   calendar for the known folders, re-runs staging checks, and reports; loading stays a release step.
+
+## Result, 26 Nov 2026 ~2:45am (staging built; not released)
+- Collected: 2,195 report requests for the 272 meetings at Morphettville / Morphettville Parks / Murray Bridge / Gawler (Dec 2023 to
+  21 Nov 2026): 2,062 found (243 meetings), 133 not found. Layouts: tripleSdata (Jan 2024 to Jul 2026) 1,738, redesigned
+  'TRIPLESDATA GPS SECTIONALS' (late Jul 2026 on) 254, older Daily Sectionals (Dec 2023) 70 (kept as text only).
+- Staged (branch staging-sa-tracking, parquet + MANIFEST; local copy pilot/staging/sa_tracking.duckdb): 1,954 races, 20,868
+  runners, 147,439 sections. 1,829 races (93.6%) pass every check. Breednet name match 20,866/20,868; finishing position agrees
+  20,729, disagrees 137 (23 races, flagged); distance agrees 1,949/1,954; splits sum to the runner's time 98.9%; stride x frequency
+  vs speed median error 0.013 (Qld 0.013). Medians vs Qld 2024+: stride 7.20 m (Qld 7.35), 2.3 Hz (2.3), speed 16.83 m/s (17.04).
+- Not available: per-section speed, stride and rail for the redesigned layout (late Jul 2026 on: drawn as charts, not read);
+  absolute ground covered before that layout (only metres vs the winner); the other 12 country clubs (folders unknown).
+- Report: research/staging/sa_tracking_report.md. Next decision for Damo: whether to load passing races into the master database
+  (as a versioned release with the Qld shape plus a state column) and add SA to the weekly job.
