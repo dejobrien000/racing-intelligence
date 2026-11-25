@@ -1,0 +1,15 @@
+group,runners,wins,expected,ratio,lo95,hi95,clusters
+all matched,5742,643,546.1,1.18,1.09,1.26,1269.0
+carried <=54 (v2.2 rule),1398,100,76.5,1.31,1.09,1.57,583.0
+carried >54,4344,543,469.6,1.16,1.07,1.26,1180.0
+"low ALLOCATED weight <=54, no claim",60,4,4.6,0.87,0.17,1.67,51.0
+allocated >54 but claim takes it to <=54,1238,90,70.9,1.27,1.03,1.52,526.0
+"claimed, still >54",3627,442,381.8,1.16,1.06,1.27,999.0
+any apprentice claim,5014,542,457.6,1.18,1.09,1.29,1133.0
+no claim,728,101,88.5,1.14,0.96,1.35,473.0
+handicaps: carried <=54,618,50,29.8,1.68,1.22,2.13,318.0
+set-weight races: carried <=54,780,50,46.7,1.07,0.81,1.39,402.0
+carried <=54 & top-third rating,16,0,1.1,0.0,,,
+carried <=54 & bottom-third rating,1231,86,63.5,1.35,1.09,1.66,539.0
+"carried <=54, 2023-24",354,33,22.1,1.5,1.1,1.92,164.0
+"carried <=54, 2025-26",1044,67,54.5,1.23,0.94,1.51,516.0

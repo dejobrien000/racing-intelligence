@@ -1,0 +1,23 @@
+group,runners,wins,v2_ratio,v2_ci,v22_expected,v22_ratio,v22_ci
+1 run(s) held | last start ran 3kg+ below expectation,3240,119,1.09,0.9-1.29,110.3,1.08,0.89-1.28
+1 run(s) held | last start 0-3kg below,2090,117,0.73,0.62-0.86,156.9,0.75,0.63-0.88
+1 run(s) held | last start 0-3kg above,2708,250,0.77,0.68-0.85,311.9,0.8,0.7-0.89
+1 run(s) held | last start 3-6kg above,2349,369,0.86,0.79-0.93,404.7,0.91,0.84-0.99
+1 run(s) held | last start 6kg+ above (big surprise),2489,573,0.91,0.86-0.98,575.5,1.0,0.94-1.07
+2 run(s) held | last start ran 3kg+ below expectation,2664,176,0.87,0.76-1.01,204.7,0.86,0.75-1.0
+2 run(s) held | last start 0-3kg below,2172,219,0.87,0.78-0.98,247.5,0.88,0.79-1.0
+2 run(s) held | last start 0-3kg above,2805,359,0.93,0.85-1.02,381.3,0.94,0.86-1.03
+2 run(s) held | last start 3-6kg above,2297,341,0.95,0.85-1.04,347.9,0.98,0.88-1.07
+2 run(s) held | last start 6kg+ above (big surprise),2179,385,1.0,0.91-1.08,366.1,1.05,0.96-1.14
+3 run(s) held | last start ran 3kg+ below expectation,2314,195,0.98,0.87-1.1,195.2,1.0,0.88-1.12
+3 run(s) held | last start 0-3kg below,2145,248,0.96,0.85-1.07,249.6,0.99,0.88-1.11
+3 run(s) held | last start 0-3kg above,2792,357,0.91,0.82-1.0,375.3,0.95,0.86-1.05
+3 run(s) held | last start 3-6kg above,2367,355,1.01,0.92-1.1,329.8,1.08,0.98-1.18
+3 run(s) held | last start 6kg+ above (big surprise),1847,309,1.09,0.99-1.21,255.5,1.21,1.1-1.34
+1-3 runs | facing stronger field than last time,17613,2016,0.96,0.92-1.0,1930.7,1.04,1.0-1.09
+1-3 runs | facing weaker/equal field,18851,2356,0.9,0.87-0.93,2581.8,0.91,0.88-0.94
+1-3 runs | rating top third of field,10492,2162,0.91,0.87-0.94,2334.3,0.93,0.89-0.96
+1-3 runs | rating middle third of field,10872,1277,0.94,0.89-0.99,1285.5,0.99,0.95-1.04
+1-3 runs | rating bottom third of field,15100,933,0.96,0.9-1.01,892.7,1.05,0.98-1.1
+"1-3 runs | top third AND last start 3kg+ above expectation (""exceptional"")",4292,1098,0.94,0.9-0.99,1117.7,0.98,0.94-1.03
+1-3 runs | top third AND won last start,699,225,1.09,0.99-1.23,189.3,1.19,1.07-1.33

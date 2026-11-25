@@ -1,0 +1,10 @@
+model,dropped,races,gain_from_dropping,lo95,hi95,top_pick_pts,verdict
+national (Engine v2.2 inputs),last-start finish,23729,2e-05,-0.00031,0.00033,-0.07,redundant (no measurable effect)
+national (Engine v2.2 inputs),career strike rate,23729,-5e-05,-0.00019,8e-05,0.01,redundant (no measurable effect)
+national (Engine v2.2 inputs),older ability figures (a_rec),23729,-0.00072,-0.00134,-0.00012,0.18,earns its place
+national (Engine v2.2 inputs),first-up flag,23729,-0.00011,-0.00028,9e-05,-0.01,redundant (no measurable effect)
+national (Engine v2.2 inputs),all four together,23729,-0.00087,-0.00165,-0.00017,0.18,earns its place
+"Queensland (Engine v2 Qld inputs, proxy)",last-start finish,4730,0.00153,0.00056,0.00241,0.15,hurting (drop)
+"Queensland (Engine v2 Qld inputs, proxy)",track/distance/going history family,4730,0.00362,0.001,0.00631,0.49,hurting (drop)
+"Queensland (Engine v2 Qld inputs, proxy)",closing sectionals family,4730,0.00015,-0.00161,0.00206,0.51,redundant (no measurable effect)
+"Queensland (Engine v2 Qld inputs, proxy)",all three together,4730,0.0052,0.0017,0.00894,0.49,hurting (drop)
