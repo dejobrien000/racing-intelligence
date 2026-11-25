@@ -84,3 +84,18 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
   previous version kept). Research tests on staged data first; no production input changes without a release.
 - Weekly incremental: the Monday database job reads the week's delivered files, stages, validates and reports; loading stays a
   release step.
+
+## Update 26 Nov 12:15am: South Australia has a readable route
+- Racing SA publishes a per-race sectional report as a PDF on its file CDN, linked from each race on racingsa.com.au ("Sectional
+  Times"): d26j0amf97rmny.cloudfront.net/30072/<YYYY-MM-DD>_race<NN>_sectional.pdf. Fetched and read 2025-05-03 race 2
+  (Morphettville, tripleSdata format, report created 13:53 the same day).
+- Fields per runner: finish rank, overall time; per 200 m (L1000 ... L200): time to the finish [rank] (split), average speed, top
+  speed, average distance to rail, average stride frequency, average stride length; plus barrier, first 400 m, fastest section,
+  top speed, margin, distance travelled relative to the winner. Same content as our Queensland tracking tables (plus top speed).
+- Older reports (2016-2019, Equitime) are race splits only and carry "no reproduction without written permission of Thoroughbred
+  Racing South Australia". The 2025 report shows no notice. Racing SA was not among the bodies Damo spoke to: add them.
+- Not yet known: the exact file name for every venue and date (two guesses for 2024-01-06 and 2026-11-25 returned not found; the
+  links are drawn by the page's scripts). Next: read the link targets from race pages, then coverage by venue from Jan 2024.
+  No URL guessing at scale.
+- Victoria: no equivalent public route found; racing.com content will not be fetched from another host either (that would be
+  going around the block).
