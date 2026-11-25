@@ -37,6 +37,8 @@ rep += ['', '- Racing Queensland: ' + (rc.stdout.strip().splitlines() or ['no ou
 if rc.returncode: rep.append('- STOP: Racing Queensland collection failed (' + (rc.stderr.strip().splitlines() or [''])[-1][:200] + '); database not published'); open('ops/weekly_report.md', 'w').write('\n'.join(rep) + '\n'); sys.exit(1)
 out = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_history.py'), '--incremental', rqz, DB], capture_output=True, text=True, check=True).stdout
 rep += ['', '```', out.strip()[:4000], '```']
+fs = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_form_staging.py'), DB, 'collect/national'], capture_output=True, text=True)   # research staging only; never a release check
+rep += ['', '- TAB form staging (research only): ' + (fs.stdout.strip().splitlines()[-1] if fs.returncode == 0 and fs.stdout.strip() else 'FAILED, not a release check: ' + fs.stderr.strip()[-300:])]
 cfg = json.load(open('ops/db_config.json')); env = {**os.environ, 'NAT_STATES': ','.join(cfg['national_states']), 'NAT_QLD_BN': '1' if cfg.get('qld_breednet_in_national_rating') else '0', 'PYTHONPATH': '.'}
 old = pd.read_parquet('engine/frames/national.parquet', columns=['race', 'horse', 'state', 'dyn_nat']); oldq = len(pd.read_parquet('runs.parquet', columns=['race_id']))
 for a in [('build_runs.py', DB, 'runs.parquet'), ('rating_v0.py', 'runs.parquet', 'runs_rated_dev.parquet', '--fit-until=2024-12-31'), ('rating_v0.py', 'runs.parquet', 'runs_rated.parquet'),
