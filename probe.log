@@ -1,0 +1,9 @@
+robots https://racingsa.com.au 202 0
+robots https://d26j0amf97rmny.cloudfront.net 404 301
+GET https://racingsa.com.au/meeting/5185295 202 text/html; charset=UTF-8 0
+GET https://racingsa.com.au/meetings/31-aug-24-morphettville 202 text/html; charset=UTF-8 0
+GET https://racingsa.com.au/ 202 text/html; charset=UTF-8 0
+GET https://racingsa.com.au/results 202 text/html; charset=UTF-8 0
+GET https://d26j0amf97rmny.cloudfront.net/30072/2025-05-03_race02_sectional.pdf 200 application/pdf 323284
+pdf pages 9
+pdf text chars 12390
