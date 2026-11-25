@@ -77,3 +77,13 @@
 - Weekly job: Breednet collection now includes QLD; national rating uses Queensland Breednet meetings (ops/db_config.json).
 - Roll back: ops/db_config.json qld_breednet_in_national_rating false, restore db from db-prev (master-2026-11-23-sa-wa-tas) and the
   previous benchmarks/candidates_b4_national_v3 + engine_v2_1 manifests from git (commit before this one).
+
+## Dashboard display: experience labels and race data confidence (from the 26 Nov 2026 run) — display only
+- Batch 11 s5 (requested by Damo). Ratings, chances, rankings and labels like "Strong selection" are unchanged; this only adds wording.
+- Runner line: "First starter · no demonstrated race rating" (no rated runs and no previous start known to our sources),
+  "Has raced, but no rated runs held · no demonstrated race rating", "Runs held only outside Queensland tracking · Queensland form
+  inputs missing" (Qld model only), or "Lightly raced · 1-2 rated runs". These runners keep a chance: it is a prior estimate
+  (jockey and trainer records, weight, barrier, age and sex, average for its experience), not measured ability.
+- Race line: Data confidence High / Medium / Low. Low = top pick has no demonstrated rating, or unrated runners hold 30%+ of the
+  model's win chance; Medium = 10%+ or a 1-2 run horse in the top three. Shows how many runners are unrated and their share of chance.
+- Checked: sandbox export of 25 Nov Albany, Launceston and Strathalbyn on the final database (v2.2); dashboard script syntax-checked.

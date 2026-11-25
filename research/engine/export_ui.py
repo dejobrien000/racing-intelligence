@@ -174,6 +174,15 @@ for track, grp in v2rows.groupby('track', sort=False):
                   'evidence': {'score': int(sum(checks)), 'max': len(checks), 'gaps': gaps}}
             ro['reasons'] = [SHORT[g['key']] for g in groups if g['kg'] > 0.25][:3]; ro['against'] = [SHORT[g['key']] for g in sorted(groups, key=lambda g: g['kg']) if g['kg'] < -0.25][:2]
             ro['market'] = mkt(track, int(rn), int(r.saddlecloth))
+            # Batch 11 (display only): say plainly when a runner has no demonstrated race rating. Its chance is a prior estimate
+            # (jockey/trainer, weight, barrier, age/sex, population average for its experience), not measured ability.
+            nr_ = ro['ability']['rated_runs']; prev_ = ro['ability']['last_run'] is not None or ro['ability']['days_since'] is not None
+            if nr_ == 0 and not prev_: exp_ = 'First starter · no demonstrated race rating'
+            elif nr_ == 0: exp_ = 'Has raced, but no rated runs held · no demonstrated race rating'
+            elif fam == 'QLD' and not bool(r.has_prior_form): exp_ = 'Runs held only outside Queensland tracking · Queensland form inputs missing'
+            elif nr_ <= 2: exp_ = f'Lightly raced · {nr_} rated run' + ('s' if nr_ > 1 else '')
+            else: exp_ = None
+            ro['experience'] = exp_; ro['demonstrated'] = bool(nr_ > 0)
             rr.append(ro)
         # change in rating after last run (from the ranking file of this same prediction)
         top = rr[0]; second = rr[1] if n > 1 else None
@@ -189,7 +198,13 @@ for track, grp in v2rows.groupby('track', sort=False):
             ro['qualified'] = bool(g.iloc[i].has_prior_form) and not insufficient
         ns = [{'n': int(x_['saddlecloth']), 'horse': nice(x_['horse']), 'status': x_['status'],
                'when': scr.get((rn, x_['saddlecloth']), {}).get('when')} for _, x_ in not_scored[not_scored.race_no == rn].iterrows()] if len(not_scored) else []
-        races.append({'no': int(rn), 'name': nice(fr.race_name), 'class': race_class(str(fr.race_name)), 'distance_m': int(fr.distance_m),
+        unr_ = [x_ for x_ in rr if not x_['demonstrated']]; lt_ = [x_ for x_ in rr if 0 < x_['ability']['rated_runs'] <= 2]
+        tot_ = sum(x_['chance'] for x_ in rr) or 1.0; sh_ = sum(x_['chance'] for x_ in unr_) / tot_
+        lvl_ = 'Low' if (not rr[0]['demonstrated']) or sh_ >= 0.30 else ('Medium' if sh_ >= 0.10 or any(x_ in lt_ for x_ in rr[:3]) else 'High')
+        conf_ = {'level': lvl_, 'no_demonstrated_rating': len(unr_), 'lightly_raced': len(lt_), 'chance_on_unrated_pct': round(100 * sh_, 1),
+                 'note': (f"{len(unr_)} of {n} runners have no demonstrated race rating and hold {round(100 * sh_)}% of the model's win chance" if unr_ else 'Every runner has at least one rated run')
+                         + (f"; {len(lt_)} lightly raced (1-2 rated runs)" if lt_ else '')}
+        races.append({'no': int(rn), 'name': nice(fr.race_name), 'confidence': conf_, 'class': race_class(str(fr.race_name)), 'distance_m': int(fr.distance_m),
                       'time': t_local, 'tz': tz, 'time_brisbane_min': t_bris, 'field': n, 'label': label, 'top_cal': top['cal'], 'runners': rr, 'not_scored': ns,
                       'v1_top': next(x for x in rr if x['v1']['rank'] == 1)['horse']})
         for ro in rr: all_runners.append({'meeting': track, 'race': int(rn), **{k: ro[k] for k in ['n', 'horse', 'rank', 'rating', 'chance', 'cal', 'cal_lo', 'cal_hi', 'gap', 'class', 'qualified', 'reasons', 'market']}, 'evidence': ro['evidence']['score'], 'evidence_max': ro['evidence']['max'], 'time': t_local, 'tz': tz, 'tmin': t_bris, 'race_label': label})
