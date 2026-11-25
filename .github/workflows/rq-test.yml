@@ -1,0 +1,34 @@
+name: rq-collector-test
+# Push-triggered parity test of the Python Racing Queensland collector against the master database (20-22 Nov 2026).
+on:
+  push:
+    branches: [main]
+    paths: ['collect/weekly/rq.py', 'collect/weekly/compare_rq.py', '.github/workflows/rq-test.yml']
+permissions:
+  contents: write
+concurrency: { group: rq-collect, cancel-in-progress: false }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests duckdb pandas lxml
+      - name: Restore master database (branch db)
+        run: |
+          git fetch -q --depth 1 origin db:db && mkdir -p /tmp/dbpack && git --work-tree=/tmp/dbpack checkout db -- . && git reset -q
+          cat /tmp/dbpack/master_db.tar.gz.part* | tar -xzf - -C "$GITHUB_WORKSPACE" history/history.duckdb
+      - name: Collect 20-22 Nov 2026 from Racing Queensland
+        run: python3 collect/weekly/rq.py 20261120 20261122 /tmp/rq_test.zip 2>&1 | tee /tmp/rq_collect.log
+      - name: Compare with the master database
+        if: always()
+        run: python3 collect/weekly/compare_rq.py /tmp/rq_test.zip history/history.duckdb /tmp/rq_parity.md 2>&1 | tee /tmp/rq_compare.log || true
+      - name: Save results to branch ci-results-rq
+        if: always()
+        run: |
+          mkdir -p /tmp/out/rq-test && cp /tmp/rq_parity.md /tmp/rq_collect.log /tmp/rq_compare.log /tmp/out/rq-test/ 2>/dev/null || true
+          cd /tmp/out && git init -q && git checkout -q -b ci-results-rq && git add -A && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "rq collector test $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" ci-results-rq
