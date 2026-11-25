@@ -34,3 +34,8 @@ Not done, by rule: no browser-header impersonation, no proxies, no other price s
 Interim daily run: if the 7:33 scheduled run logs "ATTENTION: TAB fetch needs approval", run DAILY_RUN.md in the build
 conversation (session_01TcfAeuNwdADDxa3cwHWiRz) when its 7:35 reminder arrives; the leftover 7:45/7:50/8:20 reminders
 there are superseded (old PC-based cycle) and are ignored.
+25 Nov 10:21: Damo approved the TAB read in the build chat. 10:40 test (new URL, Damo asked not to approve anything):
+dates/2026-11-26/meetings returned data (HAW, MOR, ROC, GER) -> the approval now holds in this chat with nobody answering.
+Whether it also covers fresh scheduled sessions is shown by the 26 Nov 7:33 daily run (log research/ops/logs/2026-11-26.md).
+TAB's info-service lists only today and future dates (25 Nov 10:20: dates = 25, 26, 28, 29 Nov, 4 Dec; 24 Nov meetings = []).
+So CLOSE (final fixed price with the results) may not be readable at 7:30 next morning: checked tonight + 26 Nov 7:30.
