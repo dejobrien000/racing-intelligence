@@ -1,0 +1,34 @@
+{
+ "built_utc": "2026-11-25T16:21:36Z",
+ "source": "branch raw-racingsa-tracking",
+ "tables": {
+  "sa_file_format": {
+   "rows": 2062,
+   "sha256": "2bccd9d2e9f2c28c04b44cf5014740bdc773d8dcd7d9f34187d4607941668177"
+  },
+  "sa_files": {
+   "rows": 2195,
+   "sha256": "e29dc72716b067b5ffa3c83dfe9acb4c95f56558fee14f693f9b13a80f318b87"
+  },
+  "sa_problems": {
+   "rows": 498,
+   "sha256": "b75f20ee939edf188a3f3816197742089e385ba40346346d57078e74d77a05ff"
+  },
+  "sa_race": {
+   "rows": 1954,
+   "sha256": "f3e7de3ad576845acc2056803f326048a5d9b3613bc939f996a3fcd768ce0649"
+  },
+  "sa_race_checks": {
+   "rows": 1954,
+   "sha256": "794a89635764689fd3a2dac09fb15710919b7437bb462615af020f6475806c0f"
+  },
+  "sa_sectional": {
+   "rows": 147439,
+   "sha256": "87fe0d02dbcff715646ee1889e271baffeed237c9211b81696e01b86de7d4a37"
+  },
+  "sa_starter": {
+   "rows": 20868,
+   "sha256": "00d677a12125784c9cba2b6ef469007feda6667162eb71e1a23dc39065de9c43"
+  }
+ }
+}
