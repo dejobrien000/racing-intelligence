@@ -1,0 +1,55 @@
+label,stage,terms,coef_per_sd,races,gain,lo95,hi95,p,top_pick_pts,gain_east,east_lo,east_hi,gain_west,west_lo,west_hi,coverage_%,section,bh_pass
+h_sd,discovery,h_sd,0.0419,12777,-6e-05,-0.0009,0.00072,0.855,-0.09,3e-05,-0.00106,0.00108,-0.00026,-0.00163,0.00123,94.0,5 career & variability,False
+hsd_x_rel,discovery,hsd_x_rel,-0.0334,12777,-0.00059,-0.00107,-0.00016,0.015,0.01,-0.00043,-0.00105,0.00015,-0.00096,-0.00175,-0.00023,94.0,5 career & variability,True
+recent_var_ratio,discovery,recent_var_ratio,0.0076,12777,0.00028,3e-05,0.00053,0.035,0.03,0.00022,-5e-05,0.00047,0.00041,-5e-05,0.00089,58.1,5 career & variability,True
+strong_rate,discovery,strong_rate,-0.0048,12777,7e-05,-3e-05,0.00016,0.135,-0.01,4e-05,-7e-05,0.00015,0.00012,-4e-05,0.00029,100.0,5 career & variability,False
+weak_rate,discovery,weak_rate,0.0235,12777,0.00015,-0.00021,0.00051,0.425,-0.11,7e-05,-0.00037,0.00052,0.00034,-0.00022,0.00096,100.0,5 career & variability,False
+gap_long,discovery,gap_long,0.0036,12777,0.00024,0.00012,0.00035,0.0,-0.05,0.00028,0.00014,0.00043,0.00014,-0.00014,0.00042,48.6,5 career & variability,True
+gap_long_z,discovery,gap_long_z,0.0060,12777,0.00035,0.00013,0.00055,0.0,-0.04,0.0004,0.00015,0.00064,0.00024,-0.00025,0.00075,48.6,5 career & variability,True
+short_vs_long,discovery,short_vs_long,-0.0006,12777,5e-05,3e-05,7e-05,0.0,-0.01,5e-05,3e-05,7e-05,4e-05,-0.0,9e-05,48.6,5 career & variability,True
+below_top3,discovery,below_top3,0.0478,12777,0.00247,0.00149,0.00349,0.0,-0.04,0.00148,0.00019,0.00288,0.00474,0.00305,0.00668,82.8,5 career & variability,True
+isolated_peak,discovery,isolated_peak,0.0187,12777,-0.00043,-0.00084,-3e-05,0.04,-0.02,-0.00063,-0.0011,-0.00017,4e-05,-0.00081,0.00089,67.7,5 career & variability,True
+slope15,discovery,slope15,-0.0187,12777,0.00072,0.00033,0.00116,0.0,-0.09,0.00061,8e-05,0.00115,0.00097,0.00013,0.00192,58.1,5 career & variability,True
+slope5,discovery,slope5,0.0308,12777,-0.00114,-0.00172,-0.00052,0.0,-0.09,-0.00155,-0.00221,-0.00083,-0.00022,-0.00138,0.00082,77.6,5 career & variability,True
+neg_run,discovery,neg_run,0.0211,12777,0.00059,0.00016,0.00098,0.005,-0.14,0.00033,-0.00016,0.00082,0.00118,0.00051,0.00195,88.3,5 career & variability,True
+steady_decline,discovery,steady_decline,-0.0207,12777,0.00074,0.00027,0.00122,0.0,-0.05,0.00073,0.00016,0.00138,0.00077,-0.00021,0.00177,58.1,5 career & variability,True
+prep_shape,discovery,prep_shape,0.0218,12777,-0.00037,-0.00088,0.00013,0.16,-0.01,-0.00033,-0.00093,0.00026,-0.00047,-0.0014,0.00041,58.2,6 preparations,False
+runs_to_usual_peak,discovery,runs_to_usual_peak,-0.0080,12777,0.00027,7e-05,0.00048,0.01,-0.1,0.00021,-0.0,0.00045,0.0004,-0.00012,0.00083,82.8,6 preparations,True
+early_prep_vs_usual,discovery,early_prep_vs_usual,-0.0079,12777,0.00022,3e-05,0.00041,0.03,-0.01,0.00013,-8e-05,0.00034,0.00042,6e-05,0.00078,40.1,6 preparations,True
+dip_from_prep_best,discovery,dip_from_prep_best,0.0019,12777,3e-05,-0.0,5e-05,0.145,0.0,4e-05,0.0,8e-05,-1e-05,-6e-05,4e-05,59.4,6 preparations,False
+quick_today,discovery,quick_today,0.0192,12777,0.00066,0.00033,0.00101,0.0,0.15,0.0007,0.00031,0.00105,0.00058,-0.0001,0.0012,94.0,7 workload,True
+isolated_quick,discovery,isolated_quick,0.0180,12777,0.00058,0.00029,0.0009,0.0,0.13,0.00057,0.00021,0.00094,0.0006,-3e-05,0.00123,94.0,7 workload,True
+consec_quick,discovery,consec_quick,0.0174,12777,0.00053,0.00023,0.00081,0.0,0.05,0.0006,0.00024,0.00091,0.00037,-0.00019,0.0009,94.0,7 workload,True
+sched_A,discovery,sched_A,0.0083,12777,0.00026,9e-05,0.00043,0.005,0.02,0.00035,0.00016,0.00053,5e-05,-0.00028,0.00039,77.6,7 workload,True
+sched_B,discovery,sched_B,-0.0017,12777,-1e-05,-4e-05,1e-05,0.275,0.0,-2e-05,-5e-05,1e-05,-0.0,-7e-05,5e-05,77.6,7 workload,False
+sched_C,discovery,sched_C,0.0012,12777,1e-05,-1e-05,3e-05,0.485,0.01,1e-05,-1e-05,4e-05,-1e-05,-4e-05,3e-05,77.6,7 workload,False
+starts_28d,discovery,starts_28d,0.0075,12777,0.00021,8e-05,0.00034,0.0,-0.04,0.00017,3e-05,0.00032,0.00031,9e-05,0.0005,100.0,7 workload,True
+starts_60d,discovery,starts_60d,0.0227,12777,0.00078,0.00043,0.00117,0.0,0.02,0.00058,0.00015,0.00097,0.00123,0.00046,0.00197,100.0,7 workload,True
+metres_42d,discovery,metres_42d,0.0138,12777,0.00037,0.00018,0.00061,0.0,-0.01,0.00032,6e-05,0.00059,0.0005,0.0001,0.00086,100.0,7 workload,True
+prep_days,discovery,prep_days,0.0266,12777,0.00049,-1e-05,0.00104,0.06,-0.11,1e-05,-0.00058,0.00056,0.0016,0.00055,0.00269,100.0,7 workload,False
+last_race_strength,discovery,last_race_strength,0.0099,12777,0.00044,0.00018,0.00066,0.005,0.15,0.00047,0.00024,0.00075,0.00036,-3e-05,0.00072,94.0,7 workload,True
+tdec_dist_up,discovery,tdec_dist_up,0.0158,12777,-0.00012,-0.00037,0.00015,0.475,0.0,4e-05,-0.00028,0.00037,-0.00047,-0.00092,0.0,12.9,8 trainer decisions,False
+tdec_dist_down,discovery,tdec_dist_down,-0.0098,12777,-7e-05,-0.00025,0.00012,0.48,-0.03,-7e-05,-0.00028,0.00014,-5e-05,-0.00043,0.00031,10.6,8 trainer decisions,False
+tdec_quick,discovery,tdec_quick,0.0001,12777,-0.0,-0.0,0.0,0.625,0.0,0.0,-0.0,0.0,-0.0,-0.0,0.0,11.4,8 trainer decisions,False
+tdec_long_break,discovery,tdec_long_break,-0.0062,12777,-0.0,-0.00011,0.00012,0.995,-0.08,-0.0,-0.00013,0.00013,0.0,-0.00021,0.0002,14.0,8 trainer decisions,False
+tdec_class_up,discovery,tdec_class_up,-0.0061,12777,4e-05,-6e-05,0.00014,0.435,0.01,6e-05,-7e-05,0.00019,-2e-05,-0.00022,0.00016,19.1,8 trainer decisions,False
+tdec_class_down,discovery,tdec_class_down,-0.0046,12777,-2e-05,-0.00011,8e-05,0.685,0.0,-3e-05,-0.00013,8e-05,1e-05,-0.00017,0.00023,18.3,8 trainer decisions,False
+tdec_jockey_change,discovery,tdec_jockey_change,0.0112,12777,-2e-05,-0.00012,9e-05,0.745,0.07,4e-05,-8e-05,0.00018,-0.00016,-0.00036,6e-05,69.1,8 trainer decisions,False
+dist_up_improving,discovery,dist_up_improving,-0.0054,12777,-8e-05,-0.00018,3e-05,0.18,0.0,6e-05,-6e-05,0.00018,-0.0004,-0.00062,-0.0002,88.3,8 trainer decisions,False
+dist_up_declining,discovery,dist_up_declining,0.0068,12777,2e-05,-8e-05,0.00013,0.71,0.02,5e-05,-0.0001,0.00017,-5e-05,-0.00021,0.00013,88.3,8 trainer decisions,False
+jkey_recent,discovery,jkey_recent,0.0198,12777,-0.00017,-0.0005,0.00014,0.285,-0.05,-0.0003,-0.00068,0.00013,0.00014,-0.00041,0.00074,100.0,9 dynamic jockey & trainer,False
+jkey_bad,discovery,jkey_bad,-0.0247,12777,-0.00037,-0.00077,0.0,0.055,-0.17,-0.00046,-0.00088,-2e-05,-0.00019,-0.00092,0.00048,100.0,9 dynamic jockey & trainer,True
+jkey_good,discovery,jkey_good,0.0129,12777,-0.00028,-0.00049,-8e-05,0.015,-0.08,-0.00044,-0.0007,-0.00018,9e-05,-0.00026,0.0004,100.0,9 dynamic jockey & trainer,True
+j_recent_vs_career,discovery,j_recent_vs_career,0.0232,12777,0.00063,2e-05,0.00121,0.04,0.12,0.00067,-2e-05,0.00141,0.00053,-0.00067,0.00157,100.0,9 dynamic jockey & trainer,True
+tkey_recent,discovery,tkey_recent,0.0111,12777,-0.00015,-0.00031,-0.0,0.05,0.04,-0.00011,-0.00031,8e-05,-0.00023,-0.00052,5e-05,100.0,9 dynamic jockey & trainer,True
+tkey_bad,discovery,tkey_bad,-0.0076,12777,-8e-05,-0.00018,1e-05,0.115,0.06,-2e-05,-0.00015,0.00011,-0.00022,-0.00041,-3e-05,100.0,9 dynamic jockey & trainer,False
+tkey_good,discovery,tkey_good,0.0092,12777,-0.00017,-0.0003,-3e-05,0.02,0.08,-0.00014,-0.00031,3e-05,-0.00023,-0.00043,1e-05,100.0,9 dynamic jockey & trainer,True
+t_recent_vs_career,discovery,t_recent_vs_career,0.0350,12777,0.00016,-0.00076,0.00113,0.755,0.18,-0.00019,-0.00126,0.00084,0.00096,-0.0009,0.00276,100.0,9 dynamic jockey & trainer,False
+below_best,discovery,below_best,0.0554,12777,0.00242,0.00163,0.00329,0.0,-0.01,0.00152,0.00047,0.00275,0.0045,0.00308,0.00614,93.9,re-run (Batch 9 B),False
+recentform_x_established,discovery,recentform_x_established,-0.0118,12777,0.00087,0.00046,0.00131,0.0,-0.01,0.00061,0.0001,0.00108,0.00147,0.00062,0.00232,94.0,re-run (Batch 9 B),False
+below_best_x_old,discovery,below_best_x_old,-0.0118,12777,-2e-05,-0.00023,0.00017,0.81,-0.02,0.00015,-9e-05,0.00039,-0.00042,-0.00083,4e-05,93.9,re-run (Batch 9 B),False
+opp_step,discovery,opp_step,-0.0099,12777,0.00044,0.00018,0.00066,0.005,0.15,0.00047,0.00024,0.00075,0.00036,-3e-05,0.00072,94.0,re-run (Batch 9 F),False
+venue_step,discovery,venue_step,-0.0968,12777,0.00278,0.00092,0.00469,0.0,-0.02,0.00444,0.00194,0.00697,-0.00102,-0.00357,0.00195,94.0,re-run (Batch 9 F),False
+vic_out,discovery,vic_out,0.0113,12777,0.00017,-6e-05,0.00038,0.185,0.02,-2e-05,-0.00024,0.00021,0.0006,0.0001,0.0011,94.0,"re-run (s11 shippers, found in 2023-24 residuals)",False
+into_vic,discovery,into_vic,-0.0173,12777,0.00027,-2e-05,0.00059,0.06,-0.02,0.00038,-6e-05,0.0008,0.0,0.0,0.0,94.0,"re-run (s11 shippers, found in 2023-24 residuals)",False
+interstate,discovery,interstate,0.0092,12777,-6e-05,-0.00025,0.00011,0.435,-0.01,-0.00019,-0.00041,4e-05,0.00026,-1e-05,0.00053,94.0,"re-run (s11 shippers, found in 2023-24 residuals)",False
