@@ -22,6 +22,13 @@ rep += [f"- Breednet: {st['meetings']} meetings collected, {st['miss']} empty, {
         f"- Venues on Breednet with no state in venue_states.json (not collected): {', '.join(sorted(st.get('unknown_venues', {}))) or 'none'}"]
 if st['captcha'] or st['err'] > 5: rep.append('- STOP: collection incomplete; database not changed'); open('ops/weekly_report.md', 'w').write('\n'.join(rep) + '\n'); sys.exit(1)
 tmp = os.path.join(ROOT, 'breednet', 'weekly_load'); os.makedirs(tmp, exist_ok=True); os.replace(bundle, os.path.join(tmp, os.path.basename(bundle)))
+RQ_ = os.path.join(ROOT, 'collect', 'weekly', 'retry_queue.json')   # older meetings to (re)collect, e.g. after a server error in a backfill
+if os.path.exists(RQ_) and json.load(open(RQ_)):
+    rb = os.path.join(ROOT, 'breednet', 'weekly', f'racing_breednet_retry_{d1:%Y%m%d}.jsonl.gz')
+    subprocess.run([sys.executable, os.path.join(ROOT, 'collect', 'weekly', 'breednet.py'), 'queue', RQ_, rb])
+    rs = json.load(open(rb.replace('.jsonl.gz', '') + '.stats.json'))
+    rep.append(f"- Breednet retry list ({len(json.load(open(RQ_)))} meetings): {rs['meetings']} collected, {rs['miss']} empty, {rs['err']} errors")
+    if not rs['captcha'] and os.path.exists(rb): os.replace(rb, os.path.join(tmp, os.path.basename(rb)))
 out = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_breednet.py'), tmp, DB, '--incremental'], capture_output=True, text=True, check=True).stdout
 rep += ['', '```', out.strip()[:6000], '```']
 rqz = os.path.join(ROOT, 'rq_weekly', f'racing_rq_weekly_{d0:%Y%m%d}_{d1:%Y%m%d}.zip'); os.makedirs(os.path.dirname(rqz), exist_ok=True)
