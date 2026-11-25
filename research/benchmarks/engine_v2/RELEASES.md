@@ -40,4 +40,6 @@
   same top picks. Dry run on today's Strathalbyn, Albany and Launceston fields rated them (not published).
 - Previous version kept on branch db-prev (master-2026-11-23). Roll back: ops/db_config.json states NSW, VIC, ACT and
   restore db from db-prev. Today's (25 Nov) published tips and settlement use the previous version and are not changed.
-- Open: one meeting not collected (Ascot 12 Apr 2025, server error 500) - retried with the next weekly update.
+- Open: one meeting not collected (Ascot 12 Apr 2025, server error 500) - one-off retry after the Queensland backfill
+  (the weekly update only re-reads the last 10 days). Local working copy (this chat) switches to this version after
+  the 25 Nov settlement tonight, so tonight's settlement uses the same database as this morning's tips.
