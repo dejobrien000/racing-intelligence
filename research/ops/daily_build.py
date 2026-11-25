@@ -5,15 +5,15 @@ Input : collect/national/<D>/tab_<stamp>.raw.txt
   n|name|barrier|weight|claim|rider|trainer|emergency|win|place|bettingStatus|finish
 Output: races.csv, runners.csv, calendar.json (same schema as the hand-built 25 Nov files), a Racing-Queensland-format
 bundle for QLD meetings (so the Queensland model scores them), prices/<D>/tab_<stamp>.raw.txt (OPEN prices), and
-nat_venues.txt (NSW/VIC/ACT meetings for the national model). SA/WA/TAS/NT meetings are fields only until their
-history is in the master database. Prices are written to prices/ only; no model reads that folder."""
+nat_venues.txt (meetings for the national model: the states in ops/db_config.json). Other states' meetings are fields
+only until their history is in the master database's national rating. Prices are written to prices/ only; no model reads that folder."""
 import sys, os, re, json, gzip, hashlib, datetime as dt
 from zoneinfo import ZoneInfo
 D, RAW = sys.argv[1], sys.argv[2]
 DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; base = f'collect/national/{D}'; os.makedirs(base, exist_ok=True)
 STATE_TZ = {'QLD': 'Australia/Brisbane', 'NSW': 'Australia/Sydney', 'ACT': 'Australia/Sydney', 'VIC': 'Australia/Melbourne', 'TAS': 'Australia/Hobart',
             'SA': 'Australia/Adelaide', 'WA': 'Australia/Perth', 'NT': 'Australia/Darwin'}
-NAT, QLD = {'NSW', 'VIC', 'ACT'}, {'QLD'}
+NAT, QLD = set(json.load(open('ops/db_config.json'))['national_states']), {'QLD'}   # states whose history is in the master DB's national rating (NSW/VIC/ACT until a release adds SA/WA/TAS)
 meets, races, cur = {}, [], None
 for line in open(RAW, encoding='utf-8'):
     p = [x.strip() for x in line.rstrip('\n').split('|')]
