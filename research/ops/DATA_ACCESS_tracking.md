@@ -99,3 +99,25 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
   No URL guessing at scale.
 - Victoria: no equivalent public route found; racing.com content will not be fetched from another host either (that would be
   going around the block).
+
+## South Australia collection (26 Nov 2026, overnight; staging only)
+- Decision: Damo 26 Nov 12:02am "Do SA overnight. Happy to proceed... We don't have to implement for tomorrow but need it built";
+  12:03am "whatever you need to do to get this done overnight in the same shape as qld". Racing SA's permission not yet sought
+  (Damo's call to proceed for private research). Nothing enters the master database or production without a release decision.
+- Route: GitHub runner (the same route as the weekly Breednet/RQ collection). Racing SA's website answers the runner with an empty
+  202 (bot protection), so it is not used. Only the public report host is read: honest User-Agent, robots.txt (none published),
+  ~1.5 s pacing, stop after repeated refusals.
+- Report folders (one per club), confirmed from published links: Morphettville + Morphettville Parks 30072, Murray Bridge 30558,
+  Gawler 30272. Other clubs (Strathalbyn, Balaklava, Port Lincoln, Mt Gambier, Port Augusta, Oakbank, Bordertown, Naracoorte,
+  Penola, Clare, Kingscote, Halidon): folder unknown, not guessed. Next: read a link from one of their race pages (needs a
+  one-off approval for countryracingsa.com.au, or Damo copying one 'Sectional Times' link).
+- File names: <date>_race<NN>_sectional.pdf (tripleSdata reports, from Jan 2024); older Daily Sectionals reports use race<N>
+  (race-level + last-800 m splits by runner; kept as text, not staged as tracking).
+- Code: collect/racingsa/collect.py (+ parse_sectional.py, gz_tolerant.py), .github/workflows/racingsa-tracking.yml -> branch
+  raw-racingsa-tracking (files.csv manifest with sha256, texts.jsonl.gz page text). history/stage_sa_tracking.py builds the staged
+  DuckDB with the Queensland table shape (sa_race, sa_starter, sa_sectional) plus checks and a report.
+- Differences from Queensland to remember: sections are counted back from the finish (first section is the odd length, e.g. 50 m
+  of a 1050 m race; Queensland's first section starts at the start); absolute ground covered is not published (only metres
+  relative to the winner); weight is not in the report (Breednet's carried weight is kept separately).
+- Weekly incremental (after a release decision): the Monday job adds the SA meetings of the previous 7 days from the Breednet
+  calendar for the known folders, re-runs staging checks, and reports; loading stays a release step.
