@@ -15,11 +15,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'collect', 'rac
 RAW, MASTER, OUTDB, REPORT = sys.argv[1:5]
 files = pd.read_csv(os.path.join(RAW, 'files.csv'), dtype=str).drop_duplicates('url', keep='last')
 texts = {}
-with gzip.open(os.path.join(RAW, 'texts.jsonl.gz'), 'rt') as fh:
-    for line in fh:
-        try: j = json.loads(line)
-        except json.JSONDecodeError: continue          # a line cut by the time limit
-        texts[j['url']] = j
+import gz_tolerant
+for line in gz_tolerant.lines(os.path.join(RAW, 'texts.jsonl.gz')):
+    j = json.loads(line); texts[j['url']] = j
 M = duckdb.connect(MASTER, read_only=True)
 bn = M.execute("""select r.meeting_date::varchar d, r.slug, r.race_no, r.saddlecloth, r.name_key, r.finish_pos, r.margin_l, r.weight_kg, r.horse, r.pos_raw
                   from bn_runner r join bn_meeting m using (meeting_date, slug) where m.state='SA' and r.meeting_date >= '2023-12-01'""").fetchdf()

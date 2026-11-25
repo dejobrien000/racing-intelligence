@@ -5,7 +5,7 @@ name: racingsa-tracking
 on:
   push:
     branches: [main]
-    paths: ['collect/racingsa/collect.py', 'collect/racingsa/sa_meetings.csv', '.github/workflows/racingsa-tracking.yml']
+    paths: ['collect/racingsa/collect.py', 'collect/racingsa/gz_tolerant.py', 'collect/racingsa/sa_meetings.csv', '.github/workflows/racingsa-tracking.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,12 +23,14 @@ jobs:
         run: |
           mkdir -p /tmp/out
           if git fetch -q --depth 1 origin raw-racingsa-tracking 2>/dev/null; then for f in files.csv texts.jsonl.gz collect.log; do git show FETCH_HEAD:$f > /tmp/out/$f 2>/dev/null || rm -f /tmp/out/$f; done; fi
+          if [ -f /tmp/out/texts.jsonl.gz ]; then python3 collect/racingsa/gz_tolerant.py /tmp/out/texts.jsonl.gz /tmp/out/texts.jsonl && rm /tmp/out/texts.jsonl.gz; fi
           ls -la /tmp/out
       - name: Collect (stops itself before the time limit)
         run: python3 collect/racingsa/collect.py collect/racingsa/sa_meetings.csv /tmp/out $(( $(date +%s) + 19800 )) || true
       - name: Save to branch raw-racingsa-tracking
         if: always()
         run: |
+          if [ -f /tmp/out/texts.jsonl ]; then gzip -f /tmp/out/texts.jsonl; fi
           mkdir -p /tmp/push && cp /tmp/out/* /tmp/push/ 2>/dev/null || true
           cd /tmp/push && git init -q && git checkout -q -b raw-racingsa-tracking && git add -A
           git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Racing SA tracking $(date -u +%FT%TZ)"

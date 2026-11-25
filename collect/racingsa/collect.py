@@ -25,12 +25,19 @@ rp = urllib.robotparser.RobotFileParser()
 r = S.get('https://d26j0amf97rmny.cloudfront.net/robots.txt', timeout=30); rp.parse(r.text.splitlines() if r.status_code == 200 else [])
 log('robots.txt', r.status_code, '(no file = no restriction)' if r.status_code != 200 else '')
 MAN = os.path.join(OUT, 'files.csv'); FIELDS = ['url', 'meeting_date', 'slug', 'race_no', 'status', 'bytes', 'sha256', 'fetched_utc', 'pdf_venue', 'pdf_date', 'pdf_race_no', 'n_runners', 'n_segments', 'problems']
+TXTP = os.path.join(OUT, 'texts.jsonl'); have_text = set()
+if os.path.exists(TXTP):
+    for ln in open(TXTP):
+        try: have_text.add(json.loads(ln)['url'])
+        except (json.JSONDecodeError, KeyError): pass
 done = {}
 if os.path.exists(MAN):
-    for row in csv.DictReader(open(MAN)): done[row['url']] = row
-mf = open(MAN, 'a', newline=''); mw = csv.DictWriter(mf, fieldnames=FIELDS)
-if not done: mw.writeheader()
-TXT = gzip.open(os.path.join(OUT, 'texts.jsonl.gz'), 'at')
+    for row in csv.DictReader(open(MAN)):
+        if row['status'] == '200' and row['url'] not in have_text: continue      # text lost (interrupted run): fetch again
+        done[row['url']] = row
+new_man = not os.path.exists(MAN); mf = open(MAN, 'a', newline=''); mw = csv.DictWriter(mf, fieldnames=FIELDS)
+if new_man: mw.writeheader()
+TXT = open(TXTP, 'a')   # plain while running; the workflow compresses it at the end
 refusals = 0; last = 0.0
 def fetch(url):
     global refusals, last
