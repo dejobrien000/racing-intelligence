@@ -1,0 +1,36 @@
+name: racingsa-tracking
+# Racing SA tripleSdata sectional reports, Dec 2023 on (Damo, 26 Nov 2026: collect SA overnight, same shape as Qld; staging only).
+# Public file host, honest User-Agent, robots.txt check, ~1.5 s pacing, stops on repeated refusals. Resumable: the previous output on
+# branch raw-racingsa-tracking is reused. Output: orphan branch raw-racingsa-tracking (outside main). Nothing loaded anywhere.
+on:
+  push:
+    branches: [main]
+    paths: ['collect/racingsa/collect.py', 'collect/racingsa/sa_meetings.csv', '.github/workflows/racingsa-tracking.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: racingsa-collect, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests pdfplumber
+      - name: Reuse earlier output
+        run: |
+          mkdir -p /tmp/out
+          if git fetch -q --depth 1 origin raw-racingsa-tracking 2>/dev/null; then for f in files.csv texts.jsonl.gz collect.log; do git show FETCH_HEAD:$f > /tmp/out/$f 2>/dev/null || rm -f /tmp/out/$f; done; fi
+          ls -la /tmp/out
+      - name: Collect (stops itself before the time limit)
+        run: python3 collect/racingsa/collect.py collect/racingsa/sa_meetings.csv /tmp/out $(( $(date +%s) + 19800 )) || true
+      - name: Save to branch raw-racingsa-tracking
+        if: always()
+        run: |
+          mkdir -p /tmp/push && cp /tmp/out/* /tmp/push/ 2>/dev/null || true
+          cd /tmp/push && git init -q && git checkout -q -b raw-racingsa-tracking && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Racing SA tracking $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-racingsa-tracking
