@@ -39,3 +39,21 @@ dates/2026-11-26/meetings returned data (HAW, MOR, ROC, GER) -> the approval now
 Whether it also covers fresh scheduled sessions is shown by the 26 Nov 7:33 daily run (log research/ops/logs/2026-11-26.md).
 TAB's info-service lists only today and future dates (25 Nov 10:20: dates = 25, 26, 28, 29 Nov, 4 Dec; 24 Nov meetings = []).
 So CLOSE (final fixed price with the results) may not be readable at 7:30 next morning: checked tonight + 26 Nov 7:30.
+
+## Weekly master-database update (built 25 Nov 2026 afternoon) - workflow weekly-master-db
+- Schedule: Monday 3:00am Brisbane (cron Sunday 17:00 UTC). Runs entirely on GitHub; laptop can be off.
+- Steps (research/ops/weekly_update.py): Breednet results for the last 10+ days (all six states held) -> incremental merge
+  (history/load_breednet.py --incremental) -> Racing Queensland tracking ZIPs + Race Fields PDFs for the same days
+  (collect/weekly/rq.py) -> incremental merge (history/load_history.py --incremental) -> rebuild every derived table
+  (Qld runs, Qld ratings/features/pace figures, national runs with the states in ops/db_config.json, v2 and v3 frames)
+  -> checks -> report (branch ci-results, weekly-db/weekly_report.md).
+- Publishing: the new version goes to branch db and the old one to db-prev ONLY if every check passes AND the switch
+  file research/ops/weekly_publish_enabled exists. The switch is added after one dry run passes on GitHub.
+- Proven locally 25 Nov: RQ collector parse = browser parse on every saved 2022-26 file (9.8k races, 126k runners, 636k
+  sections, 94k field rows); live GitHub fetch of 20-22 Nov matches the master DB exactly; incremental merge of an
+  already-held bundle leaves every table identical; full rebuild reproduces all production tables exactly. Full job ~20 min,
+  peak memory about 2.5 GB (GitHub runners have 7 GB or more). Sandbox run of the whole script with saved bundles: all checks PASS.
+- Only one collector job runs at a time (concurrency group breednet-collect, shared with the backfills). A new queued run
+  replaces a waiting one, so dry runs are started only when no backfill is waiting.
+- SA, WA and Tas join the national rating only by a deliberate database release (ops/db_config.json), after Damo sees
+  the evaluation.
