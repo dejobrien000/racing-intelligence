@@ -39,6 +39,16 @@ dates/2026-11-26/meetings returned data (HAW, MOR, ROC, GER) -> the approval now
 Whether it also covers fresh scheduled sessions is shown by the 26 Nov 7:33 daily run (log research/ops/logs/2026-11-26.md).
 TAB's info-service lists only today and future dates (25 Nov 10:20: dates = 25, 26, 28, 29 Nov, 4 Dec; 24 Nov meetings = []).
 So CLOSE (final fixed price with the results) may not be readable at 7:30 next morning: checked tonight + 26 Nov 7:30.
+25 Nov 23:14 Brisbane (13:14Z, about 2h after the last race; already 26 Nov in Sydney/Melbourne): every 25 Nov racecard still
+answered (44/44 races). After racing TAB shows: fixedOdds.returnWin = final TAB fixed price; bettingStatus = Winner / Placing /
+Loser / LateScratched; race.results = finishing order of the FIRST FOUR only; dividends (tote, not used); returnWinOpen = TAB's own
+opening price (NOT our 7:30 OPEN). Runners 5th or worse have no position: settle_yesterday.py now marks them 'unplaced' (fixed 25 Nov;
+before the fix they counted as no result, field sizes shrank to 4 and place terms were wrong).
+DECISION: results + CLOSE need an EVENING capture (after the last race, before Brisbane midnight) until a morning run proves the
+previous day is still listed: on 25 Nov 10:20 Brisbane the 24 Nov meetings list was empty. The 26 Nov 7:30 run's step 3 is the test.
+Evening file: research/collect/national/<date>/results_<stamp>.raw.txt (copy in prices/<date>/). If step 3 finds TAB empty, the
+morning run uses the evening file. A standing evening capture needs a scheduled task that can read TAB unattended: not created yet
+(depends on the same TAB-approval question as the 7:30 run).
 
 ## Weekly master-database update (built 25 Nov 2026 afternoon) - workflow weekly-master-db
 - Schedule: Monday 3:00am Brisbane (cron Sunday 17:00 UTC). Runs entirely on GitHub; laptop can be off.

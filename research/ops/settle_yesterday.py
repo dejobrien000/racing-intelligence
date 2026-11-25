@@ -20,8 +20,10 @@ for line in open(RAW, encoding='utf-8'):
     if not p[0] or p[0].startswith('#') or p[0] == 'MEET': continue
     if p[0] == 'RACE': cur = (p[1], int(p[2])); res[cur] = {'cap': p[10] if len(p) > 10 else None, 'run': {}}
     elif cur:
-        res[cur]['run'][int(p[0])] = {'name': p[1], 'win': num(p[8] if len(p) > 8 else None), 'place': num(p[9] if len(p) > 9 else None),
-                                     'status': p[10] if len(p) > 10 else None, 'finish': p[11] if len(p) > 11 and p[11] not in ('', '-', 'null') else None}
+        fin_ = p[11] if len(p) > 11 and p[11] not in ('', '-', 'null') else None; st_ = p[10] if len(p) > 10 else None
+        # TAB's results list stops at 4th: a runner that ran (status Loser) but isn't in it finished 5th or worse (fix 25 Nov 2026)
+        if fin_ is None and (st_ or '').lower() == 'loser': fin_ = 'unplaced'
+        res[cur]['run'][int(p[0])] = {'name': p[1], 'win': num(p[8] if len(p) > 8 else None), 'place': num(p[9] if len(p) > 9 else None), 'status': st_, 'finish': fin_}
 code = lambda m: m.get('tab_code') or {'Ipswich': 'IPS', 'Wyong': 'WYO', 'Geelong': 'GEL', 'Strathalbyn': 'STR', 'Albany': 'ABN', 'Launceston': 'LAU'}.get(m['name'])
 rows = []
 for m in DJ['meetings']:

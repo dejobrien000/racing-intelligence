@@ -1,0 +1,23 @@
+date,meeting,state,race,n,horse,model_version,win_chance,classification,open_win,open_place,open_utc,close_win,close_place,result,settlement,paper_return,paper_return_close,paper_place_return,movement
+2026-11-25,Wyong,NSW,1,1,Freddie Bassett,Engine v2.1,26.0,Leading contender,,,,5.5,2.7,3,lost (no open price: excluded),,-1.0,,
+2026-11-25,Wyong,NSW,2,6,Ligularia,Engine v2.1,39.0,Strong selection,,,,2.2,1.24,1,won (no open price: excluded),,1.2,,
+2026-11-25,Wyong,NSW,3,11,Binit,Engine v2.1,40.6,Strong selection,,,,12.0,3.5,1,won (no open price: excluded),,11.0,,
+2026-11-25,Wyong,NSW,4,6,Acknowledge Me (NZ),Engine v2.1,21.1,No clear selection,3.8,1.4,2026-11-24T20:57:17Z,3.9,1.35,1,won,2.8,2.9,0.4,1.026
+2026-11-25,Wyong,NSW,5,1,Siragusa,Engine v2.1,31.6,Strong selection,2.0,1.18,2026-11-24T20:57:17Z,1.7,1.12,3,placed,-1.0,-1.0,0.18,0.85
+2026-11-25,Wyong,NSW,6,2,Gravel Road,Engine v2.1,26.0,Leading contender,,,,1.55,1.2,1,won (no open price: excluded),,0.55,,
+2026-11-25,Wyong,NSW,7,2,HY,Engine v2.1,31.2,Strong selection,,,,2.5,1.5,1,won (no open price: excluded),,1.5,,
+2026-11-25,Ipswich,QLD,1,4,Two Minds,Engine v2.1,24.6,Leading contender,4.6,1.4,2026-11-24T20:57:17Z,,,scratched,void (scratched),0.0,,,
+2026-11-25,Ipswich,QLD,2,3,Flavourofthemonth,Engine v2.1,19.1,Insufficient evidence,7.5,2.0,2026-11-24T20:57:17Z,8.0,1.6,unplaced,lost,-1.0,-1.0,-1.0,1.067
+2026-11-25,Ipswich,QLD,3,3,Double Cool,Engine v2.1,22.6,Leading contender,1.9,1.18,2026-11-24T20:57:17Z,1.6,1.1,1,won,0.9,0.6,0.18,0.842
+2026-11-25,Ipswich,QLD,4,1,Castello Grande,Engine v2.1,28.0,Strong selection,2.6,1.35,2026-11-24T20:57:17Z,1.8,1.14,4,lost,-1.0,-1.0,-1.0,0.692
+2026-11-25,Ipswich,QLD,5,5,Switchblade,Engine v2.1,16.6,No clear selection,26.0,6.0,2026-11-24T20:57:17Z,34.0,7.0,unplaced,lost,-1.0,-1.0,-1.0,1.308
+2026-11-25,Ipswich,QLD,6,5,Barrelling,Engine v2.1,19.5,No clear selection,8.5,2.5,2026-11-24T20:57:17Z,8.5,2.6,1,won,7.5,7.5,1.5,1.0
+2026-11-25,Ipswich,QLD,7,6,Midnight Spirit,Engine v2.1,14.7,No clear selection,5.5,2.1,2026-11-24T20:57:17Z,6.0,2.2,unplaced,lost,-1.0,-1.0,-1.0,1.091
+2026-11-25,Geelong,VIC,1,5,Blackbelt,Engine v2.1,50.2,Strong selection,1.7,1.1,2026-11-24T20:57:17Z,1.4,1.04,4,lost,-1.0,-1.0,-1.0,0.824
+2026-11-25,Geelong,VIC,2,1,Bella Blaze,Engine v2.1,39.1,Strong selection,,,,2.6,1.5,3,lost (no open price: excluded),,-1.0,,
+2026-11-25,Geelong,VIC,3,4,Gallantry,Engine v2.1,31.5,Strong selection,5.5,2.0,2026-11-24T20:57:17Z,7.5,2.4,unplaced,lost,-1.0,-1.0,-1.0,1.364
+2026-11-25,Geelong,VIC,4,6,Carnevale,Engine v2.1,29.1,Leading contender,1.7,1.12,2026-11-24T20:57:17Z,1.9,1.14,1,won,0.7,0.9,0.12,1.118
+2026-11-25,Geelong,VIC,5,2,Mickio,Engine v2.1,19.1,No clear selection,7.0,2.4,2026-11-24T20:57:17Z,7.5,2.4,unplaced,lost,-1.0,-1.0,-1.0,1.071
+2026-11-25,Geelong,VIC,6,1,Bold Bordeaux,Engine v2.1,19.3,No clear selection,7.5,2.5,2026-11-24T20:57:17Z,8.5,2.7,2,placed,-1.0,-1.0,1.5,1.133
+2026-11-25,Geelong,VIC,7,12,Layla,Engine v2.1,23.5,Leading contender,1.8,1.14,2026-11-24T20:57:17Z,1.75,1.12,3,placed,-1.0,-1.0,0.14,0.972
+2026-11-25,Geelong,VIC,8,11,Jenni Poppins,Engine v2.1,22.0,No clear selection,5.5,1.9,2026-11-24T20:57:17Z,3.7,1.45,2,placed,-1.0,-1.0,0.9,0.673
