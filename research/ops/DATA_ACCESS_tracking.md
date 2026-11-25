@@ -141,3 +141,33 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
 - Weekly: research/ops/weekly_update.py collects the window's SA meetings (known club folders), stages, checks and replaces only
   passing races; a failure leaves the SA tables unchanged and is reported. The SA tables are covered by 'no table lost rows'.
 - Not used by any model yet. Using SA tracking in ratings is a research question with its own release.
+
+## Victoria and NSW: can the SA/Qld method be repeated? (26 Nov 2026, 7:25-7:40am)
+Asked by Damo 7:25am. Web searches only; no new site fetched without approval (a fetch of the Racing NSW app manual needed
+approval and went unanswered, so it was not retried).
+- How we get Qld and SA: in both states the controlling body posts the supplier's (tripleSdata's) post-race files on a public web
+  host. Qld: Racing Queensland's sectionals page links one ZIP per meeting (RaceSummary XML per race; collect/weekly/rq.py).
+  SA: Racing SA's file CDN holds one PDF per race (collect/racingsa/collect.py). Both read by the GitHub runner, honest
+  User-Agent, robots.txt respected, paced.
+- Victoria: tripleSdata tracks six venues (Flemington, Caulfield, Moonee Valley, Sandown; Pakenham and Cranbourne by Apr 2024).
+  Racing Victoria publishes the post-race data only through racing.com (its own media arm). No club, Racing Victoria or other
+  official host of the files was found (searched VRC, MVRC, MRC, Racing Victoria sites; VRC hosts only Daily Sectionals rail
+  statistics PDFs). tripleSdata/TPD sell feeds commercially (not pursued: no purchases).
+- The specific Victorian obstacle, in two parts: (1) Claude's fetch tool refuses racing.com (our side; not worked around, and
+  racing.com content from other hosts is not used); (2) even if readable, racing.com's speed-data pages hold only the last two
+  weeks, one race at a time, so history back to Oct 2022 is not publicly posted anywhere. History needs a delivery from Racing
+  Victoria or tripleSdata whoever does the collecting.
+- Reuse: yes. If Victoria arrives in either format tripleSdata already makes for other states (RQ's meeting ZIP or Racing SA's
+  race PDF), the existing parser, staging, checks and weekly step take it with a venue/state mapping and no new collector.
+- NSW: Punter's Intelligence is an app only (iOS, Android, PC/Mac desktop builds; 3D replays). No export, CSV, file host or API is
+  published. Racing NSW is listed among tripleSdata's customers (Jan 2024 merger release), and Harness Racing NSW already posts
+  tripleSdata GPS sectional PDFs publicly, so the format exists for NSW; no thoroughbred equivalent found. Pulling data out of the
+  app's private interface is not ordinary supported access and will not be done.
+- Data acquired: none new for Vic or NSW. Coverage: Vic 0, NSW 0.
+
+### Sharper ask (replaces the generic file request for Vic; same ask for NSW)
+"Please supply, for every tripleSdata-tracked [Victorian | NSW] thoroughbred race from 1 Oct 2022, the same post-race files
+tripleSdata already produces for Racing Queensland (one ZIP per meeting with RaceSummary XML per race) or for Racing SA (one
+sectional PDF per race), as a one-off archive, then each week to a shared folder or by API key. Private, non-commercial research;
+no redistribution; no wagering product." Address: Racing Victoria (permission) with tripleSdata copied (they make the files);
+Racing NSW the same. Damo sends it; Claude does not send external correspondence.
