@@ -28,7 +28,7 @@ jobs:
       - name: Save results to branch ci-results-rq
         if: always()
         run: |
-          mkdir -p /tmp/out/rq-test && cp /tmp/rq_parity.md /tmp/rq_collect.log /tmp/rq_compare.log /tmp/out/rq-test/ 2>/dev/null || true
+          mkdir -p /tmp/out/rq-test && cp /tmp/rq_parity.md /tmp/rq_collect.log /tmp/rq_compare.log /tmp/rq_test.zip /tmp/out/rq-test/ 2>/dev/null || true
           cd /tmp/out && git init -q && git checkout -q -b ci-results-rq && git add -A && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "rq collector test $(date -u +%FT%TZ)"
           AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
           git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" ci-results-rq
