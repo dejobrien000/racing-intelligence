@@ -1,0 +1,25 @@
+pressure,fought,recovery,runs,next_Y,se
+not on speed,beaten further,7-13 days,5587,-0.043,0.065
+not on speed,beaten further,14-27,14061,-0.009,0.041
+not on speed,beaten further,28-60,6036,-0.132,0.068
+not on speed,beaten further,61-120,2691,-0.381,0.103
+not on speed,fought on (within 2L),7-13 days,2909,0.587,0.078
+not on speed,fought on (within 2L),14-27,8748,0.436,0.046
+not on speed,fought on (within 2L),28-60,2550,0.266,0.094
+not on speed,fought on (within 2L),61-120,863,-0.196,0.178
+"on speed, hot tempo",beaten further,7-13 days,403,0.197,0.258
+"on speed, hot tempo",beaten further,14-27,1127,0.507,0.146
+"on speed, hot tempo",beaten further,28-60,539,0.182,0.24
+"on speed, hot tempo",beaten further,61-120,273,0.643,0.329
+"on speed, hot tempo",fought on (within 2L),7-13 days,304,0.268,0.296
+"on speed, hot tempo",fought on (within 2L),14-27,1046,0.548,0.155
+"on speed, hot tempo",fought on (within 2L),28-60,368,0.294,0.244
+"on speed, hot tempo",fought on (within 2L),61-120,125,-0.796,0.459
+"on speed, ordinary tempo",beaten further,7-13 days,824,0.038,0.181
+"on speed, ordinary tempo",beaten further,14-27,1914,-0.095,0.118
+"on speed, ordinary tempo",beaten further,28-60,936,0.026,0.178
+"on speed, ordinary tempo",beaten further,61-120,471,-0.302,0.264
+"on speed, ordinary tempo",fought on (within 2L),7-13 days,768,0.447,0.178
+"on speed, ordinary tempo",fought on (within 2L),14-27,2306,0.102,0.104
+"on speed, ordinary tempo",fought on (within 2L),28-60,764,0.437,0.187
+"on speed, ordinary tempo",fought on (within 2L),61-120,261,-0.116,0.329

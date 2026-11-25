@@ -1,0 +1,4 @@
+model,races,fit_%,top_pick_%,winner_in_top3_%,order_rho,vs_current_lp,vs_current_lp_lo,vs_current_lp_hi,vs_current_hit,vs_current_hit_lo,vs_current_hit_hi,vs_current_top3,vs_current_top3_lo,vs_current_top3_hi,vs_current_rho,vs_current_rho_lo,vs_current_rho_hi,vs_current_races
+current rating,16489.0,10.27,25.85,57.21,0.3557,,,,,,,,,,,,,
+v3 rating (replacement),16489.0,10.15,25.85,57.09,0.3547,-0.00259,-0.00369,-0.00157,0.0,-0.28,0.27,-0.12,-0.44,0.19,-0.00103,-0.00218,4e-05,
+"v3 vs current, 2026 only",,,,,,-0.00331,-0.00517,-0.00159,-0.26,-0.69,0.13,-0.12,-0.53,0.31,-0.00137,-0.00275,0.0001,7765.0

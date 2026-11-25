@@ -1,0 +1,23 @@
+half,term,kg,plusminus95,runs
+A 2022-24,really accelerated,0.455,0.511,25259
+A 2022-24,slowed less than rivals,0.272,0.172,25259
+A 2022-24,dyn_nat_inn,0.064,0.016,25259
+A 2022-24,K,2.669,1.072,25259
+A 2022-24,tempo,0.131,0.171,25259
+A 2022-24,late_abs,-0.206,0.108,25259
+A 2022-24,field_q,0.035,0.018,25259
+A 2022-24,dchg,-0.103,0.063,25259
+A 2022-24,first2,-0.299,0.174,25259
+A 2022-24,continuous acc_abs (kg per m/s),-0.658,0.175,25259
+A 2022-24,continuous acc_rel (kg per m/s),-0.175,0.288,25259
+B 2025-26,really accelerated,0.866,0.593,30991
+B 2025-26,slowed less than rivals,0.165,0.152,30991
+B 2025-26,dyn_nat_inn,0.085,0.015,30991
+B 2025-26,K,0.983,0.986,30991
+B 2025-26,tempo,-0.038,0.144,30991
+B 2025-26,late_abs,-0.113,0.096,30991
+B 2025-26,field_q,-0.008,0.011,30991
+B 2025-26,dchg,-0.134,0.062,30991
+B 2025-26,first2,-0.167,0.161,30991
+B 2025-26,continuous acc_abs (kg per m/s),-0.399,0.162,30991
+B 2025-26,continuous acc_rel (kg per m/s),-0.265,0.263,30991
