@@ -24,12 +24,15 @@ jobs:
           cd /tmp/dbpack && python3 -c "import json,hashlib,glob;m=json.load(open('MANIFEST.json'));[exit('sha mismatch '+p['file']) for p in m['parts'] if hashlib.sha256(open(p['name'],'rb').read()).hexdigest()!=p['sha256']];print('pack ok',m['version'])"
           cat master_db.tar.gz.part* | tar -xzf - -C "$GITHUB_WORKSPACE" history/history.duckdb
       - name: Collect 21-22 Nov 2026 (NSW, VIC, ACT) from Breednet
-        run: python3 collect/weekly/breednet.py dates 2026-11-21 2026-11-22 /tmp/bn_test.jsonl.gz --states NSW,VIC,ACT
+        run: python3 collect/weekly/breednet.py dates 2026-11-21 2026-11-22 /tmp/bn_test.jsonl.gz --states NSW,VIC,ACT 2>&1 | tee /tmp/collect.log
       - name: Compare with the master database
-        run: python3 collect/weekly/compare_breednet.py /tmp/bn_test.jsonl.gz history/history.duckdb /tmp/parity.md || true
+        if: always()
+        run: python3 collect/weekly/compare_breednet.py /tmp/bn_test.jsonl.gz history/history.duckdb /tmp/parity.md 2>&1 | tee /tmp/compare.log || true
       - name: Save results to branch ci-results
+        if: always()
         run: |
-          mkdir -p /tmp/out && cp /tmp/parity.md /tmp/bn_test.stats.json /tmp/bn_test.jsonl.gz /tmp/out/
+          mkdir -p /tmp/out && cp /tmp/parity.md /tmp/bn_test.stats.json /tmp/bn_test.jsonl.gz /tmp/collect.log /tmp/compare.log /tmp/out/ 2>/dev/null || true
+          curl -s -A 'RacingIntelligence-private/0.2' https://www.breednet.com.au/robots.txt | head -60 > /tmp/out/breednet_robots.txt || true
           git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
           git checkout -q --orphan ci-results && git rm -rq --cached . && git clean -fdq -e history
           mkdir -p weekly-test && cp /tmp/out/* weekly-test/ && git add weekly-test && git commit -qm "weekly collector test $(date -u +%FT%TZ)"
