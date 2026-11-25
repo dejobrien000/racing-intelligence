@@ -1802,5 +1802,57 @@
 "york-synthetic": [
 "WA",
 "york"
+],
+"adaminaby": [
+"NSW",
+"Adaminaby"
+],
+"bingara": [
+"NSW",
+"Bingara"
+],
+"bong-bong": [
+"NSW",
+"Bong Bong"
+],
+"hay": [
+"NSW",
+"Hay"
+],
+"healesville": [
+"VIC",
+"Healesville"
+],
+"yea": [
+"VIC",
+"Yea"
+],
+"atherton": [
+"QLD",
+"Atherton"
+],
+"clermont": [
+"QLD",
+"Clermont"
+],
+"ingham": [
+"QLD",
+"Ingham"
+],
+"mt-isa": [
+"QLD",
+"Mt Isa"
+],
+"pentland": [
+"QLD",
+"Pentland"
+],
+"fannie-bay": [
+"NT",
+"Fannie Bay"
+],
+"pioneer-park": [
+"NT",
+"Pioneer Park"
 ]
 }
