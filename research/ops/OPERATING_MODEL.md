@@ -103,3 +103,8 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   staging-sa-tracking, Queensland table shape, 93.6% of races pass every check. Collector: workflow racingsa-tracking (orphan
   branch raw-racingsa-tracking). Details and gaps: research/ops/DATA_ACCESS_tracking.md, research/staging/sa_tracking_report.md.
   Loading into the master database and adding SA to the weekly job await Damo's release decision.
+- 26 Nov 2026 7:06am: LIVE in the master database (release master-2026-11-23-sa-wa-tas-qld-satrk, approved by Damo 7:01am "set this live"):
+  sa_race 1,775 / sa_starter 18,822 / sa_sectional 133,905 (races passing every check; 53 races with duplicate rows excluded),
+  sa_race_checks 1,954. Previous version on db-prev. Existing tables, parquets and engine frames byte-identical, so production
+  ratings are unchanged; no model uses SA tracking yet (research first). Weekly incremental SA step: to be added to weekly_update.py
+  and tested by a dry run after the 26 Nov daily run.

@@ -7,7 +7,7 @@
   "WA",
   "TAS"
  ],
- "version": "master-2026-11-23-sa-wa-tas-qld",
- "note": "States whose Breednet history feeds the national rating (national.py) and whose meetings the daily run rates (ops/daily_build.py). SA, WA and TAS added by the database release approved by Damo 25 Nov 2026 2:15pm Brisbane, live from the 26 Nov 7:30am run. To roll back: set NSW, VIC, ACT here and restore branch db from db-prev. Queensland Breednet meetings (not covered by RQ tracking) feed the national rating from the 26 Nov run (database release approved by Damo 25 Nov; Queensland model refitted as Engine v2.1.1). Roll back: set qld_breednet_in_national_rating false, restore db from db-prev and the previous benchmarks manifests from git.",
+ "version": "master-2026-11-23-sa-wa-tas-qld-satrk",
+ "note": "States whose Breednet history feeds the national rating (national.py) and whose meetings the daily run rates (ops/daily_build.py). SA, WA and TAS added by the database release approved by Damo 25 Nov 2026 2:15pm Brisbane, live from the 26 Nov 7:30am run. To roll back: set NSW, VIC, ACT here and restore branch db from db-prev. Queensland Breednet meetings (not covered by RQ tracking) feed the national rating from the 26 Nov run (database release approved by Damo 25 Nov; Queensland model refitted as Engine v2.1.1). Roll back: set qld_breednet_in_national_rating false, restore db from db-prev and the previous benchmarks manifests from git. 26 Nov 2026 7:06am: South Australian tracking tables (sa_race, sa_starter, sa_sectional, sa_race_checks) added by the release approved by Damo 26 Nov 7:01am; no existing table or frame changed, nothing in production reads them yet. Roll back: restore branch db from db-prev.",
  "qld_breednet_in_national_rating": true
 }
