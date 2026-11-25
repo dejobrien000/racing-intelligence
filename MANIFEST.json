@@ -1,0 +1,76 @@
+{
+ "version": "master-2026-11-23-sa-wa-tas-qld-satrk",
+ "history_to": "2026-11-23",
+ "created_utc": "2026-11-25T21:04:56Z",
+ "release_note": "Database release approved by Damo 26 Nov 2026 7:01am ('set this live'): adds South Australian tripleSdata tracking as new tables sa_race (1,775 races), sa_starter (18,822 runners), sa_sectional (133,905 sections), sa_race_checks (all 1,954 staged races with their check results). Morphettville, Morphettville Parks, Murray Bridge, Gawler; 1 Jan 2024 - 21 Nov 2026; only races passing every staging check. No existing table, parquet or engine frame changed (byte-identical), so production ratings are unchanged. Previous version: branch db-prev (master-2026-11-23-sa-wa-tas-qld).",
+ "contents": [
+  "history/history.duckdb",
+  "research/national_runs.parquet",
+  "research/runs.parquet",
+  "research/features.parquet",
+  "research/dyn_nat_qld.parquet",
+  "research/pace_figures.parquet",
+  "research/runs_rated.parquet",
+  "research/runs_rated_dev.parquet",
+  "research/engine/frames/national.parquet",
+  "research/engine/frames/national_v3.parquet"
+ ],
+ "restore": "cat master_db.tar.gz.part* | tar -xzf - (from the repository root)",
+ "parts": [
+  {
+   "file": "master_db.tar.gz.part00",
+   "bytes": 47185920,
+   "sha256": "3c3ffa3b84ba7978f4e9c5cfa89fe9461cb311c6f6f80a94ce2ec4b4afa50bb8"
+  },
+  {
+   "file": "master_db.tar.gz.part01",
+   "bytes": 47185920,
+   "sha256": "e36067cb84acd152deda9349f76e652ec320fc0f6e262bd237dd342212091afc"
+  },
+  {
+   "file": "master_db.tar.gz.part02",
+   "bytes": 47185920,
+   "sha256": "fd2094edcd550b14638fe791c51d6b0e6b8903644ebb2e08bf01d0352c289824"
+  },
+  {
+   "file": "master_db.tar.gz.part03",
+   "bytes": 47185920,
+   "sha256": "5cfe6299a7db1b27ab6f6bd104c6eb166159a6d3017c815e1fd0b7ecd6971b6f"
+  },
+  {
+   "file": "master_db.tar.gz.part04",
+   "bytes": 47185920,
+   "sha256": "395552116138af10e1007274cb481837072a10ebac5cfe4245acd9afc8caee05"
+  },
+  {
+   "file": "master_db.tar.gz.part05",
+   "bytes": 47185920,
+   "sha256": "bf69b407e8a2a9f4f34575d96a808f85f13b6de61dea31ae82007cf048ed2373"
+  },
+  {
+   "file": "master_db.tar.gz.part06",
+   "bytes": 47185920,
+   "sha256": "b4932ea4bdc199df2aec8db030f3b2eecd32d1b0c40678c705ef1131374e10a0"
+  },
+  {
+   "file": "master_db.tar.gz.part07",
+   "bytes": 47185920,
+   "sha256": "01160fbfdf0406ee45691c3290d47f9e770f3e3b900bb278fdc51bf47f854825"
+  },
+  {
+   "file": "master_db.tar.gz.part08",
+   "bytes": 47185920,
+   "sha256": "3609832f13a1897b761359353ce325266d948b7032cd3ae8b3c678dc12e81c0a"
+  },
+  {
+   "file": "master_db.tar.gz.part09",
+   "bytes": 47185920,
+   "sha256": "cc41d4a236fcc997d72d93ef3d61951e529b74aa6eb275025c4ba91c4b72779e"
+  },
+  {
+   "file": "master_db.tar.gz.part10",
+   "bytes": 25763150,
+   "sha256": "87079c7eaaa97d428d6cb0e97040b30487297d32863024777bb529b3f3ceead9"
+  }
+ ]
+}
