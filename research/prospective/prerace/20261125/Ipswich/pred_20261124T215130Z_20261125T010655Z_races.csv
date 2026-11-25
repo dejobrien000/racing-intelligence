@@ -1,0 +1,29 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261125-Ipswich-R1,10,25.54,16.35,9.19,4,4
+combined_v1,20261125-Ipswich-R2,10,18.08,14.11,3.97,2,2
+combined_v1,20261125-Ipswich-R3,11,20.19,20.19,0.0,4,4
+combined_v1,20261125-Ipswich-R4,9,26.22,19.56,6.66,0,0
+combined_v1,20261125-Ipswich-R5,13,17.53,14.82,2.7,0,0
+combined_v1,20261125-Ipswich-R6,11,11.98,11.91,0.07,1,1
+combined_v1,20261125-Ipswich-R7,13,19.75,9.8,9.95,1,1
+combined_v1 + dynamic rating,20261125-Ipswich-R1,10,29.17,18.9,10.27,4,4
+combined_v1 + dynamic rating,20261125-Ipswich-R2,10,15.56,15.0,0.56,2,2
+combined_v1 + dynamic rating,20261125-Ipswich-R3,11,26.18,13.07,13.11,4,4
+combined_v1 + dynamic rating,20261125-Ipswich-R4,9,28.86,21.84,7.02,0,0
+combined_v1 + dynamic rating,20261125-Ipswich-R5,13,17.43,13.38,4.05,0,0
+combined_v1 + dynamic rating,20261125-Ipswich-R6,11,13.72,11.92,1.8,1,1
+combined_v1 + dynamic rating,20261125-Ipswich-R7,13,15.28,11.68,3.6,1,1
+dynamic rating + PA1 figure,20261125-Ipswich-R1,10,31.92,18.84,13.08,4,4
+dynamic rating + PA1 figure,20261125-Ipswich-R2,10,22.63,13.11,9.52,2,2
+dynamic rating + PA1 figure,20261125-Ipswich-R3,11,34.11,10.63,23.49,4,4
+dynamic rating + PA1 figure,20261125-Ipswich-R4,9,26.21,19.51,6.7,0,0
+dynamic rating + PA1 figure,20261125-Ipswich-R5,13,11.56,10.57,0.99,0,0
+dynamic rating + PA1 figure,20261125-Ipswich-R6,11,17.15,12.35,4.8,1,1
+dynamic rating + PA1 figure,20261125-Ipswich-R7,13,19.0,10.62,8.38,1,1
+combined_v1 + national dynamic rating,20261125-Ipswich-R1,10,27.81,21.0,6.81,4,4
+combined_v1 + national dynamic rating,20261125-Ipswich-R2,10,14.71,14.21,0.49,2,2
+combined_v1 + national dynamic rating,20261125-Ipswich-R3,11,25.89,12.1,13.78,4,4
+combined_v1 + national dynamic rating,20261125-Ipswich-R4,9,30.07,17.4,12.67,0,0
+combined_v1 + national dynamic rating,20261125-Ipswich-R5,13,17.69,14.42,3.28,0,0
+combined_v1 + national dynamic rating,20261125-Ipswich-R6,11,12.19,11.91,0.28,1,1
+combined_v1 + national dynamic rating,20261125-Ipswich-R7,13,15.87,12.67,3.2,1,1

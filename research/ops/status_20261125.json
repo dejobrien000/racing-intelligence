@@ -1,12 +1,60 @@
-{"items": [
- {"item": "Queensland fields: Racing Queensland (official)", "status": "working", "note": "Night-before fields captured on the PC. Race-morning scratchings are readable from the cloud."},
- {"item": "NSW fields: Racing NSW (official)", "status": "working", "note": "Night-before fields captured on the PC."},
- {"item": "Vic, SA, WA and Tas fields: Breednet (secondary source)", "status": "working", "note": "Collected from the cloud with the PC off. Consistency-checked (barriers 1..N, unique numbers). Not an official authority feed."},
- {"item": "Ratings for SA, WA and Tas", "status": "not yet", "note": "No results history for these states yet; fields shown, not rated."},
- {"item": "TAB fixed odds", "status": "blocked", "note": "TAB Studio no longer accepts personal API applications, and tab.com.au's terms prohibit automated collection. No authorised route today."},
- {"item": "Betfair Exchange prices (official API)", "status": "needs your account", "note": "Requires your Betfair account, an App Key and a login method we can store securely. Not connected."},
- {"item": "Collection computer (PC)", "status": "offline", "note": "Not needed for today's cloud collection."}],
- "markets": {"status": "none", "message": "No authorised price feed is connected yet, so no prices are shown. Prices will appear here labelled by source and time; they are display-only and never enter the model.",
+{
+ "items": [
+  {
+   "item": "Ipswich ratings re-issued 11:11am (engine v2.0.1)",
+   "status": "working",
+   "note": "The 7:56am Ipswich set gave the national ability rating zero weight (a scoring fault). Re-scored at 11:11am on the same fields with the fault fixed; the top pick changed in 5 of 7 races. The 7:56am set is kept on file. Paper returns use the 7:30 TAB fixed prices (OPEN) for the re-issued picks; no new price was collected."
+  },
+  {
+   "item": "Queensland fields: Racing Queensland (official)",
+   "status": "working",
+   "note": "Night-before fields captured on the PC. Race-morning scratchings are readable from the cloud."
+  },
+  {
+   "item": "NSW fields: Racing NSW (official)",
+   "status": "working",
+   "note": "Night-before fields captured on the PC."
+  },
+  {
+   "item": "Vic, SA, WA and Tas fields: Breednet (secondary source)",
+   "status": "working",
+   "note": "Collected from the cloud with the PC off. Consistency-checked (barriers 1..N, unique numbers). Not an official authority feed. Geelong scratchings now taken from TAB racecard status (Breednet lagged)."
+  },
+  {
+   "item": "Ratings for SA, WA and Tas",
+   "status": "not yet",
+   "note": "No results history for these states yet; fields shown, not rated."
+  },
+  {
+   "item": "TAB fixed odds",
+   "status": "working",
+   "note": "TAB's public racecard endpoint (api.beta.tab.com.au), read from the cloud with ordinary requests; fixed win and place only. Not an authorised data feed; TAB could block it at any time."
+  },
+  {
+   "item": "Betfair Exchange prices (official API)",
+   "status": "needs your account",
+   "note": "Requires your Betfair account, an App Key and a login method we can store securely. Not connected."
+  },
+  {
+   "item": "Collection computer (PC)",
+   "status": "offline",
+   "note": "Not needed for today's cloud collection."
+  }
+ ],
+ "markets": {
+  "status": "TAB fixed odds",
+  "message": "TAB fixed win and place prices from TAB's public racecards, each stamped with collection time. Display only: never used by the model. TAB tote and Betfair prices are not shown.",
   "sources": [
-   {"name": "TAB fixed odds", "status": "blocked", "detail": "TAB Studio's personal API programme is closed to new applications; scraping tab.com.au is prohibited by its terms."},
-   {"name": "Betfair Exchange (official API)", "status": "needs your account", "detail": "Exchange prices, not TAB fixed odds. Labelled 'Betfair' wherever shown."}]}}
+   {
+    "name": "TAB fixed odds",
+    "status": "working",
+    "detail": "public racecard endpoint, matched by meeting, race, number and name"
+   },
+   {
+    "name": "Betfair Exchange",
+    "status": "not connected",
+    "detail": "optional later; would be labelled separately"
+   }
+  ]
+ }
+}

@@ -194,6 +194,10 @@ for track, grp in v2rows.groupby('track', sort=False):
         return 'Race-morning fields (scratchings as published at capture)', 'race-morning'
     snap_list = [{'id': s2['snapshot_key'].split(':')[-1], 'label': snap_kind(s1)[0], 'kind': snap_kind(s1)[1],
                   'fields_captured_utc': s1['snapshot']['retrieved_utc'], 'v1_scored_utc': s1['scored_utc'], 'v2_scored_utc': s2['scored_utc']} for s0, s2, s1 in snaps]
+    for i_, s_ in enumerate(snap_list):   # same fields scored again (a re-issue): unique id, labelled with the re-issue time
+        if any(t_['id'] == s_['id'] for t_ in snap_list[:i_]):
+            s_['id'] += '-reissue' + s_['v2_scored_utc'][11:16].replace(':', ''); tl = pd.Timestamp(s_['v2_scored_utc']).tz_convert('Australia/Brisbane')
+            s_['label'] += f" - re-issued {tl.strftime('%-I:%M%p').lower()} Brisbane"; notes.append(f"Ratings re-issued at {tl.strftime('%-I:%M%p').lower()} Brisbane on the same fields; the earlier set is kept on file.")
     meetings.append({'id': track.lower(), 'name': track, 'state': st, 'tz': tz, 'model_family': fam, 'rated': True, 'status': 'rated', 'notes': notes,
                      'conditions': {k_: (re.sub(r'Riders$', '', v_).strip() if isinstance(v_, str) else v_) for k_, v_ in {'going': cond.get('track_condition'), 'rail': cond.get('rail'), 'weather': cond.get('weather_text') or cond.get('weather'), 'rainfall': cond.get('rainfall'),
                                     'penetrometer': cond.get('penetrometer') or None, 'updated': cond.get('conditions_updated') or cond.get('track_information'), 'scratchings_close': cond.get('scratchings_close'),

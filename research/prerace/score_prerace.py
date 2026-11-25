@@ -100,13 +100,14 @@ d = pd.DataFrame({'race_id': q.race_id, 'horse_id': q.horse_id, 'horse': q.horse
 d.loc[d.finish_pos == 1, 'margin_l'] = 0.0
 P = DR.prepare(d); P['dyn_mu'], P['dyn_sd'], _ = DR.run(P, p['s_kg'], p['q_kg2_per_day'], p['sig0_kg'], p['debut_offset_kg'])
 # national rating: every state's results to their cut-off dates, then today's Qld fields (no result) appended
-U = pd.read_parquet('national_runs.parquet')[['race', 'horse', 'date', 'finish_pos', 'margin_l', 'weight_kg', 'distance_m']]
+U = pd.read_parquet('national_runs.parquet')[['race', 'horse', 'date', 'finish_pos', 'margin_l', 'weight_kg', 'distance_m', 'state', 'q_race_id', 'q_horse_id']]
 if REPLAY: U = U[pd.to_datetime(U.date) < D0]
 venue = {'Ipswich': 'ipswich', 'Doomben': 'doomben', 'Eagle_Farm': 'eagle-farm', 'Sunshine_Coast': 'sunshine-coast', 'Sunshine_Coast_Poly_Track': 'sunshine-coast',
          'Toowoomba': 'toowoomba', 'Townsville': 'townsville', 'Rockhampton': 'rockhampton', 'Mackay': 'mackay', 'Ladbrokes_Cannon_Park': 'cairns', 'TAB_Park_Gold_Coast': 'gold-coast'}
 UR = pd.DataFrame({'race': 'QLD|' + R.track.map(venue).fillna(R.track) + '|' + md.dt.strftime('%Y-%m-%d') + '|' + R.race_no.astype(str), 'horse': R.nk, 'date': md,
                    'finish_pos': np.nan, 'margin_l': np.nan, 'weight_kg': R.weight_kg.astype(float), 'distance_m': R.distance_m.astype(float), 'race_id': R.race_id, 'horse_id': R.horse_id})
-UN = pd.concat([U.assign(race_id=None, horse_id=None), UR], ignore_index=True); UN['idx'] = np.arange(len(UN))
+# v2.0.1 (25 Nov 2026): history rows keep their Qld ids, so the national rating has a development spread (v2.0 had none -> zero weight live)
+UN = pd.concat([U.assign(race_id=U.q_race_id.where(U.state == 'QLD'), horse_id=U.q_horse_id.where(U.state == 'QLD')).drop(columns=['state', 'q_race_id', 'q_horse_id']), UR], ignore_index=True); UN['idx'] = np.arange(len(UN))
 dn = pd.DataFrame({'race_key': UN.race, 'horse': UN.horse, 'date': pd.to_datetime(UN.date), 'finish_pos': UN.finish_pos, 'margin_l': UN.margin_l.where(UN.finish_pos != 1, 0.0),
                    'weight_kg': UN.weight_kg, 'distance_m': UN.distance_m, 'idx': UN.idx})
 pn = man_n['dynamic_rating_params']; PN = DR.prepare(dn).sort_values(['date', 'race_key', 'finish_pos'], na_position='last')
@@ -127,6 +128,9 @@ hist = eligible(X[X.period == 'development']); futx = X[X.race_id.isin(R.race_id
 x = prep(pd.concat([hist, futx], ignore_index=True), cols)
 # check: development scaling identical to the frozen fit (features rebuilt from the same database rows)
 ref = pd.read_parquet('features.parquet'); chk = {c: (float(x.loc[x.period == 'development', c].std()), float(prep(eligible(ref), [c]).loc[lambda t: t.period == 'development', c].std())) for c in ['a_avg3', 'p_relbar', 'f_avgfp3']}
+dsd = float(x.loc[x.period == 'development', 'dyn_nat'].sub(x.loc[x.period == 'development'].groupby('race_id').dyn_nat.transform('mean')).std())
+fro = json.load(open('benchmarks/engine_v2/manifest.json'))['families']['QLD']['base_feature_dev_sd']['dyn_nat']; chk['dyn_nat'] = (dsd, fro)
+if not abs(dsd - fro) <= 0.02 * fro: raise SystemExit(f'national rating scaling check failed: development spread {dsd} vs frozen {fro}; nothing written')
 xf = x[x.period == 'prospective'].copy()
 G = {'Opposition-aware rating': ['dyn_mu', 'dyn_new', 'dyn_nat'], 'Recent ability figures': ['a_avg3', 'a_best3', 'a_fs3', 'a_wt_rel', 'missfig', 'rec_rating_pa1', 'misspa'],
      'Recent form': ['f_avgfp3', 'f_lastfp', 'f_lastlm', 'f_cwin', 'f_lstarts', 'missform'], 'Closing sectionals': ['s_gap600_last', 's_gap600_avg3', 's_top3_last', 's_gap200_last', 's_fsp_last', 'misssec'],
