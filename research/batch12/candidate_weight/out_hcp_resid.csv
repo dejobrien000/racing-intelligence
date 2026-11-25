@@ -1,0 +1,25 @@
+variant,group,runners,wins,expected,actual_over_expected,ci
+B0_P,all 2025-26,234011,23729,23729.0,1.0,1.00-1.00
+B0_P,carried <=54 kg,27595,1837,1635.1,1.12,1.09-1.16
+B0_P,<=54 kg in benchmark handicaps,8374,559,424.7,1.32,1.22-1.40
+B0_P,handicaps: 3 kg+ under field,6902,426,264.0,1.61,1.47-1.75
+B0_P,handicaps: 1-3 under,19111,1550,1304.2,1.19,1.13-1.24
+B0_P,handicaps: within 1,29216,3013,3020.0,1.0,0.97-1.02
+B0_P,handicaps: 1-3 over,21047,2614,2849.5,0.92,0.89-0.94
+B0_P,handicaps: 3 kg+ over,5630,760,925.2,0.82,0.77-0.87
+C2_R,all 2025-26,234011,23729,23729.0,1.0,1.00-1.00
+C2_R,carried <=54 kg,27595,1837,1634.2,1.12,1.08-1.17
+C2_R,<=54 kg in benchmark handicaps,8374,559,427.6,1.31,1.22-1.40
+C2_R,handicaps: 3 kg+ under field,6902,426,284.5,1.5,1.37-1.62
+C2_R,handicaps: 1-3 under,19111,1550,1343.6,1.15,1.10-1.20
+C2_R,handicaps: within 1,29216,3013,3018.6,1.0,0.97-1.02
+C2_R,handicaps: 1-3 over,21047,2614,2805.7,0.93,0.90-0.96
+C2_R,handicaps: 3 kg+ over,5630,760,910.6,0.83,0.78-0.88
+C2+wt_x_hcp_R,all 2025-26,234011,23729,23729.0,1.0,1.00-1.00
+C2+wt_x_hcp_R,carried <=54 kg,27595,1837,1634.3,1.12,1.08-1.17
+C2+wt_x_hcp_R,<=54 kg in benchmark handicaps,8374,559,455.5,1.23,1.14-1.31
+C2+wt_x_hcp_R,handicaps: 3 kg+ under field,6902,426,312.4,1.36,1.25-1.48
+C2+wt_x_hcp_R,handicaps: 1-3 under,19111,1550,1418.4,1.09,1.05-1.13
+C2+wt_x_hcp_R,handicaps: within 1,29216,3013,3053.6,0.99,0.96-1.01
+C2+wt_x_hcp_R,handicaps: 1-3 over,21047,2614,2727.4,0.96,0.93-0.99
+C2+wt_x_hcp_R,handicaps: 3 kg+ over,5630,760,851.1,0.89,0.85-0.95

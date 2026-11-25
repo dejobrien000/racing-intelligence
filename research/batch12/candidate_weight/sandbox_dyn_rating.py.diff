@@ -1,0 +1,12 @@
+--- /home/claude/racing-intelligence/research/dyn_rating.py	2026-11-25 08:16:00.386049099 +1000
++++ /tmp/cand/research/dyn_rating.py	2026-11-25 21:17:37.173356948 +1000
+@@ -13,7 +13,8 @@
+     d = df.copy()
+     d['kgpl'] = 1.5 * (1200 / d.distance_m) ** 0.8
+     ok = d.finish_pos.notna() & d.margin_l.notna() & d.weight_kg.notna()
+-    d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + (d.weight_kg - 57), np.nan)
++    import os; WC = float(os.environ.get('WCREDIT', '1'))   # CANDIDATE SANDBOX
++    d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
+     d = d.sort_values(['date', 'race_key', 'finish_pos'])
+     return d
+ 

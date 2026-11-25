@@ -1,0 +1,15 @@
+label,stage,coef_per_sd,races,gain,lo95,hi95,top_pick_pts,gain_west,coverage_%
+peak frequency (share of runs within 3 kg of best),discovery,-0.0336,8958,-0.00044,-0.00103,0.00018,0.04,0.00124,100.0
+peak frequency (share of runs within 3 kg of best),validation,-0.0346,16702,-0.00068,-0.00114,-0.00023,-0.09,-0.00019,100.0
+time since best,discovery,0.0202,8958,-0.00115,-0.00166,-0.00067,-0.2,-0.00101,100.0
+time since best,validation,0.0159,16702,-0.00046,-0.00075,-0.00017,-0.05,-0.00015,100.0
+runs since best,discovery,0.0480,8958,-0.00167,-0.00314,-0.00018,0.01,2e-05,100.0
+runs since best,validation,0.0597,16702,-0.0024,-0.00369,-0.00087,-0.11,-0.00148,100.0
+best minus recent typical,discovery,0.0700,8958,-0.00177,-0.00307,-0.0005,0.18,0.00128,100.0
+best minus recent typical,validation,0.0755,16702,0.00045,-0.00068,0.00159,-0.11,0.00352,100.0
+recent typical vs field,discovery,-0.2574,8958,-0.02816,-0.03258,-0.02392,-1.14,-0.02934,100.0
+recent typical vs field,validation,-0.2132,16702,-0.00779,-0.0107,-0.0049,-0.56,-0.00447,100.0
+career best vs field,discovery,-0.1623,8958,-0.01338,-0.01632,-0.01057,-0.54,-0.01981,100.0
+career best vs field,validation,-0.1167,16702,-0.0063,-0.00808,-0.00448,-0.01,-0.00753,100.0
+peak bundle,discovery,0.0168;0.0077;0.0804,8958,-0.00235,-0.00374,-0.00082,0.09,0.00035,100.0
+peak bundle,validation,0.0150;0.0008;0.0860,16702,0.0007,-0.00046,0.00185,-0.12,0.00398,100.0

@@ -1,0 +1,9 @@
+label,stage,coef_per_sd,races,gain,lo95,hi95,top_pick_pts,gain_west
+rivals rated 2 kg+ above,discovery,0.0147,12777,-0.0004,-0.00058,-0.00021,0.01,-0.00079
+rivals rated 2 kg+ above,validation,-0.0098,23729,-0.00032,-0.00042,-0.00022,0.01,-0.00038
+spread of field ratings,discovery,-0.0000,12777,0.0,-0.0,0.0,0.0,-0.0
+spread of field ratings,validation,0.0000,23729,-0.0,-0.0,0.0,0.0,-0.0
+gap between the two best-rated,discovery,0.0000,12777,-0.0,-0.0,0.0,0.0,-0.0
+gap between the two best-rated,validation,-0.0000,23729,0.0,0.0,0.0,0.0,0.0
+rivals above x own standing,discovery,-0.0341,12777,-0.00041,-0.00072,-0.0001,-0.02,-0.00066
+rivals above x own standing,validation,-0.0049,23729,7e-05,3e-05,0.0001,0.0,8e-05

@@ -1,0 +1,7 @@
+pattern,runs,horses,next_surprise_vs_matched_kg,ci,next_finish_pct_vs_matched
+"shorter strides, higher frequency, same speed",926,746,-0.43,"(np.float64(-0.73), np.float64(-0.11))",0.016
+"longer strides, lower frequency, same speed",884,764,-0.12,"(np.float64(-0.47), np.float64(0.19))",0.011
+shorter strides (any speed),6992,3636,0.23,"(np.float64(0.12), np.float64(0.35))",0.016
+longer strides (any speed),5039,2843,0.03,"(np.float64(-0.11), np.float64(0.16))",-0.006
+higher frequency (any speed),7251,3311,-0.11,"(np.float64(-0.23), np.float64(0.0))",-0.007
+lower frequency (any speed),7232,3559,0.33,"(np.float64(0.21), np.float64(0.43))",0.022

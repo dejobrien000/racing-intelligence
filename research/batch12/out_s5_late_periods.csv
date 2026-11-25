@@ -1,0 +1,9 @@
+period,pattern,runs,next_surprise_vs_matched_kg,ci,next_finish_pct_vs_matched
+2022-24,weak retention,2765,0.52,"(0.33, 0.71)",0.03
+2022-24,2 in a row weak,411,0.65,"(0.09, 1.2)",0.052
+2022-24,weak retention within 1.0 L,216,-0.66,"(-1.37, -0.0)",0.036
+2022-24,weak retention within 1.5 L,262,-0.41,"(-1.03, 0.16)",0.025
+2025-26,weak retention,3237,0.51,"(0.31, 0.7)",0.04
+2025-26,2 in a row weak,430,0.18,"(-0.38, 0.76)",0.085
+2025-26,weak retention within 1.0 L,142,-0.44,"(-1.27, 0.29)",0.039
+2025-26,weak retention within 1.5 L,183,-0.13,"(-0.83, 0.48)",0.015
