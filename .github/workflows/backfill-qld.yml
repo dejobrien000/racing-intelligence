@@ -1,0 +1,41 @@
+name: backfill-qld
+# One-off history backfill (approved by Damo 25 Nov 2026): Breednet results for Queensland meetings since Oct 2022 (ages for Qld horses + the non-tracked country meetings),
+# from the saved national index lists (collect/weekly/backfill_qld_queue.json). Polite pacing (2.5-3.5 s), honest
+# User-Agent, robots.txt check, stops at any CAPTCHA. Resumable: an earlier partial bundle on branch raw-breednet-qld is reused.
+# Output: branch raw-breednet-qld (orphan), outside main history. Nothing is loaded into the master database here.
+on:
+  push:
+    branches: [main]
+    paths: ['collect/weekly/backfill_qld_queue.json', '.github/workflows/backfill-qld.yml']
+permissions:
+  contents: write
+concurrency: { group: breednet-collect, cancel-in-progress: false }
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests beautifulsoup4 lxml
+      - name: Reuse any earlier partial bundle
+        run: |
+          mkdir -p /tmp/out
+          if git fetch -q --depth 1 origin raw-breednet-qld 2>/dev/null; then git show FETCH_HEAD:breednet/racing_breednet_backfill_qld.jsonl.gz > /tmp/out/racing_breednet_backfill_qld.jsonl.gz 2>/dev/null || true; fi
+          ls -la /tmp/out
+      - name: Collect (stops itself before the time limit)
+        run: timeout 19500 python3 collect/weekly/breednet.py queue collect/weekly/backfill_qld_queue.json /tmp/out/racing_breednet_backfill_qld.jsonl.gz 2>&1 | tee /tmp/out/backfill.log || true
+      - name: Close the bundle if the time limit cut it short
+        if: always()
+        run: |
+          cd /tmp/out && if [ -f racing_breednet_backfill_qld.jsonl.gz.part ]; then python3 -c "import gzip,shutil;shutil.copyfileobj(open('racing_breednet_backfill_qld.jsonl.gz.part','rb'),gzip.open('racing_breednet_backfill_qld.jsonl.gz','wb'))" && rm racing_breednet_backfill_qld.jsonl.gz.part; fi
+          python3 -c "import gzip,json,collections;c=collections.Counter(json.loads(l)['key'].split(':')[0] for l in gzip.open('racing_breednet_backfill_qld.jsonl.gz','rt') if l.strip());print(dict(c))" | tee counts.txt
+      - name: Save to branch raw-breednet-qld
+        if: always()
+        run: |
+          mkdir -p /tmp/push/breednet && cp /tmp/out/* /tmp/push/breednet/ 2>/dev/null || true
+          cd /tmp/push && git init -q && git checkout -q -b raw-breednet-qld && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Breednet Qld backfill $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-breednet-qld
