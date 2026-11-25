@@ -97,3 +97,9 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   Insufficient evidence for the rest) and all top picks: selections, winners, strike rate, expected vs actual, calibration, notional
   flat-unit ROI % at OPEN and separately at CLOSE on their own eligible samples, price coverage, voids, dead heats; cumulative by day.
   No tote/SP/Betfair substitutes; late-scratching deductions not published by TAB and not applied (disclosed). Never read by any model.
+
+## Staged data (not in the master database; 26 Nov 2026)
+- South Australian tracking (tripleSdata reports, Morphettville/Parks, Murray Bridge, Gawler; Jan 2024 - Nov 2026): branch
+  staging-sa-tracking, Queensland table shape, 93.6% of races pass every check. Collector: workflow racingsa-tracking (orphan
+  branch raw-racingsa-tracking). Details and gaps: research/ops/DATA_ACCESS_tracking.md, research/staging/sa_tracking_report.md.
+  Loading into the master database and adding SA to the weekly job await Damo's release decision.
