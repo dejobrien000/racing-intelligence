@@ -14,17 +14,27 @@ from pathlib import Path
 import duckdb
 
 HERE = Path(__file__).resolve().parent
-SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/mnt/user-data/uploads/Downloads")
-OUT = HERE / "out"
+# Incremental mode (weekly job):  python3 load_history.py --incremental BUNDLE.zip [history.duckdb]
+#   merges one new RQ bundle into an existing database: rows for each (date, track) in the bundle replace that meeting's
+#   old rows in x_race / x_runner / x_sec / x_field / x_log; every other meeting and all Breednet / Betfair tables are left
+#   untouched; then the canonical tables, checks and coverage are rebuilt from the x_ tables exactly as in a full load.
+INCR = len(sys.argv) > 1 and sys.argv[1] == "--incremental"
+if INCR:
+    SRC = Path(sys.argv[2])
+    DB = Path(sys.argv[3]) if len(sys.argv) > 3 else HERE / "history.duckdb"
+    OUT = DB.parent / "out"
+else:
+    SRC = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/mnt/user-data/uploads/Downloads")
+    OUT = HERE / "out"
+    DB = HERE / "history.duckdb"
+    if DB.exists():
+        DB.unlink()
 OUT.mkdir(exist_ok=True)
-DB = HERE / "history.duckdb"
-if DB.exists():
-    DB.unlink()
 con = duckdb.connect(str(DB))
 TMP = Path(tempfile.mkdtemp(prefix="hist_"))
 
-rq_bundles = sorted(SRC.glob("racing_rq_*.zip"))
-bf_bundles = sorted(SRC.glob("racing_betfair_*.zip"))
+rq_bundles = [SRC] if INCR else sorted(SRC.glob("racing_rq_*.zip"))
+bf_bundles = [] if INCR else sorted(SRC.glob("racing_betfair_*.zip"))
 print("bundles:", [b.name for b in rq_bundles + bf_bundles])
 
 # ---------------------------------------------------------------- unpack parsed files
@@ -59,12 +69,32 @@ def load_psv(table, files):
     con.execute(f"DROP TABLE {table}_all")
 
 
-load_psv("x_race", parts["races"])
-load_psv("x_runner", parts["runners"])
-load_psv("x_sec", parts["secs"])
-load_psv("x_field", parts["fields"])
-load_psv("x_log", parts["log"])
-if bf_files:
+def merge_psv(table, files):
+    if not files:
+        return
+    con.execute(f"CREATE TEMP TABLE n_{table} AS SELECT * FROM read_csv({files!r}, delim='|', header=true, all_varchar=true, quote='', escape='', union_by_name=true)")
+    if con.execute(f"SELECT count(*) FROM n_{table}").fetchone()[0]:
+        con.execute(f"DELETE FROM {table} t WHERE EXISTS (SELECT 1 FROM n_{table} n WHERE n.date = t.date AND n.track = t.track)")
+        con.execute(f"INSERT INTO {table} BY NAME SELECT * FROM n_{table}")
+    con.execute(f"DROP TABLE n_{table}")
+
+
+if INCR:
+    before = {t: con.execute(f"SELECT count(*) FROM {t}").fetchone()[0] for t in ["x_race", "x_runner", "x_sec", "x_field"]}
+    for t, k in [("x_race", "races"), ("x_runner", "runners"), ("x_sec", "secs"), ("x_field", "fields"), ("x_log", "log")]:
+        merge_psv(t, parts[k])
+    print("incremental:", {t: (before[t], con.execute(f"SELECT count(*) FROM {t}").fetchone()[0]) for t in before})
+    for t in ["race", "starter", "sectional", "venue_map", "checks", "coverage_qld", "coverage_betfair"]:
+        con.execute(f"DROP TABLE IF EXISTS {t}")
+else:
+    load_psv("x_race", parts["races"])
+    load_psv("x_runner", parts["runners"])
+    load_psv("x_sec", parts["secs"])
+    load_psv("x_field", parts["fields"])
+    load_psv("x_log", parts["log"])
+if INCR:
+    pass
+elif bf_files:
     con.execute(f"CREATE TABLE bf AS SELECT * FROM read_csv({bf_files!r}, header=true, all_varchar=true, union_by_name=true)")
     con.execute(f"CREATE TABLE bf_manifest AS SELECT * FROM read_csv({bf_manifest!r}, header=true, all_varchar=true, union_by_name=true)")
 else:
@@ -72,14 +102,14 @@ else:
 
 # ---------------------------------------------------------------- normalisation helpers (SQL)
 con.execute(r"""
-CREATE MACRO norm_name(n) AS upper(regexp_replace(regexp_replace(regexp_replace(trim(n), '\s*\([A-Z]{2,3}\)\s*$', ''), '[''’]', '', 'g'), '\s+', ' ', 'g'));
-CREATE MACRO iso(d) AS strptime(d, '%Y%m%d')::DATE;
-CREATE MACRO bf_date(d) AS coalesce(try_strptime(d, '%Y-%m-%d'), try_strptime(d, '%d/%m/%Y'))::DATE;
-CREATE MACRO bf_time(t) AS coalesce(try_strptime(t, '%H:%M:%S.%f'), try_strptime(t, '%H:%M:%S'), try_strptime(t, '%I:%M:%S %p'))::TIME;
+CREATE OR REPLACE MACRO norm_name(n) AS upper(regexp_replace(regexp_replace(regexp_replace(trim(n), '\s*\([A-Z]{2,3}\)\s*$', ''), '[''’]', '', 'g'), '\s+', ' ', 'g'));
+CREATE OR REPLACE MACRO iso(d) AS strptime(d, '%Y%m%d')::DATE;
+CREATE OR REPLACE MACRO bf_date(d) AS coalesce(try_strptime(d, '%Y-%m-%d'), try_strptime(d, '%d/%m/%Y'))::DATE;
+CREATE OR REPLACE MACRO bf_time(t) AS coalesce(try_strptime(t, '%H:%M:%S.%f'), try_strptime(t, '%H:%M:%S'), try_strptime(t, '%I:%M:%S %p'))::TIME;
 """)
 
 con.execute("""
-CREATE TABLE bf_runner AS
+CREATE OR REPLACE TABLE bf_runner AS
 SELECT bf_date(LOCAL_MEETING_DATE) meeting_date, TRACK bf_track, STATE_CODE state, RACE_NO::INT race_no, try_cast(DISTANCE AS INT) distance_m,
        RACE_TYPE race_type, SELECTION_ID selection_id, try_cast(TAB_NUMBER AS INT) saddlecloth, SELECTION_NAME name, norm_name(SELECTION_NAME) name_key,
        WIN_RESULT='WINNER' win_flag, PLACE_RESULT='WINNER' place_flag, bf_time(SCHEDULED_RACE_TIME) scheduled, bf_time(ACTUAL_OFF_TIME) actual_off,
