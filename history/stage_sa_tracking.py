@@ -30,11 +30,15 @@ def track_of(venue, slug):
     if 'murray bridge' in v: return 'Murray_Bridge', 'murray-bridge-gh'
     if 'gawler' in v: return 'Gawler', 'gawler'
     return re.sub(r'\W+', '_', venue or slug).strip('_'), slug
-RACE, ST, SEC, CHK, PROB = [], [], [], [], []
+RACE, ST, SEC, CHK, PROB, FMT = [], [], [], [], [], []
 ok_files = files[files.status == '200']
 for _, f in ok_files.iterrows():
     t = texts.get(f.url)
     if not t: PROB.append({'url': f.url, 'problem': 'no text kept'}); continue
+    p0 = t['pages'][0] if t['pages'] else ''
+    fmt = 'tripleSdata' if re.search(r'^Section Overall', p0, re.M) else ('daily_sectionals' if 'IVR' in p0 or 'DAILY SECTIONAL' in p0 else 'other')
+    FMT.append({'url': f.url, 'meeting_date': f.meeting_date, 'slug': f.slug, 'format': fmt})
+    if fmt != 'tripleSdata': continue          # older race-level/late-split reports: text kept, not staged as tracking
     race, runners, segs, probs = PS.parse(t['pages'])
     for p in probs: PROB.append({'url': f.url, 'problem': p})
     if not race.get('date_text') or not runners: continue
@@ -96,7 +100,7 @@ if len(C):
 os.makedirs(os.path.dirname(OUTDB) or '.', exist_ok=True)
 if os.path.exists(OUTDB): os.remove(OUTDB)
 D = duckdb.connect(OUTDB)
-for name, rows in [('sa_race', RACE), ('sa_starter', ST), ('sa_sectional', SEC), ('sa_race_checks', CHK and C.to_dict('records')), ('sa_problems', PROB)]:
+for name, rows in [('sa_race', RACE), ('sa_starter', ST), ('sa_sectional', SEC), ('sa_race_checks', CHK and C.to_dict('records')), ('sa_problems', PROB), ('sa_file_format', FMT)]:
     df = pd.DataFrame(rows or [])
     if len(df): D.register('df', df); D.execute(f'create table {name} as select * from df'); D.unregister('df')
 D.register('df', files); D.execute('create table sa_files as select * from df'); D.unregister('df')
@@ -106,6 +110,12 @@ D.close()
 # report
 F = files; cal = pd.read_csv(os.path.join(os.path.dirname(__file__), '..', 'collect', 'racingsa', 'sa_meetings.csv'))
 lines = ['# Racing SA tracking staging report', '', f'Built {pd.Timestamp.utcnow():%Y-%m-%d %H:%M}Z from {RAW}. Staging only: not in the master database, not read by production.', '']
+FM = pd.DataFrame(FMT)
+if len(FM):
+    FM['month'] = FM.meeting_date.str[:7]
+    lines += ['- Report formats found: ' + ', '.join(f'{k} {v}' for k, v in FM.format.value_counts().items()),
+              '- tripleSdata tracking from ' + str(FM[FM.format == 'tripleSdata'].meeting_date.min() if (FM.format == 'tripleSdata').any() else '-') + '; older Daily Sectionals (race-level + late splits, kept as text, not staged) until '
+              + str(FM[FM.format == 'daily_sectionals'].meeting_date.max() if (FM.format == 'daily_sectionals').any() else '-')]
 lines += [f'- Files requested {len(F)}; found (200) {int((F.status == "200").sum())}; not found {int(F.status.isin(["403", "404"]).sum())}; other {int((~F.status.isin(["200", "403", "404"])).sum())}']
 if len(C):
     lines += [f'- Races staged {len(C)}; runners {len(ST)}; 200 m segments {len(SEC)}',
