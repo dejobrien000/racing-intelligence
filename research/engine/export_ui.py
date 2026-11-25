@@ -7,7 +7,13 @@ import sys, os, re, json, gzip, hashlib, numpy as np, pandas as pd
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
 ENGINE_VERSION = 'Engine v2.1'; RELEASE_NOTE = 'v2.1 (25 Nov 2026, 12:17pm): Queensland ratings use the v3 rating, which expects lightly raced horses to improve (research/batch9 A; approved by Damo). NSW/Vic/ACT unchanged. v2.0.2 (12:06pm): win chances use the bent-line calibration. v2.0.1 (11:11am): Queensland scorer fix.'
-MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))   # v2 = bent line (25 Nov 2026)
+MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))
+RC_OLD = RC; RC22 = json.load(open('benchmarks/engine_v2_2/runner_calibration_v22.json'))   # v2.2: NSW/Vic family recalibrated on v2.2 chances; QLD family unchanged
+M22 = json.load(open('benchmarks/engine_v2_2/manifest.json'))
+V22_DAY = os.environ.get('ENGINE_V22', '1') == '1' and str(sys.argv[1]) >= os.environ.get('ENGINE_V22_FROM', '20261126')   # v2.2 predictions exist from the 26 Nov 2026 run; earlier days keep their own engine
+if V22_DAY:
+    RC = RC22; ENGINE_VERSION = 'Engine v2.2'
+    RELEASE_NOTE = 'v2.2 (26 Nov 2026 run on; approved by Damo 25 Nov): NSW, Vic, ACT, SA, WA and Tas add 14 Batch 10 terms (horses below their own proven level, own consistency, hot start to a preparation, quick backups, light weights, runs on file, rating certainty, measured venue class) and a recalibrated chance curve. Queensland stays on v2.1. ' + RELEASE_NOTE   # v2 = bent line (25 Nov 2026)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
 GROUP = {'Opposition-aware rating': ('ability', 'Ability: opposition-aware rating'), 'Recent ability figures': ('figures', 'Form figures and opposition faced'),
@@ -15,13 +21,17 @@ GROUP = {'Opposition-aware rating': ('ability', 'Ability: opposition-aware ratin
          'Barrier and race shape': ('shape', 'Barrier and race shape'), 'Track, distance, going': ('trackhist', 'Track, distance and going starts'),
          'Fitness and spacing': ('fitness', 'Fitness and spacing'), 'Horse suits course/going/distance': ('suit', 'Course, going and distance suitability'),
          'Horse course/going/distance records': ('suit', 'Course, going and distance suitability'), 'Jockey & trainer': ('people', 'Jockey and trainer'),
-         'Age & sex': ('age', 'Age and sex'), 'Form changes & head-to-head': ('changes', 'Form changes and head-to-head'), 'Interactions (chosen on discovery data only)': ('inter', 'Combined effects (interactions)')}
-V2FAM = {'Horse course/going/distance records', 'Jockey & trainer', 'Age & sex', 'Form changes & head-to-head', 'Interactions (chosen on discovery data only)'}
+         'Age & sex': ('age', 'Age and sex'), 'Form changes & head-to-head': ('changes', 'Form changes and head-to-head'), 'Interactions (chosen on discovery data only)': ('inter', 'Combined effects (interactions)'),
+         'Career shape and consistency': ('career', 'Career shape and consistency (v2.2)'), 'Weight, spacing and venue class': ('load', 'Weight, spacing and venue class (v2.2)')}
+V2FAM = {'Horse course/going/distance records', 'Jockey & trainer', 'Age & sex', 'Form changes & head-to-head', 'Interactions (chosen on discovery data only)', 'Career shape and consistency', 'Weight, spacing and venue class'}
 TERMNAME = {'j_surp': 'jockey record', 't_surp': 'trainer record', 'jt_surp': 'jockey-trainer combination', 'j_change': 'jockey change vs last start', 'age_n': 'age', 'young': '3yo or younger', 'old': '7yo or older',
             'female': 'mare or filly', 'h2h': 'head-to-head vs these rivals', 'abs_dist_change': 'size of distance change', 'dist_change': 'distance change', 'dyn_traj': 'rating trend', 'surprise_last': 'last start vs rating',
             'bm_change': 'class change', 'wt_change': 'weight change', 'c_rec': 'course record', 'g_rec': 'going record', 'd_rec': 'distance record', 'dyn_nat': 'ability rating', 'f_avgfp3': 'average finish',
             'f_lstarts': 'career starts', 'a_fs3': 'opposition faced', 'a_best3': 'best figure', 'a_wt_rel': 'weight vs field', 'r_ldays': 'days since run', 'route': '1400m+', 'metro': 'metro', 'wet': 'wet track',
-            'big_field': 'big field', 'vic': 'Victoria', 'year': 'trend over time', 'ability': 'ability', 'field strength': 'field strength', 'f_lastfp': 'last finish', 'a_rec': 'recent figures'}
+            'big_field': 'big field', 'vic': 'Victoria', 'year': 'trend over time', 'ability': 'ability', 'field strength': 'field strength', 'f_lastfp': 'last finish', 'a_rec': 'recent figures',
+            'below_top3': 'below its best three runs', 'gap_long_z': 'vs its longer-run level', 'short_vs_long': 'last 5 vs longer-run level', 'slope15': 'long-run trend', 'neg_run': 'run of below-par runs',
+            'recent_var_ratio': 'unusually variable lately', 'hsd_x_rel': 'own consistency x favourite/outsider', 'early_prep_vs_usual': 'hot start to this preparation', 'quick_today': 'quick backup',
+            'venue_step': 'step in measured venue class', 'recentform_x_established': 'recent form (established horse)', 'light_weight': 'light weight (54 kg or less)', 'log_runs_held': 'runs on file', 'rating_uncertainty': 'rating certainty'}
 def tname(t):
     if t.endswith(' squared'): return TERMNAME.get(t.split(' ')[0], t.split(' ')[0]) + ' (curved)'
     return ' × '.join(TERMNAME.get(p, p) for p in t.split(' x '))
@@ -60,7 +70,7 @@ def nice(n):
 
 SHORT = {'ability': 'Ability rating', 'figures': 'Form figures', 'form': 'Recent form', 'sectionals': 'Closing sectionals', 'shape': 'Barrier and race shape',
          'trackhist': 'Track and distance starts', 'fitness': 'Fitness and spacing', 'suit': 'Suits course, going or distance', 'people': 'Jockey and trainer',
-         'age': 'Age and sex', 'changes': 'Form changes and head-to-head', 'inter': 'Combined effects'}
+         'age': 'Age and sex', 'changes': 'Form changes and head-to-head', 'inter': 'Combined effects', 'career': 'Career shape and consistency', 'load': 'Weight, spacing and venue class'}
 # ---- market prices: a DISPLAY layer only. Never read by any model. Files: prices/<date>/*.jsonl, one quote per line:
 # {"meeting","race_no","saddlecloth","source","kind","price","captured_utc"}  kind in fixed_win | fixed_place | exchange_back | exchange_lay | exchange_ltp
 MKT, QUOTES = {}, []
@@ -104,6 +114,9 @@ for track, grp in v2rows.groupby('track', sort=False):
             if o['key'] == m1['snapshot']['snapshot_key']: snap = v
     F = pd.DataFrame(snap['fields']); cond = m1['snapshot'].get('conditions', {})
     st = snap.get('state') or ('QLD' if fam == 'QLD' else 'NSW'); tz = snap.get('tz') or tz; notes = []
+    is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') == 'Engine v2.2'; S.V22 = is22; RC = RC22 if is22 else RC_OLD
+    vk = re.sub(r'[^a-z0-9]+', '-', str(track).lower()).strip('-'); vk = M22['venue_alias'].get(vk, vk); vl = M22['venue_level_kg'].get(vk)
+    if vl is not None: notes.append('Measured class of this course: ' + ('metro level' if vl >= -2.9 else 'provincial level' if vl >= -6.85 else 'country level') + f' (average field rating {vl:+.1f} kg vs metro about 0, provincial about -6, country about -8).')
     if fam != 'QLD' and not cond.get('track_condition'): notes.append('Track condition was not available from the field source; the Good going band is assumed for going records until an official rating is collected.')
     if snap.get('source'): notes.append('Fields source: ' + snap['source'] + '.')
     # term-level v2 detail, recomputed from the same saved inputs; must equal the saved v2 score

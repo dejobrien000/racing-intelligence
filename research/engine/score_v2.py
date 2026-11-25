@@ -7,6 +7,8 @@ Usage (from research/): PYTHONPATH=. python3 engine/score_v2.py 20261125"""
 import sys, os, re, json, gzip, hashlib, subprocess, numpy as np, pandas as pd
 from engine.lab import person_key, nk
 V21 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 (25 Nov 2026): Queensland on the v3 rating; NSW/Vic/ACT unchanged
+V22 = os.environ.get('ENGINE_V22', '1') == '1'   # Engine v2.2 (26 Nov 2026 run on): 14 Batch 10 terms for NSW/VIC/ACT/SA/WA/TAS (approved by Damo 25 Nov); Qld stays v2.1
+from engine import v22
 MAN = json.load(open('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'))
 SNAPDIR = os.environ.get('SNAPDIR', '/mnt/user-data/uploads/Downloads')   # override for cloud-collected bundles
 def find_bundle(name):
@@ -66,6 +68,7 @@ def new_raw(T, H_, fam, records=False):
         if len(q) == 0: vals.append(np.nan); continue
         per = q.assign(b=np.sign(q.finish_pos_o - q.finish_pos)).groupby('horse_o').b.agg(['sum', 'count']); vals.append(float((per['sum'] / (per['count'] + 1)).sum() / max(len(riv), 1)))   # training averaged over ALL rivals (unmet = 0)
     T['h2h'] = vals
+    if V22 and fam != 'QLD': T = v22.raw(T, H_)                 # Engine v2.2: career shape, consistency, weight, spacing, measured venue class
     return T
 
 def terms(T, fam):
@@ -89,9 +92,11 @@ def terms(T, fam):
 
 def apply(T, fam, base_col='v1_score'):
     F = MAN['families'][fam]; C = F['coef_per_term_sd_all_races']; TT = terms(T, fam)
-    contrib = TT * pd.Series(C); T = T.copy()
-    fam_of = {t: f for f, ts in F['term_families'].items() for t in ts}
-    for f in F['term_families']: T['v2+ ' + f] = contrib[[t for t in contrib.columns if fam_of[t] == f]].sum(axis=1)
+    contrib = TT * pd.Series(C); T = T.copy(); tf = dict(F['term_families'])
+    if V22 and fam != 'QLD':
+        contrib = pd.concat([contrib, v22.terms(T)], axis=1); tf.update(v22.M['term_families'])
+    fam_of = {t: f for f, ts in tf.items() for t in ts}
+    for f in tf: T['v2+ ' + f] = contrib[[t for t in contrib.columns if fam_of[t] == f]].sum(axis=1)
     T['v2_score'] = T[base_col] + contrib.sum(axis=1); T['v2_score'] -= T.groupby('race_id').v2_score.transform('mean')
     e = np.exp(T.v2_score - T.groupby('race_id').v2_score.transform('max')); T['v2_chance_pct'] = 100 * e / e.groupby(T.race_id).transform('sum')
     T['v2_rank'] = T.groupby('race_id').v2_score.rank(ascending=False, method='first').astype(int)
@@ -141,7 +146,7 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ('Engine v2.1 (v3 rating)' if (V21 and fam == 'QLD') else 'Engine v2.0.x'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ('Engine v2.1 (v3 rating)' if (V21 and fam == 'QLD') else ('Engine v2.2' if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha('benchmarks/engine_v2_2/manifest.json') if (V22 and fam != 'QLD') else None), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
         with open('prospective/prerace/INDEX.csv', 'a') as fh:

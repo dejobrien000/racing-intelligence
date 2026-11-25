@@ -43,3 +43,20 @@
 - Open: one meeting not collected (Ascot 12 Apr 2025, server error 500) - one-off retry after the Queensland backfill
   (the weekly update only re-reads the last 10 days). Local working copy (this chat) switches to this version after
   the 25 Nov settlement tonight, so tonight's settlement uses the same database as this morning's tips.
+
+## Engine v2.2 (approved by Damo 25 Nov 2026 ~3:25pm "Replace from tomorrow"; live from the 26 Nov 7:30am run)
+- Applies to NSW, VIC, ACT, SA, WA and TAS meetings. Queensland stays on Engine v2.1.
+- What: Engine v2 NSW/Vic family score + 14 Batch 10 terms (benchmarks/engine_v2_2/manifest.json): below its best three runs, vs its
+  longer-run level, last 5 vs longer-run level, long-run trend, run of below-par runs, unusually variable lately, own consistency x
+  favourite/outsider, hot start to the preparation, quick backup, step in measured venue class, recent form x established horse, light
+  weight (54 kg or less), runs on file, rating certainty. Display calibration refitted on v2.2 chances (runner_calibration_v22.json).
+- Evidence (research/batch10, research period only): fit to 2023 judged on 2024 +0.0058 log-lik per race (0.0032 to 0.0083), top pick
+  +0.25 pts; fit to 2024 judged on 2025-26 +0.0125 (0.0105 to 0.0145), NSW/Vic/ACT +0.0103, SA/WA/Tas +0.0174 (SA +0.024), top pick +0.02 pts.
+  2025-26 had been examined before, so the first untouched evidence is races from 26 Nov 2026 (compare with the v2.0 score, kept in v1/v2 files).
+- Checks: production features equal the research features for 1,313 runners on 3 dates (batch10/scripts/test_v22_parity.py, PASS);
+  sandbox replay of 25 Nov Strathalbyn, Albany, Launceston through scoring, ranking and dashboard export: reconciles (not published).
+  Top picks unchanged at Albany (7/7) and Launceston (8/8), 3 of 7 changed at Strathalbyn.
+- Coefficients: all races to 23 Nov 2026 on top of the production v2 score (same rule as v2); dev-fit coefficients recorded in the manifest.
+- Roll back: set ENGINE_V22=0 for engine/score_v2.py and engine/export_ui.py (or revert this commit). Days before 26 Nov always export with their own engine.
+- Also from Batch 10 (approved): each venue's measured class (average rating of the fields it attracts) is shown as a meeting note.
+  Frozen v2 terms keep their original metro flag (their coefficients were fitted with it). SA calibration left unchanged (Damo: no).
