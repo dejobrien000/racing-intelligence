@@ -1,0 +1,13 @@
+{
+ "meetings": 2170,
+ "miss": 5,
+ "skipped": 0,
+ "err": 1,
+ "idx": 0,
+ "captcha": false,
+ "started_utc": "2026-11-25T01:37:38.783Z",
+ "finished_utc": "2026-11-25T03:47:22.543Z",
+ "log": [
+  "error 2025-04-12 ascot HTTP 500 /race-results/australia/ascot/2025-04-12"
+ ]
+}

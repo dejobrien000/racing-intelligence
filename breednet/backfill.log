@@ -1,0 +1,10 @@
+error 2025-04-12 ascot HTTP 500 /race-results/australia/ascot/2025-04-12
+{"meetings": 2170, "miss": 5, "skipped": 0, "err": 1, "idx": 0, "captcha": false, "started_utc": "2026-11-25T01:37:38.783Z", "finished_utc": "2026-11-25T03:47:22.543Z"}
+Traceback (most recent call last):
+  File "/home/runner/work/racing-intelligence/racing-intelligence/collect/weekly/breednet.py", line 177, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/home/runner/work/racing-intelligence/racing-intelligence/collect/weekly/breednet.py", line 174, in main
+    if stats['unknown_venues']: print('venues with no state (not collected):', ', '.join(sorted(stats['unknown_venues'])))
+       ~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'unknown_venues'
