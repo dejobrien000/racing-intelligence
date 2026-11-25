@@ -1,0 +1,21 @@
+{
+ "scored_utc": "2026-11-25T22:10:47.224078+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/prerace/20261126/Hawkesbury/pred_20261125T220344Z_20261125T220956Z_runners.csv",
+ "base_v1_sha256": "180c53fb20f6c78bb278bcce8ca0d8484bd90eb06829dc920332e93fb9a08909",
+ "snapshot_key": "natpre:20261126:Hawkesbury:20261125T220344Z",
+ "engine_manifest_sha256": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+ "engine_release": "Engine v2.2",
+ "v22_manifest_sha256": "e7847c548ffb11006c94b22ef3a79f405888ae14db7b9d4f21470aa077b01d59",
+ "code_sha256": {
+  "engine/score_v2.py": "be6389987939d6ec098bca2284b5bc662d577e9007851736546c2e82180e83bf",
+  "engine/lab.py": "65908c7a6c5aeb8158d7e3df20c5c1aa08c58b37a29a85a36df6cd5e4442471e",
+  "prerace/score_national_prerace.py": "bf2769f9149a44c47da5cffa5a0041be4390496bfb89d7fe5ae1a08cb145e1d6"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ]
+}

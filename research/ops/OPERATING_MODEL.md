@@ -44,6 +44,10 @@ answered (44/44 races). After racing TAB shows: fixedOdds.returnWin = final TAB 
 Loser / LateScratched; race.results = finishing order of the FIRST FOUR only; dividends (tote, not used); returnWinOpen = TAB's own
 opening price (NOT our 7:30 OPEN). Runners 5th or worse have no position: settle_yesterday.py now marks them 'unplaced' (fixed 25 Nov;
 before the fix they counted as no result, field sizes shrank to 4 and place terms were wrong).
+26 Nov 8:15am test: dates/2026-11-25/meetings returned 2 meetings and no Australian thoroughbred meeting, so yesterday is not
+readable next morning: the evening capture is required (decision confirmed). 26 Nov 7:34am: the fresh scheduled run stopped at
+step 1 (PROVENANCE_REQUIRED), so the approval given in the build chat does not carry to scheduled sessions; the interim run in
+the build chat produced the day (log ops/logs/20261126.md).
 DECISION: results + CLOSE need an EVENING capture (after the last race, before Brisbane midnight) until a morning run proves the
 previous day is still listed: on 25 Nov 10:20 Brisbane the 24 Nov meetings list was empty. The 26 Nov 7:30 run's step 3 is the test.
 Evening file: research/collect/national/<date>/results_<stamp>.raw.txt (copy in prices/<date>/). If step 3 finds TAB empty, the

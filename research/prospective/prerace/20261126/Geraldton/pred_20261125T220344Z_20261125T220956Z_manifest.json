@@ -1,0 +1,142 @@
+{
+ "scored_utc": "2026-11-25T22:09:56.135965+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261126:Geraldton:20261125T220344Z",
+  "date": "20261126",
+  "venue": "Geraldton",
+  "retrieved_utc": "2026-11-25T22:03:44Z",
+  "acceptances_sha256": "5cd9718db4fa25412048e8f6b6c607a606f0f905093a195bb09e42ebc1bd6475",
+  "conditions": {
+   "track_condition": "GOOD4",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 7
+ },
+ "snapshot_bundle": "natpre_20261126_snap20261125T220344Z.jsonl.gz",
+ "snapshot_bundle_sha256": "87d28f8490ff5428a59f6891382b5dbecd1920a925e9f05896f48601e409d185",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 12,
+   "horse": "Happy Dance",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 7,
+   "horse": "Love Of Far Fa",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 13,
+   "horse": "All Our Faith",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 4,
+   "horse": "High Pressure",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 11,
+   "horse": "Extra Zero",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 12,
+   "horse": "Heavenly Rapture",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 13,
+   "horse": "Clever Combat",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 14,
+   "horse": "Swishgobango",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 13,
+   "horse": "Lady Mayflower",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 14,
+   "horse": "Riveting Rosie",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 15,
+   "horse": "Power To Rule",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 16,
+   "horse": "Ellovaman",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 3,
+   "horse": "Becalotti",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 6,
+   "horse": "American Image",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 10,
+   "horse": "Sky River",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 12,
+   "horse": "What About Moi",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 13,
+   "horse": "Black Sands",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "bf2769f9149a44c47da5cffa5a0041be4390496bfb89d7fe5ae1a08cb145e1d6",
+  "dyn_rating.py": "df96739bf4d7e5b9d39d3fd8adceba483d52fafea60e932419fbd71b0a9b6e1b",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5f3e101e2ef041336079409fddefac3f1d3672b19c2a86568"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

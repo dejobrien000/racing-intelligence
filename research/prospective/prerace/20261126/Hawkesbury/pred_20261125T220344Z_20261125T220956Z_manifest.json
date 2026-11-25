@@ -1,0 +1,118 @@
+{
+ "scored_utc": "2026-11-25T22:09:56.135965+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261126:Hawkesbury:20261125T220344Z",
+  "date": "20261126",
+  "venue": "Hawkesbury",
+  "retrieved_utc": "2026-11-25T22:03:44Z",
+  "acceptances_sha256": "3002f9a8d01de3cf666e7d9d3cd704e1f3130c6466fb5653975ebc63a1485247",
+  "conditions": {
+   "track_condition": "SOFT5",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 13
+ },
+ "snapshot_bundle": "natpre_20261126_snap20261125T220344Z.jsonl.gz",
+ "snapshot_bundle_sha256": "87d28f8490ff5428a59f6891382b5dbecd1920a925e9f05896f48601e409d185",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 3,
+   "horse": "The Champion",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 7,
+   "horse": "Southern Grace",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 3,
+   "horse": "Don'S Party",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 7,
+   "horse": "Elivina",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 2,
+   "horse": "Mens Rea",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 3,
+   "horse": "Nations League",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 10,
+   "horse": "Thyme To Go",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 6,
+   "horse": "Cold Gin",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 11,
+   "horse": "Miss Moulaga",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 13,
+   "horse": "Sky Kirk",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 15,
+   "horse": "Binit",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 16,
+   "horse": "Pressed Tough",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 3,
+   "horse": "Against The Law",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "bf2769f9149a44c47da5cffa5a0041be4390496bfb89d7fe5ae1a08cb145e1d6",
+  "dyn_rating.py": "df96739bf4d7e5b9d39d3fd8adceba483d52fafea60e932419fbd71b0a9b6e1b",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5f3e101e2ef041336079409fddefac3f1d3672b19c2a86568"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

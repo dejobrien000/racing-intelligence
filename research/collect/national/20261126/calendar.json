@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-26",
+ "source": "TAB racing info-service meetings list and racecards, captured 2026-11-25T22:03:44Z",
+ "excluded": [
+  "non-Australian meetings"
+ ],
+ "act_nt": "ACT and NT meetings included when TAB lists them",
+ "meetings": [
+  {
+   "name": "Geraldton",
+   "state": "WA",
+   "tab_code": "GER",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Hawkesbury",
+   "state": "NSW",
+   "tab_code": "HAW",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Mornington",
+   "state": "VIC",
+   "tab_code": "MOR",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Rockhampton",
+   "state": "QLD",
+   "tab_code": "ROC",
+   "races": 6,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  }
+ ]
+}

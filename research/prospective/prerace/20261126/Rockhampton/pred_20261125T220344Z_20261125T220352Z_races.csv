@@ -1,0 +1,25 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261126-Rockhampton-R1,8,33.79,21.29,12.5,4,4
+combined_v1,20261126-Rockhampton-R2,6,36.77,34.61,2.15,0,0
+combined_v1,20261126-Rockhampton-R3,6,30.56,27.85,2.72,0,0
+combined_v1,20261126-Rockhampton-R4,5,52.01,17.09,34.92,0,0
+combined_v1,20261126-Rockhampton-R5,8,21.25,17.79,3.46,0,0
+combined_v1,20261126-Rockhampton-R6,10,14.31,13.54,0.77,1,1
+combined_v1 + dynamic rating,20261126-Rockhampton-R1,8,46.3,12.64,33.66,4,4
+combined_v1 + dynamic rating,20261126-Rockhampton-R2,6,39.98,37.82,2.16,0,0
+combined_v1 + dynamic rating,20261126-Rockhampton-R3,6,46.34,26.76,19.57,0,0
+combined_v1 + dynamic rating,20261126-Rockhampton-R4,5,49.05,20.15,28.9,0,0
+combined_v1 + dynamic rating,20261126-Rockhampton-R5,8,20.58,17.06,3.52,0,0
+combined_v1 + dynamic rating,20261126-Rockhampton-R6,10,21.88,21.25,0.63,1,1
+dynamic rating + PA1 figure,20261126-Rockhampton-R1,8,61.25,7.21,54.04,4,4
+dynamic rating + PA1 figure,20261126-Rockhampton-R2,6,36.68,27.98,8.7,0,0
+dynamic rating + PA1 figure,20261126-Rockhampton-R3,6,39.26,27.03,12.23,0,0
+dynamic rating + PA1 figure,20261126-Rockhampton-R4,5,29.15,23.17,5.98,0,0
+dynamic rating + PA1 figure,20261126-Rockhampton-R5,8,25.39,19.57,5.82,0,0
+dynamic rating + PA1 figure,20261126-Rockhampton-R6,10,27.23,22.12,5.11,1,1
+combined_v1 + national dynamic rating,20261126-Rockhampton-R1,8,37.25,32.75,4.5,4,4
+combined_v1 + national dynamic rating,20261126-Rockhampton-R2,6,46.56,32.61,13.95,0,0
+combined_v1 + national dynamic rating,20261126-Rockhampton-R3,6,46.15,25.88,20.27,0,0
+combined_v1 + national dynamic rating,20261126-Rockhampton-R4,5,48.33,14.68,33.65,0,0
+combined_v1 + national dynamic rating,20261126-Rockhampton-R5,8,25.88,18.34,7.55,0,0
+combined_v1 + national dynamic rating,20261126-Rockhampton-R6,10,26.61,22.77,3.84,1,1

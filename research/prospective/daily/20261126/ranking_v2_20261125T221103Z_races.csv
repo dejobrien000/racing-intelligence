@@ -1,0 +1,30 @@
+meeting,race_no,race_id,runners,going,rail,top_pick,saddlecloth,final_rating_kg_eq,clear_of_2nd_kg_eq,model_chance_pct,selection_strength_pct,band_80,vs_random_x,label,v1_top_pick,changed_from_v1,second_pick,model_version,predicted_utc,day_rank
+Rockhampton,2,20261126-Rockhampton-R2,6,SOFT6,,Bold Blaze,1,8.7,3.8,57.1,44.4,42-47,2.66,strong,Bold Blaze,False,Replace The Ace,engine_v2,2026-11-25T22:10:13.510533+00:00,1.0
+Rockhampton,4,20261126-Rockhampton-R4,5,SOFT6,,Metalcraft,2,5.9,5.2,54.5,43.5,40-47,2.18,strong,Metalcraft,False,Zedari,engine_v2,2026-11-25T22:10:13.510533+00:00,2.0
+Mornington,3,VIC|mornington|2026-11-26|3,10,GOOD4,,Ocean Mirage,11,9.1,3.9,42.2,36.3,36-37,3.63,strong,Ocean Mirage,False,Five Roses,engine_v2,2026-11-25T22:11:03.208774+00:00,3.0
+Geraldton,1,WA|geraldton|2026-11-26|1,11,GOOD4,,Talk Too Much,1,11.6,3.2,41.0,35.7,35-37,3.93,strong,Talk Too Much,False,Bahnbougle Baby,engine_v2,2026-11-25T22:10:30.609637+00:00,4.0
+Geraldton,2,WA|geraldton|2026-11-26|2,11,GOOD4,,Make It Snow,10,12.0,0.0,40.2,35.1,34-36,3.86,strong,Perfect Score,True,Perfect Score,engine_v2,2026-11-25T22:10:30.609637+00:00,5.0
+Geraldton,6,WA|geraldton|2026-11-26|6,11,GOOD4,,Gypsy Rhyme,3,10.1,2.6,40.1,35.0,34-36,3.85,strong,Gypsy Rhyme,False,Deep Discretion,engine_v2,2026-11-25T22:10:30.609637+00:00,6.0
+Hawkesbury,5,NSW|hawkesbury|2026-11-26|5,7,SOFT5,,Pearl Of Dubai,9,6.0,3.0,41.6,34.9,34-36,2.44,strong,North Counsel,True,North Counsel,engine_v2,2026-11-25T22:10:47.224078+00:00,7.0
+Rockhampton,3,20261126-Rockhampton-R3,6,SOFT6,,Good Lieutenant,1,6.6,0.0,40.1,33.6,31-36,2.01,strong,Good Lieutenant,False,King'S Duty,engine_v2,2026-11-25T22:10:13.510533+00:00,8.0
+Geraldton,8,WA|geraldton|2026-11-26|8,9,GOOD4,,Southland,1,7.2,2.6,38.5,33.3,33-34,3.0,strong,Southland,False,Cantilever,engine_v2,2026-11-25T22:10:30.609637+00:00,9.0
+Mornington,8,VIC|mornington|2026-11-26|8,8,GOOD4,,Rough Enuff,2,8.4,2.9,37.4,32.2,32-33,2.58,strong,Rough Enuff,False,Goodness,engine_v2,2026-11-25T22:11:03.208774+00:00,10.0
+Geraldton,3,WA|geraldton|2026-11-26|3,7,GOOD4,,Collective,3,7.7,0.7,37.6,32.0,31-33,2.24,strong,Snippety Legend,True,Snippety Legend,engine_v2,2026-11-25T22:10:30.609637+00:00,11.0
+Mornington,1,VIC|mornington|2026-11-26|1,8,GOOD4,,Cirque De Coco,7,6.5,1.7,36.2,31.3,31-32,2.51,strong,Optimus,True,Optimus,engine_v2,2026-11-25T22:11:03.208774+00:00,12.0
+Mornington,6,VIC|mornington|2026-11-26|6,9,GOOD4,,Lotta City,10,7.9,2.8,35.7,31.2,31-32,2.81,strong,Lotta City,False,Dragon Scroll,engine_v2,2026-11-25T22:11:03.208774+00:00,13.0
+Mornington,2,VIC|mornington|2026-11-26|2,11,GOOD4,,Ravens Glow,11,8.0,1.2,33.6,30.2,30-31,3.32,strong,San Pueblo,True,San Pueblo,engine_v2,2026-11-25T22:11:03.208774+00:00,14.0
+Hawkesbury,1,NSW|hawkesbury|2026-11-26|1,5,SOFT5,,Stonecrest,5,2.5,1.8,33.4,28.2,27-30,1.41,moderate,Sacrosanct,True,Sacrosanct,engine_v2,2026-11-25T22:10:47.224078+00:00,15.0
+Mornington,4,VIC|mornington|2026-11-26|4,13,GOOD4,,Sentaloa,9,8.2,3.5,29.3,27.4,27-28,3.56,moderate,Sentaloa,False,Ashina,engine_v2,2026-11-25T22:11:03.208774+00:00,16.0
+Hawkesbury,7,NSW|hawkesbury|2026-11-26|7,9,SOFT5,,Midnight Revolt,8,6.9,1.9,30.2,27.2,27-28,2.45,moderate,Sauvitude,True,Sauvitude,engine_v2,2026-11-25T22:10:47.224078+00:00,17.0
+Rockhampton,6,20261126-Rockhampton-R6,10,SOFT6,,Wasabi Barbie,11,7.1,2.0,32.1,26.7,26-28,2.67,moderate,Wasabi Barbie,False,Hella Fast,engine_v2,2026-11-25T22:10:13.510533+00:00,18.0
+Mornington,7,VIC|mornington|2026-11-26|7,8,GOOD4,,Bel Lupa,12,5.3,1.0,29.4,26.4,26-27,2.11,moderate,Ilovediamonds,True,Ilovediamonds,engine_v2,2026-11-25T22:11:03.208774+00:00,19.0
+Mornington,5,VIC|mornington|2026-11-26|5,9,GOOD4,,Ole Daze,7,6.2,2.0,28.5,25.9,25-26,2.33,moderate,Gunz,True,Gunz,engine_v2,2026-11-25T22:11:03.208774+00:00,20.0
+Hawkesbury,3,NSW|hawkesbury|2026-11-26|3,8,SOFT5,,Alabama Showdown,1,5.1,1.6,27.6,25.0,24-26,2.0,moderate,Alabama Showdown,False,Outta Line,engine_v2,2026-11-25T22:10:47.224078+00:00,21.0
+Geraldton,5,WA|geraldton|2026-11-26|5,12,GOOD4,,Violent,12,6.4,0.7,23.9,23.1,22-24,2.77,weak - no clear selection,Yapper,True,Yapper,engine_v2,2026-11-25T22:10:30.609637+00:00,22.0
+Rockhampton,5,20261126-Rockhampton-R5,8,SOFT6,,Four Leaf Wonder,1,4.4,0.8,24.5,22.8,22-24,1.82,moderate,Four Leaf Wonder,False,Senzora,engine_v2,2026-11-25T22:10:13.510533+00:00,23.0
+Hawkesbury,2,NSW|hawkesbury|2026-11-26|2,11,SOFT5,,Flying Party,1,6.5,0.3,22.3,21.7,21-22,2.39,weak - no clear selection,Mister Dee Jay,True,Titan Of Fury,engine_v2,2026-11-25T22:10:47.224078+00:00,24.0
+Hawkesbury,4,NSW|hawkesbury|2026-11-26|4,8,SOFT5,,Perini Miss,4,3.4,0.9,22.8,21.5,21-22,1.72,weak - no clear selection,Fitzclarence,True,Fitzclarence,engine_v2,2026-11-25T22:10:47.224078+00:00,25.0
+Geraldton,7,WA|geraldton|2026-11-26|7,11,GOOD4,,Blowin' Smoke,6,5.2,0.1,20.5,20.3,20-21,2.23,weak - no clear selection,Lieutenant Dunbar,True,Divine Inanna,engine_v2,2026-11-25T22:10:30.609637+00:00,26.0
+Geraldton,4,WA|geraldton|2026-11-26|4,10,GOOD4,,Noble Touch,6,3.9,0.5,19.8,19.6,19-20,1.96,weak - no clear selection,Noble Touch,False,Diver Dan,engine_v2,2026-11-25T22:10:30.609637+00:00,27.0
+Hawkesbury,6,NSW|hawkesbury|2026-11-26|6,11,SOFT5,,Wootton Touch It,14,4.1,0.5,19.1,19.2,19-20,2.11,weak - no clear selection,Extreme Courage,True,Tickelova,engine_v2,2026-11-25T22:10:47.224078+00:00,28.0
+Rockhampton,1,20261126-Rockhampton-R1,8,SOFT6,,Gathers No Stone,1,9.9,1.6,44.9,35.3,34-37,2.82,insufficient information,Urban Reality,True,Urban Reality,engine_v2,2026-11-25T22:10:13.510533+00:00,
