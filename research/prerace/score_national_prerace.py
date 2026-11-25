@@ -21,7 +21,8 @@ for k in sorted(snaps): latest[(snaps[k]['date'], snaps[k]['venue'])] = k
 U = pd.read_parquet('national_runs.parquet')
 con = duckdb.connect(DB, read_only=True)
 bm = con.execute("select meeting_date, bf_track_slug venue, slug from bn_meeting").fetchdf(); bm['date'] = pd.to_datetime(bm.meeting_date)
-NAMEVAR = {'royal-randwick': 'randwick', 'canterbury-park': 'canterbury', 'the-valley': 'moonee-valley', 'wagga-wagga': 'wagga', 'rosehill-gardens': 'rosehill', 'beaumont-newcastle': 'beaumont', 'newcastle-beaumont': 'beaumont'}
+NAMEVAR = {'royal-randwick': 'randwick', 'canterbury-park': 'canterbury', 'the-valley': 'moonee-valley', 'wagga-wagga': 'wagga', 'rosehill-gardens': 'rosehill', 'beaumont-newcastle': 'beaumont', 'newcastle-beaumont': 'beaumont',
+           'mt-barker': 'mount-barker', 'mt-gambier': 'mount-gambier', 'devonport-synthetic': 'devonport', 'devonport-tapeta': 'devonport'}   # SA/WA/Tas spellings (25 Nov 2026 release)
 bm = bm.drop_duplicates(['date', 'venue']); bm['config'] = bm.slug.map(lambda s: NAMEVAR.get(s, s))
 U = U.merge(bm[['date', 'venue', 'config']], on=['date', 'venue'], how='left')
 qt = pd.read_parquet('runs.parquet')[['race_id', 'horse_id', 'track']].rename(columns={'race_id': 'q_race_id', 'horse_id': 'q_horse_id'})

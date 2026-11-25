@@ -29,3 +29,15 @@
   Approved by Damo in chat, 25 Nov ~11:10am, to replace from now on.
 
 ## v2.0 - 24 Nov 2026 (benchmarks/engine_v2/manifest.json)
+
+## Database release master-2026-11-23-sa-wa-tas (25 Nov 2026, approved by Damo 2:15pm Brisbane; live from the 26 Nov 7:30am run)
+- What changed: SA, WA and Tas Breednet results Oct 2022 - 23 Nov 2026 (2,170 meetings) added to the master database and
+  to the national rating. SA/WA/Tas meetings are rated from 26 Nov instead of shown as fields only. No coefficient changed.
+- Evidence (copy of the database, 2025-26 races): NSW top pick 28.45% -> 28.43%, Vic 27.63% -> 27.61% (unchanged);
+  on SA/WA/Tas races the model never saw: WA 28.1%, Tas 30.8%, SA 25.0%. 95.3% of SA/WA/Tas runners have a measured
+  prior run; horses with none still get no rating. NSW/Vic/ACT ratings moved 0.24 kg on average (horses that also raced
+  in SA/WA/Tas). Queensland scale check 2.992 vs frozen 2.987 (limit 2%); today's Ipswich chances moved 0.05 points,
+  same top picks. Dry run on today's Strathalbyn, Albany and Launceston fields rated them (not published).
+- Previous version kept on branch db-prev (master-2026-11-23). Roll back: ops/db_config.json states NSW, VIC, ACT and
+  restore db from db-prev. Today's (25 Nov) published tips and settlement use the previous version and are not changed.
+- Open: one meeting not collected (Ascot 12 Apr 2025, server error 500) - retried with the next weekly update.
