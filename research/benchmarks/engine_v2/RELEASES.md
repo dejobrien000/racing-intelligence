@@ -87,3 +87,19 @@
 - Race line: Data confidence High / Medium / Low. Low = top pick has no demonstrated rating, or unrated runners hold 30%+ of the
   model's win chance; Medium = 10%+ or a 1-2 run horse in the top three. Shows how many runners are unrated and their share of chance.
 - Checked: sandbox export of 25 Nov Albany, Launceston and Strathalbyn on the final database (v2.2); dashboard script syntax-checked.
+
+## Weight correction: national model uses weight carried (from the 26 Nov 2026 run) — correction, approved by Damo 25 Nov 2026
+- Why: the history the national model learned on (Breednet results) holds the weight CARRIED after the apprentice claim (matches the
+  NSW form line's carried figure on 99.8% of 19,010 checked starts). TAB fields give the ALLOCATED weight (handicapWeight) with the
+  claim separate (claimAmount; -1 = none). Checked live on the 26 Nov racecards: Mornington R1, 3yo maiden at set weights 58 kg,
+  Zaac 58 kg with a 2 kg claim -> TAB weight is before the claim. Queensland is not changed: its history (RQ) is allocated weight too.
+- Change: prerace/score_national_prerace.py computes weight_carried_kg = allocated - claim (claim read once, 0-4 kg, asserted) and
+  uses it for weight-vs-field and today's rating row; engine/score_v2.py uses that column (no second deduction) for weight change
+  and the v2.2 light-weight term, then restores the allocated weight for output. Files and dashboard keep showing the allocated
+  weight with the claim beside it. New output columns: claim_used_kg, weight_carried_kg, weight_basis.
+- Gate: WEIGHT_CARRIED (default 1) and WEIGHT_CARRIED_FROM (default 2026-11-26). Earlier days are scored exactly as before.
+- Checks (sandbox, final database, v2.2): replay of 25 Nov Albany, Launceston, Strathalbyn, Geelong, Wyong (37 races, 52 claimed
+  runners): 1 top pick changes (Geelong R5 Sixty Grand over Mickio), largest chance move 1.1 pts; code output identical to a
+  hand-made carried-weight replay; export recompute check passes; dashboard shows allocated weight + claim; 25 Nov rescored
+  with the default gate = identical to the pre-correction run (claims not used). Coefficients unchanged (they were fitted on carried weight).
+- Roll back: WEIGHT_CARRIED=0 in the run environment, or revert this commit.

@@ -34,6 +34,9 @@ def new_raw(T, H_, fam, records=False):
     """T: today's runners (one meeting) with horse key, jockey, trainer, distance_m, weight_kg, config, gband, dband, date, race_id, dyn_nat (today's
     pre-race rating) and benchmark. Returns T with the raw new features (same definitions as engine/lab.py)."""
     T = T.copy(); D = T.date.iloc[0]
+    # weight the model sees = weight carried (the v1 file's weight_carried_kg, claim already taken off ONCE there); the allocated weight is restored for output
+    alloc_ = T.weight_kg.copy(); carried_ = fam != 'QLD' and 'weight_carried_kg' in T and T.weight_carried_kg.notna().all()
+    if carried_: T['weight_kg'] = T.weight_carried_kg.astype(float)
     inn = H_.dyn_nat_inn
     def shrunk(keycol, keys, k):
         g = pd.DataFrame({'k': keycol, 'v': inn.fillna(0.0), 'c': inn.notna().astype(float)}).dropna(subset=['k']).groupby('k')[['v', 'c']].sum()
@@ -69,6 +72,7 @@ def new_raw(T, H_, fam, records=False):
         per = q.assign(b=np.sign(q.finish_pos_o - q.finish_pos)).groupby('horse_o').b.agg(['sum', 'count']); vals.append(float((per['sum'] / (per['count'] + 1)).sum() / max(len(riv), 1)))   # training averaged over ALL rivals (unmet = 0)
     T['h2h'] = vals
     if V22 and fam != 'QLD': T = v22.raw(T, H_)                 # Engine v2.2: career shape, consistency, weight, spacing, measured venue class
+    T['weight_kg'] = alloc_.values; T['weight_basis'] = 'carried' if carried_ else 'as given'
     return T
 
 def terms(T, fam):
@@ -147,7 +151,7 @@ if __name__ == '__main__':
             V22 = False; T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
         od = os.path.dirname(ix.file); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
         fams = [c for c in T.columns if c.startswith('v2+ ')]
-        keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
+        keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'claim_used_kg', 'weight_carried_kg', 'weight_basis', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
                [c for c in T.columns if c.startswith('grp_')] + fams + ['j_surp', 'j_n', 't_surp', 't_n', 'jt_surp', 'j_change', 'age_n', 'female', 'h2h', 'surprise_last', 'dyn_traj', 'dist_change', 'wt_change', 'bm_change', 'c_rec', 'c_rec_n', 'g_rec', 'g_rec_n', 'd_rec', 'd_rec_n', 'rating_kg_national']
         out = T[[c for c in keep if c in T]].rename(columns={'rank': 'v1_rank', 'chance_pct': 'v1_chance_pct', 'horse_name': 'horse'}).sort_values(['race_no', 'v2_rank'])
         out.insert(0, 'candidate', 'engine_v2'); out.insert(1, 'family', fam)

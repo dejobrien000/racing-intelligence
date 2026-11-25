@@ -71,7 +71,17 @@ for _, r in R.iterrows():
         f3 = h.fs.values[-3:]; o['a_fs3'] = np.nanmean(f3) if np.isfinite(f3).any() else np.nan
     out.append(o)
 Fe = pd.DataFrame(out); R = R.merge(Fe, on=['race_id', 'horse'], how='left')
-R['a_wt_rel'] = R.weight_kg - R.groupby('race_id').weight_kg.transform('mean')
+# Weight definition (Batch 11 correction, approved by Damo 25 Nov 2026, live from the 26 Nov run): the history this model learned on holds the
+# weight CARRIED (after the apprentice claim); fields give the ALLOCATED weight with the claim separate. The model now uses carried =
+# allocated - claim (claim read once, here; 0 to 4 kg). Output files keep the allocated weight (the dashboard shows it with the claim).
+WC_ON = os.environ.get('WEIGHT_CARRIED', '1') == '1'; WC_FROM = pd.Timestamp(os.environ.get('WEIGHT_CARRIED_FROM', '2026-11-26'))
+R['weight_alloc_kg'] = R.weight_kg.astype(float)
+_cl = pd.to_numeric(R['claim_kg'], errors='coerce') if 'claim_kg' in R else pd.Series(np.nan, index=R.index)
+assert not (_cl > 4).any(), f'claim above 4 kg in the fields: {R.loc[_cl > 4, ["horse_name", "claim_kg"]].values.tolist()}'
+R['claim_used_kg'] = np.where(WC_ON & (R.date >= WC_FROM), _cl.fillna(0.0).clip(lower=0.0), 0.0)
+R['weight_carried_kg'] = R.weight_alloc_kg - R.claim_used_kg
+if (R.weight_carried_kg < 48).any(): print('WARNING carried weight below 48 kg:', R.loc[R.weight_carried_kg < 48, ['horse_name', 'weight_alloc_kg', 'claim_used_kg']].values.tolist(), file=sys.stderr)
+R['a_wt_rel'] = R.weight_carried_kg - R.groupby('race_id').weight_carried_kg.transform('mean')
 src = [U[['date', 'horse']].assign(src='national results')]
 for q_, lab in [("select meeting_date date, name_key from bf_runner where state <> 'NZ'", 'Betfair'), ("select run_date date, name_key from nsw_form_line where not trial", 'Racing NSW form lines')]:
     t = con.execute(q_).fetchdf(); t['horse'] = t.name_key.map(nk); src.append(t[['date', 'horse']].assign(src=lab))
@@ -83,7 +93,7 @@ R['r_firstup'] = (days >= 60).astype(float); R['r_7_13'] = days.between(7, 13).a
 R['r_quick'] = (days <= 10).astype(float); R['r_ldays'] = np.log(days.clip(7, 365)); R['days_since'] = days
 has = R.f_avgfp3.notna(); R['missform'] = (~has).astype(float); R['missfig'] = (has & R.a_rec.isna()).astype(float)
 # ---------- national rating and horse records (history + today's fields appended, no result) ----------
-UR = pd.DataFrame({'race': R.race, 'horse': R.horse, 'date': R.date, 'finish_pos': np.nan, 'margin_l': np.nan, 'weight_kg': R.weight_kg.astype(float), 'distance_m': R.distance_m.astype(float),
+UR = pd.DataFrame({'race': R.race, 'horse': R.horse, 'date': R.date, 'finish_pos': np.nan, 'margin_l': np.nan, 'weight_kg': R.weight_carried_kg.astype(float), 'distance_m': R.distance_m.astype(float),
                    'config': R.config, 'gband': R.gband, 'dband': R.dband, 'rid': R.race_id})
 UH = U[['race', 'horse', 'date', 'finish_pos', 'margin_l', 'weight_kg', 'distance_m', 'config', 'going']].copy()
 gu = UH.going.fillna('').astype(str).str.lower(); UH['gband'] = np.select([gu.str.contains('heavy'), gu.str.contains('soft'), gu.str.contains('synth|poly|awt')], ['heavy', 'soft', 'synthetic'], 'good')
@@ -113,7 +123,7 @@ for cname, coef in CANDS.items():
     for _, r in R.iterrows():
         gs = {g_: r['_g_' + g_] for g_ in G}; pos = [k for k, v in sorted(gs.items(), key=lambda t: -t[1]) if v > 0.15][:2]; neg = [k for k, v in sorted(gs.items(), key=lambda t: t[1]) if v < -0.15][:1]
         RW.append({'candidate': cname, 'race_id': r.race_id, 'race_no': int(r.race_no), 'saddlecloth': int(r.saddlecloth), 'horse': r.horse_name,
-                   'barrier': r.barrier, 'weight_kg': r.weight_kg, 'jockey': r.jockey, 'rank': int(r._rank), 'chance_pct': round(100 * r._p, 2), 'race_relative_score': round(r._score, 4),
+                   'barrier': r.barrier, 'weight_kg': r.weight_kg, 'claim_used_kg': r.claim_used_kg, 'weight_carried_kg': r.weight_carried_kg, 'jockey': r.jockey, 'rank': int(r._rank), 'chance_pct': round(100 * r._p, 2), 'race_relative_score': round(r._score, 4),
                    'rating_kg_national': round(r.dyn_nat, 2) if r.dyn_nat == r.dyn_nat else None, 'rating_sd_kg_national': round(r.dyn_sd, 2) if r.dyn_sd == r.dyn_sd else None,
                    'course_record_kg': round(r.c_rec, 2) if r.c_rec == r.c_rec else None, 'runs_at_course_before': int(r.c_rec_n) if r.c_rec_n == r.c_rec_n else 0,
                    'reasons_plus': '; '.join(pos), 'reasons_minus': '; '.join(neg), 'n_prior_runs_held': int(r.n_prior) if r.n_prior == r.n_prior else 0,
