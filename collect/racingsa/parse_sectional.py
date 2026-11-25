@@ -27,7 +27,8 @@ def parse(pages):
     m = re.search(r'(\d{2} \w{3} \d{4}) - (\d{1,2}:\d{2}[AP]M)', p1); race.update(date_text=m.group(1), start_time=m.group(2)) if m else probs.append('no date line')
     m = re.search(r'Track Rating: ([^,\n]+)', p1); race['track_rating'] = m.group(1).strip() if m else None
     m = re.search(r'Weather: ([^,\n]+)', p1); race['weather'] = m.group(1).strip() if m else None
-    m = re.search(r'Rail Position: ([^\n]+?)(?:; Sectional (\d+)m)?\s*$', p1, re.M); race['rail'] = m.group(1).strip() if m else None; race['sectional_m'] = int(m.group(2)) if m and m.group(2) else None
+    m = re.search(r'Rail Position: ([^\n]+?)(?:;? ?Sectional \d+m)?\s*$', p1, re.M); race['rail'] = m.group(1).strip().rstrip(';') if m else None
+    m = re.search(r'Sectional (\d+)m', p1); race['sectional_m'] = int(m.group(1)) if m else None
     m = re.search(r'Report Created: (.+?) \(', p1); race['report_created'] = m.group(1).strip() if m else None
     m = re.search(r'^Section (Overall(?: L\d+)+)\s*$', p1, re.M)
     cols = m.group(1).split() if m else None
