@@ -19,5 +19,6 @@ python3 engine/daily_ranking_v2.py "$D" > /tmp/rank.txt 2>&1 || log "WARNING ran
 python3 engine/export_ui.py "$D" > /tmp/export.txt 2>&1 || { log "FAILED export: $(tail -3 /tmp/export.txt)"; exit 3; }
 python3 collect/tab_prices.py "$D" "tab_${STAMP}" > /tmp/prices.txt 2>&1 && log "open prices matched: $(head -1 /tmp/prices.txt)" || log "WARNING prices: $(tail -1 /tmp/prices.txt)"
 python3 engine/export_ui.py "$D" > /tmp/export.txt 2>&1; sed -n 1p /tmp/export.txt
-if [ -n "$Y" ] && [ -f "$YRAW" ] && [ -f "ui/data/racing_${Y:0:4}-${Y:4:2}-${Y:6:2}.json" ]; then python3 ops/settle_yesterday.py "$Y" "$YRAW" "$D" && log "yesterday settled"; fi
+if [ -n "$Y" ] && [ -f "$YRAW" ] && [ -f "ui/data/racing_${Y:0:4}-${Y:4:2}-${Y:6:2}.json" ]; then python3 ops/settle_yesterday.py "$Y" "$YRAW" "$D" && log "yesterday settled"
+  python3 ops/evaluate_prospective.py "$Y" > /tmp/eval.txt 2>&1 && log "evaluation ledger: $(tail -1 /tmp/eval.txt)" || log "WARNING evaluation ledger (observational only): $(tail -1 /tmp/eval.txt)"; fi
 python3 ui/build_standalone.py "$DATE" >/dev/null && log "done"

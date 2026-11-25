@@ -10,7 +10,9 @@ Usage (from research/):  python3 prerace/score_prerace.py <snapshot.jsonl.gz> ..
 import sys, os, re, json, gzip, shutil, subprocess, hashlib, numpy as np, pandas as pd
 HERE = os.getcwd(); SNAP, DB = sys.argv[1], os.path.abspath(sys.argv[2]); WANT = sys.argv[3] if len(sys.argv) > 3 else None
 REPLAY = os.environ.get('PRERACE_REPLAY') == '1'   # retrospective replay test: history cut at the race date, output to /tmp only
-W = '/tmp/prerace_work' + ('_replay' if REPLAY else ''); os.makedirs(os.path.join(W, 'out'), exist_ok=True)
+SHADOW = os.environ.get('SHADOW_QLD_CANDIDATES')   # shadow scoring of a NOT-LIVE Queensland candidate (v2.1.2, approved for shadow by Damo 25 Nov 2026): own folder + own index, never the dashboard
+OUTROOT = 'prospective/shadow/qld_v2_1_2' if SHADOW else 'prospective'; OUTIDX = os.path.join(OUTROOT, 'INDEX.csv') if SHADOW else 'prospective/prerace/INDEX.csv'
+W = '/tmp/prerace_work' + ('_replay' if REPLAY else '') + ('_shadow' if SHADOW else ''); os.makedirs(os.path.join(W, 'out'), exist_ok=True)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 now = lambda: pd.Timestamp.now(tz='UTC')
 norm = lambda n: re.sub(r'\s+', ' ', re.sub(r"['’]", '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(n).strip()))).upper()
@@ -95,6 +97,7 @@ import dyn_rating as DR
 os.chdir(HERE)
 man = json.load(open('benchmarks/candidates_b4/manifest.json')); V3 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 default from 25 Nov 2026 12:xx (approved by Damo)
 man_n = json.load(open('benchmarks/candidates_b4_national_v3/manifest.json' if V3 else 'benchmarks/candidates_b4_national/manifest.json'))
+if SHADOW: man_n = json.load(open(SHADOW))                    # shadow: candidate coefficients for the operational Queensland candidate
 q = ALL; p = man['dynamic_rating_params']
 d = pd.DataFrame({'race_id': q.race_id, 'horse_id': q.horse_id, 'horse': q.horse_id, 'date': pd.to_datetime(q.meeting_date), 'race_key': q.race_id,
                   'finish_pos': q.finish_pos.where(q.finish_pos <= q.field), 'margin_l': q.margin_l, 'weight_kg': pd.to_numeric(q.weight_kg, errors='coerce'), 'distance_m': q.distance_m})
@@ -166,7 +169,7 @@ for cname, coef in cands.items():
 RW = pd.DataFrame(rows).sort_values(['candidate', 'race_no', 'rank']); RC = pd.DataFrame(races)
 # ---------- 6. write once ----------
 for (date, code), key in latest.items():
-    track = snaps[key]['track']; od = os.path.join('/tmp/prerace_replay' if REPLAY else 'prospective', 'prerace', date, track); os.makedirs(od, exist_ok=True)
+    track = snaps[key]['track']; od = os.path.join('/tmp/prerace_replay' if REPLAY else OUTROOT, 'prerace', date, track); os.makedirs(od, exist_ok=True)
     base = os.path.join(od, f"pred_{key.split(':')[-1]}_{stamp}")
     sel = RW.race_id.str.startswith(f'{date}-{track}-')
     paths = {'runners': base + '_runners.csv', 'races': base + '_races.csv', 'manifest': base + '_manifest.json'}
@@ -180,10 +183,12 @@ for (date, code), key in latest.items():
           'history_cutoff_by_source': cutoff, 'national_runs_sha256': sha('national_runs.parquet'), 'scaling_check_dev_sd': chk,
           'notes': ['no result of these races existed when this file was written', 'days since last start uses every source held; Betfair lags about a month',
                     'emergencies and scratched runners at snapshot time are listed in not_scored', 'chance_pct is the frozen model probability; uncertainty: rating_sd_kg, evidence flags, top_two_gap_pts']}
+    if SHADOW: mf.update({'shadow': 'NOT LIVE: Queensland Engine v2.1.2-candidate (shadow scoring approved by Damo 25 Nov 2026); never shown on the dashboard',
+                          'shadow_candidates_manifest': SHADOW, 'shadow_candidates_manifest_sha256': sha(SHADOW)})
     with open(paths['manifest'], 'x') as fh: json.dump(mf, fh, indent=1, default=str)
     if REPLAY: print('replay output (not a prediction):', base); continue
-    new = not os.path.exists('prospective/prerace/INDEX.csv')
-    with open('prospective/prerace/INDEX.csv', 'a') as fh:
+    new = not os.path.exists(OUTIDX)
+    with open(OUTIDX, 'a') as fh:
         if new: fh.write('scored_utc,date,track,snapshot_key,file,sha256\n')
         for kind, pth in paths.items(): fh.write(f"{scored_utc.isoformat()},{date},{track},{key},{pth},{sha(pth)}\n")
     print('written', base, '| races', RC[RC.race_id.str.startswith(f'{date}-{track}-')].race_id.nunique(), '| runners', int(sel.sum()) // len(cands))

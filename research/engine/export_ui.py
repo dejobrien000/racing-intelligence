@@ -235,7 +235,7 @@ for track, grp in v2rows.groupby('track', sort=False):
                                     'penetrometer': cond.get('penetrometer') or None, 'updated': cond.get('conditions_updated') or cond.get('track_information'), 'scratchings_close': cond.get('scratchings_close'),
                                     'scratchings_published': cond.get('scratchings_last_published')}.items()},
                      'sectionals': fam == 'QLD', 'snapshots': snap_list, 'default_snapshot': snap_list[-1]['id'], 'races': races,
-                     'provenance': {'v2_prediction_sha256': sha(ix.file)[:16], 'v1_prediction_sha256': m2['base_v1_sha256'][:16], 'engine_manifest_sha256': m2['engine_manifest_sha256'][:16], 'history_to': m2['history_max_date']}})
+                     'provenance': {'engine_release': m2.get('engine_release'), 'v2_prediction_file': ix.file, 'v2_prediction_sha256': sha(ix.file)[:16], 'v1_prediction_sha256': m2['base_v1_sha256'][:16], 'engine_manifest_sha256': m2['engine_manifest_sha256'][:16], 'history_to': m2['history_max_date']}})
 # ---- meetings whose fields were collected but whose horses lack enough history to rate: shown as fields only ----
 import glob
 CAL = json.load(open(f'collect/national/{D}/calendar.json')) if os.path.exists(f'collect/national/{D}/calendar.json') else {'meetings': []}
