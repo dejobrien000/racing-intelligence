@@ -24,6 +24,7 @@ for line in open(RAW, encoding='utf-8'):
     elif cur is not None and len(p) >= 11:
         cur['run'].append(dict(zip(['n', 'name', 'barrier', 'weight', 'claim', 'rider', 'trainer', 'emergency', 'win', 'place', 'status', 'finish'], p + [''] * (12 - len(p)))))
 nul = lambda x: None if x in ('', 'null', 'None', '-') else x
+if not races: sys.exit('daily_build: no racecards in the raw file (TAB fetch failed?)')
 cap = max(r['cap'] for r in races); stamp = cap.replace('-', '').replace(':', '')[:15] + 'Z'
 csv = lambda v: '"' + str(v).replace('"', "'") + '"' if (',' in str(v) or '"' in str(v)) else str(v)
 R = ['venue,venue_code,state,tz,race_no,start_local,distance_m,race_name,class_text,track_condition,rail']
