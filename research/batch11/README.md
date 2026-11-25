@@ -28,3 +28,11 @@ Decisions taken by Damo (25 Nov 2026, evening) and what was done:
   (37 races, 52 claimed runners: 1 top pick changes), recorded in benchmarks/engine_v2/RELEASES.md.
 - Queensland simplification on Engine v2.1.1 approved for testing: qld_simplify_v211.py / qld_simplify_v211.csv; candidate built by
   build_qld_candidate.py into benchmarks/candidate_qld_v2_1_2 (NOT live; evidence and limitations in its README).
+
+Follow-up (25 Nov evening, Damo's review): batch11/followup/
+- Evidence shares (s11_decomp_nat.py, decomp_qld.py): margin-based rating 24% national / 51% Qld; measured individual sectionals 0% / 2%.
+- Interstate connections (s11_connections.py): first-start rating surprises for all runners; Vic->Tas +1.63 kg, Tas->Vic -2.96 kg (selection-adjusted +1.82 / -2.85).
+- Weight vs field today (out_weight_vs_field.csv, out_weight_today_test.csv); preregistered rebuilds (b11eval.py + experiment_*.diff, run_*.sh):
+  out_prereg_spl_weight.csv. Supported: 0.170 s per length; weight credit 0.25 (over 0.5 over 0.75 over 1.0); combined C2 vs today +0.0079 (2025-26).
+- Queensland claims: carried vs allocated like-for-like (qld_carried_vs_allocated.csv): no gain. Caveat: the sandbox chain rebuild sits below the
+  production frames (fit 9.6-10.0% vs 10.2-10.6%), so only like-for-like comparisons are valid; reproducibility of the sandbox chain to be checked.

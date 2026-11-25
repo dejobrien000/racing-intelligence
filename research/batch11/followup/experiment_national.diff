@@ -1,0 +1,11 @@
+55c55,56
+< spl = 2.4 / U.speed
+---
+> spl = (2.4 / U.speed) if not os.environ.get('SPL_FIXED') else float(os.environ['SPL_FIXED'])   # EXPERIMENT ONLY (batch11 prereg)
+> WC = float(os.environ.get('WCREDIT', '1'))
+59c60
+< U['fig_w'] = 100 + U.kgpl * ((U.par + U.km * U.variant) - U.run_time) / spl + (U.weight_kg - 57)
+---
+> U['fig_w'] = 100 + U.kgpl * ((U.par + U.km * U.variant) - U.run_time) / spl + WC * (U.weight_kg - 57)
+130a132
+> import sys as _s; _s.exit(0)   # EXPERIMENT SANDBOX: the analyses below are not needed for the rebuild

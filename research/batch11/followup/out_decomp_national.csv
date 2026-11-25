@@ -1,0 +1,14 @@
+,share_of_score_variation_%,sd_kg_equiv
+"Margin-based rating (dyn_nat: margins, weight carried, opposition)",23.7,1.52
+"Time-based figures (a_rec, a_best3: winner time vs par minus margin)",12.2,0.84
+Opposition faced (a_fs3),3.5,0.64
+Weight today vs field (a_wt_rel),-0.3,0.04
+"Recent form (finish positions, last margin, strike rate, starts)",21.8,1.66
+Fitness and spacing,0.5,0.27
+Horse course/going/distance records (rating surprises),4.6,0.47
+v2: Jockey & trainer,15.3,1.19
+v2: Age & sex,6.8,0.9
+v2: Form changes & head-to-head,1.9,0.45
+v2: Interactions (chosen on discovery data only),15.3,1.08
+v2.2: Career shape and consistency,-6.5,0.61
+"v2.2: Weight, spacing and venue class",1.2,0.45

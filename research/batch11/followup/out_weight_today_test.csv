@@ -1,0 +1,7 @@
+label,stage,coef_per_sd,races,gain,lo95,hi95,top_pick_pts,gain_west
+weight vs field (all races),discovery,-0.0119,12777,0.00066,0.00045,0.00086,0.09,0.00065
+weight vs field (all races),validation,-0.0386,23729,0.00225,0.00181,0.0027,0.2,0.00261
+"weight vs field, handicaps only",discovery,-0.0231,12777,0.00112,0.00072,0.00151,0.01,0.00077
+"weight vs field, handicaps only",validation,-0.0450,23729,0.00288,0.00229,0.00343,0.09,0.00192
+both,discovery,0.0049;-0.0263,12777,0.00101,0.00061,0.00139,0.04,0.0006
+both,validation,-0.0170;-0.0336,23729,0.00314,0.00256,0.00374,0.13,0.00266

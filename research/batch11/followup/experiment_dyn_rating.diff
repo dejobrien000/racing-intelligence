@@ -1,0 +1,5 @@
+16c16,17
+<     d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + (d.weight_kg - 57), np.nan)
+---
+>     import os; WC = float(os.environ.get('WCREDIT', '1'))   # EXPERIMENT ONLY (batch11 prereg)
+>     d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
