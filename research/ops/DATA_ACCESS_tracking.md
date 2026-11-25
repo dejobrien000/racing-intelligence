@@ -134,3 +134,10 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
   absolute ground covered before that layout (only metres vs the winner); the other 12 country clubs (folders unknown).
 - Report: research/staging/sa_tracking_report.md. Next decision for Damo: whether to load passing races into the master database
   (as a versioned release with the Qld shape plus a state column) and add SA to the weekly job.
+
+## Live (26 Nov 2026 7:06am)
+- Master database master-2026-11-23-sa-wa-tas-qld-satrk (branch db; previous on db-prev): sa_race 1,775, sa_starter 18,822,
+  sa_sectional 133,905, sa_race_checks 1,954. Only races passing every check; 53 races with duplicate runner rows excluded.
+- Weekly: research/ops/weekly_update.py collects the window's SA meetings (known club folders), stages, checks and replaces only
+  passing races; a failure leaves the SA tables unchanged and is reported. The SA tables are covered by 'no table lost rows'.
+- Not used by any model yet. Using SA tracking in ratings is a research question with its own release.

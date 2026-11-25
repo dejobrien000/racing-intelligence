@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: pip install -q pandas numpy duckdb pyarrow scipy statsmodels requests beautifulsoup4 lxml
+      - run: pip install -q pandas numpy duckdb pyarrow scipy statsmodels requests beautifulsoup4 lxml pdfplumber tabulate
       - name: Restore current master database (branch db, checksums verified)
         run: |
           git fetch -q --depth 1 origin db:db && mkdir -p /tmp/db && git --work-tree=/tmp/db checkout db -- . && git reset -q

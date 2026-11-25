@@ -11,7 +11,7 @@ import os, sys, json, subprocess, datetime as dt, duckdb, pandas as pd, numpy as
 R = os.getcwd(); ROOT = os.path.dirname(R); DB = os.path.join(ROOT, 'history', 'history.duckdb'); rep = ['# Weekly master-database update', '']
 run = lambda *a, **k: subprocess.run(list(a), check=True, **k)
 con = duckdb.connect(DB, read_only=True); last = con.execute('select max(meeting_date) from bn_meeting').fetchone()[0]
-before = {t: con.execute(f'select count(*) from {t}').fetchone()[0] for t in ['bn_meeting', 'bn_race', 'bn_runner', 'race', 'starter']}; con.close()
+before = {t: con.execute(f'select count(*) from {t}').fetchone()[0] for t in ['bn_meeting', 'bn_race', 'bn_runner', 'race', 'starter', 'sa_race', 'sa_starter', 'sa_sectional']}; con.close()
 today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=10)).date(); d0 = min(last - dt.timedelta(days=9), today - dt.timedelta(days=10)); d1 = today - dt.timedelta(days=1)
 rep += [f'- Run (Brisbane): {today}; previous Breednet history to {last}; collecting {d0} to {d1} (re-fetching recent days picks up corrections)', '']
 os.makedirs(os.path.join(ROOT, 'breednet', 'weekly'), exist_ok=True)
@@ -37,6 +37,44 @@ rep += ['', '- Racing Queensland: ' + (rc.stdout.strip().splitlines() or ['no ou
 if rc.returncode: rep.append('- STOP: Racing Queensland collection failed (' + (rc.stderr.strip().splitlines() or [''])[-1][:200] + '); database not published'); open('ops/weekly_report.md', 'w').write('\n'.join(rep) + '\n'); sys.exit(1)
 out = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_history.py'), '--incremental', rqz, DB], capture_output=True, text=True, check=True).stdout
 rep += ['', '```', out.strip()[:4000], '```']
+# South Australian tracking (tripleSdata race reports; release of 26 Nov 2026). New SA meetings in the window at the clubs whose
+# report folder is known are collected, staged and checked; only races passing every staging check (and with no duplicate rows)
+# replace their rows in sa_race / sa_starter / sa_sectional. A failure here leaves the SA tables as they were and is reported.
+def sa_tracking():
+    import shutil, time as _t
+    wd = os.path.join(ROOT, 'sa_weekly'); shutil.rmtree(wd, ignore_errors=True); os.makedirs(os.path.join(wd, 'raw'))
+    con = duckdb.connect(DB, read_only=True)
+    cal = con.execute("""select m.meeting_date::varchar meeting_date, m.slug, count(r.race_no) filter (where not coalesce(r.is_trial, false)) races, max(r.race_no) maxr
+                         from bn_meeting m left join bn_race r using (meeting_date, slug) where m.state = 'SA' and m.meeting_date between ? and ? group by 1, 2 order by 1""", [d0, d1]).fetchdf(); con.close()
+    cal.to_csv(os.path.join(wd, 'meetings.csv'), index=False)
+    subprocess.run([sys.executable, os.path.join(ROOT, 'collect', 'racingsa', 'collect.py'), os.path.join(wd, 'meetings.csv'), os.path.join(wd, 'raw'), str(int(_t.time()) + 2400)],
+                   capture_output=True, text=True, timeout=3000)
+    tj = os.path.join(wd, 'raw', 'texts.jsonl')
+    if os.path.exists(tj): subprocess.run(['gzip', '-f', tj], check=True)
+    if not os.path.exists(tj + '.gz'): return f'{len(cal)} SA meetings in the window; no reports found (database unchanged)'
+    sdb = os.path.join(wd, 'stage.duckdb')
+    subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'stage_sa_tracking.py'), os.path.join(wd, 'raw'), DB, sdb, os.path.join(wd, 'report.md')], capture_output=True, text=True, check=True)
+    W = duckdb.connect(DB); W.execute(f"attach '{sdb}' as st (read_only)")
+    W.execute("""create temp table ok as select race_id from st.sa_race_checks c where c.pass and race_id not in (
+                   select race_id from (select race_id, saddlecloth from st.sa_starter group by 1, 2 having count(*) > 1)
+                   union select race_id from (select race_id, saddlecloth, segment_end_m from st.sa_sectional group by 1, 2, 3 having count(*) > 1)
+                   union select race_id from (select race_id from st.sa_race group by 1 having count(*) > 1))""")
+    n0 = {t: W.execute(f'select count(*) from {t}').fetchone()[0] for t in ['sa_race', 'sa_starter', 'sa_sectional']}
+    W.execute('begin')
+    for t in ['sa_race', 'sa_starter', 'sa_sectional']:
+        W.execute(f'delete from {t} where race_id in (select race_id from ok)')
+        W.execute(f'insert into {t} by name select * from st.{t} where race_id in (select race_id from ok)')
+    W.execute('delete from sa_race_checks where race_id in (select race_id from st.sa_race_checks)')
+    W.execute('insert into sa_race_checks by name select * from st.sa_race_checks')
+    W.execute("update sa_race_checks set pass = false, note = 'excluded: duplicate runner rows' where pass and race_id in (select race_id from st.sa_race_checks) and race_id not in (select race_id from ok)")
+    W.execute('commit')
+    n1 = {t: W.execute(f'select count(*) from {t}').fetchone()[0] for t in n0}; k = W.execute('select count(*) from ok').fetchone()[0]
+    staged = W.execute('select count(*) from st.sa_race_checks').fetchone()[0]; W.execute('detach st'); W.close()
+    return (f'{len(cal)} SA meetings in the window; {staged} races staged, {k} passed every check and were loaded; '
+            + ', '.join(f'{t} {n0[t]} -> {n1[t]}' for t in n0))
+try: sa_msg = sa_tracking()
+except Exception as ex: sa_msg = f'FAILED, SA tables unchanged: {str(ex)[-300:]}'
+rep += ['', '- South Australian tracking: ' + sa_msg]
 fs = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_form_staging.py'), DB, 'collect/national'], capture_output=True, text=True)   # research staging only; never a release check
 rep += ['', '- TAB form staging (research only): ' + (fs.stdout.strip().splitlines()[-1] if fs.returncode == 0 and fs.stdout.strip() else 'FAILED, not a release check: ' + fs.stderr.strip()[-300:])]
 cfg = json.load(open('ops/db_config.json')); env = {**os.environ, 'NAT_STATES': ','.join(cfg['national_states']), 'NAT_QLD_BN': '1' if cfg.get('qld_breednet_in_national_rating') else '0', 'PYTHONPATH': '.'}
