@@ -22,3 +22,9 @@ Integrity checks (no script file; commands in the session):
 - Weight definition: Breednet weight = weight carried after claim (99.8% of 19,010 NSW form-line matches); RQ starter weight = allocated;
   TAB racecard weight = allocated with claim separate. Replay of 25 Nov Geelong + Wyong under v2.2, allocated vs carried: 1 of 15 top picks changes.
 - Individual data proof (s2): TAB form records for GOODNESS (5/5 starts held) and ELEGANT VENUS (7 of 11 held in the final database).
+
+Decisions taken by Damo (25 Nov 2026, evening) and what was done:
+- Weight correction approved for the 26 Nov run: implemented (prerace/score_national_prerace.py, engine/score_v2.py), replayed on 5 meetings
+  (37 races, 52 claimed runners: 1 top pick changes), recorded in benchmarks/engine_v2/RELEASES.md.
+- Queensland simplification on Engine v2.1.1 approved for testing: qld_simplify_v211.py / qld_simplify_v211.csv; candidate built by
+  build_qld_candidate.py into benchmarks/candidate_qld_v2_1_2 (NOT live; evidence and limitations in its README).
