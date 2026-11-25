@@ -135,8 +135,16 @@ if __name__ == '__main__':
     IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv') & ~IX.file.str.contains('/v2_')]
     latest = IX.sort_values('scored_utc').groupby('track').tail(1)
     if os.environ.get('ONLY_TRACKS'): latest = latest[latest.track.isin(os.environ['ONLY_TRACKS'].split(','))]   # score only these meetings
+    V22_ON = V22
     for _, ix in latest.iterrows():
-        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam); T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
+        V22 = V22_ON                                              # each meeting starts on the release setting (a fallback applies to one meeting only)
+        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam)
+        try:
+            T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
+        except Exception as ex:                                   # safety net: never lose a meeting's ratings to a v2.2 fault
+            if not (V22 and fam != 'QLD'): raise
+            print(f'WARNING Engine v2.2 failed for {ix.track} ({str(ex)[:120]}); scored with Engine v2.0 instead', file=sys.stderr)
+            V22 = False; T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
         od = os.path.dirname(ix.file); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
         fams = [c for c in T.columns if c.startswith('v2+ ')]
         keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
