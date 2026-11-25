@@ -1,6 +1,11 @@
 {
  "items": [
   {
+   "item": "Ipswich re-issued 12:18pm on Engine v2.1 (new Queensland rating)",
+   "status": "working",
+   "note": "Approved by you at 12:09pm, before Ipswich race 1 (1:02pm). Queensland ratings now use the v3 rating, which expects lightly raced horses to keep improving. On 2025-26 (re-used data) it beat v2.0 by 0.005 per race (2026: 0.007). Today the top pick is unchanged in all 7 Ipswich races; chances moved by up to 4 points. The 7:56am and 11:11am sets are kept on file. NSW/Vic unchanged."
+  },
+  {
    "item": "Win chances re-calibrated 12:06pm (Engine v2.0.2, display only)",
    "status": "working",
    "note": "Approved by you at 12:05pm, before any race today. Shown win chances now use the bent-line calibration, which on unseen 2026 races showed top chances close to what they won (Qld 43.5% shown vs 43.0% won; previously 52.7%). Ratings, rankings, selections and paper returns are unchanged. Selection-strength labels use the matching new thresholds."

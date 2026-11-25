@@ -6,7 +6,8 @@ Also usable as a library: rescore(meeting_table, overrides) re-computes everythi
 Usage (from research/): PYTHONPATH=. python3 engine/score_v2.py 20261125"""
 import sys, os, re, json, gzip, hashlib, subprocess, numpy as np, pandas as pd
 from engine.lab import person_key, nk
-MAN = json.load(open('benchmarks/engine_v2/manifest.json'))
+V21 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 (25 Nov 2026): Queensland on the v3 rating; NSW/Vic/ACT unchanged
+MAN = json.load(open('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'))
 SNAPDIR = os.environ.get('SNAPDIR', '/mnt/user-data/uploads/Downloads')   # override for cloud-collected bundles
 def find_bundle(name):
     """snapshot bundles live in the PC download folder (staged) or, for cloud-collected fields, collect/national/<date>/bundles"""
@@ -20,9 +21,10 @@ gband = lambda g: 'heavy' if 'heavy' in str(g).lower() else 'soft' if 'soft' in 
 dband = lambda m: 's' if m <= 1150 else 'm' if m <= 1450 else 'mi' if m <= 1750 else 'l'
 METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown'}
 _U = {}
-def history(D):
-    if 'U' not in _U: _U['U'] = pd.read_parquet('engine/frames/national.parquet')
-    U = _U['U']; H_ = U[U.date < pd.Timestamp(D)]
+def history(D, fam='NSW_VIC_ACT'):
+    key = 'U3' if (V21 and fam == 'QLD') else 'U'
+    if key not in _U: _U[key] = pd.read_parquet('engine/frames/national_v3.parquet' if key == 'U3' else 'engine/frames/national.parquet')
+    U = _U[key]; H_ = U[U.date < pd.Timestamp(D)]
     assert len(H_) == len(U), 'history holds results on/after the race date: not a pre-race run'
     return H_
 
@@ -128,9 +130,8 @@ if __name__ == '__main__':
     IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv') & ~IX.file.str.contains('/v2_')]
     latest = IX.sort_values('scored_utc').groupby('track').tail(1)
     if os.environ.get('ONLY_TRACKS'): latest = latest[latest.track.isin(os.environ['ONLY_TRACKS'].split(','))]   # score only these meetings
-    H_ = history(D)
     for _, ix in latest.iterrows():
-        W, fam, cond, mf = meeting_table(ix); T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
+        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam); T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
         od = os.path.dirname(ix.file); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
         fams = [c for c in T.columns if c.startswith('v2+ ')]
         keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
@@ -140,7 +141,7 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha('benchmarks/engine_v2/manifest.json'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ('Engine v2.1 (v3 rating)' if (V21 and fam == 'QLD') else 'Engine v2.0.x'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
         with open('prospective/prerace/INDEX.csv', 'a') as fh:

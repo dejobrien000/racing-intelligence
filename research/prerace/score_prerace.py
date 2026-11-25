@@ -93,7 +93,8 @@ sys.path.insert(0, W); os.chdir(W)
 from clogit_tools import eligible, prep
 import dyn_rating as DR
 os.chdir(HERE)
-man = json.load(open('benchmarks/candidates_b4/manifest.json')); man_n = json.load(open('benchmarks/candidates_b4_national/manifest.json'))
+man = json.load(open('benchmarks/candidates_b4/manifest.json')); V3 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 default from 25 Nov 2026 12:xx (approved by Damo)
+man_n = json.load(open('benchmarks/candidates_b4_national_v3/manifest.json' if V3 else 'benchmarks/candidates_b4_national/manifest.json'))
 q = ALL; p = man['dynamic_rating_params']
 d = pd.DataFrame({'race_id': q.race_id, 'horse_id': q.horse_id, 'horse': q.horse_id, 'date': pd.to_datetime(q.meeting_date), 'race_key': q.race_id,
                   'finish_pos': q.finish_pos.where(q.finish_pos <= q.field), 'margin_l': q.margin_l, 'weight_kg': pd.to_numeric(q.weight_kg, errors='coerce'), 'distance_m': q.distance_m})
@@ -111,7 +112,9 @@ UN = pd.concat([U.assign(race_id=U.q_race_id.where(U.state == 'QLD'), horse_id=U
 dn = pd.DataFrame({'race_key': UN.race, 'horse': UN.horse, 'date': pd.to_datetime(UN.date), 'finish_pos': UN.finish_pos, 'margin_l': UN.margin_l.where(UN.finish_pos != 1, 0.0),
                    'weight_kg': UN.weight_kg, 'distance_m': UN.distance_m, 'idx': UN.idx})
 pn = man_n['dynamic_rating_params']; PN = DR.prepare(dn).sort_values(['date', 'race_key', 'finish_pos'], na_position='last')
-mu, sdv, _ = DR.run(PN, pn['s_kg'], pn['q_kg2_per_day'], pn['sig0_kg'], pn['debut_offset_kg'])
+if V3:   # Engine v2.1 (25 Nov 2026): Queensland uses the v3 rating (engine/dyn_v3.py, settings frozen in candidates_b4_national_v3)
+    sys.path.insert(0, HERE); from engine import dyn_v3; mu, sdv, _ = dyn_v3.run(PN, pn['s_kg'], pn['q_kg2_per_day'], pn['sig0_kg'], pn['debut_offset_kg'], **man_n['rating_settings'])
+else: mu, sdv, _ = DR.run(PN, pn['s_kg'], pn['q_kg2_per_day'], pn['sig0_kg'], pn['debut_offset_kg'])
 UN['dyn_nat'] = pd.Series(mu, index=PN.idx.values).reindex(UN.idx).values; UN['dyn_nat_sd'] = pd.Series(sdv, index=PN.idx.values).reindex(UN.idx).values
 nat = UN[UN.race_id.notna()][['race_id', 'horse_id', 'dyn_nat', 'dyn_nat_sd']]
 # ---------- 5. features and frozen scores ----------
@@ -129,7 +132,7 @@ x = prep(pd.concat([hist, futx], ignore_index=True), cols)
 # check: development scaling identical to the frozen fit (features rebuilt from the same database rows)
 ref = pd.read_parquet('features.parquet'); chk = {c: (float(x.loc[x.period == 'development', c].std()), float(prep(eligible(ref), [c]).loc[lambda t: t.period == 'development', c].std())) for c in ['a_avg3', 'p_relbar', 'f_avgfp3']}
 dsd = float(x.loc[x.period == 'development', 'dyn_nat'].sub(x.loc[x.period == 'development'].groupby('race_id').dyn_nat.transform('mean')).std())
-fro = json.load(open('benchmarks/engine_v2/manifest.json'))['families']['QLD']['base_feature_dev_sd']['dyn_nat']; chk['dyn_nat'] = (dsd, fro)
+fro = man_n['dyn_nat_dev_sd_after_race_centring'] if V3 else json.load(open('benchmarks/engine_v2/manifest.json'))['families']['QLD']['base_feature_dev_sd']['dyn_nat']; chk['dyn_nat'] = (dsd, fro)
 if not abs(dsd - fro) <= 0.02 * fro: raise SystemExit(f'national rating scaling check failed: development spread {dsd} vs frozen {fro}; nothing written')
 xf = x[x.period == 'prospective'].copy()
 G = {'Opposition-aware rating': ['dyn_mu', 'dyn_new', 'dyn_nat'], 'Recent ability figures': ['a_avg3', 'a_best3', 'a_fs3', 'a_wt_rel', 'missfig', 'rec_rating_pa1', 'misspa'],
@@ -172,7 +175,7 @@ for (date, code), key in latest.items():
     excl = F[(F.snapshot_key == key) & (F.status != 'runner')][['race_no', 'saddlecloth', 'horse', 'status']].to_dict('records')
     mf = {'scored_utc': scored_utc.isoformat(), 'snapshot': next(m for m in meta if m['snapshot_key'] == key), 'snapshot_bundle': os.path.basename(SNAP), 'snapshot_bundle_sha256': sha(SNAP),
           'not_scored': excl, 'candidates': list(cands), 'model_manifests': {'benchmarks/candidates_b4/manifest.json': sha('benchmarks/candidates_b4/manifest.json'),
-          'benchmarks/candidates_b4_national/manifest.json': sha('benchmarks/candidates_b4_national/manifest.json')},
+          'benchmarks/candidates_b4_national/manifest.json': sha('benchmarks/candidates_b4_national/manifest.json'), **({'benchmarks/candidates_b4_national_v3/manifest.json': sha('benchmarks/candidates_b4_national_v3/manifest.json'), 'engine/dyn_v3.py': sha('engine/dyn_v3.py')} if V3 else {})}, 'engine_release': 'Engine v2.1 (v3 rating)' if V3 else 'Engine v2.0.1',
           'code_sha256': {f: sha(f) for f in ['prerace/score_prerace.py', 'build_runs.py', 'rating_v0.py', 'features.py', 'inv20_pace_figures.py', 'dyn_rating.py', 'clogit_tools.py']},
           'history_cutoff_by_source': cutoff, 'national_runs_sha256': sha('national_runs.parquet'), 'scaling_check_dev_sd': chk,
           'notes': ['no result of these races existed when this file was written', 'days since last start uses every source held; Betfair lags about a month',

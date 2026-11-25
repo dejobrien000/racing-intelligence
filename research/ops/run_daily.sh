@@ -12,6 +12,8 @@ RQB=collect/national/$D/bundles/rqpre_${D}_snap${STAMP}.jsonl.gz
 [ -f "$RQB" ] && { python3 prerace/score_prerace.py "$RQB" ../history/history.duckdb > /tmp/score_qld.txt 2>&1 && log "Queensland scored" || log "FAILED Queensland scoring: $(tail -1 /tmp/score_qld.txt)"; }
 NB=$(ls collect/national/$D/bundles/natpre_${D}_snap*.jsonl.gz 2>/dev/null | tail -1)
 [ -n "$NAT" ] && [ -n "$NB" ] && { python3 prerace/score_national_prerace.py "$NB" ../history/history.duckdb "$D" > /tmp/score_nat.txt 2>&1 && log "national meetings scored" || log "FAILED national scoring: $(tail -1 /tmp/score_nat.txt)"; }
+# Engine v2.1: Queensland history frame on the v3 rating (built once from the restored master database, ~5 min)
+[ -f engine/frames/national_v3.parquet ] || PYTHONPATH=. python3 engine/build_frame_v3.py
 SNAPDIR=collect/national/$D/bundles python3 engine/score_v2.py "$D" > /tmp/score_v2.txt 2>&1 && log "Engine v2 scored" || log "FAILED Engine v2: $(tail -1 /tmp/score_v2.txt)"
 python3 engine/daily_ranking_v2.py "$D" > /tmp/rank.txt 2>&1 || log "WARNING ranking: $(tail -1 /tmp/rank.txt)"
 python3 engine/export_ui.py "$D" > /tmp/export.txt 2>&1 || { log "FAILED export: $(tail -3 /tmp/export.txt)"; exit 3; }

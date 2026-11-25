@@ -1,7 +1,7 @@
 {
  "frozen_utc": "2026-11-25T01:32:57.360452+00:00",
  "date": "2026-11-25",
- "engine": "Engine v2.0.1 (benchmarks/engine_v2/RELEASES.md)",
+ "engine": "Engine v2.1 (Queensland v3 rating) with v2.0.2 calibration; see revisions",
  "official": {
   "Geelong": {
    "model": "Engine v2.0.1",
@@ -82,6 +82,29 @@
    "daily_ranking": {
     "file": "prospective/daily/20261125/ranking_v2_20261125T020654Z_runners.csv",
     "sha256": "976e2efbed8228590f58008aa5da97b873f38223b70e2b0ee099c372184cb995"
+   }
+  },
+  {
+   "utc": "2026-11-25T02:18:03.260470+00:00",
+   "what": "Engine v2.1: Ipswich re-issued on the v3 Queensland rating (approved by Damo 12:09pm, before race 1 at 1:02pm). Top picks unchanged in all 7 races. NSW/Vic unchanged.",
+   "Ipswich": {
+    "v2_runners": "prospective/prerace/20261125/Ipswich/v2_pred_20261124T215130Z_20261125T021126Z_20261125T021732Z_runners.csv",
+    "v2_sha256": "6699e5aa862eac819a9c8d41d3a8014acdea742d3065cf8e31640625713267c7",
+    "v1_runners": "prospective/prerace/20261125/Ipswich/pred_20261124T215130Z_20261125T021126Z_runners.csv",
+    "v1_sha256": "d5c7bb1b4db233343cbb24c1d51993c99dc6fccdbe5c7cc7c616b4a76e68b71d"
+   },
+   "manifests": {
+    "benchmarks/engine_v2_1/manifest.json": "d78e10a235a7548b5df496d349069439d802f2d6700efd43c4a8363dd314a9db",
+    "benchmarks/candidates_b4_national_v3/manifest.json": "b3fa814b98d2a16512f27d193747726a5ef81642f6ca50221d9aaf05cf6dbc98",
+    "engine/dyn_v3.py": "d292e199cb9f204593a4f60a8c960dc3626a1cda5f32236b5e3d7eda4bb2d1e7"
+   },
+   "dashboard_day_file": {
+    "file": "ui/data/racing_2026-11-25.json",
+    "sha256": "a06108b1e4a5a4b498593f3f001d8541ab53655a20885d7a747cfde4d96e7f46"
+   },
+   "daily_ranking": {
+    "file": "prospective/daily/20261125/ranking_v2_20261125T021832Z_runners.csv",
+    "sha256": "6e2e897546fb35568c9ceae6220ba8cce8b06317dcdc7f6fceb72896642329c0"
    }
   }
  ]

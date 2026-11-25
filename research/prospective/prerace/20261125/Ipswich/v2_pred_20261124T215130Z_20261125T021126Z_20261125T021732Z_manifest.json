@@ -1,0 +1,20 @@
+{
+ "scored_utc": "2026-11-25T02:17:33.812983+00:00",
+ "engine": "v2",
+ "family": "QLD",
+ "base_v1_file": "prospective/prerace/20261125/Ipswich/pred_20261124T215130Z_20261125T021126Z_runners.csv",
+ "base_v1_sha256": "d5c7bb1b4db233343cbb24c1d51993c99dc6fccdbe5c7cc7c616b4a76e68b71d",
+ "snapshot_key": "rqpre:20261125:IPSW:20261124T215130Z",
+ "engine_manifest_sha256": "d78e10a235a7548b5df496d349069439d802f2d6700efd43c4a8363dd314a9db",
+ "engine_release": "Engine v2.1 (v3 rating)",
+ "code_sha256": {
+  "engine/score_v2.py": "858c9466b75c7985e45a5d6b5f69bed591e87a8fb9daf210b65d99bdd6bafc99",
+  "engine/lab.py": "86fb1b68ab93a162c23a6062a36cee81ee75ebf3c94a6a20f0e9c0eb8bc3aca5",
+  "prerace/score_national_prerace.py": "016c0cce8a8b9c4ebeb21849d0a652516df41ab671f07f4ab99dcb5ba38ba0b1"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ]
+}

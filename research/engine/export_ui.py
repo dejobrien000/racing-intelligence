@@ -6,7 +6,7 @@ Usage: PYTHONPATH=. python3 engine/export_ui.py 20261125  -> ui/data/racing_<YYY
 import sys, os, re, json, gzip, hashlib, numpy as np, pandas as pd
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
-ENGINE_VERSION = 'Engine v2.0.2'; RELEASE_NOTE = 'v2.0.2 (25 Nov 2026, 12:15pm): displayed win chances use the bent-line calibration (top chances were shown too high); ratings and picks unchanged. v2.0.1 (11:11am): Queensland scorer fix - the national ability rating now carries its validated weight. No coefficient changes.'
+ENGINE_VERSION = 'Engine v2.1'; RELEASE_NOTE = 'v2.1 (25 Nov 2026, 12:17pm): Queensland ratings use the v3 rating, which expects lightly raced horses to improve (research/batch9 A; approved by Damo). NSW/Vic/ACT unchanged. v2.0.2 (12:06pm): win chances use the bent-line calibration. v2.0.1 (11:11am): Queensland scorer fix.'
 MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))   # v2 = bent line (25 Nov 2026)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
@@ -108,7 +108,7 @@ for track, grp in v2rows.groupby('track', sort=False):
     if snap.get('source'): notes.append('Fields source: ' + snap['source'] + '.')
     # term-level v2 detail, recomputed from the same saved inputs; must equal the saved v2 score
     ixv1 = IX[IX.file == m2['base_v1_file']].iloc[0]
-    T, _, _, _ = S.meeting_table(ixv1); T = S.new_raw(T, H_, fam); T, contrib = S.apply(T, fam)
+    T, _, _, _ = S.meeting_table(ixv1); T = S.new_raw(T, S.history(D, fam), fam); T, contrib = S.apply(T, fam)
     chk = pd.Series(T.v2_score.values, index=list(zip(T.race_no, T.saddlecloth))) - pd.Series(W.v2_score.values, index=list(zip(W.race_no, W.saddlecloth))).reindex(list(zip(T.race_no, T.saddlecloth))).values
     assert chk.abs().max() < 1e-6, f'recomputed v2 detail does not match the saved prediction ({chk.abs().max()})'
     contrib.index = list(zip(T.race_no, T.saddlecloth))

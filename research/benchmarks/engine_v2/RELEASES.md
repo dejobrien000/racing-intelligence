@@ -1,5 +1,15 @@
 # Engine v2 releases
 
+## v2.1 - 25 Nov 2026, 12:17pm Brisbane (Queensland: v3 rating)
+- Queensland's national rating is the v3 rating (engine/dyn_v3.py; settings a_q=1, n0=4, g_imp=1 chosen on pre-2025 runs only):
+  lightly raced horses are expected to improve after each run, and their ratings move a little more. Queensland v1 coefficients
+  refit on development races (benchmarks/candidates_b4_national_v3), v2 terms refit as in v2.0 (benchmarks/engine_v2_1).
+- Gate (research/batch9): Queensland v2.1 vs v2.0 on identical 2025-26 races +0.0052 log-lik per race (0.0028 to 0.0076),
+  2026 alone +0.0067 (0.0028 to 0.0104); top pick +0.25 / +0.44 points (not significant). Re-used data: not untouched evidence.
+- NSW/Vic/ACT unchanged (the v3 rating hurt there: -0.003 per race, it double-counts starts and age).
+- Approved by Damo in chat 12:09pm (after advice to track it first). Ipswich re-issued before race 1; earlier sets kept.
+- Operations: engine/frames/national_v3.parquet must exist (engine/build_frame_v3.py builds it); ENGINE_V21=0 restores v2.0.x.
+
 ## v2.0.2 - 25 Nov 2026, 12:06pm Brisbane (display calibration; ratings unchanged)
 - Shown win chances use the bent-line runner calibration (benchmarks/engine_v2/runner_calibration_v2.json, built by
   engine/runner_calibration_v2.py on the same 2025-26 out-of-sample predictions as v2.0). Validation: fitted on 2025, judged

@@ -1,0 +1,119 @@
+{
+ "scored_utc": "2026-11-25T02:11:26.092044+00:00",
+ "snapshot": {
+  "snapshot_key": "rqpre:20261125:IPSW:20261124T215130Z",
+  "date": "20261125",
+  "meeting_code": "IPSW",
+  "track": "Ipswich",
+  "retrieved_utc": "2026-11-24T21:51:30Z",
+  "fields_pdf_sha256": "ce371db3d5fc2d4e2ee15e52092a6db3bddfe6f01f9417572ba0c7f06d9d6f4d",
+  "after_scratchings_close": true,
+  "conditions": {
+   "track_condition": "Soft 5",
+   "surface": "Turf",
+   "rail": "+2m Entire",
+   "penetrometer": "5.6",
+   "rainfall": "5mm last 24hrs, 40mm last 7 days",
+   "weather_text": "Light Rain 25\u00b0 3km/h E",
+   "conditions_updated": "7:40am Wednesday 25 November",
+   "rating_updated": "Interim 25/11, 7.30am",
+   "scratchings_close": "Wed 25/11/26 07:30am",
+   "after_final_scratchings": true,
+   "scratchings_source": "Racing Queensland meeting page (official), read via WebFetch; scratchings closed Wed 25/11/26 07:30am; track Soft 5 (Pen 5.6) updated 7:40am"
+  },
+  "scratchings_listed": 24
+ },
+ "snapshot_bundle": "rqpre_20261125_IPSW_snap20261124T215130Z.jsonl.gz",
+ "snapshot_bundle_sha256": "4c94ef9ee1862712c448924718ea97fde9aa06999032a61fbe38abdbdad5ab65",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 3,
+   "horse": "The Aviator",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 9,
+   "horse": "Enterprise Jamayka",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 1,
+   "horse": "Auric Star",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 14,
+   "horse": "Zoulini",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 16,
+   "horse": "Tambourine Man",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 8,
+   "horse": "Fighting Idol",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "combined_v1",
+  "combined_v1 + dynamic rating",
+  "dynamic rating + PA1 figure",
+  "combined_v1 + national dynamic rating"
+ ],
+ "model_manifests": {
+  "benchmarks/candidates_b4/manifest.json": "14bd6268200fac3fd13b76a978a9e6cb7131767b17adfeb73fa211126a8780b2",
+  "benchmarks/candidates_b4_national/manifest.json": "a0d1e4df1609387a0a028d2091f3a629165d68b115a42b0891d87d8b52f457a5",
+  "benchmarks/candidates_b4_national_v3/manifest.json": "b3fa814b98d2a16512f27d193747726a5ef81642f6ca50221d9aaf05cf6dbc98",
+  "engine/dyn_v3.py": "d292e199cb9f204593a4f60a8c960dc3626a1cda5f32236b5e3d7eda4bb2d1e7"
+ },
+ "engine_release": "Engine v2.1 (v3 rating)",
+ "code_sha256": {
+  "prerace/score_prerace.py": "264d3dba9c485c5ae4ee2bea7ee3e0507180fd31f00bae76919198b0059a86fa",
+  "build_runs.py": "9dcc3399a6218cbbfc4f4c694d5637b98c023612737418201ed6b33355dd56dd",
+  "rating_v0.py": "8a8d82735bcf7ce0e6e636bd36701b64f9c0b8c07013361966dca37e18ab824a",
+  "features.py": "6248b368bf1985100d0737fc720c7c0e80ca0a2e4f26278241234789be19511a",
+  "inv20_pace_figures.py": "79d6f9c43d90bf8ea971a2172774ff0f8f8e88cc50326d60a0023a2736241cc4",
+  "dyn_rating.py": "df96739bf4d7e5b9d39d3fd8adceba483d52fafea60e932419fbd71b0a9b6e1b",
+  "clogit_tools.py": "0bee34be4db1621cc1fda9316da73a97a3212742721c27c887535c92564528cd"
+ },
+ "history_cutoff_by_source": {
+  "Qld tracked": "2026-11-22",
+  "Betfair (all states)": "2026-10-31",
+  "Breednet NSW/Vic/ACT": "2026-11-23",
+  "Racing NSW form lines": "2026-11-16"
+ },
+ "national_runs_sha256": "b2f0d6fcbbe06879c873cd4bbcfab9ef73d65bfb80a4e508a4226b9660622cac",
+ "scaling_check_dev_sd": {
+  "a_avg3": [
+   7.937394365788982,
+   7.937400268009932
+  ],
+  "p_relbar": [
+   0.31973319149358365,
+   0.3197364460584305
+  ],
+  "f_avgfp3": [
+   0.2413369481978776,
+   0.24135546783381942
+  ],
+  "dyn_nat": [
+   2.9871891130464663,
+   2.9871891130464663
+  ]
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "days since last start uses every source held; Betfair lags about a month",
+  "emergencies and scratched runners at snapshot time are listed in not_scored",
+  "chance_pct is the frozen model probability; uncertainty: rating_sd_kg, evidence flags, top_two_gap_pts"
+ ]
+}
