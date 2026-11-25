@@ -66,5 +66,7 @@ So CLOSE (final fixed price with the results) may not be readable at 7:30 next m
 - 25 Nov 2026 ~3:30pm: Engine v2.2 (NSW/VIC/ACT/SA/WA/TAS; Qld stays v2.1), live from the 26 Nov 7:30am run; approved by Damo
   ("Replace from tomorrow"). Code engine/v22.py, manifest benchmarks/engine_v2_2/; roll back ENGINE_V22=0. Pre-registered check:
   research/preregistered/2026-11-25_batch10_v22.md. Each meeting shows its measured venue class (approved). SA calibration unchanged.
-- Prepared, not released: Breednet Queensland country meetings (switch NAT_QLD_BN in national.py, off). Needs the Qld
-  backfill (running on GitHub) and an evaluation shown to Damo first.
+- 25 Nov 2026 ~5:10pm: database master-2026-11-23-sa-wa-tas-qld (Breednet Queensland meetings: 915 untracked meetings in the national
+  rating, Qld ages) + Engine v2.1.1 (Qld model refitted; scale moved 3%). Approved by Damo ("refit tonight, live tomorrow"). db-prev =
+  master-2026-11-23-sa-wa-tas. Weekly job: publishing ON (first GitHub dry run passed every check); collects QLD too.
+- Local working copy (this chat): switches to the final database at 11:30pm and syncs code at 11:35pm, after the 25 Nov settlement.
