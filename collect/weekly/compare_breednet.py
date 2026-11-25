@@ -29,11 +29,11 @@ lines = [f'# Breednet collector parity: {new}', '', f'new: {len(keys)} meetings,
 mr = R.merge(oR, on=['meeting_date', 'slug', 'race_no'], suffixes=('', '_db'))
 lines.append(f'races matched: {len(mr)}'); bad = False
 for c in ['title', 'distance_m', 'class', 'race_time_s', 'n_runners']:
-    a = (mr[c].astype(str) == mr[c + '_db'].astype(str)).mean() if len(mr) else float('nan'); lines.append(f'- race {c}: {a:.2%}')
+    a = ((mr[c].astype(str) == mr[c + '_db'].astype(str)) | (mr[c].isna() & mr[c + '_db'].isna())).mean() if len(mr) else float('nan'); lines.append(f'- race {c}: {a:.2%}')
 mu = U.merge(oU, on=['meeting_date', 'slug', 'race_no', 'saddlecloth', 'horse'], suffixes=('', '_db'))
 lines.append(f'runners matched on race + saddlecloth + horse: {len(mu)} of {len(U)} new / {len(oU)} in DB')
 for c in ['pos_raw', 'weight_kg', 'jockey', 'trainer', 'age', 'sex', 'sire']:
-    a = (mu[c].astype(str) == mu[c + '_db'].astype(str)).mean() if len(mu) else float('nan'); lines.append(f'- runner {c}: {a:.2%}')
+    a = ((mu[c].astype(str) == mu[c + '_db'].astype(str)) | (mu[c].isna() & mu[c + '_db'].isna())).mean() if len(mu) else float('nan'); lines.append(f'- runner {c}: {a:.2%}')
     if not (a >= 0.995): bad = True
 if len(oU) and len(mu) < 0.995 * len(oU): bad = True
 diff = mu[(mu.pos_raw.astype(str) != mu.pos_raw_db.astype(str)) | (mu.jockey != mu.jockey_db)].head(10)
