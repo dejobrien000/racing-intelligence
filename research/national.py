@@ -102,6 +102,7 @@ wn['dist_band'] = pd.cut(wn.distance_m, [0, 1150, 1450, 1750, 9999], labels=['s'
 rows = []
 for band, h in wn.groupby('band'):
     if h.state.nunique() < 2: continue
+    h = h.dropna(subset=['fig_n', 'state', 'tier', 'dist_band', 'going'])   # (Breednet Qld country races can lack a going description)
     m = smf.ols("fig_n ~ C(state, Treatment('QLD')) + C(tier) + C(dist_band) + C(going)", data=h).fit(cov_type='cluster', cov_kwds={'groups': pd.factorize(h.meeting_id)[0]})
     for st in ['NSW', 'VIC', 'ACT']:
         t = f"C(state, Treatment('QLD'))[T.{st}]"
