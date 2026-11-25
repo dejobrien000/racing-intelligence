@@ -1,0 +1,85 @@
+{
+ "version": "master-2026-11-23-sa-wa-tas-qld",
+ "history_to": "2026-11-23",
+ "created_utc": "2026-11-25T06:59:22Z",
+ "release_note": "Database release approved by Damo 25 Nov 2026 (refit tonight, live 26 Nov): adds Breednet Queensland meetings Oct 2022 - 23 Nov 2026 (2,159 meetings; 915 not covered by RQ tracking enter the national rating; the rest give Queensland ages). Queensland model refitted as Engine v2.1.1. Previous version: branch db-prev (master-2026-11-23-sa-wa-tas).",
+ "national_states": [
+  "NSW",
+  "VIC",
+  "ACT",
+  "SA",
+  "WA",
+  "TAS"
+ ],
+ "qld_breednet_in_national_rating": true,
+ "contents": [
+  "history/history.duckdb",
+  "research/national_runs.parquet",
+  "research/runs.parquet",
+  "research/features.parquet",
+  "research/dyn_nat_qld.parquet",
+  "research/pace_figures.parquet",
+  "research/runs_rated.parquet",
+  "research/runs_rated_dev.parquet",
+  "research/engine/frames/national.parquet",
+  "research/engine/frames/national_v3.parquet"
+ ],
+ "restore": "cat master_db.tar.gz.part* | tar -xzf - (from the repository root)",
+ "parts": [
+  {
+   "file": "master_db.tar.gz.part00",
+   "bytes": 47185920,
+   "sha256": "ec0ca9af599b62b453b3e8dafc652ff1e19c8f338f4a2512a75fdf3046bbe8f3"
+  },
+  {
+   "file": "master_db.tar.gz.part01",
+   "bytes": 47185920,
+   "sha256": "f19e15d42d3f5ce1f84665ae29d547e84b576307c17aa93ce40c5303a1948324"
+  },
+  {
+   "file": "master_db.tar.gz.part02",
+   "bytes": 47185920,
+   "sha256": "2065ffa44555dff0d486ae62ab9bf7e690580ec927f054e01834bc6037c494fc"
+  },
+  {
+   "file": "master_db.tar.gz.part03",
+   "bytes": 47185920,
+   "sha256": "037729ed88580fd0c0e1c15f1c7575950fc3fcb763cc09d45d15795f233c0dc0"
+  },
+  {
+   "file": "master_db.tar.gz.part04",
+   "bytes": 47185920,
+   "sha256": "00e0d7b8c9b9fc53d41c39149db60260d73dfb07ff56b7c9255c836f18c34955"
+  },
+  {
+   "file": "master_db.tar.gz.part05",
+   "bytes": 47185920,
+   "sha256": "2453a2aa28d24f08fd3c35a731ab7ee9f829ff064b409b6887b4198de20d2da5"
+  },
+  {
+   "file": "master_db.tar.gz.part06",
+   "bytes": 47185920,
+   "sha256": "938e9a0080a9d1c1eb514bd2f3172bf9f1617c434dcd87bd2643ba527d486687"
+  },
+  {
+   "file": "master_db.tar.gz.part07",
+   "bytes": 47185920,
+   "sha256": "1af68d56dcfc40120f99c02bea70c55051a2283f324e92eb826fb399232e4438"
+  },
+  {
+   "file": "master_db.tar.gz.part08",
+   "bytes": 47185920,
+   "sha256": "110af4eb8c88a4cc5c9a1d9eda2d51884efb6662d8fcf2dbbfcaaafa8a2a2c8d"
+  },
+  {
+   "file": "master_db.tar.gz.part09",
+   "bytes": 47185920,
+   "sha256": "8a57a68e233ebd8fd7504438d943eca99e9091f220ff5f9b4590028c813271f0"
+  },
+  {
+   "file": "master_db.tar.gz.part10",
+   "bytes": 25619189,
+   "sha256": "5caebd9452787cd9f5516fea6a205d6994bf117a5c6b5d3754d781d4cb316383"
+  }
+ ]
+}
