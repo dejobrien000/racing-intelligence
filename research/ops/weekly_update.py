@@ -16,7 +16,7 @@ today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=10)).date(); d0 =
 rep += [f'- Run (Brisbane): {today}; previous Breednet history to {last}; collecting {d0} to {d1} (re-fetching recent days picks up corrections)', '']
 os.makedirs(os.path.join(ROOT, 'breednet', 'weekly'), exist_ok=True)
 bundle = os.path.join(ROOT, 'breednet', 'weekly', f'racing_breednet_weekly_{d0:%Y%m%d}_{d1:%Y%m%d}.jsonl.gz')
-subprocess.run([sys.executable, os.path.join(ROOT, 'collect', 'weekly', 'breednet.py'), 'dates', str(d0), str(d1), bundle, '--states', 'NSW,VIC,ACT,SA,WA,TAS'])   # exit 2 = CAPTCHA, read below
+subprocess.run([sys.executable, os.path.join(ROOT, 'collect', 'weekly', 'breednet.py'), 'dates', str(d0), str(d1), bundle, '--states', 'NSW,VIC,ACT,SA,WA,TAS,QLD'])   # exit 2 = CAPTCHA, read below (QLD: country meetings + ages)
 st = json.load(open(bundle.replace('.jsonl.gz', '') + '.stats.json'))
 rep += [f"- Breednet: {st['meetings']} meetings collected, {st['miss']} empty, {st['err']} errors, CAPTCHA stop: {st['captcha']}",
         f"- Venues on Breednet with no state in venue_states.json (not collected): {', '.join(sorted(st.get('unknown_venues', {}))) or 'none'}"]
@@ -37,7 +37,7 @@ rep += ['', '- Racing Queensland: ' + (rc.stdout.strip().splitlines() or ['no ou
 if rc.returncode: rep.append('- STOP: Racing Queensland collection failed (' + (rc.stderr.strip().splitlines() or [''])[-1][:200] + '); database not published'); open('ops/weekly_report.md', 'w').write('\n'.join(rep) + '\n'); sys.exit(1)
 out = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_history.py'), '--incremental', rqz, DB], capture_output=True, text=True, check=True).stdout
 rep += ['', '```', out.strip()[:4000], '```']
-cfg = json.load(open('ops/db_config.json')); env = {**os.environ, 'NAT_STATES': ','.join(cfg['national_states']), 'PYTHONPATH': '.'}
+cfg = json.load(open('ops/db_config.json')); env = {**os.environ, 'NAT_STATES': ','.join(cfg['national_states']), 'NAT_QLD_BN': '1' if cfg.get('qld_breednet_in_national_rating') else '0', 'PYTHONPATH': '.'}
 old = pd.read_parquet('engine/frames/national.parquet', columns=['race', 'horse', 'state', 'dyn_nat']); oldq = len(pd.read_parquet('runs.parquet', columns=['race_id']))
 for a in [('build_runs.py', DB, 'runs.parquet'), ('rating_v0.py', 'runs.parquet', 'runs_rated_dev.parquet', '--fit-until=2024-12-31'), ('rating_v0.py', 'runs.parquet', 'runs_rated.parquet'),
           ('features.py', 'runs_rated_dev.parquet', DB, 'features.parquet'), ('inv20_pace_figures.py', DB), ('national.py', DB), ('ops/build_dyn_nat_qld.py',),

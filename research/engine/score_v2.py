@@ -154,7 +154,7 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ('Engine v2.1 (v3 rating)' if (V21 and fam == 'QLD') else ('Engine v2.2' if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha('benchmarks/engine_v2_2/manifest.json') if (V22 and fam != 'QLD') else None), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ((MAN.get('version', 'Engine v2.1').split(' (')[0] + ' (v3 rating)') if (V21 and fam == 'QLD') else ('Engine v2.2' if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha('benchmarks/engine_v2_2/manifest.json') if (V22 and fam != 'QLD') else None), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
         with open('prospective/prerace/INDEX.csv', 'a') as fh:

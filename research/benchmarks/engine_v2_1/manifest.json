@@ -1,5 +1,5 @@
 {
- "released_utc": "2026-11-25T02:10:17.337824+00:00",
+ "released_utc": "2026-11-25T06:50:31.136808+00:00",
  "families": {
   "QLD": {
    "v1_offset": "benchmarks/candidates_b4_national_v3 (combined_v1 + national rating, v3 rating)",
@@ -18,32 +18,32 @@
    },
    "penalty_tau": 100,
    "coef_per_term_sd_all_races": {
-    "c_rec": 0.02766711203651251,
-    "g_rec": 0.010301571897246883,
-    "d_rec": -0.025901985481745448,
-    "j_surp": 0.12059396953337514,
-    "t_surp": 0.23882724352499607,
-    "jt_surp": 0.03425914149417935,
-    "j_change": 0.009281196392691215
+    "c_rec": 0.027398052503889395,
+    "g_rec": 0.027872146320805407,
+    "d_rec": -0.016992537619712457,
+    "j_surp": 0.1309987711433225,
+    "t_surp": 0.22242363248682043,
+    "jt_surp": 0.03975069453228569,
+    "j_change": 0.0020053109499901887
    },
    "coef_per_term_sd_dev_fit": {
-    "c_rec": 0.012886664596868488,
-    "g_rec": -0.0019469863303531643,
-    "d_rec": -0.01710103884780279,
-    "j_surp": 0.12542658556650696,
-    "t_surp": 0.24724625942397715,
-    "jt_surp": 0.038133907565058314,
-    "j_change": -0.003122759858284054
+    "c_rec": 0.01923455311109097,
+    "g_rec": 0.022239066347214398,
+    "d_rec": -0.01535143551999911,
+    "j_surp": 0.12747947214587924,
+    "t_surp": 0.22297145674703675,
+    "jt_surp": 0.04655227033501337,
+    "j_change": 0.004435744295323717
    },
    "base_feature_dev_sd": {
-    "c_rec": 1.6683711456096557,
-    "d_rec": 1.7182701348962577,
-    "dyn_nat": 2.9871891130464663,
-    "g_rec": 1.74285302749352,
-    "j_change": 0.806451351794965,
-    "j_surp": 0.7224637460154512,
-    "jt_surp": 0.38585448092497526,
-    "t_surp": 0.6178375329356904,
+    "c_rec": 1.6350940212574785,
+    "d_rec": 1.7240388884123696,
+    "dyn_nat": 3.076077402860399,
+    "g_rec": 1.7564544717269788,
+    "j_change": 0.8753372305685093,
+    "j_surp": 0.7819935961590415,
+    "jt_surp": 0.4428858718123462,
+    "t_surp": 0.6208131160962477,
     "f_avgfp3": 0.21490279766058518,
     "f_lastfp": 0.28707637090917504,
     "f_lastlm": 0.900792185108236,
@@ -87,17 +87,17 @@
     "r_ldays": 0.8021366203082487
    },
    "term_dev_sd": {
-    "c_rec": 0.9999999999999999,
+    "c_rec": 1.0,
     "g_rec": 1.0,
     "d_rec": 0.9943021967059766,
     "j_surp": 0.9939518435602492,
-    "t_surp": 0.9920665755798297,
+    "t_surp": 0.9920665755798296,
     "jt_surp": 1.0,
-    "j_change": 0.9224584075677169
+    "j_change": 0.9539211737961032
    },
    "context": {
-    "field_dyn_mean": 0.8484428307181233,
-    "field_dyn_sd": 4.032189093087902
+    "field_dyn_mean": 2.052374947194294,
+    "field_dyn_sd": 4.168010069033333
    },
    "score_per_kg_total": 0.22425646171954994,
    "calibration": {
@@ -3521,6 +3521,6 @@
   "engine/out/v2_nat_rolling.csv",
   "engine/out/check_people_lag (28-day lag keeps the effect)"
  ],
- "rule": "Queensland uses the v3 rating from 25 Nov 2026 (approved by Damo); NSW/Vic/ACT unchanged. Evidence: research/batch9 (re-used 2025-26 data).",
- "version": "Engine v2.1 (Queensland: v3 rating); NSW/Vic/ACT as v2.0"
+ "rule": "Queensland uses the v3 rating from 25 Nov 2026 (approved by Damo); NSW/Vic/ACT unchanged. Evidence: research/batch9 (re-used 2025-26 data). | v2.1.1 (approved by Damo 25 Nov 2026: refit tonight, live 26 Nov): same model refitted on the database with Breednet Queensland country meetings.",
+ "version": "Engine v2.1.1 (Queensland: v3 rating, refitted with Queensland country history); NSW/Vic/ACT as v2.0 (+ v2.2 terms)"
 }

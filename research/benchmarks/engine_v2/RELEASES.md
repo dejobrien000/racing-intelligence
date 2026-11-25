@@ -60,3 +60,20 @@
 - Roll back: set ENGINE_V22=0 for engine/score_v2.py and engine/export_ui.py (or revert this commit). Days before 26 Nov always export with their own engine.
 - Also from Batch 10 (approved): each venue's measured class (average rating of the fields it attracts) is shown as a meeting note.
   Frozen v2 terms keep their original metro flag (their coefficients were fitted with it). SA calibration left unchanged (Damo: no).
+
+## Engine v2.1.1 (Queensland) + database master-2026-11-23-sa-wa-tas-qld (approved by Damo 25 Nov 2026 ~4:25pm "Refit tonight, live tomorrow"; live from the 26 Nov 7:30am run)
+- Data: Breednet Queensland results Oct 2022 - 23 Nov 2026 (2,159 meetings). 1,244 are RQ-tracked meetings already held (used only for
+  ages); 915 untracked meetings (54,301 runs: country tracks and pre-tracking gaps) join the national rating. No duplicates (0 Breednet
+  meetings shared most horses with an RQ meeting under another name). Queensland ages known for 98.9% of 2025-26 runners (was 0%).
+- Why a refit: the Queensland rating's development spread moved from 2.987 to 3.076 kg (+3%), outside the v2.1 scorer's 2% guard.
+  Same model as v2.1, refitted on the new database (batch10/v211/build_v211.py): v1 coefficients on development races, v2 terms penalty 100.
+- Gate vs current v2.1 on identical 2025-26 Queensland races: +0.0121 log-lik per race (0.0063 to 0.0175), top pick +0.8 pts
+  (0.06 to 1.54), winner in top 3 +1.0 pts; 2026 alone +0.0073 (-0.0012 to 0.0145). Research-period evidence (re-used 2025-26).
+- NSW/Vic/SA/WA/Tas (national family, frozen coefficients, before -> after): NSW fit 12.67 -> 12.77%, Vic 12.16 -> 12.19%, SA/WA/Tas
+  unchanged within 0.06; top picks within +/-0.2 pts. Engine v2.2 terms unchanged (their venue classes do not include Qld country tracks:
+  a step from one of those is treated as no information).
+- Checks: sandbox replay of 25 Nov Ipswich through the Qld scorer (scale guard 3.0761 = frozen), Engine v2, ranking and export: reconciles;
+  6 of 7 top picks unchanged vs the published v2.1 set (not published). Published database re-downloaded and every checksum verified.
+- Weekly job: Breednet collection now includes QLD; national rating uses Queensland Breednet meetings (ops/db_config.json).
+- Roll back: ops/db_config.json qld_breednet_in_national_rating false, restore db from db-prev (master-2026-11-23-sa-wa-tas) and the
+  previous benchmarks/candidates_b4_national_v3 + engine_v2_1 manifests from git (commit before this one).

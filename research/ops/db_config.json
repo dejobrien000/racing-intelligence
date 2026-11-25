@@ -1,3 +1,13 @@
-{"national_states": ["NSW", "VIC", "ACT", "SA", "WA", "TAS"],
- "version": "master-2026-11-23-sa-wa-tas",
- "note": "States whose Breednet history feeds the national rating (national.py) and whose meetings the daily run rates (ops/daily_build.py). SA, WA and TAS added by the database release approved by Damo 25 Nov 2026 2:15pm Brisbane, live from the 26 Nov 7:30am run. To roll back: set NSW, VIC, ACT here and restore branch db from db-prev."}
+{
+ "national_states": [
+  "NSW",
+  "VIC",
+  "ACT",
+  "SA",
+  "WA",
+  "TAS"
+ ],
+ "version": "master-2026-11-23-sa-wa-tas-qld",
+ "note": "States whose Breednet history feeds the national rating (national.py) and whose meetings the daily run rates (ops/daily_build.py). SA, WA and TAS added by the database release approved by Damo 25 Nov 2026 2:15pm Brisbane, live from the 26 Nov 7:30am run. To roll back: set NSW, VIC, ACT here and restore branch db from db-prev. Queensland Breednet meetings (not covered by RQ tracking) feed the national rating from the 26 Nov run (database release approved by Damo 25 Nov; Queensland model refitted as Engine v2.1.1). Roll back: set qld_breednet_in_national_rating false, restore db from db-prev and the previous benchmarks manifests from git.",
+ "qld_breednet_in_national_rating": true
+}
