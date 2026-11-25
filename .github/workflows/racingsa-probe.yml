@@ -1,0 +1,27 @@
+name: racingsa-probe
+# Racing SA tracking investigation (Damo, 26 Nov 2026). Reads a few public pages + one sectional PDF; honest User-Agent, robots.txt
+# check, slow pacing. Output: orphan branch raw-racingsa-probe (outside main history). Not production; nothing loaded anywhere.
+on:
+  push:
+    branches: [main]
+    paths: ['collect/racingsa/probe.py', '.github/workflows/racingsa-probe.yml']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests pdfplumber
+      - run: python3 collect/racingsa/probe.py /tmp/out || true
+      - name: Save to branch raw-racingsa-probe
+        if: always()
+        run: |
+          mkdir -p /tmp/push && cp -r /tmp/out/. /tmp/push/ 2>/dev/null || true
+          cd /tmp/push && git init -q && git checkout -q -b raw-racingsa-probe && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Racing SA probe $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-racingsa-probe
