@@ -81,3 +81,9 @@ So CLOSE (final fixed price with the results) may not be readable at 7:30 next m
   settlement (ops/evaluate_prospective.py, run by run_daily.sh). Reads saved predictions and results only; races from 26 Nov flagged untouched.
 - Weekly job: TAB form records staged into the master database (history/load_form_staging.py: stg_form_runner, stg_form_start, stg_career,
   stg_form_check). Research only; never a release check; never a rating input.
+- Tipping report card (observational, Batch 12 s2): ops/tipping_report.py after settlement, from the 26 Nov published predictions on.
+  outputs/tipping_ledger.csv (one row per runner, never rewritten) and outputs/tipping_report.csv/.md (rebuilt daily): by dashboard
+  classification (Strong selection, Leading contender, No clear selection, Insufficient evidence for top picks; Contender, Outsider,
+  Insufficient evidence for the rest) and all top picks: selections, winners, strike rate, expected vs actual, calibration, notional
+  flat-unit ROI % at OPEN and separately at CLOSE on their own eligible samples, price coverage, voids, dead heats; cumulative by day.
+  No tote/SP/Betfair substitutes; late-scratching deductions not published by TAB and not applied (disclosed). Never read by any model.
