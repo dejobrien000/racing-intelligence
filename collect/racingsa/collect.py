@@ -10,7 +10,11 @@ import csv, gzip, hashlib, io, json, os, random, re, sys, time, urllib.robotpars
 from datetime import datetime, timezone
 import requests, pdfplumber
 sys.path.insert(0, os.path.dirname(__file__)); import parse_sectional as PS
-BASE = 'https://d26j0amf97rmny.cloudfront.net/30072'
+HOST = 'https://d26j0amf97rmny.cloudfront.net'
+# Racing SA keeps each club's reports in its own folder. Folders confirmed from published report links (26 Nov 2026); clubs whose
+# folder is not known are recorded as 'folder unknown' and not guessed.
+FOLDER = {'morphettville': 30072, 'morphettville-parks': 30072, 'murray-bridge-gh': 30558, 'gawler': 30272}
+FOLDER.update({k: int(v) for k, v in (x.split('=') for x in os.environ.get('SA_FOLDERS', '').split(',') if '=' in x)})
 UA = 'RacingIntelligence-private/0.2 (personal non-commercial research; github.com/dejobrien000)'
 MEET, OUT = sys.argv[1], sys.argv[2]; DEADLINE = float(sys.argv[3]) if len(sys.argv) > 3 else time.time() + 5 * 3600
 os.makedirs(OUT, exist_ok=True)
@@ -42,7 +46,8 @@ def fetch(url):
     return str(r.status_code), r.content if r.status_code == 200 else None
 mon = {m: i for i, m in enumerate(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], 1)}
 def one(md, slug, rn, pad=True):
-    url = f'{BASE}/{md}_race{rn:02d}_sectional.pdf' if pad else f'{BASE}/{md}_race{rn}_sectional.pdf'
+    base = f'{HOST}/{FOLDER[slug]}'
+    url = f'{base}/{md}_race{rn:02d}_sectional.pdf' if pad else f'{base}/{md}_race{rn}_sectional.pdf'
     if url in done: return done[url]['status']
     st, body = fetch(url); row = {'url': url, 'meeting_date': md, 'slug': slug, 'race_no': rn, 'status': st, 'fetched_utc': datetime.now(timezone.utc).strftime('%FT%TZ')}
     if body:
@@ -62,6 +67,7 @@ for m in meetings:
     if time.time() > DEADLINE: log('deadline reached: stopping cleanly'); break
     if refusals >= 20: log('STOP: 20 refusals in a row'); break
     md, slug, nr = m['meeting_date'], m['slug'], int(float(m['maxr'] or m['races'] or 0))
+    if slug not in FOLDER: stats['folder_unknown'] = stats.get('folder_unknown', 0) + 1; continue
     pad = True; st = one(md, slug, 1)
     if st != '200': pad = False; st = one(md, slug, 1, pad=False)          # the older reports used race1 (no leading zero)
     if st != '200': stats['not_found_meetings'] += 1; continue
