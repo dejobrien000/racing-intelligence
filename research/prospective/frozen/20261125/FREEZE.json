@@ -1,0 +1,70 @@
+{
+ "frozen_utc": "2026-11-25T01:32:57.360452+00:00",
+ "date": "2026-11-25",
+ "engine": "Engine v2.0.1 (benchmarks/engine_v2/RELEASES.md)",
+ "official": {
+  "Geelong": {
+   "model": "Engine v2.0.1",
+   "v2_runners": "prospective/prerace/20261125/Geelong/v2_pred_20261124T205717Z_20261124T205950Z_20261124T205958Z_runners.csv",
+   "v2_sha256": "c92cfbea368edacc5234cde63336d1b0887229b8e0b3ecef67bb3f8b308f0efb",
+   "v2_scored_utc": "2026-11-24T21:00:07.534043+00:00",
+   "v1_runners": "prospective/prerace/20261125/Geelong/pred_20261124T205717Z_20261124T205950Z_runners.csv",
+   "v1_sha256": "9e24efdc639902e9082940e9e6c2332b4c245abee44ef1987d0340f5bf237613",
+   "earlier_sets_kept": [
+    "prospective/prerace/20261125/Geelong/pred_20261124T202130Z_20261124T202336Z_runners.csv",
+    "prospective/prerace/20261125/Geelong/v2_pred_20261124T202130Z_20261124T202336Z_20261124T202346Z_runners.csv"
+   ]
+  },
+  "Ipswich": {
+   "model": "Engine v2.0.1",
+   "v2_runners": "prospective/prerace/20261125/Ipswich/v2_pred_20261124T215130Z_20261125T010655Z_20261125T011103Z_runners.csv",
+   "v2_sha256": "13f2a013e963ea2b2c704d0c6167902dbd6a77eddcdd182b94bcb51d44f491d7",
+   "v2_scored_utc": "2026-11-25T01:11:04.192344+00:00",
+   "v1_runners": "prospective/prerace/20261125/Ipswich/pred_20261124T215130Z_20261125T010655Z_runners.csv",
+   "v1_sha256": "c749968e815ac674d5630225cf7064b118e6bb98279dd4886da9d5c69fb073d8",
+   "earlier_sets_kept": [
+    "prospective/prerace/20261125/Ipswich/pred_20261124T113410454Z_20261124T113657Z_runners.csv",
+    "prospective/prerace/20261125/Ipswich/v2_pred_20261124T113410454Z_20261124T113657Z_20261124T142734Z_runners.csv",
+    "prospective/prerace/20261125/Ipswich/pred_20261124T215130Z_20261124T215139Z_runners.csv",
+    "prospective/prerace/20261125/Ipswich/v2_pred_20261124T215130Z_20261124T215139Z_20261124T215604Z_runners.csv"
+   ]
+  },
+  "Wyong": {
+   "model": "Engine v2.0.1",
+   "v2_runners": "prospective/prerace/20261125/Wyong/v2_pred_20261124T203400Z_20261124T203511Z_20261124T203519Z_runners.csv",
+   "v2_sha256": "d07afcf038c9a4436ea410cbc5322900ce5aad6436f48b50443b74ffe8fffdd5",
+   "v2_scored_utc": "2026-11-24T20:35:28.219979+00:00",
+   "v1_runners": "prospective/prerace/20261125/Wyong/pred_20261124T203400Z_20261124T203511Z_runners.csv",
+   "v1_sha256": "e7689175ad348077984b7b4b59cd93c933fe642a10530f014f2bb1ae67f0085f",
+   "earlier_sets_kept": [
+    "prospective/prerace/20261125/Wyong/pred_20261124T130322397Z_20261124T131039Z_runners.csv",
+    "prospective/prerace/20261125/Wyong/v2_pred_20261124T130322397Z_20261124T131039Z_20261124T142734Z_runners.csv"
+   ]
+  }
+ },
+ "fields_only_unrated": [
+  "Strathalbyn",
+  "Albany",
+  "Launceston"
+ ],
+ "daily_ranking": {
+  "file": "prospective/daily/20261125/ranking_v2_20261125T013332Z_runners.csv",
+  "sha256": "976e2efbed8228590f58008aa5da97b873f38223b70e2b0ee099c372184cb995"
+ },
+ "dashboard_day_file": {
+  "file": "ui/data/racing_2026-11-25.json",
+  "sha256": "858f83ea59111fbdd7b0a067f7e63af4d85e22dad71c831ed87b986873ecff60"
+ },
+ "open_price_reference": {
+  "prices/20261125/tab_20261124T205717Z.jsonl": "84175fb11bf29de5082c00df197fe788f42fdd3f0ea94d1368f75a30a6d2595a",
+  "prices/20261125/tab_20261124T205717Z.raw.txt": "f31c5f63078775b03973927d2619d15d1979c5e2b5768090f32ff27cad14655f",
+  "prices/20261125/tab_20261124T205717Z_match.csv": "06d2a2af695ecdf127c91b973ce4748c72bc856bd23dcafa9dafafe3d8b142f7",
+  "prices/20261125/tab_20261124T205717Z_races.json": "fd0a86ee12ebcf5c9bf163c2e866e73633b602e9d62ddca0fb5fe3bb4f33bdb6"
+ },
+ "rules": [
+  "No rating for 25 Nov changes after this freeze.",
+  "Races already started are never re-rated.",
+  "OPEN = TAB fixed prices collected 20:53-20:57 UTC on 24 Nov (7:30am collection); no replacement opening prices.",
+  "Prices are display and evaluation only; never model inputs."
+ ]
+}

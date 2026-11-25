@@ -1,6 +1,11 @@
 {
  "items": [
   {
+   "item": "Official research ratings frozen 11:32am (Engine v2.0.1)",
+   "status": "working",
+   "note": "Ipswich = 11:11am re-issue; Geelong = 7:00am set and Wyong = 6:35am set, both after final scratchings (unchanged by the fix). Strathalbyn, Albany and Launceston are fields only (no history yet). File checksums: prospective/frozen/20261125/FREEZE.json in the repository. No ratings change after this point."
+  },
+  {
    "item": "Ipswich ratings re-issued 11:11am (engine v2.0.1)",
    "status": "working",
    "note": "The 7:56am Ipswich set gave the national ability rating zero weight (a scoring fault). Re-scored at 11:11am on the same fields with the fault fixed; the top pick changed in 5 of 7 races. The 7:56am set is kept on file. Paper returns use the 7:30 TAB fixed prices (OPEN) for the re-issued picks; no new price was collected."

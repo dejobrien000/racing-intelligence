@@ -6,6 +6,7 @@ Usage: PYTHONPATH=. python3 engine/export_ui.py 20261125  -> ui/data/racing_<YYY
 import sys, os, re, json, gzip, hashlib, numpy as np, pandas as pd
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
+ENGINE_VERSION = 'Engine v2.0.1'; RELEASE_NOTE = 'v2.0.1 (25 Nov 2026, 11:11am): Queensland scorer fix - the national ability rating now carries its validated weight (it had zero weight live in v2.0). NSW/Vic/ACT scoring is unchanged by the fix. No coefficient changes.'
 MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration.json'))
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
@@ -269,7 +270,7 @@ for m in meetings:
         cut_ = pd.Timestamp(DATE + 'T00:00:00+10:00') + pd.Timedelta(minutes=(r['time_brisbane_min'] or 0) - 5)
         qs_ = [q for q in QUOTES if q['kind'] == 'fixed_win' and (q['meeting'], q['race_no'], q['saddlecloth']) == (m['name'], r['no'], h['n']) and pd.Timestamp(q['captured_utc']) <= cut_]
         qq_ = max(qs_, key=lambda q: q['captured_utc']) if qs_ else None
-        sel.append({'meeting': m['name'], 'state': m['state'], 'race': r['no'], 'time': r['time'], 'tz': r['tz'], 'horse': h['horse'], 'n': h['n'], 'model_version': 'Engine v2',
+        sel.append({'meeting': m['name'], 'state': m['state'], 'race': r['no'], 'time': r['time'], 'tz': r['tz'], 'horse': h['horse'], 'n': h['n'], 'model_version': ENGINE_VERSION,
                     'rank': 1, 'win_chance': h['cal'], 'classification': r['label'], 'price': qq_ and qq_['price'], 'price_source': qq_ and 'TAB fixed win', 'price_time_utc': qq_ and qq_['captured_utc'], 'result': None, 'settlement': 'pending'})
 ROI = {'status': 'waiting', 'selections': sel,
        'rules': ['A selection is the top-rated runner in the latest prediction saved before the race starts. It is frozen at that point and never re-created after the race.',
@@ -281,7 +282,7 @@ ROI = {'status': 'waiting', 'selections': sel,
        'paper': {'selections': len(sel), 'priced': sum(1 for x in sel if x['price']), 'settled': 0}, 'realised': {'bets': 0}, 'groups': []}
 data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'date': DATE, 'weekday': pd.Timestamp(DATE).strftime('%A'), 'exported_utc': NOW.isoformat(),
         'snapshot_note': 'Read-only snapshot, republished after each successful refresh. Built only from predictions saved before racing.',
-        'engine': {'operational': 'Engine v2', 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
+        'engine': {'operational': ENGINE_VERSION, 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
                    'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(MAN['families']['QLD']['score_per_kg_total'], MAN['families']['NSW_VIC_ACT']['score_per_kg_total']),
                    'calibration': {k: {'races': v['races'], 'runners': v['runners'], 'top_pick_tiers': v['top_pick_tiers_2025_26'], 'terciles': v['top_pick_terciles'], 'deciles': v['deciles']} for k, v in RC['families'].items()}},
         'meetings': meetings, 'leaderboard': lb,
