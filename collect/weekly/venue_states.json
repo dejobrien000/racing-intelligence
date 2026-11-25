@@ -1,0 +1,1806 @@
+{
+"adelaide-river": [
+"NT",
+"adelaide-river"
+],
+"adelaide-river-synthetic": [
+"NT",
+"adelaide-river"
+],
+"albany": [
+"WA",
+"albany"
+],
+"albany-synthetic": [
+"WA",
+"albany"
+],
+"albury": [
+"NSW",
+"albury"
+],
+"albury-synthetic": [
+"NSW",
+"albury"
+],
+"alice-springs": [
+"NT",
+"alice-springs"
+],
+"alice-springs-synthetic": [
+"NT",
+"alice-springs"
+],
+"ararat": [
+"VIC",
+"ararat"
+],
+"ararat-synthetic": [
+"VIC",
+"ararat"
+],
+"armidale": [
+"NSW",
+"armidale"
+],
+"armidale-synthetic": [
+"NSW",
+"armidale"
+],
+"ascot": [
+"WA",
+"ascot"
+],
+"ascot-synthetic": [
+"WA",
+"ascot"
+],
+"avoca": [
+"VIC",
+"avoca"
+],
+"avoca-synthetic": [
+"VIC",
+"avoca"
+],
+"bairnsdale": [
+"VIC",
+"bairnsdale"
+],
+"bairnsdale-synthetic": [
+"VIC",
+"bairnsdale"
+],
+"balaklava": [
+"SA",
+"balaklava"
+],
+"balaklava-synthetic": [
+"SA",
+"balaklava"
+],
+"ballarat": [
+"VIC",
+"ballarat"
+],
+"ballarat-synthetic": [
+"VIC",
+"ballarat"
+],
+"ballarat-synthetic-synthetic": [
+"VIC",
+"ballarat-synthetic"
+],
+"ballina": [
+"NSW",
+"ballina"
+],
+"ballina-synthetic": [
+"NSW",
+"ballina"
+],
+"barcaldine": [
+"QLD",
+"barcaldine"
+],
+"barcaldine-synthetic": [
+"QLD",
+"barcaldine"
+],
+"bathurst": [
+"NSW",
+"bathurst"
+],
+"bathurst-synthetic": [
+"NSW",
+"bathurst"
+],
+"beaudesert": [
+"QLD",
+"beaudesert"
+],
+"beaudesert-synthetic": [
+"QLD",
+"beaudesert"
+],
+"beaumont": [
+"NSW",
+"newcastle"
+],
+"beaumont-newcastle": [
+"NSW",
+"newcastle"
+],
+"beaumont-newcastle-synthetic": [
+"NSW",
+"beaumont-newcastle"
+],
+"belmont": [
+"WA",
+"belmont"
+],
+"belmont-park": [
+"WA",
+"belmont"
+],
+"belmont-synthetic": [
+"WA",
+"belmont"
+],
+"benalla": [
+"VIC",
+"benalla"
+],
+"benalla-synthetic": [
+"VIC",
+"benalla"
+],
+"bendigo": [
+"VIC",
+"bendigo"
+],
+"bendigo-synthetic": [
+"VIC",
+"bendigo"
+],
+"birdsville": [
+"QLD",
+"birdsville"
+],
+"birdsville-synthetic": [
+"QLD",
+"birdsville"
+],
+"blackall": [
+"QLD",
+"blackall"
+],
+"blackall-synthetic": [
+"QLD",
+"blackall"
+],
+"bordertown": [
+"SA",
+"bordertown"
+],
+"bordertown-synthetic": [
+"SA",
+"bordertown"
+],
+"bowen": [
+"QLD",
+"bowen"
+],
+"bowen-synthetic": [
+"QLD",
+"bowen"
+],
+"bowraville": [
+"NSW",
+"bowraville"
+],
+"bowraville-synthetic": [
+"NSW",
+"bowraville"
+],
+"broome": [
+"WA",
+"broome"
+],
+"broome-synthetic": [
+"WA",
+"broome"
+],
+"bunbury": [
+"WA",
+"bunbury"
+],
+"bunbury-synthetic": [
+"WA",
+"bunbury"
+],
+"bundaberg": [
+"QLD",
+"bundaberg"
+],
+"bundaberg-synthetic": [
+"QLD",
+"bundaberg"
+],
+"burrumbeet": [
+"VIC",
+"burrumbeet"
+],
+"burrumbeet-synthetic": [
+"VIC",
+"burrumbeet"
+],
+"cairns": [
+"QLD",
+"cairns"
+],
+"cairns-synthetic": [
+"QLD",
+"cairns"
+],
+"camperdown": [
+"VIC",
+"camperdown"
+],
+"camperdown-synthetic": [
+"VIC",
+"camperdown"
+],
+"canberra": [
+"ACT",
+"canberra"
+],
+"canberra-acton": [
+"ACT",
+"canberra"
+],
+"canberra-synthetic": [
+"ACT",
+"canberra"
+],
+"canterbury": [
+"NSW",
+"canterbury"
+],
+"canterbury-park": [
+"NSW",
+"canterbury"
+],
+"canterbury-park-synthetic": [
+"NSW",
+"canterbury-park"
+],
+"canterbury-synthetic": [
+"NSW",
+"canterbury"
+],
+"carnarvon": [
+"WA",
+"carnarvon"
+],
+"carnarvon-synthetic": [
+"WA",
+"carnarvon"
+],
+"casino": [
+"NSW",
+"casino"
+],
+"casino-synthetic": [
+"NSW",
+"casino"
+],
+"casterton": [
+"VIC",
+"casterton"
+],
+"casterton-synthetic": [
+"VIC",
+"casterton"
+],
+"caulfield": [
+"VIC",
+"caulfield"
+],
+"caulfield-heath": [
+"VIC",
+"caulfield"
+],
+"caulfield-heath-synthetic": [
+"VIC",
+"caulfield-heath"
+],
+"caulfield-synthetic": [
+"VIC",
+"caulfield"
+],
+"cessnock": [
+"NSW",
+"cessnock"
+],
+"cessnock-synthetic": [
+"NSW",
+"cessnock"
+],
+"charleville": [
+"QLD",
+"charleville"
+],
+"charleville-synthetic": [
+"QLD",
+"charleville"
+],
+"chinchilla": [
+"QLD",
+"chinchilla"
+],
+"chinchilla-synthetic": [
+"QLD",
+"chinchilla"
+],
+"clare": [
+"SA",
+"clare"
+],
+"clare-synthetic": [
+"SA",
+"clare"
+],
+"cloncurry": [
+"QLD",
+"cloncurry"
+],
+"cloncurry-synthetic": [
+"QLD",
+"cloncurry"
+],
+"coffs-harbour": [
+"NSW",
+"coffs-harbour"
+],
+"coffs-harbour-synthetic": [
+"NSW",
+"coffs-harbour"
+],
+"colac": [
+"VIC",
+"colac"
+],
+"colac-synthetic": [
+"VIC",
+"colac"
+],
+"coleraine": [
+"VIC",
+"coleraine"
+],
+"coleraine-synthetic": [
+"VIC",
+"coleraine"
+],
+"collie": [
+"WA",
+"collie"
+],
+"collie-synthetic": [
+"WA",
+"collie"
+],
+"coonabarabran": [
+"NSW",
+"coonabarabran"
+],
+"coonabarabran-synthetic": [
+"NSW",
+"coonabarabran"
+],
+"coonamble": [
+"NSW",
+"coonamble"
+],
+"coonamble-synthetic": [
+"NSW",
+"coonamble"
+],
+"cootamundra": [
+"NSW",
+"cootamundra"
+],
+"cootamundra-synthetic": [
+"NSW",
+"cootamundra"
+],
+"corowa": [
+"NSW",
+"corowa"
+],
+"corowa-synthetic": [
+"NSW",
+"corowa"
+],
+"cowra": [
+"NSW",
+"cowra"
+],
+"cowra-synthetic": [
+"NSW",
+"cowra"
+],
+"cranbourne": [
+"VIC",
+"cranbourne"
+],
+"cranbourne-synthetic": [
+"VIC",
+"cranbourne"
+],
+"dalby": [
+"QLD",
+"dalby"
+],
+"dalby-synthetic": [
+"QLD",
+"dalby"
+],
+"darwin": [
+"NT",
+"darwin"
+],
+"darwin-synthetic": [
+"NT",
+"darwin"
+],
+"derby": [
+"WA",
+"derby"
+],
+"derby-synthetic": [
+"WA",
+"derby"
+],
+"devonport": [
+"TAS",
+"devonport"
+],
+"devonport-synthetic": [
+"TAS",
+"devonport"
+],
+"donald": [
+"VIC",
+"donald"
+],
+"donald-synthetic": [
+"VIC",
+"donald"
+],
+"dongara": [
+"WA",
+"dongara"
+],
+"dongara-synthetic": [
+"WA",
+"dongara"
+],
+"doomben": [
+"QLD",
+"doomben"
+],
+"doomben-synthetic": [
+"QLD",
+"doomben"
+],
+"dubbo": [
+"NSW",
+"dubbo"
+],
+"dubbo-synthetic": [
+"NSW",
+"dubbo"
+],
+"dunkeld": [
+"VIC",
+"dunkeld"
+],
+"dunkeld-synthetic": [
+"VIC",
+"dunkeld"
+],
+"eagle-farm": [
+"QLD",
+"eagle-farm"
+],
+"eagle-farm-synthetic": [
+"QLD",
+"eagle-farm"
+],
+"echuca": [
+"VIC",
+"echuca"
+],
+"echuca-synthetic": [
+"VIC",
+"echuca"
+],
+"edenhope": [
+"VIC",
+"edenhope"
+],
+"edenhope-synthetic": [
+"VIC",
+"edenhope"
+],
+"emerald": [
+"QLD",
+"emerald"
+],
+"emerald-synthetic": [
+"QLD",
+"emerald"
+],
+"esperance": [
+"WA",
+"esperance"
+],
+"esperance-synthetic": [
+"WA",
+"esperance"
+],
+"ewan": [
+"QLD",
+"ewan"
+],
+"ewan-synthetic": [
+"QLD",
+"ewan"
+],
+"flemington": [
+"VIC",
+"flemington"
+],
+"flemington-synthetic": [
+"VIC",
+"flemington"
+],
+"forbes": [
+"NSW",
+"forbes"
+],
+"forbes-synthetic": [
+"NSW",
+"forbes"
+],
+"gatton": [
+"QLD",
+"gatton"
+],
+"gatton-synthetic": [
+"QLD",
+"gatton"
+],
+"gawler": [
+"SA",
+"gawler"
+],
+"gawler-synthetic": [
+"SA",
+"gawler"
+],
+"geelong": [
+"VIC",
+"geelong"
+],
+"geelong-synthetic": [
+"VIC",
+"geelong"
+],
+"geelong-synthetic-synthetic": [
+"VIC",
+"geelong-synthetic"
+],
+"geraldton": [
+"WA",
+"geraldton"
+],
+"geraldton-synthetic": [
+"WA",
+"geraldton"
+],
+"gilgandra": [
+"NSW",
+"gilgandra"
+],
+"gilgandra-synthetic": [
+"NSW",
+"gilgandra"
+],
+"glen-innes": [
+"NSW",
+"glen-innes"
+],
+"glen-innes-synthetic": [
+"NSW",
+"glen-innes"
+],
+"gold-coast": [
+"QLD",
+"gold-coast"
+],
+"gold-coast-synthetic": [
+"QLD",
+"gold-coast"
+],
+"gosford": [
+"NSW",
+"gosford"
+],
+"gosford-synthetic": [
+"NSW",
+"gosford"
+],
+"goulburn": [
+"NSW",
+"goulburn"
+],
+"goulburn-synthetic": [
+"NSW",
+"goulburn"
+],
+"grafton": [
+"NSW",
+"grafton"
+],
+"grafton-synthetic": [
+"NSW",
+"grafton"
+],
+"great-western": [
+"VIC",
+"great-western"
+],
+"great-western-synthetic": [
+"VIC",
+"great-western"
+],
+"griffith": [
+"NSW",
+"griffith"
+],
+"griffith-synthetic": [
+"NSW",
+"griffith"
+],
+"gunbower": [
+"VIC",
+"gunbower"
+],
+"gunbower-synthetic": [
+"VIC",
+"gunbower"
+],
+"gundagai": [
+"NSW",
+"gundagai"
+],
+"gundagai-synthetic": [
+"NSW",
+"gundagai"
+],
+"gunnedah": [
+"NSW",
+"gunnedah"
+],
+"gunnedah-synthetic": [
+"NSW",
+"gunnedah"
+],
+"gympie": [
+"QLD",
+"gympie"
+],
+"gympie-synthetic": [
+"QLD",
+"gympie"
+],
+"halidon": [
+"SA",
+"halidon"
+],
+"halidon-synthetic": [
+"SA",
+"halidon"
+],
+"hamilton": [
+"VIC",
+"hamilton"
+],
+"hamilton-synthetic": [
+"VIC",
+"hamilton"
+],
+"hanging-rock": [
+"VIC",
+"hanging-rock"
+],
+"hanging-rock-synthetic": [
+"VIC",
+"hanging-rock"
+],
+"hawkesbury": [
+"NSW",
+"hawkesbury"
+],
+"hawkesbury-synthetic": [
+"NSW",
+"hawkesbury"
+],
+"hobart": [
+"TAS",
+"hobart"
+],
+"hobart-synthetic": [
+"TAS",
+"hobart"
+],
+"home-hill": [
+"QLD",
+"home-hill"
+],
+"home-hill-synthetic": [
+"QLD",
+"home-hill"
+],
+"horsham": [
+"VIC",
+"horsham"
+],
+"horsham-synthetic": [
+"VIC",
+"horsham"
+],
+"illawarra-grange": [
+"NSW",
+"illawarra-grange"
+],
+"illawarra-grange-synthetic": [
+"NSW",
+"illawarra-grange"
+],
+"innisfail": [
+"QLD",
+"innisfail"
+],
+"innisfail-synthetic": [
+"QLD",
+"innisfail"
+],
+"inverell": [
+"NSW",
+"inverell"
+],
+"inverell-synthetic": [
+"NSW",
+"inverell"
+],
+"ipswich": [
+"QLD",
+"ipswich"
+],
+"ipswich-synthetic": [
+"QLD",
+"ipswich"
+],
+"junction": [
+"WA",
+"junction"
+],
+"junction-synthetic": [
+"WA",
+"junction"
+],
+"kalgoorlie": [
+"WA",
+"kalgoorlie"
+],
+"kalgoorlie-synthetic": [
+"WA",
+"kalgoorlie"
+],
+"kangaroo-island": [
+"SA",
+"kangaroo-island"
+],
+"kangaroo-island-synthetic": [
+"SA",
+"kangaroo-island"
+],
+"katherine": [
+"NT",
+"katherine"
+],
+"katherine-synthetic": [
+"NT",
+"katherine"
+],
+"kembla-grange": [
+"NSW",
+"kembla-grange"
+],
+"kembla-grange-synthetic": [
+"NSW",
+"kembla-grange"
+],
+"kempsey": [
+"NSW",
+"kempsey"
+],
+"kempsey-synthetic": [
+"NSW",
+"kempsey"
+],
+"kensington": [
+"NSW",
+"randwick"
+],
+"kensington-synthetic": [
+"NSW",
+"kensington"
+],
+"kerang": [
+"VIC",
+"kerang"
+],
+"kerang-synthetic": [
+"VIC",
+"kerang"
+],
+"kilcoy": [
+"QLD",
+"kilcoy"
+],
+"kilcoy-synthetic": [
+"QLD",
+"kilcoy"
+],
+"kilmore": [
+"VIC",
+"kilmore"
+],
+"kilmore-synthetic": [
+"VIC",
+"kilmore"
+],
+"king-island": [
+"TAS",
+"king-island"
+],
+"kingscote": [
+"SA",
+"kangaroo-island"
+],
+"kununurra": [
+"WA",
+"kununurra"
+],
+"kununurra-synthetic": [
+"WA",
+"kununurra"
+],
+"kyneton": [
+"VIC",
+"kyneton"
+],
+"kyneton-synthetic": [
+"VIC",
+"kyneton"
+],
+"launceston": [
+"TAS",
+"launceston"
+],
+"launceston-synthetic": [
+"TAS",
+"launceston"
+],
+"laverton": [
+"WA",
+"laverton"
+],
+"laverton-synthetic": [
+"WA",
+"laverton"
+],
+"leeton": [
+"NSW",
+"leeton"
+],
+"leeton-synthetic": [
+"NSW",
+"leeton"
+],
+"leinster": [
+"WA",
+"leinster"
+],
+"leinster-synthetic": [
+"WA",
+"leinster"
+],
+"leonora": [
+"WA",
+"leonora"
+],
+"leonora-synthetic": [
+"WA",
+"leonora"
+],
+"lismore": [
+"NSW",
+"lismore"
+],
+"lismore-synthetic": [
+"NSW",
+"lismore"
+],
+"longford": [
+"TAS",
+"longford"
+],
+"longford-synthetic": [
+"TAS",
+"longford"
+],
+"longreach": [
+"QLD",
+"longreach"
+],
+"longreach-synthetic": [
+"QLD",
+"longreach"
+],
+"mackay": [
+"QLD",
+"mackay"
+],
+"mackay-synthetic": [
+"QLD",
+"mackay"
+],
+"manangatang": [
+"VIC",
+"manangatang"
+],
+"manangatang-synthetic": [
+"VIC",
+"manangatang"
+],
+"marble-bar": [
+"WA",
+"marble-bar"
+],
+"marble-bar-synthetic": [
+"WA",
+"marble-bar"
+],
+"meekatharra": [
+"WA",
+"meekatharra"
+],
+"meekatharra-synthetic": [
+"WA",
+"meekatharra"
+],
+"mildura": [
+"VIC",
+"mildura"
+],
+"mildura-synthetic": [
+"VIC",
+"mildura"
+],
+"mingenew": [
+"WA",
+"mingenew"
+],
+"mingenew-synthetic": [
+"WA",
+"mingenew"
+],
+"moe": [
+"VIC",
+"moe"
+],
+"moe-synthetic": [
+"VIC",
+"moe"
+],
+"moonee-valley": [
+"VIC",
+"moonee-valley"
+],
+"moonee-valley-synthetic": [
+"VIC",
+"moonee-valley"
+],
+"moora": [
+"WA",
+"moora"
+],
+"moora-synthetic": [
+"WA",
+"moora"
+],
+"moree": [
+"NSW",
+"moree"
+],
+"moree-synthetic": [
+"NSW",
+"moree"
+],
+"mornington": [
+"VIC",
+"mornington"
+],
+"mornington-synthetic": [
+"VIC",
+"mornington"
+],
+"morphettville": [
+"SA",
+"morphettville"
+],
+"morphettville-parks": [
+"SA",
+"morphettville-parks"
+],
+"morphettville-synthetic": [
+"SA",
+"morphettville"
+],
+"mortlake": [
+"VIC",
+"mortlake"
+],
+"mortlake-synthetic": [
+"VIC",
+"mortlake"
+],
+"moruya": [
+"NSW",
+"moruya"
+],
+"moruya-synthetic": [
+"NSW",
+"moruya"
+],
+"mount-barker": [
+"WA",
+"mount-barker"
+],
+"mount-barker-synthetic": [
+"WA",
+"mount-barker"
+],
+"mount-gambier": [
+"SA",
+"mount-gambier"
+],
+"mount-gambier-synthetic": [
+"SA",
+"mount-gambier"
+],
+"mount-isa": [
+"QLD",
+"mount-isa"
+],
+"mount-isa-synthetic": [
+"QLD",
+"mount-isa"
+],
+"mount-magnet": [
+"WA",
+"mount-magnet"
+],
+"mount-magnet-synthetic": [
+"WA",
+"mount-magnet"
+],
+"mt-barker": [
+"WA",
+"mount-barker"
+],
+"mt-gambier": [
+"SA",
+"mount-gambier"
+],
+"mudgee": [
+"NSW",
+"mudgee"
+],
+"mudgee-synthetic": [
+"NSW",
+"mudgee"
+],
+"murray-bridge": [
+"SA",
+"murray-bridge"
+],
+"murray-bridge-gh": [
+"SA",
+"murray-bridge"
+],
+"murray-bridge-synthetic": [
+"SA",
+"murray-bridge"
+],
+"murtoa": [
+"VIC",
+"murtoa"
+],
+"murtoa-synthetic": [
+"VIC",
+"murtoa"
+],
+"murwillumbah": [
+"NSW",
+"murwillumbah"
+],
+"murwillumbah-synthetic": [
+"NSW",
+"murwillumbah"
+],
+"muswellbrook": [
+"NSW",
+"muswellbrook"
+],
+"muswellbrook-synthetic": [
+"NSW",
+"muswellbrook"
+],
+"nanango": [
+"QLD",
+"nanango"
+],
+"nanango-synthetic": [
+"QLD",
+"nanango"
+],
+"naracoorte": [
+"SA",
+"naracoorte"
+],
+"naracoorte-synthetic": [
+"SA",
+"naracoorte"
+],
+"narrandera": [
+"NSW",
+"narrandera"
+],
+"narrandera-synthetic": [
+"NSW",
+"narrandera"
+],
+"narrogin": [
+"WA",
+"narrogin"
+],
+"narrogin-synthetic": [
+"WA",
+"narrogin"
+],
+"narromine": [
+"NSW",
+"narromine"
+],
+"narromine-synthetic": [
+"NSW",
+"narromine"
+],
+"newcastle": [
+"NSW",
+"newcastle"
+],
+"newcastle-beaumont": [
+"NSW",
+"newcastle"
+],
+"newcastle-beaumont-synthetic": [
+"NSW",
+"newcastle-beaumont"
+],
+"newcastle-synthetic": [
+"NSW",
+"newcastle"
+],
+"newman": [
+"WA",
+"newman"
+],
+"newman-synthetic": [
+"WA",
+"newman"
+],
+"nhill": [
+"VIC",
+"nhill"
+],
+"nhill-synthetic": [
+"VIC",
+"nhill"
+],
+"northam": [
+"WA",
+"northam"
+],
+"northam-synthetic": [
+"WA",
+"northam"
+],
+"nowra": [
+"NSW",
+"nowra"
+],
+"nowra-synthetic": [
+"NSW",
+"nowra"
+],
+"oakbank": [
+"SA",
+"oakbank"
+],
+"oakbank-synthetic": [
+"SA",
+"oakbank"
+],
+"orange": [
+"NSW",
+"orange"
+],
+"orange-synthetic": [
+"NSW",
+"orange"
+],
+"pakenham": [
+"VIC",
+"pakenham"
+],
+"pakenham-synthetic": [
+"VIC",
+"pakenham"
+],
+"pakenham-synthetic-synthetic": [
+"VIC",
+"pakenham-synthetic"
+],
+"parkes": [
+"NSW",
+"parkes"
+],
+"parkes-synthetic": [
+"NSW",
+"parkes"
+],
+"penola": [
+"SA",
+"penola"
+],
+"penola-synthetic": [
+"SA",
+"penola"
+],
+"penshurst": [
+"VIC",
+"penshurst"
+],
+"penshurst-synthetic": [
+"VIC",
+"penshurst"
+],
+"pingrup": [
+"WA",
+"pingrup"
+],
+"pingrup-synthetic": [
+"WA",
+"pingrup"
+],
+"pinjarra": [
+"WA",
+"pinjarra"
+],
+"pinjarra-scarpside": [
+"WA",
+"pinjarra-scarpside"
+],
+"pinjarra-synthetic": [
+"WA",
+"pinjarra"
+],
+"port-augusta": [
+"SA",
+"port-augusta"
+],
+"port-augusta-synthetic": [
+"SA",
+"port-augusta"
+],
+"port-hedland": [
+"WA",
+"port-hedland"
+],
+"port-hedland-synthetic": [
+"WA",
+"port-hedland"
+],
+"port-lincoln": [
+"SA",
+"port-lincoln"
+],
+"port-lincoln-synthetic": [
+"SA",
+"port-lincoln"
+],
+"port-macquarie": [
+"NSW",
+"port-macquarie"
+],
+"port-macquarie-synthetic": [
+"NSW",
+"port-macquarie"
+],
+"queanbeyan": [
+"NSW",
+"queanbeyan"
+],
+"queanbeyan-synthetic": [
+"NSW",
+"queanbeyan"
+],
+"quirindi": [
+"NSW",
+"quirindi"
+],
+"quirindi-synthetic": [
+"NSW",
+"quirindi"
+],
+"randwick": [
+"NSW",
+"randwick"
+],
+"randwick-kensington": [
+"NSW",
+"randwick"
+],
+"randwick-kensington-synthetic": [
+"NSW",
+"randwick-kensington"
+],
+"randwick-synthetic": [
+"NSW",
+"randwick"
+],
+"rockhampton": [
+"QLD",
+"rockhampton"
+],
+"rockhampton-synthetic": [
+"QLD",
+"rockhampton"
+],
+"rockingham": [
+"WA",
+"rockingham"
+],
+"rockingham-synthetic": [
+"WA",
+"rockingham"
+],
+"roebourne": [
+"WA",
+"roebourne"
+],
+"roebourne-synthetic": [
+"WA",
+"roebourne"
+],
+"roma": [
+"QLD",
+"roma"
+],
+"roma-synthetic": [
+"QLD",
+"roma"
+],
+"rosehill": [
+"NSW",
+"rosehill"
+],
+"rosehill-gardens": [
+"NSW",
+"rosehill"
+],
+"rosehill-gardens-synthetic": [
+"NSW",
+"rosehill-gardens"
+],
+"rosehill-synthetic": [
+"NSW",
+"rosehill"
+],
+"royal-randwick": [
+"NSW",
+"randwick"
+],
+"royal-randwick-synthetic": [
+"NSW",
+"royal-randwick"
+],
+"sale": [
+"VIC",
+"sale"
+],
+"sale-synthetic": [
+"VIC",
+"sale"
+],
+"sandown": [
+"VIC",
+"sandown"
+],
+"sandown-hillside": [
+"VIC",
+"sandown"
+],
+"sandown-hillside-synthetic": [
+"VIC",
+"sandown-hillside"
+],
+"sandown-lakeside": [
+"VIC",
+"sandown"
+],
+"sandown-lakeside-synthetic": [
+"VIC",
+"sandown-lakeside"
+],
+"sandown-synthetic": [
+"VIC",
+"sandown"
+],
+"sapphire-coast": [
+"NSW",
+"sapphire-coast"
+],
+"sapphire-coast-synthetic": [
+"NSW",
+"sapphire-coast"
+],
+"scone": [
+"NSW",
+"scone"
+],
+"scone-synthetic": [
+"NSW",
+"scone"
+],
+"seymour": [
+"VIC",
+"seymour"
+],
+"seymour-synthetic": [
+"VIC",
+"seymour"
+],
+"st-arnaud": [
+"VIC",
+"st-arnaud"
+],
+"st-arnaud-synthetic": [
+"VIC",
+"st-arnaud"
+],
+"stawell": [
+"VIC",
+"stawell"
+],
+"stawell-synthetic": [
+"VIC",
+"stawell"
+],
+"stony-creek": [
+"VIC",
+"stony-creek"
+],
+"stony-creek-synthetic": [
+"VIC",
+"stony-creek"
+],
+"strathalbyn": [
+"SA",
+"strathalbyn"
+],
+"strathalbyn-synthetic": [
+"SA",
+"strathalbyn"
+],
+"sunshine-coast": [
+"QLD",
+"sunshine-coast"
+],
+"sunshine-coast-synthetic": [
+"QLD",
+"sunshine-coast"
+],
+"swan-hill": [
+"VIC",
+"swan-hill"
+],
+"swan-hill-synthetic": [
+"VIC",
+"swan-hill"
+],
+"tamworth": [
+"NSW",
+"tamworth"
+],
+"tamworth-synthetic": [
+"NSW",
+"tamworth"
+],
+"taree": [
+"NSW",
+"taree"
+],
+"taree-synthetic": [
+"NSW",
+"taree"
+],
+"tatura": [
+"VIC",
+"tatura"
+],
+"tatura-synthetic": [
+"VIC",
+"tatura"
+],
+"tennant-creek": [
+"NT",
+"tennant-creek"
+],
+"tennant-creek-synthetic": [
+"NT",
+"tennant-creek"
+],
+"terang": [
+"VIC",
+"terang"
+],
+"terang-synthetic": [
+"VIC",
+"terang"
+],
+"thangool": [
+"QLD",
+"thangool"
+],
+"thangool-synthetic": [
+"QLD",
+"thangool"
+],
+"the-valley": [
+"VIC",
+"moonee-valley"
+],
+"the-valley-synthetic": [
+"VIC",
+"the-valley"
+],
+"toodyay": [
+"WA",
+"toodyay"
+],
+"toodyay-synthetic": [
+"WA",
+"toodyay"
+],
+"toowoomba": [
+"QLD",
+"toowoomba"
+],
+"toowoomba-synthetic": [
+"QLD",
+"toowoomba"
+],
+"townsville": [
+"QLD",
+"townsville"
+],
+"townsville-synthetic": [
+"QLD",
+"townsville"
+],
+"towong": [
+"VIC",
+"towong"
+],
+"towong-synthetic": [
+"VIC",
+"towong"
+],
+"traralgon": [
+"VIC",
+"traralgon"
+],
+"traralgon-synthetic": [
+"VIC",
+"traralgon"
+],
+"tumut": [
+"NSW",
+"tumut"
+],
+"tumut-synthetic": [
+"NSW",
+"tumut"
+],
+"tuncurry": [
+"NSW",
+"tuncurry"
+],
+"tuncurry-synthetic": [
+"NSW",
+"tuncurry"
+],
+"wagga": [
+"NSW",
+"wagga"
+],
+"wagga-riverside": [
+"NSW",
+"wagga-riverside"
+],
+"wagga-synthetic": [
+"NSW",
+"wagga"
+],
+"wagga-wagga": [
+"NSW",
+"wagga"
+],
+"wagga-wagga-synthetic": [
+"NSW",
+"wagga-wagga"
+],
+"walcha": [
+"NSW",
+"walcha"
+],
+"walcha-synthetic": [
+"NSW",
+"walcha"
+],
+"wangaratta": [
+"VIC",
+"wangaratta"
+],
+"wangaratta-synthetic": [
+"VIC",
+"wangaratta"
+],
+"warracknabeal": [
+"VIC",
+"warracknabeal"
+],
+"warracknabeal-synthetic": [
+"VIC",
+"warracknabeal"
+],
+"warren": [
+"NSW",
+"warren"
+],
+"warren-synthetic": [
+"NSW",
+"warren"
+],
+"warrnambool": [
+"VIC",
+"warrnambool"
+],
+"warrnambool-synthetic": [
+"VIC",
+"warrnambool"
+],
+"warwick": [
+"QLD",
+"warwick"
+],
+"warwick-farm": [
+"NSW",
+"warwick-farm"
+],
+"warwick-farm-synthetic": [
+"NSW",
+"warwick-farm"
+],
+"warwick-synthetic": [
+"QLD",
+"warwick"
+],
+"wellington": [
+"NSW",
+"wellington"
+],
+"wellington-synthetic": [
+"NSW",
+"wellington"
+],
+"werribee": [
+"VIC",
+"werribee"
+],
+"werribee-synthetic": [
+"VIC",
+"werribee"
+],
+"wodonga": [
+"VIC",
+"wodonga"
+],
+"wodonga-synthetic": [
+"VIC",
+"wodonga"
+],
+"wycheproof": [
+"VIC",
+"wycheproof"
+],
+"wycheproof-synthetic": [
+"VIC",
+"wycheproof"
+],
+"wyong": [
+"NSW",
+"wyong"
+],
+"wyong-synthetic": [
+"NSW",
+"wyong"
+],
+"yarra-glen": [
+"VIC",
+"yarra-valley"
+],
+"yarra-valley": [
+"VIC",
+"yarra-valley"
+],
+"yarra-valley-synthetic": [
+"VIC",
+"yarra-valley"
+],
+"yeppoon": [
+"QLD",
+"yeppoon"
+],
+"yeppoon-synthetic": [
+"QLD",
+"yeppoon"
+],
+"york": [
+"WA",
+"york"
+],
+"york-synthetic": [
+"WA",
+"york"
+]
+}
