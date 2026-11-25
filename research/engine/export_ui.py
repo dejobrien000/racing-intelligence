@@ -6,8 +6,8 @@ Usage: PYTHONPATH=. python3 engine/export_ui.py 20261125  -> ui/data/racing_<YYY
 import sys, os, re, json, gzip, hashlib, numpy as np, pandas as pd
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
-ENGINE_VERSION = 'Engine v2.0.1'; RELEASE_NOTE = 'v2.0.1 (25 Nov 2026, 11:11am): Queensland scorer fix - the national ability rating now carries its validated weight (it had zero weight live in v2.0). NSW/Vic/ACT scoring is unchanged by the fix. No coefficient changes.'
-MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration.json'))
+ENGINE_VERSION = 'Engine v2.0.2'; RELEASE_NOTE = 'v2.0.2 (25 Nov 2026, 12:15pm): displayed win chances use the bent-line calibration (top chances were shown too high); ratings and picks unchanged. v2.0.1 (11:11am): Queensland scorer fix - the national ability rating now carries its validated weight. No coefficient changes.'
+MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))   # v2 = bent line (25 Nov 2026)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
 GROUP = {'Opposition-aware rating': ('ability', 'Ability: opposition-aware rating'), 'Recent ability figures': ('figures', 'Form figures and opposition faced'),
@@ -26,7 +26,10 @@ def tname(t):
     if t.endswith(' squared'): return TERMNAME.get(t.split(' ')[0], t.split(' ')[0]) + ' (curved)'
     return ' × '.join(TERMNAME.get(p, p) for p in t.split(' x '))
 def cal(p, n, fam):
-    F = RC['families'][fam]; b = np.array(F['coef_const_logitp_logfield']); B = np.array(F['bootstrap_coefs']); z = np.array([1, np.log(p / (1 - p)), np.log(n)])
+    F = RC['families'][fam]; l_ = np.log(p / (1 - p))
+    if 'knots_logit' in F: b = np.array(F['coef_const_logitp_bends_logfield']); z = np.array([1, l_] + [max(l_ - k_, 0.0) for k_ in F['knots_logit']] + [np.log(n)])
+    else: b = np.array(F['coef_const_logitp_logfield']); z = np.array([1, l_, np.log(n)])
+    B = np.array(F['bootstrap_coefs'])
     c = 1 / (1 + np.exp(-z @ b)); lo, hi = np.percentile(1 / (1 + np.exp(-(B @ z))), [10, 90]); return float(c), float(lo), float(hi)
 def race_class(name):
     n = name.upper(); out = []

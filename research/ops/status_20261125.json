@@ -1,6 +1,11 @@
 {
  "items": [
   {
+   "item": "Win chances re-calibrated 12:06pm (Engine v2.0.2, display only)",
+   "status": "working",
+   "note": "Approved by you at 12:05pm, before any race today. Shown win chances now use the bent-line calibration, which on unseen 2026 races showed top chances close to what they won (Qld 43.5% shown vs 43.0% won; previously 52.7%). Ratings, rankings, selections and paper returns are unchanged. Selection-strength labels use the matching new thresholds."
+  },
+  {
    "item": "Official research ratings frozen 11:32am (Engine v2.0.1)",
    "status": "working",
    "note": "Ipswich = 11:11am re-issue; Geelong = 7:00am set and Wyong = 6:35am set, both after final scratchings (unchanged by the fix). Strathalbyn, Albany and Launceston are fields only (no history yet). File checksums: prospective/frozen/20261125/FREEZE.json in the repository. No ratings change after this point."

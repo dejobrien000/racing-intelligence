@@ -1,5 +1,12 @@
 # Engine v2 releases
 
+## v2.0.2 - 25 Nov 2026, 12:06pm Brisbane (display calibration; ratings unchanged)
+- Shown win chances use the bent-line runner calibration (benchmarks/engine_v2/runner_calibration_v2.json, built by
+  engine/runner_calibration_v2.py on the same 2025-26 out-of-sample predictions as v2.0). Validation: fitted on 2025, judged
+  on 2026 (research/batch9/out/e_calib.csv): 50%+ chances shown 47.5% / 43.5% vs won 43.7% / 43.0% (NSW-Vic / Qld), previously
+  52.3% / 52.7%; overall log loss unchanged or better; 0% of races reordered.
+- Approved by Damo in chat 12:05pm, applied before any race on 25 Nov. Selection-strength thresholds recomputed to match.
+
 ## v2.0.1 - 25 Nov 2026, 11:11am Brisbane (scorer fix; no coefficient changes)
 - Fault: the Queensland pre-race scorer (prerace/score_prerace.py) never attached the national dynamic rating to history rows,
   so its development spread was blank and every live value was set to 0. Live Queensland ratings from 24 Nov to 25 Nov 11:11am

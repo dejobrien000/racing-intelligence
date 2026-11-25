@@ -66,5 +66,23 @@
   "Races already started are never re-rated.",
   "OPEN = TAB fixed prices collected 20:53-20:57 UTC on 24 Nov (7:30am collection); no replacement opening prices.",
   "Prices are display and evaluation only; never model inputs."
+ ],
+ "revisions": [
+  {
+   "utc": "2026-11-25T02:06:54.413934+00:00",
+   "what": "Engine v2.0.2: displayed win chances use the bent-line calibration (approved by Damo 12:05pm, before any race). Ratings, rankings, selections and paper returns unchanged.",
+   "calibration_file": {
+    "file": "benchmarks/engine_v2/runner_calibration_v2.json",
+    "sha256": "40012757358a302a903b4d38d81620bec7cc82b2e6cc4c07d4df2f43182b84ea"
+   },
+   "dashboard_day_file": {
+    "file": "ui/data/racing_2026-11-25.json",
+    "sha256": "431a121fe3a655eeaeab4a057471a9618f42a8d0b7abb402762f175ca2f5bffb"
+   },
+   "daily_ranking": {
+    "file": "prospective/daily/20261125/ranking_v2_20261125T020654Z_runners.csv",
+    "sha256": "976e2efbed8228590f58008aa5da97b873f38223b70e2b0ee099c372184cb995"
+   }
+  }
  ]
 }
