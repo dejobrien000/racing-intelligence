@@ -1,0 +1,2 @@
+{"national_states": ["NSW", "VIC", "ACT"],
+ "note": "States whose Breednet history feeds the national rating (national.py). SA, WA and TAS are added only by a deliberate database release."}

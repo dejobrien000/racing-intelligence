@@ -1,34 +1,53 @@
 name: weekly-master-db
-# ONE weekly incremental update of the master database (branch db). Manual until the collectors are ported
-# (research/ops/weekly_update.py says what is done); the Monday schedule is switched on once a dry run passes.
+# ONE weekly incremental update of the master database (branch db; the previous version is kept on db-prev).
+# Schedule: Monday 3:00am Brisbane (Sunday 17:00 UTC; GitHub may start it late, which is harmless: dates are worked out
+# in Brisbane time at run time). A push to research/ops/weekly_dryrun.txt runs a dry run (no publish) and saves the
+# report to branch ci-results. Only one collector job runs at a time (shared concurrency group with the backfills).
 on:
+  schedule:
+    - cron: '0 17 * * 0'
   workflow_dispatch:
     inputs:
       dry_run: {description: 'Do not publish a new database version', default: 'true'}
+  push:
+    branches: [main]
+    paths: ['research/ops/weekly_dryrun.txt']
 permissions:
   contents: write
+concurrency: { group: breednet-collect, cancel-in-progress: false }
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 300
+    env:
+      PUBLISH: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == 'false') }}
     steps:
       - uses: actions/checkout@v4
-      - name: Restore current master database
-        run: |
-          git fetch --depth 1 origin db && git worktree add /tmp/db origin/db
-          python3 -c "import json,hashlib;m=json.load(open('/tmp/db/MANIFEST.json'));[exec('assert hashlib.sha256(open(\"/tmp/db/\"+p[\"file\"],\"rb\").read()).hexdigest()==p[\"sha256\"]') for p in m['parts']];print(m['version'])"
-          cat /tmp/db/master_db.tar.gz.part* | tar -xzf - -C .
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - run: pip install pandas numpy duckdb pyarrow scipy statsmodels scikit-learn requests lxml
-      - name: Incremental update (new or corrected records only)
-        run: cd research && python3 ops/weekly_update.py
-      - name: Publish new version (keeps previous on db-prev)
-        if: ${{ inputs.dry_run != 'true' }}
+      - run: pip install -q pandas numpy duckdb pyarrow scipy statsmodels requests beautifulsoup4 lxml
+      - name: Restore current master database (branch db, checksums verified)
         run: |
-          V=master-$(python3 -c "import duckdb;print(duckdb.connect('history/history.duckdb',read_only=True).execute('select max(meeting_date) from bn_meeting').fetchone()[0])")
-          git push origin origin/db:refs/heads/db-prev --force
-          mkdir /tmp/new && tar -czf - history/history.duckdb research/*.parquet research/engine/frames/national.parquet | split -b 45m -d -a 2 - /tmp/new/master_db.tar.gz.part
-          cd /tmp/new && python3 -c "import json,hashlib,glob,os;json.dump({'version':'$V','parts':[{'file':os.path.basename(p),'sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()} for p in sorted(glob.glob('master_db.tar.gz.part*'))]},open('MANIFEST.json','w'),indent=1)"
-          git init -q -b db && git add -A && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -q -m "$V"
-          git push -f https://x-access-token:${{ github.token }}@github.com/${{ github.repository }} db
+          git fetch -q --depth 1 origin db:db && mkdir -p /tmp/db && git --work-tree=/tmp/db checkout db -- . && git reset -q
+          python3 -c "import json,hashlib;m=json.load(open('/tmp/db/MANIFEST.json'));[exit('sha mismatch '+p['file']) for p in m['parts'] if hashlib.sha256(open('/tmp/db/'+p['file'],'rb').read()).hexdigest()!=p['sha256']];print('restored',m['version'])"
+          cat /tmp/db/master_db.tar.gz.part* | tar -xzf - -C "$GITHUB_WORKSPACE"
+          mkdir -p research/out
+      - name: Incremental update + rebuild + checks
+        run: cd research && python3 ops/weekly_update.py
+      - name: Save report to ci-results
+        if: always()
+        run: |
+          mkdir -p /tmp/out/weekly-db && cp research/ops/weekly_report.md /tmp/out/weekly-db/ 2>/dev/null || echo "no report" > /tmp/out/weekly-db/weekly_report.md
+          cd /tmp/out && git init -q && git checkout -q -b ci-results && git add -A && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "weekly db report $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" ci-results
+      - name: Publish new version (previous kept on db-prev)
+        if: env.PUBLISH == 'true' && hashFiles('research/ops/weekly_publish_enabled') != ''   # publishing switched on only after a dry run passes
+        run: |
+          V=$(cat research/ops/weekly_version.txt)
+          AUTH="$(git config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf origin refs/heads/db:refs/heads/db-prev
+          mkdir -p /tmp/new && tar -czf - history/history.duckdb research/*.parquet research/engine/frames/national.parquet research/engine/frames/national_v3.parquet | split -b 45m -d -a 2 - /tmp/new/master_db.tar.gz.part
+          cd /tmp/new && python3 -c "import json,hashlib,glob,os,datetime;json.dump({'version':'$V','created_utc':datetime.datetime.utcnow().isoformat()+'Z','contents':['history/history.duckdb','research/*.parquet','research/engine/frames/national.parquet','research/engine/frames/national_v3.parquet'],'restore':'cat master_db.tar.gz.part* | tar -xzf - (from the repository root)','parts':[{'file':os.path.basename(p),'bytes':os.path.getsize(p),'sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()} for p in sorted(glob.glob('master_db.tar.gz.part*'))]},open('MANIFEST.json','w'),indent=1)"
+          git init -q && git checkout -q -b db && git add -A && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "$V"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" db
