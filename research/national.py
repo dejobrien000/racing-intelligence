@@ -8,12 +8,13 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.linalg import lsqr
 from clogit_tools import prep, fit, score, fit_pct, boot_diff
 db = sys.argv[1]; SPLIT = sys.argv[2] if len(sys.argv) > 2 else '2025-01-01'
+import os; NAT_STATES = os.environ.get('NAT_STATES', 'NSW,VIC,ACT').split(',')   # SA/WA/TAS added only by a deliberate database release
 con = duckdb.connect(db, read_only=True)
 slug = lambda t: re.sub(r'[^a-z0-9]+', '-', str(t).lower().replace('&', 'and').replace('_', ' ')).strip('-')
 alias = {'caulfield-heath': 'caulfield', 'sandown-hillside': 'sandown', 'sandown-lakeside': 'sandown', 'randwick-kensington': 'randwick', 'kensington': 'randwick',
          'the-valley': 'moonee-valley', 'beaumont-newcastle': 'newcastle', 'newcastle-beaumont': 'newcastle', 'wagga-wagga': 'wagga', 'rosehill-gardens': 'rosehill',
          'pakenham-synthetic': 'pakenham', 'ballarat-synthetic': 'ballarat', 'geelong-synthetic': 'geelong', 'sunshine-coast-poly-track': 'sunshine-coast'}
-METRO = {'eagle-farm', 'doomben', 'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown'}
+METRO = {'eagle-farm', 'doomben', 'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown', 'morphettville', 'morphettville-parks', 'ascot', 'belmont'}   # SA/WA metro added 25 Nov 2026 (no effect on NSW/Vic/ACT rows)
 PROV = {'sunshine-coast', 'gold-coast', 'ipswich', 'toowoomba', 'newcastle', 'kembla-grange', 'hawkesbury', 'wyong', 'gosford', 'canberra', 'pakenham', 'ballarat',
         'geelong', 'cranbourne', 'bendigo', 'mornington', 'kilmore', 'seymour', 'sale', 'werribee', 'yarra-valley', 'moe', 'warrnambool', 'illawarra-grange'}
 nk = lambda s: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s).upper()))
@@ -27,7 +28,7 @@ Q = pd.DataFrame({'state': 'QLD', 'venue': q.track.map(lambda t: alias.get(slug(
                   'q_race_id': q.race_id, 'q_horse_id': q.horse_id})   # Qld keys carried through for linking only
 B = con.execute("""select m.state, m.bf_track_slug venue, u.meeting_date date, u.race_no, r.distance_m, r.race_time_s, r.going, u.finish_pos, u.margin_l, u.weight_kg,
                    u.name_key horse, r.class class_label from bn_runner u join bn_meeting m using (meeting_date, slug) join bn_race r using (meeting_date, slug, race_no)
-                   where m.state in ('NSW','VIC','ACT') and not r.is_trial""").fetchdf()
+                   where m.state in (""" + ','.join(f"'{x}'" for x in NAT_STATES) + """) and not r.is_trial""").fetchdf()
 B['venue'] = B.venue.map(lambda s: alias.get(s, s)); B['date'] = pd.to_datetime(B.date); B['horse'] = B.horse.map(nk)
 B['bm'] = B.class_label.str.extract(r'Benchmark (\d+)', expand=False).astype(float); B['barrier'] = np.nan; B['settle_rel'] = np.nan
 B['class_label'] = B.class_label.str.extract(r'^(Maiden|Benchmark|Class|Open|Restricted|Group|Listed)', expand=False).fillna('Other')

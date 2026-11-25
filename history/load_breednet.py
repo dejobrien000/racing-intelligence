@@ -5,7 +5,9 @@ No prices are stored: any text after the weight is dropped, and the loader refus
 Latest record per key wins (by retrieved_utc). Checks go to out/checks_breednet.csv."""
 import sys, os, re, glob, gzip, json, duckdb, pandas as pd, numpy as np
 
-folder, db = sys.argv[1], sys.argv[2]
+folder, db = sys.argv[1], sys.argv[2]; INCR = '--incremental' in sys.argv   # incremental: only meetings in the new bundles are replaced
+VMP = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'collect', 'weekly', 'venue_states.json')
+VM = json.load(open(VMP)) if os.path.exists(VMP) else {}   # slug -> [state, venue] for venues Betfair does not name the same way
 best = {}
 for f in sorted(glob.glob(os.path.join(folder, 'racing_breednet_*.jsonl.gz'))):
     with gzip.open(f, 'rt', encoding='utf-8') as fh:
@@ -33,8 +35,8 @@ def secs(t):
     return (int(m.group(1) or 0) * 60 + float(m.group(2))) if m else None
 M, R, U = [], [], []
 for nk, (stamp, v, src) in best.items():
-    s = v['slug']; st = state_of.get(bf_slug(s))
-    M.append({'meeting_date': v['date'], 'slug': s, 'bf_track_slug': bf_slug(s), 'state': st, 'title': v.get('meeting'), 'n_races': len(v.get('races', [])), 'retrieved_utc': v.get('retrieved_utc'), 'bundle': src})
+    s = v['slug']; st = state_of.get(bf_slug(s)) or (VM.get(s) or [None])[0]
+    M.append({'meeting_date': v['date'], 'slug': s, 'bf_track_slug': bf_slug(s) if state_of.get(bf_slug(s)) or s not in VM else VM[s][1], 'state': st, 'title': v.get('meeting'), 'n_races': len(v.get('races', [])), 'retrieved_utc': v.get('retrieved_utc'), 'bundle': src})
     for r in v.get('races', []):
         tm = re.match(r'^\s*([\d:.]+)\s*(?:\(([\d.]+)\))?', r.get('time') or '')
         g = re.match(r'^\s*([A-Za-z]+)\s*\(?(\d+)?', r.get('track_cond') or '')
@@ -57,9 +59,19 @@ for nk, (stamp, v, src) in best.items():
                       'horse': x.get('horse'), 'name_key': re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', x.get('horse') or '').upper().replace("'", '').strip(),
                       'weight_kg': float(w) if re.match(r'^\d+(\.\d+)?$', w) else None, 'jockey': x.get('jockey'), 'trainer': x.get('trainer'),
                       'age': x.get('age'), 'sex': x.get('sex'), 'sire': x.get('sire'), 'dam': dam, 'damsire': ds})
+keys = pd.DataFrame([{'meeting_date': m['meeting_date'], 'slug': m['slug']} for m in M]); keys['meeting_date'] = pd.to_datetime(keys.meeting_date).dt.date
 for name, rows in [('bn_meeting', M), ('bn_race', R), ('bn_runner', U)]:
     df = pd.DataFrame(rows); df['meeting_date'] = pd.to_datetime(df['meeting_date']).dt.date
-    con.execute(f'drop table if exists {name}'); con.register('df', df); con.execute(f'create table {name} as select * from df'); con.unregister('df')
+    if INCR:   # replace only these meetings; every other row stays as it was
+        con.register('k', keys); before = con.execute(f'select count(*) from {name}').fetchall()[0][0]
+        con.execute(f'delete from {name} t using k where t.meeting_date = k.meeting_date and t.slug = k.slug')
+        cols = [c for c in con.execute(f'describe {name}').fetchdf().column_name]
+        for c in cols:
+            if c not in df: df[c] = None
+        con.register('df', df[cols]); con.execute(f'insert into {name} select * from df'); con.unregister('df'); con.unregister('k')
+        after = con.execute(f'select count(*) from {name}').fetchall()[0][0]; print(name, 'rows before', before, 'after', after, '| replaced or added', len(df))
+    else:
+        con.execute(f'drop table if exists {name}'); con.register('df', df); con.execute(f'create table {name} as select * from df'); con.unregister('df')
 
 checks = []
 def add(cid, what, expect, got, status): checks.append({'check': cid, 'what': what, 'expected': expect, 'got': got, 'status': status})
