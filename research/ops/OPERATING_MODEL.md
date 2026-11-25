@@ -70,3 +70,14 @@ So CLOSE (final fixed price with the results) may not be readable at 7:30 next m
   rating, Qld ages) + Engine v2.1.1 (Qld model refitted; scale moved 3%). Approved by Damo ("refit tonight, live tomorrow"). db-prev =
   master-2026-11-23-sa-wa-tas. Weekly job: publishing ON (first GitHub dry run passed every check); collects QLD too.
 - Local working copy (this chat): switches to the final database at 11:30pm and syncs code at 11:35pm, after the 25 Nov settlement.
+
+## Production from the 26 Nov 2026 run (recorded 25 Nov evening)
+- NSW/Vic/ACT/SA/WA/Tas: Engine v2.2, weight carried (allocated minus apprentice claim, claim taken off once). Qld: Engine v2.1.1, allocated
+  weight (its history is allocated too). Database master-2026-11-23-sa-wa-tas-qld. Each meeting's record in the day file names its engine release.
+- Dashboard: first-starter / no-demonstrated-rating labels and a race Data confidence line (display only).
+- Shadow (NOT LIVE): Qld Engine v2.1.2-candidate scored after publishing (DAILY_RUN step 5a, ops/run_shadow.sh) into prospective/shadow/qld_v2_1_2
+  with its own index; never on the dashboard, never settled or ranked. A shadow failure is a warning, never a failed run.
+- Prospective evaluation ledger (observational): outputs/prospective_eval.csv, one row per race per prediction set (production, shadow) after
+  settlement (ops/evaluate_prospective.py, run by run_daily.sh). Reads saved predictions and results only; races from 26 Nov flagged untouched.
+- Weekly job: TAB form records staged into the master database (history/load_form_staging.py: stg_form_runner, stg_form_start, stg_career,
+  stg_form_check). Research only; never a release check; never a rating input.
