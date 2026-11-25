@@ -5,6 +5,10 @@ website HTML instead of data to GitHub's servers (probe/results.txt, 24 Nov 23:2
 browser. Claude's fetch tool gets the data, so the daily run lives there; GitHub holds the code, the master database
 (branch `db`) and every output, and runs the weekly database update.
 
+TAB ACCESS (tested 25 Nov): scheduled sessions have no direct WebFetch tool, and the fetch agent's per-URL approval
+goes unanswered at 7:30am. Until Damo's approval of api.beta.tab.com.au holds for unattended runs, expect the STOP RULE
+below to trigger; see OPERATING_MODEL.md "TAB access status" for the interim run.
+
 STOP RULE: if any WebFetch returns PROVENANCE_REQUIRED ("permission request ... not answered"), do not try any further
 URLs: write the log, commit it, and finish with "ATTENTION: TAB fetch needs approval". Never fall back to curl/Python for TAB.
 
