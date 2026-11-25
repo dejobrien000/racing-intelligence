@@ -57,3 +57,11 @@ So CLOSE (final fixed price with the results) may not be readable at 7:30 next m
   replaces a waiting one, so dry runs are started only when no backfill is waiting.
 - SA, WA and Tas join the national rating only by a deliberate database release (ops/db_config.json), after Damo sees
   the evaluation.
+
+## Database releases
+- 25 Nov 2026 2:20pm: master-2026-11-23-sa-wa-tas on branch db (previous master-2026-11-23 on db-prev). SA, WA and Tas
+  history in the national rating; SA/WA/Tas meetings rated from the 26 Nov 7:30am run (ops/db_config.json). Approved by
+  Damo 2:15pm. Evidence and roll-back: research/benchmarks/engine_v2/RELEASES.md. This chat's local copy switches after
+  tonight's 25 Nov settlement (reminder 11:30pm).
+- Prepared, not released: Breednet Queensland country meetings (switch NAT_QLD_BN in national.py, off). Needs the Qld
+  backfill (running on GitHub) and an evaluation shown to Damo first.
