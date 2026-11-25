@@ -212,7 +212,7 @@ for track, grp in v2rows.groupby('track', sort=False):
 import glob
 CAL = json.load(open(f'collect/national/{D}/calendar.json')) if os.path.exists(f'collect/national/{D}/calendar.json') else {'meetings': []}
 FO = sorted(glob.glob(f'collect/national/{D}/fields_*.json')); rated_names = {m['name'] for m in meetings}
-REASON = {'SA': 'We hold no South Australian results history yet', 'WA': 'We hold no Western Australian results history yet', 'TAS': 'We hold no Tasmanian results history yet', 'NT': 'We hold no Northern Territory results history yet'}
+REASON = {'NT': 'We hold no Northern Territory results history yet'}   # SA, WA, TAS history added 25 Nov 2026 (database master-2026-11-23-sa-wa-tas); unrated meetings there fall back to the general reason
 if FO:
     for name, s_ in json.load(open(FO[-1])).items():
         if name in rated_names: continue
@@ -228,7 +228,7 @@ if FO:
             races_.append({'no': int(rn), 'name': clean_name(fr.race_name), 'class': fr.get('class_text'), 'distance_m': int(fr.distance_m), 'time': t_local, 'tz': tz_, 'time_brisbane_min': t_bris,
                            'field': len(act), 'label': 'Not rated', 'coverage': {'runners': len(act), 'with_history': cov}, 'runners': rr})
         meetings.append({'id': name.lower(), 'name': name, 'state': s_['state'], 'tz': tz_, 'rated': False, 'status': 'fields only',
-                         'reason': REASON.get(s_['state'], 'Too few of these horses have runs in our history') + ". Most of these horses' recent runs are local, so ratings built only from their NSW, Vic or Qld runs would miss their latest form. The races are shown with full fields but are not rated. Each race shows how many runners have any history with us.",
+                         'reason': REASON.get(s_['state'], 'Too few of these horses have runs in our history') + ". The races are shown with full fields but are not rated. Each race shows how many runners have any history with us.",
                          'notes': ['Fields source: ' + s_['source'] + '.', 'Emergencies are not labelled by this source: runners listed after the weight-ordered field are shown as probable emergencies.'],
                          'conditions': {'going': None}, 'races': races_,
                          'snapshots': [{'id': s_['retrieved_utc'], 'label': 'Fields only (not rated)', 'kind': 'fields-only', 'fields_captured_utc': s_['retrieved_utc']}], 'default_snapshot': s_['retrieved_utc']})

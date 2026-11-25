@@ -37,7 +37,8 @@ def base_frame():
     qa = br.merge(bm[bm.state == 'QLD'][['date', 'slug']].drop_duplicates(), on=['date', 'slug']).drop_duplicates(['date', 'horse'])[['date', 'horse', 'age', 'sex']].rename(columns={'age': 'qage', 'sex': 'qsex'})
     U = U.merge(qa, on=['date', 'horse'], how='left')
     U['age'] = U.age.fillna(U.qage); U['sex'] = U.sex.fillna(U.qsex)
-    U['jkey'] = np.where(U.state == 'QLD', U.jockey.map(person_key), U.bj.map(person_key)); U['tkey'] = np.where(U.state == 'QLD', U.trainer.map(person_key), U.bt.map(person_key))
+    rqrow = (U.state == 'QLD') & U.q_race_id.notna()   # RQ-tracked rows use RQ jockey/trainer; any other row (incl. Breednet Qld country meetings) uses Breednet's
+    U['jkey'] = np.where(rqrow, U.jockey.map(person_key), U.bj.map(person_key)); U['tkey'] = np.where(rqrow, U.trainer.map(person_key), U.bt.map(person_key))
     gw = U.going.fillna(U.cond_group).astype(str).str.lower()
     U['gband'] = np.select([gw.str.contains('heavy'), gw.str.contains('soft'), gw.str.contains('synth|poly|awt')], ['heavy', 'soft', 'synthetic'], 'good')
     U['dband'] = pd.cut(U.distance_m, [0, 1150, 1450, 1750, 9999], labels=['s', 'm', 'mi', 'l']).astype(str)

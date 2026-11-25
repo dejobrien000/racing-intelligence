@@ -32,6 +32,19 @@ B = con.execute("""select m.state, m.bf_track_slug venue, u.meeting_date date, u
 B['venue'] = B.venue.map(lambda s: alias.get(s, s)); B['date'] = pd.to_datetime(B.date); B['horse'] = B.horse.map(nk)
 B['bm'] = B.class_label.str.extract(r'Benchmark (\d+)', expand=False).astype(float); B['barrier'] = np.nan; B['settle_rel'] = np.nan
 B['class_label'] = B.class_label.str.extract(r'^(Maiden|Benchmark|Class|Open|Restricted|Group|Listed)', expand=False).fillna('Other')
+if os.environ.get('NAT_QLD_BN', '0') == '1':   # Breednet Qld meetings NOT covered by RQ tracking (country meetings, pre-tracking gaps); off until a database release
+    BQ = con.execute("""select m.state, m.bf_track_slug venue, u.meeting_date date, u.race_no, r.distance_m, r.race_time_s, r.going, u.finish_pos, u.margin_l, u.weight_kg,
+                        u.name_key horse, r.class class_label from bn_runner u join bn_meeting m using (meeting_date, slug) join bn_race r using (meeting_date, slug, race_no)
+                        where m.state = 'QLD' and not r.is_trial""").fetchdf()
+    BQ['venue'] = BQ.venue.map(lambda s: alias.get(s, s)); BQ['date'] = pd.to_datetime(BQ.date); BQ['horse'] = BQ.horse.map(nk)
+    BQ['bm'] = BQ.class_label.str.extract(r'Benchmark (\d+)', expand=False).astype(float); BQ['barrier'] = np.nan; BQ['settle_rel'] = np.nan
+    BQ['class_label'] = BQ.class_label.str.extract(r'^(Maiden|Benchmark|Class|Open|Restricted|Group|Listed)', expand=False).fillna('Other')
+    qm = set(Q.date.dt.strftime('%Y-%m-%d') + '|' + Q.venue); BQ['mid'] = BQ.date.dt.strftime('%Y-%m-%d') + '|' + BQ.venue
+    # safety net: a Breednet meeting sharing most of its horses with a same-day RQ meeting is the same meeting under another name
+    ov = BQ[~BQ.mid.isin(qm)].merge(Q[['date', 'horse']].drop_duplicates(), on=['date', 'horse']).groupby('mid').size() / BQ.groupby('mid').size()
+    same = set(ov[ov >= 0.5].index); keep = ~BQ.mid.isin(qm) & ~BQ.mid.isin(same)
+    print('Breednet Qld meetings:', BQ.mid.nunique(), '| already RQ-tracked:', BQ[BQ.mid.isin(qm)].mid.nunique(), '| same horses as an RQ meeting:', len(same), '| added:', BQ[keep].mid.nunique())
+    B = pd.concat([B, BQ[keep].drop(columns='mid')], ignore_index=True)
 U = pd.concat([Q, B], ignore_index=True)
 U = U[~U.class_label.fillna('').str.contains('Hurdle|Steeple')]
 U['race'] = U.state + '|' + U.venue + '|' + U.date.dt.strftime('%Y-%m-%d') + '|' + U.race_no.astype(str)
