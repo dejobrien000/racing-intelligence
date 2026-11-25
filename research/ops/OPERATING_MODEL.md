@@ -31,6 +31,8 @@ Racing Queensland, Racing NSW FreeFields, Breednet and racing.com all answer the
 database update can run fully on GitHub. TAB prices need Damo's approval of api.beta.tab.com.au (asked 25 Nov 10:15).
 Not done, by rule: no browser-header impersonation, no proxies, no other price sources.
 
+26 Nov 8:27am (Damo): the daily run now wakes this build conversation at 7:30am, plus an 11:20pm evening capture, as chained
+one-shot reminders (DAILY_RUN.md "WHERE IT RUNS"); the fresh-session task trig_011FEpTKDVAUA5SMkv9EBkQS is switched off.
 Interim daily run: if the 7:33 scheduled run logs "ATTENTION: TAB fetch needs approval", run DAILY_RUN.md in the build
 conversation (session_01TcfAeuNwdADDxa3cwHWiRz) when its 7:35 reminder arrives; the leftover 7:45/7:50/8:20 reminders
 there are superseded (old PC-based cycle) and are ignored.
