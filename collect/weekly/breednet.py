@@ -171,7 +171,7 @@ def main():
     out.close(); stats['finished_utc'] = now()
     json.dump({**stats, 'log': LOG}, open(outp.replace('.jsonl.gz', '') + '.stats.json', 'w'), indent=1)
     print(json.dumps({k: v for k, v in stats.items() if k != 'unknown_venues'}))
-    if stats['unknown_venues']: print('venues with no state (not collected):', ', '.join(sorted(stats['unknown_venues'])))
+    if stats.get('unknown_venues'): print('venues with no state (not collected):', ', '.join(sorted(stats['unknown_venues'])))
     sys.exit(2 if stats['captcha'] else 0)
 
 if __name__ == '__main__': main()

@@ -7,7 +7,7 @@ on:
     paths: ['collect/weekly/**', '.github/workflows/weekly-test.yml']
 permissions:
   contents: write
-concurrency: { group: weekly-db, cancel-in-progress: false }
+concurrency: { group: breednet-collect, cancel-in-progress: false }   # one Breednet client at a time
 jobs:
   test:
     runs-on: ubuntu-latest
