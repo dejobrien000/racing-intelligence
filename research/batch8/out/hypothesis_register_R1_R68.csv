@@ -1,0 +1,69 @@
+id,category,hypothesis,factors,data,priority,status,n
+R15,Ability and ratings,The top-rated runner on rating v0 (best of last 3) wins more than its field implies,"Pre-race figure · against form, weight and class baselines","Q, NV",1,Supported (exploratory),15
+R17,Ability and ratings,The best of the last three figures predicts the next run better than last start's figure alone,"Last, best and average figure · figure × days since","Q, NV",1,Rejected,17
+R18,Ability and ratings,A figure earned against stronger opposition carries further than the same figure in a weak race,"Figure, field strength · figure × field strength","Q, NV",2,Supported (exploratory),18
+R19,Ability and ratings,"After a career-best figure a horse tends to fall back next start, unless it is young and lightly raced","Figure vs own best, age, starts · improvement × age × starts",Q,2,Untested,19
+R20,Ability and ratings,"Once track and going are allowed for, winners of the same benchmark run the same figure in Queensland, NSW and Victoria","Benchmark, state, venue tier, going · benchmark × state",NV,1 (after backfill),Untested,20
+R21,Ability and ratings,Prize money measures class better than the race's class label,"Prize, class label, state",NV,3,Untested,21
+R8,Sectionals,A beaten horse with the race's fastest last 600m wins more next start,"L600 rank, margin · with class, pace, figure held steady","Q, S",1,Supported (exploratory),8
+R9,Sectionals,That edge grows when stepping up 200m+,"L600 rank × distance change × class move, tempo, figure, race strength","Q, S",1,Watch,9
+R14,Sectionals,Closing speed matters more on a step up,L600 gap to the race's best × distance change,"Q, S",1,Open,14
+R22,Sectionals,A fast last 600m means more when the early pace was strong than when it was slow,L600 rank × early tempo,"Q, S",1,Watch,22
+R23,Sectionals,The last 200m alone adds information beyond the last 600m,"L200 rank, L600 rank · L200 × L600","Q, S",2,Rejected,23
+R24,Sectionals,Horses that finish fast relative to their own early speed suit a rise in distance; horses that fade suit a drop,Finishing speed % × distance change,"Q, S",2,Untested,24
+R25,Sectionals,"A beaten horse's fast closing sectional predicts a better figure next start, not just a win",L600 rank · outcome = figure change,"Q, S",1,Open,25
+R6,Pace and race shape,"Leaders' edge is biggest in short sprints at Ipswich, Toowoomba and Cannon Park","Settling position, track, distance","Q, NV",3,Open,6
+R7,Pace and race shape,Run style carries from one start to the next,Settling position last start,"Q, NV",3,Validated,7
+R26,Pace and race shape,A horse that settled back in a slowly-run race and still closed well improves next start,Settle × tempo × L600 rank,Q,2,Untested,26
+R27,Pace and race shape,A leader beaten narrowly after a fast early tempo runs well next start,Led × tempo × margin,Q,2,Untested,27
+R28,Pace and race shape,The on-pace advantage shrinks when several habitual leaders are in the race,Prior style × number of habitual leaders,"Q, NV",2,Watch,28
+R29,Pace and race shape,A lone habitual leader wins more than its figure suggests,"Prior style, pace pressure, figure","Q, NV",2,Watch,29
+R13,Track and distance,Ordinary beaten runners stepping up 200m+ underperform next start,"Distance change, margin, field","Q, NV",1,Validated,13
+R30,Track and distance,Past success at the track and distance adds information beyond ability,"Track/distance record, figure","Q, NV",2,Rejected,30
+R31,Track and distance,Going preference is real: a horse's soft and heavy figures predict how it runs when the going changes,Going history × today's going,"Q, NV",2,Rejected,31
+R32,Track and distance,Polytrack form transfers poorly to turf and back,"Surface change, figure",Q,3,Untested,32
+R33,Track and distance,Horses moving from provincial or country to metro underperform beyond what class explains,Venue tier change × class change,"Q, NV",2,Untested,33
+R34,Track and distance,"A horse's figures by distance band show its best trip, and horses moving to it improve","Figure by band, distance change","Q, NV",3,Untested,34
+R1,Barriers and rail,Inside barriers win more across Queensland,Relative barrier,"Q, NV",3,Validated,1
+R2,Barriers and rail,Barrier bias at Doomben 1200m,Barrier × track and distance,Q,3,Rejected,2
+R3,Barriers and rail,Inside edge at Eagle Farm 1800–2100m,Barrier × track and distance,Q,3,Watch,3
+R4,Barriers and rail,Inside edge at Sunshine Coast 1200m and 1400m,Barrier × track and distance,Q,3,Watch,4
+R5,Barriers and rail,Inside edge at Doomben 1110m,Barrier × track and distance,Q,3,Rejected,5
+R16,Barriers and rail,A wide draw costs midfield and back runners most and habitual leaders least,Barrier × prior style × rail,"Q, NV",2,Open,16
+R35,Barriers and rail,The inside edge depends on the run to the first turn,Barrier × track geometry,X,3,Untested,35
+R36,Barriers and rail,Rail position changes the draw effect differently at each track,Barrier × rail × track,"Q, NV",2,Untested,36
+R37,Barriers and rail,Part of the inside edge is ground saved; allowing for ground covered shrinks it,"Barrier, ground covered (mediation)",Q,2,Untested,37
+R38,Class and benchmark,A horse dropping in class after a good figure wins more than the figure alone suggests,Class change (kg) × figure,"Q, NV",2,Untested,38
+R39,Class and benchmark,A last-start winner rising in class underperforms,Won last × class rise,"Q, NV",2,Untested,39
+R40,Class and benchmark,The change in field strength explains next-start results better than the change in class label,Label change vs field-strength change,"Q, NV",2,Watch,40
+R41,Weight,"A drop of 2kg or more from last start improves the next run, once class change is allowed for",Weight change × class change,"Q, NV",1,Rejected,41
+R42,Weight,Weight matters more over longer distances,Weight × distance,"Q, NV",2,Untested,42
+R43,Weight,Apprentice claims are worth the weight they save,"Claim, weight, rider",NV,3,Untested,43
+R11,Fitness and preparation,14–27 days between runs is the best spacing; 241+ days the worst,"Days since · × class, trainer","Q, NV",2,Open,11
+R12,Fitness and preparation,Horses improve second-up,Run in preparation · class held steady,"Q, NV",3,Rejected,12
+R44,Fitness and preparation,First-up runners with a barrier trial in the last three weeks outperform those without,Trial recency × days since,"NV, X",2,Untested,44
+R45,Fitness and preparation,Figures fall away late in a long preparation once class is held steady,Run in preparation × class,Q,3,Open,45
+R46,Fitness and preparation,"A quick back-up (10 days or less) after a hard, close run costs performance",Days since × last margin × last figure,"Q, NV",2,Untested,46
+R10,Ground covered,A wide trip (8m+ extra) is an excuse that shows next start,"Ground covered extra, margin",Q,2,Watch,10
+R47,Ground covered,A wide trip matters most when combined with a fast closing sectional,Ground extra × L600 rank,Q,2,Untested,47
+R48,Ground covered,Even 200m splits beat uneven splits at the same overall time,"Split variance, figure","Q, S",3,Untested,48
+R49,Weight,A weight rise from last start signals improving form that our figure misses (the handicapper's information); a drop signals decline,Weight change × figure × class move · added to the rating as a form input,"Q, NV",2,Open (from batch 1),49
+R50,Interactions (Batch 6),Pace-corrected figure × last-start surprise: a strong PA1 horse that just beat its rating is under-rated,rec_rating_pa1 × surprise_last,Qld tracked,High,Frozen for future-race test (Batch 6: passed discovery + 2025–26). No direct NSW/Vic analogue (no sectionals),50
+R51,Interactions (Batch 6),Pace-corrected figure × rating trajectory,rec_rating_pa1 × dyn_traj,Qld tracked,High,Frozen for future-race test (Batch 6),51
+R52,Interactions (Batch 6),Course record × PA1 figure × metro,c_rec × rec_rating_pa1 × metro,Qld tracked,Medium,Frozen for future-race test (Batch 6),52
+R53,Interactions (Batch 6),Figure trajectory × last-start surprise,fig_traj × surprise_last,Qld tracked,Medium,Frozen for future-race test (Batch 6),53
+R54,Interactions (Batch 6),Last-start surprise matters more at metro meetings,surprise_last × metro,Qld tracked,Medium,Frozen (Batch 6). NSW/Vic: last-start surprise main effect is negative (Batch 7) - does not replicate,54
+R55,Interactions (Batch 6),Last-start surprise matters more over 1400m+,surprise_last × route,Qld tracked,Medium,Frozen (Batch 6). Not replicated in NSW/Vic,55
+R56,Interactions (Batch 6),Average figure × rating trajectory,a_avg3 × dyn_traj,Qld tracked,Low,Frozen (Batch 6). NSW/Vic analogue (dyn_traj × a_rec) nil,56
+R57,Jockey & trainer,A trainer's runners consistently beat (or miss) their ratings; that tendency carries forward,t_surp (shrunk mean surprise of earlier runners),National + Qld,High,PASSED (Batch 7): +0.0214/race out-of-sample; holds with 28-day lag. In engine v2,57
+R58,Jockey & trainer,A jockey's mounts consistently beat (or miss) their ratings,j_surp,National + Qld,High,PASSED (Batch 7): +0.0163/race. In engine v2,58
+R59,Jockey & trainer,Particular jockey-trainer combinations do better than either alone,jt_surp,National + Qld,Medium,PASSED (Batch 7): overlaps R57/R58; in engine v2,59
+R60,Jockey & trainer,A jockey upgrade from last start improves the run,j_change,National + Qld,Medium,PASSED (Batch 7): +0.0047/race. In engine v2,60
+R61,Horse profile,Older horses run below their rating and 3-year-olds above it (the rating has no age trend),"age, young, old; × Vic, route, wet, field size",National (Breednet age),High,PASSED (Batch 7): +0.0129/race. In engine v2 (NSW/Vic; Qld history lacks age),61
+R62,Horse profile,Mares and fillies run slightly above their ratings,female,National,Low,"PASSED, small (Batch 7). In engine v2",62
+R63,Distance,Big distance changes cost performance beyond the rating,abs and squared log distance change,National,Medium,"PASSED, small (Batch 7). In engine v2",63
+R64,Head-to-head,Earlier results against today's actual rivals add beyond ratings,h2h,National + Qld,Medium,PASSED NSW/Vic (Batch 7); Qld watch list (Batch 6). In NSW/Vic v2,64
+R65,Ability & opposition,Ratings separate horses less in stronger fields,dyn_nat × field strength,National + Qld,Medium,PASSED NSW/Vic (Batch 7); Qld watch list. In NSW/Vic v2 interactions,65
+R66,Ability & opposition,The rating should learn faster after two same-direction surprises (corroborated change),"dynamic rating variance boost, lam tuned on development",National,High,"MIXED (Batch 7): Qld +0.0022/race, NSW/Vic nil. Not released; features used instead",66
+R67,Track & distance,Raw track/distance/going win and start counts add to the Qld model,"t_trk_*, t_db_*, t_td_*, t_going",Qld tracked,Low,FAILED audit (Batch 7): removing the family improves 2025–26 fit (-0.0032). Superseded by horse records; drop in v3,67
+R68,Class,A benchmark step beyond what ratings capture,bm_change,National,Low,FAILED confirmation (Batch 7): negative out-of-sample,68

@@ -1,0 +1,11 @@
+profile,half,runs,horses,this_run_surprise,K_rating_keeps,next_surprise,se,carried
+"(i) on-speed, kicks at 300m, extends",A 2022-24,719,615,4.8695,0.2905,0.0986,0.1902,0.3108
+"(i) on-speed, kicks at 300m, extends",B 2025-26,843,721,5.4254,0.2818,0.5513,0.1607,0.3834
+(ii) holds speed as others tire,A 2022-24,2117,1438,3.2847,0.2838,0.406,0.0925,0.4074
+(ii) holds speed as others tire,B 2025-26,2443,1568,3.4495,0.2811,0.4854,0.0902,0.4219
+"(iii) passes tiring horses, ordinary speed",A 2022-24,1414,1089,0.8274,0.2824,-0.1664,0.125,0.0812
+"(iii) passes tiring horses, ordinary speed",B 2025-26,1576,1220,0.8015,0.2827,-0.0797,0.1164,0.1833
+(iv) late-only kick,A 2022-24,439,394,0.8661,0.299,0.5608,0.241,0.9464
+(iv) late-only kick,B 2025-26,590,526,1.3904,0.2886,0.6626,0.2008,0.7652
+other,A 2022-24,20293,5288,0.0304,0.286,0.0838,0.0343,3.0455
+other,B 2025-26,25251,5862,0.0501,0.287,0.0506,0.0314,1.2965
