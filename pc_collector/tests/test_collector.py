@@ -192,6 +192,9 @@ env = dict(os.environ, RC_HOME=tempfile.mkdtemp(), RC_FAST='1')
 p = subprocess.run([sys.executable, '-I', COLLECTOR, 'selftest'], env=env, capture_output=True, text=True)
 check('missing token -> clear instruction, no crash dump of secrets', 'run install.ps1 again' in (p.stdout + p.stderr))
 
+if os.environ.get('RC_DUMP'):                                  # leave the delivered branch contents for the pc_fetch.py test
+    for k, v in STATE['files'].items():
+        q = os.path.join(os.environ['RC_DUMP'], k); os.makedirs(os.path.dirname(q), exist_ok=True); open(q, 'wb').write(v)
 # 7. crash part-way, then resume: no duplicates, nothing lost (fresh install folder, next day's date reuses fixtures)
 HOMED2 = tempfile.mkdtemp(prefix='rc_home2_'); json.dump({'tab_base': BASE, 'gh_base': BASE}, open(os.path.join(HOMED2, 'config.json'), 'w'))
 def run2(*args, now='2026-11-25T21:30:30Z', extra=None):
