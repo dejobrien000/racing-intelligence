@@ -4,7 +4,12 @@ WHERE IT RUNS (from 27 Nov 2026, set up at Damo's request 26 Nov 8:27am): a recu
 conversation (session_01TcfAeuNwdADDxa3cwHWiRz) at 7:30am Brisbane, because the TAB approval holds there and not in fresh
 scheduled sessions (26 Nov 7:34am run stopped at step 1). The fresh-session task trig_011FEpTKDVAUA5SMkv9EBkQS is switched off,
 not deleted. A second task wakes the same conversation at 11:20pm Brisbane for the EVENING CAPTURE (end of this file).
-Step 5b (form records, ~270 fetches) is skipped in these runs unless Damo asks for it: it would swamp the conversation.
+Step 5b (form records): Damo 26 Nov 8:43am "Go with 1. We need that data" (gear, retrospective and pre-race stewards comments
+will be modelled later). Run it in a BACKGROUND HELPER (Agent tool, general-purpose, run_in_background) right after step 5a,
+so ~300 fetches stay out of this conversation: same URL, verbatim prompt, pacing and file rules as step 5b; the helper writes
+prices/<TODAY>/form_<STAMP>.raw.txt, runs ops/parse_form.py and reports counts only; this conversation then commits. If the
+helper cannot read TAB (STOP RULE), run step 5b here instead. TAB form records carry blinkers (yes/no) and past-start stewards
+comments only: full gear changes and pre-race stewards notes need another source (see DATA_ACCESS notes).
 CHAIN: the wake-ups are one-shot reminders (a repeating schedule cannot be bound to this conversation; tried 26 Nov). FIRST action
 on every wake, before anything else: schedule the next one with send_later, name and message copied from the one that just
 fired (morning: tomorrow 07:30 [Australia/Brisbane]; evening: tomorrow 23:20 [Australia/Brisbane]), initiation human_schedule.
