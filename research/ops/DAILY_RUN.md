@@ -10,11 +10,15 @@ so ~300 fetches stay out of this conversation: same URL, verbatim prompt, pacing
 prices/<TODAY>/form_<STAMP>.raw.txt, runs ops/parse_form.py and reports counts only; this conversation then commits. If the
 helper cannot read TAB (STOP RULE), run step 5b here instead. TAB form records carry blinkers (yes/no) and past-start stewards
 comments only: full gear changes and pre-race stewards notes need another source (see DATA_ACCESS notes).
-CHAIN: the wake-ups are one-shot reminders (a repeating schedule cannot be bound to this conversation; tried 26 Nov). FIRST action
-on every wake, before anything else: schedule the next one with send_later, name and message copied from the one that just
-fired (morning: tomorrow 07:30 [Australia/Brisbane]; evening: tomorrow 23:20 [Australia/Brisbane]), initiation human_schedule.
-First pair: 26 Nov 23:20 evening (trig_01AfaqMLEWLfoJKztmGymZ68), 27 Nov 07:30 morning (trig_01A2N5fibEh61RYASazGE7rr).
-If a wake is missed the chain stops; a run started by hand in this conversation restarts it.
+CHAIN (revised 26 Nov 2026 2pm, Damo: "one missed or interrupted run must not silently terminate all future collection"): the
+wake-ups are one-shot reminders into this conversation (a repeating schedule cannot be bound to it; tried 26 Nov). They are kept
+TWO DAYS AHEAD: FIRST action on every wake, list_triggers and make sure a morning wake (07:30 [Australia/Brisbane]) and an
+evening wake (23:20 [Australia/Brisbane]) exist for each of the next two days, creating only the missing ones with send_later
+(name "Racing daily run <YYYY-MM-DD> (7:30am, this chat)" / "Racing evening capture <YYYY-MM-DD> (11:20pm, this chat)",
+message copied from the one that fired, initiation human_schedule). So one missed or failed wake no longer ends the chain.
+IDEMPOTENT: if research/ops/logs/<TODAY>.md already records today's publish (morning) or collect/national/<TODAY>/results_*
+exists (evening), do nothing else. MONITOR: workflow run-watchdog fails, and GitHub emails Damo, at 08:50 if today's log has no
+publish line or reports ATTENTION, and at 00:45 if the day's evening capture is missing. Status 26 Nov: wakes booked to 29 Nov 07:30.
 
 Runs as a Claude scheduled task in Anthropic's cloud (no PC). Why not GitHub Actions: TAB's racing API returns its
 website HTML instead of data to GitHub's servers (probe/results.txt, 24 Nov 23:21 UTC), and we do not impersonate a
