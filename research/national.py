@@ -65,11 +65,12 @@ for it in range(6):
     r['variant'] = r.meeting_id.map(gm.sum() / (gm.count() + 2))
 r['n_vd'] = r.vd.map(r[r.period == 'development'].groupby('vd').race.count()).fillna(0)
 U = U.merge(r[['race', 'par', 'variant', 'km', 'n_vd']].assign(speed=r.distance_m / r.race_time_s), on='race', how='left')
-spl = 2.4 / U.speed
+spl = (2.4 / U.speed) if not os.environ.get('SPL_FIXED') else float(os.environ['SPL_FIXED'])   # seconds per length (production: 2.4/speed, ~0.143; candidate C2 0.170)
+WC = float(os.environ.get('WCREDIT', '1'))   # weight credit per kg in figures (production 1.0; candidate C2 0.25)
 U['run_time'] = U.race_time_s + U.margin_l.clip(upper=30).fillna(np.nan) * spl
 U.loc[U.finish_pos == 1, 'run_time'] = U.race_time_s
 U['kgpl'] = 1.5 * (1200 / U.distance_m) ** 0.8
-U['fig_w'] = 100 + U.kgpl * ((U.par + U.km * U.variant) - U.run_time) / spl + (U.weight_kg - 57)
+U['fig_w'] = 100 + U.kgpl * ((U.par + U.km * U.variant) - U.run_time) / spl + WC * (U.weight_kg - 57)
 U.loc[(U.n_vd < 8) | U.finish_pos.isna(), 'fig_w'] = np.nan
 # ---------- venue offsets from horses that move between venues within 60 days ----------
 U = U.sort_values(['horse', 'date', 'race_no']).reset_index(drop=True)
@@ -142,6 +143,7 @@ has = U.f_avgfp3.notna(); U['missform'] = (~has).astype(float); U['missfig'] = (
 U['shipper'] = ((U.prev_state.notna()) & (U.prev_state != U.state) & U.gap.between(1, 60)).astype(float)
 U['race_id'] = U.race
 U.to_parquet('national_runs.parquet')
+if os.environ.get('NAT_RUNS_ONLY') == '1': sys.exit(0)   # frame build only; the Batch 3 analyses below are not needed
 F = ['f_avgfp3', 'f_lastfp', 'f_lastlm', 'f_cwin', 'f_lstarts', 'missform']; A = ['a_rec', 'a_best3', 'a_fs3', 'a_wt_rel', 'missfig']; R = ['r_firstup', 'r_7_13', 'r_28_59', 'r_quick', 'r_ldays']   # r_debut left out: outside Qld it duplicates the no-earlier-run flag
 # missing-data rates per state (runners in races of 6+)
 el = U[(U.field >= 6)]

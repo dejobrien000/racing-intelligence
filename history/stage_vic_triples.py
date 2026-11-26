@@ -65,6 +65,7 @@ for f in sorted(glob.glob(os.path.join(PKG, 'original_csv', '*', '*.csv'))):
         p = ln.split(';'); name, cloth = p[0].strip(), p[1].strip()
         trip = [(int(float(p[i])), float(p[i + 1] or 0), secs(p[i + 2])) for i in range(2, len(p) - 2, 3)]
         tracked = any(t and t > 0 for _, _, t in trip)
+        complete = bool(trip) and all(t and t > 0 for _, _, t in trip)   # partial = tracking stops part-way (did not finish, or tracking lost)
         cum, prev = 0.0, 0
         for k, (mark, spd, t) in enumerate(trip, 1):
             seg = mark - prev; d_spd = round(seg / t, 3) if t else None
@@ -78,7 +79,8 @@ for f in sorted(glob.glob(os.path.join(PKG, 'original_csv', '*', '*.csv'))):
         marks = marks or [x[0] for x in trip]
         n_tracked += tracked
         RUN.append({'file': rel, 'race_date': race['race_date'], 'meeting_id': race['meeting_id'], 'race_no': race['race_no'], 'row_order': order,
-                    'horse': name, 'horse_key': nk(name), 'saddlecloth': cloth, 'tracked': int(tracked),
+                    'horse': name, 'horse_key': nk(name), 'saddlecloth': cloth, 'tracked': int(tracked), 'complete': int(complete),
+                    'tracking_status': 'complete' if complete else 'partial (stops part-way)' if tracked else 'none (all times zero)',
                     'total_time_s': round(sum(t for _, _, t in trip if t), 3) if tracked else None, 'sections': len(trip),
                     'last_mark_m': trip[-1][0] if trip else None})
     race.update(runners=len(L) - 1, tracked_runners=n_tracked, sections=len(marks or []), first_section_m=(marks or [None])[0],
@@ -89,7 +91,7 @@ for f in sorted(glob.glob(os.path.join(PKG, 'original_csv', '*', '*.csv'))):
 by_file = defaultdict(list)
 for r in RUN: by_file[r['file']].append(r)
 for race in RACES:
-    rs = [r for r in by_file[race['file']] if r['tracked']]
+    rs = [r for r in by_file[race['file']] if r['complete']]   # fastest and distance checks use complete runs only
     if rs:
         fastest = min(rs, key=lambda r: r['total_time_s'])
         race['fastest_horse'], race['fastest_time_s'] = fastest['horse'], fastest['total_time_s']
@@ -112,7 +114,11 @@ for race in RACES:
     ours = by_file[race['file']]; cand = defaultdict(list)
     for row in bf.get((race['race_date'], race['race_no']), []): cand[row[0]].append(row)
     v = {'file': race['file'], 'race_date': race['race_date'], 'race_no': race['race_no'], 'meeting_label': race['meeting_label']}
-    if race['race_date'] > '2026-10-31': v['status'] = 'outside our Betfair-sourced lists (to 31 Oct)'; VAL.append(v); continue
+    if race['race_date'] > '2026-10-31':
+        v['status'] = 'outside our Betfair-sourced lists (to 31 Oct)'; VAL.append(v)
+        for r in ours:
+            if not r['complete']: r['quarantine_reason'] = 'partial tracking (stops part-way)' if r['tracked'] else 'all times zero; 1-25 Nov, not yet checkable (scratched or untracked)'
+        continue
     best = max(cand.items(), key=lambda kv: len({x[3] for x in kv[1]} & {r['horse_key'] for r in ours}), default=(None, []))
     keys = {x[3]: x for x in best[1]}; tr = [r for r in ours if r['tracked']]; hit = [r for r in tr if r['horse_key'] in keys]
     untr = [r for r in ours if not r['tracked']]
@@ -122,9 +128,14 @@ for race in RACES:
              starters_without_tracking=sum(1 for k in keys if k not in {r['horse_key'] for r in ours}))
     bd = {x[0] for x in best[1]}
     winner = [x for x in best[1] if x[4] in (1, '1', True)]
-    v['bf_winner'] = winner[0][2] if winner else ''
-    v['fastest_is_winner'] = '' if not winner or not race.get('fastest_horse') else int(nk(race['fastest_horse']) == winner[0][3])
+    v['bf_winner'] = ' / '.join(x[2] for x in winner); v['dead_heat'] = int(len(winner) > 1)
+    v['fastest_is_winner'] = '' if not winner or not race.get('fastest_horse') else int(nk(race['fastest_horse']) in {x[3] for x in winner})
+    v['winning_margin_tracked_s'] = race.get('winning_margin_s')
     v['status'] = 'no matching race' if not hit else 'all tracked runners found' if len(hit) == len(tr) else 'some tracked runners not found'
+    for r in ours:
+        if not r['complete']: r['quarantine_reason'] = ('partial tracking (stops part-way)' if r['tracked'] else
+            'all times zero; in the official field: ran without tracking' if r['horse_key'] in keys else 'all times zero; not in the official field: scratched') if hit else \
+            ('partial tracking (stops part-way)' if r['tracked'] else 'all times zero; race not in our reference lists')
     VAL.append(v)
 
 def dump(name, rows):
@@ -132,12 +143,13 @@ def dump(name, rows):
     with open(os.path.join(OUT, name), 'w', newline='', encoding='utf-8') as fh:
         w = csv.DictWriter(fh, fieldnames=cols); w.writeheader(); w.writerows(rows)
 for n, rows in [('races.csv', RACES), ('runners.csv', RUN), ('sections.csv', SEC), ('validation.csv', VAL)]: dump(n, rows)
+Q = [r for r in RUN if not r['complete']]; dump('quarantine_runners.csv', Q)   # kept with reasons; nothing is discarded
 inb = [v for v in VAL if 'found_in_race' in v]
 fw = [v for v in inb if v.get('fastest_is_winner') != '']
 rep = [f"files {len(RACES)} | checksum mismatches {issues['checksum mismatch']} | meetings {len({r['meeting_id'] for r in RACES})} | dates {min(r['race_date'] for r in RACES)} to {max(r['race_date'] for r in RACES)}",
        f"layouts {dict(Counter(r['layout'] for r in RACES))} | first-field date style {dict(Counter(r['first_field_date_style'] for r in RACES))}",
        f"label date differs from folder date: {issues['label date differs from folder date']}",
-       f"runners {len(RUN)} | tracked {sum(r['tracked'] for r in RUN)} | not tracked (all-zero times) {sum(1 - r['tracked'] for r in RUN)} | sections {len(SEC)}",
+       f"runners {len(RUN)} | with any positive time {sum(r['tracked'] for r in RUN)} (complete {sum(r['complete'] for r in RUN)}, partial {sum(r['tracked'] - r['complete'] for r in RUN)}) | none (all-zero times) {sum(1 - r['tracked'] for r in RUN)} | sections {len(SEC)}",
        f"file speed (speed AT the section mark) vs section average (length/time): within 1 m/s {sum(abs(a - b) <= 1 for a, b in sp)}/{len(sp)}; files with zero speeds but times {sum(1 - r['speed_from_file'] for r in RACES)}",
        f"section marks reach the race distance (all tracked runners): {sum(r.get('marks_reach_distance', 0) for r in RACES)}/{sum(1 for r in RACES if 'marks_reach_distance' in r)}",
        f"first row is the fastest tracked runner: {sum(r.get('first_row_is_fastest', 0) for r in RACES)}/{sum(1 for r in RACES if 'first_row_is_fastest' in r)}",
@@ -147,7 +159,9 @@ rep = [f"files {len(RACES)} | checksum mismatches {issues['checksum mismatch']} 
        f"   tracked runners found {sum(v['found_in_race'] for v in inb)}/{sum(v['tracked'] for v in inb)} | saddlecloth agrees {sum(v['saddlecloth_agree'] for v in inb)}/{sum(v['found_in_race'] for v in inb)}",
        f"   untracked (all-zero) runners {sum(v['untracked'] for v in inb)}: listed as starters {sum(v['untracked_but_ran'] for v in inb)} (= ran but no tracking), not listed {sum(v['untracked'] - v['untracked_but_ran'] for v in inb)} (= scratched)",
        f"   starters in our lists missing from the TripleS file: {sum(v['starters_without_tracking'] for v in inb)}",
-       f"   fastest tracked runner = official winner: {sum(v['fastest_is_winner'] for v in fw)}/{len(fw)}",
+       f"   fastest complete run = official winner (dead heats count either): {sum(v['fastest_is_winner'] for v in fw)}/{len(fw)}; dead heats {sum(v.get('dead_heat', 0) for v in fw)}",
+       "   winner differs: " + '; '.join(f"{v['file'].split('/')[-1]} {v['bf_winner']} (tracked gap {v.get('winning_margin_tracked_s')} s)" for v in fw if v['fastest_is_winner'] == 0),
        f"1-25 Nov races (not yet in our lists, checked internally only): {sum(1 for v in VAL if 'outside' in v['status'])}",
-       f"package-flagged files: {sum(1 for r in RACES if r['package_flag'])}"]
+       f"package-flagged files: {sum(1 for r in RACES if r['package_flag'])}",
+       "quarantined runners (kept, with reasons): " + str(dict(Counter(r['quarantine_reason'] for r in Q)))]
 open(os.path.join(OUT, 'checks.txt'), 'w').write('\n'.join(rep) + '\n'); print('\n'.join(rep))

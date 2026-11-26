@@ -13,7 +13,8 @@ def prepare(df):
     d = df.copy()
     d['kgpl'] = 1.5 * (1200 / d.distance_m) ** 0.8
     ok = d.finish_pos.notna() & d.margin_l.notna() & d.weight_kg.notna()
-    d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + (d.weight_kg - 57), np.nan)
+    import os; WC = float(os.environ.get('WCREDIT', '1'))   # history weight credit per kg (production 1.0; candidate C2 0.25: benchmarks/candidate_national_weight)
+    d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
     d = d.sort_values(['date', 'race_key', 'finish_pos'])
     return d
 

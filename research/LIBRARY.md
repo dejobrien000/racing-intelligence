@@ -48,3 +48,44 @@ here so they are not re-tested without materially different evidence. Market dat
 | 25 Nov 2026 | Generic interstate bonus for Vic->Tas runners | Not added by rule: a winning-frequency gap is not a mechanism; address rating connections instead | batch11/ |
 | 25 Nov 2026 | Trainer decisions (distance/class/jockey changes as trainer signals), dynamic trainer form, jockey tail rates | Failed discovery or validation | batch10/README.md |
 | 25 Nov 2026 | Racing-style vs opposition (Qld), preparation shape, isolated peak, schedules B/C, acceleration trend | Failed discovery or validation | batch10/README.md |
+
+## Reconciliation, 26 Nov 2026 (checked against production code and manifests, not reports)
+Production as it runs: Qld = Engine v2.1.1 (prerace/score_prerace.py combined_v1 + national v3 rating, benchmarks/candidates_b4_national_v3;
+engine/score_v2.py QLD family from benchmarks/engine_v2_1). Other states = Engine v2.2 (prerace/score_national_prerace.py nat_v2 from
+benchmarks/candidates_national_common; engine/score_v2.py NSW_VIC_ACT family; engine/v22.py 14 terms from benchmarks/engine_v2_2).
+Verified 26 Nov: Rockhampton was scored by v2.1.1 (its manifest says so; family QLD, no v2.2 terms); only the dashboard label said v2.2 (fixed).
+
+| Finding | Evidence | Qld | National | Status / why not further |
+|---|---|---|---|---|
+| Simple form (avg finish last 3, last finish/margin, win %, starts) | Batch 2-3 | yes | yes | Production. Simplification found last-start finish redundant nationally and hurting in Qld (B11) -> Qld v2.1.2 shadow |
+| Time figures in kg (best/avg/form of last 3, weight vs field) | B1-B3 | yes | yes | Production |
+| Closing sectionals (last 600 gap, top-3 L600, last 200, finishing speed) | B2-B6 (R8 supported) | yes | no data | Production in Qld only. Measured sectionals carry ~2% of the Qld score (B11 shares) |
+| Race shape: settling position, leader, relative barrier, barrier x style, lone leader | R7 validated, B2 | yes | no data | Production in Qld only (needs positions and barriers) |
+| Track / distance / going history | B2, B5 records | yes (two sets) | yes (records) | Qld duplicates them (T group + records): v2.1.2 shadow drops the T group |
+| Fitness and spacing | B2 | yes | yes | Production |
+| Margin-based dynamic rating (opposition-aware) | B4 Study 12 | yes | yes | Production: the strongest single input (dropping it costs 0.025/race in Qld) |
+| Learning-speed rating (lightly raced expected to improve) | B9: Qld +0.0052 (0.0028-0.0076); NSW/Vic replacement -0.0026 (-0.0037 to -0.0016) | yes (v2.1, 25 Nov) | no | Not tested on identical common inputs. NSW/Vic test pre-dates SA/WA/Tas/Qld-country data and national ages. OPEN (brief s5) |
+| Jockey and trainer strike rates, jockey change | B7 R50-R68 | yes | yes | Production |
+| Age and sex | B7 +0.0129/race | NO | yes | Excluded in Qld only because Qld history had no ages; ages now 98.9% (26 Nov database). Ready to test in Qld |
+| Form changes and head-to-head (h2h, distance change, trajectory, last surprise, class change, weight change) | B7 | NO (hurt in 2025-26) | yes | Qld dropped by evidence (B7 release note) |
+| Engine v2 interactions (chosen on discovery data) | B7 | no | yes | Production national only |
+| v2.2: 14 career-shape / consistency / weight / spacing / venue-class terms | B10 +0.0125 (0.0105-0.0145) | NO | yes | Never tested on Qld. OPEN (brief s5) |
+| Weight carried today (claim deducted) | B11 definition check | no (allocated, consistent) | yes | Production 26 Nov. Qld carried tested: no gain (B11) |
+| Display calibration (bent line) | B9 E | yes | yes (refit for v2.2) | Production |
+| Qld scorer fix (rating was zero-weighted 24-25 Nov) | v2.0.1 | yes | - | Production |
+| Measured venue class (meeting note; v2.2 venue step) | B10 | note only | yes | Production |
+| Experience labels and race data confidence | B11 s5 | yes | yes | Production (display only) |
+| C2: weight credit 0.25 kg per kg + 0.170 s per length | B11/B12: +0.0107 (0.0089-0.0124) vs production as it runs, 2025-26; +0.0105 / +0.0084 vs refitted production | no | NOT YET | Built and reproducible; calibration refit and shadow never started (no approval recorded). Completed for a release decision 26 Nov night (see benchmarks/candidate_national_weight) |
+| Handicap weight slope on top of C2 | preregistered: 2024 +0.0012 (0.0008-0.0017) | no | no | Primary test passed; 2025-26 not independent. Release option with C2 |
+| Qld v2.1.2 (drop last-start finish and track/distance/going history) | B11: 2024 weak, top pick not better | shadow | - | Shadow from 26 Nov (1 day so far). Decide on prospective races only |
+| Course-specific barrier effects (Eagle Farm 1800-2100, Sunshine Coast 1200-1400, sprint leaders) | B4 Study 10 frozen (course_v1) | no | no | Frozen for a future-race test; scored once (25 Nov), not daily. Watch |
+| Late fade within 1 L, stride shortening, ground covered in the Qld rating | B12 open | no | no data | Open hypotheses (prospective only) |
+| Ordinary debut overrated; top-3 first starters underrated; lightly raced last-start winners underrated | B11 A/E 0.75-0.80, 1.21-1.27, 1.19 | no | no | Open: residual patterns, need a mechanism (rating certainty) not a bonus |
+| Interstate connections (Tas ~2.3 kg high vs Vic; SA ~0.9; Qld 0.5-1.2) | B11 selection-adjusted | no | no | Open: fix belongs inside the rating (pool levels), never a travel bonus |
+| Rejected list above | | | | Kept so they are not re-tested without new evidence |
+
+Previously approved and NOT implemented: none found in production code. Two approved items still pending outside the engine:
+the one-off Ascot 12 Apr 2025 re-collection (in collect/weekly/retry_queue.json, runs at the next weekly update) and the
+national weight candidate's next steps (calibration + shadow), which were planned but never approved or started until 26 Nov.
+Two registers existed for hypotheses (this file and batch8/out/hypothesis_register_R1_R68.csv). This file is the single
+research register from 26 Nov; R1-R68 stays as its numbered appendix (its open/watch items are folded into the rows above).

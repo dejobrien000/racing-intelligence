@@ -1,16 +1,18 @@
 files 817 | checksum mismatches 0 | meetings 97 | dates 2026-07-01 to 2026-11-25
 layouts {'5-field header': 93, '3-field header': 724} | first-field date style {'day/month': 84, 'month/day': 9, 'iso': 724}
 label date differs from folder date: 0
-runners 10831 | tracked 8237 | not tracked (all-zero times) 2594 | sections 79790
+runners 10831 | with any positive time 8237 (complete 8234, partial 3) | none (all-zero times) 2594 | sections 79790
 file speed (speed AT the section mark) vs section average (length/time): within 1 m/s 48749/61153; files with zero speeds but times 0
 section marks reach the race distance (all tracked runners): 817/817
-first row is the fastest tracked runner: 807/817
+first row is the fastest tracked runner: 808/817
 5-field header time minus fastest tracked time: median 2.322 s (the header time is NOT the winner's time; not used)
 course code length vs race distance (5-field): same 32 / differ 58 (the code names the course, not the race distance)
 VALIDATION vs our Victorian race lists (to 31 Oct): races 671 | {'all tracked runners found': 666, 'no matching race': 5}
    tracked runners found 6777/6827 | saddlecloth agrees 6777/6777
    untracked (all-zero) runners 2154: listed as starters 12 (= ran but no tracking), not listed 2142 (= scratched)
    starters in our lists missing from the TripleS file: 0
-   fastest tracked runner = official winner: 663/666
+   fastest complete run = official winner (dead heats count either): 665/666; dead heats 3
+   winner differs: 5195832_04.csv Mr Natural (tracked gap 0.01 s)
 1-25 Nov races (not yet in our lists, checked internally only): 146
 package-flagged files: 4
+quarantined runners (kept, with reasons): {'all times zero; not in the official field: scratched': 2129, 'all times zero; in the official field: ran without tracking': 12, 'partial tracking (stops part-way)': 3, 'all times zero; race not in our reference lists': 13, 'all times zero; 1-25 Nov, not yet checkable (scratched or untracked)': 440}

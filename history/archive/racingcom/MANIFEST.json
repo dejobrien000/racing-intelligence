@@ -1,0 +1,122 @@
+{
+ "archived_utc": "2026-11-26T09:38:36.281182+00:00",
+ "why": "racing.com tables retired from active use (Damo 26 Nov 2026); originals kept here",
+ "tables": {
+  "rc_meeting": {
+   "rows": 12,
+   "columns": [
+    "rc_key",
+    "state",
+    "meeting_date",
+    "slug",
+    "bf_track",
+    "n_races",
+    "meet_code",
+    "bundle"
+   ],
+   "sha256": "a224a4c2a122a7694fe9996b4ef56658ffefd3ad7b12f02e8604e53eadd31ba5",
+   "reread_ok": true
+  },
+  "rc_race": {
+   "rows": 106,
+   "columns": [
+    "rc_key",
+    "race_no",
+    "ok",
+    "race_time_s",
+    "track_condition",
+    "rail",
+    "conditions",
+    "prize",
+    "start_time",
+    "distance_m",
+    "url",
+    "text_sha256",
+    "retrieved_utc"
+   ],
+   "sha256": "264cc17a978f6c3c3b6e58d5fb5a512c7c329f4f1185e194e2254bbe8a93e17b",
+   "reread_ok": true
+  },
+  "rc_runner": {
+   "rows": 1397,
+   "columns": [
+    "rc_key",
+    "race_no",
+    "pos_raw",
+    "finish_pos",
+    "scratched",
+    "saddlecloth",
+    "horse",
+    "name_key",
+    "barrier",
+    "trainer",
+    "jockey",
+    "weight_kg",
+    "pos800",
+    "pos400",
+    "margin_l"
+   ],
+   "sha256": "3d01b2d9ef87bf70d32289d684a3784488a4f614a84ec9b8e3ec4164cfa4e455",
+   "reread_ok": true
+  },
+  "vic_speed_point": {
+   "rows": 883,
+   "columns": [
+    "state",
+    "meeting_date",
+    "slug",
+    "meet_code",
+    "race_no",
+    "saddlecloth",
+    "to_go_m",
+    "label",
+    "time_to_finish_s",
+    "position"
+   ],
+   "sha256": "4079f71bc6849a60f6fd07560f900d589f7fe585245a598c761c341d92bacc66",
+   "reread_ok": true
+  },
+  "vic_speed_runner": {
+   "rows": 111,
+   "columns": [
+    "state",
+    "meeting_date",
+    "slug",
+    "meet_code",
+    "race_no",
+    "saddlecloth",
+    "pos_raw",
+    "finish_pos",
+    "horse",
+    "name_key",
+    "barrier",
+    "trainer",
+    "jockey",
+    "dist_run_m",
+    "early_kmh",
+    "mid_kmh",
+    "late_kmh",
+    "peak_kmh",
+    "avg_kmh"
+   ],
+   "sha256": "8bb4e42477bd2c59861e03dc4f4fe76911d5374585e257c909912a7f39f999c8",
+   "reread_ok": true
+  },
+  "vic_speed_split": {
+   "rows": 883,
+   "columns": [
+    "state",
+    "meeting_date",
+    "slug",
+    "meet_code",
+    "race_no",
+    "saddlecloth",
+    "segment",
+    "split_s",
+    "split_rank"
+   ],
+   "sha256": "80f7f93013bc005030fc554520880ef204548134c5f4411ffab1fee07a6f62d2",
+   "reread_ok": true
+  }
+ }
+}

@@ -77,6 +77,17 @@ except Exception as ex: sa_msg = f'FAILED, SA tables unchanged: {str(ex)[-300:]}
 rep += ['', '- South Australian tracking: ' + sa_msg]
 fs = subprocess.run([sys.executable, os.path.join(ROOT, 'history', 'load_form_staging.py'), DB, 'collect/national'], capture_output=True, text=True)   # research staging only; never a release check
 rep += ['', '- TAB form staging (research only): ' + (fs.stdout.strip().splitlines()[-1] if fs.returncode == 0 and fs.stdout.strip() else 'FAILED, not a release check: ' + fs.stderr.strip()[-300:])]
+# Foundation steps approved by Damo 26 Nov 2026 (research staging; never release checks; a failure is reported, the database still publishes)
+def _step(args, label):
+    r = subprocess.run([sys.executable] + args, capture_output=True, text=True)
+    return f'- {label}: ' + (r.stdout.strip().splitlines()[-1] if r.returncode == 0 and r.stdout.strip() else 'FAILED (not a release check): ' + (r.stderr.strip()[-300:] or 'no output'))
+H_ = lambda f: os.path.join(ROOT, 'history', f)
+rep += ['', _step([H_('load_tab_daily.py'), DB, 'collect/national'] + ([os.path.join(ROOT, 'pc')] if os.path.isdir(os.path.join(ROOT, 'pc')) else []), 'TAB daily racecards and results (step 1)'),
+        _step([H_('build_tab_venue_map.py'), DB, 'collect/national'], 'TAB venue-code map (step 2)'),
+        _step([H_('check_tab_results.py'), DB], 'TAB results vs Breednet, places 1-4 and scratchings only (step 3)')]
+if os.path.exists('ops/vic_tracking_enabled'): rep.append(_step([H_('load_vic_tracking.py'), DB, 'staging/vic_triples'], 'Victorian TripleS tracking tables (step 4)'))
+if os.path.exists('ops/retire_racingcom'):   # archive already committed at history/archive/racingcom; re-archived and verified before any drop
+    rep.append(_step([H_('archive_racingcom.py'), DB, os.path.join(ROOT, 'history', 'archive', 'racingcom_weekly'), '--drop'], 'racing.com tables archived and retired from active use (step 5)'))
 cfg = json.load(open('ops/db_config.json')); env = {**os.environ, 'NAT_STATES': ','.join(cfg['national_states']), 'NAT_QLD_BN': '1' if cfg.get('qld_breednet_in_national_rating') else '0', 'PYTHONPATH': '.'}
 old = pd.read_parquet('engine/frames/national.parquet', columns=['race', 'horse', 'state', 'dyn_nat']); oldq = len(pd.read_parquet('runs.parquet', columns=['race_id']))
 for a in [('build_runs.py', DB, 'runs.parquet'), ('rating_v0.py', 'runs.parquet', 'runs_rated_dev.parquet', '--fit-until=2024-12-31'), ('rating_v0.py', 'runs.parquet', 'runs_rated.parquet'),

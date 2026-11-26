@@ -72,7 +72,8 @@ if len(nr):
             'pct_individual_sectionals': 0.0, 'pct_in_running': 0.0, 'pct_ground_covered': 0.0, 'pct_prior_form': np.nan, 'sources': 'Racing NSW results pages'})
     rows.append(nr.groupby(['state', 'venue', 'y']).apply(agg_n, include_groups=False).reset_index())
 # Victoria speed data sample
-vs = con.execute("select count(distinct meet_code||':'||race_no) races, count(*) starters from vic_speed_runner").fetchone()
+try: vs = con.execute("select count(distinct meet_code||':'||race_no) races, count(*) starters from vic_speed_runner").fetchone()
+except Exception: vs = con.execute("select count(distinct vic_race_id) races, count(*) starters from vic_pilot_runner").fetchone()   # racing.com tables retired 26 Nov 2026 (archived)
 det = pd.concat(rows, ignore_index=True)
 # combine per venue-year: take the best value of each field across sources (a field is covered if any source has it)
 pct = [c for c in det.columns if c.startswith('pct_')]
