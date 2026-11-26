@@ -47,6 +47,11 @@ jobs:
           follow "https://racingsa.com.au/calendar" "Racing SA calendar" probe/bodies/sa/calendar.html
           follow "https://racingsa.com.au/files/21070_151123_mbr.pdf" "Racing SA gear PDF" probe/bodies/sa/gear_21070.pdf
           follow "https://www.countryracingsa.com.au/meeting/5185273" "Country Racing SA meeting page" probe/bodies/sa/country_meeting_5185273.html
+          follow "https://www.countryracingsa.com.au/seo/xmlSitemap" "Country Racing SA sitemap" probe/bodies/sa/sitemap.xml
+          follow "https://www.countryracingsa.com.au/calendar" "Country Racing SA calendar" probe/bodies/sa/country_calendar.html
+          follow "https://www.countryracingsa.com.au/race/gear-changes/5399564" "Country Racing SA race gear-changes page" probe/bodies/sa/race_gear_5399564.html
+          follow "https://www.countryracingsa.com.au/race/5399564" "Country Racing SA race page" probe/bodies/sa/race_5399564.html
+          for f in probe/bodies/sa/*.html probe/bodies/sa/*.xml; do [ -s "$f" ] && [ $(stat -c%s "$f") -gt 400000 ] && { head -c 400000 "$f" > "$f.cut"; mv "$f.cut" "$f"; }; done
           check "https://racingsa.com.au/robots.txt" "Racing SA robots.txt"
           check "https://www.countryracingsa.com.au/robots.txt" "Country Racing SA robots.txt"
           check "https://racingsa.com.au/meetings/31-aug-24-morphettville" "Racing SA meeting page (slug)"
