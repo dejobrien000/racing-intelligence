@@ -1,0 +1,23 @@
+{
+ "scored_utc": "2026-11-26T21:58:19.622880+00:00",
+ "engine": "v2",
+ "family": "QLD",
+ "base_v1_file": "prospective/prerace/20261127/Cairns/pred_20261126T214332Z_20261126T214338Z_runners.csv",
+ "base_v1_sha256": "847a8eb208b2e99af064794151c40f54c946a3e2c9c9cf3ef7595bc680043cdc",
+ "snapshot_key": "rqpre:20261127:CNS:20261126T214332Z",
+ "engine_manifest_sha256": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+ "engine_release": "Engine v2.1.1 (v3 rating)",
+ "v22_manifest_sha256": null,
+ "engine_c2": false,
+ "code_sha256": {
+  "engine/score_v2.py": "448bdd02cf43ef52c67c131746ad637cd2a32663f521dae465243d94f8e9427d",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "c0409094a8fd42d86b4a437dfab2baab58ee5ee2b9c9f3047c01e294a4d84412"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled"
+}

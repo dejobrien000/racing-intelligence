@@ -1,0 +1,119 @@
+{
+ "scored_utc": "2026-11-26T21:58:04.327225+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261127:Mount Gambier:20261126T214332Z",
+  "date": "20261127",
+  "venue": "Mount Gambier",
+  "retrieved_utc": "2026-11-26T21:43:32Z",
+  "acceptances_sha256": "73f4eef5dc731979be51f84e89c06d3088125ce3ce6c35bf2fe1072742d12ca2",
+  "conditions": {
+   "track_condition": "SOFT5",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 9
+ },
+ "snapshot_bundle": "natpre_20261127_snap20261126T214332Z.jsonl.gz",
+ "snapshot_bundle_sha256": "9c786b06d69b41010d7183a4622046971278efa0e8615174150ebfd81008c9bb",
+ "not_scored": [
+  {
+   "race_no": 3,
+   "saddlecloth": 3,
+   "horse": "Synthesise",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 5,
+   "horse": "Parkrun",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 6,
+   "horse": "Fox Man",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 11,
+   "horse": "Nudge 'Em Along",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 12,
+   "horse": "Squagaga",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 7,
+   "horse": "Sweet But Sassy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 5,
+   "horse": "Let It Ride",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 8,
+   "horse": "Bare To Witness",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 9,
+   "horse": "Quizlet",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 14,
+   "horse": "Hasta La Amnesty",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 15,
+   "horse": "Black Bugatti",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 16,
+   "horse": "Drink Then Kiss",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 17,
+   "horse": "Dangerous Secret",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+ "engine_c2": false,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "c0409094a8fd42d86b4a437dfab2baab58ee5ee2b9c9f3047c01e294a4d84412",
+  "dyn_rating.py": "d7c68b3bc3181dc6df41f5b4669c894ab558d5d88afdb71031f2e28a74d08c7a",
+  "dyn_rating_innov.py": "c5d8688314d0f4e5f3e101e2ef041336079409fddefac3f1d3672b19c2a86568"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

@@ -1,0 +1,29 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261127-Sunshine Coast-R1,12,22.35,14.27,8.08,5,5
+combined_v1,20261127-Sunshine Coast-R2,11,21.37,12.62,8.75,2,2
+combined_v1,20261127-Sunshine Coast-R3,13,19.77,14.04,5.74,0,0
+combined_v1,20261127-Sunshine Coast-R4,12,20.72,12.1,8.62,1,1
+combined_v1,20261127-Sunshine Coast-R5,9,44.05,13.63,30.42,1,1
+combined_v1,20261127-Sunshine Coast-R6,14,13.58,12.15,1.44,1,1
+combined_v1,20261127-Sunshine Coast-R7,14,14.62,14.33,0.29,2,2
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R1,12,19.89,19.83,0.06,5,5
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R2,11,19.09,15.76,3.33,2,2
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R3,13,27.24,16.63,10.61,0,0
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R4,12,16.82,11.1,5.72,1,1
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R5,9,35.75,17.7,18.05,1,1
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R6,14,14.0,13.68,0.32,1,1
+combined_v1 + dynamic rating,20261127-Sunshine Coast-R7,14,15.1,13.95,1.14,2,2
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R1,12,20.46,15.2,5.26,5,5
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R2,11,20.0,12.25,7.75,2,2
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R3,13,20.05,11.4,8.65,0,0
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R4,12,12.55,12.3,0.25,1,1
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R5,9,19.96,19.2,0.76,1,1
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R6,14,13.88,12.91,0.97,1,1
+dynamic rating + PA1 figure,20261127-Sunshine Coast-R7,14,15.58,12.65,2.93,2,2
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R1,12,29.74,15.8,13.94,5,5
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R2,11,31.17,14.46,16.72,2,2
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R3,13,18.91,17.15,1.76,0,0
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R4,12,16.47,15.64,0.82,1,1
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R5,9,40.82,19.82,21.0,1,1
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R6,14,13.79,12.19,1.59,1,1
+combined_v1 + national dynamic rating,20261127-Sunshine Coast-R7,14,15.75,15.24,0.51,2,2

@@ -1,0 +1,29 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261127-Cairns-R1,6,30.33,25.52,4.81,0,0
+combined_v1,20261127-Cairns-R2,6,41.78,26.22,15.56,0,0
+combined_v1,20261127-Cairns-R3,6,27.81,22.43,5.37,2,2
+combined_v1,20261127-Cairns-R4,6,33.21,16.95,16.25,1,1
+combined_v1,20261127-Cairns-R5,7,24.51,22.41,2.1,0,0
+combined_v1,20261127-Cairns-R6,6,36.21,15.65,20.56,0,0
+combined_v1,20261127-Cairns-R7,4,44.02,34.2,9.82,0,0
+combined_v1 + dynamic rating,20261127-Cairns-R1,6,28.64,26.76,1.88,0,0
+combined_v1 + dynamic rating,20261127-Cairns-R2,6,47.73,23.6,24.13,0,0
+combined_v1 + dynamic rating,20261127-Cairns-R3,6,33.66,19.34,14.33,2,2
+combined_v1 + dynamic rating,20261127-Cairns-R4,6,36.87,15.79,21.07,1,1
+combined_v1 + dynamic rating,20261127-Cairns-R5,7,29.71,21.25,8.46,0,0
+combined_v1 + dynamic rating,20261127-Cairns-R6,6,26.48,25.74,0.74,0,0
+combined_v1 + dynamic rating,20261127-Cairns-R7,4,44.84,24.35,20.49,0,0
+dynamic rating + PA1 figure,20261127-Cairns-R1,6,24.79,24.58,0.21,0,0
+dynamic rating + PA1 figure,20261127-Cairns-R2,6,31.97,23.26,8.71,0,0
+dynamic rating + PA1 figure,20261127-Cairns-R3,6,30.51,19.55,10.95,2,2
+dynamic rating + PA1 figure,20261127-Cairns-R4,6,36.56,14.78,21.78,1,1
+dynamic rating + PA1 figure,20261127-Cairns-R5,7,36.95,14.51,22.44,0,0
+dynamic rating + PA1 figure,20261127-Cairns-R6,6,26.43,22.57,3.87,0,0
+dynamic rating + PA1 figure,20261127-Cairns-R7,4,41.28,30.3,10.98,0,0
+combined_v1 + national dynamic rating,20261127-Cairns-R1,6,29.68,24.92,4.76,0,0
+combined_v1 + national dynamic rating,20261127-Cairns-R2,6,33.52,29.11,4.4,0,0
+combined_v1 + national dynamic rating,20261127-Cairns-R3,6,35.74,18.1,17.64,2,2
+combined_v1 + national dynamic rating,20261127-Cairns-R4,6,44.59,15.25,29.34,1,1
+combined_v1 + national dynamic rating,20261127-Cairns-R5,7,34.29,22.16,12.14,0,0
+combined_v1 + national dynamic rating,20261127-Cairns-R6,6,27.45,22.41,5.04,0,0
+combined_v1 + national dynamic rating,20261127-Cairns-R7,4,40.52,26.78,13.74,0,0

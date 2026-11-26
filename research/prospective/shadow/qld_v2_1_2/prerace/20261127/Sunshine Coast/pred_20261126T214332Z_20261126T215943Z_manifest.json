@@ -1,0 +1,77 @@
+{
+ "scored_utc": "2026-11-26T21:59:43.978617+00:00",
+ "snapshot": {
+  "snapshot_key": "rqpre:20261127:SSC:20261126T214332Z",
+  "date": "20261127",
+  "meeting_code": "SSC",
+  "track": "Sunshine Coast",
+  "retrieved_utc": "2026-11-26T21:43:32Z",
+  "fields_pdf_sha256": "b4dd85008f6629a07f247aeaea1f003e05518f5831c54f93766ce9f8a0b6eb82",
+  "after_scratchings_close": true,
+  "conditions": {
+   "track_condition": "SOFT5",
+   "rail": null,
+   "scratchings_close": "Wed 27/11/26 07:30am"
+  },
+  "scratchings_listed": 27
+ },
+ "snapshot_bundle": "rqpre_20261127_snap20261126T214332Z.jsonl.gz",
+ "snapshot_bundle_sha256": "678c23783afaf54b99c61cd40b9a96d58aa6d8c65c893e04f27e345bb4c00c66",
+ "not_scored": [],
+ "candidates": [
+  "combined_v1",
+  "combined_v1 + dynamic rating",
+  "dynamic rating + PA1 figure",
+  "combined_v1 + national dynamic rating"
+ ],
+ "model_manifests": {
+  "benchmarks/candidates_b4/manifest.json": "14bd6268200fac3fd13b76a978a9e6cb7131767b17adfeb73fa211126a8780b2",
+  "benchmarks/candidates_b4_national/manifest.json": "a0d1e4df1609387a0a028d2091f3a629165d68b115a42b0891d87d8b52f457a5",
+  "benchmarks/candidates_b4_national_v3/manifest.json": "72d104d47cb1ccbb2e6f388c9efc42e45bc10e81ce30020c9654ead706b15031",
+  "engine/dyn_v3.py": "d292e199cb9f204593a4f60a8c960dc3626a1cda5f32236b5e3d7eda4bb2d1e7"
+ },
+ "engine_release": "Engine v2.1 (v3 rating)",
+ "code_sha256": {
+  "prerace/score_prerace.py": "9d294a9eed5a5bd51fdbc3df17b66b3443872f0c508aeef23089cef22de35962",
+  "build_runs.py": "9dcc3399a6218cbbfc4f4c694d5637b98c023612737418201ed6b33355dd56dd",
+  "rating_v0.py": "8a8d82735bcf7ce0e6e636bd36701b64f9c0b8c07013361966dca37e18ab824a",
+  "features.py": "6248b368bf1985100d0737fc720c7c0e80ca0a2e4f26278241234789be19511a",
+  "inv20_pace_figures.py": "79d6f9c43d90bf8ea971a2172774ff0f8f8e88cc50326d60a0023a2736241cc4",
+  "dyn_rating.py": "d7c68b3bc3181dc6df41f5b4669c894ab558d5d88afdb71031f2e28a74d08c7a",
+  "clogit_tools.py": "0bee34be4db1621cc1fda9316da73a97a3212742721c27c887535c92564528cd"
+ },
+ "history_cutoff_by_source": {
+  "Qld tracked": "2026-11-22",
+  "Betfair (all states)": "2026-10-31",
+  "Breednet NSW/Vic/ACT": "2026-11-23",
+  "Racing NSW form lines": "2026-11-16"
+ },
+ "national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+ "scaling_check_dev_sd": {
+  "a_avg3": [
+   7.937394365788982,
+   7.937400268009932
+  ],
+  "p_relbar": [
+   0.31973319149358365,
+   0.3197364460584305
+  ],
+  "f_avgfp3": [
+   0.2413369481978776,
+   0.24135546783381942
+  ],
+  "dyn_nat": [
+   3.076077402860399,
+   3.076077402860399
+  ]
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "days since last start uses every source held; Betfair lags about a month",
+  "emergencies and scratched runners at snapshot time are listed in not_scored",
+  "chance_pct is the frozen model probability; uncertainty: rating_sd_kg, evidence flags, top_two_gap_pts"
+ ],
+ "shadow": "NOT LIVE: Queensland Engine v2.1.2-candidate (shadow scoring approved by Damo 25 Nov 2026); never shown on the dashboard",
+ "shadow_candidates_manifest": "benchmarks/candidate_qld_v2_1_2/candidates_manifest.json",
+ "shadow_candidates_manifest_sha256": "a2abd2c3775465775176b923d2cdadba83c9718222d2d85ffc28347ee5f907b3"
+}

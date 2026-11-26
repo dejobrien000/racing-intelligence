@@ -1,0 +1,15 @@
+{
+ "scored_utc": "2026-11-26T22:04:11.738162+00:00",
+ "engine_release": "Engine v2.1.2-candidate (Queensland) - SHADOW, NOT LIVE",
+ "family": "QLD",
+ "base_v1_file": "prospective/shadow/qld_v2_1_2/prerace/20261127/Sunshine Coast/pred_20261126T214332Z_20261126T215943Z_runners.csv",
+ "base_v1_sha256": "6f1cd70c64e4e39df24275bad33f47afbd67084572691dbe21e31d8c8e2a0c7d",
+ "snapshot_key": "rqpre:20261127:SSC:20261126T214332Z",
+ "engine_manifest": "benchmarks/candidate_qld_v2_1_2/engine_manifest.json",
+ "engine_manifest_sha256": "64afd6756975e0b07fe45cb1ce3863e3a4720e5400bff68b61073c23795ffd2b",
+ "production_engine": "Engine v2.1.1 (prospective/prerace)",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "shadow only: not on the dashboard, not settled, not ranked"
+ ]
+}

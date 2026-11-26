@@ -1,0 +1,66 @@
+{
+ "date": "2026-11-27",
+ "source": "TAB racing info-service meetings list and racecards, captured 2026-11-26T21:43:32Z",
+ "excluded": [
+  "non-Australian meetings"
+ ],
+ "act_nt": "ACT and NT meetings included when TAB lists them",
+ "meetings": [
+  {
+   "name": "Canterbury",
+   "state": "NSW",
+   "tab_code": "CBY",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Cairns",
+   "state": "QLD",
+   "tab_code": "CNS",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Mount Gambier",
+   "state": "SA",
+   "tab_code": "MTG",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Muswellbrook",
+   "state": "NSW",
+   "tab_code": "MUS",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Pakenham",
+   "state": "VIC",
+   "tab_code": "PAK",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Queanbeyan",
+   "state": "NSW",
+   "tab_code": "QBY",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Sunshine Coast",
+   "state": "QLD",
+   "tab_code": "SSC",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  },
+  {
+   "name": "Wodonga",
+   "state": "VIC",
+   "tab_code": "WOD",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)"
+  }
+ ]
+}

@@ -1,0 +1,754 @@
+meeting,race,n,tab_name,our_name,match,tab_status,our_status,fixed_win,fixed_place,captured_utc,tab_fixed_odds_update_utc
+Canterbury,1,1,REBEL ROYAL,Rebel Royal,matched,Open,rated runner,2.5,1.26,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,2,STORM SEEKER,Storm Seeker,matched,Open,rated runner,3.2,1.4,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,3,AURIC STAR,Auric Star,matched,Open,rated runner,21.0,4.0,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,4,DIVINE OFFERING,Divine Offering,matched,Open,rated runner,14.0,3.0,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,5,SKY KIRK,Sky Kirk,matched,Open,rated runner,11.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,6,THIS IS NOW,This Is Now,matched,Open,rated runner,7.5,2.1,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,7,HATSUMOMO,Hatsumomo,matched,Open,rated runner,5.5,1.75,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,1,8,MISS GAMBIT,Miss Gambit,matched,Open,rated runner,26.0,4.8,2026-11-26T21:43:32Z,2026-11-26T20:20:38.000Z
+Canterbury,2,1,AURORA BOOM,Aurora Boom,matched,Open,rated runner,19.0,3.4,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,2,MENS REA,Mens Rea,matched,Open,rated runner,11.0,2.4,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,3,SACRED VOW,Sacred Vow,matched,Open,rated runner,5.5,1.65,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,4,BYBROOK,Bybrook,matched,Open,rated runner,34.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,5,DIVINE GAL,Divine Gal,matched,Open,rated runner,13.0,2.7,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,6,POSH POMMERY,Posh Pommery,matched,Open,rated runner,21.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,7,ROCKET GIRL,Rocket Girl,matched,Open,rated runner,3.1,1.3,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,2,8,THYME TO GO,Thyme To Go,matched,Open,rated runner,2.25,1.2,2026-11-26T21:43:32Z,2026-11-26T20:20:46.000Z
+Canterbury,3,1,BAVARIA,Bavaria,matched,Open,rated runner,4.6,1.6,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,2,BUREAU,Bureau,matched,Open,rated runner,31.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,3,CADMEAN,Cadmean,matched,Open,rated runner,8.5,2.2,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,4,DARN SURE,Darn Sure,matched,Open,rated runner,2.5,1.28,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,5,I REALLY THINK SO,I Really Think So,matched,Open,rated runner,6.5,1.9,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,6,SNITZEL A'LA ROUGE,Snitzel A'La Rouge,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,7,STELLAR CIPHER,Stellar Cipher,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,8,ELDEST DAUGHTER,Eldest Daughter,matched,Open,rated runner,61.0,9.0,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,9,PALM TREE,Palm Tree,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,10,SNITZEL'S GIRL,Snitzel'S Girl,matched,Open,rated runner,4.6,1.6,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,11,ENVIOUS,Envious,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,9.0,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,3,12,NOT INEVITABLE,Not Inevitable,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),14.0,3.0,2026-11-26T21:43:32Z,2026-11-26T20:20:53.000Z
+Canterbury,4,1,NEXT JEN,Next Jen,matched,Open,rated runner,26.0,5.0,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,2,ROYAL CORPORAL,Royal Corporal,matched,Open,rated runner,21.0,4.6,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,3,MARCHON,Marchon,matched,Open,rated runner,19.0,4.2,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,4,THREESOME,Threesome,matched,Open,rated runner,9.0,2.5,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,5,MISS SUPERNOVA,Miss Supernova,matched,Open,rated runner,9.5,2.6,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,6,TIME TO DANCE,Time To Dance,matched,Open,rated runner,7.0,2.2,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,7,LIPSTICK,Lipstick,matched,Open,rated runner,6.5,2.1,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,8,WAR BANNER,War Banner,matched,Open,rated runner,2.7,1.35,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,9,REGAL,Regal,matched,Open,rated runner,4.6,1.75,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,4,10,SALMA'S STAR,Salma'S Star,matched,Open,rated runner,81.0,14.0,2026-11-26T21:43:32Z,2026-11-26T13:15:51.000Z
+Canterbury,5,1,HALLOWED HALLS,Hallowed Halls,matched,Open,rated runner,2.7,1.55,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,2,COSMIC LAD,Cosmic Lad,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,3,AZARAX,Azarax,matched,Open,rated runner,4.4,2.1,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,4,MALBORK CASTLE,Malbork Castle,matched,Open,rated runner,4.8,2.2,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,5,BONDI BLOSSOM,Bondi Blossom,matched,Open,rated runner,9.0,3.5,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,6,DARN CUTE,Darn Cute,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,7,CABBUCIO,Cabbucio,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,8,DANISH FORTUNE,Danish Fortune,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,9,OUTTA LINE,Outta Line,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,5,10,AURA,Aura,matched,Open,rated runner,3.7,1.85,2026-11-26T21:43:32Z,2026-11-26T21:27:59.000Z
+Canterbury,6,1,MAWJOOD,Mawjood,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,2,IL PASSERO,Il Passero,matched,Open,rated runner,3.6,1.65,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,3,STEEL MOVE,Steel Move,matched,Open,rated runner,12.0,3.3,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,4,FINE VINTAGE,Fine Vintage,matched,Open,rated runner,31.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,5,BRAVISSIMA,Bravissima,matched,Open,rated runner,11.0,3.2,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,6,WHERE'STHEPROFIT,Where'Stheprofit,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,7,BOJANGLES,Bojangles,matched,Open,rated runner,7.0,2.3,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,8,ANDALE ANDALE,Andale Andale,matched,Open,rated runner,10.0,3.0,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,9,IVAN'S HERO,Ivan'S Hero,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,10,BODHI BOY,Bodhi Boy,matched,Open,rated runner,14.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,6,11,MAILATA,Mailata,matched,Open,rated runner,7.5,2.5,2026-11-26T21:43:32Z,2026-11-26T20:22:21.000Z
+Canterbury,7,1,SHADY ROAD,Shady Road,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,2,SHOW BUSINESS,Show Business,matched,Open,rated runner,7.0,2.4,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,3,ZOUNAKA,Zounaka,matched,Open,rated runner,34.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,4,EMALYN,Emalyn,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,5,FLIGHTCREW,Flightcrew,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,6,SAPPHIRE ROSE,Sapphire Rose,matched,Open,rated runner,14.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,7,BROWN SUGAR,Brown Sugar,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,8,HELLENIC BELLE,Hellenic Belle,matched,Open,rated runner,8.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,9,LIGHTHOUSE LASS,Lighthouse Lass,matched,Open,rated runner,31.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,10,SCURO STAR,Scuro Star,matched,Open,rated runner,8.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,11,CELESTIAL CHARM,Celestial Charm,matched,Open,rated runner,3.3,1.55,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,12,FROM ME TO YOU,From Me To You,matched,Open,rated runner,5.5,2.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,13,OUTBACK ANGEL,Outback Angel,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),81.0,16.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,7,14,VITTOZZI,Vittozzi,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:59:42.000Z
+Canterbury,8,1,LUSKAIRE,Luskaire,matched,Open,rated runner,21.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,2,KOMODO DRAGON,Komodo Dragon,matched,Open,rated runner,4.6,1.75,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,3,SO SUAVE,So Suave,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,4,CONGRESSMAN,Congressman,matched,Open,rated runner,5.0,1.8,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,5,O'SHEAMUS,O'Sheamus,matched,Open,rated runner,19.0,4.6,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,6,BIG TIGER,Big Tiger,matched,Open,rated runner,6.0,2.0,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,7,UNUSUAL PROSPECT,Unusual Prospect,matched,Open,rated runner,13.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,8,CHAPPY,Chappy,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,9,QUARTERBACK,Quarterback,matched,Open,rated runner,3.7,1.55,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,10,SHEEZA DIVA,Sheeza Diva,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,11,EMERALD HILLS,Emerald Hills,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,12,STEALTHFIRE,Stealthfire,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),7.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,13,ACHESON,Acheson,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,14,ALABAMA SHOWDOWN,Alabama Showdown,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,15,IT'S A WONDER,It'S A Wonder,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),13.0,3.2,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Canterbury,8,16,STAR HALF,Star Half,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),13.0,3.2,2026-11-26T21:43:32Z,2026-11-26T21:12:25.000Z
+Queanbeyan,1,1,ENTIRELY OAK,Entirely Oak,matched,Open,rated runner,16.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,2,HAZEL BAY,Hazel Bay,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,3,ISLE OF WIGHT,Isle Of Wight,matched,Open,rated runner,14.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,4,RISK AND FAMOUS,Risk And Famous,matched,Open,rated runner,19.0,3.9,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,5,JAMMED,Jammed,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,6,PONZI SCHEME,Ponzi Scheme,matched,Open,rated runner,6.0,1.9,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,7,STILL THE MOON,Still The Moon,matched,Open,rated runner,7.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,8,CAT'S EYE,Cat'S Eye,matched,Open,rated runner,61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,9,DESIGNED SPINDLE,Designed Spindle,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,10,LOUJEN FRANCAISE,Loujen Francaise,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,11,NAVY ROSE,Navy Rose,matched,Open,rated runner,2.0,1.2,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,1,12,SWORN,Sworn,matched,Open,rated runner,5.0,1.7,2026-11-26T21:43:32Z,2026-11-26T21:10:21.000Z
+Queanbeyan,2,1,OBISANYA,Obisanya,matched,Open,rated runner,101.0,13.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,2,ON THE FLY,On The Fly,matched,Open,rated runner,1.8,1.14,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,3,BOY BRUTUS,Boy Brutus,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,4,TOP PICK,Top Pick,matched,Open,rated runner,5.0,1.6,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,5,AQUILINO,Aquilino,matched,Open,rated runner,6.0,1.75,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,6,BETTER BLOOM,Better Bloom,matched,Open,rated runner,5.5,1.65,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,7,JUSTWATCHHER,Justwatchher,matched,Open,rated runner,26.0,4.4,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,8,RAINING VIOLETS,Raining Violets,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,9,RAWANO,Rawano,matched,Open,rated runner,151.0,19.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,10,STAR OF MINE,Star Of Mine,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,11,TIGER TOM,Tiger Tom,matched,Open,rated runner,21.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,12,WALKING UNDA STARS,Walking Unda Stars,matched,Open,rated runner,41.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,13,DEEL HEAD,Deel Head,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,14,SON O' WAR,Son O' War,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),41.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,15,DID DUBAI ME EUROS,Did Dubai Me Euros,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),126.0,16.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,2,16,HELLCAT,Hellcat,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),41.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:41:55.000Z
+Queanbeyan,3,1,FALSTAFFIAN,Falstaffian,matched,Open,rated runner,4.0,1.7,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,2,THE HARD ROAD,The Hard Road,matched,Open,rated runner,11.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,3,AIN'T SEEN MARS,Ain'T Seen Mars,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,4,IN CIRCLES,In Circles,matched,Open,rated runner,3.8,1.65,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,5,OLE MISS,Ole Miss,matched,Open,rated runner,5.5,2.0,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,6,PERUNO,Peruno,matched,Open,rated runner,16.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,7,WRITTEN STORY,Written Story,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,8,DELAGO SERG,Delago Serg,matched,Open,rated runner,21.0,4.8,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,9,PETOMAI,Petomai,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,10,ALABAMA HUSSY,Alabama Hussy,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,11,GEOSTORM,Geostorm,matched,Open,rated runner,21.0,4.8,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,12,ADASITI,Adasiti,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,13,FLASHBACK TIME,Flashback Time,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),12.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,14,LIAMENA AVENUE,Liamena Avenue,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,15,KARUTA KING,Karuta King,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),16.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,3,16,BEOGRAD BOY,Beograd Boy,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:01:02.000Z
+Queanbeyan,4,1,ALABASTER,Alabaster,matched,Open,rated runner,11.0,2.6,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,2,MUCHOBOR,Muchobor,matched,Open,rated runner,17.0,3.5,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,3,WORLD WIDE,World Wide,matched,Open,rated runner,1.9,1.18,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,4,KING'S CHARM,King'S Charm,matched,Open,rated runner,23.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,5,TEEMING,Teeming,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,6,LADY COWAN,Lady Cowan,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,7,MADAM MOSAIC,Madam Mosaic,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,8,PASIFAE,Pasifae,matched,Open,rated runner,3.8,1.5,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,9,GITTYA OWN,Gittya Own,matched,Open,rated runner,8.0,2.2,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,10,TINTOELA,Tintoela,matched,Open,rated runner,14.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,11,O'HATASKY,O'Hatasky,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),16.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,12,HUSSLAA,Husslaa,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),23.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,13,RISK AND FAMOUS,Risk And Famous,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,4,14,NAVY ROSE,Navy Rose,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:08:46.000Z
+Queanbeyan,5,1,FAIR MASTER,Fair Master,matched,Open,rated runner,4.2,1.65,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,2,BEHTAR,Behtar,matched,Open,rated runner,7.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,3,KOSUKE,Kosuke,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,4,THINK I DO,Think I Do,matched,Open,rated runner,4.0,1.6,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,5,SPURLINE,Spurline,matched,Open,rated runner,5.0,1.8,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,6,PURE MELODY,Pure Melody,matched,Open,rated runner,5.0,1.8,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,7,SORRY SUNSHINE,Sorry Sunshine,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,8,THE ADIGE,The Adige,matched,Open,rated runner,10.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,9,HARD GRUNT,Hard Grunt,matched,Open,rated runner,8.5,2.4,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,10,BULLA VINAKA,Bulla Vinaka,matched,Open,rated runner,19.0,4.0,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,5,11,REVOKE,Revoke,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:32:26.000Z
+Queanbeyan,6,1,SOOO CRAZY,Sooo Crazy,matched,Open,rated runner,6.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,2,WRITTEN BY LUCY,Written By Lucy,matched,Open,rated runner,7.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,3,MISSILE DEFENCE,Missile Defence,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,4,STAR OF LILY,Star Of Lily,matched,Open,rated runner,2.5,1.35,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,5,VELLA MAGIC,Vella Magic,matched,Open,rated runner,26.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,6,SMASHING LULU,Smashing Lulu,matched,Open,rated runner,19.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,7,ROYAL MEMORY,Royal Memory,matched,Open,rated runner,5.0,1.8,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,8,WONDERFUL MISTAKE,Wonderful Mistake,matched,Open,rated runner,12.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,9,SANTOLINI,Santolini,matched,Open,rated runner,13.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,10,STRAIGHT FIRE,Straight Fire,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,11,SELHURST PARK,Selhurst Park,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,12,CURLY BEND,Curly Bend,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,13,FRED ASTERN,Fred Astern,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),10.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,14,CHAIRMAN'S LIST,Chairman'S List,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),18.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,6,15,ZEEMA,Zeema,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:30:13.000Z
+Queanbeyan,7,1,VERMICELLA,Vermicella,matched,Open,rated runner,2.9,1.45,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,2,BELLEISTIC KIDS,Belleistic Kids,matched,Open,rated runner,10.0,2.9,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,3,MY LAST HOORAY,My Last Hooray,matched,Open,rated runner,6.5,2.2,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,4,ACHESON,Acheson,matched,Open,rated runner,4.6,1.8,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,5,BLOW IN,Blow In,matched,Open,rated runner,16.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,6,GOOD PRIZE,Good Prize,matched,Open,rated runner,9.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,7,MISS STALWART,Miss Stalwart,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,8,BURGUNDY GIRL,Burgundy Girl,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,9,SOUL LADY,Soul Lady,matched,Open,rated runner,12.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,10,LUNA ANGEL,Luna Angel,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,11,BATTLE ABBEY,Battle Abbey,matched,Open,rated runner,15.0,3.8,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,12,GOLD TRACKER,Gold Tracker,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,13,HARDAZHELL,Hardazhell,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,12.0,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,7,14,PEARLER,Pearler,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),18.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:20:15.000Z
+Queanbeyan,8,1,ACTION KING,Action King,matched,Open,rated runner,8.5,2.1,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,2,SUTTON VELLA,Sutton Vella,matched,Open,rated runner,9.5,2.3,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,3,WINNING REVOLUTION,Winning Revolution,matched,Open,rated runner,23.0,4.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,4,LOS PADRES,Los Padres,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,5,MASSIRA,Massira,matched,Open,rated runner,9.0,2.2,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,6,ALL ADORE,All Adore,matched,Open,rated runner,1.6,1.12,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,7,STARLIGHT GIRL,Starlight Girl,matched,Open,rated runner,8.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,8,ALABAMA HAMMER,Alabama Hammer,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,9,DESTRUCTIVE DIVA,Destructive Diva,matched,Open,rated runner,15.0,3.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,10,METALLIC RULER,Metallic Ruler,matched,Open,rated runner,23.0,4.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,11,SMARTER THAN YOU,Smarter Than You,matched,Open,rated runner,71.0,10.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,12,HELL OF A SHOW,Hell Of A Show,matched,Open,rated runner,126.0,16.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Queanbeyan,8,13,VAINSTREAM,Vainstream,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),101.0,13.0,2026-11-26T21:43:32Z,2026-11-26T20:32:28.000Z
+Muswellbrook,1,1,CAPTAINTHUNDERBOLT,Captainthunderbolt,matched,Open,rated runner,21.0,3.5,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,2,ENVISIONED,Envisioned,matched,Open,rated runner,151.0,18.0,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,3,MOON DART,Moon Dart,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,4,SEDITIO,Seditio,matched,Open,rated runner,34.0,5.0,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,5,TARRANT COUNTY,Tarrant County,matched,Open,rated runner,41.0,6.0,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,6,TOKE,Toke,matched,Open,rated runner,26.0,4.2,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,7,VINTAGE BELL,Vintage Bell,matched,Open,rated runner,5.5,1.6,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,8,UMBUSI,Umbusi,matched,Open,rated runner,2.4,1.2,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,9,VAGUELY RED,Vaguely Red,matched,Open,rated runner,2.4,1.2,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,10,BOBBIN BACK,Bobbin Back,matched,Open,rated runner,151.0,18.0,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,11,LITTLE MISS SASS,Little Miss Sass,matched,Open,rated runner,15.0,2.8,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,12,HONNIBALL DRIVE,Honniball Drive,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,1,13,SHEZA'S SHOW,Sheza'S Show,matched,Open,rated runner,81.0,10.0,2026-11-26T21:43:32Z,2026-11-26T02:18:47.000Z
+Muswellbrook,2,1,SHADASHI,Shadashi,matched,Open,rated runner,3.9,1.55,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,2,DON'T TELL POLLY,Don'T Tell Polly,matched,Open,rated runner,6.5,2.0,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,3,AFRICAN DIAMOND,African Diamond,matched,Open,rated runner,3.7,1.5,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,4,HONEST DOLL,Honest Doll,matched,Open,rated runner,16.0,3.5,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,5,SUNDAY PUNCH,Sunday Punch,matched,Open,rated runner,26.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,6,LEICA QUEEN,Leica Queen,matched,Open,rated runner,10.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,7,RING MY BELL,Ring My Bell,matched,Open,rated runner,8.5,2.4,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,8,SIGSALY,Sigsaly,matched,Open,rated runner,3.9,1.55,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,2,9,ROCK'N ON UPTOWN,Rock'N On Uptown,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T20:38:54.000Z
+Muswellbrook,3,1,CAPE COD,Cape Cod,matched,Open,rated runner,1.9,1.24,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,2,AFRICAN DIAMOND,African Diamond,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,3,ALBERT'S PICK,Albert'S Pick,matched,Open,rated runner,17.0,5.0,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,4,LIGHTENING KISS,Lightening Kiss,matched,Open,rated runner,2.6,1.35,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,5,DON'T TELL HARRY,Don'T Tell Harry,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,6,MODERNIST,Modernist,matched,Open,rated runner,4.6,1.85,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,7,ABOVE BOARD,Above Board,matched,Open,rated runner,18.0,5.0,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,8,RING MY BELL,Ring My Bell,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,3,9,ALARTHILL,Alarthill,matched,Open,rated runner,126.0,40.0,2026-11-26T21:43:32Z,2026-11-26T19:16:38.000Z
+Muswellbrook,4,1,PRIMA VECCHIO,Prima Vecchio,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,2,NEAREST,Nearest,matched,Open,rated runner,2.0,1.2,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,3,CHIEF WILD EAGLE,Chief Wild Eagle,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,4,OCEAN PREDATOR,Ocean Predator,matched,Open,rated runner,10.0,2.5,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,5,ENTERPRISING,Enterprising,matched,Open,rated runner,8.5,2.2,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,6,POST MARK,Post Mark,matched,Open,rated runner,9.0,2.3,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,7,ROYAL AND READY,Royal And Ready,matched,Open,rated runner,51.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,8,VELASTRA,Velastra,matched,Open,rated runner,5.5,1.75,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,9,SIMMERING,Simmering,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,10,SPALPEEN,Spalpeen,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,11,BABYFACED ASSASSIN,Babyfaced Assassin,matched,Open,rated runner,12.0,2.8,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,12,BOSCA BULLET,Bosca Bullet,matched,Open,rated runner,81.0,12.0,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,13,GREY BELIEF,Grey Belief,matched,Open,rated runner,7.0,2.0,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,14,SONHO DOURADO,Sonho Dourado,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,4,15,TENDI,Tendi,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,9.0,2026-11-26T21:43:32Z,2026-11-26T20:55:05.000Z
+Muswellbrook,5,1,CHARM DESTINATION,Charm Destination,matched,Open,rated runner,10.0,2.6,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,2,GOT HERE,Got Here,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,3,SOUTHPORT,Southport,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,4,BOA VISTA,Boa Vista,matched,Open,rated runner,4.8,1.75,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,5,DANNY'S OCEAN,Danny'S Ocean,matched,Open,rated runner,2.4,1.3,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,6,JAYVEER,Jayveer,matched,Open,rated runner,34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,7,NASA BLUEBERRY,Nasa Blueberry,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,8,BRAVE ARCHIE,Brave Archie,matched,Open,rated runner,61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,9,NOT ASKING,Not Asking,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,10,RAPID DESCENT,Rapid Descent,matched,Open,rated runner,12.0,3.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,11,WOOTTON TOUCH IT,Wootton Touch It,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,12,FROG ROCK,Frog Rock,matched,Open,rated runner,19.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,13,KNIGHTLY GIRL,Knightly Girl,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,14,KURSAAL,Kursaal,matched,Open,rated runner,3.8,1.55,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,15,FAKE FICTION,Fake Fiction,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),21.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,16,FINAL GIFT,Final Gift,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,17,HOT CHESTNUT,Hot Chestnut,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,5,18,MORPETH,Morpeth,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:07:24.000Z
+Muswellbrook,6,1,MAGURTZ,Magurtz,matched,Open,rated runner,3.3,1.35,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,2,OVERZONE,Overzone,matched,Open,rated runner,3.4,1.35,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,3,PENCILLER,Penciller,matched,Open,rated runner,11.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,4,BIG BRAD,Big Brad,matched,Open,rated runner,3.1,1.35,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,5,THUNDER LIGHTS,Thunder Lights,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,6,PRINCE DE VEGA,Prince De Vega,matched,Open,rated runner,6.0,1.75,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,7,DEVILISH SUN,Devilish Sun,matched,Open,rated runner,26.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,8,WARBRECCAN,Warbreccan,matched,Open,rated runner,71.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,9,THIRTY DEGREES,Thirty Degrees,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,10,SOULS COMPANION,Souls Companion,matched,Open,rated runner,23.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,6,11,DAYU,Dayu,matched,Open,rated runner,151.0,19.0,2026-11-26T21:43:32Z,2026-11-26T21:10:36.000Z
+Muswellbrook,7,1,JASON DARREN,Jason Darren,matched,Open,rated runner,6.0,1.9,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,2,WEST HEAD,West Head,matched,Open,rated runner,10.0,2.5,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,3,RENOIR,Renoir,matched,Open,rated runner,6.0,1.9,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,4,PLANET NERO,Planet Nero,matched,Open,rated runner,1.95,1.2,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,5,KURITHEA,Kurithea,matched,Open,rated runner,8.5,2.3,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,6,IN ISO,In Iso,matched,Open,rated runner,71.0,11.0,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,7,ICHIKA,Ichika,matched,Open,rated runner,16.0,3.4,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,8,LADY FELINA,Lady Felina,matched,Open,rated runner,34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,9,GLORYESS,Gloryess,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,10,EVER WAS,Ever Was,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,7,11,TYCOON LAD,Tycoon Lad,matched,Open,rated runner,18.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:44:48.000Z
+Muswellbrook,8,1,SHIHAB,Shihab,matched,Open,rated runner,6.0,1.95,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,2,SARATOGA POWER,Saratoga Power,matched,Open,rated runner,7.5,2.2,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,3,WHO EVER THOUGHT,Who Ever Thought,matched,Open,rated runner,51.0,9.0,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,4,ENTERPRISE LEGEND,Enterprise Legend,matched,Open,rated runner,8.0,2.3,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,5,SUPER SIOUX,Super Sioux,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,6,NO STATEMENT,No Statement,matched,Open,rated runner,34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,7,ANGIE'S SISTER,Angie'S Sister,matched,Open,rated runner,2.7,1.35,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,8,IRON HAT,Iron Hat,matched,Open,rated runner,23.0,4.6,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,9,VIERVILLE,Vierville,matched,Open,rated runner,10.0,2.6,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,10,DEBUSSY,Debussy,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,11,IRISH JIG,Irish Jig,matched,Open,rated runner,3.8,1.55,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,12,SMART AND DAPPER,Smart And Dapper,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Muswellbrook,8,13,TELEGRAPH,Telegraph,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T20:40:43.000Z
+Pakenham,1,1,ACTIVATING,Activating,matched,Open,rated runner,101.0,12.0,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,2,ADHARA,Adhara,matched,Open,rated runner,7.0,1.8,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,3,BOHEMIAN RHAPSODY,Bohemian Rhapsody,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,4,BRAZEN BOLD,Brazen Bold,matched,Open,rated runner,14.0,2.7,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,5,CAPITAL STORM,Capital Storm,matched,Open,rated runner,11.0,2.3,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,6,LORD OF THE EARTH,Lord Of The Earth,matched,Open,rated runner,4.0,1.4,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,7,MAJESTIC SON,Majestic Son,matched,Open,rated runner,1.85,1.14,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,8,MR SAPPHIRE,Mr Sapphire,matched,Open,rated runner,21.0,3.5,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,1,9,TIZ THE TYCOON,Tiz The Tycoon,matched,Open,rated runner,9.5,2.1,2026-11-26T21:43:32Z,2026-11-26T20:46:13.000Z
+Pakenham,2,1,ASSUNTA,Assunta,matched,Open,rated runner,4.2,1.65,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,2,BLUE IVY,Blue Ivy,matched,Open,rated runner,8.5,2.5,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,3,BLUE JEANS TALK,Blue Jeans Talk,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,4,DANCELL,Dancell,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,5,EPPONNEE RAE,Epponnee Rae,matched,Open,rated runner,19.0,4.2,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,6,KENSINGTON,Kensington,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,7,MEDIA DARLING,Media Darling,matched,Open,rated runner,3.8,1.6,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,8,NYAD,Nyad,matched,Open,rated runner,5.5,1.9,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,9,PLEASE PLEASE ME,Please Please Me,matched,Open,rated runner,6.0,2.0,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,10,RENECCA,Renecca,matched,Open,rated runner,9.5,2.6,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,11,SPIRIT NATURE,Spirit Nature,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,12,WOLFMAAMA,Wolfmaama,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,2,13,AMBER QUEEN,Amber Queen,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),7.0,2.2,2026-11-26T21:43:32Z,2026-11-26T20:36:48.000Z
+Pakenham,3,1,ABYDOS,Abydos,matched,Open,rated runner,2.6,1.35,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,2,BAROSSA BOURBON,Barossa Bourbon,matched,Open,rated runner,151.0,24.0,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,3,MAURIE'S PRIDE,Maurie'S Pride,matched,Open,rated runner,101.0,16.0,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,4,SHY VELOCITY,Shy Velocity,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,5,SOUNDWAVE,Soundwave,matched,Open,rated runner,8.5,2.4,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,6,ANOTHER POTHOLE,Another Pothole,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,7,FORT ROCK,Fort Rock,matched,Open,rated runner,4.2,1.6,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,8,HURTADO,Hurtado,matched,Open,rated runner,34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,9,PERCIPIENT,Percipient,matched,Open,rated runner,4.2,1.6,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,10,POCKET WATCH,Pocket Watch,matched,Open,rated runner,14.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,11,RED TIDE,Red Tide,matched,Open,rated runner,10.0,2.6,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,12,KOKESHI,Kokeshi,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,13,GREY FLYER,Grey Flyer,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),23.0,4.6,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,14,SHIPPING STEEL,Shipping Steel,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),31.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,3,15,RUSSIAN NIGHTS,Russian Nights,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:06:02.000Z
+Pakenham,4,1,ALWAYS SHINING,Always Shining,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,2,ARDAD NED,Ardad Ned,matched,Open,rated runner,7.0,2.1,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,3,ASPARAGUS,Asparagus,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,4,CHRONIC,Chronic,matched,Open,rated runner,13.0,3.1,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,5,FULL ZOOM,Full Zoom,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,6,MONTESQUIEU,Montesquieu,matched,Open,rated runner,2.4,1.3,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,7,SEINFELD,Seinfeld,matched,Open,rated runner,4.2,1.6,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,8,TECKNOKING,Tecknoking,matched,Open,rated runner,19.0,4.0,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,9,TEQUILA'S BRO,Tequila'S Bro,matched,Open,rated runner,12.0,2.9,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,10,WOLLEMI,Wollemi,matched,Open,rated runner,6.0,1.95,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,11,ZAMETOVKA,Zametovka,matched,Open,rated runner,21.0,4.4,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,4,12,FARO LADY,Faro Lady,matched,Open,rated runner,34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:47:40.000Z
+Pakenham,5,1,TERRORTORIAN,Terrortorian,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,2,UNTAPPED,Untapped,matched,Open,rated runner,3.9,1.5,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,3,MOUNT SABYINYO,Mount Sabyinyo,matched,Open,rated runner,3.5,1.4,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,4,ALEXANDER THEGREAT,Alexander Thegreat,matched,Open,rated runner,6.5,1.9,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,5,ARISTONOUS,Aristonous,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,6,CAELIUS,Caelius,matched,Open,rated runner,6.5,1.9,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,7,ROGAN,Rogan,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,8,CHILLIES,Chillies,matched,Open,rated runner,4.4,1.55,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,9,HEY BELLA,Hey Bella,matched,Open,rated runner,6.5,1.9,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,5,10,SO YOU EXCEL,So You Excel,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:55:30.000Z
+Pakenham,6,1,ZOURAIN,Zourain,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,2,YUM,Yum,matched,Open,rated runner,12.0,3.6,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,3,BLUE BANDIT,Blue Bandit,matched,Open,rated runner,9.0,2.9,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,4,SURPERB FROST,Surperb Frost,matched,Open,rated runner,11.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,5,DISCOVER LUPINO,Discover Lupino,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,6,RUSSIAN FRONT,Russian Front,matched,Open,rated runner,7.5,2.6,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,7,SEABORN,Seaborn,matched,Open,rated runner,11.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,8,HOLA AMIGOS,Hola Amigos,matched,Open,rated runner,8.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,9,CHERRY HILLS,Cherry Hills,matched,Open,rated runner,15.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,10,THERE WERE ROSES,There Were Roses,matched,Open,rated runner,8.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,11,VENETIAN CHOICE,Venetian Choice,matched,Open,rated runner,34.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,12,PERFECT NIGHT,Perfect Night,matched,Open,rated runner,4.2,1.85,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,13,POSH DIAMANTE,Posh Diamante,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),17.0,4.6,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,14,TIGER FOX,Tiger Fox,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,15,JETSETTER JACK,Jetsetter Jack,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),8.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,6,16,KING MAYWIN,King Maywin,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:11:01.000Z
+Pakenham,7,1,BARBARINO,Barbarino,matched,Open,rated runner,3.5,1.45,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,2,GENERAL BLU,General Blu,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,3,MIGHTY MYSTIC,Mighty Mystic,matched,Open,rated runner,9.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,4,SHARES,Shares,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,5,HOOK 'N' SPUR,Hook 'N' Spur,matched,Open,rated runner,5.0,1.7,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,6,NGONGOTAHA,Ngongotaha,matched,Open,rated runner,14.0,3.2,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,7,CIRCUS LIGHTS,Circus Lights,matched,Open,rated runner,6.5,1.95,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,8,ASTIQUER,Astiquer,matched,Open,rated runner,3.0,1.4,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,9,TITAN'S SPIRIT,Titan'S Spirit,matched,Open,rated runner,14.0,3.2,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,10,GLISK,Glisk,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,11,PURE SILK,Pure Silk,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,7,12,ALL TORQUE,All Torque,matched,Open,rated runner,101.0,15.0,2026-11-26T21:43:32Z,2026-11-26T21:36:56.000Z
+Pakenham,8,1,BARARI,Barari,matched,Open,rated runner,4.2,1.75,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,2,HELLO ROMEO,Hello Romeo,matched,Open,rated runner,17.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,3,LANDMARK,Landmark,matched,Open,rated runner,6.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,4,MR TICKLES,Mr Tickles,matched,Open,rated runner,41.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,5,MAGNABELLE ROYALE,Magnabelle Royale,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,6,MONIX,Monix,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,7,WEAPON CLEAR,Weapon Clear,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,8,JAKIVY,Jakivy,matched,Open,rated runner,18.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,9,YOLO,Yolo,matched,Open,rated runner,6.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,10,HEADBANGER,Headbanger,matched,Open,rated runner,7.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,11,IT'S A YES,It'S A Yes,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,12,ROOM FOR BINGO,Room For Bingo,matched,Open,rated runner,101.0,19.0,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,13,SPIRIT OF WEALTH,Spirit Of Wealth,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),17.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,14,VIVID SUN,Vivid Sun,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,15,NOETZIE,Noetzie,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),4.2,1.75,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Pakenham,8,16,MONGOLIAN GOBI,Mongolian Gobi,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),11.0,3.2,2026-11-26T21:43:32Z,2026-11-26T21:10:55.000Z
+Sunshine Coast,1,1,COOL ZUMBELINA,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,2,TAUTARA,Tautara,matched,Open,rated runner,34.0,5.0,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,3,TEQUILA CHRISTMAS,Tequila Christmas,matched,Open,rated runner,34.0,5.0,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,4,WEATHERFORDRINKING,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,5,BRILLIANT DISGUISE,Brilliant Disguise,matched,Open,rated runner,71.0,9.0,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,6,DIAMOND BOOM,Diamond Boom,matched,Open,rated runner,101.0,12.0,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,7,VUKAS,Vukas,matched,Open,rated runner,11.0,2.4,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,8,CHARLIE CHOO CHOO,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,9,DARN SAGA,Darn Saga,matched,Open,rated runner,9.0,2.1,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,10,MELODRAMA MISS,Melodrama Miss,matched,Open,rated runner,23.0,3.8,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,11,SHEZA TRAP,Sheza Trap,matched,Open,rated runner,6.0,1.7,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,12,SUNNY DOLL,Sunny Doll,matched,Open,rated runner,23.0,3.8,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,13,BOLD NOMAD,Bold Nomad,matched,Open,rated runner,1.45,1.08,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,14,SHE'S HOTSTUFF,She'S Hotstuff,matched,Open,rated runner,18.0,3.2,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,1,15,IMAGOODSORT,Imagoodsort,matched,Open,rated runner,151.0,18.0,2026-11-26T21:43:32Z,2026-11-26T15:10:49.000Z
+Sunshine Coast,2,1,YOU'VE GOT THIS,You'Ve Got This,matched,Open,rated runner,51.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,2,FROSTY LOOKS,Frosty Looks,matched,Open,rated runner,17.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,3,RIESA,Riesa,matched,Open,rated runner,23.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,4,MONOCRU,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,5,ZOUBUCA SHOTS,Zoubuca Shots,matched,Open,rated runner,3.7,1.45,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,6,SPLICED,Spliced,matched,Open,rated runner,4.6,1.6,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,7,THE AVIATOR,The Aviator,matched,Open,rated runner,2.3,1.24,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,8,FACTNOT FICTION,Factnot Fiction,matched,Open,rated runner,126.0,17.0,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,9,SEAPHIRA,Seaphira,matched,Open,rated runner,10.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,10,YOU DRIVE ME CRAZY,You Drive Me Crazy,matched,Open,rated runner,10.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,11,RATIVA,Rativa,matched,Open,rated runner,126.0,17.0,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,2,12,TRAIL BOSS,Trail Boss,matched,Open,rated runner,126.0,17.0,2026-11-26T21:43:32Z,2026-11-26T21:15:58.000Z
+Sunshine Coast,3,1,LARUSSO,Larusso,matched,Open,rated runner,4.8,1.8,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,2,POOR OL' JOHNY RAY,Poor Ol' Johny Ray,matched,Open,rated runner,2.8,1.4,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,3,TAP HIGH,Tap High,matched,Open,rated runner,11.0,2.9,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,4,CHANCE DE LUNE,Chance De Lune,matched,Open,rated runner,17.0,3.9,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,5,AUTUMN HEIR,Autumn Heir,matched,Open,rated runner,4.0,1.65,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,6,HIGHLAND KITTY,Highland Kitty,matched,Open,rated runner,7.5,2.3,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,7,ORMOND ROAD,Ormond Road,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,8,BLUEPRINT,Blueprint,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,9,HE'S A SAINT,He'S A Saint,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,10,READY TO DRINK,Ready To Drink,matched,Open,rated runner,34.0,7.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,11,BOLERO,Bolero,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,12,SHOWMAN,Showman,matched,Open,rated runner,151.0,24.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,3,13,THINK I'M IRISH,Think I'M Irish,matched,Open,rated runner,71.0,12.0,2026-11-26T21:43:32Z,2026-11-26T20:12:32.000Z
+Sunshine Coast,4,1,OUT OF TURN,Out Of Turn,matched,Open,rated runner,19.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,2,SEA ADMIRAL,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,3,KING OF THE JUNGLE,King Of The Jungle,matched,Open,rated runner,23.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,4,SWEET HESITATION,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,5,TELLING,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,6,CASINO BAY,Casino Bay,matched,Open,rated runner,21.0,4.6,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,7,HI BARBIE,Hi Barbie,matched,Open,rated runner,7.0,2.2,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,8,OSCAR,Oscar,matched,Open,rated runner,3.4,1.55,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,9,RED FEATHER BOA,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,10,SHADWELL LANE,Shadwell Lane,matched,Open,rated runner,2.9,1.45,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,11,SIZZLEIST,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,12,TARA I AM,Tara I Am,matched,Open,rated runner,11.0,3.0,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,13,BELLE AFFAIR,Belle Affair,matched,Open,rated runner,31.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,14,TRIPLE YES,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,15,ZOUREKA,Zoureka,matched,Open,rated runner,13.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,16,STEEL KNIGHT,Steel Knight,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,17,TORQUE TOO EASY,Torque Too Easy,matched,Open,rated runner,151.0,26.0,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,4,18,CYBER CITY,Cyber City,matched,Open,rated runner,9.5,2.7,2026-11-26T21:43:32Z,2026-11-26T21:36:36.000Z
+Sunshine Coast,5,1,VANDEVELDE,Vandevelde,matched,Open,rated runner,6.5,1.6,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,2,OCEAN SYMPHONY,Ocean Symphony,matched,Open,rated runner,81.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,3,TIVACIOUS,Tivacious,matched,Open,rated runner,8.5,1.8,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,4,STORMING HOME,Storming Home,matched,Open,rated runner,1.75,1.08,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,5,SIMPLY FUN,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,6,STAR OF PARIS,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,7,TALK ABOUT LAYLA,Talk About Layla,matched,Open,rated runner,2.9,1.2,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,8,TISANI JAMES,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,9,FLOP SHOT,Flop Shot,matched,Open,rated runner,19.0,2.9,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,10,ESPOIR DA TAP,Espoir Da Tap,matched,Open,rated runner,71.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,11,INTERRO,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,12,STRIKE ME PINK,Strike Me Pink,matched,Open,rated runner,34.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,13,LORD DANILO,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,5,14,LECAN,Lecan,matched,Open,rated runner,81.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:37:53.000Z
+Sunshine Coast,6,1,MEASURE UP,Measure Up,matched,Open,rated runner,6.0,2.2,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,2,OLE BAZZLE,Ole Bazzle,matched,Open,rated runner,16.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,3,TULONG,Tulong,matched,Open,rated runner,8.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,4,QUEST OF QUESTS,Quest Of Quests,matched,Open,rated runner,41.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,5,RUSSIAN ESCAPE,Russian Escape,matched,Open,rated runner,6.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,6,SIMPLY FUN,Simply Fun,matched,Open,rated runner,12.0,3.5,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,7,BUSKER,Busker,matched,Open,rated runner,10.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,8,COPPER STAR,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,9,RUMBLE TOWN,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,10,ENCRYPTED FEELING,Encrypted Feeling,matched,Open,rated runner,21.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,11,FAR BEYOND,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,12,XTRA LA VITA,Xtra La Vita,matched,Open,rated runner,3.3,1.6,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,13,DAZZLING DIAMOND,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,14,WORTHTHEADMISSION,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,15,KEMAL,Kemal,matched,Open,rated runner,10.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,16,PIGGIETALES,Piggietales,matched,Open,rated runner,34.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,17,CHANCE WITH WOLVES,Chance With Wolves,matched,Open,rated runner,23.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,18,OAKFIELD MONTANA,Oakfield Montana,matched,Open,rated runner,61.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,6,19,ROARING SUCCESS,Roaring Success,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:17:43.000Z
+Sunshine Coast,7,1,HARD KNOX,Hard Knox,matched,Open,rated runner,5.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,2,FLASHING STAR,Flashing Star,matched,Open,rated runner,9.5,3.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,3,MARTINDALE KID,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,4,ONLYYOUCANREAD,Onlyyoucanread,matched,Open,rated runner,9.5,3.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,5,SYMMETRIQUE,Symmetrique,matched,Open,rated runner,13.0,3.7,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,6,HOT'N'SMART,Hot'N'Smart,matched,Open,rated runner,4.0,1.75,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,7,ZOUCOUP,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,8,DAPPER VEE,Dapper Vee,matched,Open,rated runner,41.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,9,OLD NIFTY,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,10,CASTLEREAGH AFFAIR,Castlereagh Affair,matched,Open,rated runner,7.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,11,MYSTICISE,Mysticise,matched,Open,rated runner,5.0,2.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,12,TWICE BETTER,Twice Better,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,13,BALTUSROL,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,14,SHOWBIZ VEGA,Showbiz Vega,matched,Open,rated runner,23.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,15,VIVA ESTELLA,Viva Estella,matched,Open,rated runner,19.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,16,WHITE SWAN,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,17,PURE AUDACITY,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,18,MISS KIT KAT,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,19,ZARLA,Zarla,matched,Open,rated runner,16.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,20,TAPPY'S STAR,Tappy'S Star,matched,Open,rated runner,126.0,24.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Sunshine Coast,7,21,ALARMED,Alarmed,matched,Open,rated runner,71.0,15.0,2026-11-26T21:43:32Z,2026-11-26T21:22:47.000Z
+Cairns,1,1,BALLANDELLA STREET,Ballandella Street,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,1,2,FARNANHEIT,Farnanheit,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,1,3,POWER CRUISE,Power Cruise,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,1,4,ROTH AUTHORITY,Roth Authority,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,1,5,LEUBOOM,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,
+Cairns,1,6,VOLARE,Volare,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,1,7,PRINCESS KNOWITALL,Princess Knowitall,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,1,CORPULENT,Corpulent,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,2,ZIGGY STARCRAFT,Ziggy Starcraft,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,3,THUNDER BLAZE,Thunder Blaze,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,4,YOUMEANDDUPRE,Youmeanddupre,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,5,FRILLY FILLY,Frilly Filly,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,2,6,TARIFF,Tariff,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,3,1,MR STRONG,Mr Strong,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,2,ROCKY CHEVAL,Rocky Cheval,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,3,UNCLE TREASURE,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,4,DESIGN POWER,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,5,SHORTS FURY,Shorts Fury,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,6,TIME EFEX,Time Efex,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,7,MORNING GLORY,Morning Glory,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,3,8,GREY DEVIL,Grey Devil,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:12:51.000Z
+Cairns,4,1,SMART MISSION,Smart Mission,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,2,WINCHESTER,Winchester,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,3,THE HONEY BADGER,The Honey Badger,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,4,VINCENTVANGEE,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,5,CATCH A BREAK,Catch A Break,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,6,DIAMOND LUCY,Diamond Lucy,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,7,ZIGGY STARCRAFT,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,4,8,NOSEY NEO,Nosey Neo,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:22:52.000Z
+Cairns,5,1,WORTHY GEM,Worthy Gem,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,2,GOOD ONE CECIL,Good One Cecil,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,3,DEE THREE,Dee Three,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,4,HEART OF VIENNA,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,5,MONDAY CLOSE,Monday Close,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,6,RUSSIAN FANTASY,Russian Fantasy,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,7,BOOMING BELIEF,Booming Belief,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,5,8,BOOMIOUS,Boomious,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:03:03.000Z
+Cairns,6,1,MACHINE HEAD,Machine Head,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,6,2,COPPABELLA ROAD,Coppabella Road,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,6,3,TASSORTING,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,
+Cairns,6,4,THREEBROTHERS,Threebrothers,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,6,5,GOLDEN OCTAVIAN,Golden Octavian,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,6,6,DO A LITTLE DANCE,Do A Little Dance,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,6,7,CARLANDO,Carlando,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,
+Cairns,7,1,TURN BIRD,Turn Bird,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,2,HARTSHORN,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,3,OVERLORD,Overlord,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,4,BRAVE AGENDA,Brave Agenda,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,5,INCHING CLOSER,Inching Closer,matched,Reserve,rated runner,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,6,LINE 'EM UP LOUI,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Cairns,7,7,CEREMONIOUS,,not in our field,LateScratched,,,,2026-11-26T21:43:32Z,2026-11-26T21:37:22.000Z
+Mount Gambier,1,1,CALM THE PRESS,Calm The Press,matched,Open,rated runner,14.0,2.8,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,2,MALAWI MAN,Malawi Man,matched,Open,rated runner,61.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,3,POWDER GUY,Powder Guy,matched,Open,rated runner,151.0,19.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,4,REBEL'S LEGACY,Rebel'S Legacy,matched,Open,rated runner,4.6,1.5,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,5,EL PASO SENORITA,El Paso Senorita,matched,Open,rated runner,151.0,19.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,6,GRANDSTRAZ,Grandstraz,matched,Open,rated runner,81.0,11.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,7,GREEN AMBER,Green Amber,matched,Open,rated runner,61.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,8,PIKLEMEGRANMOTHER,Piklemegranmother,matched,Open,rated runner,2.3,1.2,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,9,SERILO,Serilo,matched,Open,rated runner,3.1,1.3,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,10,CHILLY SAV,Chilly Sav,matched,Open,rated runner,151.0,19.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,11,HALFA PENNY,Halfa Penny,matched,Open,rated runner,34.0,5.0,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,1,12,HARD AND FORST,Hard And Forst,matched,Open,rated runner,6.0,1.7,2026-11-26T21:43:32Z,2026-11-26T20:23:02.000Z
+Mount Gambier,2,1,COLD TRAIN,Cold Train,matched,Open,rated runner,8.5,2.3,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,2,HASTA LA OINKERS,Hasta La Oinkers,matched,Open,rated runner,7.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,3,MONEY WHEEL,Money Wheel,matched,Open,rated runner,5.0,1.7,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,4,PATH TO VICTORY,Path To Victory,matched,Open,rated runner,7.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,5,KING LEONIDAS,King Leonidas,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,6,NORMANDY PEACE,Normandy Peace,matched,Open,rated runner,2.15,1.24,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,7,COCOA CHARM,Cocoa Charm,matched,Open,rated runner,61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,8,IMMINENT TOUCH,Imminent Touch,matched,Open,rated runner,101.0,15.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,9,ISKADEEL,Iskadeel,matched,Open,rated runner,7.0,2.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,10,NO NEED FOR TEARS,No Need For Tears,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,11,REWARD DRAWER,Reward Drawer,matched,Open,rated runner,61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,2,12,STUDIO ARTIST,Studio Artist,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:04:59.000Z
+Mount Gambier,3,1,VAN ROY,Van Roy,matched,Open,rated runner,4.2,2.1,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,2,FOX GEM,Fox Gem,matched,Open,rated runner,3.7,1.95,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,3,SYNTHESISE,Synthesise,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,4,BLINDATO,Blindato,matched,Open,rated runner,2.8,1.65,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,5,PARKRUN,Parkrun,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,6,PIANTA,Pianta,matched,Open,rated runner,5.5,2.5,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,7,BY NINE,By Nine,matched,Open,rated runner,21.0,8.0,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,8,DEFICIT,Deficit,matched,Open,rated runner,6.0,2.7,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,3,9,FIFTH HUSBAND,Fifth Husband,matched,Open,rated runner,71.0,26.0,2026-11-26T21:43:32Z,2026-11-26T20:02:14.000Z
+Mount Gambier,4,1,GUSTY WAY,Gusty Way,matched,Open,rated runner,4.0,1.55,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,2,LOST HIS BEANS,Lost His Beans,matched,Open,rated runner,26.0,5.0,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,3,FREE BEER,Free Beer,matched,Open,rated runner,5.5,1.85,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,4,EMERALD REWARD,Emerald Reward,matched,Open,rated runner,9.5,2.5,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,5,SINGLES MOMENT,Singles Moment,matched,Open,rated runner,4.8,1.7,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,6,ONE BOUND,One Bound,matched,Open,rated runner,4.0,1.55,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,7,CHILLI REAPER,Chilli Reaper,matched,Open,rated runner,5.0,1.75,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,4,8,SALSBURY HILL,Salsbury Hill,matched,Open,rated runner,15.0,3.4,2026-11-26T21:43:32Z,2026-11-26T19:17:55.000Z
+Mount Gambier,5,1,IN LOVE,In Love,matched,Open,rated runner,4.4,1.75,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,2,POSITIVE IMAGE,Positive Image,matched,Open,rated runner,7.5,2.4,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,3,ELNAJEEB,Elnajeeb,matched,Open,rated runner,11.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,4,HOLLOW TURF,Hollow Turf,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,5,LIGHT FILLED,Light Filled,matched,Open,rated runner,4.0,1.7,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,6,FOX MAN,Fox Man,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,7,MAGIC FIELD,Magic Field,matched,Open,rated runner,5.5,2.0,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,8,BOLSHOI BABE,Bolshoi Babe,matched,Open,rated runner,7.5,2.4,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,9,STARSEATIC,Starseatic,matched,Open,rated runner,14.0,3.6,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,10,ARTISTIC ANGEL,Artistic Angel,matched,Open,rated runner,6.5,2.2,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,11,NUDGE 'EM ALONG,Nudge 'Em Along,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),34.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,5,12,SQUAGAGA,Squagaga,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:22:45.000Z
+Mount Gambier,6,1,AQUAHOLIC,Aquaholic,matched,Open,rated runner,4.4,1.6,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,2,SIR RANDOLPH,Sir Randolph,matched,Open,rated runner,12.0,2.8,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,3,SOTOMAYOR,Sotomayor,matched,Open,rated runner,3.1,1.4,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,4,WHATHAPPENSINVEGAS,Whathappensinvegas,matched,Open,rated runner,18.0,3.7,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,5,RAMELLE,Ramelle,matched,Open,rated runner,2.9,1.35,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,6,MISTY EMOTIONS,Misty Emotions,matched,Open,rated runner,9.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,7,SWEET BUT SASSY,Sweet But Sassy,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,8,FLUX,Flux,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,9,LOVE 'N' GAMES,Love 'N' Games,matched,Open,rated runner,51.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,10,RATNARAJ,Ratnaraj,matched,Open,rated runner,51.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,6,11,SUNSET PRAYER,Sunset Prayer,matched,Open,rated runner,19.0,3.9,2026-11-26T21:43:32Z,2026-11-26T21:02:38.000Z
+Mount Gambier,7,1,CORK HARBOUR,Cork Harbour,matched,Open,rated runner,8.0,2.7,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,2,SIMPLY EXCELS,Simply Excels,matched,Open,rated runner,13.0,3.7,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,3,AHVEJAY,Ahvejay,matched,Open,rated runner,10.0,3.1,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,4,INFER,Infer,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,5,LET IT RIDE,Let It Ride,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,6,TUDAYA,Tudaya,matched,Open,rated runner,4.6,1.9,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,7,ALBLAZER,Alblazer,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,8,BARE TO WITNESS,Bare To Witness,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,9,QUIZLET,Quizlet,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,10,STEELY HUSTLER,Steely Hustler,matched,Open,rated runner,3.9,1.75,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,11,IT'S NOT OVER,It'S Not Over,matched,Open,rated runner,23.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,12,TURNED LOOSE,Turned Loose,matched,Open,rated runner,6.5,2.3,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,13,BACKFLIPS,Backflips,matched,Open,rated runner,9.5,3.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,14,HASTA LA AMNESTY,Hasta La Amnesty,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,15,BLACK BUGATTI,Black Bugatti,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),10.0,3.1,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,16,DRINK THEN KISS,Drink Then Kiss,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Mount Gambier,7,17,DANGEROUS SECRET,Dangerous Secret,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),51.0,11.0,2026-11-26T21:43:32Z,2026-11-26T20:26:19.000Z
+Wodonga,1,1,BOURNE LEGACY,Bourne Legacy,matched,Open,rated runner,1.95,1.3,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,2,COSMIC SNITZ,Cosmic Snitz,matched,Open,rated runner,3.2,1.6,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,3,KIPTUM,Kiptum,matched,Open,rated runner,126.0,40.0,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,4,PRINCE OF GLAM,Prince Of Glam,matched,Open,rated runner,15.0,4.8,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,5,TOUGH REVELATION,Tough Revelation,matched,Open,rated runner,101.0,30.0,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,6,BORATA'S GIRL,Borata'S Girl,matched,Open,rated runner,4.4,1.95,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,7,MAGNA PEAK,Magna Peak,matched,Open,rated runner,7.0,2.6,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,1,8,ZOU OWE ME,Zou Owe Me,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:47.000Z
+Wodonga,2,1,DAGGER ONE,Dagger One,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,2,DOCTORATE,Doctorate,matched,Open,rated runner,151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,3,MAGNUS MAXIMUS,Magnus Maximus,matched,Open,rated runner,9.0,2.3,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,4,ORDINARY STAR,Ordinary Star,matched,Open,rated runner,5.5,1.8,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,5,PRAY FOR ELEGANCE,Pray For Elegance,matched,Open,rated runner,1.85,1.18,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,6,SKADOODLE,Skadoodle,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,7,AZKA VELOCE,Azka Veloce,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,8,IMA VIXEN,Ima Vixen,matched,Open,rated runner,101.0,15.0,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,9,MUDDY,Muddy,matched,Open,rated runner,12.0,2.8,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,10,NEWS SCOOP,News Scoop,matched,Open,rated runner,6.0,1.85,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,11,REGAL BELLE,Regal Belle,matched,Open,rated runner,21.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,12,WINNA'S SISTER,Winna'S Sister,matched,Open,rated runner,23.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,2,13,ARTIES A STAR,Arties A Star,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:35:52.000Z
+Wodonga,3,1,HE'S OUR BOY,He'S Our Boy,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,2,SCORPION,Scorpion,matched,Open,rated runner,4.2,1.65,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,3,ACROMAN,Acroman,matched,Open,rated runner,101.0,16.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,4,ASTATINE,Astatine,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,5,BOOTS OFF,Boots Off,matched,Open,rated runner,2.8,1.35,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,6,INNER LIGHT,Inner Light,matched,Open,rated runner,101.0,16.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,7,BAR LA LA,Bar La La,matched,Open,rated runner,12.0,3.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,8,ESTIVAL,Estival,matched,Open,rated runner,13.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,9,FIORE DARANCIO,Fiore Darancio,matched,Open,rated runner,14.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,10,KATIE ON THE EDGE,Katie On The Edge,matched,Open,rated runner,81.0,13.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,11,MONEY BAGS,Money Bags,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,12,NINETYFIVEINAFIFTY,Ninetyfiveinafifty,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,13,PRINCESS PRUSSIA,Princess Prussia,matched,Open,rated runner,23.0,4.8,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,14,I'M CONFUSED,I'M Confused,matched,Open,rated runner,3.4,1.5,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,15,VELOCE,Veloce,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),34.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,16,LEGAL SIZE,Legal Size,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,3,17,COOKARDINIA MISS,Cookardinia Miss,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:39:15.000Z
+Wodonga,4,1,JUST CALL ME JONNY,Just Call Me Jonny,matched,Open,rated runner,2.8,1.45,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,2,DARTBOARD,Dartboard,matched,Open,rated runner,8.0,2.5,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,3,STAR BLAZER,Star Blazer,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,4,MISTRESSOFILLUSION,Mistressofillusion,matched,Open,rated runner,21.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,5,QUAMBY,Quamby,matched,Open,rated runner,11.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,6,SORRY SUNSHINE,Sorry Sunshine,matched,Open,rated runner,18.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,7,DOC MARCH,Doc March,matched,Open,rated runner,21.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,8,SHE'S STARGAZING,She'S Stargazing,matched,Open,rated runner,8.5,2.6,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,9,SURELY SPECIAL,Surely Special,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,10,UNDER THE HAT,Under The Hat,matched,Open,rated runner,14.0,3.7,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,11,CARNIVAL RICHES,Carnival Riches,matched,Open,rated runner,6.0,2.1,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,12,VICTRIX SWAN,Victrix Swan,matched,Open,rated runner,26.0,6.0,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,13,MURGASTY,Murgasty,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,4,14,PERFECTLY GOOD,Perfectly Good,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),81.0,15.0,2026-11-26T21:43:32Z,2026-11-26T21:41:44.000Z
+Wodonga,5,1,SHOTARO,Shotaro,matched,Open,rated runner,3.8,1.6,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,2,GIANT'S REPRIEVE,Giant'S Reprieve,matched,Open,rated runner,6.5,2.1,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,3,PALLADIUM,Palladium,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,4,SAN MARCO,San Marco,matched,Open,rated runner,8.5,2.5,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,5,SIR BASIL,Sir Basil,matched,Open,rated runner,51.0,9.0,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,6,STAR BUYER,Star Buyer,matched,Open,rated runner,7.0,2.2,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,7,SCOTTISH PEARL,Scottish Pearl,matched,Open,rated runner,26.0,5.0,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,8,BOTTAS,Bottas,matched,Open,rated runner,3.6,1.55,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,9,ASHEN KNIGHT,Ashen Knight,matched,Open,rated runner,41.0,8.0,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,10,MIDNIGHT EAGLE,Midnight Eagle,matched,Open,rated runner,14.0,3.4,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,11,RED LIGHT RACHEL,Red Light Rachel,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,5,12,STRATEGIC DEFENSE,Strategic Defense,matched,Open,rated runner,6.0,2.0,2026-11-26T21:43:32Z,2026-11-26T21:42:00.000Z
+Wodonga,6,1,BUCCLEUCH,Buccleuch,matched,Open,rated runner,1.7,1.16,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,2,EL ROCKO,El Rocko,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,3,TUFF TU MUS,Tuff Tu Mus,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,4,EL SOLEADO,El Soleado,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,5,PRESSER,Presser,matched,Open,rated runner,6.5,1.95,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,6,SPACE RIDER,Space Rider,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,7,BLACK STORM,Black Storm,matched,Open,rated runner,23.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,8,BULLETS HIGH,Bullets High,matched,Open,rated runner,9.0,2.4,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,9,INDISPENSABLE,Indispensable,matched,Open,rated runner,41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,10,ITSUKUSHIMA,Itsukushima,matched,Open,rated runner,12.0,2.8,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,11,EAMONN'S MEMORY,Eamonn'S Memory,matched,Open,rated runner,61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,12,EXPEETEE,Expeetee,matched,Open,rated runner,23.0,4.4,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,13,MAKE IT SWEET,Make It Sweet,matched,Open,rated runner,13.0,3.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,14,SISTER SHAY,Sister Shay,matched,Open,rated runner,10.0,2.5,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,15,FOX APPEAL,Fox Appeal,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,10.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,16,MORNING DARLING,Morning Darling,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),41.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,6,17,GREY LAD,Grey Lad,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),151.0,22.0,2026-11-26T21:43:32Z,2026-11-26T21:35:06.000Z
+Wodonga,7,1,BRENLYN'S LEGACY,Brenlyn'S Legacy,matched,Open,rated runner,8.5,2.6,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,2,PROJETO,Projeto,matched,Open,rated runner,34.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,3,THE SHAPER,The Shaper,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,4,BEFORE THE WAR,Before The War,matched,Open,rated runner,17.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,5,COMMANDS SUCCESS,Commands Success,matched,Open,rated runner,7.5,2.4,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,6,FOREMAN'S GULLY,Foreman'S Gully,matched,Open,rated runner,34.0,7.0,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,7,ABSTRUSE,Abstruse,matched,Open,rated runner,17.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,8,FOURTHTIMELUCKY,Fourthtimelucky,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,9,HAZARDOUS,Hazardous,matched,Open,rated runner,2.4,1.35,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,10,ROSIE'S PROPHECY,Rosie'S Prophecy,matched,Open,rated runner,9.0,2.7,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,11,ROUSSILLON,Roussillon,matched,Open,rated runner,7.0,2.3,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,12,ALICE ALICE,Alice Alice,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,13,MORE HIGHS ON ME,More Highs On Me,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),10.0,2.9,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,14,PACIFIC GLAMOUR,Pacific Glamour,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),15.0,3.8,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,15,PRANDIUM TEMPUS,Prandium Tempus,matched,Open,unnumbered (emergency or late entry; not counted until confirmed),61.0,11.0,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,7,16,THREE MUSKETEERS,Three Musketeers,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:39:42.000Z
+Wodonga,8,1,TANGANYIKA,Tanganyika,matched,Open,rated runner,4.4,1.7,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,2,FUTURE FUND,Future Fund,matched,Open,rated runner,13.0,3.3,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,3,COPPERFIELD,Copperfield,matched,Open,rated runner,17.0,4.0,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,4,LORD OF VALOR,Lord Of Valor,matched,Open,rated runner,4.8,1.8,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,5,PAPARAZZO,Paparazzo,matched,Open,rated runner,7.0,2.2,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,6,SHOMA,Shoma,matched,Open,rated runner,4.8,1.8,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,7,BLUSHING TYCOON,Blushing Tycoon,matched,Open,rated runner,12.0,3.1,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,8,DOUBTFREE,Doubtfree,matched,Open,rated runner,4.6,1.75,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,9,DEELING ACES,Deeling Aces,matched,LateScratched,scratched,,,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z
+Wodonga,8,10,STEVE'S WAY,Steve'S Way,matched,Open,rated runner,18.0,4.2,2026-11-26T21:43:32Z,2026-11-26T21:41:36.000Z

@@ -1,0 +1,15 @@
+{
+ "scored_utc": "2026-11-26T22:04:11.143404+00:00",
+ "engine_release": "Engine v2.1.2-candidate (Queensland) - SHADOW, NOT LIVE",
+ "family": "QLD",
+ "base_v1_file": "prospective/shadow/qld_v2_1_2/prerace/20261127/Cairns/pred_20261126T214332Z_20261126T215943Z_runners.csv",
+ "base_v1_sha256": "a77730a03f9ab83d4615e17bb2b87595e5fef271f3cb7afa47b42791885324c3",
+ "snapshot_key": "rqpre:20261127:CNS:20261126T214332Z",
+ "engine_manifest": "benchmarks/candidate_qld_v2_1_2/engine_manifest.json",
+ "engine_manifest_sha256": "64afd6756975e0b07fe45cb1ce3863e3a4720e5400bff68b61073c23795ffd2b",
+ "production_engine": "Engine v2.1.1 (prospective/prerace)",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "shadow only: not on the dashboard, not settled, not ranked"
+ ]
+}
