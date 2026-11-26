@@ -172,3 +172,19 @@ Kept OPEN (not rejected): course geometry and momentum retention; acceleration x
 wide with vs without cover; clear running and interruption sensitivity; cross-jurisdiction inference; measured times vs estimated figures;
 interstate connections; dynamic distance suitability; one experience-dependent learning mechanism nationally. An empirical leader-hold
 rate by track is not course geometry.
+
+
+## Batch 15 (27 Nov 2026): rating foundations, physical profiles, small improvements
+Ledger: research/batch15/README.md. Research only; no production change.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| Rating update rule: cap heavy defeats at 10-12 L and let good runs move the rating 1.3x | Engine v2.3 refitted: +0.0071 (0.0051-0.0092) 2024, +0.0055 (0.0038-0.0072) 2025-26; cap alone +0.0064/+0.0040; plateau 10-12 L; rating accuracy +0.0104/+0.0096 per run, stability unchanged | CANDIDATE for a shadow (chosen with sight of both periods: prospective evidence needed). Decision: Damo |
+| The rating learns unevenly | good runs: next +0.6 to +2.3 kg above the raised rating; narrow defeats under-weighted (1.2-1.6x), 10-25 L over-weighted (0.79x), one-off poor run after a good run 0.64x | MEANINGFUL (drives the candidate above) |
+| Beating a lowered rating is not recovery | after 10+ kg-worse runs: next +0.66 vs revised but -4.3 vs pre-run rating over 5 starts | MEANINGFUL, descriptive |
+| Heavy defeats with an abnormal late decline are partly temporary | +0.95 next vs -0.54 for normal-shape heavy defeats; +0.36 (0.11-0.62) holding defeat size; Qld progressive fade + vet finding +1.64 (1.25-2.03) | MEANINGFUL against the rating; physical data only in Qld/SA |
+| Official margins are clock-derived; states convert differently | within-race r 1.000 (Qld, SA), 0.9997 (Vic); 0.170 / 0.159 / 0.162 s per length | MEANINGFUL; national comparability lead (OPEN: state-specific conversion) |
+| Handicap weight slope (Benchmark races) in release-build form | +0.0005 (0.0003-0.0007) 2024 clean; +0.0015 (0.0011-0.0018) 2025-26 | CANDIDATE built (benchmarks/engine_v2_4_candidate); needs race class at race time (TAB raceClassConditions) |
+| bm_change never served at race time | 0 of 67 runners today; serving it would cost -0.0008 (0.0004-0.0013) | Train/serve gap; keep unserved; drop from training at next release (decision) |
+| Rider momentum tables | 120 riders; trainer-half r 0.57 / 0.61; no rider with 60+ rides in both states | Descriptive; frozen table for the prospective check |
+| Workload artifact audit | corrected control changes nothing material | Closed |

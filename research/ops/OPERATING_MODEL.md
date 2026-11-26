@@ -111,6 +111,12 @@ with switches on = runs end to end (frames identical to the fitted ones, labels 
 | Batch 14 follow-up (27 Nov): profiles, own-normal decline, riders, distance form, small-improvement bundle | research | Done; research/batch14/followup/README.md. No candidate except the weight slope (already queued). Rider tendencies uncertain-small (Qld +0.0008 / +0.0013) |
 | QRIC and SA stewards reports parsed (staging/stewards/stewards_events.csv.gz) | research data | Done 27 Nov (supplementary evidence only; never a rating input). Next: horse-level clear-running repeatability; wide with vs without cover |
 | Jockey workload | research | CLOSED 27 Nov: no effect; artifact rule recorded (race-relative rating controls only). Reopen only with a substantive new reason |
+| Handicap weight slope (Engine v2.4 candidate = v2.3 + wt_x_hcp) | release prep | Candidate built 27 Nov (benchmarks/engine_v2_4_candidate, not live). Needs: race class at race time (add TAB raceClassConditions to the step-2 RACE line + parser), switch file (off), parity, then Damo's release decision. Keep bm_change unserved |
+| Rating update rule (cap heavy defeats 10-12 L, good runs 1.3x) | research -> shadow (decision) | Engine +0.0055 to +0.0073 per race; needs Damo's approval to build as a shadow (full rating + engine rebuild, kg scale changes) |
+| bm_change train/serve gap | release clean-up | Never served; serving would cost 0.0008; drop from training at the next release (decision) |
+| v2.3 frame build rewrites out/out_nat_r20*.csv and out_nat_venue_offsets.csv | operational fix | Side effect seen 27 Nov (restored from git); make the frame build write to a scratch path (with the next release wiring) |
+| State seconds-per-length (Qld 0.170, SA 0.159, Vic 0.162) | research (national comparability) | Open: test state-specific conversion on horses moving between states |
+| Common national framework for Qld (shadow) | build | Approved 26 Nov; not yet wired (next) |
 | Kept open (untested, not rejected): course geometry and momentum retention; acceleration x course configuration; extra ground vs optimal distance; cross-jurisdiction inference; dynamic distance suitability | research | Open. An empirical leader-hold rate by track is not geometry |
 | Moonee Valley new layout (planned 2027) | data rule | New configuration key when racing resumes; no transfer of old-layout tendencies |
 | Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
