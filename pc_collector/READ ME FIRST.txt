@@ -1,0 +1,66 @@
+RACING INTELLIGENCE - PC COLLECTOR - SETUP (about 10 minutes, once)
+=====================================================================
+
+What it does: your PC collects the TAB racecards at 7:30am, the form
+records from 7:40am and the results from 6:30pm, then uploads them to
+your GitHub. Claude checks each upload before using it. No odds go into
+the form records. Nothing else on the PC is touched.
+
+Keep the PC plugged in. Sleep is fine. Don't shut it down overnight.
+
+
+PART 1 - MAKE A GITHUB KEY (5 min)
+----------------------------------
+1. Open this page (sign in to GitHub if asked):
+   https://github.com/settings/personal-access-tokens/new
+2. Token name: type   PC collector
+3. Expiration: pick the longest option offered (1 year is fine).
+4. Repository access: click "Only select repositories",
+   then pick   racing-intelligence
+5. Permissions: find "Contents" and set it to   Read and write
+   (Leave everything else alone. "Metadata: Read" turns on by itself.)
+6. Click the green "Generate token" button (confirm if asked).
+7. Click the copy button next to the token (it starts with github_pat_).
+   Do NOT paste it into chat or email. You only paste it in Part 3.
+
+
+PART 2 - UNPACK THE FILES (1 min)
+---------------------------------
+1. Find the downloaded file  racing-pc-collector.zip  (usually Downloads).
+2. Right-click it > Properties. At the bottom, tick "Unblock" > OK.
+   (If there is no Unblock box, skip this.)
+3. Right-click it again > Extract All... > Extract.
+
+
+PART 3 - RUN THE INSTALLER (3 min)
+----------------------------------
+1. In the extracted folder, double-click   install.cmd
+2. If a blue "Windows protected your PC" box appears:
+   click "More info" > "Run anyway".
+3. Windows asks "Do you want to allow this app to make changes?" > Yes.
+4. A blue window asks for the GitHub token. Press Ctrl+V (or right-click
+   inside the window) to paste. It shows as ***** - that's normal.
+   Press Enter.
+5. Wait 1-3 minutes while it downloads its own private copy of Python
+   and runs a self-test.
+
+
+WHAT YOU SHOULD SEE
+-------------------
+Green:  "ALL DONE. Self-test passed. Today's TAB meetings seen: ..."
+        Press Enter to close. You're finished. Tell Claude "installed".
+
+Red:    "PROBLEM: ..."  Take a photo or copy the red text (it never
+        contains your token) and send it to Claude.
+
+
+AFTERWARDS
+----------
+- Nothing to do day to day.
+- Claude keeps the current collection running as a backup until the PC
+  has delivered cleanly for 7 days in a row.
+- If the PC misses a run you still get the usual email alert.
+- To remove it: double-click  uninstall.cmd  (in the same folder) > Yes.
+- When the key expires (in a year), Claude will tell you. Make a new key
+  (Part 1) and double-click install.cmd again - it notices the old key
+  no longer works and asks for the new one.

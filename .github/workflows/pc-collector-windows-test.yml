@@ -26,7 +26,8 @@ jobs:
         env: { RC_TEST_TOKEN: 'dummy-token-for-ci-0123456789abcdef' }
         run: |
           $root = Join-Path $env:RUNNER_TEMP 'rc'
-          powershell -NoProfile -ExecutionPolicy Bypass -File pc_collector\install.ps1 -TestMode -InstallRoot $root -InstallUser "$env:USERDOMAIN\$env:USERNAME"
+          cmd /c "pc_collector\install.cmd -TestMode -InstallRoot $root -InstallUser $env:USERDOMAIN\$env:USERNAME"   # the same double-click file Damo uses
+          if ($LASTEXITCODE -ne 0) { throw "install.cmd exit $LASTEXITCODE" }
           if ($LASTEXITCODE -ne 0) { throw "installer exit $LASTEXITCODE" }
       - name: Verify tasks, wake/catch-up settings and token unlock under the task account
         shell: powershell

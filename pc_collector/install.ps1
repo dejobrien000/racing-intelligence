@@ -4,6 +4,7 @@
 # Re-running is safe: it updates the program and tasks and keeps the stored token (use -NewToken to replace it).
 param([switch]$NewToken, [switch]$TestMode, [string]$InstallUser = '', [string]$InstallRoot = '')
 $ErrorActionPreference = 'Stop'
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 $Ver = '1.0.0'
 $PyVer = '3.12.8'
 function Say($m, $c = 'White') { Write-Host $m -ForegroundColor $c }
@@ -49,10 +50,21 @@ $tokFile = Join-Path $Sec 'github_token.bin'
 Add-Type -AssemblyName System.Security
 $entropy = [Text.Encoding]::ASCII.GetBytes('RacingIntelligence-PC-collector')
 & icacls.exe $Sec /inheritance:r /grant:r "${InstallUser}:(OI)(CI)F" '*S-1-5-18:(OI)(CI)F' '*S-1-5-32-544:(OI)(CI)F' | Out-Null   # you, Windows, administrators
+if (-not $NewToken -and -not $TestMode -and (Test-Path $tokFile)) {   # a stored key that GitHub no longer accepts (expired or revoked) -> ask for a new one
+    try {
+        $old = [Text.Encoding]::UTF8.GetString([Security.Cryptography.ProtectedData]::Unprotect([IO.File]::ReadAllBytes($tokFile), $entropy, [Security.Cryptography.DataProtectionScope]::LocalMachine))
+        Invoke-RestMethod -Uri 'https://api.github.com/repos/dejobrien000/racing-intelligence' -Headers @{ Authorization = "Bearer $old"; 'User-Agent' = 'RacingCollector-installer' } | Out-Null
+    } catch {
+        $code = 0; try { $code = [int]$_.Exception.Response.StatusCode } catch {}
+        if ($code -in 401, 403, 404) { Say 'The GitHub key stored earlier no longer works (expired or removed). You will be asked for a new one.' 'Yellow'; $NewToken = $true }
+        else { Say 'Could not reach GitHub to check the stored key; keeping it.' 'Yellow' }
+    }
+    $old = $null
+}
 if ($NewToken -or -not (Test-Path $tokFile)) {
     if ($TestMode) { $plain = $env:RC_TEST_TOKEN }
     else {
-        Say "`nPaste your GitHub token below (it will not show as you type) and press Enter." 'Yellow'
+        Say "`nPaste your GitHub token below (Ctrl+V or right-click; it shows as *****) and press Enter." 'Yellow'
         $s = Read-Host -AsSecureString 'GitHub token'
         $plain = [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($s))
     }
