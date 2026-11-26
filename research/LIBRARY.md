@@ -6,6 +6,8 @@ here so they are not re-tested without materially different evidence. Market dat
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|
+| 27 Nov 2026 | Engine v2.3 (six states): history weight credit 0.25 kg per kg + 0.170 s per length, full refit (approved 26 Nov 9:07pm) | 2025-26 +0.0095 (0.0076-0.0113) vs v2.2 as run; top pick +0.6 pts; v2.2 kept as daily previous-engine shadow | batch13/, benchmarks/engine_v2_3/ |
+| 27 Nov 2026 | Engine v2.1.3 (Qld): v2.1.1 + Age & sex (approved 26 Nov 9:07pm) | 2024 +0.0190, 2025-26 +0.0166; v2.1.1 kept as daily previous-engine shadow | batch13/, benchmarks/engine_v2_1_3/ |
 | 26 Nov 2026 | Weight carried (allocated minus apprentice claim) for the national model; Qld unchanged (consistent allocated) | Definition match with history; replay 1 top pick in 37 races | benchmarks/engine_v2/RELEASES.md |
 | 26 Nov 2026 | Engine v2.2: 14 terms (career shape and consistency, light weight, quick backup, measured venue class) | Validation +0.0125 log-lik per race (0.0105-0.0145) | batch10/ |
 | 26 Nov 2026 | Engine v2.1.1 (Qld): v2.1 refitted on the database with Breednet Qld country meetings | +0.0121 vs v2.1 on 2025-26 | batch10/v211/ |
@@ -13,11 +15,10 @@ here so they are not re-tested without materially different evidence. Market dat
 ## Candidates (not live)
 | Since | What | Status | Ledger |
 |---|---|---|---|
-| 26 Nov 2026 | Engine v2.1.3 (Qld): v2.1.1 + Age & sex family (ages now held for 98.9% of Qld runners) | Built, gated OFF (ops/engine_qld213_enabled): 2024 +0.0190 (0.0128-0.0253), 2025-26 +0.0166 (0.0116-0.0215); awaiting Damo's release decision | batch13/, benchmarks/engine_v2_1_3/ |
-| 26 Nov 2026 | Engine v2.3 = the weight candidate below, built through the release chain | Built, gated OFF (ops/engine_c2_enabled): +0.0095 (0.0076-0.0113) vs production as it runs, 2025-26; awaiting Damo's release decision | batch13/, benchmarks/engine_v2_3/ |
-| 26 Nov 2026 | Common national framework with Qld coefficients (one methodology, regional coefficients) | Research: 2024 +0.0424, 2025-26 +0.0326 vs v2.1.1; next step a shadow build | batch13/qld_align.py |
-| 25 Nov 2026 | National rating rebuilt with weight credit 0.25 kg per kg (history) and 0.170 s per length (figures), full v2.2 rebuild | Full engine rebuilt and refitted: +0.0107 log-lik per race vs production as it runs (2025-26, +0.0089 to +0.0124), top pick +0.56 pts; +0.0105 / +0.0084 vs refitted production (2024 / 2025-26); credit carries almost all of it. Reproducible. Next: calibration refit and shadow scoring | benchmarks/candidate_national_weight/, batch12/candidate_weight/ |
-| 25 Nov 2026 | Today's weight vs field in handicaps (own slope) on top of the weight candidate | Preregistered; 2024 +0.0012 (+0.0008 to +0.0017), negative coefficient both windows; residual 3 kg+ under field 1.50 -> 1.36 (part only) | preregistered/2026-11-25_b12_weight_handicap.md, batch12/candidate_weight/ |
+| 26 Nov 2026 | Common national framework with Qld coefficients (one methodology, regional coefficients; a variant keeps Qld physical inputs) | Research: 2024 +0.0424, 2025-26 +0.0326 vs v2.1.1. Damo 26 Nov: build as a SHADOW; no promotion without an evidence review | batch13/qld_align.py |
+| 26 Nov 2026 | Handicap weight slope (wt_x_hcp) on top of Engine v2.3 | Damo 26 Nov: prepare for the following release. Preregistered 2024 +0.0012 (0.0008-0.0017); +0.0014 over C2 on 2025-26 (not independent) | /tmp/cand evidence -> batch13 build |
+| 25 Nov 2026 | National rating rebuilt with weight credit 0.25 kg per kg (history) and 0.170 s per length (figures), full v2.2 rebuild | Released as Engine v2.3 from 27 Nov 2026 (see In production); kept here for its Batch 11-12 history | benchmarks/candidate_national_weight/, batch12/candidate_weight/ |
+| 25 Nov 2026 | Today's weight vs field in handicaps (own slope) on top of the weight candidate | Preregistered; 2024 +0.0012 (+0.0008 to +0.0017), negative coefficient both windows; residual 3 kg+ under field 1.50 -> 1.36 (part only) Damo 26 Nov: prepare for the release after v2.3 | preregistered/2026-11-25_b12_weight_handicap.md, batch12/candidate_weight/ |
 | 25 Nov 2026 | Qld v2.1.2: drop last-start finish and track/distance/going history | Shadow-scored from 26 Nov; decide on prospective races only (2024 window weak, top-pick rate not better) | benchmarks/candidate_qld_v2_1_2/, batch11/ |
 
 ## Open hypotheses (judged only on races from 26 Nov 2026)

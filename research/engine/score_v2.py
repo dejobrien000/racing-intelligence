@@ -140,7 +140,8 @@ def meeting_table(ix):
 
 if __name__ == '__main__':
     D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')
-    IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv') & ~IX.file.str.contains('/v2_')]
+    PRED_ROOT = os.environ.get('PRED_ROOT', 'prospective/prerace'); SHADOW_PREV = PRED_ROOT != 'prospective/prerace'   # shadow root: ops/run_prev_shadow.sh only
+    IX = pd.read_csv(os.path.join(PRED_ROOT, 'INDEX.csv')); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv') & ~IX.file.str.contains('/v2_')]
     latest = IX.sort_values('scored_utc').groupby('track').tail(1)
     if os.environ.get('ONLY_TRACKS'): latest = latest[latest.track.isin(os.environ['ONLY_TRACKS'].split(','))]   # score only these meetings
     V22_ON = V22
@@ -153,7 +154,7 @@ if __name__ == '__main__':
             if not (V22 and fam != 'QLD'): raise
             print(f'WARNING Engine v2.2 failed for {ix.track} ({str(ex)[:120]}); scored with Engine v2.0 instead', file=sys.stderr)
             V22 = False; T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
-        od = os.path.dirname(ix.file); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
+        od = os.path.dirname(ix.file) if not SHADOW_PREV else os.path.join(PRED_ROOT, D, str(ix.track).replace(' ', '_')); os.makedirs(od, exist_ok=True); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
         fams = [c for c in T.columns if c.startswith('v2+ ')]
         keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'claim_used_kg', 'weight_carried_kg', 'weight_basis', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
                [c for c in T.columns if c.startswith('grp_')] + fams + ['j_surp', 'j_n', 't_surp', 't_n', 'jt_surp', 'j_change', 'age_n', 'female', 'h2h', 'surprise_last', 'dyn_traj', 'dist_change', 'wt_change', 'bm_change', 'c_rec', 'c_rec_n', 'g_rec', 'g_rec_n', 'd_rec', 'd_rec_n', 'rating_kg_national']
@@ -164,7 +165,8 @@ if __name__ == '__main__':
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
               'engine_manifest_sha256': sha('benchmarks/engine_v2_1_3/manifest.json' if (Q213 and fam == 'QLD') else ('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json')), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else (('Engine v2.3' if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
+        if SHADOW_PREV: m2['shadow'] = 'NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled'
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
-        with open('prospective/prerace/INDEX.csv', 'a') as fh:
+        with open(os.path.join(PRED_ROOT, 'INDEX.csv'), 'a') as fh:
             for kind, pth in paths.items(): fh.write(f"{m2['scored_utc']},{D},{ix.track},{ix.snapshot_key},{pth},{sha(pth)}\n")
         print('written', base); print(out.groupby('race_no').head(1)[['race_no', 'horse', 'v2_chance_pct', 'v1_rank', 'v1_chance_pct', 'final_rating_kg_eq'] + fams].to_string(index=False))

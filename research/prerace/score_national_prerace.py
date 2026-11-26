@@ -137,9 +137,10 @@ for cname, coef in CANDS.items():
         RC.append({'candidate': cname, 'race_id': rid, 'runners': len(g), 'top_chance_pct': round(100 * pr[0], 2), 'second_chance_pct': round(100 * pr[1], 2) if len(pr) > 1 else None,
                    'top_two_gap_pts': round(100 * (pr[0] - (pr[1] if len(pr) > 1 else 0)), 2), 'runners_without_prior_form': int(g.missform.sum()), 'going': g.going_text.iloc[0], 'rail': g.rail.iloc[0]})
 RW = pd.DataFrame(RW).sort_values(['candidate', 'race_id', 'rank']); RC = pd.DataFrame(RC)
+PRED_ROOT = os.environ.get('PRED_ROOT', os.path.join('prospective', 'prerace'))   # a shadow root only for ops/run_prev_shadow.sh; production default unchanged
 for (date, venue), key in latest.items():
     if ONLY and str(date).replace('-', '') != ONLY: continue
-    v = slug(venue); od = os.path.join('prospective', 'prerace', date, venue.replace(' ', '_')); os.makedirs(od, exist_ok=True)
+    v = slug(venue); od = os.path.join(PRED_ROOT, date, venue.replace(' ', '_')); os.makedirs(od, exist_ok=True)
     base = os.path.join(od, f"pred_{key.split(':')[-1]}_{stamp}"); pre = f"{snaps[key]['state']}|{v}|{pd.Timestamp(date).strftime('%Y-%m-%d')}|"
     paths = {'runners': base + '_runners.csv', 'races': base + '_races.csv', 'manifest': base + '_manifest.json'}
     with open(paths['runners'], 'x') as fh: RW[RW.race_id.str.startswith(pre)].to_csv(fh, index=False)
@@ -151,8 +152,8 @@ for (date, venue), key in latest.items():
           'notes': ['no result of these races existed when this file was written', 'no sectionals or running positions are used outside Queensland',
                     'acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed']}
     with open(paths['manifest'], 'x') as fh: json.dump(mf, fh, indent=1, default=str)
-    new = not os.path.exists('prospective/prerace/INDEX.csv')
-    with open('prospective/prerace/INDEX.csv', 'a') as fh:
+    new = not os.path.exists(os.path.join(PRED_ROOT, 'INDEX.csv'))
+    with open(os.path.join(PRED_ROOT, 'INDEX.csv'), 'a') as fh:
         if new: fh.write('scored_utc,date,track,snapshot_key,file,sha256\n')
         for kind, pth in paths.items(): fh.write(f"{scored.isoformat()},{date},{venue},{key},{pth},{sha(pth)}\n")
     print('written', base)

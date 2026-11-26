@@ -104,7 +104,19 @@
   with the default gate = identical to the pre-correction run (claims not used). Coefficients unchanged (they were fitted on carried weight).
 - Roll back: WEIGHT_CARRIED=0 in the run environment, or revert this commit.
 
-## Proposed for the 27 Nov 2026 run: Engine v2.3 (six states) and Engine v2.1.3 (Queensland) - BUILT, SWITCHED OFF, awaiting Damo
+## Engine v2.3 (six states) and Engine v2.1.3 (Queensland) - APPROVED by Damo 26 Nov 2026 9:07pm ("Approve both"); live from the 27 Nov 7:30am run
+- Switches ON: research/ops/engine_c2_enabled and research/ops/engine_qld213_enabled (each file records the approval).
+- Kept for rollback and prospective comparison: Engine v2.2 (benchmarks/engine_v2_2, engine_v2_1 NSW family, candidates_national_common)
+  and Engine v2.1.1 (benchmarks/engine_v2_1, candidates_b4_national_v3) are unchanged on disk and are scored every day after publishing
+  as the PREVIOUS-ENGINE SHADOW (ops/run_prev_shadow.sh, called by ops/run_shadow.sh in step 5a): prospective/shadow/prev_engines/,
+  own INDEX.csv, never on the dashboard, never ranked or settled; the evaluation ledger records it as prediction 'previous_engine'.
+- kg scale (display): the six-state kg-equivalent scale changes from 0.226 to 0.269 model units per kg, so the same performance reads
+  about 16% smaller in kg under v2.3. A change of units, not of ability: compare kg ratings within one engine only. The dashboard's
+  scale note and release note say so; Queensland's scale is unchanged (0.2243).
+- Ability ratings vs time figures stay distinct: the weight credit (0.25 kg per kg) changes how the opposition-aware ABILITY rating reads
+  past runs; 0.170 s per length changes how margins become TIME FIGURES (estimates, never shown or stored as measured times).
+- Re-exports and meeting refreshes follow the engine that scored the day (export reads the day's saved engine_release; refresh_meeting.sh
+  reads the switch files); a failed v2.3 frame build sets ENGINE_C2=0 for that day.
 - Default: neither switch file exists, so the 27 Nov run is the 26 Nov configuration. Parity replay of the 26 Nov run with both
   switches off, on the final code: every number identical in all 8 prediction files and all 260 dashboard runners.
 - Engine v2.3 (research/ops/engine_c2_enabled): national history rating credits 0.25 kg per kg of weight carried (was 1 kg) and turns

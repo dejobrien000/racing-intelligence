@@ -87,17 +87,34 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   master-2026-11-23-sa-wa-tas. Weekly job: publishing ON (first GitHub dry run passed every check); collects QLD too.
 - Local working copy (this chat): switches to the final database at 11:30pm and syncs code at 11:35pm, after the 25 Nov settlement.
 
-## Production configuration register (single source; updated 26 Nov 2026 night)
-| Item | 27 Nov run if Damo approves nothing | Switch to approve | Roll back |
-|---|---|---|---|
-| NSW/Vic/ACT/SA/WA/Tas | Engine v2.2 (unchanged from 26 Nov) | create ops/engine_c2_enabled -> Engine v2.3 (benchmarks/engine_v2_3) | delete the file; a failed v2.3 frame build falls back to v2.2 for that day by itself |
-| Qld | Engine v2.1.1 (v3 rating), unchanged | create ops/engine_qld213_enabled -> Engine v2.1.3 (benchmarks/engine_v2_1_3) | delete the file |
-| Qld shadow | v2.1.2 shadow (ops/run_shadow.sh), never published | - | - |
-| Weight | national = carried (allocated minus claim); Qld = allocated (its history is allocated) | - | WEIGHT_CARRIED=0 |
-| Display calibration | v2.2 bent line (six states); v2.0 bent line (Qld) | follows the engine switch (v2.3 / v2.1.3 each carry a refit) | follows the switch |
-| Master database | master-2026-11-23-sa-wa-tas-qld (branch db; previous on db-prev) | Monday 30 Nov weekly update adds TAB daily tables, TAB venue map, TAB results check, Vic tracking, racing.com archive (approved 26 Nov; none of it feeds ratings) | db-prev |
-Each meeting's day-file record names the engine that scored it; days already published are never rescored.
-Parity replay of the 26 Nov run with both switches off (26 Nov night): every number identical in all 8 prediction files and all 260 dashboard runners.
+## Production configuration register (single source; updated 26 Nov 2026 9:30pm after Damo's approval)
+| Item | Production from the 27 Nov 7:30am run | Switch | Roll back to | Kept as |
+|---|---|---|---|---|
+| NSW/Vic/ACT/SA/WA/Tas | Engine v2.3 (benchmarks/engine_v2_3; ratings built each morning: national_runs_c2.parquet, engine/frames/national_c2.parquet) | ops/engine_c2_enabled (approved 26 Nov 9:07pm) | Engine v2.2: delete the file; a failed v2.3 build falls back for that day by itself | previous-engine shadow, daily |
+| Qld | Engine v2.1.3 (v3 rating; benchmarks/engine_v2_1_3) | ops/engine_qld213_enabled (approved 26 Nov 9:07pm) | Engine v2.1.1: delete the file | previous-engine shadow, daily |
+| Qld candidate shadow | v2.1.2 (ops/run_shadow.sh), never published | - | - | - |
+| Weight | national = carried (allocated minus claim); Qld = allocated (its history is allocated) | - | WEIGHT_CARRIED=0 | - |
+| Display calibration | v2.3 bent line (six states); v2.1.3 bent line (Qld) | follows the engine switch | follows the switch | - |
+| kg display scale | six states 0.269 per kg (v2.2 was 0.226: kg figures ~16% smaller, units not ability); Qld 0.2243 unchanged | follows the switch | follows the switch | - |
+| Master database | master-2026-11-23-sa-wa-tas-qld (branch db; previous on db-prev) | Monday 30 Nov weekly update adds TAB daily tables, TAB venue map, TAB results check, Vic tracking, racing.com archive (approved 26 Nov; none feeds ratings) | db-prev | - |
+Each meeting's day-file record names the engine that scored it; days already published are never rescored. The morning run pulls
+GitHub first (DAILY_RUN step 0), so a switch file created or deleted on GitHub takes effect at the next run.
+Checks 26 Nov night: replay of the 26 Nov run with switches off = identical to production (8 prediction files, 260 dashboard runners);
+with switches on = runs end to end (frames identical to the fitted ones, labels per meeting, breakdowns reconcile, ranking, shadow).
+
+### Open work register (operations and research; one list, newest first)
+| Item | Type | Status |
+|---|---|---|
+| Common national framework for Qld (Qld coefficients; keep Qld physical inputs as a variant) | research build -> shadow | Approved to build as a SHADOW (Damo 26 Nov 9:07pm). Not for promotion without an evidence review |
+| Handicap weight slope on top of v2.3 (wt_x_hcp) | next release candidate | Approved to prepare for the following release; preregistered 2024 +0.0012 (0.0008-0.0017); needs build_v22 with the term + live term definition + parity |
+| Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
+| Interstate connections (pool levels inside the rating) | research | Open |
+| One experience-shaped learning mechanism for all states | research | Open (Batch 13: shape supported, v3 setting not) |
+| Qld duplicated track/distance/going history (simplification) | research | v2.1.2 shadow continues |
+| Monday 30 Nov weekly update: first live run of the five foundation steps | operations | Scheduled; passed on a database copy only |
+| PC collector install | operations (Damo) | Pending |
+| SA gear history run; NSW notifications parser (other post styles); QRIC backfill check | operations | Pending |
+| Ascot 12 Apr 2025 re-collection | operations | Queued for 30 Nov |
 
 ## Production from the 26 Nov 2026 run (recorded 25 Nov evening)
 - NSW/Vic/ACT/SA/WA/Tas: Engine v2.2, weight carried (allocated minus apprentice claim, claim taken off once). Qld: Engine v2.1.1, allocated

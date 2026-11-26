@@ -12,11 +12,23 @@ IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) 
 latest = IX.sort_values('scored_utc').groupby('track').tail(1)
 U = pd.read_parquet('engine/frames/national.parquet', columns=['horse', 'date', 'race', 'dyn_nat', 'dyn_nat_inn'])
 last = U.sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse')
+# Engine v2.3 (from 27 Nov 2026 when ops/engine_c2_enabled): its ratings, kg scale and rating history are its own (benchmarks/engine_v2_3,
+# engine/frames/national_c2.parquet); Engine v2.1.3 (Qld) uses its own manifest. Other meetings exactly as before.
+FAM_REL = {}   # family record (kg scale, top-pick calibration) of the engine that scored the meeting
+if os.path.exists('benchmarks/engine_v2_3/engine_v2.json'): FAM_REL['Engine v2.3'] = json.load(open('benchmarks/engine_v2_3/engine_v2.json'))['families']['NSW_VIC_ACT']
+if os.path.exists('benchmarks/engine_v2_1_3/manifest.json'): FAM_REL['Engine v2.1.3'] = json.load(open('benchmarks/engine_v2_1_3/manifest.json'))['families']['QLD']
+_last_c2 = {}
+def last_for(release):
+    if release == 'Engine v2.3' and os.path.exists('engine/frames/national_c2.parquet'):
+        if 'v' not in _last_c2: _last_c2['v'] = pd.read_parquet('engine/frames/national_c2.parquet', columns=['horse', 'date', 'race', 'dyn_nat']).sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse')
+        return _last_c2['v']
+    return last
 nk = lambda s: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s).upper()))
 rows, races = [], []
 for _, ix in latest.iterrows():
     W = pd.read_csv(ix.file); fam = W.family.iloc[0]; F = MAN['families'][fam]; kg = F['score_per_kg_total']
     m2 = json.load(open(ix.file.replace('_runners.csv', '_manifest.json'))); m1 = json.load(open(m2['base_v1_file'].replace('_runners.csv', '_manifest.json')))
+    rel = str(m2.get('engine_release') or '').split(' (')[0]; F = FAM_REL.get(rel, F); kg = F['score_per_kg_total']; last_m = last_for(rel)
     cond = m1['snapshot'].get('conditions', {}); snap_utc = m1['snapshot'].get('retrieved_utc')
     OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
     V1 = pd.read_csv(m2['base_v1_file']); V1 = V1[V1.candidate == OPS[fam]][['race_no', 'saddlecloth', 'has_prior_form', 'has_sectionals']]
@@ -26,7 +38,7 @@ for _, ix in latest.iterrows():
     kc = [c for c in W.columns if c.startswith('kg::')]
     W['check_sum_kg'] = W[kc].sum(axis=1) - W.groupby('race_id')[kc].transform('mean').sum(axis=1)
     assert np.allclose(W.check_sum_kg, W.final_rating_kg_eq, atol=0.05), 'breakdown does not reconcile with the final rating'
-    key = W.horse.map(nk); W['rating_change_kg'] = W.rating_kg_national - key.map(last.dyn_nat)
+    key = W.horse.map(nk); W['rating_change_kg'] = W.rating_kg_national - key.map(last_m.dyn_nat)
     def explain(r):
         g = {c[4:]: r[c] for c in kc}; pos = [f'{k} +{v:.1f}' for k, v in sorted(g.items(), key=lambda t: -t[1]) if v >= 0.4][:3]; neg = [f'{k} {v:.1f}' for k, v in sorted(g.items(), key=lambda t: t[1]) if v <= -0.4][:2]
         gaps = []

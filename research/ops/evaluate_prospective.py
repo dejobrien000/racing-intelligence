@@ -27,6 +27,7 @@ def row(m, r, pred, engine, pfile, chances, finish, cal=None):
             'top_pick_finish': ran[t], 'top_pick_won': int(t in winners), 'winner_in_top3': int(rank[w] <= 3), 'top_pick_cal_pct': (cal or {}).get(t),
             'race_label': r.get('label'), 'data_confidence': (r.get('confidence') or {}).get('level')}
 SH = pd.read_csv('prospective/shadow/qld_v2_1_2/INDEX.csv') if os.path.exists('prospective/shadow/qld_v2_1_2/INDEX.csv') else None
+PV = pd.read_csv('prospective/shadow/prev_engines/INDEX.csv') if os.path.exists('prospective/shadow/prev_engines/INDEX.csv') else None   # previous production engines (from 27 Nov 2026)
 out = []
 for m in DJ['meetings']:
     if not m.get('rated'): continue
@@ -36,6 +37,14 @@ for m in DJ['meetings']:
         s = SH[(SH.date.astype(str) == Y) & (SH.track == m['name']) & SH.file.str.contains('/v2_') & SH.file.str.endswith('_runners.csv')]
         if len(s): shf = s.sort_values('scored_utc').file.iloc[-1]
     shadow = pd.read_csv(shf) if shf else None
+    prev, pvf, prev_label = None, None, None
+    try:
+        if PV is not None:
+            s_ = PV[(PV.date.astype(str) == Y) & (PV.track == m['name']) & PV.file.str.contains('/v2_') & PV.file.str.endswith('_runners.csv')]
+            if len(s_):
+                pvf = s_.sort_values('scored_utc').file.iloc[-1]; prev = pd.read_csv(pvf)
+                prev_label = json.load(open(pvf.replace('_runners.csv', '_manifest.json'))).get('engine_release', '?') + ' (previous production, not live)'
+    except Exception as ex: print('WARNING previous-engine predictions unreadable for', m['name'], str(ex)[:100]); prev = None
     for r in m['races']:
         fin = {h['n']: h.get('finish') for h in r['runners']}
         if not any(fin.values()): continue
@@ -44,6 +53,10 @@ for m in DJ['meetings']:
         if shadow is not None:
             g = shadow[shadow.race_no == r['no']]
             x = row(m, r, 'shadow', 'Engine v2.1.2-candidate (Qld, not live)', shf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
+            if x: out.append(x)
+        if prev is not None:
+            g = prev[prev.race_no == r['no']]
+            x = row(m, r, 'previous_engine', prev_label, pvf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
 new = [o for o in out if (o['date'], o['meeting'], str(o['race']), o['prediction']) not in seen]
 need_header = not os.path.exists(L) or os.path.getsize(L) == 0
