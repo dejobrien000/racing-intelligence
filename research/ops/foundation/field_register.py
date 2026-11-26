@@ -21,7 +21,7 @@ add('Core', 'Identity', 'Meeting date', 'meeting', BN, 'RQ (Qld), Racing SA (SA)
     'Date + venue is the meeting key in every source.', 'Ratings', '')
 add('Core', 'Identity', 'Venue / track', 'meeting', BN + ' (venue slug)', 'RQ track names via venue_map; TAB meeting name and venue code (daily)',
     'Oct 2022 on', WK, 'bn_meeting.bf_track_slug; venue_map (Qld names)', 'One alias list (national.py) folds course variants (e.g. Sandown Lakeside/Hillside -> Sandown).',
-    'Ratings', 'GAP (small): TAB form records give past-start venues as 4-letter TAB codes (CANT, YGLN...). No code-to-venue table yet, so new starts from TAB form cannot be placed at a venue automatically.')
+    'Ratings', 'tab_venue_code (weekly from 30 Nov): TAB racecard and form codes tied to Breednet meeting slugs by the same horses on the same dates. Five form codes cover two configurations each (BALT, PAKM, SAND, PINJ, MORK): configuration comes from the run, never from the code.')
 add('Core', 'Identity', 'State', 'meeting', BN + ' (state from the Betfair venue map)', 'TAB meeting location (daily)', 'Oct 2022 on', WK,
     'bn_meeting.state', 'Breednet venue map is authoritative; unknown venues are reported each week, not guessed.', 'Ratings', '')
 add('Core', 'Identity', 'Race number', 'race', BN, 'RQ, Racing SA, TAB (daily)', 'Oct 2022 on', WK, 'bn_race.race_no', 'Meeting key + race no. = national race key.', 'Ratings', '')
@@ -69,14 +69,14 @@ add('Core', 'Horse', 'Runs since spell, days since last run', 'runner', 'Derived
     WK + ' (derived); ' + TABF, 'derived in frames; stg_form_runner', 'Our derivation is used; TAB value is a check where history is incomplete.', 'Ratings (fitness/spacing, derived)', '')
 # ---------------------------------------------------------------- today's field (pre-race)
 add('Pre-race', 'Today', 'Today\'s runners and scratchings', 'runner', TABC, 'TAB results (late scratchings); PC collector (same source, from install)',
-    'From 25 Nov 2026 (files)', DAILY, 'Files: collect/national/<date>/ (not in the master database)',
+    'From 25 Nov 2026 (files)', DAILY + '; loaded weekly from 30 Nov', 'Files: collect/national/<date>/; master database tab_file, tab_race, tab_runner (every snapshot kept: 7:30am card, results, later re-reads)',
     'Morning file is the official snapshot; never rebuilt after racing starts.', 'Ratings (who runs)',
-    'CONSOLIDATE: load the daily TAB racecards into the master database at the weekly update (one table), so barriers, claims and scratchings from 25 Nov are kept with the history.')
+    'Approved 26 Nov: loaded at each weekly update from Monday 30 Nov (history/load_tab_daily.py). No price column is loaded.')
 add('Pre-race', 'Today', 'Barrier', 'runner', TABC + ' (every runner, every state)', 'RQ race fields (Qld); Racing SA tracking (SA); Racing NSW form/results (NSW, static)',
     'Qld Oct 2022 on (99%); SA Jan 2024 on; NSW form lines 2018 - 16 Nov 2026; Vic/WA/Tas: none before 25 Nov 2026', DAILY + '; ' + WK + ' (Qld, SA)',
-    'starter.barrier (Qld); sa_starter.barrier (SA); nsw_form_line.barrier, nsw_runner.barrier (NSW); TAB files (all, from 25 Nov)',
+    'starter.barrier (Qld); sa_starter.barrier (SA); nsw_form_line.barrier, nsw_runner.barrier (NSW); tab_runner.barrier (all states, from 25 Nov; weekly from 30 Nov); legacy_racingcom_runner.barrier (106 Vic/NSW races, Oct-Nov 2026)',
     'Barrier at a past start is never taken from TAB form records (they give 0).', 'Ratings (Qld only); Display (national)',
-    'GENUINE GAP: past barriers for Vic, WA and Tas before 25 Nov 2026. Breednet does not publish barriers; TAB form does not give them. Forward is covered once the daily TAB files are loaded (see above).')
+    'GENUINE GAP: past barriers for Vic, WA and Tas before 25 Nov 2026 (except 106 racing.com races). Breednet does not publish barriers; TAB form does not give them. Forward covered by tab_runner from 25 Nov.')
 add('Pre-race', 'Today', 'Allocated weight and apprentice claim', 'runner', TABC, 'RQ race fields (Qld)', 'From 25 Nov 2026 (files); Qld Oct 2022 on', DAILY,
     'TAB files; starter.weight_kg (Qld)', 'Carried = allocated - claim (0-4 kg check).', 'Ratings (carried weight)', '')
 add('Pre-race', 'Today', 'Rider, trainer, emergency flag', 'runner', TABC, 'RQ race fields (Qld)', 'From 25 Nov 2026 (files)', DAILY, 'TAB files', '', 'Ratings (rider/trainer)', '')
@@ -116,8 +116,8 @@ add('SA layer', 'Tracking', 'Same measurements as Qld: section times, positions,
     'Race enters only if every staging check passes; finishes checked against Breednet (bn_finish_agree).', 'Research (released 26 Nov; no rating reads it yet)', '')
 add('Vic layer', 'Tracking', 'Per-runner section times (every 200m) and speed at each mark', 'section',
     'Vic TripleS CSVs via the weekly external Racing.com session (ChatGPT + Damo)', 'none', '1 Jul 2026 on (accepted start); 817 races, 13 track configurations, metro and major provincial',
-    'Weekly, manually started external session -> ZIP -> history/stage_vic_triples.py', 'research/staging/vic_triples (awaiting integration; proposed vic_sectional / vic_starter / vic_race, same shape as SA)',
-    'Validated: runners 6,777/6,777, saddlecloths agree, fastest = winner 663/666. Breednet stays the result of record.', 'Research (staging)',
+    'Weekly, manually started external session -> ZIP -> history/stage_vic_triples.py', 'vic_race, vic_starter, vic_sectional (common tracking shape; loaded at the 30 Nov weekly update, approved 26 Nov); originals on branch raw-vic-triples; staging research/staging/vic_triples',
+    'Validated: 6,777/6,777 tracked runners in matched races, saddlecloths agree, fastest complete run = winner 665/666 (3 dead heats). Breednet stays the result of record. Measured vs derived columns named.', 'Research',
     'No stride, rail distance or ground covered in these files. Country Vic uses a different provider (Daily Sectionals): not covered.')
 add('NSW layer', 'Results and form', 'Barrier, 800m/400m positions, race last 600m, NSW rating, weight allocated and carried', 'past start',
     'Racing NSW form lines (static snapshot)', 'Racing NSW results pages (Jul-24 Nov 2026, static)', 'Form lines Jun 2018 - 16 Nov 2026 for 8,154 horses; results Jul-Nov 2026',
@@ -140,10 +140,10 @@ add('Excluded', 'Market', 'Starting prices, Betfair prices', 'runner', 'Dropped 
     'Loaders refuse records with price text.', 'Excluded', '')
 add('Validation', 'Cross-check', 'Betfair race lists (names, saddlecloths, winners)', 'runner', 'Betfair historical files (prices removed)', 'none', '2020 - Oct 2026, all states + NZ',
     'None (browser bundle; not continued)', 'bf, bf_runner, coverage_betfair', 'Used only to check Breednet and new sources.', 'Validation only',
-    'CONSOLIDATE: TAB nightly results can take over this checking role from Nov 2026; no new Betfair collection needed.')
+    'Approved 26 Nov: replaced going forward by tab_results_check (TAB places 1-4 and scratchings only; places 5+ and margins rest on Breednet). Historical Betfair checks kept.')
 add('Retire', 'racing.com', 'racing.com results and speed tables collected by browser (24 Nov)', 'runner', 'racing.com (collected by Claude in Chrome)', '-',
     '106 races (Oct-Nov 2026); speed for 3 Oct', 'None', 'rc_meeting, rc_race, rc_runner, vic_speed_*', 'Superseded by Breednet results and the Vic TripleS files.',
-    'Not used', 'Recommended for removal at the next weekly update (collected outside the agreed method).')
+    'Not used', 'Approved 26 Nov: archived (history/archive/racingcom, checksums) and retired at the 30 Nov weekly update; unique fields kept in legacy_racingcom_runner (barriers, 800/400 m positions) and vic_pilot_runner/point (distance run, speeds, positions).')
 os.makedirs('ops/foundation', exist_ok=True)
 with open('ops/foundation/field_register.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.DictWriter(fh, fieldnames=H); w.writeheader(); w.writerows(R)
@@ -155,7 +155,7 @@ P = [['process', 'what it collects', 'run by', 'when', 'lands in', 'status'],
      ['QRIC stewards reports', 'Qld stewards reports', 'GitHub Actions (rqstewards)', 'Weekly; backfill running', 'Branch raw-rqstewards', 'Running (staging)'],
      ['SA gear and stewards documents', 'Gear Change Race Order PDFs, stewards PDFs', 'GitHub Actions (sagear)', 'Twice daily; history run in progress', 'Branch raw-sagear', 'Running (staging)'],
      ['NSW stewards notifications', 'Pre-race notices (late gear, surgery, trainer reports)', 'GitHub Actions (nswstewards)', '4 times daily', 'Branch raw-nswstewards', 'Running (staging)'],
-     ['EXTERNAL: weekly Racing.com session', 'Victorian TripleS sectional CSVs (from 1 Jul 2026; 13 track configurations)', 'ChatGPT + Damo, manually started Work session (outside Claude)', 'Weekly', 'ZIP -> history/stage_vic_triples.py -> research/staging/vic_triples', 'Established 26 Nov 2026. First ZIP (817 races, 1 Jul-25 Nov) validated by Claude; awaiting integration decision'],
+     ['EXTERNAL: weekly Racing.com session', 'Victorian TripleS sectional CSVs (from 1 Jul 2026; 13 track configurations)', 'ChatGPT + Damo, manually started Work session (outside Claude)', 'Weekly', 'ZIP -> history/stage_vic_triples.py (staging, Claude) -> history/load_vic_tracking.py (weekly) -> vic_race / vic_starter / vic_sectional', 'Established 26 Nov 2026. First ZIP (817 races, 97 meetings, 13 configurations, 1 Jul-25 Nov) validated; integration approved, loads at the 30 Nov weekly update'],
      ['Missed-run watchdog', 'Emails if the morning run, evening capture or (once enabled) PC deliveries are missing', 'GitHub Actions (run-watchdog)', '8:15am, 8:50am, 12:45am', 'Email to Damo', 'Running'],
      ['Retired', 'Browser collectors: Racing NSW results/form, racing.com, Betfair bundles, Breednet in Chrome', '-', '-', '-', 'Not continued; history kept (racing.com tables to be removed)']]
 with open('ops/foundation/collection_processes.csv', 'w', newline='', encoding='utf-8') as fh: csv.writer(fh).writerows(P)

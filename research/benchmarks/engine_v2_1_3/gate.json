@@ -1,0 +1,61 @@
+{
+ "vs_production_v2_1_1": {
+  "races": 4730,
+  "lp": 0.01658,
+  "lp_lo": 0.01161,
+  "lp_hi": 0.0215,
+  "hit": 0.15,
+  "hit_lo": -0.55,
+  "hit_hi": 0.85,
+  "top3": 1.63,
+  "top3_lo": 0.89,
+  "top3_hi": 2.42,
+  "rho": 0.00962,
+  "rho_lo": 0.00612,
+  "rho_hi": 0.01294
+ },
+ "vs_production_2026": {
+  "races": 2269,
+  "lp": 0.02379,
+  "lp_lo": 0.01733,
+  "lp_hi": 0.03008,
+  "hit": 0.26,
+  "hit_lo": -0.66,
+  "hit_hi": 1.18,
+  "top3": 1.76,
+  "top3_lo": 0.54,
+  "top3_hi": 3.03,
+  "rho": 0.01111,
+  "rho_lo": 0.00632,
+  "rho_hi": 0.01628
+ },
+ "vs_refitted_v2_1_1": {
+  "races": 4730,
+  "lp": 0.01658,
+  "lp_lo": 0.01161,
+  "lp_hi": 0.0215,
+  "hit": 0.15,
+  "hit_lo": -0.55,
+  "hit_hi": 0.85,
+  "top3": 1.63,
+  "top3_lo": 0.89,
+  "top3_hi": 2.42,
+  "rho": 0.00962,
+  "rho_lo": 0.00612,
+  "rho_hi": 0.01294
+ },
+ "production": {
+  "races": 4730,
+  "fit_%": 10.15,
+  "top_pick_%": 26.49,
+  "winner_in_top3_%": 59.05,
+  "order_rho": 0.3902
+ },
+ "candidate": {
+  "races": 4730,
+  "fit_%": 10.89,
+  "top_pick_%": 26.64,
+  "winner_in_top3_%": 60.68,
+  "order_rho": 0.3998
+ }
+}

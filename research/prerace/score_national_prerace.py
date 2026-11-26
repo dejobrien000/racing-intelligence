@@ -4,12 +4,15 @@ fitness + national dynamic rating; nat_v2 = nat_v1 + horse course/going/distance
 invented outside Queensland. Every feature comes from runs before the race date. Write-once outputs as score_prerace.py.
 Usage (from research/): python3 prerace/score_national_prerace.py <nsw snapshot.jsonl.gz> ../history/history.duckdb"""
 import sys, os, re, json, gzip, hashlib, duckdb, numpy as np, pandas as pd
+C2 = os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.3 candidate (weight credit 0.25, 0.170 s/L): benchmarks/engine_v2_3; default off
+if C2: os.environ['WCREDIT'] = '0.25'           # history weight credit used by dyn_rating.prepare
 import dyn_rating as DR, dyn_rating_innov as DI
 SNAP, DB = sys.argv[1], sys.argv[2]
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 nk = lambda s: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s).upper()))
 slug = lambda t: re.sub(r'[^a-z0-9]+', '-', str(t).lower().replace('&', 'and')).strip('-')
-man = json.load(open('benchmarks/candidates_national_common/manifest.json')); SD = man['dev_sd_after_race_centring']; CANDS = man['candidates']; pn = man['dynamic_rating_params']
+MANP = 'benchmarks/engine_v2_3/candidates_national_common.json' if C2 else 'benchmarks/candidates_national_common/manifest.json'
+man = json.load(open(MANP)); SD = man['dev_sd_after_race_centring']; CANDS = man['candidates']; pn = man['dynamic_rating_params']
 scored = pd.Timestamp.now(tz='UTC'); stamp = scored.strftime('%Y%m%dT%H%M%SZ')
 snaps = {}
 with gzip.open(SNAP, 'rt') as fh:
@@ -18,7 +21,7 @@ with gzip.open(SNAP, 'rt') as fh:
 latest = {}
 for k in sorted(snaps): latest[(snaps[k]['date'], snaps[k]['venue'])] = k
 # ---------- history ----------
-U = pd.read_parquet('national_runs.parquet')
+U = pd.read_parquet('national_runs_c2.parquet' if C2 else 'national_runs.parquet')
 con = duckdb.connect(DB, read_only=True)
 bm = con.execute("select meeting_date, bf_track_slug venue, slug from bn_meeting").fetchdf(); bm['date'] = pd.to_datetime(bm.meeting_date)
 NAMEVAR = {'royal-randwick': 'randwick', 'canterbury-park': 'canterbury', 'the-valley': 'moonee-valley', 'wagga-wagga': 'wagga', 'rosehill-gardens': 'rosehill', 'beaumont-newcastle': 'beaumont', 'newcastle-beaumont': 'beaumont',
@@ -143,7 +146,7 @@ for (date, venue), key in latest.items():
     with open(paths['races'], 'x') as fh: RC[RC.race_id.str.startswith(pre)].to_csv(fh, index=False)
     mf = {'scored_utc': scored.isoformat(), 'snapshot': next(m for m in meta if m['snapshot_key'] == key), 'snapshot_bundle': os.path.basename(SNAP), 'snapshot_bundle_sha256': sha(SNAP),
           'not_scored': F[(F.snapshot_key == key) & (F.status != 'runner')][['race_no', 'saddlecloth', 'horse', 'status']].to_dict('records'), 'candidates': list(CANDS),
-          'model_manifest_sha256': sha('benchmarks/candidates_national_common/manifest.json'), 'code_sha256': {f: sha(f) for f in ['prerace/score_national_prerace.py', 'dyn_rating.py', 'dyn_rating_innov.py']},
+          'model_manifest_sha256': sha(MANP), 'engine_c2': C2, 'code_sha256': {f: sha(f) for f in ['prerace/score_national_prerace.py', 'dyn_rating.py', 'dyn_rating_innov.py']},
           'history_cutoff': cut, 'national_runs_sha256': sha('national_runs.parquet'),
           'notes': ['no result of these races existed when this file was written', 'no sectionals or running positions are used outside Queensland',
                     'acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed']}

@@ -10,6 +10,10 @@ V21 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 (25 Nov 2026): Qu
 V22 = os.environ.get('ENGINE_V22', '1') == '1'   # Engine v2.2 (26 Nov 2026 run on): 14 Batch 10 terms for NSW/VIC/ACT/SA/WA/TAS (approved by Damo 25 Nov); Qld stays v2.1
 from engine import v22
 MAN = json.load(open('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'))
+C2 = os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.3 candidate for NSW/VIC/ACT/SA/WA/TAS only (benchmarks/engine_v2_3); Qld untouched; default off
+if C2: MAN['families']['NSW_VIC_ACT'] = json.load(open('benchmarks/engine_v2_3/engine_v2.json'))['families']['NSW_VIC_ACT']
+Q213 = os.environ.get('ENGINE_QLD213', '0') == '1' and V21   # Engine v2.1.3 candidate for Queensland only: v2.1.1 + Age & sex family (benchmarks/engine_v2_1_3); default off
+if Q213: MAN['families']['QLD'] = json.load(open('benchmarks/engine_v2_1_3/manifest.json'))['families']['QLD']
 SNAPDIR = os.environ.get('SNAPDIR', '/mnt/user-data/uploads/Downloads')   # override for cloud-collected bundles
 def find_bundle(name):
     """snapshot bundles live in the PC download folder (staged) or, for cloud-collected fields, collect/national/<date>/bundles"""
@@ -25,7 +29,7 @@ METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'ca
 _U = {}
 def history(D, fam='NSW_VIC_ACT'):
     key = 'U3' if (V21 and fam == 'QLD') else 'U'
-    if key not in _U: _U[key] = pd.read_parquet('engine/frames/national_v3.parquet' if key == 'U3' else 'engine/frames/national.parquet')
+    if key not in _U: _U[key] = pd.read_parquet('engine/frames/national_v3.parquet' if key == 'U3' else ('engine/frames/national_c2.parquet' if C2 else 'engine/frames/national.parquet'))
     U = _U[key]; H_ = U[U.date < pd.Timestamp(D)]
     assert len(H_) == len(U), 'history holds results on/after the race date: not a pre-race run'
     return H_
@@ -158,7 +162,7 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'), 'engine_release': ((MAN.get('version', 'Engine v2.1').split(' (')[0] + ' (v3 rating)') if (V21 and fam == 'QLD') else ('Engine v2.2' if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha('benchmarks/engine_v2_2/manifest.json') if (V22 and fam != 'QLD') else None), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha('benchmarks/engine_v2_1_3/manifest.json' if (Q213 and fam == 'QLD') else ('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json')), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else (('Engine v2.3' if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
         with open('prospective/prerace/INDEX.csv', 'a') as fh:

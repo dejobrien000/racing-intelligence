@@ -20,7 +20,7 @@ def person_key(s):
 PN_FROZEN = json.load(open('benchmarks/candidates_national_common/manifest.json'))['dynamic_rating_params']
 
 def base_frame():
-    U = pd.read_parquet('national_runs.parquet'); U['row_id'] = np.arange(len(U))
+    import os; U = pd.read_parquet(os.environ.get('LAB_IN', 'national_runs.parquet')); U['row_id'] = np.arange(len(U))
     con = duckdb.connect('../history/history.duckdb', read_only=True)
     bm = con.execute("select meeting_date, bf_track_slug venue, slug, state from bn_meeting").fetchdf(); bm['date'] = pd.to_datetime(bm.meeting_date)
     bm1 = bm.drop_duplicates(['date', 'venue']); bm1['config'] = bm1.slug.map(lambda s: NAMEVAR.get(s, s))
@@ -105,6 +105,6 @@ def build(save='engine/frames/national.parquet'):
     import os; os.makedirs(os.path.dirname(save), exist_ok=True); U.to_parquet(save); return U
 
 if __name__ == '__main__':
-    U = build()
+    import os; U = build(os.environ.get('LAB_OUT', 'engine/frames/national.parquet'))
     print(len(U), 'rows'); print(U[['j_surp', 't_surp', 'age_n', 'female', 'h2h', 'surprise_last', 'dyn_traj', 'c_rec']].notna().mean().round(3).to_string())
     print('jockeys', U.jkey.nunique(), 'trainers', U.tkey.nunique())

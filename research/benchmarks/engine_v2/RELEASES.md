@@ -103,3 +103,29 @@
   hand-made carried-weight replay; export recompute check passes; dashboard shows allocated weight + claim; 25 Nov rescored
   with the default gate = identical to the pre-correction run (claims not used). Coefficients unchanged (they were fitted on carried weight).
 - Roll back: WEIGHT_CARRIED=0 in the run environment, or revert this commit.
+
+## Proposed for the 27 Nov 2026 run: Engine v2.3 (six states) and Engine v2.1.3 (Queensland) - BUILT, SWITCHED OFF, awaiting Damo
+- Default: neither switch file exists, so the 27 Nov run is the 26 Nov configuration. Parity replay of the 26 Nov run with both
+  switches off, on the final code: every number identical in all 8 prediction files and all 260 dashboard runners.
+- Engine v2.3 (research/ops/engine_c2_enabled): national history rating credits 0.25 kg per kg of weight carried (was 1 kg) and turns
+  margins into time at 0.170 s per length (was race speed); then the same release chain as production on that rating: nat_v2 v1 frozen
+  (benchmarks/engine_v2_3/candidates_national_common.json), Engine v2 family (engine_v2.json; penalty re-chosen 1e-6, was 1000), the
+  14 v2.2 terms and venue class (engine_v2_2.json), display calibration (runner_calibration.json). kg scale 0.269 (was 0.226).
+  Evidence: built release vs production as it runs, 2025-26, 23,729 races: +0.0095 log-lik per race (0.0076 to 0.0113), top pick
+  28.51% vs 27.91% (+0.60 pts, 0.31 to 0.93); every state positive (SA +0.0023, smallest); 2025 +0.0115, 2026 +0.0072. 2024 (Batch 12,
+  both refitted): +0.0105, but 2024 helped choose 0.25 from five preregistered settings. SA was in the fitting data: not independent.
+  Run cost: the daily run builds national_runs_c2.parquet and engine/frames/national_c2.parquet (3.5 min, identical to the sandbox
+  frames the release was fitted on); any failure falls back to v2.2 for that day.
+- Engine v2.1.3 (research/ops/engine_qld213_enabled): Queensland v2.1.1 + the national Age & sex family (age, 3yo and under, 7yo and
+  over, filly/mare), possible because Qld ages are now held for 98.9% of runners. v1 frozen at the v2.1.1 values; v2 family refitted
+  (penalty 100, as v2.1.1) on development and on all races (batch13/build_qld_v213.py -> benchmarks/engine_v2_1_3/manifest.json);
+  Qld display calibration refitted on v2.1.3 out-of-sample chances (it was still the v2.0 fit). kg scale held at 0.2243 (refit
+  0.2423 recorded) so Qld kg figures stay comparable. Evidence: 2024 +0.0190 (0.0128 to 0.0253); 2025-26 +0.0166 (0.0116 to 0.0215),
+  2026 +0.0238; top pick +0.15 pts (not significant), winner in top three +1.6 pts. NSW/Vic/ACT/SA/WA/Tas untouched by this switch.
+- Replay of 26 Nov with both switches on (sandbox, not published): 4 of 29 top picks change (Geraldton R2, Hawkesbury R2, Rockhampton
+  R1 and R5); every meeting labelled with its engine; dashboard breakdowns reconcile with each engine's own kg scale (exporter fix
+  26 Nov night: v2.3 meetings divide by v2.3's kg scale).
+- Roll back: delete the switch file(s). Days already published keep their own engine. The morning run pulls from GitHub first
+  (ops/DAILY_RUN.md step 0), so a switch created or deleted on GitHub takes effect at the next run.
+- Not in this release (deliberately): the handicap weight slope (next candidate, builds on v2.3), the common national framework for
+  Queensland (shadow next), anything from the 30 Nov database update, any sectional/stride/gear/stewards coefficient.

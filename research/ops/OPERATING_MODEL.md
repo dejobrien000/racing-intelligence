@@ -87,6 +87,18 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   master-2026-11-23-sa-wa-tas. Weekly job: publishing ON (first GitHub dry run passed every check); collects QLD too.
 - Local working copy (this chat): switches to the final database at 11:30pm and syncs code at 11:35pm, after the 25 Nov settlement.
 
+## Production configuration register (single source; updated 26 Nov 2026 night)
+| Item | 27 Nov run if Damo approves nothing | Switch to approve | Roll back |
+|---|---|---|---|
+| NSW/Vic/ACT/SA/WA/Tas | Engine v2.2 (unchanged from 26 Nov) | create ops/engine_c2_enabled -> Engine v2.3 (benchmarks/engine_v2_3) | delete the file; a failed v2.3 frame build falls back to v2.2 for that day by itself |
+| Qld | Engine v2.1.1 (v3 rating), unchanged | create ops/engine_qld213_enabled -> Engine v2.1.3 (benchmarks/engine_v2_1_3) | delete the file |
+| Qld shadow | v2.1.2 shadow (ops/run_shadow.sh), never published | - | - |
+| Weight | national = carried (allocated minus claim); Qld = allocated (its history is allocated) | - | WEIGHT_CARRIED=0 |
+| Display calibration | v2.2 bent line (six states); v2.0 bent line (Qld) | follows the engine switch (v2.3 / v2.1.3 each carry a refit) | follows the switch |
+| Master database | master-2026-11-23-sa-wa-tas-qld (branch db; previous on db-prev) | Monday 30 Nov weekly update adds TAB daily tables, TAB venue map, TAB results check, Vic tracking, racing.com archive (approved 26 Nov; none of it feeds ratings) | db-prev |
+Each meeting's day-file record names the engine that scored it; days already published are never rescored.
+Parity replay of the 26 Nov run with both switches off (26 Nov night): every number identical in all 8 prediction files and all 260 dashboard runners.
+
 ## Production from the 26 Nov 2026 run (recorded 25 Nov evening)
 - NSW/Vic/ACT/SA/WA/Tas: Engine v2.2, weight carried (allocated minus apprentice claim, claim taken off once). Qld: Engine v2.1.1, allocated
   weight (its history is allocated too). Database master-2026-11-23-sa-wa-tas-qld. Each meeting's record in the day file names its engine release.

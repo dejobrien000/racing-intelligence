@@ -92,3 +92,43 @@ See `collection_processes.csv`.
 5. **Remove the racing.com tables** (`rc_*`, `vic_speed_*`) at the next weekly update. They are superseded.
 6. **Weight-convention note (Qld rows in the national frame)** goes to the next engine release. It does not change production now.
 7. **Paused:** WA and Tas gear and stewards source searches, and earlier Victorian history.
+
+## Integrity items resolved or documented (26 Nov 2026, night; brief Part A s2)
+- **Weights (allocated vs carried).** Breednet = carried (4,937 of 4,940 NSW checks). RQ race fields and TAB racecards = allocated, claim
+  separate. The master database keeps them in separate columns from Monday: tab_runner.weight_alloc_kg + claim_kg (+ claim_raw), Breednet
+  weight_kg (carried), RQ starter.weight_kg (allocated). The national rating's history mixes Qld rows from RQ (allocated) with other states
+  from Breednet (carried); Breednet also holds CARRIED weights for most RQ-tracked Qld runs, so the mix can be removed. Taken into the model
+  research (batch13 weight test), not dismissed.
+  Result (batch13/weight_qld_rows.py, 26 Nov night): Qld history rows on carried weight (21,297 of 147,433 differ) gave Qld races +0.0015
+  log-lik per race (-0.0002 to +0.0028, not significant) and other states +0.0002. No change to production; the fields stay separate.
+- **62 vs 71 missing starts.** Same 26 Nov form records, two definitions: 71 race starts are not in Breednet; 9 of those are held in the
+  Racing NSW form lines (7 enriched, 2 nothing to add), leaving the 62 'new starts' not held anywhere. No starts unaccounted for.
+- **SA gear-document timing.** 'Date Printed' is the document's own print time, not proof of when it was public. Every version is kept with
+  our first-observed (retrieval) time. Rule: forward, a version counts from its first-observed time; history (no observation of ours) uses
+  Date Printed flagged 'printed, not observed', and is research only until the forward record shows how close print and publication are.
+- **Identity.** Horse = letters/digits name + race date; race = date + venue configuration + race number; Breednet meeting slug carries the
+  configuration. Ties: race number (dual acceptors), then sire/dam. Ambiguous matches are kept separate and flagged, never merged
+  (e.g. TAB form venue codes BALT, PAKM, SAND, PINJ, MORK each cover two configurations: configuration then comes from the run's
+  Breednet meeting, or stays 'configuration unknown').
+- **Conflicting measurements.** Results: Breednet record; RQ inside Qld tracked meetings; TAB and TripleS are checks. Vic TripleS: Geelong
+  7 Oct R4, tracked 0.01 s in favour of the official second (official margin 0.1 L): official result stands, conflict flagged (within timing
+  resolution). Three Vic races were official dead heats (tracking agrees).
+- **Missing vs zero.** TAB past-start barrier 0 = not given (null). TAB claim -1 = no claim (0 kg, raw kept). TripleS all-zero times =
+  untracked (scratched or no data), never a run. Partial TripleS times = tracking stops part-way (3 runners), kept and flagged. Blank stewards'
+  comment = not recorded. Missing report = unknown.
+- **Measured vs estimated.** Measured: RQ/SA/TripleS section times, TripleS speed at each mark, SA/RQ stride and rail distance, official
+  margins and race times. Derived (labelled *_derived): cumulative times and positions from TripleS section times, section average speeds,
+  finish times from summed sections. Estimated: run times from margins x seconds per length (figures), and they are named as figures, not
+  times. Nothing physical (sectionals, stride, ground covered) is ever imputed for a jurisdiction that does not measure it.
+- **Victorian package reconciliation (817 vs 666).** 817 races = 671 up to 31 Oct (validation window of our Betfair-sourced lists) + 146 from
+  1-25 Nov. Of the 671: 666 matched; 5 (Ballarat 6 Aug R4-R7, Pakenham 2 Oct R2) are missing from OUR lists, not from the files.
+  8,237 runners with positive times = 8,234 complete + 3 partial; 6,827 of them in the 671 races, 6,777 in the 666 matched races (all found,
+  all saddlecloths agree), 50 in the 5 unlisted races, 1,410 in November races. 2,594 all-zero runners: 2,129 scratched (not in the official
+  field), 12 ran without tracking, 13 in the unlisted races, 440 in November (not yet checkable). These are eligibility differences, not
+  missing data. Winner check after separating partial runs and dead heats: 665 of 666 (the one exception is the 0.01 s Geelong race above).
+  13 track configurations: ballarat, ballarat-synthetic, bendigo, caulfield, caulfield-heath, cranbourne, flemington, geelong, mornington,
+  pakenham, pakenham-synthetic, sandown-hillside, sandown-lakeside.
+- **Flemington pilot (racing.com, 3 Oct 2026, 10 races, 111 runners).** No stride length, stride frequency or distance from the rail.
+  It does hold distance run (ground covered, every runner), early/mid/late/peak/average speed and positions at each mark, which the TripleS
+  CSVs lack. Its times agree with the CSVs (median difference 0.00 s): same underlying tracking. Kept in vic_pilot_runner / vic_pilot_point;
+  originals archived in history/archive/racingcom (with MANIFEST.json checksums) before any table is retired.

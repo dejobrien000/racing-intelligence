@@ -13,6 +13,9 @@ here so they are not re-tested without materially different evidence. Market dat
 ## Candidates (not live)
 | Since | What | Status | Ledger |
 |---|---|---|---|
+| 26 Nov 2026 | Engine v2.1.3 (Qld): v2.1.1 + Age & sex family (ages now held for 98.9% of Qld runners) | Built, gated OFF (ops/engine_qld213_enabled): 2024 +0.0190 (0.0128-0.0253), 2025-26 +0.0166 (0.0116-0.0215); awaiting Damo's release decision | batch13/, benchmarks/engine_v2_1_3/ |
+| 26 Nov 2026 | Engine v2.3 = the weight candidate below, built through the release chain | Built, gated OFF (ops/engine_c2_enabled): +0.0095 (0.0076-0.0113) vs production as it runs, 2025-26; awaiting Damo's release decision | batch13/, benchmarks/engine_v2_3/ |
+| 26 Nov 2026 | Common national framework with Qld coefficients (one methodology, regional coefficients) | Research: 2024 +0.0424, 2025-26 +0.0326 vs v2.1.1; next step a shadow build | batch13/qld_align.py |
 | 25 Nov 2026 | National rating rebuilt with weight credit 0.25 kg per kg (history) and 0.170 s per length (figures), full v2.2 rebuild | Full engine rebuilt and refitted: +0.0107 log-lik per race vs production as it runs (2025-26, +0.0089 to +0.0124), top pick +0.56 pts; +0.0105 / +0.0084 vs refitted production (2024 / 2025-26); credit carries almost all of it. Reproducible. Next: calibration refit and shadow scoring | benchmarks/candidate_national_weight/, batch12/candidate_weight/ |
 | 25 Nov 2026 | Today's weight vs field in handicaps (own slope) on top of the weight candidate | Preregistered; 2024 +0.0012 (+0.0008 to +0.0017), negative coefficient both windows; residual 3 kg+ under field 1.50 -> 1.36 (part only) | preregistered/2026-11-25_b12_weight_handicap.md, batch12/candidate_weight/ |
 | 25 Nov 2026 | Qld v2.1.2: drop last-start finish and track/distance/going history | Shadow-scored from 26 Nov; decide on prospective races only (2024 window weak, top-pick rate not better) | benchmarks/candidate_qld_v2_1_2/, batch11/ |
@@ -89,3 +92,30 @@ the one-off Ascot 12 Apr 2025 re-collection (in collect/weekly/retry_queue.json,
 national weight candidate's next steps (calibration + shadow), which were planned but never approved or started until 26 Nov.
 Two registers existed for hypotheses (this file and batch8/out/hypothesis_register_R1_R68.csv). This file is the single
 research register from 26 Nov; R1-R68 stays as its numbered appendix (its open/watch items are folded into the rows above).
+
+## Batch 13 (26 Nov 2026 night): consolidation tests behind the 27 Nov release proposal
+Scripts and outputs: research/batch13 (qld_align.py, learning_speed.py, weight_qld_rows.py, build_qld_v213.py, calib_qld_v213.py; out/*.csv).
+Measure: log-likelihood gain per race with a 95% meeting-bootstrap interval. Window A = fit before 2024, judged on 2024 (independent of
+every choice below). Window B = fit before 2025, judged on 2025-26 (RE-USED: earlier batches looked at it, so it is not independent).
+The first untouched evidence for anything released on 27 Nov is races from 27 Nov onward.
+
+| Test | A (2024) | B (2025-26) | Reading |
+|---|---|---|---|
+| Qld v2.1.2 (shadow) vs v2.1.1 | +0.0012 (n.s.) | +0.0061 (0.0025-0.0096) | weak; stays shadow, judged on prospective races |
+| Qld v2.1.1 + Age & sex (= v2.1.3 candidate) | +0.0190 (0.0128-0.0253) | +0.0166 (0.0116-0.0215); 2026 +0.0238 | clear in both windows; small, pre-specified change |
+| Qld v2.1.1 + the 14 v2.2 terms | +0.0068 (n.s.) | +0.0108 (0.0043-0.0170) | not clear in 2024; v2.2 inputs only 39-100% present on Qld rows |
+| Qld v2.1.1 + Age & sex + v2.2 terms | +0.0240 (0.0126-0.0354) | +0.0232 (0.0151-0.0309) | adds ~0.005-0.007 over Age & sex alone; needs Qld-coefficient v2.2 build |
+| Qld v2.1.2 + Age & sex + v2.2 terms | +0.0250 | +0.0293 | |
+| Common national framework, Qld coefficients | +0.0424 (0.0262-0.0587), top pick +1.66 | +0.0326 (0.0208-0.0435), top pick +0.66 | strongest; larger build; next step = shadow |
+| Common framework + Qld physical inputs (sectionals, barrier, race shape) | +0.0442, top pick +2.24 | +0.0343, top pick +1.14 | physical inputs add only ~+0.002 on top |
+| Learning speed (v3) on common inputs | national -0.0020; Qld rows +0.0005 | | same experience shape in both: helps 4-10 runs held (+0.015/+0.016), hurts 0-3, 11+ and truncated histories |
+| Qld rows on carried instead of allocated weight (21,297 of 147,433 Qld rows differ) | | Qld races +0.0015 (-0.0002 to +0.0028); other states +0.0002 (0.0001-0.0003) | no material gain; keep allocated, carried and claim as separate fields |
+| Engine v2.3 (C2) as BUILT by the release chain vs production as it runs | (B12 refit: C2 vs B0 +0.0105 on 2024) | +0.0095 (0.0076-0.0113), top pick +0.6 pts; NSW/Vic/ACT +0.0093, SA +0.0023, WA +0.0145, Tas +0.0113; 2025 +0.0115, 2026 +0.0072 | built release reproduces Batch 12 (refit +0.0107) within 0.0012 |
+| Handicap weight slope on top of C2 | preregistered +0.0012 (0.0008-0.0017) | +0.0014 over C2 | NOT in the 27 Nov build (one change at a time); next release candidate |
+
+Findings that change earlier conclusions: (1) Qld's missing Age & sex was a data gap, not a Qld effect: with ages now held it is the
+largest single Qld improvement available. (2) The Qld v3 learning-speed gain looks like a stand-in for the age information Qld lacked
+(it persists without physical inputs and is neutral on common inputs); keep v3 in production until Age & sex is live, then re-test.
+(3) A common national framework with Qld's own coefficients beats every Qld-specific variant; Qld's physical measurements add little on
+top at present. This supports one national methodology with regional coefficients. SA note: SA rows were inside the six-state fitting
+data for C2 (weight credit and seconds per length), so SA is NOT an independent check of C2; SA stays independent for v2.1.3 (Qld only).

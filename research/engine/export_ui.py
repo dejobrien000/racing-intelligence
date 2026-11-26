@@ -10,9 +10,16 @@ ENGINE_VERSION = 'Engine v2.1'; RELEASE_NOTE = 'v2.1 (25 Nov 2026, 12:17pm): Que
 MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))
 RC_OLD = RC; RC22 = json.load(open('benchmarks/engine_v2_2/runner_calibration_v22.json'))   # v2.2: NSW/Vic family recalibrated on v2.2 chances; QLD family unchanged
 M22 = json.load(open('benchmarks/engine_v2_2/manifest.json'))
+RC23 = json.load(open('benchmarks/engine_v2_3/runner_calibration.json')) if os.path.exists('benchmarks/engine_v2_3/runner_calibration.json') else None
+# Engine v2.1.3 (Queensland candidate, v2.1.1 + Age & sex): its own Queensland family and display calibration, chosen per meeting from the saved engine_release
+_q213 = 'benchmarks/engine_v2_1_3/manifest.json'; Q213F = json.load(open(_q213))['families']['QLD'] if os.path.exists(_q213) else None
+RC213 = json.load(open('benchmarks/engine_v2_1_3/runner_calibration.json')) if os.path.exists('benchmarks/engine_v2_1_3/runner_calibration.json') else None
+Q211F = json.load(open('benchmarks/engine_v2_1/manifest.json'))['families']['QLD']
+_c23 = 'benchmarks/engine_v2_3/engine_v2.json'; KG23 = json.load(open(_c23))['families']['NSW_VIC_ACT']['score_per_kg_total'] if os.path.exists(_c23) else None   # v2.3 ratings are on its own kg scale
+KG_USED = {}
 V22_DAY = os.environ.get('ENGINE_V22', '1') == '1' and str(sys.argv[1]) >= os.environ.get('ENGINE_V22_FROM', '20261126')   # v2.2 predictions exist from the 26 Nov 2026 run; earlier days keep their own engine
 if V22_DAY:
-    RC = RC22; ENGINE_VERSION = 'Engine v2.2'
+    RC = RC22; ENGINE_VERSION = 'Engine v2.3' if os.environ.get('ENGINE_C2', '0') == '1' else 'Engine v2.2'
     RELEASE_NOTE = 'v2.2 (26 Nov 2026 run on; approved by Damo 25 Nov): NSW, Vic, ACT, SA, WA and Tas add 14 Batch 10 terms (horses below their own proven level, own consistency, hot start to a preparation, quick backups, light weights, runs on file, rating certainty, measured venue class) and a recalibrated chance curve. Queensland: Engine v2.1.1, the v2.1 model refitted with Queensland country history (915 more meetings) and ages. ' + RELEASE_NOTE   # v2 = bent line (25 Nov 2026)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
@@ -114,7 +121,14 @@ for track, grp in v2rows.groupby('track', sort=False):
             if o['key'] == m1['snapshot']['snapshot_key']: snap = v
     F = pd.DataFrame(snap['fields']); cond = m1['snapshot'].get('conditions', {})
     st = snap.get('state') or ('QLD' if fam == 'QLD' else 'NSW'); tz = snap.get('tz') or tz; notes = []
-    is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') == 'Engine v2.2'; S.V22 = is22; RC = RC22 if is22 else RC_OLD
+    is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') in ('Engine v2.2', 'Engine v2.3'); S.V22 = is22
+    RC = RC23 if (is22 and m2.get('engine_release') == 'Engine v2.3') else (RC22 if is22 else RC_OLD)   # v2.3 = candidate C2 with its own calibration
+    is213 = fam == 'QLD' and str(m2.get('engine_release') or '').startswith('Engine v2.1.3')
+    if fam == 'QLD' and S.V21: S.MAN['families']['QLD'] = Q213F if is213 else Q211F    # term detail recomputed with the family that scored this meeting
+    if is213: RC = RC213
+    if is22 and m2.get('engine_release') == 'Engine v2.3': kg = KG23              # the divisor score_v2 used for this meeting's final_rating_kg_eq
+    if is213: kg = Q213F['score_per_kg_total']
+    KG_USED['QLD' if fam == 'QLD' else 'NAT'] = kg
     vk = re.sub(r'[^a-z0-9]+', '-', str(track).lower()).strip('-'); vk = M22['venue_alias'].get(vk, vk); vl = M22['venue_level_kg'].get(vk)
     if vl is not None: notes.append('Measured class of this course: ' + ('metro level' if vl >= -2.9 else 'provincial level' if vl >= -6.85 else 'country level') + f' (average field rating {vl:+.1f} kg vs metro about 0, provincial about -6, country about -8).')
     if fam != 'QLD' and not cond.get('track_condition'): notes.append('Track condition was not available from the field source; the Good going band is assumed for going records until an official rating is collected.')
@@ -314,7 +328,7 @@ ROI = {'status': 'waiting', 'selections': sel,
 data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'date': DATE, 'weekday': pd.Timestamp(DATE).strftime('%A'), 'exported_utc': NOW.isoformat(),
         'snapshot_note': 'Read-only snapshot, republished after each successful refresh. Built only from predictions saved before racing.',
         'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
-                   'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(MAN['families']['QLD']['score_per_kg_total'], MAN['families']['NSW_VIC_ACT']['score_per_kg_total']),
+                   'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(KG_USED.get('QLD', MAN['families']['QLD']['score_per_kg_total']), KG_USED.get('NAT', MAN['families']['NSW_VIC_ACT']['score_per_kg_total'])),
                    'calibration': {k: {'races': v['races'], 'runners': v['runners'], 'top_pick_tiers': v['top_pick_tiers_2025_26'], 'terciles': v['top_pick_terciles'], 'deciles': v['deciles']} for k, v in RC['families'].items()}},
         'meetings': meetings, 'leaderboard': lb,
         'validation': {'qld_chain': [{'version': 'Original combined model', 'fit': base_q['fit_%'], 'top_pick': base_q['top_pick_%'], 'top3': base_q['winner_in_top3_%']}] + [

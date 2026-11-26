@@ -38,6 +38,9 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
 0. Setup. TODAY=$(TZ=Australia/Brisbane date +%Y%m%d), YDAY=yesterday's Brisbane date (YYYYMMDD), ISO forms
    T=YYYY-MM-DD. The repository is normally already cloned by session setup at /home/claude/racing-intelligence; if not,
    add_repo dejobrien000/racing-intelligence (push) and clone it (depth 1) there.
+   Then `git -C /home/claude/racing-intelligence pull --ff-only origin main` so release switches Damo creates on GitHub are picked up
+   (research/ops/engine_c2_enabled = Engine v2.3, research/ops/engine_qld213_enabled = Engine v2.1.3; see OPERATING_MODEL.md register).
+   Log which switches are present.
    git clone --depth 1 -b db the same repo to /tmp/ridb; verify every part's sha256 against MANIFEST.json; then
    `cat /tmp/ridb/master_db.tar.gz.part* | tar -xzf - -C /home/claude/racing-intelligence`.
    pip install --break-system-packages pandas numpy duckdb pyarrow scipy statsmodels scikit-learn (only if an import fails).

@@ -10,6 +10,23 @@ NAT=$(cat collect/national/$D/nat_venues.txt)
 python3 collect/national/build_snapshot.py "$D" "$RETR" "$NAT" || log "WARNING build_snapshot failed (fields-only meetings may be missing)"
 RQB=collect/national/$D/bundles/rqpre_${D}_snap${STAMP}.jsonl.gz
 [ -f "$RQB" ] && { python3 prerace/score_prerace.py "$RQB" ../history/history.duckdb > /tmp/score_qld.txt 2>&1 && log "Queensland scored" || log "FAILED Queensland scoring: $(tail -1 /tmp/score_qld.txt)"; }
+# Engine v2.3 (candidate C2: history weight credit 0.25 kg per kg, 0.170 s per length; NSW/VIC/ACT/SA/WA/TAS only; Qld untouched).
+# OFF unless ops/engine_c2_enabled exists (a release decision by Damo). Builds its frames beside production (~3 min); if anything fails
+# the run falls back to Engine v2.2 for that day and says so.
+if [ -f ops/engine_c2_enabled ]; then
+  export ENGINE_C2=1
+  if [ ! -f engine/frames/national_c2.parquet ] || [ ! -f national_runs_c2.parquet ] || [ national_runs_c2.parquet -ot ../history/history.duckdb ]; then   # rebuilt whenever the master database is newer
+    NS=$(python3 -c "import json;print(','.join(json.load(open('ops/db_config.json'))['national_states']))")
+    QB=$(python3 -c "import json;print('1' if json.load(open('ops/db_config.json')).get('qld_breednet_in_national_rating') else '0')")
+    ( export NAT_STATES=$NS NAT_QLD_BN=$QB WCREDIT=0.25 SPL_FIXED=0.170
+      NAT_RUNS_ONLY=1 NAT_RUNS_OUT=national_runs_c2.parquet python3 national.py ../history/history.duckdb > /tmp/c2_nat.txt 2>&1 \
+      && LAB_IN=national_runs_c2.parquet LAB_OUT=engine/frames/national_c2.parquet python3 engine/lab.py > /tmp/c2_lab.txt 2>&1 ) \
+      && log "Engine v2.3 frames built" || { log "WARNING Engine v2.3 frames failed: national meetings scored with Engine v2.2 today"; unset ENGINE_C2; rm -f engine/frames/national_c2.parquet national_runs_c2.parquet; }
+  fi
+fi
+# Engine v2.1.3 (Queensland candidate: v2.1.1 + Age & sex family; benchmarks/engine_v2_1_3). OFF unless ops/engine_qld213_enabled exists
+# (a release decision by Damo). No frames to build: same v3 history frame as v2.1.1. NSW/VIC/ACT/SA/WA/TAS untouched by this switch.
+if [ -f ops/engine_qld213_enabled ] && [ -f benchmarks/engine_v2_1_3/manifest.json ]; then export ENGINE_QLD213=1; log "Queensland: Engine v2.1.3 switch ON"; fi
 NB=$(ls collect/national/$D/bundles/natpre_${D}_snap*.jsonl.gz 2>/dev/null | tail -1)
 [ -n "$NAT" ] && [ -n "$NB" ] && { python3 prerace/score_national_prerace.py "$NB" ../history/history.duckdb "$D" > /tmp/score_nat.txt 2>&1 && log "national meetings scored" || log "FAILED national scoring: $(tail -1 /tmp/score_nat.txt)"; }
 # Engine v2.1: Queensland history frame on the v3 rating (built once from the restored master database, ~5 min)

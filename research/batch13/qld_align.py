@@ -44,6 +44,18 @@ for win, (fit_end, lo, hi) in {'A: fit <2024, judge 2024': ('2024-01-01', '2024-
     xc = x0.copy(); NV = [c for c in E.NV2 if c in xc]; xc = E.zcols(xc, NV); allt = sum(NFAM2.values(), []); xc = build_terms(xc, allt)
     b1 = E.fit(xc, NV, fm); off = E.eta(xc, NV, b1); b2 = fitd(xc, allt, fm, off, 100); e = off + xc[['t::' + t for t in allt]].fillna(0.0).values @ b2; e, _ = v22(xc, e, fm)
     res['7 common national framework (Qld coefficients)'] = E.metrics(xc, e, em); print(win, '7 common', E.summary(res['7 common national framework (Qld coefficients)']), flush=True)
+    # 8: the common framework PLUS Queensland's physical inputs (closing sectionals, barrier and race shape): do Qld's measurements add on top?
+    PH = E.QFAM['Closing sectionals'] + E.QFAM['Barrier & race shape']; NVP = NV + [c for c in PH if c not in NV]; xc = E.zcols(xc, NVP)
+    b1 = E.fit(xc, NVP, fm); off = E.eta(xc, NVP, b1); b2 = fitd(xc, allt, fm, off, 100); e = off + xc[['t::' + t for t in allt]].fillna(0.0).values @ b2; e, _ = v22(xc, e, fm)
+    res['8 common framework + Qld physical inputs'] = E.metrics(xc, e, em); print(win, '8 common + physical', E.summary(res['8 common framework + Qld physical inputs']), flush=True)
+    # 9: production-style release candidate: v1 coefficients FROZEN at production v2.1.1 values, v2 family = records + jockey/trainer + age & sex, then v2.2 on top
+    if win.startswith('B'):
+        PV = json.load(open('benchmarks/candidates_b4_national_v3/manifest.json'))['coefficients_per_dev_sd']; cols = [c for c in ALL if c in PV]
+        off = x0[[c + '_z' for c in cols]].values @ np.array([PV[c] for c in cols]); tt = QT + AS
+        b2 = fitd(x0, tt, fm, off, 100); e = off + x0[['t::' + t for t in tt]].fillna(0.0).values @ b2; e, _ = v22(x0, e, fm)
+        res['9 release-style: frozen v1 + age & sex + v2.2'] = E.metrics(x0, e, em); print(win, '9 release-style', E.summary(res['9 release-style: frozen v1 + age & sex + v2.2']), flush=True)
+        off = x0[[c + '_z' for c in cols]].values @ np.array([PV[c] for c in cols]); b2 = fitd(x0, QT, fm, off, 100); e = off + x0[['t::' + t for t in QT]].fillna(0.0).values @ b2
+        res['1b production-style v2.1.1 (frozen v1)'] = E.metrics(x0, e, em)
     for nm, r in res.items():
         if nm.startswith('1 '): continue
         d = E.diff(res['1 v2.1.1'], r); y26 = r.date.dt.year == 2026; d26 = E.diff(res['1 v2.1.1'][res['1 v2.1.1'].date.dt.year == 2026], r[y26]) if y26.any() else {}

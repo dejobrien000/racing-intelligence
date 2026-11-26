@@ -4,7 +4,8 @@ exactly the same code path as the research build (research/batch10/scripts/feat1
 stacked per horse and every feature uses earlier rows only. terms(T): race-centred, missing -> 0 (no information), scaled
 by the release's frozen SDs. Missing information is never treated as poor performance."""
 import json, os, numpy as np, pandas as pd
-M = json.load(open(os.path.join(os.path.dirname(__file__), '..', 'benchmarks', 'engine_v2_2', 'manifest.json')))
+MPATH = os.path.join(os.path.dirname(__file__), '..', 'benchmarks', *(('engine_v2_3', 'engine_v2_2.json') if os.environ.get('ENGINE_C2', '0') == '1' else ('engine_v2_2', 'manifest.json')))
+M = json.load(open(MPATH))
 K = M['constants']; VL = M['venue_level_kg']; AL = M['venue_alias']
 def _slope(a):
     m = ~np.isnan(a)

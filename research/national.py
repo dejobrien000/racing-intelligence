@@ -142,7 +142,7 @@ U['r_28_59'] = days.between(28, 59).astype(float); U['r_quick'] = (days <= 10).a
 has = U.f_avgfp3.notna(); U['missform'] = (~has).astype(float); U['missfig'] = (has & U.a_rec.isna()).astype(float)
 U['shipper'] = ((U.prev_state.notna()) & (U.prev_state != U.state) & U.gap.between(1, 60)).astype(float)
 U['race_id'] = U.race
-U.to_parquet('national_runs.parquet')
+U.to_parquet(os.environ.get('NAT_RUNS_OUT', 'national_runs.parquet'))   # candidate builds write beside production
 if os.environ.get('NAT_RUNS_ONLY') == '1': sys.exit(0)   # frame build only; the Batch 3 analyses below are not needed
 F = ['f_avgfp3', 'f_lastfp', 'f_lastlm', 'f_cwin', 'f_lstarts', 'missform']; A = ['a_rec', 'a_best3', 'a_fs3', 'a_wt_rel', 'missfig']; R = ['r_firstup', 'r_7_13', 'r_28_59', 'r_quick', 'r_ldays']   # r_debut left out: outside Qld it duplicates the no-earlier-run flag
 # missing-data rates per state (runners in races of 6+)
