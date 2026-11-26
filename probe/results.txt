@@ -1,12 +1,12 @@
-run_utc=2026-11-26T04:39:22Z runner_ip=20.172.196.147
+run_utc=2026-11-26T04:44:27Z runner_ip=48.200.98.82
 TAB meetings|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB racecard|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
-Racing Queensland|404|202125|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
-Racing NSW FreeFields|200|23845|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
+Racing Queensland|404|202260|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
+Racing NSW FreeFields|200|23844|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
 Breednet|200|28973|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>    <!-- Google 
 TAB meetings (Accept json)|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB api robots.txt|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
-TAB www robots.txt|ERR 28|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
+TAB www robots.txt|500|87301|text/html|<!DOCTYPE html><html lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><m
 Racing NSW FreeFields robots.txt|200|107|text/plain|User-agent: *Disallow: /Disallow: /InteractiveForm/Disallow: /FreeServices/Disallow: /FreeFi
 Racing NSW stewards diary|200|46942|text/html; charset=utf-8|<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD
 racingnsw.com.au robots.txt|404|172|text/plain; charset=utf-8|Sitemap: https://www.racingnsw.com.au/sitemap.xmlSitemap: https://www.racingnsw.com.au/news-sitemap
@@ -27,9 +27,13 @@ Country Racing SA calendar (followed)|200|60894|text/html; charset=UTF-8|https:/
 Country Racing SA race gear-changes page (followed)|200|2195|text/html; charset=UTF-8|https://www.countryracingsa.com.au/race/gear-changes/5399564
 Country Racing SA race page (followed)|200|263759|text/html; charset=UTF-8|https://www.countryracingsa.com.au/race/5399564
 Country Racing SA calendar event page (followed, compressed)|200|9134|text/html; charset=UTF-8|https://www.countryracingsa.com.au/events/view/4474-gawler-18-11-2026|33979 bytes unpacked
-Country Racing SA meeting page (compressed transfer) (followed, compressed)|200|208876|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meeting/5185273|3106833 bytes unpacked
-Country Racing SA neighbouring id 5185274 (followed, compressed)|200|180729|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meeting/5185274|2709673 bytes unpacked
+Country Racing SA meeting page (compressed transfer) (followed, compressed)|200|208881|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meeting/5185273|3106833 bytes unpacked
+Country Racing SA neighbouring id 5185274 (followed, compressed)|200|180762|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meeting/5185274|2709673 bytes unpacked
 Country Racing SA id of a Qld meeting (Toowoomba 29 Oct 22) (followed, compressed)|404|4028|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meeting/5172620|14513 bytes unpacked
+Racing NSW WordPress posts API (stewards notifications) (followed, compressed)|200|27065|application/json; charset=UTF-8|https://www.racingnsw.com.au/wp-json/wp/v2/posts?search=stewards%20notifications&per_page=5&_fields=id,date,date_gmt,modified_gmt,link,title|27065 bytes unpacked
+Racing NSW WordPress media API (stewards_info PDFs) (followed, compressed)|200|2|application/json; charset=UTF-8|https://www.racingnsw.com.au/wp-json/wp/v2/media?search=stewards_info&per_page=5&_fields=id,date_gmt,source_url,title|2 bytes unpacked
+Racing NSW WordPress API index (followed, compressed)|200|100253|application/json; charset=UTF-8|https://www.racingnsw.com.au/wp-json/|100253 bytes unpacked
+Racing NSW www robots (followed, compressed)|404|172|text/plain; charset=utf-8|https://www.racingnsw.com.au/robots.txt|172 bytes unpacked
 Racing SA robots.txt|301|0|text/html; charset=UTF-8|
 Country Racing SA robots.txt|200|184|text/plain; charset=UTF-8|User-agent: *Disallow: /modules/Disallow: /email_share/shareUser-agent: facebookexternalhitDisa
 Racing SA meeting page (slug)|301|0|text/html; charset=UTF-8|
@@ -37,5 +41,5 @@ Racing SA meeting page (id)|301|0|text/html; charset=UTF-8|
 Racing SA gear change PDF|301|0|text/html; charset=UTF-8|
 Country Racing SA gear change PDF|200|66527|application/pdf|%PDF-1.7%âãÏÓ707 0 obj<</Linearized 1/L 66527/O 709/E 22068/N 10/T 66115/H [ 481 212]>>endobj 
 RWWA static robots.txt|403|111|application/xml|<?xml version="1.0" encoding="UTF-8"?><Error><Code>AccessDenied</Code><Message>Access Denied</Messa
-Racing WA robots.txt|429|25097|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" data-astro-cid-4wdtffzm><head><meta charset="utf-8"><meta name="viewp
+Racing WA robots.txt|429|25124|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" data-astro-cid-4wdtffzm><head><meta charset="utf-8"><meta name="viewp
 Tasracing robots.txt|200|165|text/plain; charset=utf-8|User-agent: *Disallow: /_hcms/preview/Disallow: /hs/manage-preferences/Disallow: /hs/preferences-
