@@ -141,3 +141,22 @@
   (ops/DAILY_RUN.md step 0), so a switch created or deleted on GitHub takes effect at the next run.
 - Not in this release (deliberately): the handicap weight slope (next candidate, builds on v2.3), the common national framework for
   Queensland (shadow next), anything from the 30 Nov database update, any sectional/stride/gear/stewards coefficient.
+
+## Dashboard housekeeping (27 Nov 2026, Damo 9:38am) - display only; ratings, chances, rankings and selections unchanged
+- Tab "Engine v1 vs v2" renamed "Engine Performance" (same tab, same route). It showed today's production engine against its own first
+  layer (the "v1" score inside it: for v2.3 meetings that layer runs on the v2.3 rating), plus the 24 Nov v1-vs-v2.0 backtest. It now shows:
+  production engines vs their immediate predecessors (Engine v2.2 / v2.1.1, scored daily as shadows), prospective record since release,
+  shadow candidates (scoring, built-but-waiting and approved-but-not-built), production record by engine, and the release evidence chain
+  with its evidence status. Sources: benchmarks/engine_lineage.json (update at every release) and outputs/prospective_eval.csv, via
+  engine/engine_performance.py. The 24 Nov backtest is kept as a collapsed archive; days exported before 27 Nov keep the old view.
+- The daily run refreshes the tab after the evaluation ledger (ops/run_daily.sh, non-fatal), so it includes yesterday's races.
+- Sectional message: it was hard-coded by model family ("Not published for NSW/Vic history" for every non-Qld meeting and runner); it read
+  no tracking table. Now each meeting says whether the model uses sectionals there and how many runners have tracked runs held (Qld, SA,
+  Vic), and each runner's drawer lists its latest 5 tracked runs (date, course, distance, finish, time, last 600, last 200; measured vs
+  derived labelled) from the master database tracking tables (engine/tracking_view.py). Victorian runs appear by themselves once the
+  30 Nov weekly update loads vic_race/vic_starter/vic_sectional. Display only: no tracking reaches a rating outside Queensland.
+- Fixes found on the way: (1) meeting links for names with spaces (Sunshine Coast, Mount Gambier) did not open from the meeting chips
+  (the router only accepted one-word ids); fixed. (2) a re-export after settlement dropped the running returns history that settlement
+  writes into the day file; the exporter now keeps it, and writes the day file atomically.
+- Checks: re-export of 27 Nov identical to the published file in every rating, chance, rank, price and selection (only wording and the
+  new keys differ); headless render of every view and of 4 drawers per meeting on 27 Nov and 26 Nov data: no script errors.

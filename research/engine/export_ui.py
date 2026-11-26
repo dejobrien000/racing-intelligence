@@ -184,7 +184,7 @@ for track, grp in v2rows.groupby('track', sort=False):
             gaps = []
             if not r.has_prior_form: gaps.append('No prior form in our database')
             elif fam == 'QLD' and not r.has_sectionals: gaps.append('No sectional history')
-            if fam != 'QLD': gaps.append('No sectionals or barrier history (not published for NSW/Vic history)')
+            if fam != 'QLD': gaps.append('The model uses no sectionals or barrier history in this state (tracked runs held, if any, are shown for inspection only)')
             if pd.isna(r.jockey): gaps.append('Jockey not named in the fields (treated as average)')
             elif not (r.j_n >= 30): gaps.append('Jockey has little history with us')
             if not (r.t_n >= 30): gaps.append('Trainer has little history with us')
@@ -313,6 +313,28 @@ for c_ in CAL['meetings']:
 # leaderboard: every qualified runner ordered by calibrated win chance (comparable across races)
 lb = sorted([r for r in all_runners if r['qualified']], key=lambda r: -r['cal'])
 for i, r in enumerate(lb): r['day_rank'] = i + 1
+# ---- measured tracking history of today's runners, for inspection (display only; Damo 27 Nov 2026). Never fatal. ----
+TRACKING = {'note': 'Tracked runs are shown for inspection. Only Queensland tracking feeds a model (the Queensland engine\'s closing-sectional and race-shape inputs); SA and Victorian tracking are not model inputs. Horses are matched by name, as the ratings are.'}
+try:
+    from engine import tracking_view as TV
+    TRK, TRACKING['tables_present'] = TV.history('../history/history.duckdb', [h['horse'] for m in meetings for r in m.get('races', []) for h in r.get('runners', [])], DATE)
+    for m in meetings:
+        held, nrun, tot = {}, 0, 0
+        for r in m.get('races', []):
+            for h in r.get('runners', []):
+                tot += 1; t_ = TRK.get(TV.nk(h['horse'])); h['tracking'] = t_ or {'held': {}, 'runs': []}
+                if t_:
+                    nrun += 1
+                    for s__ in t_['held']: held[s__] = held.get(s__, 0) + 1
+        m['tracking'] = {'runners': tot, 'with_tracked_runs': nrun, 'by_state': held, 'model_uses_sectionals': m.get('model_family') == 'QLD'}
+except Exception as ex_:
+    TRACKING['error'] = str(ex_)[:200]; print('WARNING tracking view skipped (display only):', str(ex_)[:200])
+# ---- Engine Performance tab (display only; reuses the release lineage and the prospective evaluation ledger). Never fatal. ----
+try:
+    from engine import engine_performance as EP
+    ENGINE_PERF = EP.build(D)
+except Exception as ex_:
+    ENGINE_PERF = {'error': str(ex_)[:200]}; print('WARNING engine performance skipped (display only):', str(ex_)[:200])
 V = lambda f: pd.read_csv(f'engine/out/{f}')
 q, n_ = V('v2_qld.csv'), V('v2_nat.csv'); qr, nr = V('v2_qld_rolling.csv'), V('v2_nat_rolling.csv'); ad = V('additivity.csv')
 def chain(T, first_label, first):
@@ -346,7 +368,7 @@ ROI = {'status': 'waiting', 'selections': sel,
        'paper': {'selections': len(sel), 'priced': sum(1 for x in sel if x['price']), 'settled': 0}, 'realised': {'bets': 0}, 'groups': []}
 data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'date': DATE, 'weekday': pd.Timestamp(DATE).strftime('%A'), 'exported_utc': NOW.isoformat(),
         'snapshot_note': 'Read-only snapshot, republished after each successful refresh. Built only from predictions saved before racing.',
-        'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
+        'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Previous engines (Engine v2.2 six states, Engine v2.1.1 Queensland) are scored every day as shadows from 27 Nov 2026; Engine v1 remains the first layer of every engine',
                    'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(KG_USED.get('QLD', MAN['families']['QLD']['score_per_kg_total']), KG_USED.get('NAT', MAN['families']['NSW_VIC_ACT']['score_per_kg_total'])) + ((' From 27 Nov 2026 (Engine v2.3) the NSW/Vic/ACT/SA/WA/Tas scale is {:.3f} per kg (Engine v2.2: {:.3f}), so the same performance reads about {:.0f}% smaller in kg: a change of units, not of ability. Compare kg ratings within one engine only.'.format(KG_USED['NAT'], MAN['families']['NSW_VIC_ACT']['score_per_kg_total'], 100 * (1 - MAN['families']['NSW_VIC_ACT']['score_per_kg_total'] / KG_USED['NAT']))) if KG_USED.get('NAT') and abs(KG_USED['NAT'] - MAN['families']['NSW_VIC_ACT']['score_per_kg_total']) > 1e-9 else ''),
                    'calibration': {k: {'races': v['races'], 'runners': v['runners'], 'top_pick_tiers': v['top_pick_tiers_2025_26'], 'terciles': v['top_pick_terciles'], 'deciles': v['deciles']} for k, v in {k_: CAL_USED.get(k_, v_) for k_, v_ in RC['families'].items()}.items()}},
         'meetings': meetings, 'leaderboard': lb,
@@ -362,8 +384,8 @@ data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'da
                                    'One Qld feature family was dropped after seeing it hurt on 2025-26.', 'Raw model chances are over-confident at the top; the calibrated win chance corrects this.']},
         'markets': MARKETS, 'completeness': {'calendar_source': CAL.get('source'), 'excluded': CAL.get('excluded'), 'act_nt': CAL.get('act_nt'), 'rows': comp},
         'freshness': FRESH, 'roi': ROI,
-        'results': {'status': 'waiting', 'message': 'No results have been evaluated yet. These races are run on ' + pd.Timestamp(DATE).strftime('%a %d %b') + '; the evaluation of the saved predictions (Engine v1 and v2 side by side) is scheduled for the next morning.'},
-        'operations': OPS_STATUS}
+        'results': {'status': 'waiting', 'message': 'No results have been evaluated yet. These races are run on ' + pd.Timestamp(DATE).strftime('%a %d %b') + '; the evaluation of the saved predictions (production, previous engines and shadow candidates on the same races) is scheduled for the next morning.'},
+        'operations': OPS_STATUS, 'engine_performance': ENGINE_PERF, 'tracking': TRACKING}
 def _clean(o):
     if isinstance(o, dict): return {k: _clean(v) for k, v in o.items()}
     if isinstance(o, list): return [_clean(v) for v in o]
@@ -371,7 +393,13 @@ def _clean(o):
     return o
 data = _clean(data)
 os.makedirs('ui/data', exist_ok=True); out = f'ui/data/racing_{DATE}.json'
-json.dump(data, open(out, 'w'), separators=(',', ':'), allow_nan=False, default=lambda o: None if isinstance(o, float) and o != o else (int(o) if isinstance(o, (np.integer,)) else float(o) if isinstance(o, np.floating) else str(o)))
+if os.path.exists(out):
+    try:
+        _prev = json.load(open(out))
+        if 'history' in _prev and 'history' not in data: data['history'] = _prev['history']   # written by ops/settle_yesterday.py; a re-export keeps it (27 Nov 2026 fix)
+    except Exception: pass
+json.dump(data, open(out + '.tmp', 'w'), separators=(',', ':'), allow_nan=False, default=lambda o: None if isinstance(o, float) and o != o else (int(o) if isinstance(o, (np.integer,)) else float(o) if isinstance(o, np.floating) else str(o)))
+os.replace(out + '.tmp', out)                                                  # atomic: a failed export never leaves a half-written day file
 idx = {'contract': data['contract'], 'days': sorted({*([d['date'] for d in json.load(open('ui/data/index.json'))['days']] if os.path.exists('ui/data/index.json') else []), DATE}, reverse=True)}
 idx['days'] = [{'date': d, 'file': f'racing_{d}.json'} for d in idx['days']]; json.dump(idx, open('ui/data/index.json', 'w'), indent=1)
 print('written', out, os.path.getsize(out), 'bytes |', sum(len(m['races']) for m in meetings), 'races |', len(all_runners), 'runners |', len(lb), 'qualified')

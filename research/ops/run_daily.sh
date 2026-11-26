@@ -39,4 +39,6 @@ python3 engine/export_ui.py "$D" > /tmp/export.txt 2>&1; sed -n 1p /tmp/export.t
 if [ -n "$Y" ] && [ -f "$YRAW" ] && [ -f "ui/data/racing_${Y:0:4}-${Y:4:2}-${Y:6:2}.json" ]; then python3 ops/settle_yesterday.py "$Y" "$YRAW" "$D" && log "yesterday settled"
   python3 ops/evaluate_prospective.py "$Y" > /tmp/eval.txt 2>&1 && log "evaluation ledger: $(tail -1 /tmp/eval.txt)" || log "WARNING evaluation ledger (observational only): $(tail -1 /tmp/eval.txt)"
   python3 ops/tipping_report.py "$Y" > /tmp/tip.txt 2>&1 && log "$(tail -1 /tmp/tip.txt)" || log "WARNING tipping report (observational only): $(tail -1 /tmp/tip.txt)"; fi
+# Engine Performance tab: refresh after the evaluation ledger so it includes yesterday (display only; never fails the run; 27 Nov 2026)
+python3 engine/engine_performance.py "$D" > /tmp/engperf.txt 2>&1 && log "$(tail -1 /tmp/engperf.txt)" || log "WARNING engine performance (display only): $(tail -1 /tmp/engperf.txt)"
 python3 ui/build_standalone.py "$DATE" >/dev/null && log "done"

@@ -1,0 +1,59 @@
+{
+ "about": "Engine lineage for the dashboard's Engine Performance tab (display only; read by engine/engine_performance.py). Update at every release. Figures are copied from benchmarks/engine_v2/RELEASES.md, the release manifests and gates, and the research ledgers named in 'source'. Log-likelihood gains are per race on identical races; fit = how much better than random the winner's chance was.",
+ "updated": "2026-11-27",
+ "families": [
+  {
+   "key": "QLD",
+   "label": "Queensland",
+   "production": "Engine v2.1.3",
+   "production_label_prefix": "Engine v2.1.3",
+   "production_from": "2026-11-27",
+   "predecessor": "Engine v2.1.1",
+   "predecessor_label_prefix": "Engine v2.1.1",
+   "predecessor_status": "Scored every day since 27 Nov as a shadow (never shown or ranked); first results 28 Nov",
+   "change": "Adds age and sex (age, 3yo and under, 7yo and over, filly or mare). Queensland kg scale unchanged (0.224 per kg).",
+   "chain": [
+    {"version": "Engine v1", "live": "2026-11-24", "what": "Form, figures, closing sectionals, race shape and the opposition-aware rating", "test": "2025-26, 4,730 races", "status": "Baseline (frozen; still scored inside every later engine as its first layer)", "source": "engine/out/v2_qld.csv"},
+    {"version": "Engine v2.0", "live": "2026-11-24", "what": "Adds horse course, going and distance records, and jockey and trainer", "vs": "Engine v1", "test": "2025-26, 4,730 races, fitted before 2025", "gain": 0.04144, "lo": 0.03237, "hi": 0.0511, "status": "Research period", "source": "engine/out/v2_qld.csv"},
+    {"version": "Engine v2.1", "live": "2026-11-25", "what": "v3 rating: lightly raced horses are expected to improve", "vs": "Engine v2.0", "test": "2025-26", "gain": 0.0052, "lo": 0.0028, "hi": 0.0076, "status": "Research period (2025-26 re-used)", "source": "benchmarks/engine_v2/RELEASES.md"},
+    {"version": "Engine v2.1.1", "live": "2026-11-26", "what": "Refitted with Queensland country results and ages added to the database", "vs": "Engine v2.1", "test": "2025-26", "gain": 0.0121, "lo": 0.0063, "hi": 0.0175, "status": "Research period (2025-26 re-used)", "source": "benchmarks/engine_v2/RELEASES.md"},
+    {"version": "Engine v2.1.3", "live": "2026-11-27", "what": "Adds age and sex", "vs": "Engine v2.1.1", "test": "2025-26, 4,730 races (2024 also tested)", "gain": 0.01658, "lo": 0.01161, "hi": 0.0215, "gain_2024": 0.019, "lo_2024": 0.0128, "hi_2024": 0.0253, "status": "Research period; first untouched evidence is races from 27 Nov 2026", "source": "benchmarks/engine_v2_1_3/gate.json"}
+   ],
+   "identical_races": {
+    "label": "Same 4,730 Queensland races, 2025-26 (each version fitted only on races before 2025)",
+    "rows": [
+     {"version": "Engine v1", "fit": 7.51, "top_pick": 23.68, "top3": 54.82},
+     {"version": "Engine v2.0", "fit": 9.37, "top_pick": 25.35, "top3": 57.82},
+     {"version": "Engine v2.1.1", "fit": 10.15, "top_pick": 26.49, "top3": 59.05},
+     {"version": "Engine v2.1.3", "fit": 10.89, "top_pick": 26.64, "top3": 60.68}
+    ],
+    "caveat": "2025-26 was examined many times while these versions were built, so these figures overstate what each step will deliver live. Part of the v2.0 to v2.1.1 gain is the larger database (Queensland country results), not the engine alone."
+   }
+  },
+  {
+   "key": "NAT",
+   "label": "NSW, Vic, ACT, SA, WA, Tas",
+   "production": "Engine v2.3",
+   "production_label_prefix": "Engine v2.3",
+   "production_from": "2026-11-27",
+   "predecessor": "Engine v2.2",
+   "predecessor_label_prefix": "Engine v2.2",
+   "predecessor_status": "Scored every day since 27 Nov as a shadow (never shown or ranked); first results 28 Nov",
+   "change": "Past runs are read with 0.25 kg of credit per extra kg carried (was 1 kg) and margins become time at 0.170 s per length. kg scale 0.269 per kg (was 0.226): kg figures read about 16% smaller, a change of units, not ability.",
+   "chain": [
+    {"version": "Engine v1", "live": "2026-11-24", "what": "Form, figures, fitness and the opposition-aware national rating", "test": "NSW/Vic/ACT 2025-26, 16,489 races", "status": "Baseline (frozen; still scored inside every later engine as its first layer)", "source": "engine/out/v2_nat.csv"},
+    {"version": "Engine v2.0", "live": "2026-11-24", "what": "Adds jockey and trainer, age and sex, form changes and head-to-head, and interactions", "vs": "Engine v1", "test": "NSW/Vic/ACT 2025-26, 16,489 races", "gain": 0.04579, "lo": 0.04003, "hi": 0.05218, "status": "Research period", "source": "engine/out/v2_nat.csv"},
+    {"version": "Engine v2.2", "live": "2026-11-26", "what": "Adds 14 terms (below its own best, own consistency, hot start to a preparation, quick backups, light weights, measured venue class and more)", "vs": "Engine v2.0", "test": "fit to 2024, judged on 2025-26 (and fit to 2023, judged on 2024)", "gain": 0.01247, "lo": 0.01051, "hi": 0.01448, "gain_2024": 0.00576, "lo_2024": 0.00318, "hi_2024": 0.00831, "status": "Research period (2025-26 examined repeatedly)", "source": "benchmarks/engine_v2_2/manifest.json"},
+    {"version": "Engine v2.3", "live": "2026-11-27", "what": "Weight credit 0.25 kg per kg in the rating; margins to time at 0.170 s per length", "vs": "Engine v2.2", "test": "six states 2025-26, 23,729 races (2024 also tested)", "gain": 0.0095, "lo": 0.0076, "hi": 0.0113, "gain_2024": 0.0105, "status": "Research period; 2024 helped choose the setting; first untouched evidence is races from 27 Nov 2026", "source": "benchmarks/engine_v2/RELEASES.md"}
+   ],
+   "identical_races": null,
+   "cumulative_note": "Each step here was measured on a different set of races, and engines were refitted between steps, so the steps are not added into one total for these states. Only Engine v1 to v2.0 was measured on one fixed set of races."
+  }
+ ],
+ "candidates": [
+  {"name": "Engine v2.1.2-candidate", "family": "QLD", "what": "Engine v2.1.1 without last-start finish and track/distance/going history", "status": "Shadow: scored every day since 26 Nov; never shown", "ledger_label_prefix": "Engine v2.1.2-candidate", "compare_with": "production", "evidence": "Research: 2025-26 +0.0061 (0.0025 to 0.0096) vs v2.1.1; 2024 +0.0012 (-0.0038 to 0.0060). Note: it is measured against v2.1.1, and production is now v2.1.3."},
+  {"name": "Common national framework for Queensland", "family": "QLD", "what": "One national methodology with Queensland coefficients", "status": "Approved as a shadow (26 Nov); not built yet", "evidence": "Research: 2024 +0.0424 (0.0262 to 0.0587), 2025-26 +0.0326 (0.0208 to 0.0435) vs v2.1.1"},
+  {"name": "Engine v2.4 candidate (handicap weight slope)", "family": "NAT", "what": "Engine v2.3 plus extra weight sensitivity in Benchmark and Open handicaps", "status": "Built, not scoring: needs the race class at race time (TAB racecard field)", "evidence": "Research: 2024 (clean) +0.0005 (0.0003 to 0.0007), 2025-26 +0.0015 (0.0011 to 0.0018) vs v2.3"},
+  {"name": "Rating update rule", "family": "NAT", "what": "Cap heavy defeats at about 10-12 lengths and let good runs move the rating 1.3 times as far", "status": "Awaiting your decision to build as a shadow", "evidence": "Research: +0.0071 (2024) and +0.0055 (2025-26) per race on v2.3; chosen with sight of both periods"}
+ ]
+}

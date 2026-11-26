@@ -117,6 +117,8 @@ with switches on = runs end to end (frames identical to the fitted ones, labels 
 | v2.3 frame build rewrites out/out_nat_r20*.csv and out_nat_venue_offsets.csv | operational fix | Side effect seen 27 Nov (restored from git); make the frame build write to a scratch path (with the next release wiring) |
 | State seconds-per-length (Qld 0.170, SA 0.159, Vic 0.162) | research (national comparability) | Open: test state-specific conversion on horses moving between states |
 | Common national framework for Qld (shadow) | build | Approved 26 Nov; not yet wired. Recommended 27 Nov: build together with the update-rule shadow (one rebuild); Damo's call |
+| Engine Performance tab and tracking inspection (dashboard) | done 27 Nov | Display only. Update benchmarks/engine_lineage.json at every release and when a shadow starts or stops |
+| Provenance: v2.3 manifests record the v2.1 base manifest hash, not engine_v2_3/engine_v2.json (the file that supplies v2.3's national family) | small fix | Seen 27 Nov. v2.3 was in effect (kg divisor 0.2689 exists only in that file; export recompute check passed). Add the file's hash to the v2 manifest at the next release wiring |
 | Kept open (untested, not rejected): course geometry and momentum retention; acceleration x course configuration; extra ground vs optimal distance; cross-jurisdiction inference; dynamic distance suitability | research | Open. An empirical leader-hold rate by track is not geometry |
 | Moonee Valley new layout (planned 2027) | data rule | New configuration key when racing resumes; no transfer of old-layout tendencies |
 | Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
