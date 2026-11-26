@@ -1,0 +1,483 @@
+{
+ "sd of race-mean surprise (kg) vs sd of runner surprise": [
+  0.0,
+  5.51
+ ],
+ "race-mean surprise vs position in the card, per meeting: mean slope, sd of slopes, share of meetings with |slope| > 2 kg": [
+  -0.0,
+  0.0,
+  0.0
+ ],
+ "race-level surprise explained by its meeting and position in the card (R2 of meeting slope model)": 0.131,
+ "jockeys: later rides vs first ride at the meeting (kg): raw surprise / surprise relative to own race": {
+  "dyn_nat_inn": {
+   "1": [
+    0.153,
+    0.113,
+    0.194
+   ],
+   "2": [
+    0.273,
+    0.228,
+    0.318
+   ],
+   "3": [
+    0.303,
+    0.255,
+    0.352
+   ],
+   "4": [
+    0.373,
+    0.326,
+    0.419
+   ]
+  },
+  "within": {
+   "1": [
+    0.153,
+    0.113,
+    0.194
+   ],
+   "2": [
+    0.273,
+    0.228,
+    0.318
+   ],
+   "3": [
+    0.303,
+    0.255,
+    0.352
+   ],
+   "4": [
+    0.373,
+    0.326,
+    0.419
+   ]
+  }
+ },
+ "trainers: later runners vs first (kg): raw / relative to own race": {
+  "dyn_nat_inn": {
+   "1": [
+    0.115,
+    0.076,
+    0.153
+   ],
+   "2": [
+    0.121,
+    0.075,
+    0.167
+   ],
+   "3": [
+    0.146,
+    0.089,
+    0.203
+   ],
+   "4": [
+    0.191,
+    0.145,
+    0.236
+   ]
+  },
+  "within": {
+   "1": [
+    0.115,
+    0.076,
+    0.153
+   ],
+   "2": [
+    0.121,
+    0.075,
+    0.167
+   ],
+   "3": [
+    0.146,
+    0.089,
+    0.203
+   ],
+   "4": [
+    0.191,
+    0.145,
+    0.236
+   ]
+  }
+ },
+ "scale checks": {
+  "jkey": {
+   "kg surprise, distance/kg-per-length/field held fixed": {
+    "1": [
+     0.153,
+     0.112,
+     0.193
+    ],
+    "2": [
+     0.271,
+     0.226,
+     0.316
+    ],
+    "3": [
+     0.302,
+     0.253,
+     0.35
+    ],
+    "4": [
+     0.372,
+     0.326,
+     0.419
+    ]
+   },
+   "surprise in race-spread units": {
+    "1": [
+     0.029,
+     0.023,
+     0.036
+    ],
+    "2": [
+     0.055,
+     0.048,
+     0.063
+    ],
+    "3": [
+     0.064,
+     0.055,
+     0.072
+    ],
+    "4": [
+     0.079,
+     0.071,
+     0.088
+    ]
+   },
+   "finish vs rating rank (share of field)": {
+    "1": [
+     0.031,
+     0.028,
+     0.033
+    ],
+    "2": [
+     0.052,
+     0.049,
+     0.055
+    ],
+    "3": [
+     0.063,
+     0.059,
+     0.066
+    ],
+    "4": [
+     0.074,
+     0.071,
+     0.078
+    ]
+   },
+   "finish percentile alone (lower = better)": {
+    "1": [
+     0.025,
+     0.023,
+     0.027
+    ],
+    "2": [
+     0.039,
+     0.037,
+     0.042
+    ],
+    "3": [
+     0.052,
+     0.05,
+     0.055
+    ],
+    "4": [
+     0.056,
+     0.053,
+     0.059
+    ]
+   }
+  },
+  "tkey": {
+   "kg surprise, distance/kg-per-length/field held fixed": {
+    "1": [
+     0.112,
+     0.072,
+     0.151
+    ],
+    "2": [
+     0.117,
+     0.071,
+     0.164
+    ],
+    "3": [
+     0.141,
+     0.084,
+     0.199
+    ],
+    "4": [
+     0.186,
+     0.14,
+     0.231
+    ]
+   },
+   "surprise in race-spread units": {
+    "1": [
+     0.024,
+     0.017,
+     0.03
+    ],
+    "2": [
+     0.03,
+     0.021,
+     0.038
+    ],
+    "3": [
+     0.032,
+     0.022,
+     0.042
+    ],
+    "4": [
+     0.041,
+     0.033,
+     0.05
+    ]
+   },
+   "finish vs rating rank (share of field)": {
+    "1": [
+     0.034,
+     0.031,
+     0.036
+    ],
+    "2": [
+     0.042,
+     0.039,
+     0.046
+    ],
+    "3": [
+     0.047,
+     0.043,
+     0.051
+    ],
+    "4": [
+     0.054,
+     0.051,
+     0.058
+    ]
+   },
+   "finish percentile alone (lower = better)": {
+    "1": [
+     0.029,
+     0.027,
+     0.031
+    ],
+    "2": [
+     0.038,
+     0.036,
+     0.041
+    ],
+    "3": [
+     0.043,
+     0.04,
+     0.047
+    ],
+    "4": [
+     0.047,
+     0.044,
+     0.05
+    ]
+   }
+  }
+ },
+ "race importance checks": {
+  "jkey": {
+   "kg surprise, no prize control (same rows)": {
+    "1": [
+     0.144,
+     0.101,
+     0.186
+    ],
+    "2": [
+     0.265,
+     0.218,
+     0.313
+    ],
+    "3": [
+     0.294,
+     0.244,
+     0.344
+    ],
+    "4": [
+     0.368,
+     0.319,
+     0.416
+    ]
+   },
+   "kg surprise, prize held fixed": {
+    "1": [
+     0.145,
+     0.102,
+     0.187
+    ],
+    "2": [
+     0.267,
+     0.22,
+     0.315
+    ],
+    "3": [
+     0.297,
+     0.246,
+     0.347
+    ],
+    "4": [
+     0.372,
+     0.324,
+     0.421
+    ],
+    "per unit log prize": [
+     -0.041,
+     -0.095,
+     0.013
+    ]
+   },
+   "kg surprise, prize + distance + field held fixed": {
+    "1": [
+     0.141,
+     0.099,
+     0.184
+    ],
+    "2": [
+     0.262,
+     0.214,
+     0.309
+    ],
+    "3": [
+     0.291,
+     0.241,
+     0.341
+    ],
+    "4": [
+     0.367,
+     0.319,
+     0.416
+    ],
+    "per unit log prize": [
+     -0.056,
+     -0.11,
+     -0.001
+    ]
+   }
+  },
+  "tkey": {
+   "kg surprise, no prize control (same rows)": {
+    "1": [
+     0.101,
+     0.061,
+     0.141
+    ],
+    "2": [
+     0.108,
+     0.06,
+     0.156
+    ],
+    "3": [
+     0.135,
+     0.075,
+     0.194
+    ],
+    "4": [
+     0.18,
+     0.134,
+     0.226
+    ]
+   },
+   "kg surprise, prize held fixed": {
+    "1": [
+     0.107,
+     0.067,
+     0.147
+    ],
+    "2": [
+     0.116,
+     0.068,
+     0.164
+    ],
+    "3": [
+     0.144,
+     0.085,
+     0.204
+    ],
+    "4": [
+     0.195,
+     0.15,
+     0.241
+    ],
+    "per unit log prize": [
+     -0.178,
+     -0.243,
+     -0.113
+    ]
+   },
+   "kg surprise, prize + distance + field held fixed": {
+    "1": [
+     0.1,
+     0.059,
+     0.14
+    ],
+    "2": [
+     0.107,
+     0.059,
+     0.155
+    ],
+    "3": [
+     0.135,
+     0.074,
+     0.195
+    ],
+    "4": [
+     0.185,
+     0.139,
+     0.231
+    ],
+    "per unit log prize": [
+     -0.191,
+     -0.256,
+     -0.126
+    ]
+   }
+  }
+ },
+ "placebo orderings": {
+  "jkey true": {
+   "1": 0.153,
+   "2": 0.273,
+   "3": 0.303,
+   "4": 0.373,
+   "without the rating control": {
+    "1": -0.022,
+    "2": -0.006,
+    "3": -0.046,
+    "4": -0.024
+   }
+  },
+  "jkey reverse": {
+   "1": -0.142,
+   "2": -0.225,
+   "3": -0.308,
+   "4": -0.354,
+   "without the rating control": {
+    "1": -0.034,
+    "2": -0.013,
+    "3": -0.022,
+    "4": 0.025
+   }
+  },
+  "jkey random": {
+   "1": -0.005,
+   "2": -0.015,
+   "3": -0.006,
+   "4": -0.003,
+   "without the rating control": {
+    "1": -0.007,
+    "2": -0.017,
+    "3": -0.008,
+    "4": -0.005
+   }
+  }
+ },
+ "conclusion": "The rating surprise is centred within each race (race-mean exactly 0), so it is not day-drift. With NO rating control, a jockey's later rides at a meeting show no difference (-0.02 to -0.05 kg) and random or reverse orderings show nothing; the +0.15 to +0.37 kg 'later rides go better' pattern appears only when the ABSOLUTE pre-race rating difference between the rides is controlled, and flips sign in reverse order. Mechanism: within a meeting, later rides tend to be on higher-rated horses in stronger races, and the race-relative surprise depends on a horse's rating RELATIVE to its field, not its absolute rating; controlling absolute rating across races of different class manufactures an order effect. Prize money does not explain it. Rule: with race-relative outcomes, control race-relative ratings (rating minus field mean) or use no rating control for within-meeting comparisons. Workload conclusion unchanged and stronger: no order or workload effect."
+}

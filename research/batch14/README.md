@@ -1,6 +1,9 @@
 # Batch 14 ledger (26-27 Nov 2026 night): physical performance, momentum, course geometry, rider specialisation
 
 Damo's brief calls this "Research Batch 13"; the folder is batch14 because research/batch13 already holds the 26 Nov consolidation tests.
+Naming (reconciled 27 Nov): this work is "Batch 14" everywhere in the project (folder, LIBRARY, register, report document title);
+"Research Batch 13" is the brief's own title and is quoted as such. Batch 13 = the 26 Nov consolidation tests behind the 27 Nov release.
+Follow-up (27 Nov 00:23 brief, profiles, momentum, rider characteristics): batch14/followup/README.md.
 Research only: nothing here changes production (Engine v2.3 six states, Engine v2.1.3 Qld from 27 Nov). No market data anywhere.
 
 Data: Queensland RQ tracking (81,116 finishers in 8,510 races where every finisher has complete 200 m splits, Oct 2022 - Nov 2026),

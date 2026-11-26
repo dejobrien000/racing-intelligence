@@ -1,0 +1,959 @@
+{
+ "QLD 2022-24": {
+  "runs": 36764,
+  "dead zone m/s": 0.163,
+  "profile share %": {
+   "Building": 29.8,
+   "Steady": 23.9,
+   "Late fade": 12.4,
+   "Progressive fade": 12.1,
+   "Early fade": 9.8,
+   "Surge then fade": 6.2,
+   "Dip and recover": 5.8
+  },
+  "profiles vs Steady: inn_n1": {
+   "Building": [
+    0.08,
+    -0.06,
+    0.22
+   ],
+   "Dip and recover": [
+    0.17,
+    -0.08,
+    0.41
+   ],
+   "Early fade": [
+    0.01,
+    -0.2,
+    0.22
+   ],
+   "Late fade": [
+    0.2,
+    0.01,
+    0.38
+   ],
+   "Progressive fade": [
+    0.55,
+    0.32,
+    0.78
+   ],
+   "Surge then fade": [
+    -0.04,
+    -0.28,
+    0.2
+   ]
+  },
+  "profiles vs Steady: next3": {
+   "Building": [
+    0.07,
+    -0.02,
+    0.16
+   ],
+   "Dip and recover": [
+    0.09,
+    -0.07,
+    0.24
+   ],
+   "Early fade": [
+    0.02,
+    -0.11,
+    0.16
+   ],
+   "Late fade": [
+    0.11,
+    -0.01,
+    0.24
+   ],
+   "Progressive fade": [
+    0.32,
+    0.17,
+    0.48
+   ],
+   "Surge then fade": [
+    -0.01,
+    -0.17,
+    0.15
+   ]
+  },
+  "profiles vs Steady: next5": {
+   "Building": [
+    0.06,
+    -0.02,
+    0.14
+   ],
+   "Dip and recover": [
+    0.03,
+    -0.1,
+    0.17
+   ],
+   "Early fade": [
+    0.04,
+    -0.08,
+    0.16
+   ],
+   "Late fade": [
+    0.11,
+    -0.01,
+    0.22
+   ],
+   "Progressive fade": [
+    0.23,
+    0.09,
+    0.37
+   ],
+   "Surge then fade": [
+    0.01,
+    -0.13,
+    0.15
+   ]
+  },
+  "profiles vs Steady: rat_chg5": {
+   "Building": [
+    0.11,
+    0.01,
+    0.2
+   ],
+   "Dip and recover": [
+    -0.05,
+    -0.21,
+    0.11
+   ],
+   "Early fade": [
+    0.09,
+    -0.04,
+    0.22
+   ],
+   "Late fade": [
+    0.27,
+    0.15,
+    0.39
+   ],
+   "Progressive fade": [
+    0.49,
+    0.34,
+    0.64
+   ],
+   "Surge then fade": [
+    0.09,
+    -0.06,
+    0.24
+   ]
+  },
+  "dip alone (per sd)": [
+   0.263,
+   0.189,
+   0.336
+  ],
+  "shape: slope, bend (per sd)": [
+   [
+    -0.238,
+    -0.326,
+    -0.15
+   ],
+   [
+    -0.024,
+    -0.081,
+    0.033
+   ]
+  ],
+  "dip with recovery and slope (per sd)": {
+   "dip": [
+    0.246,
+    0.172,
+    0.32
+   ],
+   "recovery": [
+    0.124,
+    0.019,
+    0.23
+   ],
+   "slope": [
+    -0.262,
+    -0.388,
+    -0.136
+   ]
+  },
+  "model fit R2 (dip, shape)": [
+   0.0286,
+   0.0279
+  ],
+  "middle third of average speed: mean next-run kg by profile (raw)": {
+   "Building": {
+    "mean": 0.26,
+    "size": 2965
+   },
+   "Dip and recover": {
+    "mean": -0.04,
+    "size": 640
+   },
+   "Early fade": {
+    "mean": -0.2,
+    "size": 995
+   },
+   "Late fade": {
+    "mean": 0.19,
+    "size": 1337
+   },
+   "Progressive fade": {
+    "mean": 0.31,
+    "size": 475
+   },
+   "Steady": {
+    "mean": 0.03,
+    "size": 5136
+   },
+   "Surge then fade": {
+    "mean": -0.24,
+    "size": 693
+   }
+  },
+  "stewards: runs at meetings with a report held %": 98.4,
+  "of those, runs with a paragraph about the horse %": 67.8,
+  "stewards: share of runs with each reported event, by profile %": {
+   "Building": {
+    "interference": 22.5,
+    "held_up": 9.5,
+    "checked": 11.4,
+    "weakened": 0.1,
+    "performance_concern": 0.6,
+    "unable_improve": 0.2,
+    "wide": 7.4,
+    "wide_no_cover": 0.6
+   },
+   "Dip and recover": {
+    "interference": 21.6,
+    "held_up": 6.9,
+    "checked": 13.5,
+    "weakened": 0.3,
+    "performance_concern": 1.4,
+    "unable_improve": 0.1,
+    "wide": 14.5,
+    "wide_no_cover": 1.6
+   },
+   "Early fade": {
+    "interference": 16.6,
+    "held_up": 2.6,
+    "checked": 11.0,
+    "weakened": 0.3,
+    "performance_concern": 1.7,
+    "unable_improve": 0.1,
+    "wide": 20.3,
+    "wide_no_cover": 1.5
+   },
+   "Late fade": {
+    "interference": 17.1,
+    "held_up": 2.0,
+    "checked": 11.5,
+    "weakened": 0.4,
+    "performance_concern": 2.2,
+    "unable_improve": 0.1,
+    "wide": 14.6,
+    "wide_no_cover": 1.4
+   },
+   "Progressive fade": {
+    "interference": 16.4,
+    "held_up": 0.9,
+    "checked": 11.0,
+    "weakened": 2.1,
+    "performance_concern": 4.7,
+    "unable_improve": 0.0,
+    "wide": 23.2,
+    "wide_no_cover": 2.4
+   },
+   "Steady": {
+    "interference": 18.6,
+    "held_up": 4.9,
+    "checked": 10.9,
+    "weakened": 0.1,
+    "performance_concern": 0.9,
+    "unable_improve": 0.1,
+    "wide": 11.3,
+    "wide_no_cover": 1.2
+   },
+   "Surge then fade": {
+    "interference": 20.2,
+    "held_up": 4.6,
+    "checked": 13.2,
+    "weakened": 0.1,
+    "performance_concern": 0.9,
+    "unable_improve": 0.1,
+    "wide": 9.1,
+    "wide_no_cover": 1.0
+   }
+  },
+  "stewards: dip per sd, dip x reported interference, reported interference, weakened, performance concern, no cover (next-run kg)": {
+   "I(dip / dip.std())": [
+    0.249,
+    0.168,
+    0.331
+   ],
+   "I(dip / dip.std()):interference": [
+    0.023,
+    -0.135,
+    0.181
+   ],
+   "interference": [
+    0.159,
+    -0.049,
+    0.366
+   ],
+   "weakened": [
+    1.69,
+    0.696,
+    2.684
+   ],
+   "performance_concern": [
+    0.283,
+    -0.161,
+    0.726
+   ],
+   "wide_no_cover": [
+    0.406,
+    -0.139,
+    0.951
+   ]
+  },
+  "measured width at 400 (m), runs reported wide vs not": {
+   "0.0": 1.81,
+   "1.0": 2.67
+  }
+ },
+ "QLD 2025-26": {
+  "runs": 34640,
+  "dead zone m/s": 0.161,
+  "profile share %": {
+   "Building": 29.8,
+   "Steady": 24.9,
+   "Late fade": 12.9,
+   "Progressive fade": 12.0,
+   "Early fade": 9.5,
+   "Surge then fade": 6.0,
+   "Dip and recover": 5.0
+  },
+  "profiles vs Steady: inn_n1": {
+   "Building": [
+    0.05,
+    -0.09,
+    0.19
+   ],
+   "Dip and recover": [
+    0.23,
+    -0.03,
+    0.49
+   ],
+   "Early fade": [
+    0.03,
+    -0.18,
+    0.24
+   ],
+   "Late fade": [
+    0.21,
+    0.02,
+    0.41
+   ],
+   "Progressive fade": [
+    0.39,
+    0.15,
+    0.63
+   ],
+   "Surge then fade": [
+    0.12,
+    -0.11,
+    0.36
+   ]
+  },
+  "profiles vs Steady: next3": {
+   "Building": [
+    0.03,
+    -0.08,
+    0.13
+   ],
+   "Dip and recover": [
+    0.1,
+    -0.09,
+    0.28
+   ],
+   "Early fade": [
+    0.04,
+    -0.11,
+    0.2
+   ],
+   "Late fade": [
+    0.13,
+    -0.01,
+    0.27
+   ],
+   "Progressive fade": [
+    0.28,
+    0.1,
+    0.46
+   ],
+   "Surge then fade": [
+    0.21,
+    0.04,
+    0.38
+   ]
+  },
+  "profiles vs Steady: next5": {
+   "Building": [
+    0.03,
+    -0.06,
+    0.12
+   ],
+   "Dip and recover": [
+    0.09,
+    -0.08,
+    0.27
+   ],
+   "Early fade": [
+    0.04,
+    -0.1,
+    0.18
+   ],
+   "Late fade": [
+    0.12,
+    -0.01,
+    0.25
+   ],
+   "Progressive fade": [
+    0.24,
+    0.07,
+    0.4
+   ],
+   "Surge then fade": [
+    0.22,
+    0.07,
+    0.38
+   ]
+  },
+  "profiles vs Steady: rat_chg5": {
+   "Building": [
+    0.06,
+    -0.04,
+    0.15
+   ],
+   "Dip and recover": [
+    0.16,
+    -0.01,
+    0.34
+   ],
+   "Early fade": [
+    0.01,
+    -0.14,
+    0.15
+   ],
+   "Late fade": [
+    0.2,
+    0.07,
+    0.33
+   ],
+   "Progressive fade": [
+    0.44,
+    0.27,
+    0.61
+   ],
+   "Surge then fade": [
+    0.2,
+    0.04,
+    0.36
+   ]
+  },
+  "dip alone (per sd)": [
+   0.22,
+   0.141,
+   0.3
+  ],
+  "shape: slope, bend (per sd)": [
+   [
+    -0.139,
+    -0.233,
+    -0.046
+   ],
+   [
+    0.009,
+    -0.052,
+    0.069
+   ]
+  ],
+  "dip with recovery and slope (per sd)": {
+   "dip": [
+    0.21,
+    0.13,
+    0.29
+   ],
+   "recovery": [
+    0.052,
+    -0.06,
+    0.165
+   ],
+   "slope": [
+    -0.123,
+    -0.261,
+    0.015
+   ]
+  },
+  "model fit R2 (dip, shape)": [
+   0.0212,
+   0.0204
+  ],
+  "middle third of average speed: mean next-run kg by profile (raw)": {
+   "Building": {
+    "mean": 0.1,
+    "size": 2738
+   },
+   "Dip and recover": {
+    "mean": -0.03,
+    "size": 545
+   },
+   "Early fade": {
+    "mean": -0.19,
+    "size": 969
+   },
+   "Late fade": {
+    "mean": 0.28,
+    "size": 1199
+   },
+   "Progressive fade": {
+    "mean": 0.02,
+    "size": 401
+   },
+   "Steady": {
+    "mean": -0.07,
+    "size": 5087
+   },
+   "Surge then fade": {
+    "mean": -0.03,
+    "size": 604
+   }
+  },
+  "stewards: runs at meetings with a report held %": 99.0,
+  "of those, runs with a paragraph about the horse %": 71.4,
+  "stewards: share of runs with each reported event, by profile %": {
+   "Building": {
+    "interference": 24.4,
+    "held_up": 9.4,
+    "checked": 12.5,
+    "weakened": 0.0,
+    "performance_concern": 0.6,
+    "unable_improve": 0.2,
+    "wide": 7.7,
+    "wide_no_cover": 0.7
+   },
+   "Dip and recover": {
+    "interference": 22.9,
+    "held_up": 6.2,
+    "checked": 13.6,
+    "weakened": 0.3,
+    "performance_concern": 1.7,
+    "unable_improve": 0.2,
+    "wide": 13.4,
+    "wide_no_cover": 1.3
+   },
+   "Early fade": {
+    "interference": 18.2,
+    "held_up": 2.6,
+    "checked": 11.5,
+    "weakened": 0.2,
+    "performance_concern": 2.4,
+    "unable_improve": 0.2,
+    "wide": 19.1,
+    "wide_no_cover": 2.2
+   },
+   "Late fade": {
+    "interference": 18.9,
+    "held_up": 3.0,
+    "checked": 11.7,
+    "weakened": 0.5,
+    "performance_concern": 2.7,
+    "unable_improve": 0.1,
+    "wide": 15.2,
+    "wide_no_cover": 2.1
+   },
+   "Progressive fade": {
+    "interference": 17.8,
+    "held_up": 0.6,
+    "checked": 11.1,
+    "weakened": 1.7,
+    "performance_concern": 5.1,
+    "unable_improve": 0.1,
+    "wide": 23.4,
+    "wide_no_cover": 3.8
+   },
+   "Steady": {
+    "interference": 20.3,
+    "held_up": 4.7,
+    "checked": 11.8,
+    "weakened": 0.1,
+    "performance_concern": 1.0,
+    "unable_improve": 0.1,
+    "wide": 11.1,
+    "wide_no_cover": 1.5
+   },
+   "Surge then fade": {
+    "interference": 21.7,
+    "held_up": 4.6,
+    "checked": 13.6,
+    "weakened": 0.1,
+    "performance_concern": 0.8,
+    "unable_improve": 0.2,
+    "wide": 11.2,
+    "wide_no_cover": 1.1
+   }
+  },
+  "stewards: dip per sd, dip x reported interference, reported interference, weakened, performance concern, no cover (next-run kg)": {
+   "I(dip / dip.std())": [
+    0.178,
+    0.093,
+    0.262
+   ],
+   "I(dip / dip.std()):interference": [
+    0.186,
+    0.007,
+    0.364
+   ],
+   "interference": [
+    -0.045,
+    -0.268,
+    0.177
+   ],
+   "weakened": [
+    0.062,
+    -1.166,
+    1.29
+   ],
+   "performance_concern": [
+    0.515,
+    0.026,
+    1.004
+   ],
+   "wide_no_cover": [
+    0.143,
+    -0.355,
+    0.64
+   ]
+  },
+  "measured width at 400 (m), runs reported wide vs not": {
+   "0.0": 1.74,
+   "1.0": 2.56
+  }
+ },
+ "SA 2024-26": {
+  "runs": 14239,
+  "dead zone m/s": 0.147,
+  "profile share %": {
+   "Building": 30.3,
+   "Steady": 21.9,
+   "Late fade": 12.6,
+   "Progressive fade": 11.7,
+   "Early fade": 10.6,
+   "Surge then fade": 6.5,
+   "Dip and recover": 6.3
+  },
+  "profiles vs Steady: inn_n1": {
+   "Building": [
+    0.27,
+    0.04,
+    0.5
+   ],
+   "Dip and recover": [
+    -0.01,
+    -0.4,
+    0.39
+   ],
+   "Early fade": [
+    0.01,
+    -0.31,
+    0.33
+   ],
+   "Late fade": [
+    0.28,
+    -0.02,
+    0.58
+   ],
+   "Progressive fade": [
+    0.79,
+    0.44,
+    1.14
+   ],
+   "Surge then fade": [
+    -0.03,
+    -0.41,
+    0.34
+   ]
+  },
+  "profiles vs Steady: next3": {
+   "Building": [
+    0.26,
+    0.1,
+    0.42
+   ],
+   "Dip and recover": [
+    0.02,
+    -0.24,
+    0.28
+   ],
+   "Early fade": [
+    0.13,
+    -0.09,
+    0.35
+   ],
+   "Late fade": [
+    0.17,
+    -0.04,
+    0.37
+   ],
+   "Progressive fade": [
+    0.54,
+    0.3,
+    0.78
+   ],
+   "Surge then fade": [
+    -0.0,
+    -0.24,
+    0.24
+   ]
+  },
+  "profiles vs Steady: next5": {
+   "Building": [
+    0.2,
+    0.06,
+    0.34
+   ],
+   "Dip and recover": [
+    0.07,
+    -0.16,
+    0.3
+   ],
+   "Early fade": [
+    0.11,
+    -0.08,
+    0.3
+   ],
+   "Late fade": [
+    0.06,
+    -0.12,
+    0.24
+   ],
+   "Progressive fade": [
+    0.35,
+    0.13,
+    0.57
+   ],
+   "Surge then fade": [
+    -0.05,
+    -0.27,
+    0.17
+   ]
+  },
+  "profiles vs Steady: rat_chg5": {
+   "Building": [
+    0.21,
+    0.06,
+    0.35
+   ],
+   "Dip and recover": [
+    -0.18,
+    -0.43,
+    0.07
+   ],
+   "Early fade": [
+    0.02,
+    -0.18,
+    0.22
+   ],
+   "Late fade": [
+    0.23,
+    0.05,
+    0.42
+   ],
+   "Progressive fade": [
+    0.32,
+    0.1,
+    0.55
+   ],
+   "Surge then fade": [
+    -0.01,
+    -0.25,
+    0.23
+   ]
+  },
+  "dip alone (per sd)": [
+   0.316,
+   0.204,
+   0.428
+  ],
+  "shape: slope, bend (per sd)": [
+   [
+    -0.135,
+    -0.268,
+    -0.001
+   ],
+   [
+    0.032,
+    -0.062,
+    0.125
+   ]
+  ],
+  "dip with recovery and slope (per sd)": {
+   "dip": [
+    0.309,
+    0.192,
+    0.427
+   ],
+   "recovery": [
+    0.039,
+    -0.128,
+    0.205
+   ],
+   "slope": [
+    -0.088,
+    -0.285,
+    0.109
+   ]
+  },
+  "model fit R2 (dip, shape)": [
+   0.0211,
+   0.0191
+  ],
+  "middle third of average speed: mean next-run kg by profile (raw)": {
+   "Building": {
+    "mean": 0.33,
+    "size": 1219
+   },
+   "Dip and recover": {
+    "mean": 0.04,
+    "size": 249
+   },
+   "Early fade": {
+    "mean": -0.68,
+    "size": 449
+   },
+   "Late fade": {
+    "mean": 0.14,
+    "size": 534
+   },
+   "Progressive fade": {
+    "mean": 0.15,
+    "size": 241
+   },
+   "Steady": {
+    "mean": -0.22,
+    "size": 1772
+   },
+   "Surge then fade": {
+    "mean": -0.39,
+    "size": 268
+   }
+  },
+  "stewards: runs at meetings with a report held %": 29.8,
+  "of those, runs with a paragraph about the horse %": 63.2,
+  "stewards: share of runs with each reported event, by profile %": {
+   "Building": {
+    "interference": 23.4,
+    "held_up": 8.1,
+    "checked": 11.5,
+    "weakened": 0.0,
+    "performance_concern": 0.9,
+    "unable_improve": 0.5,
+    "wide": 2.3,
+    "wide_no_cover": 2.3
+   },
+   "Dip and recover": {
+    "interference": 25.1,
+    "held_up": 7.4,
+    "checked": 13.4,
+    "weakened": 0.7,
+    "performance_concern": 1.8,
+    "unable_improve": 1.4,
+    "wide": 3.9,
+    "wide_no_cover": 3.9
+   },
+   "Early fade": {
+    "interference": 19.3,
+    "held_up": 2.4,
+    "checked": 11.2,
+    "weakened": 0.0,
+    "performance_concern": 4.0,
+    "unable_improve": 0.4,
+    "wide": 3.8,
+    "wide_no_cover": 4.2
+   },
+   "Late fade": {
+    "interference": 17.9,
+    "held_up": 2.8,
+    "checked": 10.4,
+    "weakened": 0.2,
+    "performance_concern": 3.8,
+    "unable_improve": 0.6,
+    "wide": 3.8,
+    "wide_no_cover": 4.0
+   },
+   "Progressive fade": {
+    "interference": 19.8,
+    "held_up": 1.0,
+    "checked": 9.7,
+    "weakened": 0.6,
+    "performance_concern": 11.1,
+    "unable_improve": 0.4,
+    "wide": 8.1,
+    "wide_no_cover": 7.5
+   },
+   "Steady": {
+    "interference": 22.1,
+    "held_up": 5.2,
+    "checked": 11.6,
+    "weakened": 0.1,
+    "performance_concern": 2.2,
+    "unable_improve": 0.3,
+    "wide": 3.2,
+    "wide_no_cover": 3.4
+   },
+   "Surge then fade": {
+    "interference": 17.6,
+    "held_up": 3.9,
+    "checked": 8.5,
+    "weakened": 0.0,
+    "performance_concern": 0.4,
+    "unable_improve": 0.7,
+    "wide": 1.8,
+    "wide_no_cover": 1.8
+   }
+  },
+  "stewards: dip per sd, dip x reported interference, reported interference, weakened, performance concern, no cover (next-run kg)": {
+   "I(dip / dip.std())": [
+    0.314,
+    0.092,
+    0.535
+   ],
+   "I(dip / dip.std()):interference": [
+    -0.017,
+    -0.634,
+    0.6
+   ],
+   "interference": [
+    0.375,
+    -0.338,
+    1.089
+   ],
+   "weakened": [
+    1.547,
+    -6.187,
+    9.282
+   ],
+   "performance_concern": [
+    0.362,
+    -0.803,
+    1.527
+   ],
+   "wide_no_cover": [
+    0.521,
+    -0.334,
+    1.376
+   ]
+  },
+  "measured width at 400 (m), runs reported wide vs not": {
+   "0.0": 3.12,
+   "1.0": 3.81
+  }
+ }
+}

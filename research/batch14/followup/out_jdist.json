@@ -1,0 +1,73 @@
+{
+ "1 persistence: prior staying-minus-sprint vs that year (r, jockeys)": {
+  "2024": [
+   0.267,
+   182
+  ],
+  "2025": [
+   0.323,
+   192
+  ],
+  "2026": [
+   0.381,
+   177
+  ]
+ },
+ "2 shrinkage: true sd of band-specific jockey form (kg), noise sd per ride, optimal prior weight (rides) vs 60 used": [
+  0.203,
+  5.51,
+  734.0
+ ],
+ "2/4 shrinkage and representation (2023-26, beyond j_surp and trainer distance form)": {
+  "j_spec60": {
+   "coef (kg per kg)": [
+    0.417,
+    0.351,
+    0.483
+   ],
+   "sd of input kg": 0.304,
+   "kg per sd": 0.127,
+   "R2": 0.02885
+  },
+  "j_spec_opt": {
+   "coef (kg per kg)": [
+    1.136,
+    0.976,
+    1.295
+   ],
+   "sd of input kg": 0.217,
+   "kg per sd": 0.247,
+   "R2": 0.02898
+  },
+  "j_spec6": {
+   "coef (kg per kg)": [
+    0.937,
+    0.772,
+    1.103
+   ],
+   "sd of input kg": 0.301,
+   "kg per sd": 0.282,
+   "R2": 0.02883
+  }
+ },
+ "3 pre-specified specialists (top 10% on pre-2025 data), 2025-26: j_spec effect for others, extra for specialists": {
+  "others": [
+   1.167,
+   0.957,
+   1.378
+  ],
+  "specialists extra": [
+   0.005,
+   -0.392,
+   0.402
+  ],
+  "n specialists": 22,
+  "n eligible jockeys": 220,
+  "rides by specialists 2025-26": 19273
+ },
+ "5 riders: staying-minus-sprint form vs momentum timing and late retention (r, riders)": {
+  "timing": 0.284,
+  "hold": -0.006,
+  "riders": 110
+ }
+}

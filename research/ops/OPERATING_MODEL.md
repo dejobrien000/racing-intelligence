@@ -107,8 +107,11 @@ with switches on = runs end to end (frames identical to the fitted ones, labels 
 |---|---|---|
 | Common national framework for Qld (Qld coefficients; keep Qld physical inputs as a variant) | research build -> shadow | Approved to build as a SHADOW (Damo 26 Nov 9:07pm). Not for promotion without an evidence review |
 | Handicap weight slope on top of v2.3 (wt_x_hcp) | next release candidate | Approved to prepare for the following release; preregistered 2024 +0.0012 (0.0008-0.0017); needs build_v22 with the term + live term definition + parity |
-| Batch 14: uneven-last-600 input for Qld (dip_last, dip_prior) | research -> prospective check | Open hypothesis, judged on races from 27 Nov; not a candidate until confirmed |
-| Parse QRIC and SA stewards reports already held (no new collection) for clear running, cover and interference | research data | Proposed; needed by Batch 14 s5/s6 |
+| Batch 14: uneven-last-600 input for Qld (dip_last, dip_prior) | research -> prospective check | Open hypothesis, judged on races from 27 Nov; not a candidate until confirmed. Follow-up: +0.0040 (-0.0006 to +0.0095) 2024 on v2.1.3 - uncertain-small |
+| Batch 14 follow-up (27 Nov): profiles, own-normal decline, riders, distance form, small-improvement bundle | research | Done; research/batch14/followup/README.md. No candidate except the weight slope (already queued). Rider tendencies uncertain-small (Qld +0.0008 / +0.0013) |
+| QRIC and SA stewards reports parsed (staging/stewards/stewards_events.csv.gz) | research data | Done 27 Nov (supplementary evidence only; never a rating input). Next: horse-level clear-running repeatability; wide with vs without cover |
+| Jockey workload | research | CLOSED 27 Nov: no effect; artifact rule recorded (race-relative rating controls only). Reopen only with a substantive new reason |
+| Kept open (untested, not rejected): course geometry and momentum retention; acceleration x course configuration; extra ground vs optimal distance; cross-jurisdiction inference; dynamic distance suitability | research | Open. An empirical leader-hold rate by track is not geometry |
 | Moonee Valley new layout (planned 2027) | data rule | New configuration key when racing resumes; no transfer of old-layout tendencies |
 | Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
 | Interstate connections (pool levels inside the rating) | research | Open |

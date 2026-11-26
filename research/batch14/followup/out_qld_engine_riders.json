@@ -1,0 +1,35 @@
+{
+ "coverage: Qld rows with a rider prior (50+ tracked rides) %": 64.0,
+ "A (judge 2024, clean)": {
+  "coef_per_sd": {
+   "r_hold": 0.0104,
+   "r_timing": -0.0291,
+   "hxr": 0.0134,
+   "r_miss": -0.0009
+  },
+  "races": 2409,
+  "lp": 0.0008,
+  "lp_lo": -0.00054,
+  "lp_hi": 0.00212,
+  "hit": -0.12,
+  "hit_lo": -0.5,
+  "hit_hi": 0.33,
+  "top3": 0.04
+ },
+ "B (judge 2025-26, re-used)": {
+  "coef_per_sd": {
+   "r_hold": 0.0106,
+   "r_timing": -0.0232,
+   "hxr": 0.0145,
+   "r_miss": -0.0319
+  },
+  "races": 4730,
+  "lp": 0.00134,
+  "lp_lo": 0.00013,
+  "lp_hi": 0.00259,
+  "hit": -0.19,
+  "hit_lo": -0.57,
+  "hit_hi": 0.17,
+  "top3": 0.13
+ }
+}
