@@ -31,7 +31,9 @@ jobs:
           if git fetch -q --depth 1 origin raw-nswstewards 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/out; fi
           if [ -f /tmp/out/posts.jsonl.gz ]; then gunzip -f /tmp/out/posts.jsonl.gz; fi
       - name: Collect
-        run: python3 collect/nswstewards/collect.py /tmp/out
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then python3 collect/nswstewards/collect.py /tmp/out --since 2022-10-01   # code changed: full re-read (duplicates skipped)
+          else python3 collect/nswstewards/collect.py /tmp/out; fi
       - name: Parse into a staging table (every notice kept)
         run: python3 collect/nswstewards/parse.py /tmp/out/posts.jsonl /tmp/out/notices.csv | tee /tmp/out/parse_report.txt
       - name: Save to branch raw-nswstewards
