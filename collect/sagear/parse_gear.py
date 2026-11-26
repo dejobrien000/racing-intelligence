@@ -10,6 +10,7 @@ time is before the race; a document printed after a race must never be used for 
 Lines that cannot be placed are written with parse_note so nothing is dropped silently."""
 import sys, re, csv, subprocess, os, hashlib, datetime as dt
 out, pdfs = sys.argv[1], sys.argv[2:]
+if pdfs[:1] == ['--list']: pdfs = [l.strip() for l in open(pdfs[1]) if l.strip()]   # many files: one path per line
 STATE = r'(Off First Time|Off Again|First Time|Again|On|Off|Gelded)'
 CLS = {'On': 'unchanged (carried before)', 'First Time': 'first time', 'Again': 'again (resumed)', 'Off First Time': 'removed (first time)',
        'Off Again': 'removed (again)', 'Off': 'removed', 'Gelded': 'gelded since last start'}

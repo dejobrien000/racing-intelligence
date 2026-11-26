@@ -1,0 +1,55 @@
+name: sagear
+# Racing SA 'Gear Change Race Order' PDFs (pre-race, with 'Date Printed') and stewards' reports (post-meeting), Oct 2022 on,
+# from the public Country Racing SA site (Damo, 26 Nov 2026: "Prioritise SA's timestamped gear-change documents").
+# Staging input only. Honest User-Agent, robots.txt obeyed, 2.5-3.5 s pacing, stops after repeated refusals. Resumable: the previous
+# output on orphan branch raw-sagear is reused. Twice a day it re-reads recent and upcoming meetings (new gear documents appear
+# after acceptances, usually two days before racing).
+on:
+  push:
+    branches: [main]
+    paths: ['collect/sagear/collect.py', '.github/workflows/sagear.yml']
+  schedule:
+    - cron: '40 20 * * *'   # 06:10 Adelaide summer time / 06:40 Brisbane
+    - cron: '40 6 * * *'    # 16:10 Adelaide / 16:40 Brisbane (after acceptances and the afternoon print)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: sagear-collect, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests beautifulsoup4 && (command -v pdftotext || sudo apt-get install -y -q poppler-utils >/dev/null)
+      - name: Reuse earlier output
+        run: |
+          mkdir -p /tmp/out
+          if git fetch -q --depth 1 origin raw-sagear 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/out; fi
+          if [ -f /tmp/out/gearchanges.jsonl.gz ]; then gunzip -f /tmp/out/gearchanges.jsonl.gz; fi
+          ls /tmp/out | head; du -sh /tmp/out
+      - name: Collect (stops itself before the time limit)
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then export REFRESH_DAYS=10; fi
+          python3 collect/sagear/collect.py /tmp/out $(( $(date +%s) + 19800 )) || true
+      - name: Parse gear documents into a staging table (every line kept)
+        if: always()
+        run: |
+          ls /tmp/out/pdf/*/*.pdf >/dev/null 2>&1 || exit 0
+          python3 - <<'EOF' > /tmp/gearlist.txt
+          import csv
+          for r in csv.DictReader(open('/tmp/out/files.csv')):
+              if r['kind'] == 'gear' and r.get('saved'): print('/tmp/out/' + r['saved'])
+          EOF
+          python3 collect/sagear/parse_gear.py /tmp/out/gear_items.csv --list /tmp/gearlist.txt 2> /tmp/out/gear_parse.log || true
+          tail -3 /tmp/out/gear_parse.log; wc -l /tmp/out/gear_items.csv
+      - name: Save to branch raw-sagear
+        if: always()
+        run: |
+          if [ -f /tmp/out/gearchanges.jsonl ]; then gzip -f /tmp/out/gearchanges.jsonl; fi
+          cd /tmp/out && git init -q && git checkout -q -b raw-sagear && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "SA gear and stewards documents $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-sagear
