@@ -1,0 +1,30 @@
+name: run-watchdog
+# Monitor only: fails (so GitHub emails the repository owner) when the morning ratings or the evening results capture did not
+# reach the repository. It never runs, fixes or publishes anything itself.
+on:
+  schedule:
+    - cron: '50 22 * * *'   # 08:50 Brisbane: today's morning run should have published
+    - cron: '45 14 * * *'   # 00:45 Brisbane: yesterday's evening capture should be saved
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check
+        run: |
+          H=$(TZ=Australia/Brisbane date +%H); T=$(TZ=Australia/Brisbane date +%Y%m%d); Y=$(TZ=Australia/Brisbane date -d yesterday +%Y%m%d)
+          if [ "$H" -ge 6 ] && [ "$H" -lt 20 ]; then
+            L=research/ops/logs/$T.md
+            if [ ! -f "$L" ]; then echo "::error::MORNING RUN MISSING: no $L by 08:50 Brisbane"; exit 1; fi
+            if ! grep -qiE 'published|no thoroughbred|no racing' "$L"; then echo "::error::MORNING RUN INCOMPLETE: $L has no publish line"; grep -i attention "$L" || true; exit 1; fi
+            grep -i attention "$L" && { echo "::error::MORNING RUN reported ATTENTION"; exit 1; } || true
+            echo "morning run OK: $L"
+          else
+            Yi=$(TZ=Australia/Brisbane date -d yesterday +%F)
+            if [ ! -f "research/ui/data/racing_$Yi.json" ]; then echo "no dashboard day for $Yi: nothing to capture"; exit 0; fi
+            ls research/collect/national/$Y/results_*.raw.txt >/dev/null 2>&1 || { echo "::error::EVENING CAPTURE MISSING for $Y (results and final prices are lost once TAB drops the day)"; exit 1; }
+            echo "evening capture OK: $(ls research/collect/national/$Y/results_*.raw.txt)"
+          fi
