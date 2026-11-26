@@ -1,7 +1,7 @@
-run_utc=2026-11-26T04:35:12Z runner_ip=40.65.58.136
+run_utc=2026-11-26T04:36:50Z runner_ip=20.14.175.212
 TAB meetings|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB racecard|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
-Racing Queensland|404|202264|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
+Racing Queensland|404|202283|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
 Racing NSW FreeFields|200|23845|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
 Breednet|200|28973|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>    <!-- Google 
 TAB meetings (Accept json)|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
@@ -26,6 +26,9 @@ Country Racing SA sitemap (followed)|200|2560|text/xml; charset=UTF-8|https://ww
 Country Racing SA calendar (followed)|200|60894|text/html; charset=UTF-8|https://www.countryracingsa.com.au/calendar
 Country Racing SA race gear-changes page (followed)|200|2195|text/html; charset=UTF-8|https://www.countryracingsa.com.au/race/gear-changes/5399564
 Country Racing SA race page (followed)|200|263759|text/html; charset=UTF-8|https://www.countryracingsa.com.au/race/5399564
+Country Racing SA meeting by slug (Gawler 7 Oct 24) (followed, compressed)|404|4036|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meetings/07-oct-24-gawler|14521 bytes unpacked
+Country Racing SA meeting by slug (Morphettville 29 Oct 22) (followed, compressed)|404|4034|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meetings/29-oct-22-morphettville|14528 bytes unpacked
+Country Racing SA meeting by slug (Gawler today) (followed, compressed)|404|4035|text/html; charset=UTF-8|https://www.countryracingsa.com.au/meetings/26-nov-26-gawler|14521 bytes unpacked
 Racing SA robots.txt|301|0|text/html; charset=UTF-8|
 Country Racing SA robots.txt|200|184|text/plain; charset=UTF-8|User-agent: *Disallow: /modules/Disallow: /email_share/shareUser-agent: facebookexternalhitDisa
 Racing SA meeting page (slug)|301|0|text/html; charset=UTF-8|
@@ -33,5 +36,5 @@ Racing SA meeting page (id)|301|0|text/html; charset=UTF-8|
 Racing SA gear change PDF|301|0|text/html; charset=UTF-8|
 Country Racing SA gear change PDF|200|66527|application/pdf|%PDF-1.7%‚„œ”707 0 obj<</Linearized 1/L 66527/O 709/E 22068/N 10/T 66115/H [ 481 212]>>endobj 
 RWWA static robots.txt|403|111|application/xml|<?xml version="1.0" encoding="UTF-8"?><Error><Code>AccessDenied</Code><Message>Access Denied</Messa
-Racing WA robots.txt|429|25119|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" data-astro-cid-4wdtffzm><head><meta charset="utf-8"><meta name="viewp
+Racing WA robots.txt|429|25093|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" data-astro-cid-4wdtffzm><head><meta charset="utf-8"><meta name="viewp
 Tasracing robots.txt|200|165|text/plain; charset=utf-8|User-agent: *Disallow: /_hcms/preview/Disallow: /hs/manage-preferences/Disallow: /hs/preferences-
