@@ -114,3 +114,17 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   sa_race_checks 1,954. Previous version on db-prev. Existing tables, parquets and engine frames byte-identical, so production
   ratings are unchanged; no model uses SA tracking yet (research first). Weekly incremental SA step: to be added to weekly_update.py
   and tested by a dry run after the 26 Nov daily run.
+
+## Unattended runs: options and exact blockers (26 Nov 2026, Damo's brief section 7)
+In place now (fallback, not permanent): wake-ups into the build conversation kept two days ahead (07:30 and 23:20), idempotent
+runs, and workflow run-watchdog (08:50 and 00:45) that fails, so GitHub emails Damo, when a run did not reach the repository.
+Known limits seen 26 Nov: an unanswered approval stopped the form helper at 293/317 and blocked NSW reads at 2pm; disabling
+reminders was refused by the safety check; the conversation itself grows and is compacted.
+| Option | Status | Exact blocker |
+|---|---|---|
+| Fresh scheduled Claude session doing everything | tried 26 Nov 7:30 | every new session needs Damo's approval for TAB reads (PROVENANCE_REQUIRED); no supported way found to pre-approve a site for scheduled sessions |
+| GitHub Actions scripted collector | tried 24 + 26 Nov | TAB returns its website shell (HTML, 3,987 bytes) to GitHub's servers, also with Accept: application/json and for robots.txt; we do not impersonate browsers |
+| Scripted collector in the cloud workspace | tried 26 Nov | workspace network allowlist refuses api.beta.tab.com.au (CONNECT 403). Team/Enterprise owners can change network access in Admin settings; plan type and whether TAB serves Anthropic's cloud addresses are unknown |
+| Script on Damo's PC (Windows Task Scheduler) at 07:15 and 23:15, pushing raw files to the repository; fresh scheduled Claude session at 07:30 then needs no TAB reads | RECOMMENDED, not built | PC must be on and online at those times; one-time setup by Damo (Python, a GitHub token stored only on the PC, two scheduled tasks); TAB's terms for scripted personal use not confirmed (no developer API or terms found) |
+The PC route also replaces the ~600-step form-record helper with an ordinary script (~10 minutes of paced requests), cached
+and de-duplicated (only today's runner record plus past starts not already captured are processed).
