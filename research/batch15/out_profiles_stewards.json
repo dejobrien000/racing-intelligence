@@ -1,0 +1,480 @@
+{
+ "QLD": {
+  "runs with a report held": 70463,
+  "reported interference (held up, checked, bumped...)": {
+   "Steady": {
+    "flagged runs": 3340,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.08,
+     -0.1,
+     0.26
+    ]
+   },
+   "Building": {
+    "flagged runs": 4925,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.08,
+     -0.07,
+     0.23
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 843,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.4,
+     0.01,
+     0.79
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 1178,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.05,
+     -0.29,
+     0.38
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 901,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.18,
+     -0.2,
+     0.55
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 1605,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.16,
+     -0.13,
+     0.46
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 1445,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.5,
+     0.16,
+     0.85
+    ]
+   },
+   "all profiles alike? p-value": 0.303
+  },
+  "reported wide without cover": {
+   "Steady": {
+    "flagged runs": 229,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.26,
+     -0.47,
+     0.99
+    ]
+   },
+   "Building": {
+    "flagged runs": 135,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.8,
+     -0.24,
+     1.84
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 57,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.37,
+     -1.03,
+     1.77
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 126,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.2,
+     -0.75,
+     1.15
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 45,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -1.36,
+     -3.14,
+     0.43
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 155,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.66,
+     -0.23,
+     1.55
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 259,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.19,
+     -0.99,
+     0.62
+    ]
+   },
+   "all profiles alike? p-value": 0.373
+  },
+  "reported performance concern": {
+   "Steady": {
+    "flagged runs": 170,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.85,
+     -1.86,
+     0.17
+    ]
+   },
+   "Building": {
+    "flagged runs": 133,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.01,
+     -0.96,
+     0.98
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 59,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.63,
+     -0.55,
+     1.81
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 137,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.8,
+     -0.07,
+     1.67
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 37,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.61,
+     -2.39,
+     1.18
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 218,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.4,
+     -0.25,
+     1.05
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 413,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.96,
+     0.33,
+     1.58
+    ]
+   },
+   "all profiles alike? p-value": 0.067
+  },
+  "veterinary finding reported": {
+   "Steady": {
+    "flagged runs": 424,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.11,
+     -0.4,
+     0.62
+    ]
+   },
+   "Building": {
+    "flagged runs": 377,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.39,
+     -0.14,
+     0.92
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 118,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.41,
+     -0.68,
+     1.5
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 335,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.51,
+     -0.07,
+     1.09
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 144,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     1.14,
+     0.27,
+     2.0
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 570,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.48,
+     -0.0,
+     0.97
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 1215,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     1.64,
+     1.25,
+     2.03
+    ]
+   },
+   "all profiles alike? p-value": 0.0
+  }
+ },
+ "SA": {
+  "runs with a report held": 4239,
+  "reported interference (held up, checked, bumped...)": {
+   "Steady": {
+    "flagged runs": 201,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.99,
+     0.29,
+     1.69
+    ]
+   },
+   "Building": {
+    "flagged runs": 297,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.08,
+     -0.69,
+     0.53
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 71,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.03,
+     -1.6,
+     1.66
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 97,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.13,
+     -1.03,
+     1.29
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 50,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.87,
+     -0.44,
+     2.17
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 89,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.79,
+     -0.4,
+     1.98
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 98,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.31,
+     -1.68,
+     1.07
+    ]
+   },
+   "all profiles alike? p-value": 0.301
+  },
+  "reported wide without cover": {
+   "Steady": {
+    "flagged runs": 31,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     2.28,
+     0.91,
+     3.65
+    ]
+   },
+   "Building": {
+    "flagged runs": 29,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.42,
+     -2.31,
+     1.46
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 11,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -1.1,
+     -5.67,
+     3.47
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 21,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.14,
+     -2.3,
+     2.02
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 5,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     3.78,
+     2.07,
+     5.5
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 20,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.71,
+     -1.98,
+     3.41
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 37,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.38,
+     -1.14,
+     1.9
+    ]
+   },
+   "all profiles alike? p-value": 0.005
+  },
+  "reported performance concern": {
+   "Steady": {
+    "flagged runs": 20,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.41,
+     -2.73,
+     1.91
+    ]
+   },
+   "Building": {
+    "flagged runs": 11,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.55,
+     -6.0,
+     4.89
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 5,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.94,
+     -10.4,
+     8.52
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 20,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     2.62,
+     1.05,
+     4.2
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 1,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -3.95,
+     -4.81,
+     -3.09
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 19,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.15,
+     -2.88,
+     3.19
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 55,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.54,
+     -1.32,
+     2.4
+    ]
+   },
+   "all profiles alike? p-value": 0.0
+  },
+  "veterinary finding reported": {
+   "Steady": {
+    "flagged runs": 22,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.28,
+     -2.15,
+     1.59
+    ]
+   },
+   "Building": {
+    "flagged runs": 14,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.39,
+     -2.41,
+     3.18
+    ]
+   },
+   "Dip and recover": {
+    "flagged runs": 7,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     1.91,
+     -0.48,
+     4.3
+    ]
+   },
+   "Early fade": {
+    "flagged runs": 20,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.77,
+     -1.47,
+     3.01
+    ]
+   },
+   "Surge then fade": {
+    "flagged runs": 5,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     -0.83,
+     -5.24,
+     3.58
+    ]
+   },
+   "Late fade": {
+    "flagged runs": 11,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.28,
+     -2.17,
+     2.74
+    ]
+   },
+   "Progressive fade": {
+    "flagged runs": 33,
+    "next run: flagged vs not flagged, same profile (kg)": [
+     0.02,
+     -2.74,
+     2.77
+    ]
+   },
+   "all profiles alike? p-value": 0.863
+  }
+ }
+}

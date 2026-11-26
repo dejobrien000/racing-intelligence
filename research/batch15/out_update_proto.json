@@ -1,0 +1,324 @@
+{
+ "V0": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.08674,
+   "vs production": 0.0,
+   "vs production 95%": [
+    0.0,
+    0.0
+   ],
+   "mean squared surprise": 29.016,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.87,
+    "(-10, -6]": -0.47,
+    "(-6, -3]": -0.59,
+    "(-3, 3]": -0.24,
+    "(3, 6]": 0.34,
+    "(6, 10]": 0.97,
+    "(10, 99]": 1.75
+   },
+   "calibration spread (max-min)": 2.34,
+   "mean |rating change| per run": 1.156,
+   "share of runs moving rating > 3 kg %": 6.98
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.08714,
+   "vs production": 0.0,
+   "vs production 95%": [
+    0.0,
+    0.0
+   ],
+   "mean squared surprise": 29.015,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.7,
+    "(-10, -6]": -0.46,
+    "(-6, -3]": -0.61,
+    "(-3, 3]": -0.24,
+    "(3, 6]": 0.58,
+    "(6, 10]": 1.2,
+    "(10, 99]": 2.24
+   },
+   "calibration spread (max-min)": 2.85,
+   "mean |rating change| per run": 1.144,
+   "share of runs moving rating > 3 kg %": 6.36
+  }
+ },
+ "V1": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.08217,
+   "vs production": 0.00457,
+   "vs production 95%": [
+    0.00345,
+    0.00573
+   ],
+   "mean squared surprise": 28.76,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.11,
+    "(-10, -6]": -0.17,
+    "(-6, -3]": -0.39,
+    "(-3, 3]": -0.21,
+    "(3, 6]": 0.37,
+    "(6, 10]": 1.05,
+    "(10, 99]": 1.92
+   },
+   "calibration spread (max-min)": 2.31,
+   "mean |rating change| per run": 0.989,
+   "share of runs moving rating > 3 kg %": 4.52
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.08134,
+   "vs production": 0.0058,
+   "vs production 95%": [
+    0.00492,
+    0.00664
+   ],
+   "mean squared surprise": 28.687,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.11,
+    "(-10, -6]": -0.27,
+    "(-6, -3]": -0.4,
+    "(-3, 3]": -0.21,
+    "(3, 6]": 0.56,
+    "(6, 10]": 1.34,
+    "(10, 99]": 2.43
+   },
+   "calibration spread (max-min)": 2.83,
+   "mean |rating change| per run": 0.991,
+   "share of runs moving rating > 3 kg %": 4.22
+  }
+ },
+ "V2": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.08191,
+   "vs production": 0.00483,
+   "vs production 95%": [
+    0.00394,
+    0.00582
+   ],
+   "mean squared surprise": 28.714,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": -0.88,
+    "(-10, -6]": -0.39,
+    "(-6, -3]": -0.44,
+    "(-3, 3]": -0.14,
+    "(3, 6]": 0.32,
+    "(6, 10]": 0.83,
+    "(10, 99]": 2.2
+   },
+   "calibration spread (max-min)": 3.07,
+   "mean |rating change| per run": 1.036,
+   "share of runs moving rating > 3 kg %": 4.76
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.08237,
+   "vs production": 0.00477,
+   "vs production 95%": [
+    0.00412,
+    0.00554
+   ],
+   "mean squared surprise": 28.715,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": -1.01,
+    "(-10, -6]": -0.38,
+    "(-6, -3]": -0.49,
+    "(-3, 3]": -0.17,
+    "(3, 6]": 0.56,
+    "(6, 10]": 1.13,
+    "(10, 99]": 2.67
+   },
+   "calibration spread (max-min)": 3.67,
+   "mean |rating change| per run": 1.031,
+   "share of runs moving rating > 3 kg %": 4.31
+  }
+ },
+ "V3": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.07824,
+   "vs production": 0.00851,
+   "vs production 95%": [
+    0.00747,
+    0.00956
+   ],
+   "mean squared surprise": 28.491,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": -0.56,
+    "(-10, -6]": -0.18,
+    "(-6, -3]": -0.27,
+    "(-3, 3]": -0.04,
+    "(3, 6]": 0.15,
+    "(6, 10]": 0.36,
+    "(10, 99]": 0.35
+   },
+   "calibration spread (max-min)": 0.91,
+   "mean |rating change| per run": 1.245,
+   "share of runs moving rating > 3 kg %": 7.87
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.0819,
+   "vs production": 0.00524,
+   "vs production 95%": [
+    0.00442,
+    0.00601
+   ],
+   "mean squared surprise": 28.665,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": -0.75,
+    "(-10, -6]": -0.21,
+    "(-6, -3]": -0.3,
+    "(-3, 3]": -0.09,
+    "(3, 6]": 0.38,
+    "(6, 10]": 0.68,
+    "(10, 99]": 0.85
+   },
+   "calibration spread (max-min)": 1.61,
+   "mean |rating change| per run": 1.247,
+   "share of runs moving rating > 3 kg %": 7.36
+  }
+ },
+ "V4": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.08224,
+   "vs production": 0.0045,
+   "vs production 95%": [
+    0.00401,
+    0.00493
+   ],
+   "mean squared surprise": 28.741,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 1.22,
+    "(-10, -6]": -0.3,
+    "(-6, -3]": -0.41,
+    "(-3, 3]": -0.15,
+    "(3, 6]": 0.12,
+    "(6, 10]": 0.5,
+    "(10, 99]": 0.81
+   },
+   "calibration spread (max-min)": 1.63,
+   "mean |rating change| per run": 1.337,
+   "share of runs moving rating > 3 kg %": 9.55
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.08471,
+   "vs production": 0.00243,
+   "vs production 95%": [
+    0.00198,
+    0.00281
+   ],
+   "mean squared surprise": 28.845,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.93,
+    "(-10, -6]": -0.3,
+    "(-6, -3]": -0.44,
+    "(-3, 3]": -0.18,
+    "(3, 6]": 0.38,
+    "(6, 10]": 0.77,
+    "(10, 99]": 1.3
+   },
+   "calibration spread (max-min)": 1.74,
+   "mean |rating change| per run": 1.328,
+   "share of runs moving rating > 3 kg %": 8.78
+  }
+ },
+ "V5": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.07632,
+   "vs production": 0.01042,
+   "vs production 95%": [
+    0.00922,
+    0.01162
+   ],
+   "mean squared surprise": 28.395,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.42,
+    "(-10, -6]": -0.0,
+    "(-6, -3]": -0.23,
+    "(-3, 3]": -0.14,
+    "(3, 6]": 0.13,
+    "(6, 10]": 0.61,
+    "(10, 99]": 1.01
+   },
+   "calibration spread (max-min)": 1.25,
+   "mean |rating change| per run": 1.138,
+   "share of runs moving rating > 3 kg %": 6.47
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.07751,
+   "vs production": 0.00963,
+   "vs production 95%": [
+    0.00869,
+    0.01047
+   ],
+   "mean squared surprise": 28.426,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.37,
+    "(-10, -6]": -0.11,
+    "(-6, -3]": -0.28,
+    "(-3, 3]": -0.17,
+    "(3, 6]": 0.38,
+    "(6, 10]": 0.89,
+    "(10, 99]": 1.61
+   },
+   "calibration spread (max-min)": 1.89,
+   "mean |rating change| per run": 1.145,
+   "share of runs moving rating > 3 kg %": 6.05
+  }
+ },
+ "V6": {
+  "2024": {
+   "runs": 165227,
+   "loglik per run": -3.07764,
+   "vs production": 0.0091,
+   "vs production 95%": [
+    0.00793,
+    0.01026
+   ],
+   "mean squared surprise": 28.479,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.35,
+    "(-10, -6]": -0.06,
+    "(-6, -3]": -0.27,
+    "(-3, 3]": -0.16,
+    "(3, 6]": 0.2,
+    "(6, 10]": 0.76,
+    "(10, 99]": 1.34
+   },
+   "calibration spread (max-min)": 1.62,
+   "mean |rating change| per run": 1.087,
+   "share of runs moving rating > 3 kg %": 5.74
+  },
+  "2025-26": {
+   "runs": 304151,
+   "loglik per run": -3.07801,
+   "vs production": 0.00913,
+   "vs production 95%": [
+    0.00824,
+    0.00995
+   ],
+   "mean squared surprise": 28.466,
+   "next-run surprise by size of this surprise": {
+    "(-99, -10]": 0.3,
+    "(-10, -6]": -0.16,
+    "(-6, -3]": -0.32,
+    "(-3, 3]": -0.18,
+    "(3, 6]": 0.45,
+    "(6, 10]": 1.02,
+    "(10, 99]": 1.85
+   },
+   "calibration spread (max-min)": 2.17,
+   "mean |rating change| per run": 1.092,
+   "share of runs moving rating > 3 kg %": 5.38
+  }
+ }
+}

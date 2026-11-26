@@ -1,0 +1,902 @@
+{
+ "bands 2023-24": [
+  {
+   "band": "10+ worse",
+   "runs": 10618,
+   "raced_again_pct": 77.55,
+   "rating_change": -5.01,
+   "next1_vs_revised": 0.76,
+   "next3_vs_revised": 0.32,
+   "next5_vs_revised": 0.03,
+   "next1_vs_prerun": -4.26,
+   "next5_vs_prerun": -4.28,
+   "next5_vs_established": -3.71,
+   "this_run_vs_established": -15.11,
+   "recovered_share_5": 0.77
+  },
+  {
+   "band": "6-10 worse",
+   "runs": 14779,
+   "raced_again_pct": 85.81,
+   "rating_change": -2.34,
+   "next1_vs_revised": -0.45,
+   "next3_vs_revised": -0.57,
+   "next5_vs_revised": -0.68,
+   "next1_vs_prerun": -2.79,
+   "next5_vs_prerun": -2.96,
+   "next5_vs_established": -2.88,
+   "this_run_vs_established": -7.76,
+   "recovered_share_5": 0.7
+  },
+  {
+   "band": "3-6 worse",
+   "runs": 29387,
+   "raced_again_pct": 90.26,
+   "rating_change": -1.24,
+   "next1_vs_revised": -0.61,
+   "next3_vs_revised": -0.68,
+   "next5_vs_revised": -0.75,
+   "next1_vs_prerun": -1.85,
+   "next5_vs_prerun": -2.06,
+   "next5_vs_established": -2.19,
+   "this_run_vs_established": -4.41,
+   "recovered_share_5": 0.62
+  },
+  {
+   "band": "normal (+-3)",
+   "runs": 127722,
+   "raced_again_pct": 94.76,
+   "rating_change": 0.05,
+   "next1_vs_revised": -0.24,
+   "next3_vs_revised": -0.4,
+   "next5_vs_revised": -0.5,
+   "next1_vs_prerun": -0.18,
+   "next5_vs_prerun": -0.48,
+   "next5_vs_established": -0.78,
+   "this_run_vs_established": 0.0,
+   "recovered_share_5": 0.66
+  },
+  {
+   "band": "3-6 better",
+   "runs": 42750,
+   "raced_again_pct": 96.79,
+   "rating_change": 1.26,
+   "next1_vs_revised": 0.34,
+   "next3_vs_revised": 0.03,
+   "next5_vs_revised": -0.16,
+   "next1_vs_prerun": 1.6,
+   "next5_vs_prerun": 1.24,
+   "next5_vs_established": 0.72,
+   "this_run_vs_established": 4.18,
+   "recovered_share_5": 0.66
+  },
+  {
+   "band": "6-10 better",
+   "runs": 19056,
+   "raced_again_pct": 97.18,
+   "rating_change": 2.37,
+   "next1_vs_revised": 0.93,
+   "next3_vs_revised": 0.45,
+   "next5_vs_revised": 0.2,
+   "next1_vs_prerun": 3.31,
+   "next5_vs_prerun": 2.93,
+   "next5_vs_established": 2.08,
+   "this_run_vs_established": 7.37,
+   "recovered_share_5": 0.6
+  },
+  {
+   "band": "10+ better",
+   "runs": 4319,
+   "raced_again_pct": 96.99,
+   "rating_change": 4.32,
+   "next1_vs_revised": 1.66,
+   "next3_vs_revised": 1.02,
+   "next5_vs_revised": 0.63,
+   "next1_vs_prerun": 5.98,
+   "next5_vs_prerun": 5.6,
+   "next5_vs_established": 3.94,
+   "this_run_vs_established": 12.0,
+   "recovered_share_5": 0.53
+  }
+ ],
+ "bands 2025-26": [
+  {
+   "band": "10+ worse",
+   "runs": 9105,
+   "raced_again_pct": 75.76,
+   "rating_change": -4.94,
+   "next1_vs_revised": 0.66,
+   "next3_vs_revised": 0.28,
+   "next5_vs_revised": 0.04,
+   "next1_vs_prerun": -4.27,
+   "next5_vs_prerun": -4.26,
+   "next5_vs_established": -3.79,
+   "this_run_vs_established": -15.09,
+   "recovered_share_5": 0.77
+  },
+  {
+   "band": "6-10 worse",
+   "runs": 13150,
+   "raced_again_pct": 85.66,
+   "rating_change": -2.36,
+   "next1_vs_revised": -0.47,
+   "next3_vs_revised": -0.6,
+   "next5_vs_revised": -0.72,
+   "next1_vs_prerun": -2.83,
+   "next5_vs_prerun": -3.0,
+   "next5_vs_established": -2.93,
+   "this_run_vs_established": -7.78,
+   "recovered_share_5": 0.67
+  },
+  {
+   "band": "3-6 worse",
+   "runs": 25922,
+   "raced_again_pct": 89.94,
+   "rating_change": -1.25,
+   "next1_vs_revised": -0.62,
+   "next3_vs_revised": -0.7,
+   "next5_vs_revised": -0.78,
+   "next1_vs_prerun": -1.88,
+   "next5_vs_prerun": -2.08,
+   "next5_vs_established": -2.19,
+   "this_run_vs_established": -4.46,
+   "recovered_share_5": 0.61
+  },
+  {
+   "band": "normal (+-3)",
+   "runs": 110282,
+   "raced_again_pct": 94.64,
+   "rating_change": 0.05,
+   "next1_vs_revised": -0.26,
+   "next3_vs_revised": -0.39,
+   "next5_vs_revised": -0.49,
+   "next1_vs_prerun": -0.21,
+   "next5_vs_prerun": -0.44,
+   "next5_vs_established": -0.75,
+   "this_run_vs_established": -0.03,
+   "recovered_share_5": 0.63
+  },
+  {
+   "band": "3-6 better",
+   "runs": 36930,
+   "raced_again_pct": 96.62,
+   "rating_change": 1.25,
+   "next1_vs_revised": 0.6,
+   "next3_vs_revised": 0.25,
+   "next5_vs_revised": 0.05,
+   "next1_vs_prerun": 1.85,
+   "next5_vs_prerun": 1.55,
+   "next5_vs_established": 1.0,
+   "this_run_vs_established": 4.16,
+   "recovered_share_5": 0.61
+  },
+  {
+   "band": "6-10 better",
+   "runs": 16873,
+   "raced_again_pct": 97.05,
+   "rating_change": 2.34,
+   "next1_vs_revised": 1.19,
+   "next3_vs_revised": 0.71,
+   "next5_vs_revised": 0.45,
+   "next1_vs_prerun": 3.53,
+   "next5_vs_prerun": 3.26,
+   "next5_vs_established": 2.38,
+   "this_run_vs_established": 7.34,
+   "recovered_share_5": 0.55
+  },
+  {
+   "band": "10+ better",
+   "runs": 3886,
+   "raced_again_pct": 96.6,
+   "rating_change": 4.23,
+   "next1_vs_revised": 2.27,
+   "next3_vs_revised": 1.52,
+   "next5_vs_revised": 1.05,
+   "next1_vs_prerun": 6.51,
+   "next5_vs_prerun": 6.17,
+   "next5_vs_established": 4.68,
+   "this_run_vs_established": 12.04,
+   "recovered_share_5": 0.49
+  }
+ ],
+ "overreaction regression: next-run surprise per kg of this run surprise (neg part, pos part)": {
+  "2023-24": {
+   "neg": [
+    -0.075,
+    -0.083,
+    -0.066
+   ],
+   "pos": [
+    0.164,
+    0.155,
+    0.173
+   ],
+   "neg slope | exp=0-3": [
+    -0.064,
+    -0.083,
+    -0.046,
+    53490
+   ],
+   "neg slope | exp=11-30": [
+    -0.059,
+    -0.073,
+    -0.045,
+    86029
+   ],
+   "neg slope | exp=31+": [
+    -0.032,
+    -0.109,
+    0.044,
+    2038
+   ],
+   "neg slope | exp=4-10": [
+    -0.089,
+    -0.102,
+    -0.075,
+    92583
+   ],
+   "neg slope | sdb=high unc": [
+    -0.078,
+    -0.095,
+    -0.062,
+    58978
+   ],
+   "neg slope | sdb=low unc": [
+    -0.05,
+    -0.067,
+    -0.032,
+    58670
+   ],
+   "neg slope | sdb=mid-high": [
+    -0.082,
+    -0.099,
+    -0.064,
+    58331
+   ],
+   "neg slope | sdb=mid-low": [
+    -0.068,
+    -0.085,
+    -0.05,
+    58161
+   ]
+  },
+  "2025-26": {
+   "neg": [
+    -0.068,
+    -0.078,
+    -0.059
+   ],
+   "pos": [
+    0.203,
+    0.193,
+    0.213
+   ],
+   "neg slope | exp=0-3": [
+    -0.043,
+    -0.065,
+    -0.021,
+    41360
+   ],
+   "neg slope | exp=11-30": [
+    -0.07,
+    -0.083,
+    -0.057,
+    89562
+   ],
+   "neg slope | exp=31+": [
+    -0.075,
+    -0.104,
+    -0.047,
+    16522
+   ],
+   "neg slope | exp=4-10": [
+    -0.07,
+    -0.089,
+    -0.051,
+    54738
+   ],
+   "neg slope | sdb=high unc": [
+    -0.047,
+    -0.065,
+    -0.028,
+    49961
+   ],
+   "neg slope | sdb=low unc": [
+    -0.043,
+    -0.062,
+    -0.024,
+    50947
+   ],
+   "neg slope | sdb=mid-high": [
+    -0.081,
+    -0.1,
+    -0.062,
+    50665
+   ],
+   "neg slope | sdb=mid-low": [
+    -0.079,
+    -0.097,
+    -0.06,
+    50609
+   ]
+  }
+ },
+ "next-run surprise after a big poor run (6+ kg worse than rated), by circumstance (mean, 95%, n); normal runs are followed by": {
+  "normal runs baseline": -0.247,
+  "all big poor runs": [
+   -0.01,
+   -0.07,
+   0.06,
+   39521
+  ],
+  "beaten 10+ lengths": [
+   0.39,
+   0.31,
+   0.47,
+   27038
+  ],
+  "beaten under 10 lengths": [
+   -0.86,
+   -0.96,
+   -0.76,
+   12483
+  ],
+  "first-up (60+ days)": [
+   -0.16,
+   -0.3,
+   -0.02,
+   8783
+  ],
+  "not first-up": [
+   0.04,
+   -0.03,
+   0.11,
+   30738
+  ],
+  "0-3 runs held": [
+   0.17,
+   0.02,
+   0.31,
+   10471
+  ],
+  "4-10 runs held": [
+   0.32,
+   0.21,
+   0.43,
+   12343
+  ],
+  "11-30 runs held": [
+   -0.31,
+   -0.4,
+   -0.22,
+   15070
+  ],
+  "31+ runs held": [
+   -0.74,
+   -1.0,
+   -0.47,
+   1637
+  ],
+  "age 2-3": [
+   0.39,
+   0.25,
+   0.53,
+   10390
+  ],
+  "age 4-5": [
+   0.1,
+   0.01,
+   0.2,
+   18206
+  ],
+  "age 6+": [
+   -0.57,
+   -0.69,
+   -0.46,
+   10828
+  ],
+  "next run within 21 days": [
+   -0.1,
+   -0.19,
+   -0.0,
+   16973
+  ],
+  "next run 22-60 days": [
+   0.15,
+   0.03,
+   0.28,
+   10272
+  ],
+  "next run 61+ days": [
+   -0.01,
+   -0.13,
+   0.11,
+   12276
+  ]
+ },
+ "physical decline vs same-size poor runs (tracked Qld/SA, production v2.3 rating)": {
+  "all tracked | decl=1 vs 0": {
+   "n": [
+    2980,
+    37472
+   ],
+   "this run surprise": [
+    -7.44,
+    0.66
+   ],
+   "rating change": [
+    -1.94,
+    0.16
+   ],
+   "next1 vs revised": [
+    [
+     0.42,
+     0.22,
+     0.63,
+     2980
+    ],
+    [
+     -0.1,
+     -0.15,
+     -0.05,
+     37472
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     -0.08,
+     -0.21,
+     0.05,
+     2980
+    ],
+    [
+     -0.45,
+     -0.48,
+     -0.42,
+     37472
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -1.71,
+     -1.88,
+     -1.55,
+     2980
+    ],
+    [
+     -0.31,
+     -0.35,
+     -0.27,
+     37472
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -1.97,
+     -2.14,
+     -1.8,
+     2980
+    ],
+    [
+     -0.5,
+     -0.54,
+     -0.46,
+     37472
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.6,
+    99.7
+   ]
+  },
+  "all tracked | fade=1 vs 0": {
+   "n": [
+    9597,
+    30855
+   ],
+   "this run surprise": [
+    -3.1,
+    1.04
+   ],
+   "rating change": [
+    -0.81,
+    0.26
+   ],
+   "next1 vs revised": [
+    [
+     0.05,
+     -0.06,
+     0.15,
+     9597
+    ],
+    [
+     -0.1,
+     -0.15,
+     -0.04,
+     30855
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     -0.37,
+     -0.43,
+     -0.3,
+     9597
+    ],
+    [
+     -0.44,
+     -0.47,
+     -0.41,
+     30855
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -1.07,
+     -1.15,
+     -0.98,
+     9597
+    ],
+    [
+     -0.21,
+     -0.25,
+     -0.17,
+     30855
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -1.25,
+     -1.34,
+     -1.16,
+     9597
+    ],
+    [
+     -0.41,
+     -0.45,
+     -0.36,
+     30855
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.7,
+    99.7
+   ]
+  },
+  "tracked poor runs (3+ kg worse) | decl=1 vs 0": {
+   "n": [
+    2278,
+    5494
+   ],
+   "this run surprise": [
+    -9.64,
+    -5.35
+   ],
+   "rating change": [
+    -2.52,
+    -1.4
+   ],
+   "next1 vs revised": [
+    [
+     0.61,
+     0.37,
+     0.86,
+     2278
+    ],
+    [
+     -0.47,
+     -0.6,
+     -0.33,
+     5494
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     0.05,
+     -0.1,
+     0.2,
+     2278
+    ],
+    [
+     -0.72,
+     -0.81,
+     -0.64,
+     5494
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -2.07,
+     -2.27,
+     -1.88,
+     2278
+    ],
+    [
+     -2.21,
+     -2.32,
+     -2.1,
+     5494
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -2.3,
+     -2.5,
+     -2.1,
+     2278
+    ],
+    [
+     -2.41,
+     -2.52,
+     -2.29,
+     5494
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.6,
+    99.5
+   ]
+  },
+  "tracked poor runs (3+ kg worse) | fade=1 vs 0": {
+   "n": [
+    4165,
+    3607
+   ],
+   "this run surprise": [
+    -7.7,
+    -5.35
+   ],
+   "rating change": [
+    -2.0,
+    -1.41
+   ],
+   "next1 vs revised": [
+    [
+     0.15,
+     -0.02,
+     0.33,
+     4165
+    ],
+    [
+     -0.5,
+     -0.66,
+     -0.34,
+     3607
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     -0.29,
+     -0.4,
+     -0.18,
+     4165
+    ],
+    [
+     -0.74,
+     -0.84,
+     -0.63,
+     3607
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -2.09,
+     -2.23,
+     -1.95,
+     4165
+    ],
+    [
+     -2.26,
+     -2.39,
+     -2.12,
+     3607
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -2.29,
+     -2.43,
+     -2.15,
+     4165
+    ],
+    [
+     -2.47,
+     -2.61,
+     -2.33,
+     3607
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.6,
+    99.5
+   ]
+  },
+  "tracked big poor runs (6+ kg worse) | decl=1 vs 0": {
+   "n": [
+    1564,
+    1517
+   ],
+   "this run surprise": [
+    -11.98,
+    -8.37
+   ],
+   "rating change": [
+    -3.15,
+    -2.25
+   ],
+   "next1 vs revised": [
+    [
+     0.95,
+     0.65,
+     1.26,
+     1564
+    ],
+    [
+     -0.54,
+     -0.82,
+     -0.26,
+     1517
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     0.18,
+     -0.0,
+     0.37,
+     1564
+    ],
+    [
+     -0.78,
+     -0.97,
+     -0.59,
+     1517
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -2.46,
+     -2.7,
+     -2.21,
+     1564
+    ],
+    [
+     -3.1,
+     -3.34,
+     -2.86,
+     1517
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -2.68,
+     -2.93,
+     -2.43,
+     1564
+    ],
+    [
+     -3.3,
+     -3.55,
+     -3.06,
+     1517
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.6,
+    99.7
+   ]
+  },
+  "tracked big poor runs (6+ kg worse) | fade=1 vs 0": {
+   "n": [
+    2137,
+    944
+   ],
+   "this run surprise": [
+    -10.88,
+    -8.65
+   ],
+   "rating change": [
+    -2.86,
+    -2.35
+   ],
+   "next1 vs revised": [
+    [
+     0.55,
+     0.3,
+     0.81,
+     2137
+    ],
+    [
+     -0.54,
+     -0.9,
+     -0.18,
+     944
+    ]
+   ],
+   "next5 vs revised": [
+    [
+     -0.11,
+     -0.27,
+     0.05,
+     2137
+    ],
+    [
+     -0.7,
+     -0.93,
+     -0.46,
+     944
+    ]
+   ],
+   "next5 vs pre-run rating": [
+    [
+     -2.62,
+     -2.83,
+     -2.42,
+     2137
+    ],
+    [
+     -3.11,
+     -3.41,
+     -2.8,
+     944
+    ]
+   ],
+   "next5 vs established level": [
+    [
+     -2.82,
+     -3.04,
+     -2.61,
+     2137
+    ],
+    [
+     -3.35,
+     -3.67,
+     -3.04,
+     944
+    ]
+   ],
+   "raced again within 365 d %": [
+    99.7,
+    99.7
+   ]
+  },
+  "regression next1 ~ surprise + decline + fade (+controls)": {
+   "neg": [
+    -0.067,
+    -0.092,
+    -0.043
+   ],
+   "pos": [
+    0.164,
+    0.14,
+    0.187
+   ],
+   "decl": [
+    0.364,
+    0.111,
+    0.616
+   ],
+   "fade": [
+    0.157,
+    0.026,
+    0.289
+   ]
+  },
+  "regression with decline x size of poor run": {
+   "neg": [
+    0.002,
+    -0.029,
+    0.032
+   ],
+   "decl": [
+    -0.334,
+    -0.646,
+    -0.023
+   ],
+   "decl:neg": [
+    -0.16,
+    -0.205,
+    -0.115
+   ]
+  }
+ }
+}

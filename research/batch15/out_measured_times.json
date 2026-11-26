@@ -1,0 +1,157 @@
+{
+ "QLD": {
+  "official margin vs measured gap: R2, lengths per second": [
+   0.9283,
+   5.66
+  ],
+  "within-race correlation of margin and measured gap: median, 5th percentile": [
+   1.0,
+   0.9989
+  ],
+  "implied seconds per length (official margins 1 L+): median, IQR": [
+   0.17,
+   0.17,
+   0.176
+  ],
+  "share of runs where margin and clock disagree by more than 0.5 L (after the 0.170 s/L conversion)": 12.5,
+  "sd of disagreement D (kg) vs sd of margin-based performance (kg)": [
+   2.25,
+   6.31
+  ],
+  "disagreement by margin size: mean D (L), mean |D| (L), runs": {
+   "<3 L": [
+    -0.43,
+    0.44,
+    27907
+   ],
+   "3-10 L": [
+    -0.15,
+    0.18,
+    36435
+   ],
+   "10-25 L": [
+    -0.21,
+    0.32,
+    7378
+   ],
+   "25 L+": [
+    -0.2,
+    0.93,
+    571
+   ]
+  },
+  "next-run surprise per kg of D (+ = clock says better than the margin), all": [
+   0.065,
+   0.035,
+   0.096,
+   65388
+  ],
+  "next-run surprise per kg of D (+ = clock says better than the margin), 2022-24": [
+   0.076,
+   0.042,
+   0.109,
+   33648
+  ],
+  "next-run surprise per kg of D (+ = clock says better than the margin), 2025-26": [
+   0.104,
+   0.002,
+   0.206,
+   31740
+  ],
+  "... within margin band <3 L": [
+   0.047,
+   0.013,
+   0.081,
+   26294
+  ],
+  "... within margin band 3-10 L": [
+   -0.002,
+   -0.107,
+   0.104,
+   32809
+  ],
+  "... within margin band 10-25 L": [
+   0.163,
+   0.033,
+   0.293,
+   5911
+  ]
+ },
+ "SA": {
+  "official margin vs measured gap: R2, lengths per second": [
+   0.9666,
+   5.7
+  ],
+  "within-race correlation of margin and measured gap: median, 5th percentile": [
+   1.0,
+   0.9997
+  ],
+  "implied seconds per length (official margins 1 L+): median, IQR": [
+   0.159,
+   0.155,
+   0.164
+  ],
+  "share of runs where margin and clock disagree by more than 0.5 L (after the 0.170 s/L conversion)": 24.1,
+  "sd of disagreement D (kg) vs sd of margin-based performance (kg)": [
+   1.34,
+   6.19
+  ],
+  "disagreement by margin size: mean D (L), mean |D| (L), runs": {
+   "<3 L": [
+    0.11,
+    0.12,
+    5128
+   ],
+   "3-10 L": [
+    0.34,
+    0.38,
+    8203
+   ],
+   "10-25 L": [
+    0.65,
+    0.85,
+    1967
+   ],
+   "25 L+": [
+    1.09,
+    1.85,
+    134
+   ]
+  },
+  "next-run surprise per kg of D (+ = clock says better than the margin), all": [
+   0.163,
+   -0.051,
+   0.377,
+   12000
+  ],
+  "next-run surprise per kg of D (+ = clock says better than the margin), 2022-24": [
+   0.308,
+   -0.011,
+   0.628,
+   4801
+  ],
+  "next-run surprise per kg of D (+ = clock says better than the margin), 2025-26": [
+   0.076,
+   -0.211,
+   0.362,
+   7199
+  ],
+  "... within margin band <3 L": [
+   0.171,
+   -0.712,
+   1.055,
+   4128
+  ],
+  "... within margin band 3-10 L": [
+   0.472,
+   0.163,
+   0.781,
+   6403
+  ]
+ },
+ "VIC": {
+  "races with TripleS finishing times": 817,
+  "runners": 10831,
+  "note": "too few races for the predictive test; linked to official margins in a later step if the national rows can be matched"
+ }
+}

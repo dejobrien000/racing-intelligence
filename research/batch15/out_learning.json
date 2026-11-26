@@ -1,0 +1,950 @@
+{
+ "2023-24": {
+  "all runs": {
+   "runs": 234140,
+   "avg gain K": 0.29,
+   "slope poor runs": [
+    -0.063,
+    -0.072,
+    -0.055
+   ],
+   "slope good runs": [
+    0.197,
+    0.188,
+    0.206
+   ],
+   "implied multiplier poor runs": 0.78,
+   "implied multiplier good runs": 1.68
+  },
+  "experience held": {
+   "0-3 runs": {
+    "runs": 53490,
+    "avg gain K": 0.412,
+    "slope poor runs": [
+     -0.059,
+     -0.078,
+     -0.041
+    ],
+    "slope good runs": [
+     0.222,
+     0.205,
+     0.239
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.54
+   },
+   "11-30": {
+    "runs": 86029,
+    "avg gain K": 0.233,
+    "slope poor runs": [
+     -0.033,
+     -0.047,
+     -0.019
+    ],
+    "slope good runs": [
+     0.124,
+     0.108,
+     0.141
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.53
+   },
+   "4-10": {
+    "runs": 92583,
+    "avg gain K": 0.275,
+    "slope poor runs": [
+     -0.072,
+     -0.086,
+     -0.059
+    ],
+    "slope good runs": [
+     0.177,
+     0.162,
+     0.192
+    ],
+    "implied multiplier poor runs": 0.74,
+    "implied multiplier good runs": 1.65
+   }
+  },
+  "rating uncertainty": {
+   "high": {
+    "runs": 58288,
+    "avg gain K": 0.292,
+    "slope poor runs": [
+     -0.072,
+     -0.089,
+     -0.054
+    ],
+    "slope good runs": [
+     0.18,
+     0.162,
+     0.198
+    ],
+    "implied multiplier poor runs": 0.76,
+    "implied multiplier good runs": 1.62
+   },
+   "highest": {
+    "runs": 59496,
+    "avg gain K": 0.438,
+    "slope poor runs": [
+     -0.075,
+     -0.091,
+     -0.059
+    ],
+    "slope good runs": [
+     0.223,
+     0.207,
+     0.239
+    ],
+    "implied multiplier poor runs": 0.83,
+    "implied multiplier good runs": 1.51
+   },
+   "low": {
+    "runs": 58125,
+    "avg gain K": 0.235,
+    "slope poor runs": [
+     -0.048,
+     -0.066,
+     -0.031
+    ],
+    "slope good runs": [
+     0.173,
+     0.154,
+     0.192
+    ],
+    "implied multiplier poor runs": 0.79,
+    "implied multiplier good runs": 1.74
+   },
+   "lowest": {
+    "runs": 58231,
+    "avg gain K": 0.191,
+    "slope poor runs": [
+     -0.019,
+     -0.037,
+     -0.001
+    ],
+    "slope good runs": [
+     0.154,
+     0.135,
+     0.174
+    ],
+    "implied multiplier poor runs": 0.9,
+    "implied multiplier good runs": 1.81
+   }
+  },
+  "established ability (rating level)": {
+   "high": {
+    "runs": 46825,
+    "avg gain K": 0.267,
+    "slope poor runs": [
+     -0.038,
+     -0.057,
+     -0.019
+    ],
+    "slope good runs": [
+     0.092,
+     0.072,
+     0.113
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.35
+   },
+   "highest": {
+    "runs": 46831,
+    "avg gain K": 0.26,
+    "slope poor runs": [
+     -0.059,
+     -0.077,
+     -0.041
+    ],
+    "slope good runs": [
+     0.05,
+     0.027,
+     0.073
+    ],
+    "implied multiplier poor runs": 0.77,
+    "implied multiplier good runs": 1.19
+   },
+   "low": {
+    "runs": 46825,
+    "avg gain K": 0.299,
+    "slope poor runs": [
+     -0.038,
+     -0.058,
+     -0.018
+    ],
+    "slope good runs": [
+     0.176,
+     0.157,
+     0.195
+    ],
+    "implied multiplier poor runs": 0.87,
+    "implied multiplier good runs": 1.59
+   },
+   "lowest": {
+    "runs": 46834,
+    "avg gain K": 0.35,
+    "slope poor runs": [
+     -0.073,
+     -0.093,
+     -0.053
+    ],
+    "slope good runs": [
+     0.247,
+     0.228,
+     0.265
+    ],
+    "implied multiplier poor runs": 0.79,
+    "implied multiplier good runs": 1.71
+   },
+   "middle": {
+    "runs": 46825,
+    "avg gain K": 0.274,
+    "slope poor runs": [
+     -0.041,
+     -0.06,
+     -0.022
+    ],
+    "slope good runs": [
+     0.146,
+     0.126,
+     0.166
+    ],
+    "implied multiplier poor runs": 0.85,
+    "implied multiplier good runs": 1.53
+   }
+  },
+  "recent consistency (sd of last 5 surprises)": {
+   "consistent": {
+    "runs": 64752,
+    "avg gain K": 0.251,
+    "slope poor runs": [
+     -0.036,
+     -0.053,
+     -0.02
+    ],
+    "slope good runs": [
+     0.121,
+     0.103,
+     0.139
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.48
+   },
+   "erratic": {
+    "runs": 64437,
+    "avg gain K": 0.268,
+    "slope poor runs": [
+     -0.075,
+     -0.091,
+     -0.059
+    ],
+    "slope good runs": [
+     0.193,
+     0.176,
+     0.21
+    ],
+    "implied multiplier poor runs": 0.72,
+    "implied multiplier good runs": 1.72
+   },
+   "middling": {
+    "runs": 64478,
+    "avg gain K": 0.257,
+    "slope poor runs": [
+     -0.043,
+     -0.06,
+     -0.027
+    ],
+    "slope good runs": [
+     0.135,
+     0.117,
+     0.154
+    ],
+    "implied multiplier poor runs": 0.83,
+    "implied multiplier good runs": 1.53
+   },
+   "under 3 runs": {
+    "runs": 40473,
+    "avg gain K": 0.44,
+    "slope poor runs": [
+     -0.059,
+     -0.08,
+     -0.038
+    ],
+    "slope good runs": [
+     0.234,
+     0.215,
+     0.252
+    ],
+    "implied multiplier poor runs": 0.87,
+    "implied multiplier good runs": 1.53
+   }
+  },
+  "previous run went the same way": {
+   "no previous run": {
+    "runs": 13947,
+    "avg gain K": 0.552,
+    "slope poor runs": [
+     -0.048,
+     -0.08,
+     -0.017
+    ],
+    "slope good runs": [
+     0.224,
+     0.194,
+     0.255
+    ],
+    "implied multiplier poor runs": 0.91,
+    "implied multiplier good runs": 1.41
+   },
+   "opposite direction": {
+    "runs": 103308,
+    "avg gain K": 0.275,
+    "slope poor runs": [
+     -0.084,
+     -0.096,
+     -0.072
+    ],
+    "slope good runs": [
+     0.167,
+     0.153,
+     0.181
+    ],
+    "implied multiplier poor runs": 0.69,
+    "implied multiplier good runs": 1.61
+   },
+   "same direction (repeat)": {
+    "runs": 116885,
+    "avg gain K": 0.272,
+    "slope poor runs": [
+     -0.043,
+     -0.056,
+     -0.03
+    ],
+    "slope good runs": [
+     0.208,
+     0.195,
+     0.221
+    ],
+    "implied multiplier poor runs": 0.84,
+    "implied multiplier good runs": 1.76
+   }
+  },
+  "history completeness": {
+   "full history held": {
+    "runs": 146266,
+    "avg gain K": 0.311,
+    "slope poor runs": [
+     -0.068,
+     -0.079,
+     -0.057
+    ],
+    "slope good runs": [
+     0.205,
+     0.194,
+     0.216
+    ],
+    "implied multiplier poor runs": 0.78,
+    "implied multiplier good runs": 1.66
+   },
+   "history probably truncated": {
+    "runs": 87874,
+    "avg gain K": 0.255,
+    "slope poor runs": [
+     -0.046,
+     -0.059,
+     -0.032
+    ],
+    "slope good runs": [
+     0.138,
+     0.122,
+     0.155
+    ],
+    "implied multiplier poor runs": 0.82,
+    "implied multiplier good runs": 1.54
+   }
+  },
+  "beaten margin this run": {
+   "10-25 L": {
+    "runs": 22402,
+    "avg gain K": 0.307,
+    "slope poor runs": [
+     -0.087,
+     -0.105,
+     -0.069
+    ],
+    "slope good runs": [
+     0.305,
+     0.187,
+     0.424
+    ],
+    "implied multiplier poor runs": 0.72,
+    "implied multiplier good runs": 1.99
+   },
+   "3-10 L": {
+    "runs": 107931,
+    "avg gain K": 0.293,
+    "slope poor runs": [
+     0.081,
+     0.065,
+     0.098
+    ],
+    "slope good runs": [
+     0.165,
+     0.145,
+     0.185
+    ],
+    "implied multiplier poor runs": 1.28,
+    "implied multiplier good runs": 1.56
+   },
+   "under 3 L": {
+    "runs": 101959,
+    "avg gain K": 0.283,
+    "slope poor runs": [
+     0.11,
+     0.066,
+     0.154
+    ],
+    "slope good runs": [
+     0.166,
+     0.155,
+     0.177
+    ],
+    "implied multiplier poor runs": 1.39,
+    "implied multiplier good runs": 1.59
+   }
+  },
+  "age": {
+   "2-3": {
+    "runs": 55108,
+    "avg gain K": 0.354,
+    "slope poor runs": [
+     -0.069,
+     -0.087,
+     -0.051
+    ],
+    "slope good runs": [
+     0.198,
+     0.181,
+     0.215
+    ],
+    "implied multiplier poor runs": 0.81,
+    "implied multiplier good runs": 1.56
+   },
+   "4-5": {
+    "runs": 117176,
+    "avg gain K": 0.277,
+    "slope poor runs": [
+     -0.063,
+     -0.076,
+     -0.05
+    ],
+    "slope good runs": [
+     0.198,
+     0.184,
+     0.211
+    ],
+    "implied multiplier poor runs": 0.77,
+    "implied multiplier good runs": 1.72
+   },
+   "6+": {
+    "runs": 60394,
+    "avg gain K": 0.257,
+    "slope poor runs": [
+     -0.04,
+     -0.057,
+     -0.024
+    ],
+    "slope good runs": [
+     0.127,
+     0.107,
+     0.148
+    ],
+    "implied multiplier poor runs": 0.84,
+    "implied multiplier good runs": 1.5
+   }
+  }
+ },
+ "2025-26": {
+  "all runs": {
+   "runs": 268800,
+   "avg gain K": 0.288,
+   "slope poor runs": [
+    -0.056,
+    -0.065,
+    -0.048
+   ],
+   "slope good runs": [
+    0.241,
+    0.233,
+    0.25
+   ],
+   "implied multiplier poor runs": 0.8,
+   "implied multiplier good runs": 1.84
+  },
+  "experience held": {
+   "0-3 runs": {
+    "runs": 53074,
+    "avg gain K": 0.414,
+    "slope poor runs": [
+     -0.034,
+     -0.053,
+     -0.015
+    ],
+    "slope good runs": [
+     0.271,
+     0.254,
+     0.288
+    ],
+    "implied multiplier poor runs": 0.92,
+    "implied multiplier good runs": 1.65
+   },
+   "11-30": {
+    "runs": 117071,
+    "avg gain K": 0.251,
+    "slope poor runs": [
+     -0.05,
+     -0.061,
+     -0.038
+    ],
+    "slope good runs": [
+     0.176,
+     0.161,
+     0.19
+    ],
+    "implied multiplier poor runs": 0.8,
+    "implied multiplier good runs": 1.7
+   },
+   "31+": {
+    "runs": 26365,
+    "avg gain K": 0.22,
+    "slope poor runs": [
+     -0.063,
+     -0.086,
+     -0.04
+    ],
+    "slope good runs": [
+     0.151,
+     0.121,
+     0.182
+    ],
+    "implied multiplier poor runs": 0.71,
+    "implied multiplier good runs": 1.69
+   },
+   "4-10": {
+    "runs": 72290,
+    "avg gain K": 0.281,
+    "slope poor runs": [
+     -0.058,
+     -0.075,
+     -0.042
+    ],
+    "slope good runs": [
+     0.208,
+     0.192,
+     0.224
+    ],
+    "implied multiplier poor runs": 0.79,
+    "implied multiplier good runs": 1.74
+   }
+  },
+  "rating uncertainty": {
+   "high": {
+    "runs": 67447,
+    "avg gain K": 0.293,
+    "slope poor runs": [
+     -0.068,
+     -0.084,
+     -0.052
+    ],
+    "slope good runs": [
+     0.231,
+     0.214,
+     0.248
+    ],
+    "implied multiplier poor runs": 0.77,
+    "implied multiplier good runs": 1.79
+   },
+   "highest": {
+    "runs": 66239,
+    "avg gain K": 0.437,
+    "slope poor runs": [
+     -0.05,
+     -0.066,
+     -0.034
+    ],
+    "slope good runs": [
+     0.27,
+     0.254,
+     0.285
+    ],
+    "implied multiplier poor runs": 0.89,
+    "implied multiplier good runs": 1.62
+   },
+   "low": {
+    "runs": 67610,
+    "avg gain K": 0.235,
+    "slope poor runs": [
+     -0.061,
+     -0.077,
+     -0.045
+    ],
+    "slope good runs": [
+     0.212,
+     0.195,
+     0.229
+    ],
+    "implied multiplier poor runs": 0.74,
+    "implied multiplier good runs": 1.9
+   },
+   "lowest": {
+    "runs": 67504,
+    "avg gain K": 0.191,
+    "slope poor runs": [
+     -0.026,
+     -0.042,
+     -0.01
+    ],
+    "slope good runs": [
+     0.212,
+     0.195,
+     0.23
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 2.11
+   }
+  },
+  "established ability (rating level)": {
+   "high": {
+    "runs": 53757,
+    "avg gain K": 0.265,
+    "slope poor runs": [
+     -0.041,
+     -0.058,
+     -0.023
+    ],
+    "slope good runs": [
+     0.149,
+     0.128,
+     0.169
+    ],
+    "implied multiplier poor runs": 0.85,
+    "implied multiplier good runs": 1.56
+   },
+   "highest": {
+    "runs": 53763,
+    "avg gain K": 0.265,
+    "slope poor runs": [
+     -0.034,
+     -0.052,
+     -0.016
+    ],
+    "slope good runs": [
+     0.125,
+     0.104,
+     0.146
+    ],
+    "implied multiplier poor runs": 0.87,
+    "implied multiplier good runs": 1.47
+   },
+   "low": {
+    "runs": 53757,
+    "avg gain K": 0.295,
+    "slope poor runs": [
+     -0.042,
+     -0.061,
+     -0.023
+    ],
+    "slope good runs": [
+     0.219,
+     0.202,
+     0.236
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.74
+   },
+   "lowest": {
+    "runs": 53767,
+    "avg gain K": 0.341,
+    "slope poor runs": [
+     -0.055,
+     -0.074,
+     -0.035
+    ],
+    "slope good runs": [
+     0.266,
+     0.249,
+     0.283
+    ],
+    "implied multiplier poor runs": 0.84,
+    "implied multiplier good runs": 1.78
+   },
+   "middle": {
+    "runs": 53756,
+    "avg gain K": 0.273,
+    "slope poor runs": [
+     -0.038,
+     -0.056,
+     -0.019
+    ],
+    "slope good runs": [
+     0.171,
+     0.153,
+     0.19
+    ],
+    "implied multiplier poor runs": 0.86,
+    "implied multiplier good runs": 1.63
+   }
+  },
+  "recent consistency (sd of last 5 surprises)": {
+   "consistent": {
+    "runs": 75864,
+    "avg gain K": 0.254,
+    "slope poor runs": [
+     -0.043,
+     -0.058,
+     -0.028
+    ],
+    "slope good runs": [
+     0.196,
+     0.18,
+     0.213
+    ],
+    "implied multiplier poor runs": 0.83,
+    "implied multiplier good runs": 1.77
+   },
+   "erratic": {
+    "runs": 76178,
+    "avg gain K": 0.27,
+    "slope poor runs": [
+     -0.07,
+     -0.085,
+     -0.055
+    ],
+    "slope good runs": [
+     0.233,
+     0.218,
+     0.249
+    ],
+    "implied multiplier poor runs": 0.74,
+    "implied multiplier good runs": 1.86
+   },
+   "middling": {
+    "runs": 76137,
+    "avg gain K": 0.259,
+    "slope poor runs": [
+     -0.046,
+     -0.06,
+     -0.031
+    ],
+    "slope good runs": [
+     0.176,
+     0.16,
+     0.193
+    ],
+    "implied multiplier poor runs": 0.82,
+    "implied multiplier good runs": 1.68
+   },
+   "under 3 runs": {
+    "runs": 40621,
+    "avg gain K": 0.441,
+    "slope poor runs": [
+     -0.029,
+     -0.05,
+     -0.007
+    ],
+    "slope good runs": [
+     0.28,
+     0.261,
+     0.298
+    ],
+    "implied multiplier poor runs": 0.93,
+    "implied multiplier good runs": 1.63
+   }
+  },
+  "previous run went the same way": {
+   "no previous run": {
+    "runs": 14143,
+    "avg gain K": 0.552,
+    "slope poor runs": [
+     -0.03,
+     -0.065,
+     0.005
+    ],
+    "slope good runs": [
+     0.314,
+     0.283,
+     0.345
+    ],
+    "implied multiplier poor runs": 0.95,
+    "implied multiplier good runs": 1.57
+   },
+   "opposite direction": {
+    "runs": 117401,
+    "avg gain K": 0.274,
+    "slope poor runs": [
+     -0.098,
+     -0.11,
+     -0.087
+    ],
+    "slope good runs": [
+     0.2,
+     0.187,
+     0.213
+    ],
+    "implied multiplier poor runs": 0.64,
+    "implied multiplier good runs": 1.73
+   },
+   "same direction (repeat)": {
+    "runs": 137256,
+    "avg gain K": 0.273,
+    "slope poor runs": [
+     -0.02,
+     -0.032,
+     -0.009
+    ],
+    "slope good runs": [
+     0.254,
+     0.243,
+     0.266
+    ],
+    "implied multiplier poor runs": 0.93,
+    "implied multiplier good runs": 1.93
+   }
+  },
+  "history completeness": {
+   "full history held": {
+    "runs": 234438,
+    "avg gain K": 0.293,
+    "slope poor runs": [
+     -0.057,
+     -0.066,
+     -0.048
+    ],
+    "slope good runs": [
+     0.239,
+     0.23,
+     0.248
+    ],
+    "implied multiplier poor runs": 0.81,
+    "implied multiplier good runs": 1.81
+   },
+   "history probably truncated": {
+    "runs": 34362,
+    "avg gain K": 0.251,
+    "slope poor runs": [
+     -0.053,
+     -0.073,
+     -0.033
+    ],
+    "slope good runs": [
+     0.173,
+     0.145,
+     0.201
+    ],
+    "implied multiplier poor runs": 0.79,
+    "implied multiplier good runs": 1.69
+   }
+  },
+  "beaten margin this run": {
+   "10-25 L": {
+    "runs": 25262,
+    "avg gain K": 0.306,
+    "slope poor runs": [
+     -0.065,
+     -0.082,
+     -0.048
+    ],
+    "slope good runs": [
+     0.433,
+     0.332,
+     0.534
+    ],
+    "implied multiplier poor runs": 0.79,
+    "implied multiplier good runs": 2.42
+   },
+   "3-10 L": {
+    "runs": 123937,
+    "avg gain K": 0.291,
+    "slope poor runs": [
+     0.063,
+     0.048,
+     0.078
+    ],
+    "slope good runs": [
+     0.212,
+     0.194,
+     0.23
+    ],
+    "implied multiplier poor runs": 1.22,
+    "implied multiplier good runs": 1.73
+   },
+   "under 3 L": {
+    "runs": 117763,
+    "avg gain K": 0.281,
+    "slope poor runs": [
+     0.163,
+     0.125,
+     0.201
+    ],
+    "slope good runs": [
+     0.209,
+     0.198,
+     0.219
+    ],
+    "implied multiplier poor runs": 1.58,
+    "implied multiplier good runs": 1.74
+   }
+  },
+  "age": {
+   "2-3": {
+    "runs": 66712,
+    "avg gain K": 0.35,
+    "slope poor runs": [
+     -0.047,
+     -0.064,
+     -0.03
+    ],
+    "slope good runs": [
+     0.244,
+     0.228,
+     0.259
+    ],
+    "implied multiplier poor runs": 0.87,
+    "implied multiplier good runs": 1.7
+   },
+   "4-5": {
+    "runs": 131549,
+    "avg gain K": 0.274,
+    "slope poor runs": [
+     -0.062,
+     -0.075,
+     -0.05
+    ],
+    "slope good runs": [
+     0.23,
+     0.217,
+     0.242
+    ],
+    "implied multiplier poor runs": 0.77,
+    "implied multiplier good runs": 1.84
+   },
+   "6+": {
+    "runs": 69087,
+    "avg gain K": 0.255,
+    "slope poor runs": [
+     -0.047,
+     -0.061,
+     -0.032
+    ],
+    "slope good runs": [
+     0.161,
+     0.142,
+     0.181
+    ],
+    "implied multiplier poor runs": 0.82,
+    "implied multiplier good runs": 1.63
+   }
+  }
+ }
+}
