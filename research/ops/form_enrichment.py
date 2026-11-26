@@ -77,7 +77,14 @@ R['blinkers_change'] = ['no earlier capture' if p is None else ('unchanged' if s
 # career (held race starts per horse, any date)
 cnt = held.groupby('name_key').size()
 R['tab_starts'] = pd.to_numeric(R.career_starts, errors='coerce'); R['held_starts'] = R.name_key.map(cnt).fillna(0).astype(int)
-R['career'] = ['unknown' if t != t else 'first starter' if t == 0 else 'complete' if h >= t else 'incomplete history' for t, h in zip(R.tab_starts, R.held_starts)]
+LIGHT = 3   # 1-3 career starts = lightly raced (kept apart from first starters and from horses whose history we only partly hold)
+def career(t, h):
+    if t != t: return 'unknown'
+    if t == 0: return 'first starter'
+    full = h >= t
+    if t <= LIGHT: return 'lightly raced, complete' if full else 'lightly raced, incomplete history'
+    return 'complete' if full else 'incomplete history'
+R['career'] = [career(t, h) for t, h in zip(R.tab_starts, R.held_starts)]
 R[['ven', 'race', 'n', 'name', 'horse_key', 'tab_starts', 'held_starts', 'career', 'blinkers_state', 'blinkers_change']].to_csv(f'{base}/form_runner_status.csv', index=False)
 races = P[P.is_race]; c = P['class'].value_counts()
 row = {'day': D, 'runners_expected': len(man), 'runners_retrieved': int((man.status == 'retrieved').sum()),
@@ -92,8 +99,13 @@ row = {'day': D, 'runners_expected': len(man), 'runners_retrieved': int((man.sta
        'blinkers_on': int((R.blinkers_state == 'on').sum()), 'blinkers_off': int((R.blinkers_state == 'off').sum()),
        'blinkers_unavailable': int((R.blinkers_state == 'unavailable').sum()),
        'blinkers_changed_vs_earlier_capture': int(R.blinkers_change.str.contains('->').sum()),
-       'career_first_starters': int((R.career == 'first starter').sum()), 'career_complete': int((R.career == 'complete').sum()),
-       'career_incomplete_history': int((R.career == 'incomplete history').sum())}
+       'career_first_starters': int((R.career == 'first starter').sum()),
+       'career_lightly_raced_complete': int((R.career == 'lightly raced, complete').sum()),
+       'career_lightly_raced_incomplete': int((R.career == 'lightly raced, incomplete history').sum()),
+       'career_complete': int((R.career == 'complete').sum()), 'career_incomplete_history': int((R.career == 'incomplete history').sum())}
+# reconciliation: every race start falls in exactly one class; every line is a race start or a trial (or a collapsed duplicate)
+row['check_race_starts'] = row['race_starts'] == row['new_starts'] + row['enriched_held_starts'] + row['held_nothing_added'] + int(c.get('duplicate', 0) - (P[~P.is_race]['class'] == 'duplicate').sum())
+row['check_lines'] = row['past_start_lines'] == row['race_starts'] + row['trials'] + (lines - len(P))
 L = 'outputs/form_enrichment_ledger.csv'; old = pd.read_csv(L, dtype=str) if os.path.exists(L) else pd.DataFrame()
 if len(old): old = old[old.day != D]
 pd.concat([old, pd.DataFrame([row]).astype(str)]).to_csv(L, index=False)
