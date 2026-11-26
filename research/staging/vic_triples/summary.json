@@ -1,0 +1,40 @@
+{
+  "status": "complete_enumeration",
+  "start": "2026-07-01",
+  "end": "2026-11-25",
+  "calendar_meetings": 205,
+  "race_records": 1608,
+  "original_csv_files": 817,
+  "provider_counts": {
+    "TripleS": 817,
+    "dailysectionals": 715,
+    "unavailable": 76
+  },
+  "file_status_counts": {
+    "original_csv_saved": 817,
+    "not_advertised_by_source_condition": 791
+  },
+  "monthly_counts": {
+    "2026-07": {
+      "original_csv_saved": 188,
+      "not_advertised_by_source_condition": 142
+    },
+    "2026-08": {
+      "original_csv_saved": 168,
+      "not_advertised_by_source_condition": 134
+    },
+    "2026-09": {
+      "not_advertised_by_source_condition": 145,
+      "original_csv_saved": 148
+    },
+    "2026-10": {
+      "not_advertised_by_source_condition": 205,
+      "original_csv_saved": 167
+    },
+    "2026-11": {
+      "original_csv_saved": 146,
+      "not_advertised_by_source_condition": 165
+    }
+  },
+  "flagged_originals_retained": 4
+}
