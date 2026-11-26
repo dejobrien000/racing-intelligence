@@ -1,0 +1,56 @@
+name: pc-collector-windows-test
+# Tests the PC collector and its installer on a real Windows machine (GitHub's windows-latest runner) before Damo installs it.
+# Uses a dummy token: nothing is delivered anywhere; TAB answers GitHub's servers with its website page, so the self-test task
+# is EXPECTED to report that, which proves the scheduled task really runs Python on its own.
+on:
+  push:
+    branches: [main]
+    paths: ['pc_collector/**', '.github/workflows/pc-collector-windows-test.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Collector tests (mock TAB + mock GitHub) on Windows Python
+        run: python pc_collector/tests/test_collector.py
+      - name: Install in test mode (private Python download + signature check, DPAPI token, scheduled tasks)
+        shell: powershell
+        env: { RC_TEST_TOKEN: 'dummy-token-for-ci-0123456789abcdef' }
+        run: |
+          $root = Join-Path $env:RUNNER_TEMP 'rc'
+          powershell -NoProfile -ExecutionPolicy Bypass -File pc_collector\install.ps1 -TestMode -InstallRoot $root -InstallUser "$env:USERDOMAIN\$env:USERNAME"
+          if ($LASTEXITCODE -ne 0) { throw "installer exit $LASTEXITCODE" }
+      - name: Verify tasks, wake/catch-up settings and token unlock under the task account
+        shell: powershell
+        run: |
+          $root = Join-Path $env:RUNNER_TEMP 'rc'; $ok = $true
+          $ts = Get-ScheduledTask -TaskPath '\RacingIntelligence\'
+          "tasks: " + ($ts.TaskName -join ', ')
+          if ($ts.Count -ne 5) { $ok = $false; 'FAIL task count' }
+          foreach ($t in $ts) {
+            $s = $t.Settings; "{0}: start-when-available={1} wake={2} instances={3} restart={4} logon={5} triggers={6}" -f $t.TaskName, $s.StartWhenAvailable, $s.WakeToRun, $s.MultipleInstances, $s.RestartCount, $t.Principal.LogonType, $t.Triggers.Count
+            if (-not $s.StartWhenAvailable -or -not $s.WakeToRun -or $s.MultipleInstances -ne 'IgnoreNew' -or $t.Principal.LogonType -ne 'S4U') { $ok = $false; "FAIL settings $($t.TaskName)" }
+          }
+          $ev = $ts | Where-Object TaskName -eq 'Evening results'; "evening repetition: " + $ev.Triggers[0].Repetition.Interval + ' for ' + $ev.Triggers[0].Repetition.Duration
+          $py = Join-Path $root 'python\python.exe'
+          $a = New-ScheduledTaskAction -Execute $py -Argument "-I `"$root\app\collector.py`" checktoken" -WorkingDirectory $root
+          $p = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" -LogonType S4U -RunLevel Limited
+          Register-ScheduledTask -TaskPath '\RacingIntelligence\' -TaskName 'ci-checktoken' -Action $a -Principal $p -Force | Out-Null
+          Start-ScheduledTask -TaskPath '\RacingIntelligence\' -TaskName 'ci-checktoken'
+          $f = Join-Path $root 'state\tokencheck.json'; $end = (Get-Date).AddMinutes(2); while (-not (Test-Path $f) -and (Get-Date) -lt $end) { Start-Sleep 2 }
+          if (Test-Path $f) { $j = Get-Content $f -Raw | ConvertFrom-Json; $want = -join ([Security.Cryptography.SHA256]::Create().ComputeHash([Text.Encoding]::UTF8.GetBytes('dummy-token-for-ci-0123456789abcdef')) | ForEach-Object { $_.ToString('x2') })
+            if ($j.sha256_8 -eq $want.Substring(0,8)) { 'token unlocked by the S4U task: OK' } else { $ok = $false; 'FAIL token mismatch' } } else { $ok = $false; 'FAIL token check did not run'; Get-ChildItem (Join-Path $root 'logs') | Get-Content -Tail 30 }
+          Remove-Item -Force -ErrorAction SilentlyContinue (Join-Path $root 'state\selftest.json')
+          Start-ScheduledTask -TaskPath '\RacingIntelligence\' -TaskName 'Self-test'
+          $f = Join-Path $root 'state\selftest.json'; $end = (Get-Date).AddMinutes(3); while (-not (Test-Path $f) -and (Get-Date) -lt $end) { Start-Sleep 3 }
+          if (Test-Path $f) { 'self-test task ran on its own: ' + (Get-Content $f -Raw) } else { $ok = $false; 'FAIL self-test task did not run' }
+          Get-ChildItem (Join-Path $root 'logs') | Get-Content -Tail 15
+          powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root 'uninstall.ps1') -Quiet
+          if ((Get-ScheduledTask -TaskPath '\RacingIntelligence\' -ErrorAction SilentlyContinue | Where-Object TaskName -ne 'ci-checktoken').Count) { $ok = $false; 'FAIL uninstall left tasks' } else { 'uninstall removed the tasks: OK' }
+          if (-not $ok) { throw 'Windows checks failed' } else { 'ALL WINDOWS CHECKS PASSED' }
