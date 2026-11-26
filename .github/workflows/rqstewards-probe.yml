@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install requests && python3 collect/rqstewards/probe.py
+      - run: pip install requests pdfplumber && python3 collect/rqstewards/probe.py
       - name: Save to orphan branch raw-rqstewards-probe
         run: |
           mkdir /tmp/o && cp -r probe_out /tmp/o/ && cd /tmp/o && git init -q && git checkout -q -b raw-rqstewards-probe
