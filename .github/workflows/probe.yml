@@ -51,6 +51,10 @@ jobs:
           follow "https://www.countryracingsa.com.au/calendar" "Country Racing SA calendar" probe/bodies/sa/country_calendar.html
           follow "https://www.countryracingsa.com.au/race/gear-changes/5399564" "Country Racing SA race gear-changes page" probe/bodies/sa/race_gear_5399564.html
           follow "https://www.countryracingsa.com.au/race/5399564" "Country Racing SA race page" probe/bodies/sa/race_5399564.html
+          followz() { r=$(curl -sL --compressed -o "$3" -w '%{http_code}|%{size_download}|%{content_type}|%{url_effective}' -m 60 -A "$UA" "$1" 2>&1) || r="ERR $?"; echo "$2 (followed, compressed)|$r|$(stat -c%s "$3" 2>/dev/null) bytes unpacked" >> $OUT; }
+          followz "https://www.countryracingsa.com.au/meetings/07-oct-24-gawler" "Country Racing SA meeting by slug (Gawler 7 Oct 24)" probe/bodies/sa/slug_gawler_071024.html
+          followz "https://www.countryracingsa.com.au/meetings/29-oct-22-morphettville" "Country Racing SA meeting by slug (Morphettville 29 Oct 22)" probe/bodies/sa/slug_morp_291022.html
+          followz "https://www.countryracingsa.com.au/meetings/26-nov-26-gawler" "Country Racing SA meeting by slug (Gawler today)" probe/bodies/sa/slug_today.html
           for f in probe/bodies/sa/*.html probe/bodies/sa/*.xml; do [ -s "$f" ] && [ $(stat -c%s "$f") -gt 400000 ] && { head -c 400000 "$f" > "$f.cut"; mv "$f.cut" "$f"; }; done
           check "https://racingsa.com.au/robots.txt" "Racing SA robots.txt"
           check "https://www.countryracingsa.com.au/robots.txt" "Country Racing SA robots.txt"
