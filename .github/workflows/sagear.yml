@@ -33,7 +33,9 @@ jobs:
       - name: Collect (stops itself before the time limit)
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then export REFRESH_DAYS=10; fi
-          python3 collect/sagear/collect.py /tmp/out $(( $(date +%s) + 19800 )) || true
+          SECS=19800; if [ "${{ github.event_name }}" = "push" ]; then SECS=600; fi   # a push runs a 10-minute check; schedule/dispatch run fully
+          python3 collect/sagear/collect.py /tmp/out $(( $(date +%s) + SECS )) || true
+          tail -5 /tmp/out/collect.log
       - name: Parse gear documents into a staging table (every line kept)
         if: always()
         run: |
