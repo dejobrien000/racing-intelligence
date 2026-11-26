@@ -115,6 +115,16 @@ morning run uses the evening file. A standing evening capture needs a scheduled 
   ratings are unchanged; no model uses SA tracking yet (research first). Weekly incremental SA step: to be added to weekly_update.py
   and tested by a dry run after the 26 Nov daily run.
 
+## Collection processes register and data foundation (26 Nov 2026, Damo 7:03pm)
+The register of every collection process is research/ops/foundation/collection_processes.csv; the field-by-field source map
+(primary/secondary source, history, forward process, database destination, matching rules, ratings vs research) is
+research/ops/foundation/field_register.csv, explained in research/ops/foundation/DATA_FOUNDATION.md.
+- ESTABLISHED EXTERNAL PROCESS: ChatGPT + Damo run a weekly, manually started Work session collecting Victorian TripleS
+  sectional CSVs from Racing.com. Accepted start 1 July 2026; no resources on earlier coverage for now. Output: a ZIP of
+  original files -> Claude validates and stages (history/stage_vic_triples.py -> research/staging/vic_triples).
+  First ZIP (817 races, 1 Jul - 25 Nov 2026, 13 track configurations): validated, awaiting the integration decision.
+- Direction: consolidation, not expansion. No new collectors; WA/Tas gear and stewards searches paused.
+
 ## Unattended runs: options and exact blockers (26 Nov 2026, Damo's brief section 7)
 In place now (fallback, not permanent): wake-ups into the build conversation kept two days ahead (07:30 and 23:20), idempotent
 runs, and workflow run-watchdog (08:50 and 00:45) that fails, so GitHub emails Damo, when a run did not reach the repository.

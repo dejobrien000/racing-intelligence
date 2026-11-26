@@ -68,7 +68,7 @@ def cls(x):
     if not x.is_race: return 'trial (new)' if not x.seen_before else 'trial (updated)'
     if not x.held: return 'new start' if not x.seen_before else 'new start (updated)'
     return 'enriched' if (x.has_comment or x.has_pir) else 'held, nothing added'
-P['class'] = P.apply(cls, axis=1)
+P['enrich_class'] = P.apply(cls, axis=1)   # was 'class', which overwrote TAB's race class (fixed 26 Nov)
 P.drop(columns=['sig']).to_csv(f'{base}/form_enrichment.csv', index=False)
 # gear
 R['blinkers_state'] = R.blinkers.map(lambda b: 'unavailable' if blank(b) else ('on' if str(b).lower() == 'true' else 'off'))
@@ -86,7 +86,7 @@ def career(t, h):
     return 'complete' if full else 'incomplete history'
 R['career'] = [career(t, h) for t, h in zip(R.tab_starts, R.held_starts)]
 R[['ven', 'race', 'n', 'name', 'horse_key', 'tab_starts', 'held_starts', 'career', 'blinkers_state', 'blinkers_change']].to_csv(f'{base}/form_runner_status.csv', index=False)
-races = P[P.is_race]; c = P['class'].value_counts()
+races = P[P.is_race]; c = P['enrich_class'].value_counts()
 row = {'day': D, 'runners_expected': len(man), 'runners_retrieved': int((man.status == 'retrieved').sum()),
        'runners_malformed': int((man.status == 'malformed').sum()), 'runners_missing': int((man.status == 'missing').sum()),
        'past_start_lines': lines, 'unique_past_starts': len(P), 'race_starts': len(races), 'trials': int((~P.is_race).sum()),
@@ -104,7 +104,7 @@ row = {'day': D, 'runners_expected': len(man), 'runners_retrieved': int((man.sta
        'career_lightly_raced_incomplete': int((R.career == 'lightly raced, incomplete history').sum()),
        'career_complete': int((R.career == 'complete').sum()), 'career_incomplete_history': int((R.career == 'incomplete history').sum())}
 # reconciliation: every race start falls in exactly one class; every line is a race start or a trial (or a collapsed duplicate)
-row['check_race_starts'] = row['race_starts'] == row['new_starts'] + row['enriched_held_starts'] + row['held_nothing_added'] + int(c.get('duplicate', 0) - (P[~P.is_race]['class'] == 'duplicate').sum())
+row['check_race_starts'] = row['race_starts'] == row['new_starts'] + row['enriched_held_starts'] + row['held_nothing_added'] + int(c.get('duplicate', 0) - (P[~P.is_race]['enrich_class'] == 'duplicate').sum())
 row['check_lines'] = row['past_start_lines'] == row['race_starts'] + row['trials'] + (lines - len(P))
 L = 'outputs/form_enrichment_ledger.csv'; old = pd.read_csv(L, dtype=str) if os.path.exists(L) else pd.DataFrame()
 if len(old): old = old[old.day != D]

@@ -1,0 +1,11 @@
+process,what it collects,run by,when,lands in,status
+Daily 7:30am run,"TAB racecards (fields, barriers, weights, claims, riders, scratchings, track), TAB prices (display only), ratings, dashboard",Claude (this chat) -> PC collector after proving week,Daily 7:30am Brisbane,"collect/national/<date>/, prices/<date>/",Running
+Daily form records,"TAB form records for every runner (past starts, career, gear flag)",Claude -> PC collector,Daily from 7:40am,prices/<date>/form_*.raw.txt -> collect/national/<date>/form_*.csv -> stg_form_* weekly,Running
+Evening results,"TAB results (finishes, status) for the dashboard and returns",Claude (11:20pm) -> PC collector,Nightly; PC keeps trying to 3am,collect/national/<date>/results_*,Running
+Weekly master update,"Breednet results (all states), RQ tracking + fields, SA tracking, TAB form staging; rebuilds frames; checks",GitHub Actions,Mondays 3:00am Brisbane,"Master database (branch db, previous kept as db-prev)",Running
+QRIC stewards reports,Qld stewards reports,GitHub Actions (rqstewards),Weekly; backfill running,Branch raw-rqstewards,Running (staging)
+SA gear and stewards documents,"Gear Change Race Order PDFs, stewards PDFs",GitHub Actions (sagear),Twice daily; history run in progress,Branch raw-sagear,Running (staging)
+NSW stewards notifications,"Pre-race notices (late gear, surgery, trainer reports)",GitHub Actions (nswstewards),4 times daily,Branch raw-nswstewards,Running (staging)
+EXTERNAL: weekly Racing.com session,Victorian TripleS sectional CSVs (from 1 Jul 2026; 13 track configurations),"ChatGPT + Damo, manually started Work session (outside Claude)",Weekly,ZIP -> history/stage_vic_triples.py -> research/staging/vic_triples,"Established 26 Nov 2026. First ZIP (817 races, 1 Jul-25 Nov) validated by Claude; awaiting integration decision"
+Missed-run watchdog,"Emails if the morning run, evening capture or (once enabled) PC deliveries are missing",GitHub Actions (run-watchdog),"8:15am, 8:50am, 12:45am",Email to Damo,Running
+Retired,"Browser collectors: Racing NSW results/form, racing.com, Betfair bundles, Breednet in Chrome",-,-,-,Not continued; history kept (racing.com tables to be removed)
