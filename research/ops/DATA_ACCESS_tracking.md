@@ -99,6 +99,11 @@ rest 'unplaced'), and Breednet supplies full results in the weekly database upda
   No URL guessing at scale.
 - Victoria: no equivalent public route found; racing.com content will not be fetched from another host either (that would be
   going around the block).
+- 26 Nov 4:17pm: Damo supplied 817 original Victorian TripleS CSVs (1 Jul - 25 Nov 2026; per the package README, downloaded from
+  Racing.com's file host on his side). Staged and validated in research/staging/vic_triples (README there); untouched zip on
+  branch raw-vic-triples. Matches our race lists closely (6,777/6,777 tracked runners, saddlecloths all agree, winner 663/666).
+  Covers metro and major provincial tracks only (817 of 1,608 races); country meetings use Daily Sectionals (not offered).
+  Ongoing: further packages in the same form can be staged with history/stage_vic_triples.py.
 
 ## South Australia collection (26 Nov 2026, overnight; staging only)
 - Decision: Damo 26 Nov 12:02am "Do SA overnight. Happy to proceed... We don't have to implement for tomorrow but need it built";
