@@ -1,0 +1,43 @@
+name: rqstewards
+# Racing Queensland / QRIC thoroughbred stewards' reports, Oct 2022 on (Damo, 26 Nov 2026). Staging input only.
+# Public pages, honest User-Agent, robots.txt has no Disallow, 2.5-3.5 s pacing, stops on CAPTCHA or repeated refusals.
+# Resumable: the previous output on orphan branch raw-rqstewards is reused. Weekly on Sunday night re-reads the last 14 days.
+on:
+  push:
+    branches: [main]
+    paths: ['collect/rqstewards/collect.py', '.github/workflows/rqstewards.yml']
+  schedule:
+    - cron: '10 15 * * 0'   # Monday 01:10 Brisbane, before the 03:00 weekly database update
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: rqstewards-collect, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests beautifulsoup4
+      - name: Reuse earlier output
+        run: |
+          mkdir -p /tmp/out
+          if git fetch -q --depth 1 origin raw-rqstewards 2>/dev/null; then for f in meetings.csv files.csv reports.jsonl.gz collect.log; do git show FETCH_HEAD:$f > /tmp/out/$f 2>/dev/null || rm -f /tmp/out/$f; done; fi
+          if [ -f /tmp/out/reports.jsonl.gz ]; then gunzip -f /tmp/out/reports.jsonl.gz; fi
+          ls -la /tmp/out
+      - name: Collect (stops itself before the time limit)
+        run: |
+          LAST=$(TZ=Australia/Brisbane date +%Y-%m)
+          if [ "${{ github.event_name }}" = "schedule" ]; then export REFRESH_DAYS=14; fi
+          python3 collect/rqstewards/collect.py 2022-10 $LAST /tmp/out $(( $(date +%s) + 19800 )) || true
+      - name: Save to branch raw-rqstewards
+        if: always()
+        run: |
+          if [ -f /tmp/out/reports.jsonl ]; then gzip -f /tmp/out/reports.jsonl; fi
+          mkdir -p /tmp/push && cp /tmp/out/* /tmp/push/ 2>/dev/null || true
+          cd /tmp/push && git init -q && git checkout -q -b raw-rqstewards && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "RQ stewards reports $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-rqstewards
