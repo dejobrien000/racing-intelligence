@@ -1,0 +1,44 @@
+name: nswstewards
+# Racing NSW 'Stewards Notifications' posts (pre-race: late gear changes, surgery, in foal, overweights...), Oct 2022 on.
+# Public WordPress REST API on www.racingnsw.com.au (robots.txt there only disallows /wp-admin/). Honest User-Agent, paced.
+# Staging input only. Every version of a post is kept with its capture time (posts are edited during the day), on orphan
+# branch raw-nswstewards. Four times a day so late changes are captured close to when they are published.
+on:
+  push:
+    branches: [main]
+    paths: ['collect/nswstewards/*.py', '.github/workflows/nswstewards.yml']
+  schedule:
+    - cron: '10 20 * * *'   # 06:10 Brisbane
+    - cron: '10 1 * * *'    # 11:10 Brisbane
+    - cron: '10 5 * * *'    # 15:10 Brisbane
+    - cron: '10 8 * * *'    # 18:10 Brisbane
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: nswstewards, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q requests
+      - name: Reuse earlier output
+        run: |
+          mkdir -p /tmp/out
+          if git fetch -q --depth 1 origin raw-nswstewards 2>/dev/null; then git archive FETCH_HEAD | tar -x -C /tmp/out; fi
+          if [ -f /tmp/out/posts.jsonl.gz ]; then gunzip -f /tmp/out/posts.jsonl.gz; fi
+      - name: Collect
+        run: python3 collect/nswstewards/collect.py /tmp/out
+      - name: Parse into a staging table (every notice kept)
+        run: python3 collect/nswstewards/parse.py /tmp/out/posts.jsonl /tmp/out/notices.csv | tee /tmp/out/parse_report.txt
+      - name: Save to branch raw-nswstewards
+        if: always()
+        run: |
+          [ -f /tmp/out/posts.jsonl ] && gzip -kf /tmp/out/posts.jsonl && rm /tmp/out/posts.jsonl
+          cd /tmp/out && git init -q && git checkout -q -b raw-nswstewards && git add -A
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "NSW stewards notifications $(date -u +%FT%TZ)"
+          AUTH="$(git -C "$GITHUB_WORKSPACE" config --get http.https://github.com/.extraheader)"
+          git -c http.https://github.com/.extraheader="$AUTH" push -qf "https://github.com/${GITHUB_REPOSITORY}.git" raw-nswstewards
