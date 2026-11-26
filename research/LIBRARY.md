@@ -120,3 +120,31 @@ largest single Qld improvement available. (2) The Qld v3 learning-speed gain loo
 (3) A common national framework with Qld's own coefficients beats every Qld-specific variant; Qld's physical measurements add little on
 top at present. This supports one national methodology with regional coefficients. SA note: SA rows were inside the six-state fitting
 data for C2 (weight credit and seconds per length), so SA is NOT an independent check of C2; SA stays independent for v2.1.3 (Qld only).
+
+## Batch 14 (26-27 Nov 2026 night; Damo's "Research Batch 13"): physical performance, momentum, course geometry, rider specialisation
+Ledger and scripts: research/batch14/README.md. Outcome: next-run rating surprise (kg) unless stated. Qld 2022-24 discovery, Qld 2025-26
+re-used, SA 2024-26 independent (now used for these hypotheses: no longer untouched for them). Nothing changes production.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| An uneven last 600 (one 200 m section given up, at the same average speed) precedes a better next run than the rating expects | +0.26 kg per sd (0.18-0.33) Qld 22-24; +0.22 (0.14-0.30) Qld 25-26; +0.31 (0.20-0.42) SA. Horse's habitual unevenness +0.57 to +0.81 per sd. On top of Qld Engine v2.1.3: 2024 +0.0049 (0.0009-0.0094), 2025-26 +0.0011 (n.s.) | MEANINGFUL (rating level); engine value unconfirmed: open hypothesis, judge on races from 27 Nov. Extends Batch 12 s5 (weak retention bounce) |
+| Sustained finishing (no section given up) is NOT, by itself, a sign of a better next run | weakest-section term -0.57 / -0.50 / -0.77 kg per sd holding the average; top-quarter sustained among 5th-or-worse finishers +0.09 / -0.02 / +0.15 (n.s.) | Rejected as a future signal |
+| Acceleration timing (gaining on the field 800-400 out vs last 400) is a repeatable trait of horses and of riders | horse split-half r 0.41 (3,218 horses) Qld, 0.32 SA; rider within the same horse 0.46 (137 riders) Qld, 0.52 SA; circumstances explain 4-5% | MEANINGFUL (descriptive); no prospective value found yet |
+| Earlier momentum helps more at courses where leaders hold (empirical 'hold' index by track) | interaction +0.02 (-0.04 to +0.08) Qld; +0.16 (-0.03 to +0.34) SA | Not supported (Qld); SA hint only |
+| Leaders at the 200 who built momentum earlier hold on less, for the same lead and speed | odds ratio 0.32 (0.22-0.46) per 1 m/s Qld, 0.23 (0.10-0.56) SA | Descriptive (energy cost), same-race |
+| Riders differ consistently in late speed retention on the same horse | within-horse split-half r sprint 0.49 (137 riders), middle 0.45 (118), staying 0.02 (41, small) | MEANINGFUL (descriptive) for sprint/middle |
+| Jockey distance specialisation | persistence r 0.34 raw, 0.17 after trainer; +0.26 kg per kg (0.20-0.32) beyond j_surp and trainer distance form; trainer distance form +0.40; Engine v2.3 test +0.00007 (2024) / +0.00014 (2025-26) | Real but too small for the engine: no candidate |
+| Jockey workload (fatigue) across a meeting | within jockey x meeting apparent +0.16 to +0.40 kg is shared by trainers (placebo +0.13 to +0.21) = measurement artifact; rating-free check -0.4 to -1.0% of the field on later rides; scheduled gaps (Qld) no effect; busier days +0.1 to +0.36 kg = booking selection | Rejected (no meaningful fatigue effect) |
+| Within-meeting comparisons of rating surprise carry an order artifact | trainer placebo above | Method note: use a rating-free measure for within-meeting tests |
+| Leader that surrenders a big lead ('fell in' from 1.5 L+ at the 400) runs worse next time than one that held | -0.62 kg (-1.50 to +0.26) Qld, -0.70 (-2.68 to +1.29) SA; reversed for narrow leads | Interesting, uncertain |
+| Leading a slow early tempo flatters the rating | slow vs fast early -0.73 kg (-1.13 to -0.33) Qld; SA +0.71 (n.s.) | Uncertain (does not replicate) |
+| Physical deterioration (flat kick, faded, slow cruise vs own norm), repeats, and the owner's contexts | next-run effects ~0 (flat +0.18, faded -0.15, slow -0.01 Qld); recurrence 12.6% vs 11.8% base (flat); contexts n.s. (Qld first-up flat +0.42 borderline); 'concerning case' -0.24 (-1.08 to +0.60, 140 runs) | Rejected as predictive; patterns rarely persist. Horses with such runs race again within 120 days slightly less (88% vs 92%) |
+| Extra ground / width | +0.06 to +0.08 kg per sd at every phase (Qld); SA early +0.12, turn 0, straight +0.13; accelerating-while-wide no interaction | Small under-credit; timing of width not supported |
+| Racing wide without cover | proxy (no runner within 0.30 s ahead and 1.5 m laterally at 600 and 400) agrees with itself only 69-72% between marks; effect n.s. | Cannot be measured from segment-average tracking; needs stewards text |
+| Physical improvement shows more against weaker opposition next time | interactions -0.00 / +0.02 Qld; -0.07 / -0.08 SA (n.s.) | Rejected |
+| Uneven run vs stewards' interference comments (TAB past starts) | dip 0.24 vs 0.19 on 18 Qld runs with an interference comment | Awaiting data (QRIC and SA stewards text parsed) |
+
+Awaiting data or not attempted: clear-running repeatability by horse and wide-without-cover (need the QRIC / SA stewards reports parsed:
+raw text held, not parsed); Moonee Valley (no tracking held; old layout only, 2022-25; new layout = new configuration key from 2027);
+extra ground x optimal distance; richer-to-poorer inference (s14); Jimmysstar (conceptual only). Pride Of Jenni: three measured runs
+(Doomben 2025 and 2026, Caulfield 27 Sep 2026); see batch14/README.md.

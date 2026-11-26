@@ -1,0 +1,379 @@
+{
+ "ordinary_finish_flags": {},
+ "leaders": {
+  "QLD 2022-26": {
+   "table": [
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "caught",
+     "runs": 919,
+     "this_run_kg": 1.96,
+     "final200_vs_field": -0.4,
+     "next_run_kg": 0.11,
+     "next_finish_pct": 0.43
+    },
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "held or extended",
+     "runs": 307,
+     "this_run_kg": 7.69,
+     "final200_vs_field": 0.23,
+     "next_run_kg": 0.42,
+     "next_finish_pct": 0.37
+    },
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 275,
+     "this_run_kg": 5.24,
+     "final200_vs_field": -0.01,
+     "next_run_kg": -0.4,
+     "next_finish_pct": 0.49
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "caught",
+     "runs": 4840,
+     "this_run_kg": 0.87,
+     "final200_vs_field": -0.36,
+     "next_run_kg": 0.17,
+     "next_finish_pct": 0.44
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "held or extended",
+     "runs": 1172,
+     "this_run_kg": 5.71,
+     "final200_vs_field": 0.23,
+     "next_run_kg": 0.66,
+     "next_finish_pct": 0.39
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 303,
+     "this_run_kg": 4.3,
+     "final200_vs_field": 0.03,
+     "next_run_kg": 1.01,
+     "next_finish_pct": 0.43
+    }
+   ],
+   "tempo_table": [
+    {
+     "tempo": "fast early",
+     "outcome": "caught",
+     "runs": 1134,
+     "final200_vs_field": -0.47,
+     "next_run_kg": 0.41
+    },
+    {
+     "tempo": "fast early",
+     "outcome": "held or extended",
+     "runs": 221,
+     "final200_vs_field": 0.2,
+     "next_run_kg": 0.85
+    },
+    {
+     "tempo": "fast early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 98,
+     "final200_vs_field": -0.03,
+     "next_run_kg": 0.48
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "caught",
+     "runs": 3386,
+     "final200_vs_field": -0.37,
+     "next_run_kg": 0.21
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "held or extended",
+     "runs": 771,
+     "final200_vs_field": 0.23,
+     "next_run_kg": 0.55
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 312,
+     "final200_vs_field": 0.01,
+     "next_run_kg": 0.45
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "caught",
+     "runs": 1026,
+     "final200_vs_field": -0.28,
+     "next_run_kg": -0.21
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "held or extended",
+     "runs": 379,
+     "final200_vs_field": 0.24,
+     "next_run_kg": 0.55
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 138,
+     "final200_vs_field": 0.04,
+     "next_run_kg": -0.12
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "caught",
+     "runs": 213,
+     "final200_vs_field": -0.23,
+     "next_run_kg": -0.2
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "held or extended",
+     "runs": 108,
+     "final200_vs_field": 0.24,
+     "next_run_kg": 0.72
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 30,
+     "final200_vs_field": -0.02,
+     "next_run_kg": 0.85
+    }
+   ],
+   "coefs": {
+    "C(outcome, Treatment(\"held or extended\"))[T.caught]": [
+     -0.16,
+     -0.9,
+     0.58
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.won, lead shrank (fell in)]": [
+     -0.62,
+     -1.5,
+     0.26
+    ],
+    "C(tempo)[T.normal early]": [
+     -0.3,
+     -0.61,
+     0.01
+    ],
+    "C(tempo)[T.slow early]": [
+     -0.73,
+     -1.13,
+     -0.33
+    ],
+    "C(tempo)[T.tempo unknown]": [
+     -0.65,
+     -1.34,
+     0.04
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.caught]:C(profile)[T.narrow (<1.5 L) at 400]": [
+     -0.38,
+     -1.16,
+     0.4
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.won, lead shrank (fell in)]:C(profile)[T.narrow (<1.5 L) at 400]": [
+     1.07,
+     0.01,
+     2.12
+    ],
+    "pressure": [
+     -0.03,
+     -0.28,
+     0.22
+    ]
+   },
+   "leaders": 7816
+  },
+  "SA 2024-26": {
+   "table": [
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "caught",
+     "runs": 144,
+     "this_run_kg": 1.98,
+     "final200_vs_field": -0.43,
+     "next_run_kg": 0.28,
+     "next_finish_pct": 0.43
+    },
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "held or extended",
+     "runs": 34,
+     "this_run_kg": 8.61,
+     "final200_vs_field": 0.3,
+     "next_run_kg": 2.0,
+     "next_finish_pct": 0.34
+    },
+    {
+     "profile": "clear (>=1.5 L) at 400",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 45,
+     "this_run_kg": 4.93,
+     "final200_vs_field": -0.04,
+     "next_run_kg": 0.14,
+     "next_finish_pct": 0.51
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "caught",
+     "runs": 898,
+     "this_run_kg": 1.09,
+     "final200_vs_field": -0.32,
+     "next_run_kg": -0.04,
+     "next_finish_pct": 0.43
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "held or extended",
+     "runs": 187,
+     "this_run_kg": 5.89,
+     "final200_vs_field": 0.19,
+     "next_run_kg": 0.89,
+     "next_finish_pct": 0.4
+    },
+    {
+     "profile": "narrow (<1.5 L) at 400",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 54,
+     "this_run_kg": 4.74,
+     "final200_vs_field": 0.07,
+     "next_run_kg": 0.61,
+     "next_finish_pct": 0.44
+    }
+   ],
+   "tempo_table": [
+    {
+     "tempo": "fast early",
+     "outcome": "caught",
+     "runs": 226,
+     "final200_vs_field": -0.45,
+     "next_run_kg": -0.18
+    },
+    {
+     "tempo": "fast early",
+     "outcome": "held or extended",
+     "runs": 31,
+     "final200_vs_field": 0.28,
+     "next_run_kg": 0.73
+    },
+    {
+     "tempo": "fast early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 23,
+     "final200_vs_field": -0.06,
+     "next_run_kg": -1.4
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "caught",
+     "runs": 540,
+     "final200_vs_field": -0.34,
+     "next_run_kg": -0.07
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "held or extended",
+     "runs": 119,
+     "final200_vs_field": 0.18,
+     "next_run_kg": 0.57
+    },
+    {
+     "tempo": "normal early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 54,
+     "final200_vs_field": 0.02,
+     "next_run_kg": 0.44
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "caught",
+     "runs": 211,
+     "final200_vs_field": -0.27,
+     "next_run_kg": 0.22
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "held or extended",
+     "runs": 56,
+     "final200_vs_field": 0.23,
+     "next_run_kg": 2.54
+    },
+    {
+     "tempo": "slow early",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 17,
+     "final200_vs_field": 0.15,
+     "next_run_kg": 3.1
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "caught",
+     "runs": 65,
+     "final200_vs_field": -0.21,
+     "next_run_kg": 0.55
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "held or extended",
+     "runs": 15,
+     "final200_vs_field": 0.21,
+     "next_run_kg": 0.17
+    },
+    {
+     "tempo": "tempo unknown",
+     "outcome": "won, lead shrank (fell in)",
+     "runs": 5,
+     "final200_vs_field": -0.02,
+     "next_run_kg": -1.06
+    }
+   ],
+   "coefs": {
+    "C(outcome, Treatment(\"held or extended\"))[T.caught]": [
+     -0.56,
+     -2.25,
+     1.13
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.won, lead shrank (fell in)]": [
+     -0.7,
+     -2.68,
+     1.29
+    ],
+    "C(tempo)[T.normal early]": [
+     0.16,
+     -0.56,
+     0.88
+    ],
+    "C(tempo)[T.slow early]": [
+     0.71,
+     -0.2,
+     1.63
+    ],
+    "C(tempo)[T.tempo unknown]": [
+     0.46,
+     -0.84,
+     1.75
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.caught]:C(profile)[T.narrow (<1.5 L) at 400]": [
+     -0.04,
+     -1.8,
+     1.72
+    ],
+    "C(outcome, Treatment(\"held or extended\"))[T.won, lead shrank (fell in)]:C(profile)[T.narrow (<1.5 L) at 400]": [
+     0.66,
+     -1.81,
+     3.13
+    ],
+    "pressure": [
+     0.81,
+     0.21,
+     1.41
+    ]
+   },
+   "leaders": 1362
+  }
+ }
+}

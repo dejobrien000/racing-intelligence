@@ -107,6 +107,9 @@ with switches on = runs end to end (frames identical to the fitted ones, labels 
 |---|---|---|
 | Common national framework for Qld (Qld coefficients; keep Qld physical inputs as a variant) | research build -> shadow | Approved to build as a SHADOW (Damo 26 Nov 9:07pm). Not for promotion without an evidence review |
 | Handicap weight slope on top of v2.3 (wt_x_hcp) | next release candidate | Approved to prepare for the following release; preregistered 2024 +0.0012 (0.0008-0.0017); needs build_v22 with the term + live term definition + parity |
+| Batch 14: uneven-last-600 input for Qld (dip_last, dip_prior) | research -> prospective check | Open hypothesis, judged on races from 27 Nov; not a candidate until confirmed |
+| Parse QRIC and SA stewards reports already held (no new collection) for clear running, cover and interference | research data | Proposed; needed by Batch 14 s5/s6 |
+| Moonee Valley new layout (planned 2027) | data rule | New configuration key when racing resumes; no transfer of old-layout tendencies |
 | Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
 | Interstate connections (pool levels inside the rating) | research | Open |
 | One experience-shaped learning mechanism for all states | research | Open (Batch 13: shape supported, v3 setting not) |

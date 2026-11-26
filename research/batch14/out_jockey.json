@@ -1,0 +1,202 @@
+{
+ "s11 persistence": {
+  "jockeys with 40+ sprint and 40+ staying rides in both periods": 243,
+  "raw: correlation 2022-24 vs 2025-26 of staying-minus-sprint surprise": 0.335,
+  "raw: sd of staying-minus-sprint across jockeys, kg (A, B)": [
+   0.69,
+   0.78
+  ],
+  "trainer-adjusted: correlation 2022-24 vs 2025-26": 0.165,
+  "trainers (same test): correlation": [
+   0.251,
+   171
+  ],
+  "split-half within 2022-24 (odd vs even rides): correlation": [
+   0.255,
+   220
+  ]
+ },
+ "s11 prospective (kg per 1 kg of prior surprise)": {
+  "all 2023-26": {
+   "j_surp": [
+    5.82,
+    3.727,
+    7.913
+   ],
+   "j_all": [
+    -4.866,
+    -7.005,
+    -2.727
+   ],
+   "j_spec": [
+    0.364,
+    0.304,
+    0.423
+   ],
+   "rides": 519078,
+   "sd of j_spec kg": 0.304
+  },
+  "2025-26": {
+   "j_surp": [
+    7.472,
+    4.671,
+    10.273
+   ],
+   "j_all": [
+    -6.55,
+    -9.404,
+    -3.696
+   ],
+   "j_spec": [
+    0.397,
+    0.31,
+    0.484
+   ],
+   "rides": 289894,
+   "sd of j_spec kg": 0.286
+  }
+ },
+ "Qld tracking: jockey late-retention (within-horse) split-half r, jockeys with 60+ rides": {
+  "sprint": [
+   0.494,
+   137
+  ],
+  "middle": [
+   0.453,
+   118
+  ],
+  "staying": [
+   0.015,
+   41
+  ],
+  "all": [
+   0.412,
+   178
+  ]
+ },
+ "s12 workload (kg, within-jockey)": {
+  "all rides": {
+   "earlier rides = 1": [
+    0.026,
+    -0.015,
+    0.066
+   ],
+   "earlier rides = 2": [
+    0.113,
+    0.064,
+    0.163
+   ],
+   "earlier rides = 3": [
+    0.159,
+    0.101,
+    0.216
+   ],
+   "earlier rides = 4": [
+    0.279,
+    0.212,
+    0.347
+   ],
+   "earlier rides = 5": [
+    0.33,
+    0.245,
+    0.415
+   ],
+   "earlier rides = 6": [
+    0.347,
+    0.249,
+    0.446
+   ],
+   "rides": 681098,
+   "per 1,000 m ridden earlier": [
+    0.054,
+    0.043,
+    0.066
+   ],
+   "per staying ride earlier": [
+    -0.1,
+    -0.139,
+    -0.061
+   ]
+  },
+  "high-volume meetings (5+ rides)": {
+   "earlier rides = 1": [
+    -0.018,
+    -0.116,
+    0.081
+   ],
+   "earlier rides = 2": [
+    0.069,
+    -0.052,
+    0.19
+   ],
+   "earlier rides = 3": [
+    0.168,
+    0.039,
+    0.297
+   ],
+   "earlier rides = 4": [
+    0.317,
+    0.177,
+    0.457
+   ],
+   "earlier rides = 5": [
+    0.399,
+    0.24,
+    0.557
+   ],
+   "earlier rides = 6": [
+    0.458,
+    0.286,
+    0.63
+   ],
+   "rides": 307722,
+   "per 1,000 m ridden earlier": [
+    0.064,
+    0.044,
+    0.085
+   ],
+   "per staying ride earlier": [
+    -0.087,
+    -0.136,
+    -0.039
+   ]
+  },
+  "current race sprint: per 1,000 m ridden earlier": [
+   0.047,
+   0.034,
+   0.059
+  ],
+  "current race middle: per 1,000 m ridden earlier": [
+   0.039,
+   0.027,
+   0.051
+  ],
+  "current race staying: per 1,000 m ridden earlier": [
+   0.02,
+   0.003,
+   0.038
+  ],
+  "individual workload slopes: correlation 2022-24 vs 2025-26": [
+   0.26,
+   201
+  ],
+  "Qld: scheduled minutes since previous ride (vs 15-35 min)": {
+   "C(gap_c)[T.(35, 50]]": [
+    0.037,
+    -0.062,
+    0.136
+   ],
+   "C(gap_c)[T.(50, 80]]": [
+    0.068,
+    -0.051,
+    0.188
+   ],
+   "C(gap_c)[T.(80, 240]]": [
+    -0.019,
+    -0.15,
+    0.112
+   ]
+  },
+  "Qld: rides with a previous ride at the meeting": 61051
+ }
+}

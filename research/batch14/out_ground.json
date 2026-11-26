@@ -1,0 +1,120 @@
+{
+ "QLD": {
+  "runs": 71404,
+  "wide at 600 and 400 (3 m+) %": 10.1,
+  "of wide runs: exposed at both marks %": 26.5,
+  "of wide runs: covered at both marks %": 42.3,
+  "cover flag agreement 600 vs 400 (wide runs) %": 68.7,
+  "next-run kg per sd of width: early, turn, straight": {
+   "width_early_rel_z": [
+    0.081,
+    0.037,
+    0.125
+   ],
+   "width_turn_rel_z": [
+    0.06,
+    0.011,
+    0.109
+   ],
+   "width_straight_rel_z": [
+    0.063,
+    0.013,
+    0.113
+   ]
+  },
+  "sd of width (m): early, turn, straight": [
+   1.9,
+   0.88,
+   1.8
+  ],
+  "turn width x moving up on the field 600-400 (interaction)": {
+   "width_turn_rel_z": [
+    0.076,
+    0.004,
+    0.147
+   ],
+   "width_turn_rel_z:accel_turn": [
+    -0.034,
+    -0.125,
+    0.057
+   ]
+  },
+  "wide runs only: exposed (proxy) vs wide with a horse in front, next-run kg": {
+   "exposed": [
+    0.028,
+    -0.335,
+    0.39
+   ],
+   "n wide runs": 5297,
+   "n exposed": 1370
+  },
+  "wide runs only: exposed (proxy), THIS-run surprise kg": [
+   0.19,
+   -0.201,
+   0.58
+  ],
+  "turn width split-half r (horses 8+ runs)": [
+   0.189,
+   2576
+  ]
+ },
+ "SA": {
+  "runs": 14239,
+  "wide at 600 and 400 (3 m+) %": 29.9,
+  "of wide runs: exposed at both marks %": 13.8,
+  "of wide runs: covered at both marks %": 57.9,
+  "cover flag agreement 600 vs 400 (wide runs) %": 71.7,
+  "next-run kg per sd of width: early, turn, straight": {
+   "width_early_rel_z": [
+    0.118,
+    0.019,
+    0.217
+   ],
+   "width_turn_rel_z": [
+    -0.008,
+    -0.146,
+    0.13
+   ],
+   "width_straight_rel_z": [
+    0.131,
+    -0.009,
+    0.27
+   ]
+  },
+  "sd of width (m): early, turn, straight": [
+   1.96,
+   1.09,
+   2.35
+  ],
+  "turn width x moving up on the field 600-400 (interaction)": {
+   "width_turn_rel_z": [
+    -0.028,
+    -0.208,
+    0.152
+   ],
+   "width_turn_rel_z:accel_turn": [
+    0.035,
+    -0.168,
+    0.238
+   ]
+  },
+  "wide runs only: exposed (proxy) vs wide with a horse in front, next-run kg": {
+   "exposed": [
+    -0.184,
+    -0.735,
+    0.368
+   ],
+   "n wide runs": 3532,
+   "n exposed": 460
+  },
+  "wide runs only: exposed (proxy), THIS-run surprise kg": [
+   -0.189,
+   -0.773,
+   0.396
+  ],
+  "turn width split-half r (horses 8+ runs)": [
+   0.28,
+   484
+  ]
+ }
+}

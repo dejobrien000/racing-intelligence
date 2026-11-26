@@ -1,0 +1,159 @@
+{
+ "QLD 2022-26": {
+  "runs": 71397,
+  "timing_sd_ms": 0.392,
+  "timing_res_sd": 0.385,
+  "share of timing explained by circumstances (R2)": 0.039,
+  "horse split-half r (8+ runs) [r, horses, full-length reliability]": [
+   0.407,
+   3218,
+   0.578
+  ],
+  "jockey split-half r, within-horse residual (100+ rides)": [
+   0.461,
+   137,
+   0.631
+  ],
+  "jockey split-half r, raw residual (100+ rides)": [
+   0.73,
+   137,
+   0.844
+  ],
+  "this-run surprise kg: prior timing (per sd), course hold (per sd), interaction": {
+   "prior_timing_z": [
+    -0.057,
+    -0.126,
+    0.012
+   ],
+   "hold_z": [
+    0.075,
+    0.014,
+    0.136
+   ],
+   "prior_timing_z:hold_z": [
+    0.021,
+    -0.041,
+    0.082
+   ]
+  },
+  "... without this-run position": {
+   "prior_timing_z": [
+    -0.016,
+    -0.084,
+    0.053
+   ],
+   "hold_z": [
+    0.085,
+    0.023,
+    0.146
+   ],
+   "prior_timing_z:hold_z": [
+    0.02,
+    -0.042,
+    0.081
+   ]
+  },
+  "tracks with a hold measure": {
+   "Eagle_Farm": 0.495,
+   "Sunshine_Coast": 0.518,
+   "Doomben": 0.532,
+   "Ipswich": 0.583,
+   "Townsville": 0.597,
+   "Ladbrokes_Cannon_Park": 0.623,
+   "Toowoomba": 0.632,
+   "Mackay": 0.642,
+   "Rockhampton": 0.657
+  },
+  "leaders at 200 m: odds ratio per 1 m/s (early momentum, late momentum), lead per 0.1 s": {
+   "early_mom": 0.32,
+   "early_ci": [
+    0.224,
+    0.458
+   ],
+   "late_mom": 93.85,
+   "late_ci": [
+    71.674,
+    122.887
+   ],
+   "lead_per_0.1s": 1.6,
+   "leaders": 7920,
+   "won_%": 47.2
+  }
+ },
+ "SA 2024-26": {
+  "runs": 14239,
+  "timing_sd_ms": 0.362,
+  "timing_res_sd": 0.352,
+  "share of timing explained by circumstances (R2)": 0.054,
+  "horse split-half r (8+ runs) [r, horses, full-length reliability]": [
+   0.319,
+   588,
+   0.484
+  ],
+  "jockey split-half r, within-horse residual (100+ rides)": [
+   0.519,
+   38,
+   0.684
+  ],
+  "jockey split-half r, raw residual (100+ rides)": [
+   0.799,
+   38,
+   0.888
+  ],
+  "this-run surprise kg: prior timing (per sd), course hold (per sd), interaction": {
+   "prior_timing_z": [
+    -0.129,
+    -0.285,
+    0.027
+   ],
+   "hold_z": [
+    0.102,
+    -0.057,
+    0.262
+   ],
+   "prior_timing_z:hold_z": [
+    0.157,
+    -0.026,
+    0.341
+   ]
+  },
+  "... without this-run position": {
+   "prior_timing_z": [
+    -0.098,
+    -0.254,
+    0.057
+   ],
+   "hold_z": [
+    0.104,
+    -0.056,
+    0.264
+   ],
+   "prior_timing_z:hold_z": [
+    0.156,
+    -0.027,
+    0.34
+   ]
+  },
+  "tracks with a hold measure": {
+   "Murray_Bridge": 0.439,
+   "Morphettville": 0.485,
+   "Morphettville_Parks": 0.557,
+   "Gawler": 0.577
+  },
+  "leaders at 200 m: odds ratio per 1 m/s (early momentum, late momentum), lead per 0.1 s": {
+   "early_mom": 0.231,
+   "early_ci": [
+    0.095,
+    0.559
+   ],
+   "late_mom": 88.173,
+   "late_ci": [
+    46.557,
+    166.99
+   ],
+   "lead_per_0.1s": 1.812,
+   "leaders": 1411,
+   "won_%": 46.8
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "coverage: Qld rows with an earlier tracked run %": 83.6,
+ "A (judge 2024, clean)": {
+  "coef_per_sd": {
+   "dip_last": 0.0239,
+   "dip_prior": 0.1027,
+   "dip_miss": 0.0449
+  },
+  "races": 2409,
+  "lp": 0.00487,
+  "lp_lo": 0.00086,
+  "lp_hi": 0.00942,
+  "hit": 0.04,
+  "hit_lo": -0.79,
+  "hit_hi": 0.82,
+  "top3": 0.5
+ },
+ "B (judge 2025-26, re-used)": {
+  "coef_per_sd": {
+   "dip_last": 0.047,
+   "dip_prior": 0.0948,
+   "dip_miss": 0.0593
+  },
+  "races": 4730,
+  "lp": 0.00108,
+  "lp_lo": -0.00213,
+  "lp_hi": 0.00403,
+  "hit": -0.08,
+  "hit_lo": -0.66,
+  "hit_hi": 0.45,
+  "top3": -0.02
+ }
+}
