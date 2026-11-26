@@ -1,15 +1,15 @@
-run_utc=2026-11-26T03:49:44Z runner_ip=4.227.166.243
+run_utc=2026-11-26T04:24:26Z runner_ip=4.249.19.192
 TAB meetings|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB racecard|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
-Racing Queensland|404|202005|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
-Racing NSW FreeFields|200|23845|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
+Racing Queensland|404|202325|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
+Racing NSW FreeFields|200|23844|text/html; charset=utf-8|<!doctype html><html class="no-js" lang="en"><head><!-- Google Tag Manager --><script>
 Breednet|200|28973|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>    <!-- Google 
-racing.com|200|756785|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" 
+racing.com|200|756707|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" 
 TAB meetings (Accept json)|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB api robots.txt|200|3987|text/html|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 TAB www robots.txt|ERR 28|<!DOCTYPE html><html lang="en"><head>    <meta charset="utf-8">    <title>TAB.com.au</title>  
 Racing NSW FreeFields robots.txt|200|107|text/plain|User-agent: *Disallow: /Disallow: /InteractiveForm/Disallow: /FreeServices/Disallow: /FreeFi
-Racing NSW stewards diary|200|46942|text/html; charset=utf-8|<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD
+Racing NSW stewards diary|200|46941|text/html; charset=utf-8|<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD
 racingnsw.com.au robots.txt|404|172|text/plain; charset=utf-8|Sitemap: https://www.racingnsw.com.au/sitemap.xmlSitemap: https://www.racingnsw.com.au/news-sitemap
 Racing NSW stewards rundown PDF|200|132626|application/pdf|%PDF-1.7%µµµµ1 0 obj<</Type/Catalog/Pages 2 0 R/Lang(en) /StructTreeRoot 17 0 R/MarkInfo<</Mar
 Racing Australia robots.txt|200|451|text/plain|User-agent: GooglebotDisallow: User-agent: googlebot-imageDisallow: User-agent: googlebot-mo
@@ -17,3 +17,12 @@ Racing Victoria robots.txt|200|76|text/plain|User-agent: *Allow: /Sitemap: https
 Racing Victoria stewards reports|200|101294|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" 
 Racing Queensland robots.txt|200|56|text/plain|Sitemap: https://www.racingqueensland.com.au/sitemap.xml
 RQ stewards report|200|224515|text/html; charset=utf-8|<!DOCTYPE html><html lang="en"><head id="head"><script type="text/javascript">window.NREUM||
+Racing SA robots.txt|301|0|text/html; charset=UTF-8|
+Country Racing SA robots.txt|200|184|text/plain; charset=UTF-8|User-agent: *Disallow: /modules/Disallow: /email_share/shareUser-agent: facebookexternalhitDisa
+Racing SA meeting page (slug)|301|0|text/html; charset=UTF-8|
+Racing SA meeting page (id)|301|0|text/html; charset=UTF-8|
+Racing SA gear change PDF|301|0|text/html; charset=UTF-8|
+Country Racing SA gear change PDF|200|66527|application/pdf|%PDF-1.7%‚„œ”707 0 obj<</Linearized 1/L 66527/O 709/E 22068/N 10/T 66115/H [ 481 212]>>endobj 
+RWWA static robots.txt|403|111|application/xml|<?xml version="1.0" encoding="UTF-8"?><Error><Code>AccessDenied</Code><Message>Access Denied</Messa
+Racing WA robots.txt|429|25128|text/html; charset=utf-8|<!DOCTYPE html><html lang="en" data-astro-cid-4wdtffzm><head><meta charset="utf-8"><meta name="viewp
+Tasracing robots.txt|200|165|text/plain; charset=utf-8|User-agent: *Disallow: /_hcms/preview/Disallow: /hs/manage-preferences/Disallow: /hs/preferences-

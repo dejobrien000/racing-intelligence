@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /modules/
+Disallow: /email_share/share
+
+User-agent: facebookexternalhit
+Disallow:
+
+# Dynamic sitemap
+Sitemap: https://www.countryracingsa.com.au/seo/xmlSitemap
