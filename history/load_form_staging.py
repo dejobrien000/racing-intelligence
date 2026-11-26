@@ -34,7 +34,10 @@ for c in ['career_starts', 'career_wins', 'career_places', 'runs_since_spell', '
 if len(P):
     P = P.merge(R[['capture_day', 'ven', 'race', 'n', 'horse_key', 'name_key']], on=['capture_day', 'ven', 'race', 'n'], how='left')
     P['start_date'] = pd.to_datetime(P.start_date, errors='coerce').dt.date
-    P = P.sort_values('capture_day').drop_duplicates(['horse_key', 'start_date', 'venue', 'start_type', 'distance'], keep='last')
+    P['is_race'] = P.start_type.isin(['LastStarts', 'WinRun'])   # TAB types: LastStarts, WinRun (repeats a recent win), Trial
+    # TAB never publishes past-start barriers (0 or blank on every line, 26 Nov 2026 check of 2,934 lines): unavailable, not zero
+    P['barrier'] = None; P['barrier_note'] = 'not published by TAB form records'
+    P = P.sort_values(['capture_day', 'start_type']).drop_duplicates(['horse_key', 'start_date', 'venue', 'distance', 'is_race'], keep='last')
 con = duckdb.connect(DB)
 con.register('R_', R); con.execute('create or replace table stg_form_runner as select * from R_')
 if len(P): con.register('P_', P); con.execute('create or replace table stg_form_start as select * from P_')
@@ -43,6 +46,7 @@ latest = R.sort_values('capture_day').groupby('horse_key').tail(1)
 B = con.execute("""select u.name_key, u.dam, u.meeting_date from bn_runner u join bn_race r using (meeting_date, slug, race_no)
                     where u.finish_pos is not null and not coalesce(r.is_trial, false)""").fetchdf(); B['dam_key'] = B.dam.map(nk)
 Q = con.execute("select name_key, meeting_date from starter where finish_pos is not null").fetchdf()
+B['name_key'] = B.name_key.map(nk); Q['name_key'] = Q.name_key.map(nk)   # our tables keep spaces in name_key (fix 26 Nov 2026)
 B = B[B.name_key.isin(latest.name_key)]; Q = Q[Q.name_key.isin(latest.name_key)]
 rows = []
 for hk, nmk, dk in latest[['horse_key', 'name_key', 'dam_key']].itertuples(index=False):
@@ -54,10 +58,11 @@ C['completeness'] = [('first starter (TAB: 0 starts)' if cs == 0 else 'complete'
                      for cs, h in zip(C.career_starts, C.runs_held)]
 con.register('C_', C); con.execute('create or replace table stg_career as select * from C_')
 if len(P):
-    races = P[P.start_type.str.lower().str.startswith('race', na=False)].copy() if 'start_type' in P else P.iloc[:0]
+    races = P[P.is_race].copy()
     ours = con.execute("""select u.name_key, u.meeting_date start_date, u.finish_pos from bn_runner u join bn_race r using (meeting_date, slug, race_no) where not coalesce(r.is_trial, false)
                           union all select name_key, meeting_date, finish_pos from starter""").fetchdf()
-    ours['start_date'] = pd.to_datetime(ours.start_date).dt.date
+    ours['start_date'] = pd.to_datetime(ours.start_date).dt.date; ours['name_key'] = ours.name_key.map(nk)
+    ours = ours.drop_duplicates(['name_key', 'start_date'])   # Qld runs appear in both Breednet and RQ
     K = races.merge(ours, on=['name_key', 'start_date'], how='left'); K['finish_tab'] = pd.to_numeric(K.finish, errors='coerce')
     K['status'] = ['not held by us' if pd.isna(o) else ('agree' if t == o else 'disagree') for t, o in zip(K.finish_tab, K.finish_pos)]
     con.register('K_', K[['horse_key', 'name_key', 'start_date', 'venue', 'finish_tab', 'finish_pos', 'status']]); con.execute('create or replace table stg_form_check as select * from K_')
