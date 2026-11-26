@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TAB.com.au</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            overflow: hidden
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.75
+        }
+
+        a {
+            color: #c1d22a
+        }
+
+        .phone-link::before {
+            content: '';
+            vertical-align: text-bottom;
+            display: inline-block;
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABwElEQVQ4y43UMUvVYRTH8XPvxeuQtjQJiY4tRUOBUINaQUtgeQ3C3kFvoCUIatEpqjFasiC1cu8lFA0FNSQoGLg0GYRK+GnwCM+9Xq//A384nN853+f5P+c8T0QXQxO38QZr2MEf/MjYDJpRxXATP/EWdzCaCwzgTMYWM+dWL1ADc3iPaxUWvop3WdPoljCHZxis9Cv7NYNZM9cptLB0FAz9GMcTfMFj9BfQJbTKBmxg8gjYPfzVbqsYw8nMmcQvNAOzWDgC9shhW8XlBNwvcl/hbrRttx12owP0FPMF7HXZDExjObCOkQ7YafwuYC8KbRzPOzuLEawHtg8OuBA/FLDvOFGh403sBLbK7mIYewnbxtmKI9TETj0iNiNiqNAuRkQt/Qe1Wu1bpaHcZ2zWI+JrRJwrhL3C/1cRFhFxISI+1yNiJSKmCmGj8IdxHX0VgFMRsVIO9kSexak8vy2cxy4uHXN+EzlK/QeBmXxBBlDDJzzES3w8BjaQtTOdwnxe9Ebe3aHs8lgPWD1r5ruJjRSXcSVjzR6wybxlh4a8M3E6H8+F9EfRl99oxhYypxVVLBs1m7tdy8bspr+cWtfd/wcsQY1q4fHNxAAAAABJRU5ErkJggg==)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        a:focus,
+        a:hover {
+            text-decoration: underline
+        }
+
+        header {
+            width: 100%;
+            height: 58px;
+            background: #008542;
+            position: relative
+        }
+
+        .container {
+            color: #fff;
+            max-width: 700px;
+            width: 90%;
+            padding: 25px;
+            background: rgba(0, 0, 0, .6);
+            text-align: center;
+            margin: 30px auto 0
+        }
+
+        .container h1,
+        .container p {
+            text-align: left
+        }
+
+        .container h1 {
+            font-size: 25pt;
+            line-height: 25pt;
+            color: #c1d22a
+        }
+
+        .container p {
+            line-height: 15pt
+        }
+    </style>
+</head>
+
+<body>
+    <header><svg width="100%" height="100%" viewBox="0 0 86 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
+            <g transform="matrix(0.51497,0,0,0.517647,0,0)">
+                <use xlink:href="#_Image1" x="0" y="0" width="167px" height="85px" />
+            </g>
+        </svg></header>
+    <main>
+        <div class="container">
+            <h1>tab.com.au is unavailable from your location</h1>
+            <p>It appears you are visiting our website from a country we are unable to give access to.<br><br>If you are
+                in a country we are licensed to operate in, get in touch and we will do all we can to connect
+                you.<br>That is something you can bet on.<br><br><span style="line-height:24pt"><a class="phone-link"
+                        href="tel:131-802">131 802</a> (In Australia)<br><a class="phone-link"
+                        href="tel:+61-2-9407-0850">+61 2 9407 0850</a> (International Betting)<br><a class="phone-link"
+                        href="tel:+61-2-8863-5320">+61 2 8863 5320</a> (International Customer Service)<br>Contact <a
+                        href="https://help.tab.com.au/s/contactsupport">Help Desk</a></span></p>
+        </div>
+    </main>
+</body>
+
+</html>
