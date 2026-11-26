@@ -1,7 +1,9 @@
 # Batch 14 follow-up ledger (27 Nov 2026, 00:23-01:30): physical profiles, momentum, rider characteristics
 
 Brief: "Horse Intel - Targeted Research Follow-up: Physical Profiles, Momentum and Rider Characteristics" (Damo, 00:23 27 Nov).
-Follows Batch 14 (Damo's "Research Batch 13"; see ../README.md for the naming). Research only: no production change, no new collector,
+Follows Batch 14 (Damo's "Research Batch 13"; see ../README.md for the naming).
+Report (Docs): "Horse Intel - Batch 14 follow-up: physical profiles, momentum and riders" (artifact 9c88b391-1ae1-4275-a6e1-c6d21cdd0eeb).
+The Batch 14 report (artifact fe361e22-4a0f-48ed-b364-102f50e78c52) now carries the naming note and a link to the follow-up. Research only: no production change, no new collector,
 no new system, no market data anywhere. Existing database, staging and evaluation harness only. Production stays Engine v2.3 (six
 states) and Engine v2.1.3 (Qld) from the 27 Nov run.
 
