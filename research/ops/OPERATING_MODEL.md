@@ -116,7 +116,7 @@ with switches on = runs end to end (frames identical to the fitted ones, labels 
 | bm_change train/serve gap | release clean-up | Never served; serving would cost 0.0008; drop from training at the next release (decision) |
 | v2.3 frame build rewrites out/out_nat_r20*.csv and out_nat_venue_offsets.csv | operational fix | Side effect seen 27 Nov (restored from git); make the frame build write to a scratch path (with the next release wiring) |
 | State seconds-per-length (Qld 0.170, SA 0.159, Vic 0.162) | research (national comparability) | Open: test state-specific conversion on horses moving between states |
-| Common national framework for Qld (shadow) | build | Approved 26 Nov; not yet wired (next) |
+| Common national framework for Qld (shadow) | build | Approved 26 Nov; not yet wired. Recommended 27 Nov: build together with the update-rule shadow (one rebuild); Damo's call |
 | Kept open (untested, not rejected): course geometry and momentum retention; acceleration x course configuration; extra ground vs optimal distance; cross-jurisdiction inference; dynamic distance suitability | research | Open. An empirical leader-hold rate by track is not geometry |
 | Moonee Valley new layout (planned 2027) | data rule | New configuration key when racing resumes; no transfer of old-layout tendencies |
 | Measured race times vs margins x 0.170 s/L (Qld, SA, Vic) | research | Open |
