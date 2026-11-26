@@ -230,7 +230,7 @@ for track, grp in v2rows.groupby('track', sort=False):
         if any(t_['id'] == s_['id'] for t_ in snap_list[:i_]):
             s_['id'] += '-reissue' + s_['v2_scored_utc'][11:16].replace(':', ''); tl = pd.Timestamp(s_['v2_scored_utc']).tz_convert('Australia/Brisbane')
             s_['label'] += f" - re-issued {tl.strftime('%-I:%M%p').lower()} Brisbane"; notes.append(f"Ratings re-issued at {tl.strftime('%-I:%M%p').lower()} Brisbane on the same fields; the earlier set is kept on file.")
-    meetings.append({'id': track.lower(), 'name': track, 'state': st, 'tz': tz, 'model_family': fam, 'rated': True, 'status': 'rated', 'notes': notes,
+    meetings.append({'id': track.lower(), 'name': track, 'state': st, 'tz': tz, 'model_family': fam, 'engine_release': m2.get('engine_release') or ENGINE_VERSION, 'rated': True, 'status': 'rated', 'notes': notes,
                      'conditions': {k_: (re.sub(r'Riders$', '', v_).strip() if isinstance(v_, str) else v_) for k_, v_ in {'going': cond.get('track_condition'), 'rail': cond.get('rail'), 'weather': cond.get('weather_text') or cond.get('weather'), 'rainfall': cond.get('rainfall'),
                                     'penetrometer': cond.get('penetrometer') or None, 'updated': cond.get('conditions_updated') or cond.get('track_information'), 'scratchings_close': cond.get('scratchings_close'),
                                     'scratchings_published': cond.get('scratchings_last_published')}.items()},
@@ -301,7 +301,7 @@ for m in meetings:
         cut_ = pd.Timestamp(DATE + 'T00:00:00+10:00') + pd.Timedelta(minutes=(r['time_brisbane_min'] or 0) - 5)
         qs_ = [q for q in QUOTES if q['kind'] == 'fixed_win' and (q['meeting'], q['race_no'], q['saddlecloth']) == (m['name'], r['no'], h['n']) and pd.Timestamp(q['captured_utc']) <= cut_]
         qq_ = max(qs_, key=lambda q: q['captured_utc']) if qs_ else None
-        sel.append({'meeting': m['name'], 'state': m['state'], 'race': r['no'], 'time': r['time'], 'tz': r['tz'], 'horse': h['horse'], 'n': h['n'], 'model_version': ENGINE_VERSION,
+        sel.append({'meeting': m['name'], 'state': m['state'], 'race': r['no'], 'time': r['time'], 'tz': r['tz'], 'horse': h['horse'], 'n': h['n'], 'model_version': m.get('engine_release') or ENGINE_VERSION,   # per meeting (26 Nov fix: Qld meetings were labelled v2.2)
                     'rank': 1, 'win_chance': h['cal'], 'classification': r['label'], 'price': qq_ and qq_['price'], 'price_source': qq_ and 'TAB fixed win', 'price_time_utc': qq_ and qq_['captured_utc'], 'result': None, 'settlement': 'pending'})
 ROI = {'status': 'waiting', 'selections': sel,
        'rules': ['A selection is the top-rated runner in the latest prediction saved before the race starts. It is frozen at that point and never re-created after the race.',
@@ -313,7 +313,7 @@ ROI = {'status': 'waiting', 'selections': sel,
        'paper': {'selections': len(sel), 'priced': sum(1 for x in sel if x['price']), 'settled': 0}, 'realised': {'bets': 0}, 'groups': []}
 data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'date': DATE, 'weekday': pd.Timestamp(DATE).strftime('%A'), 'exported_utc': NOW.isoformat(),
         'snapshot_note': 'Read-only snapshot, republished after each successful refresh. Built only from predictions saved before racing.',
-        'engine': {'operational': ENGINE_VERSION, 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
+        'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Engine v1 (still scored alongside for monitoring)',
                    'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(MAN['families']['QLD']['score_per_kg_total'], MAN['families']['NSW_VIC_ACT']['score_per_kg_total']),
                    'calibration': {k: {'races': v['races'], 'runners': v['runners'], 'top_pick_tiers': v['top_pick_tiers_2025_26'], 'terciles': v['top_pick_terciles'], 'deciles': v['deciles']} for k, v in RC['families'].items()}},
         'meetings': meetings, 'leaderboard': lb,
