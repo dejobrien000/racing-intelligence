@@ -56,6 +56,12 @@ jobs:
           followz "https://www.countryracingsa.com.au/meeting/5185273" "Country Racing SA meeting page (compressed transfer)" probe/bodies/sa/meeting_z.html
           followz "https://www.countryracingsa.com.au/meeting/5185274" "Country Racing SA neighbouring id 5185274" probe/bodies/sa/meeting_5185274.html
           followz "https://www.countryracingsa.com.au/meeting/5172620" "Country Racing SA id of a Qld meeting (Toowoomba 29 Oct 22)" probe/bodies/sa/meeting_qld.html
+          mkdir -p probe/bodies/nsw
+          followz "https://www.racingnsw.com.au/wp-json/wp/v2/posts?search=stewards%20notifications&per_page=5&_fields=id,date,date_gmt,modified_gmt,link,title" "Racing NSW WordPress posts API (stewards notifications)" probe/bodies/nsw/posts.json
+          followz "https://www.racingnsw.com.au/wp-json/wp/v2/media?search=stewards_info&per_page=5&_fields=id,date_gmt,source_url,title" "Racing NSW WordPress media API (stewards_info PDFs)" probe/bodies/nsw/media.json
+          followz "https://www.racingnsw.com.au/wp-json/" "Racing NSW WordPress API index" probe/bodies/nsw/index.json
+          followz "https://www.racingnsw.com.au/robots.txt" "Racing NSW www robots" probe/bodies/nsw/robots.txt
+          for f in probe/bodies/nsw/*.json; do [ -s "$f" ] && [ $(stat -c%s "$f") -gt 200000 ] && { head -c 200000 "$f" > "$f.cut"; mv "$f.cut" "$f"; }; done
           for f in probe/bodies/sa/*.html probe/bodies/sa/*.xml; do [ -s "$f" ] && [ $(stat -c%s "$f") -gt 400000 ] && { head -c 400000 "$f" > "$f.cut"; mv "$f.cut" "$f"; }; done
           check "https://racingsa.com.au/robots.txt" "Racing SA robots.txt"
           check "https://www.countryracingsa.com.au/robots.txt" "Country Racing SA robots.txt"
