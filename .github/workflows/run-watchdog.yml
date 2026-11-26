@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: '50 22 * * *'   # 08:50 Brisbane: today's morning run should have published
     - cron: '45 14 * * *'   # 00:45 Brisbane: yesterday's evening capture should be saved
+    - cron: '15 22 * * *'   # 08:15 Brisbane: PC collector checks (only once pc_collector/ENABLED exists)
   workflow_dispatch:
 permissions:
   contents: read
@@ -15,7 +16,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check
         run: |
-          H=$(TZ=Australia/Brisbane date +%H); T=$(TZ=Australia/Brisbane date +%Y%m%d); Y=$(TZ=Australia/Brisbane date -d yesterday +%Y%m%d)
+          H=$(TZ=Australia/Brisbane date +%H); M=$(TZ=Australia/Brisbane date +%M); T=$(TZ=Australia/Brisbane date +%Y%m%d); Y=$(TZ=Australia/Brisbane date -d yesterday +%Y%m%d)
+          if [ "$H" = 08 ] && [ "$M" -lt 40 ] && [ "${{ github.event_name }}" = schedule ]; then
+            # PC collector: this morning's racecards and last night's final results must be on branch pc-collect, verified.
+            if [ ! -f pc_collector/ENABLED ]; then echo "PC collector not enabled yet: nothing to check"; exit 0; fi
+            git fetch -q --depth 1 origin pc-collect || { echo "::error::PC COLLECTOR: branch pc-collect unreadable"; exit 1; }
+            bad=0
+            for spec in "$T morning" "$Y evening"; do set -- $spec
+              m=$(git show FETCH_HEAD:pc/$1/$2_manifest.json 2>/dev/null) || { echo "::error::PC COLLECTOR: no $2 delivery for $1"; bad=1; continue; }
+              echo "$m" | python3 -c "import sys,json; m=json.load(sys.stdin); ok=m.get('delivered_verified') and m.get('complete'); print('$2 $1:', 'complete' if ok else 'INCOMPLETE', {k: m.get(k) for k in ('late','races_fetched','races_expected','unresolved','final_run')}); sys.exit(0 if ok else 1)" || { echo "::error::PC COLLECTOR: $2 $1 incomplete"; bad=1; }
+            done
+            for j in morning form evening; do git show FETCH_HEAD:pc/heartbeat/$j.json 2>/dev/null | python3 -c "import sys,json; h=json.load(sys.stdin); print('heartbeat $j:', h['utc'], 'ok' if h['ok'] else 'ERROR ' + h['error']); sys.exit(0 if h['ok'] else 1)" || { echo "::error::PC COLLECTOR: last $j run reported an error"; bad=1; }; done
+            exit $bad
+          fi
           if [ "$H" -ge 6 ] && [ "$H" -lt 20 ]; then
             L=research/ops/logs/$T.md
             if [ ! -f "$L" ]; then echo "::error::MORNING RUN MISSING: no $L by 08:50 Brisbane"; exit 1; fi
