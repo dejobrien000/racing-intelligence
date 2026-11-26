@@ -30,7 +30,7 @@ Engine test (s11) used the Batch 12 harness (/tmp/cand, mode R, every layer refi
 Case study, Pride Of Jenni (measured runs held): Doomben 24 May 2025 R8 2000 m (tempo z +1.96; led by 0.43 s at 800 m to go and 0.04 s at the
 400; final 200 at 14.53 m/s, 10th-fastest of 12; finished 10th by 10.9 L); Doomben 23 May 2026 R8 2000 m (tempo z +1.35; 1.84 s clear at 800 m to go, 1.24 s at the 400, 0.35 s at
 the 200; last 200 15.63 m/s vs the winner's 16.54; caught, 2nd by 0.45 s); Caulfield 27 Sep 2026 R5 1600 m (Vic tracking: led at every mark, 0.40 s clear at
-800 m from the start, lead 0.26 s at the line; final 200 16.92 m/s, third-fastest of six). Her other 32 races are held without sectionals.
+800 m from the start, lead 0.26 s at the line; final 200 16.92 m/s, third-fastest of six). Her other 33 races are held without sectionals.
 
 Moonee Valley: held 21 Oct 2022 - 25 Oct 2025 (73 meetings, old layout only; no tracking held). Redeveloped course (published plans):
 1,702 m circuit, 317 m straight (old 1,805 m and 173 m), realigned 90 degrees, planned return 2027. Rule: the new layout gets its own
