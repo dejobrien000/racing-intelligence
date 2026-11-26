@@ -39,7 +39,18 @@ jobs:
           check "https://www.racingvictoria.com.au/integrity/stewards/stewards-reports" "Racing Victoria stewards reports"
           check "https://www.racingqueensland.com.au/robots.txt" "Racing Queensland robots.txt"
           check "https://www.racingqueensland.com.au/racing/full-calendar/thoroughbred/meeting/ipsw/20260620/stewards-report" "RQ stewards report"
-          mkdir -p probe/bodies; for u in "https://api.beta.tab.com.au/robots.txt" "https://www.tab.com.au/robots.txt" "https://racing.racingnsw.com.au/robots.txt" "https://www.racingnsw.com.au/robots.txt" "https://www.racingaustralia.horse/robots.txt" "https://www.racingvictoria.com.au/robots.txt" "https://www.racingqueensland.com.au/robots.txt"; do
+          check "https://racingsa.com.au/robots.txt" "Racing SA robots.txt"
+          check "https://www.countryracingsa.com.au/robots.txt" "Country Racing SA robots.txt"
+          check "https://racingsa.com.au/meetings/31-aug-24-morphettville" "Racing SA meeting page (slug)"
+          check "https://racingsa.com.au/meeting/5185273" "Racing SA meeting page (id)"
+          check "https://racingsa.com.au/files/21070_151123_mbr.pdf" "Racing SA gear change PDF"
+          check "https://countryracingsa.com.au/files/22661_231024_sbyn.pdf" "Country Racing SA gear change PDF"
+          check "https://static.p.racingwa.com.au/robots.txt" "RWWA static robots.txt"
+          check "https://www.racingwa.com.au/robots.txt" "Racing WA robots.txt"
+          check "https://tasracing.com.au/robots.txt" "Tasracing robots.txt"
+          mkdir -p probe/bodies; for u in "https://racingsa.com.au/robots.txt" "https://www.countryracingsa.com.au/robots.txt" "https://www.racingwa.com.au/robots.txt" "https://tasracing.com.au/robots.txt"; do
+            f=probe/bodies/$(echo "$u" | sed 's#https://##; s#[/.]#_#g').txt; curl -s -m 30 -A "$UA" "$u" | head -c 20000 > "$f" || true; done
+          for u in "https://api.beta.tab.com.au/robots.txt" "https://www.tab.com.au/robots.txt" "https://racing.racingnsw.com.au/robots.txt" "https://www.racingnsw.com.au/robots.txt" "https://www.racingaustralia.horse/robots.txt" "https://www.racingvictoria.com.au/robots.txt" "https://www.racingqueensland.com.au/robots.txt"; do
             f=probe/bodies/$(echo "$u" | sed 's#https://##; s#[/.]#_#g').txt; curl -s -m 30 -A "$UA" "$u" | head -c 20000 > "$f" || true; done
           cat $OUT
       - name: Save results
