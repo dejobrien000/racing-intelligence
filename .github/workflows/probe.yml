@@ -25,8 +25,24 @@ jobs:
           check "https://mdata.racingnsw.com.au/FreeFields/Scratchings.aspx?Key=2026Nov25%2CNSW%2CWyong" "Racing NSW FreeFields"
           check "https://www.breednet.com.au/race-meeting/geel/251126/1" "Breednet"
           check "https://www.racing.com/" "racing.com"
+          # 26 Nov 2026 re-probe: same honest User-Agent, plus an ordinary Accept header asking for JSON (not browser impersonation)
+          checkj() { r=$(curl -s -o /tmp/body -w '%{http_code}|%{size_download}|%{content_type}' -m 30 -A "$UA" -H 'Accept: application/json' "$1" 2>&1) || r="ERR $?"; echo "$2|$r|$(head -c 100 /tmp/body 2>/dev/null | tr -d '\n\r')" >> $OUT; }
+          checkj "https://api.beta.tab.com.au/v1/tab-info-service/racing/dates/$D/meetings?jurisdiction=NSW" "TAB meetings (Accept json)"
+          check "https://api.beta.tab.com.au/robots.txt" "TAB api robots.txt"
+          check "https://www.tab.com.au/robots.txt" "TAB www robots.txt"
+          check "https://racing.racingnsw.com.au/robots.txt" "Racing NSW FreeFields robots.txt"
+          check "https://racing.racingnsw.com.au/FreeFields/Race_Diary_Stewards.aspx" "Racing NSW stewards diary"
+          check "https://www.racingnsw.com.au/robots.txt" "racingnsw.com.au robots.txt"
+          check "https://www.racingnsw.com.au/wp-content/uploads/stewards_info/22082026NCLE.pdf" "Racing NSW stewards rundown PDF"
+          check "https://www.racingaustralia.horse/robots.txt" "Racing Australia robots.txt"
+          check "https://www.racingvictoria.com.au/robots.txt" "Racing Victoria robots.txt"
+          check "https://www.racingvictoria.com.au/integrity/stewards/stewards-reports" "Racing Victoria stewards reports"
+          check "https://www.racingqueensland.com.au/robots.txt" "Racing Queensland robots.txt"
+          check "https://www.racingqueensland.com.au/racing/full-calendar/thoroughbred/meeting/ipsw/20260620/stewards-report" "RQ stewards report"
+          mkdir -p probe/bodies; for u in "https://api.beta.tab.com.au/robots.txt" "https://www.tab.com.au/robots.txt" "https://racing.racingnsw.com.au/robots.txt" "https://www.racingnsw.com.au/robots.txt" "https://www.racingaustralia.horse/robots.txt" "https://www.racingvictoria.com.au/robots.txt" "https://www.racingqueensland.com.au/robots.txt"; do
+            f=probe/bodies/$(echo "$u" | sed 's#https://##; s#[/.]#_#g').txt; curl -s -m 30 -A "$UA" "$u" | head -c 20000 > "$f" || true; done
           cat $OUT
       - name: Save results
         run: |
           git config user.name 'github-actions'; git config user.email 'github-actions@users.noreply.github.com'
-          git add probe/results.txt && git commit -m 'probe results' && git push
+          git add probe/results.txt probe/bodies && git commit -m 'probe results' && git push
