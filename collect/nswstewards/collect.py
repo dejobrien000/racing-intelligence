@@ -13,7 +13,7 @@ only for races starting after that time. Posts not found are UNKNOWN, never "no 
 Output: posts.jsonl (one line per post version: id, date_gmt, modified_gmt, link, title, content_html, content_sha256,
 captured_utc), manifest.csv (per post id: versions seen), collect.log
 Usage: python3 collect.py <outdir> [--since YYYY-MM-DD]   (default: from the newest modified_gmt already held, minus 3 days)"""
-import csv, hashlib, json, os, random, sys, time, datetime as dt
+import csv, hashlib, json, os, random, re, sys, time, datetime as dt
 import requests
 API = 'https://www.racingnsw.com.au/wp-json/wp/v2/posts'
 UA = 'RacingIntelligence-private/0.3 (personal non-commercial research; github.com/dejobrien000)'
@@ -32,15 +32,23 @@ if os.path.exists(PJ):
 since = sys.argv[sys.argv.index('--since') + 1] + 'T00:00:00' if '--since' in sys.argv else \
     (dt.datetime.fromisoformat(newest) - dt.timedelta(days=3)).strftime('%Y-%m-%dT%H:%M:%S') if seen else newest
 log('fetching posts modified after', since, '| versions held', len(seen))
-out = open(PJ, 'a', encoding='utf-8'); new = pages = refusals = 0; page = 1
-while True:
-    params = {'search': 'stewards notifications', 'per_page': 100, 'page': page, 'orderby': 'modified', 'order': 'asc',
-              'modified_after': since, '_fields': 'id,date_gmt,modified_gmt,link,title,content'}
+out = open(PJ, 'a', encoding='utf-8'); new = pages = refusals = 0
+# several searches (titles vary over the years: 'Stewards Notifications - ...', 'Late Gear Change - ...', 'Notifications To Stewards ...')
+# plus any category whose name mentions stewards; the title filter below keeps only stewards/gear notices.
+QUERIES = [{'search': t} for t in ('stewards notifications', 'late gear change', 'gear change', 'notifications to stewards', 'stewards report')]
+try:
+    cats = S.get(API.replace('/posts', '/categories'), params={'search': 'steward', 'per_page': 50, '_fields': 'id,name,count'}, timeout=60).json()
+    log('stewards categories:', [(c['id'], c['name'], c['count']) for c in cats]); QUERIES += [{'categories': c['id']} for c in cats]
+except Exception as e: log('categories lookup failed', e)
+qi, page = 0, 1
+while qi < len(QUERIES):
+    params = dict(QUERIES[qi], per_page=100, page=page, orderby='modified', order='asc', modified_after=since,
+                  _fields='id,date_gmt,modified_gmt,link,title,content')
     for attempt in range(3):
         try: r = S.get(API, params=params, timeout=60); break
         except requests.RequestException as e: log('error', e); time.sleep(20 * (attempt + 1)); r = None
     if r is None: log('STOP: no response'); break
-    if r.status_code == 400 and 'rest_post_invalid_page_number' in r.text: break
+    if r.status_code == 400 and 'rest_post_invalid_page_number' in r.text: qi, page = qi + 1, 1; continue
     if r.status_code in (403, 429, 503):
         refusals += 1; log('refused', r.status_code)
         if refusals >= 5: log('STOP: refused repeatedly'); break
@@ -50,7 +58,7 @@ while True:
     items = r.json(); pages += 1
     for p in items:
         title = (p.get('title') or {}).get('rendered', ''); html = (p.get('content') or {}).get('rendered', '')
-        if 'steward' not in title.lower() and 'gear' not in title.lower(): continue      # search also matches unrelated posts
+        if not re.search(r'steward|gear|notification', title, re.I): continue      # searches also match unrelated posts
         sha = hashlib.sha256(html.encode('utf-8')).hexdigest()
         if (p['id'], sha) in seen: continue
         seen[(p['id'], sha)] = True; new += 1
@@ -58,9 +66,10 @@ while True:
                               'title': title, 'content_html': html, 'content_sha256': sha, 'captured_utc': now()}, ensure_ascii=False) + '\n')
     out.flush()
     total = int(r.headers.get('X-WP-TotalPages', '1') or 1)
-    log(f'page {page}/{total}: {len(items)} posts, new versions so far {new}')
-    if page >= total or not items: break
-    page += 1; time.sleep(2.5 + random.random())
+    log(f'{QUERIES[qi]} page {page}/{total}: {len(items)} posts, new versions so far {new}')
+    if page >= total or not items: qi, page = qi + 1, 1
+    else: page += 1
+    time.sleep(2.5 + random.random())
 out.close()
 ver = {}
 for ln in open(PJ, encoding='utf-8'):
