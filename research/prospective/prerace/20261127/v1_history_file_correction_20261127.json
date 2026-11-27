@@ -1,0 +1,59 @@
+{
+ "what": "Record-keeping correction (Batch 16 A2 follow-up, found 27 Nov 2026 11:15 Brisbane). The national v1 files scored with Engine v2.3 recorded the fingerprint of national_runs.parquet, but the scorer read national_runs_c2.parquet. Ratings, chances, ranks and selections are untouched; the original manifests are kept as written; this file documents the correction.",
+ "verification": {
+  "national_runs_c2_last_modified_utc": "2026-11-26T21:49:21Z",
+  "master_database_manifest_modified_utc": "2026-11-26T21:31:40Z",
+  "note": "national_runs_c2.parquet was last rebuilt before these files were scored and has not changed since, so its current fingerprint is the one that was read"
+ },
+ "fix": "prerace/score_national_prerace.py now records the fingerprint and name of the history file it actually reads (national_runs_file) from the next run",
+ "files": [
+  {
+   "file": "prospective/prerace/20261127/Canterbury/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  {
+   "file": "prospective/prerace/20261127/Mount_Gambier/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  {
+   "file": "prospective/prerace/20261127/Muswellbrook/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  {
+   "file": "prospective/prerace/20261127/Pakenham/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  {
+   "file": "prospective/prerace/20261127/Queanbeyan/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  {
+   "file": "prospective/prerace/20261127/Wodonga/pred_20261126T214332Z_20261126T214958Z_manifest.json",
+   "scored_utc": "2026-11-26T21:49:58.849638+00:00",
+   "recorded_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+   "recorded_file_implied": "national_runs.parquet",
+   "file_actually_read": "national_runs_c2.parquet (code path: ENGINE_C2=1 reads national_runs_c2.parquet)",
+   "its_sha256_now": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  }
+ ]
+}

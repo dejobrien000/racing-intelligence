@@ -6,6 +6,7 @@ by the release's frozen SDs. Missing information is never treated as poor perfor
 import json, os, numpy as np, pandas as pd
 V24 = os.environ.get('ENGINE_V24', '0') == '1' and os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.4 CANDIDATE (v2.3 + handicap weight slope); off unless set; shadow only until released
 MPATH = os.path.join(os.path.dirname(__file__), '..', 'benchmarks', *(('engine_v2_4_candidate', 'engine_v2_2.json') if V24 else ('engine_v2_3', 'engine_v2_2.json') if os.environ.get('ENGINE_C2', '0') == '1' else ('engine_v2_2', 'manifest.json')))
+if os.environ.get('ENGINE_CAND_DIR') and os.environ.get('ENGINE_C2', '0') == '1' and not V24: MPATH = os.path.join(os.environ['ENGINE_CAND_DIR'], 'engine_v2_2.json')   # SHADOW CANDIDATE ONLY (Batch 16 B9)
 M = json.load(open(MPATH))
 K = M['constants']; VL = M['venue_level_kg']; AL = M['venue_alias']
 def _slope(a):

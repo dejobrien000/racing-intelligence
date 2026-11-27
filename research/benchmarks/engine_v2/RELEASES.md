@@ -175,3 +175,11 @@
   "SSC R8" of 27 Nov was a calendar misread (TAB lists 7 races). RACE lines gain TAB's raceClassConditions (collection only).
 - Tracking display (A5): runs shown are cut at the forecast's own history cutoff, with the database release that supplied them; a
   later re-export says when tracking was added after the forecast; a read error is shown as an error, not as "no tracked runs".
+- First-layer history file (A2 follow-up, 27 Nov 11:15): prerace/score_national_prerace.py recorded the fingerprint of
+  national_runs.parquet while Engine v2.3 reads national_runs_c2.parquet. From the 28 Nov run it records the file it actually reads
+  (national_runs_file + national_runs_sha256) and any rating-update settings. 27 Nov correction:
+  prospective/prerace/20261127/v1_history_file_correction_20261127.json (6 national files; originals unchanged; the v2.3 history file was
+  built 36 s before scoring and has not changed since). Replay of the 6 national meetings on the new code: every number identical
+  (v1 and v2, 2,175 runner rows).
+- Shadow-only engine overrides (Batch 16 B9): ENGINE_CAND_DIR / ENGINE_CAND_FRAME / ENGINE_CAND_LABEL point the three layers at a
+  candidate's own files; unset in production (verified by the replay above). Used only by ops/run_update_shadow.sh.

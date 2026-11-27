@@ -29,6 +29,7 @@ def row(m, r, pred, engine, pfile, chances, finish, cal=None):
 SH = pd.read_csv('prospective/shadow/qld_v2_1_2/INDEX.csv') if os.path.exists('prospective/shadow/qld_v2_1_2/INDEX.csv') else None
 PV = pd.read_csv('prospective/shadow/prev_engines/INDEX.csv') if os.path.exists('prospective/shadow/prev_engines/INDEX.csv') else None   # previous production engines (from 27 Nov 2026)
 V4 = pd.read_csv('prospective/shadow/v2_4_candidate/INDEX.csv') if os.path.exists('prospective/shadow/v2_4_candidate/INDEX.csv') else None   # Engine v2.4 candidate shadow (from 27 Nov 2026)
+UR = pd.read_csv('prospective/shadow/update_rule/INDEX.csv') if os.path.exists('prospective/shadow/update_rule/INDEX.csv') else None   # rating update rule candidate shadow (Batch 16 B9, from 28 Nov 2026)
 out = []
 for m in DJ['meetings']:
     if not m.get('rated'): continue
@@ -44,6 +45,12 @@ for m in DJ['meetings']:
             s4 = V4[(V4.date.astype(str) == Y) & (V4.track == m['name']) & V4.file.str.contains('/v2_') & V4.file.str.endswith('_runners.csv')]
             if len(s4): v4f = s4.sort_values('scored_utc').file.iloc[-1]; v4 = pd.read_csv(v4f)
     except Exception as ex: print('WARNING v2.4 shadow unreadable for', m['name'], str(ex)[:100]); v4 = None
+    ur, urf = None, None
+    try:
+        if UR is not None and m.get('model_family') != 'QLD':
+            su = UR[(UR.date.astype(str) == Y) & (UR.track == m['name']) & UR.file.str.contains('/v2_') & UR.file.str.endswith('_runners.csv')]
+            if len(su): urf = su.sort_values('scored_utc').file.iloc[-1]; ur = pd.read_csv(urf)
+    except Exception as ex: print('WARNING update-rule shadow unreadable for', m['name'], str(ex)[:100]); ur = None
     prev, pvf, prev_label = None, None, None
     try:
         if PV is not None:
@@ -64,6 +71,10 @@ for m in DJ['meetings']:
         if v4 is not None:
             g = v4[v4.race_no == r['no']]
             x = row(m, r, 'shadow', 'Engine v2.4-candidate (not live)', v4f, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
+            if x: out.append(x)
+        if ur is not None:
+            g = ur[ur.race_no == r['no']]
+            x = row(m, r, 'shadow', 'Update-rule candidate (not live)', urf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
         if prev is not None:
             g = prev[prev.race_no == r['no']]

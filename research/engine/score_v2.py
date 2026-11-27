@@ -15,6 +15,8 @@ C2 = os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.3 candidate for NSW/V
 Q213 = os.environ.get('ENGINE_QLD213', '0') == '1' and V21   # Engine v2.1.3 candidate for Queensland only: v2.1.1 + Age & sex family (benchmarks/engine_v2_1_3); default off
 # the file each family's settings were actually loaded from (fingerprints are taken from these, 27 Nov 2026 fix)
 FAMILY_FILE = {'NSW_VIC_ACT': 'benchmarks/engine_v2_3/engine_v2.json' if C2 else BASE_MANP, 'QLD': 'benchmarks/engine_v2_1_3/manifest.json' if Q213 else BASE_MANP}
+CAND = os.environ.get('ENGINE_CAND_DIR') if C2 else None   # SHADOW CANDIDATE ONLY (Batch 16 B9 update rule): own engine files and rating frame; unset in production
+if CAND: FAMILY_FILE['NSW_VIC_ACT'] = os.path.join(CAND, 'engine_v2.json')
 if C2: MAN['families']['NSW_VIC_ACT'] = json.load(open(FAMILY_FILE['NSW_VIC_ACT']))['families']['NSW_VIC_ACT']
 if Q213: MAN['families']['QLD'] = json.load(open(FAMILY_FILE['QLD']))['families']['QLD']
 SNAPDIR = os.environ.get('SNAPDIR', '/mnt/user-data/uploads/Downloads')   # override for cloud-collected bundles
@@ -31,6 +33,7 @@ dband = lambda m: 's' if m <= 1150 else 'm' if m <= 1450 else 'mi' if m <= 1750 
 METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown'}
 _U = {}
 def frame_path(fam):
+    if CAND and fam != 'QLD': return os.environ['ENGINE_CAND_FRAME']
     return 'engine/frames/national_v3.parquet' if (V21 and fam == 'QLD') else ('engine/frames/national_c2.parquet' if C2 else 'engine/frames/national.parquet')
 def history(D, fam='NSW_VIC_ACT'):
     key = 'U3' if (V21 and fam == 'QLD') else 'U'
@@ -163,7 +166,8 @@ def provenance(fam, ix, H_, m2, fallback):
             'settings_files_loaded': files, 'v1_layer_settings': v1set,
             'rating_build': {'history_frame': frame_path(fam), 'history_frame_sha256': fsha(frame_path(fam)), 'history_rows': int(len(_U['U3' if (V21 and fam == 'QLD') else 'U'])), 'v1_national_runs_sha256': v1runs},
             'rating_scale_model_units_per_kg': F['score_per_kg_total'], 'history_cutoff': str(H_.date.max().date()), 'generated_utc': m2['scored_utc'],
-            'fallback': fallback or False}
+            'fallback': fallback or False,
+            'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X'] if os.environ.get(k)} or None}
 
 if __name__ == '__main__':
     D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')
@@ -190,7 +194,7 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha(FAMILY_FILE[fam]), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else ((('Engine v2.4-candidate (not live)' if v22.V24 else 'Engine v2.3') if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha(FAMILY_FILE[fam]), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else (((os.environ.get('ENGINE_CAND_LABEL', 'candidate (not live)') if CAND else 'Engine v2.4-candidate (not live)' if v22.V24 else 'Engine v2.3') if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         if SHADOW_PREV: m2['shadow'] = 'NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled'
         try: m2['settings'] = provenance(fam, ix, H_, m2, fallback)      # record only: a failure here never stops scoring

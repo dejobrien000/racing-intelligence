@@ -15,6 +15,7 @@ def run(d, s, q, sig0, d0, a_q=0.0, n0=6.0, v_spell=0.0, s_first=0.0, c_trend=0.
     horses = d.horse.values; dates = d.date.values.astype('datetime64[D]').astype(np.int64); perf = d.perf.values
     keys = d.race_key.values; starts = np.r_[0, np.flatnonzero(keys[1:] != keys[:-1]) + 1, len(d)]
     ll, n, lld, nd = 0.0, 0, 0.0, 0
+    import os; GOOD = float(os.environ.get('RATING_GOOD_X', '1'))
     dev_end = np.datetime64('2025-01-01').astype('datetime64[D]').astype(np.int64)
     for a, b in zip(starts[:-1], starts[1:]):
         hs = horses[a:b]; t = dates[a]
@@ -37,7 +38,10 @@ def run(d, s, q, sig0, d0, a_q=0.0, n0=6.0, v_spell=0.0, s_first=0.0, c_trend=0.
             if c_trend:
                 pr = np.array([prev.get(h, 0.0) for h in hs[ok]]); same = (np.sign(pr) == np.sign(inn)) & (pr != 0)
                 vv_ = np.where(same, vv_ * (1 + c_trend), vv_)
-            K = vv_ / (vv_ + sr * sr); m[ok] = mm_ + K * inn; v[ok] = (1 - K) * vv_
+            K = vv_ / (vv_ + sr * sr)
+            if GOOD != 1.0: m[ok] = mm_ + K * np.where(inn > 0, GOOD * inn, inn)   # CANDIDATE ONLY (Batch 16 B11 config 3/4): good runs move the rating GOOD x; off unless RATING_GOOD_X is set
+            else: m[ok] = mm_ + K * inn
+            v[ok] = (1 - K) * vv_
             for j_, (h, i_) in enumerate(zip(hs[ok], inn)): prev[h] = i_; cnt[h] = cnt.get(h, 0) + 1
             if g_imp: m[ok] = m[ok] + g_imp * np.exp(-np.array([cnt[h] for h in hs[ok]]) / n0)   # expected improvement after a run, larger for lightly raced horses
         for h, mm, vv, o in zip(hs, m, v, ok):

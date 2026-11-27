@@ -90,6 +90,9 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    Step 4 now ends with "engine performance refreshed | ..." (Engine Performance tab, display only; a WARNING there never fails the run).
    Step 5a also scores the Engine v2.4 CANDIDATE shadow (ops/run_v24_shadow.sh; v2.3 + handicap weight slope, race class from TAB's own
    class field; not live, switch file ops/engine_v24_enabled absent). Expect "v2.4 shadow scored (not live): N meetings"; a WARNING never fails the run.
+   Step 5a also scores the RATING UPDATE RULE candidate shadow (ops/run_update_shadow.sh; Engine v2.3 rebuilt with a 12-length cap on
+   the performance figure and good runs moving the rating 1.3x; its own frame engine/frames/national_update_rule.parquet, rebuilt in about a
+   minute whenever national_runs_c2.parquet is newer). Expect "update-rule shadow scored (not live): N meetings"; a WARNING never fails the run.
 5a. Shadow (NOT LIVE; approved by Damo 25 Nov 2026): right after publishing, run cd research && ops/run_shadow.sh <TODAY>
    (Queensland Engine v2.1.2-candidate beside production; from 27 Nov it first scores the PREVIOUS engines, v2.2 and v2.1.1, kept for
    rollback and prospective comparison via ops/run_prev_shadow.sh; about 13 minutes in all; writes only prospective/shadow/). It never
