@@ -174,6 +174,22 @@ interstate connections; dynamic distance suitability; one experience-dependent l
 rate by track is not course geometry.
 
 
+## Batch 20 (27 Nov 2026): Queensland integrity, race layer, history completeness, barriers, trainer and family
+Ledger: research/batch20/README.md. Report: https://claude.ai/artifact/P4agrYWSvsCaJZViC3kv47. Harness now on production speed figures.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| Qld 55% start-count excess | form-enrichment counted RQ scratchings; 55.2% -> 0.0% after fix; frames clean | Resolved (measurement bug) |
+| Name-key collisions | 82 keys / 1,569 runs; 56 clear two-horse cases; sandbox mean 1.02 kg on affected | Correction plan (Monday, consequences first) |
+| History-completeness experience rule | +0.0010 / +0.0008 over age-aware | Candidate; freeze Monday |
+| Race layer x inexperience / uncertainty | -0.0005 / 0.0000 per race | Rejected (simplest forms) |
+| Overconfidence location | race calibration 0.90 established vs 0.99 inexperienced | Meaningful, descriptive |
+| Certainty-weighted reference | +0.0014 both periods on production figures | Candidate |
+| Pooled barrier expectation | Qld replace +0.0022 / +0.0018; SA +0.0010 | Candidate; needs pre-race rail |
+| Trainer early improvement | 0.17 kg/kg after controls; harness 0.0000 | Research only |
+| Sire's earlier debutants | 0.33 kg2 debut error after trainer readiness | Research (no breeding input approved) |
+| First-up own record | 0.14 beyond fitness terms; harness not clear | Research trait |
+
 ## Batch 19 (27 Nov 2026): emergencies, age-aware and trainer debut shadows, age vs experience, barriers, family
 Ledger: research/batch19/README.md. Report: https://claude.ai/artifact/Ltm6Q4hqN29FCehH9YzaBa. Baseline record: research/batch19/BASELINE_CORRECTION.md.
 
