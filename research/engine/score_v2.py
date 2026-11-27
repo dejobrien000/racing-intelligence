@@ -31,7 +31,13 @@ sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 gband = lambda g: 'heavy' if 'heavy' in str(g).lower() else 'soft' if 'soft' in str(g).lower() else 'synthetic' if re.search('synth|poly', str(g).lower()) else 'good'
 dband = lambda m: 's' if m <= 1150 else 'm' if m <= 1450 else 'mi' if m <= 1750 else 'l'
 METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown'}
+# METRO_FROM_TIER (approved by Damo 27 Nov 2026, Batch 18 A2; production switch ops/metro_tier_enabled): metro exactly as in training, i.e. the
+# venue's tier in the history frame (adds SA Morphettville/Morphettville Parks and WA Ascot/Belmont; Qld metros matter only to the national
+# structure). Course-variant spellings are mapped to the history venue first. No coefficient changes.
+METRO_ALIAS = {'caulfield-heath': 'caulfield', 'sandown-hillside': 'sandown', 'sandown-lakeside': 'sandown', 'royal-randwick': 'randwick', 'randwick-kensington': 'randwick',
+               'kensington': 'randwick', 'the-valley': 'moonee-valley', 'canterbury-park': 'canterbury', 'rosehill-gardens': 'rosehill'}
 _U = {}
+AGESEX_LOG = {}   # Batch 18 A1: what the first-starter age/sex step did for this run (recorded in each file's settings record)
 def frame_path(fam):
     if CAND and fam != 'QLD': return os.environ['ENGINE_CAND_FRAME']
     return 'engine/frames/national_v3.parquet' if (V21 and fam == 'QLD') else ('engine/frames/national_c2.parquet' if C2 else 'engine/frames/national.parquet')
@@ -67,14 +73,15 @@ def new_raw(T, H_, fam, records=False):
     la = T.horse.map(last.age_n); ld = T.horse.map(last.date)
     seasons = [sum(1 for y in range(d0.year, D.year + 1) if d0 < pd.Timestamp(y, 8, 1) <= D) if d0 == d0 and d0 is not None else np.nan for d0 in ld]
     T['age_n'] = la + np.array(seasons, dtype=float); T['female'] = T.horse.map(last.sex).isin(['m', 'f']).astype(float).where(T.horse.map(last.sex).notna())
-    if os.environ.get('AGESEX_TAB') == '1':   # CANDIDATE ONLY (Batch 17 B3; off unless set): a runner with no history takes age and sex from TAB's own form record
+    if os.environ.get('AGESEX_TAB') == '1' or os.path.exists('ops/agesex_tab_enabled'):   # CANDIDATE ONLY (Batch 17 B3; off unless set): a runner with no history takes age and sex from TAB's own form record
         fp = os.environ.get('AGESEX_TAB_FILE') or f"collect/national/{D:%Y%m%d}/form_runners.csv"
+        AGESEX_LOG.update({'file': fp, 'file_present': os.path.exists(fp)})
         if os.path.exists(fp):
             fr = pd.read_csv(fp); fr['k'] = fr.name.map(nk); fr = fr.drop_duplicates(['race', 'n', 'k']).set_index(['race', 'n', 'k'])
             idx = list(zip(T.race_no.astype(int), T.saddlecloth.astype(int), T.horse)); miss = T.age_n.isna().values
             tab_age = np.array([fr.age.get(i, np.nan) for i in idx], dtype=float); tab_sex = np.array([fr.sex.get(i, None) for i in idx], dtype=object)
             T['age_source'] = np.where(miss & ~np.isnan(tab_age), 'TAB form record', np.where(T.age_n.notna(), 'history', 'unknown'))
-            T.loc[miss, 'age_n'] = tab_age[miss]
+            T.loc[miss, 'age_n'] = tab_age[miss]; AGESEX_LOG['filled_from_tab'] = AGESEX_LOG.get('filled_from_tab', 0) + int((miss & ~np.isnan(tab_age)).sum()); AGESEX_LOG['still_missing'] = AGESEX_LOG.get('still_missing', 0) + int((miss & np.isnan(tab_age)).sum())
             fmiss = T.female.isna().values & pd.notna(tab_sex)
             T.loc[fmiss, 'female'] = pd.Series(tab_sex[fmiss]).isin(['Filly', 'Mare']).astype(float).values
     T['young'] = (T.age_n <= 3).astype(float).where(T.age_n.notna()); T['old'] = (T.age_n >= 7).astype(float).where(T.age_n.notna())
@@ -100,7 +107,7 @@ def new_raw(T, H_, fam, records=False):
 def terms(T, fam):
     F = MAN['families'][fam]; allt = list(F['coef_per_term_sd_all_races']); bsd = F['base_feature_dev_sd']; tsd = F['term_dev_sd']; ctx = F['context']
     T = T.copy(); T['yr'] = float(T.date.iloc[0].year - 2024); T['vic'] = (T.state == 'VIC').astype(float); T['big_field'] = (T.field >= 12).astype(float)
-    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = (T.venue.map(_U['U'].drop_duplicates('venue', keep='last').set_index('venue').tier).eq('metro').astype(float) if os.environ.get('METRO_FROM_TIER') == '1' else T.venue.isin(METRO).astype(float)) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
+    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = (T.venue.map(lambda v_: METRO_ALIAS.get(v_, v_)).map(_U['U'].drop_duplicates('venue', keep='last').set_index('venue').tier).eq('metro').astype(float) if (os.environ.get('METRO_FROM_TIER') == '1' or os.path.exists('ops/metro_tier_enabled')) else T.venue.isin(METRO).astype(float)) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
     T['abs_dist_change'] = T.dist_change.abs(); T['field_dyn'] = T.groupby('race_id').dyn_nat.transform('mean')
     def z(c):
         v = T[c].astype(float); return ((v - v.groupby(T.race_id).transform('mean')) / bsd.get(c, 1.0)).fillna(0.0)
@@ -144,7 +151,9 @@ def meeting_table(ix):
     W['horse_name'] = W.horse; W['horse'] = W.horse.map(nk); W['date'] = D; W['field'] = W.groupby('race_id').saddlecloth.transform('count')
     W['gband'] = gband(cond.get('track_condition')); W['dband'] = W.distance_m.map(dband); W['state'] = 'QLD' if fam == 'QLD' else ('VIC' if key.startswith('vic') else 'NSW')
     venue = snap.get('track') or snap.get('venue'); W['venue'] = re.sub(r'[^a-z0-9]+', '-', str(venue).lower()).strip('-')
-    W['config'] = str(venue).replace(' ', '_') if fam == 'QLD' else W.venue
+    if fam == 'QLD' and (os.environ.get('QLD_COURSE_MAP') == '1' or os.path.exists('ops/qld_course_map_enabled')):   # Batch 18 A3 (approved 27 Nov 2026)
+        from prerace.qld_courses import history_key; W['config'] = history_key(venue, cond.get('track_condition'))
+    else: W['config'] = str(venue).replace(' ', '_') if fam == 'QLD' else W.venue
     W['dyn_nat'] = W.rating_kg_national; W['v1_score'] = W.race_relative_score
     if fam != 'QLD':
         dump = f'/tmp/v2_features_{ix.track}_{D:%Y%m%d}.parquet'
@@ -177,7 +186,8 @@ def provenance(fam, ix, H_, m2, fallback):
             'rating_build': {'history_frame': frame_path(fam), 'history_frame_sha256': fsha(frame_path(fam)), 'history_rows': int(len(_U['U3' if (V21 and fam == 'QLD') else 'U'])), 'v1_national_runs_sha256': v1runs},
             'rating_scale_model_units_per_kg': F['score_per_kg_total'], 'history_cutoff': str(H_.date.max().date()), 'generated_utc': m2['scored_utc'],
             'fallback': fallback or False,
-            'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X'] if os.environ.get(k)} or None}
+            'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X'] if os.environ.get(k)} or None,
+            'serving_corrections': {'metro_from_tier': (os.environ.get('METRO_FROM_TIER') == '1' or os.path.exists('ops/metro_tier_enabled')), 'qld_course_map': (os.environ.get('QLD_COURSE_MAP') == '1' or os.path.exists('ops/qld_course_map_enabled')), 'first_starter_agesex': dict(AGESEX_LOG) or None}}
 
 if __name__ == '__main__':
     D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')
@@ -188,7 +198,7 @@ if __name__ == '__main__':
     V22_ON = V22
     for _, ix in latest.iterrows():
         V22 = V22_ON                                              # each meeting starts on the release setting (a fallback applies to one meeting only)
-        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam); fallback = os.environ.get('ENGINE_FALLBACK') or None if fam != 'QLD' else None
+        AGESEX_LOG.clear(); W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam); fallback = os.environ.get('ENGINE_FALLBACK') or None if fam != 'QLD' else None
         try:
             T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
         except Exception as ex:                                   # safety net: never lose a meeting's ratings to a v2.2 fault

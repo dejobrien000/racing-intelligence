@@ -3,7 +3,8 @@ Usage: python3 ops/parse_form.py <out dir> <form raw.txt> [more raw files ...]
    or: python3 ops/parse_form.py <form raw.txt> <out dir>            (old two-argument form, one file)
 Several raw files for one day (a first pass plus re-reads) are combined: per runner (meeting, race, number) the LATEST record
 whose past-start lines all have 15 fields is kept; if every copy is malformed the latest copy is kept and its short lines are
-listed in form_rejected_lines.csv (kept aside, never guessed). Research data only: never an input to the live ratings.
+listed in form_rejected_lines.csv (kept aside, never guessed). Mostly research data; from 28 Nov 2026 age and sex from these records feed the
+live ratings for runners with no history only (Batch 18 A1, switch ops/agesex_tab_enabled).
 Odds are never stored: a past-start line holding a price-like field is refused."""
 import sys, os, pandas as pd
 a = sys.argv[1:]

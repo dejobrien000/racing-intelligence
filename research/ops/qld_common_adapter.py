@@ -9,6 +9,7 @@ The output keeps the source snapshot's key, retrieval time and fields-PDF finger
 Usage (from research/): python3 ops/qld_common_adapter.py <YYYYMMDD> <out dir>  -> prints the written bundle path"""
 import sys, os, re, gzip, json, glob
 import pandas as pd
+sys.path.insert(0, '.'); from prerace.qld_courses import history_key
 D, OUT = sys.argv[1], sys.argv[2]
 # Racing Queensland track names -> tracked-course names in history (sponsor names) ; poly track kept apart as in history
 CONFIG = {'Sunshine Coast': 'Sunshine_Coast', 'Sunshine Coast Poly Track': 'Sunshine_Coast_Poly_Track', 'Eagle Farm': 'Eagle_Farm', 'Doomben': 'Doomben',
@@ -22,7 +23,7 @@ with gzip.open(src, 'rt') as fh:
     for line in fh:
         if not line.strip(): continue
         o = json.loads(line); v = o['value']; v = json.loads(v) if isinstance(v, str) else v
-        trk = v['track']; cfg = CONFIG.get(trk, trk.replace(' ', '_'))
+        trk = v['track']; cfg = history_key(trk, v['conditions'].get('track_condition'))   # shared map (prerace/qld_courses.py, Batch 18 A3)
         # emergencies: the SAME rule as Queensland production (prerace/score_prerace.py) so both score the same field (Batch 18 C):
         # after scratchings close, an emergency that has not been scratched has gained a start; before close it stays an emergency
         closed = False; sc_ = (v['conditions'].get('scratchings_close') or ''); mm = re.search(r'(\d{2})/(\d{2})/(\d{2}) (\d{1,2}):(\d{2})([ap]m)', sc_)

@@ -9,6 +9,8 @@ Output (write-once; an existing file is never overwritten):
 Usage (from research/):  python3 prerace/score_prerace.py <snapshot.jsonl.gz> ../history/history.duckdb [snapshot key]"""
 import sys, os, re, json, gzip, shutil, subprocess, hashlib, numpy as np, pandas as pd
 HERE = os.getcwd(); SNAP, DB = sys.argv[1], os.path.abspath(sys.argv[2]); WANT = sys.argv[3] if len(sys.argv) > 3 else None
+QMAP = os.environ.get('QLD_COURSE_MAP') == '1' or os.path.exists('ops/qld_course_map_enabled')   # Batch 18 A3 (approved 27 Nov 2026); rollback: delete the switch file
+import importlib; qld_courses = importlib.import_module('prerace.qld_courses') if QMAP else None
 REPLAY = os.environ.get('PRERACE_REPLAY') == '1'   # retrospective replay test: history cut at the race date, output to /tmp only
 SHADOW = os.environ.get('SHADOW_QLD_CANDIDATES')   # shadow scoring of a NOT-LIVE Queensland candidate (v2.1.2, approved for shadow by Damo 25 Nov 2026): own folder + own index, never the dashboard
 OUTROOT = 'prospective/shadow/qld_v2_1_2' if SHADOW else 'prospective'; OUTIDX = os.path.join(OUTROOT, 'INDEX.csv') if SHADOW else 'prospective/prerace/INDEX.csv'
@@ -50,6 +52,7 @@ fut, meta = [], []
 last_id = H.sort_values('meeting_date').groupby('name_key').horse_id.last()
 for (date, code), key in latest.items():
     s = snaps[key]; c = s['conditions']; track = s['track']
+    if QMAP: track = qld_courses.history_key(track, c.get('track_condition'))   # Batch 18 A3: today's course on its history key (display name kept below)
     scr = {(r['race_no'], h['saddlecloth']) for r in s['scratchings'] for h in r['horses']}
     # emergencies: before scratchings close they may or may not start (left out, listed); after close, an emergency
     # that has not been scratched has gained a start (Racing Queensland scratches the emergencies that miss out)
@@ -62,7 +65,7 @@ for (date, code), key in latest.items():
     for f in s['fields']:
         status = 'scratched' if (f['race_no'], f['saddlecloth']) in scr else ('emergency (pending)' if (f['emergency'] and not closed) else 'runner')
         fut.append({**f, 'status': status, 'date': date, 'track': track, 'snapshot_key': key, 'cond_raw': c.get('track_condition'), 'rail': c.get('rail')})
-    meta.append({'snapshot_key': key, 'date': date, 'meeting_code': code, 'track': track, 'retrieved_utc': s['retrieved_utc'], 'fields_pdf_sha256': s['fields_pdf_sha256'], 'after_scratchings_close': bool(closed),
+    meta.append({'snapshot_key': key, 'date': date, 'meeting_code': code, 'track': s['track'], 'history_course_key': track, 'retrieved_utc': s['retrieved_utc'], 'fields_pdf_sha256': s['fields_pdf_sha256'], 'after_scratchings_close': bool(closed),
                  'conditions': c, 'scratchings_listed': sum(len(r['horses']) for r in s['scratchings'])})
 F = pd.DataFrame(fut)
 F['meeting_date'] = pd.to_datetime(F.date).dt.date
@@ -169,7 +172,8 @@ for cname, coef in cands.items():
 RW = pd.DataFrame(rows).sort_values(['candidate', 'race_no', 'rank']); RC = pd.DataFrame(races)
 # ---------- 6. write once ----------
 for (date, code), key in latest.items():
-    track = snaps[key]['track']; od = os.path.join('/tmp/prerace_replay' if REPLAY else OUTROOT, 'prerace', date, track); os.makedirs(od, exist_ok=True)
+    track_disp = snaps[key]['track']; track = qld_courses.history_key(track_disp, snaps[key]['conditions'].get('track_condition')) if QMAP else track_disp
+    od = os.path.join('/tmp/prerace_replay' if REPLAY else OUTROOT, 'prerace', date, track_disp); os.makedirs(od, exist_ok=True)
     base = os.path.join(od, f"pred_{key.split(':')[-1]}_{stamp}")
     sel = RW.race_id.str.startswith(f'{date}-{track}-')
     paths = {'runners': base + '_runners.csv', 'races': base + '_races.csv', 'manifest': base + '_manifest.json'}
@@ -190,7 +194,7 @@ for (date, code), key in latest.items():
     new = not os.path.exists(OUTIDX)
     with open(OUTIDX, 'a') as fh:
         if new: fh.write('scored_utc,date,track,snapshot_key,file,sha256\n')
-        for kind, pth in paths.items(): fh.write(f"{scored_utc.isoformat()},{date},{track},{key},{pth},{sha(pth)}\n")
+        for kind, pth in paths.items(): fh.write(f"{scored_utc.isoformat()},{date},{track_disp},{key},{pth},{sha(pth)}\n")
     print('written', base, '| races', RC[RC.race_id.str.startswith(f'{date}-{track}-')].race_id.nunique(), '| runners', int(sel.sum()) // len(cands))
 print('scaling check (dev sd rebuilt vs frozen):', chk)
 print(RW[RW.candidate == 'combined_v1 + national dynamic rating'][['race_no', 'rank', 'saddlecloth', 'horse', 'chance_pct', 'reasons_plus', 'matched_history', 'has_sectionals']].groupby('race_no').head(3).to_string(index=False))

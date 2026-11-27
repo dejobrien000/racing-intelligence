@@ -183,3 +183,20 @@
   (v1 and v2, 2,175 runner rows).
 - Shadow-only engine overrides (Batch 16 B9): ENGINE_CAND_DIR / ENGINE_CAND_FRAME / ENGINE_CAND_LABEL point the three layers at a
   candidate's own files; unset in production (verified by the replay above). Used only by ops/run_update_shadow.sh.
+
+## Production corrections effective from the 28 Nov 2026 7:30am run (approved by Damo 27 Nov 2026, Batch 18 A1-A3)
+Each is a serving correction with its own switch file (rollback = delete the file); no coefficient changed; every shadow uses the same
+corrected inputs, so production-vs-shadow comparisons stay like-for-like from 28 Nov. Replays use this morning's saved inputs (scratch only).
+- Queensland course names (ops/qld_course_map_enabled; prerace/qld_courses.py): today's Racing Queensland names are mapped onto the
+  course keys in Queensland history (sponsor names for Cairns, Gold Coast, Warwick; spaces vs underscores everywhere; Polytrack kept
+  separate). Before: no Queensland runner had any track history in the first layer (0% vs 67% of history rows) and no Cairns runner had a
+  course record in the second layer. After (27 Nov replay): track history found for 73% of runners, Cairns course records 88%. Replay with
+  the switch off reproduces production exactly; with it on: Cairns mean change 1.1 points (max 7.2; top pick changed in 1 of 7 races),
+  Sunshine Coast 0.3 (max 2.1; no top pick changed). History keys themselves are unchanged (tracked and untracked rows of one course
+  still carry different keys - a refit question, not a serving fix).
+- Metro flag (ops/metro_tier_enabled): live metro = the venue's tier in the training history (adds SA Morphettville and Morphettville
+  Parks, WA Ascot and Belmont; course variants mapped first). 27 Nov replay: identical (no SA/WA metro meeting). Harness on SA/WA metro
+  races: 2024 -0.0021 (-0.0046 to +0.0002), 2025-26 +0.0002 (-0.0013 to +0.0017): no measurable accuracy effect; made for consistency.
+- First-starter age and sex (ops/agesex_tab_enabled; DAILY_RUN step 3b): runners with no history take age and sex from TAB's form record
+  fetched before scoring; unknown stays missing. Harness +0.0005 (2024) / +0.0009 (2025-26); 27 Nov replay: 49 runners filled, first
+  starters -1.1 to +2.0 points, no top pick changed. If the morning fetch fails, scoring falls back to the old treatment and logs it.
