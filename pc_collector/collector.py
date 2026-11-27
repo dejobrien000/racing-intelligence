@@ -20,7 +20,7 @@ form files never contain odds (only the listed non-market fields are written).""
 import sys, os, json, time, random, hashlib, base64, gzip, socket, re, traceback, urllib.request, urllib.error, urllib.parse
 import datetime as dt
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'   # 1.0.1 (27 Nov 2026): morning RACE lines end with raceClassConditions; RACES lines list each meeting's races
 APP = os.path.dirname(os.path.abspath(__file__))
 HOME = os.environ.get('RC_HOME') or os.path.dirname(APP)            # install folder (app\ lives inside it)
 CFG = {
@@ -146,6 +146,7 @@ def race_lines(rc, ven, cap, with_results=False):
     head = ['RACE', ven, f(rc.get('raceNumber')), f(rc.get('raceName')), f(rc.get('raceStartTime')), f(rc.get('raceDistance')),
             f(track), f(rail), f(rc.get('hasFixedOdds')), f(rc.get('fixedOddsUpdateTime')), cap]
     if with_results: head.append(f(rc.get('raceStatus')))
+    else: head.append(f(rc.get('raceClassConditions')))           # morning only (DAILY_RUN step 2, 27 Nov 2026); evening keeps 12 fields, status last
     pos = finish_positions(rc.get('results')) if with_results else {}
     lines = ['|'.join(head)]
     for r in sorted(rc.get('runners') or [], key=lambda x: int(x.get('runnerNumber') or 0)):
@@ -258,6 +259,7 @@ def job_morning(D, force=False):
                f'# Scheduled 07:30 Brisbane; job started {st["started_utc"]}{" (LATE: PC was not available at 07:30)" if st.get("late") else ""}. Each RACE line ends with that race\'s own observation time (UTC).',
                '# Direct JSON reads (no AI extraction). jurisdiction=QLD for QLD meetings, NSW otherwise. Prices are the evaluation layer only.']
         hdr += [f"MEET|{m['ven']}|{m['name']}|{m['state']}" for m in meets]
+        hdr += [f"RACES|{m['ven']}|{','.join(str(n) for n in m['races'])}" for m in meets]   # what TAB lists (daily_build flags any not read)
         text = '\n'.join(hdr + [l for k in expected if k in blocks for l in blocks[k]]) + '\n'
         fname = f'tab_{stamp(dt.datetime.fromisoformat(last.replace("Z", "+00:00")))}.raw.txt'
         write_atomic(path('data', D, fname), text)

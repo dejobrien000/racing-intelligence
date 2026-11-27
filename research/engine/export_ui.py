@@ -304,11 +304,12 @@ for c_ in CAL['meetings']:
     miss = []
     if not m_: miss.append('fields not collected')
     elif len(rs) < c_['races']: miss.append(f"{c_['races'] - len(rs)} race(s) without fields")
+    if c_.get('races_not_read'): miss.append('listed by TAB but racecard not read (not rated): R' + ', R'.join(map(str, c_['races_not_read'])))   # from the run's RACES lines (27 Nov 2026)
     if m_ and not m_['rated']: miss.append('not rated (no ' + c_['state'] + ' results history yet)')
     nof = [r['no'] for r in rs if not TABR.get((c_['name'], r['no']), {}).get('has_fixed_odds', True)]
     if nof: miss.append('TAB fixed odds not offered at last check: R' + ', R'.join(map(str, nof)))
     if not pr and not nof: miss.append('no TAB prices matched')
-    comp.append({'meeting': c_['name'], 'state': c_['state'], 'races_expected': c_['races'], 'races_collected': len(rs), 'runners': nr, 'fields_source': c_['fields_source'],
+    comp.append({'meeting': c_['name'], 'state': c_['state'], 'races_expected': len(c_['races_listed']) if c_.get('races_listed') else c_['races'], 'races_collected': len(rs), 'runners': nr, 'fields_source': c_['fields_source'],
                  'fields': bool(m_), 'prices': pr, 'races_rated': len(rs) if (m_ and m_['rated']) else 0, 'issues': miss})
 # leaderboard: every qualified runner ordered by calibrated win chance (comparable across races)
 lb = sorted([r for r in all_runners if r['qualified']], key=lambda r: -r['cal'])

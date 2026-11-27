@@ -117,8 +117,9 @@ check('all 29 races, none international or harness', len(races) == len(RACES) an
 mismatch = []
 for l in races:
     p = l.split('|'); k = (p[1], int(p[2])); orig = RACES[k]['line'].split('|')
-    if p[:10] != orig[:10] or len(p) != 11: mismatch.append((k, p[:10], orig[:10]))
-check('RACE lines identical to the WebFetch file (except observation time)', not mismatch, mismatch[:2])
+    if p[:10] != orig[:10] or len(p) != 12: mismatch.append((k, p[:10], orig[:10]))
+check('RACE lines identical to the WebFetch file (except observation time; class field last, 1.0.1)', not mismatch, mismatch[:2])
+check('morning file lists each meeting\'s races (RACES lines)', sum(1 for l in body.splitlines() if l.startswith('RACES|')) == len({l.split('|')[1] for l in races}))
 rl = [l.split('|') for l in body.splitlines() if l and l[0].isdigit()]
 orig_runners = [r for k in sorted(RACES) for r in RACES[k]['runners']]
 check('runner lines: same count and 12 fields', len(rl) == len(orig_runners) and all(len(x) == 12 for x in rl), (len(rl), len(orig_runners)))

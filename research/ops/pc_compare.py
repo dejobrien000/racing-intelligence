@@ -9,7 +9,7 @@ def load(p, evening):
     for ln in open(p, encoding='utf-8', errors='replace'):
         f = ln.rstrip('\n').split('|')
         if f[0] == 'RACE' and len(f) > 3:
-            ven, rn = f[1], f[2]; races[(ven, rn)] = (f[3], f[5], f[-1].lower() if evening else '')
+            ven, rn = f[1], f[2]; races[(ven, rn)] = (f[3], f[5], f[-1].lower() if evening else (f[11].upper() if len(f) > 11 else ''))   # morning: race class (27 Nov 2026)
         elif ven and len(f) >= 12 and f[0].isdigit():
             keep = f[1:8] + [f[10]] + ([f[-1]] if evening else [])
             runners[(ven, rn, f[0])] = [x.strip().upper() for x in keep]

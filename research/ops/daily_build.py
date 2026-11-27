@@ -1,7 +1,9 @@
 """Daily 7:30am run, step 1: turn TAB racecards (collected by the run, see ops/DAILY_RUN.md) into the day's field files.
 Input : collect/national/<D>/tab_<stamp>.raw.txt
   MEET|VEN|meetingName|state
-  RACE|VEN|raceNumber|raceName|raceStartTime(UTC)|raceDistance|trackCondition|railPosition|hasFixedOdds|fixedOddsUpdateTime|captured_utc
+  RACES|VEN|comma-separated race numbers TAB lists for the meeting (optional; from 27 Nov 2026)
+  RACE|VEN|raceNumber|raceName|raceStartTime(UTC)|raceDistance|trackCondition|railPosition|hasFixedOdds|fixedOddsUpdateTime|captured_utc[|raceClassConditions]
+  (the class field is optional and read by no rating; it is written to races.csv as race_class, never into class_text)
   n|name|barrier|weight|claim|rider|trainer|emergency|win|place|bettingStatus|finish
 Output: races.csv, runners.csv, calendar.json (same schema as the hand-built 25 Nov files), a Racing-Queensland-format
 bundle for QLD meetings (so the Queensland model scores them), prices/<D>/tab_<stamp>.raw.txt (OPEN prices), and
@@ -14,20 +16,23 @@ DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; base = f'collect/national/{D}'; os.makedirs(
 STATE_TZ = {'QLD': 'Australia/Brisbane', 'NSW': 'Australia/Sydney', 'ACT': 'Australia/Sydney', 'VIC': 'Australia/Melbourne', 'TAS': 'Australia/Hobart',
             'SA': 'Australia/Adelaide', 'WA': 'Australia/Perth', 'NT': 'Australia/Darwin'}
 NAT, QLD = set(json.load(open('ops/db_config.json'))['national_states']), {'QLD'}   # states whose history is in the master DB's national rating (NSW/VIC/ACT until a release adds SA/WA/TAS)
-meets, races, cur = {}, [], None
+meets, races, cur, listed = {}, [], None, {}
 for line in open(RAW, encoding='utf-8'):
     p = [x.strip() for x in line.rstrip('\n').split('|')]
     if not p[0] or p[0].startswith('#'): continue
     if p[0] == 'MEET': meets[p[1]] = {'code': p[1], 'name': p[2].title(), 'state': p[3].upper()}
+    elif p[0] == 'RACES' and len(p) >= 3:
+        listed[p[1]] = sorted({int(x) for x in re.split(r'[,\s]+', p[2]) if x.strip().isdigit()})
     elif p[0] == 'RACE':
-        cur = {'ven': p[1], 'no': int(p[2]), 'name': p[3], 'start': p[4], 'dist': p[5], 'track': p[6], 'rail': p[7], 'has': p[8] == 'true', 'fx': p[9], 'cap': p[10], 'run': []}; races.append(cur)
+        cur = {'ven': p[1], 'no': int(p[2]), 'name': p[3], 'start': p[4], 'dist': p[5], 'track': p[6], 'rail': p[7], 'has': p[8] == 'true', 'fx': p[9], 'cap': p[10],
+               'cls': (p[11] if len(p) > 11 and p[11] not in ('', 'null', 'None', '-') else None), 'run': []}; races.append(cur)
     elif cur is not None and len(p) >= 11:
         cur['run'].append(dict(zip(['n', 'name', 'barrier', 'weight', 'claim', 'rider', 'trainer', 'emergency', 'win', 'place', 'status', 'finish'], p + [''] * (12 - len(p)))))
 nul = lambda x: None if x in ('', 'null', 'None', '-') else x
 if not races: sys.exit('daily_build: no racecards in the raw file (TAB fetch failed?)')
 cap = max(r['cap'] for r in races); stamp = cap.replace('-', '').replace(':', '')[:15] + 'Z'
 csv = lambda v: '"' + str(v).replace('"', "'") + '"' if (',' in str(v) or '"' in str(v)) else str(v)
-R = ['venue,venue_code,state,tz,race_no,start_local,distance_m,race_name,class_text,track_condition,rail']
+R = ['venue,venue_code,state,tz,race_no,start_local,distance_m,race_name,class_text,track_condition,rail,race_class']
 N = ['venue_code,race_no,saddlecloth,horse,barrier,trainer,jockey,weight_kg,claim,age_sex,page_status,emergency']
 rq, nat, cal, problems = {}, set(), [], []
 for r in races:
@@ -35,7 +40,7 @@ for r in races:
     if m is None or m['state'] not in STATE_TZ: continue
     s = dt.datetime.fromisoformat(r['start'].replace('Z', '+00:00')).astimezone(ZoneInfo(STATE_TZ[m['state']]))
     loc = s.strftime('%I:%M%p').lstrip('0').lower(); vc = r['ven'].lower()
-    R.append(','.join(csv(x) for x in [m['name'], vc, m['state'], s.tzname(), r['no'], loc, nul(r['dist']) or 0, r['name'], r['name'], nul(r['track']) or '', nul(r['rail']) or '']))
+    R.append(','.join(csv(x) for x in [m['name'], vc, m['state'], s.tzname(), r['no'], loc, nul(r['dist']) or 0, r['name'], r['name'], nul(r['track']) or '', nul(r['rail']) or '', r['cls'] or '']))
     for x in r['run']:
         if not nul(x['barrier']) or not nul(x['weight']): problems.append(f"{m['name']} R{r['no']} #{x['n']} missing barrier/weight"); continue
         scr = (x['status'] or '').lower() in ('latescratched', 'scratched')
@@ -46,8 +51,13 @@ for r in races:
     if m['state'] in QLD: rq.setdefault(m['code'], []).append(r)
 for c in sorted({r['ven'] for r in races}):
     m = meets.get(c)
-    if m: cal.append({'name': m['name'], 'state': m['state'], 'tab_code': c, 'races': sum(1 for r in races if r['ven'] == c),
-                      'fields_source': 'TAB racecards (read at the 7:30am run)'})
+    if m:
+        got = sorted(r['no'] for r in races if r['ven'] == c)
+        cal.append({'name': m['name'], 'state': m['state'], 'tab_code': c, 'races': len(got), 'fields_source': 'TAB racecards (read at the 7:30am run)',
+                    **({'races_listed': listed[c], 'races_not_read': [n for n in listed[c] if n not in got]} if c in listed else {})})
+for c in sorted(set(listed) - {r['ven'] for r in races}):                  # a listed meeting with no racecard read at all
+    m = meets.get(c)
+    if m: cal.append({'name': m['name'], 'state': m['state'], 'tab_code': c, 'races': 0, 'fields_source': 'none read', 'races_listed': listed[c], 'races_not_read': listed[c]})
 open(f'{base}/races.csv', 'w').write('\n'.join(R) + '\n'); open(f'{base}/runners.csv', 'w').write('\n'.join(N) + '\n')
 json.dump({'date': DATE, 'source': f'TAB racing info-service meetings list and racecards, captured {cap}', 'excluded': ['non-Australian meetings'],
            'act_nt': 'ACT and NT meetings included when TAB lists them', 'meetings': cal}, open(f'{base}/calendar.json', 'w'), indent=1)
