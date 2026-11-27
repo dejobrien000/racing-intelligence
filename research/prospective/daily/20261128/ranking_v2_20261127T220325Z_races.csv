@@ -1,0 +1,93 @@
+meeting,race_no,race_id,runners,going,rail,top_pick,saddlecloth,final_rating_kg_eq,clear_of_2nd_kg_eq,model_chance_pct,selection_strength_pct,band_80,vs_random_x,label,v1_top_pick,changed_from_v1,second_pick,model_version,predicted_utc,day_rank
+Toowoomba,2,20261128-Toowoomba-R2,9,GOOD4,,Kirksville,1,11.8,7.0,64.5,47.7,44-51,4.29,strong,Kirksville,False,Just Plain Nuts,engine_v2,2026-11-27T22:00:35.724162+00:00,1.0
+Wagga,3,NSW|wagga|2026-11-28|3,10,SOFT5,,Palladium,1,8.7,5.4,51.3,44.0,43-45,4.4,strong,Palladium,False,Rasloc,engine_v2,2026-11-27T22:02:42.668326+00:00,2.0
+Kembla Grange,3,NSW|kembla-grange|2026-11-28|3,6,GOOD4,,Bundy Belle,6,6.8,4.4,52.7,43.6,43-45,2.62,strong,Bundy Belle,False,Thorsten,engine_v2,2026-11-27T22:01:20.108591+00:00,3.0
+Toowoomba,6,20261128-Toowoomba-R6,6,GOOD4,,Dr Farthing,4,8.0,3.3,52.0,41.0,39-43,2.46,strong,Dr Farthing,False,Rhuvaal,engine_v2,2026-11-27T22:00:35.724162+00:00,4.0
+Toowoomba,7,20261128-Toowoomba-R7,6,GOOD4,,Laurels,4,7.0,4.3,51.5,40.7,38-43,2.44,strong,Laurels,False,Cause She Can,engine_v2,2026-11-27T22:00:35.724162+00:00,5.0
+Yarra Valley,3,VIC|yarra-valley|2026-11-28|3,9,HVY8,,Xtra Black,10,7.5,5.3,47.2,40.3,40-41,3.63,strong,Xtra Black,False,Welcometodetroit,engine_v2,2026-11-27T22:03:24.698133+00:00,6.0
+Sandown,3,VIC|sandown|2026-11-28|3,9,SOFT6,,Billycart,8,6.8,4.7,44.4,38.1,37-39,3.42,strong,Billycart,False,Chip In,engine_v2,2026-11-27T22:03:03.289081+00:00,7.0
+Sandown,9,VIC|sandown|2026-11-28|9,9,SOFT6,,Nobler,8,6.8,3.8,43.6,37.5,37-38,3.37,strong,Nobler,False,Cilacap,engine_v2,2026-11-27T22:03:03.289081+00:00,8.0
+Yarra Valley,2,VIC|yarra-valley|2026-11-28|2,7,HVY8,,Love Rustler,3,7.0,3.5,44.4,37.4,37-38,2.62,strong,Torzannie,True,Heavy Is The Head,engine_v2,2026-11-27T22:03:24.698133+00:00,9.0
+Yarra Valley,5,VIC|yarra-valley|2026-11-28|5,9,HVY8,,Paltinian,4,6.5,4.2,42.4,36.5,36-37,3.28,strong,Paltinian,False,King Kauffo,engine_v2,2026-11-27T22:03:24.698133+00:00,10.0
+Toowoomba,4,20261128-Toowoomba-R4,9,GOOD4,,Sir Goldalot,2,9.7,4.6,43.6,34.0,32-35,3.06,strong,Sir Goldalot,False,Empress Aspen,engine_v2,2026-11-27T22:00:35.724162+00:00,11.0
+Kembla Grange,1,NSW|kembla-grange|2026-11-28|1,6,GOOD4,,Strawberry Impact,1,4.3,2.2,40.3,33.7,33-35,2.02,strong,Strawberry Impact,False,Tiger Turf,engine_v2,2026-11-27T22:01:20.108591+00:00,12.0
+Doomben,3,20261128-Doomben-R3,12,SOFT5,,Savisanta,1,9.5,5.7,43.7,32.8,30-35,3.94,strong,Savisanta,False,Hot Majesty,engine_v2,2026-11-27T22:00:33.720997+00:00,13.0
+Kembla Grange,2,NSW|kembla-grange|2026-11-28|2,10,GOOD4,,Glamour Magic,3,6.8,2.3,36.1,31.7,31-32,3.17,strong,Glamour Magic,False,My Star,engine_v2,2026-11-27T22:01:20.108591+00:00,14.0
+Morphettville,1,SA|morphettville|2026-11-28|1,6,GOOD4,,Miss Parton,1,3.8,2.2,37.7,31.7,31-33,1.9,strong,Miss Parton,False,Cool No More,engine_v2,2026-11-27T22:02:00.801199+00:00,15.0
+Sandown,6,VIC|sandown|2026-11-28|6,10,SOFT6,,Cavill Avenue,1,6.8,2.7,35.5,31.3,31-32,3.13,strong,Cavill Avenue,False,Handee,engine_v2,2026-11-27T22:03:03.289081+00:00,16.0
+Tab Park Gold Coast,5,20261128-Tab_Park_Gold_Coast-R5,8,SOFT6,,Oohlalouvre,6,5.9,3.8,38.2,31.2,30-32,2.5,strong,Oohlalouvre,False,Blitzburg,engine_v2,2026-11-27T22:00:34.858774+00:00,17.0
+Wagga,6,NSW|wagga|2026-11-28|6,11,SOFT5,,Fleetly,5,7.3,1.7,34.4,30.7,30-31,3.38,strong,Queue Jumper,True,Queue Jumper,engine_v2,2026-11-27T22:02:42.668326+00:00,18.0
+Rosehill,7,NSW|rosehill|2026-11-28|7,10,GOOD4,,Roselyn'S Star,2,5.6,3.5,34.0,30.1,30-31,3.01,moderate,Roselyn'S Star,False,King'S Secret,engine_v2,2026-11-27T22:02:22.183386+00:00,19.0
+Kempsey,1,NSW|kempsey|2026-11-28|1,9,SOFT6,,Truly Graphic,6,6.1,1.7,34.2,30.0,30-30,2.7,moderate,Truly Graphic,False,Morebar,engine_v2,2026-11-27T22:01:40.236881+00:00,20.0
+Toowoomba,3,20261128-Toowoomba-R3,8,GOOD4,,Terracotta Rose,2,7.5,1.3,35.5,29.6,28-31,2.37,strong,Terracotta Rose,False,Ladies Ocean Run,engine_v2,2026-11-27T22:00:35.724162+00:00,21.0
+Morphettville,5,SA|morphettville|2026-11-28|5,9,GOOD4,,Harmonic Dancer,8,5.1,2.9,33.7,29.6,29-30,2.67,moderate,Koratora,True,Koratora,engine_v2,2026-11-27T22:02:00.801199+00:00,22.0
+Ascot,3,WA|ascot|2026-11-28|3,12,SOFT5,,Westbound,2,6.8,2.6,32.7,29.5,29-30,3.54,moderate,Westbound,False,Decoration,engine_v2,2026-11-27T22:01:00.780876+00:00,23.0
+Kempsey,3,NSW|kempsey|2026-11-28|3,8,SOFT6,,Clench,2,4.3,3.0,33.8,29.4,29-30,2.35,moderate,Clench,False,Purple Prince,engine_v2,2026-11-27T22:01:40.236881+00:00,24.0
+Morphettville,2,SA|morphettville|2026-11-28|2,8,GOOD4,,Silvaloa,3,4.3,3.4,32.8,28.6,28-29,2.29,moderate,Silvaloa,False,Durham,engine_v2,2026-11-27T22:02:00.801199+00:00,25.0
+Kembla Grange,4,NSW|kembla-grange|2026-11-28|4,10,GOOD4,,Malua Bay,2,5.1,2.7,30.6,27.4,27-28,2.74,moderate,Malua Bay,False,Remember The Time,engine_v2,2026-11-27T22:01:20.108591+00:00,26.0
+Kempsey,5,NSW|kempsey|2026-11-28|5,10,SOFT6,,Hell'S Kitchen,5,5.3,2.7,29.7,26.7,26-27,2.67,moderate,Hell'S Kitchen,False,Prestige Fantastic,engine_v2,2026-11-27T22:01:40.236881+00:00,27.0
+Yarra Valley,1,VIC|yarra-valley|2026-11-28|1,7,HVY8,,Valentina Girl,10,3.8,0.0,30.6,26.6,26-27,1.86,moderate,Valentina Girl,False,Seven Day Rebels,engine_v2,2026-11-27T22:03:24.698133+00:00,28.0
+Tab Park Gold Coast,2,20261128-Tab_Park_Gold_Coast-R2,7,SOFT6,,Spirit Of Torque,2,4.5,1.2,29.3,26.3,25-28,1.84,moderate,Amourette,True,Amourette,engine_v2,2026-11-27T22:00:34.858774+00:00,29.0
+Sandown,5,VIC|sandown|2026-11-28|5,9,SOFT6,,Jett Smash,7,4.7,1.8,29.2,26.1,26-26,2.34,moderate,Jett Smash,False,Photograph,engine_v2,2026-11-27T22:03:03.289081+00:00,30.0
+Rosehill,3,NSW|rosehill|2026-11-28|3,14,GOOD4,,Another Cashie,1,7.0,1.7,27.6,25.8,25-26,3.61,moderate,Ole Steele,True,Ole Steele,engine_v2,2026-11-27T22:02:22.183386+00:00,31.0
+Doomben,9,20261128-Doomben-R9,6,SOFT5,,Street Chase,7,3.3,0.3,26.8,25.3,23-27,1.52,moderate,Leg Drive,True,Leg Drive,engine_v2,2026-11-27T22:00:33.720997+00:00,32.0
+Toowoomba,5,20261128-Toowoomba-R5,13,GOOD4,,On The Cusp,6,8.0,4.6,30.6,24.8,23-26,3.23,moderate,On The Cusp,False,Fierce Fighter,engine_v2,2026-11-27T22:00:35.724162+00:00,33.0
+Kembla Grange,5,NSW|kembla-grange|2026-11-28|5,7,GOOD4,,Smoke 'N' Darts,3,3.6,0.8,28.2,24.8,24-25,1.73,moderate,Presides,True,Presides,engine_v2,2026-11-27T22:01:20.108591+00:00,34.0
+Kembla Grange,6,NSW|kembla-grange|2026-11-28|6,8,GOOD4,,Markos Port,1,3.8,0.3,27.6,24.6,24-25,1.97,moderate,Markos Port,False,Palm Tree,engine_v2,2026-11-27T22:01:20.108591+00:00,35.0
+Kempsey,4,NSW|kempsey|2026-11-28|4,7,SOFT6,,Tickle My Tosen,3,3.7,1.1,28.0,24.6,24-25,1.72,moderate,Tickle My Tosen,False,La Bella Rosa,engine_v2,2026-11-27T22:01:40.236881+00:00,36.0
+Morphettville,4,SA|morphettville|2026-11-28|4,9,GOOD4,,Hot Statement,1,4.5,1.7,27.4,24.6,24-25,2.22,moderate,Hot Statement,False,Blankfield,engine_v2,2026-11-27T22:02:00.801199+00:00,37.0
+Kempsey,6,NSW|kempsey|2026-11-28|6,9,SOFT6,,Cool Az Aletta,6,4.2,2.2,27.0,24.4,24-25,2.19,moderate,Cool Az Aletta,False,Mr Villa,engine_v2,2026-11-27T22:01:40.236881+00:00,38.0
+Doomben,6,20261128-Doomben-R6,9,SOFT5,,Aztec State,3,5.1,2.4,27.2,24.1,23-25,2.17,moderate,Aztec State,False,Toro Strike,engine_v2,2026-11-27T22:00:33.720997+00:00,39.0
+Wagga,1,NSW|wagga|2026-11-28|1,11,SOFT5,,Kenny'S Swans,1,6.4,1.7,25.8,23.9,23-24,2.63,moderate,Kenny'S Swans,False,Russian Gangster,engine_v2,2026-11-27T22:02:42.668326+00:00,40.0
+Tab Park Gold Coast,4,20261128-Tab_Park_Gold_Coast-R4,9,SOFT6,,Morning Sun,1,5.5,0.4,25.1,22.8,22-24,2.05,moderate,Morning Sun,False,Pink Dogwood,engine_v2,2026-11-27T22:00:34.858774+00:00,41.0
+Ascot,4,WA|ascot|2026-11-28|4,13,SOFT5,,In Situ,2,5.7,2.2,23.8,22.6,22-23,2.93,weak - no clear selection,In Situ,False,Morf,engine_v2,2026-11-27T22:01:00.780876+00:00,42.0
+Tab Park Gold Coast,8,20261128-Tab_Park_Gold_Coast-R8,11,SOFT6,,Egmont,6,5.8,0.9,25.7,22.5,21-23,2.47,moderate,Egmont,False,Saxon Spirit,engine_v2,2026-11-27T22:00:34.858774+00:00,43.0
+Toowoomba,1,20261128-Toowoomba-R1,11,GOOD4,,Bole Le,1,7.7,1.0,25.4,22.3,21-23,2.45,moderate,Bole Le,False,Turf Gazette,engine_v2,2026-11-27T22:00:35.724162+00:00,44.0
+Ascot,8,WA|ascot|2026-11-28|8,14,SOFT5,,Ladies Pro,1,5.3,2.3,23.2,22.3,22-23,3.12,weak - no clear selection,Ladies Pro,False,In Confidence,engine_v2,2026-11-27T22:01:00.780876+00:00,45.0
+Morphettville,7,SA|morphettville|2026-11-28|7,12,GOOD4,,Tobikko,13,5.1,1.1,23.1,21.9,21-22,2.62,weak - no clear selection,Lake Forest,True,Lake Forest,engine_v2,2026-11-27T22:02:00.801199+00:00,46.0
+Wagga,2,NSW|wagga|2026-11-28|2,12,SOFT5,,Darken,7,5.1,1.6,22.9,21.7,21-22,2.61,weak - no clear selection,Darken,False,So Regal,engine_v2,2026-11-27T22:02:42.668326+00:00,47.0
+Wagga,5,NSW|wagga|2026-11-28|5,12,SOFT5,,The Major,4,5.3,0.0,22.9,21.7,21-22,2.6,weak - no clear selection,The Major,False,Shezrushin,engine_v2,2026-11-27T22:02:42.668326+00:00,48.0
+Yarra Valley,7,VIC|yarra-valley|2026-11-28|7,10,HVY8,,Arabian Myth,3,3.9,0.9,23.3,21.7,21-22,2.17,weak - no clear selection,Popthebubbly,True,Popthebubbly,engine_v2,2026-11-27T22:03:24.698133+00:00,49.0
+Ascot,10,WA|ascot|2026-11-28|10,16,SOFT5,,Ourgirlcanrun,4,5.6,2.5,22.1,21.6,21-22,3.46,weak - no clear selection,Ourgirlcanrun,False,Galway Shawl,engine_v2,2026-11-27T22:01:00.780876+00:00,50.0
+Rosehill,2,NSW|rosehill|2026-11-28|2,9,GOOD4,,Darn Cute,4,4.3,0.4,23.4,21.5,21-22,1.94,weak - no clear selection,Cabbucio,True,La Morra,engine_v2,2026-11-27T22:02:22.183386+00:00,51.0
+Rosehill,4,NSW|rosehill|2026-11-28|4,10,GOOD4,,Koolibah,9,4.2,0.4,23.0,21.4,21-22,2.14,weak - no clear selection,Valorous Power,True,Valorous Power,engine_v2,2026-11-27T22:02:22.183386+00:00,52.0
+Kembla Grange,7,NSW|kembla-grange|2026-11-28|7,9,GOOD4,,Sur Nova Centauri,3,3.9,0.2,23.1,21.3,21-22,1.92,weak - no clear selection,Alabama Charm,True,Alabama Charm,engine_v2,2026-11-27T22:01:20.108591+00:00,53.0
+Doomben,8,20261128-Doomben-R8,13,SOFT5,,Daggers,12,6.1,2.7,24.3,21.1,20-22,2.74,weak - no clear selection,Daggers,False,Esjay,engine_v2,2026-11-27T22:00:33.720997+00:00,54.0
+Kempsey,2,NSW|kempsey|2026-11-28|2,8,SOFT6,,She'S A Wild One,1,3.5,0.4,23.2,21.1,21-22,1.69,weak - no clear selection,She'S A Wild One,False,Seeni,engine_v2,2026-11-27T22:01:40.236881+00:00,55.0
+Wagga,4,NSW|wagga|2026-11-28|4,11,SOFT5,,Alice Alice,1,4.7,0.4,22.2,21.0,21-21,2.31,weak - no clear selection,Alice Alice,False,Densetsu,engine_v2,2026-11-27T22:02:42.668326+00:00,56.0
+Doomben,10,20261128-Doomben-R10,12,SOFT5,,Brave Monarch,1,5.6,2.2,23.5,20.9,20-22,2.5,weak - no clear selection,Brave Monarch,False,Cardonette,engine_v2,2026-11-27T22:00:33.720997+00:00,57.0
+Wagga,7,NSW|wagga|2026-11-28|7,10,SOFT5,,Witch Of November,3,4.0,1.6,22.4,20.9,21-21,2.09,weak - no clear selection,Witch Of November,False,Wannabeapoodle,engine_v2,2026-11-27T22:02:42.668326+00:00,58.0
+Sandown,8,VIC|sandown|2026-11-28|8,9,SOFT6,,Run Harry Run,3,4.0,0.6,22.4,20.8,20-21,1.87,weak - no clear selection,Run Harry Run,False,King Zephyr,engine_v2,2026-11-27T22:03:03.289081+00:00,59.0
+Morphettville,9,SA|morphettville|2026-11-28|9,12,GOOD4,,Sicilian Princess,12,4.2,1.3,21.2,20.3,20-21,2.43,weak - no clear selection,Sicilian Princess,False,Bargain Boy,engine_v2,2026-11-27T22:02:00.801199+00:00,60.0
+Rosehill,10,NSW|rosehill|2026-11-28|10,9,GOOD4,,Maybe Moet,5,3.1,0.9,21.5,20.0,20-21,1.8,weak - no clear selection,Where'Stheprofit,True,Better Late,engine_v2,2026-11-27T22:02:22.183386+00:00,61.0
+Sandown,7,VIC|sandown|2026-11-28|7,13,SOFT6,,Beach Pad,6,4.9,0.6,20.6,20.0,19-21,2.6,weak - no clear selection,Manzor Blue,True,Highland Bling,engine_v2,2026-11-27T22:03:03.289081+00:00,62.0
+Ascot,5,WA|ascot|2026-11-28|5,10,SOFT5,,Bassett Hound,3,4.7,0.4,21.1,19.9,19-20,1.99,weak - no clear selection,Bassett Hound,False,Twisted Steel,engine_v2,2026-11-27T22:01:00.780876+00:00,63.0
+Morphettville,6,SA|morphettville|2026-11-28|6,12,GOOD4,,Dirty Gold,11,4.7,0.9,20.4,19.7,19-20,2.36,weak - no clear selection,Major Rumble,True,Inhabit,engine_v2,2026-11-27T22:02:00.801199+00:00,64.0
+Doomben,7,20261128-Doomben-R7,10,SOFT5,,Balance The Books,6,3.8,0.9,20.4,19.5,19-21,1.95,weak - no clear selection,Scheherazade,True,Spiethtacular,engine_v2,2026-11-27T22:00:33.720997+00:00,65.0
+Sandown,2,VIC|sandown|2026-11-28|2,14,SOFT6,,Esmahli,2,4.7,2.2,19.5,19.2,19-20,2.69,weak - no clear selection,Esmahli,False,Trapdoor,engine_v2,2026-11-27T22:03:03.289081+00:00,66.0
+Morphettville,3,SA|morphettville|2026-11-28|3,10,GOOD4,,Expeeare,3,3.5,0.4,20.1,19.1,19-20,1.91,weak - no clear selection,Expeeare,False,She'S Iconnic,engine_v2,2026-11-27T22:02:00.801199+00:00,67.0
+Yarra Valley,4,VIC|yarra-valley|2026-11-28|4,9,HVY8,,Altruist,3,3.5,0.5,20.4,19.1,19-20,1.72,weak - no clear selection,Bronco Revolution,True,Epic Centre,engine_v2,2026-11-27T22:03:24.698133+00:00,68.0
+Doomben,2,20261128-Doomben-R2,12,SOFT5,,Twisted Queen,7,4.9,2.0,20.4,19.0,18-20,2.27,weak - no clear selection,The Dramatist,True,Mazis,engine_v2,2026-11-27T22:00:33.720997+00:00,69.0
+Ascot,7,WA|ascot|2026-11-28|7,13,SOFT5,,One Last Resort,4,4.7,0.8,19.5,19.0,18-20,2.47,weak - no clear selection,One Last Resort,False,Levati Dimezzo,engine_v2,2026-11-27T22:01:00.780876+00:00,70.0
+Sandown,1,VIC|sandown|2026-11-28|1,8,SOFT6,,Jenni You Think,10,1.9,1.1,20.4,18.9,18-20,1.51,weak - no clear selection,Jenni You Think,False,Coco Jen,engine_v2,2026-11-27T22:03:03.289081+00:00,71.0
+Ascot,1,WA|ascot|2026-11-28|1,10,SOFT5,,Acorn,4,3.2,0.7,19.7,18.8,18-19,1.88,weak - no clear selection,Scream,True,Ripper Farooq,engine_v2,2026-11-27T22:01:00.780876+00:00,72.0
+Rosehill,8,NSW|rosehill|2026-11-28|8,13,GOOD4,,Sun God,3,4.1,1.5,19.1,18.7,18-19,2.44,weak - no clear selection,Glorious Moments,True,Estadio Mestalla,engine_v2,2026-11-27T22:02:22.183386+00:00,73.0
+Yarra Valley,6,VIC|yarra-valley|2026-11-28|6,10,HVY8,,Hellish Lee,6,3.1,0.2,19.3,18.4,18-19,1.84,weak - no clear selection,Ricky Runs,True,Silver Snow,engine_v2,2026-11-27T22:03:24.698133+00:00,74.0
+Tab Park Gold Coast,7,20261128-Tab_Park_Gold_Coast-R7,11,SOFT6,,Estee Emm,10,4.9,0.7,18.9,18.2,17-19,2.0,weak - no clear selection,Mishani Vision,True,Mishani Vision,engine_v2,2026-11-27T22:00:34.858774+00:00,75.0
+Doomben,5,20261128-Doomben-R5,13,SOFT5,,Southern Heiress,12,5.4,1.0,18.9,17.8,17-19,2.31,weak - no clear selection,Southern Heiress,False,Duke Of Camden,engine_v2,2026-11-27T22:00:33.720997+00:00,76.0
+Rosehill,5,NSW|rosehill|2026-11-28|5,11,GOOD4,,Alabama Fox,1,3.4,0.5,18.4,17.8,17-18,1.96,weak - no clear selection,Alabama Fox,False,Probability Theory,engine_v2,2026-11-27T22:02:22.183386+00:00,77.0
+Ascot,6,WA|ascot|2026-11-28|6,15,SOFT5,,Linchpin,2,5.0,0.0,17.2,17.4,17-18,2.61,weak - no clear selection,Market Snitz,True,Market Snitz,engine_v2,2026-11-27T22:01:00.780876+00:00,78.0
+Doomben,1,20261128-Doomben-R1,12,SOFT5,,Say You Will,14,4.9,1.1,17.7,17.2,16-18,2.07,weak - no clear selection,Bold Envoy,True,Bold Envoy,engine_v2,2026-11-27T22:00:33.720997+00:00,79.0
+Tab Park Gold Coast,6,20261128-Tab_Park_Gold_Coast-R6,12,SOFT6,,Backstage,3,4.7,0.4,17.3,16.9,16-18,2.03,weak - no clear selection,Zouthur,True,Rhetoric,engine_v2,2026-11-27T22:00:34.858774+00:00,80.0
+Rosehill,9,NSW|rosehill|2026-11-28|9,13,GOOD4,,Paltrow Miss,10,3.4,1.3,16.9,16.9,16-18,2.2,weak - no clear selection,Paltrow Miss,False,Zaphod,engine_v2,2026-11-27T22:02:22.183386+00:00,81.0
+Doomben,4,20261128-Doomben-R4,14,SOFT5,,Boss Mode,11,4.8,0.7,16.3,15.9,15-17,2.22,weak - no clear selection,Thundering Soul,True,Vivika,engine_v2,2026-11-27T22:00:33.720997+00:00,82.0
+Ascot,2,WA|ascot|2026-11-28|2,15,SOFT5,,Ruthless Angel,11,4.4,0.4,15.4,15.9,15-17,2.38,weak - no clear selection,Cheyne Bay,True,Cheyne Bay,engine_v2,2026-11-27T22:01:00.780876+00:00,83.0
+Sandown,10,VIC|sandown|2026-11-28|10,14,SOFT6,,Wetumpka,17,3.7,0.5,15.3,15.7,15-16,2.2,weak - no clear selection,Somewhere,True,Jareth,engine_v2,2026-11-27T22:03:03.289081+00:00,84.0
+Ascot,9,WA|ascot|2026-11-28|9,16,SOFT5,,Overpass,1,4.3,0.9,15.0,15.6,15-16,2.5,weak - no clear selection,Overpass,False,Rey Magnerio,engine_v2,2026-11-27T22:01:00.780876+00:00,85.0
+Rosehill,6,NSW|rosehill|2026-11-28|6,18,GOOD4,,Giapponese,10,4.8,0.4,14.6,15.5,15-16,2.78,weak - no clear selection,Villasaurus,True,Villasaurus,engine_v2,2026-11-27T22:02:22.183386+00:00,86.0
+Morphettville,8,SA|morphettville|2026-11-28|8,14,GOOD4,,Ronny Bee,6,3.5,0.0,14.0,14.5,14-15,2.04,weak - no clear selection,Ronny Bee,False,One More Song,engine_v2,2026-11-27T22:02:00.801199+00:00,87.0
+Toowoomba,8,20261128-Toowoomba-R8,11,GOOD4,,Hello Mistress,4,9.3,4.9,38.8,30.3,29-32,3.33,insufficient information,Hello Mistress,False,Reign Of Dame,engine_v2,2026-11-27T22:00:35.724162+00:00,
+Tab Park Gold Coast,3,20261128-Tab_Park_Gold_Coast-R3,11,SOFT6,,Baciami,3,8.8,2.4,37.7,29.6,28-31,3.26,insufficient information,Baciami,False,Lighthorseman,engine_v2,2026-11-27T22:00:34.858774+00:00,
+Rosehill,1,NSW|rosehill|2026-11-28|1,8,GOOD4,,River Of Rome,7,1.5,0.6,17.9,17.0,16-18,1.36,insufficient information,High Table,True,Whisper,engine_v2,2026-11-27T22:02:22.183386+00:00,
+Sandown,4,VIC|sandown|2026-11-28|4,14,SOFT6,,Royal Press,1,2.9,1.8,14.9,15.3,15-16,2.15,insufficient information,Royal Press,False,Blingaling,engine_v2,2026-11-27T22:03:03.289081+00:00,
+Tab Park Gold Coast,1,20261128-Tab_Park_Gold_Coast-R1,12,SOFT6,,Meteoric,2,2.0,0.6,12.5,13.7,13-15,1.64,insufficient information,Pasita,True,Totatsu,engine_v2,2026-11-27T22:00:34.858774+00:00,

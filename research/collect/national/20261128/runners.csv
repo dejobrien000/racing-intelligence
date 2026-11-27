@@ -1,0 +1,1273 @@
+venue_code,race_no,saddlecloth,horse,barrier,trainer,jockey,weight_kg,claim,age_sex,page_status,emergency
+rsh,1,1,Proverb,9,M Freedman,J Collett,58,,,scratched,False
+rsh,1,2,Berkshire,4,C Waller,S Clipperton,57.5,,,scratched,False
+rsh,1,3,Borodino,1,E O'Rourke,Not Notified,57.5,,,scratched,False
+rsh,1,4,High Table,2,Anthony & S Freedman,T Berry,57.5,,,runner,False
+rsh,1,5,Hit The Summit,4,Richard & W Freedman,K McEvoy,57.5,,,runner,False
+rsh,1,6,Refractive,11,Anthony & S Freedman,Not Notified,57.5,,,scratched,False
+rsh,1,7,River Of Rome,5,C Waller,J McDonald,57.5,,,runner,False
+rsh,1,8,Andrade,1,G Ryan & S Alexiou,T Schiller,55.5,,,runner,False
+rsh,1,9,Infallible,8,G Waterhouse & A Bott,T Clark,55.5,,,runner,False
+rsh,1,10,Sipsong,7,B Baker,R King,55.5,,,runner,False
+rsh,1,11,Whisper,6,J O'Shea & T Charlton,Z Lloyd,55.5,,,runner,False
+rsh,1,12,Acrozina,3,F Martino,R Jones,54.5,,,runner,False
+rsh,2,1,Cosmic Lad,5,M Beer & G Carpenter,A Collett,59,,,runner,False
+rsh,2,2,Malbork Castle,6,R Litt,S Clipperton,57.5,,,scratched,False
+rsh,2,3,Saint Emilion,7,J Deamer,J McDonald,56.5,,,runner,False
+rsh,2,4,Darn Cute,4,C Carmody,T Berry,56,,,runner,False
+rsh,2,5,La Morra,8,J Thompson,Z Lloyd,56,,,runner,False
+rsh,2,6,Cabbucio,1,J Ible,A Adkins,55.5,,,runner,False
+rsh,2,7,C'Mon Flyer,6,Robert & L Price,R King,55,,,runner,False
+rsh,2,8,He'S Got Grunt,3,M Chevalier,K McEvoy,54.5,,,runner,False
+rsh,2,9,Bearings,2,J Sargent,D Gibbons,54,,,runner,False
+rsh,2,10,Philipsburg,9,J Ponsonby,T Schiller,53.5,,,runner,False
+rsh,3,1,Another Cashie,7,M Dunn,J McDonald,60.5,,,runner,False
+rsh,3,2,Comongin,6,B Robb,S Llewellyn,60.5,a3,,runner,False
+rsh,3,3,Highway Strip,10,D Williams,A Bullock,60.5,,,scratched,False
+rsh,3,4,Discreet Point,17,M Dunn,M Fitzgerald,59.5,a2,,scratched,False
+rsh,3,5,Dr Hook,20,Brett & G Cavanough,M Bell,57.5,,,scratched,False
+rsh,3,6,Dub,2,M Mason,J Collett,57.5,,,runner,False
+rsh,3,7,Pietro Road,11,T Donnelly,T Schiller,57.5,,,runner,False
+rsh,3,8,Ole Steele,3,S Singleton,M Weir,57,,,runner,False
+rsh,3,9,Big Lon,19,D Hatch,Z Wadick,56.5,,,scratched,False
+rsh,3,10,Denman Bandit,9,B Thompson,S Grima,56.5,a2,,runner,False
+rsh,3,11,Yesspecially,4,P Snowden,K McEvoy,56.5,,,runner,False
+rsh,3,12,Mr Cacciatore,8,B Lees,R King,56,,,runner,False
+rsh,3,13,O'Hellyeah,14,T Smart,S Fawke,54.5,,,scratched,False
+rsh,3,14,Sleek 'N' Style,10,P Clisby,J Stiff,54.5,a3,,runner,False
+rsh,3,15,Starverna,14,L Mary,B Nock,54.5,a1.5,,runner,False
+rsh,3,16,Gripfast,1,P Murphy,M Bourke,54.5,,,runner,False
+rsh,3,17,Jolly Good Fellow,13,A Stewart,A Collett,56,,,runner,True
+rsh,3,18,Alice Alice,8,D Gorrel,Not Notified,54,,,scratched,True
+rsh,3,19,Flirtation,21,P Messara & L Gavranich,Z Lloyd,54,,,scratched,True
+rsh,3,20,The Main Event,5,T Robinson,M Fitzgerald,55,,,runner,True
+rsh,3,21,The Dux Nuts,12,D Hatch,S Clipperton,55,,,scratched,True
+rsh,3,22,Iroquai,12,M Travers,R Jones,54,,,runner,True
+rsh,4,1,Sacrify,6,Annabel & R Archibald,M Fitzgerald,60,a2,,runner,False
+rsh,4,2,Agent Zero,5,C Maher,Z Lloyd,59.5,,,runner,False
+rsh,4,3,Valorous Power,10,K Lees,T Clark,58.5,,,runner,False
+rsh,4,4,Autumn Winter,9,M Smith,K McEvoy,57.5,,,runner,False
+rsh,4,5,Botanical Boy,3,Anthony & Sam Freedman,T Berry,57.5,,,runner,False
+rsh,4,6,Think Itz You,4,C Waller,S Grima,57.5,a2,,runner,False
+rsh,4,7,Warrior For Peace,8,Brett & G Cavanough,A Morgan,57.5,,,runner,False
+rsh,4,8,She Moves Too,10,C Waller,J McDonald,57,,,scratched,False
+rsh,4,9,Koolibah,7,C Waller,J Collett,56,,,runner,False
+rsh,4,10,Arapawa,2,Brett & G Cavanough,M Owen,55,,,runner,False
+rsh,4,11,Charleroi,1,N Dilmi,D Gibbons,55,,,runner,False
+rsh,4,12,Darn Cute,5,C Carmody,R King,52.5,,,scratched,False
+rsh,5,1,Alabama Fox,7,Annabel & R Archibald,B Nock,61.5,a1.5,,runner,False
+rsh,5,2,Enamorada,6,C Maher,S Llewellyn,61.5,a3,,runner,False
+rsh,5,3,Probability Theory,10,N Dilmi,T Berry,60.5,,,runner,False
+rsh,5,4,Wootton Lass,2,Annabel & R Archibald,M Fitzgerald,60,a2,,runner,False
+rsh,5,5,Miss Spacegirl,14,Richard & W Freedman,S Grima,59,a2,,scratched,False
+rsh,5,6,Beside The Ocean,11,C Waller,J McDonald,57.5,,,runner,False
+rsh,5,7,Rose Aye,9,M Dale,C Keatings,57.5,a3,,runner,False
+rsh,5,8,Beneath The Rock,8,K Lees,J Collett,56.5,,,runner,False
+rsh,5,9,Just Maz,3,G Ryan & S Alexiou,S Clipperton,56.5,,,runner,False
+rsh,5,10,Scintilla,1,L Bridge,O Chambers,56.5,a3,,runner,False
+rsh,5,11,Girijaala,4,"M, W & J Hawkes",A Adkins,56,,,runner,False
+rsh,5,12,Chilli Margs,5,B Baker,R King,54.5,,,runner,False
+rsh,5,13,Kujenga,13,Annabel & R Archibald,A Collett,54.5,,,scratched,False
+rsh,5,14,Live,10,P Snowden,T Schiller,54,,,scratched,False
+rsh,5,15,Four Inthe Morning,11,Brett & G Cavanough,A Morgan,54,,,scratched,False
+rsh,6,1,Knights Armour,13,R Lavis,R Pr,62,a3,,runner,False
+rsh,6,2,Danish Fortune,5,J Wilkes,G Johnston,60,a3,,runner,False
+rsh,6,3,Indifference,10,Brett & G Cavanough,M Owen,60,,,runner,False
+rsh,6,4,Social Outcast,15,M Dunn,A Bullock,60,,,runner,False
+rsh,6,5,Knife'S Edge,4,G Lunn,C Keatings,60,a3,,runner,False
+rsh,6,6,Gallant Star,18,B Robb,T Berry,59,,,runner,False
+rsh,6,7,Villasaurus,14,D Scott,B McDougall,59,,,runner,False
+rsh,6,8,Hammoon Sensation,12,R Northam,R Jones,59,,,runner,False
+rsh,6,9,Think Like Paddy,21,M Dunn,J McDonald,57.5,,,scratched,False
+rsh,6,10,Giapponese,1,Stephen & J Lee,J Collett,57.5,,,runner,False
+rsh,6,11,Poisen Point,11,B Robb,S Grima,57,a2,,runner,False
+rsh,6,12,Ocean Tsunami,17,S Singleton,Z Lloyd,57,,,runner,False
+rsh,6,13,Godwits,7,T Smith,J Pracey-holmes,57,,,runner,False
+rsh,6,14,Michelangelo,3,D Mirfin,J Stiff,55.5,a3,,runner,False
+rsh,6,15,Southern Dancer,8,G Colvin,T Schiller,55.5,,,runner,False
+rsh,6,16,Haze,9,Brett & G Cavanough,A Morgan,55.5,,,runner,False
+rsh,6,17,Off The Scale,16,L Mary,B Nock,55,a1.5,,runner,False
+rsh,6,18,Grandini,2,R Northam,M Fitzgerald,53.5,a2,,runner,False
+rsh,6,19,Alabama Blitz,6,C Crockett,A Collett,53.5,,,runner,True
+rsh,6,20,Ring Ahoy,4,D Hatch,Not Notified,57,,,scratched,True
+rsh,6,21,Olympian,17,P Messara & L Gavranich,S Llewellyn,54,a3,,scratched,True
+rsh,6,22,Imelda,15,P Messara & L Gavranich,Not Notified,52,,,scratched,True
+rsh,6,23,Fair Master,16,D Gorrel,Not Notified,55.5,,,scratched,True
+rsh,6,24,Samurai,7,Brett & G Cavanough,Not Notified,55.5,,,scratched,True
+rsh,7,1,King'S Secret,10,J Pride,A Adkins,59,,,runner,False
+rsh,7,2,Roselyn'S Star,4,J O'Shea & T Charlton,Z Lloyd,58,,,runner,False
+rsh,7,3,Accredited,6,J Pride,J McDonald,56.5,,,runner,False
+rsh,7,4,Disneck,5,B Baker,R King,56.5,,,runner,False
+rsh,7,5,Tuned,1,Annabel & R Archibald,T Sherry,55.5,,,runner,False
+rsh,7,6,Sunshineinmypocket,3,C Maher,A Morgan,54,,,runner,False
+rsh,7,7,Polyglot,2,M Freedman,D Gibbons,53.5,,,runner,False
+rsh,7,8,Major Share,9,A Chambers,T Madden,53,,,runner,False
+rsh,7,9,Arriving Home,8,B Baker,K McEvoy,53,,,runner,False
+rsh,7,10,Oui Oui Oui,7,J Attard,T Schiller,53,,,runner,False
+rsh,7,11,Pride To Follow,7,Brett & G Cavanough,M Owen,53,,,scratched,False
+rsh,8,1,Estadio Mestalla,5,J Pride,A Bullock,59,,,runner,False
+rsh,8,2,War Eternal,13,B Baker,R King,59,,,runner,False
+rsh,8,3,Sun God,12,C Waller,J McDonald,57.5,,,runner,False
+rsh,8,4,Cristal Clear,4,Annabel & R Archibald,J Collett,55.5,,,runner,False
+rsh,8,5,Captain Furai,13,C Waller,Not Notified,54.5,,,scratched,False
+rsh,8,6,Narbold,7,C Waller,R Jones,54,,,runner,False
+rsh,8,7,Glorious Moments,6,Jim & G Lee,T Clark,54,,,runner,False
+rsh,8,8,Encap,10,G Portelli,A Collett,53.5,,,runner,False
+rsh,8,9,Dance To The Boom,2,B Baker,K McEvoy,53,,,runner,False
+rsh,8,10,Point And Shoot,3,B Baker,T Sherry,53,,,runner,False
+rsh,8,11,Surf'S Up,9,C Waller,Z Lloyd,53,,,runner,False
+rsh,8,12,Theblade,1,"M, W & J Hawkes",T Schiller,53,,,runner,False
+rsh,8,13,Rotagilla,11,G Waterhouse & A Bott,S Grima,53,,,runner,False
+rsh,8,14,Bella Khadijah,8,B Widdup,B Nock,53,,,runner,False
+rsh,9,1,Wootton Verni,7,C Waller,J McDonald,59.5,,,runner,False
+rsh,9,2,Kovalica,9,C Waller,S Clipperton,58.5,,,runner,False
+rsh,9,3,Bianco Vilano,10,R Stubbs,T Schiller,58,,,runner,False
+rsh,9,4,Major Beel,1,G Waterhouse & A Bott,T Clark,57,,,runner,False
+rsh,9,5,Filthy Habits,3,B Baker,R King,55.5,,,runner,False
+rsh,9,6,Zaphod,8,K Lees,J Collett,54,,,runner,False
+rsh,9,7,Lord Penman,6,C Waller,Z Lloyd,53.5,,,runner,False
+rsh,9,8,You Wahng,12,K Lees,D Gibbons,53,,,runner,False
+rsh,9,9,Tavros,5,C Martin,A Roper,53,,,runner,False
+rsh,9,10,Paltrow Miss,13,C Maher,A Morgan,53,,,runner,False
+rsh,9,11,Imperialist,11,C Waller,S Grima,53,,,runner,False
+rsh,9,12,Anythink Goes,2,M Smith,A Collett,53,,,runner,False
+rsh,9,13,Flying Bandit,13,K Parker,A Adkins,53,,,scratched,False
+rsh,9,14,Medatsu,4,C Waller,K McEvoy,53,,,runner,False
+rsh,10,1,Fine Vintage,9,L Pepper,Not Notified,59,,,scratched,False
+rsh,10,2,Where'Stheprofit,3,C Crockett,S Grima,58.5,a2,,runner,False
+rsh,10,3,Bojangles,6,K Waugh,M Fitzgerald,58,a2,,scratched,False
+rsh,10,4,Sir Les,10,C Carmody,J Collett,58,,,scratched,False
+rsh,10,5,Maybe Moet,9,M Smith,J McDonald,57.5,,,runner,False
+rsh,10,6,Hay Street,6,Annabel & R Archibald,K McEvoy,57.5,,,runner,False
+rsh,10,7,Swordplay,8,B Baker,R King,57,,,runner,False
+rsh,10,8,Spartus,2,F Martino,R Jones,57,,,runner,False
+rsh,10,9,Better Late,7,N Doyle,B Nock,56.5,a1.5,,runner,False
+rsh,10,10,Mercy Me,16,N Doyle,Not Notified,56,,,scratched,False
+rsh,10,11,Mailata,13,B Heys,Not Notified,56,,,scratched,False
+rsh,10,12,Detain,15,Brett & G Cavanough,A Morgan,54,,,scratched,False
+rsh,10,13,Flightcrew,1,Lee & C Curtis,D Gibbons,54,,,runner,False
+rsh,10,14,Tuscany,7,J O'Shea & T Charlton,Z Lloyd,54,,,scratched,False
+rsh,10,15,Friendly Fire,5,G Portelli,A Collett,53,,,runner,False
+rsh,10,16,Show Business,4,M Smith,T Schiller,53,,,runner,False
+rsh,10,17,Lighthouse Lass,4,Richard & W Freedman,A Adkins,52.5,,,scratched,True
+san,1,1,Silvasista,2,Tony & C McEvoy,H Durnan,62,a3,,scratched,False
+san,1,2,World'S My Oyster,9,H Dwyer,J Radley,61.5,a2,,scratched,False
+san,1,3,Bon Mistress,3,Ken & K Keys,J Stanley,60,,,scratched,False
+san,1,4,Oak Beach,4,J Conlan,L Cartwright,60,a1.5,,runner,False
+san,1,5,Coco Jen,9,M Laurie,L Currie,59.5,,,runner,False
+san,1,6,Cooly,2,P Moody & K Coleman,L Nolen,59,,,runner,False
+san,1,7,Illyivy,5,K Besanko,B Mertens,58.5,,,runner,False
+san,1,8,Cat Noir,6,J Edwards,D Yendall,57,,,runner,False
+san,1,9,Jazz Affair,8,Richard & C Jolly,D Lane,56.5,,,runner,False
+san,1,10,Jenni You Think,7,C Maher,J Johnstone,55,a2,,runner,False
+san,1,11,Bon Fete,1,J Warren,C Williams,54.5,,,runner,False
+san,2,1,Dirty Grin,13,T Fitzsimmons,N Daniels,62.5,a3,,runner,False
+san,2,2,Esmahli,11,"B, W & J Hayes",J Radley,62,a2,,runner,False
+san,2,3,Sergeant Major,4,C Maher,J Johnstone,61.5,a2,,runner,False
+san,2,4,Until Valhalla,7,C Maher,D Stackhouse,61.5,,,runner,False
+san,2,5,Princess Que,6,S Zahra,R Houston,61,a2,,runner,False
+san,2,6,Miewa,2,C McDonald,J Melham,60.5,,,runner,False
+san,2,7,Rosa Aotearoa,14,R Goodwin,L Cartwright,60.5,a1.5,,runner,False
+san,2,8,Bacash,9,"B, W & J Hayes",C Williams,59.5,,,runner,False
+san,2,9,Ivan'S Hero,9,C Waller,B Melham,59.5,,,scratched,False
+san,2,10,Charming Nic,1,Tony & C McEvoy,D Lane,58.5,,,runner,False
+san,2,11,King Tut,10,C Maher,T Stockdale,58.5,,,runner,False
+san,2,12,Trapdoor,8,"M, W & J Hawkes",L Currie,58,,,runner,False
+san,2,13,Danzsin,5,T Dabernig,J Childs,57.5,,,runner,False
+san,2,14,Overactive,3,G Bedggood,J Mott,57.5,,,runner,False
+san,2,15,Maisy,12,L Smith,B Egan,57,,,runner,False
+san,3,1,Gilgeous,8,T Busuttin & N Young,J Mott,57,,,runner,False
+san,3,2,Chip In,1,P Moody & K Coleman,L Nolen,57,,,runner,False
+san,3,3,Town Planner,5,P Payne,C Williams,57,,,runner,False
+san,3,4,Franked Up,9,Tony & C McEvoy,L Currie,57,,,runner,False
+san,3,5,Mossquillo,3,C Maher,C Macredmond,57,,,runner,False
+san,3,6,Chancellor,4,A Alexander,D Bates,57,,,runner,False
+san,3,7,Exultant,2,M Price & M Jnr,J Childs,57,,,runner,False
+san,3,8,Billycart,6,T Weir,D Yendall,56.5,,,runner,False
+san,3,9,Fine And Sunny,7,G Begg,D Stackhouse,55,,,runner,False
+san,4,1,Royal Press,4,Tony & C McEvoy,L Currie,58,,,runner,False
+san,4,2,In Eutopia,13,P Moody & K Coleman,L Nolen,58,,,runner,False
+san,4,3,Lewashaa,8,D Sutton,D Stackhouse,58,,,runner,False
+san,4,4,Noctis,15,Tony & C McEvoy,D Lane,58,,,scratched,False
+san,4,5,Odenkirk,1,"M, W & J Hawkes",B Melham,58,,,runner,False
+san,4,6,Soladin,6,P Moody & K Coleman,J Radley,58,,,runner,False
+san,4,7,Natural Emotion,5,P Moody & K Coleman,L Cartwright,56,,,runner,False
+san,4,8,Blingaling,2,C Maher,B Allen,56,,,runner,False
+san,4,9,Confection,12,C Maher,J Johnstone,56,,,runner,False
+san,4,10,Crystal Affair,10,C Maher,B Mertens,56,,,runner,False
+san,4,11,Darn Spicy,11,G Bedggood,J Melham,56,,,runner,False
+san,4,12,Hanseatic Girl,7,"B, W & J Hayes",M Dee,56,,,runner,False
+san,4,13,Nissaki,3,C Douglas,J Childs,56,,,runner,False
+san,4,14,Oversourced,9,G Bedggood,J Mott,56,,,runner,False
+san,4,15,Rubitrix,14,"B, W & J Hayes",C Williams,56,,,runner,False
+san,5,1,Oak Hill,4,"B, W & J Hayes",J Mott,60,,,runner,False
+san,5,2,Klabel,9,Richard & C Jolly,J Stanley,57.5,,,runner,False
+san,5,3,Marble Nine,6,L & T Corstens & W Larkin,B Allen,57,,,runner,False
+san,5,4,Photograph,1,"B, W & J Hayes",J Melham,55,,,runner,False
+san,5,5,Guerite,2,L Smith,L Cartwright,54,,,runner,False
+san,5,6,Jimmy Recard,7,C Maher,B Mertens,54,,,runner,False
+san,5,7,Jett Smash,10,D O'Brien,D Lane,54,,,runner,False
+san,5,8,Quiseen,5,A Alexander,M Dee,54,,,scratched,False
+san,5,9,Tres Magnifique,3,T Busuttin & N Young,C Williams,54,,,runner,False
+san,5,10,Karren,8,L Kennewell,B Egan,54,,,runner,False
+san,5,11,Prestige Lucky,6,M Jenkins,Not Notified,54,,,scratched,False
+san,6,1,Cavill Avenue,7,"B, W & J Hayes",J Melham,56,,,runner,False
+san,6,2,Handee,2,J Warren,D Stackhouse,56,,,runner,False
+san,6,3,Shintono,3,Tony & C McEvoy,L Currie,56,,,runner,False
+san,6,4,Sound Byte,5,C Alderson,B Egan,56,,,runner,False
+san,6,5,Sunbliss,9,M Price & M Jnr,C Williams,56,,,runner,False
+san,6,6,Lafarna,8,N Blackiston,M Dee,56,,,runner,False
+san,6,7,Oceans Blue,4,D O'Brien,D Lane,56,,,runner,False
+san,6,8,Sayalero,1,J McArdle,J Mott,56,,,runner,False
+san,6,9,Tale Of Genji,3,C McDonald,B Mertens,56,,,scratched,False
+san,6,10,Engulf,10,C McDonald,B Melham,56,,,runner,False
+san,6,11,Pasatiempo,6,M Price & M Jnr,J Childs,56,,,runner,False
+san,7,1,Vauban,11,G Waterhouse & A Bott,J Childs,60,,,runner,False
+san,7,2,Asterix,10,C Waller,B Melham,58.5,,,runner,False
+san,7,3,Highland Bling,12,Phillip & T Stokes,D Lane,54.5,,,runner,False
+san,7,4,Manzor Blue,6,L Latta,M Dee,54.5,,,runner,False
+san,7,5,Autumn Mystery,1,R Hunter,C Williams,54,,,runner,False
+san,7,6,Beach Pad,2,S Jackson,J Melham,54,,,runner,False
+san,7,7,Sam Hawkens,4,J O'Shea & T Charlton,D Bates,54,,,runner,False
+san,7,8,Sir Chartwell,9,Annabel & R Archibald,D Stackhouse,54,,,runner,False
+san,7,9,Black Peppermint,13,P Payne,A Kelly,54,,,runner,False
+san,7,10,Wuddzz,12,H Dwyer,B Egan,54,,,scratched,False
+san,7,11,Suffolk Star,3,P Preusker,T Nugent,54,,,runner,False
+san,7,12,Affluential,8,A Leek,L Cartwright,54,,,runner,False
+san,7,13,Hawk Power,5,P Koumis,N Farley,54,,,runner,False
+san,7,14,Power Pivot,7,Ken & K Keys,C Newitt,54,,,runner,False
+san,8,1,Here To Shock,2,"B, W & J Hayes",D Stackhouse,59.5,,,runner,False
+san,8,2,Ramadan,9,C Maher,B Mertens,58.5,,,runner,False
+san,8,3,Run Harry Run,6,"B, W & J Hayes",B Melham,58,,,runner,False
+san,8,4,Punch Lane,3,G Bedggood,J Mott,57.5,,,runner,False
+san,8,5,Holymanz,5,C Maher,B Allen,57,,,runner,False
+san,8,6,Recon,4,P Carey & H Walker,C Williams,56.5,,,runner,False
+san,8,7,King Zephyr,1,G Begg,J Childs,55,,,runner,False
+san,8,8,Sammarco,8,L & T Corstens & W Larkin,J Stanley,55,,,runner,False
+san,8,9,Miss Playlounge,10,C McDonald,L Cartwright,54,,,scratched,False
+san,8,10,Phearson,7,S Ryan,D Bates,54,,,runner,False
+san,9,1,Bianco Vilano,8,R Stubbs,T Stockdale,59,,,scratched,False
+san,9,2,Revelare,1,R Hickmott,R Hurdle,59,,,scratched,False
+san,9,3,Wymark,6,G Bedggood,J Stanley,57,,,runner,False
+san,9,4,Cilacap,9,G Begg,J Childs,56.5,,,runner,False
+san,9,5,Makdane,3,M Kent,C Williams,54.5,,,runner,False
+san,9,6,Sav On Ice,1,G Lynch,L Nolen,54.5,,,runner,False
+san,9,7,Paltrow Miss,12,C Maher,C Williams,54,,,scratched,False
+san,9,8,Nobler,8,C Waller,D Lane,54,,,runner,False
+san,9,9,Charterhouse,4,G Bedggood,B Mertens,54,,,runner,False
+san,9,10,Williamsburg,5,G Lynch,T Nugent,54,,,runner,False
+san,9,11,Roulette King,2,T Rogers,J Mott,54,,,runner,False
+san,9,12,Fiorenot,5,T Dabernig,M Dee,54,,,scratched,False
+san,9,13,Sulek,7,D Sutton,B Egan,54,,,scratched,False
+san,9,14,Moonlight Circus,10,M Kent,L Cartwright,54,,,runner,False
+san,10,1,He'Ll Rip,18,L & T Corstens & W Larkin,H Durnan,61.5,a3,,scratched,False
+san,10,2,Impulsive Reaction,10,T Busuttin & N Young,R Houston,61.5,a2,,runner,False
+san,10,3,Test Of Love,5,"B, W & J Hayes",J Radley,61,a2,,runner,False
+san,10,4,Midnite Storm,7,C Maher,J Johnstone,60,a2,,scratched,False
+san,10,5,No Fuss,10,Tony & C McEvoy,C Williams,60,,,scratched,False
+san,10,6,Somewhere,4,A Alexander,T Stockdale,60,,,runner,False
+san,10,7,Charisse,9,G Moloney,P Moloney,59,,,runner,False
+san,10,8,Flying Mikki,15,D Noonan,B Melham,58.5,,,runner,False
+san,10,9,Options,13,Tony & C McEvoy,M Dee,58.5,,,runner,False
+san,10,10,Two Wolves,3,Anthony & S Freedman,J Mott,58.5,,,scratched,False
+san,10,11,Haaracaine,12,C McDonald,B Egan,58,,,scratched,False
+san,10,12,Houdini,6,G Bedggood,J Stanley,58,,,runner,False
+san,10,13,Just A Journey,14,Anthony & S Freedman,D Lane,58,,,runner,False
+san,10,14,Jareth,8,C Maher,B Mertens,57.5,,,runner,False
+san,10,15,Taung,7,M Cumani,E Walsh,57.5,,,runner,False
+san,10,16,Bergasun,1,S Jackson,D Bates,57,,,runner,False
+san,10,17,Wetumpka,2,P Gelagotis,B Allen,56.5,,,runner,True
+san,10,18,Lightening Mann,11,C Maher,C Macredmond,56.5,,,runner,True
+san,10,19,Stay Humble,12,C Maher,J Johnstone,56,,,runner,True
+san,10,20,Space Rider,16,M Price & M Jnr,L Cartwright,62.5,a1.5,,scratched,True
+dbn,1,1,Ballistic Star,2,A Campton,R Maloney,58.5,,,scratched,False
+dbn,1,2,Deals,1,W Kropp,M Harley,58.5,,,runner,False
+dbn,1,3,Deejaywip,12,M Kropp,M Rodd,58.5,,,runner,False
+dbn,1,4,Hard Knox,15,Stuart & B Kendrick,Not Notified,58.5,,,scratched,False
+dbn,1,5,St Andrews,16,P Campbell,A Keeley,58.5,,,scratched,False
+dbn,1,6,Bauhinian Prayers,10,T Gollan,A Jones,57,,,runner,False
+dbn,1,7,Golden Glass,10,L Birchley,A Mallyon,57,,,scratched,False
+dbn,1,8,How Ironic,17,D Maher,K Wilson-taylor,57,,,scratched,False
+dbn,1,9,Make Me Shine,7,P Webster,L Tilley,57,,,runner,False
+dbn,1,10,Old Nifty,3,D Peoples,R Dolan,57,,,runner,False
+dbn,1,11,Castlereagh Affair,19,J Bruce,Not Notified,56.5,,,scratched,False
+dbn,1,12,Mystical,8,T Pollard,C Graham,55,,,runner,False
+dbn,1,13,Mysticise,14,M Hoysted,J Bayliss,55,,,scratched,False
+dbn,1,14,Say You Will,13,Chris & C Munce,B Thompson,55,,,runner,False
+dbn,1,15,Spirit Falls,9,K Schweida,C Collis,55,,,runner,False
+dbn,1,16,White Swan,5,C Waller,T Marshall,55,,,runner,False
+dbn,1,17,Housemaid,6,K Schweida,R Stewart,55,,,runner,True
+dbn,1,18,Pure Audacity,4,M Morrison,E Pozman,58.5,a2,,runner,True
+dbn,1,19,Bold Envoy,11,R Laming,K Wilson-taylor,57,,,runner,True
+dbn,2,1,The Dramatist,4,L Birchley,J Newman,61.5,a3,,runner,False
+dbn,2,2,Worthy Enuff,13,M Nolan,E Pozman,61,a2,,scratched,False
+dbn,2,3,Last Chance Saloon,8,Corey & K Geran,J Bayliss,60,,,runner,False
+dbn,2,4,Connecticut,5,Corey & K Geran,G Geran,59.5,,,runner,False
+dbn,2,5,Exceed Speed,6,T Gollan,R Dolan,59.5,,,runner,False
+dbn,2,6,Trevenson,3,K Taplin,C Sutherland,59.5,a2,,runner,False
+dbn,2,7,Twisted Queen,7,J Bruce,E Lang,59.5,,,runner,False
+dbn,2,8,Mazis,2,Annabel & R Archibald,M Harley,59,,,runner,False
+dbn,2,9,Kapakiri,16,C Waller,A Mallyon,58,,,scratched,False
+dbn,2,10,Miss Maranda,5,J Bruce,C Graham,58,,,scratched,False
+dbn,2,11,Tuhinga,12,J Thomas,M Apel,57.5,a3,,runner,False
+dbn,2,12,Highgrove Rose,10,J Bruce,R Maloney,57,,,runner,False
+dbn,2,13,Kaihoko,11,C Prosser,L Rolls,57,,,runner,False
+dbn,2,14,Weona Redwood,1,D Vandyke,A Jones,57,,,runner,False
+dbn,2,15,Tempranillo,9,C Waller,B Thompson,54.5,,,runner,False
+dbn,2,16,Harbourmaster,13,K Clark-peoples,Not Notified,62,,,scratched,True
+dbn,2,17,Lupine,1,K Clark-peoples,M Rodd,61,,,scratched,True
+dbn,3,1,Savisanta,10,C Waller,R Maloney,60,,,runner,False
+dbn,3,2,Kipling'S Journey,1,Peter & W Hulbert,M Apel,59.5,a3,,runner,False
+dbn,3,3,Punjabi Landing,7,P Shailer,A Mallyon,59,,,runner,False
+dbn,3,4,Tapildoodledo,3,K Taplin,C Sutherland,59,a2,,runner,False
+dbn,3,5,Easy Love,2,D Vandyke,A Jones,57.5,,,runner,False
+dbn,3,6,Hot Majesty,4,T Gollan,J Newman,57,a3,,runner,False
+dbn,3,7,Make A Call,9,T Gollan,R Dolan,57,,,runner,False
+dbn,3,8,Giapponese,1,Stephen & J Lee,Not Notified,56.5,,,scratched,False
+dbn,3,9,La Rosetta,12,T Edmonds,B Thompson,56,,,runner,False
+dbn,3,10,Artful Girl,8,K Kemp,R Stewart,55,,,runner,False
+dbn,3,11,Kapakiri,5,C Waller,J Bayliss,55,,,runner,False
+dbn,3,12,Roguery,11,T Gollan,E Lang,55,,,runner,False
+dbn,3,13,Half Listening,6,D Peoples,T Marshall,54,,,runner,False
+dbn,4,1,Thundering Soul,10,P Webster,F Sandkuhl,60,a3,,runner,False
+dbn,4,2,Fragile Love,6,T Gollan,C Graham,58,,,runner,False
+dbn,4,3,Scheherazade,7,S McLean,K Wilson-taylor,58,,,scratched,False
+dbn,4,4,Zoufani,15,T Gollan,A Jones,58,,,runner,False
+dbn,4,5,Count Nicholas,18,A Campton,NOT NOTIFIED,57.5,,,scratched,False
+dbn,4,6,Oohlalouvre,11,J Bruce,T Marshall,57.5,,,scratched,False
+dbn,4,7,The Fixer,16,J Bruce,NOT NOTIFIED,57.5,,,scratched,False
+dbn,4,8,Este Dia,7,S Hardy,M Kennedy,57,,,runner,False
+dbn,4,9,Petite Palace,2,M Morrison,O Kendal,57,a3,,runner,False
+dbn,4,10,Cryptic Beauty,14,J Bruce,E Lang,56.5,,,runner,False
+dbn,4,11,Boss Mode,12,T Gollan,R Maloney,56,,,runner,False
+dbn,4,12,Grey Effects,3,C Prosser,L Rolls,56,,,runner,False
+dbn,4,13,American Conquest,13,N Beck,J Newman,55.5,a3,,runner,False
+dbn,4,14,Vivika,5,M Dunn,B Thompson,55.5,,,runner,False
+dbn,4,15,Star Rapper,13,Corey & K Geran,G Geran,55,,,scratched,False
+dbn,4,16,Emalyn,9,N Doyle,R Dolan,54,,,runner,False
+dbn,4,17,Miss Mclaren,1,A Campton,NOT NOTIFIED,53,,,runner,True
+dbn,4,18,Red Feather Boa,4,L Gough,NOT NOTIFIED,52.5,,,runner,True
+dbn,4,19,Discreet Point,8,M Dunn,J Bayliss,54,,,runner,True
+dbn,4,20,Baltray,14,L Wheeler,NOT NOTIFIED,54,,,scratched,True
+dbn,4,21,Eagle'S Fire,12,S Batten,NOT NOTIFIED,54,,,scratched,True
+dbn,5,1,Aldolfito,11,M Hoysted,J Bayliss,60,,,runner,False
+dbn,5,2,Astern Effort,21,R Lipp,Not Notified,60,,,scratched,False
+dbn,5,3,Ikasara,4,T Pollard,J Newman,60,a3,,runner,False
+dbn,5,4,Lim'S Shavano,6,K Schweida,C Graham,60,,,runner,False
+dbn,5,5,Lyneham,12,Chris & C Munce,M Harley,60,,,runner,False
+dbn,5,6,No Fooling,14,T Gollan,R Maloney,60,,,scratched,False
+dbn,5,7,Kokatahi,1,C Waller,A Mallyon,58.5,,,runner,False
+dbn,5,8,Little Fella,9,J Leach,K Wilson-taylor,58.5,,,scratched,False
+dbn,5,9,Pharoah'S Prophecy,13,D Vandyke,M Rodd,58.5,,,scratched,False
+dbn,5,10,Urban Lad,2,Chris & C Munce,B Osmond,58.5,,,scratched,False
+dbn,5,11,Hello Dolly Diva,2,P Wallace,L Tilley,58,,,runner,False
+dbn,5,12,Southern Heiress,5,T Gollan,A Jones,58,,,runner,False
+dbn,5,13,Gridlock,15,M Freedman,K Wilson-taylor,57,,,scratched,False
+dbn,5,14,Dracena,3,T Pascoe,A Allen,56.5,,,runner,False
+dbn,5,15,Tessatori,20,B Brown,Not Notified,56.5,,,scratched,False
+dbn,5,16,Kujenga,10,Annabel & R Archibald,Not Notified,55,,,runner,False
+dbn,5,17,Duomo,14,J Bellamy,Not Notified,58.5,,,runner,True
+dbn,5,18,Chicago Fireball,8,T Gollan,R Dolan,60,,,runner,True
+dbn,5,19,Influential,15,J Downes,Not Notified,58.5,,,scratched,True
+dbn,5,20,Camelight,9,B Lockwood & E Vincent,Not Notified,57,,,runner,True
+dbn,5,21,Duke Of Camden,7,T Gollan,B Thompson,60,,,runner,True
+dbn,6,1,Atmosphere,2,J Bruce,E Pozman,61,a2,,runner,False
+dbn,6,2,Exotique Miss,9,M Nolan,O Kendal,60.5,a3,,runner,False
+dbn,6,3,Aztec State,1,R Vale,M Apel,60,a3,,runner,False
+dbn,6,4,Nails Murphy,10,C Maher,J Newman,58.5,a3,,runner,False
+dbn,6,5,Prince Levi,4,W Kropp,M Harley,58.5,,,runner,False
+dbn,6,6,Akkadian Emperor,6,Annabel & R Archibald,R Maloney,57.5,,,runner,False
+dbn,6,7,Blazen Boots,8,T Gollan,A Jones,57,,,runner,False
+dbn,6,8,The Drover,3,Adam & D Simpson,F Sandkuhl,56,a3,,scratched,False
+dbn,6,9,Toro Strike,7,J Bruce,B Thompson,56,,,runner,False
+dbn,6,10,Twisted Queen,7,J Bruce,E Lang,53,,,scratched,False
+dbn,6,11,Miss Maranda,5,J Bruce,C Graham,52,,,runner,False
+dbn,7,1,Aviatress,11,L Ruddy,A Farragher,57.5,,,runner,False
+dbn,7,2,Just Precious,6,Stuart & B Kendrick,M Rodd,55.5,,,runner,False
+dbn,7,3,Zoubaby,9,T Gollan,R Dolan,55.5,,,scratched,False
+dbn,7,4,Gospel Girl,8,T Gollan,E Lang,55.5,,,runner,False
+dbn,7,5,Surprise Honey,7,T Gollan,A Jones,55.5,,,scratched,False
+dbn,7,6,Balance The Books,5,T Gollan,B Thompson,55.5,,,runner,False
+dbn,7,7,Artistic Venture,10,T Edmonds,K Wilson-taylor,55.5,,,runner,False
+dbn,7,8,Margot'S Deel,2,J Edwards,T Marshall,55.5,,,runner,False
+dbn,7,9,Spiethtacular,12,T Gollan,Not Notified,55.5,,,runner,False
+dbn,7,10,Sylph,1,M Freedman,C Graham,55.5,,,runner,False
+dbn,7,11,Scheherazade,4,S McLean,M Harley,55.5,,,runner,False
+dbn,7,12,Mercy Me,3,N Doyle,A Mallyon,55.5,,,runner,False
+dbn,7,13,Petite Palace,13,M Morrison,Not Notified,55.5,,,scratched,False
+dbn,8,1,Kronenbourg,3,T Gollan,E Lang,60,,,runner,False
+dbn,8,2,Etna Rosso,7,C Waller,T Marshall,59.5,,,runner,False
+dbn,8,3,Captain Furai,5,C Waller,R Maloney,59,,,runner,False
+dbn,8,4,Esjay,15,P Webster,L Tilley,58,,,runner,False
+dbn,8,5,Kintyre,4,T Pollard,C Graham,58,,,runner,False
+dbn,8,6,Kaluakoi,6,Chris & C Munce,M Harley,57.5,,,runner,False
+dbn,8,7,Lisztomania,10,T Payne,L Rolls,56.5,,,runner,False
+dbn,8,8,Rising Pacific,8,T Gollan,A Mallyon,55.5,,,runner,False
+dbn,8,9,Boom Torque,14,M Dunn,J Bayliss,55,,,scratched,False
+dbn,8,10,Phearson,10,S Ryan,A Farragher,53.5,,,scratched,False
+dbn,8,11,Mareth,13,M Freedman,R Dolan,53,,,scratched,False
+dbn,8,12,Daggers,2,T Gollan,B Thompson,53,,,runner,False
+dbn,8,13,Ser Joh,9,R Heathcote,J Bayliss,53,,,runner,False
+dbn,8,14,Mister Bianco,11,T Payne,R Stewart,53,,,runner,False
+dbn,8,15,Probability Theory,9,N Dilmi,A Jones,53,,,scratched,False
+dbn,8,16,Biancelli,12,T Pollard,A Jones,53,,,runner,False
+dbn,8,17,Vintage Vibes,1,J Bellamy,F Larson,53,,,runner,True
+dbn,9,1,Leg Drive,2,M Kropp,M Rodd,60,,,runner,False
+dbn,9,2,Lord Of Biscay,1,K Lees,A Mallyon,60,,,runner,False
+dbn,9,3,Ser Joh,12,R Heathcote,E Pozman,60,a2,,scratched,False
+dbn,9,4,Thunderlips,7,J Bruce,E Lang,60,,,scratched,False
+dbn,9,5,Daggers,3,T Gollan,B Thompson,57,,,scratched,False
+dbn,9,6,Noble Decree,6,T Pollard,R Dolan,57,,,runner,False
+dbn,9,7,Street Chase,4,J Bruce,C Graham,57,,,runner,False
+dbn,9,8,Ikasara,8,T Pollard,Not Notified,55.5,,,scratched,False
+dbn,9,9,Little Fella,3,J Leach,J Newman,55.5,a3,,runner,False
+dbn,9,10,Biancelli,11,T Pollard,Not Notified,55,,,scratched,False
+dbn,9,11,Margot'S Deel,9,J Edwards,Not Notified,55,,,scratched,False
+dbn,9,12,Tessatori,5,B Brown,R Stewart,53.5,,,runner,False
+dbn,10,1,Brave Monarch,8,Chris & C Munce,M Harley,61,,,runner,False
+dbn,10,2,Call Da Vinci,7,R Laming,K Wilson-taylor,54,,,runner,False
+dbn,10,3,Artistic Venture,6,T Edmonds,Not Notified,54,,,scratched,False
+dbn,10,4,Urban Lad,6,Chris & C Munce,B OSmond,54,,,runner,False
+dbn,10,5,Tara I Am,15,S Rundle,Not Notified,54,,,scratched,False
+dbn,10,6,Propaganda,9,T Pascoe,A Allen,53,,,runner,False
+dbn,10,7,Point Vega,2,P Jenkins,J Bayliss,53,,,runner,False
+dbn,10,8,Ruination,4,M Freedman,T Marshall,52.5,,,runner,False
+dbn,10,9,Strada Varenna,10,T Gollan,E Lang,52,,,runner,False
+dbn,10,10,King Of Pop,3,T Gollan,R Dolan,52,,,runner,False
+dbn,10,11,Southern Heiress,8,T Gollan,A Jones,52,,,scratched,False
+dbn,10,12,Vintage Vibes,10,J Bellamy,J Newman,52,,,scratched,False
+dbn,10,13,Cardonette,11,T Gollan,B Thompson,52,,,runner,False
+dbn,10,14,The Wheelbarrow,12,K Schweida,C Collis,52,,,runner,False
+dbn,10,15,Crash The Party,5,T Edmonds,R Stewart,52,,,runner,False
+dbn,10,16,Desanto,1,J Bruce,C Graham,52,,,runner,False
+mph,1,1,Miss Parton,3,Richard & C Jolly,C Munro,58.5,a3,,runner,False
+mph,1,2,Cool No More,2,Richard & C Jolly,J Toeroek,57.5,,,runner,False
+mph,1,3,Patong Express,1,J Hyam,C Murtagh,57.5,,,runner,False
+mph,1,4,Written Supreme,5,D Caboche,F Atkinson,57.5,a3,,runner,False
+mph,1,5,Dark Ice,4,S Rutten,M Collett,55.5,,,runner,False
+mph,1,6,Infinite Angel,6,A Gluyas,J Holder,55.5,,,runner,False
+mph,2,1,Durham,6,P Preusker,S Ingelse,60,a3,,runner,False
+mph,2,2,Octane Reign,1,J Warren,J Toeroek,59,,,runner,False
+mph,2,3,Silvaloa,7,S Theodore,C Murtagh,59,,,runner,False
+mph,2,4,Tyusix,2,R Daniel & T Stanbury,R Hammond,58.5,a3,,runner,False
+mph,2,5,Synthesise,3,M Seyers,T Pannell,57.5,,,runner,False
+mph,2,6,Kazaru,5,PHILLIP & TOMMY STOKES,N Callow,57,,,runner,False
+mph,2,7,Somewhere Soon,8,A Gluyas,J Holder,57,,,runner,False
+mph,2,8,Swan Dance,4,G Boyce,A Warren,55,a2,,runner,False
+mph,3,1,Celtic Bhoy,5,S Whittle,H Grace,58,,,scratched,False
+mph,3,2,Drovers Dog,6,Sue & J Jaensch,M Collett,58,,,runner,False
+mph,3,3,Expeeare,2,K Mooney,J Holder,58,,,runner,False
+mph,3,4,Genco,7,J O'Connor,J Opperman,58,,,runner,False
+mph,3,5,Silent Legacy,1,K Boyce,C Murtagh,58,,,runner,False
+mph,3,6,Blazing Missile,5,G Richards & D Moyle,C Tootell,56.5,a2,,runner,False
+mph,3,7,Zeus Lightning,9,M Hickmott,T Pannell,56.5,,,scratched,False
+mph,3,8,Aliandra,14,A Bain & N Taylor,T Johnstone,56,,,scratched,False
+mph,3,9,Fear The Zou,3,J Hyam,C Munro,56,a3,,runner,False
+mph,3,10,Quillan,9,S Padman,A Warren,56,a2,,runner,False
+mph,3,11,Prettilox,4,M Seyers,K Crowther,54.5,,,runner,False
+mph,3,12,She'S Iconnic,10,J Tzaferis,T Voorham,54.5,,,runner,False
+mph,3,13,Joan'S Thunder,8,W Clarken & C Sorby,N Callow,56,,,runner,True
+mph,3,14,Minya Murra,13,S Rutten,R Milnes,56,,,scratched,True
+mph,4,1,Hot Statement,3,Richard & C Jolly,J Toeroek,60,,,runner,False
+mph,4,2,Blankfield,6,A Rae,N Callow,59,,,runner,False
+mph,4,3,Trebilco,11,"M, W & J Hawkes",N Callow,58.5,,,scratched,False
+mph,4,4,Captain Happy,7,Shane & C Oxlade,L Stojakovic,57.5,,,runner,False
+mph,4,5,Expecto Patronum,1,B Williams,H Grace,56.5,,,runner,False
+mph,4,6,Took Gardner,2,S Padman,K Crowther,56.5,,,runner,False
+mph,4,7,Maysoonfly,4,A Gluyas,J Holder,55.5,,,runner,False
+mph,4,8,Musical Sunset,9,D Stone,R Milnes,55,,,runner,False
+mph,4,9,Precipice,8,C Bieg,J Opperman,55,,,runner,False
+mph,4,10,Impact Storm,5,M Hickmott,T Pannell,54.5,,,runner,False
+mph,4,11,Sunset Prayer,2,D Saxon,B King,54,a2,,scratched,False
+mph,5,1,Costless,4,G Lynch,S Metcalfe,60,,,scratched,False
+mph,5,2,More Than Hope,9,C Reardon,H Grace,60,,,runner,False
+mph,5,3,Murph,8,P Carey,S Ingelse,60,a3,,runner,False
+mph,5,4,Wine Barron,2,M Hickmott,T Pannell,60,,,runner,False
+mph,5,5,Justa Star,7,A Gluyas,J Holder,59.5,,,runner,False
+mph,5,6,Annihilate,6,C Bieg,F Atkinson,59,a3,,scratched,False
+mph,5,7,Ice Symphony,3,S Rutten,C Murtagh,58.5,,,runner,False
+mph,5,8,Harmonic Dancer,4,Phillip & T Stokes,N Callow,58,,,runner,False
+mph,5,9,I'M A Hottie,5,W Brown,J Toeroek,58,,,runner,False
+mph,5,10,Lastar,7,N Irwin,R Hammond,58,a3,,scratched,False
+mph,5,11,Koratora,6,T Doudle,B Price,57.5,,,runner,False
+mph,5,12,Exotic Dancer,14,J Tzaferis,T Voorham,57,,,scratched,False
+mph,5,13,Cork Harbour,1,D Saxon,A Warren,56,a2,,scratched,True
+mph,5,14,Kindra Park,1,G Dimitropoulos,R Hammond,54,,,runner,True
+mph,6,1,Major Rumble,3,W Francis & G Kent,A Warren,60,a2,,runner,False
+mph,6,2,Babayka,6,P Trenwith,C Tootell,59,a2,,runner,False
+mph,6,3,Katrina'S Legacy,8,G Dimitropoulos,S Metcalfe,58.5,,,runner,False
+mph,6,4,Fluttering Ruby,2,P Trenwith,R Milnes,58,,,runner,False
+mph,6,5,Artissi,11,N Irwin,B King,57,a2,,runner,False
+mph,6,6,Flirt,7,A Bain & N Taylor,T Hutchinson,57,a3,,scratched,False
+mph,6,7,Madam Jeanette,7,Shane & C Oxlade,L Stojakovic,57,,,runner,False
+mph,6,8,Zatanna,12,S Whittle,J Weatherley,57,a3,,runner,False
+mph,6,9,She'S Xtravagant,9,P Nolan,A Stead,56.5,,,runner,False
+mph,6,10,Skadoosh,10,Richard & C Jolly,C Munro,56,a3,,runner,False
+mph,6,11,Dirty Gold,1,Peter & B Blanch,J Holder,55.5,,,runner,False
+mph,6,12,Inhabit,4,M Hickmott,S Ingelse,55,a3,,runner,False
+mph,6,13,Scooped,5,G Richards & D Moyle,K Crowther,58,,,runner,True
+mph,6,14,Mystic Mind,10,M Lewis,R Hammond,56,a3,,scratched,True
+mph,6,15,Eclair Vitality,16,D Aldridge,C Murtagh,58,,,scratched,True
+mph,6,16,Old Time Rock,5,A Clarken,N Callow,58,,,scratched,True
+mph,7,1,Spanish Fox,6,S Rutten,J Opperman,60.5,,,runner,False
+mph,7,2,Nicish,6,Phillip & T Stokes,B King,60,a2,,scratched,False
+mph,7,3,Vexatious Dancer,5,N Irwin,C Murtagh,60,,,runner,False
+mph,7,4,O'Tycoon,2,S Whittle,S Ingelse,59.5,a3,,runner,False
+mph,7,5,Thoros Of Myr,3,A Clarken,R Hammond,59.5,a3,,runner,False
+mph,7,6,Deepfloat Diva,12,Richard & C Jolly,J Toeroek,59,,,runner,False
+mph,7,7,High On Sugar,11,W Francis & G Kent,C Tootell,59,a2,,runner,False
+mph,7,8,Lake Forest,1,P Gelagotis,J Holder,59,,,runner,False
+mph,7,9,Bardigrub,9,Richard & C Jolly,T Voorham,58.5,,,runner,False
+mph,7,10,Bristler,10,G Richards & D Moyle,I Sit,58.5,a3,,runner,False
+mph,7,11,Super Alana,4,W Francis & G Kent,R Milnes,58,,,runner,False
+mph,7,12,Boyd,7,S Theodore,A Stead,57,,,runner,False
+mph,7,13,Tobikko,8,Phillip & T Stokes,N Callow,56,,,runner,True
+mph,7,14,Blanc Visage,9,Peter & B Blanch,T Pannell,54,,,scratched,True
+mph,8,1,Inexorable,12,Phillip & T Stokes,J Holder,60,,,runner,False
+mph,8,2,Mostly For Show,5,Richard & C Jolly,J Toeroek,60,,,runner,False
+mph,8,3,Big Sue,9,D Dodson,K Crowther,59.5,,,runner,False
+mph,8,4,Conni Island,2,H Lehmann,A Warren,59.5,a2,,runner,False
+mph,8,5,Midlife Crisis,14,K Mooney,I Sit,59.5,a3,,runner,False
+mph,8,6,Ronny Bee,3,W Brown,B Price,59.5,,,runner,False
+mph,8,7,Sir Leapalot,10,R Hannemann,B King,59.5,a2,,runner,False
+mph,8,8,Synchro,1,M Hickmott,T Pannell,59.5,,,runner,False
+mph,8,9,Kalmana,13,Richard & C Jolly,C Munro,59,a3,,runner,False
+mph,8,10,One More Song,11,A Bain & N Taylor,R Milnes,58.5,,,runner,False
+mph,8,11,Imamanzor,8,S Rutten,C Murtagh,58,,,runner,False
+mph,8,12,Shystar,4,Phillip & T Stokes,N Callow,58,,,runner,False
+mph,8,13,Texan Windstorm,7,J Macmillan,S Ingelse,58,a3,,runner,False
+mph,8,14,Diversity,6,J Tzaferis,M Julius,57,,,runner,False
+mph,9,1,Falaise,10,S Padman,S Ingelse,60,a3,,runner,False
+mph,9,2,Safe Bet,9,H Fertier,J Weatherley,60,a3,,runner,False
+mph,9,3,Stockman'S Choice,11,A Bain & N Taylor,J Murphy,59.5,,,runner,False
+mph,9,4,Bargain Boy,1,Phillip & T Stokes,H Grace,59,,,runner,False
+mph,9,5,Bolted In,4,M Seyers,J Opperman,58,,,runner,False
+mph,9,6,Cielao,6,M Hickmott,T Pannell,58,,,scratched,False
+mph,9,7,Imposing Suspect,2,S Rutten,K Crowther,58,,,runner,False
+mph,9,8,Anahorish,8,Phillip & T Stokes,N Callow,57.5,,,runner,False
+mph,9,9,Rousing Refrain,5,J O'Connor,J Holder,57.5,,,runner,False
+mph,9,10,Dazelles,16,H Fertier,C Murtagh,57,,,scratched,False
+mph,9,11,Pretty Perky,12,A Gluyas,R Hammond,57,a3,,runner,False
+mph,9,12,Sicilian Princess,3,Richard & C Jolly,J Toeroek,57,,,runner,False
+mph,9,13,Hamner Springs,6,G Young,A Warren,57.5,a2,,runner,True
+mph,9,14,Taking Omaha,7,C Reardon,R Milnes,57,,,runner,True
+mph,9,15,Frontpoint,7,J Lynch,Not Notified,57,,,scratched,True
+mph,9,16,Royal Fox,14,J Tzaferis,M Julius,56,,,scratched,True
+ast,1,1,Castle Road,4,P Jordan,L Staples,60,,,runner,False
+ast,1,2,Ripper Farooq,5,Chris & M Gangemi,N Portelli,60,a2,,runner,False
+ast,1,3,Scream,3,G Webster,B Parnham,59,,,runner,False
+ast,1,4,Acorn,10,A Durrant,L Fiore,57,,,runner,False
+ast,1,5,Perfect Chant,3,Daniel & B Pearce,C Parnham,57,,,scratched,False
+ast,1,6,Bosisto,2,G Ballantyne,J Whiting,56.5,,,runner,False
+ast,1,7,Delicate Ruler,9,A Barton,S Altieri,56.5,,,runner,False
+ast,1,8,Oracle Son,1,M Bairstow,A Galati,56,,,runner,False
+ast,1,9,Paint It Red,8,L Fernie,H Nottle,55.5,a1.5,,runner,False
+ast,1,10,Rodney Oh Rodney,6,J Enright,J Tsang,55.5,a3,,runner,False
+ast,1,11,Artie'S Eclipse,7,M Pateman,H Watson,54.5,,,runner,False
+ast,1,12,The Mighty Bell,12,B Larsson,Not Notified,54.5,,,scratched,False
+ast,2,1,Cheyne Bay,5,A Durrant,Z Johnston-po,59.5,,,runner,False
+ast,2,2,Masmelo,8,N Parnham,C Parnham,59.5,,,runner,False
+ast,2,3,More Than Enuff,11,S Miller,J Tsang,59,a3,,runner,False
+ast,2,4,Cosmic Chaos,4,S Barrass,J Whiting,58.5,,,runner,False
+ast,2,5,Rock In Wonder,3,R Hill,V Corver,58,,,runner,False
+ast,2,6,Spank Appeal,13,L Fernie,H Nottle,56.5,a1.5,,runner,False
+ast,2,7,Billionaire'S Row,10,Grant & A Williams,C Azzopardi,56,,,runner,False
+ast,2,8,Buster Biff,6,D Harrison,A Galati,56,,,runner,False
+ast,2,9,Keggs Later,12,A Maley,T Faithfull,56,,,runner,False
+ast,2,10,Mistress Of War,15,K Kersley,H Watson,55,,,runner,False
+ast,2,11,Ruthless Angel,9,D Morton,B Parnham,55,,,runner,False
+ast,2,12,Vexatious Rose,2,J Easthope,S O'Donnell,55,,,runner,False
+ast,2,13,More Heroic,14,R Bayliss,L Fiore,54.5,,,runner,False
+ast,2,14,Pincer Movement,1,M Grantham,C Johnston-por,54.5,,,runner,False
+ast,2,15,Heavenly Rapture,7,M Forrester,B Louis,54,,,runner,False
+ast,3,1,Lavalier,11,N Parnham,B Parnham,60,,,runner,False
+ast,3,2,Westbound,12,M Grantham,C Parnham,59,,,runner,False
+ast,3,3,Decoration,7,Daniel & B Pearce,B Shinn,58.5,,,runner,False
+ast,3,4,Holler Nuff,1,M Grantham,C Johnston-por,58,,,runner,False
+ast,3,5,Street Band,3,T Andrews,S Parnham,57,,,runner,False
+ast,3,6,Madame Magic,8,Daniel & B Pearce,T Faithfull,56,,,runner,False
+ast,3,7,Ginger Green,9,S Casey,H Watson,55.5,,,runner,False
+ast,3,8,Classic Impact,2,D O'Connor,J Tsang,55,a3,,runner,False
+ast,3,9,Deadly And Fast,5,A Smith,P Carbery,55,,,runner,False
+ast,3,10,Let'Sdeal,6,A Barton,B Gaerth,55,,,runner,False
+ast,3,11,Odinaka,4,S Wolfe,S McGruddy,55,,,runner,False
+ast,3,12,Redback Flyer,10,M Lane,Z Johnston-po,55,,,runner,False
+ast,4,1,Just Famous,8,P Fernie,N Portelli,63.5,a2,,scratched,False
+ast,4,2,In Situ,6,B Stokes,H Nottle,62.5,a1.5,,runner,False
+ast,4,3,Scurgeofthewest,5,T Scally,J Allen,62.5,,,runner,False
+ast,4,4,Morf,10,P Fernie,L Fiore,61,,,runner,False
+ast,4,5,Luckee Floran,8,W Parker,J Tsang,60.5,a3,,runner,False
+ast,4,6,Makin Prophets,7,A Smith,B Parnham,58.5,,,runner,False
+ast,4,7,Door Buster,9,P Fernie,H Watson,58,,,runner,False
+ast,4,8,Giles,11,R Cowl (jnr),S McGruddy,58,,,runner,False
+ast,4,9,Niccy'S Affair,5,R Rogers,Not Notified,58,,,scratched,False
+ast,4,10,Diablo Lad,12,S Faithfull,T Faithfull,56,,,runner,False
+ast,4,11,Spangledstar,3,B Drury,J Noske,56,,,runner,False
+ast,4,12,Shooting Spirit,2,A Smith,C Johnston-por,55.5,,,runner,False
+ast,4,13,Jellybean Jones,13,S Wolfe,T Turner,55,,,runner,False
+ast,4,14,Capricious Ruler,4,R Rogers,A Hayes,54,,,runner,False
+ast,4,15,Kamakazi Shooter,1,A Woollett,J Whiting,54,,,runner,False
+ast,5,1,Jaz Session,9,J Erkelens,S O'Donnell,60,,,runner,False
+ast,5,2,Twisted Steel,2,S Miller,B Shinn,58,,,runner,False
+ast,5,3,Bassett Hound,3,M Pateman,P Carbery,56,,,runner,False
+ast,5,4,Norich,7,K Kersley,S McGruddy,56,,,runner,False
+ast,5,5,Hurricane Harley,8,S Dickson,A Galati,55.5,,,runner,False
+ast,5,6,Snitzalatte,1,A Durrant,L Fiore,55.5,,,runner,False
+ast,5,7,Avoidance,5,S Wolfe,T Faithfull,55,,,runner,False
+ast,5,8,Keep Reading,10,M Pateman,H Watson,55,,,runner,False
+ast,5,9,Wubin Gold,6,C Webster (jnr),T Turner,55,,,runner,False
+ast,5,10,Xentaro,4,N Parnham,C Parnham,54,,,runner,False
+ast,6,1,Our Nemesis,4,D Hopperton,N Portelli,60.5,a2,,runner,False
+ast,6,2,Linchpin,10,D McAuliffe,C Parnham,59.5,,,runner,False
+ast,6,3,Snow God,8,D Harrison,S McGruddy,59.5,,,runner,False
+ast,6,4,Black For Cash,13,J Erkelens,S O'Donnell,58.5,,,runner,False
+ast,6,5,Bondi'S Future,7,A Durrant,L Fiore,58.5,,,runner,False
+ast,6,6,Market Snitz,15,S Miller,J Tsang,58.5,a3,,runner,False
+ast,6,7,Pony Up,5,P Jordan,L Staples,58,,,runner,False
+ast,6,8,Precious God,9,P Wagg,B Louis,57.5,,,runner,False
+ast,6,9,Streamlined,2,M Grantham,B Parnham,57.5,,,runner,False
+ast,6,10,Flying South,12,T Noske,J Noske,57,,,scratched,False
+ast,6,11,Prince Of Santos,11,S Dickson,A Galati,57,,,runner,False
+ast,6,12,What A Prince,1,A Woollett,J Whiting,57,,,runner,False
+ast,6,13,Jelly Can Run,3,G Ballantyne,H Nottle,55.5,a1.5,,runner,False
+ast,6,14,Wolf Whistle Zel,14,J Taylor,C Johnston-por,55.5,,,runner,False
+ast,6,15,Forever Dreaming,6,C Webster (jnr),T Turner,54.5,,,runner,False
+ast,6,16,Merivale Louvain,3,R Price,J Azzopardi,54,,,scratched,False
+ast,6,17,Tribal Ruler,16,P McLeod,B Gaerth,54.5,,,runner,True
+ast,7,1,Levati Dimezzo,10,Chris & M Gangemi,B Parnham,57,,,runner,False
+ast,7,2,Harbour Rise,6,D Luciani,P Carbery,56,,,runner,False
+ast,7,3,Godspeed,2,Chris & M Gangemi,C Johnston-por,56,,,runner,False
+ast,7,4,One Last Resort,7,Sean & J Casey,C Parnham,55,,,runner,False
+ast,7,5,Consignment,5,N Parnham,S Parnham,55,,,runner,False
+ast,7,6,Countersunk,4,L Luciani,J Whiting,55,,,runner,False
+ast,7,7,Fast Break,12,K Regan,B Gaerth,55,,,runner,False
+ast,7,8,Gaintree,11,S Miller,S O'Donnell,54,,,runner,False
+ast,7,9,Rok 'N' Rom,9,J Brown,H Watson,54,,,runner,False
+ast,7,10,Cos I Am,3,Daniel & B Pearce,T Faithfull,54,,,runner,False
+ast,7,11,Lady Torque,8,D Morton,L Fiore,53,,,runner,False
+ast,7,12,She'S A Splinter,13,J Brown,H Nottle,53,,,runner,False
+ast,7,13,Chixfromthestix,1,J Brown,C Azzopardi,53,,,runner,False
+ast,8,1,Ladies Pro,10,Grant & A Williams,B Shinn,58.5,,,runner,False
+ast,8,2,Memory Parade,8,Sean & J Casey,M Zahra,58,,,runner,False
+ast,8,3,Rissoles,7,L Fernie,J Allen,57.5,,,runner,False
+ast,8,4,Fancy Red,11,A Durrant,J Azzopardi,56.5,,,runner,False
+ast,8,5,Drakaina,6,M Grantham,P Carbery,56.5,,,runner,False
+ast,8,6,Black Ora,2,A Durrant,S O'Donnell,55,,,runner,False
+ast,8,7,Platinum Shot,5,Daniel & B Pearce,T Faithfull,55,,,runner,False
+ast,8,8,Sixinch Heels,12,J Miller,H Watson,55,,,runner,False
+ast,8,9,Zourun Run,13,N Parnham,S Parnham,55,,,runner,False
+ast,8,10,Amjaad,9,S Dickson,A Galati,55,,,runner,False
+ast,8,11,Like Clockwork,1,M Grantham,C Parnham,55,,,runner,False
+ast,8,12,In Confidence,3,D Morton,L Fiore,55,,,runner,False
+ast,8,13,Cinque Stelle,14,S Casey,C Johnston-por,55,,,runner,False
+ast,8,14,Searchin' Times,4,S Dickson,H Nottle,55,,,runner,False
+ast,9,1,Overpass,1,B Baker,B Shinn,58.5,,,runner,False
+ast,9,2,Rey Magnerio,7,R Griffiths,M Zahra,58.5,,,runner,False
+ast,9,3,Oscar'S Fortune,14,D Luciani,P Carbery,58.5,,,runner,False
+ast,9,4,Rope Them In,13,S Wolfe,S McGruddy,58.5,,,runner,False
+ast,9,5,Persian Spirit,3,S Wilde,J Allen,58.5,,,runner,False
+ast,9,6,Want A Winner,17,Sean & J Casey,S O'Donnell,58.5,,,runner,False
+ast,9,7,Fluro Neuro,9,Grant & A Williams,C Azzopardi,58.5,,,runner,False
+ast,9,8,Immortal Bliss,19,D Morton,L Fiore,58.5,,,runner,False
+ast,9,9,Thermosphere Lad,16,A Johnston,J Azzopardi,58.5,,,runner,False
+ast,9,10,Kraken Time,18,M Pateman,H Watson,58.5,,,runner,False
+ast,9,11,Super Smink,8,D Morton,C Parnham,56.5,,,runner,False
+ast,9,12,Talkanco,12,Daniel & B Pearce,B Parnham,56.5,,,runner,False
+ast,9,13,London'S Image,10,Grant & A Williams,C Johnston-por,56.5,,,runner,False
+ast,9,14,Cessation,5,T Noske,J Noske,56.5,,,runner,False
+ast,9,15,Afireofgidgeecoals,2,D Morton,H Nottle,53.5,,,runner,False
+ast,9,16,Jedi Dream,6,S Vahala,S Parnham,51.5,,,runner,False
+ast,9,17,Bassett Hound,15,M Pateman,Not Notified,58.5,,,runner,True
+ast,9,18,Hurricane Harley,4,S Dickson,Not Notified,58.5,,,runner,True
+ast,9,19,Levati Dimezzo,11,Chris & M Gangemi,Not Notified,53.5,,,runner,True
+ast,10,1,Capper Thirtynine,10,A Mitchell,J Allen,59.5,,,runner,False
+ast,10,2,Bolta,6,T Scally,T Faithfull,59,,,runner,False
+ast,10,3,Supersession,4,A Durrant,J Tsang,59,a3,,runner,False
+ast,10,4,Ourgirlcanrun,14,M Pateman,H Watson,58.5,,,runner,False
+ast,10,5,Magical Sequence,7,J Miller,B Gaerth,58,,,runner,False
+ast,10,6,Have A Crack,9,M Pateman,H Nottle,57,a1.5,,runner,False
+ast,10,7,God'S Gate,15,N Parnham,S Parnham,56.5,,,runner,False
+ast,10,8,Magna'S Choice,13,T Andrews,B Shinn,56.5,,,runner,False
+ast,10,9,Nicciana,12,M Grantham,C Parnham,56.5,,,runner,False
+ast,10,10,Spicy Thang,11,T Andrews,C Johnston-por,56,,,runner,False
+ast,10,11,Galway Shawl,2,B Watkins,J Whiting,55.5,,,runner,False
+ast,10,12,Scully,18,N Parnham,B Parnham,55.5,,,runner,False
+ast,10,13,Boy Crush,17,L Fernie,L Fiore,55,,,scratched,False
+ast,10,14,Diamonds'N'Rubies,1,M Pateman,P Carbery,55,,,runner,False
+ast,10,15,King'S Drama,5,Chris & M Gangemi,Z Johnston-po,55,,,runner,False
+ast,10,16,Gi Gi Pops,16,T Crosby,A Galati,54.5,,,runner,False
+ast,10,17,Hasani,8,A Mitchell,Not Notified,54.5,,,runner,True
+ast,10,18,Katona,3,B Turrell (jnr),Not Notified,54,,,runner,True
+kgr,1,1,Strawberry Impact,4,B Ryan,K Latham,60.5,,,runner,False
+kgr,1,2,Arato,5,E Cummings,G Buckley,58,,,runner,False
+kgr,1,3,The Hard Road,5,J Ible,S Guymer,56.5,,,scratched,False
+kgr,1,4,Tiger Turf,3,G Portelli,R Hutchings,56.5,,,runner,False
+kgr,1,5,Yes He Reigns,6,M Beer & G Carpenter,J Van Overmeire,56.5,,,runner,False
+kgr,1,6,Coco Dior,1,M Beer & G Carpenter,L Day,55,,,runner,False
+kgr,1,7,Southern Grace,2,K Parker,C Lever,55,,,runner,False
+kgr,2,1,Silver Summit,7,J Ible,J Van Overmeire,58,,,runner,False
+kgr,2,2,King Cosmic,8,J Thompson,L Beuzelin,57.5,,,runner,False
+kgr,2,3,Glamour Magic,9,J Pride,J Penza,57,,,runner,False
+kgr,2,4,Mardyke,9,E Cummings,G Buckley,56.5,,,scratched,False
+kgr,2,5,Kaihalulu Beach,2,T Bateup,A McLucas,56,,,runner,False
+kgr,2,6,Be More Pacific,6,D Grisedale,B Ryan,55.5,,,runner,False
+kgr,2,7,Lady Winston,4,Marc & M Conners,W Stanley,55.5,a1.5,,runner,False
+kgr,2,8,My Star,5,C Carmody,J Taylor,55.5,,,runner,False
+kgr,2,9,Neferusobek,10,D Poidevin-laine,L Magorrian,55.5,,,runner,False
+kgr,2,10,Pronounced,1,J Ible,C Lever,55.5,,,runner,False
+kgr,2,11,Weekday Flyer,3,K Parker,R Hutchings,55.5,,,runner,False
+kgr,3,1,Composed,6,P Snowden,K Latham,59,,,scratched,False
+kgr,3,2,Dirty Summer,6,Jim & G Lee,L Beuzelin,58.5,,,runner,False
+kgr,3,3,Thorsten,3,M Smith,J Taylor,57.5,,,runner,False
+kgr,3,4,Concorde Jet,4,M Beer & G Carpenter,J Van Overmeire,57,,,runner,False
+kgr,3,5,Soviet Storm,1,G Portelli,Not Notified,56,,,scratched,False
+kgr,3,6,Bundy Belle,1,B Baker,C Lever,55.5,,,runner,False
+kgr,3,7,Slipstream Sarah,2,D Poidevin-laine,L Magorrian,55,,,runner,False
+kgr,3,8,Battle Warrior,5,A Turner,B Ryan,55,,,runner,False
+kgr,4,1,King'S Charm,13,J Ible,Not Notified,57.5,,,scratched,False
+kgr,4,2,Malua Bay,9,B Baker,C Lever,57.5,,,runner,False
+kgr,4,3,Milele,6,C Waller,L Magorrian,57.5,,,runner,False
+kgr,4,4,Remember The Time,7,Paul & M Cave,G Cahill,57.5,a3,,runner,False
+kgr,4,5,Sacred Vow,2,M Freedman,J Van Overmeire,57.5,,,scratched,False
+kgr,4,6,Sir Verdi,15,C Waller,M Bell,57.5,,,scratched,False
+kgr,4,7,Sweet Intent,11,C Waller,R Hutchings,57.5,,,scratched,False
+kgr,4,8,Ultimate Warrior,8,Anthony & S Freedman,K Latham,57.5,,,runner,False
+kgr,4,9,Virtuoso,10,B Baker,B Ryan,57.5,,,runner,False
+kgr,4,10,Years Gone By,16,B Heys,Not Notified,57.5,,,scratched,False
+kgr,4,11,Miss Serengeti,5,M Smith,J Taylor,57,,,runner,False
+kgr,4,12,Gekido,3,C Maher,L Day,55.5,,,runner,False
+kgr,4,13,Run In Your Memory,10,C Waller,J Penza,55.5,,,scratched,False
+kgr,4,14,Zoudawnie,2,B Widdup,C Reith,55.5,,,runner,False
+kgr,4,15,King Commander,3,R Litt,Not Notified,57.5,,,scratched,True
+kgr,4,16,Pyra,1,B Baker,J Van Overmeire,57.5,,,runner,True
+kgr,4,17,Lady Resolute,18,C Waller,Not Notified,55.5,,,scratched,True
+kgr,4,18,Solid Heart,4,C Waller,R Hutchings,57.5,,,runner,True
+kgr,5,1,Presides,2,M Beer & G Carpenter,G Cahill,62.5,a3,,runner,False
+kgr,5,2,Dumebi,3,M Beer & G Carpenter,R Hutchings,59.5,,,runner,False
+kgr,5,3,Smoke 'N' Darts,5,B Ryan,M Bell,59.5,,,runner,False
+kgr,5,4,Fasvara,1,K Lees,W Stanley,59,a1.5,,scratched,False
+kgr,5,5,Against The Law,4,M Beer & G Carpenter,J Van Overmeire,56.5,,,runner,False
+kgr,5,6,All Machiavellian,6,Robert & L Price,C Lever,55,,,runner,False
+kgr,5,7,Ciao Bella Mia,7,A Mountney,P Gorton,55,a3,,runner,False
+kgr,5,8,Cuban Rain,1,Robert & L Price,B Ryan,55,,,runner,False
+kgr,5,9,Nights Inferno,3,T Bateup,Not Notified,55,,,scratched,False
+kgr,6,1,Markos Port,5,G Waterhouse & A Bott,A McLucas,60,,,runner,False
+kgr,6,2,All Over Harry,9,Anthony & S Freedman,M Bell,59,,,runner,False
+kgr,6,3,Scoop The Pool,16,J O'Shea & T Charlton,Not Notified,59,,,scratched,False
+kgr,6,4,Snitzel A'La Rouge,12,C Waller,R Hutchings,58,,,scratched,False
+kgr,6,5,Bavaria,13,C Maher,L Day,57.5,,,scratched,False
+kgr,6,6,Lozano,1,Anthony & S Freedman,B Ryan,57.5,,,runner,False
+kgr,6,7,Palm Tree,2,C Waller,L Magorrian,57,,,runner,False
+kgr,6,8,Smashing Machine,8,R Litt,Not Notified,57,,,scratched,False
+kgr,6,9,Not Inevitable,8,J Sargent,J Van Overmeire,55.5,,,scratched,False
+kgr,6,10,Point In Time,3,Robert & L Price,C Lever,55.5,,,runner,False
+kgr,6,11,Stellar Cipher,6,C Waller,G Buckley,55.5,,,runner,False
+kgr,6,12,Aida,4,"M, W & J Hawkes",L Beuzelin,55,,,runner,False
+kgr,6,13,Envious,15,C Waller,J Penza,55,,,scratched,False
+kgr,6,14,She Can Party,7,M Freedman,K Latham,55,,,runner,False
+kgr,6,15,Malietoa,6,Marc & M Conners,Not Notified,56.5,,,scratched,True
+kgr,6,16,Neferusobek,1,D Poidevin-laine,Not Notified,55,,,scratched,True
+kgr,7,1,Tequisoda,4,B Widdup,L Small,61,a3,,runner,False
+kgr,7,2,Flying Arabesque,8,Robert & L Price,R Hutchings,59.5,,,runner,False
+kgr,7,3,Sur Nova Centauri,6,G Waterhouse & A Bott,L Beuzelin,59.5,,,runner,False
+kgr,7,4,Emerald Hills,1,N Dilmi,W Stanley,59,a1.5,,scratched,False
+kgr,7,5,Alabama Charm,9,G Hickman,J Van Overmeire,57.5,,,runner,False
+kgr,7,6,Flying Grey,1,B Widdup,C Reith,57,,,runner,False
+kgr,7,7,Dawn Or Dusk,5,M Smith,S Guymer,56.5,,,runner,False
+kgr,7,8,Vision In A Dream,7,P Snowden,K Latham,56,,,runner,False
+kgr,7,9,Ivy Legend,2,L Bridge,L Day,55,,,runner,False
+kgr,7,10,More Mischief,11,A Turner,M Bourke,55,,,scratched,False
+kgr,7,11,Super Jaie,3,D Grisedale,P Gorton,55,a3,,runner,False
+wag,1,1,Kenny'S Swans,9,W Carroll,B Loy,60.5,,,runner,False
+wag,1,2,Spanish Night,5,T Smart,D Cole,59,,,runner,False
+wag,1,3,Blue Moon Summit,1,M Ivill,N Heywood,58.5,,,runner,False
+wag,1,4,Duke Of Zhou,12,P McVicar,C Parish,58,,,scratched,False
+wag,1,5,Russian Gangster,10,D Burnet,J Richards,58,,,runner,False
+wag,1,6,Forrest Dancer,6,S Spackman,D Cole,56.5,a2,,scratched,False
+wag,1,7,Kathleen'S Prayer,2,N Gardner,C Ramsbotham,56.5,,,runner,False
+wag,1,8,Forjori,3,N OSborne,R Wedrat-kr,56,a2,,runner,False
+wag,1,9,Head Capitalist,4,T Smart,S Fawke,55,,,runner,False
+wag,1,10,I'Ve Forgotten,11,A Dale,J Duffy,55,,,runner,False
+wag,1,11,Mo Cent,11,R Waters,Q Krogh,55,,,scratched,False
+wag,1,12,Tully'S Bell,6,G Colvin,C Taylor,55,,,runner,False
+wag,1,13,Jackets,7,J Rolfe,M Heagney,55,,,runner,True
+wag,1,14,Four Esses,8,P McVicar,C Hill,55,a2,,runner,True
+wag,1,15,The Favorite Son,9,J Scobie,Not Notified,55,,,scratched,True
+wag,1,16,Blessing Season,14,P McVicar,Not Notified,55,,,scratched,True
+wag,1,17,Gettin' Tipsy,18,M Travers,Not Notified,55,,,scratched,True
+wag,1,18,Dita Von,8,M Travers,Not Notified,55,,,scratched,True
+wag,2,1,Tyndrum Gold,6,N Hobson,C Taylor,62.5,,,runner,False
+wag,2,2,Ozzy The Equaliser,4,S Spackman,D Cole,62,,,runner,False
+wag,2,3,Sunroe,8,D Gorrel,C Parish,61,,,runner,False
+wag,2,4,Anladio,5,A McRae,N Heywood,60.5,,,runner,False
+wag,2,5,Jingu Express,15,A Dale,Not Notified,60.5,,,scratched,False
+wag,2,6,Perfectly Good,10,D Gorrel,J Richards,60.5,,,scratched,False
+wag,2,7,Darken,7,S McIntosh,B Loy,60,,,runner,False
+wag,2,8,Sundrop,3,S Bloomfield,C Ramsbotham,60,,,runner,False
+wag,2,9,Captain Barbossa,10,JOHN & CHRIS LEDGER,D Budler,59,,,runner,False
+wag,2,10,So Regal,11,C Weeding,J Duffy,58.5,,,runner,False
+wag,2,11,Cloud Of Dust,2,T Burleigh,M Heagney,58,,,runner,False
+wag,2,12,Lost Ya Sock,1,D Gorrel,J Richards,56.5,,,runner,False
+wag,2,13,Cinephile,12,M Travers,Q Krogh,57,,,runner,True
+wag,2,14,The Pres,9,J Rolfe,S Fawke,55.5,,,runner,True
+wag,2,15,Enough War,7,G Brunsdon,M Lawrence,55,,,scratched,True
+wag,2,16,Rasloc,2,D Burnet,Not Notified,57,,,scratched,True
+wag,3,1,Palladium,6,John & C Ledger,B Loy,59,,,runner,False
+wag,3,2,Sampson,3,M Waters,N Heywood,59,,,runner,False
+wag,3,3,Deflector,13,G Colvin,Not Notified,57,,,scratched,False
+wag,3,4,Kamarooka,9,T Burleigh,M Heagney,57,,,runner,False
+wag,3,5,Rasloc,4,D Burnet,J Richards,57,,,runner,False
+wag,3,6,Titan'S Soul,7,D McCarthy,Not Notified,56.5,,,scratched,False
+wag,3,7,Apple Eyes,9,C Weeding,H Edgley,55,,,scratched,False
+wag,3,8,Destined To Dream,7,A Craig,T Martin,55,a1.5,,runner,False
+wag,3,9,Ebony Eyes,10,S Bloomfield,E Ly,55,a1.5,,runner,False
+wag,3,10,Kayla Marie,2,C Weeding,J Duffy,55,,,runner,False
+wag,3,11,Mane Angel,1,A McRae,D Budler,55,,,runner,False
+wag,3,12,Tassy Fox,14,G Colvin,Not Notified,55,,,scratched,False
+wag,3,13,It'Swhatyoumakeit,15,R Hoysted,J Stanley,59,,,scratched,True
+wag,3,14,Ring The Sheriff,8,N Hobson,C Taylor,59,,,runner,True
+wag,3,15,Wild Oaks,5,T Smart,S Fawke,55,,,runner,True
+wag,3,16,Gettin' Tipsy,5,M Travers,Not Notified,57,,,scratched,True
+wag,4,1,Alice Alice,9,D Gorrel,M Kirk,64,a4,,runner,False
+wag,4,2,Densetsu,7,A Dale,C Parish,61.5,,,runner,False
+wag,4,3,Under Wraps,5,D Beasley,N Heywood,61.5,,,runner,False
+wag,4,4,Reds City,11,A Craig,D Budler,61,,,runner,False
+wag,4,5,Xceptional Spirit,2,M Kelley,E Ly,60,a1.5,,runner,False
+wag,4,6,Cosmic Grace,3,G Byatt,M Heagney,59.5,,,runner,False
+wag,4,7,O'Reg,8,J Fitzgerald,J Richards,59,,,runner,False
+wag,4,8,Ta La Masca,6,K Weir,D Cole,59,a2,,runner,False
+wag,4,9,Black Panther,1,P Maher,M Lawrence,58.5,,,runner,False
+wag,4,10,Vainstream,15,T Smart,Not Notified,58.5,,,scratched,False
+wag,4,11,Taluk,10,M Travers,B Loy,57.5,,,runner,False
+wag,4,12,The Favorite Son,4,J Scobie,B Vale,57,,,runner,False
+wag,4,13,Persuasive Star,1,G Brunsdon,M Lawrence,55,,,scratched,True
+wag,4,14,Sogeri,13,J Rolfe,Not Notified,55,,,scratched,True
+wag,4,15,Martha Lavinia,12,F Schneiders,Not Notified,56,,,scratched,True
+wag,5,1,Inzain Baby,3,M Travers,M Heagney,59,,,runner,False
+wag,5,2,Jacko'S Lamb,6,D Gorrel,J Richards,59,,,runner,False
+wag,5,3,Phenomenorm,1,S Meyervale,B Vale,59,,,runner,False
+wag,5,4,The Major,7,R Waters,B Loy,59,,,runner,False
+wag,5,5,In The Attic,9,N Gardner,Q Krogh,57.5,,,runner,False
+wag,5,6,Saraya,11,N Hobson,C Taylor,57,,,runner,False
+wag,5,7,Shezrushin,12,W Carroll,C Ramsbotham,57,,,runner,False
+wag,5,8,Borata'S Girl,6,G Colvin,Not Notified,55.5,,,scratched,False
+wag,5,9,Eyes Right,4,T Donnelly,D Cole,55.5,a2,,runner,False
+wag,5,10,Little Sister,10,D Beasley,D Budler,55.5,,,runner,False
+wag,5,11,Living On A Prayer,5,S Bloomfield,E Ly,55.5,a1.5,,runner,False
+wag,5,12,Relax The Spirit,2,A Dale,C Parish,55.5,,,runner,False
+wag,5,13,Princess Prussia,8,C Weeding,Not Notified,57,,,scratched,True
+wag,5,14,Bokka Bokka,8,John & C Ledger,A Kennedy,59,a2,,runner,True
+wag,5,15,Tristania,10,T Smart,Not Notified,57,,,scratched,True
+wag,5,16,Melbourne Miss,4,John & C Ledger,A Kennedy,55.5,a2,,scratched,True
+wag,5,17,Flying Betty,16,A Craig,Not Notified,57,,,scratched,True
+wag,5,18,Cod On The Rum,13,K Weir,D Cole,57.5,a2,,scratched,True
+wag,6,1,Wallaby Jack,7,John & C Ledger,A Kennedy,62.5,a2,,runner,False
+wag,6,2,Queue Jumper,6,S McIntosh,C Parish,61,,,runner,False
+wag,6,3,Tosen Fury,11,W Carroll,D Budler,60.5,,,runner,False
+wag,6,4,Dubai Fountain,12,A Dale,Not Notified,60,,,scratched,False
+wag,6,5,Fleetly,8,P Morgan,B Loy,59,,,runner,False
+wag,6,6,Finn'S The Icon,2,K Weir,T Martin,57.5,a1.5,,runner,False
+wag,6,7,Ima Guru,10,P Maher,M Lawrence,57,,,runner,False
+wag,6,8,Gettin' Tipsy,4,M Travers,D Cole,56.5,a2,,runner,False
+wag,6,9,Martha Lavinia,3,F Schneiders,J Duffy,56,,,runner,False
+wag,6,10,Crusader Razor,5,J Rolfe,S Fawke,55,,,runner,False
+wag,6,11,Papaver Miner,9,J Van Duren,M Heagney,55,,,runner,False
+wag,6,12,Hillbily Kynection,1,J Kyne,B Vale,55,,,runner,False
+wag,7,1,Gustav,10,J Scobie,B Vale,61,,,runner,False
+wag,7,2,Wannabeapoodle,2,G Connell,Q Krogh,61,,,runner,False
+wag,7,3,Witch Of November,9,N Olive,J Quince,60,a2,,runner,False
+wag,7,4,Golden Warrior,6,A Bourke,C Ramsbotham,59.5,,,runner,False
+wag,7,5,See You Then,7,A Dale,B Loy,59,,,runner,False
+wag,7,6,Slay Queen,3,T Burleigh,D Cole,57.5,a2,,runner,False
+wag,7,7,Blessing Season,5,P McVicar,J Richards,56.5,,,runner,False
+wag,7,8,Dita Von,1,M Travers,C Parish,56,,,runner,False
+wag,7,9,Aerobatic Warrior,8,J Rolfe,R Wedrat-kr,55.5,a2,,runner,False
+wag,7,10,Beau Rock,2,G Vella,Not Notified,55,,,scratched,False
+wag,7,11,Royal Summer,1,G Brunsdon,M Lawrence,55,,,scratched,False
+wag,7,12,Meatloaf,4,D Dale,M Heagney,55,,,runner,False
+kem,1,1,Billybago,2,C Prosser,Z Wadick,59,,,runner,False
+kem,1,2,Little Bunji,3,V McLennan,K Adams,59,,,runner,False
+kem,1,3,Morebar,1,N Mayfield-smith,O Dalton,59,a1.5,,runner,False
+kem,1,4,Rockin' Red,6,S McGuren,B Looker,59,,,runner,False
+kem,1,5,Star Of Vega,8,N Godbolt,R Spokes,59,,,runner,False
+kem,1,6,Truly Graphic,5,T Ball,C Bellamy,57.5,,,runner,False
+kem,1,7,Oakfield Texas,9,S Hodge,S Wilkes,57,a1.5,,runner,False
+kem,1,8,Pride Of Erin,7,K Owen,T Worsnop,57,,,runner,False
+kem,1,9,Princess Rabble,4,A Kehoe,P Graham,55.5,,,runner,False
+kem,2,1,She'S A Wild One,7,C Prosser,W Galloway,63,a3,,runner,False
+kem,2,2,El Beatle,5,J Sylvester,L Wakely,61,a4,,runner,False
+kem,2,3,Love You Anyway,6,B Lawrence,P Graham,59.5,,,runner,False
+kem,2,4,Seeni,1,J Sylvester,S Wilkes,59.5,a1.5,,runner,False
+kem,2,5,Maramoti,2,T Randell,J Severo,59,,,runner,False
+kem,2,6,Sweet Enchantress,8,C Schmidt,B Looker,58,,,runner,False
+kem,2,7,Helen'S Crown,4,M Howard,T Worsnop,56,,,runner,False
+kem,2,8,Clan D'Oro,3,V McLennan,K Adams,55,,,runner,False
+kem,3,1,Buffett,8,P Kelly,T Worsnop,59,,,runner,False
+kem,3,2,Clench,7,T Ball,B Looker,59,,,runner,False
+kem,3,3,Green Meadows,2,H Dew,P Graham,59,,,runner,False
+kem,3,4,Purple Prince,1,J Sylvester,S Wilkes,59,a1.5,,runner,False
+kem,3,5,Yianni,5,S Everson,Z Wadick,59,,,runner,False
+kem,3,6,Einstein'S Theory,6,G Prosser,R Spokes,56.5,,,runner,False
+kem,3,7,Whiskey Warrior,4,V McLennan,K Adams,56.5,,,runner,False
+kem,3,8,Oakfield Nevada,3,K Lees,L Riordan,55,,,runner,False
+kem,4,1,Zou Big Boy,8,L Selby,Not Notified,66.5,,,scratched,False
+kem,4,2,Crashmyplaya,7,C Prosser,O Dalton,60.5,a1.5,,runner,False
+kem,4,3,Tickle My Tosen,4,C Prosser,B Looker,60,,,runner,False
+kem,4,4,O'Britzelle,1,T Evans,L Riordan,58.5,,,runner,False
+kem,4,5,La Bella Rosa,3,R Simonetta,Z Wadick,58,,,runner,False
+kem,4,6,Corpsman,6,J Sylvester,S Wilkes,57.5,a1.5,,runner,False
+kem,4,7,Rivoli Star,5,P Graham,L Wakely,55,a4,,runner,False
+kem,4,8,Pongola,2,H Dew,T Worsnop,55,,,runner,False
+kem,5,1,Tibetan Power,8,K Lees,J Severo,59,,,runner,False
+kem,5,2,Cedar Dreams,9,R Dawson,R Spokes,58,,,runner,False
+kem,5,3,Prestige Fantastic,7,T Ball,B Looker,57.5,,,runner,False
+kem,5,4,Sapphino,4,J Hull,J Baker,57.5,,,runner,False
+kem,5,5,Hell'S Kitchen,2,K Lees,L Riordan,56.5,,,runner,False
+kem,5,6,Armoury,3,C Prosser,Z Wadick,56,,,runner,False
+kem,5,7,Gosling,5,V McLennan,K Adams,56,,,runner,False
+kem,5,8,In And Away,1,T Ball,C Bellamy,56,,,runner,False
+kem,5,9,Irish Accolade,6,J Sylvester,O Dalton,56,a1.5,,runner,False
+kem,5,10,Taverna,10,H Dew,T Worsnop,56,,,runner,False
+kem,6,1,Executive Decision,8,M Cross,Not Notified,61.5,,,scratched,False
+kem,6,2,Mr Villa,2,G Ball,B Looker,61,,,runner,False
+kem,6,3,Saturn Rising,4,B Lazzarini,Z Wadick,61,,,runner,False
+kem,6,4,Look At Mego,8,R Simonetta,L Wakely,60,a4,,runner,False
+kem,6,5,Warrant,7,V McLennan,K Adams,60,,,runner,False
+kem,6,6,Cool Az Aletta,6,T Ball,C Bellamy,59,,,runner,False
+kem,6,7,Son Sillage,9,K Lees,J Severo,59,,,runner,False
+kem,6,8,Dartbrook,4,J Sylvester,Not Notified,58,,,scratched,False
+kem,6,9,Rips Law,2,C Prosser,O Dalton,58,a1.5,,scratched,False
+kem,6,10,Sir Freddie,3,J Sylvester,S Wilkes,58,a1.5,,runner,False
+kem,6,11,The Final Say,1,S Hodge,P Graham,57.5,,,runner,False
+kem,6,12,Jevington Will Do,5,H Dew,T Worsnop,55,,,runner,False
+yvl,1,1,Excelamidas,7,M Laurie,D Thornton,58,,,scratched,False
+yvl,1,2,Seven Day Rebels,2,J Hunter,P Moloney,58,,,runner,False
+yvl,1,3,Highland Diva,5,S Wells,V Boeuf,57.5,,,scratched,False
+yvl,1,4,Magica,3,L Kennewell,L Meech,57.5,,,runner,False
+yvl,1,5,Mathletes,7,S Noble,S Noble,57.5,,,runner,False
+yvl,1,6,Reina Del Rio,6,S Eden,J Bowditch,57.5,,,runner,False
+yvl,1,7,Wanted Enuff,5,T Weir,R McLeod,57.5,,,runner,False
+yvl,1,8,Duchess Xenia,6,C Patterson,Dylan Dunn,56,,,scratched,False
+yvl,1,9,Queen'S English,8,Anthony & S Freedman,Z Spain,56,,,scratched,False
+yvl,1,10,Valentina Girl,1,Tony & C McEvoy,T Nugent,56,,,runner,False
+yvl,1,11,Immortal Truth,4,"B, W & J Hayes",A Darmanin,57.5,,,runner,True
+yvl,2,1,Heavy Is The Head,1,Paul & T Templeton,J Beriman,58,,,runner,False
+yvl,2,2,Inner Thoughts,5,R Cunningham,J Maskiell,58,,,scratched,False
+yvl,2,3,Love Rustler,5,T Weir,R McLeod,58,,,runner,False
+yvl,2,4,Our Alexa,7,S Brown,D Thornton,58,,,runner,False
+yvl,2,5,Prestige Maddy,3,M Jenkins,O East,58,a2,,runner,False
+yvl,2,6,Ta Ta Tango,2,R Pike,B Kinninmont,58,a1.5,,runner,False
+yvl,2,7,Torzannie,4,C Diplock,M Castle,58,,,runner,False
+yvl,2,8,Mistressof Mayfair,1,M Laurie,P Moloney,56.5,,,scratched,False
+yvl,2,9,Setfortakeoff,2,David & C Feek,C Hefel,56.5,,,scratched,False
+yvl,2,10,Velocite Belle,4,Anthony & S Freedman,T Nugent,56.5,,,scratched,False
+yvl,2,11,Think Sassy,10,M Bullard,Not Notified,58,,,scratched,True
+yvl,2,12,Gold Nugget,6,S Trolove,V Boeuf,58,,,runner,True
+yvl,3,1,Bowdacious Gold,6,S Wells,V Boeuf,59.5,,,runner,False
+yvl,3,2,Mo Mo'S Choise,1,J Edwards,J Maskiell,59.5,,,runner,False
+yvl,3,3,Now Hear This,9,C Scott,J Bowditch,59.5,,,runner,False
+yvl,3,4,Smart Eddie,7,A Maragos,D Horner (jnr),59.5,,,runner,False
+yvl,3,5,Welcometodetroit,5,M Webb,R Lamont,59.5,a3,,runner,False
+yvl,3,6,Western Edge,3,C Davis,B Kinninmont,59.5,a1.5,,runner,False
+yvl,3,7,Bruceismyname,2,L Oliver,D Thornton,58,,,runner,False
+yvl,3,8,Gozaimasu,8,S Nichols & H Black,Z Spain,58,,,runner,False
+yvl,3,9,Stomping Ground,5,Emma-lee & D Browne,R McLeod,58,,,scratched,False
+yvl,3,10,Xtra Black,4,D Dwyer,L Meech,58,,,runner,False
+yvl,4,1,Epic Centre,2,A Maragos,D Horner (jnr),60,,,runner,False
+yvl,4,2,Bring The Thunder,5,L Oliver,D Thornton,59,,,runner,False
+yvl,4,3,Altruist,1,V Malady,P Moloney,58.5,,,runner,False
+yvl,4,4,Sleeping Tiger,1,R Waymouth,M Castle,58.5,,,scratched,False
+yvl,4,5,Beau Strada,9,L Oliver,B Kinninmont,58,a1.5,,runner,False
+yvl,4,6,Densetsu,8,A Dale,J Bowditch,58,,,scratched,False
+yvl,4,7,Brazen Fling,7,David & C Feek,Dylan Dunn,57,,,scratched,False
+yvl,4,8,Bronco Revolution,4,K Evans,C Hollowood,57,a2,,runner,False
+yvl,4,9,Sheila,3,G Egan,J Beriman,57,,,runner,False
+yvl,4,10,Wild Roses Grow,12,D Cannon,C Thompson,56,a3,,scratched,False
+yvl,4,11,Shyleah,7,S Noble,S Noble,56,,,runner,True
+yvl,4,12,Aquilion Girl,13,C Anderson,J Bowditch,56,,,scratched,True
+yvl,4,13,Rock Glory,6,S Trolove,R Lamont,55.5,,,runner,True
+yvl,4,14,Laura'S Gold,8,M Leek,Z Spain,55.5,,,runner,True
+yvl,5,1,King Kauffo,1,B Brisbourne,P Moloney,60,,,runner,False
+yvl,5,2,Mannerheim,2,J Edwards,Z Spain,60,,,runner,False
+yvl,5,3,Monsun'S Pride,5,C Calthorpe,Not Notified,60,,,scratched,False
+yvl,5,4,Paltinian,7,A Bobbin,L Meech,60,,,runner,False
+yvl,5,5,Larryoctane,12,L Oliver,D Thornton,59,,,scratched,False
+yvl,5,6,Riozino,4,B McGrath,N Punch,59,,,runner,False
+yvl,5,7,Blanche Bass,8,S Eden,J Bowditch,58,,,runner,False
+yvl,5,8,I'Mfallinforyou,3,D Julius,J Maskiell,58,,,runner,False
+yvl,5,9,Tipsy Gypsy,7,E Ewert,C Hefel,58,,,scratched,False
+yvl,5,10,Chateau Dancer,9,A McGregor,L Wood,57,a3,,runner,False
+yvl,5,11,Eight Under,11,D Dean,D Dean,59,,,scratched,True
+yvl,5,12,Stole Him,4,J Warren,R McLeod,58.5,,,scratched,True
+yvl,5,13,Amphactor,6,N Dyer,S Field,58,a1.5,,runner,True
+yvl,5,14,Scandoval,5,B Verwey-mitchell,M Castle,57.5,,,runner,True
+yvl,6,1,Chambers Bay,7,M Watts,S Kennedy,60,a1.5,,runner,False
+yvl,6,2,Sheer Lunacy,9,B Brisbourne,Z Spain,60,,,runner,False
+yvl,6,3,Silver Snow,8,D Williams,Dylan Dunn,60,,,runner,False
+yvl,6,4,Pensatore,2,T Cullen,J Beriman,59,,,runner,False
+yvl,6,5,Ricky Runs,6,Paul & T Templeton,N Punch,59,,,runner,False
+yvl,6,6,Hellish Lee,4,A Bobbin,L Meech,58,,,runner,False
+yvl,6,7,Jazzanski,1,David & C Feek,S Hateley,58,a2,,scratched,False
+yvl,6,8,Sweet But Sassy,14,L Boyd,L Boyd,58,,,scratched,False
+yvl,6,9,Scholl Deep,1,R Cluning,C Hollowood,57,a2,,runner,False
+yvl,6,10,Jingu Express,5,A Dale,J Bowditch,56.5,,,runner,False
+yvl,6,11,Sinhalese,11,M Croston & G Gilmour,Not Notified,58.5,,,scratched,True
+yvl,6,12,Alpinova,3,B Verwey-mitchell,M Castle,55.5,,,runner,True
+yvl,6,13,Stand By Me Ned,12,M Lawson,B Kinninmont,57.5,a1.5,,scratched,True
+yvl,6,14,Slippery Thinker,10,J Gibbons,J Gibbons,56,,,runner,True
+yvl,7,1,Headstock,6,K Harris,C Hefel,60,,,runner,False
+yvl,7,2,True Prophet,10,J Gibbons,J Gibbons,60,,,runner,False
+yvl,7,3,Arabian Myth,5,V Hall,S Hateley,59.5,a2,,runner,False
+yvl,7,4,Monte Cassino,8,Paul & T Templeton,J Maskiell,59.5,,,runner,False
+yvl,7,5,Mythic,2,G Johnstone,S Kennedy,59.5,a1.5,,runner,False
+yvl,7,6,Vaafee,11,David & C Feek,Dylan Dunn,59.5,,,scratched,False
+yvl,7,7,Wild Irish Rover,10,A Maragos,D Horner (jnr),59.5,,,scratched,False
+yvl,7,8,Dubai Fountain,3,A Dale,J Bowditch,58,,,runner,False
+yvl,7,9,Popthebubbly,9,B Cross,M Aitken,57.5,,,runner,False
+yvl,7,10,Too Much Too Soon,1,M Brown,A Darmanin,57,,,runner,False
+yvl,7,11,Stewart,7,S Trolove,Not Notified,58.5,,,runner,True
+yvl,7,12,Tipping Rain,4,J Rattle,L Meech,56.5,,,runner,True
+yvl,7,13,Point Of Ecstasy,5,M Freedman,Z Spain,56.5,,,scratched,True
+yvl,7,14,Iliad,3,L Jones,L Wood,56.5,a3,,scratched,True
+goc,1,1,Chayse 'N' Mishani,10,J Bellamy,F Larson,58,,,runner,False
+goc,1,2,Meteoric,4,M Freedman,J Williams,58,,,runner,False
+goc,1,3,Mishani Flyer,11,R Laming,B El-issa,58,,,runner,False
+goc,1,4,Rowdy Return,2,L Birchley,B Lerena,58,,,runner,False
+goc,1,5,Totatsu,3,Chris & C Munce,T Fenlon,58,,,runner,False
+goc,1,6,Hot Momma,12,P Robl,J Franklin,56,,,runner,False
+goc,1,7,My Mini Me,9,J Patton,B OSmond,56,,,runner,False
+goc,1,8,Steph'S Ready,8,Tony & M Sears,M Hellyer,56,,,runner,False
+goc,1,9,Tough Love,7,K Schweida,A Butler,58,,,runner,True
+goc,1,10,Swim Up Bar,11,J Moore,Not Notified,58,,,scratched,True
+goc,1,11,My Kingslee,5,J Moore,J Lloyd,58,,,runner,True
+goc,1,12,Mishani Jazz,6,D Stanbridge,G Cartwrigh,56,,,runner,True
+goc,1,13,Pasita,1,B Mair,Not Notified,56,,,runner,True
+goc,2,1,Amourette,7,MICHAEL LAKEY,JAG GUTHMANN-CHEST,60,,,runner,False
+goc,2,2,Spirit Of Torque,1,STUART & BAYLEY KENDRICK,BRANDON LERENA,60,,,runner,False
+goc,2,3,Tisani James,2,KEVIN KEMP,JADEN LLOYD,60,,,runner,False
+goc,2,4,Beat The Drum,4,GARY DOUGHTY,GRADY SPOKES,59.5,a3,,runner,False
+goc,2,5,Fearless Win,5,ALLAN CHAU,ARCHIE MCCOLM,59.5,a3,,runner,False
+goc,2,6,Alto Luna,3,RYAN TYRELL,ASHLEY BUTLER,59,,,runner,False
+goc,2,7,Vieni Qua,8,DAIKI CHUJO,NORIYUKI MASUDA,58.5,,,runner,False
+goc,2,8,Le Starcell,6,DAIKI CHUJO,Not Notified,58,,,scratched,False
+goc,3,1,Ballistic Star,14,A Campton,G Spokes,60,a3,,runner,False
+goc,3,2,Hi Korat,9,M Palmer,J Williams,60,,,scratched,False
+goc,3,3,Baciami,5,T Edmonds,J Guthmann-chest,59.5,,,runner,False
+goc,3,4,Bold Envoy,15,R Laming,Not Notified,59.5,,,scratched,False
+goc,3,5,Bournoville,13,Chris & C Munce,B El-issa,58.5,,,scratched,False
+goc,3,6,Bristol Bay,2,G Hutchesson,M Palmer,58.5,,,runner,False
+goc,3,7,Etta,10,P Bobic,M Hellyer,58,,,scratched,False
+goc,3,8,Lieta Maria,8,D Vandyke,R Wiggins,58,,,runner,False
+goc,3,9,Tomoyuki,4,M Dunn,A Butler,58,,,scratched,False
+goc,3,10,Gold In Paris,3,G Heinrich & B Rodgers,A Thompson,57.5,,,runner,False
+goc,3,11,Maurijoy,6,Chris & C Munce,A McColm,56,a3,,runner,False
+goc,3,12,Pollengetsyadizzy,13,J Wallace,N Tomizawa,56,,,runner,False
+goc,3,13,She'S Our Vega,12,P Shailer,J Lloyd,56,,,runner,False
+goc,3,14,Lighthorseman,11,M Freedman,J Franklin,58,,,runner,True
+goc,3,15,Godt Played,1,S Ryan,D Smith,59.5,,,runner,True
+goc,3,16,Zoulini,7,G Doughty,B Lerena,55.5,,,runner,True
+goc,3,17,Bomb Perignon,18,C Waller,D Peisley,57,,,scratched,True
+goc,3,18,Old New York,16,B Ahrens,Not Notified,58.5,,,scratched,True
+goc,4,1,Morning Sun,5,R Vale,R Wiggins,60.5,,,runner,False
+goc,4,2,Ready For The Trip,12,T Gollan,A McColm,60.5,a3,,runner,False
+goc,4,3,Luconi,11,J Bruce,B Lerena,59.5,,,scratched,False
+goc,4,4,Ionaceltic,10,K Clark-peoples,Not Notified,58.5,,,scratched,False
+goc,4,5,Tempranillo,13,C Waller,Not Notified,58,,,scratched,False
+goc,4,6,Outta Reef,2,T Gollan,G Cartwrigh,57.5,,,runner,False
+goc,4,7,Canadian Fling,6,J Bruce,M Hellyer,57,,,runner,False
+goc,4,8,Waverley,14,G Thornton,A Thompson,56.5,,,scratched,False
+goc,4,9,Inquicktime,7,R Heathcote,R Thorburn,55.5,a2,,runner,False
+goc,4,10,Snugg,2,T Dougall,B OSmond,55.5,,,scratched,False
+goc,4,11,Pink Dogwood,4,C Waller,B El-issa,55,,,runner,False
+goc,4,12,Backhander,8,Annabel & R Archibald,F Larson,54.5,,,runner,False
+goc,4,13,Launcher,9,A Chau,N Tomizawa,55.5,,,runner,True
+goc,4,14,Blueprint,1,B Dais,Not Notified,54,,,scratched,True
+goc,4,15,Going To The Sun,3,W King,C Baker,54,,,runner,True
+goc,5,1,Blitzburg,7,A Chau,S Potter,63,a2,,runner,False
+goc,5,2,Spirit Of Brodie,2,A Campton,G Spokes,59,a3,,runner,False
+goc,5,3,Addriel,1,J Bellamy,T Orr,58.5,a3,,runner,False
+goc,5,4,Overfull,4,P Robl,J Franklin,57.5,,,runner,False
+goc,5,5,Count Nicholas,8,A Campton,A McColm,57,a3,,runner,False
+goc,5,6,Oohlalouvre,5,J Bruce,B Lerena,57,,,runner,False
+goc,5,7,The Fixer,6,J Bruce,M Hellyer,57,,,runner,False
+goc,5,8,Eagle'S Fire,3,S Batten,N Tomizawa,54,,,runner,False
+goc,5,9,Toobloos,6,G Thornton,C Baker,54,,,scratched,False
+goc,6,1,Zouthur,1,J Wallace,G Spokes,63,a3,,runner,False
+goc,6,2,Baltray,9,L Wheeler,S Potter,62.5,a2,,runner,False
+goc,6,3,Backstage,4,J Gilmore,A McColm,62,a3,,runner,False
+goc,6,4,Chilliwack,2,G Heinrich & B Rodgers,R Thorburn,61.5,a2,,runner,False
+goc,6,5,Rhetoric,11,R Dart,B Wheeler,61,,,runner,False
+goc,6,6,Brechen,7,J Townsend,A Butler,60.5,,,runner,False
+goc,6,7,Ever So Ready,12,R Laming,J Lloyd,60.5,,,scratched,False
+goc,6,8,National Interest,6,G Heinrich & B Rodgers,T Orr,60.5,,,runner,False
+goc,6,9,Varejao,13,Stuart & B Kendrick,B Lerena,60,,,scratched,False
+goc,6,10,Love Rat,10,C Rode,M Palmer,59.5,,,runner,False
+goc,6,11,Quantum Overdrive,3,Annabel & R Archibald,J Guthmann-chest,59.5,,,runner,False
+goc,6,12,Zouslayer,5,V Venkaya,G Cartwrigh,57.5,,,runner,False
+goc,6,13,Oval Office,8,J Gilmore,G Goomany,55.5,,,runner,False
+goc,6,14,Astern Villa,14,J Johnston,K Johnston,54.5,a3,,runner,True
+goc,7,1,Caxton Lass,13,R Heathcote,R Thorburn,61.5,a2,,runner,False
+goc,7,2,Duchess Difficult,16,M Hoysted,J Guthmann-chest,61.5,,,scratched,False
+goc,7,3,Poshy'S Girl,7,K Lees,B Lerena,61.5,,,runner,False
+goc,7,4,Hell Of A High,10,J Healy,Not Notified,61,,,scratched,False
+goc,7,5,Reconciliate,12,T Gollan,S Potter,61,a2,,scratched,False
+goc,7,6,Boomshanka,8,T Gollan,C Baker,60.5,,,scratched,False
+goc,7,7,Aristocratic Girl,3,L Gough,G Cartwrigh,60,,,runner,False
+goc,7,8,Jada Rose,6,D Maher,J Lloyd,60,,,runner,False
+goc,7,9,Mishani Vision,9,D Stanbridge,G Spokes,60,a3,,runner,False
+goc,7,10,Estee Emm,1,K Schweida,A Butler,59.5,,,runner,False
+goc,7,11,Ode To Beauty,11,H Page,M Palmer,59.5,,,runner,False
+goc,7,12,Hold My Hand,6,N Beck,Not Notified,59,,,scratched,False
+goc,7,13,Summer Stunner,10,G Doughty,A McColm,58,a3,,runner,False
+goc,7,14,Embolden,4,G Hutchesson,B El-issa,59.5,,,runner,True
+goc,7,15,Happy Wins,12,J Moore,Not Notified,56.5,,,scratched,True
+goc,7,16,Half Moon Roo,5,J Johnston,K Johnston,56.5,a3,,runner,True
+goc,7,17,Oakfield Montana,17,V Venkaya,G Cartwrigh,54.5,,,scratched,True
+goc,7,18,Star Seeker,2,K Devine,J Hampson,54,,,runner,True
+goc,8,1,Camelight,11,B Lockwood & E Vincent,Not Notified,60,,,scratched,False
+goc,8,2,Tivacious,14,J Healy,T Brooker,58.5,,,scratched,False
+goc,8,3,Overoptomystic,3,J Bruce,B Lerena,58,,,runner,False
+goc,8,4,Duchess Difficult,10,M Hoysted,J Guthmann-chest,57,,,runner,False
+goc,8,5,Skeldergate,9,B Baker,A Thompson,57,,,runner,False
+goc,8,6,Egmont,4,C Waller,B El-issa,56.5,,,runner,False
+goc,8,7,Hell Of A High,7,J Healy,T Brooker,56.5,,,runner,False
+goc,8,8,Copper Star,12,J Moore,Not Notified,56,,,scratched,False
+goc,8,9,Saxon Spirit,15,Chris & C Munce,T Fenlon,56,,,runner,False
+goc,8,10,The Epic Journey,1,P Shailer,J Franklin,56,,,runner,False
+goc,8,11,She Can Soar,6,K Schweida,A Butler,55.5,,,runner,False
+goc,8,12,Hide The Pierata,11,R Lipp,G Cartwrigh,54.5,,,scratched,False
+goc,8,13,Lights Will Guide,13,M Lakey,M Philpot,54.5,a2,,runner,False
+goc,8,14,Mishani Cabello,8,D Stanbridge,C Baker,54.5,,,scratched,False
+goc,8,15,Worththeadmission,2,Chris & C Munce,A McColm,54,a3,,runner,False
+goc,8,16,Far Beyond,12,C Anderson,M Hellyer,55.5,,,scratched,True
+goc,8,17,Military Legend,9,A Chau,Not Notified,54,,,scratched,True
+goc,8,18,Sir Don,5,J Gilmore,G Goomany,55.5,,,runner,True
+twb,1,1,Bole Le,2,P Wallace,J Williams,60,,,runner,False
+twb,1,2,Duke Of Bantry,5,Corey & K Geran,K Barker,60,a3,,runner,False
+twb,1,3,Hell To The Line,8,Corey & K Geran,H Richardson,59.5,,,runner,False
+twb,1,4,Lyrical Gangster,10,Corey & K Geran,Not Notified,59,,,scratched,False
+twb,1,5,Turf Gazette,9,M Nolan,A Keeley,59,,,runner,False
+twb,1,6,Australasia,6,Corey & K Geran,G Geran,58.5,,,runner,False
+twb,1,7,Water Lad,3,J Moore,M Mankelow,58.5,a3,,runner,False
+twb,1,8,Mondello,7,N Keal,M Savva,57.5,,,runner,False
+twb,1,9,Thinker,1,D Rodgers,K Zechner,57,,,runner,False
+twb,1,10,Pretty Rho,4,R Warzecha,M Apel,55,a2,,runner,False
+twb,1,11,Starward,8,S Murdoch,Not Notified,55.5,,,scratched,True
+twb,1,12,Air Of Authority,11,L Gersekowski,S Champkin,55,a2,,runner,True
+twb,1,13,Cafe Mocha,10,L Paton,Not Notified,54,,,runner,True
+twb,2,1,Kirksville,5,P Webster,G Geran,63,,,runner,False
+twb,2,2,Just Plain Nuts,9,J Downes,M Apel,61.5,a2,,runner,False
+twb,2,3,Funhouse,10,B Mackie,K Zechner,60.5,,,runner,False
+twb,2,4,Magic Invader,6,K Clark-peoples,Not Notified,60,,,scratched,False
+twb,2,5,Mr Evans,4,K Sims,K Barker,60,a3,,runner,False
+twb,2,6,Panigale,9,R Warzecha,Not Notified,59.5,,,scratched,False
+twb,2,7,Booya Boy,7,T Pascoe,F Sandkuhl,59,a2,,runner,False
+twb,2,8,Dirty Harry,3,P Bobic,A Keeley,58.5,,,runner,False
+twb,2,9,Bee Two,8,G Richardson,H Richardson,58,,,runner,False
+twb,2,10,Copper Sunset,1,T Pascoe,I Jessop,57.5,a3,,runner,False
+twb,2,11,Starward,2,S Murdoch,M Savva,55,,,runner,False
+twb,3,1,Worthy,9,M Nolan,I Jessop,62,a3,,runner,False
+twb,3,2,Terracotta Rose,2,S Matthews,K Barker,61.5,a3,,runner,False
+twb,3,3,Crypto Miss,11,R Lipp,Not Notified,60,,,scratched,False
+twb,3,4,Ladies Ocean Run,5,P Webster,L Tilley,59,,,runner,False
+twb,3,5,Ocean Joy,8,L Powell,N Tomizawa,59,,,runner,False
+twb,3,6,Decorative,6,K Clark-peoples,M Apel,58.5,a2,,scratched,False
+twb,3,7,Vesper Lynd,1,D Groves,F Sandkuhl,57.5,a2,,runner,False
+twb,3,8,Happy Wins,10,J Moore,K Zechner,56.5,,,scratched,False
+twb,3,9,Torvecchio,7,B Davis,M Savva,56.5,,,runner,False
+twb,3,10,Ancient Mission,3,L Paton,S Callow,55.5,a1.5,,runner,False
+twb,3,11,She'S A Revelation,4,J Judge,A Keeley,55,,,runner,False
+twb,4,1,Got Yourself A Gun,2,P Bobic,A Keeley,60.5,,,runner,False
+twb,4,2,Sir Goldalot,1,N Keal,S Potter,60.5,a2,,runner,False
+twb,4,3,Michifuku,9,W Kropp,L Tilley,59.5,,,runner,False
+twb,4,4,Empress Aspen,8,Corey & K Geran,N Tomizawa,58.5,,,runner,False
+twb,4,5,Ambassadors,6,B Richardson,G Geran,58,,,runner,False
+twb,4,6,Inquicktime,5,R Heathcote,M Mankelow,58,a3,,scratched,False
+twb,4,7,Shedrivesabentley,3,K Jones,O Kendal,56,,,runner,False
+twb,4,8,Kneze,4,A Park,M Apel,54.5,a2,,runner,False
+twb,4,9,Percolate,7,L Powell,J Metcalfe,54,a3,,runner,False
+twb,4,10,Anyway You Want It,10,P Nolan,K Zechner,54,,,runner,False
+twb,5,1,Dominator,12,P Webster,A Butler,59,,,runner,False
+twb,5,2,Fierce Fighter,9,S Curtain,M Apel,58.5,a2,,runner,False
+twb,5,3,Proffer,2,G Banks,S Callow,58,a1.5,,runner,False
+twb,5,4,Etta,4,P Bobic,A Keeley,57.5,,,runner,False
+twb,5,5,Waxed,17,J Gleeson,Not Notified,57,,,scratched,False
+twb,5,6,On The Cusp,3,R Lipp,G Cartwrigh,56.5,,,runner,False
+twb,5,7,Zoubuca Shots,6,Corey & K Geran,G Geran,56.5,,,scratched,False
+twb,5,8,Enterprise Jamayka,7,B Gentle,L Tilley,55.5,,,runner,False
+twb,5,9,Martini Bandit,13,L Gersekowski,S Champkin,55,a2,,runner,False
+twb,5,10,One Of Them Girls,11,T Pascoe,F Sandkuhl,55,a2,,runner,False
+twb,5,11,Beelzie,8,M Nolan,M Savva,54,,,runner,False
+twb,5,12,Coolazcanbe,14,N Keal,N Tomizawa,54,,,runner,False
+twb,5,13,High Sobriety,13,S Hardy,I Jessop,54,a3,,scratched,False
+twb,5,14,Rativa,6,S Sixtus,K Barker,54,a3,,scratched,True
+twb,5,15,Symphonion,1,E Ropiha,Not Notified,54,,,runner,True
+twb,5,16,Roth'S Romance,10,J Hanna,K Zechner,54,,,runner,True
+twb,5,17,Mishpat,5,B Davis,Not Notified,54,,,runner,True
+twb,6,1,Rhuvaal,4,J Dann,S Potter,60,a2,,runner,False
+twb,6,2,Star Rapper,3,Corey & K Geran,G Geran,59.5,,,runner,False
+twb,6,3,Under The Limit,7,R Warzecha,M Apel,59.5,a2,,scratched,False
+twb,6,4,Dr Farthing,2,P Webster,L Tilley,59,,,runner,False
+twb,6,5,Butt Heads,6,A Reedy,M Savva,57,,,runner,False
+twb,6,6,Fighting Idol,1,N Hocking,K Barker,57,a3,,runner,False
+twb,6,7,Everywhere,5,P Nolan,A Keeley,55.5,,,runner,False
+twb,7,1,Kirksville,7,P Webster,Not Notified,61,,,scratched,False
+twb,7,2,Sweet Hesitation,2,K Clark-peoples,S Potter,60.5,a2,,runner,False
+twb,7,3,Betterindanude,1,P Wallace,J Metcalfe,60,a3,,runner,False
+twb,7,4,Laurels,5,P Webster,L Tilley,58.5,,,runner,False
+twb,7,5,Cause She Can,3,K Kemp,S Callow,58,a1.5,,runner,False
+twb,7,6,Toobloos,6,G Thornton,C Baker,57.5,,,runner,False
+twb,7,7,Hold My Hand,4,N Beck,I Jessop,55,a3,,runner,False
+twb,8,1,Concerned,4,G Richardson,H Richardson,59,,,runner,False
+twb,8,2,Conquer Dat,3,M Frappell,M Savva,59,,,runner,False
+twb,8,3,Graceful Gladys,10,D Groves,K Barker,59,a3,,runner,False
+twb,8,4,Hello Mistress,2,N Keal,I Jessop,58.5,a3,,runner,False
+twb,8,5,Hellavalegacy,8,P Wallace,J Metcalfe,58,a3,,runner,False
+twb,8,6,Love And Pain,7,S Croxford,L Tilley,57,,,runner,False
+twb,8,7,Reign Of Dame,6,Corey & K Geran,G Geran,57,,,runner,False
+twb,8,8,Luminous Girl,5,R Warzecha,G Cartwrigh,55.5,,,runner,False
+twb,8,9,Disco Diamond,1,G Richardson,Not Notified,54,,,runner,True
+twb,8,10,Rativa,11,S Sixtus,Not Notified,54.5,,,runner,True
+twb,8,11,Earthaxeaze,9,P Cartledge,Not Notified,54,,,runner,True
+dar,1,1,Tears Are Flowing,1,GARY CLARKE,JARROD TODD,61,,,runner,False
+dar,1,2,Stylish Prince,8,JASON MANNING,VANESSA ARNOTT,58.5,,,runner,False
+dar,1,3,Warrego,6,DICK LEECH,BILLY CRAY,58,,,runner,False
+dar,1,4,Lady Fireball,3,CHRIS POLLARD,DANIELLE HIRINI,56,,,runner,False
+dar,1,5,Pleasing Smile,2,RHONDA COLE,WAYNE DAVIS,56,,,runner,False
+dar,1,6,Karmaroa,5,CHLOE BAXTER,PAUL SHIERS,55,,,runner,False
+dar,1,7,Charlie Magic,4,TERRY GILLETT,DAKOTA GILLETT,55,,,runner,False
+dar,1,8,My Luna,7,CHRIS POLLARD,RAYMOND VIGAR,55,,,runner,False
+dar,2,1,Rivers Of Babylon,1,R Cole,W Davis,59,,,runner,False
+dar,2,2,Ask Your Mother,6,T Halter,D Gillett,58,,,runner,False
+dar,2,3,Gunnie Gunfighter,8,T Logan,B Cray,56.5,,,runner,False
+dar,2,4,Pafitis,7,G Clarke,J Todd,56.5,,,runner,False
+dar,2,5,God'S Eye,2,P Cole,R Vigar,55,,,runner,False
+dar,2,6,Bender Mcgee,3,C Pollard,D Hirini,55,,,runner,False
+dar,2,7,Western Miner,5,C Pollard,Not Notified,55,,,runner,False
+dar,2,8,Opulent Oscar,4,P Shiers,P Shiers,55,,,runner,False
+dar,3,1,Alaa Plenty,2,G Clarke,J Todd,61,,,runner,False
+dar,3,2,Mods,1,T Logan,B Cray,61,,,runner,False
+dar,3,3,Meet Me At The Bar,5,C Nash,D Hirini,59,,,runner,False
+dar,3,4,Ankle Rolex,3,P Johnston,R Vigar,58.5,,,runner,False
+dar,3,5,Blitzwater,6,T Logan,D Gillett,57,,,runner,False
+dar,3,6,Crazy Brave,4,P Shiers,P Shiers,57,,,runner,False
+dar,4,1,Bold Suitor,3,G Clarke,J Todd,61,,,runner,False
+dar,4,2,Dynamic Theory,5,T Logan,D Gillett,59,,,runner,False
+dar,4,3,Predicting,3,T Halter,R Vigar,58,,,scratched,False
+dar,4,4,Rising Water,2,P Shiers,P Shiers,58,,,runner,False
+dar,4,5,Si Senora,4,T Logan,B Cray,57,,,runner,False
+dar,4,6,Alpha Street,1,J Manning,D Hirini,55,,,runner,False
+dar,5,1,Field Of Flutes,2,G Clarke,J Todd,64,,,runner,False
+dar,5,2,Colourful Emperor,5,C Pollard,D Hirini,62,,,runner,False
+dar,5,3,Rising Sphere,6,G Clarke,D Gillett,59,,,runner,False
+dar,5,4,Forms Of Fear,1,T Halter,R Vigar,56,,,runner,False
+dar,5,5,Steamy Mist,1,T Logan,B Cray,56,,,scratched,False
+dar,5,6,Wallenda,4,G Clarke,P Shiers,56,,,runner,False
+dar,5,7,Flying Annie,3,G Clarke,W Davis,55,,,runner,False
+dar,6,1,Stormfront,2,G Clarke,B Cray,59,,,runner,False
+dar,6,2,Fury,1,G Clarke,J Todd,58.5,,,runner,False
+dar,6,3,Gravina,7,C Pollard,D Hirini,57.5,,,runner,False
+dar,6,4,Hennessy Lad,6,G Clarke,D Gillett,57,,,runner,False
+dar,6,5,Hamlet Von Snitzel,4,C Pollard,W Davis,55,,,runner,False
+dar,6,6,Biden Time,5,G Clarke,Not Notified,55,,,runner,False
+dar,6,7,Tokyo Bandit,3,C Nash,P Shiers,55,,,runner,False

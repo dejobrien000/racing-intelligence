@@ -1,0 +1,55 @@
+{
+ "scored_utc": "2026-11-27T22:01:00.780876+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/prerace/20261128/Ascot/pred_20261127T214953Z_20261127T220003Z_runners.csv",
+ "base_v1_sha256": "25d784840a99bf87971742c3e3f954ea714570ca15d041dc5581e601360080a8",
+ "snapshot_key": "natpre:20261128:Ascot:20261127T214953Z",
+ "engine_manifest_sha256": "be5bf1478476efb7a01b3d5aa9c91b8fedc3354df35198a67a15c1e7644c4843",
+ "engine_release": "Engine v2.3",
+ "v22_manifest_sha256": "833dcdd61a40a0e14837c00d25e8ff2b8b7a697ff417eeac67e0a9f4275d4173",
+ "engine_c2": true,
+ "code_sha256": {
+  "engine/score_v2.py": "6d9575fd2e9138bb19071c2baaf397f5c1783281bab89b513783ab21bc75bf88",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "settings": {
+  "engine_version": "Engine v2.3",
+  "output": "production",
+  "settings_fingerprint": "83a321fdc324634a1f8b8c335b95a4db63ea9192279293a1da1af893eac689b9",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+   "benchmarks/engine_v2_3/engine_v2.json": "be5bf1478476efb7a01b3d5aa9c91b8fedc3354df35198a67a15c1e7644c4843",
+   "benchmarks/engine_v2_3/engine_v2_2.json": "833dcdd61a40a0e14837c00d25e8ff2b8b7a697ff417eeac67e0a9f4275d4173"
+  },
+  "v1_layer_settings": "ad87073ef2f149c9a84cce9c8a524cc8b2d619d0e54f8da24c19eaec18d88c72",
+  "rating_build": {
+   "history_frame": "engine/frames/national_c2.parquet",
+   "history_frame_sha256": "dbac15ed18dd265e1cad3419440160f682a271f839d0342cb946884359da85a0",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  "rating_scale_model_units_per_kg": 0.26888022685942775,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T22:01:00.780876+00:00",
+  "fallback": false,
+  "rating_update_settings": null,
+  "serving_corrections": {
+   "metro_from_tier": true,
+   "qld_course_map": true,
+   "first_starter_agesex": {
+    "file": "collect/national/20261128/form_runners.csv",
+    "file_present": true,
+    "filled_from_tab": 0,
+    "still_missing": 3
+   }
+  }
+ }
+}

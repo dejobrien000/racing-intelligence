@@ -1,0 +1,75 @@
+{
+ "scored_utc": "2026-11-27T21:54:29.840617+00:00",
+ "snapshot": {
+  "snapshot_key": "rqpre:20261128:GOC:20261127T214953Z",
+  "date": "20261128",
+  "meeting_code": "GOC",
+  "track": "Tab Park Gold Coast",
+  "history_course_key": "Tab_Park_Gold_Coast",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "fields_pdf_sha256": "57eb01f39a8eacaf62a7520587d1445b3c0998664b5e8e8db75d0e87ad4b208c",
+  "after_scratchings_close": true,
+  "conditions": {
+   "track_condition": "SOFT6",
+   "rail": null,
+   "scratchings_close": "Sat 28/11/26 07:30am"
+  },
+  "scratchings_listed": 32
+ },
+ "snapshot_bundle": "rqpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "ed9ef49c31194db31638619d0d05342d195862c79bae4b83aa4d527badfe586d",
+ "not_scored": [],
+ "candidates": [
+  "combined_v1",
+  "combined_v1 + dynamic rating",
+  "dynamic rating + PA1 figure",
+  "combined_v1 + national dynamic rating"
+ ],
+ "model_manifests": {
+  "benchmarks/candidates_b4/manifest.json": "14bd6268200fac3fd13b76a978a9e6cb7131767b17adfeb73fa211126a8780b2",
+  "benchmarks/candidates_b4_national/manifest.json": "a0d1e4df1609387a0a028d2091f3a629165d68b115a42b0891d87d8b52f457a5",
+  "benchmarks/candidates_b4_national_v3/manifest.json": "72d104d47cb1ccbb2e6f388c9efc42e45bc10e81ce30020c9654ead706b15031",
+  "engine/dyn_v3.py": "2a26a8e69e3350da7c7dc59684e2e1d1ad6b211c3be2276fbf92dfdab80012a5"
+ },
+ "engine_release": "Engine v2.1 (v3 rating)",
+ "code_sha256": {
+  "prerace/score_prerace.py": "fca8fe3c1f7afeea6ba67c4abe55c623c4e99747efc3eed4f4e311b3f9ec92b6",
+  "build_runs.py": "9dcc3399a6218cbbfc4f4c694d5637b98c023612737418201ed6b33355dd56dd",
+  "rating_v0.py": "8a8d82735bcf7ce0e6e636bd36701b64f9c0b8c07013361966dca37e18ab824a",
+  "features.py": "6248b368bf1985100d0737fc720c7c0e80ca0a2e4f26278241234789be19511a",
+  "inv20_pace_figures.py": "79d6f9c43d90bf8ea971a2172774ff0f8f8e88cc50326d60a0023a2736241cc4",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "clogit_tools.py": "0bee34be4db1621cc1fda9316da73a97a3212742721c27c887535c92564528cd"
+ },
+ "history_cutoff_by_source": {
+  "Qld tracked": "2026-11-22",
+  "Betfair (all states)": "2026-10-31",
+  "Breednet NSW/Vic/ACT": "2026-11-23",
+  "Racing NSW form lines": "2026-11-16"
+ },
+ "national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827",
+ "scaling_check_dev_sd": {
+  "a_avg3": [
+   7.937394365788982,
+   7.937400268009932
+  ],
+  "p_relbar": [
+   0.31973319149358365,
+   0.3197364460584305
+  ],
+  "f_avgfp3": [
+   0.2413369481978776,
+   0.24135546783381942
+  ],
+  "dyn_nat": [
+   3.076077402860399,
+   3.076077402860399
+  ]
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "days since last start uses every source held; Betfair lags about a month",
+  "emergencies and scratched runners at snapshot time are listed in not_scored",
+  "chance_pct is the frozen model probability; uncertainty: rating_sd_kg, evidence flags, top_two_gap_pts"
+ ]
+}

@@ -1,0 +1,41 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261128-Doomben-R1,12,16.16,13.23,2.92,0,0
+combined_v1,20261128-Doomben-R10,12,26.93,10.48,16.45,1,1
+combined_v1,20261128-Doomben-R2,12,18.46,15.91,2.55,0,0
+combined_v1,20261128-Doomben-R3,12,34.28,12.63,21.65,0,0
+combined_v1,20261128-Doomben-R4,14,12.41,12.12,0.29,1,1
+combined_v1,20261128-Doomben-R5,13,12.73,12.58,0.15,0,0
+combined_v1,20261128-Doomben-R6,9,26.52,20.66,5.86,0,0
+combined_v1,20261128-Doomben-R7,10,18.69,15.85,2.84,0,0
+combined_v1,20261128-Doomben-R8,13,12.65,12.35,0.3,0,0
+combined_v1,20261128-Doomben-R9,6,24.97,23.98,0.99,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R1,12,14.18,13.6,0.59,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R10,12,33.42,11.88,21.54,1,1
+combined_v1 + dynamic rating,20261128-Doomben-R2,12,19.85,15.0,4.85,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R3,12,33.66,10.75,22.91,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R4,14,15.56,11.1,4.45,1,1
+combined_v1 + dynamic rating,20261128-Doomben-R5,13,13.06,12.55,0.51,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R6,9,27.97,21.4,6.57,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R7,10,16.58,16.42,0.16,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R8,13,11.82,11.25,0.56,0,0
+combined_v1 + dynamic rating,20261128-Doomben-R9,6,24.27,21.37,2.91,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R1,12,18.68,16.7,1.98,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R10,12,26.61,14.13,12.48,1,1
+dynamic rating + PA1 figure,20261128-Doomben-R2,12,14.61,12.23,2.38,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R3,12,14.61,11.73,2.87,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R4,14,19.76,9.73,10.03,1,1
+dynamic rating + PA1 figure,20261128-Doomben-R5,13,11.84,11.28,0.56,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R6,9,19.8,19.33,0.46,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R7,10,14.28,14.0,0.28,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R8,13,12.64,12.06,0.58,0,0
+dynamic rating + PA1 figure,20261128-Doomben-R9,6,22.51,21.13,1.38,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R1,12,16.77,14.45,2.32,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R10,12,23.72,15.38,8.34,1,1
+combined_v1 + national dynamic rating,20261128-Doomben-R2,12,19.27,16.62,2.65,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R3,12,25.81,12.05,13.76,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R4,14,14.58,11.57,3.01,1,1
+combined_v1 + national dynamic rating,20261128-Doomben-R5,13,12.98,12.2,0.78,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R6,9,28.63,21.09,7.54,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R7,10,19.48,14.88,4.59,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R8,13,15.28,12.45,2.83,0,0
+combined_v1 + national dynamic rating,20261128-Doomben-R9,6,25.17,24.27,0.9,0,0

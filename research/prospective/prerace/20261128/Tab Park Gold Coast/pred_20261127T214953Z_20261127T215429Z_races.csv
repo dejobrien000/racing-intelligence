@@ -1,0 +1,33 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261128-Tab_Park_Gold_Coast-R1,12,12.82,9.29,3.53,9,9
+combined_v1,20261128-Tab_Park_Gold_Coast-R2,7,28.92,18.73,10.19,1,1
+combined_v1,20261128-Tab_Park_Gold_Coast-R3,11,13.07,10.03,3.04,9,9
+combined_v1,20261128-Tab_Park_Gold_Coast-R4,9,31.66,13.06,18.6,0,0
+combined_v1,20261128-Tab_Park_Gold_Coast-R5,8,33.63,13.72,19.9,0,0
+combined_v1,20261128-Tab_Park_Gold_Coast-R6,12,18.19,16.64,1.54,0,0
+combined_v1,20261128-Tab_Park_Gold_Coast-R7,11,20.87,16.11,4.76,1,1
+combined_v1,20261128-Tab_Park_Gold_Coast-R8,11,14.45,14.11,0.34,1,1
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R1,12,10.92,9.28,1.64,9,9
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R2,7,25.39,19.74,5.65,1,1
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R3,11,17.07,10.26,6.81,9,9
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R4,9,35.25,13.56,21.69,0,0
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R5,8,29.0,14.66,14.34,0,0
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R6,12,20.9,13.01,7.89,0,0
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R7,11,24.58,15.32,9.25,1,1
+combined_v1 + dynamic rating,20261128-Tab_Park_Gold_Coast-R8,11,21.6,15.29,6.31,1,1
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R1,12,19.7,8.55,11.15,9,9
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R2,7,22.22,20.69,1.53,1,1
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R3,11,19.98,8.43,11.56,9,9
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R4,9,30.78,15.34,15.45,0,0
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R5,8,20.07,19.87,0.2,0,0
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R6,12,17.02,14.56,2.46,0,0
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R7,11,21.38,12.03,9.36,1,1
+dynamic rating + PA1 figure,20261128-Tab_Park_Gold_Coast-R8,11,23.41,14.4,9.02,1,1
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R1,12,10.87,9.05,1.82,9,9
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R2,7,25.32,22.72,2.6,1,1
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R3,11,41.02,14.39,26.63,9,9
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R4,9,30.69,15.51,15.18,0,0
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R5,8,25.64,13.59,12.05,0,0
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R6,12,21.52,13.74,7.78,0,0
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R7,11,18.97,14.04,4.93,1,1
+combined_v1 + national dynamic rating,20261128-Tab_Park_Gold_Coast-R8,11,23.36,15.95,7.41,1,1

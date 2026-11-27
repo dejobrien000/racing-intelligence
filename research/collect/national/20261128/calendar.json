@@ -1,0 +1,228 @@
+{
+ "date": "2026-11-28",
+ "source": "TAB racing info-service meetings list and racecards, captured 2026-11-27T21:49:53Z",
+ "excluded": [
+  "non-Australian meetings"
+ ],
+ "act_nt": "ACT and NT meetings included when TAB lists them",
+ "meetings": [
+  {
+   "name": "Ascot",
+   "state": "WA",
+   "tab_code": "AST",
+   "races": 10,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Darwin",
+   "state": "NT",
+   "tab_code": "DAR",
+   "races": 6,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Doomben",
+   "state": "QLD",
+   "tab_code": "DBN",
+   "races": 10,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Tab Park Gold Coast",
+   "state": "QLD",
+   "tab_code": "GOC",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Kempsey",
+   "state": "NSW",
+   "tab_code": "KEM",
+   "races": 6,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Kembla Grange",
+   "state": "NSW",
+   "tab_code": "KGR",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Morphettville",
+   "state": "SA",
+   "tab_code": "MPH",
+   "races": 9,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Rosehill",
+   "state": "NSW",
+   "tab_code": "RSH",
+   "races": 10,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Sandown",
+   "state": "VIC",
+   "tab_code": "SAN",
+   "races": 10,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Toowoomba",
+   "state": "QLD",
+   "tab_code": "TWB",
+   "races": 8,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Wagga",
+   "state": "NSW",
+   "tab_code": "WAG",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "races_not_read": []
+  },
+  {
+   "name": "Yarra Valley",
+   "state": "VIC",
+   "tab_code": "YVL",
+   "races": 7,
+   "fields_source": "TAB racecards (read at the 7:30am run)",
+   "races_listed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "races_not_read": []
+  }
+ ]
+}
