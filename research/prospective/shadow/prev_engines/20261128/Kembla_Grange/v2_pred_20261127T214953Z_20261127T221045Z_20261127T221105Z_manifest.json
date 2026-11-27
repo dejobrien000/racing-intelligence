@@ -1,0 +1,55 @@
+{
+ "scored_utc": "2026-11-27T22:11:52.760978+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/shadow/prev_engines/20261128/Kembla_Grange/pred_20261127T214953Z_20261127T221045Z_runners.csv",
+ "base_v1_sha256": "aa6f2eab22a1bb471da32ff6e779bbe5bf04ab7d1b4c6bb33f421c0d14b79497",
+ "snapshot_key": "natpre:20261128:Kembla Grange:20261127T214953Z",
+ "engine_manifest_sha256": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+ "engine_release": "Engine v2.2",
+ "v22_manifest_sha256": "e7847c548ffb11006c94b22ef3a79f405888ae14db7b9d4f21470aa077b01d59",
+ "engine_c2": false,
+ "code_sha256": {
+  "engine/score_v2.py": "6d9575fd2e9138bb19071c2baaf397f5c1783281bab89b513783ab21bc75bf88",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled",
+ "settings": {
+  "engine_version": "Engine v2.2",
+  "output": "shadow: previous production engine (not live)",
+  "settings_fingerprint": "c82868e2f6396c9d31e1b190b0b954139065232ea381e4b7f45fe02b33674004",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+   "benchmarks/engine_v2_2/manifest.json": "e7847c548ffb11006c94b22ef3a79f405888ae14db7b9d4f21470aa077b01d59"
+  },
+  "v1_layer_settings": "a6947f65472c554dab57ced5bd9c36dd437a1cb7cf3a8a56a58a7b5ccdc36579",
+  "rating_build": {
+   "history_frame": "engine/frames/national.parquet",
+   "history_frame_sha256": "05526e63dc9d633985f78a285f62451516c8d09ced2369687ea87d29b6d06c80",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827"
+  },
+  "rating_scale_model_units_per_kg": 0.22632415169006115,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T22:11:52.760978+00:00",
+  "fallback": false,
+  "rating_update_settings": null,
+  "serving_corrections": {
+   "metro_from_tier": true,
+   "qld_course_map": true,
+   "first_starter_agesex": {
+    "file": "collect/national/20261128/form_runners.csv",
+    "file_present": true,
+    "filled_from_tab": 3,
+    "still_missing": 0
+   }
+  }
+ }
+}

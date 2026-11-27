@@ -1,0 +1,258 @@
+{
+ "date": "20261128",
+ "meetings": {
+  "calendar": 12,
+  "with_fields": 11,
+  "missing": [
+   "Darwin"
+  ],
+  "short": {}
+ },
+ "runners": {
+  "Ascot": {
+   "runners": 145,
+   "listed_scratched": 7,
+   "emergencies": 4,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 14,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "SOFT5"
+  },
+  "Kempsey": {
+   "runners": 55,
+   "listed_scratched": 4,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 13,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "SOFT6"
+  },
+  "Kembla Grange": {
+   "runners": 80,
+   "listed_scratched": 24,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 8,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "GOOD4"
+  },
+  "Morphettville": {
+   "runners": 113,
+   "listed_scratched": 21,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 35,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "GOOD4"
+  },
+  "Rosehill": {
+   "runners": 151,
+   "listed_scratched": 36,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 24,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "GOOD4"
+  },
+  "Sandown": {
+   "runners": 130,
+   "listed_scratched": 21,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 14,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "SOFT6"
+  },
+  "Wagga": {
+   "runners": 107,
+   "listed_scratched": 30,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 19,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "SOFT5"
+  },
+  "Yarra Valley": {
+   "runners": 89,
+   "listed_scratched": 28,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 16,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "HVY8"
+  },
+  "Doomben": {
+   "runners": 113,
+   "listed_scratched": 47,
+   "track_condition": "SOFT5"
+  },
+  "Tab Park Gold Coast": {
+   "runners": 81,
+   "listed_scratched": 32,
+   "track_condition": "SOFT6"
+  },
+  "Toowoomba": {
+   "runners": 73,
+   "listed_scratched": 14,
+   "track_condition": "GOOD4"
+  }
+ },
+ "claims_deducted_once": {
+  "runners_checked": 1390,
+  "mismatches": 0
+ },
+ "age_sex_coverage": {
+  "runners": 40,
+  "age_present": 1.0,
+  "sex_present": 1.0,
+  "first_starters": 38
+ },
+ "ran_yesterday_still_listed": {
+  "already_listed_scratched": 0,
+  "still_runners": []
+ },
+ "identity_list_names_today": [
+  "Embolden",
+  "Lake Forest"
+ ],
+ "fingerprints": [
+  {
+   "meeting": "Morphettville",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Toowoomba",
+   "engine_release": "Engine v2.1.3 (v3 rating)",
+   "family_file": "benchmarks/engine_v2_1_3/manifest.json",
+   "v22_file": "-",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Kembla_Grange",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Kempsey",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Tab Park Gold Coast",
+   "engine_release": "Engine v2.1.3 (v3 rating)",
+   "family_file": "benchmarks/engine_v2_1_3/manifest.json",
+   "v22_file": "-",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Doomben",
+   "engine_release": "Engine v2.1.3 (v3 rating)",
+   "family_file": "benchmarks/engine_v2_1_3/manifest.json",
+   "v22_file": "-",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Wagga",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Yarra_Valley",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Sandown",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Rosehill",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Ascot",
+   "engine_release": "Engine v2.3",
+   "family_file": "benchmarks/engine_v2_3/engine_v2.json",
+   "v22_file": "benchmarks/engine_v2_3/engine_v2_2.json",
+   "history_max_date": "2026-11-23"
+  }
+ ],
+ "dashboard": {
+  "meetings": 12,
+  "rated": 11
+ },
+ "shadows_today": {
+  "qld_v2_1_2": 15,
+  "prev_engines": 55,
+  "update_rule": 40,
+  "v2_4_candidate": 40,
+  "qld_common": 15,
+  "age_aware": 40,
+  "cap_only": 40,
+  "qld_common_update": 15,
+  "trainer_debut": 40,
+  "consolidated": 40
+ },
+ "warnings": [
+  "meeting in calendar but no fields: Darwin",
+  "identity-list name racing today: Embolden (check its history is the right horse)",
+  "identity-list name racing today: Lake Forest (check its history is the right horse)"
+ ]
+}

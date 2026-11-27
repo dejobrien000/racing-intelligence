@@ -66,8 +66,10 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Jockey distance specialisation, rider momentum, jockey workload (B14-B15) | Qld, SA | engine +0.0001; workload artifact | Pred./Desc. | REDUNDANT / DESCRIPTIVE | batch14-15 | frozen rider tables' prospective check not run |
 | Horse identity: suffix/sire/dam splits (B20-B22) | all | 56 splits | data | APPROVED CORRECTION (Monday 30 Nov, subject to checks) | ops/IDENTITY_CORRECTION_PLAN.md | Monday |
 | Qld start-count discrepancy (B19-B20) | Qld | measurement bug | data | FIXED (research script) | ops/form_enrichment.py | - |
-| Pre-race rail and track information (B21-B23) | Qld now | RQ publishes before the cutoff | data | COLLECTED from 28 Nov (not served) | ops/parse_rail.py; DAILY_RUN 5d | other states need a source that permits collection (RaceHub's robots file blocks Claude's crawlers: not used) |
-| Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | after the physical queue starts |
+| Pre-race rail and track information (B21-B23) | Qld, NSW/ACT | RQ and Racing NSW FreeFields publish before the cutoff | data | COLLECTED for 28 Nov (27 Nov night, Damo present; not served). The unattended optional task is blocked by per-URL approval (3 runs) | ops/parse_rail.py; DAILY_RUN 5d | after Saturday: supported persistent permission or PC collector; other states need a permitted source |
+| Field-strength-adjusted meeting time figure (B24 C8) | all | standalone ranking 0.238 vs 0.232; engines -0.0008/+0.0002 (v2.3), -0.0006/+0.0001 (consolidated) | Pred. | RETAINED AS RESEARCH MEASUREMENT (no engine gain; not independent of our ratings) | batch24/b24_meeting_speed.py | basis for the individual sectional / tempo / lane benchmarks |
+| Rating-scale drift (B24) | national | mechanical: entrants ~1.25 kg below field; production deflates, consolidated inflates; time figures flat | Desc. | PRIORITY RESEARCH (scale stability stream) | batch24/out_b24_drift_causes.json | reference-horse re-anchoring and in-mechanism drift prevention; decomposition by cause |
+| Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | now part of the meeting-specific physical programme (Damo 28 Nov) |
 | Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
 
 ## Batch 24 (27 Nov 2026 night): findings and newly registered research families
@@ -76,33 +78,54 @@ Findings (research only; nothing served):
   consolidated candidate up ~0.8 kg/yr (-2.64 to +0.66). Uniform shifts cancel exactly (every term is centred within its race).
   Drift reaches: within-horse lagged inputs (below_top3, gap_long_z, short_vs_long, slope15, last_race_strength; stable offsets
   2024-26, within-race correlation 0.91-0.94 between builds), the 'ability x field strength' interaction (absolute field level moves
-  ~0.3 sd by 2026, ~2% of the rating's weight), and venue class. No defect; candidate stays frozen. Next: period re-anchoring test,
-  both engines. batch24/out_b24_scale_*.json.
+  ~0.3 sd by 2026, ~2% of the rating's weight), and venue class. No defect; candidate stays frozen. The cause is now explained
+  (mechanical, see 'Scale drift causes' below); the follow-up is the rating-scale stability programme (Damo 28 Nov, below).
+  batch24/out_b24_scale_*.json.
 - First-starter starting level (consolidated rule): 1.5 kg instead of 2.0 removes most debut bias (+0.46 -> +0.12 kg), debut error
   31.95 -> 31.72 kg2, less drag on established rivals (-0.61 -> -0.40), but race accuracy is a wash (2024 -0.0007, 2025-26 +0.0005);
   1.0 kg overshoots. Missing-career first runs (n 621) move the other way: they need their own start from inferred experience.
   DESCRIPTIVE / PROMISING (no candidate). batch24/out_b24_starting_level.json.
-- Meeting speed (Part C8, preliminary): the meeting effect is real (other races predict a left-out race's time deviation, r 0.81);
-  stronger fields run 0.063 s/km faster per kg of field strength; a leave-one-race-out, field-strength-adjusted variant raises figure
-  repeatability (next figure within 60 days, later period, 198,934 pairs) from 0.349 (existing daily variant) to 0.361. Holds in
-  NSW/VIC/QLD/WA/ACT; TAS slightly worse; SA anomalous (no adjustment best). UPDATE 28 Nov 00:45: repeatability is confounded
-  (consecutive runs share a season's surface speed; that was the SA 'anomaly'). Cleaner test - previous figures ranking today's
-  field, 24,025 later-period races: none 0.181, existing variant 0.232, LORO 0.225, LORO + field strength 0.231, existing-style
-  (race included) + field strength 0.238 (top-figure winner 18.4% vs 18.1%; better in every state). Inside the engines (full
-  research frames, only figure inputs changed): Engine v2.3 -0.0008 / +0.0002, consolidated -0.0006 / +0.0001 -> no engine gain
-  (the rating already carries field strength). DESCRIPTIVE: a better standalone time figure for meeting/tempo/sectional research,
-  not an engine candidate. batch24/b24_meeting_speed.py, b24_ms_runs.py.
+- Meeting speed (Part C8) - COMPLETED 28 Nov (accepted by Damo 28 Nov 8:19am). The meeting effect is real (other races predict a
+  left-out race's time deviation, r 0.81); stronger fields run 0.063 s/km faster per kg of field strength. Measured by how well
+  previous figures rank today's field (24,025 later-period races): no adjustment 0.181, existing daily variant 0.232, leave-one-race-
+  out 0.225, leave-one-race-out + field strength 0.231, race-included + field strength 0.238 (top-figure winner 18.4% vs 18.1%;
+  better in every state, SA included). Engine tests done (full research frames, only the figure inputs changed): Engine v2.3
+  -0.0008 / +0.0002, consolidated -0.0006 / +0.0001 -> no incremental engine gain (the rating already carries field strength).
+  South Australia, revised explanation: the earlier SA 'anomaly' was an artefact of the first test (figure repeatability), which is
+  confounded because consecutive runs share a season's surface speed; on the predictive test SA behaves like the other states.
+  STATUS: RETAINED AS A RESEARCH MEASUREMENT (not an engine candidate). Caution: the field-strength adjustment uses our own ratings,
+  so the adjusted figure is NOT an independent measure of ability; keep the raw measured elapsed and sectional times alongside it.
+  This result does NOT reject the broader meeting-specific performance hypothesis (which goes well beyond whole-race time: see the
+  physical-performance programme below). batch24/b24_meeting_speed.py, b24_ms_runs.py.
 - Scale drift causes (28 Nov 00:45): mechanical, not population change - time figures flat by year (88.7-89.3; metro 93.6-94.1).
   Entrants start ~1.25 kg below their field in both engines; continuing horses rise +0.06 to +0.13 kg/run in production (deflation
-  wins) and +0.21 to +0.35 kg/run under the consolidated rule (inflation wins). PRIORITY RESEARCH (Damo 28 Nov): point-in-time
-  re-anchoring on established horses, effects on peaks, decline, spell returns, venue class, interstate. batch24/out_b24_drift_causes.json.
+  wins) and +0.21 to +0.35 kg/run under the consolidated rule (inflation wins). Accepted by Damo 28 Nov 8:19am as mechanical
+  inflation/deflation, not a change in population ability. Follow-up: the rating-scale stability programme below.
+  batch24/out_b24_drift_causes.json.
+- Research direction (Damo 28 Nov 8:19am; research only, Saturday production and every frozen prospective assessment protected,
+  no engine or UI change, complete market independence):
+  1. RATING-SCALE STABILITY (important parallel stream). Two routes: (a) historical re-anchoring of the scale on appropriately
+     established contemporaneous reference horses; (b) stopping mechanical drift accumulating inside the rating mechanism itself.
+     Separate the contributions of newcomer initialisation, asymmetric responsiveness, population turnover, selective retirement and
+     genuine individual development. Test whether a stable reference scale improves historical peak comparisons, decline detection,
+     career development, long-break returners, interstate comparisons and venue-strength assessment. Do NOT simply force annual
+     population averages to match; preserve genuine differences between horses and genuine changes in ability.
+  2. MEETING-SPECIFIC PHYSICAL PERFORMANCE (main substantive stream once Saturday's run is secure; shift away from further variants
+     of the rating-responsiveness mechanism): individual sectional benchmarks relative to comparable performances at the same
+     meeting; early, middle and late sectional speed benchmarks; acceleration and speed retention relative to prevailing conditions;
+     exceptional runs against unfavourable tempo; exceptional runs against prevailing lane and positional patterns; physical
+     development relative to the horse's own history and meeting-adjusted benchmarks. Keep the meeting's surface speed separate from
+     the individual race's tempo. Question for every measure: does it carry information the opposition-aware rating does not?
+     Use genuinely independent measured sectional and elapsed times where available.
+  3. All previously approved data-development workstreams continue (national rail mandatory; identity correction; history
+     completeness; Vic tracking; class parity).
 - Rail data foundation: retrospective rail already held for Qld (9,758 races from Oct 2022), SA (1,775 races from Jan 2024),
   NSW/ACT (331 meetings from Jul 2026); pre-race from 28 Nov for Qld (RQ) and NSW/ACT (Racing NSW FreeFields). See
   ops/foundation/field_register.csv (national rail row). MANDATORY data workstream; model use evidence-dependent.
 Newly registered families (NOT YET INVESTIGATED unless stated; tracking-based ones use Qld/SA/Vic data as each actually supplies it):
 performance against race shape (tempo x position x lane x ground x sectional speed; Part B5); tempo and the meaning of margins (B6);
 historical course-distance benchmarks by age/class/going/season (C7, audit done: production uses venue x distance par + daily variant);
-meeting-specific benchmarks (C8, begun); meeting speed + lane bias + race shape integration (C9); whole-field underestimation and
+meeting-specific benchmarks (C8: whole-race time figure completed; individual sectional benchmarks next); meeting speed + lane bias + race shape integration (C9); whole-field underestimation and
 connected form lines (D10); stewards' observations as context (D11, existing programme); response to racing pressure (E12);
 conditional consistency, ceiling and range (F13); familiar/home-track performance (F14, reconcile with redundant course records);
 development before rating change (G15); turn of foot and speed development (G16); settling and racing education (G17);

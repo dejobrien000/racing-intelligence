@@ -1,0 +1,49 @@
+{
+ "scored_utc": "2026-11-27T22:35:12.736815+00:00",
+ "snapshot": {
+  "snapshot_key": "qcfpre:20261128:TWB:20261127T214953Z",
+  "date": "20261128",
+  "venue": "Toowoomba",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "acceptances_sha256": "57eb01f39a8eacaf62a7520587d1445b3c0998664b5e8e8db75d0e87ad4b208c",
+  "conditions": {
+   "track_condition": "GOOD4",
+   "rail": null,
+   "weather": null,
+   "scratchings_close": "Sat 28/11/26 07:30am"
+  },
+  "scratchings_listed": 14,
+  "emergency_rule": "emergencies left out until confirmed (original)",
+  "emergencies_gained_start": []
+ },
+ "snapshot_bundle": "qcfpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "7cf0e814ec884d7819d965f8c411eaa67b013de1843dc797099fa3c9fab27661",
+ "not_scored": [],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "2de8a68f416cb40424eabd4394abe6e2ed8d5e4b22d2983be92f36251ff37294",
+ "engine_c2": true,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c336f9a76140db1754b4c392106c6ce7d3a832204afe09525"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+ "national_runs_file": "national_runs_c2.parquet",
+ "rating_update_settings": {
+  "WCREDIT": "0.25",
+  "RATING_CAP_L": "12",
+  "RATING_CAP_SCOPE": "all",
+  "RATING_GOOD_X": "1.3"
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

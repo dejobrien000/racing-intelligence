@@ -173,7 +173,9 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    into the log. A WARN is information for Damo, not a failed step, unless it says the dashboard or a production file is missing.
 6. Record: write research/ops/logs/<TODAY>.md (times, meetings, races, fetch failures, steps that failed, artifact version,
    what TAB showed after racing). Emergencies (Batch 19 A1): cd research && python3 ops/check_emergencies.py <YDAY>; copy its
-   summary (counted and ran / counted but did not run / left out but ran) into the log; any "counted but did not run" is an ATTENTION item. git add research/ (code is unchanged; outputs only) and commit
+   summary (counted and ran / counted but did not run / left out but ran) and its categories into the log; under the rule of record
+   (benchmarks/engine_v2/RELEASES.md, national emergency correction) only rule_failures > 0 (incorrectly admitted or incorrectly
+   excluded) is an ATTENTION item; "eligible at the cutoff, scratched later" and "gained a start after the capture" are not rule failures. git add research/ (code is unchanged; outputs only) and commit
    "daily <TODAY>" with the attribution lines, then git -c push.negotiate=true push.
 7. Summary (two lines): meetings and races collected, races rated, runners with OPEN prices, yesterday's selections
    settled and paper return, published version. Start with ATTENTION: if any step failed.

@@ -1,0 +1,61 @@
+{
+ "scored_utc": "2026-11-27T22:23:42.781637+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/shadow/age_aware/20261128/Ascot/pred_20261127T214953Z_20261127T222242Z_runners.csv",
+ "base_v1_sha256": "80cb8dedbdfc9b3fa0ddd5d64846353b745ac0479b23ecd6320f3c83615dde91",
+ "snapshot_key": "natpre:20261128:Ascot:20261127T214953Z",
+ "engine_manifest_sha256": "e369532d80e53f48bab5213ad097da86d6c97e1fb51d2468d864e3d20dba99a4",
+ "engine_release": "Age-aware update rule (not live)",
+ "v22_manifest_sha256": "7f5fc91b232a41694a6c884d0e09c1f3bd3dea3829b1b221600c912b10b03df6",
+ "engine_c2": true,
+ "code_sha256": {
+  "engine/score_v2.py": "6d9575fd2e9138bb19071c2baaf397f5c1783281bab89b513783ab21bc75bf88",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled",
+ "settings": {
+  "engine_version": "Age-aware update rule (not live)",
+  "output": "shadow candidate: age-aware update rule (12 L cap; good runs 1+0.3exp(-n/6) times, 5yo+ counted as exposed), not live",
+  "settings_fingerprint": "3a22ae3f43a1f10bffc1f755830e6e8ee6cc9cfe9c4470040f464d10b29c4ad1",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+   "benchmarks/engine_age_aware_candidate/engine_v2.json": "e369532d80e53f48bab5213ad097da86d6c97e1fb51d2468d864e3d20dba99a4",
+   "benchmarks/engine_age_aware_candidate/engine_v2_2.json": "7f5fc91b232a41694a6c884d0e09c1f3bd3dea3829b1b221600c912b10b03df6"
+  },
+  "v1_layer_settings": "69f6adb30c88fc4a2192ca659458b497bf70daf5cd5fdac040522cc71d8487b3",
+  "rating_build": {
+   "history_frame": "engine/frames/national_age_aware.parquet",
+   "history_frame_sha256": "2c744af5f38f4a0ddb00ed57c53158069498fc4ab0c40d05f69a5a789ff3b506",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  "rating_scale_model_units_per_kg": 0.33378932301133185,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T22:23:42.781637+00:00",
+  "fallback": false,
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1"
+  },
+  "serving_corrections": {
+   "metro_from_tier": true,
+   "qld_course_map": true,
+   "first_starter_agesex": {
+    "file": "collect/national/20261128/form_runners.csv",
+    "file_present": true,
+    "filled_from_tab": 0,
+    "still_missing": 3
+   }
+  }
+ }
+}

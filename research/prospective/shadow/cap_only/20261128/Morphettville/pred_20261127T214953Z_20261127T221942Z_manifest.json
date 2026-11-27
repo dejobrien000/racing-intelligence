@@ -1,0 +1,207 @@
+{
+ "scored_utc": "2026-11-27T22:19:42.687394+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261128:Morphettville:20261127T214953Z",
+  "date": "20261128",
+  "venue": "Morphettville",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "acceptances_sha256": "b8ef0d9f93e3df4f913403c3063187970ee2695e837e04c3fbb4561feb02afd5",
+  "conditions": {
+   "track_condition": "GOOD4",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 21,
+  "emergency_rule": "gained-start count rule (Batch 19 A1)",
+  "emergencies_gained_start": [
+   [
+    3,
+    13,
+    "Joan'S Thunder"
+   ],
+   [
+    5,
+    14,
+    "Kindra Park"
+   ],
+   [
+    6,
+    13,
+    "Scooped"
+   ],
+   [
+    7,
+    13,
+    "Tobikko"
+   ],
+   [
+    9,
+    13,
+    "Hamner Springs"
+   ],
+   [
+    9,
+    14,
+    "Taking Omaha"
+   ]
+  ]
+ },
+ "snapshot_bundle": "natpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "7898540f3532e814830b0b3c15e714237251b7ec783278761d3941c8dc6e424d",
+ "not_scored": [
+  {
+   "race_no": 3,
+   "saddlecloth": 1,
+   "horse": "Celtic Bhoy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 7,
+   "horse": "Zeus Lightning",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 8,
+   "horse": "Aliandra",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 14,
+   "horse": "Minya Murra",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 3,
+   "horse": "Trebilco",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 11,
+   "horse": "Sunset Prayer",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 1,
+   "horse": "Costless",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 6,
+   "horse": "Annihilate",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 10,
+   "horse": "Lastar",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 12,
+   "horse": "Exotic Dancer",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 13,
+   "horse": "Cork Harbour",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 6,
+   "horse": "Flirt",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 14,
+   "horse": "Mystic Mind",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 15,
+   "horse": "Eclair Vitality",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 16,
+   "horse": "Old Time Rock",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 2,
+   "horse": "Nicish",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 14,
+   "horse": "Blanc Visage",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 6,
+   "horse": "Cielao",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 10,
+   "horse": "Dazelles",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 15,
+   "horse": "Frontpoint",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 16,
+   "horse": "Royal Fox",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "79ee16aff4e8a122e37dde6771d59cd38e8914572f875b29f85ca7934e237c4f",
+ "engine_c2": true,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c336f9a76140db1754b4c392106c6ce7d3a832204afe09525"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+ "national_runs_file": "national_runs_c2.parquet",
+ "rating_update_settings": {
+  "WCREDIT": "0.25",
+  "RATING_CAP_L": "12",
+  "RATING_CAP_SCOPE": "all",
+  "RATING_GOOD_X": "1"
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

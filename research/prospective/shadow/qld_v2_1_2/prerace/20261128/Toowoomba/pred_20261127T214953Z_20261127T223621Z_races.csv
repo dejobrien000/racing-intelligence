@@ -1,0 +1,33 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,runners_new_to_tracked_qld
+combined_v1,20261128-Toowoomba-R1,11,20.94,16.95,3.99,0,0
+combined_v1,20261128-Toowoomba-R2,9,39.56,13.58,25.98,1,1
+combined_v1,20261128-Toowoomba-R3,8,30.12,29.17,0.95,1,1
+combined_v1,20261128-Toowoomba-R4,9,21.41,20.76,0.66,0,0
+combined_v1,20261128-Toowoomba-R5,13,18.5,16.59,1.91,3,3
+combined_v1,20261128-Toowoomba-R6,6,26.8,26.67,0.13,0,0
+combined_v1,20261128-Toowoomba-R7,6,29.38,20.22,9.16,0,0
+combined_v1,20261128-Toowoomba-R8,11,22.02,11.19,10.84,3,3
+combined_v1 + dynamic rating,20261128-Toowoomba-R1,11,23.15,18.57,4.58,0,0
+combined_v1 + dynamic rating,20261128-Toowoomba-R2,9,50.12,11.79,38.33,1,1
+combined_v1 + dynamic rating,20261128-Toowoomba-R3,8,25.68,25.62,0.06,1,1
+combined_v1 + dynamic rating,20261128-Toowoomba-R4,9,25.98,19.4,6.58,0,0
+combined_v1 + dynamic rating,20261128-Toowoomba-R5,13,34.63,11.54,23.09,3,3
+combined_v1 + dynamic rating,20261128-Toowoomba-R6,6,30.83,27.26,3.57,0,0
+combined_v1 + dynamic rating,20261128-Toowoomba-R7,6,45.46,25.54,19.91,0,0
+combined_v1 + dynamic rating,20261128-Toowoomba-R8,11,20.02,12.59,7.43,3,3
+dynamic rating + PA1 figure,20261128-Toowoomba-R1,11,21.6,15.09,6.51,0,0
+dynamic rating + PA1 figure,20261128-Toowoomba-R2,9,37.31,14.57,22.74,1,1
+dynamic rating + PA1 figure,20261128-Toowoomba-R3,8,20.4,16.38,4.03,1,1
+dynamic rating + PA1 figure,20261128-Toowoomba-R4,9,24.33,16.14,8.19,0,0
+dynamic rating + PA1 figure,20261128-Toowoomba-R5,13,34.72,11.16,23.56,3,3
+dynamic rating + PA1 figure,20261128-Toowoomba-R6,6,33.15,26.69,6.47,0,0
+dynamic rating + PA1 figure,20261128-Toowoomba-R7,6,57.55,17.19,40.36,0,0
+dynamic rating + PA1 figure,20261128-Toowoomba-R8,11,15.17,14.74,0.43,3,3
+combined_v1 + national dynamic rating,20261128-Toowoomba-R1,11,28.59,20.32,8.27,0,0
+combined_v1 + national dynamic rating,20261128-Toowoomba-R2,9,42.78,16.26,26.52,1,1
+combined_v1 + national dynamic rating,20261128-Toowoomba-R3,8,29.97,26.73,3.25,1,1
+combined_v1 + national dynamic rating,20261128-Toowoomba-R4,9,30.52,18.52,12.0,0,0
+combined_v1 + national dynamic rating,20261128-Toowoomba-R5,13,22.34,20.94,1.4,3,3
+combined_v1 + national dynamic rating,20261128-Toowoomba-R6,6,34.56,28.35,6.21,0,0
+combined_v1 + national dynamic rating,20261128-Toowoomba-R7,6,37.9,25.39,12.51,0,0
+combined_v1 + national dynamic rating,20261128-Toowoomba-R8,11,25.93,15.36,10.57,3,3

@@ -1,0 +1,61 @@
+{
+ "scored_utc": "2026-11-27T22:32:16.408435+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/shadow/consolidated/20261128/Morphettville/pred_20261127T214953Z_20261127T222954Z_runners.csv",
+ "base_v1_sha256": "d68d38760789b14ebc6daa35002787b584a035902a26a37ed7a224d28e4bcb6b",
+ "snapshot_key": "natpre:20261128:Morphettville:20261127T214953Z",
+ "engine_manifest_sha256": "9eb7fd537aa73ed24d0527de415b53be8948fd64e0e41d27aa5a594ed96d52c4",
+ "engine_release": "Consolidated rating candidate (not live)",
+ "v22_manifest_sha256": "2e0a54ee97bc14ed6270e3577f83414f4ede50242f57d5d78bf0a45b0b8b7534",
+ "engine_c2": true,
+ "code_sha256": {
+  "engine/score_v2.py": "6d9575fd2e9138bb19071c2baaf397f5c1783281bab89b513783ab21bc75bf88",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled",
+ "settings": {
+  "engine_version": "Consolidated rating candidate (not live)",
+  "output": "shadow candidate: consolidated rating (12 L cap; good runs 1+0.8exp(-n/6), n = history-completeness experience with the inferred-start cap; certainty-weighted race reference), not live",
+  "settings_fingerprint": "136426c9d88e2cfacb260479fd713ffa87b9508c9fdca482b20289d8ee331154",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+   "benchmarks/engine_consolidated_candidate/engine_v2.json": "9eb7fd537aa73ed24d0527de415b53be8948fd64e0e41d27aa5a594ed96d52c4",
+   "benchmarks/engine_consolidated_candidate/engine_v2_2.json": "2e0a54ee97bc14ed6270e3577f83414f4ede50242f57d5d78bf0a45b0b8b7534"
+  },
+  "v1_layer_settings": "4cc507023467ad679612409eb2fdb958f0078bdd70f9a7e894b2ef12c9618566",
+  "rating_build": {
+   "history_frame": "engine/frames/national_consolidated.parquet",
+   "history_frame_sha256": "20b7b624507f7dcea3fe212c0629511613254dc205821cf784c819f9ae2f8ef3",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2"
+  },
+  "rating_scale_model_units_per_kg": 0.32379915308863966,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T22:32:16.408435+00:00",
+  "fallback": false,
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1"
+  },
+  "serving_corrections": {
+   "metro_from_tier": true,
+   "qld_course_map": true,
+   "first_starter_agesex": {
+    "file": "collect/national/20261128/form_runners.csv",
+    "file_present": true,
+    "filled_from_tab": 5,
+    "still_missing": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,289 @@
+{
+ "scored_utc": "2026-11-27T22:22:42.646609+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261128:Rosehill:20261127T214953Z",
+  "date": "20261128",
+  "venue": "Rosehill",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "acceptances_sha256": "8550423c8f4a58542e684a7566814a717ea1eed05613be07ecb20bcd661a3a63",
+  "conditions": {
+   "track_condition": "GOOD4",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 36,
+  "emergency_rule": "gained-start count rule (Batch 19 A1)",
+  "emergencies_gained_start": [
+   [
+    3,
+    17,
+    "Jolly Good Fellow"
+   ],
+   [
+    3,
+    20,
+    "The Main Event"
+   ],
+   [
+    3,
+    22,
+    "Iroquai"
+   ],
+   [
+    6,
+    19,
+    "Alabama Blitz"
+   ]
+  ]
+ },
+ "snapshot_bundle": "natpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "7898540f3532e814830b0b3c15e714237251b7ec783278761d3941c8dc6e424d",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 1,
+   "horse": "Proverb",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 2,
+   "horse": "Berkshire",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 3,
+   "horse": "Borodino",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 6,
+   "horse": "Refractive",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 2,
+   "horse": "Malbork Castle",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 3,
+   "horse": "Highway Strip",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 4,
+   "horse": "Discreet Point",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 5,
+   "horse": "Dr Hook",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 9,
+   "horse": "Big Lon",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 13,
+   "horse": "O'Hellyeah",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 18,
+   "horse": "Alice Alice",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 19,
+   "horse": "Flirtation",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 21,
+   "horse": "The Dux Nuts",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 8,
+   "horse": "She Moves Too",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 12,
+   "horse": "Darn Cute",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 5,
+   "horse": "Miss Spacegirl",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 13,
+   "horse": "Kujenga",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 14,
+   "horse": "Live",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 15,
+   "horse": "Four Inthe Morning",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 9,
+   "horse": "Think Like Paddy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 20,
+   "horse": "Ring Ahoy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 21,
+   "horse": "Olympian",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 22,
+   "horse": "Imelda",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 23,
+   "horse": "Fair Master",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 24,
+   "horse": "Samurai",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 11,
+   "horse": "Pride To Follow",
+   "status": "scratched"
+  },
+  {
+   "race_no": 8,
+   "saddlecloth": 5,
+   "horse": "Captain Furai",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 13,
+   "horse": "Flying Bandit",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 1,
+   "horse": "Fine Vintage",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 3,
+   "horse": "Bojangles",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 4,
+   "horse": "Sir Les",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 10,
+   "horse": "Mercy Me",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 11,
+   "horse": "Mailata",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 12,
+   "horse": "Detain",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 14,
+   "horse": "Tuscany",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 17,
+   "horse": "Lighthouse Lass",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "69f6adb30c88fc4a2192ca659458b497bf70daf5cd5fdac040522cc71d8487b3",
+ "engine_c2": true,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c336f9a76140db1754b4c392106c6ce7d3a832204afe09525"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+ "national_runs_file": "national_runs_c2.parquet",
+ "rating_update_settings": {
+  "WCREDIT": "0.25",
+  "RATING_CAP_L": "12",
+  "RATING_CAP_SCOPE": "all",
+  "RATING_GOOD_X": "1",
+  "RATING_GOOD_TAPER": "0.3,6",
+  "RATING_TAPER_AGEFLOOR": "engine/frames/age_at_run.parquet"
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

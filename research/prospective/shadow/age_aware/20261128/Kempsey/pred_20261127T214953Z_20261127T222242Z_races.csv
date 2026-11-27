@@ -1,0 +1,13 @@
+candidate,race_id,runners,top_chance_pct,second_chance_pct,top_two_gap_pts,runners_without_prior_form,going,rail
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|1,9,28.68,27.11,1.57,1,SOFT6,
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|2,8,38.08,16.21,21.88,0,SOFT6,
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|3,8,31.15,13.97,17.19,0,SOFT6,
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|4,7,33.65,17.19,16.46,0,SOFT6,
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|5,10,29.31,14.1,15.21,0,SOFT6,
+nat_v1 (common + national rating),NSW|kempsey|2026-11-28|6,9,26.34,26.33,0.01,1,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|1,9,28.73,26.47,2.27,1,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|2,8,37.2,17.58,19.62,0,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|3,8,31.14,12.93,18.22,0,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|4,7,27.39,22.75,4.64,0,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|5,10,28.6,13.87,14.73,0,SOFT6,
+nat_v2 (+ horse records),NSW|kempsey|2026-11-28|6,9,28.06,22.51,5.55,1,SOFT6,

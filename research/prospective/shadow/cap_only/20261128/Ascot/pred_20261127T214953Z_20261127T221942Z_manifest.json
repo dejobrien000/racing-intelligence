@@ -1,0 +1,127 @@
+{
+ "scored_utc": "2026-11-27T22:19:42.687394+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261128:Ascot:20261127T214953Z",
+  "date": "20261128",
+  "venue": "Ascot",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "acceptances_sha256": "9535a55e5dc64ab4583a52e5938f831efefd3c6d48619d192704b3e7a73fccf9",
+  "conditions": {
+   "track_condition": "SOFT5",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 7,
+  "emergency_rule": "gained-start count rule (Batch 19 A1)",
+  "emergencies_gained_start": [
+   [
+    6,
+    17,
+    "Tribal Ruler"
+   ],
+   [
+    10,
+    17,
+    "Hasani"
+   ]
+  ]
+ },
+ "snapshot_bundle": "natpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "7898540f3532e814830b0b3c15e714237251b7ec783278761d3941c8dc6e424d",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 5,
+   "horse": "Perfect Chant",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 12,
+   "horse": "The Mighty Bell",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 1,
+   "horse": "Just Famous",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 9,
+   "horse": "Niccy'S Affair",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 10,
+   "horse": "Flying South",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 16,
+   "horse": "Merivale Louvain",
+   "status": "scratched"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 17,
+   "horse": "Bassett Hound",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 18,
+   "horse": "Hurricane Harley",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 9,
+   "saddlecloth": 19,
+   "horse": "Levati Dimezzo",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 13,
+   "horse": "Boy Crush",
+   "status": "scratched"
+  },
+  {
+   "race_no": 10,
+   "saddlecloth": 18,
+   "horse": "Katona",
+   "status": "unnumbered (emergency or late entry; not counted until confirmed)"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "79ee16aff4e8a122e37dde6771d59cd38e8914572f875b29f85ca7934e237c4f",
+ "engine_c2": true,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c336f9a76140db1754b4c392106c6ce7d3a832204afe09525"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+ "national_runs_file": "national_runs_c2.parquet",
+ "rating_update_settings": {
+  "WCREDIT": "0.25",
+  "RATING_CAP_L": "12",
+  "RATING_CAP_SCOPE": "all",
+  "RATING_GOOD_X": "1"
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

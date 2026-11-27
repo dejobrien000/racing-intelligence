@@ -1,0 +1,263 @@
+{
+ "scored_utc": "2026-11-27T22:26:53.345802+00:00",
+ "snapshot": {
+  "snapshot_key": "natpre:20261128:Wagga:20261127T214953Z",
+  "date": "20261128",
+  "venue": "Wagga",
+  "retrieved_utc": "2026-11-27T21:49:53Z",
+  "acceptances_sha256": "08d73f47281c872fa45615641d5885959caa3728c68ce2caa11dc0025c677ec5",
+  "conditions": {
+   "track_condition": "SOFT5",
+   "rail": null,
+   "weather": null,
+   "note": "Track condition not available from this source; scoring assumes the Good band until an official rating is collected."
+  },
+  "scratchings_listed": 30,
+  "emergency_rule": "gained-start count rule (Batch 19 A1)",
+  "emergencies_gained_start": [
+   [
+    1,
+    13,
+    "Jackets"
+   ],
+   [
+    1,
+    14,
+    "Four Esses"
+   ],
+   [
+    2,
+    13,
+    "Cinephile"
+   ],
+   [
+    2,
+    14,
+    "The Pres"
+   ],
+   [
+    3,
+    14,
+    "Ring The Sheriff"
+   ],
+   [
+    3,
+    15,
+    "Wild Oaks"
+   ],
+   [
+    5,
+    14,
+    "Bokka Bokka"
+   ]
+  ]
+ },
+ "snapshot_bundle": "natpre_20261128_snap20261127T214953Z.jsonl.gz",
+ "snapshot_bundle_sha256": "7898540f3532e814830b0b3c15e714237251b7ec783278761d3941c8dc6e424d",
+ "not_scored": [
+  {
+   "race_no": 1,
+   "saddlecloth": 4,
+   "horse": "Duke Of Zhou",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 6,
+   "horse": "Forrest Dancer",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 11,
+   "horse": "Mo Cent",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 15,
+   "horse": "The Favorite Son",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 16,
+   "horse": "Blessing Season",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 17,
+   "horse": "Gettin' Tipsy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 1,
+   "saddlecloth": 18,
+   "horse": "Dita Von",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 5,
+   "horse": "Jingu Express",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 6,
+   "horse": "Perfectly Good",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 15,
+   "horse": "Enough War",
+   "status": "scratched"
+  },
+  {
+   "race_no": 2,
+   "saddlecloth": 16,
+   "horse": "Rasloc",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 3,
+   "horse": "Deflector",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 6,
+   "horse": "Titan'S Soul",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 7,
+   "horse": "Apple Eyes",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 12,
+   "horse": "Tassy Fox",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 13,
+   "horse": "It'Swhatyoumakeit",
+   "status": "scratched"
+  },
+  {
+   "race_no": 3,
+   "saddlecloth": 16,
+   "horse": "Gettin' Tipsy",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 10,
+   "horse": "Vainstream",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 13,
+   "horse": "Persuasive Star",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 14,
+   "horse": "Sogeri",
+   "status": "scratched"
+  },
+  {
+   "race_no": 4,
+   "saddlecloth": 15,
+   "horse": "Martha Lavinia",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 8,
+   "horse": "Borata'S Girl",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 13,
+   "horse": "Princess Prussia",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 15,
+   "horse": "Tristania",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 16,
+   "horse": "Melbourne Miss",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 17,
+   "horse": "Flying Betty",
+   "status": "scratched"
+  },
+  {
+   "race_no": 5,
+   "saddlecloth": 18,
+   "horse": "Cod On The Rum",
+   "status": "scratched"
+  },
+  {
+   "race_no": 6,
+   "saddlecloth": 4,
+   "horse": "Dubai Fountain",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 10,
+   "horse": "Beau Rock",
+   "status": "scratched"
+  },
+  {
+   "race_no": 7,
+   "saddlecloth": 11,
+   "horse": "Royal Summer",
+   "status": "scratched"
+  }
+ ],
+ "candidates": [
+  "nat_v1 (common + national rating)",
+  "nat_v2 (+ horse records)"
+ ],
+ "model_manifest_sha256": "41f21a74257645b6d703599cef7e0bc1b86e8ffe9f60aa5ea1f114dfed7c6b77",
+ "engine_c2": true,
+ "code_sha256": {
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc",
+  "dyn_rating.py": "a3f1b5b96cbc8710f07e0723b09dd698d9f14dbc3a04e11717cfeb769079fb37",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c336f9a76140db1754b4c392106c6ce7d3a832204afe09525"
+ },
+ "history_cutoff": {
+  "national results (Qld tracked + Breednet)": "2026-11-23"
+ },
+ "national_runs_sha256": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+ "national_runs_file": "national_runs_c2.parquet",
+ "rating_update_settings": {
+  "WCREDIT": "0.25"
+ },
+ "notes": [
+  "no result of these races existed when this file was written",
+  "no sectionals or running positions are used outside Queensland",
+  "acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed"
+ ]
+}

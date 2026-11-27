@@ -1,0 +1,59 @@
+{
+ "scored_utc": "2026-11-27T22:11:07.921516+00:00",
+ "engine": "v2",
+ "family": "QLD",
+ "base_v1_file": "prospective/prerace/20261128/Tab Park Gold Coast/pred_20261127T214953Z_20261127T215429Z_runners.csv",
+ "base_v1_sha256": "785700c7cde1d3b94bb18c63697e20a3decdc954d5297c41e4fcd9a05c2deea8",
+ "snapshot_key": "rqpre:20261128:GOC:20261127T214953Z",
+ "engine_manifest_sha256": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+ "engine_release": "Engine v2.1.1 (v3 rating)",
+ "v22_manifest_sha256": null,
+ "engine_c2": false,
+ "code_sha256": {
+  "engine/score_v2.py": "6d9575fd2e9138bb19071c2baaf397f5c1783281bab89b513783ab21bc75bf88",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "1a05cb454314ac9f5a9ae9638aac71824b33a6ce46253d5aeb4d80b729696bdc"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled",
+ "settings": {
+  "engine_version": "Engine v2.1.1 (v3 rating)",
+  "output": "shadow: previous production engine (not live)",
+  "settings_fingerprint": "961762e858fe1aa77bd748a4d35da608feb73f4c855676f3256be06f232f6df7",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e"
+  },
+  "v1_layer_settings": {
+   "benchmarks/candidates_b4/manifest.json": "14bd6268200fac3fd13b76a978a9e6cb7131767b17adfeb73fa211126a8780b2",
+   "benchmarks/candidates_b4_national/manifest.json": "a0d1e4df1609387a0a028d2091f3a629165d68b115a42b0891d87d8b52f457a5",
+   "benchmarks/candidates_b4_national_v3/manifest.json": "72d104d47cb1ccbb2e6f388c9efc42e45bc10e81ce30020c9654ead706b15031",
+   "engine/dyn_v3.py": "2a26a8e69e3350da7c7dc59684e2e1d1ad6b211c3be2276fbf92dfdab80012a5"
+  },
+  "rating_build": {
+   "history_frame": "engine/frames/national_v3.parquet",
+   "history_frame_sha256": "bb9b5c073385510ea45e934602268a68824aa8d20d27d0ff7383bbef8eccc345",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827"
+  },
+  "rating_scale_model_units_per_kg": 0.22425646171954994,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T22:11:07.921516+00:00",
+  "fallback": false,
+  "rating_update_settings": null,
+  "serving_corrections": {
+   "metro_from_tier": true,
+   "qld_course_map": true,
+   "first_starter_agesex": {
+    "file": "collect/national/20261128/form_runners.csv",
+    "file_present": true,
+    "filled_from_tab": 5,
+    "still_missing": 9
+   }
+  }
+ }
+}

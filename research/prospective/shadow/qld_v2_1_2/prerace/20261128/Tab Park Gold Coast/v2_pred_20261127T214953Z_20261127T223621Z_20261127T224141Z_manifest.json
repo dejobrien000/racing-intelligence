@@ -1,0 +1,15 @@
+{
+ "scored_utc": "2026-11-27T22:41:44.081136+00:00",
+ "engine_release": "Engine v2.1.2-candidate (Queensland) - SHADOW, NOT LIVE",
+ "family": "QLD",
+ "base_v1_file": "prospective/shadow/qld_v2_1_2/prerace/20261128/Tab Park Gold Coast/pred_20261127T214953Z_20261127T223621Z_runners.csv",
+ "base_v1_sha256": "acdd7468fd0a947fe253cedaa9e21bcebb84600a6c2ceecb9c3c925e2ac5aae9",
+ "snapshot_key": "rqpre:20261128:GOC:20261127T214953Z",
+ "engine_manifest": "benchmarks/candidate_qld_v2_1_2/engine_manifest.json",
+ "engine_manifest_sha256": "64afd6756975e0b07fe45cb1ce3863e3a4720e5400bff68b61073c23795ffd2b",
+ "production_engine": "Engine v2.1.1 (prospective/prerace)",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "shadow only: not on the dashboard, not settled, not ranked"
+ ]
+}
