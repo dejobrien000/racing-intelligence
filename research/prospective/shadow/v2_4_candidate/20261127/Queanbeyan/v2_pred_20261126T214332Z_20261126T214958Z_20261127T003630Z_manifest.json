@@ -1,0 +1,45 @@
+{
+ "scored_utc": "2026-11-27T00:37:26.610800+00:00",
+ "engine": "v2",
+ "family": "NSW_VIC_ACT",
+ "base_v1_file": "prospective/prerace/20261127/Queanbeyan/pred_20261126T214332Z_20261126T214958Z_runners.csv",
+ "base_v1_sha256": "48a29d0e46f49df3343dec08bc2e2fde74391a99335c49dd133bf02728033c62",
+ "snapshot_key": "natpre:20261127:Queanbeyan:20261126T214332Z",
+ "engine_manifest_sha256": "be5bf1478476efb7a01b3d5aa9c91b8fedc3354df35198a67a15c1e7644c4843",
+ "engine_release": "Engine v2.4-candidate (not live)",
+ "v22_manifest_sha256": "7b7f9eb8fab4cd159a8cb0e7eda83bced79df80908ab6d2e16eba89fcc80eafa",
+ "engine_c2": true,
+ "code_sha256": {
+  "engine/score_v2.py": "0b67245df63cb8805b60c4c857bcc0c384bffae1f9e2bcb8c5ce87b90c00e814",
+  "engine/lab.py": "4a2e583daa8825b1112fdb6e20714380cdab922a316ca2e48b34136155677e42",
+  "prerace/score_national_prerace.py": "c0409094a8fd42d86b4a437dfab2baab58ee5ee2b9c9f3047c01e294a4d84412"
+ },
+ "history_max_date": "2026-11-23",
+ "notes": [
+  "no result of these races existed when this file was written",
+  "v2 = v1 operational score + new terms; v1 file unchanged"
+ ],
+ "shadow": "NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled",
+ "settings": {
+  "engine_version": "Engine v2.4-candidate (not live)",
+  "output": "shadow candidate: Engine v2.4 (handicap weight slope), not live",
+  "settings_fingerprint": "bc4dbe274201fd62f14a569e30dfb2b25f4582a7bf53b3d9249f3bd512c80ef7",
+  "settings_fingerprint_of": "sha256 of the family settings and v2.2-term settings held in memory when this file was scored",
+  "settings_files_loaded": {
+   "benchmarks/engine_v2_1/manifest.json": "ed81a7da3bd59c1dea7a3a09696f25d57ce9275e706c388d54e9b6cc52657a9e",
+   "benchmarks/engine_v2_3/engine_v2.json": "be5bf1478476efb7a01b3d5aa9c91b8fedc3354df35198a67a15c1e7644c4843",
+   "benchmarks/engine_v2_4_candidate/engine_v2_2.json": "7b7f9eb8fab4cd159a8cb0e7eda83bced79df80908ab6d2e16eba89fcc80eafa"
+  },
+  "v1_layer_settings": "ad87073ef2f149c9a84cce9c8a524cc8b2d619d0e54f8da24c19eaec18d88c72",
+  "rating_build": {
+   "history_frame": "engine/frames/national_c2.parquet",
+   "history_frame_sha256": "dbac15ed18dd265e1cad3419440160f682a271f839d0342cb946884359da85a0",
+   "history_rows": 682430,
+   "v1_national_runs_sha256": "050f476345cac0c1688de824e65cf946939618d52652b8c95bf27cba44ca8827"
+  },
+  "rating_scale_model_units_per_kg": 0.26888022685942775,
+  "history_cutoff": "2026-11-23",
+  "generated_utc": "2026-11-27T00:37:26.610800+00:00",
+  "fallback": false
+ }
+}

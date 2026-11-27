@@ -4,7 +4,8 @@ exactly the same code path as the research build (research/batch10/scripts/feat1
 stacked per horse and every feature uses earlier rows only. terms(T): race-centred, missing -> 0 (no information), scaled
 by the release's frozen SDs. Missing information is never treated as poor performance."""
 import json, os, numpy as np, pandas as pd
-MPATH = os.path.join(os.path.dirname(__file__), '..', 'benchmarks', *(('engine_v2_3', 'engine_v2_2.json') if os.environ.get('ENGINE_C2', '0') == '1' else ('engine_v2_2', 'manifest.json')))
+V24 = os.environ.get('ENGINE_V24', '0') == '1' and os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.4 CANDIDATE (v2.3 + handicap weight slope); off unless set; shadow only until released
+MPATH = os.path.join(os.path.dirname(__file__), '..', 'benchmarks', *(('engine_v2_4_candidate', 'engine_v2_2.json') if V24 else ('engine_v2_3', 'engine_v2_2.json') if os.environ.get('ENGINE_C2', '0') == '1' else ('engine_v2_2', 'manifest.json')))
 M = json.load(open(MPATH))
 K = M['constants']; VL = M['venue_level_kg']; AL = M['venue_alias']
 def _slope(a):
@@ -13,6 +14,34 @@ def _slope(a):
     t = np.arange(len(a))[m]; y = a[m]; t = t - t.mean(); return float((t * (y - y.mean())).sum() / (t ** 2).sum())
 def _top3(a):
     a = a[~np.isnan(a)]; return np.sort(a)[-3:].mean() if len(a) >= 3 else np.nan
+import re as _re, glob as _glob
+def hcp_flag(state, cls):
+    """1 if TAB's own class field marks a Benchmark race as the training data did, 0 if not, NaN if the class is unknown.
+    Training (Breednet 'class'): 'Benchmark NN' counted; WA's 'BenchMark NN+' did not (case-sensitive extraction in national.py), so WA
+    benchmark races are 0 here too. 'BM0-NN' (SA/Vic) counted provisionally: confirm with the Monday parity check (Batch 16 B7).
+    Never inferred from the race name (27 Nov 2026: names miss 15 of 25 benchmark races)."""
+    if cls is None or (isinstance(cls, float) and cls != cls) or str(cls).strip() in ('', 'null', 'None'): return np.nan
+    if str(state).upper() == 'WA': return 0.0
+    return 1.0 if _re.search(r'\bBM\d', str(cls).upper()) else 0.0
+_slug = lambda t: _re.sub(r'[^a-z0-9]+', '-', str(t).lower().replace('&', 'and')).strip('-')
+def race_classes(D):
+    """{(venue slug, race_no): TAB raceClassConditions} for race date D (YYYYMMDD): races.csv's race_class column (from the 28 Nov 2026 run),
+    then any collect/national/<D>/race_class_*.txt file (CLASS lines) for days collected before the parser carried the field."""
+    out = {}; base = f'collect/national/{D}'
+    try:
+        R = pd.read_csv(f'{base}/races.csv', dtype=str)
+        if 'race_class' in R:
+            for r in R.itertuples():
+                if isinstance(r.race_class, str) and r.race_class.strip(): out[(_slug(r.venue), int(r.race_no))] = r.race_class.strip()
+    except Exception: pass
+    vc = {}
+    try: vc = {str(r.venue_code).upper(): _slug(r.venue) for r in pd.read_csv(f'{base}/races.csv', dtype=str).itertuples()}
+    except Exception: pass
+    for f in sorted(_glob.glob(f'{base}/race_class_*.txt')):
+        for line in open(f):
+            p = line.rstrip('\n').split('|')
+            if p[0] == 'CLASS' and len(p) >= 5 and p[1].upper() in vc: out.setdefault((vc[p[1].upper()], int(p[2])), p[4].strip())
+    return out
 def raw(T, H_):
     T = T.copy(); hh = H_[H_.horse.isin(T.horse)][['horse', 'date', 'race', 'venue', 'dyn_nat', 'dyn_nat_inn']].copy(); hh['today'] = False
     td = pd.DataFrame({'horse': T.horse.values, 'date': pd.to_datetime(T.date.values), 'race': '~today|' + T.race_id.astype(str).values, 'venue': T.venue.map(lambda v: AL.get(v, v)).values,
@@ -41,6 +70,11 @@ def raw(T, H_):
     T['b22_recentform_x_established'] = T.f_avgfp3 * (T.b22_n_prior >= K['established_runs']) if 'f_avgfp3' in T else np.nan
     T['b22_light_weight'] = (T.weight_kg <= K['light_weight_kg']).astype(float).where(T.weight_kg.notna())
     T['b22_log_runs_held'] = np.log1p(T.b22_n_prior); T['b22_rating_uncertainty'] = T.rating_sd_kg_national if 'rating_sd_kg_national' in T else np.nan
+    if 'wt_x_hcp' in M['terms']:                     # Engine v2.4 candidate only: weight vs field x Benchmark race (TAB class field)
+        rc = race_classes(pd.Timestamp(T.date.iloc[0]).strftime('%Y%m%d'))
+        T['race_class_tab'] = [rc.get((v, int(n))) for v, n in zip(T.venue, T.race_no)]
+        T['hcp'] = [hcp_flag(st, c) for st, c in zip(T.state, T.race_class_tab)]
+        T['b22_wt_x_hcp'] = T.a_wt_rel * T.hcp
     return T
 def terms(T, which='all_races'):
     C = M[f'coef_per_sd_{which}']; S = M[f'term_sd_{which}']; out = {}

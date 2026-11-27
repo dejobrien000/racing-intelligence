@@ -10,7 +10,7 @@ Y = sys.argv[1]; ydate = f'{Y[:4]}-{Y[4:6]}-{Y[6:]}'; DJ = json.load(open(f'ui/d
 L = 'outputs/prospective_eval.csv'; os.makedirs('outputs', exist_ok=True)
 COLS = ['date', 'status', 'meeting', 'state', 'race', 'prediction', 'engine', 'prediction_file', 'starters', 'winner_n', 'winner_horse', 'winner_rank', 'winner_chance_pct',
         'log_lik', 'null_log_lik', 'top_pick_n', 'top_pick_horse', 'top_pick_finish', 'top_pick_won', 'winner_in_top3', 'top_pick_cal_pct', 'race_label', 'data_confidence']
-seen = {(r['date'], r['meeting'], r['race'], r['prediction']) for r in csv.DictReader(open(L))} if os.path.exists(L) else set()
+seen = {(r['date'], r['meeting'], r['race'], r['prediction'], r['engine']) for r in csv.DictReader(open(L))} if os.path.exists(L) else set()   # engine in the key: several shadows per race (27 Nov 2026)
 status = 'untouched (26 Nov 2026 on)' if ydate >= '2026-11-26' else 'pre-release day'
 def row(m, r, pred, engine, pfile, chances, finish, cal=None):
     """chances: {n: raw model chance %}; finish: {n: finishing position string or 'scratched'}"""
@@ -28,6 +28,7 @@ def row(m, r, pred, engine, pfile, chances, finish, cal=None):
             'race_label': r.get('label'), 'data_confidence': (r.get('confidence') or {}).get('level')}
 SH = pd.read_csv('prospective/shadow/qld_v2_1_2/INDEX.csv') if os.path.exists('prospective/shadow/qld_v2_1_2/INDEX.csv') else None
 PV = pd.read_csv('prospective/shadow/prev_engines/INDEX.csv') if os.path.exists('prospective/shadow/prev_engines/INDEX.csv') else None   # previous production engines (from 27 Nov 2026)
+V4 = pd.read_csv('prospective/shadow/v2_4_candidate/INDEX.csv') if os.path.exists('prospective/shadow/v2_4_candidate/INDEX.csv') else None   # Engine v2.4 candidate shadow (from 27 Nov 2026)
 out = []
 for m in DJ['meetings']:
     if not m.get('rated'): continue
@@ -37,6 +38,12 @@ for m in DJ['meetings']:
         s = SH[(SH.date.astype(str) == Y) & (SH.track == m['name']) & SH.file.str.contains('/v2_') & SH.file.str.endswith('_runners.csv')]
         if len(s): shf = s.sort_values('scored_utc').file.iloc[-1]
     shadow = pd.read_csv(shf) if shf else None
+    v4, v4f = None, None
+    try:
+        if V4 is not None and m.get('model_family') != 'QLD':
+            s4 = V4[(V4.date.astype(str) == Y) & (V4.track == m['name']) & V4.file.str.contains('/v2_') & V4.file.str.endswith('_runners.csv')]
+            if len(s4): v4f = s4.sort_values('scored_utc').file.iloc[-1]; v4 = pd.read_csv(v4f)
+    except Exception as ex: print('WARNING v2.4 shadow unreadable for', m['name'], str(ex)[:100]); v4 = None
     prev, pvf, prev_label = None, None, None
     try:
         if PV is not None:
@@ -54,11 +61,15 @@ for m in DJ['meetings']:
             g = shadow[shadow.race_no == r['no']]
             x = row(m, r, 'shadow', 'Engine v2.1.2-candidate (Qld, not live)', shf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
+        if v4 is not None:
+            g = v4[v4.race_no == r['no']]
+            x = row(m, r, 'shadow', 'Engine v2.4-candidate (not live)', v4f, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
+            if x: out.append(x)
         if prev is not None:
             g = prev[prev.race_no == r['no']]
             x = row(m, r, 'previous_engine', prev_label, pvf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
-new = [o for o in out if (o['date'], o['meeting'], str(o['race']), o['prediction']) not in seen]
+new = [o for o in out if (o['date'], o['meeting'], str(o['race']), o['prediction'], o['engine']) not in seen]
 need_header = not os.path.exists(L) or os.path.getsize(L) == 0
 with open(L, 'a', newline='') as fh:
     w = csv.DictWriter(fh, fieldnames=COLS)

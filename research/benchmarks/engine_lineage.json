@@ -191,8 +191,10 @@
    "name": "Engine v2.4 candidate (handicap weight slope)",
    "family": "NAT",
    "what": "Engine v2.3 plus extra weight sensitivity in Benchmark and Open handicaps",
-   "status": "Built, not scoring: needs the race class at race time (TAB racecard field)",
-   "evidence": "Research: 2024 (clean) +0.0005 (0.0003 to 0.0007), 2025-26 +0.0015 (0.0011 to 0.0018) vs v2.3"
+   "status": "Shadow: scored every day from 27 Nov (not live; switch off). Race class from TAB's own class field",
+   "evidence": "Research: 2024 (clean) +0.0005 (0.0003 to 0.0007), 2025-26 +0.0015 (0.0011 to 0.0018) vs v2.3",
+   "ledger_label_prefix": "Engine v2.4-candidate",
+   "compare_with": "production"
   },
   {
    "name": "Rating update rule",

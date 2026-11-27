@@ -1,0 +1,41 @@
+{
+ "class_parity": {
+  "tab_races_collected": 61,
+  "dates": [
+   "20261127"
+  ],
+  "matched_to_breednet": 0,
+  "agree": 0,
+  "disagree_examples": [],
+  "tab_class_counts": {
+   "BMN": 11,
+   "NYO+ BMN": 9,
+   "NYO+ MDN": 8,
+   "MDN": 8,
+   "OPEN": 5,
+   "NYO MDN": 4,
+   "CLN": 4,
+   "BMN-N": 2,
+   "NYO OPEN": 2,
+   "N-NYO BMN": 1,
+   "NYO+ BMN FM": 1,
+   "CLN FM": 1,
+   "CLN CG": 1,
+   "NYO MDN CG": 1,
+   "NYO MDN F": 1,
+   "NYO+ CLN": 1,
+   "NYO+ BMN-N": 1
+  },
+  "status": "waiting: Breednet results for 20261127 are not in the master database yet (weekly update)"
+ },
+ "prospective_v24_vs_production": {
+  "paired_races": 0,
+  "status": "first settled races are judged the morning after 27 Nov"
+ },
+ "claimers_settled": {
+  "runners": 61,
+  "wins": 5,
+  "expected_production": 4.72,
+  "note": "all settled claimer rides with production chances; Benchmark split and v2.4 shadow added once the class field and shadow are settled"
+ }
+}
