@@ -1,0 +1,58 @@
+{
+ "what": "Batch 17 B3: age and sex from TAB form records for runners with no history (first starters), candidate path engine/score_v2.py AGESEX_TAB=1 (off)",
+ "definitions": {
+  "age": "TAB form age = racing age (birthday 1 August), the same convention as history (Breednet age at the race, plus one for each 1 August crossed since the last run)",
+  "sex": "TAB Filly/Mare -> female = 1; Colt/Gelding/Horse -> 0; history uses Breednet sex codes m/f -> 1",
+  "unknown": "left missing (contributes zero after race-centring), never guessed"
+ },
+ "parity_27nov_runners_with_history": {
+  "age_agree": 0.9904,
+  "n": 519,
+  "disagree": 5,
+  "note": "all 5: served age one higher than TAB (likely name-key collisions or Northern Hemisphere-bred horses); investigate before release",
+  "sex_agree": 1.0
+ },
+ "coverage_27nov": {
+  "served_without_age": 49,
+  "of_which_tab_career_starts_0": 46,
+  "tab_has_age_for": 49,
+  "note": "3 had TAB starts but no runs in our history (likely overseas or name mismatch)"
+ },
+ "historical_value": {
+  "what": "Engine v2.3 harness: first starters fitted with age/sex (as in training), judged with them served vs blank (as production serves today)",
+  "A_2024": [
+   0.00052,
+   -1e-05,
+   0.00106
+  ],
+  "B_2025_26": [
+   0.00094,
+   0.00057,
+   0.00131
+  ],
+  "races_with_a_first_starter": {
+   "A": 3042,
+   "B": 5353
+  },
+  "gain_in_those_races": {
+   "A": 0.00218,
+   "B": 0.00415
+  },
+  "top_pick_pts": {
+   "A": -0.03,
+   "B": 0.03
+  }
+ },
+ "effects_27nov_replay": {
+  "runners": 561,
+  "no_history": 49,
+  "filled": 49,
+  "fs_mean_change_pts": 0.296,
+  "fs_median": 0.067,
+  "fs_min": -1.1,
+  "fs_max": 2.03,
+  "others_mean": -0.028,
+  "others_max_abs": 3.16
+ },
+ "timing": "TAB racecards carry no age or sex (checked 27 Nov); only the per-runner form endpoint does, and step 5b runs after scoring. Live use needs a pre-scoring fetch of form records for runners with no history (about 50 a day)."
+}

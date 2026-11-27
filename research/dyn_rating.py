@@ -19,6 +19,8 @@ def prepare(df):
     if CAP and os.environ.get('RATING_CAP_SCOPE', 'update') == 'all':
         # 'all': the performance FIGURE used by the rating and by the form features built from it counts a defeat at most CAP lengths
         d['perf'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
+    elif CAP and os.environ.get('RATING_CAP_SCOPE') == 'reference':   # Batch 17 B10: the cap limits ONLY the race-level reference the other runners are measured against
+        d['perf_ref'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
     elif CAP:                              # 'update': only the rating move is limited; the performance figure and its innovation stay as recorded
         d['perf_upd'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
     d = d.sort_values(['date', 'race_key', 'finish_pos'])

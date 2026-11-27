@@ -1,0 +1,160 @@
+{
+ "coverage": {
+  "runs": 682430,
+  "with_sire": 0.998,
+  "horses_with_pedigree": 59093,
+  "sires": 1205,
+  "dams": 30035
+ },
+ "sire_distance_prior_kg_per_sd_by_own_runs_at_that_distance": {
+  "0": [
+   64784,
+   -0.094,
+   -0.138,
+   -0.049
+  ],
+  "1-2": [
+   97919,
+   -0.066,
+   -0.101,
+   -0.032
+  ],
+  "3-5": [
+   102022,
+   -0.031,
+   -0.064,
+   0.001
+  ],
+  "6+": [
+   203864,
+   -0.062,
+   -0.085,
+   -0.04
+  ]
+ },
+ "sire_going_prior_kg_per_sd_by_own_runs_on_that_going": {
+  "0": [
+   25045,
+   -0.248,
+   -0.316,
+   -0.179
+  ],
+  "1-2": [
+   43627,
+   -0.031,
+   -0.077,
+   0.014
+  ],
+  "3+": [
+   122687,
+   -0.009,
+   -0.033,
+   0.016
+  ]
+ },
+ "sire_distance_prior_first_three_career_runs": [
+  74289,
+  -0.176,
+  -0.231,
+  -0.122
+ ],
+ "maturity_3_to_4": {
+  "horses": 20800,
+  "mean_change_kg": 0.98,
+  "sires_with_15_plus_each_cohort": 138,
+  "cohort_split_corr_of_sire_means": 0.298
+ },
+ "per_incanto_example": {
+  "mean": 2.62,
+  "count": 67.0,
+  "std": 3.69,
+  "se": 0.45,
+  "shrunk": 2.11
+ },
+ "sire_maturity_top_and_bottom_shrunk": {
+  "top": [
+   {
+    "sire": "Per Incanto (USA)",
+    "mean": 2.62,
+    "count": 67,
+    "std": 3.69,
+    "se": 0.45,
+    "shrunk": 2.11
+   },
+   {
+    "sire": "Brutal (NZ)",
+    "mean": 2.53,
+    "count": 78,
+    "std": 3.43,
+    "se": 0.39,
+    "shrunk": 2.1
+   },
+   {
+    "sire": "Justify (USA)",
+    "mean": 2.21,
+    "count": 105,
+    "std": 3.32,
+    "se": 0.32,
+    "shrunk": 1.94
+   },
+   {
+    "sire": "Zoustar (AUS)",
+    "mean": 2.02,
+    "count": 311,
+    "std": 3.78,
+    "se": 0.21,
+    "shrunk": 1.93
+   },
+   {
+    "sire": "Needs Further (AUS)",
+    "mean": 2.07,
+    "count": 78,
+    "std": 4.72,
+    "se": 0.53,
+    "shrunk": 1.77
+   }
+  ],
+  "bottom": [
+   {
+    "sire": "Highland Reel (IRE)",
+    "mean": -0.53,
+    "count": 112,
+    "std": 4.29,
+    "se": 0.41,
+    "shrunk": -0.21
+   },
+   {
+    "sire": "Dissident (AUS)",
+    "mean": -0.55,
+    "count": 86,
+    "std": 3.87,
+    "se": 0.42,
+    "shrunk": -0.15
+   },
+   {
+    "sire": "Safeguard (AUS)",
+    "mean": -0.82,
+    "count": 48,
+    "std": 4.03,
+    "se": 0.58,
+    "shrunk": -0.13
+   },
+   {
+    "sire": "Dubious (AUS)",
+    "mean": -0.47,
+    "count": 60,
+    "std": 3.59,
+    "se": 0.46,
+    "shrunk": 0.01
+   },
+   {
+    "sire": "Rothesay (AUS)",
+    "mean": -0.22,
+    "count": 82,
+    "std": 4.35,
+    "se": 0.48,
+    "shrunk": 0.1
+   }
+  ]
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "bn_runner_pedigree": {
+  "n": 697341,
+  "sire": 0.996532542902253,
+  "dam": 0.996532542902253,
+  "damsire": 0.996532542902253,
+  "sex": 0.996532542902253,
+  "age": 0.996532542902253,
+  "sires": 1211,
+  "dams": 30099
+ },
+ "rail_qld_race": {
+  "races": 9758,
+  "has_rail": 0.9996925599508096
+ },
+ "rail_sa_race": {
+  "races": 1775,
+  "has_rail": 1.0
+ },
+ "rail_nsw_meeting": {
+  "meetings": 331,
+  "has_rail": 0.8731117824773413
+ },
+ "rail_rc_race": {
+  "races": 106,
+  "has_rail": 0.9811320754716981
+ },
+ "rail_x_race": {
+  "races": 9758,
+  "has_rail": 0.9996925599508096
+ },
+ "qld_sectional": {
+  "rows": 635831,
+  "rail_dist": 0.9999968545100821,
+  "ground": 1.0,
+  "pos": 1.0
+ },
+ "sa_sectional": {
+  "rows": 133905,
+  "rail_dist": 0.8893917329449983,
+  "ground": 0.0,
+  "pos": 1.0
+ },
+ "rail_examples": [
+  {
+   "rail": "True",
+   "n": 1626
+  },
+  {
+   "rail": "+3m Entire",
+   "n": 536
+  },
+  {
+   "rail": "+2m Entire",
+   "n": 394
+  },
+  {
+   "rail": "+5m Entire",
+   "n": 379
+  },
+  {
+   "rail": "True Entire Circuit",
+   "n": 370
+  },
+  {
+   "rail": "+4m Entire",
+   "n": 323
+  },
+  {
+   "rail": "+6m Entire",
+   "n": 290
+  },
+  {
+   "rail": "+8m Entire",
+   "n": 281
+  }
+ ],
+ "sa_rail_examples": [
+  {
+   "rail": "True",
+   "n": 399
+  },
+  {
+   "rail": "+5m Entire",
+   "n": 55
+  },
+  {
+   "rail": "+6m Entire",
+   "n": 55
+  },
+  {
+   "rail": "TRUE",
+   "n": 44
+  },
+  {
+   "rail": "+9m 1000m-W/Post, +6m",
+   "n": 37
+  },
+  {
+   "rail": "+3m Entire",
+   "n": 36
+  }
+ ]
+}

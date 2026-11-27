@@ -1,0 +1,238 @@
+{
+ "coverage": {
+  "runs": 86457,
+  "races": 8893,
+  "meetings": 1196,
+  "with_rail_band": 1.0,
+  "with_early_position": 0.571,
+  "with_lane": 1.0,
+  "years": [
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ]
+ },
+ "result_states": {
+  "Finished": 92755,
+  "DidNotTrack": 212,
+  "DidNotFinish": 164,
+  "Disqualified": 3
+ },
+ "result_substates": {},
+ "overall_slopes_kg": {
+  "barrier_rel": -0.984,
+  "early_rel": -1.582,
+  "lane": -0.015
+ },
+ "configuration_barrier_rel": {
+  "groups": 69,
+  "even_vs_odd_year_corr": 0.506,
+  "random_half_corr_mean": 0.645,
+  "random_half_corr_p95": 0.755,
+  "largest_groups": [
+   {
+    "grp": "Toowoomba | to 1200 | rail +1-3",
+    "even": -3.039,
+    "odd": -1.307,
+    "all": -2.185,
+    "runs": 2433
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +7+",
+    "even": -1.568,
+    "odd": -2.909,
+    "all": -2.376,
+    "runs": 2283
+   },
+   {
+    "grp": "Doomben | to 1200 | rail +7+",
+    "even": -1.889,
+    "odd": -2.003,
+    "all": -1.949,
+    "runs": 2075
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail true",
+    "even": 0.291,
+    "odd": 0.072,
+    "all": 0.174,
+    "runs": 1884
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +4-6",
+    "even": -1.121,
+    "odd": -1.312,
+    "all": -1.232,
+    "runs": 1742
+   },
+   {
+    "grp": "Ipswich | to 1200 | rail +7+",
+    "even": -1.152,
+    "odd": -0.875,
+    "all": -1.009,
+    "runs": 1723
+   },
+   {
+    "grp": "Mackay | to 1200 | rail true",
+    "even": -1.191,
+    "odd": -1.099,
+    "all": -1.148,
+    "runs": 1715
+   },
+   {
+    "grp": "Sunshine_Coast | 1201-1600 | rail +7+",
+    "even": -2.003,
+    "odd": -1.383,
+    "all": -1.627,
+    "runs": 1629
+   }
+  ],
+  "spread_of_group_slopes_sd": 1.252
+ },
+ "configuration_early_rel": {
+  "groups": 35,
+  "even_vs_odd_year_corr": 0.652,
+  "random_half_corr_mean": 0.707,
+  "random_half_corr_p95": 0.803,
+  "largest_groups": [
+   {
+    "grp": "Toowoomba | to 1200 | rail +1-3",
+    "even": -1.821,
+    "odd": -3.451,
+    "all": -2.723,
+    "runs": 2433
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +7+",
+    "even": -1.534,
+    "odd": -2.959,
+    "all": -2.387,
+    "runs": 2283
+   },
+   {
+    "grp": "Doomben | to 1200 | rail +7+",
+    "even": -1.887,
+    "odd": -4.012,
+    "all": -3.058,
+    "runs": 2075
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail true",
+    "even": -2.46,
+    "odd": -1.494,
+    "all": -1.96,
+    "runs": 1884
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +4-6",
+    "even": -1.708,
+    "odd": -2.328,
+    "all": -2.051,
+    "runs": 1742
+   },
+   {
+    "grp": "Ipswich | to 1200 | rail +7+",
+    "even": -3.84,
+    "odd": -2.862,
+    "all": -3.342,
+    "runs": 1723
+   },
+   {
+    "grp": "Mackay | to 1200 | rail true",
+    "even": -1.74,
+    "odd": -2.102,
+    "all": -1.913,
+    "runs": 1715
+   },
+   {
+    "grp": "Sunshine_Coast | 1201-1600 | rail +7+",
+    "even": 0.136,
+    "odd": -1.458,
+    "all": -0.807,
+    "runs": 1629
+   }
+  ],
+  "spread_of_group_slopes_sd": 1.571
+ },
+ "configuration_lane": {
+  "groups": 69,
+  "even_vs_odd_year_corr": 0.741,
+  "random_half_corr_mean": 0.739,
+  "random_half_corr_p95": 0.806,
+  "largest_groups": [
+   {
+    "grp": "Toowoomba | to 1200 | rail +1-3",
+    "even": -0.56,
+    "odd": -0.264,
+    "all": -0.425,
+    "runs": 2433
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +7+",
+    "even": -0.236,
+    "odd": -0.404,
+    "all": -0.345,
+    "runs": 2283
+   },
+   {
+    "grp": "Doomben | to 1200 | rail +7+",
+    "even": -0.448,
+    "odd": -0.248,
+    "all": -0.332,
+    "runs": 2075
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail true",
+    "even": 0.114,
+    "odd": 0.25,
+    "all": 0.193,
+    "runs": 1884
+   },
+   {
+    "grp": "Sunshine_Coast | to 1200 | rail +4-6",
+    "even": -0.003,
+    "odd": -0.154,
+    "all": -0.092,
+    "runs": 1742
+   },
+   {
+    "grp": "Ipswich | to 1200 | rail +7+",
+    "even": -0.443,
+    "odd": 0.152,
+    "all": -0.176,
+    "runs": 1723
+   },
+   {
+    "grp": "Mackay | to 1200 | rail true",
+    "even": 0.061,
+    "odd": 0.013,
+    "all": 0.038,
+    "runs": 1715
+   },
+   {
+    "grp": "Sunshine_Coast | 1201-1600 | rail +7+",
+    "even": -0.132,
+    "odd": -0.218,
+    "all": -0.185,
+    "runs": 1629
+   }
+  ],
+  "spread_of_group_slopes_sd": 0.336
+ },
+ "race_day_lane": {
+  "meetings": 655,
+  "first_half_vs_second_half_corr": 0.228,
+  "second_half_slope_when_first_half_top_quarter": 0.125,
+  "second_half_slope_when_first_half_bottom_quarter": -0.27,
+  "mean_slope": -0.054
+ },
+ "race_day_early_rel": {
+  "meetings": 207,
+  "first_half_vs_second_half_corr": 0.209,
+  "second_half_slope_when_first_half_top_quarter": 0.129,
+  "second_half_slope_when_first_half_bottom_quarter": -1.453,
+  "mean_slope": -1.121
+ }
+}

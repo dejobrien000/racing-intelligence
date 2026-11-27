@@ -353,6 +353,36 @@ try:
         m['tracking'] = {'runners': tot, 'with_tracked_runs': nrun, 'by_state': held, 'model_uses_sectionals': m.get('model_family') == 'QLD'}
 except Exception as ex_:
     TRACKING['error'] = str(ex_)[:200]; print('WARNING tracking view skipped (display only):', str(ex_)[:200])
+# ---- Performance profile in the horse panel (display only; Damo 27 Nov 2026, Batch 17 s9). Never fatal. ----------------------------------
+# Each run's performance figure = pre-race rating + that run's surprise, in kg on the national rating scale of the engine that scored the
+# meeting (Engine v2.3 frame for the six states, the v3 frame for Queensland). Only runs before the forecast's own history cutoff count.
+# Nothing is shown where history is too short: typical needs 3 of the last 5, repeatable upper needs 3 of the last 6.
+PROFILE = {'note': 'Performance figures are each run measured against its field, in kg on the rating scale. Repeatable upper = second-best of the last six runs; one best run alone is not treated as sustainable ability.'}
+try:
+    _cut = min([m['provenance']['history_to'] for m in meetings if (m.get('provenance') or {}).get('history_to')] or [str((pd.Timestamp(DATE) - pd.Timedelta(days=1)).date())])
+    _fr = {}
+    for fam_, path_ in [('NSW_VIC_ACT', 'engine/frames/national_c2.parquet' if os.path.exists('engine/frames/national_c2.parquet') else 'engine/frames/national.parquet'), ('QLD', 'engine/frames/national_v3.parquet')]:
+        if os.path.exists(path_):
+            F_ = pd.read_parquet(path_, columns=['horse', 'date', 'race', 'dyn_nat', 'dyn_nat_inn']); F_ = F_[(F_.date <= pd.Timestamp(_cut)) & F_.dyn_nat_inn.notna()]
+            F_['perf'] = F_.dyn_nat + F_.dyn_nat_inn; _fr[fam_] = F_.sort_values(['horse', 'date', 'race']).groupby('horse')
+    _nk = lambda s_: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s_).upper()))
+    for m in meetings:
+        g_ = _fr.get('QLD' if m.get('model_family') == 'QLD' else 'NSW_VIC_ACT')
+        for r in m.get('races', []):
+            for h in r.get('runners', []):
+                pr = None
+                if g_ is not None:
+                    try: q_ = g_.get_group(_nk(h['horse'])).perf.values
+                    except KeyError: q_ = np.array([])
+                    l6 = np.sort(q_[-6:]); l5 = q_[-5:]
+                    pr = {'runs': int(len(q_)), 'latest': round(float(q_[-1]), 1) if len(q_) else None,
+                          'typical_last5': round(float(np.median(l5)), 1) if len(l5) >= 3 else None, 'typical_n': int(len(l5)),
+                          'repeatable_upper_last6': round(float(l6[-2]), 1) if len(l6) >= 3 else None, 'peak_last6': round(float(l6[-1]), 1) if len(l6) else None,
+                          'career_best': round(float(q_.max()), 1) if len(q_) else None, 'last6_n': int(len(l6))}
+                h['profile'] = pr
+    PROFILE['cutoff'] = _cut
+except Exception as ex_:
+    PROFILE['error'] = str(ex_)[:200]; print('WARNING performance profile skipped (display only):', str(ex_)[:200])
 # ---- Engine Performance tab (display only; reuses the release lineage and the prospective evaluation ledger). Never fatal. ----
 try:
     from engine import engine_performance as EP
@@ -409,7 +439,7 @@ data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'da
         'markets': MARKETS, 'completeness': {'calendar_source': CAL.get('source'), 'excluded': CAL.get('excluded'), 'act_nt': CAL.get('act_nt'), 'rows': comp},
         'freshness': FRESH, 'roi': ROI,
         'results': {'status': 'waiting', 'message': 'No results have been evaluated yet. These races are run on ' + pd.Timestamp(DATE).strftime('%a %d %b') + '; the evaluation of the saved predictions (production, previous engines and shadow candidates on the same races) is scheduled for the next morning.'},
-        'operations': OPS_STATUS, 'engine_performance': ENGINE_PERF, 'tracking': TRACKING}
+        'operations': OPS_STATUS, 'engine_performance': ENGINE_PERF, 'tracking': TRACKING, 'profile': PROFILE}
 def _clean(o):
     if isinstance(o, dict): return {k: _clean(v) for k, v in o.items()}
     if isinstance(o, list): return [_clean(v) for v in o]

@@ -1,0 +1,36 @@
+{
+ "lane": {
+  "runs": 78291,
+  "next_surprise_per_kg_of_day_bias": [
+   -0.132,
+   -0.177,
+   -0.086
+  ],
+  "this_run_surprise_per_kg_of_day_bias": 0.36,
+  "next_surprise_by_quintile": {
+   "most harmed": 0.23,
+   "most helped": -0.01,
+   "q2": 0.21,
+   "q3": 0.13,
+   "q4": 0.08
+  },
+  "bias_kg_sd": 0.84
+ },
+ "early_rel": {
+  "runs": 43789,
+  "next_surprise_per_kg_of_day_bias": [
+   0.024,
+   -0.02,
+   0.068
+  ],
+  "this_run_surprise_per_kg_of_day_bias": 0.298,
+  "next_surprise_by_quintile": {
+   "most harmed": 0.07,
+   "most helped": 0.21,
+   "q2": 0.14,
+   "q3": 0.24,
+   "q4": 0.19
+  },
+  "bias_kg_sd": 1.15
+ }
+}
