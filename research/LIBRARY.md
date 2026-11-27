@@ -174,6 +174,20 @@ interstate connections; dynamic distance suitability; one experience-dependent l
 rate by track is not course geometry.
 
 
+## Batch 21 (27 Nov 2026, first part): horse identity, responsiveness, trainer changes, distances, sire debut
+Ledger: research/batch21/README.md. Report: https://claude.ai/artifact/E5PUAWm112r7pc68faiXc6.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| Durable identity = name + suffix + sire + dam | 59,246 identities; foaling season consistent in all but 1; TAB matching 1,030/1,068 unique, 0 ambiguous | Monday correction approved |
+| Stronger rule + history-completeness | 24.72 kg2; +0.0102 / +0.0149; weaker in inexperienced fields | Research |
+| Certainty-weighting adds to update rules | +0.0017 / +0.0016 on top (corrected run) | Candidate |
+| Typical-starts inference | right on average; 34% over by 5+ for early-list careers | Cap at freeze |
+| Trainer-change under-reaction | +0.50 kg first run, controls; largest for declining horses; trainer-specific record adds nothing | Research |
+| Unfamiliar-distance breakthroughs | step-up: +0.30 at new trip, -0.01 back at old | Research (distance suitability) |
+| Bent barrier shape | +0.010 kg2/run; going and field-size factors fail | Research |
+| Sire debut record | 0.38 kg2 debut error; race +0.0013 (2025-26) | Candidate recommendation |
+
 ## Batch 20 (27 Nov 2026): Queensland integrity, race layer, history completeness, barriers, trainer and family
 Ledger: research/batch20/README.md. Report: https://claude.ai/artifact/P4agrYWSvsCaJZViC3kv47. Harness now on production speed figures.
 
