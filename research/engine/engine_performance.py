@@ -31,14 +31,18 @@ def _status(n, lo, hi):
 
 
 def _paired(prod, other):
-    k = ['date', 'meeting', 'race']
-    j = prod[k + ['log_lik', 'top_pick_won', 'winner_in_top3']].merge(other[k + ['log_lik', 'top_pick_won', 'winner_in_top3']], on=k, suffixes=('_p', '_o'))
+    k = ['date', 'meeting', 'race']; extra = [c for c in ['starters', 'field_complete'] if c in prod and c in other]
+    j = prod[k + ['log_lik', 'top_pick_won', 'winner_in_top3'] + extra].merge(other[k + ['log_lik', 'top_pick_won', 'winner_in_top3'] + extra], on=k, suffixes=('_p', '_o'))
+    n_all = len(j)
+    # Batch 18 C: a pair counts only when both forecasts rated the same number of actual starters, and neither is known to have missed a starter
+    if 'starters' in extra: j = j[pd.to_numeric(j.starters_p, errors='coerce') == pd.to_numeric(j.starters_o, errors='coerce')]
+    if 'field_complete' in extra: j = j[~((pd.to_numeric(j.field_complete_p, errors='coerce') == 0) | (pd.to_numeric(j.field_complete_o, errors='coerce') == 0))]
     n = len(j)
     if n == 0: return None
     d = j.log_lik_o - j.log_lik_p
     m = float(d.mean()); se = float(d.std(ddof=1) / math.sqrt(n)) if n > 1 else float('nan')
     lo, hi = (m - 1.96 * se, m + 1.96 * se) if n > 1 else (float('nan'), float('nan'))
-    return {'races': int(n), 'gain_per_race': round(m, 4), 'lo': None if lo != lo else round(lo, 4), 'hi': None if hi != hi else round(hi, 4),
+    return {'races': int(n), 'paired_races_seen': int(n_all), 'excluded_unequal_fields': int(n_all - n), 'gain_per_race': round(m, 4), 'lo': None if lo != lo else round(lo, 4), 'hi': None if hi != hi else round(hi, 4),
             'top_pick_pts': round(100 * (j.top_pick_won_o.mean() - j.top_pick_won_p.mean()), 1), 'top3_pts': round(100 * (j.winner_in_top3_o.mean() - j.winner_in_top3_p.mean()), 1),
             'status': _status(n, -1 if lo != lo else lo, 1 if hi != hi else hi)}
 

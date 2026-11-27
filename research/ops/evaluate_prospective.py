@@ -9,7 +9,8 @@ import pandas as pd
 Y = sys.argv[1]; ydate = f'{Y[:4]}-{Y[4:6]}-{Y[6:]}'; DJ = json.load(open(f'ui/data/racing_{ydate}.json'))
 L = 'outputs/prospective_eval.csv'; os.makedirs('outputs', exist_ok=True)
 COLS = ['date', 'status', 'meeting', 'state', 'race', 'prediction', 'engine', 'prediction_file', 'starters', 'winner_n', 'winner_horse', 'winner_rank', 'winner_chance_pct',
-        'log_lik', 'null_log_lik', 'top_pick_n', 'top_pick_horse', 'top_pick_finish', 'top_pick_won', 'winner_in_top3', 'top_pick_cal_pct', 'race_label', 'data_confidence']
+        'log_lik', 'null_log_lik', 'top_pick_n', 'top_pick_horse', 'top_pick_finish', 'top_pick_won', 'winner_in_top3', 'top_pick_cal_pct', 'race_label', 'data_confidence',
+        'starters_actual', 'field_complete']   # Batch 18 C: actual starters from the results; 1 = this forecast rated every actual starter (paired comparisons use these only)
 seen = {(r['date'], r['meeting'], r['race'], r['prediction'], r['engine']) for r in csv.DictReader(open(L))} if os.path.exists(L) else set()   # engine in the key: several shadows per race (27 Nov 2026)
 status = 'untouched (26 Nov 2026 on)' if ydate >= '2026-11-26' else 'pre-release day'
 def row(m, r, pred, engine, pfile, chances, finish, cal=None):
@@ -25,7 +26,8 @@ def row(m, r, pred, engine, pfile, chances, finish, cal=None):
             'starters': len(ran), 'winner_n': w, 'winner_horse': horses.get(w), 'winner_rank': rank[w], 'winner_chance_pct': round(100 * p[w], 2),
             'log_lik': round(math.log(max(p[w], 1e-9)), 5), 'null_log_lik': round(-math.log(len(ran)), 5), 'top_pick_n': t, 'top_pick_horse': horses.get(t),
             'top_pick_finish': ran[t], 'top_pick_won': int(t in winners), 'winner_in_top3': int(rank[w] <= 3), 'top_pick_cal_pct': (cal or {}).get(t),
-            'race_label': r.get('label'), 'data_confidence': (r.get('confidence') or {}).get('level')}
+            'race_label': r.get('label'), 'data_confidence': (r.get('confidence') or {}).get('level'),
+            'starters_actual': r.get('starters'), 'field_complete': (int(len(ran) == int(r['starters'])) if r.get('starters') is not None else None)}
 SH = pd.read_csv('prospective/shadow/qld_v2_1_2/INDEX.csv') if os.path.exists('prospective/shadow/qld_v2_1_2/INDEX.csv') else None
 PV = pd.read_csv('prospective/shadow/prev_engines/INDEX.csv') if os.path.exists('prospective/shadow/prev_engines/INDEX.csv') else None   # previous production engines (from 27 Nov 2026)
 V4 = pd.read_csv('prospective/shadow/v2_4_candidate/INDEX.csv') if os.path.exists('prospective/shadow/v2_4_candidate/INDEX.csv') else None   # Engine v2.4 candidate shadow (from 27 Nov 2026)
@@ -105,6 +107,12 @@ for m in DJ['meetings']:
             x = row(m, r, 'previous_engine', prev_label, pvf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
 new = [o for o in out if (o['date'], o['meeting'], str(o['race']), o['prediction'], o['engine']) not in seen]
+if os.path.exists(L) and os.path.getsize(L) > 0:
+    with open(L) as fh: hdr = fh.readline().strip().split(',')
+    if hdr != COLS:   # columns added (Batch 18): rewrite once with blanks for the new columns; the forecasts themselves are untouched
+        old_ = list(csv.DictReader(open(L)))
+        with open(L, 'w', newline='') as fh:
+            w_ = csv.DictWriter(fh, fieldnames=COLS, extrasaction='ignore'); w_.writeheader(); [w_.writerow({c: o_.get(c, '') for c in COLS}) for o_ in old_]
 need_header = not os.path.exists(L) or os.path.getsize(L) == 0
 with open(L, 'a', newline='') as fh:
     w = csv.DictWriter(fh, fieldnames=COLS)
