@@ -16,6 +16,10 @@ D, RETR, SCORE = sys.argv[1], sys.argv[2], sys.argv[3].split(',')
 base = f'collect/national/{D}'
 RC = pd.read_csv(f'{base}/races.csv'); RN = pd.read_csv(f'{base}/runners.csv', dtype={'claim': str, 'jockey': str, 'emergency': str})
 sha = lambda b: hashlib.sha256(b).hexdigest()
+# Emergency rule (Batch 19 A1; switch ops/national_emergency_enabled, env NAT_EMERGENCY_RULE=1/0 overrides; rollback = delete the file).
+# Only an EXPLICIT source scratching counts; unknown statuses are neither scratchings nor starts. Off = the original rule (every emergency
+# left out until confirmed), so earlier bundles rebuild identically.
+EMRULE = os.environ.get('NAT_EMERGENCY_RULE', '1' if os.path.exists('ops/national_emergency_enabled') else '0') == '1'
 stamp = pd.Timestamp(RETR).strftime('%Y%m%dT%H%M%SZ')
 
 def claim_kg(c):
@@ -49,6 +53,15 @@ for vc, mr in RC.groupby('venue_code'):
                            'emergency': bool(em and h.page_status != 'scratched'), 'emergency_basis': ('source flag' if 'emergency' in g.columns else 'inferred: listed after the weight-ordered main field') if em else None})
             if h.page_status == 'scratched': sc.append({'saddlecloth': int(h.saddlecloth), 'horse': h.horse, 'when': 'listed as scratched at collection'})
         if sc: scr.append({'race_no': int(r.race_no), 'horses': sc})
+        if EMRULE:   # Batch 19 A1 (approved by Damo 27 Nov 2026): emergencies confirmed to have gained a start join the assessed field
+            rf = [f for f in fields if f['race_no'] == int(r.race_no)]; scr_n = {h['saddlecloth'] for h in sc}
+            src_em = {int(h.saddlecloth) for i, (_, h) in enumerate(g.iterrows()) if ((str(h.get('emergency', '')).lower() == 'true') if 'emergency' in g.columns else i >= cut)}
+            k = sum(1 for f in rf if f['saddlecloth'] not in src_em and f['saddlecloth'] in scr_n)   # main-field (non-emergency) scratchings already listed by the source
+            em = sorted([f for f in rf if f['emergency'] and f['saddlecloth'] not in scr_n], key=lambda f: f['saddlecloth'])   # unscratched, in emergency order
+            for f in em[:k]:
+                f['emergency'] = False; f['emergency_gained_start'] = True
+                f['emergency_basis'] = f'gained a start: {k} main-field scratching(s) listed at capture; emergencies replace them in number order'
+            for f in em[k:]: f['emergency_basis'] = (f.get('emergency_basis') or '') + f'; not yet confirmed to start ({k} main-field scratching(s) at capture)'
     raw = (mr.to_csv(index=False) + RN[RN.venue_code == vc].to_csv(index=False)).encode()
     meetings[m0.venue] = {'kind': 'natpre', 'schema': 1, 'date': D, 'venue': m0.venue, 'state': m0.state, 'tz': m0.tz,
                           'retrieved_utc': RETR, 'retrieved_note': 'upper bound of the WebFetch collection window',
@@ -57,7 +70,7 @@ for vc, mr in RC.groupby('venue_code'):
                           'acceptances_http': 200, 'acceptances_sha256': sha(raw),
                           'conditions': {'track_condition': (str(m0.get('track_condition')) if m0.get('track_condition') == m0.get('track_condition') and m0.get('track_condition') else None), 'rail': (str(m0.get('rail')) if m0.get('rail') == m0.get('rail') and m0.get('rail') else None), 'weather': None,
                                          'note': 'Track condition not available from this source; scoring assumes the Good band until an official rating is collected.'},
-                          'scratchings': scr, 'fields': fields}
+                          'scratchings': scr, 'fields': fields, 'emergency_rule': ('gained-start count rule (Batch 19 A1)' if EMRULE else 'emergencies left out until confirmed (original)')}
 
 os.makedirs(f'{base}/bundles', exist_ok=True)
 bundle = f'{base}/bundles/natpre_{D}_snap{stamp}.jsonl.gz'

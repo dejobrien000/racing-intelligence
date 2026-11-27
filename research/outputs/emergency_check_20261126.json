@@ -1,0 +1,33 @@
+{
+ "date": "20261126",
+ "morning_capture": "collect/national/20261126/tab_20261125T220344Z.raw.txt",
+ "results_capture": "collect/national/20261126/results_20261126T132144Z.raw.txt",
+ "unscratched_emergencies_at_capture": 11,
+ "national_rule_gained": {
+  "counted_and_started": 3,
+  "counted_but_did_not_start": 0,
+  "left_out_but_started": 0,
+  "left_out_and_did_not_start": 8
+ },
+ "qld_rule_counted": {
+  "counted_and_started": 3,
+  "counted_but_did_not_start": 8,
+  "left_out_but_started": 0,
+  "left_out_and_did_not_start": 0
+ },
+ "original_rule": {
+  "left_out_but_started": 3,
+  "left_out_and_did_not_start": 8
+ },
+ "no_result_found": 0,
+ "by_state": {
+  "VIC": {
+   "emergencies": 1,
+   "national_rule_correct": 1
+  },
+  "WA": {
+   "emergencies": 10,
+   "national_rule_correct": 10
+  }
+ }
+}

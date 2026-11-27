@@ -12,6 +12,7 @@ def run(d, s, q, sig0, d0):
     HOOK = ('perf_upd' in d) or GOOD != 1.0 or bool(TAPER)          # off in production: the original update line runs unchanged
     REF = os.environ.get('RATING_REF', '') == 'precision'
     AGE_ = d['age'].fillna(0).values.astype(float) if (TAPER and 'age' in d) else None
+    AGEMIN = float(os.environ.get('RATING_TAPER_AGEMIN', '5'))   # Batch 19 B6 sensitivity only; the frozen age-aware candidate uses 5
     perf_r = d['perf_ref'].values if 'perf_ref' in d else None
     keys = d.race_key.values; starts = np.r_[0, np.flatnonzero(keys[1:] != keys[:-1]) + 1, len(d)]
     for a, b in zip(starts[:-1], starts[1:]):
@@ -40,7 +41,7 @@ def run(d, s, q, sig0, d0):
                 pu = perf_u[a:b][ok]; iu = (pu - pu.mean()) - (mm_ - mm_.mean())
                 if TAPER:
                     ne = np.array([cnt.get(h_, 0) for h_ in hs[ok]], dtype=float)
-                    if AGE_ is not None: ne = np.where(AGE_[a:b][ok] >= 5, np.maximum(ne, 24.0), ne)   # Batch 18 D2 (RATING_TAPER_AGEFLOOR): a 5yo+ counts as exposed whatever we hold
+                    if AGE_ is not None: ne = np.where(AGE_[a:b][ok] >= AGEMIN, np.maximum(ne, 24.0), ne)   # Batch 18 D2 (RATING_TAPER_AGEFLOOR): a 5yo+ counts as exposed whatever we hold
                     gx = 1.0 + TA * np.exp(-ne / TN); iu = np.where(iu > 0, gx * iu, iu)
                     for h_ in hs[ok]: cnt[h_] = cnt.get(h_, 0) + 1
                 else: iu = np.where(iu > 0, GOOD * iu, iu)

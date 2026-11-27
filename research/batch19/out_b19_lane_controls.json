@@ -1,0 +1,118 @@
+{
+ "QLD": {
+  "runs": 49248,
+  "meetings": 1130,
+  "ground_coverage": 0.998,
+  "tempo_coverage": 1.0,
+  "ground_and_pace_effects_kg": {
+   "ground_w": [
+    -0.082,
+    -0.094,
+    -0.069
+   ],
+   "early_rel_w": [
+    -1.526,
+    -1.67,
+    -1.381
+   ],
+   "pace_x": [
+    1.096,
+    0.941,
+    1.251
+   ]
+  },
+  "this_run": {
+   "barrier + early (Batch 18)": [
+    0.366,
+    0.283,
+    0.449
+   ],
+   "+ extra ground": [
+    0.367,
+    0.282,
+    0.452
+   ],
+   "+ extra ground + early position x tempo": [
+    0.368,
+    0.284,
+    0.453
+   ],
+   "help re-estimated after removing ground and pace effects (all controls)": [
+    0.438,
+    0.362,
+    0.514
+   ]
+  },
+  "corr_help_with_help_adjusted": 0.959,
+  "next_run": {
+   "help (Batch 18)": [
+    -0.133,
+    -0.192,
+    -0.073
+   ],
+   "help adjusted, with ground and pace in the run": [
+    -0.129,
+    -0.187,
+    -0.071
+   ]
+  }
+ },
+ "SA": {
+  "runs": 16442,
+  "meetings": 203,
+  "ground_coverage": 1.0,
+  "tempo_coverage": 0.882,
+  "ground_and_pace_effects_kg": {
+   "ground_w": [
+    -0.079,
+    -0.103,
+    -0.056
+   ],
+   "early_rel_w": [
+    -0.938,
+    -1.177,
+    -0.698
+   ],
+   "pace_x": [
+    1.139,
+    0.89,
+    1.389
+   ]
+  },
+  "this_run": {
+   "barrier + early (Batch 18)": [
+    0.592,
+    0.427,
+    0.757
+   ],
+   "+ extra ground": [
+    0.589,
+    0.423,
+    0.756
+   ],
+   "+ extra ground + early position x tempo": [
+    0.584,
+    0.418,
+    0.75
+   ],
+   "help re-estimated after removing ground and pace effects (all controls)": [
+    0.662,
+    0.512,
+    0.812
+   ]
+  },
+  "corr_help_with_help_adjusted": 0.947,
+  "next_run": {
+   "help (Batch 18)": [
+    -0.262,
+    -0.35,
+    -0.173
+   ],
+   "help adjusted, with ground and pace in the run": [
+    -0.243,
+    -0.329,
+    -0.157
+   ]
+  }
+ }
+}

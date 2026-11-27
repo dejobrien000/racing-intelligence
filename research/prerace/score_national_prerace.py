@@ -49,7 +49,9 @@ for (date, venue), key in latest.items():
         st = 'scratched' if (f['race_no'], f['saddlecloth']) in scr else ('unnumbered (emergency or late entry; not counted until confirmed)' if f.get('saddlecloth') in (None, '') or f.get('emergency') else 'runner')
         rows.append({**f, 'status': st, 'date': md, 'state': s['state'], 'venue': v, 'config': f.get('config') or NAMEVAR.get(v, v), 'snapshot_key': key, 'going_text': c.get('track_condition'), 'rail': c.get('rail')})
     meta.append({'snapshot_key': key, 'date': date, 'venue': venue, 'retrieved_utc': s['retrieved_utc'], 'acceptances_sha256': s['acceptances_sha256'], 'conditions': c,
-                 'scratchings_listed': sum(len(r['horses']) for r in s['scratchings'])})
+                 'scratchings_listed': sum(len(r['horses']) for r in s['scratchings']),
+                 'emergency_rule': s.get('emergency_rule', 'emergencies left out until confirmed (original)'),
+                 'emergencies_gained_start': [(f['race_no'], f['saddlecloth'], f['horse']) for f in s['fields'] if f.get('emergency_gained_start')]})
 F = pd.DataFrame(rows); R = F[F.status == 'runner'].copy()
 R['race'] = R.state + '|' + R.venue + '|' + R.date.dt.strftime('%Y-%m-%d') + '|' + R.race_no.astype(str); R['race_id'] = R.race
 R['horse_name'] = R.horse; R['horse'] = R.horse.map(nk); R['field'] = R.groupby('race').saddlecloth.transform('count')

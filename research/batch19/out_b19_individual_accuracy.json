@@ -1,0 +1,672 @@
+{
+ "v2.3": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 26.3021,
+   "mae": 3.7446,
+   "rank_corr_with_finish": 0.3621
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 26.5834,
+   "mae": 3.7775,
+   "rank_corr_with_finish": 0.3337
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 32.8112,
+   "mae": 4.2812
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 21.0702,
+   "mae": 3.3324
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 25.2862,
+   "mae": 3.6507
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 32.2904,
+   "mae": 4.2728
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 23.0634,
+   "mae": 3.4605
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 26.4094,
+   "mae": 3.7756
+  }
+ },
+ "cap_only": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 26.0922,
+   "mae": 3.7145,
+   "rank_corr_with_finish": 0.3663
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 26.275,
+   "mae": 3.7385,
+   "rank_corr_with_finish": 0.3368
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 32.7856,
+   "mae": 4.26
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.8524,
+   "mae": 3.3017
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.9739,
+   "mae": 3.6158
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 31.9553,
+   "mae": 4.2336
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.7903,
+   "mae": 3.4211
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 26.0801,
+   "mae": 3.7374
+  }
+ },
+ "uniform_1.3x": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.7071,
+   "mae": 3.6847,
+   "rank_corr_with_finish": 0.3803
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 26.0133,
+   "mae": 3.7201,
+   "rank_corr_with_finish": 0.349
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 32.0872,
+   "mae": 4.2056
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.7021,
+   "mae": 3.2906
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.6466,
+   "mae": 3.5906
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 31.2304,
+   "mae": 4.1789
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.6946,
+   "mae": 3.4151
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 25.9708,
+   "mae": 3.7314
+  }
+ },
+ "experience_taper": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.2564,
+   "mae": 3.6414,
+   "rank_corr_with_finish": 0.4014
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 24.9467,
+   "mae": 3.6215,
+   "rank_corr_with_finish": 0.3819
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.5041,
+   "mae": 4.1228
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.3065,
+   "mae": 3.2743
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.2434,
+   "mae": 3.5558
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 29.8063,
+   "mae": 4.0303
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 21.8403,
+   "mae": 3.3557
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 24.9245,
+   "mae": 3.6248
+  }
+ },
+ "taper_age_floor": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.0313,
+   "mae": 3.6221,
+   "rank_corr_with_finish": 0.4131
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 24.6458,
+   "mae": 3.5938,
+   "rank_corr_with_finish": 0.3935
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.2059,
+   "mae": 4.0899
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.2048,
+   "mae": 3.2731
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 23.9958,
+   "mae": 3.5349
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 29.4998,
+   "mae": 3.9977
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 21.616,
+   "mae": 3.3407
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 24.5393,
+   "mae": 3.5861
+  }
+ },
+ "age_aware_1.3": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.4302,
+   "mae": 3.6557,
+   "rank_corr_with_finish": 0.3907
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 25.423,
+   "mae": 3.6632,
+   "rank_corr_with_finish": 0.3642
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.6993,
+   "mae": 4.1548
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.4779,
+   "mae": 3.2777
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.4063,
+   "mae": 3.5656
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 30.4957,
+   "mae": 4.1007
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.2346,
+   "mae": 3.3795
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 25.3374,
+   "mae": 3.6658
+  }
+ },
+ "age_aware_floor4": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.4377,
+   "mae": 3.656,
+   "rank_corr_with_finish": 0.3911
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 25.4656,
+   "mae": 3.6669,
+   "rank_corr_with_finish": 0.3631
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.7496,
+   "mae": 4.1586
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.4927,
+   "mae": 3.2775
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.385,
+   "mae": 3.5642
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 30.6563,
+   "mae": 4.1156
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.2474,
+   "mae": 3.3793
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 25.3266,
+   "mae": 3.6658
+  }
+ },
+ "age_aware_floor6": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.4967,
+   "mae": 3.6621,
+   "rank_corr_with_finish": 0.3877
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 25.4866,
+   "mae": 3.6689,
+   "rank_corr_with_finish": 0.3621
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.7708,
+   "mae": 4.163
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.5148,
+   "mae": 3.2803
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.4854,
+   "mae": 3.573
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 30.5404,
+   "mae": 4.1052
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.2876,
+   "mae": 3.3837
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 25.4272,
+   "mae": 3.6743
+  }
+ },
+ "completeness_floor": {
+  "2024 | all": {
+   "runs": 120296,
+   "mse": 25.4985,
+   "mae": 3.6625,
+   "rank_corr_with_finish": 0.387
+  },
+  "2025-26 | all": {
+   "runs": 220772,
+   "mse": 25.3031,
+   "mae": 3.6519,
+   "rank_corr_with_finish": 0.3691
+  },
+  "2024 | 1-5 held": {
+   "runs": 33085,
+   "mse": 31.7527,
+   "mae": 4.1578
+  },
+  "2024 | 16+ held": {
+   "runs": 30066,
+   "mse": 20.543,
+   "mae": 3.282
+  },
+  "2024 | 6-15 held": {
+   "runs": 57145,
+   "mse": 24.4848,
+   "mae": 3.5759
+  },
+  "2025-26 | 1-5 held": {
+   "runs": 56580,
+   "mse": 30.4383,
+   "mae": 4.0924
+  },
+  "2025-26 | 16+ held": {
+   "runs": 87969,
+   "mse": 22.1166,
+   "mae": 3.3714
+  },
+  "2025-26 | 6-15 held": {
+   "runs": 76223,
+   "mse": 25.1687,
+   "mae": 3.6488
+  }
+ },
+ "vs_v2.3": {
+  "cap_only": {
+   "2024 | all": {
+    "mse_change": -0.2099,
+    "mae_change": -0.0301
+   },
+   "2025-26 | all": {
+    "mse_change": -0.3084,
+    "mae_change": -0.039
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -0.0256,
+    "mae_change": -0.0212
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.2178,
+    "mae_change": -0.0307
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.3123,
+    "mae_change": -0.0349
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -0.3351,
+    "mae_change": -0.0392
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.2731,
+    "mae_change": -0.0394
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -0.3293,
+    "mae_change": -0.0382
+   }
+  },
+  "uniform_1.3x": {
+   "2024 | all": {
+    "mse_change": -0.595,
+    "mae_change": -0.0599
+   },
+   "2025-26 | all": {
+    "mse_change": -0.5701,
+    "mae_change": -0.0574
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -0.724,
+    "mae_change": -0.0756
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.3681,
+    "mae_change": -0.0418
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.6396,
+    "mae_change": -0.0601
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -1.06,
+    "mae_change": -0.0939
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.3688,
+    "mae_change": -0.0454
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -0.4386,
+    "mae_change": -0.0442
+   }
+  },
+  "experience_taper": {
+   "2024 | all": {
+    "mse_change": -1.0457,
+    "mae_change": -0.1032
+   },
+   "2025-26 | all": {
+    "mse_change": -1.6367,
+    "mae_change": -0.156
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.3071,
+    "mae_change": -0.1584
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.7637,
+    "mae_change": -0.0581
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -1.0428,
+    "mae_change": -0.0949
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -2.4841,
+    "mae_change": -0.2425
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -1.2231,
+    "mae_change": -0.1048
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -1.4849,
+    "mae_change": -0.1508
+   }
+  },
+  "taper_age_floor": {
+   "2024 | all": {
+    "mse_change": -1.2708,
+    "mae_change": -0.1225
+   },
+   "2025-26 | all": {
+    "mse_change": -1.9376,
+    "mae_change": -0.1837
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.6053,
+    "mae_change": -0.1913
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.8654,
+    "mae_change": -0.0593
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -1.2904,
+    "mae_change": -0.1158
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -2.7906,
+    "mae_change": -0.2751
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -1.4474,
+    "mae_change": -0.1198
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -1.8701,
+    "mae_change": -0.1895
+   }
+  },
+  "age_aware_1.3": {
+   "2024 | all": {
+    "mse_change": -0.8719,
+    "mae_change": -0.0889
+   },
+   "2025-26 | all": {
+    "mse_change": -1.1604,
+    "mae_change": -0.1143
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.1119,
+    "mae_change": -0.1264
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.5923,
+    "mae_change": -0.0547
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.8799,
+    "mae_change": -0.0851
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -1.7947,
+    "mae_change": -0.1721
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.8288,
+    "mae_change": -0.081
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -1.072,
+    "mae_change": -0.1098
+   }
+  },
+  "age_aware_floor4": {
+   "2024 | all": {
+    "mse_change": -0.8644,
+    "mae_change": -0.0886
+   },
+   "2025-26 | all": {
+    "mse_change": -1.1178,
+    "mae_change": -0.1106
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.0616,
+    "mae_change": -0.1226
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.5775,
+    "mae_change": -0.0549
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.9012,
+    "mae_change": -0.0865
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -1.6341,
+    "mae_change": -0.1572
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.816,
+    "mae_change": -0.0812
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -1.0828,
+    "mae_change": -0.1098
+   }
+  },
+  "age_aware_floor6": {
+   "2024 | all": {
+    "mse_change": -0.8054,
+    "mae_change": -0.0825
+   },
+   "2025-26 | all": {
+    "mse_change": -1.0968,
+    "mae_change": -0.1086
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.0404,
+    "mae_change": -0.1182
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.5554,
+    "mae_change": -0.0521
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.8008,
+    "mae_change": -0.0777
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -1.75,
+    "mae_change": -0.1676
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.7758,
+    "mae_change": -0.0768
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -0.9822,
+    "mae_change": -0.1013
+   }
+  },
+  "completeness_floor": {
+   "2024 | all": {
+    "mse_change": -0.8036,
+    "mae_change": -0.0821
+   },
+   "2025-26 | all": {
+    "mse_change": -1.2803,
+    "mae_change": -0.1256
+   },
+   "2024 | 1-5 held": {
+    "mse_change": -1.0585,
+    "mae_change": -0.1234
+   },
+   "2024 | 16+ held": {
+    "mse_change": -0.5272,
+    "mae_change": -0.0504
+   },
+   "2024 | 6-15 held": {
+    "mse_change": -0.8014,
+    "mae_change": -0.0748
+   },
+   "2025-26 | 1-5 held": {
+    "mse_change": -1.8521,
+    "mae_change": -0.1804
+   },
+   "2025-26 | 16+ held": {
+    "mse_change": -0.9468,
+    "mae_change": -0.0891
+   },
+   "2025-26 | 6-15 held": {
+    "mse_change": -1.2407,
+    "mae_change": -0.1268
+   }
+  }
+ }
+}

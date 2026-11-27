@@ -11,6 +11,10 @@ bash ops/run_v24_shadow.sh "$D" || echo "WARNING v2.4 shadow (production unaffec
 # rating update rule candidate (12 L cap on the performance figure, good runs 1.3x), all three layers its own, shadow only (Batch 16 B9, 27 Nov 2026)
 bash ops/run_update_shadow.sh "$D" || echo "WARNING update-rule shadow (production unaffected)"
 [ -d benchmarks/engine_cap_only_candidate ] && { UR_VARIANT=caponly bash ops/run_update_shadow.sh "$D" || echo "WARNING cap-only shadow (production unaffected)"; }
+# age-aware update rule (Batch 19 A2, approved 27 Nov 2026): own frozen candidate and clock, starting with the 29 Nov run (not the first corrected run)
+[ -d benchmarks/engine_age_aware_candidate ] && [ "$D" -ge 20261129 ] && { UR_VARIANT=ageaware bash ops/run_update_shadow.sh "$D" || echo "WARNING age-aware shadow (production unaffected)"; }
+# trainer debut record (Batch 19 A3, approved 27 Nov 2026): Engine v2.3 + one term for genuine debutants; production frame read-only; from the 29 Nov run
+[ -d benchmarks/engine_trainer_debut_candidate ] && [ "$D" -ge 20261129 ] && { bash ops/run_trainer_debut_shadow.sh "$D" || echo "WARNING trainer-debut shadow (production unaffected)"; }
 # Queensland common national framework, configs 2 and 4 (Batch 17 B2, approved 27 Nov 2026); after the update-rule shadow, whose rating frame config 4 uses
 bash ops/run_qld_common_shadow.sh "$D" || echo "WARNING Qld common shadow (production unaffected)"
 RQB=$(ls collect/national/$D/bundles/rqpre_${D}_snap*.jsonl.gz 2>/dev/null | tail -1)

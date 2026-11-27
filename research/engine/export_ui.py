@@ -296,7 +296,7 @@ if FO:
         for rn, g in F_.groupby('race_no'):
             fr = g.iloc[0]; t_local, t_bris = tm(fr.start_time, tz_); rr = []
             for _, h in g.sort_values('saddlecloth').iterrows():
-                hk = S.nk(h.horse); stt = 'scratched' if (rn, h.saddlecloth) in scr_ else ('scratched (TAB)' if TABS.get((name, int(rn), int(h.saddlecloth)), 'Open') != 'Open' else ('probable emergency' if h.emergency else 'runner'))
+                hk = S.nk(h.horse); stt = 'scratched' if (rn, h.saddlecloth) in scr_ else ('scratched (TAB)' if str(TABS.get((name, int(rn), int(h.saddlecloth)), 'Open')).lower() in ('latescratched', 'scratched') else ('probable emergency' if h.emergency else 'runner'))
                 rr.append({'n': int(h.saddlecloth), 'horse': nice(h.horse), 'barrier': int(h.barrier), 'weight': float(h.weight_kg), 'claim': None if pd.isna(h.claim_kg) else float(h.claim_kg),
                            'jockey': h.jockey if isinstance(h.jockey, str) else None, 'trainer': h.trainer, 'age_sex': h.age_sex if isinstance(h.age_sex, str) else None, 'status': stt, 'history_runs': int(runs.get(hk, 0)),
                            'market': mkt(name, int(rn), int(h.saddlecloth))})

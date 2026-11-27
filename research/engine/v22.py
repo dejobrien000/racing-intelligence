@@ -76,7 +76,18 @@ def raw(T, H_):
         T['race_class_tab'] = [rc.get((v, int(n))) for v, n in zip(T.venue, T.race_no)]
         T['hcp'] = [hcp_flag(st, c) for st, c in zip(T.state, T.race_class_tab)]
         T['b22_wt_x_hcp'] = T.a_wt_rel * T.hcp
+    if 'tr_debut_g' in M['terms']: T['b22_tr_debut_g'] = trainer_debut(T, H_)   # trainer debut record candidate only (Batch 19 A3)
     return T
+def trainer_debut(T, H_, k=15.0):
+    """Trainer debut record (CANDIDATE ONLY, Batch 19 A3; used only when a manifest lists the term 'tr_debut_g'): for a GENUINE debutant
+    today (no runs held, aged 2 or 3), the shrunk mean of its trainer's earlier genuine debutants' surprise on debut (first run held, aged 2-3,
+    from March 2023) minus the population's running mean, n / (n + 15) weighting. 0 for every other runner. Built from completed runs only."""
+    h = H_[['horse', 'date', 'race', 'tkey', 'age_n', 'dyn_nat_inn']].sort_values(['horse', 'date', 'race']); kk = h.groupby('horse').cumcount()
+    D = h[(kk == 0) & h.age_n.isin([2, 3]) & (pd.to_datetime(h.date) >= pd.Timestamp('2023-03-01')) & h.dyn_nat_inn.notna() & h.tkey.notna()].copy()
+    pop = D.groupby('date').dyn_nat_inn.agg(['sum', 'count']).sort_index().cumsum().shift(1); D = D.join((pop['sum'] / pop['count']).rename('pop'), on='date')
+    D['r'] = D.dyn_nat_inn - D['pop'].fillna(0); g = D.groupby('tkey').r.agg(['sum', 'count']); rec = g['sum'] / (g['count'] + k)
+    genuine = (pd.to_numeric(T.b22_n_prior, errors='coerce').fillna(0) == 0) & pd.to_numeric(T.get('age_n'), errors='coerce').isin([2, 3])
+    return np.where(genuine, T.tkey.map(rec).fillna(0.0).values, 0.0)
 def terms(T, which='all_races'):
     C = M[f'coef_per_sd_{which}']; S = M[f'term_sd_{which}']; out = {}
     for c in M['terms']:

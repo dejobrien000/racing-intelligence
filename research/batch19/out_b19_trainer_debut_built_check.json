@@ -1,0 +1,10 @@
+{
+ "races_2025_26": 23729,
+ "gain_per_race": 0.00143,
+ "ci95": [
+  0.00094,
+  0.00196
+ ],
+ "races_with_a_genuine_debutant_with_record": 4508,
+ "gain_in_those": 0.00765
+}

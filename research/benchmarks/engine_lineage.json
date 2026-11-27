@@ -1,6 +1,6 @@
 {
  "about": "Engine lineage for the dashboard's Engine Performance tab (display only; read by engine/engine_performance.py). Update at every release. Figures are copied from benchmarks/engine_v2/RELEASES.md, the release manifests and gates, and the research ledgers named in 'source'. Log-likelihood gains are per race on identical races; fit = how much better than random the winner's chance was.",
- "updated": "2026-11-27",
+ "updated": "2026-11-27 (Batch 19: age-aware update rule and trainer debut record shadows added, both start 29 Nov)",
  "families": [
   {
    "key": "QLD",
@@ -223,6 +223,24 @@
    "status": "Shadow from the 28 Nov run (not live)",
    "evidence": "Research harness vs the v2.1.3 structure: 2024 +0.0446 (0.0286 to 0.0576), 2025-26 +0.0266 (0.0162 to 0.0371); the rule adds +0.0151 / +0.0080 over config 2",
    "ledger_label_prefix": "Qld common framework + update rule",
+   "compare_with": "production"
+  },
+  {
+   "name": "Age-aware update rule",
+   "family": "NAT",
+   "what": "Engine v2.3 rebuilt in full: 12-length cap in the performance figure; a run better than expected moves the rating 1 + 0.3 x exp(-n/6) times as far (1.3 on a first run held, about 1.0 after 20), horses aged 5+ counted as exposed",
+   "status": "Shadow: scored every day from the 29 Nov run (not live; own clock). Built by the v2.3 release chain; own kg scale (0.334 per kg)",
+   "evidence": "Research (both periods seen while designing it): vs uniform 1.3x +0.0017 (2024) / +0.0046 (2025-26); vs v2.3 with no options +0.0097 / +0.0104. Not untouched validation",
+   "ledger_label_prefix": "Age-aware update rule",
+   "compare_with": "production"
+  },
+  {
+   "name": "Trainer debut record",
+   "family": "NAT",
+   "what": "Engine v2.3 + one third-layer term: for a genuine debutant (no runs held, aged 2-3), the shrunk record of its trainer's earlier debutants on debut; 0 for every other runner",
+   "status": "Shadow: scored every day from the 29 Nov run (not live; own clock). Production v2.3 rating frame, read only",
+   "evidence": "Harness +0.0004 (2024, not clear) / +0.0015 (2025-26); built check 2025-26 +0.0014 (+0.0009 to +0.0020), +0.0077 in races with a genuine debutant. Both periods examined: not untouched",
+   "ledger_label_prefix": "Trainer debut record",
    "compare_with": "production"
   }
  ],

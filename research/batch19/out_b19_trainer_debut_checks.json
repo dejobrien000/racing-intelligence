@@ -1,0 +1,101 @@
+{
+ "1_debut_identification_tab_26_27_nov": {
+  "runners_with_no_runs_held": 70,
+  "tab_career_starts_zero": 68,
+  "by_age": {
+   "2": [
+    2,
+    2
+   ],
+   "3": [
+    52,
+    50
+   ],
+   "4": [
+    15,
+    15
+   ],
+   "5": [
+    1,
+    1
+   ]
+  },
+  "tab_first_starters_with_runs_held": 2
+ },
+ "2_trainer_key_parity": {
+  "tab_first_starters": 70,
+  "trainer_key_found_in_history": 70,
+  "with_a_debut_record": 70,
+  "examples_not_found": []
+ },
+ "3_partnerships_tab_first_starters": {
+  "share_partnership": 0.271,
+  "partnership_with_debut_record": [
+   19,
+   19
+  ],
+  "solo_with_debut_record": [
+   51,
+   51
+  ]
+ },
+ "4_independence": {
+  "corr_tr_debut_with_t_surp_genuine": 0.693
+ },
+ "5_prior_debuts_at_time": {
+  "none": 1937,
+  "1-4": 4327,
+  "5-14": 5566,
+  "15+": 14878
+ },
+ "5_shrink_weight_note": "weight on the trainer's own mean = n / (n + 15): 1 debut 6%, 5 debuts 25%, 15 debuts 50%, 45 debuts 75%",
+ "8_initial_expectation_accuracy": {
+  "fit_2023_coef_per_kg_of_record": 0.245,
+  "2024": {
+   "debuts": 7297,
+   "mse_without": 47.23,
+   "mse_with": 47.044,
+   "reduction": 0.186,
+   "ci95": [
+    0.096,
+    0.271
+   ]
+  },
+  "2025-26": {
+   "debuts": 13079,
+   "mse_without": 46.401,
+   "mse_with": 46.164,
+   "reduction": 0.237,
+   "ci95": [
+    0.173,
+    0.304
+   ]
+  }
+ },
+ "6_age_sex_interactions_2024_26": {
+  "tr_debut (3yo colt/gelding)": [
+   0.539,
+   0.364,
+   0.715
+  ],
+  "extra for two-year-olds": [
+   -0.022,
+   -0.189,
+   0.144
+  ],
+  "extra for fillies/mares": [
+   0.013,
+   -0.125,
+   0.152
+  ]
+ },
+ "7_first_runs_held_that_are_not_genuine_debuts": {
+  "runs_2024_26": 5427,
+  "share_of_all_first_runs_held_2024_26": 0.21,
+  "tr_debut_coef_on_them": [
+   0.349,
+   0.126,
+   0.572
+  ]
+ }
+}

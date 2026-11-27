@@ -1,0 +1,125 @@
+{
+ "frozen_utc": "2026-11-27T06:37:32.331456+00:00",
+ "scope": "NSW, Vic, ACT races (Breednet full fields; jump-outs excluded); fields of 6+",
+ "dynamic_rating_params": {
+  "s_kg": 4.5,
+  "q_kg2_per_day": 0.05,
+  "sig0_kg": 5.0,
+  "debut_offset_kg": 2.0
+ },
+ "records_k": 1,
+ "dev_sd_after_race_centring": {
+  "f_avgfp3": 0.20609063084593093,
+  "f_lastfp": 0.28852865391701343,
+  "f_lastlm": 0.8860274639089385,
+  "f_cwin": 0.13684957035698686,
+  "f_lstarts": 0.539614787470219,
+  "missform": 0.24011147185284168,
+  "a_rec": 4.73614234233392,
+  "a_best3": 5.378469882585727,
+  "a_fs3": 2.4442960407290104,
+  "a_wt_rel": 1.8140971043914986,
+  "missfig": 0.08381143070272737,
+  "r_firstup": 0.33134493678121946,
+  "r_7_13": 0.3576080790110633,
+  "r_28_59": 0.2853090636257563,
+  "r_quick": 0.2888508849157668,
+  "r_ldays": 0.8287468010512486,
+  "dyn_nat": 2.46156084165415,
+  "c_rec": 1.1914150022673318,
+  "g_rec": 1.4207611741378101,
+  "d_rec": 1.3881994489049425
+ },
+ "candidates": {
+  "nat_v1 (common + national rating)": {
+   "f_avgfp3": 0.07043627947216922,
+   "f_lastfp": 0.04630076837680629,
+   "f_lastlm": 0.0843645492954701,
+   "f_cwin": -0.005327272247552722,
+   "f_lstarts": -0.23528635963904554,
+   "missform": 0.027409299025455663,
+   "a_rec": 0.09140872610752897,
+   "a_best3": 0.11956005306614684,
+   "a_fs3": 0.10531230595453028,
+   "a_wt_rel": 0.019843068087818598,
+   "missfig": -0.014707803612500134,
+   "r_firstup": 0.06626415385488216,
+   "r_7_13": -0.02562520794904836,
+   "r_28_59": -0.0022844125501488106,
+   "r_quick": 0.012079708015392075,
+   "r_ldays": -0.13490558552614038,
+   "dyn_nat": 0.49849716613747896
+  },
+  "nat_v2 (+ horse records)": {
+   "f_avgfp3": 0.04457771919781121,
+   "f_lastfp": 0.04040015115704235,
+   "f_lastlm": 0.07710661008708289,
+   "f_cwin": -0.00988593041080066,
+   "f_lstarts": -0.21884489857926523,
+   "missform": 0.04075165198303482,
+   "a_rec": 0.08410616334877684,
+   "a_best3": 0.11658919010935179,
+   "a_fs3": 0.10447060665791001,
+   "a_wt_rel": 0.01682385498385146,
+   "missfig": -0.014654043842484333,
+   "r_firstup": 0.06562353459854692,
+   "r_7_13": -0.024948946495811173,
+   "r_28_59": -0.0029309022005550014,
+   "r_quick": 0.0124710815558233,
+   "r_ldays": -0.12919985564127845,
+   "dyn_nat": 0.4945045254434515,
+   "c_rec": 0.06260152323311764,
+   "g_rec": 0.04327279207606789,
+   "d_rec": 0.02905656492707772
+  }
+ },
+ "eval_2025_26": {
+  "nat_v1": {
+   "races": 23729,
+   "fit_%": 11.43,
+   "top_pick_%": 26.9
+  },
+  "nat_v2": {
+   "races": 23729,
+   "fit_%": 11.62,
+   "top_pick_%": 27.1
+  }
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "18bad88c2350248f",
+  "dyn_rating.py": "ed2bb808c199ba39",
+  "dyn_rating_innov.py": "7643bf5095c21cf8",
+  "national.py": "479bd9e057c0a7b3",
+  "freeze_b5_national_common.py": "5aad3b8ef9e7bcf0"
+ },
+ "data_sha256_16": {
+  "national_runs.parquet": "4aa0756909a20254"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit",
+ "candidate_record": {
+  "candidate": "Age-aware update rule (NOT LIVE, shadow only)",
+  "built_utc": "2026-11-27T06:41:41Z",
+  "built_from": "Engine v2.3 release chain (national.py history with weight credit 0.25 and 0.170 s/L -> engine/lab.py -> freeze_b5_national_common.py -> engine/release_v2.py -> b10/scripts/build_v22.py) in a sandbox (/tmp/ua/research), with the rule switched on",
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_TAPER": "0.3,6",
+   "RATING_TAPER_AGEFLOOR": "engine/frames/age_at_run.parquet (age at each completed run, from the production Engine v2.3 frame)",
+   "RATING_TAPER_AGEMIN": "5 (default)"
+  },
+  "rule_in_words": "a defeat counts at most 12 lengths in the performance figure (the recorded margin is never changed); a run better than expected moves the rating m times as far, m = 1 + 0.3 x exp(-n/6), where n = the horse's runs held before this run; a horse aged 5 or more at the run counts as n >= 24 (m about 1.006). Runs worse than expected move the rating as in Engine v2.3.",
+  "rule_maths": "innovation u = (perf_capped - race mean perf_capped) - (mu - race mean mu); Kalman gain K = var/(var + s^2); if u > 0: mu += K * m * u else mu += K * u; m = 1 + 0.3 exp(-n_eff/6); n_eff = max(n_held, 24) if age >= 5 else n_held",
+  "career_start_treatment": "n_held counts runs in our history only (from Oct 2022); true career starts are not used. Known limitation (Batch 19 B6): by Nov 2026 most horses aged 5+ with few runs held are genuinely lightly raced (TAB form, 26-27 Nov: 28 of 30), so the age floor now treats them as exposed.",
+  "approved": "Damo 27 Nov 2026 (Batch 19 brief A2): build as a new frozen shadow with an independent prospective clock; not production",
+  "parity_with_research": "rating and innovation identical to the harness implementation U5EC (max |diff| 0.0 over 682,430 runs); speed figures identical to production (max |diff| 0.0): /tmp/ua/parity.log",
+  "historical_evidence_caveat": "both historical periods (2024; 2025-26) influenced the design; they are not untouched validation",
+  "sandbox_only_change": "inv30_horse_suitability.py equality guard relaxed in the sandbox only when RATING_GOOD_X or RATING_GOOD_TAPER is set (the rule lives in the innovation module by design)",
+  "fingerprints_sha256": {
+   "history national_runs_c2.parquet (as built)": "4aa0756909a202544b64d4c22ed2a7679993908901960496aacfde92c5c845e2",
+   "age file at build": "e7a2cec803dec5282d50d515aead3b13645bbb91692dcd0f431f255cf26a27de",
+   "dyn_rating.py": "ed2bb808c199ba3979eb11675bf30a038b8d6eae3b18b9391ad2c4766dfb223e",
+   "dyn_rating_innov.py": "7827b1d72780f78c11cf044adb88c95399fd7d3df038a373f68f23fed9d47c3e"
+  }
+ }
+}

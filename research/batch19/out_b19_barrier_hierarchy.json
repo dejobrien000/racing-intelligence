@@ -1,0 +1,240 @@
+{
+ "coverage": {
+  "runs": 105062,
+  "races": 10621,
+  "fit_runs": 51534,
+  "test_runs": 53528,
+  "by_state_runs": {
+   "QLD": 86401,
+   "SA": 18661
+  },
+  "courses": 18,
+  "course_x_distance_groups": 82,
+  "rail_known_share": 1.0
+ },
+ "national_slope_kg_inside_to_outside": -1.104,
+ "between_group_sd_kg": {
+  "L1": 0.113,
+  "L2": 0.496,
+  "L3": 0.412,
+  "L4": 0.584
+ },
+ "national_modifiers": {
+  "going good": -1.109,
+  "going heavy": -1.681,
+  "going soft": -0.972,
+  "going synthetic": -2.052,
+  "field 10-12": -1.432,
+  "field 13+": -0.625,
+  "field 6-9": -0.956
+ },
+ "judged_2025_26": {
+  "no barrier effect": {
+   "error_reduction_kg2_per_run": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "share_of_within_race_variance_explained_pct": 0.0,
+   "calibration_slope": null
+  },
+  "national": {
+   "error_reduction_kg2_per_run": 0.0851,
+   "ci95": [
+    0.0413,
+    0.1333
+   ],
+   "share_of_within_race_variance_explained_pct": 0.299,
+   "calibration_slope": 0.84
+  },
+  "state": {
+   "error_reduction_kg2_per_run": 0.0851,
+   "ci95": [
+    0.0356,
+    0.1324
+   ],
+   "share_of_within_race_variance_explained_pct": 0.299,
+   "calibration_slope": 0.84
+  },
+  "course (pooled)": {
+   "error_reduction_kg2_per_run": 0.0941,
+   "ci95": [
+    0.0432,
+    0.1488
+   ],
+   "share_of_within_race_variance_explained_pct": 0.33,
+   "calibration_slope": 0.84
+  },
+  "course x distance (pooled)": {
+   "error_reduction_kg2_per_run": 0.0942,
+   "ci95": [
+    0.0391,
+    0.1482
+   ],
+   "share_of_within_race_variance_explained_pct": 0.331,
+   "calibration_slope": 0.81
+  },
+  "course x distance x rail (pooled)": {
+   "error_reduction_kg2_per_run": 0.1258,
+   "ci95": [
+    0.0672,
+    0.1813
+   ],
+   "share_of_within_race_variance_explained_pct": 0.442,
+   "calibration_slope": 0.88
+  },
+  "course x distance, recency-weighted (pooled)": {
+   "error_reduction_kg2_per_run": 0.0929,
+   "ci95": [
+    0.0429,
+    0.1454
+   ],
+   "share_of_within_race_variance_explained_pct": 0.326,
+   "calibration_slope": 0.84
+  },
+  "course x distance, independent (no pooling)": {
+   "error_reduction_kg2_per_run": 0.0522,
+   "ci95": [
+    -0.0063,
+    0.1153
+   ],
+   "share_of_within_race_variance_explained_pct": 0.183,
+   "calibration_slope": 0.62
+  }
+ },
+ "vs_national_paired": {
+  "state": [
+   -0.0,
+   -0.0028,
+   0.0027
+  ],
+  "course (pooled)": [
+   0.009,
+   -0.0089,
+   0.029
+  ],
+  "course x distance (pooled)": [
+   0.009,
+   -0.0137,
+   0.0314
+  ],
+  "course x distance x rail (pooled)": [
+   0.0406,
+   0.014,
+   0.0681
+  ],
+  "course x distance, recency-weighted (pooled)": [
+   0.0078,
+   -0.0121,
+   0.026
+  ],
+  "course x distance, independent (no pooling)": [
+   -0.0329,
+   -0.0737,
+   0.0033
+  ]
+ },
+ "judged_2025_26_QLD": {
+  "no barrier effect": 0.0,
+  "national": 0.0917,
+  "state": 0.0904,
+  "course (pooled)": 0.093,
+  "course x distance (pooled)": 0.0938,
+  "course x distance x rail (pooled)": 0.1348,
+  "course x distance, recency-weighted (pooled)": 0.0921,
+  "course x distance, independent (no pooling)": 0.0713
+ },
+ "judged_2025_26_SA": {
+  "no barrier effect": 0.0,
+  "national": 0.0637,
+  "state": 0.0678,
+  "course (pooled)": 0.0977,
+  "course x distance (pooled)": 0.0954,
+  "course x distance x rail (pooled)": 0.0964,
+  "course x distance, recency-weighted (pooled)": 0.0953,
+  "course x distance, independent (no pooling)": -0.01
+ },
+ "stability_qld_course_x_distance": {
+  "groups": 36,
+  "corr_2023_24_vs_2025_26": 0.543,
+  "random_halves_mean": 0.588,
+  "random_halves_p05_p95": [
+   0.439,
+   0.732
+  ]
+ },
+ "largest_course_x_distance_groups_fit": [
+  {
+   "group": "QLD|Sunshine_Coast|to1100",
+   "independent": -1.44,
+   "pooled": -1.26,
+   "se": 0.3
+  },
+  {
+   "group": "QLD|Doomben|1101-1300",
+   "independent": -1.85,
+   "pooled": -1.73,
+   "se": 0.3
+  },
+  {
+   "group": "QLD|Toowoomba|1101-1300",
+   "independent": -0.95,
+   "pooled": -1.16,
+   "se": 0.34
+  },
+  {
+   "group": "QLD|Sunshine_Coast|1501-1800",
+   "independent": -0.9,
+   "pooled": -0.91,
+   "se": 0.34
+  },
+  {
+   "group": "QLD|Toowoomba|to1100",
+   "independent": -2.76,
+   "pooled": -2.21,
+   "se": 0.35
+  },
+  {
+   "group": "QLD|Sunshine_Coast|1101-1300",
+   "independent": -0.83,
+   "pooled": -0.86,
+   "se": 0.36
+  },
+  {
+   "group": "QLD|Doomben|1301-1500",
+   "independent": -0.94,
+   "pooled": -1.18,
+   "se": 0.37
+  },
+  {
+   "group": "QLD|Ipswich|1301-1500",
+   "independent": -0.74,
+   "pooled": -0.81,
+   "se": 0.37
+  },
+  {
+   "group": "QLD|Ipswich|to1100",
+   "independent": -0.67,
+   "pooled": -0.78,
+   "se": 0.38
+  },
+  {
+   "group": "QLD|Eagle_Farm|1101-1300",
+   "independent": -1.07,
+   "pooled": -1.0,
+   "se": 0.38
+  },
+  {
+   "group": "QLD|Sunshine_Coast|1301-1500",
+   "independent": -0.05,
+   "pooled": -0.45,
+   "se": 0.38
+  },
+  {
+   "group": "QLD|Eagle_Farm|1301-1500",
+   "independent": -0.48,
+   "pooled": -0.69,
+   "se": 0.4
+  }
+ ]
+}

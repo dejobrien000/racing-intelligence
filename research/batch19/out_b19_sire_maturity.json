@@ -1,0 +1,52 @@
+{
+ "cohort_A_horses_3plus_runs_each_age": 3848,
+ "cohort_B_horses": 3680,
+ "mean_change_A": 1.38,
+ "mean_change_B": 1.77,
+ "sire_maturity_coef_in_B_beyond_controls": [
+  0.243,
+  -0.115,
+  0.6
+ ],
+ "r2_without_with": [
+  0.0171,
+  0.0178
+ ],
+ "sire_means_A_vs_B_corr_15plus_each": [
+  0.113,
+  56
+ ],
+ "per_incanto": {
+  "A": [
+   13,
+   0.66
+  ],
+  "B": [
+   18,
+   0.37
+  ]
+ },
+ "continuation_seen_at_four_A_B": {
+  "Per Incanto (USA)": [
+   0.76,
+   0.926
+  ],
+  "Justify (USA)": [
+   0.737,
+   0.707
+  ],
+  "Brutal (NZ)": [
+   NaN,
+   0.781
+  ],
+  "Fiorente (IRE)": [
+   0.926,
+   0.85
+  ],
+  "all horses": [
+   0.779,
+   0.758
+  ]
+ },
+ "note": "B four-year-old seasons end 31 Jul 2026; horses still racing after our data ends are counted as seen if they raced at four by then."
+}

@@ -1,0 +1,32 @@
+{
+ "early_improvement": {
+  "horses": 22226,
+  "trainers_15plus_each_period": 124,
+  "corr_2023_24_vs_2025_26": 0.539,
+  "random_split_corr_mean": 0.573
+ },
+ "prep_dev": {
+  "horses": 13832,
+  "trainers_15plus_each_period": 64,
+  "corr_2023_24_vs_2025_26": 0.299,
+  "random_split_corr_mean": 0.308
+ },
+ "ready_on_debut": {
+  "horses": 15316,
+  "trainers_15plus_each_period": 72,
+  "corr_2023_24_vs_2025_26": 0.339,
+  "random_split_corr_mean": 0.27
+ },
+ "ready_on_debut_vs_later_development_trainer_corr": {
+  "early_improvement": -0.366,
+  "prep_dev": -0.269,
+  "trainers": 698
+ },
+ "debut_patterns_trainers_30plus": {
+  "trainers": 167,
+  "share_debuting_at_two_sd_across_trainers": 0.165,
+  "share_debuting_at_1100m_or_less_sd": 0.176,
+  "corr_two_share_with_early_improvement": -0.422,
+  "corr_short_share_with_ready_on_debut": 0.114
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "complete_history": {
+  "age 2-3 | starts 1-2": {
+   "runs": 16314,
+   "next": 0.698,
+   "next3": 0.719,
+   "next_vs_revised_kg": 1.37
+  },
+  "age 2-3 | starts 12+": {
+   "runs": 789,
+   "next": 0.396,
+   "next3": 0.375,
+   "next_vs_revised_kg": 0.44
+  },
+  "age 2-3 | starts 3-5": {
+   "runs": 13626,
+   "next": 0.62,
+   "next3": 0.605,
+   "next_vs_revised_kg": 1.19
+  },
+  "age 2-3 | starts 6-11": {
+   "runs": 8244,
+   "next": 0.496,
+   "next3": 0.509,
+   "next_vs_revised_kg": 0.83
+  },
+  "age 4 | starts 1-2": {
+   "runs": 1964,
+   "next": 0.781,
+   "next3": 0.786,
+   "next_vs_revised_kg": 1.57
+  },
+  "age 4 | starts 12+": {
+   "runs": 8816,
+   "next": 0.419,
+   "next3": 0.355,
+   "next_vs_revised_kg": 0.51
+  },
+  "age 4 | starts 3-5": {
+   "runs": 6670,
+   "next": 0.659,
+   "next3": 0.662,
+   "next_vs_revised_kg": 1.34
+  },
+  "age 4 | starts 6-11": {
+   "runs": 14583,
+   "next": 0.557,
+   "next3": 0.516,
+   "next_vs_revised_kg": 0.96
+  },
+  "age 5 | starts 12+": {
+   "runs": 7280,
+   "next": 0.304,
+   "next3": 0.233,
+   "next_vs_revised_kg": -0.13
+  },
+  "age 5 | starts 3-5": {
+   "runs": 227,
+   "next": 0.559,
+   "next3": 0.607,
+   "next_vs_revised_kg": 0.2
+  },
+  "age 5 | starts 6-11": {
+   "runs": 1957,
+   "next": 0.443,
+   "next3": 0.451,
+   "next_vs_revised_kg": 0.23
+  },
+  "age 6+ | starts 12+": {
+   "runs": 1091,
+   "next": 0.289,
+   "next3": 0.227,
+   "next_vs_revised_kg": -0.16
+  }
+ },
+ "career_began_before_our_data": {
+  "age 2-3 | starts held 1-2": {
+   "runs": 2526,
+   "next": 0.611,
+   "next3": 0.595,
+   "next_vs_revised_kg": 0.74
+  },
+  "age 2-3 | starts held 12+": {
+   "runs": 363,
+   "next": 0.325,
+   "next3": 0.25,
+   "next_vs_revised_kg": 0.02
+  },
+  "age 2-3 | starts held 3-5": {
+   "runs": 3545,
+   "next": 0.467,
+   "next3": 0.411,
+   "next_vs_revised_kg": 0.62
+  },
+  "age 2-3 | starts held 6-11": {
+   "runs": 2320,
+   "next": 0.383,
+   "next3": 0.334,
+   "next_vs_revised_kg": 0.19
+  },
+  "age 4 | starts held 1-2": {
+   "runs": 5714,
+   "next": 0.681,
+   "next3": 0.659,
+   "next_vs_revised_kg": 1.14
+  },
+  "age 4 | starts held 12+": {
+   "runs": 4434,
+   "next": 0.347,
+   "next3": 0.246,
+   "next_vs_revised_kg": 0.15
+  },
+  "age 4 | starts held 3-5": {
+   "runs": 7335,
+   "next": 0.506,
+   "next3": 0.461,
+   "next_vs_revised_kg": 0.6
+  },
+  "age 4 | starts held 6-11": {
+   "runs": 8550,
+   "next": 0.4,
+   "next3": 0.351,
+   "next_vs_revised_kg": 0.26
+  },
+  "age 5 | starts held 1-2": {
+   "runs": 2523,
+   "next": 0.614,
+   "next3": 0.604,
+   "next_vs_revised_kg": 0.76
+  },
+  "age 5 | starts held 12+": {
+   "runs": 11464,
+   "next": 0.307,
+   "next3": 0.223,
+   "next_vs_revised_kg": -0.04
+  },
+  "age 5 | starts held 3-5": {
+   "runs": 4947,
+   "next": 0.488,
+   "next3": 0.464,
+   "next_vs_revised_kg": 0.5
+  },
+  "age 5 | starts held 6-11": {
+   "runs": 9222,
+   "next": 0.397,
+   "next3": 0.328,
+   "next_vs_revised_kg": 0.16
+  },
+  "age 6+ | starts held 1-2": {
+   "runs": 2226,
+   "next": 0.549,
+   "next3": 0.521,
+   "next_vs_revised_kg": 0.43
+  },
+  "age 6+ | starts held 12+": {
+   "runs": 23999,
+   "next": 0.252,
+   "next3": 0.161,
+   "next_vs_revised_kg": -0.34
+  },
+  "age 6+ | starts held 3-5": {
+   "runs": 4390,
+   "next": 0.412,
+   "next3": 0.386,
+   "next_vs_revised_kg": 0.22
+  },
+  "age 6+ | starts held 6-11": {
+   "runs": 9095,
+   "next": 0.336,
+   "next3": 0.291,
+   "next_vs_revised_kg": -0.06
+  }
+ },
+ "tab_form_check_26_27_nov": {
+  "runners": 1068,
+  "aged_5plus_with_under_6_held": 30,
+  "of_those_career_under_6": 28,
+  "of_those_career_12plus": 1,
+  "held_exceeds_career_share_by_state_group": {
+   "Qld meetings": 0.552,
+   "other meetings": 0.03
+  }
+ }
+}

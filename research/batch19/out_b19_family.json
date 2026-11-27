@@ -1,0 +1,86 @@
+{
+ "coverage": {
+  "horses_raced": 56904,
+  "with_pedigree": 56889,
+  "dams": 29459,
+  "damsires": 1888,
+  "dams_that_raced_in_our_data": 376,
+  "horses_whose_dam_raced_in_our_data": 489,
+  "horses_with_a_maternal_sibling_in_data": 42823,
+  "horses_with_a_full_sibling_in_data": 10685,
+  "sire_dam_combinations": 51166,
+  "genuine_debuts_with_pedigree": 26719,
+  "with_an_earlier_maternal_sibling": 17277,
+  "with_an_earlier_full_sibling": 3581
+ },
+ "debut_performance": {
+  "maternal siblings": {
+   "fit_coef": {
+    "mat_sig": [
+     0.271,
+     0.058
+    ]
+   },
+   "judged_2025_26_error_reduction_kg2": 0.089,
+   "ci95": [
+    0.002,
+    0.183
+   ],
+   "debuts_judged": 13082
+  },
+  "full siblings": {
+   "fit_coef": {
+    "full_sig": [
+     0.458,
+     0.136
+    ]
+   },
+   "judged_2025_26_error_reduction_kg2": 0.005,
+   "ci95": [
+    -0.056,
+    0.073
+   ],
+   "debuts_judged": 13082
+  },
+  "damsire": {
+   "fit_coef": {
+    "ds_sig": [
+     0.228,
+     0.1
+    ]
+   },
+   "judged_2025_26_error_reduction_kg2": 0.063,
+   "ci95": [
+    0.028,
+    0.1
+   ],
+   "debuts_judged": 13082
+  },
+  "all three": {
+   "fit_coef": {
+    "mat_sig": [
+     0.223,
+     0.063
+    ],
+    "full_sig": [
+     0.248,
+     0.148
+    ],
+    "ds_sig": [
+     0.208,
+     0.1
+    ]
+   },
+   "judged_2025_26_error_reduction_kg2": 0.131,
+   "ci95": [
+    0.038,
+    0.231
+   ],
+   "debuts_judged": 13082
+  }
+ },
+ "maternal_signal_where_present_2025_26": {
+  "debuts": 9015,
+  "corr_with_debut_surprise": 0.103
+ }
+}

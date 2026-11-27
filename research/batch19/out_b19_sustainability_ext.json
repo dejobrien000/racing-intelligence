@@ -1,0 +1,1857 @@
+{
+ "definitions": {
+  "eligible run": "surprise (performance minus pre-race rating, relative to the field) of at least 2 kg, at least one earlier run held, Jan 2023 - Jun 2026",
+  "kinds (checked in this order)": "emerging = 1-5 starts held; progressive = 6+ held and the slope of the last 5 performances above 0.5 kg per run; return to level = performance no more than 2 kg above the previous career best; unprecedented isolated = more than 3 kg above the previous career best and not progressive; other = 2-3 kg above the previous best",
+  "gain kept (share)": "for EACH run: (later performance, or mean of the next 3 / next 5, minus the pre-race rating) divided by (exceptional performance minus the pre-race rating); the table reports the median of these individual shares, not a ratio of averages",
+  "repeated": "at least one of the next 5 performances within 1 kg of the exceptional run (or better)",
+  "higher range established": "median of the next 5 at least 2 kg above the previous repeatable upper level (second best of the last 6)",
+  "back to previous range": "median of the next 5 no more than 1 kg above the previous typical level (median of the last 5)",
+  "mutually exclusive": "yes: the repeatable upper level is never below the typical level, so a median cannot be both >= upper + 2 and <= typical + 1; a run can be neither",
+  "horizons": "next 3 / next 5 use the next 3 / 5 starts whenever they came (no time limit; window ends mid-2026 so they are possible); horses without them are excluded from that horizon only and counted in had_3_more_365d / had_5_more_365d"
+ },
+ "by_kind": {
+  "emerging (1-5 starts)": {
+   "runs": 72730,
+   "raced_again_365d": 0.962,
+   "had_3_more_365d": 0.829,
+   "had_5_more_365d": 0.668,
+   "next": {
+    "n": 70154,
+    "vs_pre_rating_mean": 2.75,
+    "vs_pre_rating_median": 3.06,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.61,
+    "vs_exceptional_run": -2.55,
+    "vs_typical_before": 1.85,
+    "vs_repeatable_upper_before": 0.82,
+    "vs_revised_rating": 0.99
+   },
+   "next3": {
+    "n": 62359,
+    "vs_pre_rating_mean": 2.93,
+    "vs_pre_rating_median": 2.98,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.6,
+    "vs_exceptional_run": -2.36,
+    "vs_typical_before": 1.97,
+    "vs_repeatable_upper_before": 0.95
+   },
+   "next5": {
+    "n": 53964,
+    "vs_pre_rating_mean": 3.1,
+    "vs_pre_rating_median": 3.08,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.61,
+    "vs_exceptional_run": -2.18,
+    "vs_typical_before": 2.09,
+    "vs_repeatable_upper_before": 1.06
+   },
+   "repeated_within_1kg_in_next5": 0.797,
+   "higher_range_established": 0.433,
+   "back_to_previous_range": 0.353,
+   "kept_median_ci": {
+    "next": [
+     0.607,
+     0.599,
+     0.614
+    ],
+    "next3": [
+     0.595,
+     0.587,
+     0.604
+    ],
+    "next5": [
+     0.609,
+     0.601,
+     0.618
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+)": {
+   "runs": 2858,
+   "raced_again_365d": 0.973,
+   "had_3_more_365d": 0.874,
+   "had_5_more_365d": 0.752,
+   "next": {
+    "n": 2778,
+    "vs_pre_rating_mean": 1.86,
+    "vs_pre_rating_median": 2.08,
+    "se": 0.09,
+    "share_of_gain_kept_median": 0.32,
+    "vs_exceptional_run": -4.85,
+    "vs_typical_before": 1.05,
+    "vs_repeatable_upper_before": -0.6,
+    "vs_revised_rating": 0.16
+   },
+   "next3": {
+    "n": 2529,
+    "vs_pre_rating_mean": 1.86,
+    "vs_pre_rating_median": 1.99,
+    "se": 0.07,
+    "share_of_gain_kept_median": 0.29,
+    "vs_exceptional_run": -4.84,
+    "vs_typical_before": 1.05,
+    "vs_repeatable_upper_before": -0.6
+   },
+   "next5": {
+    "n": 2235,
+    "vs_pre_rating_mean": 1.86,
+    "vs_pre_rating_median": 1.87,
+    "se": 0.07,
+    "share_of_gain_kept_median": 0.29,
+    "vs_exceptional_run": -4.83,
+    "vs_typical_before": 1.04,
+    "vs_repeatable_upper_before": -0.59
+   },
+   "repeated_within_1kg_in_next5": 0.519,
+   "higher_range_established": 0.234,
+   "back_to_previous_range": 0.461,
+   "kept_median_ci": {
+    "next": [
+     0.32,
+     0.297,
+     0.345
+    ],
+    "next3": [
+     0.295,
+     0.277,
+     0.316
+    ],
+    "next5": [
+     0.287,
+     0.264,
+     0.313
+    ]
+   }
+  },
+  "progressive (improving, 6+)": {
+   "runs": 42098,
+   "raced_again_365d": 0.972,
+   "had_3_more_365d": 0.866,
+   "had_5_more_365d": 0.732,
+   "next": {
+    "n": 40891,
+    "vs_pre_rating_mean": 1.37,
+    "vs_pre_rating_median": 1.72,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.38,
+    "vs_exceptional_run": -3.29,
+    "vs_typical_before": 1.34,
+    "vs_repeatable_upper_before": -1.05,
+    "vs_revised_rating": 0.28
+   },
+   "next3": {
+    "n": 37061,
+    "vs_pre_rating_mean": 1.22,
+    "vs_pre_rating_median": 1.37,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.31,
+    "vs_exceptional_run": -3.44,
+    "vs_typical_before": 1.18,
+    "vs_repeatable_upper_before": -1.19
+   },
+   "next5": {
+    "n": 32412,
+    "vs_pre_rating_mean": 1.14,
+    "vs_pre_rating_median": 1.23,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.28,
+    "vs_exceptional_run": -3.51,
+    "vs_typical_before": 1.1,
+    "vs_repeatable_upper_before": -1.26
+   },
+   "repeated_within_1kg_in_next5": 0.697,
+   "higher_range_established": 0.188,
+   "back_to_previous_range": 0.448,
+   "kept_median_ci": {
+    "next": [
+     0.385,
+     0.373,
+     0.395
+    ],
+    "next3": [
+     0.309,
+     0.3,
+     0.32
+    ],
+    "next5": [
+     0.276,
+     0.268,
+     0.286
+    ]
+   }
+  },
+  "return to level (6+)": {
+   "runs": 64376,
+   "raced_again_365d": 0.966,
+   "had_3_more_365d": 0.849,
+   "had_5_more_365d": 0.711,
+   "next": {
+    "n": 62212,
+    "vs_pre_rating_mean": 1.19,
+    "vs_pre_rating_median": 1.54,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.38,
+    "vs_exceptional_run": -3.08,
+    "vs_typical_before": 0.32,
+    "vs_repeatable_upper_before": -2.08,
+    "vs_revised_rating": 0.11
+   },
+   "next3": {
+    "n": 55453,
+    "vs_pre_rating_mean": 1.2,
+    "vs_pre_rating_median": 1.29,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.32,
+    "vs_exceptional_run": -3.06,
+    "vs_typical_before": 0.34,
+    "vs_repeatable_upper_before": -2.01
+   },
+   "next5": {
+    "n": 47857,
+    "vs_pre_rating_mean": 1.19,
+    "vs_pre_rating_median": 1.19,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.29,
+    "vs_exceptional_run": -3.07,
+    "vs_typical_before": 0.33,
+    "vs_repeatable_upper_before": -1.99
+   },
+   "repeated_within_1kg_in_next5": 0.738,
+   "higher_range_established": 0.126,
+   "back_to_previous_range": 0.542,
+   "kept_median_ci": {
+    "next": [
+     0.376,
+     0.365,
+     0.385
+    ],
+    "next3": [
+     0.32,
+     0.31,
+     0.327
+    ],
+    "next5": [
+     0.294,
+     0.287,
+     0.303
+    ]
+   }
+  },
+  "unprecedented isolated (6+)": {
+   "runs": 4173,
+   "raced_again_365d": 0.981,
+   "had_3_more_365d": 0.875,
+   "had_5_more_365d": 0.739,
+   "next": {
+    "n": 4098,
+    "vs_pre_rating_mean": 2.71,
+    "vs_pre_rating_median": 2.92,
+    "se": 0.08,
+    "share_of_gain_kept_median": 0.33,
+    "vs_exceptional_run": -6.38,
+    "vs_typical_before": 1.84,
+    "vs_repeatable_upper_before": 0.14,
+    "vs_revised_rating": 0.37
+   },
+   "next3": {
+    "n": 3720,
+    "vs_pre_rating_mean": 2.56,
+    "vs_pre_rating_median": 2.54,
+    "se": 0.06,
+    "share_of_gain_kept_median": 0.29,
+    "vs_exceptional_run": -6.49,
+    "vs_typical_before": 1.69,
+    "vs_repeatable_upper_before": 0.01
+   },
+   "next5": {
+    "n": 3270,
+    "vs_pre_rating_mean": 2.44,
+    "vs_pre_rating_median": 2.29,
+    "se": 0.06,
+    "share_of_gain_kept_median": 0.27,
+    "vs_exceptional_run": -6.57,
+    "vs_typical_before": 1.56,
+    "vs_repeatable_upper_before": -0.1
+   },
+   "repeated_within_1kg_in_next5": 0.375,
+   "higher_range_established": 0.298,
+   "back_to_previous_range": 0.405,
+   "kept_median_ci": {
+    "next": [
+     0.333,
+     0.314,
+     0.35
+    ],
+    "next3": [
+     0.291,
+     0.275,
+     0.305
+    ],
+    "next5": [
+     0.269,
+     0.253,
+     0.285
+    ]
+   }
+  }
+ },
+ "established_by_starts_held": {
+  "other (2-3 kg above best, 6+) | 12-15": {
+   "runs": 485,
+   "raced_again_365d": 0.973,
+   "had_3_more_365d": 0.862,
+   "had_5_more_365d": 0.779,
+   "next": {
+    "n": 472,
+    "vs_pre_rating_mean": 1.78,
+    "vs_pre_rating_median": 1.97,
+    "se": 0.22,
+    "share_of_gain_kept_median": 0.31,
+    "vs_exceptional_run": -5.22,
+    "vs_typical_before": 0.85,
+    "vs_repeatable_upper_before": -0.68,
+    "vs_revised_rating": 0.03
+   },
+   "next3": {
+    "n": 425,
+    "vs_pre_rating_mean": 1.77,
+    "vs_pre_rating_median": 2.01,
+    "se": 0.17,
+    "share_of_gain_kept_median": 0.27,
+    "vs_exceptional_run": -5.2,
+    "vs_typical_before": 0.87,
+    "vs_repeatable_upper_before": -0.66
+   },
+   "next5": {
+    "n": 388,
+    "vs_pre_rating_mean": 1.72,
+    "vs_pre_rating_median": 1.67,
+    "se": 0.16,
+    "share_of_gain_kept_median": 0.26,
+    "vs_exceptional_run": -5.25,
+    "vs_typical_before": 0.77,
+    "vs_repeatable_upper_before": -0.74
+   },
+   "repeated_within_1kg_in_next5": 0.43,
+   "higher_range_established": 0.214,
+   "back_to_previous_range": 0.495,
+   "kept_median_ci": {
+    "next": [
+     0.307,
+     0.254,
+     0.348
+    ],
+    "next3": [
+     0.27,
+     0.21,
+     0.334
+    ],
+    "next5": [
+     0.255,
+     0.201,
+     0.312
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+) | 16-19": {
+   "runs": 274,
+   "raced_again_365d": 0.985,
+   "had_3_more_365d": 0.909,
+   "had_5_more_365d": 0.781,
+   "next": {
+    "n": 269,
+    "vs_pre_rating_mean": 1.59,
+    "vs_pre_rating_median": 1.52,
+    "se": 0.29,
+    "share_of_gain_kept_median": 0.23,
+    "vs_exceptional_run": -5.59,
+    "vs_typical_before": 0.79,
+    "vs_repeatable_upper_before": -0.79,
+    "vs_revised_rating": -0.1
+   },
+   "next3": {
+    "n": 250,
+    "vs_pre_rating_mean": 1.47,
+    "vs_pre_rating_median": 1.33,
+    "se": 0.23,
+    "share_of_gain_kept_median": 0.19,
+    "vs_exceptional_run": -5.68,
+    "vs_typical_before": 0.66,
+    "vs_repeatable_upper_before": -0.93
+   },
+   "next5": {
+    "n": 217,
+    "vs_pre_rating_mean": 1.4,
+    "vs_pre_rating_median": 1.48,
+    "se": 0.22,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -5.75,
+    "vs_typical_before": 0.63,
+    "vs_repeatable_upper_before": -0.97
+   },
+   "repeated_within_1kg_in_next5": 0.419,
+   "higher_range_established": 0.171,
+   "back_to_previous_range": 0.53,
+   "kept_median_ci": {
+    "next": [
+     0.23,
+     0.143,
+     0.301
+    ],
+    "next3": [
+     0.191,
+     0.104,
+     0.265
+    ],
+    "next5": [
+     0.218,
+     0.144,
+     0.268
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+) | 20+": {
+   "runs": 253,
+   "raced_again_365d": 0.984,
+   "had_3_more_365d": 0.913,
+   "had_5_more_365d": 0.791,
+   "next": {
+    "n": 245,
+    "vs_pre_rating_mean": 0.59,
+    "vs_pre_rating_median": 1.02,
+    "se": 0.31,
+    "share_of_gain_kept_median": 0.15,
+    "vs_exceptional_run": -6.74,
+    "vs_typical_before": 0.04,
+    "vs_repeatable_upper_before": -1.71,
+    "vs_revised_rating": -1.06
+   },
+   "next3": {
+    "n": 233,
+    "vs_pre_rating_mean": 0.29,
+    "vs_pre_rating_median": 0.46,
+    "se": 0.23,
+    "share_of_gain_kept_median": 0.08,
+    "vs_exceptional_run": -7.01,
+    "vs_typical_before": -0.3,
+    "vs_repeatable_upper_before": -2.01
+   },
+   "next5": {
+    "n": 205,
+    "vs_pre_rating_mean": 0.09,
+    "vs_pre_rating_median": 0.07,
+    "se": 0.22,
+    "share_of_gain_kept_median": 0.01,
+    "vs_exceptional_run": -7.23,
+    "vs_typical_before": -0.52,
+    "vs_repeatable_upper_before": -2.24
+   },
+   "repeated_within_1kg_in_next5": 0.254,
+   "higher_range_established": 0.088,
+   "back_to_previous_range": 0.663,
+   "kept_median_ci": {
+    "next": [
+     0.145,
+     0.084,
+     0.24
+    ],
+    "next3": [
+     0.077,
+     -0.042,
+     0.127
+    ],
+    "next5": [
+     0.012,
+     -0.033,
+     0.057
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+) | 6-11": {
+   "runs": 1846,
+   "raced_again_365d": 0.97,
+   "had_3_more_365d": 0.867,
+   "had_5_more_365d": 0.735,
+   "next": {
+    "n": 1792,
+    "vs_pre_rating_mean": 2.09,
+    "vs_pre_rating_median": 2.28,
+    "se": 0.11,
+    "share_of_gain_kept_median": 0.36,
+    "vs_exceptional_run": -4.39,
+    "vs_typical_before": 1.28,
+    "vs_repeatable_upper_before": -0.4,
+    "vs_revised_rating": 0.41
+   },
+   "next3": {
+    "n": 1621,
+    "vs_pre_rating_mean": 2.16,
+    "vs_pre_rating_median": 2.22,
+    "se": 0.09,
+    "share_of_gain_kept_median": 0.35,
+    "vs_exceptional_run": -4.31,
+    "vs_typical_before": 1.35,
+    "vs_repeatable_upper_before": -0.33
+   },
+   "next5": {
+    "n": 1425,
+    "vs_pre_rating_mean": 2.22,
+    "vs_pre_rating_median": 2.23,
+    "se": 0.08,
+    "share_of_gain_kept_median": 0.35,
+    "vs_exceptional_run": -4.24,
+    "vs_typical_before": 1.4,
+    "vs_repeatable_upper_before": -0.26
+   },
+   "repeated_within_1kg_in_next5": 0.596,
+   "higher_range_established": 0.27,
+   "back_to_previous_range": 0.412,
+   "kept_median_ci": {
+    "next": [
+     0.362,
+     0.328,
+     0.392
+    ],
+    "next3": [
+     0.348,
+     0.319,
+     0.378
+    ],
+    "next5": [
+     0.345,
+     0.326,
+     0.376
+    ]
+   }
+  },
+  "progressive (improving, 6+) | 12-15": {
+   "runs": 7855,
+   "raced_again_365d": 0.973,
+   "had_3_more_365d": 0.869,
+   "had_5_more_365d": 0.74,
+   "next": {
+    "n": 7640,
+    "vs_pre_rating_mean": 1.23,
+    "vs_pre_rating_median": 1.59,
+    "se": 0.05,
+    "share_of_gain_kept_median": 0.37,
+    "vs_exceptional_run": -3.32,
+    "vs_typical_before": 1.13,
+    "vs_repeatable_upper_before": -1.2,
+    "vs_revised_rating": 0.2
+   },
+   "next3": {
+    "n": 6952,
+    "vs_pre_rating_mean": 0.96,
+    "vs_pre_rating_median": 1.17,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.27,
+    "vs_exceptional_run": -3.6,
+    "vs_typical_before": 0.85,
+    "vs_repeatable_upper_before": -1.46
+   },
+   "next5": {
+    "n": 6093,
+    "vs_pre_rating_mean": 0.86,
+    "vs_pre_rating_median": 1.02,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.24,
+    "vs_exceptional_run": -3.7,
+    "vs_typical_before": 0.74,
+    "vs_repeatable_upper_before": -1.55
+   },
+   "repeated_within_1kg_in_next5": 0.685,
+   "higher_range_established": 0.153,
+   "back_to_previous_range": 0.483,
+   "kept_median_ci": {
+    "next": [
+     0.37,
+     0.35,
+     0.39
+    ],
+    "next3": [
+     0.273,
+     0.251,
+     0.292
+    ],
+    "next5": [
+     0.235,
+     0.205,
+     0.259
+    ]
+   }
+  },
+  "progressive (improving, 6+) | 16-19": {
+   "runs": 4753,
+   "raced_again_365d": 0.973,
+   "had_3_more_365d": 0.87,
+   "had_5_more_365d": 0.736,
+   "next": {
+    "n": 4621,
+    "vs_pre_rating_mean": 1.02,
+    "vs_pre_rating_median": 1.38,
+    "se": 0.07,
+    "share_of_gain_kept_median": 0.33,
+    "vs_exceptional_run": -3.48,
+    "vs_typical_before": 1.03,
+    "vs_repeatable_upper_before": -1.37,
+    "vs_revised_rating": 0.03
+   },
+   "next3": {
+    "n": 4187,
+    "vs_pre_rating_mean": 0.82,
+    "vs_pre_rating_median": 0.95,
+    "se": 0.05,
+    "share_of_gain_kept_median": 0.23,
+    "vs_exceptional_run": -3.68,
+    "vs_typical_before": 0.83,
+    "vs_repeatable_upper_before": -1.56
+   },
+   "next5": {
+    "n": 3644,
+    "vs_pre_rating_mean": 0.63,
+    "vs_pre_rating_median": 0.81,
+    "se": 0.05,
+    "share_of_gain_kept_median": 0.18,
+    "vs_exceptional_run": -3.84,
+    "vs_typical_before": 0.64,
+    "vs_repeatable_upper_before": -1.73
+   },
+   "repeated_within_1kg_in_next5": 0.666,
+   "higher_range_established": 0.132,
+   "back_to_previous_range": 0.505,
+   "kept_median_ci": {
+    "next": [
+     0.329,
+     0.302,
+     0.361
+    ],
+    "next3": [
+     0.226,
+     0.201,
+     0.25
+    ],
+    "next5": [
+     0.179,
+     0.151,
+     0.207
+    ]
+   }
+  },
+  "progressive (improving, 6+) | 20+": {
+   "runs": 7611,
+   "raced_again_365d": 0.975,
+   "had_3_more_365d": 0.877,
+   "had_5_more_365d": 0.744,
+   "next": {
+    "n": 7412,
+    "vs_pre_rating_mean": 0.68,
+    "vs_pre_rating_median": 0.97,
+    "se": 0.06,
+    "share_of_gain_kept_median": 0.23,
+    "vs_exceptional_run": -3.79,
+    "vs_typical_before": 0.82,
+    "vs_repeatable_upper_before": -1.6,
+    "vs_revised_rating": -0.26
+   },
+   "next3": {
+    "n": 6723,
+    "vs_pre_rating_mean": 0.36,
+    "vs_pre_rating_median": 0.53,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.12,
+    "vs_exceptional_run": -4.1,
+    "vs_typical_before": 0.49,
+    "vs_repeatable_upper_before": -1.91
+   },
+   "next5": {
+    "n": 5805,
+    "vs_pre_rating_mean": 0.17,
+    "vs_pre_rating_median": 0.26,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.07,
+    "vs_exceptional_run": -4.28,
+    "vs_typical_before": 0.29,
+    "vs_repeatable_upper_before": -2.1
+   },
+   "repeated_within_1kg_in_next5": 0.623,
+   "higher_range_established": 0.11,
+   "back_to_previous_range": 0.549,
+   "kept_median_ci": {
+    "next": [
+     0.232,
+     0.207,
+     0.252
+    ],
+    "next3": [
+     0.124,
+     0.105,
+     0.145
+    ],
+    "next5": [
+     0.066,
+     0.038,
+     0.093
+    ]
+   }
+  },
+  "progressive (improving, 6+) | 6-11": {
+   "runs": 21879,
+   "raced_again_365d": 0.97,
+   "had_3_more_365d": 0.861,
+   "had_5_more_365d": 0.724,
+   "next": {
+    "n": 21218,
+    "vs_pre_rating_mean": 1.73,
+    "vs_pre_rating_median": 2.12,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.45,
+    "vs_exceptional_run": -3.07,
+    "vs_typical_before": 1.66,
+    "vs_repeatable_upper_before": -0.74,
+    "vs_revised_rating": 0.56
+   },
+   "next3": {
+    "n": 19199,
+    "vs_pre_rating_mean": 1.7,
+    "vs_pre_rating_median": 1.88,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.41,
+    "vs_exceptional_run": -3.1,
+    "vs_typical_before": 1.62,
+    "vs_repeatable_upper_before": -0.76
+   },
+   "next5": {
+    "n": 16870,
+    "vs_pre_rating_mean": 1.69,
+    "vs_pre_rating_median": 1.75,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.39,
+    "vs_exceptional_run": -3.1,
+    "vs_typical_before": 1.6,
+    "vs_repeatable_upper_before": -0.76
+   },
+   "repeated_within_1kg_in_next5": 0.734,
+   "higher_range_established": 0.239,
+   "back_to_previous_range": 0.389,
+   "kept_median_ci": {
+    "next": [
+     0.453,
+     0.441,
+     0.467
+    ],
+    "next3": [
+     0.411,
+     0.399,
+     0.425
+    ],
+    "next5": [
+     0.388,
+     0.375,
+     0.403
+    ]
+   }
+  },
+  "return to level (6+) | 12-15": {
+   "runs": 12566,
+   "raced_again_365d": 0.966,
+   "had_3_more_365d": 0.853,
+   "had_5_more_365d": 0.717,
+   "next": {
+    "n": 12153,
+    "vs_pre_rating_mean": 1.21,
+    "vs_pre_rating_median": 1.58,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.39,
+    "vs_exceptional_run": -3.05,
+    "vs_typical_before": 0.31,
+    "vs_repeatable_upper_before": -2.04,
+    "vs_revised_rating": 0.13
+   },
+   "next3": {
+    "n": 10869,
+    "vs_pre_rating_mean": 1.18,
+    "vs_pre_rating_median": 1.3,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.32,
+    "vs_exceptional_run": -3.07,
+    "vs_typical_before": 0.29,
+    "vs_repeatable_upper_before": -2.02
+   },
+   "next5": {
+    "n": 9438,
+    "vs_pre_rating_mean": 1.12,
+    "vs_pre_rating_median": 1.15,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.28,
+    "vs_exceptional_run": -3.12,
+    "vs_typical_before": 0.25,
+    "vs_repeatable_upper_before": -2.05
+   },
+   "repeated_within_1kg_in_next5": 0.739,
+   "higher_range_established": 0.12,
+   "back_to_previous_range": 0.551,
+   "kept_median_ci": {
+    "next": [
+     0.388,
+     0.367,
+     0.407
+    ],
+    "next3": [
+     0.322,
+     0.307,
+     0.337
+    ],
+    "next5": [
+     0.283,
+     0.263,
+     0.3
+    ]
+   }
+  },
+  "return to level (6+) | 16-19": {
+   "runs": 8581,
+   "raced_again_365d": 0.968,
+   "had_3_more_365d": 0.853,
+   "had_5_more_365d": 0.719,
+   "next": {
+    "n": 8305,
+    "vs_pre_rating_mean": 0.98,
+    "vs_pre_rating_median": 1.33,
+    "se": 0.05,
+    "share_of_gain_kept_median": 0.33,
+    "vs_exceptional_run": -3.27,
+    "vs_typical_before": 0.15,
+    "vs_repeatable_upper_before": -2.2,
+    "vs_revised_rating": -0.08
+   },
+   "next3": {
+    "n": 7413,
+    "vs_pre_rating_mean": 0.94,
+    "vs_pre_rating_median": 1.04,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.25,
+    "vs_exceptional_run": -3.3,
+    "vs_typical_before": 0.12,
+    "vs_repeatable_upper_before": -2.19
+   },
+   "next5": {
+    "n": 6375,
+    "vs_pre_rating_mean": 0.85,
+    "vs_pre_rating_median": 0.88,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -3.37,
+    "vs_typical_before": 0.04,
+    "vs_repeatable_upper_before": -2.24
+   },
+   "repeated_within_1kg_in_next5": 0.711,
+   "higher_range_established": 0.097,
+   "back_to_previous_range": 0.578,
+   "kept_median_ci": {
+    "next": [
+     0.329,
+     0.304,
+     0.352
+    ],
+    "next3": [
+     0.254,
+     0.23,
+     0.277
+    ],
+    "next5": [
+     0.217,
+     0.194,
+     0.24
+    ]
+   }
+  },
+  "return to level (6+) | 20+": {
+   "runs": 15245,
+   "raced_again_365d": 0.97,
+   "had_3_more_365d": 0.857,
+   "had_5_more_365d": 0.72,
+   "next": {
+    "n": 14771,
+    "vs_pre_rating_mean": 0.69,
+    "vs_pre_rating_median": 0.98,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.24,
+    "vs_exceptional_run": -3.56,
+    "vs_typical_before": 0.08,
+    "vs_repeatable_upper_before": -2.27,
+    "vs_revised_rating": -0.29
+   },
+   "next3": {
+    "n": 13151,
+    "vs_pre_rating_mean": 0.59,
+    "vs_pre_rating_median": 0.72,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.17,
+    "vs_exceptional_run": -3.66,
+    "vs_typical_before": -0.01,
+    "vs_repeatable_upper_before": -2.32
+   },
+   "next5": {
+    "n": 11201,
+    "vs_pre_rating_mean": 0.51,
+    "vs_pre_rating_median": 0.55,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.14,
+    "vs_exceptional_run": -3.75,
+    "vs_typical_before": -0.1,
+    "vs_repeatable_upper_before": -2.38
+   },
+   "repeated_within_1kg_in_next5": 0.669,
+   "higher_range_established": 0.088,
+   "back_to_previous_range": 0.605,
+   "kept_median_ci": {
+    "next": [
+     0.242,
+     0.224,
+     0.261
+    ],
+    "next3": [
+     0.172,
+     0.158,
+     0.19
+    ],
+    "next5": [
+     0.135,
+     0.118,
+     0.151
+    ]
+   }
+  },
+  "return to level (6+) | 6-11": {
+   "runs": 27984,
+   "raced_again_365d": 0.963,
+   "had_3_more_365d": 0.841,
+   "had_5_more_365d": 0.7,
+   "next": {
+    "n": 26983,
+    "vs_pre_rating_mean": 1.52,
+    "vs_pre_rating_median": 1.9,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.47,
+    "vs_exceptional_run": -2.76,
+    "vs_typical_before": 0.5,
+    "vs_repeatable_upper_before": -1.95,
+    "vs_revised_rating": 0.37
+   },
+   "next3": {
+    "n": 24020,
+    "vs_pre_rating_mean": 1.63,
+    "vs_pre_rating_median": 1.74,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.43,
+    "vs_exceptional_run": -2.65,
+    "vs_typical_before": 0.62,
+    "vs_repeatable_upper_before": -1.79
+   },
+   "next5": {
+    "n": 20843,
+    "vs_pre_rating_mean": 1.69,
+    "vs_pre_rating_median": 1.73,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.42,
+    "vs_exceptional_run": -2.58,
+    "vs_typical_before": 0.69,
+    "vs_repeatable_upper_before": -1.68
+   },
+   "repeated_within_1kg_in_next5": 0.784,
+   "higher_range_established": 0.157,
+   "back_to_previous_range": 0.493,
+   "kept_median_ci": {
+    "next": [
+     0.467,
+     0.452,
+     0.478
+    ],
+    "next3": [
+     0.43,
+     0.415,
+     0.441
+    ],
+    "next5": [
+     0.421,
+     0.407,
+     0.436
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | 12-15": {
+   "runs": 631,
+   "raced_again_365d": 0.981,
+   "had_3_more_365d": 0.875,
+   "had_5_more_365d": 0.753,
+   "next": {
+    "n": 618,
+    "vs_pre_rating_mean": 2.33,
+    "vs_pre_rating_median": 2.38,
+    "se": 0.2,
+    "share_of_gain_kept_median": 0.28,
+    "vs_exceptional_run": -6.86,
+    "vs_typical_before": 1.39,
+    "vs_repeatable_upper_before": -0.33,
+    "vs_revised_rating": 0.03
+   },
+   "next3": {
+    "n": 558,
+    "vs_pre_rating_mean": 1.99,
+    "vs_pre_rating_median": 1.96,
+    "se": 0.16,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -7.16,
+    "vs_typical_before": 1.04,
+    "vs_repeatable_upper_before": -0.68
+   },
+   "next5": {
+    "n": 495,
+    "vs_pre_rating_mean": 1.89,
+    "vs_pre_rating_median": 1.82,
+    "se": 0.16,
+    "share_of_gain_kept_median": 0.21,
+    "vs_exceptional_run": -7.2,
+    "vs_typical_before": 0.94,
+    "vs_repeatable_upper_before": -0.79
+   },
+   "repeated_within_1kg_in_next5": 0.281,
+   "higher_range_established": 0.224,
+   "back_to_previous_range": 0.483,
+   "kept_median_ci": {
+    "next": [
+     0.279,
+     0.237,
+     0.321
+    ],
+    "next3": [
+     0.215,
+     0.183,
+     0.256
+    ],
+    "next5": [
+     0.213,
+     0.164,
+     0.253
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | 16-19": {
+   "runs": 298,
+   "raced_again_365d": 0.99,
+   "had_3_more_365d": 0.909,
+   "had_5_more_365d": 0.775,
+   "next": {
+    "n": 295,
+    "vs_pre_rating_mean": 2.25,
+    "vs_pre_rating_median": 2.38,
+    "se": 0.29,
+    "share_of_gain_kept_median": 0.26,
+    "vs_exceptional_run": -7.43,
+    "vs_typical_before": 1.36,
+    "vs_repeatable_upper_before": -0.31,
+    "vs_revised_rating": -0.08
+   },
+   "next3": {
+    "n": 273,
+    "vs_pre_rating_mean": 2.15,
+    "vs_pre_rating_median": 1.97,
+    "se": 0.23,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -7.57,
+    "vs_typical_before": 1.25,
+    "vs_repeatable_upper_before": -0.41
+   },
+   "next5": {
+    "n": 240,
+    "vs_pre_rating_mean": 1.9,
+    "vs_pre_rating_median": 1.85,
+    "se": 0.21,
+    "share_of_gain_kept_median": 0.19,
+    "vs_exceptional_run": -7.88,
+    "vs_typical_before": 1.01,
+    "vs_repeatable_upper_before": -0.64
+   },
+   "repeated_within_1kg_in_next5": 0.275,
+   "higher_range_established": 0.208,
+   "back_to_previous_range": 0.508,
+   "kept_median_ci": {
+    "next": [
+     0.26,
+     0.2,
+     0.307
+    ],
+    "next3": [
+     0.218,
+     0.172,
+     0.268
+    ],
+    "next5": [
+     0.189,
+     0.136,
+     0.229
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | 20+": {
+   "runs": 351,
+   "raced_again_365d": 0.983,
+   "had_3_more_365d": 0.883,
+   "had_5_more_365d": 0.741,
+   "next": {
+    "n": 345,
+    "vs_pre_rating_mean": 1.77,
+    "vs_pre_rating_median": 1.8,
+    "se": 0.26,
+    "share_of_gain_kept_median": 0.19,
+    "vs_exceptional_run": -8.31,
+    "vs_typical_before": 1.15,
+    "vs_repeatable_upper_before": -0.66,
+    "vs_revised_rating": -0.5
+   },
+   "next3": {
+    "n": 313,
+    "vs_pre_rating_mean": 0.99,
+    "vs_pre_rating_median": 1.07,
+    "se": 0.22,
+    "share_of_gain_kept_median": 0.13,
+    "vs_exceptional_run": -9.05,
+    "vs_typical_before": 0.36,
+    "vs_repeatable_upper_before": -1.4
+   },
+   "next5": {
+    "n": 272,
+    "vs_pre_rating_mean": 0.71,
+    "vs_pre_rating_median": 0.8,
+    "se": 0.21,
+    "share_of_gain_kept_median": 0.09,
+    "vs_exceptional_run": -9.3,
+    "vs_typical_before": 0.06,
+    "vs_repeatable_upper_before": -1.68
+   },
+   "repeated_within_1kg_in_next5": 0.147,
+   "higher_range_established": 0.14,
+   "back_to_previous_range": 0.57,
+   "kept_median_ci": {
+    "next": [
+     0.194,
+     0.141,
+     0.266
+    ],
+    "next3": [
+     0.125,
+     0.061,
+     0.162
+    ],
+    "next5": [
+     0.085,
+     0.037,
+     0.116
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | 6-11": {
+   "runs": 2893,
+   "raced_again_365d": 0.98,
+   "had_3_more_365d": 0.87,
+   "had_5_more_365d": 0.732,
+   "next": {
+    "n": 2840,
+    "vs_pre_rating_mean": 2.95,
+    "vs_pre_rating_median": 3.25,
+    "se": 0.1,
+    "share_of_gain_kept_median": 0.37,
+    "vs_exceptional_run": -5.94,
+    "vs_typical_before": 2.06,
+    "vs_repeatable_upper_before": 0.39,
+    "vs_revised_rating": 0.59
+   },
+   "next3": {
+    "n": 2576,
+    "vs_pre_rating_mean": 2.92,
+    "vs_pre_rating_median": 2.88,
+    "se": 0.08,
+    "share_of_gain_kept_median": 0.35,
+    "vs_exceptional_run": -5.92,
+    "vs_typical_before": 2.05,
+    "vs_repeatable_upper_before": 0.38
+   },
+   "next5": {
+    "n": 2263,
+    "vs_pre_rating_mean": 2.82,
+    "vs_pre_rating_median": 2.72,
+    "se": 0.07,
+    "share_of_gain_kept_median": 0.32,
+    "vs_exceptional_run": -5.96,
+    "vs_typical_before": 1.94,
+    "vs_repeatable_upper_before": 0.3
+   },
+   "repeated_within_1kg_in_next5": 0.433,
+   "higher_range_established": 0.342,
+   "back_to_previous_range": 0.357,
+   "kept_median_ci": {
+    "next": [
+     0.375,
+     0.351,
+     0.393
+    ],
+    "next3": [
+     0.345,
+     0.328,
+     0.363
+    ],
+    "next5": [
+     0.32,
+     0.305,
+     0.347
+    ]
+   }
+  }
+ },
+ "history_completeness": {
+  "emerging (1-5 starts) | career began before our data": {
+   "runs": 33466,
+   "raced_again_365d": 0.958,
+   "had_3_more_365d": 0.819,
+   "had_5_more_365d": 0.663,
+   "next": {
+    "n": 32168,
+    "vs_pre_rating_mean": 2.27,
+    "vs_pre_rating_median": 2.57,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.54,
+    "vs_exceptional_run": -2.84,
+    "vs_typical_before": 1.4,
+    "vs_repeatable_upper_before": 0.36,
+    "vs_revised_rating": 0.64
+   },
+   "next3": {
+    "n": 28335,
+    "vs_pre_rating_mean": 2.37,
+    "vs_pre_rating_median": 2.42,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.5,
+    "vs_exceptional_run": -2.75,
+    "vs_typical_before": 1.43,
+    "vs_repeatable_upper_before": 0.4
+   },
+   "next5": {
+    "n": 24595,
+    "vs_pre_rating_mean": 2.45,
+    "vs_pre_rating_median": 2.42,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.5,
+    "vs_exceptional_run": -2.65,
+    "vs_typical_before": 1.48,
+    "vs_repeatable_upper_before": 0.45
+   },
+   "repeated_within_1kg_in_next5": 0.768,
+   "higher_range_established": 0.365,
+   "back_to_previous_range": 0.41,
+   "kept_median_ci": {
+    "next": [
+     0.535,
+     0.523,
+     0.544
+    ],
+    "next3": [
+     0.502,
+     0.492,
+     0.512
+    ],
+    "next5": [
+     0.503,
+     0.49,
+     0.518
+    ]
+   }
+  },
+  "emerging (1-5 starts) | complete history": {
+   "runs": 39264,
+   "raced_again_365d": 0.965,
+   "had_3_more_365d": 0.839,
+   "had_5_more_365d": 0.673,
+   "next": {
+    "n": 37986,
+    "vs_pre_rating_mean": 3.15,
+    "vs_pre_rating_median": 3.48,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.66,
+    "vs_exceptional_run": -2.29,
+    "vs_typical_before": 2.3,
+    "vs_repeatable_upper_before": 1.26,
+    "vs_revised_rating": 1.3
+   },
+   "next3": {
+    "n": 34024,
+    "vs_pre_rating_mean": 3.4,
+    "vs_pre_rating_median": 3.48,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.67,
+    "vs_exceptional_run": -2.04,
+    "vs_typical_before": 2.5,
+    "vs_repeatable_upper_before": 1.48
+   },
+   "next5": {
+    "n": 29369,
+    "vs_pre_rating_mean": 3.64,
+    "vs_pre_rating_median": 3.68,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.71,
+    "vs_exceptional_run": -1.78,
+    "vs_typical_before": 2.69,
+    "vs_repeatable_upper_before": 1.67
+   },
+   "repeated_within_1kg_in_next5": 0.822,
+   "higher_range_established": 0.5,
+   "back_to_previous_range": 0.298,
+   "kept_median_ci": {
+    "next": [
+     0.665,
+     0.657,
+     0.675
+    ],
+    "next3": [
+     0.671,
+     0.661,
+     0.681
+    ],
+    "next5": [
+     0.706,
+     0.695,
+     0.718
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+) | career began before our data": {
+   "runs": 1601,
+   "raced_again_365d": 0.976,
+   "had_3_more_365d": 0.877,
+   "had_5_more_365d": 0.768,
+   "next": {
+    "n": 1560,
+    "vs_pre_rating_mean": 1.43,
+    "vs_pre_rating_median": 1.59,
+    "se": 0.12,
+    "share_of_gain_kept_median": 0.26,
+    "vs_exceptional_run": -5.24,
+    "vs_typical_before": 0.71,
+    "vs_repeatable_upper_before": -0.94,
+    "vs_revised_rating": -0.24
+   },
+   "next3": {
+    "n": 1423,
+    "vs_pre_rating_mean": 1.38,
+    "vs_pre_rating_median": 1.48,
+    "se": 0.09,
+    "share_of_gain_kept_median": 0.23,
+    "vs_exceptional_run": -5.28,
+    "vs_typical_before": 0.68,
+    "vs_repeatable_upper_before": -0.97
+   },
+   "next5": {
+    "n": 1285,
+    "vs_pre_rating_mean": 1.36,
+    "vs_pre_rating_median": 1.37,
+    "se": 0.09,
+    "share_of_gain_kept_median": 0.21,
+    "vs_exceptional_run": -5.31,
+    "vs_typical_before": 0.67,
+    "vs_repeatable_upper_before": -0.99
+   },
+   "repeated_within_1kg_in_next5": 0.46,
+   "higher_range_established": 0.184,
+   "back_to_previous_range": 0.509,
+   "kept_median_ci": {
+    "next": [
+     0.256,
+     0.225,
+     0.292
+    ],
+    "next3": [
+     0.227,
+     0.195,
+     0.253
+    ],
+    "next5": [
+     0.206,
+     0.182,
+     0.235
+    ]
+   }
+  },
+  "other (2-3 kg above best, 6+) | complete history": {
+   "runs": 1257,
+   "raced_again_365d": 0.97,
+   "had_3_more_365d": 0.871,
+   "had_5_more_365d": 0.73,
+   "next": {
+    "n": 1218,
+    "vs_pre_rating_mean": 2.41,
+    "vs_pre_rating_median": 2.76,
+    "se": 0.14,
+    "share_of_gain_kept_median": 0.41,
+    "vs_exceptional_run": -4.35,
+    "vs_typical_before": 1.47,
+    "vs_repeatable_upper_before": -0.17,
+    "vs_revised_rating": 0.67
+   },
+   "next3": {
+    "n": 1106,
+    "vs_pre_rating_mean": 2.46,
+    "vs_pre_rating_median": 2.57,
+    "se": 0.11,
+    "share_of_gain_kept_median": 0.38,
+    "vs_exceptional_run": -4.29,
+    "vs_typical_before": 1.53,
+    "vs_repeatable_upper_before": -0.12
+   },
+   "next5": {
+    "n": 950,
+    "vs_pre_rating_mean": 2.53,
+    "vs_pre_rating_median": 2.58,
+    "se": 0.11,
+    "share_of_gain_kept_median": 0.41,
+    "vs_exceptional_run": -4.19,
+    "vs_typical_before": 1.55,
+    "vs_repeatable_upper_before": -0.06
+   },
+   "repeated_within_1kg_in_next5": 0.599,
+   "higher_range_established": 0.301,
+   "back_to_previous_range": 0.396,
+   "kept_median_ci": {
+    "next": [
+     0.409,
+     0.379,
+     0.441
+    ],
+    "next3": [
+     0.381,
+     0.348,
+     0.424
+    ],
+    "next5": [
+     0.406,
+     0.367,
+     0.443
+    ]
+   }
+  },
+  "progressive (improving, 6+) | career began before our data": {
+   "runs": 24100,
+   "raced_again_365d": 0.972,
+   "had_3_more_365d": 0.865,
+   "had_5_more_365d": 0.739,
+   "next": {
+    "n": 23409,
+    "vs_pre_rating_mean": 1.0,
+    "vs_pre_rating_median": 1.37,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.32,
+    "vs_exceptional_run": -3.55,
+    "vs_typical_before": 1.04,
+    "vs_repeatable_upper_before": -1.37,
+    "vs_revised_rating": -0.04
+   },
+   "next3": {
+    "n": 21239,
+    "vs_pre_rating_mean": 0.78,
+    "vs_pre_rating_median": 0.98,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -3.77,
+    "vs_typical_before": 0.81,
+    "vs_repeatable_upper_before": -1.59
+   },
+   "next5": {
+    "n": 18810,
+    "vs_pre_rating_mean": 0.64,
+    "vs_pre_rating_median": 0.77,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.18,
+    "vs_exceptional_run": -3.9,
+    "vs_typical_before": 0.67,
+    "vs_repeatable_upper_before": -1.71
+   },
+   "repeated_within_1kg_in_next5": 0.663,
+   "higher_range_established": 0.145,
+   "back_to_previous_range": 0.496,
+   "kept_median_ci": {
+    "next": [
+     0.316,
+     0.304,
+     0.329
+    ],
+    "next3": [
+     0.221,
+     0.208,
+     0.232
+    ],
+    "next5": [
+     0.177,
+     0.167,
+     0.192
+    ]
+   }
+  },
+  "progressive (improving, 6+) | complete history": {
+   "runs": 17998,
+   "raced_again_365d": 0.971,
+   "had_3_more_365d": 0.869,
+   "had_5_more_365d": 0.723,
+   "next": {
+    "n": 17482,
+    "vs_pre_rating_mean": 1.86,
+    "vs_pre_rating_median": 2.2,
+    "se": 0.04,
+    "share_of_gain_kept_median": 0.47,
+    "vs_exceptional_run": -2.95,
+    "vs_typical_before": 1.73,
+    "vs_repeatable_upper_before": -0.62,
+    "vs_revised_rating": 0.72
+   },
+   "next3": {
+    "n": 15822,
+    "vs_pre_rating_mean": 1.81,
+    "vs_pre_rating_median": 1.96,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.43,
+    "vs_exceptional_run": -3.0,
+    "vs_typical_before": 1.67,
+    "vs_repeatable_upper_before": -0.66
+   },
+   "next5": {
+    "n": 13602,
+    "vs_pre_rating_mean": 1.84,
+    "vs_pre_rating_median": 1.89,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.41,
+    "vs_exceptional_run": -2.97,
+    "vs_typical_before": 1.69,
+    "vs_repeatable_upper_before": -0.63
+   },
+   "repeated_within_1kg_in_next5": 0.744,
+   "higher_range_established": 0.246,
+   "back_to_previous_range": 0.383,
+   "kept_median_ci": {
+    "next": [
+     0.474,
+     0.458,
+     0.491
+    ],
+    "next3": [
+     0.428,
+     0.412,
+     0.441
+    ],
+    "next5": [
+     0.408,
+     0.398,
+     0.419
+    ]
+   }
+  },
+  "return to level (6+) | career began before our data": {
+   "runs": 42354,
+   "raced_again_365d": 0.965,
+   "had_3_more_365d": 0.847,
+   "had_5_more_365d": 0.713,
+   "next": {
+    "n": 40902,
+    "vs_pre_rating_mean": 1.01,
+    "vs_pre_rating_median": 1.36,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.33,
+    "vs_exceptional_run": -3.25,
+    "vs_typical_before": 0.2,
+    "vs_repeatable_upper_before": -2.23,
+    "vs_revised_rating": -0.07
+   },
+   "next3": {
+    "n": 36464,
+    "vs_pre_rating_mean": 0.96,
+    "vs_pre_rating_median": 1.06,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.26,
+    "vs_exceptional_run": -3.29,
+    "vs_typical_before": 0.16,
+    "vs_repeatable_upper_before": -2.21
+   },
+   "next5": {
+    "n": 31749,
+    "vs_pre_rating_mean": 0.91,
+    "vs_pre_rating_median": 0.93,
+    "se": 0.02,
+    "share_of_gain_kept_median": 0.23,
+    "vs_exceptional_run": -3.34,
+    "vs_typical_before": 0.11,
+    "vs_repeatable_upper_before": -2.23
+   },
+   "repeated_within_1kg_in_next5": 0.715,
+   "higher_range_established": 0.104,
+   "back_to_previous_range": 0.571,
+   "kept_median_ci": {
+    "next": [
+     0.333,
+     0.322,
+     0.345
+    ],
+    "next3": [
+     0.262,
+     0.252,
+     0.273
+    ],
+    "next5": [
+     0.23,
+     0.22,
+     0.24
+    ]
+   }
+  },
+  "return to level (6+) | complete history": {
+   "runs": 22022,
+   "raced_again_365d": 0.968,
+   "had_3_more_365d": 0.853,
+   "had_5_more_365d": 0.706,
+   "next": {
+    "n": 21310,
+    "vs_pre_rating_mean": 1.55,
+    "vs_pre_rating_median": 1.88,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.46,
+    "vs_exceptional_run": -2.73,
+    "vs_typical_before": 0.55,
+    "vs_repeatable_upper_before": -1.78,
+    "vs_revised_rating": 0.44
+   },
+   "next3": {
+    "n": 18989,
+    "vs_pre_rating_mean": 1.66,
+    "vs_pre_rating_median": 1.75,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.43,
+    "vs_exceptional_run": -2.61,
+    "vs_typical_before": 0.67,
+    "vs_repeatable_upper_before": -1.63
+   },
+   "next5": {
+    "n": 16108,
+    "vs_pre_rating_mean": 1.75,
+    "vs_pre_rating_median": 1.77,
+    "se": 0.03,
+    "share_of_gain_kept_median": 0.43,
+    "vs_exceptional_run": -2.53,
+    "vs_typical_before": 0.76,
+    "vs_repeatable_upper_before": -1.52
+   },
+   "repeated_within_1kg_in_next5": 0.784,
+   "higher_range_established": 0.169,
+   "back_to_previous_range": 0.485,
+   "kept_median_ci": {
+    "next": [
+     0.463,
+     0.445,
+     0.478
+    ],
+    "next3": [
+     0.428,
+     0.414,
+     0.446
+    ],
+    "next5": [
+     0.433,
+     0.416,
+     0.45
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | career began before our data": {
+   "runs": 2179,
+   "raced_again_365d": 0.981,
+   "had_3_more_365d": 0.876,
+   "had_5_more_365d": 0.756,
+   "next": {
+    "n": 2140,
+    "vs_pre_rating_mean": 2.18,
+    "vs_pre_rating_median": 2.31,
+    "se": 0.11,
+    "share_of_gain_kept_median": 0.27,
+    "vs_exceptional_run": -6.9,
+    "vs_typical_before": 1.38,
+    "vs_repeatable_upper_before": -0.35,
+    "vs_revised_rating": -0.12
+   },
+   "next3": {
+    "n": 1955,
+    "vs_pre_rating_mean": 1.93,
+    "vs_pre_rating_median": 1.89,
+    "se": 0.08,
+    "share_of_gain_kept_median": 0.22,
+    "vs_exceptional_run": -7.11,
+    "vs_typical_before": 1.14,
+    "vs_repeatable_upper_before": -0.58
+   },
+   "next5": {
+    "n": 1759,
+    "vs_pre_rating_mean": 1.76,
+    "vs_pre_rating_median": 1.67,
+    "se": 0.08,
+    "share_of_gain_kept_median": 0.18,
+    "vs_exceptional_run": -7.24,
+    "vs_typical_before": 0.98,
+    "vs_repeatable_upper_before": -0.72
+   },
+   "repeated_within_1kg_in_next5": 0.311,
+   "higher_range_established": 0.233,
+   "back_to_previous_range": 0.476,
+   "kept_median_ci": {
+    "next": [
+     0.269,
+     0.241,
+     0.292
+    ],
+    "next3": [
+     0.221,
+     0.201,
+     0.238
+    ],
+    "next5": [
+     0.185,
+     0.159,
+     0.204
+    ]
+   }
+  },
+  "unprecedented isolated (6+) | complete history": {
+   "runs": 1994,
+   "raced_again_365d": 0.98,
+   "had_3_more_365d": 0.873,
+   "had_5_more_365d": 0.72,
+   "next": {
+    "n": 1958,
+    "vs_pre_rating_mean": 3.29,
+    "vs_pre_rating_median": 3.53,
+    "se": 0.12,
+    "share_of_gain_kept_median": 0.41,
+    "vs_exceptional_run": -5.81,
+    "vs_typical_before": 2.33,
+    "vs_repeatable_upper_before": 0.68,
+    "vs_revised_rating": 0.9
+   },
+   "next3": {
+    "n": 1765,
+    "vs_pre_rating_mean": 3.26,
+    "vs_pre_rating_median": 3.28,
+    "se": 0.1,
+    "share_of_gain_kept_median": 0.38,
+    "vs_exceptional_run": -5.81,
+    "vs_typical_before": 2.31,
+    "vs_repeatable_upper_before": 0.67
+   },
+   "next5": {
+    "n": 1511,
+    "vs_pre_rating_mean": 3.22,
+    "vs_pre_rating_median": 3.09,
+    "se": 0.09,
+    "share_of_gain_kept_median": 0.36,
+    "vs_exceptional_run": -5.78,
+    "vs_typical_before": 2.25,
+    "vs_repeatable_upper_before": 0.63
+   },
+   "repeated_within_1kg_in_next5": 0.449,
+   "higher_range_established": 0.373,
+   "back_to_previous_range": 0.321,
+   "kept_median_ci": {
+    "next": [
+     0.407,
+     0.376,
+     0.435
+    ],
+    "next3": [
+     0.379,
+     0.355,
+     0.398
+    ],
+    "next5": [
+     0.36,
+     0.339,
+     0.381
+    ]
+   }
+  }
+ },
+ "selection_by_returning": {
+  "emerging (1-5 starts)": {
+   "went_on_to_5_more": [
+    53858,
+    0.647
+   ],
+   "did_not": [
+    16296,
+    0.445
+   ],
+   "gain_kg_mean (5 more / not)": [
+    5.28,
+    5.35
+   ]
+  },
+  "other (2-3 kg above best, 6+)": {
+   "went_on_to_5_more": [
+    2229,
+    0.342
+   ],
+   "did_not": [
+    549,
+    0.211
+   ],
+   "gain_kg_mean (5 more / not)": [
+    6.69,
+    6.8
+   ]
+  },
+  "progressive (improving, 6+)": {
+   "went_on_to_5_more": [
+    32337,
+    0.419
+   ],
+   "did_not": [
+    8554,
+    0.242
+   ],
+   "gain_kg_mean (5 more / not)": [
+    4.65,
+    4.68
+   ]
+  },
+  "return to level (6+)": {
+   "went_on_to_5_more": [
+    47772,
+    0.432
+   ],
+   "did_not": [
+    14440,
+    0.175
+   ],
+   "gain_kg_mean (5 more / not)": [
+    4.25,
+    4.31
+   ]
+  },
+  "unprecedented isolated (6+)": {
+   "went_on_to_5_more": [
+    3267,
+    0.346
+   ],
+   "did_not": [
+    831,
+    0.258
+   ],
+   "gain_kg_mean (5 more / not)": [
+    9.0,
+    9.46
+   ]
+  }
+ }
+}

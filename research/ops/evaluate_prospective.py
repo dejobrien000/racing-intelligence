@@ -33,6 +33,8 @@ PV = pd.read_csv('prospective/shadow/prev_engines/INDEX.csv') if os.path.exists(
 V4 = pd.read_csv('prospective/shadow/v2_4_candidate/INDEX.csv') if os.path.exists('prospective/shadow/v2_4_candidate/INDEX.csv') else None   # Engine v2.4 candidate shadow (from 27 Nov 2026)
 UR = pd.read_csv('prospective/shadow/update_rule/INDEX.csv') if os.path.exists('prospective/shadow/update_rule/INDEX.csv') else None   # rating update rule candidate shadow (Batch 16 B9, from 28 Nov 2026)
 CO = pd.read_csv('prospective/shadow/cap_only/INDEX.csv') if os.path.exists('prospective/shadow/cap_only/INDEX.csv') else None   # cap-only comparator shadow (Batch 16 B9)
+NSX = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Batch 19 national shadows (own clocks)
+       for d, lbl in [('age_aware', 'Age-aware update rule (not live)'), ('trainer_debut', 'Trainer debut record (not live)')]}
 QCS = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Qld common framework shadows (Batch 17 B2, from 28 Nov 2026)
        for d, lbl in [('qld_common', 'Qld common framework (not live)'), ('qld_common_update', 'Qld common framework + update rule (not live)')]}
 out = []
@@ -57,6 +59,13 @@ for m in DJ['meetings']:
             if len(su): urf = su.sort_values('scored_utc').file.iloc[-1]; ur = pd.read_csv(urf)
     except Exception as ex: print('WARNING update-rule shadow unreadable for', m['name'], str(ex)[:100]); ur = None
     qcs = {}
+    nsx = {}
+    for lbl, NI in NSX.items():
+        try:
+            if NI is not None and m.get('model_family') != 'QLD':
+                sn = NI[(NI.date.astype(str) == Y) & (NI.track == m['name']) & NI.file.str.contains('/v2_') & NI.file.str.endswith('_runners.csv')]
+                if len(sn): f_ = sn.sort_values('scored_utc').file.iloc[-1]; nsx[lbl] = (f_, pd.read_csv(f_))
+        except Exception as ex: print('WARNING', lbl, 'unreadable for', m['name'], str(ex)[:100])
     for lbl, QI in QCS.items():
         try:
             if QI is not None and m.get('model_family') == 'QLD':
@@ -94,7 +103,7 @@ for m in DJ['meetings']:
             g = ur[ur.race_no == r['no']]
             x = row(m, r, 'shadow', 'Update-rule candidate (not live)', urf, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)
-        for lbl, (f_, q_) in qcs.items():
+        for lbl, (f_, q_) in list(qcs.items()) + list(nsx.items()):
             g = q_[q_.race_no == r['no']]
             x = row(m, r, 'shadow', lbl, f_, dict(zip(g.saddlecloth.astype(int), g.v2_chance_pct.astype(float))), fin)
             if x: out.append(x)

@@ -1,0 +1,68 @@
+{
+ "uniform_1.3x": {
+  "2024 | non-maiden": {
+   "mse": 23.524,
+   "rating_spread_within_race_kg": 2.492,
+   "runs": 87058
+  },
+  "2024 | maiden": {
+   "mse": 31.425,
+   "rating_spread_within_race_kg": 3.126,
+   "runs": 33238
+  },
+  "2025-26 | non-maiden": {
+   "mse": 24.274,
+   "rating_spread_within_race_kg": 2.679,
+   "runs": 161468
+  },
+  "2025-26 | maiden": {
+   "mse": 30.748,
+   "rating_spread_within_race_kg": 3.211,
+   "runs": 59304
+  }
+ },
+ "taper_age_floor (1.8x)": {
+  "2024 | non-maiden": {
+   "mse": 22.729,
+   "rating_spread_within_race_kg": 2.518,
+   "runs": 87058
+  },
+  "2024 | maiden": {
+   "mse": 31.062,
+   "rating_spread_within_race_kg": 3.356,
+   "runs": 33238
+  },
+  "2025-26 | non-maiden": {
+   "mse": 22.556,
+   "rating_spread_within_race_kg": 2.508,
+   "runs": 161468
+  },
+  "2025-26 | maiden": {
+   "mse": 30.336,
+   "rating_spread_within_race_kg": 3.386,
+   "runs": 59304
+  }
+ },
+ "age_aware_1.3 (shadow)": {
+  "2024 | non-maiden": {
+   "mse": 23.16,
+   "rating_spread_within_race_kg": 2.381,
+   "runs": 87058
+  },
+  "2024 | maiden": {
+   "mse": 31.377,
+   "rating_spread_within_race_kg": 3.107,
+   "runs": 33238
+  },
+  "2025-26 | non-maiden": {
+   "mse": 23.465,
+   "rating_spread_within_race_kg": 2.499,
+   "runs": 161468
+  },
+  "2025-26 | maiden": {
+   "mse": 30.753,
+   "rating_spread_within_race_kg": 3.224,
+   "runs": 59304
+  }
+ }
+}
