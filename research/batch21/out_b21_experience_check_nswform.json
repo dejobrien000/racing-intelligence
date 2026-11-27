@@ -1,0 +1,26 @@
+{
+ "complete": {
+  "runs": 84378,
+  "horses": 5597,
+  "observed_minus_nsw_median": 0.0,
+  "used_minus_nsw_median": 0.0,
+  "used_over_by_5plus": 0.001,
+  "used_under_by_5plus": 0.028
+ },
+ "late_maiden": {
+  "runs": 1562,
+  "horses": 123,
+  "observed_minus_nsw_median": 0.0,
+  "used_minus_nsw_median": 0.0,
+  "used_over_by_5plus": 0.011,
+  "used_under_by_5plus": 0.017
+ },
+ "probably incomplete (typical starts added)": {
+  "runs": 2842,
+  "horses": 103,
+  "observed_minus_nsw_median": -1.0,
+  "used_minus_nsw_median": 2.0,
+  "used_over_by_5plus": 0.336,
+  "used_under_by_5plus": 0.059
+ }
+}

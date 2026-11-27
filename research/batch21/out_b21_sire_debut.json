@@ -1,0 +1,178 @@
+{
+ "debuts_fit": 13637,
+ "debuts_judged": 13082,
+ "base": "dyn_nat_inn ~ t_surp + two + female + maiden + C(dband) + fsz + C(tier) + field_strength",
+ "1 initial expected performance": {
+  "sire": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.383,
+   "ci95": [
+    0.247,
+    0.532
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  },
+  "trainer": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.29,
+   "ci95": [
+    0.195,
+    0.39
+   ],
+   "coef": {
+    "debut_rec": 0.398
+   }
+  },
+  "sire + trainer": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.628,
+   "ci95": [
+    0.459,
+    0.785
+   ],
+   "coef": {
+    "sire_sig": 0.626,
+    "debut_rec": 0.351
+   }
+  },
+  "maternal siblings": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.151,
+   "ci95": [
+    0.06,
+    0.248
+   ],
+   "coef": {
+    "mat_sig": 0.293
+   }
+  },
+  "damsire": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.065,
+   "ci95": [
+    0.03,
+    0.101
+   ],
+   "coef": {
+    "ds_sig": 0.237
+   }
+  },
+  "all family": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.524,
+   "ci95": [
+    0.367,
+    0.691
+   ],
+   "coef": {
+    "mat_sig": 0.231,
+    "full_sig": 0.228,
+    "ds_sig": 0.175,
+    "sire_sig": 0.636
+   }
+  },
+  "all family + trainer": {
+   "debuts_judged": 13082,
+   "error_reduction_kg2": 0.755,
+   "ci95": [
+    0.555,
+    0.953
+   ],
+   "coef": {
+    "mat_sig": 0.229,
+    "full_sig": 0.215,
+    "ds_sig": 0.172,
+    "sire_sig": 0.605,
+    "debut_rec": 0.344
+   }
+  }
+ },
+ "2 debut miss (squared, kg^2) by sire record depth": {
+  "0-9 earlier debutants": {
+   "debuts": 906,
+   "mean_sq_miss": 60.83
+  },
+  "10-49": {
+   "debuts": 3090,
+   "mean_sq_miss": 46.59
+  },
+  "200+": {
+   "debuts": 1646,
+   "mean_sq_miss": 35.58
+  },
+  "50-199": {
+   "debuts": 7440,
+   "mean_sq_miss": 45.2
+  }
+ },
+ "4 sire term by group": {
+  "two=0.0": {
+   "debuts_judged": 8861,
+   "error_reduction_kg2": 0.5,
+   "ci95": [
+    0.326,
+    0.665
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  },
+  "two=1.0": {
+   "debuts_judged": 4221,
+   "error_reduction_kg2": 0.137,
+   "ci95": [
+    -0.104,
+    0.359
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  },
+  "dband=(0, 1100]": {
+   "debuts_judged": 6663,
+   "error_reduction_kg2": 0.3,
+   "ci95": [
+    0.104,
+    0.497
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  },
+  "dband=(1100, 1300]": {
+   "debuts_judged": 4726,
+   "error_reduction_kg2": 0.452,
+   "ci95": [
+    0.229,
+    0.691
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  },
+  "dband=(1300, 1600]": {
+   "debuts_judged": 1588,
+   "error_reduction_kg2": 0.491,
+   "ci95": [
+    0.089,
+    0.853
+   ],
+   "coef": {
+    "sire_sig": 0.658
+   }
+  }
+ },
+ "5 sanity: first held run, not a debut": {
+  "runs": 29944,
+  "sire_coef": [
+   1.384,
+   1.18,
+   1.588
+  ]
+ },
+ "5 for comparison: genuine debuts": {
+  "coef": 1.074
+ }
+}

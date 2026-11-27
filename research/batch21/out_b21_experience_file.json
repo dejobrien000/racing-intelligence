@@ -1,0 +1,27 @@
+{
+ "betfair_rows_dropped_as_scratched": 192,
+ "runs_by_source": {
+  "complete": 593727,
+  "probable_incomplete": 74728,
+  "late_maiden": 13975
+ },
+ "typical_starts_by_age_table": {
+  "2": 1.0,
+  "3": 3.0,
+  "4": 9.0,
+  "5": 15.0,
+  "6": 21.0,
+  "7": 25.0,
+  "8": 25.0,
+  "9": 25.0,
+  "10": 25.0,
+  "11": 25.0,
+  "12": 25.0
+ },
+ "known_minus_held_median_by_source": {
+  "complete": 0.0,
+  "late_maiden": 0.0,
+  "probable_incomplete": 23.0
+ },
+ "share_n_eff_ge_24_aged_5plus": 0.508
+}

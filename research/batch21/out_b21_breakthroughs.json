@@ -1,0 +1,285 @@
+{
+ "note": "mean surprise (kg) of later runs; positive = the rating still under-believed the horse; big runs with 6+ runs held, 2023 to Jun 2026",
+ "C10 unfamiliar distance": {
+  "unfamiliar distance": {
+   "next run, any distance": {
+    "big_runs": 28316,
+    "with_outcome": 27373,
+    "mean_kg": 0.44,
+    "se": 0.03
+   },
+   "next 3 (all three)": {
+    "big_runs": 28316,
+    "with_outcome": 24503,
+    "mean_kg": 0.33,
+    "se": 0.02
+   },
+   "next 5 (all five)": {
+    "big_runs": 28316,
+    "with_outcome": 21376,
+    "mean_kg": 0.28,
+    "se": 0.01
+   },
+   "next 5 runs at: same new distance band": {
+    "runs": 45431,
+    "mean_kg": 0.27,
+    "se": 0.02
+   },
+   "next 5 runs at: back to previous main band": {
+    "runs": 37734,
+    "mean_kg": 0.06,
+    "se": 0.03
+   },
+   "next 5 runs at: neighbouring band": {
+    "runs": 25733,
+    "mean_kg": 0.14,
+    "se": 0.03
+   },
+   "next 5 runs at: other band": {
+    "runs": 13762,
+    "mean_kg": -0.47,
+    "se": 0.04
+   }
+  },
+  "familiar distance (control)": {
+   "next run, any distance": {
+    "big_runs": 84802,
+    "with_outcome": 82230,
+    "mean_kg": 0.09,
+    "se": 0.02
+   },
+   "next 3 (all three)": {
+    "big_runs": 84802,
+    "with_outcome": 73360,
+    "mean_kg": -0.0,
+    "se": 0.01
+   },
+   "next 5 (all five)": {
+    "big_runs": 84802,
+    "with_outcome": 63314,
+    "mean_kg": -0.06,
+    "se": 0.01
+   },
+   "next 5 runs at the same band": {
+    "runs": 198995,
+    "mean_kg": -0.1,
+    "se": 0.01
+   },
+   "next 5 runs at a different band": {
+    "runs": 167572,
+    "mean_kg": -0.42,
+    "se": 0.01
+   }
+  },
+  "unfamiliar, stepping down": {
+   "same new distance band": {
+    "runs": 10006,
+    "mean_kg": 0.14
+   },
+   "back to previous main band": {
+    "runs": 15581,
+    "mean_kg": 0.17
+   },
+   "neighbouring band": {
+    "runs": 5159,
+    "mean_kg": -0.07
+   }
+  },
+  "unfamiliar, stepping up": {
+   "same new distance band": {
+    "runs": 35425,
+    "mean_kg": 0.3
+   },
+   "back to previous main band": {
+    "runs": 22153,
+    "mean_kg": -0.01
+   },
+   "neighbouring band": {
+    "runs": 20574,
+    "mean_kg": 0.19
+   }
+  }
+ },
+ "C9 trainer change (next-run surprise)": {
+  "2nd-5th run for new trainer": {
+   "next run": {
+    "big_runs": 20497,
+    "with_outcome": 19763,
+    "mean_kg": 0.4,
+    "se": 0.04
+   },
+   "next 3": {
+    "big_runs": 20497,
+    "with_outcome": 17308,
+    "mean_kg": 0.29,
+    "se": 0.02
+   }
+  },
+  "first run for new trainer": {
+   "next run": {
+    "big_runs": 5131,
+    "with_outcome": 4939,
+    "mean_kg": 0.74,
+    "se": 0.07
+   },
+   "next 3": {
+    "big_runs": 5131,
+    "with_outcome": 4343,
+    "mean_kg": 0.48,
+    "se": 0.05
+   }
+  },
+  "no recent change": {
+   "next run": {
+    "big_runs": 87877,
+    "with_outcome": 85277,
+    "mean_kg": 0.1,
+    "se": 0.02
+   },
+   "next 3": {
+    "big_runs": 87877,
+    "with_outcome": 76552,
+    "mean_kg": 0.02,
+    "se": 0.01
+   }
+  },
+  "2nd-5th run for new trainer | beyond previous best": {
+   "big_runs": 4672,
+   "with_outcome": 4543,
+   "mean_kg": 0.7,
+   "se": 0.08
+  },
+  "2nd-5th run for new trainer | returning to previous best (or below)": {
+   "big_runs": 15825,
+   "with_outcome": 15220,
+   "mean_kg": 0.31,
+   "se": 0.04
+  },
+  "first run for new trainer | beyond previous best": {
+   "big_runs": 1182,
+   "with_outcome": 1155,
+   "mean_kg": 0.95,
+   "se": 0.15
+  },
+  "first run for new trainer | returning to previous best (or below)": {
+   "big_runs": 3949,
+   "with_outcome": 3784,
+   "mean_kg": 0.68,
+   "se": 0.09
+  },
+  "no recent change | beyond previous best": {
+   "big_runs": 19527,
+   "with_outcome": 19072,
+   "mean_kg": 0.23,
+   "se": 0.03
+  },
+  "no recent change | returning to previous best (or below)": {
+   "big_runs": 68350,
+   "with_outcome": 66205,
+   "mean_kg": 0.06,
+   "se": 0.02
+  },
+  "2nd-5th run for new trainer | previously declining": {
+   "big_runs": 6857,
+   "with_outcome": 6564,
+   "mean_kg": 0.33,
+   "se": 0.07
+  },
+  "2nd-5th run for new trainer | previously flat": {
+   "big_runs": 5016,
+   "with_outcome": 4860,
+   "mean_kg": 0.17,
+   "se": 0.07
+  },
+  "2nd-5th run for new trainer | previously improving": {
+   "big_runs": 8624,
+   "with_outcome": 8339,
+   "mean_kg": 0.6,
+   "se": 0.06
+  },
+  "first run for new trainer | previously declining": {
+   "big_runs": 2620,
+   "with_outcome": 2519,
+   "mean_kg": 0.94,
+   "se": 0.11
+  },
+  "first run for new trainer | previously flat": {
+   "big_runs": 1286,
+   "with_outcome": 1244,
+   "mean_kg": 0.44,
+   "se": 0.14
+  },
+  "first run for new trainer | previously improving": {
+   "big_runs": 1225,
+   "with_outcome": 1176,
+   "mean_kg": 0.63,
+   "se": 0.15
+  },
+  "no recent change | previously declining": {
+   "big_runs": 29503,
+   "with_outcome": 28479,
+   "mean_kg": 0.15,
+   "se": 0.03
+  },
+  "no recent change | previously flat": {
+   "big_runs": 26125,
+   "with_outcome": 25422,
+   "mean_kg": -0.07,
+   "se": 0.03
+  },
+  "no recent change | previously improving": {
+   "big_runs": 32249,
+   "with_outcome": 31376,
+   "mean_kg": 0.19,
+   "se": 0.03
+  }
+ },
+ "C9-C10 next-run surprise with controls (kg)": {
+  "runs": 108764,
+  "first_new": [
+   0.498,
+   0.35,
+   0.647
+  ],
+  "later_new": [
+   0.225,
+   0.145,
+   0.305
+  ],
+  "beyond": [
+   -0.41,
+   -0.493,
+   -0.327
+  ],
+  "unfam": [
+   0.205,
+   0.136,
+   0.273
+  ],
+  "size": [
+   0.157,
+   0.14,
+   0.174
+  ],
+  "spell1": [
+   -1.613,
+   -1.739,
+   -1.488
+  ],
+  "ts1": [
+   0.326,
+   0.274,
+   0.378
+  ]
+ },
+ "C9 trainer-specific transfer record (first run for new trainer only)": {
+  "runs": 4907,
+  "coef": [
+   0.131,
+   -0.054,
+   0.316
+  ],
+  "record_sd_kg": 1.109,
+  "general_trainer_record_coef": 0.474
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "rows_with_changed_key_(split_horses)": 432,
+ "all runs, unchanged keys": {
+  "runs": 681998,
+  "share_over_0.1kg": 0.01423,
+  "share_over_0.5kg": 0.00111,
+  "max_kg": 16.05,
+  "mean_kg": 0.0109
+ },
+ "Sep-Nov 2026 runs, unchanged keys": {
+  "runs": 37049,
+  "share_over_0.1kg": 0.02726,
+  "share_over_0.5kg": 0.00094,
+  "max_kg": 8.07,
+  "mean_kg": 0.0232
+ }
+}

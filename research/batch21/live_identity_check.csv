@@ -1,0 +1,1069 @@
+day,ven,race,n,name,age,sex,career_starts,sire,dam,status,identities_under_name,name_key_in_rating_history
+20261126,HAW,1,1,HELEN'S WAY,5,Gelding,5,WAR DECREE (USA),OXFORD AUNT (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,1,2,FOUND THE GOLD,3,Filly,5,TOO DARN HOT (GB),FEDEROSA (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,1,3,THE CHAMPION,4,Gelding,8,ZOUSTAR,BELLA MENTE (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,1,4,BAYLIE'S FOLLY,3,Colt,4,STRATUM STAR,BAYLIE LOUISE,unique exact (name + sire + dam),1,True
+20261126,HAW,1,5,STONECREST,3,Colt,1,SNITZEL,CHATEAU CHEVAL,unique exact (name + sire + dam),1,True
+20261126,HAW,1,6,SACROSANCT,4,Mare,5,SNITZEL,BENNETTA,unique exact (name + sire + dam),1,True
+20261126,HAW,1,7,SOUTHERN GRACE,4,Mare,4,COOL AZA BEEL (NZ),LOVING GRACIE (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,2,1,FLYING PARTY,4,Gelding,7,FLYING ARTIE,PARTY LADY,unique exact (name + sire + dam),1,True
+20261126,HAW,2,2,MISTER DEE JAY,5,Gelding,1,YOUR SONG,PLAYA DEL CARMEN,unique exact (name + sire + dam),1,True
+20261126,HAW,2,3,HEY FURSTON,4,Gelding,1,CALYX (GB),RIGHT AS RAIN,unique exact (name + sire + dam),1,True
+20261126,HAW,2,4,HALLOWEDISMYNAME,4,Gelding,3,HALLOWED CROWN,AT EASE,unique exact (name + sire + dam),1,True
+20261126,HAW,2,5,CALIPPO,4,Gelding,2,CALYX (GB),ICE GIRL,unique exact (name + sire + dam),1,True
+20261126,HAW,2,6,RESPONSIBILITY,4,Mare,1,CHURCHILL (IRE),DAME DEFECTOR,unique exact (name + sire + dam),1,True
+20261126,HAW,2,7,SWIFT DELIVERY,4,Mare,1,FLYING ARTIE,WORDPLAY,unique exact (name + sire + dam),1,True
+20261126,HAW,2,8,AWESOME OFFA,4,Gelding,3,BON HOFFA,SISTER IN AWE,unique exact (name + sire + dam),1,True
+20261126,HAW,2,9,MEDIEVAL MAYHEM,4,Mare,10,PRAGUE,BONDINI,unique exact (name + sire + dam),1,True
+20261126,HAW,2,10,PROPANE,4,Gelding,8,TOO DARN HOT (GB),MY LITTLE FLICKA,unique exact (name + sire + dam),1,True
+20261126,HAW,2,11,TITAN OF FURY,5,Gelding,13,BRAVE SMASH (JPN),CIQALA,unique exact (name + sire + dam),1,True
+20261126,HAW,3,1,ALABAMA SHOWDOWN,4,Gelding,8,ALABAMA EXPRESS,OUR RANSOM STAR,unique exact (name + sire + dam),1,True
+20261126,HAW,3,2,PAPPA BLUE,4,Gelding,10,ALMANZOR (FR),MISS SELBY (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,3,3,KIRKUK,6,Gelding,34,SMART MISSILE,BANNER BLONDE,unique exact (name + sire + dam),1,True
+20261126,HAW,3,4,OUTTA LINE,5,Mare,8,PIERRO,BULLION MANSION,unique exact (name + sire + dam),1,True
+20261126,HAW,3,5,AWESOME ARTIST,4,Gelding,8,TRAPEZE ARTIST,HOW SWEET IT IS,unique exact (name + sire + dam),1,True
+20261126,HAW,3,6,WORMINGTON,4,Gelding,11,HANSEATIC,NO RESTRICTION,unique exact (name + sire + dam),1,True
+20261126,HAW,3,7,DANCE WITH DESTINY,4,Mare,11,CONTRIBUTER (IRE),REGINE (IRE),unique exact (name + sire + dam),1,True
+20261126,HAW,3,8,MEDIARO,8,Gelding,28,LONHRO,MEDIATION (GB),unique exact (name + sire + dam),1,True
+20261126,HAW,4,1,SHEEZA DIVA,4,Mare,20,PIERRO,DIZZY DIVA,unique exact (name + sire + dam),1,True
+20261126,HAW,4,2,FITZCLARENCE,4,Gelding,6,ADELAIDE (IRE),JENDRICK,unique exact (name + sire + dam),1,True
+20261126,HAW,4,3,DON'S PARTY,5,Gelding,10,ADELAIDE (IRE),WINNER TAKE ALL,unique exact (name + sire + dam),1,True
+20261126,HAW,4,4,PERINI MISS,4,Mare,5,PERAST,SANTORINI MISS,unique exact (name + sire + dam),1,True
+20261126,HAW,4,5,COOL SUMMER NIGHTS,4,Mare,7,RUSSIAN REVOLUTION,HOT SUMMER NIGHT,unique exact (name + sire + dam),1,True
+20261126,HAW,4,6,CANJUSTIFY,4,Mare,7,JUSTIFY (USA),CANDELARA,unique exact (name + sire + dam),1,True
+20261126,HAW,4,7,ELIVINA,5,Mare,12,SAXON WARRIOR (JPN),IDYLLIC MOOD,unique exact (name + sire + dam),1,True
+20261126,HAW,4,8,ALIDEEL,5,Mare,10,DUNDEEL (NZ),ALIBERANI,unique exact (name + sire + dam),1,True
+20261126,HAW,4,9,BRUNDEE TOM,4,Gelding,16,SANDBAR,ZARIZ ALWYNS,unique exact (name + sire + dam),1,True
+20261126,HAW,4,10,LUCILAGO,6,Mare,20,RUBICK,PLACEMENT (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,5,1,CLOSE COMBAT,3,Gelding,1,SHALAA (IRE),GET CLOSER (JPN),unique exact (name + sire + dam),1,True
+20261126,HAW,5,2,MENS REA,3,Gelding,1,MENARI,FULL OF BEANS,unique exact (name + sire + dam),1,True
+20261126,HAW,5,3,NATIONS LEAGUE,3,Gelding,5,SNITZEL,FASHION FAUX PAS (USA),unique exact (name + sire + dam),1,True
+20261126,HAW,5,4,NORTH COUNSEL,3,Gelding,1,NORTH PACIFIC,POSITIVE QUEST,unique exact (name + sire + dam),1,True
+20261126,HAW,5,5,ON THE VERGE,3,Gelding,0,ASTERN,SNOW WHITE,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,5,6,PINACHE,3,Colt,0,PINATUBO (IRE),DEAL FLOW,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,5,7,RENOWNED,3,Colt,1,STANDOUT,SHEER STYLE,unique exact (name + sire + dam),1,True
+20261126,HAW,5,8,WARDEEL,3,Gelding,0,DUNDEEL (NZ),MOPITTS,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,5,9,PEARL OF DUBAI,3,Filly,9,WOOTTON BASSETT (GB),AL ANOOD,unique exact (name + sire + dam),1,True
+20261126,HAW,5,10,THYME TO GO,3,Filly,6,I AM INVINCIBLE,JOY AT LAST,unique exact (name + sire + dam),1,True
+20261126,HAW,6,1,EXTREME COURAGE,5,Gelding,10,EXTREME CHOICE,COURAGE'N'KINDNESS,unique exact (name + sire + dam),1,True
+20261126,HAW,6,2,SOUTHPORT,4,Gelding,4,BIVOUAC,MARIELLE,unique exact (name + sire + dam),1,True
+20261126,HAW,6,3,CAPTAIN BLACK,3,Gelding,0,CAPTIVANT,GLAMOUR GAL,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,6,4,GOT HERE,3,Colt,2,COSMIC FORCE,BROOKTON BLING,unique exact (name + sire + dam),1,True
+20261126,HAW,6,5,HIKARI RISING,3,Gelding,1,ZOUSTAR,HIDEMI,unique exact (name + sire + dam),1,True
+20261126,HAW,6,6,COLD GIN,4,Mare,8,OLE KIRK,SAAS FEE,unique exact (name + sire + dam),1,True
+20261126,HAW,6,7,SHALAA AND WILLYN,4,Mare,0,SHALAA (IRE),LEHWAIYLA (GB),no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,6,8,TICKELOVA,4,Mare,3,WOOTTON BASSETT (GB),ROSTOVA,unique exact (name + sire + dam),1,True
+20261126,HAW,6,9,WRITTENINLYRICS,4,Mare,0,PERAST,WRITTEN WONDER,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,6,10,ARIANA REIGN,3,Filly,2,TIME TO REIGN,DOWAGER GIRL (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,6,11,MISS MOULAGA,3,Filly,2,GOLD STANDARD,TRIP,unique exact (name + sire + dam),1,True
+20261126,HAW,6,12,SHEEZA WHISTLER,3,Filly,0,YES YES YES,BID'N'BARE,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,6,13,SKY KIRK,3,Filly,0,OLE KIRK,MUSIC BAY,no identity: genuine first starter (TAB career 0),0,False
+20261126,HAW,6,14,WOOTTON TOUCH IT,3,Filly,1,WOOTTON BASSETT (GB),MISS TEHERAN (IRE),unique exact (name + sire + dam),1,True
+20261126,HAW,6,15,BINIT,3,Filly,3,SUPIDO,BIZOU,unique exact (name + sire + dam),1,True
+20261126,HAW,6,16,PRESSED TOUGH,5,Horse,1,PRESS STATEMENT,ALL TOO SOFT,unique exact (name + sire + dam),1,True
+20261126,HAW,7,1,DONWON,5,Gelding,24,MAGNA GRECIA (IRE),MINNESOTA,unique exact (name + sire + dam),1,True
+20261126,HAW,7,2,THE NEW SINATRA,6,Gelding,16,RUSSIAN REVOLUTION,RUBY SOHO,unique exact (name + sire + dam),1,True
+20261126,HAW,7,3,AGAINST THE LAW,6,Gelding,19,LEAN MEAN MACHINE,KULGRINDA,unique exact (name + sire + dam),1,True
+20261126,HAW,7,4,BOOM BREAK,5,Gelding,11,SPIRIT OF BOOM,SUPER SWELL,unique exact (name + sire + dam),1,True
+20261126,HAW,7,5,SAUVITUDE,4,Gelding,2,I AM INVINCIBLE,MELBA AVENUE,unique exact (name + sire + dam),1,True
+20261126,HAW,7,6,WON'THEARMECOMING,4,Mare,4,HANSEATIC,JESSICA ANN,unique exact (name + sire + dam),1,True
+20261126,HAW,7,7,SAVOCA,6,Gelding,32,CHOISIR,THE LOOK,unique exact (name + sire + dam),1,True
+20261126,HAW,7,8,MIDNIGHT REVOLT,3,Filly,1,RUSSIAN REVOLUTION,ZUTARA,unique exact (name + sire + dam),1,True
+20261126,HAW,7,9,SHOUTABOUTIT,5,Mare,25,OVERSHARE,ETOILE FILLE (NZ),unique exact (name + sire + dam),1,True
+20261126,HAW,7,10,POWER HUNGRY,7,Gelding,15,SMART MISSILE,FLAMINGO LAKE,unique exact (name + sire + dam),1,True
+20261126,MOR,1,1,EXCEED SONIC,3,Gelding,1,EXCEEDANCE,KYLIX,unique exact (name + sire + dam),1,True
+20261126,MOR,1,2,FLYING WHITE ROBE,3,Gelding,0,TRAPEZE ARTIST,PRAIRIE STAR (NZ),unique exact (name + sire + dam),1,False
+20261126,MOR,1,3,MARKET WARRIOR,3,Gelding,0,EXCEED AND EXCEL,BEAT THE BENCHMARK (USA),unique exact (name + sire + dam),1,False
+20261126,MOR,1,4,OPTIMUS,3,Gelding,4,I AM INVINCIBLE,SIA,unique exact (name + sire + dam),1,True
+20261126,MOR,1,5,RUPTURED,3,Gelding,0,HANSEATIC,SCHISM,unique exact (name + sire + dam),1,False
+20261126,MOR,1,6,ZAAC,3,Gelding,2,BIVOUAC,UNA FUERZA (USA),unique exact (name + sire + dam),1,True
+20261126,MOR,1,7,CIRQUE DE COCO,3,Filly,4,TRAPEZE ARTIST,DECOCO,unique exact (name + sire + dam),1,True
+20261126,MOR,1,8,JUST JEAN,3,Filly,1,NICCONI,LADY LE JEAN,unique exact (name + sire + dam),1,True
+20261126,MOR,2,1,BAROSSA BARON,4,Gelding,2,RICH ENUFF,COSMIC RUBY,unique exact (name + sire + dam),1,True
+20261126,MOR,2,2,BOWDACIOUS GOLD,4,Gelding,0,GOLD STANDARD,WERBOWY,unique exact (name + sire + dam),1,False
+20261126,MOR,2,3,DEXTER,4,Gelding,2,DIRTY WORK,SILENT ROAR,unique exact (name + sire + dam),1,True
+20261126,MOR,2,4,FULHAMZEDGE,5,Gelding,6,FLYING ARTIE,ZEDGE,unique exact (name + sire + dam),1,True
+20261126,MOR,2,5,GALAGACISCO,5,Gelding,12,DRACARYS,BELLE'S A REBEL,unique exact (name + sire + dam),1,True
+20261126,MOR,2,6,MR JAMESON,4,Gelding,0,DOUBTLAND,MADAM INVINCIBLE,unique exact (name + sire + dam),1,False
+20261126,MOR,2,7,SAN PUEBLO,6,Gelding,11,SQUAMOSA,MISS BON BEACH,unique exact (name + sire + dam),1,True
+20261126,MOR,2,8,HILOVELY,4,Mare,0,WANDJINA,TYCOON'S LOVER,unique exact (name + sire + dam),1,False
+20261126,MOR,2,9,IMPERIAL MEETING,4,Mare,6,ROYAL MEETING (IRE),PATRICIA ANNE (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,2,10,LAW'S DREAM,5,Mare,1,PALENTINO,SAINT MARGUERITE,unique exact (name + sire + dam),1,True
+20261126,MOR,2,11,RAVENS GLOW,4,Mare,6,CRACKERJACK KING (IRE),RAVEN'S FIRE,unique exact (name + sire + dam),1,True
+20261126,MOR,2,12,THE SECRET,5,Mare,12,STARSPANGLEDBANNER,YOUR GRACE,unique exact (name + sire + dam),1,True
+20261126,MOR,3,1,BELLE FLAMME,4,Mare,8,RUBICK,CHAMPAGNE RUBY,unique exact (name + sire + dam),1,True
+20261126,MOR,3,2,FULHAM FOX,4,Mare,7,KERMADEC (NZ),ZEDGE,unique exact (name + sire + dam),1,True
+20261126,MOR,3,3,GRACEFUL MIST,7,Mare,25,MANHATTAN RAIN,BEAUTIFUL PLEASURE,unique exact (name + sire + dam),1,True
+20261126,MOR,3,4,GYPSY STORM,4,Mare,2,THUNDER FIRE,DYLANA,unique exact (name + sire + dam),1,True
+20261126,MOR,3,5,SLICK VIXEN,4,Mare,3,FOXWEDGE,CINNAMON GIRL,unique exact (name + sire + dam),1,True
+20261126,MOR,3,6,SWEET CHAMPAGNE,4,Mare,5,IMPENDING,WHATEVERWHENEVER,unique exact (name + sire + dam),1,True
+20261126,MOR,3,7,SYMPHONY ROYALE,4,Mare,3,ROYAL SYMPHONY,SAV ROYAL (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,3,8,FIVE ROSES,3,Filly,1,FIERCE IMPACT (JPN),LOITER,unique exact (name + sire + dam),1,True
+20261126,MOR,3,9,I'M A BELIEVER,3,Filly,1,NOVERRE (NZ),BELIEVE YOU ME (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,3,10,KAZEKAGE,3,Filly,0,SNITZEL,BEETOBEE (JPN),unique exact (name + sire + dam),1,False
+20261126,MOR,3,11,OCEAN MIRAGE,3,Filly,1,TAGALOA,FALLACY,unique exact (name + sire + dam),1,True
+20261126,MOR,3,12,TRANSIENCE,3,Filly,0,SHAMUS AWARD,WABI SABI (JPN),unique exact (name + sire + dam),1,False
+20261126,MOR,4,1,CALL ME FRANCIS,6,Gelding,15,KERMADEC (NZ),MISS SIVIVATU (IRE),unique exact (name + sire + dam),1,True
+20261126,MOR,4,2,CLYDEBANK ROBBER,8,Gelding,65,MSHAWISH (USA),LACEY UNDERALL,unique exact (name + sire + dam),1,True
+20261126,MOR,4,3,FANTASTIC BEAST,6,Gelding,24,SAXON WARRIOR (JPN),SEMPER FIDELIS,unique exact (name + sire + dam),1,True
+20261126,MOR,4,4,GREY SABRE,5,Gelding,18,PALENTINO,DASH FOR GEORGIA,unique exact (name + sire + dam),1,True
+20261126,MOR,4,5,GUTHRIE,4,Gelding,9,PREFERMENT (NZ),HAPUKA (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,6,JAKBE NIMBLE,4,Gelding,9,CRACKERJACK KING (IRE),BLUE ASH,unique exact (name + sire + dam),1,True
+20261126,MOR,4,7,MARQUISARD,8,Gelding,19,VADAMOS (FR),REALTA (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,8,AMSTERDAM NIGHTS,3,Gelding,3,ALMANZOR (FR),Gravitelle (GB),unique exact (name + sire + dam),1,True
+20261126,MOR,4,9,SENTALOA,3,Gelding,5,TAGALOA,MISS SENTIMENTAL (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,10,SOARING LEGEND,3,Gelding,3,GRUNT (NZ),ISOBEL'S LOCKET (GB),unique exact (name + sire + dam),1,True
+20261126,MOR,4,11,ASHINA,4,Mare,12,TIVACI,ZELITIST (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,12,HEIDI HIGH,5,Mare,5,HIGHLAND REEL (IRE),SASSY ANN (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,13,KISSATTACK,4,Mare,7,TOO DARN HOT (GB),GEBLITZT,unique exact (name + sire + dam),1,True
+20261126,MOR,4,14,TENNESSEE LINK,4,Mare,10,KING'S LEGACY,TENNESSEE TANGO,unique exact (name + sire + dam),1,True
+20261126,MOR,4,15,VERRY ZEDUCTIVE,4,Gelding,8,ZED (NZ),STREET SATIN (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,4,16,STARTIN'SUMTHIN',4,Mare,8,GHAIYYATH (IRE),UNSETTLING,unique exact (name + sire + dam),1,True
+20261126,MOR,4,17,LADY OF ALSACE,4,Mare,10,STRASBOURG,HIGHLEIGH,unique exact (name + sire + dam),1,True
+20261126,MOR,5,1,SHOOTER MCGAVIN,6,Gelding,40,SHOOTING TO WIN,ECOLOGY,unique exact (name + sire + dam),1,True
+20261126,MOR,5,2,UMGAWA,8,Gelding,56,SHAMUS AWARD,EXPRESS CENTRAL,unique exact (name + sire + dam),1,True
+20261126,MOR,5,3,GUNZ,4,Gelding,10,I AM IMMORTAL,INTRIGUE,unique exact (name + sire + dam),1,True
+20261126,MOR,5,4,TREBILCO,5,Gelding,10,EXCEEDANCE,COLOUR DROPS,unique exact (name + sire + dam),1,True
+20261126,MOR,5,5,SMOKE 'N' OAKUM,6,Gelding,18,FOXWEDGE,STARLET O'HARA,unique exact (name + sire + dam),1,True
+20261126,MOR,5,6,EMPRESSIVE ENUFF,8,Gelding,49,RICH ENUFF,EMPRESS CLEO,unique exact (name + sire + dam),1,True
+20261126,MOR,5,7,OLE DAZE,4,Gelding,4,OLE KIRK,RAINY DAZE,unique exact (name + sire + dam),1,True
+20261126,MOR,5,8,EXTREME TURBO,3,Gelding,2,PINATUBO (IRE),EXTREME BLISS,unique exact (name + sire + dam),1,True
+20261126,MOR,5,9,VALEDICTORIAN,4,Gelding,15,ZOUSTAR,LADY COSMOLOGY,unique exact (name + sire + dam),1,True
+20261126,MOR,5,10,OUTER BANKS,4,Gelding,6,CAPITALIST,SPEEDBOAT,unique exact (name + sire + dam),1,True
+20261126,MOR,5,11,VAAFEE,5,Gelding,19,AMERICAN PHAROAH (USA),AL ANOOD,unique exact (name + sire + dam),1,True
+20261126,MOR,6,1,DRAGON SCROLL,4,Mare,5,ZOUSTAR,SECRET TRAIL,unique exact (name + sire + dam),1,True
+20261126,MOR,6,2,GABOR,4,Mare,4,GRUNT (NZ),CINEMATIC,unique exact (name + sire + dam),1,True
+20261126,MOR,6,3,BRUTAL WORLD,5,Mare,17,BRUTAL (NZ),ROCK THE WORLD,unique exact (name + sire + dam),1,True
+20261126,MOR,6,4,GLISK,4,Mare,6,ARDROSSAN,SHELLAC (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,6,5,THE BIRTHDAY PARTY,4,Mare,6,KOBAYASHI,THE CURE,unique exact (name + sire + dam),1,True
+20261126,MOR,6,6,CATCH IT KISS IT,4,Mare,3,THRONUM,SALMON BAY,unique exact (name + sire + dam),1,True
+20261126,MOR,6,7,DIVINE EMPRESS,4,Mare,8,OLE KIRK,NATANYA,unique exact (name + sire + dam),1,True
+20261126,MOR,6,8,GRACIOUS DIVA,7,Mare,34,TORONADO (IRE),SHE'S A BOP GIRL,unique exact (name + sire + dam),1,True
+20261126,MOR,6,9,HEY KLEINE MAUS,4,Mare,6,EARTHLIGHT (IRE),KEEP DE ROSE,unique exact (name + sire + dam),1,True
+20261126,MOR,6,10,LOTTA CITY,4,Mare,9,ILOVETHISCITY,CHARLOTTA,unique exact (name + sire + dam),1,True
+20261126,MOR,6,11,HEIDI DANCER,4,Mare,7,BRAZEN BEAU,PRIDE ROCK,unique exact (name + sire + dam),1,True
+20261126,MOR,6,12,OUR YONGLEE,4,Mare,4,TASSORT,ABBEY ROSA,unique exact (name + sire + dam),1,True
+20261126,MOR,6,13,RUSSIAN BENEFITS,7,Mare,25,RUSSIAN REVOLUTION,BLISS STREET,unique exact (name + sire + dam),1,True
+20261126,MOR,6,14,DOMINANT MISS,6,Mare,32,OVERSHARE,SWEET TEMPTATIONS,unique exact (name + sire + dam),1,True
+20261126,MOR,6,15,LADY OF POMPEII,3,Filly,3,BRAZEN BEAU,WE CAN DANCE,unique exact (name + sire + dam),1,True
+20261126,MOR,7,1,FILEETA,7,Mare,22,DEEP FIELD,DINEETA,unique exact (name + sire + dam),1,True
+20261126,MOR,7,2,OTTALAUS,4,Gelding,9,ANDERS,BIRDIE MAY (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,7,3,ILOVEDIAMONDS,6,Mare,14,RUSSIAN REVOLUTION,DANCINGFORDIAMONDS,unique exact (name + sire + dam),1,True
+20261126,MOR,7,4,JUST THINK TWICE,5,Gelding,3,RUSSIAN REVOLUTION,CATALINA MISS,unique exact (name + sire + dam),1,True
+20261126,MOR,7,5,NO LIMITATION,4,Mare,11,EXCEEDANCE,PIERRO BELLE,unique exact (name + sire + dam),1,True
+20261126,MOR,7,6,FRESHEN,4,Mare,5,WRITTEN TYCOON,FRESH,unique exact (name + sire + dam),1,True
+20261126,MOR,7,7,BELLA CINQUE,7,Mare,23,MAGNUS,BELLA DOLCE,unique exact (name + sire + dam),1,True
+20261126,MOR,7,8,STAHNADO,5,Mare,20,TORONADO (IRE),COLESTAH,unique exact (name + sire + dam),1,True
+20261126,MOR,7,9,ANYWAYS,4,Mare,6,HELLBENT,MORELL,unique exact (name + sire + dam),1,True
+20261126,MOR,7,10,SKJALDMO,4,Mare,6,DIRTY WORK,SKAGERRAK,unique exact (name + sire + dam),1,True
+20261126,MOR,7,11,SOJU,6,Mare,33,CAPITALIST,FASHION MODEL,unique exact (name + sire + dam),1,True
+20261126,MOR,7,12,BEL LUPA,4,Mare,10,WOLF CRY,ROMAN BELLE,unique exact (name + sire + dam),1,True
+20261126,MOR,8,1,ASHAU VALLEY,6,Gelding,29,OUTREACH,TRILINGUAL,unique exact (name + sire + dam),1,True
+20261126,MOR,8,2,ROUGH ENUFF,4,Gelding,7,RICH ENUFF,FUDGED,unique exact (name + sire + dam),1,True
+20261126,MOR,8,3,COLIZZI,4,Gelding,9,ACE HIGH,CIANA (NZ),unique exact (name + sire + dam),1,True
+20261126,MOR,8,4,SACRO CATINO,5,Gelding,23,CALYX (GB),LAGERPHONE,unique exact (name + sire + dam),1,True
+20261126,MOR,8,5,STRANGETHINGDESIRE,4,Gelding,4,RUSSIAN CAMELOT (IRE),LOVEWITHOUTTRAGEDY,unique exact (name + sire + dam),1,True
+20261126,MOR,8,6,GOODNESS,4,Mare,5,UNUSUAL SUSPECT (USA),INTO THE GROOVE,unique exact (name + sire + dam),1,True
+20261126,MOR,8,7,JENNI POPPINS,4,Mare,8,MAURICE (JPN),STELLADI NATALE (USA),unique exact (name + sire + dam),1,True
+20261126,MOR,8,8,FEARLESS MONARCH,5,Mare,17,GRUNT (NZ),CONQUERING QUEEN,unique exact (name + sire + dam),1,True
+20261126,MOR,8,9,I'M DYNAMITE,8,Gelding,67,BOBBY'S KITTEN (USA),LADY ROCHFORD,unique exact (name + sire + dam),1,True
+20261126,MOR,8,10,SHOUT OUT GIRL,8,Mare,28,HOLLER,WATERFRONT (USA),unique exact (name + sire + dam),1,True
+20261126,ROC,1,1,GATHERS NO STONE,5,Gelding,12,BEL ESPRIT,ZOEANOS,unique exact (name + sire + dam),1,True
+20261126,ROC,1,2,URBAN REALITY,3,Gelding,1,NEOREALISM (JPN),URBAN LEGEND,unique exact (name + sire + dam),1,True
+20261126,ROC,1,3,BELLA JESTER,4,Mare,0,DUBIOUS,BELLA LA BELLE,no identity: genuine first starter (TAB career 0),0,False
+20261126,ROC,1,4,TIAKI,4,Gelding,3,FIERCE IMPACT (JPN),MOONLIGHT SONATA,unique exact (name + sire + dam),1,True
+20261126,ROC,1,5,AUREUM KEY,3,Filly,0,ENCRYPTION,RAFFINATO,no identity: genuine first starter (TAB career 0),0,False
+20261126,ROC,1,6,DUBIOUS BABE,4,Mare,3,DUBIOUS,DRAGON BABE,unique exact (name + sire + dam),1,True
+20261126,ROC,1,7,MARGERY,3,Filly,1,BRABINGER,HURIBEL,unique exact (name + sire + dam),1,True
+20261126,ROC,1,8,AGILE ANNIE,4,Mare,5,BRABINGER,TYCOON ANNIE,unique exact (name + sire + dam),1,True
+20261126,ROC,2,1,BOLD BLAZE,5,Gelding,22,UNDER THE LOUVRE,BOLD CHLOE,unique exact (name + sire + dam),1,True
+20261126,ROC,2,2,REPLACE THE ACE,6,Gelding,38,ROTHESAY,KASTENESSEN,unique exact (name + sire + dam),1,True
+20261126,ROC,2,3,ALOYSIUS,5,Gelding,13,SO YOU THINK (NZ),NICCONI LEGGERA,unique exact (name + sire + dam),1,True
+20261126,ROC,2,4,BE BOB ALOOLA,4,Gelding,19,HEROIC VALOUR,STRATEGIC BEAUTY,unique exact (name + sire + dam),1,True
+20261126,ROC,2,5,LATIN LOVE,7,Mare,26,SEBRING,FLAMENCO,unique exact (name + sire + dam),1,True
+20261126,ROC,2,6,NEPTUNE LEGEND,5,Gelding,13,DUNDEEL (NZ),DAROUSHA (FR),unique exact (name + sire + dam),1,True
+20261126,ROC,3,1,GOOD LIEUTENANT,7,Gelding,40,AMERICAN PHAROAH (USA),LEANDERS CHOICE,unique exact (name + sire + dam),1,True
+20261126,ROC,3,2,KING'S DUTY,7,Gelding,38,EXOSPHERE,SHEMAI (NZ),unique exact (name + sire + dam),1,True
+20261126,ROC,3,3,OUTWITTED,6,Gelding,33,SIDESTEP,SHAUMARI,unique exact (name + sire + dam),1,True
+20261126,ROC,3,4,LUNAR EIGHT,6,Mare,22,MERCHANT NAVY,COCONUT DREAM,unique exact (name + sire + dam),1,True
+20261126,ROC,3,5,VILLANDRY,5,Gelding,25,EPAULETTE,LOVESEAT (NZ),unique exact (name + sire + dam),1,True
+20261126,ROC,3,6,ITZA CHARMDEEL,6,Gelding,30,CHARM SPIRIT (IRE),WHATADEEL,unique exact (name + sire + dam),1,True
+20261126,ROC,3,7,BETTER THAN WORDS,5,Mare,24,BETTER THAN READY,SPREAD THE WORD,unique exact (name + sire + dam),1,True
+20261126,ROC,4,1,LETMELETGO,9,Gelding,59,PIERRO,FAITH HILL,unique exact (name + sire + dam),1,True
+20261126,ROC,4,2,METALCRAFT,4,Gelding,11,BETTER THAN READY,GLENGAL,unique exact (name + sire + dam),1,True
+20261126,ROC,4,3,ALLOUTATIME,6,Mare,23,TOP ECHELON,TIDY TRIM,unique exact (name + sire + dam),1,True
+20261126,ROC,4,4,CRAVING MAGIC,7,Gelding,34,RUBICK,MAGICAL VERDICT,unique exact (name + sire + dam),1,True
+20261126,ROC,4,5,PRESOCRATICS,5,Gelding,17,WRITTEN BY,SHORELINE,unique exact (name + sire + dam),1,True
+20261126,ROC,4,6,BEEN A SECRET,6,Mare,29,SPILL THE BEANS,FELINO BEL,unique exact (name + sire + dam),1,True
+20261126,ROC,4,7,ZEDARI,6,Gelding,17,MENARI,POSSUMNATER,unique exact (name + sire + dam),1,True
+20261126,ROC,5,1,FOUR LEAF WONDER,5,Gelding,19,DUBIOUS,FACTION,unique exact (name + sire + dam),1,True
+20261126,ROC,5,2,GOTTA HERO,5,Gelding,26,HEROIC VALOUR,ASPIRAN,unique exact (name + sire + dam),1,True
+20261126,ROC,5,3,SENZORA,4,Gelding,3,SENSEI,KOIZORA,unique exact (name + sire + dam),1,True
+20261126,ROC,5,4,DUKE OF LANCASTER,6,Gelding,35,PIERRO,BEN'S DUCHESS (USA),unique exact (name + sire + dam),1,True
+20261126,ROC,5,5,LA NARRADORA,5,Mare,24,NICCONI,JUDICIAL ROCK,unique exact (name + sire + dam),1,True
+20261126,ROC,5,6,BETTY'S IMPACT,4,Mare,3,FIERCE IMPACT (JPN),BETTYRAE RUBY,unique exact (name + sire + dam),1,True
+20261126,ROC,5,7,SPORT,3,Gelding,9,BETTER THAN READY,PROPRIOCEPTION (USA),unique exact (name + sire + dam),1,True
+20261126,ROC,5,8,WHATTA MISSION,4,Gelding,17,THE MISSION,DIAMOND MASQUE (NZ),unique exact (name + sire + dam),1,True
+20261126,ROC,5,9,WHIP 'N NEIGHNEIGH,3,Filly,11,LEAN MEAN MACHINE,DANCING TYCOON,unique exact (name + sire + dam),1,True
+20261126,ROC,6,1,HELLA FAST,5,Gelding,18,HELLBENT,FAST 'N' WITTY,unique exact (name + sire + dam),1,True
+20261126,ROC,6,2,SNAZZY SNITZEL,7,Gelding,12,SNITZEL,NOCTURNELLE,unique exact (name + sire + dam),1,True
+20261126,ROC,6,3,FLYING MEAN,6,Gelding,19,LEAN MEAN MACHINE,I'M A FLYING STAR,unique exact (name + sire + dam),1,True
+20261126,ROC,6,4,LIM'S TEIDE,5,Gelding,5,TEN SOVEREIGNS (IRE),STONEDANCE (NZ),unique exact (name + sire + dam),1,True
+20261126,ROC,6,5,PAPARACHA,5,Gelding,7,CAPITALIST,MIATOKO,unique exact (name + sire + dam),1,True
+20261126,ROC,6,6,ELEGANT VENUS,6,Mare,11,JABALI,FRAOCH,unique exact (name + sire + dam),1,True
+20261126,ROC,6,7,MELO MELO KAVA,5,Mare,27,BETTER THAN READY,WHERE IT BEGAN,unique exact (name + sire + dam),1,True
+20261126,ROC,6,8,SCARLET HAZE,4,Mare,10,CAPITALIST,SCARLET RAIN,unique exact (name + sire + dam),1,True
+20261126,ROC,6,9,BARBARIAN KING,3,Gelding,6,BARBARIC,ALEYSA'S QUEEN,unique exact (name + sire + dam),1,True
+20261126,ROC,6,10,MARELLITY,4,Mare,14,HANSEATIC,GONSKI GIRL,unique exact (name + sire + dam),1,True
+20261126,ROC,6,11,WASABI BARBIE,3,Filly,8,ROCK STURDY,WHITTY GIRL,unique exact (name + sire + dam),1,True
+20261126,ROC,6,12,ASTILLA,3,Filly,6,HANSEATIC,TOO DISCREET,unique exact (name + sire + dam),1,True
+20261126,GER,1,1,TALK TOO MUCH,4,Gelding,2,I'M ALL THE TALK,NGAWI,unique exact (name + sire + dam),1,True
+20261126,GER,1,2,JET POWER,5,Gelding,12,BONDI,PENALTY POINT,unique exact (name + sire + dam),1,True
+20261126,GER,1,3,EIGHT COUNT,4,Gelding,4,SNIPPETSON,PRIME KNOCKOUT,unique exact (name + sire + dam),1,True
+20261126,GER,1,4,DIXIE PRINCESS,6,Mare,38,WAR CHANT (USA),SOUTHERN PRINCESS,unique exact (name + sire + dam),1,True
+20261126,GER,1,5,NORTHERN DIAMOND,5,Mare,6,BONDI,DIAMOND JOLSON,unique exact (name + sire + dam),1,True
+20261126,GER,1,6,THE STALAGMITE,3,Gelding,5,LEONARDO DA HINCHI,PARMIGIANA GIRL,unique exact (name + sire + dam),1,True
+20261126,GER,1,7,BAHNBOUGLE BABY,4,Mare,7,ROMMEL,CASTLE KEEP,unique exact (name + sire + dam),1,True
+20261126,GER,1,8,LADY ENFIELD,4,Mare,8,SHOOTING TO WIN,COLETA,unique exact (name + sire + dam),1,True
+20261126,GER,1,9,PARTY IN PARIS,4,Mare,3,PARIAH,HEDIARD,unique exact (name + sire + dam),1,True
+20261126,GER,1,10,EYE OF THE RULER,5,Mare,4,UNIVERSAL RULER,DURRIYAH,unique exact (name + sire + dam),1,True
+20261126,GER,1,11,CAVALLERIA,5,Mare,0,PIERRO,SANTUZZA (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261126,GER,1,12,HAPPY DANCE,3,Filly,4,ACROBAT,BOWIE BLUEBIRD,unique exact (name + sire + dam),1,True
+20261126,GER,2,1,IL BELLO BEALS,6,Gelding,28,RUBICK,MISS BEALS (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,2,2,KALLAHTI,5,Gelding,14,WRITTEN TYCOON,MISS HELSINKI,unique exact (name + sire + dam),1,True
+20261126,GER,2,3,GINGER FIZZ,5,Gelding,14,GINGERBREAD MAN,GRACEFUL TUNE,unique exact (name + sire + dam),1,True
+20261126,GER,2,4,AUBURN,5,Gelding,8,THE AUTUMN SUN,HEART ASHLEY (USA),unique exact (name + sire + dam),1,True
+20261126,GER,2,5,STRIKING LEAF,4,Gelding,5,LONG LEAF,LOVE STRIKES (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,2,6,SOLIDIFIED,4,Gelding,4,FROSTED (USA),MYSTICAL MISS,unique exact (name + sire + dam),1,True
+20261126,GER,2,7,LOVE OF FAR FA,5,Mare,19,LONG LEAF,AMAZING LOVE,unique exact (name + sire + dam),1,True
+20261126,GER,2,8,GIGI GOGO,6,Mare,23,MORE THAN READY (USA),FOLLONICA,unique exact (name + sire + dam),1,True
+20261126,GER,2,9,PERFECT SCORE,4,Mare,3,PER INCANTO (USA),PERFECT DREAM,unique exact (name + sire + dam),1,True
+20261126,GER,2,10,MAKE IT SNOW,3,Gelding,2,XTRAVAGANT (NZ),SNOWCHINO,unique exact (name + sire + dam),1,True
+20261126,GER,2,11,THE NUTTY NURSE,4,Mare,3,LONG LEAF,BROWNING,unique exact (name + sire + dam),1,True
+20261126,GER,2,12,DAKINIS,4,Mare,0,THORN DANCER (NZ),LA SOEUR NOIR,no identity: genuine first starter (TAB career 0),0,False
+20261126,GER,2,13,ALL OUR FAITH,7,Mare,7,GOD HAS SPOKEN,VANIKORA,unique exact (name + sire + dam),1,True
+20261126,GER,3,1,SNIPPETY LEGEND,6,Gelding,25,SNITZEL,REPLY CHURLISH (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,3,2,GOLD KEEPER,7,Gelding,52,SNIPPETSON,BELLA'S KEEPER,unique exact (name + sire + dam),1,True
+20261126,GER,3,3,COLLECTIVE,7,Mare,21,PLAYING GOD,EDITION,unique exact (name + sire + dam),1,True
+20261126,GER,3,4,HIGH PRESSURE,8,Gelding,39,HEADWATER,PLAYGROUNDPRINCESS,unique exact (name + sire + dam),1,True
+20261126,GER,3,5,PATCHWORK,8,Mare,57,HELMET,COUNTERPANE,unique exact (name + sire + dam),1,True
+20261126,GER,3,6,BE SEATED,9,Gelding,65,MAGNUS,VERSCENE,unique exact (name + sire + dam),1,True
+20261126,GER,3,7,PULL THE TRIGGER,6,Gelding,27,PATRONIZE,GUNPOWDER GREY,unique exact (name + sire + dam),1,True
+20261126,GER,3,8,SNIPPY SEAN,5,Gelding,26,SNIPPETSON,AMARILLO ROSE,unique exact (name + sire + dam),1,True
+20261126,GER,4,1,ARCHENEMY,5,Gelding,19,LONG LEAF,HELLO AGAIN,unique exact (name + sire + dam),1,True
+20261126,GER,4,2,PRO AUSSIE,6,Gelding,17,PROISIR,CENTILLY (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,4,3,SAFARI BOY,6,Gelding,30,ALL AMERICAN,MISS SAFARI,unique exact (name + sire + dam),1,True
+20261126,GER,4,4,LEONARDO DA GREY,5,Gelding,19,LEONARDO DA HINCHI,DOMINICUS,unique exact (name + sire + dam),1,True
+20261126,GER,4,5,DIVER DAN,4,Gelding,8,CAPITALIST,SPECIAL EPISODE,unique exact (name + sire + dam),1,True
+20261126,GER,4,6,NOBLE TOUCH,5,Mare,17,GINGERBREAD MAN,MODERN TOUCH,unique exact (name + sire + dam),1,True
+20261126,GER,4,7,ACQUIRED TASTE,4,Mare,10,PIERRO,LA MOULINE (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,4,8,PRETEY ROYAL,5,Mare,33,ROYAL MEETING (IRE),PRETE A PARTIR,unique exact (name + sire + dam),1,True
+20261126,GER,4,9,DANEA ROCK,6,Mare,42,AWESOME ROCK,PROMOTIONAL,unique exact (name + sire + dam),1,True
+20261126,GER,4,10,MT MAGNET GOLD,4,Mare,11,BIVOUAC,REGAL TIER,unique exact (name + sire + dam),1,True
+20261126,GER,4,11,EXTRA ZERO,5,Gelding,27,UNIVERSAL RULER,SECAIT,unique exact (name + sire + dam),1,True
+20261126,GER,4,12,HEAVENLY RAPTURE,4,Mare,15,PLAYING GOD,RAPITORIO,unique exact (name + sire + dam),1,True
+20261126,GER,4,13,CLEVER COMBAT,6,Gelding,25,SMART MISSILE,ORDINANCE,unique exact (name + sire + dam),1,True
+20261126,GER,4,14,SWISHGOBANGO,4,Gelding,24,LEONARDO DA HINCHI,MAFIA MISS,unique exact (name + sire + dam),1,True
+20261126,GER,5,1,ENCOSTA DE MONEY,4,Gelding,9,MASCHINO,ANNA'S SISTER,unique exact (name + sire + dam),1,True
+20261126,GER,5,2,GIRLS ON FIRE,4,Mare,15,BETTER THAN READY,AMELIA'S ON FIRE,unique exact (name + sire + dam),1,True
+20261126,GER,5,3,YAPPER,4,Gelding,6,I'M ALL THE TALK,VIAMMO,unique exact (name + sire + dam),1,True
+20261126,GER,5,4,INSPIRATIONAL MAC,5,Gelding,13,MASCHINO,THE COUNT'S MUSE,unique exact (name + sire + dam),1,True
+20261126,GER,5,5,FLAMING DRAGON,5,Gelding,16,UNIVERSAL RULER,LADY BARATHEON,unique exact (name + sire + dam),1,True
+20261126,GER,5,6,BLOOD SAINT,5,Gelding,19,MAGNUS,NO MANNERS,unique exact (name + sire + dam),1,True
+20261126,GER,5,7,CATERAN,5,Gelding,17,SAFEGUARD,A SEQUEL,unique exact (name + sire + dam),1,True
+20261126,GER,5,8,SNEAKY SESSION,5,Mare,13,SESSIONS,PEACEFUL BAY (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,5,9,JEWEL OF ZAVALA,4,Mare,8,WRITTEN TYCOON,WILD SPIRIT (FR),unique exact (name + sire + dam),1,True
+20261126,GER,5,10,SATIN BOW,5,Mare,19,PATRONIZE,KYLEENA,unique exact (name + sire + dam),1,True
+20261126,GER,5,11,GOLD LIGHTNING,6,Mare,24,MERCHANT NAVY,STAR CREATION,unique exact (name + sire + dam),1,True
+20261126,GER,5,12,VIOLENT,4,Mare,3,DUCIMUS,HABOOB,unique exact (name + sire + dam),1,True
+20261126,GER,5,13,LADY MAYFLOWER,7,Mare,31,PLAYING GOD,REBELLIOUS,unique exact (name + sire + dam),1,True
+20261126,GER,5,14,RIVETING ROSIE,5,Mare,12,MAGNUS,HUSSY FIVE OH,unique exact (name + sire + dam),1,True
+20261126,GER,5,15,POWER TO RULE,5,Gelding,24,UNIVERSAL RULER,DISTANT MEMORY,unique exact (name + sire + dam),1,True
+20261126,GER,5,16,ELLOVAMAN,4,Gelding,18,GINGERBREAD MAN,ELLE CHOISIT,unique exact (name + sire + dam),1,True
+20261126,GER,6,1,SIMPLY ROSSO,7,Gelding,42,SNIPPETSON,I'M OUTTA HERE,unique exact (name + sire + dam),1,True
+20261126,GER,6,2,DEEP DISCRETION,6,Mare,32,DEEP FIELD,ON THE QUE TEE,unique exact (name + sire + dam),1,True
+20261126,GER,6,3,GYPSY RHYME,4,Mare,6,AWESOME ROCK,LORDESS,unique exact (name + sire + dam),1,True
+20261126,GER,6,4,QUEEN TIFFANY,7,Mare,18,STARSPANGLEDBANNER,DEMON QUEEN,unique exact (name + sire + dam),1,True
+20261126,GER,6,5,TALKING HEADS,8,Gelding,41,I'M ALL THE TALK,BENT LINC,unique exact (name + sire + dam),1,True
+20261126,GER,6,6,SPIRIT MAN,7,Gelding,53,DALGHAR (FR),PRESS LEAK (USA),unique exact (name + sire + dam),1,True
+20261126,GER,6,7,PAT'S LAST BANG,5,Mare,28,PATRONIZE,SECRET WOMAN,unique exact (name + sire + dam),1,True
+20261126,GER,6,8,SAFE HUSTLE,6,Gelding,64,SAFEGUARD,HUSSLEW,unique exact (name + sire + dam),1,True
+20261126,GER,6,9,DARK MIST,6,Mare,33,AMERICAN PHAROAH (USA),DARK MISS,unique exact (name + sire + dam),1,True
+20261126,GER,6,10,TRULY SUPREME,5,Mare,22,TRAPEZE ARTIST,TRUE IMAGE,unique exact (name + sire + dam),1,True
+20261126,GER,6,11,WEAPONIZE,7,Gelding,39,PATRONIZE,CHANTAIN,unique exact (name + sire + dam),1,True
+20261126,GER,7,1,DIVINE INANNA,7,Mare,48,REAL IMPACT (JPN),ANNA OF AUSTRIA,unique exact (name + sire + dam),1,True
+20261126,GER,7,2,SPARKLE CORNER,7,Gelding,28,PRESS STATEMENT,DIVERGENCE,unique exact (name + sire + dam),1,True
+20261126,GER,7,3,BECALOTTI,7,Mare,36,A LOT (USA),ASIFBECNIC,unique exact (name + sire + dam),1,True
+20261126,GER,7,4,ALLEGRO SONATA,7,Mare,26,UNIVERSAL RULER,SONATA (NZ),unique exact (name + sire + dam),1,True
+20261126,GER,7,5,LIEUTENANT DUNBAR,7,Gelding,44,DISSIDENT,LONGING,unique exact (name + sire + dam),1,True
+20261126,GER,7,6,BLOWIN' SMOKE,5,Gelding,26,WAR CHANT (USA),BLACKWOOD,unique exact (name + sire + dam),1,True
+20261126,GER,7,7,MIFF MUFFERED MOOF,7,Mare,44,VERT DE GRECE (IRE),FUCHSIA LADY,unique exact (name + sire + dam),1,True
+20261126,GER,7,8,BENTLEY BEAU,10,Gelding,51,BEAUGONDO,TEMUKA,unique exact (name + sire + dam),1,True
+20261126,GER,7,9,KEYTRADE,10,Gelding,63,TRADE FAIR (GB),BIONICLE,unique exact (name + sire + dam),1,True
+20261126,GER,7,10,HOT PUDDIN,6,Gelding,41,DUCIMUS,PUDDIN' BOWL,unique exact (name + sire + dam),1,True
+20261126,GER,7,11,NOBILDONNA,5,Mare,22,TORONADO (IRE),SPURT,unique exact (name + sire + dam),1,True
+20261126,GER,7,12,TIGER LINE,6,Gelding,27,HELLBENT,REAL JAZZ (IRE),unique exact (name + sire + dam),1,True
+20261126,GER,8,1,SOUTHLAND,5,Gelding,9,UNIVERSAL RULER,FULL TIME,unique exact (name + sire + dam),1,True
+20261126,GER,8,2,CANTILEVER,6,Gelding,26,PLAYING GOD,ORIEL,unique exact (name + sire + dam),1,True
+20261126,GER,8,3,KENTUCKY BLUE,8,Gelding,59,SNIPPETSON,MISS MARGENE,unique exact (name + sire + dam),1,True
+20261126,GER,8,4,PRINCE EPAULETTE,5,Gelding,21,EPAULETTE,PRINCESS PIERRO,unique exact (name + sire + dam),1,True
+20261126,GER,8,5,CHAMPEZE,6,Mare,39,PLAYING GOD,JUST AS BEAUTIFUL,unique exact (name + sire + dam),1,True
+20261126,GER,8,6,AMERICAN IMAGE,4,Mare,5,AMERICAN PHAROAH (USA),IDEAL IMAGE,unique exact (name + sire + dam),1,True
+20261126,GER,8,7,COSMIC ECLIPSE,6,Mare,21,DEEP FIELD,JUST AS COSMIC,unique exact (name + sire + dam),1,True
+20261126,GER,8,8,MYSTERY BULLET,6,Gelding,25,SHOOTING TO WIN,AUSTERE,unique exact (name + sire + dam),1,True
+20261126,GER,8,9,RUBICK DELIGHT,6,Mare,41,RUBICK,ADDIE LANE,unique exact (name + sire + dam),1,True
+20261126,GER,8,10,SKY RIVER,5,Mare,24,UNIVERSAL RULER,RIVER HUSSY,unique exact (name + sire + dam),1,True
+20261126,GER,8,11,SUNSHINE TAFE,5,Mare,26,ALL AMERICAN,MISS SAFARI,unique exact (name + sire + dam),1,True
+20261126,GER,8,12,WHAT ABOUT MOI,9,Gelding,35,POUR MOI (IRE),OUR SACRED ANNA,unique exact (name + sire + dam),1,True
+20261126,GER,8,13,BLACK SANDS,6,Gelding,42,BONDI,BLACK MISTY,unique exact (name + sire + dam),1,True
+20261127,CBY,1,1,REBEL ROYAL,3,Gelding,1,WILD RULER,PEARL CONGENIAL,unique exact (name + sire + dam),1,True
+20261127,CBY,1,2,STORM SEEKER,3,Gelding,0,STAY INSIDE,GUST OF WIND (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,1,3,AURIC STAR,3,Filly,4,STAR TURN,GOLD EPONA,unique exact (name + sire + dam),1,True
+20261127,CBY,1,4,DIVINE OFFERING,3,Colt,4,WRITTEN TYCOON,HEAVEN'S GIFT,unique exact (name + sire + dam),1,True
+20261127,CBY,1,5,SKY KIRK,3,Filly,0,OLE KIRK,MUSIC BAY,no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,1,6,THIS IS NOW,3,Filly,0,I AM INVINCIBLE,FRANCALETTA,no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,1,7,HATSUMOMO,3,Filly,1,STREET BOSS (USA),CONCUBINE,unique exact (name + sire + dam),1,True
+20261127,CBY,1,8,MISS GAMBIT,3,Filly,2,I AM INVINCIBLE,CHEQUERBOARD,unique exact (name + sire + dam),1,True
+20261127,CBY,2,1,AURORA BOOM,3,Gelding,1,FARNAN,KOZAKOV,unique exact (name + sire + dam),1,True
+20261127,CBY,2,2,MENS REA,3,Gelding,1,MENARI,FULL OF BEANS,unique exact (name + sire + dam),1,True
+20261127,CBY,2,3,SACRED VOW,3,Gelding,2,FARNAN,EQUAL LOVE,unique exact (name + sire + dam),1,True
+20261127,CBY,2,4,BYBROOK,3,Filly,0,PROISIR,COLERNE,unique exact (name + sire + dam),1,False
+20261127,CBY,2,5,DIVINE GAL,3,Filly,0,ST MARK'S BASILICA (FR),KOOKIE GAL (USA),no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,2,6,POSH POMMERY,3,Filly,2,HOME AFFAIRS,PRINCESS POSH,unique exact (name + sire + dam),1,True
+20261127,CBY,2,7,ROCKET GIRL,3,Filly,2,I AM INVINCIBLE,MISSILE MANTRA,unique exact (name + sire + dam),1,True
+20261127,CBY,2,8,THYME TO GO,3,Filly,6,I AM INVINCIBLE,JOY AT LAST,unique exact (name + sire + dam),1,True
+20261127,CBY,3,1,BAVARIA,3,Colt,1,SNITZEL,MUSEO (GB),unique exact (name + sire + dam),1,True
+20261127,CBY,3,2,BUREAU,3,Gelding,3,HOME AFFAIRS,LADY AZAMOUR (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,3,3,CADMEAN,3,Gelding,3,WILD RULER,TEUMESSIAN,unique exact (name + sire + dam),1,True
+20261127,CBY,3,4,DARN SURE,3,Gelding,2,TOO DARN HOT (GB),SURE KNEE,unique exact (name + sire + dam),1,True
+20261127,CBY,3,5,I REALLY THINK SO,3,Gelding,0,SO YOU THINK (NZ),SULTAH,no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,3,6,SNITZEL A'LA ROUGE,3,Gelding,5,SNITZEL,MADAM ROUGE,unique exact (name + sire + dam),1,True
+20261127,CBY,3,7,STELLAR CIPHER,3,Colt,8,ZOUSTAR,CRACK THE CODE,unique exact (name + sire + dam),1,True
+20261127,CBY,3,8,ELDEST DAUGHTER,3,Filly,0,D'ARGENTO,PROVEN CLASS,no identity: genuine first starter (TAB career 0),0,False
+20261127,CBY,3,9,PALM TREE,3,Filly,4,STREET BOSS (USA),PALMATEER,unique exact (name + sire + dam),1,True
+20261127,CBY,3,10,SNITZEL'S GIRL,3,Filly,6,SNITZEL,GLOBAL GLAMOUR,unique exact (name + sire + dam),1,True
+20261127,CBY,3,11,ENVIOUS,3,Filly,2,ZOUSTAR,EMERALD BAY,unique exact (name + sire + dam),1,True
+20261127,CBY,3,12,NOT INEVITABLE,3,Filly,1,PROISIR,GOLDEN HIND (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,4,1,NEXT JEN,4,Mare,11,OLE KIRK,FASHION SNIPTZ,unique exact (name + sire + dam),1,True
+20261127,CBY,4,2,ROYAL CORPORAL,4,Gelding,13,GRAFF,ROYAL HOOTENANNY,unique exact (name + sire + dam),1,True
+20261127,CBY,4,3,MARCHON,4,Gelding,8,WOOTTON BASSETT (GB),MARCHENA,unique exact (name + sire + dam),1,True
+20261127,CBY,4,4,THREESOME,3,Gelding,4,WILD RULER,TRIPLE CHELSEA (USA),unique exact (name + sire + dam),1,True
+20261127,CBY,4,5,MISS SUPERNOVA,4,Mare,7,RUSSIAN REVOLUTION,ALTAIR'S GLOW,unique exact (name + sire + dam),1,True
+20261127,CBY,4,6,TIME TO DANCE,4,Gelding,5,SAVABEEL,DONNA IMELDA (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,4,7,LIPSTICK,4,Mare,12,STREET BOSS (USA),ACCOUTREMENTS,unique exact (name + sire + dam),1,True
+20261127,CBY,4,8,WAR BANNER,3,Colt,1,SNITZEL,HEATHERLY,unique exact (name + sire + dam),1,True
+20261127,CBY,4,9,REGAL,3,Filly,3,KING'S LEGACY,LUNAR TRAMP,unique exact (name + sire + dam),1,True
+20261127,CBY,4,10,SALMA'S STAR,4,Mare,11,STAR TURN,HOLLYWELL,unique exact (name + sire + dam),1,True
+20261127,CBY,5,1,HALLOWED HALLS,4,Gelding,12,SAVABEEL,DRAGON ROBE (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,5,2,COSMIC LAD,6,Gelding,31,ADELAIDE (IRE),HALIMEDE,unique exact (name + sire + dam),1,True
+20261127,CBY,5,3,AZARAX,4,Gelding,12,HELLO YOUMZAIN (FR),SUNNY ROSE (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,5,4,MALBORK CASTLE,5,Gelding,23,CASTELVECCHIO,FLIDAIS,unique exact (name + sire + dam),1,True
+20261127,CBY,5,5,BONDI BLOSSOM,4,Mare,15,BONDI,DEVILS ARCADE,unique exact (name + sire + dam),1,True
+20261127,CBY,5,6,DARN CUTE,5,Mare,20,TOO DARN HOT (GB),SENNYO,unique exact (name + sire + dam),1,True
+20261127,CBY,5,7,CABBUCIO,4,Mare,9,TOO DARN HOT (GB),TRAPANI (GB),unique exact (name + sire + dam),1,True
+20261127,CBY,5,8,DANISH FORTUNE,9,Gelding,73,MAGNUS,FOOTSTEPS OF GOD,unique exact (name + sire + dam),1,True
+20261127,CBY,5,9,OUTTA LINE,5,Mare,9,PIERRO,BULLION MANSION,unique exact (name + sire + dam),1,True
+20261127,CBY,5,10,AURA,6,Mare,16,ALL TOO HARD,MUSCATELS,unique exact (name + sire + dam),1,True
+20261127,CBY,6,1,MAWJOOD,5,Gelding,24,TASSORT,MAYSOON,unique exact (name + sire + dam),1,True
+20261127,CBY,6,2,IL PASSERO,5,Gelding,19,CASTELVECCHIO,BALLET BLANC,unique exact (name + sire + dam),1,True
+20261127,CBY,6,3,STEEL MOVE,5,Gelding,18,BLUE POINT (IRE),FLYING ICE (SAF),unique exact (name + sire + dam),1,True
+20261127,CBY,6,4,FINE VINTAGE,7,Gelding,31,SUPIDO,WINESEARCH,unique exact (name + sire + dam),1,True
+20261127,CBY,6,5,BRAVISSIMA,6,Mare,25,DEEP FIELD,LIPIZZAN,unique exact (name + sire + dam),1,True
+20261127,CBY,6,6,WHERE'STHEPROFIT,7,Gelding,12,DIVINE PROPHET,RAZEENA,unique exact (name + sire + dam),1,True
+20261127,CBY,6,7,BOJANGLES,6,Gelding,26,SHOWTIME,HETTY HEIGHTS,unique exact (name + sire + dam),1,True
+20261127,CBY,6,8,ANDALE ANDALE,5,Mare,14,ALL TOO HARD,LA BELLA ROSE,unique exact (name + sire + dam),1,True
+20261127,CBY,6,9,IVAN'S HERO,7,Gelding,46,HOLLER,KANIANA,unique exact (name + sire + dam),1,True
+20261127,CBY,6,10,BODHI BOY,5,Gelding,16,SO YOU THINK (NZ),NO DOUBT MA'AM,unique exact (name + sire + dam),1,True
+20261127,CBY,6,11,MAILATA,6,Gelding,20,WRITTEN TYCOON,RIVER PEBBLES,unique exact (name + sire + dam),1,True
+20261127,CBY,7,1,SHADY ROAD,4,Mare,10,WRITTEN TYCOON,SPANISH WHISPER,unique exact (name + sire + dam),1,True
+20261127,CBY,7,2,SHOW BUSINESS,5,Mare,12,TORONADO (IRE),ANOTHER SHOW,unique exact (name + sire + dam),1,True
+20261127,CBY,7,3,ZOUNAKA,5,Mare,19,ZOUSAIN,RENAKA,unique exact (name + sire + dam),1,True
+20261127,CBY,7,4,EMALYN,4,Mare,14,PRAGUE,SHE'S CHOICE,unique exact (name + sire + dam),1,True
+20261127,CBY,7,5,FLIGHTCREW,6,Mare,25,EPAULETTE,CORSAIRE,unique exact (name + sire + dam),1,True
+20261127,CBY,7,6,SAPPHIRE ROSE,4,Mare,8,BLUE POINT (IRE),ROCKET COMMANDER,unique exact (name + sire + dam),1,True
+20261127,CBY,7,7,BROWN SUGAR,4,Mare,6,PIERATA,FOX,unique exact (name + sire + dam),1,True
+20261127,CBY,7,8,HELLENIC BELLE,3,Filly,6,HELLBENT,BESIDE YOU,unique exact (name + sire + dam),1,True
+20261127,CBY,7,9,LIGHTHOUSE LASS,4,Mare,17,CAPITALIST,SHINING EAGLE,unique exact (name + sire + dam),1,True
+20261127,CBY,7,10,SCURO STAR,3,Filly,3,D'ARGENTO,STAR PROGENY,unique exact (name + sire + dam),1,True
+20261127,CBY,7,11,CELESTIAL CHARM,3,Filly,2,EXTREME CHOICE,I AM A STAR (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,7,12,FROM ME TO YOU,3,Filly,1,I AM INVINCIBLE,SHOKO,unique exact (name + sire + dam),1,True
+20261127,CBY,7,13,OUTBACK ANGEL,6,Mare,20,SUPER ONE,LOVE A ROSE,unique exact (name + sire + dam),1,True
+20261127,CBY,7,14,VITTOZZI,4,Mare,12,TRAPEZE ARTIST,BIATHLON,unique exact (name + sire + dam),1,True
+20261127,CBY,8,1,LUSKAIRE,6,Gelding,27,AMERICAN PHAROAH (USA),MILSEAIN (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,2,KOMODO DRAGON,5,Gelding,12,HELLBENT,JALAN JALAN,unique exact (name + sire + dam),1,True
+20261127,CBY,8,3,SO SUAVE,5,Gelding,16,ZED (NZ),OPULENCE (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,4,CONGRESSMAN,4,Gelding,7,SNITZEL,TOP CUBAN,unique exact (name + sire + dam),1,True
+20261127,CBY,8,5,O'SHEAMUS,4,Gelding,13,SHAMUS AWARD,O'REILLY'S ANGEL (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,6,BIG TIGER,4,Gelding,4,SO YOU THINK (NZ),STORMY CHOICE,unique exact (name + sire + dam),1,True
+20261127,CBY,8,7,UNUSUAL PROSPECT,6,Gelding,5,UNUSUAL SUSPECT (USA),Shibboleth (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,8,CHAPPY,4,Gelding,8,KING OF COMEDY (IRE),LISPENARD,unique exact (name + sire + dam),1,True
+20261127,CBY,8,9,QUARTERBACK,3,Gelding,6,SUPER SETH,FLOATING HEART (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,11,EMERALD HILLS,5,Mare,5,KERMADEC (NZ),BAY MEADOWS,unique exact (name + sire + dam),1,True
+20261127,CBY,8,12,STEALTHFIRE,4,Gelding,7,RIBCHESTER (IRE),MCPHOEBE (NZ),unique exact (name + sire + dam),1,True
+20261127,CBY,8,13,ACHESON,6,Gelding,32,CHURCHILL (IRE),VIRGINIA BREEZE,unique exact (name + sire + dam),1,True
+20261127,CBY,8,14,ALABAMA SHOWDOWN,4,Gelding,9,ALABAMA EXPRESS,OUR RANSOM STAR,unique exact (name + sire + dam),1,True
+20261127,CBY,8,15,IT'S A WONDER,6,Mare,26,DUNDEEL (NZ),ALLEZ WONDER,unique exact (name + sire + dam),1,True
+20261127,CBY,8,16,STAR HALF,4,Gelding,7,ZOUSTAR,SCRUM,unique exact (name + sire + dam),1,True
+20261127,QBY,1,1,ENTIRELY OAK,7,Gelding,20,MAGIC ALBERT,ANACONNI,unique exact (name + sire + dam),1,True
+20261127,QBY,1,2,HAZEL BAY,4,Gelding,0,SHAFT,TWIN SPIRIT,no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,1,3,ISLE OF WIGHT,4,Gelding,4,I AM INVINCIBLE,CICATRIX (USA),unique exact (name + sire + dam),1,True
+20261127,QBY,1,4,RISK AND FAMOUS,4,Gelding,6,BRAZEN BEAU,LOTS OF DIAMONDS,unique exact (name + sire + dam),1,True
+20261127,QBY,1,5,JAMMED,3,Gelding,4,TAGALOA,WIDE AWAKE,unique exact (name + sire + dam),1,True
+20261127,QBY,1,6,PONZI SCHEME,3,Gelding,5,PROFITEER,DIAPASON (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,1,7,STILL THE MOON,3,Gelding,3,D'ARGENTO,ICE,unique exact (name + sire + dam),1,True
+20261127,QBY,1,8,CAT'S EYE,4,Mare,1,SHALAA (IRE),ISLAND GEM,unique exact (name + sire + dam),1,True
+20261127,QBY,1,9,DESIGNED SPINDLE,6,Mare,18,SHAFT,SILVER DESIGN,unique exact (name + sire + dam),1,True
+20261127,QBY,1,10,LOUJEN FRANCAISE,8,Mare,37,DUPORTH,NOT A TULLY,unique exact (name + sire + dam),1,True
+20261127,QBY,1,11,NAVY ROSE,4,Mare,1,MERCHANT NAVY,ROSA'S MAGIC,unique exact (name + sire + dam),1,True
+20261127,QBY,1,12,SWORN,3,Filly,0,SNITZEL,ON A PROMISE (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,2,1,OBISANYA,4,Gelding,1,PUISSANCE DE LUNE (IRE),BRAZEN WILDFIRE,unique exact (name + sire + dam),1,True
+20261127,QBY,2,2,ON THE FLY,4,Mare,7,TRAPEZE ARTIST,DOLOMITES,unique exact (name + sire + dam),1,True
+20261127,QBY,2,3,BOY BRUTUS,3,Gelding,4,STRATUM STAR,SMART'N'CUTE,unique exact (name + sire + dam),1,True
+20261127,QBY,2,4,TOP PICK,5,Mare,5,SIZZLING,REDOUTE'S PICK,unique exact (name + sire + dam),1,True
+20261127,QBY,2,5,AQUILINO,4,Gelding,23,CLIFF'S EDGE,MAGHRO,unique exact (name + sire + dam),1,True
+20261127,QBY,2,6,BETTER BLOOM,4,Mare,8,BETTER THAN READY,SWEET LAVENDER,unique exact (name + sire + dam),1,True
+20261127,QBY,2,7,JUSTWATCHHER,4,Mare,11,MAURICE (JPN),CUPIDITY,unique exact (name + sire + dam),1,True
+20261127,QBY,2,8,RAINING VIOLETS,4,Mare,6,CASINO PRINCE,AMBITION'S REWARD,unique exact (name + sire + dam),1,True
+20261127,QBY,2,9,RAWANO,6,Gelding,40,TIVACI,ROSEHIP (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,2,10,STAR OF MINE,4,Mare,3,STAR WITNESS,SILVER THREADS,unique exact (name + sire + dam),1,True
+20261127,QBY,2,11,TIGER TOM,3,Gelding,3,ALL TOO HARD,LA TIGRESA,unique exact (name + sire + dam),1,True
+20261127,QBY,2,12,WALKING UNDA STARS,5,Mare,7,COSMIC FORCE,TIRONE MISS,unique exact (name + sire + dam),1,True
+20261127,QBY,2,13,DEEL HEAD,4,Gelding,5,HEADWATER,WHAT'S THE DEEL,unique exact (name + sire + dam),1,True
+20261127,QBY,2,14,SON O' WAR,6,Gelding,32,WAR DECREE (USA),O'TRYST (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,2,15,DID DUBAI ME EUROS,6,Gelding,12,EUROZONE,MAGIC DUBAI,unique exact (name + sire + dam),1,True
+20261127,QBY,2,16,HELLCAT,4,Gelding,9,HELLBENT,NORTHERN CATH,unique exact (name + sire + dam),1,True
+20261127,QBY,3,1,FALSTAFFIAN,4,Gelding,9,SNITZEL,MEMSAHIB LADY,unique exact (name + sire + dam),1,True
+20261127,QBY,3,2,THE HARD ROAD,4,Gelding,6,SUPIDO,SACRED VOYAGE,unique exact (name + sire + dam),1,True
+20261127,QBY,3,3,AIN'T SEEN MARS,4,Gelding,5,ADMIRE MARS (JPN),TASTE OF HONEY,unique exact (name + sire + dam),1,True
+20261127,QBY,3,4,IN CIRCLES,4,Mare,8,TORONADO (IRE),LOPE DE FIELD,unique exact (name + sire + dam),1,True
+20261127,QBY,3,5,OLE MISS,4,Mare,9,OLE KIRK,TRANSMITTER,unique exact (name + sire + dam),1,True
+20261127,QBY,3,6,PERUNO,7,Gelding,56,PIERRO,NEXT THE UNIVERSE,unique exact (name + sire + dam),1,True
+20261127,QBY,3,7,WRITTEN STORY,5,Mare,15,WRITTEN BY,NINGBO,unique exact (name + sire + dam),1,True
+20261127,QBY,3,8,DELAGO SERG,5,Gelding,22,SOOBOOG,DELAGO THUNDER,unique exact (name + sire + dam),1,True
+20261127,QBY,3,9,PETOMAI,4,Gelding,4,FLYING ARTIE,ROSE OF FALVELON,unique exact (name + sire + dam),1,True
+20261127,QBY,3,10,ALABAMA HUSSY,5,Mare,20,ALABAMA EXPRESS,ZEITLIN,unique exact (name + sire + dam),1,True
+20261127,QBY,3,11,GEOSTORM,9,Gelding,101,EPAULETTE,JESSICA'S HOPE,unique exact (name + sire + dam),1,True
+20261127,QBY,3,12,ADASITI,7,Gelding,19,KAPHERO,MEISHKA,unique exact (name + sire + dam),1,True
+20261127,QBY,3,13,FLASHBACK TIME,4,Mare,16,BON HOFFA,FLASH ANNA,unique exact (name + sire + dam),1,True
+20261127,QBY,3,14,LIAMENA AVENUE,5,Gelding,18,HEADWATER,LIAMENA,unique exact (name + sire + dam),1,True
+20261127,QBY,3,15,KARUTA KING,7,Gelding,46,SEBRING,INFLICTION,unique exact (name + sire + dam),1,True
+20261127,QBY,3,16,BEOGRAD BOY,8,Gelding,56,ZARIZ,HOTEL MOSKVA,unique exact (name + sire + dam),1,True
+20261127,QBY,4,1,ALABASTER,4,Gelding,0,ALABAMA EXPRESS,RESPECTING,no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,4,2,MUCHOBOR,4,Gelding,5,MERCHANT NAVY,ROCK THE MOMENT,unique exact (name + sire + dam),1,True
+20261127,QBY,4,3,WORLD WIDE,4,Gelding,5,HELLO YOUMZAIN (FR),SHADOW DANCER (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,4,4,KING'S CHARM,3,Colt,0,KING'S LEGACY,MAGICAL CHARM (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,4,5,TEEMING,3,Gelding,1,ZOUSTAR,WE ARE MANY,unique exact (name + sire + dam),1,True
+20261127,QBY,4,6,LADY COWAN,4,Mare,2,I AM INVINCIBLE,FAITH IN HAND,unique exact (name + sire + dam),1,True
+20261127,QBY,4,7,MADAM MOSAIC,4,Mare,0,SIZZLING,UBER COUGAR (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,4,8,PASIFAE,4,Mare,7,CASTELVECCHIO,SO MAGIC,unique exact (name + sire + dam),1,True
+20261127,QBY,4,9,GITTYA OWN,3,Filly,0,FLYING ARTIE,LOVE YERS ALL,no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,4,10,TINTOELA,3,Filly,0,HARRY ANGEL (IRE),MISS LOUISIANA,no identity: genuine first starter (TAB career 0),0,False
+20261127,QBY,4,11,O'HATASKY,3,Filly,4,PORTLAND SKY,POWER O'HATA (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,4,12,HUSSLAA,3,Gelding,5,SHALAA (IRE),HUSSY MISS,unique exact (name + sire + dam),1,True
+20261127,QBY,4,13,RISK AND FAMOUS,4,Gelding,6,BRAZEN BEAU,LOTS OF DIAMONDS,unique exact (name + sire + dam),1,True
+20261127,QBY,4,14,NAVY ROSE,4,Mare,1,MERCHANT NAVY,ROSA'S MAGIC,unique exact (name + sire + dam),1,True
+20261127,QBY,5,1,FAIR MASTER,4,Gelding,12,VINO ROSSO (USA),GREY GOWN,unique exact (name + sire + dam),1,True
+20261127,QBY,5,2,BEHTAR,7,Gelding,33,KITTEN'S JOY (USA),BEHNASA (FR),unique exact (name + sire + dam),1,True
+20261127,QBY,5,3,KOSUKE,5,Gelding,22,THE AUTUMN SUN,INCHITA,unique exact (name + sire + dam),1,True
+20261127,QBY,5,4,THINK I DO,5,Mare,21,SO YOU THINK (NZ),KARATA,unique exact (name + sire + dam),1,True
+20261127,QBY,5,5,SPURLINE,6,Mare,39,CAPITALIST,CRYSTAL SPUR,unique exact (name + sire + dam),1,True
+20261127,QBY,5,6,PURE MELODY,4,Mare,14,MAURICE (JPN),MINAMYA (FR),unique exact (name + sire + dam),1,True
+20261127,QBY,5,7,SORRY SUNSHINE,7,Gelding,46,APOLOGIA,SUNWISP,unique exact (name + sire + dam),1,True
+20261127,QBY,5,8,THE ADIGE,5,Gelding,10,CASTELVECCHIO,PASS THE PARCEL,unique exact (name + sire + dam),1,True
+20261127,QBY,5,9,HARD GRUNT,5,Gelding,25,GRUNT (NZ),SO VITAL (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,5,10,BULLA VINAKA,7,Gelding,36,NO NAY NEVER (USA),BULLA BABY,unique exact (name + sire + dam),1,True
+20261127,QBY,5,11,REVOKE,5,Gelding,18,GRUNT (NZ),FALLACY,unique exact (name + sire + dam),1,True
+20261127,QBY,6,1,SOOO CRAZY,5,Gelding,12,SOOBOOG,CRAZY QUALITY,unique exact (name + sire + dam),1,True
+20261127,QBY,6,2,WRITTEN BY LUCY,5,Mare,13,WRITTEN BY,GESTURE,unique exact (name + sire + dam),1,True
+20261127,QBY,6,3,MISSILE DEFENCE,6,Gelding,36,SMART MISSILE,SOFFRAAJ,unique exact (name + sire + dam),1,True
+20261127,QBY,6,4,STAR OF LILY,3,Filly,7,STANDOUT,LILITH,unique exact (name + sire + dam),1,True
+20261127,QBY,6,5,VELLA MAGIC,9,Mare,38,MAGIC ALBERT,TWIN SPIRIT,unique exact (name + sire + dam),1,True
+20261127,QBY,6,6,SMASHING LULU,4,Mare,10,BETTER THAN READY,LUCY ROSE,unique exact (name + sire + dam),1,True
+20261127,QBY,6,7,ROYAL MEMORY,5,Mare,20,ROYAL MEETING (IRE),BOMBALURINA,unique exact (name + sire + dam),1,True
+20261127,QBY,6,8,WONDERFUL MISTAKE,4,Mare,11,FLYING ARTIE,WONDERFUL THING,unique exact (name + sire + dam),1,True
+20261127,QBY,6,9,SANTOLINI,5,Mare,45,MANHATTAN RAIN,ALAMEIN,unique exact (name + sire + dam),1,True
+20261127,QBY,6,10,STRAIGHT FIRE,6,Mare,28,VANCOUVER,READY FOR YOU,unique exact (name + sire + dam),1,True
+20261127,QBY,6,11,SELHURST PARK,8,Gelding,59,NOT A SINGLE DOUBT,PALAZZO CRISTALLO,unique exact (name + sire + dam),1,True
+20261127,QBY,6,12,CURLY BEND,5,Mare,24,STAR TURN,HAIRY,unique exact (name + sire + dam),1,True
+20261127,QBY,6,13,FRED ASTERN,4,Gelding,7,ASTERN,BALLERINA GIRL,unique exact (name + sire + dam),1,True
+20261127,QBY,6,14,CHAIRMAN'S LIST,10,Gelding,65,TAVISTOCK (NZ),ARDECHE (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,6,15,ZEEMA,6,Mare,26,PIERRO,CHRISELLAINE (IRE),unique exact (name + sire + dam),1,True
+20261127,QBY,7,1,VERMICELLA,6,Mare,16,PIERRO,SHEMAI (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,7,2,BELLEISTIC KIDS,7,Gelding,61,THE BROTHERS WAR (USA),SHE'S BELLEISTIC,unique exact (name + sire + dam),1,True
+20261127,QBY,7,3,MY LAST HOORAY,5,Gelding,25,HARRY ANGEL (IRE),VILLA CORTONA,unique exact (name + sire + dam),1,True
+20261127,QBY,7,4,ACHESON,6,Gelding,32,CHURCHILL (IRE),VIRGINIA BREEZE,unique exact (name + sire + dam),1,True
+20261127,QBY,7,5,BLOW IN,8,Gelding,51,FIGHTING SUN,ROSE OF FALVELON,unique exact (name + sire + dam),1,True
+20261127,QBY,7,6,GOOD PRIZE,6,Gelding,35,PRIZED ICON,DOUBLE GOOD,unique exact (name + sire + dam),1,True
+20261127,QBY,7,7,MISS STALWART,8,Mare,56,RELIABLE MAN (GB),AVOID (NZ),unique exact (name + sire + dam),1,True
+20261127,QBY,7,8,BURGUNDY GIRL,8,Mare,57,CABLE BAY (IRE),CHABLIS,unique exact (name + sire + dam),1,True
+20261127,QBY,7,9,SOUL LADY,6,Mare,24,SUPIDO,IMPOSITION,unique exact (name + sire + dam),1,True
+20261127,QBY,7,10,LUNA ANGEL,7,Mare,54,STARSPANGLEDBANNER,LUNULAE,unique exact (name + sire + dam),1,True
+20261127,QBY,7,11,BATTLE ABBEY,7,Gelding,53,HALLOWED CROWN,MADONNICA,unique exact (name + sire + dam),1,True
+20261127,QBY,7,12,GOLD TRACKER,7,Gelding,60,XTRAVAGANT (NZ),GRACEFULLY CHIC,unique exact (name + sire + dam),1,True
+20261127,QBY,7,13,HARDAZHELL,7,Gelding,47,HELLBENT,FIRM OPTION,unique exact (name + sire + dam),1,True
+20261127,QBY,7,14,PEARLER,5,Mare,25,D'ARGENTO,REDAN LANE,unique exact (name + sire + dam),1,True
+20261127,QBY,8,1,ACTION KING,6,Gelding,27,HARRY ANGEL (IRE),ARABIAN GIFT (IRE),unique exact (name + sire + dam),1,True
+20261127,QBY,8,2,SUTTON VELLA,6,Mare,25,SHAFT,VELLABEL,unique exact (name + sire + dam),1,True
+20261127,QBY,8,3,WINNING REVOLUTION,7,Gelding,65,WINNING RUPERT,BROUGHTONS FANCY (GB),unique exact (name + sire + dam),1,True
+20261127,QBY,8,4,LOS PADRES,6,Gelding,38,ZOUSTAR,MATILIJA,unique exact (name + sire + dam),1,True
+20261127,QBY,8,5,MASSIRA,6,Gelding,26,I AM INVINCIBLE,MARRAKESH,unique exact (name + sire + dam),1,True
+20261127,QBY,8,6,ALL ADORE,4,Mare,11,HARRY ANGEL (IRE),ALL TOO READY,unique exact (name + sire + dam),1,True
+20261127,QBY,8,7,STARLIGHT GIRL,6,Mare,32,ZOUSTAR,FAUSTINE,unique exact (name + sire + dam),1,True
+20261127,QBY,8,8,ALABAMA HAMMER,4,Mare,4,ALABAMA EXPRESS,ZAUBERFLOTE,unique exact (name + sire + dam),1,True
+20261127,QBY,8,9,DESTRUCTIVE DIVA,6,Mare,41,SMART MISSILE,ATOM EVE,unique exact (name + sire + dam),1,True
+20261127,QBY,8,10,METALLIC RULER,6,Gelding,29,CAPITALIST,IRON MIZZ (USA),unique exact (name + sire + dam),1,True
+20261127,QBY,8,11,SMARTER THAN YOU,8,Mare,41,SMART MISSILE,HOT COMMODITY,unique exact (name + sire + dam),1,True
+20261127,QBY,8,12,HELL OF A SHOW,6,Gelding,34,HELLBENT,MAGIC I AM,unique exact (name + sire + dam),1,True
+20261127,QBY,8,13,VAINSTREAM,12,Gelding,118,BEL ESPRIT,YASEY SAN,unique exact (name + sire + dam),1,True
+20261127,MUS,1,1,CAPTAINTHUNDERBOLT,4,Gelding,5,CAPITALIST,SHEER LIGHTNING,unique exact (name + sire + dam),1,True
+20261127,MUS,1,2,ENVISIONED,5,Gelding,8,STRATUM STAR,ION YOU,unique exact (name + sire + dam),1,True
+20261127,MUS,1,3,MOON DART,4,Gelding,6,ODYSSEY MOON,DYLAN'S DART,unique exact (name + sire + dam),1,True
+20261127,MUS,1,4,SEDITIO,5,Gelding,2,RUSSIAN REVOLUTION,LA RECONQUISTA (GB),unique exact (name + sire + dam),1,True
+20261127,MUS,1,5,TARRANT COUNTY,7,Gelding,18,ARLINGTON,SASSY STAR,unique exact (name + sire + dam),1,True
+20261127,MUS,1,6,TOKE,4,Gelding,13,CASINO PRINCE,LEFT IN MY WAKE,unique exact (name + sire + dam),1,True
+20261127,MUS,1,7,VINTAGE BELL,4,Gelding,2,RINGERDINGDING,SAUTERNES,unique exact (name + sire + dam),1,True
+20261127,MUS,1,8,UMBUSI,3,Gelding,2,WILD RULER,AFRICAN RAINBOW,unique exact (name + sire + dam),1,True
+20261127,MUS,1,9,VAGUELY RED,3,Gelding,1,MAURICE (JPN),VILLA ROSA,unique exact (name + sire + dam),1,True
+20261127,MUS,1,10,BOBBIN BACK,4,Mare,12,ASTERN,DANISH LACE,unique exact (name + sire + dam),1,True
+20261127,MUS,1,11,LITTLE MISS SASS,4,Mare,2,GRAFF,OH LEARNED ONE,unique exact (name + sire + dam),1,True
+20261127,MUS,1,12,HONNIBALL DRIVE,3,Filly,6,FLYING ARTIE,WAKATIPU,unique exact (name + sire + dam),1,True
+20261127,MUS,1,13,SHEZA'S SHOW,3,Filly,2,SHOWTIME,UNKNOWN DESTINY,unique exact (name + sire + dam),1,True
+20261127,MUS,2,1,SHADASHI,5,Mare,11,SHAMUS AWARD,DASHIE DE LUXE,unique exact (name + sire + dam),1,True
+20261127,MUS,2,2,DON'T TELL POLLY,4,Mare,8,GHAIYYATH (IRE),PELONOMENA,unique exact (name + sire + dam),1,True
+20261127,MUS,2,3,AFRICAN DIAMOND,5,Mare,9,BRUTAL (NZ),AFRICAN RAINBOW,unique exact (name + sire + dam),1,True
+20261127,MUS,2,4,HONEST DOLL,6,Mare,3,OUTREACH,SUNDAY STAR,unique exact (name + sire + dam),1,True
+20261127,MUS,2,5,SUNDAY PUNCH,4,Mare,13,BRUTAL (NZ),CHUCHOTER (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,2,6,LEICA QUEEN,4,Mare,11,HEADWATER,LEICA'S LASS,unique exact (name + sire + dam),1,True
+20261127,MUS,2,7,RING MY BELL,4,Mare,18,HANSEATIC,MOVIN' OUT,unique exact (name + sire + dam),1,True
+20261127,MUS,2,8,SIGSALY,5,Mare,16,CHURCHILL (IRE),MOST SECRETIVE,unique exact (name + sire + dam),1,True
+20261127,MUS,2,9,ROCK'N ON UPTOWN,4,Mare,25,WRITTEN BY,UPTOWN ROCK,unique exact (name + sire + dam),1,True
+20261127,MUS,3,1,CAPE COD,4,Mare,2,I AM INVINCIBLE,SHOALS,unique exact (name + sire + dam),1,True
+20261127,MUS,3,2,AFRICAN DIAMOND,5,Mare,9,BRUTAL (NZ),AFRICAN RAINBOW,unique exact (name + sire + dam),1,True
+20261127,MUS,3,3,ALBERT'S PICK,4,Mare,19,D'ARGENTO,MERRILY MERRILY,unique exact (name + sire + dam),1,True
+20261127,MUS,3,4,LIGHTENING KISS,3,Filly,2,EXCEEDANCE,OCEAN NYMPH (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,3,5,DON'T TELL HARRY,5,Gelding,17,ROYAL MEETING (IRE),SEATTLE LASS,unique exact (name + sire + dam),1,True
+20261127,MUS,3,6,MODERNIST,3,Filly,5,ALL TOO HARD,MODERNITY,unique exact (name + sire + dam),1,True
+20261127,MUS,3,7,ABOVE BOARD,3,Gelding,5,YOUR SONG,RED STOCKINGS,unique exact (name + sire + dam),1,True
+20261127,MUS,3,9,ALARTHILL,4,Mare,13,CHURCHILL (IRE),ALART,unique exact (name + sire + dam),1,True
+20261127,MUS,4,1,PRIMA VECCHIO,4,Gelding,3,CASTELVECCHIO,PRIMA KLAIRE,unique exact (name + sire + dam),1,True
+20261127,MUS,4,2,NEAREST,4,Gelding,4,THE AUTUMN SUN,PRINCESS NOIR (JPN),unique exact (name + sire + dam),1,True
+20261127,MUS,4,3,CHIEF WILD EAGLE,4,Gelding,4,SAXON WARRIOR (JPN),ZAZEELA,unique exact (name + sire + dam),1,True
+20261127,MUS,4,4,OCEAN PREDATOR,4,Gelding,3,OCEAN PARK (NZ),SADE (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,4,5,ENTERPRISING,4,Mare,2,OLE KIRK,MISS SHAMROCK,unique exact (name + sire + dam),1,True
+20261127,MUS,4,6,POST MARK,3,Gelding,3,PIERRO,POSTE RESTANTE (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,4,7,ROYAL AND READY,4,Gelding,8,ROYAL MEETING (IRE),SILK TRAIL,unique exact (name + sire + dam),1,True
+20261127,MUS,4,8,VELASTRA,3,Filly,4,TRAPEZE ARTIST,STOCKTON ABBEY,unique exact (name + sire + dam),1,True
+20261127,MUS,4,9,SIMMERING,4,Mare,2,PIERATA,REGIMENTAL BAND,unique exact (name + sire + dam),1,True
+20261127,MUS,4,10,SPALPEEN,3,Filly,4,THE BROTHERS WAR (USA),SOCIAL ORDER (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,4,11,BABYFACED ASSASSIN,5,Gelding,18,I AM INVINCIBLE,SILENTLY,unique exact (name + sire + dam),1,True
+20261127,MUS,4,12,BOSCA BULLET,4,Gelding,5,BULLETON,VENECIA,unique exact (name + sire + dam),1,True
+20261127,MUS,4,13,GREY BELIEF,4,Mare,21,PELTZER,OUR EMILY MIA,unique exact (name + sire + dam),1,True
+20261127,MUS,4,14,SONHO DOURADO,3,Filly,4,TORONADO (IRE),ZURELLA (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,4,15,TENDI,5,Gelding,18,TASSORT,DEAL OR NO DEAL,unique exact (name + sire + dam),1,True
+20261127,MUS,5,1,CHARM DESTINATION,4,Gelding,4,SCORPZ (NZ),MISS BEATRICE,unique exact (name + sire + dam),1,True
+20261127,MUS,5,2,GOT HERE,3,Colt,3,COSMIC FORCE,BROOKTON BLING,unique exact (name + sire + dam),1,True
+20261127,MUS,5,3,SOUTHPORT,4,Gelding,5,BIVOUAC,MARIELLE,unique exact (name + sire + dam),1,True
+20261127,MUS,5,4,BOA VISTA,4,Mare,10,SNITZEL,SERENA BAY,unique exact (name + sire + dam),1,True
+20261127,MUS,5,5,DANNY'S OCEAN,3,Gelding,0,CASINO PRINCE,IN HINDSIGHT,no identity: genuine first starter (TAB career 0),0,False
+20261127,MUS,5,6,JAYVEER,3,Gelding,0,VICTOR LUDORUM (GB),RIAPINKA,no identity: genuine first starter (TAB career 0),0,False
+20261127,MUS,5,7,NASA BLUEBERRY,4,Mare,1,ADMIRE MARS (JPN),ASHRAMA (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,5,8,BRAVE ARCHIE,3,Gelding,1,SHALAA (IRE),IRONIC MISS,unique exact (name + sire + dam),1,True
+20261127,MUS,5,9,NOT ASKING,4,Mare,2,GRAFF,TONGUE AND GROOVE,unique exact (name + sire + dam),1,True
+20261127,MUS,5,10,RAPID DESCENT,3,Filly,0,PRINCE FAWAZ,SCHUSS,no identity: genuine first starter (TAB career 0),0,False
+20261127,MUS,5,11,WOOTTON TOUCH IT,3,Filly,2,WOOTTON BASSETT (GB),MISS TEHERAN (IRE),unique exact (name + sire + dam),1,True
+20261127,MUS,5,12,FROG ROCK,3,Gelding,6,HEADWATER,JUDEM,unique exact (name + sire + dam),1,True
+20261127,MUS,5,13,KNIGHTLY GIRL,3,Filly,1,NORTH PACIFIC,GENTLEMEN'S WORDS,unique exact (name + sire + dam),1,True
+20261127,MUS,5,14,KURSAAL,3,Filly,4,STANDOUT,CASSILIO,unique exact (name + sire + dam),1,True
+20261127,MUS,5,15,FAKE FICTION,4,Mare,9,ALL TOO HARD,TALE OF CHOICE,unique exact (name + sire + dam),1,True
+20261127,MUS,5,16,FINAL GIFT,3,Gelding,14,ACROBAT,MISS GIGI,unique exact (name + sire + dam),1,True
+20261127,MUS,5,17,HOT CHESTNUT,5,Gelding,24,CHURCHILL (IRE),NICCONI LASS,unique exact (name + sire + dam),1,True
+20261127,MUS,5,18,MORPETH,4,Gelding,10,SAXON WARRIOR (JPN),WOODBINE MISS,unique exact (name + sire + dam),1,True
+20261127,MUS,6,1,MAGURTZ,4,Gelding,9,TASSORT,HEY DORIS,unique exact (name + sire + dam),1,True
+20261127,MUS,6,2,OVERZONE,5,Gelding,5,OVERSHARE,TEST ZONE,unique exact (name + sire + dam),1,True
+20261127,MUS,6,3,PENCILLER,4,Gelding,9,WRITTEN BY,CLIPPER,unique exact (name + sire + dam),1,True
+20261127,MUS,6,4,BIG BRAD,3,Gelding,4,GOODFELLA,ROYALE CROWN,unique exact (name + sire + dam),1,True
+20261127,MUS,6,5,THUNDER LIGHTS,4,Gelding,12,ALL TOO HARD,INVINCIBLE THUNDER,unique exact (name + sire + dam),1,True
+20261127,MUS,6,6,PRINCE DE VEGA,4,Gelding,13,LOPE DE VEGA (IRE),PRINCESS LAYAN (IRE),unique exact (name + sire + dam),1,True
+20261127,MUS,6,7,DEVILISH SUN,4,Gelding,9,SEBRING SUN,I WEAR PRADA,unique exact (name + sire + dam),1,True
+20261127,MUS,6,8,WARBRECCAN,5,Gelding,10,SHOWTIME,BURBIE,unique exact (name + sire + dam),1,True
+20261127,MUS,6,9,THIRTY DEGREES,5,Gelding,15,SOOBOOG,JACQUELINE,unique exact (name + sire + dam),1,True
+20261127,MUS,6,10,SOULS COMPANION,5,Gelding,9,SIR PRANCEALOT (IRE),NATIVE RHYTHM,unique exact (name + sire + dam),1,True
+20261127,MUS,6,11,DAYU,6,Gelding,34,DEEP FIELD,WILDWOOD DANCER,unique exact (name + sire + dam),1,True
+20261127,MUS,7,1,JASON DARREN,5,Gelding,28,STAR WITNESS,DINKUM DIAMOND,unique exact (name + sire + dam),1,True
+20261127,MUS,7,2,WEST HEAD,5,Gelding,14,PIERATA,MISS DELVEEN,unique exact (name + sire + dam),1,True
+20261127,MUS,7,3,RENOIR,6,Gelding,9,DUNDEEL (NZ),THE ARTIST,unique exact (name + sire + dam),1,True
+20261127,MUS,7,4,PLANET NERO,3,Gelding,1,ADMIRE MARS (JPN),LUCKY HELMET,unique exact (name + sire + dam),1,True
+20261127,MUS,7,5,KURITHEA,4,Mare,14,MAURICE (JPN),IRITHEA,unique exact (name + sire + dam),1,True
+20261127,MUS,7,6,IN ISO,7,Gelding,46,STARSPANGLEDBANNER,CANNON'S CROWN,unique exact (name + sire + dam),1,True
+20261127,MUS,7,7,ICHIKA,6,Mare,27,MAURICE (JPN),ONLY ROSES,unique exact (name + sire + dam),1,True
+20261127,MUS,7,8,LADY FELINA,5,Mare,9,JUSTIFY (USA),REZONED (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,7,9,GLORYESS,5,Gelding,25,YES YES YES,ENCHANTED GLORY,unique exact (name + sire + dam),1,True
+20261127,MUS,7,10,EVER WAS,7,Gelding,60,CHOISTAR,NEAR SILENUS,unique exact (name + sire + dam),1,True
+20261127,MUS,7,11,TYCOON LAD,6,Gelding,44,WRITTEN TYCOON,LAZUMBA,unique exact (name + sire + dam),1,True
+20261127,MUS,8,1,SHIHAB,7,Gelding,39,ZOUSTAR,ROSEWEDGE,unique exact (name + sire + dam),1,True
+20261127,MUS,8,2,SARATOGA POWER,6,Gelding,24,WRITTEN TYCOON,GINGER N RYE (USA),unique exact (name + sire + dam),1,True
+20261127,MUS,8,3,WHO EVER THOUGHT,8,Gelding,26,PANZER DIVISION,EMPRESS REGNANT,unique exact (name + sire + dam),1,True
+20261127,MUS,8,4,ENTERPRISE LEGEND,7,Gelding,41,CAPITALIST,CLOVER LANE (NZ),unique exact (name + sire + dam),1,True
+20261127,MUS,8,5,SUPER SIOUX,6,Mare,22,SUPER ONE,SHIDEEZI,unique exact (name + sire + dam),1,True
+20261127,MUS,8,6,NO STATEMENT,8,Gelding,102,PRESS STATEMENT,BERNING AFFAIR,unique exact (name + sire + dam),1,True
+20261127,MUS,8,7,ANGIE'S SISTER,5,Mare,11,WINNING RUPERT,SKULLAS SISTER,unique exact (name + sire + dam),1,True
+20261127,MUS,8,8,IRON HAT,7,Gelding,60,SALADE,LEFT IN MY WAKE,unique exact (name + sire + dam),1,True
+20261127,MUS,8,9,VIERVILLE,5,Gelding,22,OMAHA BEACH (USA),MEADOW SPRITE,unique exact (name + sire + dam),1,True
+20261127,MUS,8,10,DEBUSSY,8,Gelding,58,CHOISIR,SWEETEST MELODY,unique exact (name + sire + dam),1,True
+20261127,MUS,8,11,IRISH JIG,5,Gelding,21,STAR TURN,ROCK ME BABY,unique exact (name + sire + dam),1,True
+20261127,MUS,8,12,SMART AND DAPPER,7,Gelding,33,SMART MISSILE,BEAUTIFUL DAPPER,unique exact (name + sire + dam),1,True
+20261127,MUS,8,13,TELEGRAPH,8,Gelding,51,CABLE BAY (IRE),OUR MISS JONES (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,1,1,ACTIVATING,3,Gelding,2,TIVACI,Acting (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,1,2,ADHARA,3,Colt,0,ZOUSTAR,SNITZERLAND,unique exact (name + sire + dam),1,False
+20261127,PAK,1,3,BOHEMIAN RHAPSODY,3,Gelding,4,PRAGUE,INVINCIBLE GEM,unique exact (name + sire + dam),1,True
+20261127,PAK,1,4,BRAZEN BOLD,3,Gelding,1,BRAZEN BEAU,MELO MELO,unique exact (name + sire + dam),1,True
+20261127,PAK,1,5,CAPITAL STORM,3,Colt,2,WRITTEN TYCOON,DONGXING PRINCESS,unique exact (name + sire + dam),1,True
+20261127,PAK,1,6,LORD OF THE EARTH,3,Gelding,0,EARTHLIGHT (IRE),DRAKENSBERG,unique exact (name + sire + dam),1,False
+20261127,PAK,1,7,MAJESTIC SON,3,Gelding,1,SNITZEL,RHAPSODY ROSE,unique exact (name + sire + dam),1,True
+20261127,PAK,1,8,MR SAPPHIRE,3,Gelding,4,MAGNUS,BELSAPPHIRE,unique exact (name + sire + dam),1,True
+20261127,PAK,1,9,TIZ THE TYCOON,3,Gelding,1,WRITTEN TYCOON,TIZ MY VIEW,unique exact (name + sire + dam),1,True
+20261127,PAK,2,1,ASSUNTA,3,Filly,0,PINATUBO (IRE),DIORISSIMA,unique exact (name + sire + dam),1,False
+20261127,PAK,2,2,BLUE IVY,3,Filly,1,HANSEATIC,INDIRECT,unique exact (name + sire + dam),1,True
+20261127,PAK,2,3,BLUE JEANS TALK,3,Filly,6,BRAVE SMASH (JPN),UNFORGIVABLE,unique exact (name + sire + dam),1,True
+20261127,PAK,2,4,DANCELL,3,Filly,2,EXCEEDANCE,VICENNALIA (USA),unique exact (name + sire + dam),1,True
+20261127,PAK,2,5,EPPONNEE RAE,3,Filly,4,HANSEATIC,SPECIAL EPISODE,unique exact (name + sire + dam),1,True
+20261127,PAK,2,6,KENSINGTON,3,Filly,1,HOME AFFAIRS,TRAGIC,unique exact (name + sire + dam),1,True
+20261127,PAK,2,7,MEDIA DARLING,3,Filly,0,SNITZEL,MEDIA SENSATION,unique exact (name + sire + dam),1,False
+20261127,PAK,2,8,NYAD,3,Filly,0,DEEP FIELD,LAUGHEN HARD,unique exact (name + sire + dam),1,False
+20261127,PAK,2,9,PLEASE PLEASE ME,3,Filly,0,STAY INSIDE,CALIFORNIASURPRISE,unique exact (name + sire + dam),1,False
+20261127,PAK,2,10,RENECCA,3,Filly,0,TORONADO (IRE),KARMIC (NZ),no identity: genuine first starter (TAB career 0),0,False
+20261127,PAK,2,11,SPIRIT NATURE,3,Filly,1,BIVOUAC,INVINCIBLE NATURE,unique exact (name + sire + dam),1,True
+20261127,PAK,2,12,WOLFMAAMA,3,Filly,1,WOLF CRY,GHUMAAMA,unique exact (name + sire + dam),1,True
+20261127,PAK,2,13,AMBER QUEEN,3,Filly,1,THE AUTUMN SUN,VONA (IRE),unique exact (name + sire + dam),1,True
+20261127,PAK,3,1,ABYDOS,4,Gelding,3,ALABAMA EXPRESS,DEVINE LASS,unique exact (name + sire + dam),1,True
+20261127,PAK,3,2,BAROSSA BOURBON,4,Gelding,5,WANDJINA,GIRLS GOT SPIRIT,unique exact (name + sire + dam),1,True
+20261127,PAK,3,3,MAURIE'S PRIDE,5,Gelding,1,OMAHA BEACH (USA),WILD NYMPH (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,3,4,SHY VELOCITY,4,Gelding,2,DRACARYS,SHY GIRL (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,3,5,SOUNDWAVE,4,Gelding,8,CONTRIBUTER (IRE),MELODIOUS (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,3,6,ANOTHER POTHOLE,3,Gelding,0,KING OF COMEDY (IRE),CHAQUINTA (NZ),unique exact (name + sire + dam),1,False
+20261127,PAK,3,7,FORT ROCK,3,Gelding,0,TASSORT,ROCKTHENIGHTAWAY,unique exact (name + sire + dam),1,False
+20261127,PAK,3,8,HURTADO,3,Gelding,0,DOUBTLAND,SHOW US YOUR TATTS,unique exact (name + sire + dam),1,False
+20261127,PAK,3,9,PERCIPIENT,3,Gelding,1,NEW BAY (GB),DUSKY QUEEN (IRE),unique exact (name + sire + dam),1,True
+20261127,PAK,3,10,POCKET WATCH,2,Colt,1,TAGALOA,TING TING (FR),unique exact (name + sire + dam),1,True
+20261127,PAK,3,11,RED TIDE,3,Gelding,4,RUSSIAN REVOLUTION,HERMOSA BEACH,unique exact (name + sire + dam),1,True
+20261127,PAK,3,12,KOKESHI,4,Mare,8,OLE KIRK,TRUE QUALITY,unique exact (name + sire + dam),1,True
+20261127,PAK,3,13,GREY FLYER,4,Gelding,2,SNITZEL,GRIS DAME (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,3,14,SHIPPING STEEL,4,Gelding,2,SQUAMOSA,CARMELITES,unique exact (name + sire + dam),1,True
+20261127,PAK,3,15,RUSSIAN NIGHTS,4,Gelding,3,RUSSIAN CAMELOT (IRE),MUSIC OF THE NIGHT,unique exact (name + sire + dam),1,True
+20261127,PAK,4,1,ALWAYS SHINING,5,Gelding,16,SAVABEEL,SUPER POWER (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,4,2,ARDAD NED,3,Gelding,2,ARDAD (IRE),STONE COUGAR (USA),unique exact (name + sire + dam),1,False
+20261127,PAK,4,3,ASPARAGUS,4,Gelding,1,RICH ENUFF,JELLYLORUM,unique exact (name + sire + dam),1,True
+20261127,PAK,4,4,CHRONIC,5,Gelding,17,ALABAMA EXPRESS,SOMETHING SHOCKING,unique exact (name + sire + dam),1,True
+20261127,PAK,4,5,FULL ZOOM,4,Gelding,1,PIERATA,AHBELLE,unique exact (name + sire + dam),1,True
+20261127,PAK,4,6,MONTESQUIEU,4,Gelding,4,SO YOU THINK (NZ),PARIS MATCH,unique exact (name + sire + dam),1,True
+20261127,PAK,4,7,SEINFELD,4,Gelding,4,KING OF COMEDY (IRE),GOCARA (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,4,8,TECKNOKING,4,Gelding,4,WRITTEN TYCOON,ISMELUCKY (USA),unique exact (name + sire + dam),1,True
+20261127,PAK,4,9,TEQUILA'S BRO,3,Gelding,0,FIORENTE (IRE),PENSATION (NZ),unique exact (name + sire + dam),1,False
+20261127,PAK,4,10,WOLLEMI,3,Gelding,1,MAURICE (JPN),LAKE MARION,unique exact (name + sire + dam),1,True
+20261127,PAK,4,11,ZAMETOVKA,3,Gelding,1,ZED (NZ),YELLEN (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,4,12,FARO LADY,4,Mare,1,DUNDEEL (NZ),TOORSINAA,unique exact (name + sire + dam),1,True
+20261127,PAK,5,1,TERRORTORIAN,5,Gelding,12,TERRITORIES (IRE),MEZULLA (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,5,2,UNTAPPED,5,Gelding,22,FOXWEDGE,SHE'S GIFTED,unique exact (name + sire + dam),1,True
+20261127,PAK,5,3,MOUNT SABYINYO,4,Gelding,8,SNITZEL,FASCINO (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,5,4,ALEXANDER THEGREAT,4,Gelding,3,MAURICE (JPN),PINK CRYSTAL,unique exact (name + sire + dam),1,True
+20261127,PAK,5,5,ARISTONOUS,7,Gelding,44,SAONOIS (FR),AGOSTA (FR),unique exact (name + sire + dam),1,True
+20261127,PAK,5,6,CAELIUS,4,Gelding,12,PIERRO,SALINA,unique exact (name + sire + dam),1,True
+20261127,PAK,5,7,ROGAN,5,Gelding,17,SUPER SETH,TIARA (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,5,8,CHILLIES,4,Gelding,7,TOO DARN HOT (GB),CANNDIYARA (FR),unique exact (name + sire + dam),1,True
+20261127,PAK,5,9,HEY BELLA,6,Mare,24,TOSEN STARDOM (JPN),EAGLES DESTINY,unique exact (name + sire + dam),1,True
+20261127,PAK,5,10,SO YOU EXCEL,4,Mare,10,D'ARGENTO,GOOD TIMES ROLL,unique exact (name + sire + dam),1,True
+20261127,PAK,6,1,ZOURAIN,5,Gelding,29,ZOUSAIN,FORGET THE WEATHER (USA),unique exact (name + sire + dam),1,True
+20261127,PAK,6,2,YUM,4,Mare,14,GHAIYYATH (IRE),DREAM FOOD,unique exact (name + sire + dam),1,True
+20261127,PAK,6,3,BLUE BANDIT,5,Gelding,18,BLUE POINT (IRE),ON THE LOOSE,unique exact (name + sire + dam),1,True
+20261127,PAK,6,4,SURPERB FROST,5,Gelding,13,FROSTED (USA),ZAPURBLY,unique exact (name + sire + dam),1,True
+20261127,PAK,6,5,DISCOVER LUPINO,4,Gelding,5,OVERSHARE,LUPINO,unique exact (name + sire + dam),1,True
+20261127,PAK,6,6,RUSSIAN FRONT,7,Gelding,38,RUSSIAN REVOLUTION,UPFRONT (USA),unique exact (name + sire + dam),1,True
+20261127,PAK,6,7,SEABORN,3,Gelding,3,SEA THE STARS (IRE),NIKU (IRE),unique exact (name + sire + dam),1,True
+20261127,PAK,6,8,HOLA AMIGOS,7,Gelding,22,TORONADO (IRE),LOST AMIGOS,unique exact (name + sire + dam),1,True
+20261127,PAK,6,9,CHERRY HILLS,4,Mare,3,SHAMUS AWARD,ZOMBIE WITNESS,unique exact (name + sire + dam),1,True
+20261127,PAK,6,10,THERE WERE ROSES,4,Mare,6,DARCI BRAHMA (NZ),INDISCRETION (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,6,11,VENETIAN CHOICE,4,Mare,10,CASTELVECCHIO,CHOISIR LANE,unique exact (name + sire + dam),1,True
+20261127,PAK,6,12,PERFECT NIGHT,4,Mare,12,TORONADO (IRE),PROMISE TO REIGN,unique exact (name + sire + dam),1,True
+20261127,PAK,6,13,POSH DIAMANTE,4,Mare,8,GRUNT (NZ),POSH ROCK,unique exact (name + sire + dam),1,True
+20261127,PAK,6,14,TIGER FOX,3,Gelding,7,TIGER OF MALAY,FOXY FREE,unique exact (name + sire + dam),1,True
+20261127,PAK,6,15,JETSETTER JACK,4,Gelding,10,IMPENDING,LADY JETSETTER,unique exact (name + sire + dam),1,True
+20261127,PAK,6,16,KING MAYWIN,4,Gelding,12,KING'S LEGACY,MAEWYN (IRE),unique exact (name + sire + dam),1,True
+20261127,PAK,7,1,BARBARINO,4,Gelding,1,VINO ROSSO (USA),ELUSIVE FILLY,unique exact (name + sire + dam),1,True
+20261127,PAK,7,2,GENERAL BLU,4,Gelding,3,BLUE POINT (IRE),DELTA GIRL (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,7,3,MIGHTY MYSTIC,4,Gelding,2,FOXWEDGE,GOLD PHOENIX,unique exact (name + sire + dam),1,True
+20261127,PAK,7,4,SHARES,4,Gelding,5,RICH ENUFF,FUTURE MISS,unique exact (name + sire + dam),1,True
+20261127,PAK,7,5,HOOK 'N' SPUR,4,Gelding,9,BLUE POINT (IRE),ADONAIS,unique exact (name + sire + dam),1,True
+20261127,PAK,7,6,NGONGOTAHA,4,Gelding,5,CONTRIBUTER (IRE),HEARTS LIFTED,unique exact (name + sire + dam),1,True
+20261127,PAK,7,7,CIRCUS LIGHTS,4,Mare,3,TRAPEZE ARTIST,LANEY (USA),unique exact (name + sire + dam),1,True
+20261127,PAK,7,8,ASTIQUER,4,Mare,3,CAPITALIST,NETTOYER,unique exact (name + sire + dam),1,True
+20261127,PAK,7,9,TITAN'S SPIRIT,5,Gelding,11,IMPENDING,VIVACIOUS SPIRIT,unique exact (name + sire + dam),1,True
+20261127,PAK,7,10,GLISK,4,Mare,7,ARDROSSAN,SHELLAC (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,7,11,PURE SILK,4,Mare,7,TORONADO (IRE),HAI LIL,unique exact (name + sire + dam),1,True
+20261127,PAK,7,12,ALL TORQUE,5,Gelding,14,GRUNT (NZ),REGLISSE (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,8,1,BARARI,4,Mare,12,PRIDE OF DUBAI,OMNEEYA (GB),unique exact (name + sire + dam),1,True
+20261127,PAK,8,2,HELLO ROMEO,4,Gelding,17,HELLO YOUMZAIN (FR),JULIETA (NZ),unique exact (name + sire + dam),1,True
+20261127,PAK,8,3,LANDMARK,5,Gelding,15,NICCONI,VALENTINE MISS,unique exact (name + sire + dam),1,True
+20261127,PAK,8,4,MR TICKLES,7,Gelding,49,MAGNUS,MYHRO,unique exact (name + sire + dam),1,True
+20261127,PAK,8,5,MAGNABELLE ROYALE,4,Mare,10,MAGNUS,EFFIGY BELLE,unique exact (name + sire + dam),1,True
+20261127,PAK,8,6,MONIX,5,Gelding,23,MAGNUS,SUBPRIME,unique exact (name + sire + dam),1,True
+20261127,PAK,8,7,WEAPON CLEAR,6,Gelding,15,SHOOTING TO WIN,CULOTTES,unique exact (name + sire + dam),1,True
+20261127,PAK,8,8,JAKIVY,6,Gelding,31,TORONADO (IRE),STILETTO ROCK,unique exact (name + sire + dam),1,True
+20261127,PAK,8,9,YOLO,4,Gelding,20,I AM INVINCIBLE,AKARI,unique exact (name + sire + dam),1,True
+20261127,PAK,8,10,HEADBANGER,4,Mare,10,CAPITALIST,SISTONIC,unique exact (name + sire + dam),1,True
+20261127,PAK,8,11,IT'S A YES,5,Gelding,17,YES YES YES,TYPHOON JOLIE,unique exact (name + sire + dam),1,True
+20261127,PAK,8,12,ROOM FOR BINGO,6,Mare,16,SQUAMOSA,MAHOGANY ROOM,unique exact (name + sire + dam),1,True
+20261127,PAK,8,13,SPIRIT OF WEALTH,5,Mare,11,CAPITALIST,SILVER SPIRIT,unique exact (name + sire + dam),1,True
+20261127,PAK,8,14,VIVID SUN,4,Mare,6,THE AUTUMN SUN,RAINBOW SONG (JPN),unique exact (name + sire + dam),1,True
+20261127,PAK,8,15,NOETZIE,5,Gelding,6,HARRY ANGEL (IRE),ROOI ROE,unique exact (name + sire + dam),1,True
+20261127,PAK,8,16,MONGOLIAN GOBI,4,Gelding,9,RIBCHESTER (IRE),MISSTRUM,unique exact (name + sire + dam),1,True
+20261127,SSC,1,1,COOL ZUMBELINA,3,Gelding,2,WRITTEN BY,ZUMBELINA,unique exact (name + sire + dam),1,True
+20261127,SSC,1,2,TAUTARA,3,Gelding,2,THE ODYSSEY,JETTARA,unique exact (name + sire + dam),1,True
+20261127,SSC,1,3,TEQUILA CHRISTMAS,3,Gelding,0,XTRAVAGANT (NZ),MEDIA,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,1,4,WEATHERFORDRINKING,3,Gelding,0,STAY INSIDE,QUENCH THE THIRST,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,1,5,BRILLIANT DISGUISE,3,Colt,1,JONKER,VISTABELLE (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,1,6,DIAMOND BOOM,3,Gelding,1,SPIRIT OF BOOM,HIGHLY GEARED,unique exact (name + sire + dam),1,True
+20261127,SSC,1,7,VUKAS,3,Gelding,1,PROFITEER,DAYTONA DANICA,unique exact (name + sire + dam),1,True
+20261127,SSC,1,8,CHARLIE CHOO CHOO,3,Gelding,2,NICCONI,OOZES CLASS,unique exact (name + sire + dam),1,True
+20261127,SSC,1,9,DARN SAGA,3,Gelding,3,TOO DARN HOT (GB),SAGA'S GIFT,unique exact (name + sire + dam),1,True
+20261127,SSC,1,10,MELODRAMA MISS,3,Filly,0,ACLAIM (IRE),COUNTESS MIA,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,1,11,SHEZA TRAP,3,Filly,0,TRAPEZE ARTIST,SHE'S A WILDCAT,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,1,12,SUNNY DOLL,3,Filly,0,HEROIC VALOUR,BETTER THAN BEST,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,1,13,BOLD NOMAD,3,Filly,1,NEOREALISM (JPN),BOLD GYPSY,unique exact (name + sire + dam),1,True
+20261127,SSC,1,14,SHE'S HOTSTUFF,3,Filly,4,STANDOUT,VIBRANT,unique exact (name + sire + dam),1,True
+20261127,SSC,1,15,IMAGOODSORT,3,Filly,3,TASSORT,LICKEDY,unique exact (name + sire + dam),1,True
+20261127,SSC,2,1,YOU'VE GOT THIS,4,Gelding,0,PELTZER,FUNCKIA,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,2,2,FROSTY LOOKS,4,Mare,1,FROSTED (USA),I'VE GOT THE LOOKS,unique exact (name + sire + dam),1,True
+20261127,SSC,2,3,RIESA,4,Mare,1,SAXON WARRIOR (JPN),CHINCH,unique exact (name + sire + dam),1,True
+20261127,SSC,2,4,MONOCRU,4,Mare,6,SNITZEL,CHAMPAGNE READY,unique exact (name + sire + dam),1,True
+20261127,SSC,2,5,ZOUBUCA SHOTS,4,Mare,8,ZOUSAIN,CARA BLANCA,unique exact (name + sire + dam),1,True
+20261127,SSC,2,6,SPLICED,5,Mare,2,EXCEED AND EXCEL,SALLY'S REALM,unique exact (name + sire + dam),1,True
+20261127,SSC,2,7,THE AVIATOR,4,Gelding,10,ANDERS,BAREFOOT,unique exact (name + sire + dam),1,True
+20261127,SSC,2,8,FACTNOT FICTION,6,Gelding,6,KILLY,SASIA,unique exact (name + sire + dam),1,True
+20261127,SSC,2,9,SEAPHIRA,5,Mare,4,DRACARYS,SEA MARVISTA,unique exact (name + sire + dam),1,True
+20261127,SSC,2,10,YOU DRIVE ME CRAZY,4,Mare,7,ENCRYPTION,DONT CALL ME CRAZY,unique exact (name + sire + dam),1,True
+20261127,SSC,2,11,RATIVA,5,Mare,6,PIERATA,ALTIVA,unique exact (name + sire + dam),1,True
+20261127,SSC,2,12,TRAIL BOSS,4,Gelding,10,THE MISSION,SHE'S FOR RANSOM,unique exact (name + sire + dam),1,True
+20261127,SSC,3,1,LARUSSO,6,Gelding,14,SO YOU THINK (NZ),TYPHOON JOLIE,unique exact (name + sire + dam),1,True
+20261127,SSC,3,2,POOR OL' JOHNY RAY,4,Gelding,17,RELIABLE MAN (GB),ZUZELA,unique exact (name + sire + dam),1,True
+20261127,SSC,3,3,TAP HIGH,4,Gelding,15,ACE HIGH,DELIGHTFUL TAP (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,3,4,CHANCE DE LUNE,4,Gelding,22,PUISSANCE DE LUNE (IRE),BIRDS OF TOKYO,unique exact (name + sire + dam),1,True
+20261127,SSC,3,5,AUTUMN HEIR,5,Gelding,24,THE AUTUMN SUN,FORREEL (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,3,6,HIGHLAND KITTY,5,Mare,16,HIGHLAND REEL (IRE),MAGIC KITTY,unique exact (name + sire + dam),1,True
+20261127,SSC,3,7,ORMOND ROAD,6,Gelding,32,LAST TYPHOON,VANILLA SPIN (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,3,8,BLUEPRINT,8,Gelding,36,BENFICA,WILD SILK,unique exact (name + sire + dam),1,True
+20261127,SSC,3,9,HE'S A SAINT,5,Gelding,24,TARZINO (NZ),SAINTED,unique exact (name + sire + dam),1,True
+20261127,SSC,3,10,READY TO DRINK,5,Mare,14,TERRITORIES (IRE),READY TO PICK,unique exact (name + sire + dam),1,True
+20261127,SSC,3,11,BOLERO,6,Mare,41,ROTHESAY,SYNCOPATED GROOVE,unique exact (name + sire + dam),1,True
+20261127,SSC,3,12,SHOWMAN,8,Gelding,38,SHOCKING,PRECIOUS JADE (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,3,13,THINK I'M IRISH,6,Mare,35,SO YOU THINK (NZ),O'COUNEY (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,4,1,OUT OF TURN,5,Gelding,11,ASTERN,CANGINO,unique exact (name + sire + dam),1,True
+20261127,SSC,4,2,SEA ADMIRAL,4,Gelding,11,HANSEATIC,BEAUTY SCHOOL,unique exact (name + sire + dam),1,True
+20261127,SSC,4,3,KING OF THE JUNGLE,6,Gelding,31,JUNGLE CAT (IRE),ROYAL HUSSY,unique exact (name + sire + dam),1,True
+20261127,SSC,4,4,SWEET HESITATION,4,Mare,12,DUBIOUS,LICORICE STICK,unique exact (name + sire + dam),1,True
+20261127,SSC,4,5,TELLING,4,Gelding,13,GRAFF,NEVER DOUBT ME,unique exact (name + sire + dam),1,True
+20261127,SSC,4,6,CASINO BAY,4,Mare,6,ANDERS,SINO EAGLE,unique exact (name + sire + dam),1,True
+20261127,SSC,4,7,HI BARBIE,4,Mare,11,I AM INVINCIBLE,OUTBACK BARBIE,unique exact (name + sire + dam),1,True
+20261127,SSC,4,8,OSCAR,5,Gelding,4,LOVE CONQUERS ALL,GALA AFFAIR,unique exact (name + sire + dam),1,True
+20261127,SSC,4,9,RED FEATHER BOA,5,Mare,18,ENCRYPTION,PLUMAGE,unique exact (name + sire + dam),1,True
+20261127,SSC,4,10,SHADWELL LANE,4,Mare,8,WOOTTON BASSETT (GB),WORD FOR WORD,unique exact (name + sire + dam),1,True
+20261127,SSC,4,11,SIZZLEIST,4,Mare,10,CAPITALIST,SIZZLEFLY,unique exact (name + sire + dam),1,True
+20261127,SSC,4,12,TARA I AM,4,Mare,9,JUNGLE CAT (IRE),JETTARA,unique exact (name + sire + dam),1,True
+20261127,SSC,4,13,BELLE AFFAIR,5,Mare,10,LOVE CONQUERS ALL,DON'T PASS GEORGIA,unique exact (name + sire + dam),1,True
+20261127,SSC,4,14,TRIPLE YES,5,Mare,21,YES YES YES,DANEHILL SMILE,unique exact (name + sire + dam),1,True
+20261127,SSC,4,15,ZOUREKA,3,Filly,4,ZOUSAIN,GWYNEDD,unique exact (name + sire + dam),1,True
+20261127,SSC,4,16,STEEL KNIGHT,4,Gelding,11,CAPITALIST,SYBELLA,unique exact (name + sire + dam),1,True
+20261127,SSC,4,17,TORQUE TOO EASY,4,Mare,7,MAURICE (JPN),TOO EASY SIS,unique exact (name + sire + dam),1,True
+20261127,SSC,4,18,CYBER CITY,4,Gelding,15,SUN CITY,STAR COUNCIL,unique exact (name + sire + dam),1,True
+20261127,SSC,5,1,VANDEVELDE,4,Gelding,13,BRAVE SMASH (JPN),MARLENE ADELE,unique exact (name + sire + dam),1,True
+20261127,SSC,5,2,OCEAN SYMPHONY,5,Gelding,10,OCEAN PARK (NZ),LEYTANA (IRE),unique exact (name + sire + dam),1,True
+20261127,SSC,5,3,TIVACIOUS,4,Gelding,2,TIVACI,THE CEREMONY,unique exact (name + sire + dam),1,True
+20261127,SSC,5,4,STORMING HOME,4,Mare,4,THE AUTUMN SUN,WHITE MOSS,unique exact (name + sire + dam),1,True
+20261127,SSC,5,5,SIMPLY FUN,5,Gelding,28,PRIDE OF DUBAI,HARBOUR FUN,unique exact (name + sire + dam),1,True
+20261127,SSC,5,6,STAR OF PARIS,5,Mare,6,MAGNA GRECIA (IRE),STARZEL,unique exact (name + sire + dam),1,True
+20261127,SSC,5,7,TALK ABOUT LAYLA,4,Mare,8,MICROPHONE,TYCOON LAYLA,unique exact (name + sire + dam),1,True
+20261127,SSC,5,8,TISANI JAMES,3,Gelding,10,DUBIOUS,TISANI ROSE,unique exact (name + sire + dam),1,True
+20261127,SSC,5,9,FLOP SHOT,4,Gelding,13,SPIETH (NZ),NEXT CHAPTER,unique exact (name + sire + dam),1,True
+20261127,SSC,5,10,ESPOIR DA TAP,4,Mare,9,VADAMOS (FR),MRS TAPPY (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,5,11,INTERRO,4,Mare,9,PIERRO,INTERRAM,unique exact (name + sire + dam),1,True
+20261127,SSC,5,12,STRIKE ME PINK,4,Mare,14,PIERATA,LANG'S LASS,unique exact (name + sire + dam),1,True
+20261127,SSC,5,13,LORD DANILO,6,Gelding,30,SIDESTEP,LADY DUPORTH,unique exact (name + sire + dam),1,True
+20261127,SSC,5,14,LECAN,6,Gelding,14,BRADBURY'S LUCK,CREATRIX,unique exact (name + sire + dam),1,True
+20261127,SSC,6,1,MEASURE UP,4,Gelding,4,MAURICE (JPN),TEASPOON,unique exact (name + sire + dam),1,True
+20261127,SSC,6,2,OLE BAZZLE,6,Gelding,18,EMBELLISH (NZ),FAZZLE (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,6,3,TULONG,5,Gelding,21,SAXON WARRIOR (JPN),MIDNIGHT FURY,unique exact (name + sire + dam),1,True
+20261127,SSC,6,4,QUEST OF QUESTS,7,Gelding,46,SPILL THE BEANS,JETLING,unique exact (name + sire + dam),1,True
+20261127,SSC,6,5,RUSSIAN ESCAPE,6,Gelding,17,RUSSIAN REVOLUTION,NOT TO BE CAUGHT (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,6,6,SIMPLY FUN,5,Gelding,28,PRIDE OF DUBAI,HARBOUR FUN,unique exact (name + sire + dam),1,True
+20261127,SSC,6,7,BUSKER,5,Gelding,21,TRAPEZE ARTIST,STREET MADE (CAN),unique exact (name + sire + dam),1,True
+20261127,SSC,6,8,COPPER STAR,4,Gelding,13,NORTH PACIFIC,KIBIRA (FR),unique exact (name + sire + dam),1,True
+20261127,SSC,6,9,RUMBLE TOWN,4,Gelding,18,MICROPHONE,RUMBLE DOLL,unique exact (name + sire + dam),1,True
+20261127,SSC,6,10,ENCRYPTED FEELING,4,Gelding,12,ENCRYPTION,FLEETING FEELING,unique exact (name + sire + dam),1,True
+20261127,SSC,6,11,FAR BEYOND,4,Gelding,9,FARNAN,MOQUEEN,unique exact (name + sire + dam),1,True
+20261127,SSC,6,12,XTRA LA VITA,5,Gelding,13,XTRAVAGANT (NZ),TIFFIN,unique exact (name + sire + dam),1,True
+20261127,SSC,6,13,DAZZLING DIAMOND,5,Mare,17,WRITTEN BY,FAMILY REUNION,unique exact (name + sire + dam),1,True
+20261127,SSC,6,14,WORTHTHEADMISSION,3,Filly,5,PELTZER,ADMISSION,unique exact (name + sire + dam),1,True
+20261127,SSC,6,15,KEMAL,5,Gelding,17,NICCONI,KAMILI,unique exact (name + sire + dam),1,True
+20261127,SSC,6,16,PIGGIETALES,4,Mare,19,HEROIC VALOUR,PONYTALES,unique exact (name + sire + dam),1,True
+20261127,SSC,6,17,CHANCE WITH WOLVES,8,Gelding,77,WOLF CRY,EDNADEZ,unique exact (name + sire + dam),1,True
+20261127,SSC,6,18,OAKFIELD MONTANA,4,Mare,18,ALL TOO HARD,OAKFIELD TIME,unique exact (name + sire + dam),1,True
+20261127,SSC,6,19,ROARING SUCCESS,7,Gelding,36,RUSSIAN REVOLUTION,STREET ALLURE,unique exact (name + sire + dam),1,True
+20261127,SSC,7,1,HARD KNOX,4,Gelding,6,ALL TOO HARD,MNEMONIC,unique exact (name + sire + dam),1,True
+20261127,SSC,7,2,FLASHING STAR,4,Gelding,2,BRUTAL (NZ),WALTZ,unique exact (name + sire + dam),1,True
+20261127,SSC,7,3,MARTINDALE KID,5,Gelding,3,PARIAH,DIVA O'REILLY (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,7,4,ONLYYOUCANREAD,4,Gelding,7,ENCRYPTION,SPECIAL MISS (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,7,5,SYMMETRIQUE,4,Gelding,3,ENCRYPTION,SARISARA,unique exact (name + sire + dam),1,True
+20261127,SSC,7,6,HOT'N'SMART,3,Gelding,1,TOO DARN HOT (GB),SMARTER THAN (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,7,7,ZOUCOUP,3,Gelding,1,ZOUSTAR,SUCCEEDER,unique exact (name + sire + dam),1,True
+20261127,SSC,7,8,DAPPER VEE,4,Mare,1,HEROIC VALOUR,DAPPER ONE,unique exact (name + sire + dam),1,True
+20261127,SSC,7,9,OLD NIFTY,3,Gelding,2,FIERCE IMPACT (JPN),MONEEFA,unique exact (name + sire + dam),1,True
+20261127,SSC,7,10,CASTLEREAGH AFFAIR,4,Mare,2,CASTELVECCHIO,ROMANTIC AFFAIR,unique exact (name + sire + dam),1,True
+20261127,SSC,7,11,MYSTICISE,3,Filly,1,STAR WITNESS,DREI MARG,unique exact (name + sire + dam),1,True
+20261127,SSC,7,12,TWICE BETTER,3,Gelding,2,BETTER THAN READY,BETTABET RED,unique exact (name + sire + dam),1,True
+20261127,SSC,7,13,BALTUSROL,3,Gelding,4,TIGER OF MALAY,TURNCOAT,unique exact (name + sire + dam),1,True
+20261127,SSC,7,14,SHOWBIZ VEGA,4,Mare,3,LUCKY VEGA (IRE),SCISSORS,unique exact (name + sire + dam),1,True
+20261127,SSC,7,15,VIVA ESTELLA,3,Filly,0,CASTELVECCHIO,CHARMING ESTELLE,no identity: genuine first starter (TAB career 0),0,False
+20261127,SSC,7,16,WHITE SWAN,3,Filly,1,MAURICE (JPN),WHITULA,unique exact (name + sire + dam),1,True
+20261127,SSC,7,17,PURE AUDACITY,5,Gelding,3,DUBIOUS,SCHEMEL,unique exact (name + sire + dam),1,True
+20261127,SSC,7,18,MISS KIT KAT,3,Filly,5,JUNGLE CAT (IRE),FIRST CLASS MISS,unique exact (name + sire + dam),1,True
+20261127,SSC,7,19,ZARLA,4,Mare,5,ZOUSTAR,LASARLA (NZ),unique exact (name + sire + dam),1,True
+20261127,SSC,7,20,TAPPY'S STAR,5,Mare,4,U S NAVY FLAG (USA),STARTINA,unique exact (name + sire + dam),1,True
+20261127,SSC,7,21,ALARMED,4,Mare,5,SPIRIT OF BOOM,MYSTICAL BEL,unique exact (name + sire + dam),1,True
+20261127,CNS,1,1,BALLANDELLA STREET,5,Gelding,14,MAGNUS,GAUTENG GAL,unique exact (name + sire + dam),1,True
+20261127,CNS,1,2,FARNANHEIT,4,Gelding,14,FARNAN,ZUMOOROODA,unique exact (name + sire + dam),1,True
+20261127,CNS,1,3,POWER CRUISE,4,Gelding,16,MAURICE (JPN),NEDS BYPASS (IRE),unique exact (name + sire + dam),1,True
+20261127,CNS,1,4,ROTH AUTHORITY,5,Gelding,10,ROTHESAY,MARNI,unique exact (name + sire + dam),1,True
+20261127,CNS,1,5,LEUBOOM,5,Mare,3,BOOM TIME,LEUSATER,unique exact (name + sire + dam),1,True
+20261127,CNS,1,6,VOLARE,5,Mare,36,HELLBENT,PLANET'S PRINCESS,unique exact (name + sire + dam),1,True
+20261127,CNS,1,7,PRINCESS KNOWITALL,3,Filly,3,PIERATA,PRINCESS SIRI,unique exact (name + sire + dam),1,True
+20261127,CNS,2,1,CORPULENT,4,Gelding,7,SNITZEL,STATUESQUELY,unique exact (name + sire + dam),1,True
+20261127,CNS,2,2,ZIGGY STARCRAFT,5,Gelding,24,STARCRAFT (NZ),DORSET CLIFFS,unique exact (name + sire + dam),1,True
+20261127,CNS,2,3,THUNDER BLAZE,5,Gelding,5,ROTHESAY,RED COLOUR,unique exact (name + sire + dam),1,True
+20261127,CNS,2,4,YOUMEANDDUPRE,4,Gelding,18,BETTER THAN READY,DUPRE,unique exact (name + sire + dam),1,True
+20261127,CNS,2,5,FRILLY FILLY,4,Mare,4,POWER (GB),FRILLY,unique exact (name + sire + dam),1,True
+20261127,CNS,2,6,TARIFF,6,Gelding,22,POWER (GB),CURZON,unique exact (name + sire + dam),1,True
+20261127,CNS,3,1,MR STRONG,2,Gelding,2,STRONGER,MISS CHAPEAU,unique exact (name + sire + dam),1,True
+20261127,CNS,3,2,ROCKY CHEVAL,2,Gelding,0,SUN CITY,CALL ME,no identity: genuine first starter (TAB career 0),0,False
+20261127,CNS,3,3,UNCLE TREASURE,2,Gelding,1,PARIAH,TREASURE GALLERY,unique exact (name + sire + dam),1,True
+20261127,CNS,3,4,DESIGN POWER,2,Gelding,2,POWER (GB),FOXY XENIA,unique exact (name + sire + dam),1,True
+20261127,CNS,3,5,SHORTS FURY,2,Filly,1,STRONGER,MISS STRATOPHONIC,unique exact (name + sire + dam),1,True
+20261127,CNS,3,6,TIME EFEX,2,Filly,0,POWER (GB),TICTOC TICTOC,no identity: genuine first starter (TAB career 0),0,False
+20261127,CNS,3,7,MORNING GLORY,2,Filly,1,BETTER THAN READY,DAWN FIGHTER,unique exact (name + sire + dam),1,True
+20261127,CNS,3,8,GREY DEVIL,2,Filly,2,TOP RANKED (IRE),HOUSE OF HINGIS (NZ),unique exact (name + sire + dam),1,True
+20261127,CNS,4,1,SMART MISSION,5,Gelding,20,THE MISSION,EARLY,unique exact (name + sire + dam),1,True
+20261127,CNS,4,2,WINCHESTER,5,Gelding,13,DEEP FIELD,SHARED REFLECTIONS,unique exact (name + sire + dam),1,True
+20261127,CNS,4,3,THE HONEY BADGER,5,Gelding,17,PARIAH,TASTE OF HONEY,unique exact (name + sire + dam),1,True
+20261127,CNS,4,4,VINCENTVANGEE,4,Gelding,7,SMART MISSILE,CARAVELI,unique exact (name + sire + dam),1,True
+20261127,CNS,4,5,CATCH A BREAK,7,Gelding,29,ALPINE EAGLE,SURF CANDY (NZ),unique exact (name + sire + dam),1,True
+20261127,CNS,4,6,DIAMOND LUCY,6,Mare,38,WRITTEN BY,LOVE LUCILLE,unique exact (name + sire + dam),1,True
+20261127,CNS,4,7,ZIGGY STARCRAFT,5,Gelding,24,STARCRAFT (NZ),DORSET CLIFFS,unique exact (name + sire + dam),1,True
+20261127,CNS,4,8,NOSEY NEO,4,Gelding,22,NEOREALISM (JPN),MEDDLER,unique exact (name + sire + dam),1,True
+20261127,CNS,5,1,WORTHY GEM,3,Gelding,8,WORTHY CAUSE,BEEBY GEM,unique exact (name + sire + dam),1,True
+20261127,CNS,5,2,GOOD ONE CECIL,3,Gelding,5,INVADER,BE GOOD,unique exact (name + sire + dam),1,True
+20261127,CNS,5,3,DEE THREE,3,Gelding,6,DRACARYS,MONDEUSE,unique exact (name + sire + dam),1,True
+20261127,CNS,5,4,HEART OF VIENNA,3,Filly,5,JONKER,QUILATE,unique exact (name + sire + dam),1,True
+20261127,CNS,5,5,MONDAY CLOSE,3,Gelding,8,DUBIOUS,SUNDAY YUM CHA,unique exact (name + sire + dam),1,True
+20261127,CNS,5,6,RUSSIAN FANTASY,3,Filly,3,RUSSIAN REVOLUTION,MORETTI,unique exact (name + sire + dam),1,True
+20261127,CNS,5,7,BOOMING BELIEF,3,Filly,11,SPIRIT OF BOOM,GOT NO DOUBT,unique exact (name + sire + dam),1,True
+20261127,CNS,5,8,BOOMIOUS,3,Gelding,9,DUBIOUS,RISING BOOM,unique exact (name + sire + dam),1,True
+20261127,CNS,6,1,MACHINE HEAD,6,Gelding,36,LEAN MEAN MACHINE,THWAYYA,unique exact (name + sire + dam),1,True
+20261127,CNS,6,2,COPPABELLA ROAD,6,Gelding,25,ZOUSTAR,PALAZZO PUBBLICO,unique exact (name + sire + dam),1,True
+20261127,CNS,6,3,TASSORTING,4,Gelding,9,TASSORT,SPORTINI,unique exact (name + sire + dam),1,True
+20261127,CNS,6,4,THREEBROTHERS,7,Gelding,33,KILLY,KALAMITY JANE,unique exact (name + sire + dam),1,True
+20261127,CNS,6,5,GOLDEN OCTAVIAN,5,Gelding,15,IMPENDING,WE CAN DANCE,unique exact (name + sire + dam),1,True
+20261127,CNS,6,6,DO A LITTLE DANCE,3,Gelding,6,ACLAIM (IRE),AUTUMN SPLENDOUR,unique exact (name + sire + dam),1,True
+20261127,CNS,6,7,CARLANDO,3,Gelding,5,DUBIOUS,LOVE DELIGHT,unique exact (name + sire + dam),1,True
+20261127,CNS,7,1,TURN BIRD,6,Gelding,39,STAR TURN,MISS IMAGICA,unique exact (name + sire + dam),1,True
+20261127,CNS,7,2,HARTSHORN,6,Gelding,34,RUSSIAN REVOLUTION,KUCHINSKAYA,unique exact (name + sire + dam),1,True
+20261127,CNS,7,3,OVERLORD,9,Gelding,44,SEBRING,RED TRACER,unique exact (name + sire + dam),1,True
+20261127,CNS,7,4,BRAVE AGENDA,6,Mare,37,BRAVE SMASH (JPN),MORGANZA (GB),unique exact (name + sire + dam),1,True
+20261127,CNS,7,5,INCHING CLOSER,10,Gelding,94,AKEED MOFEED (GB),INSURGENT (NZ),unique exact (name + sire + dam),1,True
+20261127,CNS,7,6,LINE 'EM UP LOUI,6,Gelding,26,DISSIDENT,MISS DELIMA,unique exact (name + sire + dam),1,True
+20261127,CNS,7,7,CEREMONIOUS,6,Gelding,32,PIERRO,SAVE THE DATE (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,1,1,CALM THE PRESS,5,Gelding,16,PRESS STATEMENT,MEDITATE,unique exact (name + sire + dam),1,True
+20261127,MTG,1,2,MALAWI MAN,5,Gelding,17,SHAMOLINE WARRIOR,BELLA LUCREZIA,unique exact (name + sire + dam),1,True
+20261127,MTG,1,3,POWDER GUY,4,Gelding,1,BAROOD,MISS OLIVIER,unique exact (name + sire + dam),1,True
+20261127,MTG,1,4,REBEL'S LEGACY,4,Gelding,0,REBEL DANE,LADY THREE SHOES,unique exact (name + sire + dam),1,False
+20261127,MTG,1,5,EL PASO SENORITA,4,Mare,1,TORONADO (IRE),Hartwarming (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,1,6,GRANDSTRAZ,4,Mare,15,STRASBOURG,RUBITROVE,unique exact (name + sire + dam),1,True
+20261127,MTG,1,7,GREEN AMBER,5,Mare,21,AMBIDEXTER,HENRY'S CHOICE (GB),unique exact (name + sire + dam),1,True
+20261127,MTG,1,8,PIKLEMEGRANMOTHER,4,Mare,11,I AM IMMORTAL,TOPSHOPPER,unique exact (name + sire + dam),1,True
+20261127,MTG,1,9,SERILO,5,Mare,4,STAR TURN,MATERIALITY,unique exact (name + sire + dam),1,True
+20261127,MTG,1,10,CHILLY SAV,3,Filly,5,CHURCHILL (IRE),SAVANNABEEL,unique exact (name + sire + dam),1,True
+20261127,MTG,1,11,HALFA PENNY,3,Filly,0,MANDALONG READY,MANDALONG ANNIE,unique exact (name + sire + dam),1,False
+20261127,MTG,1,12,HARD AND FORST,3,Filly,0,ALL TOO HARD,BIRD OF DUBAI,unique exact (name + sire + dam),1,False
+20261127,MTG,2,1,COLD TRAIN,7,Gelding,29,FROSTED (USA),LA GAZELLE,unique exact (name + sire + dam),1,True
+20261127,MTG,2,2,HASTA LA OINKERS,6,Gelding,15,GRUNT (NZ),DI FALCO (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,2,3,MONEY WHEEL,6,Gelding,21,DUNDEEL (NZ),ROULETTES,unique exact (name + sire + dam),1,True
+20261127,MTG,2,4,PATH TO VICTORY,4,Gelding,7,FARNAN,ARAMOANA (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,2,5,KING LEONIDAS,3,Gelding,3,STAPHANOS (JPN),PRESSERA,unique exact (name + sire + dam),1,True
+20261127,MTG,2,6,NORMANDY PEACE,3,Gelding,4,FINANCE TYCOON,WESTCHESTER,unique exact (name + sire + dam),1,True
+20261127,MTG,2,7,COCOA CHARM,4,Mare,5,CHURCHILL (IRE),KENYAN GOLD,unique exact (name + sire + dam),1,True
+20261127,MTG,2,8,IMMINENT TOUCH,4,Mare,4,IMPENDING,STEADY HAND,unique exact (name + sire + dam),1,True
+20261127,MTG,2,9,ISKADEEL,4,Mare,3,DUNDEEL (NZ),ISKANDER,unique exact (name + sire + dam),1,True
+20261127,MTG,2,10,NO NEED FOR TEARS,5,Mare,6,DUNDEEL (NZ),CRY IF I WANT TO,unique exact (name + sire + dam),1,True
+20261127,MTG,2,11,REWARD DRAWER,4,Mare,10,REWARD FOR EFFORT,FLY HIGH CLUB,unique exact (name + sire + dam),1,True
+20261127,MTG,2,12,STUDIO ARTIST,4,Mare,11,GHAIYYATH (IRE),TAVI BAY (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,3,1,VAN ROY,8,Gelding,56,ALL TOO HARD,OUR HARMONY,unique exact (name + sire + dam),1,True
+20261127,MTG,3,2,FOX GEM,8,Gelding,49,FOXWEDGE,SHEILARIZED,unique exact (name + sire + dam),1,True
+20261127,MTG,3,3,SYNTHESISE,4,Mare,14,TORONADO (IRE),AMALGAMATE,unique exact (name + sire + dam),1,True
+20261127,MTG,3,4,BLINDATO,4,Gelding,5,FIORENTE (IRE),DANDESHA (FR),unique exact (name + sire + dam),1,True
+20261127,MTG,3,5,PARKRUN,5,Gelding,16,OCEAN PARK (NZ),LEGLESS (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,3,6,PIANTA,6,Gelding,44,FIORENTE (IRE),VANITY SKY,unique exact (name + sire + dam),1,True
+20261127,MTG,3,7,BY NINE,8,Gelding,31,TARZINO (NZ),PLEASE LEAVE,unique exact (name + sire + dam),1,True
+20261127,MTG,3,8,DEFICIT,8,Gelding,84,SNITZEL,TAQASEEM,unique exact (name + sire + dam),1,True
+20261127,MTG,3,9,FIFTH HUSBAND,9,Gelding,44,EKRAAR (USA),FLINDERS (USA),unique exact (name + sire + dam),1,True
+20261127,MTG,4,1,GUSTY WAY,7,Gelding,40,TRUST IN A GUST,MELODIES WAY (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,4,2,LOST HIS BEANS,6,Gelding,19,SPILL THE BEANS,DREAM FREE,unique exact (name + sire + dam),1,True
+20261127,MTG,4,3,FREE BEER,6,Gelding,31,ASTERN,WYUNA,unique exact (name + sire + dam),1,True
+20261127,MTG,4,4,EMERALD REWARD,6,Gelding,27,CAPITALIST,MARY LOU,unique exact (name + sire + dam),1,True
+20261127,MTG,4,5,SINGLES MOMENT,4,Gelding,6,DOUBTLAND,NAUGHTY MOMENTS,unique exact (name + sire + dam),1,True
+20261127,MTG,4,6,ONE BOUND,4,Gelding,5,HELLBENT,CALLE FLORA (USA),unique exact (name + sire + dam),1,True
+20261127,MTG,4,7,CHILLI REAPER,5,Mare,13,PARIAH,HIGH LOW BET,unique exact (name + sire + dam),1,True
+20261127,MTG,4,8,SALSBURY HILL,10,Mare,68,AKEED MOFEED (GB),CHINKARA DANCER,unique exact (name + sire + dam),1,True
+20261127,MTG,5,1,IN LOVE,5,Mare,29,HELLBENT,EQUAL LOVE,unique exact (name + sire + dam),1,True
+20261127,MTG,5,2,POSITIVE IMAGE,4,Gelding,8,YES YES YES,ANGEL FACE,unique exact (name + sire + dam),1,True
+20261127,MTG,5,3,ELNAJEEB,4,Gelding,9,FARNAN,ROOBEENA,unique exact (name + sire + dam),1,True
+20261127,MTG,5,4,HOLLOW TURF,5,Gelding,10,TURFFONTEIN,PITCH PERFECT,unique exact (name + sire + dam),1,True
+20261127,MTG,5,5,LIGHT FILLED,4,Mare,7,STARSPANGLEDBANNER,STARLIGHT ANGEL (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,5,6,FOX MAN,5,Gelding,19,RICH ENUFF,FRENCH FOX,unique exact (name + sire + dam),1,True
+20261127,MTG,5,7,MAGIC FIELD,6,Gelding,25,DEEP FIELD,ITS TIME FOR MAGIC (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,5,8,BOLSHOI BABE,4,Mare,5,RUSSIAN REVOLUTION,FOXY MISS,unique exact (name + sire + dam),1,True
+20261127,MTG,5,9,STARSEATIC,3,Filly,5,HANSEATIC,LEILA'S STAR,unique exact (name + sire + dam),1,True
+20261127,MTG,5,10,ARTISTIC ANGEL,4,Mare,12,FLYING ARTIE,SALOME,unique exact (name + sire + dam),1,True
+20261127,MTG,5,11,NUDGE 'EM ALONG,9,Gelding,38,SHINZIG,LESTY PRAYERS,unique exact (name + sire + dam),1,True
+20261127,MTG,5,12,SQUAGAGA,7,Gelding,35,SQUAMOSA,FLYING GAGA,unique exact (name + sire + dam),1,True
+20261127,MTG,6,1,AQUAHOLIC,5,Gelding,27,HEADWATER,ALL YOURS,unique exact (name + sire + dam),1,True
+20261127,MTG,6,2,SIR RANDOLPH,7,Gelding,31,CHURCHILL (IRE),READYFORCATHERINE,unique exact (name + sire + dam),1,True
+20261127,MTG,6,3,SOTOMAYOR,5,Gelding,24,HIGHLAND REEL (IRE),SPRINGALON,unique exact (name + sire + dam),1,True
+20261127,MTG,6,4,WHATHAPPENSINVEGAS,5,Gelding,6,TERRITORIES (IRE),MARLUCCIO,unique exact (name + sire + dam),1,True
+20261127,MTG,6,5,RAMELLE,4,Mare,7,OMAHA BEACH (USA),BACK IN TOWN,unique exact (name + sire + dam),1,True
+20261127,MTG,6,6,MISTY EMOTIONS,5,Mare,17,ASTERN,VALHALLA WEDDING (USA),unique exact (name + sire + dam),1,True
+20261127,MTG,6,7,SWEET BUT SASSY,4,Mare,7,SHAMUS AWARD,LUCAND STAR,unique exact (name + sire + dam),1,True
+20261127,MTG,6,8,FLUX,6,Gelding,44,MAGNUS,FLYING GAGA,unique exact (name + sire + dam),1,True
+20261127,MTG,6,9,LOVE 'N' GAMES,5,Gelding,17,MICROPHONE,LONESOME,unique exact (name + sire + dam),1,True
+20261127,MTG,6,10,RATNARAJ,6,Gelding,14,GRUNT (NZ),RUBY HEART,unique exact (name + sire + dam),1,True
+20261127,MTG,6,11,SUNSET PRAYER,5,Mare,15,THE AUTUMN SUN,KYRIE ELEISON (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,7,1,CORK HARBOUR,8,Gelding,90,SNITZEL,MARITIMO (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,7,2,SIMPLY EXCELS,6,Gelding,19,EXCEED AND EXCEL,SIMPLY SPITEFUL (USA),unique exact (name + sire + dam),1,True
+20261127,MTG,7,3,AHVEJAY,6,Gelding,23,SUPIDO,REMEMBRANCE DAY,unique exact (name + sire + dam),1,True
+20261127,MTG,7,4,INFER,6,Gelding,28,INFERENCE,MINING,unique exact (name + sire + dam),1,True
+20261127,MTG,7,5,LET IT RIDE,6,Gelding,18,SACRED FALLS (NZ),FLEUR D'AMOUR (NZ),unique exact (name + sire + dam),1,True
+20261127,MTG,7,6,TUDAYA,5,Gelding,22,TRAPEZE ARTIST,MOSS TRIP,unique exact (name + sire + dam),1,True
+20261127,MTG,7,7,ALBLAZER,9,Gelding,25,AL SAMER,BLAZING ARCHWAY,unique exact (name + sire + dam),1,True
+20261127,MTG,7,8,BARE TO WITNESS,6,Gelding,32,STAR WITNESS,BID'N'BARE,unique exact (name + sire + dam),1,True
+20261127,MTG,7,9,QUIZLET,6,Gelding,31,EXOSPHERE,LACONIC,unique exact (name + sire + dam),1,True
+20261127,MTG,7,10,STEELY HUSTLER,6,Mare,24,REAL STEEL (JPN),HUSSTERICS,unique exact (name + sire + dam),1,True
+20261127,MTG,7,11,IT'S NOT OVER,5,Mare,6,KELLSTORM (IRE),ACTORS GUILD,unique exact (name + sire + dam),1,True
+20261127,MTG,7,12,TURNED LOOSE,6,Mare,24,TURN ME LOOSE (NZ),DESERT FAIRY,unique exact (name + sire + dam),1,True
+20261127,MTG,7,13,BACKFLIPS,3,Filly,10,ACROBAT,BELLSPATH,unique exact (name + sire + dam),1,True
+20261127,MTG,7,14,HASTA LA AMNESTY,7,Gelding,22,FOXWEDGE,MOFAJAH (GB),unique exact (name + sire + dam),1,True
+20261127,MTG,7,15,BLACK BUGATTI,5,Gelding,29,XTRAVAGANT (NZ),HERSTORY,unique exact (name + sire + dam),1,True
+20261127,MTG,7,16,DRINK THEN KISS,8,Mare,44,TORONADO (IRE),BELLA AVA,unique exact (name + sire + dam),1,True
+20261127,MTG,7,17,DANGEROUS SECRET,8,Mare,30,VON COSTA DE HERO,NEMESIS,unique exact (name + sire + dam),1,True
+20261127,WOD,1,1,BOURNE LEGACY,3,Gelding,5,NICCONI,SECRET SUCCESS,unique exact (name + sire + dam),1,True
+20261127,WOD,1,2,COSMIC SNITZ,3,Gelding,0,SNITZEL,CELESTIAL INSIGHT (USA),unique exact (name + sire + dam),1,False
+20261127,WOD,1,3,KIPTUM,3,Gelding,0,HIGHLAND REEL (IRE),LANIQUE,unique exact (name + sire + dam),1,False
+20261127,WOD,1,4,PRINCE OF GLAM,3,Gelding,1,PORTLAND SKY,GLAMOUR FOX,unique exact (name + sire + dam),1,True
+20261127,WOD,1,5,TOUGH REVELATION,3,Gelding,0,OVERSHARE,THEOPHANY,unique exact (name + sire + dam),1,False
+20261127,WOD,1,6,BORATA'S GIRL,3,Filly,5,PIERATA,BAUBO (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,1,7,MAGNA PEAK,3,Filly,1,MAGNUS,TOP PEAK,unique exact (name + sire + dam),1,True
+20261127,WOD,1,8,ZOU OWE ME,3,Filly,0,ZOUSAIN,Debt'n'deficit,unique exact (name + sire + dam),1,False
+20261127,WOD,2,1,DAGGER ONE,5,Gelding,5,PIERATA,Golden Lustre,unique exact (name + sire + dam),1,True
+20261127,WOD,2,2,DOCTORATE,4,Gelding,4,SO YOU THINK (NZ),TAWARET,unique exact (name + sire + dam),1,True
+20261127,WOD,2,3,MAGNUS MAXIMUS,5,Gelding,6,MAGNUS,MORNING MOOD,unique exact (name + sire + dam),1,True
+20261127,WOD,2,4,ORDINARY STAR,3,Gelding,1,REDENTE,THATS IT THATS ALL,unique exact (name + sire + dam),1,True
+20261127,WOD,2,5,PRAY FOR ELEGANCE,3,Gelding,2,BRUTAL (NZ),ESTEEMED ELEGANCE (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,2,6,SKADOODLE,3,Gelding,0,SATONO ALADDIN (JPN),SIMA,unique exact (name + sire + dam),1,False
+20261127,WOD,2,7,AZKA VELOCE,4,Mare,0,SHAMUS AWARD,AZKADELLIA (NZ),unique exact (name + sire + dam),1,False
+20261127,WOD,2,8,IMA VIXEN,4,Mare,0,FOXWEDGE,CEFFYL MOR,unique exact (name + sire + dam),1,False
+20261127,WOD,2,9,MUDDY,4,Mare,3,REBEL DANE,MARION TYPE,unique exact (name + sire + dam),1,True
+20261127,WOD,2,10,NEWS SCOOP,4,Mare,4,CHURCHILL (IRE),Shoop,unique exact (name + sire + dam),1,True
+20261127,WOD,2,11,REGAL BELLE,4,Mare,0,ROYAL MEETING (IRE),CORBLIMEY,unique exact (name + sire + dam),1,False
+20261127,WOD,2,12,WINNA'S SISTER,3,Filly,1,CLIFF'S EDGE,ANUDDAWINNA,unique exact (name + sire + dam),1,False
+20261127,WOD,2,13,ARTIES A STAR,4,Mare,9,FLYING ARTIE,STAR PROJECT,unique exact (name + sire + dam),1,True
+20261127,WOD,3,1,HE'S OUR BOY,5,Gelding,7,ADELAIDE (IRE),FRIDAY ARRIVAL,unique exact (name + sire + dam),1,True
+20261127,WOD,3,2,SCORPION,5,Gelding,10,SO YOU THINK (NZ),NESSUN DORMA (GER),unique exact (name + sire + dam),1,True
+20261127,WOD,3,3,ACROMAN,3,Gelding,2,ACROBAT,MANNYA (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,3,4,ASTATINE,3,Gelding,2,PIERRO,ALZORA,unique exact (name + sire + dam),1,True
+20261127,WOD,3,5,BOOTS OFF,3,Gelding,1,DIRTY WORK,PENNY FLING,unique exact (name + sire + dam),1,True
+20261127,WOD,3,6,INNER LIGHT,3,Gelding,2,TAGALOA,AWAKENING,unique exact (name + sire + dam),1,True
+20261127,WOD,3,7,BAR LA LA,4,Mare,4,SANDBAR,LA LA LAND,unique exact (name + sire + dam),1,True
+20261127,WOD,3,8,ESTIVAL,5,Mare,8,BOULDER CITY,ESTAGAL,unique exact (name + sire + dam),1,True
+20261127,WOD,3,9,FIORE DARANCIO,4,Mare,8,FIORENTE (IRE),ORANGE RIVER,unique exact (name + sire + dam),1,True
+20261127,WOD,3,10,KATIE ON THE EDGE,4,Mare,0,U S NAVY FLAG (USA),WAIWETU LASS,unique exact (name + sire + dam),1,False
+20261127,WOD,3,11,MONEY BAGS,4,Mare,2,ENDLESS DRAMA (IRE),ELUSIVE KASH,unique exact (name + sire + dam),1,True
+20261127,WOD,3,12,NINETYFIVEINAFIFTY,4,Mare,10,PARIAH,EXPRESS STREET,unique exact (name + sire + dam),1,True
+20261127,WOD,3,13,PRINCESS PRUSSIA,5,Mare,11,BEL ESPRIT,UNDER NO PRUSSIA,unique exact (name + sire + dam),1,True
+20261127,WOD,3,14,I'M CONFUSED,3,Filly,0,ARMORY (IRE),LADY GRACE (NZ),unique exact (name + sire + dam),1,False
+20261127,WOD,3,15,VELOCE,4,Mare,2,NICCONI,BELLISSIMA MISS (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,3,16,LEGAL SIZE,6,Gelding,3,READY FOR VICTORY,LARIMUS,unique exact (name + sire + dam),1,True
+20261127,WOD,3,17,COOKARDINIA MISS,6,Mare,4,MAGNUS,WOOL'S IN FASHION,unique exact (name + sire + dam),1,True
+20261127,WOD,4,1,JUST CALL ME JONNY,6,Gelding,23,EMINENT (IRE),SLIMLINE (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,4,2,DARTBOARD,7,Gelding,45,SHOOTING TO WIN,ANAMATO,unique exact (name + sire + dam),1,True
+20261127,WOD,4,3,STAR BLAZER,7,Gelding,32,ZOUSTAR,DEARNESS,unique exact (name + sire + dam),1,True
+20261127,WOD,4,4,MISTRESSOFILLUSION,6,Mare,25,MASTERCRAFTSMAN (IRE),IL PALAZZO (USA),unique exact (name + sire + dam),1,True
+20261127,WOD,4,5,QUAMBY,7,Gelding,36,DANDINO (GB),ZERO ICE,unique exact (name + sire + dam),1,True
+20261127,WOD,4,6,SORRY SUNSHINE,7,Gelding,46,APOLOGIA,SUNWISP,unique exact (name + sire + dam),1,True
+20261127,WOD,4,7,DOC MARCH,6,Gelding,25,PRIZED ICON,AWESOME I AM (USA),unique exact (name + sire + dam),1,True
+20261127,WOD,4,8,SHE'S STARGAZING,4,Mare,10,ADMIRE MARS (JPN),METRONOME,unique exact (name + sire + dam),1,True
+20261127,WOD,4,9,SURELY SPECIAL,9,Gelding,59,LUCAS CRANACH (GER),CLEARLY UNIQUE,unique exact (name + sire + dam),1,True
+20261127,WOD,4,10,UNDER THE HAT,6,Mare,28,MANHATTAN RAIN,EXCEEDINGLY FRENCH,unique exact (name + sire + dam),1,True
+20261127,WOD,4,11,CARNIVAL RICHES,4,Mare,12,WRITTEN TYCOON,NOVEMBER (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,4,12,VICTRIX SWAN,3,Filly,8,VICTOR LUDORUM (GB),CYGNET,unique exact (name + sire + dam),1,True
+20261127,WOD,4,13,MURGASTY,5,Gelding,12,PIERRO,DEEDRA,unique exact (name + sire + dam),1,True
+20261127,WOD,4,14,PERFECTLY GOOD,5,Gelding,32,SUPER SETH,AMERINDIA (GB),unique exact (name + sire + dam),1,True
+20261127,WOD,5,1,SHOTARO,4,Gelding,6,ADMIRE MARS (JPN),MARDI,unique exact (name + sire + dam),1,True
+20261127,WOD,5,2,GIANT'S REPRIEVE,5,Gelding,5,FOXWEDGE,GEORGIA'S REPRIEVE,unique exact (name + sire + dam),1,True
+20261127,WOD,5,3,PALLADIUM,4,Gelding,9,PIERATA,GOANNA GA GA,unique exact (name + sire + dam),1,True
+20261127,WOD,5,4,SAN MARCO,6,Gelding,34,ACE HIGH,PIAZZA (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,5,5,SIR BASIL,4,Gelding,10,FOXWEDGE,DIVINE WAY,unique exact (name + sire + dam),1,True
+20261127,WOD,5,6,STAR BUYER,8,Gelding,58,WRITTEN TYCOON,DWINDLE,unique exact (name + sire + dam),1,True
+20261127,WOD,5,7,SCOTTISH PEARL,5,Mare,20,GLENEAGLES (IRE),PEARL OF THE NIGHT (IRE),unique exact (name + sire + dam),1,True
+20261127,WOD,5,8,BOTTAS,4,Gelding,11,TAGALOA,ORIENTAL LILY,unique exact (name + sire + dam),1,True
+20261127,WOD,5,9,ASHEN KNIGHT,4,Gelding,8,HIGHLAND REEL (IRE),HONEST LADY (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,5,10,MIDNIGHT EAGLE,4,Gelding,12,ALPINE EAGLE,LANIQUE,unique exact (name + sire + dam),1,True
+20261127,WOD,5,11,RED LIGHT RACHEL,4,Mare,8,PRAGUE,HEAVENSENTME,unique exact (name + sire + dam),1,True
+20261127,WOD,5,12,STRATEGIC DEFENSE,6,Mare,24,NATIONAL DEFENSE (GB),AS I DO,unique exact (name + sire + dam),1,True
+20261127,WOD,6,1,BUCCLEUCH,4,Gelding,12,PELTZER,GOLDEN FASTNET (FR),unique exact (name + sire + dam),1,True
+20261127,WOD,6,2,EL ROCKO,8,Gelding,71,FASTNET ROCK,BUTTERS (USA),unique exact (name + sire + dam),1,True
+20261127,WOD,6,3,TUFF TU MUS,6,Gelding,17,ALL TOO HARD,MOODLIGHTING,unique exact (name + sire + dam),1,True
+20261127,WOD,6,4,EL SOLEADO,7,Gelding,29,TORONADO (IRE),SUNNYVALE (GER),unique exact (name + sire + dam),1,True
+20261127,WOD,6,5,PRESSER,8,Gelding,38,PRESS STATEMENT,LADY PRIMROSE,unique exact (name + sire + dam),1,True
+20261127,WOD,6,6,SPACE RIDER,4,Gelding,13,ZOUSTAR,FUDDLE DEE DUDDLE,unique exact (name + sire + dam),1,True
+20261127,WOD,6,7,BLACK STORM,7,Gelding,28,CARAVAGGIO (USA),LADY BLIGH,unique exact (name + sire + dam),1,True
+20261127,WOD,6,8,BULLETS HIGH,6,Gelding,29,ACE HIGH,SORORIA (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,6,9,INDISPENSABLE,10,Gelding,71,AKEED MOFEED (GB),ESSENCE,unique exact (name + sire + dam),1,True
+20261127,WOD,6,10,ITSUKUSHIMA,7,Gelding,42,SO YOU THINK (NZ),BARCHETTA,unique exact (name + sire + dam),1,True
+20261127,WOD,6,11,EAMONN'S MEMORY,8,Gelding,92,PER INCANTO (USA),IN MEMORY OF (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,6,12,EXPEETEE,6,Mare,30,BOULDER CITY,REGAL ATTACK (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,6,13,MAKE IT SWEET,6,Mare,30,FIORENTE (IRE),NEW PAGE,unique exact (name + sire + dam),1,True
+20261127,WOD,6,14,SISTER SHAY,5,Mare,18,SHAMUS AWARD,SUPER SISTER (IRE),unique exact (name + sire + dam),1,True
+20261127,WOD,6,15,FOX APPEAL,7,Gelding,54,FOXWEDGE,TENNESSEE CHARM,unique exact (name + sire + dam),1,True
+20261127,WOD,6,16,MORNING DARLING,7,Gelding,31,LOVE CONQUERS ALL,NATIVE LAND,unique exact (name + sire + dam),1,True
+20261127,WOD,6,17,GREY LAD,8,Gelding,34,MAGIC ALBERT,GREY MIST,unique exact (name + sire + dam),1,True
+20261127,WOD,7,1,BRENLYN'S LEGACY,4,Gelding,13,REDENTE,ONE FOR THE KIDS,unique exact (name + sire + dam),1,True
+20261127,WOD,7,2,PROJETO,7,Gelding,14,MASTER OF DESIGN,SALASUN,unique exact (name + sire + dam),1,True
+20261127,WOD,7,3,THE SHAPER,6,Gelding,28,STREET BOSS (USA),GLORY'S GIRL,unique exact (name + sire + dam),1,True
+20261127,WOD,7,4,BEFORE THE WAR,6,Gelding,29,RUSSIAN REVOLUTION,LADY ANTEBELLUM,unique exact (name + sire + dam),1,True
+20261127,WOD,7,5,COMMANDS SUCCESS,7,Gelding,40,SQUAMOSA,LITTLE ELSA,unique exact (name + sire + dam),1,True
+20261127,WOD,7,6,FOREMAN'S GULLY,6,Gelding,23,PRIDE OF DUBAI,LA LA LAND,unique exact (name + sire + dam),1,True
+20261127,WOD,7,7,ABSTRUSE,6,Mare,44,SIDESTEP,ARCANE,unique exact (name + sire + dam),1,True
+20261127,WOD,7,8,FOURTHTIMELUCKY,5,Gelding,20,PRIZED ICON,ABBALANCHE,unique exact (name + sire + dam),1,True
+20261127,WOD,7,9,HAZARDOUS,3,Filly,3,REDENTE,OPEROSE,unique exact (name + sire + dam),1,True
+20261127,WOD,7,10,ROSIE'S PROPHECY,6,Mare,25,AKEED MOFEED (GB),WAITAHA PROPHECY,unique exact (name + sire + dam),1,True
+20261127,WOD,7,11,ROUSSILLON,6,Gelding,27,EXCEED AND EXCEL,FITOU,unique exact (name + sire + dam),1,True
+20261127,WOD,7,12,ALICE ALICE,4,Mare,6,ENCRYPTION,IMPEACH,unique exact (name + sire + dam),1,True
+20261127,WOD,7,13,MORE HIGHS ON ME,4,Mare,9,ALABAMA EXPRESS,ALL HIGHS ON ME,unique exact (name + sire + dam),1,True
+20261127,WOD,7,14,PACIFIC GLAMOUR,4,Mare,14,NORTH PACIFIC,GLAMARAMA,unique exact (name + sire + dam),1,True
+20261127,WOD,7,15,PRANDIUM TEMPUS,5,Gelding,14,ILOVETHISCITY,OAMARU,unique exact (name + sire + dam),1,True
+20261127,WOD,7,16,THREE MUSKETEERS,6,Gelding,25,PRIDE OF DUBAI,PARISIAN ROMANCE,unique exact (name + sire + dam),1,True
+20261127,WOD,8,1,TANGANYIKA,6,Gelding,17,ACE HIGH,JEZIBABA (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,8,2,FUTURE FUND,6,Gelding,24,FLYING ARTIE,PUNCH THE CLOCK,unique exact (name + sire + dam),1,True
+20261127,WOD,8,3,COPPERFIELD,9,Gelding,70,PER INCANTO (USA),MISS CENTREFOLD (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,8,4,LORD OF VALOR,5,Gelding,8,EPAULETTE,ILOVETHISLADY,unique exact (name + sire + dam),1,True
+20261127,WOD,8,5,PAPARAZZO,5,Gelding,22,HOLLER,SHUTTER BUG,unique exact (name + sire + dam),1,True
+20261127,WOD,8,6,SHOMA,4,Gelding,17,CONTRIBUTER (IRE),BIG DREAMER (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,8,7,BLUSHING TYCOON,8,Gelding,51,WRITTEN TYCOON,CRIMSON KISS (NZ),unique exact (name + sire + dam),1,True
+20261127,WOD,8,8,DOUBTFREE,5,Gelding,27,DUBIOUS,LIBERATING (USA),unique exact (name + sire + dam),1,True
+20261127,WOD,8,9,DEELING ACES,7,Mare,10,DUNDEEL (NZ),STACEY LEE,unique exact (name + sire + dam),1,True
+20261127,WOD,8,10,STEVE'S WAY,6,Mare,22,WAYED ZAIN,STEVE'S CHOICE,unique exact (name + sire + dam),1,True

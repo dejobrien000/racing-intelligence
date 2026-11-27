@@ -1,0 +1,61 @@
+{
+ "breednet_runs": 697341,
+ "name_keys": 59167,
+ "proposed_identities_raw": 59246,
+ "runs_missing_sire_or_dam": 2433,
+ "of_which_attached_to_single_identity": 2420,
+ "of_which_unresolved": 13,
+ "foaling_season_consistency": {
+  "identities": 59246,
+  "single_season": 55202,
+  "within_one_season": 59238,
+  "spread_2_plus": 1
+ },
+ "name_keys_with_more_than_one_identity": 79,
+ "identity_status_within_shared_keys": {
+  "single": 116,
+  "dam spelling variant, same foaling season -> one horse": 42
+ },
+ "shared_keys_by_reason": {
+  "different_suffix": 51,
+  "same_suffix_different_sire": 7,
+  "same_suffix_same_sire_dam_spellings": 21
+ },
+ "Racing Queensland id formats": {
+  "numeric": 88997,
+  "Racing Australia style": 4137
+ },
+ "Racing Queensland horse codes": {
+  "name_keys": 13988,
+  "keys_with_2plus_codes": 5,
+  "examples": [
+   "EMBOLDEN",
+   "GENTILESCHI",
+   "HARROW",
+   "ROYALRIFT",
+   "TEXAS"
+  ],
+  "codes_with_2plus_keys(spelling variants)": 7,
+  "overlap_with_breednet_shared_keys": 3
+ },
+ "SA id formats": {},
+ "SA horse codes": {
+  "name_keys": 0,
+  "keys_with_2plus_codes": 0,
+  "examples": [],
+  "codes_with_2plus_keys(spelling variants)": 0,
+  "overlap_with_breednet_shared_keys": 0
+ },
+ "live_tab_runners": {
+  "runners": 1068,
+  "with_sire_and_dam": 1068,
+  "by_status": {
+   "unique exact (name + sire + dam)": 1030,
+   "no identity: genuine first starter (TAB career 0)": 38
+  },
+  "names_with_2plus_identities_in_fields": 0,
+  "pedigree_mismatch_but_name_key_in_rating_history": 0,
+  "names_on_2plus_days": 9,
+  "of_which_pedigree_string_changed": 0
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "note": "ours minus TAB career starts; TAB includes starts after our data end (about 4 days of results), so small negatives are expected",
+ "all": {
+  "observed_only": {
+   "runners": 981,
+   "median_diff": 0.0,
+   "mean_diff": -0.43,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.027
+  },
+  "as_used_by_candidate": {
+   "runners": 981,
+   "median_diff": 0.0,
+   "mean_diff": -0.3,
+   "share_over_by_5plus": 0.004,
+   "share_under_by_5plus": 0.021
+  }
+ },
+ "complete": {
+  "observed_only": {
+   "runners": 950,
+   "median_diff": 0.0,
+   "mean_diff": -0.29,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.017
+  },
+  "as_used_by_candidate": {
+   "runners": 950,
+   "median_diff": 0.0,
+   "mean_diff": -0.29,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.017
+  }
+ },
+ "late_maiden": {
+  "observed_only": {
+   "runners": 19,
+   "median_diff": 0.0,
+   "mean_diff": -0.89,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.053
+  },
+  "as_used_by_candidate": {
+   "runners": 19,
+   "median_diff": 0.0,
+   "mean_diff": -0.89,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.053
+  }
+ },
+ "probably incomplete (typical starts added)": {
+  "observed_only": {
+   "runners": 12,
+   "median_diff": -10.0,
+   "mean_diff": -11.25,
+   "share_over_by_5plus": 0.0,
+   "share_under_by_5plus": 0.75
+  },
+  "as_used_by_candidate": {
+   "runners": 12,
+   "median_diff": 0.0,
+   "mean_diff": -0.42,
+   "share_over_by_5plus": 0.333,
+   "share_under_by_5plus": 0.333
+  }
+ },
+ "typical_starts_added_by_age": {}
+}
