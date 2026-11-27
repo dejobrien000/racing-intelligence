@@ -26,6 +26,13 @@
   "not eligible at capture and did not run": 1,
   "gained a start after the capture (later scratchings; not knowable at cutoff)": 1
  },
+ "categories": {
+  "eligible at the morning cutoff and started": 52,
+  "eligible at the morning cutoff, scratched later (TAB status at results: scratched)": 2,
+  "ineligible at the morning cutoff and did not start": 1,
+  "ineligible at the morning cutoff, gained a start from later scratchings": 1
+ },
+ "rule_failures": 0,
  "races": {
   "total": 61,
   "with_scratchings_before_cutoff": 50,

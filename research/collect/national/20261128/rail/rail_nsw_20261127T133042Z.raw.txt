@@ -1,0 +1,7 @@
+# Pre-race rail and track information, Racing NSW FreeFields Scratchings pages (official; read-only WebFetch). Raw values as shown; class A (pre-race published); provisional research data, not served to any engine.
+# capture_utc_window_end=20261127T133042Z source=https://mdata.racingnsw.com.au/FreeFields/Scratchings.aspx?Key=2026Nov28%2CNSW%2C<venue>
+# fields: RAIL|venue|meeting date|rail text|track surface|track rating|penetrometer|rainfall|irrigation|weather|track conditions update|last track rating update|race-specific notes|source code
+RAIL|Rosehill Gardens|2026-11-28|True|Turf|Good 4|5.18|Nil last 24hrs, 5.3mm last 7 days|Nil last 24hrs, 15mm last 7 days|Windy|Updated 27/11 - 3:20pm||Track Information: Going Stick - 10.1, Shear stick - 13.9|nsw:Rosehill Gardens
+RAIL|Wagga Riverside|2026-11-28|Riverside track- True|Turf|Good 4||0mm last 24hrs, 22mm last 7 days|0mm last 24hrs, 4mm last 7 days|Overcast|Updated 27/11 - 10.18am|||nsw:Wagga Riverside
+RAIL|Kempsey|2026-11-28|True|Turf|Soft 5||5mm last 24hrs, 9mm last 7 days|Nil|Overcast|Updated 27/11 - 8:15am||Rail Position Last Meeting: True|nsw:Kempsey
+RAIL|Kembla Grange|2026-11-28|+3.5m 1100m to winning post, true remainder|Turf|Good 4||Nil last 24hrs, 17.5mm last 7 days|Nil last 24hrs, 3mm last 7 days|Overcast|Updated 27/11 - 7:59am||Rail Position Last Meeting: True|nsw:Kembla Grange

@@ -24,6 +24,11 @@
   "not eligible at capture and did not run": 8,
   "eligible at capture (inferred) and ran": 3
  },
+ "categories": {
+  "ineligible at the morning cutoff and did not start": 8,
+  "eligible at the morning cutoff and started": 3
+ },
+ "rule_failures": 0,
  "races": {
   "total": 29,
   "with_scratchings_before_cutoff": 21,

@@ -1,57 +1,57 @@
-ven,state,race,n,name,status_at_capture,main_field_scratchings_at_capture,national_rule_gained,qld_rule_counted,status_at_results,finish,started,result_found,main_scr_by_results,later_main_scratchings,reading
-CBY,NSW,3,11,ENVIOUS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-CBY,NSW,3,12,NOT INEVITABLE,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-CBY,NSW,7,13,OUTBACK ANGEL,Open,2,True,True,Loser,-,True,True,6,4,eligible at capture (inferred) and ran
-CBY,NSW,7,14,VITTOZZI,Open,2,True,True,LateScratched,-,False,True,6,4,admitted but did not run: later scratching or misread (check)
-CBY,NSW,8,12,STEALTHFIRE,Open,1,True,True,Loser,4,True,True,3,2,eligible at capture (inferred) and ran
-CBY,NSW,8,15,IT'S A WONDER,Open,1,False,True,LateScratched,-,False,True,3,2,not eligible at capture and did not run
-CBY,NSW,8,16,STAR HALF,Open,1,False,True,Loser,-,True,True,3,2,gained a start after the capture (later scratchings; not knowable at cutoff)
-MTG,SA,5,11,NUDGE 'EM ALONG,Open,1,True,True,Placing,3,True,True,1,0,eligible at capture (inferred) and ran
-MTG,SA,7,15,BLACK BUGATTI,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-MTG,SA,7,16,DRINK THEN KISS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-MTG,SA,7,17,DANGEROUS SECRET,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-MUS,NSW,4,15,TENDI,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran
-MUS,NSW,5,15,FAKE FICTION,Open,4,True,True,Winner,1,True,True,5,1,eligible at capture (inferred) and ran
-MUS,NSW,5,16,FINAL GIFT,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran
-MUS,NSW,5,17,HOT CHESTNUT,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran
-MUS,NSW,5,18,MORPETH,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran
-PAK,VIC,2,13,AMBER QUEEN,Open,4,True,True,LateScratched,-,False,True,4,0,admitted but did not run: later scratching or misread (check)
-PAK,VIC,3,13,GREY FLYER,Open,2,True,True,Loser,-,True,True,4,2,eligible at capture (inferred) and ran
-PAK,VIC,3,14,SHIPPING STEEL,Open,2,True,True,Loser,-,True,True,4,2,eligible at capture (inferred) and ran
-PAK,VIC,6,13,POSH DIAMANTE,Open,2,True,True,Loser,-,True,True,3,1,eligible at capture (inferred) and ran
-PAK,VIC,6,15,JETSETTER JACK,Open,2,True,True,Winner,1,True,True,3,1,eligible at capture (inferred) and ran
-PAK,VIC,8,13,SPIRIT OF WEALTH,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran
-PAK,VIC,8,15,NOETZIE,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran
-PAK,VIC,8,16,MONGOLIAN GOBI,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran
-QBY,NSW,2,14,SON O' WAR,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-QBY,NSW,2,15,DID DUBAI ME EUROS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-QBY,NSW,2,16,HELLCAT,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-QBY,NSW,3,13,FLASHBACK TIME,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-QBY,NSW,3,15,KARUTA KING,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-QBY,NSW,4,11,O'HATASKY,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,4,12,HUSSLAA,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,6,13,FRED ASTERN,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,6,14,CHAIRMAN'S LIST,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,7,13,HARDAZHELL,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,7,14,PEARLER,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-QBY,NSW,8,13,VAINSTREAM,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran
-SSC,QLD,4,16,STEEL KNIGHT,Open,6,True,True,Loser,-,True,True,6,0,eligible at capture (inferred) and ran
-SSC,QLD,4,17,TORQUE TOO EASY,Open,6,True,True,Loser,-,True,True,6,0,eligible at capture (inferred) and ran
-SSC,QLD,4,18,CYBER CITY,Open,6,True,True,Placing,2,True,True,6,0,eligible at capture (inferred) and ran
-SSC,QLD,6,17,CHANCE WITH WOLVES,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran
-SSC,QLD,6,18,OAKFIELD MONTANA,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran
-SSC,QLD,6,19,ROARING SUCCESS,Open,5,True,True,Loser,4,True,True,5,0,eligible at capture (inferred) and ran
-SSC,QLD,7,19,ZARLA,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran
-SSC,QLD,7,20,TAPPY'S STAR,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran
-SSC,QLD,7,21,ALARMED,Open,5,True,True,Loser,4,True,True,5,0,eligible at capture (inferred) and ran
-WOD,VIC,2,13,ARTIES A STAR,Open,1,True,True,Loser,-,True,True,2,1,eligible at capture (inferred) and ran
-WOD,VIC,3,15,VELOCE,Open,3,True,True,Loser,4,True,True,4,1,eligible at capture (inferred) and ran
-WOD,VIC,3,16,LEGAL SIZE,Open,3,True,True,Placing,3,True,True,4,1,eligible at capture (inferred) and ran
-WOD,VIC,3,17,COOKARDINIA MISS,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran
-WOD,VIC,4,14,PERFECTLY GOOD,Open,1,True,True,Loser,-,True,True,1,0,eligible at capture (inferred) and ran
-WOD,VIC,6,15,FOX APPEAL,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran
-WOD,VIC,6,16,MORNING DARLING,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran
-WOD,VIC,6,17,GREY LAD,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran
-WOD,VIC,7,13,MORE HIGHS ON ME,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
-WOD,VIC,7,14,PACIFIC GLAMOUR,Open,3,True,True,Loser,4,True,True,3,0,eligible at capture (inferred) and ran
-WOD,VIC,7,15,PRANDIUM TEMPUS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran
+ven,state,race,n,name,status_at_capture,main_field_scratchings_at_capture,national_rule_gained,qld_rule_counted,status_at_results,finish,started,result_found,main_scr_by_results,later_main_scratchings,reading,category
+CBY,NSW,3,11,ENVIOUS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+CBY,NSW,3,12,NOT INEVITABLE,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+CBY,NSW,7,13,OUTBACK ANGEL,Open,2,True,True,Loser,-,True,True,6,4,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+CBY,NSW,7,14,VITTOZZI,Open,2,True,True,LateScratched,-,False,True,6,4,admitted but did not run: later scratching or misread (check),"eligible at the morning cutoff, scratched later (TAB status at results: scratched)"
+CBY,NSW,8,12,STEALTHFIRE,Open,1,True,True,Loser,4,True,True,3,2,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+CBY,NSW,8,15,IT'S A WONDER,Open,1,False,True,LateScratched,-,False,True,3,2,not eligible at capture and did not run,ineligible at the morning cutoff and did not start
+CBY,NSW,8,16,STAR HALF,Open,1,False,True,Loser,-,True,True,3,2,gained a start after the capture (later scratchings; not knowable at cutoff),"ineligible at the morning cutoff, gained a start from later scratchings"
+MTG,SA,5,11,NUDGE 'EM ALONG,Open,1,True,True,Placing,3,True,True,1,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MTG,SA,7,15,BLACK BUGATTI,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MTG,SA,7,16,DRINK THEN KISS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MTG,SA,7,17,DANGEROUS SECRET,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MUS,NSW,4,15,TENDI,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MUS,NSW,5,15,FAKE FICTION,Open,4,True,True,Winner,1,True,True,5,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MUS,NSW,5,16,FINAL GIFT,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MUS,NSW,5,17,HOT CHESTNUT,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+MUS,NSW,5,18,MORPETH,Open,4,True,True,Loser,-,True,True,5,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,2,13,AMBER QUEEN,Open,4,True,True,LateScratched,-,False,True,4,0,admitted but did not run: later scratching or misread (check),"eligible at the morning cutoff, scratched later (TAB status at results: scratched)"
+PAK,VIC,3,13,GREY FLYER,Open,2,True,True,Loser,-,True,True,4,2,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,3,14,SHIPPING STEEL,Open,2,True,True,Loser,-,True,True,4,2,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,6,13,POSH DIAMANTE,Open,2,True,True,Loser,-,True,True,3,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,6,15,JETSETTER JACK,Open,2,True,True,Winner,1,True,True,3,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,8,13,SPIRIT OF WEALTH,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,8,15,NOETZIE,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+PAK,VIC,8,16,MONGOLIAN GOBI,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,2,14,SON O' WAR,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,2,15,DID DUBAI ME EUROS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,2,16,HELLCAT,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,3,13,FLASHBACK TIME,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,3,15,KARUTA KING,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,4,11,O'HATASKY,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,4,12,HUSSLAA,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,6,13,FRED ASTERN,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,6,14,CHAIRMAN'S LIST,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,7,13,HARDAZHELL,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,7,14,PEARLER,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+QBY,NSW,8,13,VAINSTREAM,Open,2,True,True,Loser,-,True,True,2,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,4,16,STEEL KNIGHT,Open,6,True,True,Loser,-,True,True,6,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,4,17,TORQUE TOO EASY,Open,6,True,True,Loser,-,True,True,6,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,4,18,CYBER CITY,Open,6,True,True,Placing,2,True,True,6,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,6,17,CHANCE WITH WOLVES,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,6,18,OAKFIELD MONTANA,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,6,19,ROARING SUCCESS,Open,5,True,True,Loser,4,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,7,19,ZARLA,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,7,20,TAPPY'S STAR,Open,5,True,True,Loser,-,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+SSC,QLD,7,21,ALARMED,Open,5,True,True,Loser,4,True,True,5,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,2,13,ARTIES A STAR,Open,1,True,True,Loser,-,True,True,2,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,3,15,VELOCE,Open,3,True,True,Loser,4,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,3,16,LEGAL SIZE,Open,3,True,True,Placing,3,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,3,17,COOKARDINIA MISS,Open,3,True,True,Loser,-,True,True,4,1,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,4,14,PERFECTLY GOOD,Open,1,True,True,Loser,-,True,True,1,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,6,15,FOX APPEAL,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,6,16,MORNING DARLING,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,6,17,GREY LAD,Open,4,True,True,Loser,-,True,True,4,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,7,13,MORE HIGHS ON ME,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,7,14,PACIFIC GLAMOUR,Open,3,True,True,Loser,4,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started
+WOD,VIC,7,15,PRANDIUM TEMPUS,Open,3,True,True,Loser,-,True,True,3,0,eligible at capture (inferred) and ran,eligible at the morning cutoff and started

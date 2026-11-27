@@ -16,6 +16,20 @@
   horses that were eligible at 7:30 and were scratched later in the day, exactly like the 16 races with later main-field
   scratchings that every forecast already absorbs. They are not misreads, so they were not counted as failures. This reading was
   made after seeing the results and is stated here so it can be challenged.
+- Rule of record (written 27 Nov 11:45pm, before any Saturday race; Damo's Batch 24 brief s26). Morning eligibility comes ONLY from the
+  7:30am capture: TAB's explicit statuses and the gained-start count. Participation is used only to verify it. ops/check_emergencies.py
+  classifies every unscratched emergency into one of six categories: (1) eligible at the morning cutoff and started; (2) eligible at the
+  cutoff and scratched later (TAB status at results is a scratching); (3) ineligible at the cutoff and gained a start from later
+  scratchings; (4) incorrectly admitted (admitted, did not start, no scratching status); (5) incorrectly excluded (left out, started, no
+  later main-field scratchings); (6) eligibility uncertain (no capture status or no result). Only (4) and (5) are rule failures.
+  26 Nov: 3 (1), 8 ineligible and did not start, 0 failures. 27 Nov: 52 (1), 2 (2), 1 (3), 1 ineligible and did not start, 0 failures.
+  Limits: TAB gives no scratching timestamp in our captures, so (2) is verified as "not scratched at 7:30, scratched by the results
+  capture". Jurisdiction rules: Racing Victoria sets 8:00am race-day (local) as the latest time an emergency obtains a start (AR amendment
+  212, 2023), and Racing Australia lets emergencies gain a start in a 15-minute interim after a late scratching, which is category (3).
+  WA's morning deadline falls after our 7:30am Brisbane capture, so WA emergencies mostly stay "not yet confirmed" at the capture.
+- Monitoring and rollback: the check runs on every race day once results are captured (evening or next morning). If (4) or (5) is not
+  zero, the cases are logged and examined; a confirmed eligibility defect means deleting ops/national_emergency_enabled before the next
+  7:30am run and marking that day's affected races in the log. Original forecasts and field snapshots are never changed.
 
 ## v2.1 - 25 Nov 2026, 12:17pm Brisbane (Queensland: v3 rating)
 - Queensland's national rating is the v3 rating (engine/dyn_v3.py; settings a_q=1, n0=4, g_imp=1 chosen on pre-2025 runs only):
