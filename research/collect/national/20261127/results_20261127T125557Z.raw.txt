@@ -1,0 +1,824 @@
+# 27 Nov 2026 completed TAB racecards (cache-busted), captured evening of race day (12:55-13:18Z; the first attempt at 12:33Z was blocked pending approval). Runner fields: runnerNumber|runnerName|barrier|handicapWeight|claimAmount|rider|trainer|emergency|fixedOdds.returnWin (final TAB fixed)|fixedOdds.returnPlace|bettingStatus|finish (from TAB results array: top 4 only; - otherwise)
+# RACE line: RACE|VEN|raceNumber|raceName|raceStartTime|raceDistance|trackCondition|railPosition|hasFixedOdds|fixedOddsUpdateTime|CAPTURED_UTC|raceStatus
+MEET|CBY|CANTERBURY|NSW
+MEET|QBY|QUEANBEYAN|NSW
+MEET|MUS|MUSWELLBROOK|NSW
+MEET|PAK|PAKENHAM|VIC
+MEET|SSC|SUNSHINE COAST|QLD
+MEET|CNS|CAIRNS|QLD
+MEET|MTG|MOUNT GAMBIER|SA
+MEET|WOD|WODONGA|VIC
+RACE|QBY|1|TAB MAIDEN SHOWCASE PLATE|2026-11-27T02:00:00.000Z|1000|GOOD4|null|false|2026-11-27T02:00:49.000Z|2026-11-27T12:55:57Z|Paying
+1|ENTIRELY OAK|9|59|2|J Brookes|G Stephens|false|19|3.9|Loser|-
+2|HAZEL BAY|3|59|0|R Pr|L Hodgson|false|26|5|Loser|-
+3|ISLE OF WIGHT|5|59|-1|D Budler|R Potter|false|9.5|2.5|Loser|-
+4|RISK AND FAMOUS|1|59|-1|B Loy|T Smart|false|23|4.6|Loser|-
+5|JAMMED|7|57.5|-1|B Panya|G Brown|false|71|11|Loser|-
+6|PONZI SCHEME|6|57.5|-1|C Lever|M Beer & G Carpenter|false|5|1.7|Loser|-
+7|STILL THE MOON|4|57.5|-1|D Shanker|P Facoory|false|8.5|2.3|Winner|1
+8|CAT'S EYE|12|57|-1|A McLucas|L Clarke|false|51|9|Placing|3
+9|DESIGNED SPINDLE|8|57|-1|M Bourke|J Van Duren|false|151|22|Loser|4
+10|LOUJEN FRANCAISE|10|57|1.5|E Ly|J Morrison|false|151|22|Loser|-
+11|NAVY ROSE|2|57|-1|L Day|D Pfieffer|false|2|1.2|Placing|2
+12|SWORN|11|55.5|-1|C Newitt|J Cleary|false|8.5|2.3|Loser|-
+RACE|QBY|2|KELLEY RACING & COOMA MONARO LEGAL|2026-11-27T02:33:00.000Z|1460|GOOD4|null|false|2026-11-27T02:33:43.000Z|2026-11-27T12:57:11Z|Paying
+1|OBISANYA|11|59|2|R Wedrat-kr|T Wilson|false|151|18|Loser|-
+2|ON THE FLY|3|57|-1|B Loy|S Collings|false|1.8|1.12|Winner|1
+3|BOY BRUTUS|16|56.5|-1|Not Notified|W Hudd|false|19|3.6|LateScratched|-
+4|TOP PICK|5|56.5|-1|M Bourke|L Hodgson|false|5|1.5|Loser|-
+5|AQUILINO|2|56|-1|D Shanker|P Facoory|false|5.5|1.55|Loser|4
+6|BETTER BLOOM|10|56|-1|C Newitt|J Cleary|false|5.5|1.55|Placing|3
+7|JUSTWATCHHER|7|56|-1|S Fawke|T Smart|false|81|10|Loser|-
+8|RAINING VIOLETS|15|56|-1|Not Notified|R Potter|false|11|2.6|LateScratched|-
+9|RAWANO|9|56|3|P Gorton|G Crossley|false|151|18|Loser|-
+10|STAR OF MINE|10|56|-1|Not Notified|J Stewart|false|61|11|LateScratched|-
+11|TIGER TOM|6|56|0|R Pr|N Gardner|false|34|4.8|Placing|2
+12|WALKING UNDA STARS|12|56|-1|D Budler|M Smith|false|41|6|Loser|-
+13|DEEL HEAD|14|56|-1|J Taylor|G Backhouse|true|1.01|1.01|LateScratched|-
+14|SON O' WAR|1|56|-1|M Heagney|G Lukss|true|101|12|Loser|-
+15|DID DUBAI ME EUROS|4|56|-1|C Keatings|J Van Duren|true|151|18|Loser|-
+16|HELLCAT|8|56|-1|J Taylor|F Cleary|true|61|8|Loser|-
+RACE|QBY|3|RESORT TRAILERS SHOWCASE BM58 HANDICAP|2026-11-27T03:10:00.000Z|1460|GOOD4|null|false|2026-11-27T03:11:26.000Z|2026-11-27T12:57:11Z|Paying
+1|FALSTAFFIAN|9|62|-1|C Newitt|J Cleary|false|3.8|1.65|Winner|1
+2|THE HARD ROAD|10|60|-1|B Loy|J Ible|false|17|4.2|Loser|4
+3|AIN'T SEEN MARS|11|59.5|0|C Ramsbotham|B Joseph & P & M Jones|false|5.5|2|LateScratched|-
+4|IN CIRCLES|4|59.5|-1|L Day|M Kelley|false|3.9|1.65|Placing|2
+5|OLE MISS|2|59.5|1.5|E Ly|Annabel & R Archibald|false|7.5|2.4|Placing|3
+6|PERUNO|7|59|-1|A McLucas|M Gatty|false|26|6|Loser|-
+7|WRITTEN STORY|16|59|-1|Not Notified|N Olive|false|8.5|2.7|LateScratched|-
+8|DELAGO SERG|8|58.5|-1|D Shanker|P Facoory|false|51|10|Loser|-
+9|PETOMAI|4|58|1.5|G Cahill|K Dryden & L Snowden|false|23|6|LateScratched|-
+10|ALABAMA HUSSY|3|57|0|C Keatings|N Olive|false|5.5|2|Loser|-
+11|GEOSTORM|5|57|2|J Brookes|G Stephens|false|21|4.8|Loser|-
+12|ADASITI|1|56|2|J Quince|S Jamieson|false|41|7|Loser|-
+13|FLASHBACK TIME|6|55|-1|Q Krogh|G Vella|true|9|2.7|Loser|-
+14|LIAMENA AVENUE|12|55|-1|Not Notified|T Bateup|true|1.01|1.01|LateScratched|-
+15|KARUTA KING|11|55|-1|M Bourke|L Bundy|true|13|3.4|Loser|-
+16|BEOGRAD BOY|15|55|-1|Not Notified|J Rolfe|true|1.01|1.01|LateScratched|-
+RACE|QBY|4|GRID PROPERTY GROUP MAIDEN SHOWCASE|2026-11-27T03:45:00.000Z|1200|GOOD4|null|false|2026-11-27T03:48:51.000Z|2026-11-27T12:57:11Z|Paying
+1|ALABASTER|9|59|1.5|G Cahill|G Nickson|false|51|4.8|Loser|-
+2|MUCHOBOR|10|59|-1|Q Krogh|T Wilson|false|61|5|Loser|4
+3|WORLD WIDE|4|59|-1|A McLucas|J Sargent|false|1.35|1.02|Placing|3
+4|KING'S CHARM|1|57.5|-1|B Loy|J Ible|false|101|8|Loser|-
+5|TEEMING|11|57.5|-1|C Newitt|J Cleary|false|34|7|LateScratched|-
+6|LADY COWAN|6|57|-1|Not Notified|M Dale|false|7|1.95|LateScratched|-
+7|MADAM MOSAIC|3|57|1.5|E Ly|M Hopkins|false|151|12|Loser|-
+8|PASIFAE|2|57|0|C Keatings|N Olive|false|3.9|1.22|Placing|2
+9|GITTYA OWN|7|55.5|0|A Riddell|B Baker|false|15|2.1|Winner|1
+10|TINTOELA|8|55.5|-1|M Bourke|J Sargent|false|15|2.1|Loser|-
+11|O'HATASKY|6|55.5|2|J Brookes|K Dryden & L Snowden|true|81|7|Loser|-
+12|HUSSLAA|5|57.5|-1|B Panya|G Brown|true|81|7|Loser|-
+13|RISK AND FAMOUS|5|59|-1|Not Notified|T Smart|true|1.01|1.01|LateScratched|-
+14|NAVY ROSE|13|57|-1|L Day|D Pfieffer|true|1.01|1.01|LateScratched|-
+RACE|QBY|5|SHERIDAN GARAGE DOORS QUEANBEYAN 2620|2026-11-27T04:20:00.000Z|2000|GOOD4|null|false|2026-11-27T04:20:38.000Z|2026-11-27T12:57:11Z|Paying
+1|FAIR MASTER|8|58.5|-1|B Loy|D Gorrel|false|4.4|1.65|Loser|-
+2|BEHTAR|1|58|0|C Keatings|N Olive|false|9.5|2.6|Loser|-
+3|KOSUKE|10|56.5|-1|Not Notified|G McFarlane|false|26|5|LateScratched|-
+4|THINK I DO|2|56.5|-1|L Day|B Joseph & P & M Jones|false|3.7|1.55|Winner|1
+5|SPURLINE|7|55.5|-1|M Bourke|T Wilson|false|3.9|1.55|Placing|2
+6|PURE MELODY|3|55|0|R Pr|N Gardner|false|7|2.1|Placing|3
+7|SORRY SUNSHINE|9|55|-1|Not Notified|D Gorrel|false|10|2.9|LateScratched|-
+8|THE ADIGE|4|55|-1|C Newitt|J Cleary|false|12|3|Loser|-
+9|HARD GRUNT|6|55|2|R Wedrat-kr|G Vella|false|16|3.6|Loser|-
+10|BULLA VINAKA|5|55|1.5|T Martin|G Kirkup|false|18|4|Loser|4
+11|REVOKE|5|55|3|P Gorton|M Gatty|false|101|17|LateScratched|-
+RACE|QBY|6|DALE & HITCHCOCK HEART OF QUEANBEYAN|2026-11-27T05:00:00.000Z|1200|GOOD4|null|false|2026-11-27T05:00:20.000Z|2026-11-27T12:57:11Z|Paying
+1|SOOO CRAZY|5|62|2|J Quince|R Potter|false|6.5|2.2|Placing|3
+2|WRITTEN BY LUCY|9|60.5|-1|D Budler|R Potter|false|12|3.2|Placing|2
+3|MISSILE DEFENCE|2|59.5|1.5|G Cahill|A Bourke|false|5.5|1.85|LateScratched|-
+4|STAR OF LILY|6|58.5|0|C Keatings|N Olive|false|3|1.45|Winner|1
+5|VELLA MAGIC|3|58.5|-1|S Fawke|G Vella|false|34|6|Loser|-
+6|SMASHING LULU|4|58|-1|C Newitt|J Cleary|false|10|2.8|Loser|4
+7|ROYAL MEMORY|1|57|-1|A McLucas|T Gibson|false|4.6|1.75|Loser|-
+8|WONDERFUL MISTAKE|8|56.5|-1|J Taylor|G Vella|false|12|3.2|Loser|-
+9|SANTOLINI|2|55.5|-1|L Day|M Travers|false|14|3.6|Loser|-
+10|STRAIGHT FIRE|9|55.5|-1|Not Notified|T Smart|false|17|4|LateScratched|-
+11|SELHURST PARK|11|56.5|3|P Gorton|M Gatty|true|1.01|1.01|LateScratched|-
+12|CURLY BEND|13|55|-1|Not Notified|A Warren|true|1.01|1.01|LateScratched|-
+13|FRED ASTERN|7|55|-1|D Shanker|P Facoory|true|12|3.2|Loser|-
+14|CHAIRMAN'S LIST|10|55|-1|M Bourke|R Cole|true|14|3.6|Loser|-
+15|ZEEMA|10|55|-1|Not Notified|F Cleary|true|1.01|1.01|LateScratched|-
+RACE|QBY|7|CARBIDS QUEANBEYAN CUP|2026-11-27T05:40:00.000Z|1600|GOOD4|null|false|2026-11-27T05:40:06.000Z|2026-11-27T12:57:11Z|Paying
+1|VERMICELLA|9|60.5|-1|C Newitt|J Cleary|false|3.4|1.55|Loser|-
+2|BELLEISTIC KIDS|12|60|2|J Quince|B Joseph & P & M Jones|false|7|2.3|Placing|2
+3|MY LAST HOORAY|11|59|-1|B Loy|F Cleary|false|5|1.85|Winner|1
+4|ACHESON|1|57|2|J Brookes|K Dryden & L Snowden|false|4.4|1.75|Placing|3
+5|BLOW IN|6|57|-1|D Budler|R Potter|true|16|3.9|Loser|-
+6|GOOD PRIZE|10|55.5|0|C Keatings|G Vella|false|12|3.2|Loser|-
+7|MISS STALWART|9|55.5|-1|L Day|N Olive|false|6.5|2.2|LateScratched|-
+8|BURGUNDY GIRL|4|55|0|R Pr|K Dryden & L Snowden|false|34|7|Loser|-
+9|SOUL LADY|7|55|-1|J Taylor|J Cleary|false|10|2.8|Loser|4
+10|LUNA ANGEL|14|55|-1|Not Notified|G Kirkup|false|151|30|LateScratched|-
+11|BATTLE ABBEY|8|55|-1|Q Krogh|T Wilson|false|26|6|Loser|-
+12|GOLD TRACKER|2|55|-1|S Fawke|M Travers|false|101|18|Loser|-
+13|HARDAZHELL|5|55|-1|G Cahill|J Hoy|true|101|18|Loser|-
+14|PEARLER|3|55|-1|M Bourke|G Nickson|true|51|10|Loser|-
+RACE|QBY|8|HOTEL QUEANBEYAN THUNDERBOLT SHOWCASE|2026-11-27T06:20:00.000Z|1000|GOOD4|null|false|2026-11-27T06:21:30.000Z|2026-11-27T12:57:11Z|Paying
+1|ACTION KING|8|64|2|J Quince|R Potter|false|9.5|1.9|Winner|1
+2|SUTTON VELLA|4|59|-1|C Newitt|G Vella|false|23|3.3|Placing|2
+3|WINNING REVOLUTION|10|59|-1|B Loy|M Travers|false|41|5|Loser|-
+4|LOS PADRES|11|58.5|-1|C Lever|M Beer & G Carpenter|false|21|4.2|LateScratched|-
+5|MASSIRA|7|57.5|-1|N Heywood|M Dale|false|8|1.75|Loser|-
+6|ALL ADORE|2|56.5|-1|L Day|N Olive|false|1.3|1.04|Placing|3
+7|STARLIGHT GIRL|5|55|0|C Keatings|M Kelley|false|15|2.5|Loser|-
+8|ALABAMA HAMMER|8|55|-1|Not Notified|G McFarlane|false|23|4.2|LateScratched|-
+9|DESTRUCTIVE DIVA|1|55|0|R Pr|N Gardner|false|34|4.2|Loser|-
+10|METALLIC RULER|11|55|1.5|G Cahill|A Bourke|false|51|6|Loser|-
+11|SMARTER THAN YOU|6|55|-1|M Bourke|R Cole|false|81|8|Loser|-
+12|HELL OF A SHOW|3|55|2|J Brookes|J Hoy|false|126|12|Loser|4
+13|VAINSTREAM|9|55|1.5|T Martin|T Smart|true|151|15|Loser|-
+RACE|WOD|1|TONKIN GROUP MAIDEN PLATE|2026-11-27T02:10:00.000Z|1200|GOOD4|null|false|2026-11-27T02:10:48.000Z|2026-11-27T12:58:15Z|Paying
+1|BOURNE LEGACY|6|58|-1|Z Spain|Anthony & S Freedman|false|1.55|1.18|Winner|1
+2|COSMIC SNITZ|1|58|-1|B Egan|R Goodwin|false|4.2|1.75|Loser|-
+3|KIPTUM|3|58|0|B Button|D O'Prey|false|81|24|Placing|2
+4|PRINCE OF GLAM|4|58|-1|H Williams|C Widdison|false|13|4|Loser|-
+5|TOUGH REVELATION|7|58|-1|B Ward|D O'Prey|false|51|14|Loser|3
+6|BORATA'S GIRL|5|56|-1|B McDougall|G Colvin|false|10|3.3|Loser|-
+7|MAGNA PEAK|2|56|-1|T Nugent|B Brisbourne|false|9|3|Loser|4
+8|ZOU OWE ME|4|56|0|R Houston|R Goodwin|false|0|0|LateScratched|-
+RACE|WOD|2|DUX ALBURY MAIDEN PLATE|2026-11-27T02:45:00.000Z|1100|GOOD4|null|false|2026-11-27T02:44:54.000Z|2026-11-27T12:58:15Z|Paying
+1|DAGGER ONE|8|59.5|-1|M Aitken|D Laws|false|71|9|Loser|-
+2|DOCTORATE|2|59.5|3|A Kennedy|T Linehan|false|126|16|Loser|-
+3|MAGNUS MAXIMUS|12|59.5|-1|J Duffy|C Weeding|false|10|2.2|Loser|4
+4|ORDINARY STAR|1|58|-1|S Guymer|P Maher|false|4.2|1.45|Placing|2
+5|PRAY FOR ELEGANCE|9|58|-1|B Egan|P Payne|false|1.7|1.12|Winner|1
+6|SKADOODLE|6|58|-1|Z Spain|Anthony & S Freedman|false|0|0|LateScratched|-
+7|AZKA VELOCE|11|57.5|-1|J Stanley|L & T Corstens & W Larkin|false|12|2.5|Loser|-
+8|IMA VIXEN|10|57.5|0|B Button|P Maher|false|101|13|Loser|-
+9|MUDDY|6|57.5|-1|J Martin|L Sullivan|false|16|3|Placing|3
+10|NEWS SCOOP|5|57.5|-1|C Parish|C Widdison|false|11|2.4|Loser|-
+11|REGAL BELLE|4|57.5|-1|B Ward|D O'Prey|false|26|4.6|LateScratched|-
+12|WINNA'S SISTER|7|56|-1|H Williams|C Widdison|false|71|9|Loser|-
+13|ARTIES A STAR|3|57.5|-1|B McDougall|D Scott|true|61|8|Loser|-
+RACE|WOD|3|SS&A CLUB MAIDEN PLATE|2026-11-27T03:20:00.000Z|1400|GOOD4|null|false|2026-11-27T03:22:39.000Z|2026-11-27T12:58:15Z|Paying
+1|HE'S OUR BOY|14|59.5|-1|B Egan|B Brisbourne|false|0|0|LateScratched|-
+2|SCORPION|6|59.5|0|R Houston|S Sanderson|false|3.9|1.45|Loser|-
+3|ACROMAN|5|58|-1|B McDougall|John & Chris Ledger|false|71|10|Loser|-
+4|ASTATINE|12|58|2|A Kennedy|John & Chris Ledger|false|151|19|Loser|-
+5|BOOTS OFF|9|58|-1|J Duffy|C Weeding|false|3.3|1.35|Placing|2
+6|INNER LIGHT|1|58|-1|M Aitken|John & Chris Ledger|false|151|20|LateScratched|-
+7|BAR LA LA|11|57.5|-1|H Williams|C Widdison|false|19|3.6|Loser|-
+8|ESTIVAL|8|57.5|0|B Button|G Egan|false|23|3.9|Loser|-
+9|FIORE DARANCIO|10|57.5|-1|C Parish|B Brisbourne|false|31|5|Loser|-
+10|KATIE ON THE EDGE|7|57.5|-1|J Martin|D Reid|false|101|14|Loser|-
+11|MONEY BAGS|13|57.5|-1|Not Notified|B Brisbourne|false|0|0|LateScratched|-
+12|NINETYFIVEINAFIFTY|17|57.5|-1|C Parish|B Brisbourne|false|0|0|LateScratched|-
+13|PRINCESS PRUSSIA|14|57.5|-1|J Stanley|C Weeding|false|101|14|Loser|-
+14|I'M CONFUSED|2|56|-1|J Stanley|T Busuttin & N Young|false|2.4|1.22|Winner|1
+15|VELOCE|13|57.5|-1|Z Spain|G Egan|true|23|4.2|Loser|4
+16|LEGAL SIZE|3|59.5|-1|B Ward|D O'Prey|true|81|11|Placing|3
+17|COOKARDINIA MISS|4|57.5|-1|T Nugent|D Scott|true|151|19|Loser|-
+RACE|WOD|4|CARLTON DRAUGHT OLLIE COX MEMORIAL|2026-11-27T03:55:00.000Z|2050|GOOD4|null|false|2026-11-27T03:57:09.000Z|2026-11-27T12:58:15Z|Paying
+1|JUST CALL ME JONNY|1|61|-1|B Egan|P Payne|false|2.2|1.26|Winner|1
+2|DARTBOARD|10|60|-1|M Aitken|B Cross|false|9.5|2.6|Placing|2
+3|STAR BLAZER|14|60|-1|Not Notified|D McCarthy|false|1.01|0|LateScratched|-
+4|MISTRESSOFILLUSION|3|59.5|-1|C Parish|N Smyth|false|51|9|Loser|-
+5|QUAMBY|5|59.5|-1|H Williams|S Thompson|false|13|3.1|Placing|3
+6|SORRY SUNSHINE|6|58|-1|J Richards|D Gorrel|false|51|9|Loser|-
+7|DOC MARCH|9|57|-1|B McDougall|G Colvin|false|41|7|Loser|-
+8|SHE'S STARGAZING|4|56.5|0|R Houston|P Kearney|false|14|3.3|Loser|4
+9|SURELY SPECIAL|12|56|2|O East|C Davis|false|6.5|2|Loser|-
+10|UNDER THE HAT|8|56|0|B Button|G Egan|false|19|4.2|Loser|-
+11|CARNIVAL RICHES|7|55|-1|Z Spain|R Archard|false|4.8|1.75|Loser|-
+12|VICTRIX SWAN|2|54|-1|T Nugent|D O'Prey|false|34|6|Loser|-
+13|MURGASTY|11|55.5|-1|Not Notified|C Weller|true|1.01|0|LateScratched|-
+14|PERFECTLY GOOD|11|54|-1|C Hill|D Gorrel|true|151|22|Loser|-
+RACE|WOD|5|FUDZ MERCURY HANDICAP|2026-11-27T04:30:00.000Z|1590|GOOD4|null|false|2026-11-27T04:31:29.000Z|2026-11-27T12:59:21Z|Paying
+1|SHOTARO|4|60|-1|J Stanley|T Busuttin & N Young|false|2.9|1.4|Loser|4
+2|GIANT'S REPRIEVE|9|59.5|0|B Button|G Egan|false|11|2.9|Loser|-
+3|PALLADIUM|5|59.5|-1|M Aitken|John & C Ledger|false|0|0|LateScratched|-
+4|SAN MARCO|7|59|-1|T Nugent|D Stumpo|false|9|2.5|Placing|2
+5|SIR BASIL|2|59|2|A Kennedy|John & C Ledger|false|26|5|Loser|-
+6|STAR BUYER|8|58.5|-1|B Egan|B Brisbourne|false|6|2|Winner|1
+7|SCOTTISH PEARL|5|58|-1|C Parish|N Smyth|false|41|8|Loser|-
+8|BOTTAS|1|57.5|-1|B McDougall|C Widdison|false|3.9|1.6|Placing|3
+9|ASHEN KNIGHT|6|57|-1|J Duffy|C Weeding|false|51|9|Loser|-
+10|MIDNIGHT EAGLE|10|57|-1|B Ward|D O'Prey|false|18|3.8|Loser|-
+11|RED LIGHT RACHEL|12|56|-1|Not Notified|B Brisbourne|false|0|0|LateScratched|-
+12|STRATEGIC DEFENSE|3|54|-1|S Guymer|D Scott|false|9|2.5|LateScratched|-
+RACE|WOD|6|PICKLEBET WODONGA GOLD CUP|2026-11-27T05:10:00.000Z|1590|GOOD4|null|false|2026-11-27T05:11:29.000Z|2026-11-27T12:59:21Z|Paying
+1|BUCCLEUCH|6|59.5|-1|B Egan|P Payne|false|1.6|1.14|Placing|2
+2|EL ROCKO|10|57.5|-1|B McDougall|J McArdle|false|1.01|0|LateScratched|-
+3|TUFF TU MUS|9|57|-1|E Walsh|D Williams|false|0|0|LateScratched|-
+4|EL SOLEADO|3|56.5|-1|Not Notified|J Laing|false|1.01|0|LateScratched|-
+5|PRESSER|4|56.5|-1|J Stanley|G Bedggood|false|8.5|2.2|Loser|4
+6|SPACE RIDER|11|55.5|-1|H Coffey|M Price & M Jnr|false|1.01|0|LateScratched|-
+7|BLACK STORM|10|54.5|-1|T Nugent|T Fitzsimmons|false|23|4.2|Loser|-
+8|BULLETS HIGH|12|54.5|0|R Houston|K Bourke|false|9|2.3|Loser|-
+9|INDISPENSABLE|13|54|-1|J Duffy|C Weeding|false|34|6|Loser|-
+10|ITSUKUSHIMA|11|54|-1|Z Spain|B, W & J Hayes|false|14|3|Loser|-
+11|EAMONN'S MEMORY|3|54|-1|J Richards|A Dale|false|151|19|Placing|3
+12|EXPEETEE|5|54|0|B Button|G Egan|false|41|6|Loser|-
+13|MAKE IT SWEET|1|54|-1|H Edgley|C Weeding|false|18|3.3|Loser|-
+14|SISTER SHAY|7|54|-1|H Williams|C Widdison|false|11|2.6|Winner|1
+15|FOX APPEAL|9|54|-1|J Stanley|C Weeding|true|151|19|Loser|-
+16|MORNING DARLING|8|54|-1|B Ward|S Thompson|true|51|8|Loser|-
+17|GREY LAD|2|54|-1|C Hill|C Widdison|true|151|19|Loser|-
+RACE|WOD|7|SAM MIRANDA WINES DUNSTAN SPRINT|2026-11-27T05:50:00.000Z|1100|GOOD4|null|false|2026-11-27T05:50:23.000Z|2026-11-27T12:59:21Z|Paying
+1|BRENLYN'S LEGACY|6|64|2|A Kennedy|A Dale|false|10|2.9|Loser|-
+2|PROJETO|3|63.5|-1|S Guymer|P Maher|false|41|9|Loser|-
+3|THE SHAPER|14|62.5|-1|Not Notified|D McCarthy|false|1.01|0|LateScratched|-
+4|BEFORE THE WAR|10|62|-1|B McDougall|John & C Ledger|false|15|3.9|Loser|-
+5|COMMANDS SUCCESS|11|60.5|-1|J Gibbons|D Reid|false|9.5|2.8|Placing|3
+6|FOREMAN'S GULLY|5|59|-1|M Aitken|R Wellington|false|31|7|Winner|1
+7|ABSTRUSE|4|58.5|-1|J Martin|N Jarvis|false|51|10|Loser|-
+8|FOURTHTIMELUCKY|13|58.5|-1|C Parish|C Widdison|false|0|0|LateScratched|-
+9|HAZARDOUS|2|58.5|2|C Hill|C Weeding|false|3.5|1.6|Loser|-
+10|ROSIE'S PROPHECY|12|58.5|-1|J Duffy|D O'Prey|false|7.5|2.4|Loser|-
+11|ROUSSILLON|7|57.5|-1|E Walsh|B Brisbourne|false|3.7|1.65|Placing|2
+12|ALICE ALICE|16|56|-1|J Richards|D Gorrel|false|0|0|LateScratched|-
+13|MORE HIGHS ON ME|9|55|-1|H Williams|C Widdison|true|13|3.5|Loser|-
+14|PACIFIC GLAMOUR|1|54.5|-1|T Nugent|N Smyth|true|12|3.3|Loser|4
+15|PRANDIUM TEMPUS|8|56.5|-1|B Button|W Nichols|true|41|9|Loser|-
+16|THREE MUSKETEERS|11|56.5|-1|J Stanley|A Dale|true|0|0|LateScratched|-
+RACE|WOD|8|PREMIER BUILDING & CONSTRUCTION HANDICAP|2026-11-27T06:30:00.000Z|1400|GOOD4|null|false|2026-11-27T06:30:15.000Z|2026-11-27T12:59:21Z|Paying
+1|TANGANYIKA|1|61|-1|E Walsh|B, W & J Hayes|false|5|1.75|Placing|3
+2|FUTURE FUND|3|60|-1|J Richards|M Collins|false|21|4.4|Loser|-
+3|COPPERFIELD|6|59|-1|T Nugent|A Dale|false|31|5|Loser|-
+4|LORD OF VALOR|8|59|-1|B Egan|D Scott|false|3.1|1.45|Winner|1
+5|PAPARAZZO|5|59|-1|Z Spain|C Weeding|false|5.5|1.85|Loser|4
+6|SHOMA|2|58|-1|J Stanley|T Busuttin & N Young|false|4.6|1.7|Loser|-
+7|BLUSHING TYCOON|4|56.5|-1|S Guymer|C Widdison|false|26|5|Loser|-
+8|DOUBTFREE|7|56|-1|B McDougall|D Scott|false|8|2.3|Placing|2
+9|DEELING ACES|7|55.5|-1|C Parish|C Widdison|false|0|0|LateScratched|-
+10|STEVE'S WAY|9|54|-1|H Williams|C Widdison|false|15|3.5|Loser|-
+RACE|MUS|1|BJ'S WORKWEAR MAIDEN PLATE|2026-11-27T02:15:00.000Z|1280|GOOD4|null|false|2026-11-27T02:15:54.000Z|2026-11-27T12:59:21Z|Paying
+1|CAPTAINTHUNDERBOLT|11|59|-1|B Cray|S Singleton|false|34|5|Loser|-
+2|ENVISIONED|8|59|1.5|L Small|S Gleeson|false|151|18|Loser|-
+3|MOON DART|7|59|-1|J Pracey-holmes|B Thompson|false|17|3.3|LateScratched|-
+4|SEDITIO|7|59|1.5|S Wilkes|W Wilkes|false|31|4.8|Loser|-
+5|TARRANT COUNTY|1|59|-1|Z Wadick|W Boyd|false|81|10|Loser|-
+6|TOKE|6|59|-1|C Gallagher|J Bowen|false|14|2.7|Loser|-
+7|VINTAGE BELL|4|59|-1|R Hutchings|Brett & G Cavanough|false|6|1.65|Winner|1
+8|UMBUSI|10|57.5|-1|M Weir|S Singleton|false|2.8|1.24|Placing|2
+9|VAGUELY RED|5|57.5|-1|A Bullock|P Messara & L Gavranich|false|2.1|1.16|Placing|3
+10|BOBBIN BACK|2|57|-1|K Adams|D Treacy|false|101|13|Loser|-
+11|LITTLE MISS SASS|9|57|-1|M Bell|Brett & G Cavanough|false|26|4.2|Loser|-
+12|HONNIBALL DRIVE|5|55.5|-1|M Bell|Brett & G Cavanough|false|0|0|LateScratched|-
+13|SHEZA'S SHOW|3|55.5|-1|A Gibbons|J Ramsey|false|51|7|Loser|4
+RACE|MUS|2|WESTBURY CONSTRUCTIONS F&M CLASS 1|2026-11-27T02:50:00.000Z|1450|GOOD4|null|false|2026-11-27T02:52:13.000Z|2026-11-27T12:59:21Z|Paying
+1|SHADASHI|9|63|-1|A Bullock|E Cummings|false|3.5|1.45|Loser|-
+2|DON'T TELL POLLY|4|60.5|1.5|L Small|B Widdup|false|5.5|1.8|Placing|3
+3|AFRICAN DIAMOND|6|59|3|J Urquhart-w|S Singleton|false|3.4|1.45|Loser|-
+4|HONEST DOLL|3|56.5|3|J Partridge|K Dixon|false|14|3.2|Placing|2
+5|SUNDAY PUNCH|8|55.5|-1|H Van Der H|C Grouse|false|41|7|Loser|-
+6|LEICA QUEEN|5|55|-1|G Buckley|P Bloomfield|false|13|3|Loser|4
+7|RING MY BELL|7|55|-1|B Cray|M Milton|false|21|4.2|Winner|1
+8|SIGSALY|1|55|-1|A Gibbons|W Wilkes|false|4.6|1.65|LateScratched|-
+9|ROCK'N ON UPTOWN|2|55|-1|J Duggan|C Antonio|false|126|18|Loser|-
+RACE|MUS|3|WARREN TURNER ELECTRICAL CLASS 1|2026-11-27T03:24:00.000Z|1280|GOOD4|null|false|2026-11-27T03:25:03.000Z|2026-11-27T13:00:21Z|Paying
+1|CAPE COD|5|59.5|-1|A Bullock|P Messara & L Gavranich|false|1.3|1.06|Winner|1
+2|AFRICAN DIAMOND|5|57|-1|M Weir|S Singleton|false|0|0|LateScratched|-
+3|ALBERT'S PICK|4|56|-1|J Duggan|T O'Neile|false|41|8|Loser|3
+4|LIGHTENING KISS|6|56|-1|M Bell|Brett & G Cavanough|false|4|1.4|Loser|-
+5|DON'T TELL HARRY|1|55.5|-1|C Gallagher|J Burges|false|1.01|0|LateScratched|-
+6|MODERNIST|1|55|-1|M Owen|Brett & G Cavanough|false|11|2.7|Placing|2
+7|ABOVE BOARD|2|55|-1|Z Wadick|M Griffith|false|26|6|Loser|4
+8|RING MY BELL|9|55|-1|Not Notified|M Milton|false|1.01|0|LateScratched|-
+9|ALARTHILL|3|55|1.5|L Small|J Bowen|false|71|15|Loser|-
+RACE|MUS|4|EMF GROUP IZZY'S GIFT MAIDEN HANDICAP|2026-11-27T03:59:00.000Z|1750|GOOD4|null|false|2026-11-27T03:59:12.000Z|2026-11-27T13:00:21Z|Paying
+1|PRIMA VECCHIO|5|59|-1|Not Notified|P Messara & L Gavranich|false|13|3.6|LateScratched|-
+2|NEAREST|5|58.5|-1|A Bullock|P Messara & L Gavranich|false|1.35|1.06|Winner|1
+3|CHIEF WILD EAGLE|11|58|-1|K Adams|D Treacy|false|8|2.3|LateScratched|-
+4|OCEAN PREDATOR|1|58|0|S Llewellyn|S Harvey|false|17|2.8|Placing|2
+5|ENTERPRISING|3|56.5|-1|L Magorrian|J Deamer|false|9|1.9|Placing|3
+6|POST MARK|4|56.5|-1|M Bell|S Singleton|false|16|2.7|Loser|-
+7|ROYAL AND READY|8|56|-1|C Reith|R Ollerton|false|151|15|Loser|-
+8|VELASTRA|2|56|-1|L Riordan|Richard & W Freedman|false|11|2.1|Loser|4
+9|SIMMERING|12|55.5|-1|Not Notified|J Harding|false|34|7|LateScratched|-
+10|SPALPEEN|15|55.5|-1|M Weir|J Sargent|false|6|2.1|LateScratched|-
+11|BABYFACED ASSASSIN|10|55|-1|D Panya|S Englebrecht|false|11|2.1|Loser|-
+12|BOSCA BULLET|7|55|-1|J Duggan|C Antonio|false|151|15|Loser|-
+13|GREY BELIEF|9|55|-1|C Gallagher|C Greig|false|16|2.7|Loser|-
+14|SONHO DOURADO|13|55|-1|Z Wadick|J Sargent|false|14|3.7|LateScratched|-
+15|TENDI|6|55|-1|J Pracey-holmes|J Steinmetz|true|126|13|Loser|-
+RACE|MUS|5|BLACKSTONE PASTORAL SUPER MAIDEN|2026-11-27T04:34:00.000Z|1000|GOOD4|null|false|2026-11-27T04:48:45.000Z|2026-11-27T13:00:21Z|Paying
+1|CHARM DESTINATION|6|58.5|-1|A Bullock|K Buchanan|false|7|2|Placing|3
+2|GOT HERE|15|58.5|-1|Not Notified|D Lane|false|6.5|2.1|LateScratched|-
+3|SOUTHPORT|12|58.5|-1|C Reith|B Widdup|false|4.8|1.8|LateScratched|-
+4|BOA VISTA|10|58|-1|R Hutchings|Brett & G Cavanough|false|4.2|1.55|Loser|-
+5|DANNY'S OCEAN|5|57.5|-1|M Weir|S Singleton|false|1.95|1.2|Loser|-
+6|JAYVEER|2|57.5|1.5|L Small|J Gleeson|false|61|10|Loser|-
+7|NASA BLUEBERRY|11|57|-1|H Van Der H|C Antonio|false|81|12|Loser|-
+8|BRAVE ARCHIE|13|56.5|-1|C Reith|R Ollerton|false|41|7|Loser|-
+9|NOT ASKING|8|56|1.5|J Baker|S Harvey|false|41|8|LateScratched|-
+10|RAPID DESCENT|7|55.5|0|O Chambers|S Harvey|false|14|3.1|Placing|2
+11|WOOTTON TOUCH IT|11|55.5|-1|A Gibbons|A Davies|false|8|2.4|LateScratched|-
+12|FROG ROCK|14|55|-1|C Gallagher|J Bowen|false|12|2.8|Loser|4
+13|KNIGHTLY GIRL|12|55|-1|J Pracey-holmes|R Ollerton|false|81|12|Loser|-
+14|KURSAAL|8|55|-1|M Bell|P Snowden|false|3|1.35|LateScratched|-
+15|FAKE FICTION|3|55|-1|J Duggan|W Boyd|true|18|3.7|Winner|1
+16|FINAL GIFT|1|55|-1|A Brennan|M Cross|true|41|7|Loser|-
+17|HOT CHESTNUT|4|55|-1|A Weatherlake|T E Ollerton|true|61|10|Loser|-
+18|MORPETH|9|55|-1|G Buckley|C Antonio|true|81|12|Loser|-
+RACE|MUS|6|BOYLES ESTATE AGENTS PROFESSIONALS MBK|2026-11-27T05:19:00.000Z|1450|GOOD4|null|false|2026-11-27T05:19:46.000Z|2026-11-27T13:00:21Z|Paying
+1|MAGURTZ|1|59.5|-1|C Reith|S Singleton|false|3.6|1.35|Loser|4
+2|OVERZONE|3|59|1.5|S Wilkes|W Wilkes|false|2.5|1.22|Winner|1
+3|PENCILLER|8|59|-1|C Gallagher|B Robb|false|34|5|Loser|-
+4|BIG BRAD|9|58|-1|M Bell|Brett & G Cavanough|false|4|1.4|Placing|2
+5|THUNDER LIGHTS|7|58|0|O Chambers|K Buchanan|false|61|9|LateScratched|-
+6|PRINCE DE VEGA|5|57.5|-1|A Bullock|J Deamer|false|6|1.7|Placing|3
+7|DEVILISH SUN|2|56.5|-1|J Pracey-holmes|T McIntosh|false|61|8|Loser|-
+8|WARBRECCAN|10|56|-1|G Buckley|T Wicks|false|126|16|Loser|-
+9|THIRTY DEGREES|6|55.5|-1|A Gibbons|C Stummer|false|51|8|LateScratched|-
+10|SOULS COMPANION|6|55|-1|M Owen|Brett & G Cavanough|false|15|2.8|Loser|-
+11|DAYU|4|55|0|S Llewellyn|T Wicks|false|151|18|Loser|-
+RACE|MUS|7|BAKER & FARROW BM58 HANDICAP|2026-11-27T05:54:00.000Z|1750|GOOD4|null|false|2026-11-27T05:54:04.000Z|2026-11-27T13:00:21Z|Paying
+1|JASON DARREN|5|62.5|3|A Weatherlake|J Bannister|false|5|1.7|Winner|1
+2|WEST HEAD|11|61.5|-1|M Weir|S Singleton|false|10|2.5|Loser|-
+3|RENOIR|3|60|-1|A Bullock|K Gavenlock|false|5|1.7|Loser|4
+4|PLANET NERO|4|59.5|-1|A Gibbons|J Ramsey|false|2.1|1.22|Placing|2
+5|KURITHEA|1|59|-1|R Hutchings|Annabel & R Archibald|false|11|2.6|Placing|3
+6|IN ISO|10|56|0|S Llewellyn|W Seelin|false|61|10|Loser|-
+7|ICHIKA|8|55|-1|C Gallagher|C Greig|false|31|6|Loser|-
+8|LADY FELINA|9|55|-1|H Van Der H|Annabel & R Archibald|false|31|6|Loser|-
+9|GLORYESS|2|55|-1|B Cray|K Simpkins|false|61|10|Loser|-
+10|EVER WAS|7|55|-1|J Pracey-holmes|J Steinmetz|false|81|12|Loser|-
+11|TYCOON LAD|6|55|0|J Stiff|L Selby|false|21|4.2|Loser|-
+RACE|MUS|8|MUSWELLBROOK STEEL RUSTY SPANNER SPRINT|2026-11-27T06:34:00.000Z|1000|GOOD4|null|false|2026-11-27T06:34:09.000Z|2026-11-27T13:00:21Z|Paying
+1|SHIHAB|2|64.5|-1|Z Wadick|G Milligan|false|5.5|1.65|Loser|-
+2|SARATOGA POWER|5|60.5|2|N Palmer|Brett & G Cavanough|false|8|2|Placing|3
+3|WHO EVER THOUGHT|4|60.5|1.5|O Dalton|J Gask|false|81|11|Loser|-
+4|ENTERPRISE LEGEND|3|55|3|J Partridge|H Williams|false|6|1.95|LateScratched|-
+5|SUPER SIOUX|3|55|1.5|L Small|M Dennett|false|26|6|LateScratched|-
+6|NO STATEMENT|11|55|-1|J Pracey-holmes|M Van Gestel|false|34|5|Loser|4
+7|ANGIE'S SISTER|8|55|-1|C Gallagher|B Robb|false|2.4|1.22|Placing|2
+8|IRON HAT|10|55|-1|M Weir|J Bowen|false|26|4.4|Loser|-
+9|VIERVILLE|6|55|-1|M Bell|Brett & G Cavanough|false|16|3.1|Loser|-
+10|DEBUSSY|9|55|1.5|S Wilkes|T Ball|false|81|11|Loser|-
+11|IRISH JIG|1|55|3|J Urquhart-w|S Singleton|false|3.1|1.3|Winner|1
+12|SMART AND DAPPER|5|55|0|J Stiff|B Thompson|false|21|4.6|LateScratched|-
+13|TELEGRAPH|7|55|-1|G Buckley|T Ball|false|151|18|Loser|-
+RACE|CNS|1|LADBROKES SWITCH QTIS MAIDEN PLATE|2026-11-27T03:31:00.000Z|1450|SOFT5|null|false|2026-11-27T03:30:49.000Z|2026-11-27T13:01:15Z|Paying
+1|BALLANDELLA STREET|4|58.5|-1|R Wiggins|D Jones|false|51|17|Loser|-
+2|FARNANHEIT|2|58.5|-1|M Abe|R Schluenz|false|3.9|1.9|Placing|2
+3|POWER CRUISE|1|58.5|-1|L Morrison|T Clive|false|3.6|1.8|Loser|-
+4|ROTH AUTHORITY|5|58.5|-1|A Holt|A Malliff|false|2.3|1.4|Winner|1
+5|LEUBOOM|4|56.5|-1|I Fry|G Kinlyside|false|1.01|0|LateScratched|-
+6|VOLARE|6|56.5|-1|D Smith|T Clive|false|17|6|Loser|3
+7|PRINCESS KNOWITALL|3|55|2|J Busuttin|T Button|false|6.5|2.7|Loser|4
+RACE|CNS|2|R & J BATTERIES CLASS 2 HANDICAP|2026-11-27T04:06:00.000Z|1450|SOFT5|null|false|2026-11-27T04:05:48.000Z|2026-11-27T13:01:15Z|Paying
+1|CORPULENT|3|60|-1|R Wiggins|S Massingham|false|11|3|Loser|3
+2|ZIGGY STARCRAFT|2|57.5|-1|A Holt|G Holt|false|3.5|1.4|Placing|2
+3|THUNDER BLAZE|5|56|-1|L Morrison|A Bailey|false|1.4|1.08|Winner|1
+4|YOUMEANDDUPRE|4|56|-1|I Fry|A Malliff|false|12|3.2|Loser|-
+5|FRILLY FILLY|1|54|-1|M Abe|Trevor & P Rowe|false|61|14|Loser|-
+6|TARIFF|6|54|-1|N Thomas|Trevor & P Rowe|false|61|12|Loser|4
+RACE|CNS|3|BUGEJA EARTH MOVING QTIS 2YO HANDICAP|2026-11-27T04:43:00.000Z|950|SOFT5|null|false|2026-11-27T04:43:02.000Z|2026-11-27T13:01:15Z|Paying
+1|MR STRONG|2|59|-1|A Holt|F Wieland|false|3|1.6|Placing|2
+2|ROCKY CHEVAL|4|58.5|-1|L Morrison|Trevor & P Rowe|false|3.9|1.85|Loser|3
+3|UNCLE TREASURE|7|58|2|J Busuttin|Trevor & P Rowe|false|0|0|LateScratched|-
+4|DESIGN POWER|4|57|-1|R Shred|Trevor & P Rowe|false|1.01|0|LateScratched|-
+5|SHORTS FURY|3|56.5|-1|R Wiggins|S Massingham|false|2.3|1.4|Winner|1
+6|TIME EFEX|5|56.5|-1|M Abe|Trevor & P Rowe|false|17|6|Loser|-
+7|MORNING GLORY|6|56|-1|N Thomas|S Cooper|false|16|5|Loser|-
+8|GREY DEVIL|1|55|-1|I Fry|F Wieland|false|26|8|Loser|4
+RACE|CNS|4|ALL CONSTRUCTION APPROVALS BM55 HANDICAP|2026-11-27T05:23:00.000Z|1250|SOFT5|null|false|2026-11-27T05:22:34.000Z|2026-11-27T13:01:15Z|Paying
+1|SMART MISSION|2|63|-1|R Wiggins|B Bailey|false|1.3|1.12|Placing|2
+2|WINCHESTER|5|61.5|2|J Busuttin|Trevor & P Rowe|false|15|4|Loser|4
+3|THE HONEY BADGER|6|61|-1|N Thomas|S Cooper|false|13|3.6|Loser|-
+4|VINCENTVANGEE|7|61|-1|I Fry|G Kinlyside|false|0|0|LateScratched|-
+5|CATCH A BREAK|4|60.5|-1|L Morrison|A Bailey|false|15|4|Loser|3
+6|DIAMOND LUCY|3|60.5|-1|A Holt|T Clive|false|8.5|2.6|Winner|1
+7|ZIGGY STARCRAFT|8|60.5|-1|A Holt|G Holt|false|0|0|LateScratched|-
+8|NOSEY NEO|1|59|-1|M Abe|Trevor & P Rowe|false|11|3|Loser|-
+RACE|CNS|5|102.7 STAR FM QTIS 3YO HANDICAP|2026-11-27T06:03:00.000Z|1250|SOFT5|null|false|2026-11-27T06:03:25.000Z|2026-11-27T13:01:15Z|Paying
+1|WORTHY GEM|6|60|-1|R Wiggins|F Wieland|false|2.7|1.5|Loser|4
+2|GOOD ONE CECIL|2|56.5|-1|I Fry|K Allender|false|2.1|1.35|Winner|1
+3|DEE THREE|4|55.5|-1|N Thomas|S Cooper|false|7.5|2.7|Placing|2
+4|HEART OF VIENNA|2|55.5|-1|Not Notified|T Button|false|0|0|LateScratched|-
+5|MONDAY CLOSE|1|55.5|-1|T Chambers|T Chambers|false|34|11|Loser|-
+6|RUSSIAN FANTASY|5|54|-1|L Morrison|Trevor & P Rowe|false|8.5|3.2|Loser|3
+7|BOOMING BELIEF|3|54|2|J Busuttin|F Wieland|false|41|13|Loser|-
+8|BOOMIOUS|7|54|-1|D Smith|G Holt|false|21|7|Loser|-
+RACE|CNS|6|GREAT NORTHERN BREWING CO. BM60 HANDICAP|2026-11-27T06:43:00.000Z|950|SOFT5|null|false|2026-11-27T06:43:11.000Z|2026-11-27T13:01:15Z|Paying
+1|MACHINE HEAD|6|60.5|-1|A Holt|Trevor & P Rowe|false|12|4.4|Loser|-
+2|COPPABELLA ROAD|3|60|-1|L Morrison|S Royes|false|5|2.2|Loser|4
+3|TASSORTING|6|60|-1|A Allen|S Royes|false|0|0|LateScratched|-
+4|THREEBROTHERS|4|59|2|J Busuttin|A Bailey|false|26|8|Loser|-
+5|GOLDEN OCTAVIAN|5|58.5|-1|R Wiggins|S Massingham|false|9.5|3.6|Loser|3
+6|DO A LITTLE DANCE|1|57.5|-1|I Fry|R Ludwig|false|2.4|1.45|Winner|1
+7|CARLANDO|2|56|-1|N Thomas|S Cooper|false|2.8|1.55|Placing|2
+RACE|CNS|7|CELEBRATE CHRISTMAS AT CAIRNS HANDICAP|2026-11-27T07:19:00.000Z|1250|SOFT5|null|false|2026-11-27T07:18:58.000Z|2026-11-27T13:01:15Z|Paying
+1|TURN BIRD|3|60|-1|L Morrison|S Royes|false|2.5|1.28|Winner|1
+2|HARTSHORN|2|57.5|-1|T Chambers|S Royes|false|0|0|LateScratched|-
+3|OVERLORD|4|56|-1|N Thomas|A Bailey|false|3.3|1.45|Loser|3
+4|BRAVE AGENDA|2|55.5|-1|R Wiggins|R Sewell|false|2.5|1.28|Loser|2
+5|INCHING CLOSER|1|54|-1|D Smith|M Dale|false|31|8|Loser|4
+6|LINE 'EM UP LOUI|1|54|-1|M Abe|S Massingham|false|1.01|0|LateScratched|-
+7|CEREMONIOUS|4|54|-1|I Teh|S Bush|false|1.01|0|LateScratched|-
+RACE|MTG|1|STRATTYS RACE MAIDEN PLATE|2026-11-27T04:10:00.000Z|1200|GOOD4|null|false|2026-11-27T04:11:50.000Z|2026-11-27T13:02:21Z|Paying
+1|CALM THE PRESS|4|58|-1|J Hill|Sue & J Jaensch|false|16|3|Loser|-
+2|MALAWI MAN|11|58|-1|M Julius|S Gebert|false|31|5|Loser|-
+3|POWDER GUY|3|58|-1|D Parker|L Cadzow|false|151|19|Loser|-
+4|REBELS LEGACY|1|58|-1|C Murtagh|T Dabernig|false|8|2|Placing|3
+5|EL PASO SENORITA|7|56|-1|K Walters|S Murphy|false|81|11|Loser|-
+6|GRANDSTRAZ|10|56|2|J Gutte|R Foster|false|81|11|Loser|-
+7|GREEN AMBER|2|56|2|A Webb|Sue & J Jaensch|false|126|17|Loser|-
+8|PIKLEMEGRANMOTHER|12|56|-1|H Grace|B O'Loughlin|false|2.1|1.18|Loser|4
+9|SERILO|6|56|-1|K Crowther|J Searle|false|3.3|1.35|Winner|1
+10|CHILLY SAV|9|54.5|1.5|J Weatherley|R Foster|false|151|19|Loser|-
+11|HALFA PENNY|5|54.5|-1|D Caboche|H Montgomerie|false|31|5|Loser|-
+12|HARD AND FORST|8|54.5|0|S Ingelse|T Dabernig|false|7|1.9|Placing|2
+RACE|MTG|2|METALWORX PLUMBING & SHEETMETAL MAIDEN|2026-11-27T04:50:00.000Z|1800|GOOD4|null|false|2026-11-27T04:51:25.000Z|2026-11-27T13:02:21Z|Paying
+1|COLD TRAIN|2|58|-1|J Opperman|V Hutchinson|false|7.5|2.3|Loser|-
+2|HASTA LA OINKERS|4|58|-1|D Caboche|S Murphy|false|7.5|2.3|Loser|-
+3|MONEY WHEEL|9|58|-1|K Crowther|J Edwards|false|5.5|1.95|Loser|4
+4|PATH TO VICTORY|5|58|-1|C Murtagh|A Bobbin|false|8.5|2.5|Placing|3
+5|KING LEONIDAS|10|56.5|-1|K Walters|A Small|false|16|3.8|Placing|2
+6|NORMANDY PEACE|8|56.5|-1|B Price|A Purcell|false|2.6|1.35|Winner|1
+7|COCOA CHARM|11|56|-1|H Grace|B O'Loughlin|false|19|4.4|Loser|-
+8|IMMINENT TOUCH|12|56|0|B King|D Taylor|false|61|11|Loser|-
+9|ISKADEEL|1|56|-1|J Hill|S Wilde|false|9|2.6|Loser|-
+10|NO NEED FOR TEARS|6|56|-1|M Julius|M Townsend|false|126|22|Loser|-
+11|REWARD DRAWER|7|56|0|S Ingelse|L Cadzow|false|34|7|Loser|-
+12|STUDIO ARTIST|3|56|2|J Gutte|S Lenehan|false|151|24|Loser|-
+RACE|MTG|3|SPORTSBET BM66 HANDICAP|2026-11-27T05:30:00.000Z|1800|GOOD4|null|false|2026-11-27T05:30:32.000Z|2026-11-27T13:02:21Z|Paying
+1|VAN ROY|5|62.5|1.5|J Weatherley|A Purcell|false|4.2|2.1|Loser|-
+2|FOX GEM|2|60|0|S Ingelse|J Macmillan|false|4|2.1|Loser|4
+3|SYNTHESISE|8|59|-1|K Crowther|M Seyers|false|2.9|1.4|LateScratched|-
+4|BLINDATO|4|57.5|-1|C Murtagh|A Bobbin|false|3.7|1.95|Placing|2
+5|PARKRUN|7|56.5|-1|J Hill|P Chow|false|6.5|1.9|LateScratched|-
+6|PIANTA|6|55|-1|K Walters|W Walters|false|3.4|1.85|Winner|1
+7|BY NINE|3|54|-1|H Grace|L Colgrave|false|13|5|Loser|-
+8|DEFICIT|1|54|0|B King|D Saxon|false|12|4.8|Loser|3
+9|FIFTH HUSBAND|7|54|-1|C Puls|W Walters|false|151|50|Loser|-
+RACE|MTG|4|SCOTT GROUP OF COMPANIES BM66 HANDICAP|2026-11-27T06:10:00.000Z|1200|GOOD4|null|false|2026-11-27T06:10:23.000Z|2026-11-27T13:02:21Z|Paying
+1|GUSTY WAY|1|61.5|-1|H Grace|Sue & J Jaensch|false|5|1.75|Loser|-
+2|LOST HIS BEANS|8|60|-1|D Caboche|R Lepley|false|71|11|Loser|-
+3|FREE BEER|6|58.5|-1|C Murtagh|J Pickering|false|6.5|2|Loser|-
+4|EMERALD REWARD|5|58|-1|K Crowther|B Carraill|false|8|2.3|Winner|1
+5|SINGLES MOMENT|4|57.5|-1|B Price|T Dabernig|false|8|2.3|Loser|-
+6|ONE BOUND|3|57|0|S Ingelse|T Dabernig|false|3.1|1.4|Loser|4
+7|CHILLI REAPER|2|55|-1|J Opperman|J Opperman|false|5|1.75|Placing|2
+8|SALSBURY HILL|7|55|-1|K Walters|W Walters|false|10|2.6|Placing|3
+RACE|MTG|5|LEROY'S SA BM56 HANDICAP|2026-11-27T06:50:00.000Z|900|GOOD4|null|false|2026-11-27T06:50:17.000Z|2026-11-27T13:02:21Z|Paying
+1|IN LOVE|6|62.5|1.5|I Sit|M Seyers|false|3|1.45|Winner|1
+2|POSITIVE IMAGE|7|61|-1|J Opperman|T Dabernig|false|8.5|2.5|Loser|-
+3|ELNAJEEB|10|60.5|-1|B Price|R Wilson|false|19|4.2|Loser|-
+4|HOLLOW TURF|3|60|-1|C Murtagh|J Rowe|false|31|6|Loser|-
+5|LIGHT FILLED|5|60|2|A Webb|M Hickmott|false|4.2|1.65|Placing|2
+6|FOX MAN|9|59.5|-1|J Hill|A Bobbin|false|13|3.5|LateScratched|-
+7|MAGIC FIELD|2|59.5|2|J Gutte|A Clarken|false|7|2.2|Loser|4
+8|BOLSHOI BABE|4|58|-1|K Crowther|J Searle|false|7.5|2.3|Loser|-
+9|STARSEATIC|9|57.5|-1|M Julius|P Chow|false|13|3.3|Loser|-
+10|ARTISTIC ANGEL|1|57|1.5|J Weatherley|J & L Dodgson|false|11|2.9|Loser|-
+11|NUDGE 'EM ALONG|8|55.5|-1|D Caboche|Bob & K Post|true|101|17|Placing|3
+12|SQUAGAGA|10|54|0|S Ingelse|R Foster|true|1.01|1.01|LateScratched|-
+RACE|MTG|6|MALONEY PLUMBING BM56 HANDICAP|2026-11-27T07:24:00.000Z|1300|GOOD4|null|false|2026-11-27T07:24:47.000Z|2026-11-27T13:02:21Z|Paying
+1|AQUAHOLIC|9|60|-1|J Opperman|R Wilson|false|3.3|1.45|Winner|1
+2|SIR RANDOLPH|1|60|-1|C Murtagh|A Clarken|false|13|3.1|Loser|-
+3|SOTOMAYOR|6|60|0|S Ingelse|P Ryan (jnr)|false|3.6|1.5|Placing|3
+4|WHATHAPPENSINVEGAS|10|60|-1|C Puls|Bob & K Post|false|19|4|Loser|-
+5|RAMELLE|4|59|-1|J Hill|S Wilde|false|3.5|1.45|Loser|-
+6|MISTY EMOTIONS|5|58|-1|B Price|J Salanitri|false|10|2.6|Loser|4
+7|SWEET BUT SASSY|3|58|-1|L Boyd|L Boyd|false|16|3.6|LateScratched|-
+8|FLUX|2|57.5|-1|H Grace|R Foster|false|21|4.2|Loser|-
+9|LOVE 'N' GAMES|3|57.5|-1|K Walters|W Walters|false|71|12|Loser|-
+10|RATNARAJ|7|56|-1|D Caboche|Bob & K Post|false|71|12|Loser|-
+11|SUNSET PRAYER|8|54|0|B King|D Saxon|false|19|4|Placing|2
+RACE|MTG|7|JOHN O'CONNOR & GRAHAM BELL 0 - 54|2026-11-27T07:54:00.000Z|1550|GOOD4|null|false|2026-11-27T07:54:43.000Z|2026-11-27T13:02:21Z|Paying
+1|CORK HARBOUR|11|60|0|B King|D Saxon|false|7|2.4|Loser|-
+2|SIMPLY EXCELS|4|59.5|-1|J Opperman|A Bobbin|false|34|8|Loser|-
+3|AHVEJAY|10|59|-1|C Murtagh|R Nicholson|false|8|2.6|Winner|1
+4|INFER|1|59|-1|H Grace|R Schultz|false|11|3.2|Loser|-
+5|LET IT RIDE|16|59|-1|NOT NOTIFIED|M Seyers|false|0|0|LateScratched|-
+6|TUDAYA|9|59|-1|M Julius|P Chow|false|3.7|1.7|Placing|2
+7|ALBLAZER|6|57.5|-1|K Crowther|B Carraill|false|51|11|Loser|-
+8|BARE TO WITNESS|1|57.5|-1|D Parker|J Mugavin|false|1.01|0|LateScratched|-
+9|QUIZLET|14|57.5|-1|H Grace|A Peterson|false|101|20|LateScratched|-
+10|STEELY HUSTLER|5|57|-1|J Hill|J Edwards|false|4.8|1.95|Loser|4
+11|IT'S NOT OVER|7|56.5|2|J Gutte|R McDonald|false|81|16|Loser|-
+12|TURNED LOOSE|8|56.5|2|A Webb|Sue & J Jaensch|false|8.5|2.7|Placing|3
+13|BACKFLIPS|2|54.5|0|S Ingelse|R McDonald|false|13|3.6|Loser|-
+14|HASTA LA AMNESTY|6|57|-1|S Metcalfe|S Murphy|true|0|0|LateScratched|-
+15|BLACK BUGATTI|3|56.5|-1|B Price|L Creek|true|17|4.4|Loser|-
+16|DRINK THEN KISS|12|54|-1|K Walters|W Walters|true|14|3.8|Loser|-
+17|DANGEROUS SECRET|13|54|-1|D Caboche|Bob & K Post|true|51|11|Loser|-
+RACE|CBY|1|INGLIS XTRA BONUS HANDICAP|2026-11-27T07:00:00.000Z|1100|GOOD4|null|false|2026-11-27T07:01:03.000Z|2026-11-27T13:03:40Z|Paying
+1|REBEL ROYAL|1|59|-1|T Clark|G Waterhouse & A Bott|false|2.5|1.22|Loser|-
+2|STORM SEEKER|4|59|-1|J McDonald|M Freedman|false|2.7|1.26|Placing|2
+3|AURIC STAR|7|58|-1|J Collett|M Dunn|false|26|4.4|Loser|-
+4|DIVINE OFFERING|8|57.5|-1|T Sherry|P Snowden|false|21|3.7|Loser|-
+5|SKY KIRK|6|57|-1|J Van Overmeire|B Ryan|false|31|5|Loser|-
+6|THIS IS NOW|3|57|-1|A Adkins|J Pride|false|8|2|Winner|1
+7|HATSUMOMO|2|56.5|-1|T Schiller|J Pride|false|6.5|1.8|Loser|4
+8|MISS GAMBIT|5|56.5|-1|Z Lloyd|B Heys|false|21|3.7|Placing|3
+RACE|CBY|2|KIA ORA BLOODLINES TO HEADLINES PLATE|2026-11-27T07:30:00.000Z|1250|GOOD4|null|false|2026-11-27T07:30:14.000Z|2026-11-27T13:03:40Z|Paying
+1|AURORA BOOM|4|57.5|2|S Grima|C Waller|false|16|2.8|Loser|4
+2|MENS REA|8|57.5|-1|A Adkins|C Karakatsanis|false|13|2.5|Placing|2
+3|SACRED VOW|7|57.5|-1|J Van Overmeire|M Freedman|false|6.5|1.7|Loser|-
+4|BYBROOK|6|55.5|-1|J Collett|C Waller|false|101|12|Loser|-
+5|DIVINE GAL|2|55.5|-1|Z Lloyd|C Waller|false|18|3.1|Placing|3
+6|POSH POMMERY|3|55.5|-1|K McEvoy|C Waller|false|41|6|Loser|-
+7|ROCKET GIRL|1|55.5|-1|J McDonald|C Waller|false|2.9|1.24|Winner|1
+8|THYME TO GO|5|55.5|-1|T Sherry|Annabel & R Archibald|false|2.1|1.14|Loser|-
+RACE|CBY|3|THE AGENCY REAL ESTATE PLATE|2026-11-27T08:00:00.000Z|1550|GOOD4|null|false|2026-11-27T07:59:45.000Z|2026-11-27T13:03:40Z|Paying
+1|BAVARIA|7|57|-1|S Clipperton|C Maher|false|8|1.95|Winner|1
+2|BUREAU|1|57|-1|K McEvoy|C Waller|false|23|3.9|Loser|-
+3|CADMEAN|3|57|-1|J Collett|C Waller|false|8|1.95|Placing|3
+4|DARN SURE|6|57|-1|J McDonald|C Waller|false|2|1.16|Placing|2
+5|I REALLY THINK SO|9|57|-1|T Clark|C Maher|false|11|2.4|Loser|-
+6|SNITZEL A'LA ROUGE|9|57|-1|T Schiller|C Waller|false|9|2.5|LateScratched|-
+7|STELLAR CIPHER|11|57|-1|A Collett|C Waller|false|0|0|LateScratched|-
+8|ELDEST DAUGHTER|8|55|-1|T Sherry|J Ponsonby|false|201|22|Loser|-
+9|PALM TREE|10|55|-1|R King|C Waller|false|7|2.2|LateScratched|-
+10|SNITZEL'S GIRL|4|55|-1|Z Lloyd|C Waller|false|3.6|1.35|Loser|4
+11|ENVIOUS|5|55|-1|R King|C Waller|true|61|8|Loser|-
+12|NOT INEVITABLE|2|55|-1|D Gibbons|J Sargent|true|41|6|Loser|-
+RACE|CBY|4|ASAHI SUPER DRY HANDICAP|2026-11-27T08:30:00.000Z|1250|GOOD4|null|false|2026-11-27T08:30:24.000Z|2026-11-27T13:03:40Z|Paying
+1|NEXT JEN|2|61|2|M Fitzgerald|Annabel & R Archibald|false|34|6|Loser|-
+2|ROYAL CORPORAL|9|61|-1|T Sherry|R Litt|false|19|4|Loser|-
+3|MARCHON|10|60|1.5|B Nock|Annabel & R Archibald|false|19|4.2|LateScratched|-
+4|THREESOME|6|60|-1|K McEvoy|P Snowden|false|10|2.6|Loser|4
+5|MISS SUPERNOVA|4|59|-1|T Schiller|G Ryan & S Alexiou|false|11|2.7|Loser|-
+6|TIME TO DANCE|3|59|-1|Z Lloyd|B Heys|false|7|2.1|Winner|1
+7|LIPSTICK|5|58.5|-1|J McDonald|C Waller|false|5|1.75|Loser|-
+8|WAR BANNER|8|57.5|-1|T Clark|G Waterhouse & A Bott|false|3.1|1.4|Placing|2
+9|REGAL|7|57|-1|S Clipperton|B Baker|false|3.7|1.5|Placing|3
+10|SALMA'S STAR|1|54|2|S Grima|G McFarlane|false|126|17|Loser|-
+RACE|CBY|5|TAB HANDICAP|2026-11-27T09:00:00.000Z|1900|GOOD4|null|false|2026-11-27T08:59:45.000Z|2026-11-27T13:03:40Z|Paying
+1|HALLOWED HALLS|4|60.5|-1|J McDonald|C Waller|false|2.7|1.55|Loser|3
+2|COSMIC LAD|1|59.5|-1|J Van Overmeire|M Beer & G Carpenter|false|19|7|LateScratched|-
+3|AZARAX|5|58.5|-1|K McEvoy|J O'Shea & T Charlton|false|4.4|2|Winner|1
+4|MALBORK CASTLE|1|58|-1|Z Lloyd|R Litt|false|6.5|2.7|Loser|-
+5|BONDI BLOSSOM|3|57.5|-1|D Gibbons|B Widdup|false|15|5|Placing|2
+6|DARN CUTE|7|56.5|-1|Not Notified|C Carmody|false|1.01|1.01|LateScratched|-
+7|CABBUCIO|3|56|-1|J Van Overmeire|J Ible|false|3.3|1.85|LateScratched|-
+8|DANISH FORTUNE|5|56|3|G Johnston|J Wilkes|false|1.01|1.01|LateScratched|-
+9|OUTTA LINE|6|55|-1|R King|G Waterhouse & A Bott|false|1.01|1.01|LateScratched|-
+10|AURA|2|54.5|-1|T Schiller|M, W & J Hawkes|false|3.1|1.65|Loser|4
+RACE|CBY|6|KIA EVENING STAR|2026-11-27T09:30:00.000Z|1250|GOOD4|null|false|2026-11-27T09:30:20.000Z|2026-11-27T13:03:40Z|Paying
+1|MAWJOOD|7|62|-1|J Collett|B Baker|false|8|2.5|Placing|2
+2|IL PASSERO|6|61.5|-1|J McDonald|R Litt|false|3|1.45|Loser|-
+3|STEEL MOVE|10|60.5|-1|A Adkins|J Pride|false|16|4|Loser|4
+4|FINE VINTAGE|5|60|2|W Stanley|L Pepper|false|51|10|Loser|-
+5|BRAVISSIMA|2|59.5|2|S Grima|M Dale|false|13|3.4|Loser|-
+6|WHERE'STHEPROFIT|10|59.5|-1|A Collett|C Crockett|false|10|3.1|LateScratched|-
+7|BOJANGLES|3|59|-1|S Clipperton|K Waugh|false|5.5|2|Winner|1
+8|ANDALE ANDALE|8|58.5|1.5|A Roper|L Chandler|false|12|3.2|Placing|3
+9|IVAN'S HERO|1|58.5|-1|K McEvoy|C Waller|false|7.5|2.4|Loser|-
+10|BODHI BOY|4|57|2|M Fitzgerald|L Olson|false|19|4.6|Loser|-
+11|MAILATA|9|57|-1|Z Lloyd|B Heys|false|6|2.1|Loser|-
+RACE|CBY|7|TROPICUS @ VINERY STUD HANDICAP|2026-11-27T10:00:00.000Z|1100|GOOD4|null|false|2026-11-27T09:59:38.000Z|2026-11-27T13:03:40Z|Paying
+1|SHADY ROAD|14|60.5|1.5|B Nock|Annabel & R Archibald|false|6|2.1|LateScratched|-
+2|SHOW BUSINESS|13|59|-1|Z Lloyd|M Smith|false|6|2|LateScratched|-
+3|ZOUNAKA|11|59|-1|D Gibbons|J Thompson|false|26|6|LateScratched|-
+4|EMALYN|5|58|-1|A Morgan|N Doyle|false|17|4.4|LateScratched|-
+5|FLIGHTCREW|12|58|-1|Not Notified|Lee & C Curtis|false|1.01|0|LateScratched|-
+6|SAPPHIRE ROSE|8|57.5|-1|J Collett|B Baker|false|8|1.85|Loser|4
+7|BROWN SUGAR|1|57|2|M Fitzgerald|A Duggan|false|10|2.4|LateScratched|-
+8|HELLENIC BELLE|2|57|-1|K McEvoy|Annabel & R Archibald|false|8|1.85|Loser|-
+9|LIGHTHOUSE LASS|5|57|-1|R Jones|Richard & W Freedman|false|21|3.3|Loser|-
+10|SCURO STAR|4|57|-1|T Sherry|P Snowden|false|8|1.85|Placing|2
+11|CELESTIAL CHARM|3|56.5|-1|R King|M Freedman|false|1.8|1.12|Placing|3
+12|FROM ME TO YOU|7|56|-1|T Clark|G Waterhouse & A Bott|false|4.8|1.45|Winner|1
+13|OUTBACK ANGEL|6|56|2|S Grima|A McRae|true|101|12|Loser|-
+14|VITTOZZI|9|54|-1|Not Notified|N Doyle|true|1.01|1.01|LateScratched|-
+RACE|CBY|8|THE AGENCY PROPERTY MANAGEMENT HANDICAP|2026-11-27T10:30:00.000Z|1550|GOOD4|null|false|2026-11-27T10:30:18.000Z|2026-11-27T13:03:40Z|Paying
+1|LUSKAIRE|4|62|2|M Fitzgerald|Annabel & R Archibald|false|23|4.6|Placing|3
+2|KOMODO DRAGON|6|61|-1|Z Lloyd|J O'Shea & T Charlton|false|3.9|1.55|Winner|1
+3|SO SUAVE|9|61|2|S Grima|C Waller|false|61|10|Loser|-
+4|CONGRESSMAN|8|60|-1|T Clark|R Litt|false|3.8|1.55|Loser|-
+5|O'SHEAMUS|3|59.5|1.5|A Roper|J O'Shea & T Charlton|false|15|3.4|Loser|-
+6|BIG TIGER|12|58|-1|R King|G Waterhouse & A Bott|false|7|2.2|LateScratched|-
+7|UNUSUAL PROSPECT|1|58|-1|D Gibbons|J O'Shea & T Charlton|false|21|4.4|Loser|-
+8|CHAPPY|16|57.5|-1|J Collett|C Waller|false|21|4.8|LateScratched|-
+9|QUARTERBACK|5|56|-1|J Collett|C Waller|false|3.3|1.45|Placing|2
+10|SHEEZA DIVA|11|55.5|-1|Not Notified|Mitchell & D Kearney|false|0|0|LateScratched|-
+11|EMERALD HILLS|6|55|-1|Not Notified|N Dilmi|true|1.01|1.01|LateScratched|-
+12|STEALTHFIRE|7|57|-1|K McEvoy|C Waller|true|8.5|2.3|Loser|4
+13|ACHESON|8|57|-1|Not Notified|K Dryden & L Snowden|true|1.01|1.01|LateScratched|-
+14|ALABAMA SHOWDOWN|14|56.5|-1|A Collett|J Pride|true|1.01|1.01|LateScratched|-
+15|IT'S A WONDER|2|54.5|-1|Not Notified|G Ryan & S Alexiou|true|1.01|1.01|LateScratched|-
+16|STAR HALF|2|55.5|-1|T Schiller|M, W & J Hawkes|true|12|2.9|Loser|-
+RACE|PAK|1|CELEBRATING JOHN SADLER CAREER PLATE|2026-11-27T07:15:00.000Z|1000|SOFT5|null|false|2026-11-27T07:15:04.000Z|2026-11-27T13:05:01Z|Paying
+1|ACTIVATING|2|58|-1|V Boeuf|R Meunier|false|151|16|LateScratched|-
+2|ADHARA|8|58|-1|L Nolen|P Moody & K Coleman|false|6.5|1.65|Placing|3
+3|BOHEMIAN RHAPSODY|9|58|-1|L Currie|Tony & C McEvoy|false|4.2|1.5|LateScratched|-
+4|BRAZEN BOLD|1|58|-1|D Lane|M Price & M Jnr|false|21|3.3|Loser|-
+5|CAPITAL STORM|4|58|-1|L Neindorf|Phillip & T Stokes|false|15|2.6|Loser|-
+6|LORD OF THE EARTH|7|58|-1|C Williams|D Harrison|false|3.7|1.3|Winner|1
+7|MAJESTIC SON|6|58|-1|J Mott|Anthony & S Freedman|false|1.8|1.1|Placing|2
+8|MR SAPPHIRE|3|58|-1|J Childs|J Moloney|false|26|3.8|Loser|4
+9|TIZ THE TYCOON|5|58|-1|P Moloney|M Laurie|false|14|2.5|Loser|-
+RACE|PAK|2|LADBROKES FLEX YOUR MULTI STAYS ALIVE|2026-11-27T07:45:00.000Z|1000|SOFT5|null|false|2026-11-27T07:45:45.000Z|2026-11-27T13:05:01Z|Paying
+1|ASSUNTA|1|57|-1|L Neindorf|M Price & M Jnr|false|6|1.9|Winner|1
+2|BLUE IVY|5|57|-1|B Mertens|K Besanko|false|9|2.4|Loser|4
+3|BLUE JEANS TALK|11|57|2|N Daniels|S Roughan|false|151|30|LateScratched|-
+4|DANCELL|12|57|-1|D Lane|S Cameron|false|19|4.8|LateScratched|-
+5|EPPONNEE RAE|9|57|-1|D Stackhouse|J Warren|false|23|4.6|Loser|-
+6|KENSINGTON|8|57|2|C Hollowood|C McDonald|false|41|7|Loser|-
+7|MEDIA DARLING|6|57|-1|L Nolen|P Moody & K Coleman|false|3.8|1.5|Placing|3
+8|NYAD|3|57|-1|D Lane|C Littlefield|false|3.5|1.45|Loser|-
+9|PLEASE PLEASE ME|7|57|-1|J Childs|G Begg|false|4.8|1.7|Loser|-
+10|RENECCA|2|57|-1|C Williams|S Jackson|false|9.5|2.5|Placing|2
+11|SPIRIT NATURE|13|57|1.5|J Johnstone|C Maher|false|4.2|1.75|LateScratched|-
+12|WOLFMAAMA|2|57|-1|J Mott|G Bedggood|false|9.5|2.8|LateScratched|-
+13|AMBER QUEEN|4|57|-1|M Dee|Anthony & S Freedman|true|9|2.6|LateScratched|-
+RACE|PAK|3|CAMERON INDUSTRIAL COMMERCIAL PLATE|2026-11-27T08:15:00.000Z|1400|SOFT5|null|false|2026-11-27T08:16:34.000Z|2026-11-27T13:05:01Z|Paying
+1|ABYDOS|12|59.5|-1|C Williams|C Scott|false|2.8|1.35|LateScratched|-
+2|BAROSSA BOURBON|6|59.5|-1|R Lamont|S Trolove|false|151|24|LateScratched|-
+3|MAURIE'S PRIDE|9|59.5|-1|J Bowditch|A Rae|false|151|20|Loser|-
+4|SHY VELOCITY|1|59.5|-1|J Maskiell|A Rae|false|61|9|Loser|-
+5|SOUNDWAVE|8|59.5|1.5|J Radley|Emma-lee & D Browne|false|7|2|Loser|-
+6|ANOTHER POTHOLE|14|58|-1|L Nolen|P Moody & K Coleman|false|17|4|LateScratched|-
+7|FORT ROCK|10|58|-1|B Mertens|M Price & M Jnr|false|3.6|1.5|Loser|4
+8|HURTADO|7|58|0|L Cartwright|J Sadler|false|6|1.95|Placing|3
+9|PERCIPIENT|5|58|-1|L Neindorf|Phillip & T Stokes|false|3.4|1.45|Placing|2
+10|POCKET WATCH|11|58|-1|J Childs|G Begg|false|16|3.6|Loser|-
+11|RED TIDE|2|58|-1|D Lane|G Eurell|false|7.5|2.2|Winner|1
+12|KOKESHI|7|57.5|-1|D Stackhouse|J Moloney|false|5|1.8|LateScratched|-
+13|GREY FLYER|3|59.5|-1|R McLeod|L Kennewell|true|26|5|Loser|-
+14|SHIPPING STEEL|4|59.5|-1|T Stockdale|M Trotter|true|26|4.8|Loser|-
+15|RUSSIAN NIGHTS|12|59.5|-1|M Castle|R Waymouth|true|1.01|1.01|LateScratched|-
+RACE|PAK|4|RAY WHITE PAKENHAM & OFFICER PLATE|2026-11-27T08:45:00.000Z|1600|SOFT5|null|false|2026-11-27T08:48:44.000Z|2026-11-27T13:05:01Z|Paying
+1|ALWAYS SHINING|9|59.5|2|N Daniels|B Butcher|false|126|17|Loser|-
+2|ARDAD NED|8|59.5|-1|P Moloney|M Laurie|false|10|2.5|Placing|3
+3|ASPARAGUS|1|59.5|-1|N Punch|J Cockram|false|151|24|LateScratched|-
+4|CHRONIC|10|59.5|-1|L Currie|Paul & T Templeton|false|17|3.6|Loser|-
+5|FULL ZOOM|5|59.5|-1|R McLeod|L Kennewell|false|51|8|Loser|-
+6|MONTESQUIEU|4|59.5|-1|J Childs|G Begg|false|1.95|1.2|Winner|1
+7|SEINFELD|7|59.5|-1|J Mott|C Douglas|false|5|1.7|Placing|2
+8|TECKNOKING|11|59.5|-1|D Thornton|C Brown|false|23|4.6|Loser|4
+9|TEQUILA'S BRO|2|58|-1|D Stackhouse|G Eurell|false|21|4.2|Loser|-
+10|WOLLEMI|6|58|-1|B Mertens|M Price & M Jnr|false|7.5|2.1|Loser|-
+11|ZAMETOVKA|1|58|-1|L Neindorf|M Price & M Jnr|false|17|3.6|Loser|-
+12|FARO LADY|3|57.5|-1|J Maskiell|K Milham|false|26|5|Loser|-
+RACE|PAK|5|LADBROKES PAKENHAM CUP DAY 12 DECEMBER|2026-11-27T09:15:00.000Z|1600|SOFT5|null|false|2026-11-27T09:15:08.000Z|2026-11-27T13:05:01Z|Paying
+1|TERRORTORIAN|7|61|0|L Cartwright|C McDonald|false|5|1.8|LateScratched|-
+2|UNTAPPED|8|60.5|1.5|J Radley|Emma-lee & D Browne|false|2.9|1.22|Winner|1
+3|MOUNT SABYINYO|7|60|-1|L Neindorf|T Busuttin & N Young|false|2.9|1.22|Placing|2
+4|ALEXANDER THEGREAT|4|59.5|2|S Kennedy|S Mathrick|false|8|2.1|LateScratched|-
+5|ARISTONOUS|1|59.5|2|N Daniels|T Edmonds|false|7.5|2.2|LateScratched|-
+6|CAELIUS|6|59|-1|B Allen|P Gelagotis|false|4.4|1.4|Loser|4
+7|ROGAN|6|59|-1|M Dee|C Brown|false|15|3.7|LateScratched|-
+8|CHILLIES|5|58.5|-1|J Childs|G Begg|false|6.5|1.65|Placing|3
+9|HEY BELLA|3|58|-1|J Mott|L Oliver|false|9.5|2|Loser|-
+10|SO YOU EXCEL|2|55|-1|V Boeuf|T Hughes|false|51|7|Loser|-
+RACE|PAK|6|9MILE FRESH HANDICAP|2026-11-27T09:45:00.000Z|1400|SOFT5|null|false|2026-11-27T09:45:07.000Z|2026-11-27T13:05:01Z|Paying
+1|ZOURAIN|16|66.5|3|D Dean|R Griffiths|false|21|6|LateScratched|-
+2|YUM|10|61.5|2|S Kennedy|J McArdle|false|12|3.5|Loser|4
+3|BLUE BANDIT|7|61|2|N Daniels|A Leek|false|11|3.3|Placing|3
+4|SURPERB FROST|4|60.5|-1|J Childs|M Mehegan|false|17|4.4|Loser|-
+5|DISCOVER LUPINO|15|60|-1|M Dee|C Brown|false|5|1.95|LateScratched|-
+6|RUSSIAN FRONT|1|60|-1|T Stockdale|A Leek|false|9.5|2.9|Loser|-
+7|SEABORN|5|60|-1|D Stackhouse|M Laurie|false|17|4.4|Loser|-
+8|HOLA AMIGOS|2|59.5|-1|J Maskiell|W Kelly|false|8|2.6|Loser|-
+9|CHERRY HILLS|8|58|-1|L Currie|B, W & J Hayes|false|17|4.6|LateScratched|-
+10|THERE WERE ROSES|9|58|-1|L Neindorf|T Busuttin & N Young|false|5|2|Loser|-
+11|VENETIAN CHOICE|6|58|1.5|J Radley|G Eurell|false|41|9|Loser|-
+12|PERFECT NIGHT|3|57.5|-1|C Williams|B, W & J Hayes|false|4.4|1.85|Placing|2
+13|POSH DIAMANTE|11|57|0|L Cartwright|Phillip & T Stokes|true|13|3.7|Loser|-
+14|TIGER FOX|12|57|-1|Not Notified|S Nichols & H Black|true|1.01|1.01|LateScratched|-
+15|JETSETTER JACK|12|58.5|-1|J Mott|G Bedggood|true|6|2.2|Winner|1
+16|KING MAYWIN|6|57.5|-1|Not Notified|G Eurell|true|1.01|1.01|LateScratched|-
+RACE|PAK|7|CLOUDCON CONSTRUCTION SOFTWARE HANDICAP|2026-11-27T10:15:00.000Z|1200|SOFT5|null|false|2026-11-27T10:15:10.000Z|2026-11-27T13:05:01Z|Paying
+1|BARBARINO|8|60|-1|J Mott|B Papazaharoudakis|false|2.9|1.35|Winner|1
+2|GENERAL BLU|1|59|-1|L Currie|Tony & C McEvoy|false|3.1|1.45|LateScratched|-
+3|MIGHTY MYSTIC|3|59|-1|B Allen|J Allen|false|7|2|Placing|3
+4|SHARES|4|58.5|3|L Burke|Ken & K Keys|false|15|3.7|LateScratched|-
+5|HOOK 'N' SPUR|9|58|-1|D Stackhouse|G Bedggood|false|3.6|1.45|Loser|-
+6|NGONGOTAHA|1|58|-1|J Maskiell|R Cunningham|false|17|3.5|Loser|-
+7|CIRCUS LIGHTS|6|57.5|1.5|J Johnstone|C Maher|false|5.5|1.75|Placing|2
+8|ASTIQUER|5|57|-1|C Williams|B, W & J Hayes|false|2.9|1.35|LateScratched|-
+9|TITAN'S SPIRIT|4|57|0|L Cartwright|N Burke|false|8|2.2|Loser|4
+10|GLISK|12|56.5|-1|L Nolen|P Moody & K Coleman|false|51|9|LateScratched|-
+11|PURE SILK|7|55.5|-1|D Thornton|B McGrath|false|14|3.1|Loser|-
+12|ALL TORQUE|2|55|-1|J Bowditch|P Kramer|false|101|15|Loser|-
+RACE|PAK|8|CARLTON DRAUGHT HANDICAP|2026-11-27T10:45:00.000Z|1000|SOFT5|null|false|2026-11-27T10:46:21.000Z|2026-11-27T13:05:01Z|Paying
+1|BARARI|7|60.5|1.5|J Johnstone|C Maher|false|8|2.4|Placing|3
+2|HELLO ROMEO|11|60.5|2|N Daniels|B, W & J Hayes|false|13|3.2|Winner|1
+3|LANDMARK|5|60.5|-1|B Mertens|L Kennewell|false|10|2.7|Loser|4
+4|MR TICKLES|12|60.5|3|H Spitse|M Leek|false|21|4.6|Loser|-
+5|MAGNABELLE ROYALE|10|60|3|B Kinninmont|M Laurie|false|18|4|Loser|-
+6|MONIX|4|60|3|S Field|N Hobson|false|41|15|LateScratched|-
+7|WEAPON CLEAR|16|60|2|C Hollowood|D Binaisse|false|26|9|LateScratched|-
+8|JAKIVY|1|59.5|-1|T Stockdale|K Besanko|false|34|6|Placing|2
+9|YOLO|8|59.5|-1|C Williams|C Maher|false|8.5|2.4|Loser|-
+10|HEADBANGER|4|59|-1|J Childs|G Begg|false|9|2.7|LateScratched|-
+11|IT'S A YES|13|59|-1|J Mott|L Smith|false|12|3.4|LateScratched|-
+12|ROOM FOR BINGO|3|58.5|3|L Burke|R Waymouth|false|61|10|Loser|-
+13|SPIRIT OF WEALTH|6|57|-1|C Hefel|C Maher|true|23|4.8|Loser|-
+14|VIVID SUN|1|56.5|-1|L Nolen|P Moody & K Coleman|true|1.01|1.01|LateScratched|-
+15|NOETZIE|9|58.5|-1|L Neindorf|Phillip & T Stokes|true|2.1|1.26|Loser|-
+16|MONGOLIAN GOBI|2|58|-1|B Allen|P Gelagotis|true|8|2.4|Loser|-
+RACE|SSC|1|CLAYTON'S TOWING SERVICE QTIS 3YO MAIDEN|2026-11-27T08:08:00.000Z|1000|GOOD4|null|false|2026-11-27T08:08:30.000Z|2026-11-27T13:06:14Z|Paying
+1|COOL ZUMBELINA|7|60|-1|A Jones|K Clark-peoples|false|2.6|1.3|LateScratched|-
+2|TAUTARA|12|60|-1|R Olive|S Rundle|false|26|4|Winner|1
+3|TEQUILA CHRISTMAS|1|60|-1|A Keeley|L Mayfield-smith|false|41|6|Loser|-
+4|WEATHERFORDRINKING|14|60|-1|Not Notified|Stuart & B Kendrick|false|0|0|LateScratched|-
+5|BRILLIANT DISGUISE|8|59.5|2|J Newman|K Clark-peoples|false|61|8|Loser|-
+6|DIAMOND BOOM|9|59.5|-1|G Geran|Corey & K Geran|false|41|6|Loser|-
+7|VUKAS|7|59.5|-1|B Thompson|R Heathcote|false|13|2.3|Loser|-
+8|CHARLIE CHOO CHOO|2|59|-1|G Cartwrigh|D Murphy|false|81|13|LateScratched|-
+9|DARN SAGA|11|59|-1|T Brooker|J Healy|false|21|3.5|Loser|4
+10|MELODRAMA MISS|5|58|-1|E Lang|J Holcombe|false|34|5|Loser|-
+11|SHEZA TRAP|3|58|-1|C Collis|Stuart & B Kendrick|false|8|1.9|Placing|2
+12|SUNNY DOLL|2|58|-1|F Larson|L Mayfield-smith|false|34|5|Loser|-
+13|BOLD NOMAD|4|57.5|-1|R Maloney|G Taylor|false|1.35|1.06|Loser|-
+14|SHE'S HOTSTUFF|10|57.5|-1|C Graham|S Dwyer|false|17|3|Placing|3
+15|IMAGOODSORT|6|55.5|0|O Kendal|V Heading|false|126|15|Loser|-
+RACE|SSC|2|GRAB LIFE BY THE BALLS MAIDEN HANDICAP|2026-11-27T08:38:00.000Z|1000|GOOD4|null|false|2026-11-27T08:39:29.000Z|2026-11-27T13:06:14Z|Paying
+1|YOU'VE GOT THIS|8|60|-1|C Collis|T Thomas|false|126|17|Loser|-
+2|FROSTY LOOKS|5|57.5|-1|A Thompson|Peter & W Hulbert|false|26|4.6|Loser|-
+3|RIESA|9|57.5|1.5|C Sutherland|S Dwyer|false|23|4.2|Loser|4
+4|MONOCRU|4|57|-1|B Thompson|T Pollard|false|4.4|1.55|LateScratched|-
+5|ZOUBUCA SHOTS|2|57|-1|G Geran|Corey & K Geran|false|8|2.1|Loser|-
+6|SPLICED|1|56.5|-1|M Rodd|D Vandyke|false|3.9|1.45|Loser|-
+7|THE AVIATOR|3|56.5|-1|C Graham|C Anderson|false|2.1|1.2|Winner|1
+8|FACTNOT FICTION|6|55.5|3|K Barker|T Hong|false|61|9|Placing|2
+9|SEAPHIRA|4|55.5|-1|T Brooker|G Duncan|false|8.5|2.2|Loser|-
+10|YOU DRIVE ME CRAZY|7|55|-1|E Lang|T Thomas|false|8|2.1|Placing|3
+11|RATIVA|10|54|-1|A Keeley|S Sixtus|false|151|20|Loser|-
+12|TRAIL BOSS|11|54|-1|A Butler|G Hay|false|151|20|Loser|-
+RACE|SSC|3|NAMBOUR SPARE PARTS CLASS 2 HANDICAP|2026-11-27T09:08:00.000Z|2200|GOOD4|null|false|2026-11-27T09:08:46.000Z|2026-11-27T13:06:14Z|Paying
+1|LARUSSO|4|59|-1|E Lang|J Bruce|false|4.2|1.65|Loser|-
+2|POOR OL' JOHNY RAY|12|59|-1|M Rodd|K Clark-peoples|false|2.9|1.4|Winner|1
+3|TAP HIGH|11|59|-1|A Keeley|K Taplin|false|8|2.3|Placing|3
+4|CHANCE DE LUNE|7|58|-1|A Thompson|J Aitkenhead|false|19|4.2|Loser|4
+5|AUTUMN HEIR|5|57.5|-1|B Thompson|K Lees|false|4.2|1.65|Loser|-
+6|HIGHLAND KITTY|3|57|2|J Newman|J Leach|false|11|2.8|Placing|2
+7|ORMOND ROAD|8|55.5|3|K Johnston|J Bayliss|false|34|7|Loser|-
+8|BLUEPRINT|6|55|2|F Sandkuhl|B Dais|false|61|10|Loser|-
+9|HE'S A SAINT|13|55|-1|F Larson|S Morrisey|false|51|9|Loser|-
+10|READY TO DRINK|9|54.5|-1|B OSmond|M Eggleston|false|51|9|Loser|-
+11|BOLERO|10|54|0|O Kendal|V Heading|false|71|12|Loser|-
+12|SHOWMAN|1|54|-1|M Hellyer|V Burton|false|151|22|Loser|-
+13|THINK I'M IRISH|2|54|-1|A Butler|B Robinson|false|126|19|Loser|-
+RACE|SSC|4|ALLCOAST TYRE SOLUTIONS SUMMER SCORCHER|2026-11-27T09:38:00.000Z|1000|GOOD4|null|false|2026-11-27T09:38:58.000Z|2026-11-27T13:06:14Z|Paying
+1|OUT OF TURN|7|62.5|1.5|C Sutherland|G Batts|false|34|6|Loser|-
+2|SEA ADMIRAL|16|59.5|-1|J Morris|J Morris|false|0|0|LateScratched|-
+3|KING OF THE JUNGLE|8|57.5|-1|E Lang|B Healey|false|41|7|Loser|-
+4|SWEET HESITATION|14|57.5|-1|M Rodd|K Clark-peoples|false|41|9|LateScratched|-
+5|TELLING|10|57.5|-1|T Marshall|J Bruce|false|31|7|LateScratched|-
+6|CASINO BAY|1|57|-1|K Wilson-taylor|K Clark-peoples|false|31|6|Loser|-
+7|HI BARBIE|10|57|-1|A Jones|T Gollan|false|8|2.3|Loser|-
+8|OSCAR|12|57|-1|T Brooker|L Gough|false|2.5|1.3|Placing|3
+9|RED FEATHER BOA|18|57|-1|Not Notified|L Gough|false|0|0|LateScratched|-
+10|SHADWELL LANE|3|56.5|-1|B Thompson|J Bruce|false|3.2|1.45|Winner|1
+11|SIZZLEIST|9|55.5|2|J Newman|B Healey|false|16|4|LateScratched|-
+12|TARA I AM|2|55.5|-1|R Olive|S Rundle|false|13|3.1|Loser|-
+13|BELLE AFFAIR|9|55|-1|G Cartwrigh|D Murphy|false|51|9|Loser|-
+14|TRIPLE YES|13|55|-1|A Farragher|L Ruddy|false|81|15|LateScratched|-
+15|ZOUREKA|5|54.5|-1|B El-issa|Chris & C Munce|false|17|3.6|Loser|-
+16|STEEL KNIGHT|4|56|-1|C Graham|Annabel & R Archibald|true|34|6|Loser|-
+17|TORQUE TOO EASY|11|54|-1|J Newman|T Thomas|true|151|22|Loser|-
+18|CYBER CITY|6|56|-1|J Bayliss|D Murphy|true|10|2.6|Placing|2
+RACE|SSC|5|POOLTEK QUEENSLAND CLASS 1 HANDICAP|2026-11-27T10:08:00.000Z|1600|GOOD4|null|false|2026-11-27T10:10:06.000Z|2026-11-27T13:06:14Z|Paying
+1|VANDEVELDE|7|60|-1|L Rolls|P Jenkins|false|6|1.5|Loser|-
+2|OCEAN SYMPHONY|6|59.5|-1|M Hellyer|V Burton|false|81|8|Loser|-
+3|TIVACIOUS|9|59.5|-1|M Rodd|J Healy|false|19|2.8|Placing|3
+4|STORMING HOME|2|58.5|-1|B Thompson|J Bruce|false|1.75|1.08|Winner|1
+5|SIMPLY FUN|7|57.5|-1|G Cartwrigh|T Mackinnon|false|0|0|LateScratched|-
+6|STAR OF PARIS|11|57.5|-1|Not Notified|D Forster|false|10|2.2|LateScratched|-
+7|TALK ABOUT LAYLA|3|57.5|-1|R Maloney|K Lees|false|3.2|1.22|Placing|2
+8|TISANI JAMES|12|57|-1|J Lloyd|K Kemp|false|41|7|LateScratched|-
+9|FLOP SHOT|1|56.5|-1|A Thompson|G Thornton|false|23|3.2|Loser|4
+10|ESPOIR DA TAP|5|55|-1|T Brooker|K Taplin|false|61|7|Loser|-
+11|INTERRO|9|55|-1|K Wilson-taylor|Annabel & R Archibald|false|26|4.4|LateScratched|-
+12|STRIKE ME PINK|4|54|3|K Barker|Corey & K Geran|false|51|6|Loser|-
+13|LORD DANILO|13|54|3|K Johnston|J Johnston|false|101|14|LateScratched|-
+14|LECAN|8|54|-1|A Keeley|A Freeman|false|101|10|Loser|-
+RACE|SSC|6|SODEN CONSTRUCTIONS 0 - 58 HANDICAP|2026-11-27T10:38:00.000Z|1400|GOOD4|null|false|2026-11-27T10:39:26.000Z|2026-11-27T13:06:14Z|Paying
+1|MEASURE UP|14|60|-1|J Guthmann-chest|M Hoysted|false|6.5|2.2|Placing|2
+2|OLE BAZZLE|7|60|2|R Thorburn|G Duncan|false|13|3.5|Placing|3
+3|TULONG|2|59.5|-1|C Graham|J Edwards|false|14|3.7|Winner|1
+4|QUEST OF QUESTS|3|59|-1|E Lang|O Cairns|false|101|19|Loser|-
+5|RUSSIAN ESCAPE|1|59|-1|L Rolls|C Prosser|false|6|2.1|Loser|-
+6|SIMPLY FUN|11|59|-1|G Cartwrigh|T Mackinnon|false|9|2.7|Loser|-
+7|BUSKER|10|58.5|-1|M Rodd|J Healy|false|11|3.1|Loser|-
+8|COPPER STAR|3|58.5|-1|B El-issa|J Moore|false|15|4.4|LateScratched|-
+9|RUMBLE TOWN|14|58.5|2|J Newman|K Clark-peoples|false|19|5|LateScratched|-
+10|ENCRYPTED FEELING|8|58|-1|A Thompson|Peter & W Hulbert|false|31|7|Loser|-
+11|FAR BEYOND|18|58|-1|K Wilson-taylor|C Anderson|false|26|7|LateScratched|-
+12|XTRA LA VITA|6|58|-1|B Thompson|R Heathcote|false|2.7|1.45|Loser|-
+13|DAZZLING DIAMOND|17|56.5|3|K Johnston|J Johnston|false|17|4.8|LateScratched|-
+14|WORTHTHEADMISSION|9|56|-1|R Maloney|Chris & C Munce|false|8|2.7|LateScratched|-
+15|KEMAL|4|55.5|-1|A Jones|K Clark-peoples|false|16|4|Loser|-
+16|PIGGIETALES|12|55|2|F Sandkuhl|Adam & D Simpson|false|81|16|Loser|-
+17|CHANCE WITH WOLVES|13|55.5|-1|J Newman|J Aitkenhead|true|41|9|Loser|-
+18|OAKFIELD MONTANA|5|54|-1|A Keeley|V Venkaya|true|151|26|Loser|-
+19|ROARING SUCCESS|9|54.5|-1|C Collis|J Bayliss|true|31|7|Loser|4
+RACE|SSC|7|CLAYTON'S MARINE RECOVERY MAIDEN|2026-11-27T11:08:00.000Z|1400|GOOD4|null|false|2026-11-27T11:08:39.000Z|2026-11-27T13:06:14Z|Paying
+1|HARD KNOX|7|60|-1|J Guthmann-chest|Stuart & B Kendrick|false|4.2|1.8|Loser|-
+2|FLASHING STAR|3|59.5|-1|B El-issa|J Moore|false|5.5|2.1|Placing|2
+3|MARTINDALE KID|11|59.5|-1|Not Notified|P Jenkins|false|23|6|LateScratched|-
+4|ONLYYOUCANREAD|2|59|1.5|C Sutherland|P Minter|false|10|3.1|Loser|-
+5|SYMMETRIQUE|8|59|-1|M Rodd|R Heathcote|false|12|3.5|Placing|3
+6|HOT'N'SMART|12|58.5|-1|B Thompson|D Vandyke|false|9|2.9|Winner|1
+7|ZOUCOUP|14|58|-1|Not Notified|Stuart & B Kendrick|false|0|0|LateScratched|-
+8|DAPPER VEE|1|57.5|-1|T Brooker|J Healy|false|151|26|Loser|-
+9|OLD NIFTY|3|57.5|-1|Not Notified|D Peoples|false|1.01|0|LateScratched|-
+10|CASTLEREAGH AFFAIR|5|57|-1|E Lang|J Bruce|false|13|3.7|Loser|-
+11|MYSTICISE|6|57|-1|A Jones|M Hoysted|false|5|2|Loser|-
+12|TWICE BETTER|4|57|-1|C Graham|L White|false|26|6|Loser|-
+13|BALTUSROL|18|56.5|-1|Not Notified|L Gough|false|101|20|LateScratched|-
+14|SHOWBIZ VEGA|14|56.5|0|O Kendal|V Heading|false|14|3.9|Loser|-
+15|VIVA ESTELLA|11|56.5|-1|R Dolan|R Heathcote|false|51|11|Loser|-
+16|WHITE SWAN|12|56.5|-1|T Marshall|C Waller|false|3.3|1.6|LateScratched|-
+17|PURE AUDACITY|17|58|-1|Not Notified|M Morrison|true|1.01|1.01|LateScratched|-
+18|MISS KIT KAT|21|54|-1|Not Notified|R Heathcote|true|1.01|1.01|LateScratched|-
+19|ZARLA|10|55|-1|T Marshall|R Heathcote|true|14|3.9|Loser|-
+20|TAPPY'S STAR|9|55|-1|G Cartwrigh|K Taplin|true|101|20|Loser|-
+21|ALARMED|13|54.5|-1|F Sandkuhl|T Mackinnon|true|101|20|Loser|4

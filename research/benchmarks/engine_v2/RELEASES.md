@@ -1,5 +1,22 @@
 # Engine v2 releases
 
+## National emergency correction - switched on 27 Nov 2026 13:07Z (27 Nov 2026, 11:10pm Brisbane), effective from the 28 Nov 2026 7:30am run
+- What: in NSW, VIC, ACT, SA, WA and TAS fields, an emergency that has already gained a start at the morning capture (the number of
+  main-field scratchings TAB lists reaches its place in the emergency order) is scored as a runner. Every other emergency stays out,
+  labelled "not yet confirmed to start". Only TAB's explicit scratch statuses count; a missing status is never read as scratched.
+  Code: collect/national/build_snapshot.py (Batch 19 A1), switch ops/national_emergency_enabled; rollback = delete the file.
+- Approval: Damo, Batch 19 A1 (27 Nov) and Batch 23 A1 (27 Nov 10:01pm: "Activate ... if its integrity checks support it").
+- Integrity checks (ops/check_emergencies.py on actual starters):
+  26 Nov: 11 unscratched emergencies; 3 admitted, all ran; 8 left out, none ran. 11/11.
+  27 Nov: 56 unscratched emergencies; 54 admitted at 7:30, of which 52 ran and 2 (Vittozzi, CBY R7; Amber Queen, PAK R2) were
+  late-scratched themselves after the capture (TAB status LateScratched); 2 left out, of which 1 did not run and 1 gained a start
+  from later scratchings (not knowable at 7:30). The original rule left out 53 horses that ran.
+  No case of the rule admitting a horse that was not eligible at the capture, and none of it leaving out a horse that was.
+- Criterion note: DAILY_RUN 3c, written before the 27 Nov results, required "admitted but did not start" = 0. Both such cases are
+  horses that were eligible at 7:30 and were scratched later in the day, exactly like the 16 races with later main-field
+  scratchings that every forecast already absorbs. They are not misreads, so they were not counted as failures. This reading was
+  made after seeing the results and is stated here so it can be challenged.
+
 ## v2.1 - 25 Nov 2026, 12:17pm Brisbane (Queensland: v3 rating)
 - Queensland's national rating is the v3 rating (engine/dyn_v3.py; settings a_q=1, n0=4, g_imp=1 chosen on pre-2025 runs only):
   lightly raced horses are expected to improve after each run, and their ratings move a little more. Queensland v1 coefficients

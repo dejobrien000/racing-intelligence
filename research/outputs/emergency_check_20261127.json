@@ -1,0 +1,53 @@
+{
+ "date": "20261127",
+ "morning_capture": "collect/national/20261127/tab_20261126T214332Z.raw.txt",
+ "results_capture": "collect/national/20261127/results_20261127T125557Z.raw.txt",
+ "unscratched_emergencies_at_capture": 56,
+ "national_rule_gained": {
+  "counted_and_started": 52,
+  "counted_but_did_not_start": 2,
+  "left_out_but_started": 1,
+  "left_out_and_did_not_start": 1
+ },
+ "qld_rule_counted": {
+  "counted_and_started": 53,
+  "counted_but_did_not_start": 3,
+  "left_out_but_started": 0,
+  "left_out_and_did_not_start": 0
+ },
+ "original_rule": {
+  "left_out_but_started": 53,
+  "left_out_and_did_not_start": 3
+ },
+ "no_result_found": 0,
+ "readings": {
+  "eligible at capture (inferred) and ran": 52,
+  "admitted but did not run: later scratching or misread (check)": 2,
+  "not eligible at capture and did not run": 1,
+  "gained a start after the capture (later scratchings; not knowable at cutoff)": 1
+ },
+ "races": {
+  "total": 61,
+  "with_scratchings_before_cutoff": 50,
+  "with_later_scratchings": 16
+ },
+ "note": "eligibility at the morning cutoff is inferred from TAB statuses and emergency numbers (no official emergency order or field limit is read); participation comes from the results capture",
+ "by_state": {
+  "NSW": {
+   "emergencies": 24,
+   "national_rule_correct": 22
+  },
+  "QLD": {
+   "emergencies": 9,
+   "national_rule_correct": 9
+  },
+  "SA": {
+   "emergencies": 4,
+   "national_rule_correct": 4
+  },
+  "VIC": {
+   "emergencies": 19,
+   "national_rule_correct": 18
+  }
+ }
+}
