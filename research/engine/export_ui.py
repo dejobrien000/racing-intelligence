@@ -152,6 +152,8 @@ for track, grp in v2rows.groupby('track', sort=False):
             if o['key'] == m1['snapshot']['snapshot_key']: snap = v
     F = pd.DataFrame(snap['fields']); cond = m1['snapshot'].get('conditions', {})
     st = snap.get('state') or ('QLD' if fam == 'QLD' else 'NSW'); tz = snap.get('tz') or tz; notes = []
+    _sc = (m2.get('settings') or {}).get('serving_corrections') or {}   # Batch 18: recompute with exactly the serving corrections in force for this meeting
+    os.environ['SERVING_CORRECTIONS'] = ','.join([f for f, k in [('METRO_FROM_TIER', 'metro_from_tier'), ('QLD_COURSE_MAP', 'qld_course_map')] if _sc.get(k)] + (['AGESEX_TAB'] if _sc.get('first_starter_agesex') else []))
     is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') in ('Engine v2.2', 'Engine v2.3'); S.V22 = is22
     RC = RC23 if (is22 and m2.get('engine_release') == 'Engine v2.3') else (RC22 if is22 else RC_OLD)   # v2.3 = candidate C2 with its own calibration
     is213 = fam == 'QLD' and str(m2.get('engine_release') or '').startswith('Engine v2.1.3')
@@ -382,6 +384,26 @@ try:
                           'career_best': round(float(q_.max()), 1) if len(q_) else None, 'last6_n': int(len(l6))}
                 h['profile'] = pr
     PROFILE['cutoff'] = _cut
+    # ---- common national display scale (display only; Damo 27 Nov 2026, Batch 18 A4). Each rating version is mapped onto one scale with a
+    # linear transform fixed on one reference population (every runner in 2025 Benchmark 64-72 races, all states): its mean reads 0 kg and
+    # one standard deviation reads the Engine v2.3 spread on that population. Corrects both zero point and spread; engine numbers untouched.
+    _ref = {}
+    for fam_, path_ in [('NSW_VIC_ACT', 'engine/frames/national_c2.parquet' if os.path.exists('engine/frames/national_c2.parquet') else 'engine/frames/national.parquet'), ('QLD', 'engine/frames/national_v3.parquet'),
+                        ('V23', 'engine/frames/national_c2.parquet')]:
+        if os.path.exists(path_):
+            R_ = pd.read_parquet(path_, columns=['date', 'class_label', 'bm', 'dyn_nat']); R_ = R_[(R_.date.dt.year == 2025) & (R_.class_label == 'Benchmark') & pd.to_numeric(R_.bm, errors='coerce').between(64, 72) & R_.dyn_nat.notna()]
+            _ref[fam_] = (float(R_.dyn_nat.mean()), float(R_.dyn_nat.std()), int(len(R_)), path_)
+    _sd_ref = _ref['V23'][1]
+    SCALE = {'reference_population': 'every runner in 2025 Benchmark 64-72 races, all states', 'display_sd_kg': round(_sd_ref, 3),
+             'versions': {k: {'frame': v[3], 'mean_kg': round(v[0], 3), 'sd_kg': round(v[1], 3), 'reference_runs': v[2]} for k, v in _ref.items() if k != 'V23'}}
+    _cv = lambda x_, fam_: None if x_ is None else round((x_ - _ref[fam_][0]) / _ref[fam_][1] * _sd_ref, 1)
+    for m in meetings:
+        fam_ = 'QLD' if m.get('model_family') == 'QLD' else 'NSW_VIC_ACT'
+        for r in m.get('races', []):
+            for h in r.get('runners', []):
+                a_ = h.get('ability') or {}; a_['rating_common_kg'] = _cv(a_.get('rating_kg'), fam_)
+                if h.get('profile'): h['profile']['common'] = {k: _cv(h['profile'].get(k), fam_) for k in ['latest', 'typical_last5', 'repeatable_upper_last6', 'peak_last6', 'career_best']}
+    PROFILE['scale'] = SCALE
 except Exception as ex_:
     PROFILE['error'] = str(ex_)[:200]; print('WARNING performance profile skipped (display only):', str(ex_)[:200])
 # ---- Engine Performance tab (display only; reuses the release lineage and the prospective evaluation ledger). Never fatal. ----

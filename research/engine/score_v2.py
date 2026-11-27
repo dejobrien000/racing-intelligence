@@ -37,6 +37,12 @@ METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'ca
 METRO_ALIAS = {'caulfield-heath': 'caulfield', 'sandown-hillside': 'sandown', 'sandown-lakeside': 'sandown', 'royal-randwick': 'randwick', 'randwick-kensington': 'randwick',
                'kensington': 'randwick', 'the-valley': 'moonee-valley', 'canterbury-park': 'canterbury', 'rosehill-gardens': 'rosehill'}
 _U = {}
+def corr_on(flag, switch_file):
+    """Batch 18 serving corrections. SERVING_CORRECTIONS (set by the exporter from a day's saved settings record) overrides the switch files,
+    so re-exports of an earlier day reproduce exactly what was in force when it was scored."""
+    ov = os.environ.get('SERVING_CORRECTIONS')
+    if ov is not None: return flag in [x for x in ov.split(',') if x]
+    return os.environ.get(flag) == '1' or os.path.exists(switch_file)
 AGESEX_LOG = {}   # Batch 18 A1: what the first-starter age/sex step did for this run (recorded in each file's settings record)
 def frame_path(fam):
     if CAND and fam != 'QLD': return os.environ['ENGINE_CAND_FRAME']
@@ -73,7 +79,7 @@ def new_raw(T, H_, fam, records=False):
     la = T.horse.map(last.age_n); ld = T.horse.map(last.date)
     seasons = [sum(1 for y in range(d0.year, D.year + 1) if d0 < pd.Timestamp(y, 8, 1) <= D) if d0 == d0 and d0 is not None else np.nan for d0 in ld]
     T['age_n'] = la + np.array(seasons, dtype=float); T['female'] = T.horse.map(last.sex).isin(['m', 'f']).astype(float).where(T.horse.map(last.sex).notna())
-    if os.environ.get('AGESEX_TAB') == '1' or os.path.exists('ops/agesex_tab_enabled'):   # CANDIDATE ONLY (Batch 17 B3; off unless set): a runner with no history takes age and sex from TAB's own form record
+    if corr_on('AGESEX_TAB', 'ops/agesex_tab_enabled'):   # CANDIDATE ONLY (Batch 17 B3; off unless set): a runner with no history takes age and sex from TAB's own form record
         fp = os.environ.get('AGESEX_TAB_FILE') or f"collect/national/{D:%Y%m%d}/form_runners.csv"
         AGESEX_LOG.update({'file': fp, 'file_present': os.path.exists(fp)})
         if os.path.exists(fp):
@@ -107,7 +113,7 @@ def new_raw(T, H_, fam, records=False):
 def terms(T, fam):
     F = MAN['families'][fam]; allt = list(F['coef_per_term_sd_all_races']); bsd = F['base_feature_dev_sd']; tsd = F['term_dev_sd']; ctx = F['context']
     T = T.copy(); T['yr'] = float(T.date.iloc[0].year - 2024); T['vic'] = (T.state == 'VIC').astype(float); T['big_field'] = (T.field >= 12).astype(float)
-    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = (T.venue.map(lambda v_: METRO_ALIAS.get(v_, v_)).map(_U['U'].drop_duplicates('venue', keep='last').set_index('venue').tier).eq('metro').astype(float) if (os.environ.get('METRO_FROM_TIER') == '1' or os.path.exists('ops/metro_tier_enabled')) else T.venue.isin(METRO).astype(float)) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
+    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = (T.venue.map(lambda v_: METRO_ALIAS.get(v_, v_)).map(_U['U'].drop_duplicates('venue', keep='last').set_index('venue').tier).eq('metro').astype(float) if corr_on('METRO_FROM_TIER', 'ops/metro_tier_enabled') else T.venue.isin(METRO).astype(float)) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
     T['abs_dist_change'] = T.dist_change.abs(); T['field_dyn'] = T.groupby('race_id').dyn_nat.transform('mean')
     def z(c):
         v = T[c].astype(float); return ((v - v.groupby(T.race_id).transform('mean')) / bsd.get(c, 1.0)).fillna(0.0)
@@ -151,7 +157,7 @@ def meeting_table(ix):
     W['horse_name'] = W.horse; W['horse'] = W.horse.map(nk); W['date'] = D; W['field'] = W.groupby('race_id').saddlecloth.transform('count')
     W['gband'] = gband(cond.get('track_condition')); W['dband'] = W.distance_m.map(dband); W['state'] = 'QLD' if fam == 'QLD' else ('VIC' if key.startswith('vic') else 'NSW')
     venue = snap.get('track') or snap.get('venue'); W['venue'] = re.sub(r'[^a-z0-9]+', '-', str(venue).lower()).strip('-')
-    if fam == 'QLD' and (os.environ.get('QLD_COURSE_MAP') == '1' or os.path.exists('ops/qld_course_map_enabled')):   # Batch 18 A3 (approved 27 Nov 2026)
+    if fam == 'QLD' and corr_on('QLD_COURSE_MAP', 'ops/qld_course_map_enabled'):   # Batch 18 A3 (approved 27 Nov 2026)
         from prerace.qld_courses import history_key; W['config'] = history_key(venue, cond.get('track_condition'))
     else: W['config'] = str(venue).replace(' ', '_') if fam == 'QLD' else W.venue
     W['dyn_nat'] = W.rating_kg_national; W['v1_score'] = W.race_relative_score
@@ -187,7 +193,7 @@ def provenance(fam, ix, H_, m2, fallback):
             'rating_scale_model_units_per_kg': F['score_per_kg_total'], 'history_cutoff': str(H_.date.max().date()), 'generated_utc': m2['scored_utc'],
             'fallback': fallback or False,
             'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X'] if os.environ.get(k)} or None,
-            'serving_corrections': {'metro_from_tier': (os.environ.get('METRO_FROM_TIER') == '1' or os.path.exists('ops/metro_tier_enabled')), 'qld_course_map': (os.environ.get('QLD_COURSE_MAP') == '1' or os.path.exists('ops/qld_course_map_enabled')), 'first_starter_agesex': dict(AGESEX_LOG) or None}}
+            'serving_corrections': {'metro_from_tier': corr_on('METRO_FROM_TIER', 'ops/metro_tier_enabled'), 'qld_course_map': corr_on('QLD_COURSE_MAP', 'ops/qld_course_map_enabled'), 'first_starter_agesex': dict(AGESEX_LOG) or None}}
 
 if __name__ == '__main__':
     D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')

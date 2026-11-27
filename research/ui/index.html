@@ -300,12 +300,14 @@ function profBox(h){
  // Batch 17 s9: what the horse has shown, kept apart from what the engine expects today. No figure is invented for short histories.
  const p=h.profile,a=h.ability;if(!p)return '';
  if(!p.runs)return '<h3 style="margin-top:18px">Performance profile</h3><p class="sm mute">No rated runs held, so no performance figures are shown.</p>';
- const f=(v,lbl)=>v==null?'<span class="faint">'+lbl+'</span>':kg(v,1)+' kg';
+ // Batch 18 A4: figures on the common national scale (0 = average 2025 Benchmark 64-72 runner, all states); the engine's own figure in small print
+ const c=p.common||{},S=(D.profile||{}).scale;const f=(k,lbl)=>{const v=c[k]!=null?c[k]:p[k];return v==null?'<span class="faint">'+lbl+'</span>':kg(v,1)+' kg'+(c[k]!=null&&p[k]!=null?' <span class="faint sm">(engine '+kg(p[k],1)+')</span>':'')};
  const it=(l,v,n)=>'<div><span class="faint sm">'+l+'</span><div class="num">'+v+(n?' <span class="faint sm">'+n+'</span>':'')+'</div></div>';
+ const now=a.rating_common_kg!=null?kg(a.rating_common_kg,1)+' kg <span class="faint sm">(engine '+kg(a.rating_kg,1)+')</span>':kg(a.rating_kg,1)+' kg';
  return '<h3 style="margin-top:18px">Performance profile</h3><div class="mini" style="margin-top:8px">'+
-  it('Ability rating now',kg(a.rating_kg,1)+' kg')+it('Latest run',f(p.latest,'none'))+it('Typical (median of last 5)',f(p.typical_last5,'needs 3 runs'),p.typical_last5!=null?'('+p.typical_n+' runs)':'')+
-  it('Repeatable upper (2nd-best of last 6)',f(p.repeatable_upper_last6,'needs 3 runs'),p.repeatable_upper_last6!=null?'('+p.last6_n+' runs)':'')+it('Best of last 6',f(p.peak_last6,'none'))+it('Career best (held runs)',f(p.career_best,'none'),'('+p.runs+' runs)')+
-  '</div><p class="sm faint" style="margin:6px 0 0">Each figure is one run measured against its field, in kg on the rating scale. A single best run is shown for context, not as sustainable ability.</p>';
+  it('Ability rating now',now)+it('Latest run',f('latest','none'))+it('Typical (median of last 5)',f('typical_last5','needs 3 runs'),p.typical_last5!=null?'('+p.typical_n+' runs)':'')+
+  it('Repeatable upper (2nd-best of last 6)',f('repeatable_upper_last6','needs 3 runs'),p.repeatable_upper_last6!=null?'('+p.last6_n+' runs)':'')+it('Best of last 6',f('peak_last6','none'))+it('Career best (held runs)',f('career_best','none'),'('+p.runs+(p.runs===1?' run)':' runs)'))+
+  '</div><p class="sm faint" style="margin:6px 0 0">Each figure is one run measured against its field. '+(S?'Shown on the common national scale (0 kg = an average runner in 2025 Benchmark 64-72 races, all states; same spread for every engine version) so Queensland and national horses, and different engine versions, read alike. The engine\'s own figure is in brackets; published records keep their original units. Small differences between versions can remain and are not proof of a change in the horse.':'In kg on the rating scale.')+' A single best run is shown for context, not as sustainable ability.</p>';
 }
 function drawer(key){
  const [mn,rno,n]=key.split('|');const {m,r,h}=runnerOf(mn,+rno,+n);if(!h)return;
