@@ -70,6 +70,36 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | after the physical queue starts |
 | Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
 
+## Batch 24 (27 Nov 2026 night): findings and newly registered research families
+Findings (research only; nothing served):
+- Consolidated scale: not a constant offset. Production rating mean drifts down ~0.8 kg/yr (-3.21 in 2022 to -6.31 in 2026), the
+  consolidated candidate up ~0.8 kg/yr (-2.64 to +0.66). Uniform shifts cancel exactly (every term is centred within its race).
+  Drift reaches: within-horse lagged inputs (below_top3, gap_long_z, short_vs_long, slope15, last_race_strength; stable offsets
+  2024-26, within-race correlation 0.91-0.94 between builds), the 'ability x field strength' interaction (absolute field level moves
+  ~0.3 sd by 2026, ~2% of the rating's weight), and venue class. No defect; candidate stays frozen. Next: period re-anchoring test,
+  both engines. batch24/out_b24_scale_*.json.
+- First-starter starting level (consolidated rule): 1.5 kg instead of 2.0 removes most debut bias (+0.46 -> +0.12 kg), debut error
+  31.95 -> 31.72 kg2, less drag on established rivals (-0.61 -> -0.40), but race accuracy is a wash (2024 -0.0007, 2025-26 +0.0005);
+  1.0 kg overshoots. Missing-career first runs (n 621) move the other way: they need their own start from inferred experience.
+  DESCRIPTIVE / PROMISING (no candidate). batch24/out_b24_starting_level.json.
+- Meeting speed (Part C8, preliminary): the meeting effect is real (other races predict a left-out race's time deviation, r 0.81);
+  stronger fields run 0.063 s/km faster per kg of field strength; a leave-one-race-out, field-strength-adjusted variant raises figure
+  repeatability (next figure within 60 days, later period, 198,934 pairs) from 0.349 (existing daily variant) to 0.361. Holds in
+  NSW/VIC/QLD/WA/ACT; TAS slightly worse; SA anomalous (no adjustment best) - check SA timing/meeting keys first. PROMISING RESEARCH.
+  Next: research frame with the adjusted figures; engine and consolidated tests. batch24/b24_meeting_speed.py.
+- Rail data foundation: retrospective rail already held for Qld (9,758 races from Oct 2022), SA (1,775 races from Jan 2024),
+  NSW/ACT (331 meetings from Jul 2026); pre-race from 28 Nov for Qld (RQ) and NSW/ACT (Racing NSW FreeFields). See
+  ops/foundation/field_register.csv (national rail row). MANDATORY data workstream; model use evidence-dependent.
+Newly registered families (NOT YET INVESTIGATED unless stated; tracking-based ones use Qld/SA/Vic data as each actually supplies it):
+performance against race shape (tempo x position x lane x ground x sectional speed; Part B5); tempo and the meaning of margins (B6);
+historical course-distance benchmarks by age/class/going/season (C7, audit done: production uses venue x distance par + daily variant);
+meeting-specific benchmarks (C8, begun); meeting speed + lane bias + race shape integration (C9); whole-field underestimation and
+connected form lines (D10); stewards' observations as context (D11, existing programme); response to racing pressure (E12);
+conditional consistency, ceiling and range (F13); familiar/home-track performance (F14, reconcile with redundant course records);
+development before rating change (G15); turn of foot and speed development (G16); settling and racing education (G17);
+deterioration before rating decline (G18). Rediscovered: Qld learning speed retest, uneven last 600 as its own Qld test, late-fade
+prospective check, debut/lightly raced findings under the new rules (B24 s27).
+
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|
