@@ -1,0 +1,113 @@
+{
+ "date": "20261126",
+ "meetings": {
+  "calendar": 4,
+  "with_fields": 4,
+  "missing": [],
+  "short": {}
+ },
+ "runners": {
+  "Geraldton": {
+   "runners": 99,
+   "listed_scratched": 7,
+   "emergencies": 10,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 22,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "GOOD4"
+  },
+  "Hawkesbury": {
+   "runners": 72,
+   "listed_scratched": 13,
+   "emergencies": 0,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 7,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "SOFT5"
+  },
+  "Mornington": {
+   "runners": 97,
+   "listed_scratched": 20,
+   "emergencies": 1,
+   "emergencies_admitted": 0,
+   "weight_missing": 0,
+   "claim_present": 22,
+   "claim_outside_0_4": 0,
+   "trainer_missing": 0,
+   "jockey_missing": 0,
+   "distance_missing": 0,
+   "class_missing": 0,
+   "track_condition": "GOOD4"
+  },
+  "Rockhampton": {
+   "runners": 43,
+   "listed_scratched": 6,
+   "track_condition": "SOFT6"
+  }
+ },
+ "claims_deducted_once": {
+  "runners_checked": 434,
+  "mismatches": 0
+ },
+ "age_sex_coverage": {
+  "runners": 317,
+  "age_present": 1.0,
+  "sex_present": 1.0,
+  "first_starters": 20
+ },
+ "ran_yesterday_still_listed": {
+  "already_listed_scratched": 5,
+  "still_runners": []
+ },
+ "identity_list_names_today": [],
+ "fingerprints": [
+  {
+   "meeting": "Mornington",
+   "engine_release": "Engine v2.2",
+   "family_file": "benchmarks/engine_v2_1/manifest.json",
+   "v22_file": "benchmarks/engine_v2_2/manifest.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Hawkesbury",
+   "engine_release": "Engine v2.2",
+   "family_file": "benchmarks/engine_v2_1/manifest.json",
+   "v22_file": "benchmarks/engine_v2_2/manifest.json",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Rockhampton",
+   "engine_release": "Engine v2.1.1 (v3 rating)",
+   "family_file": "benchmarks/engine_v2_1/manifest.json",
+   "v22_file": "-",
+   "history_max_date": "2026-11-23"
+  },
+  {
+   "meeting": "Geraldton",
+   "engine_release": "Engine v2.2",
+   "family_file": "benchmarks/engine_v2_1/manifest.json",
+   "v22_file": "benchmarks/engine_v2_2/manifest.json",
+   "history_max_date": "2026-11-23"
+  }
+ ],
+ "dashboard": {
+  "meetings": 4,
+  "rated": 4
+ },
+ "shadows_today": {
+  "qld_v2_1_2": 5,
+  "prev_engines": 0,
+  "v2_4_candidate": 0
+ },
+ "warnings": []
+}

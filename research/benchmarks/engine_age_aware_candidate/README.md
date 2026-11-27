@@ -16,7 +16,7 @@ kg scale 0.334 model units per kg (Engine v2.3 0.268; update rule 0.315) — a d
 Built 27 Nov 2026 4:41pm Brisbane by the Engine v2.3 release chain in a sandbox; rating identical to the research implementation (U5EC,
 max difference 0.0); speed figures identical to production (0.0). Fingerprints in each file's `candidate_record`.
 
-Scored every morning from the **29 Nov 2026 run** by `UR_VARIANT=ageaware ops/run_update_shadow.sh` into `prospective/shadow/age_aware/`
+Scored every morning from the **28 Nov 2026 run** (brought forward from 29 Nov by Damo, Batch 23 D10, 27 Nov 10:01pm) by `UR_VARIANT=ageaware ops/run_update_shadow.sh` into `prospective/shadow/age_aware/`
 (own index, own prospective clock), after publishing. Never the dashboard, the ranking or the settlement; settled separately in the
 evaluation ledger and shown in Engine Performance. Approved as a frozen shadow by Damo, 27 Nov 2026 (Batch 19 brief A2). Frozen: any
 change needs a new version and a new clock.

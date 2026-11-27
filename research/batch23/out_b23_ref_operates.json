@@ -1,0 +1,7 @@
+{
+ "recorded_plain_mean_abs": 0.14151548455341226,
+ "recorded_weighted_mean_abs": 6.541520142498991e-16,
+ "update_runs_checked": 160474,
+ "median_abs_implied_minus_weighted": 4.440892098500626e-16,
+ "median_abs_implied_minus_plain": 0.07461695050918207
+}

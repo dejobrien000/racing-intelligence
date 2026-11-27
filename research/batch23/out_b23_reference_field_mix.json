@@ -1,0 +1,90 @@
+{
+ "Engine v2.3": {
+  "established_12plus_by_share_of_rivals_lightly_raced": {
+   "none": {
+    "runs": 132254,
+    "mean_surprise_kg": -0.39
+   },
+   "up to 20%": {
+    "runs": 24205,
+    "mean_surprise_kg": -0.84
+   },
+   "20-40%": {
+    "runs": 5508,
+    "mean_surprise_kg": -0.93
+   },
+   "over 40%": {
+    "runs": 3301,
+    "mean_surprise_kg": -0.92
+   }
+  },
+  "slope_kg_per_100pct": -1.6,
+  "genuine_debut_mean_surprise": 0.11
+ },
+ "stronger, plain reference": {
+  "established_12plus_by_share_of_rivals_lightly_raced": {
+   "none": {
+    "runs": 132254,
+    "mean_surprise_kg": -0.27
+   },
+   "up to 20%": {
+    "runs": 24205,
+    "mean_surprise_kg": -0.59
+   },
+   "20-40%": {
+    "runs": 5508,
+    "mean_surprise_kg": -0.68
+   },
+   "over 40%": {
+    "runs": 3301,
+    "mean_surprise_kg": -0.7
+   }
+  },
+  "slope_kg_per_100pct": -1.24,
+  "genuine_debut_mean_surprise": 0.41
+ },
+ "gentle + certainty": {
+  "established_12plus_by_share_of_rivals_lightly_raced": {
+   "none": {
+    "runs": 132254,
+    "mean_surprise_kg": -0.28
+   },
+   "up to 20%": {
+    "runs": 24205,
+    "mean_surprise_kg": -0.57
+   },
+   "20-40%": {
+    "runs": 5508,
+    "mean_surprise_kg": -0.65
+   },
+   "over 40%": {
+    "runs": 3301,
+    "mean_surprise_kg": -0.7
+   }
+  },
+  "slope_kg_per_100pct": -1.15,
+  "genuine_debut_mean_surprise": 0.45
+ },
+ "stronger + certainty (consolidated)": {
+  "established_12plus_by_share_of_rivals_lightly_raced": {
+   "none": {
+    "runs": 132254,
+    "mean_surprise_kg": -0.09
+   },
+   "up to 20%": {
+    "runs": 24205,
+    "mean_surprise_kg": -0.2
+   },
+   "20-40%": {
+    "runs": 5508,
+    "mean_surprise_kg": -0.26
+   },
+   "over 40%": {
+    "runs": 3301,
+    "mean_surprise_kg": -0.35
+   }
+  },
+  "slope_kg_per_100pct": -0.61,
+  "genuine_debut_mean_surprise": 0.46
+ }
+}
