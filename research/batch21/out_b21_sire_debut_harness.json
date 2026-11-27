@@ -1,0 +1,56 @@
+{
+ "C2SD+sire_debut_x A": {
+  "races": 12777,
+  "gain": 0.00063,
+  "ci": [
+   2e-05,
+   0.00126
+  ],
+  "top_pick_pts": 0.03
+ },
+ "C2SD+sire_debut_x B": {
+  "races": 23729,
+  "gain": 0.00125,
+  "ci": [
+   0.00081,
+   0.0017
+  ],
+  "top_pick_pts": 0.02
+ },
+ "C2SD+tr_debut_x A": {
+  "races": 12777,
+  "gain": 0.00043,
+  "ci": [
+   -0.00025,
+   0.00112
+  ],
+  "top_pick_pts": -0.01
+ },
+ "C2SD+tr_debut_x B": {
+  "races": 23729,
+  "gain": 0.00147,
+  "ci": [
+   0.00095,
+   0.00205
+  ],
+  "top_pick_pts": 0.01
+ },
+ "C2SD+sire_debut_x+tr_debut_x A": {
+  "races": 12777,
+  "gain": 0.00077,
+  "ci": [
+   -0.00013,
+   0.00166
+  ],
+  "top_pick_pts": 0.08
+ },
+ "C2SD+sire_debut_x+tr_debut_x B": {
+  "races": 23729,
+  "gain": 0.00211,
+  "ci": [
+   0.00147,
+   0.00275
+  ],
+  "top_pick_pts": 0.03
+ }
+}

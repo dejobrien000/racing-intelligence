@@ -39,7 +39,10 @@ def run(d, s, q, sig0, d0):
             idx = np.arange(a, b)[ok]; innov[idx] = inn
             K = vv_ / pv
             if HOOK:                      # CANDIDATE ONLY (Batch 16 B9): update from the capped performance, good surprises x GOOD
-                pu = perf_u[a:b][ok]; iu = (pu - pu.mean()) - (mm_ - mm_.mean())
+                pu = perf_u[a:b][ok]
+                if REF:                   # Batch 21 B8: certainty-weighted race reference inside the update-rule hook too (before Batch 21 the hook used the plain mean)
+                    pw_ = vv_ + s * s; w_ = (1.0 / pw_) / (1.0 / pw_).sum(); iu = (pu - (w_ * pu).sum()) - (mm_ - (w_ * mm_).sum())
+                else: iu = (pu - pu.mean()) - (mm_ - mm_.mean())
                 if TAPER:
                     ne = np.array([cnt.get(h_, 0) for h_ in hs[ok]], dtype=float)
                     if AGE_ is not None: ne = np.where(AGE_[a:b][ok] >= AGEMIN, np.maximum(ne, 24.0), ne)   # Batch 18 D2 (RATING_TAPER_AGEFLOOR): a 5yo+ counts as exposed whatever we hold

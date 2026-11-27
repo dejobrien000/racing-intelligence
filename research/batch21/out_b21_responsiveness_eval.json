@@ -1,0 +1,1038 @@
+{
+ "field_type_cut_points_share_5_or_fewer_held": [
+  0.083,
+  0.417
+ ],
+ "individual": {
+  "1 Engine v2.3 (production)": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 26.484,
+    "calibration_slope": 0.755,
+    "rank_corr": 0.3437
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 23.88,
+    "calibration_slope": 0.749,
+    "rank_corr": 0.3085
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 30.609,
+    "calibration_slope": 0.803,
+    "rank_corr": 0.4209
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 25.995,
+    "calibration_slope": 0.699,
+    "rank_corr": 0.3059
+   }
+  },
+  "2 Cap-only": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 26.211,
+    "calibration_slope": 0.872,
+    "rank_corr": 0.3471
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 23.617,
+    "calibration_slope": 0.852,
+    "rank_corr": 0.3102
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 30.423,
+    "calibration_slope": 0.954,
+    "rank_corr": 0.4271
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 25.638,
+    "calibration_slope": 0.795,
+    "rank_corr": 0.3087
+   }
+  },
+  "3 Uniform 1.3x": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 25.905,
+    "calibration_slope": 0.866,
+    "rank_corr": 0.36
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 23.454,
+    "calibration_slope": 0.831,
+    "rank_corr": 0.3233
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.752,
+    "calibration_slope": 0.975,
+    "rank_corr": 0.4401
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 25.474,
+    "calibration_slope": 0.779,
+    "rank_corr": 0.3211
+   }
+  },
+  "4 Age-aware (frozen shadow rule)": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 25.426,
+    "calibration_slope": 0.93,
+    "rank_corr": 0.3734
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 23.049,
+    "calibration_slope": 0.912,
+    "rank_corr": 0.3344
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.607,
+    "calibration_slope": 0.985,
+    "rank_corr": 0.4468
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 24.639,
+    "calibration_slope": 0.88,
+    "rank_corr": 0.3435
+   }
+  },
+  "5 History-completeness (v3 experience)": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 25.365,
+    "calibration_slope": 0.937,
+    "rank_corr": 0.3756
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 22.99,
+    "calibration_slope": 0.92,
+    "rank_corr": 0.3371
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.578,
+    "calibration_slope": 0.987,
+    "rank_corr": 0.4473
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 24.551,
+    "calibration_slope": 0.891,
+    "rank_corr": 0.3469
+   }
+  },
+  "6 Stronger, age floor": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 24.782,
+    "calibration_slope": 0.944,
+    "rank_corr": 0.4004
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 22.504,
+    "calibration_slope": 0.95,
+    "rank_corr": 0.3623
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.164,
+    "calibration_slope": 0.951,
+    "rank_corr": 0.461
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 23.721,
+    "calibration_slope": 0.929,
+    "rank_corr": 0.3818
+   }
+  },
+  "7 Stronger, history-completeness": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 24.715,
+    "calibration_slope": 0.949,
+    "rank_corr": 0.4036
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 22.455,
+    "calibration_slope": 0.956,
+    "rank_corr": 0.3652
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.108,
+    "calibration_slope": 0.953,
+    "rank_corr": 0.4625
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 23.627,
+    "calibration_slope": 0.938,
+    "rank_corr": 0.3869
+   }
+  },
+  "PW alone": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 26.411,
+    "calibration_slope": 0.758,
+    "rank_corr": 0.3453
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 23.866,
+    "calibration_slope": 0.748,
+    "rank_corr": 0.3089
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 30.449,
+    "calibration_slope": 0.808,
+    "rank_corr": 0.4233
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 25.926,
+    "calibration_slope": 0.702,
+    "rank_corr": 0.3079
+   }
+  },
+  "PW + history-completeness": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 25.365,
+    "calibration_slope": 0.937,
+    "rank_corr": 0.3756
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 22.99,
+    "calibration_slope": 0.92,
+    "rank_corr": 0.3371
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.578,
+    "calibration_slope": 0.987,
+    "rank_corr": 0.4473
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 24.551,
+    "calibration_slope": 0.891,
+    "rank_corr": 0.3469
+   }
+  },
+  "PW + stronger history-completeness": {
+   "all": {
+    "runs": 341068,
+    "error_kg2": 24.715,
+    "calibration_slope": 0.949,
+    "rank_corr": 0.4036
+   },
+   "established fields": {
+    "runs": 128983,
+    "error_kg2": 22.455,
+    "calibration_slope": 0.956,
+    "rank_corr": 0.3652
+   },
+   "inexperienced fields": {
+    "runs": 95300,
+    "error_kg2": 29.108,
+    "calibration_slope": 0.953,
+    "rank_corr": 0.4625
+   },
+   "mixed fields": {
+    "runs": 116785,
+    "error_kg2": 23.627,
+    "calibration_slope": 0.938,
+    "rank_corr": 0.3869
+   }
+  }
+ },
+ "individual_by_experience_source": {
+  "1 Engine v2.3 (production)": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 26.443
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.738
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 25.133
+   }
+  },
+  "2 Cap-only": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 26.146
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 33.429
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 24.921
+   }
+  },
+  "3 Uniform 1.3x": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 25.86
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.646
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 24.46
+   }
+  },
+  "4 Age-aware (frozen shadow rule)": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 25.357
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.633
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 24.201
+   }
+  },
+  "5 History-completeness (v3 experience)": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 25.301
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.297
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 24.161
+   }
+  },
+  "6 Stronger, age floor": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 24.72
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 31.714
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 23.528
+   }
+  },
+  "7 Stronger, history-completeness": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 24.661
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 31.212
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 23.5
+   }
+  },
+  "PW alone": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 26.367
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.611
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 25.112
+   }
+  },
+  "PW + history-completeness": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 25.301
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 32.297
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 24.161
+   }
+  },
+  "PW + stronger history-completeness": {
+   "complete": {
+    "runs": 313964,
+    "error_kg2": 24.661
+   },
+   "late_maiden": {
+    "runs": 6507,
+    "error_kg2": 31.212
+   },
+   "probable_incomplete": {
+    "runs": 20597,
+    "error_kg2": 23.5
+   }
+  }
+ },
+ "probability_calibration_slope": {
+  "1 Engine v2.3 (production)": {
+   "all": 0.946,
+   "established fields": 0.898,
+   "inexperienced fields": 0.987,
+   "mixed fields": 0.949
+  },
+  "2 Cap-only": {
+   "all": 0.92,
+   "established fields": 0.891,
+   "inexperienced fields": 0.933,
+   "mixed fields": 0.932
+  },
+  "3 Uniform 1.3x": {
+   "all": 0.937,
+   "established fields": 0.893,
+   "inexperienced fields": 0.969,
+   "mixed fields": 0.943
+  },
+  "4 Age-aware (frozen shadow rule)": {
+   "all": 0.947,
+   "established fields": 0.91,
+   "inexperienced fields": 0.97,
+   "mixed fields": 0.958
+  },
+  "5 History-completeness (v3 experience)": {
+   "all": 0.947,
+   "established fields": 0.909,
+   "inexperienced fields": 0.97,
+   "mixed fields": 0.959
+  },
+  "6 Stronger, age floor": {
+   "all": 0.978,
+   "established fields": 0.933,
+   "inexperienced fields": 1.009,
+   "mixed fields": 0.99
+  },
+  "7 Stronger, history-completeness": {
+   "all": 0.974,
+   "established fields": 0.93,
+   "inexperienced fields": 1.001,
+   "mixed fields": 0.988
+  },
+  "PW alone": {
+   "all": 0.945,
+   "established fields": 0.898,
+   "inexperienced fields": 0.985,
+   "mixed fields": 0.949
+  },
+  "PW + history-completeness": {
+   "all": 0.947,
+   "established fields": 0.91,
+   "inexperienced fields": 0.969,
+   "mixed fields": 0.958
+  },
+  "PW + stronger history-completeness": {
+   "all": 0.974,
+   "established fields": 0.931,
+   "inexperienced fields": 1.001,
+   "mixed fields": 0.987
+  }
+ },
+ "race_vs_C2": {
+  "2 Cap-only": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00539,
+    "ci95": [
+     0.00427,
+     0.00655
+    ],
+    "top_pick_pts": 0.13
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00476,
+    "ci95": [
+     0.00304,
+     0.00651
+    ],
+    "top_pick_pts": 0.15
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.0054,
+    "ci95": [
+     0.00307,
+     0.00769
+    ],
+    "top_pick_pts": 0.11
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00603,
+    "ci95": [
+     0.00422,
+     0.00793
+    ],
+    "top_pick_pts": 0.13
+   },
+   "window_A": 0.00739,
+   "window_B": 0.0043
+  },
+  "3 Uniform 1.3x": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00655,
+    "ci95": [
+     0.00528,
+     0.00773
+    ],
+    "top_pick_pts": 0.24
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00431,
+    "ci95": [
+     0.00247,
+     0.00626
+    ],
+    "top_pick_pts": 0.17
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.01013,
+    "ci95": [
+     0.00806,
+     0.01234
+    ],
+    "top_pick_pts": 0.32
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00529,
+    "ci95": [
+     0.00316,
+     0.00748
+    ],
+    "top_pick_pts": 0.24
+   },
+   "window_A": 0.00807,
+   "window_B": 0.00573
+  },
+  "4 Age-aware (frozen shadow rule)": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.0102,
+    "ci95": [
+     0.00898,
+     0.01133
+    ],
+    "top_pick_pts": 0.33
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00976,
+    "ci95": [
+     0.00802,
+     0.01159
+    ],
+    "top_pick_pts": 0.3
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00975,
+    "ci95": [
+     0.00759,
+     0.01193
+    ],
+    "top_pick_pts": 0.3
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01113,
+    "ci95": [
+     0.00913,
+     0.01308
+    ],
+    "top_pick_pts": 0.39
+   },
+   "window_A": 0.00976,
+   "window_B": 0.01044
+  },
+  "5 History-completeness (v3 experience)": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.01104,
+    "ci95": [
+     0.00994,
+     0.01222
+    ],
+    "top_pick_pts": 0.36
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.01051,
+    "ci95": [
+     0.00856,
+     0.01231
+    ],
+    "top_pick_pts": 0.39
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.01005,
+    "ci95": [
+     0.00799,
+     0.01228
+    ],
+    "top_pick_pts": 0.33
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01261,
+    "ci95": [
+     0.01067,
+     0.01469
+    ],
+    "top_pick_pts": 0.34
+   },
+   "window_A": 0.01076,
+   "window_B": 0.0112
+  },
+  "6 Stronger, age floor": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.01117,
+    "ci95": [
+     0.00958,
+     0.01279
+    ],
+    "top_pick_pts": 0.35
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.01283,
+    "ci95": [
+     0.01034,
+     0.01546
+    ],
+    "top_pick_pts": 0.27
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.0065,
+    "ci95": [
+     0.00346,
+     0.00969
+    ],
+    "top_pick_pts": 0.34
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01417,
+    "ci95": [
+     0.01128,
+     0.01703
+    ],
+    "top_pick_pts": 0.43
+   },
+   "window_A": 0.00732,
+   "window_B": 0.01325
+  },
+  "7 Stronger, history-completeness": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.01329,
+    "ci95": [
+     0.01155,
+     0.01503
+    ],
+    "top_pick_pts": 0.43
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.01489,
+    "ci95": [
+     0.01234,
+     0.0175
+    ],
+    "top_pick_pts": 0.47
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.0075,
+    "ci95": [
+     0.00394,
+     0.01088
+    ],
+    "top_pick_pts": 0.31
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01748,
+    "ci95": [
+     0.01453,
+     0.02054
+    ],
+    "top_pick_pts": 0.51
+   },
+   "window_A": 0.01023,
+   "window_B": 0.01494
+  },
+  "PW alone": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.0014,
+    "ci95": [
+     0.00116,
+     0.00164
+    ],
+    "top_pick_pts": 0.08
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00111,
+    "ci95": [
+     0.00078,
+     0.00144
+    ],
+    "top_pick_pts": 0.07
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00179,
+    "ci95": [
+     0.00132,
+     0.00227
+    ],
+    "top_pick_pts": 0.04
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00131,
+    "ci95": [
+     0.0009,
+     0.0017
+    ],
+    "top_pick_pts": 0.14
+   },
+   "window_A": 0.00145,
+   "window_B": 0.00137
+  },
+  "PW + history-completeness": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.01143,
+    "ci95": [
+     0.01023,
+     0.0126
+    ],
+    "top_pick_pts": 0.4
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.01076,
+    "ci95": [
+     0.0089,
+     0.01265
+    ],
+    "top_pick_pts": 0.3
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.01087,
+    "ci95": [
+     0.00866,
+     0.01305
+    ],
+    "top_pick_pts": 0.44
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01272,
+    "ci95": [
+     0.01083,
+     0.01473
+    ],
+    "top_pick_pts": 0.47
+   },
+   "window_A": 0.0112,
+   "window_B": 0.01156
+  },
+  "PW + stronger history-completeness": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.01378,
+    "ci95": [
+     0.01214,
+     0.0155
+    ],
+    "top_pick_pts": 0.44
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.01523,
+    "ci95": [
+     0.0126,
+     0.01787
+    ],
+    "top_pick_pts": 0.53
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00842,
+    "ci95": [
+     0.00514,
+     0.01186
+    ],
+    "top_pick_pts": 0.31
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.01767,
+    "ci95": [
+     0.01472,
+     0.02055
+    ],
+    "top_pick_pts": 0.47
+   },
+   "window_A": 0.01077,
+   "window_B": 0.01539
+  }
+ },
+ "race_PW_added": {
+  "PW + history-completeness vs history-completeness": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00039,
+    "ci95": [
+     0.00024,
+     0.00054
+    ],
+    "top_pick_pts": 0.04
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00024,
+    "ci95": [
+     1e-05,
+     0.0005
+    ],
+    "top_pick_pts": -0.1
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00082,
+    "ci95": [
+     0.00056,
+     0.00107
+    ],
+    "top_pick_pts": 0.11
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00011,
+    "ci95": [
+     -0.00015,
+     0.00037
+    ],
+    "top_pick_pts": 0.13
+   },
+   "window_A": 0.00045,
+   "window_B": 0.00036
+  },
+  "PW + stronger vs stronger (history-completeness)": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00049,
+    "ci95": [
+     0.00036,
+     0.00061
+    ],
+    "top_pick_pts": 0.01
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00034,
+    "ci95": [
+     0.00013,
+     0.00055
+    ],
+    "top_pick_pts": 0.06
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00093,
+    "ci95": [
+     0.0007,
+     0.00114
+    ],
+    "top_pick_pts": 0.01
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00019,
+    "ci95": [
+     -3e-05,
+     0.00041
+    ],
+    "top_pick_pts": -0.04
+   },
+   "window_A": 0.00054,
+   "window_B": 0.00046
+  }
+ },
+ "race_stronger_vs_completeness": {
+  "7 vs 5": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00225,
+    "ci95": [
+     0.00117,
+     0.0033
+    ],
+    "top_pick_pts": 0.07
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00437,
+    "ci95": [
+     0.00273,
+     0.00595
+    ],
+    "top_pick_pts": 0.08
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": -0.00255,
+    "ci95": [
+     -0.00467,
+     -0.00047
+    ],
+    "top_pick_pts": -0.02
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00487,
+    "ci95": [
+     0.00304,
+     0.0066
+    ],
+    "top_pick_pts": 0.17
+   },
+   "window_A": -0.00053,
+   "window_B": 0.00374
+  },
+  "7 vs 6": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00212,
+    "ci95": [
+     0.0017,
+     0.00258
+    ],
+    "top_pick_pts": 0.08
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00206,
+    "ci95": [
+     0.00139,
+     0.00271
+    ],
+    "top_pick_pts": 0.2
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.00099,
+    "ci95": [
+     0.00026,
+     0.00175
+    ],
+    "top_pick_pts": -0.03
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00332,
+    "ci95": [
+     0.00246,
+     0.00419
+    ],
+    "top_pick_pts": 0.08
+   },
+   "window_A": 0.0029,
+   "window_B": 0.00169
+  },
+  "5 vs 4": {
+   "all": {
+    "races": 36506,
+    "gain_per_race": 0.00084,
+    "ci95": [
+     0.00067,
+     0.00102
+    ],
+    "top_pick_pts": 0.03
+   },
+   "established fields": {
+    "races": 12533,
+    "gain_per_race": 0.00076,
+    "ci95": [
+     0.00048,
+     0.00103
+    ],
+    "top_pick_pts": 0.1
+   },
+   "inexperienced fields": {
+    "races": 12066,
+    "gain_per_race": 0.0003,
+    "ci95": [
+     1e-05,
+     0.00059
+    ],
+    "top_pick_pts": 0.03
+   },
+   "mixed fields": {
+    "races": 11907,
+    "gain_per_race": 0.00148,
+    "ci95": [
+     0.00113,
+     0.0018
+    ],
+    "top_pick_pts": -0.05
+   },
+   "window_A": 0.00099,
+   "window_B": 0.00076
+  }
+ }
+}
