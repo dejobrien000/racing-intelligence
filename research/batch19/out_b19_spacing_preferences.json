@@ -1,0 +1,57 @@
+{
+ "fresh_preference": {
+  "horses": 20235,
+  "preparations": 72967,
+  "odd_vs_even_prep_corr": 0.033,
+  "chance_mean": 0.001,
+  "chance_p95": 0.013,
+  "sd_of_preference_kg": 6.12
+ },
+ "progression_through_prep": {
+  "horses": 12392,
+  "preparations": 45724,
+  "odd_vs_even_prep_corr": 0.017,
+  "chance_mean": 0.0,
+  "chance_p95": 0.017,
+  "sd_of_preference_kg": 4.55
+ },
+ "short_vs_longer_spacing": {
+  "horses": 11759,
+  "preparations": 44199,
+  "odd_vs_even_prep_corr": 0.012,
+  "chance_mean": 0.0,
+  "chance_p95": 0.015,
+  "sd_of_preference_kg": 5.48
+ },
+ "population_fresh_effect_by_age_kg": {
+  "2": -0.27,
+  "3": 0.17,
+  "4": 0.28,
+  "5": -0.23,
+  "6": -0.53,
+  "7": -0.72,
+  "8": -0.93
+ },
+ "fresh_effect_by_spell_length_kg": {
+  "151+ d": [
+   33554,
+   -0.29
+  ],
+  "61-90 d": [
+   9831,
+   0.33
+  ],
+  "91-150 d": [
+   29582,
+   -0.0
+  ]
+ },
+ "own_fresh_record_predicts_next": {
+  "preparations": 38111,
+  "coef_per_kg_of_shrunk_record": [
+   0.138,
+   0.096,
+   0.181
+  ]
+ }
+}

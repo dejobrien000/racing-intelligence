@@ -1,0 +1,33 @@
+{
+ "QLD": {
+  "share": [
+   0.342,
+   0.194,
+   0.489
+  ],
+  "calibration_runs": 13182,
+  "ground_pace_effects_calibration": {
+   "ground_w": -0.102,
+   "early_rel_w": -1.536,
+   "pace_x": 0.77
+  },
+  "runs_adjusted": 86348,
+  "adj_sd_kg": 0.295
+ },
+ "SA": {
+  "share": [
+   0.634,
+   0.434,
+   0.835
+  ],
+  "calibration_runs": 6070,
+  "ground_pace_effects_calibration": {
+   "ground_w": -0.052,
+   "early_rel_w": -0.786,
+   "pace_x": 0.804
+  },
+  "runs_adjusted": 16436,
+  "adj_sd_kg": 0.613
+ },
+ "rows": 102782
+}

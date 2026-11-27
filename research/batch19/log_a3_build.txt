@@ -1,0 +1,6 @@
+[17:03:56] parity_build
+third-layer parity vs production v2.3: max coef diff 0.0 terms equal True
+[17:05:37] build_td
+all-races coefs {'below_top3': 0.0561, 'gap_long_z': -0.0563, 'short_vs_long': -0.0769, 'slope15': -0.0127, 'neg_run': -0.0197, 'recent_var_ratio': 0.0203, 'hsd_x_rel': -0.0509, 'early_prep_vs_usual': -0.0026, 'quick_today': 0.0089, 'venue_step': -0.0892, 'recentform_x_established': 0.019, 'light_weight': 0.0226, 'log_runs_held': 0.0712, 'rating_uncertainty': 0.0061, 'tr_debut_g': 0.0445}
+dev coefs {'below_top3': 0.05, 'gap_long_z': -0.0264, 'short_vs_long': -0.0367, 'slope15': -0.0182, 'neg_run': -0.0257, 'recent_var_ratio': 0.0157, 'hsd_x_rel': -0.0463, 'early_prep_vs_usual': 0.0017, 'quick_today': 0.0146, 'venue_step': -0.0898, 'recentform_x_established': 0.0073, 'light_weight': 0.0091, 'log_runs_held': 0.081, 'rating_uncertainty': 0.0282, 'tr_debut_g': 0.0292}
+[17:07:16] CHAIN TD DONE

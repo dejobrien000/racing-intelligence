@@ -174,6 +174,24 @@ interstate connections; dynamic distance suitability; one experience-dependent l
 rate by track is not course geometry.
 
 
+## Batch 19 (27 Nov 2026): emergencies, age-aware and trainer debut shadows, age vs experience, barriers, family
+Ledger: research/batch19/README.md. Report: https://claude.ai/artifact/Ltm6Q4hqN29FCehH9YzaBa. Baseline record: research/batch19/BASELINE_CORRECTION.md.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| National emergency gained-start count rule | 26 Nov 11/11; 27 Nov replay 45 added, off = production | Approved; switch on if 27 Nov verifies |
+| Age-aware update rule (frozen) | release chain parity 0.0; dry run 435 runners | SHADOW from 29 Nov |
+| Trainer debut record, genuine debutants (frozen) | built check +0.0014; debut races +0.0077; debut error -0.24 kg2 | SHADOW from 29 Nov |
+| Experience over age | completeness floor +0.0008 over age rule (pre-stated); TAB: 28 of 30 lightly-held 5yo+ truly lightly raced | DECISION: completeness version |
+| Individual vs race accuracy | 1.8x taper best individually; maiden rating spread over-read | DECISION: race-layer test |
+| Established one-offs fade | 9% kept over 5 starts at 20+ starts held | MEANINGFUL, descriptive |
+| Barrier hierarchy | pooled course x distance x rail +0.041 kg2/run over national; stable | DECISION: pre-race input test |
+| Lane bias vs ground and tempo | unchanged by controls; candidates SA +0.0013, Qld +0.0009 | BUILT; shadow later |
+| Family signals | +0.131 kg2 combined on debut error | Research (no breeding input approved) |
+| Sire maturity out of cohort | +0.24 (-0.12 to +0.60) | Not supported as an input |
+| Trainer development patterns | persistence r 0.54; ready-on-debut vs improvers -0.37 | Candidate idea |
+| Fresh-horse trait | repeat corr 0.033 (chance p95 0.013) | Small; spacing preferences noise |
+
 ## Batch 18 (27 Nov 2026): production corrections, scratchings, experience, sustainability, lane bias, trainer debuts
 Ledger: research/batch18/README.md. Report: https://claude.ai/artifact/UHk9gNXhht3HV3DVa8roVf. Production corrections A1-A3 effective
 28 Nov 7:30am (approved); dashboard common scale A4 (display). Batch 17 ledger: research/batch17/README.md.
