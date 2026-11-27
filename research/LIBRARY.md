@@ -68,7 +68,9 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Qld start-count discrepancy (B19-B20) | Qld | measurement bug | data | FIXED (research script) | ops/form_enrichment.py | - |
 | Pre-race rail and track information (B21-B23) | Qld, NSW/ACT | RQ and Racing NSW FreeFields publish before the cutoff | data | COLLECTED for 28 Nov (27 Nov night, Damo present; not served). The unattended optional task is blocked by per-URL approval (3 runs) | ops/parse_rail.py; DAILY_RUN 5d | after Saturday: supported persistent permission or PC collector; other states need a permitted source |
 | Field-strength-adjusted meeting time figure (B24 C8) | all | standalone ranking 0.238 vs 0.232; engines -0.0008/+0.0002 (v2.3), -0.0006/+0.0001 (consolidated) | Pred. | RETAINED AS RESEARCH MEASUREMENT (no engine gain; not independent of our ratings) | batch24/b24_meeting_speed.py | basis for the individual sectional / tempo / lane benchmarks |
-| Rating-scale drift (B24) | national | mechanical: entrants ~1.25 kg below field; production deflates, consolidated inflates; time figures flat | Desc. | PRIORITY RESEARCH (scale stability stream) | batch24/out_b24_drift_causes.json | reference-horse re-anchoring and in-mechanism drift prevention; decomposition by cause |
+| Rating-scale drift (B24-B25) | national | production -0.54 kg/yr, consolidated +1.11 kg/yr on the official class scale; causes decomposed (B25 A) | Desc. | PRIORITY RESEARCH (scale stability stream) | batch25/out_b25_scale.json | time-figure anchor removes level drift (hold-out and class checks); spread anchor next |
+| In-mechanism drift prevention: conservative update, adaptive first-run level (B25) | national | drift barely moves; accuracy -0.004 to -0.028 | Pred. | REJECTED as tested | batch25/b25_scale.py | - |
+| Meeting-specific sectional benchmarks: 600-200 m, last 400, tempo cost (B25) | Qld, SA | +0.07 to +0.26 kg/sd next run, all three windows; Qld engine 0 | Pred. | GENUINE AGAINST THE RATING, REDUNDANT IN THE Qld ENGINE | batch25/b25_physical.py | national-engine test where tracking exists (SA, Vic) |
 | Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | now part of the meeting-specific physical programme (Damo 28 Nov) |
 | Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
 
@@ -131,6 +133,58 @@ conditional consistency, ceiling and range (F13); familiar/home-track performanc
 development before rating change (G15); turn of foot and speed development (G16); settling and racing education (G17);
 deterioration before rating decline (G18). Rediscovered: Qld learning speed retest, uneven last 600 as its own Qld test, late-fade
 prospective check, debut/lightly raced findings under the new rules (B24 s27).
+
+## Batch 25 (28 Nov 2026 morning; Damo's 8:19am direction): rating-scale stability and meeting-specific physical performance
+Research only; production, UI and every frozen prospective assessment untouched; no market data anywhere.
+Scripts and outputs: batch25/b25_scale.py (out_b25_scale.json), b25_physical.py (out_b25_physical.json), b25_qld_engine.py
+(out_b25_qld_engine.json).
+
+A. Rating-scale stability (national states; the rating mechanism re-run on the production run table, every run rated before use)
+- Drift confirmed on two independent scales: vs time figures (established 4-7yo, hold-out half of horses) production -0.59 kg/yr,
+  consolidated +1.02 kg/yr; vs the handicappers' official class scale (mean rating of BM58/64/70/78 fields - uses neither our ratings
+  nor time figures) production -0.54 kg/yr, consolidated +1.11 kg/yr.
+- Causes (by year 2023-26): production creates almost no net rating inside races (-0.01 kg per run; long-break returners -0.04) and
+  first runs start close to right (surprise +0.0 to +0.15 kg), so its deflation is a learning/composition effect: the race update is
+  zero-sum, so the rise of developing horses (ratings +0.35-0.40 kg per run at 2-3yo, far faster than their time figures) is paid
+  for by established horses, and each new cohort is placed relative to an already-deflated pool (newcomer initialisation x zero-sum
+  responsiveness). Consolidated: the good-run multiplier creates +0.16-0.17 kg per run (asymmetric responsiveness) -> inflation.
+  Selective retirement: horses leave 4.3 kg below their own peak and 2.2-2.7 kg below their field. Turnover: ~20% of each year's
+  runs are by that year's entrants. Genuine development is real in time figures (2yo 85.2 -> 5-6yo 89.5-89.7 points; decline from 8yo).
+- Route (b), inside the mechanism: a conservative update (each race creates no net rating) barely moves production drift (-0.55 ->
+  -0.48) and costs accuracy (-0.0036 / -0.0039 log-lik); on the consolidated rule it turns inflation into deflation (-0.71) and costs
+  -0.016 / -0.028; an adaptive starting level for first runs changes nothing material. REJECTED as tested: drift cannot be engineered
+  out of a zero-sum relative mechanism without an external anchor.
+- Route (a), re-anchoring: a point-in-time time-figure anchor (monthly offset from established horses' rating minus 0.47 kg per figure
+  point, fitted on half the horses, months before the month only) removes the level drift on the other half (-0.59 -> -0.08 kg/yr)
+  and on the official class scale (-0.54 -> +0.02); improves historical peak comparisons (peak rating vs peak time figure R2 0.602 ->
+  0.632; peak-year bias trend -0.73 -> -0.28 kg/yr), decline detection bias (-0.40 -> +0.08 kg; 6yo+ rating declines confirmed by
+  slower figures 79% -> 82%) and venue-strength bias (-0.99 -> -0.54 kg); forecasts unchanged (a month's shift is common to the whole
+  race); interstate comparisons and long-break returners unchanged (returners run 0.8 kg below their rating every year: a separate,
+  stable issue). Same pattern for the consolidated rule. A reference-horse chain from the same horses' own rating changes FAILS (makes
+  drift worse, -1.18 kg/yr): the drift is cohort-driven and invisible in individual horses' month-to-month changes, so reference
+  horses must be tied to an external physical measure. Status: PROMISING RESEARCH (display/analysis scale; never an engine change).
+- Remaining: the anchor fixes the LEVEL but not the SPREAD - anchored production still widens (BM58 -2.1, BM78 +2.3 kg from 2023 to
+  2026). Part is history burn-in (history starts Oct 2022). Next: a spread (slope) anchor and the same tests on the longer Breednet
+  history; then decide whether a stable scale belongs in displays, peaks and venue class.
+
+B. Meeting-specific physical performance (Qld RQ tracking 2022-26, SA tracking 2024-26; measured times only)
+- The day's surface and the race's tempo separate cleanly: a race's late-400 speed tracks the same day's other races (r 0.49 Qld,
+  0.80 SA); race tempo (early speed vs the day's other races) has sd 0.30-0.34 m/s and costs late speed (r -0.44 to -0.56 net of the
+  surface).
+- Against the opposition-aware rating (next-run surprise, controlling for this run's surprise, field-relative rating, distance, field,
+  first-up, settling position and the existing last-200 input), per sd, Qld 2022-24 / Qld 2025-26 / SA 2024-26:
+  M3 600-200 m speed vs the day's other races, tempo/position adjusted: +0.16 / +0.16 / +0.13 kg (next 3: +0.20 / +0.15 / +0.09); trait r 0.65
+  M1 last-400 benchmark vs the day: +0.08 / +0.26 / +0.21 (next 3: +0.16 / +0.25 / +0.19); trait r 0.58
+  M6 tempo cost (race tempo against the horse's position): +0.07 / +0.10 / +0.10
+  Not supported: early speed vs the day (+0.10 / -0.01 / -0.02), acceleration vs the day (n.s.), the day's lane/position pattern (n.s.),
+  exceptional-against-tempo interaction (0), own-history physical development (inconsistent). Speed retention vs the day -0.20 / -0.06 /
+  +0.02 (horses that held their speed tend to be overrated next time, as Batch 14 found).
+- Engine check (Qld production v2.1.3, pre-race inputs from earlier tracked runs): M3 +0.0001 / -0.0001; M1 -0.0001 / -0.0014; tempo
+  cost +0.0009 / -0.0003; all three +0.0019 / -0.0015 (intervals include 0). Status: GENUINE AGAINST THE RATING, REDUNDANT IN THE Qld
+  ENGINE (its closing-sectional, race-shape and settling terms already carry it). Kept as research measurements; independent of our
+  ratings (unlike the B24 field-strength-adjusted time figure).
+- Next in this stream: test M1/M3/tempo cost against the NATIONAL engines where tracking exists (SA now; Vic as its tracking accrues),
+  where no physical terms exist yet; individual suitability (course shape, going, distance) from the same benchmarks.
 
 ## In production
 | Since | What | Evidence | Ledger |

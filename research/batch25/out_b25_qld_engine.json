@@ -1,0 +1,139 @@
+{
+ "coverage_qld_rows_with_earlier_tracked_run_pct": 82.3,
+ "M3 middle benchmark": {
+  "A (judge 2024, clean)": {
+   "coef_per_sd": {
+    "M3_last": -0.015,
+    "M3_prior": 0.0425,
+    "phys_miss": -0.0257
+   },
+   "races": 2409,
+   "lp": 9e-05,
+   "lp_lo": -0.00159,
+   "lp_hi": 0.00159,
+   "hit": -0.25,
+   "hit_lo": -0.86,
+   "hit_hi": 0.29,
+   "top3": 0.29
+  },
+  "B (judge 2025-26, re-used)": {
+   "coef_per_sd": {
+    "M3_last": 0.0038,
+    "M3_prior": 0.0263,
+    "phys_miss": -0.0206
+   },
+   "races": 4730,
+   "lp": -9e-05,
+   "lp_lo": -0.00091,
+   "lp_hi": 0.00077,
+   "hit": 0.02,
+   "hit_lo": -0.26,
+   "hit_hi": 0.32,
+   "top3": -0.11
+  }
+ },
+ "M1 late-400 benchmark": {
+  "A (judge 2024, clean)": {
+   "coef_per_sd": {
+    "M1_last": -0.0537,
+    "M1_prior": 0.0638,
+    "phys_miss": -0.0252
+   },
+   "races": 2409,
+   "lp": -0.00012,
+   "lp_lo": -0.00226,
+   "lp_hi": 0.00209,
+   "hit": -0.29,
+   "hit_lo": -0.96,
+   "hit_hi": 0.34,
+   "top3": 0.46
+  },
+  "B (judge 2025-26, re-used)": {
+   "coef_per_sd": {
+    "M1_last": -0.0431,
+    "M1_prior": 0.0365,
+    "phys_miss": -0.0209
+   },
+   "races": 4730,
+   "lp": -0.00142,
+   "lp_lo": -0.00255,
+   "lp_hi": -0.00029,
+   "hit": -0.34,
+   "hit_lo": -0.72,
+   "hit_hi": 0.02,
+   "top3": -0.13
+  }
+ },
+ "M6t tempo cost": {
+  "A (judge 2024, clean)": {
+   "coef_per_sd": {
+    "M6t_last": -0.0103,
+    "M6t_prior": 0.0739,
+    "phys_miss": -0.0276
+   },
+   "races": 2409,
+   "lp": 0.00089,
+   "lp_lo": -0.00189,
+   "lp_hi": 0.00389,
+   "hit": 0.33,
+   "hit_lo": -0.29,
+   "hit_hi": 0.91,
+   "top3": 0.0
+  },
+  "B (judge 2025-26, re-used)": {
+   "coef_per_sd": {
+    "M6t_last": 0.0029,
+    "M6t_prior": 0.0523,
+    "phys_miss": -0.0208
+   },
+   "races": 4730,
+   "lp": -0.00026,
+   "lp_lo": -0.00181,
+   "lp_hi": 0.00121,
+   "hit": -0.47,
+   "hit_lo": -0.9,
+   "hit_hi": -0.02,
+   "top3": -0.25
+  }
+ },
+ "all three": {
+  "A (judge 2024, clean)": {
+   "coef_per_sd": {
+    "M3_last": 0.0382,
+    "M3_prior": -0.0026,
+    "M1_last": -0.0834,
+    "M1_prior": 0.0665,
+    "M6t_last": -0.0096,
+    "M6t_prior": 0.0741,
+    "phys_miss": -0.0254
+   },
+   "races": 2409,
+   "lp": 0.00193,
+   "lp_lo": -0.00147,
+   "lp_hi": 0.00545,
+   "hit": -0.08,
+   "hit_lo": -0.79,
+   "hit_hi": 0.62,
+   "top3": 0.33
+  },
+  "B (judge 2025-26, re-used)": {
+   "coef_per_sd": {
+    "M3_last": 0.0673,
+    "M3_prior": 0.0028,
+    "M1_last": -0.093,
+    "M1_prior": 0.033,
+    "M6t_last": 0.0017,
+    "M6t_prior": 0.0528,
+    "phys_miss": -0.0223
+   },
+   "races": 4730,
+   "lp": -0.00146,
+   "lp_lo": -0.00362,
+   "lp_hi": 0.00096,
+   "hit": -0.21,
+   "hit_lo": -0.73,
+   "hit_hi": 0.25,
+   "top3": -0.04
+  }
+ }
+}
