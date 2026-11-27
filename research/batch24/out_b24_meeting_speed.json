@@ -1,0 +1,78 @@
+{
+ "beta_s_per_km_per_kg_field": -0.0629,
+ "races": 63975,
+ "v_loro_predicts_left_out_race": {
+  "slope": 1.231,
+  "corr": 0.812,
+  "races": 63344
+ },
+ "v_loro_opp_predicts_left_out_race": {
+  "slope": 1.242,
+  "corr": 0.831,
+  "races": 63344
+ },
+ "residual_sd_s_per_km": 1.014,
+ "loro_variant_sd": 0.665,
+ "repeatability_out_of_sample": {
+  "none": {
+   "corr_with_next_figure": 0.3314,
+   "pairs": 198934
+  },
+  "existing": {
+   "corr_with_next_figure": 0.349,
+   "pairs": 198934
+  },
+  "loro": {
+   "corr_with_next_figure": 0.3431,
+   "pairs": 198934
+  },
+  "loro_opp": {
+   "corr_with_next_figure": 0.3605,
+   "pairs": 198934
+  }
+ },
+ "repeatability_by_state": {
+  "ACT": {
+   "none": 0.4137,
+   "existing": 0.4222,
+   "loro": 0.4119,
+   "loro_opp": 0.4249
+  },
+  "NSW": {
+   "none": 0.291,
+   "existing": 0.3036,
+   "loro": 0.3018,
+   "loro_opp": 0.3184
+  },
+  "QLD": {
+   "none": 0.3489,
+   "existing": 0.404,
+   "loro": 0.4008,
+   "loro_opp": 0.4104
+  },
+  "SA": {
+   "none": 0.4573,
+   "existing": 0.3722,
+   "loro": 0.3661,
+   "loro_opp": 0.3849
+  },
+  "TAS": {
+   "none": 0.3642,
+   "existing": 0.4216,
+   "loro": 0.4181,
+   "loro_opp": 0.4113
+  },
+  "VIC": {
+   "none": 0.2922,
+   "existing": 0.3114,
+   "loro": 0.3019,
+   "loro_opp": 0.326
+  },
+  "WA": {
+   "none": 0.2922,
+   "existing": 0.3585,
+   "loro": 0.3463,
+   "loro_opp": 0.3632
+  }
+ }
+}

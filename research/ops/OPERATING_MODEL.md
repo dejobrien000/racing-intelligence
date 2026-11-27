@@ -227,6 +227,24 @@ research/ops/foundation/field_register.csv, explained in research/ops/foundation
   First ZIP (817 races, 1 Jul - 25 Nov 2026, 13 track configurations): validated, awaiting the integration decision.
 - Direction: consolidation, not expansion. No new collectors; WA/Tas gear and stewards searches paused.
 
+## Workflows and approval isolation (Batch 24, approved by Damo 27 Nov 2026 11:32pm)
+Two workflows, one authoritative database, one writer to main.
+| Workflow | Runs where | What it does | Writes | Approval exposure |
+|---|---|---|---|---|
+| CRITICAL daily run (07:30) and evening capture (23:20) | wake-ups into the build conversation (two days ahead) | TAB calendar, racecards, form records, results; production scoring; all shadows; dashboard; settlement; emergency check; ingest of optional files | main (only writer) | TAB only; NO optional or new-site fetches (DAILY_RUN 5d: ingest only, from 28 Nov) |
+| OPTIONAL collection (06:37) | separate scheduled task, fresh session each day (trig_014UozvmZT5qJ41vqQ5ZGns5) | pre-race rail and track: Racing Queensland, Racing NSW FreeFields; later stewards' reports, gear, enrichment | branch optional-collect only | its own; never TAB; stop rule on any approval or bot check |
+| New-source investigations, experimental research | only in a conversation with Damo present, never in a scheduled run | trying a new site, browser checks | research files | can freeze that conversation's fetches until he writes |
+Isolation verified 27 Nov 2026: the optional task's test run (fresh session cse_01TcfAevaoHovGsk5T8SJRBQ, 13:34-13:43Z) had both
+of its fetches refused with PROVENANCE_REQUIRED (approval not answered); TAB fetches in the build conversation succeeded during and
+after it (13:40Z and 13:46Z). Approval holds are per session. The same night, an unanswered approval for a new site IN the build
+conversation (racingandsports.com.au, 23:20) did freeze it until Damo wrote: hence the rule that new sites are tried only with him present.
+Open limit: a fresh scheduled session cannot yet hold site approvals unattended (same as TAB on 26 Nov), so the optional task will
+stop at its first fetch until approvals persist for fresh sessions or Damo answers its 06:37 prompt. It records the gap in
+ops/logs/<date>-optional.md on its branch; production never depends on it. Concurrency: only the daily run writes to main (it copies
+validated optional files at step 5d); the optional task pushes only to its branch; no force-pushes.
+Pre-race rail timing: RQ and Racing NSW publish rail the afternoon before (Rosehill 28 Nov: "Updated 27/11 - 3:20pm"), so a 06:37
+capture is before the 07:30 scoring cutoff. Rail is still served to no engine.
+
 ## Unattended runs: options and exact blockers (26 Nov 2026, Damo's brief section 7)
 In place now (fallback, not permanent): wake-ups into the build conversation kept two days ahead (07:30 and 23:20), idempotent
 runs, and workflow run-watchdog (08:50 and 00:45) that fails, so GitHub emails Damo, when a run did not reach the repository.
