@@ -69,5 +69,5 @@ print('held races (book check)', [(r['meeting'], r['race_no'], r['win_book']) fo
 print('books', [(r['meeting'][:3], r['race_no'], r['win_book']) for r in rsum if r['win_book']])
 for r in rows:
     if r['match'] != 'matched': print('  ', r['meeting'], r['race'], r['n'], r['tab_name'], '| ours:', r['our_name'], r['match'])
-dis = [r for r in rows if r['match'] == 'matched' and ((r['tab_status'] != 'Open') != (('scratch' in str(r['our_status'])) or r['our_status'] == 'probable emergency'))]
+dis = [r for r in rows if r['match'] == 'matched' and ((str(r['tab_status']).lower() in ('latescratched', 'scratched')) != (('scratch' in str(r['our_status'])) or r['our_status'] == 'probable emergency'))]   # only explicit TAB scratchings count (27 Nov fix: 'Reserve' is not a scratching)
 print('status disagreements (TAB vs our field):'); [print('  ', d['meeting'], d['race'], d['n'], d['tab_name'], 'TAB', d['tab_status'], '| ours', d['our_status']) for d in dis]

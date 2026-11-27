@@ -124,7 +124,8 @@ for f_ in sorted(glob.glob(f'prices/{D}/tab_*_match.csv')):
 def mkt(meeting, rn, n):
     """display-only market cell: TAB fixed odds if matched and open; otherwise an honest note"""
     st = TABS.get((meeting, rn, n)); rr = TABR.get((meeting, rn)); q = MKT.get((meeting, rn, n))
-    if st and st != 'Open': return {'note': 'Scratched per TAB', 'captured_utc': rr and rr['captured_utc']}
+    if st and st.lower() in ('latescratched', 'scratched'): return {'note': 'Scratched per TAB', 'captured_utc': rr and rr['captured_utc']}   # explicit TAB scratchings only (27 Nov fix)
+    if st and st != 'Open' and not q: return {'note': f'No fixed odds shown by TAB (status {st}); not a scratching', 'captured_utc': rr and rr['captured_utc']}
     if q: return q
     if rr and not rr['has_fixed_odds']: return {'note': 'Not offered yet (TAB)', 'captured_utc': rr['captured_utc']}
     return None
