@@ -1,0 +1,117 @@
+{
+ "frozen_utc": "2026-11-27T03:27:57.425443+00:00",
+ "scope": "NSW, Vic, ACT races (Breednet full fields; jump-outs excluded); fields of 6+",
+ "dynamic_rating_params": {
+  "s_kg": 4.5,
+  "q_kg2_per_day": 0.05,
+  "sig0_kg": 5.0,
+  "debut_offset_kg": 2.0
+ },
+ "records_k": 1,
+ "dev_sd_after_race_centring": {
+  "f_avgfp3": 0.20499001986912527,
+  "f_lastfp": 0.2908213973391264,
+  "f_lastlm": 0.9151314942075927,
+  "f_cwin": 0.14210278122732686,
+  "f_lstarts": 0.5038264915376737,
+  "missform": 0.22431712988121502,
+  "a_rec": 4.871123232099569,
+  "a_best3": 5.696076488477872,
+  "a_fs3": 2.762693237767414,
+  "a_wt_rel": 1.8643116044624226,
+  "missfig": 0.048650611052053386,
+  "r_firstup": 0.3345793392587506,
+  "r_7_13": 0.35006779896530243,
+  "r_28_59": 0.3138053924103554,
+  "r_quick": 0.28767119704794614,
+  "r_ldays": 0.8134979642005625,
+  "dyn_nat": 2.5931604091765017,
+  "c_rec": 1.3191752699368349,
+  "g_rec": 1.4480232303118086,
+  "d_rec": 1.4287734050316139
+ },
+ "candidates": {
+  "nat_v1 (common + national rating)": {
+   "f_avgfp3": 0.05273548603373428,
+   "f_lastfp": 0.0826796231191824,
+   "f_lastlm": 0.029878941038818704,
+   "f_cwin": 0.021846736303358535,
+   "f_lstarts": -0.15896161367283232,
+   "missform": 0.034876754752310286,
+   "a_rec": 0.22073720393535878,
+   "a_best3": 0.05644955711485947,
+   "a_fs3": 0.12460871059197642,
+   "a_wt_rel": 0.012323082812835031,
+   "missfig": 0.0015132396237355025,
+   "r_firstup": 0.047805026733581224,
+   "r_7_13": -0.025426211568813147,
+   "r_28_59": 0.024650950296259563,
+   "r_quick": 0.003087877456119688,
+   "r_ldays": -0.11709422048138055,
+   "dyn_nat": 0.4201494070046685
+  },
+  "nat_v2 (+ horse records)": {
+   "f_avgfp3": 0.03280195643046774,
+   "f_lastfp": 0.07818818477924991,
+   "f_lastlm": 0.023861688571223307,
+   "f_cwin": 0.016345824807754344,
+   "f_lstarts": -0.1426635805612409,
+   "missform": 0.04515988940353558,
+   "a_rec": 0.21392404851697983,
+   "a_best3": 0.054799379497369335,
+   "a_fs3": 0.12740996254760134,
+   "a_wt_rel": 0.011679470956946394,
+   "missfig": 0.0011883044841820697,
+   "r_firstup": 0.045173595515337235,
+   "r_7_13": -0.023494095694395208,
+   "r_28_59": 0.022887803491666487,
+   "r_quick": 0.0038953958197871256,
+   "r_ldays": -0.10852773679492324,
+   "dyn_nat": 0.4084134746876579,
+   "c_rec": 0.07603306707712232,
+   "g_rec": 0.0424192607454569,
+   "d_rec": 0.00939281819770904
+  }
+ },
+ "eval_2025_26": {
+  "nat_v1": {
+   "races": 6804,
+   "fit_%": 9.83,
+   "top_pick_%": 25.9
+  },
+  "nat_v2": {
+   "races": 6804,
+   "fit_%": 10.0,
+   "top_pick_%": 26.0
+  }
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "fef47bcdd5d41cee",
+  "dyn_rating.py": "06b23a3145e47940",
+  "dyn_rating_innov.py": "b4d9b4ccee0430fc",
+  "national.py": "479bd9e057c0a7b3",
+  "freeze_b5_national_common.py": "5aad3b8ef9e7bcf0"
+ },
+ "data_sha256_16": {
+  "national_runs.parquet": "4aa0756909a20254"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit",
+ "candidate_record": {
+  "candidate": "Queensland common national framework, configuration 4 (NOT LIVE, shadow only)",
+  "built_utc": "2026-11-27T03:29:00Z",
+  "built_from": "the national release chain (freeze_b5_national_common.py -> engine/release_v2.py -> b10/scripts/build_v22.py) in a sandbox, refitted on Queensland races only (QCF=1); the NSW_VIC_ACT family structure carries Queensland coefficients",
+  "rating": "update-rule candidate rating (12 L cap in the figure, good runs 1.3x)",
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1.3"
+  },
+  "approved": "Damo 27 Nov 2026 (Batch 17 brief s2): build configurations 2 and 4 and score both beside Queensland production; no promotion",
+  "qld_physical_inputs": "not used (research: +0.002 on top, not clear, in both configurations); Queensland tracking stays in the data",
+  "training_only_inputs": {
+   "bm_change": "training-only control, served missing (Batch 17 s4)"
+  }
+ },
+ "scope_note": "Queensland races (fields of 6+, one winner)"
+}

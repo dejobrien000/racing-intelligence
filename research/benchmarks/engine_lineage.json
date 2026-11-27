@@ -181,11 +181,13 @@
    "evidence": "Research: 2025-26 +0.0061 (0.0025 to 0.0096) vs v2.1.1; 2024 +0.0012 (-0.0038 to 0.0060). Note: it is measured against v2.1.1, and production is now v2.1.3."
   },
   {
-   "name": "Common national framework for Queensland",
+   "name": "Qld common framework (config 2)",
    "family": "QLD",
-   "what": "One national methodology with Queensland coefficients",
-   "status": "Research done 27 Nov (five configurations); daily shadow not built yet",
-   "evidence": "Same harness vs v2.1.3 structure: 2024 +0.0235, 2025-26 +0.0160; with the update rule +0.0314 / +0.0204"
+   "what": "The national engine's structure with Queensland's own coefficients, on the national Engine v2.3 rating",
+   "status": "Shadow from the 28 Nov run (not live)",
+   "evidence": "Research harness vs the v2.1.3 structure on the same races: 2024 +0.0294 (0.0135 to 0.0437), 2025-26 +0.0186 (0.0073 to 0.0288)",
+   "ledger_label_prefix": "Qld common framework (not",
+   "compare_with": "production"
   },
   {
    "name": "Engine v2.4 candidate (handicap weight slope)",
@@ -213,11 +215,20 @@
    "evidence": "As built: 2025-26 +0.0043 (0.0028 to 0.0058) vs v2.3; the full rule adds +0.0016 (0.0007 to 0.0026) over it",
    "ledger_label_prefix": "Cap-only candidate",
    "compare_with": "production"
+  },
+  {
+   "name": "Qld common framework + update rule (config 4)",
+   "family": "QLD",
+   "what": "Config 2 on the update-rule candidate rating (12 L cap, good runs 1.3x)",
+   "status": "Shadow from the 28 Nov run (not live)",
+   "evidence": "Research harness vs the v2.1.3 structure: 2024 +0.0446 (0.0286 to 0.0576), 2025-26 +0.0266 (0.0162 to 0.0371); the rule adds +0.0151 / +0.0080 over config 2",
+   "ledger_label_prefix": "Qld common framework + update rule",
+   "compare_with": "production"
   }
  ],
  "checkpoints_proposed": {
-  "status": "Proposed 27 Nov 2026 (no checkpoints were found agreed in the register); for Damo to confirm",
-  "rule": "Review each paired comparison at 300, 1,000 and 2,000 settled paired races per state group. At each review report the gain per race with its 95% interval, top pick and winner-in-top-3 differences, and consistency by state and by fortnight. A checkpoint is a review, never an automatic promotion.",
+  "status": "Approved by Damo 27 Nov 2026 (Batch 17 brief s1): review checkpoints at 300, 1,000 and 2,000 settled, eligible, paired races per comparison; not automatic release thresholds",
+  "rule": "Review each paired comparison at 300, 1,000 and 2,000 settled, eligible, paired races. At each review report the gain per race with its 95% interval, top pick and winner-in-top-3 differences, and consistency by state and by fortnight. Different candidates may need different sample sizes. A checkpoint is a review, never an automatic promotion. Original forecast timestamps, cutoffs and fingerprints are kept; no forecast is recreated.",
   "why": "The per-race spread of the difference between two engines is about 0.15, so the 95% interval is roughly +/-0.017 at 300 races, +/-0.009 at 1,000 and +/-0.007 at 2,000. Gains of the size measured in research (0.005 to 0.017 per race) need 1,000 to 2,000 races to tell apart from noise; the expected live gain is usually smaller than the research figure."
  }
 }

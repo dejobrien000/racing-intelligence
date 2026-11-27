@@ -47,7 +47,7 @@ for (date, venue), key in latest.items():
     v = slug(venue); md = pd.Timestamp(date)
     for f in s['fields']:
         st = 'scratched' if (f['race_no'], f['saddlecloth']) in scr else ('unnumbered (emergency or late entry; not counted until confirmed)' if f.get('saddlecloth') in (None, '') or f.get('emergency') else 'runner')
-        rows.append({**f, 'status': st, 'date': md, 'state': s['state'], 'venue': v, 'config': NAMEVAR.get(v, v), 'snapshot_key': key, 'going_text': c.get('track_condition'), 'rail': c.get('rail')})
+        rows.append({**f, 'status': st, 'date': md, 'state': s['state'], 'venue': v, 'config': f.get('config') or NAMEVAR.get(v, v), 'snapshot_key': key, 'going_text': c.get('track_condition'), 'rail': c.get('rail')})
     meta.append({'snapshot_key': key, 'date': date, 'venue': venue, 'retrieved_utc': s['retrieved_utc'], 'acceptances_sha256': s['acceptances_sha256'], 'conditions': c,
                  'scratchings_listed': sum(len(r['horses']) for r in s['scratchings'])})
 F = pd.DataFrame(rows); R = F[F.status == 'runner'].copy()

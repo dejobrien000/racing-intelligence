@@ -3534,5 +3534,8 @@
   },
   "rule_in_words": "a defeat counts at most 12 lengths in the performance figure (the recorded margin is never changed); good runs move the rating as in Engine v2.3",
   "approved": "Damo 27 Nov 2026 (Batch 16 brief s9): retain the simpler heavy-defeat-cap-only candidate for comparison"
+ },
+ "training_only_inputs": {
+  "bm_change": "training-only control (fitted with it; served missing, so it contributes zero live). Evidence: research/batch16/out_engine_tests.json B8_class_change_input_bm_change; agreed by Damo 27 Nov 2026 (Batch 17 s4). Do not serve it."
  }
 }

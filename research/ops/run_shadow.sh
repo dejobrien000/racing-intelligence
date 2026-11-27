@@ -11,6 +11,8 @@ bash ops/run_v24_shadow.sh "$D" || echo "WARNING v2.4 shadow (production unaffec
 # rating update rule candidate (12 L cap on the performance figure, good runs 1.3x), all three layers its own, shadow only (Batch 16 B9, 27 Nov 2026)
 bash ops/run_update_shadow.sh "$D" || echo "WARNING update-rule shadow (production unaffected)"
 [ -d benchmarks/engine_cap_only_candidate ] && { UR_VARIANT=caponly bash ops/run_update_shadow.sh "$D" || echo "WARNING cap-only shadow (production unaffected)"; }
+# Queensland common national framework, configs 2 and 4 (Batch 17 B2, approved 27 Nov 2026); after the update-rule shadow, whose rating frame config 4 uses
+bash ops/run_qld_common_shadow.sh "$D" || echo "WARNING Qld common shadow (production unaffected)"
 RQB=$(ls collect/national/$D/bundles/rqpre_${D}_snap*.jsonl.gz 2>/dev/null | tail -1)
 [ -n "$RQB" ] || { echo "shadow: no Queensland bundle for $D (no Qld meetings?)"; exit 0; }
 SHADOW_QLD_CANDIDATES=benchmarks/candidate_qld_v2_1_2/candidates_manifest.json python3 prerace/score_prerace.py "$RQB" ../history/history.duckdb > /tmp/shadow_v1.txt 2>&1 \

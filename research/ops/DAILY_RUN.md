@@ -95,6 +95,8 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    minute whenever national_runs_c2.parquet is newer). Expect "update-rule shadow scored (not live): N meetings"; a WARNING never fails the run.
    The same script then scores the CAP-ONLY comparator (UR_VARIANT=caponly; frame engine/frames/national_cap_only.parquet). Expect
    "cap-only shadow scored (not live): N meetings". Together the two add about 4-5 minutes to step 5a.
+   Then the QUEENSLAND COMMON FRAMEWORK shadows (ops/run_qld_common_shadow.sh; configs 2 and 4, Queensland fields restated in the national
+   format by ops/qld_common_adapter.py). Expect "Qld common shadow config 2 scored (not live): N meetings" and the same for config 4 (~1 min).
 5a. Shadow (NOT LIVE; approved by Damo 25 Nov 2026): right after publishing, run cd research && ops/run_shadow.sh <TODAY>
    (Queensland Engine v2.1.2-candidate beside production; from 27 Nov it first scores the PREVIOUS engines, v2.2 and v2.1.1, kept for
    rollback and prospective comparison via ops/run_prev_shadow.sh; about 13 minutes in all; writes only prospective/shadow/). It never

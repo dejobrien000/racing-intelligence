@@ -44,3 +44,7 @@ for win, (fit_end, lo, hi) in {'A': ('2024-01-01', '2024-01-01', '2025-01-01'), 
     xc = x0.copy(); NV = [c for c in E.NV2 if c in xc]; xc = E.zcols(xc, NV); allt = sum(NFAM2.values(), []); xc = build_terms(xc, allt)
     b1 = E.fit(xc, NV, fm); off = E.eta(xc, NV, b1); b2 = fitd(xc, allt, fm, off, 100); e = off + xc[['t::' + t for t in allt]].fillna(0.0).values @ b2; e, _ = v22(xc, e, fm)
     r = E.metrics(xc, e, em); r.to_parquet(f'/tmp/qcfg/res_{TAG}_7_{win}.parquet'); print(TAG, win, '7 common', E.summary(r), flush=True)
+    if os.environ.get('PHYS') == '1':   # Batch 17: the common framework PLUS Queensland's physical inputs (closing sectionals, barrier and race shape)
+        PH = E.QFAM['Closing sectionals'] + E.QFAM['Barrier & race shape']; NVP = NV + [c for c in PH if c not in NV]; xc = E.zcols(xc, NVP)
+        b1 = E.fit(xc, NVP, fm); off = E.eta(xc, NVP, b1); b2 = fitd(xc, allt, fm, off, 100); e = off + xc[['t::' + t for t in allt]].fillna(0.0).values @ b2; e, _ = v22(xc, e, fm)
+        r = E.metrics(xc, e, em); r.to_parquet(f'/tmp/qcfg/res_{TAG}_8_{win}.parquet'); print(TAG, win, '8 common + physical', E.summary(r), flush=True)

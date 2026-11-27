@@ -67,6 +67,16 @@ def new_raw(T, H_, fam, records=False):
     la = T.horse.map(last.age_n); ld = T.horse.map(last.date)
     seasons = [sum(1 for y in range(d0.year, D.year + 1) if d0 < pd.Timestamp(y, 8, 1) <= D) if d0 == d0 and d0 is not None else np.nan for d0 in ld]
     T['age_n'] = la + np.array(seasons, dtype=float); T['female'] = T.horse.map(last.sex).isin(['m', 'f']).astype(float).where(T.horse.map(last.sex).notna())
+    if os.environ.get('AGESEX_TAB') == '1':   # CANDIDATE ONLY (Batch 17 B3; off unless set): a runner with no history takes age and sex from TAB's own form record
+        fp = os.environ.get('AGESEX_TAB_FILE') or f"collect/national/{D:%Y%m%d}/form_runners.csv"
+        if os.path.exists(fp):
+            fr = pd.read_csv(fp); fr['k'] = fr.name.map(nk); fr = fr.drop_duplicates(['race', 'n', 'k']).set_index(['race', 'n', 'k'])
+            idx = list(zip(T.race_no.astype(int), T.saddlecloth.astype(int), T.horse)); miss = T.age_n.isna().values
+            tab_age = np.array([fr.age.get(i, np.nan) for i in idx], dtype=float); tab_sex = np.array([fr.sex.get(i, None) for i in idx], dtype=object)
+            T['age_source'] = np.where(miss & ~np.isnan(tab_age), 'TAB form record', np.where(T.age_n.notna(), 'history', 'unknown'))
+            T.loc[miss, 'age_n'] = tab_age[miss]
+            fmiss = T.female.isna().values & pd.notna(tab_sex)
+            T.loc[fmiss, 'female'] = pd.Series(tab_sex[fmiss]).isin(['Filly', 'Mare']).astype(float).values
     T['young'] = (T.age_n <= 3).astype(float).where(T.age_n.notna()); T['old'] = (T.age_n >= 7).astype(float).where(T.age_n.notna())
     # horse records for today's configuration / going band / distance band (k = 1)
     for key, nm in [('config', 'c_rec'), ('gband', 'g_rec'), ('dband', 'd_rec')]:
@@ -90,7 +100,7 @@ def new_raw(T, H_, fam, records=False):
 def terms(T, fam):
     F = MAN['families'][fam]; allt = list(F['coef_per_term_sd_all_races']); bsd = F['base_feature_dev_sd']; tsd = F['term_dev_sd']; ctx = F['context']
     T = T.copy(); T['yr'] = float(T.date.iloc[0].year - 2024); T['vic'] = (T.state == 'VIC').astype(float); T['big_field'] = (T.field >= 12).astype(float)
-    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = T.venue.isin(METRO).astype(float) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
+    T['route'] = (T.distance_m >= 1400).astype(float); T['metro'] = (T.venue.map(_U['U'].drop_duplicates('venue', keep='last').set_index('venue').tier).eq('metro').astype(float) if os.environ.get('METRO_FROM_TIER') == '1' else T.venue.isin(METRO).astype(float)) if fam != 'QLD' else 0.0; T['wet'] = T.gband.isin(['soft', 'heavy']).astype(float)
     T['abs_dist_change'] = T.dist_change.abs(); T['field_dyn'] = T.groupby('race_id').dyn_nat.transform('mean')
     def z(c):
         v = T[c].astype(float); return ((v - v.groupby(T.race_id).transform('mean')) / bsd.get(c, 1.0)).fillna(0.0)

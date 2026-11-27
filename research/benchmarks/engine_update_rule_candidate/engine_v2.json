@@ -3535,5 +3535,8 @@
   "rule_in_words": "a defeat counts at most 12 lengths in the performance figure (the recorded margin is never changed); a run better than expected moves the rating 1.3 times as far",
   "approved": "Damo 27 Nov 2026 (Batch 16 brief s9): build as a shadow candidate; no production release without final checks",
   "sandbox_only_change": "inv30_horse_suitability.py equality guard relaxed in the sandbox only when RATING_GOOD_X is set (the rule lives in the innovation module by design); with the rule off the modules are identical (verified 27 Nov)"
+ },
+ "training_only_inputs": {
+  "bm_change": "training-only control (fitted with it; served missing, so it contributes zero live). Evidence: research/batch16/out_engine_tests.json B8_class_change_input_bm_change; agreed by Damo 27 Nov 2026 (Batch 17 s4). Do not serve it."
  }
 }
