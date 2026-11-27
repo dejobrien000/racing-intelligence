@@ -29,6 +29,10 @@
   "loro_opp": {
    "corr_with_next_figure": 0.3605,
    "pairs": 198934
+  },
+  "incl_opp": {
+   "corr_with_next_figure": 0.3831,
+   "pairs": 198934
   }
  },
  "repeatability_by_state": {
@@ -36,43 +40,128 @@
    "none": 0.4137,
    "existing": 0.4222,
    "loro": 0.4119,
-   "loro_opp": 0.4249
+   "loro_opp": 0.4249,
+   "incl_opp": 0.4578
   },
   "NSW": {
    "none": 0.291,
    "existing": 0.3036,
    "loro": 0.3018,
-   "loro_opp": 0.3184
+   "loro_opp": 0.3184,
+   "incl_opp": 0.3408
   },
   "QLD": {
    "none": 0.3489,
    "existing": 0.404,
    "loro": 0.4008,
-   "loro_opp": 0.4104
+   "loro_opp": 0.4104,
+   "incl_opp": 0.434
   },
   "SA": {
    "none": 0.4573,
    "existing": 0.3722,
    "loro": 0.3661,
-   "loro_opp": 0.3849
+   "loro_opp": 0.3849,
+   "incl_opp": 0.4037
   },
   "TAS": {
    "none": 0.3642,
    "existing": 0.4216,
    "loro": 0.4181,
-   "loro_opp": 0.4113
+   "loro_opp": 0.4113,
+   "incl_opp": 0.4369
   },
   "VIC": {
    "none": 0.2922,
    "existing": 0.3114,
    "loro": 0.3019,
-   "loro_opp": 0.326
+   "loro_opp": 0.326,
+   "incl_opp": 0.3483
   },
   "WA": {
    "none": 0.2922,
    "existing": 0.3585,
    "loro": 0.3463,
-   "loro_opp": 0.3632
+   "loro_opp": 0.3632,
+   "incl_opp": 0.3871
+  }
+ },
+ "predictive_within_race": {
+  "none": {
+   "mean_within_race_rank_corr": 0.1806,
+   "top_figure_won_pct": 16.35,
+   "races": 24025
+  },
+  "existing": {
+   "mean_within_race_rank_corr": 0.232,
+   "top_figure_won_pct": 18.06,
+   "races": 24025
+  },
+  "loro": {
+   "mean_within_race_rank_corr": 0.2246,
+   "top_figure_won_pct": 17.76,
+   "races": 24025
+  },
+  "loro_opp": {
+   "mean_within_race_rank_corr": 0.2309,
+   "top_figure_won_pct": 18.24,
+   "races": 24025
+  },
+  "incl_opp": {
+   "mean_within_race_rank_corr": 0.2383,
+   "top_figure_won_pct": 18.42,
+   "races": 24025
+  }
+ },
+ "predictive_by_state": {
+  "ACT": {
+   "none": 0.1697,
+   "existing": 0.2106,
+   "loro": 0.2005,
+   "loro_opp": 0.2154,
+   "incl_opp": 0.2246
+  },
+  "NSW": {
+   "none": 0.1557,
+   "existing": 0.2122,
+   "loro": 0.2058,
+   "loro_opp": 0.2139,
+   "incl_opp": 0.22
+  },
+  "QLD": {
+   "none": 0.2058,
+   "existing": 0.2387,
+   "loro": 0.2327,
+   "loro_opp": 0.2387,
+   "incl_opp": 0.2452
+  },
+  "SA": {
+   "none": 0.173,
+   "existing": 0.2231,
+   "loro": 0.2187,
+   "loro_opp": 0.2238,
+   "incl_opp": 0.2308
+  },
+  "TAS": {
+   "none": 0.2555,
+   "existing": 0.2938,
+   "loro": 0.2855,
+   "loro_opp": 0.2885,
+   "incl_opp": 0.2962
+  },
+  "VIC": {
+   "none": 0.153,
+   "existing": 0.2214,
+   "loro": 0.2124,
+   "loro_opp": 0.2177,
+   "incl_opp": 0.227
+  },
+  "WA": {
+   "none": 0.2189,
+   "existing": 0.2713,
+   "loro": 0.2605,
+   "loro_opp": 0.266,
+   "incl_opp": 0.2744
   }
  }
 }

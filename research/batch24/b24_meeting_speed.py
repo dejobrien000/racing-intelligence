@@ -29,7 +29,7 @@ r['res_opp'] = r.res - beta * r.field_rel.fillna(0)
 def loro(col):
     g = r.groupby('meeting_id')[col]; s, n = g.transform('sum'), g.transform('count')
     return (s - r[col]) / (n - 1 + 2)
-r['v_loro'] = loro('res'); r['v_loro_opp'] = loro('res_opp'); r['n_meet'] = r.groupby('meeting_id').race.transform('count')
+r['v_loro'] = loro('res'); r['v_loro_opp'] = loro('res_opp'); go = r.groupby('meeting_id').res_opp; r['v_incl_opp'] = go.transform('sum') / (go.transform('count') + 2) + beta * r.field_rel.fillna(0) * 0; r['n_meet'] = r.groupby('meeting_id').race.transform('count')
 out = {'beta_s_per_km_per_kg_field': round(beta, 4), 'races': int(len(r))}
 # (1) real meeting effect: does the other races' mean predict this race's residual?
 m = r[r.n_meet >= 4]
@@ -38,10 +38,10 @@ for c, y in [('v_loro', 'res'), ('v_loro_opp', 'res_opp')]:
     out[f'{c}_predicts_left_out_race'] = {'slope': round(float(b), 3), 'corr': round(float(cor), 3), 'races': int(len(m))}
 out['residual_sd_s_per_km'] = round(float(r.res.std()), 3); out['loro_variant_sd'] = round(float(r.v_loro.std()), 3)
 # (2) repeatability of figures under each version
-U = U.merge(r[['race', 'v_loro', 'v_loro_opp']], on='race', how='left')
+U = U.merge(r[['race', 'v_loro', 'v_loro_opp', 'v_incl_opp']], on='race', how='left')
 U = U[U.par.notna() & (U.n_vd >= 8) & U.finish_pos.notna()].copy()
 base = U.kgpl * (U.par - U.run_time) / spl + WC * (U.weight_kg - 57)
-vers = {'none': 0.0, 'existing': U.variant, 'loro': U.v_loro, 'loro_opp': U.v_loro_opp}
+vers = {'none': 0.0, 'existing': U.variant, 'loro': U.v_loro, 'loro_opp': U.v_loro_opp, 'incl_opp': U.v_incl_opp}   # incl_opp: existing-style variant (race included) on field-strength-adjusted residuals
 for k, v in vers.items(): U['fig_' + k] = 100 + base + U.kgpl * (U.km * v) / spl
 U = U.sort_values(['horse', 'date', 'race_no']); g = U.groupby('horse')
 U['gap'] = (g.date.shift(-1) - U.date).dt.days
@@ -59,3 +59,32 @@ for s_, t0 in U[(U.period != 'development')].groupby('state'):
         st[s_][k] = round(float(np.corrcoef(t0.loc[ok, 'fig_' + k], nx[ok])[0, 1]), 4) if ok.sum() > 200 else None
 out['repeatability_by_state'] = st
 print(json.dumps(out, indent=1)); json.dump(out, open('batch24/out_b24_meeting_speed.json', 'w'), indent=1)
+
+# ---- (3) Batch 24 follow-up (28 Nov): predictive test that a shared seasonal meeting-speed component cannot inflate.
+# Repeatability is confounded: consecutive runs often share a season's surface speed, which makes UNADJUSTED figures look repeatable.
+# Within a race every runner meets today's conditions, so the question is whether their PREVIOUS figures (from different meetings)
+# rank them correctly. Metric: mean within-race Spearman correlation of last figure (within 90 days) with finishing position (sign
+# flipped: + = higher figure finished better), and the share of races where the top last-figure horse won. Later period only.
+from scipy.stats import spearmanr
+U = U.sort_values(['horse', 'date', 'race_no']); g = U.groupby('horse')
+pred = {}
+for k in vers:
+    U['last_' + k] = g['fig_' + k].shift(); U['lgap'] = (U.date - g.date.shift()).dt.days
+t = U[(U.period != 'development') & (U.lgap <= 90)].copy()
+t = t[t.groupby('race').horse.transform('size') >= 5]
+for k in vers:
+    rho = []; tw = []
+    for _, d in t.groupby('race'):
+        d = d[d['last_' + k].notna() & d.finish_pos.notna()]
+        if len(d) < 5: continue
+        rho.append(-spearmanr(d['last_' + k], d.finish_pos).correlation); tw.append(float(d.loc[d['last_' + k].idxmax(), 'finish_pos'] == 1))
+    pred[k] = {'mean_within_race_rank_corr': round(float(np.nanmean(rho)), 4), 'top_figure_won_pct': round(100 * float(np.mean(tw)), 2), 'races': len(rho)}
+out['predictive_within_race'] = pred
+bys = {}
+for s_, ts in t.groupby('state'):
+    bys[s_] = {}
+    for k in vers:
+        rho = [-spearmanr(d['last_' + k], d.finish_pos).correlation for _, d in ts.groupby('race') if d['last_' + k].notna().sum() >= 5 for d in [d[d['last_' + k].notna() & d.finish_pos.notna()]]]
+        bys[s_][k] = round(float(np.nanmean(rho)), 4)
+out['predictive_by_state'] = bys
+print(json.dumps({'predictive_within_race': pred, 'predictive_by_state': bys}, indent=1)); json.dump(out, open('batch24/out_b24_meeting_speed.json', 'w'), indent=1)

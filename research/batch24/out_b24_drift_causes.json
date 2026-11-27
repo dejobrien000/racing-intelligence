@@ -1,0 +1,96 @@
+{
+ "production": {
+  "2022": {
+   "runs": 44522,
+   "mean_rating": -3.21,
+   "entrants": 16197,
+   "entrant_vs_field_kg": -0.68,
+   "mean_update_per_run_kg": 0.131,
+   "share_updates_up": 0.557,
+   "mean_innovation_kg": 0.0
+  },
+  "2023": {
+   "runs": 167535,
+   "mean_rating": -4.12,
+   "entrants": 14839,
+   "entrant_vs_field_kg": -1.3,
+   "mean_update_per_run_kg": 0.077,
+   "share_updates_up": 0.559,
+   "mean_innovation_kg": 0.0
+  },
+  "2024": {
+   "runs": 165749,
+   "mean_rating": -4.71,
+   "entrants": 9482,
+   "entrant_vs_field_kg": -1.26,
+   "mean_update_per_run_kg": 0.063,
+   "share_updates_up": 0.558,
+   "mean_innovation_kg": 0.0
+  },
+  "2025": {
+   "runs": 161315,
+   "mean_rating": -5.57,
+   "entrants": 8815,
+   "entrant_vs_field_kg": -1.25,
+   "mean_update_per_run_kg": 0.065,
+   "share_updates_up": 0.556,
+   "mean_innovation_kg": -0.0
+  },
+  "2026": {
+   "runs": 143309,
+   "mean_rating": -6.31,
+   "entrants": 7571,
+   "entrant_vs_field_kg": -1.27,
+   "mean_update_per_run_kg": 0.108,
+   "share_updates_up": 0.566,
+   "mean_innovation_kg": 0.0
+  }
+ },
+ "consolidated": {
+  "2022": {
+   "runs": 44522,
+   "mean_rating": -2.64,
+   "entrants": 16197,
+   "entrant_vs_field_kg": -0.68,
+   "mean_update_per_run_kg": 0.35,
+   "share_updates_up": 0.539,
+   "mean_innovation_kg": 0.077
+  },
+  "2023": {
+   "runs": 167535,
+   "mean_rating": -1.91,
+   "entrants": 14839,
+   "entrant_vs_field_kg": -1.3,
+   "mean_update_per_run_kg": 0.238,
+   "share_updates_up": 0.538,
+   "mean_innovation_kg": 0.022
+  },
+  "2024": {
+   "runs": 165749,
+   "mean_rating": -0.67,
+   "entrants": 9482,
+   "entrant_vs_field_kg": -1.26,
+   "mean_update_per_run_kg": 0.218,
+   "share_updates_up": 0.539,
+   "mean_innovation_kg": 0.009
+  },
+  "2025": {
+   "runs": 161315,
+   "mean_rating": 0.09,
+   "entrants": 8815,
+   "entrant_vs_field_kg": -1.25,
+   "mean_update_per_run_kg": 0.214,
+   "share_updates_up": 0.539,
+   "mean_innovation_kg": 0.004
+  },
+  "2026": {
+   "runs": 143309,
+   "mean_rating": 0.66,
+   "entrants": 7571,
+   "entrant_vs_field_kg": -1.27,
+   "mean_update_per_run_kg": 0.254,
+   "share_updates_up": 0.552,
+   "mean_innovation_kg": 0.003
+  }
+ }
+}

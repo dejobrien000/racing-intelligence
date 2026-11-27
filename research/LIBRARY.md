@@ -85,8 +85,17 @@ Findings (research only; nothing served):
 - Meeting speed (Part C8, preliminary): the meeting effect is real (other races predict a left-out race's time deviation, r 0.81);
   stronger fields run 0.063 s/km faster per kg of field strength; a leave-one-race-out, field-strength-adjusted variant raises figure
   repeatability (next figure within 60 days, later period, 198,934 pairs) from 0.349 (existing daily variant) to 0.361. Holds in
-  NSW/VIC/QLD/WA/ACT; TAS slightly worse; SA anomalous (no adjustment best) - check SA timing/meeting keys first. PROMISING RESEARCH.
-  Next: research frame with the adjusted figures; engine and consolidated tests. batch24/b24_meeting_speed.py.
+  NSW/VIC/QLD/WA/ACT; TAS slightly worse; SA anomalous (no adjustment best). UPDATE 28 Nov 00:45: repeatability is confounded
+  (consecutive runs share a season's surface speed; that was the SA 'anomaly'). Cleaner test - previous figures ranking today's
+  field, 24,025 later-period races: none 0.181, existing variant 0.232, LORO 0.225, LORO + field strength 0.231, existing-style
+  (race included) + field strength 0.238 (top-figure winner 18.4% vs 18.1%; better in every state). Inside the engines (full
+  research frames, only figure inputs changed): Engine v2.3 -0.0008 / +0.0002, consolidated -0.0006 / +0.0001 -> no engine gain
+  (the rating already carries field strength). DESCRIPTIVE: a better standalone time figure for meeting/tempo/sectional research,
+  not an engine candidate. batch24/b24_meeting_speed.py, b24_ms_runs.py.
+- Scale drift causes (28 Nov 00:45): mechanical, not population change - time figures flat by year (88.7-89.3; metro 93.6-94.1).
+  Entrants start ~1.25 kg below their field in both engines; continuing horses rise +0.06 to +0.13 kg/run in production (deflation
+  wins) and +0.21 to +0.35 kg/run under the consolidated rule (inflation wins). PRIORITY RESEARCH (Damo 28 Nov): point-in-time
+  re-anchoring on established horses, effects on peaks, decline, spell returns, venue class, interstate. batch24/out_b24_drift_causes.json.
 - Rail data foundation: retrospective rail already held for Qld (9,758 races from Oct 2022), SA (1,775 races from Jan 2024),
   NSW/ACT (331 meetings from Jul 2026); pre-race from 28 Nov for Qld (RQ) and NSW/ACT (Racing NSW FreeFields). See
   ops/foundation/field_register.csv (national rail row). MANDATORY data workstream; model use evidence-dependent.
