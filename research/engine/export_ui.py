@@ -40,6 +40,18 @@ if V22_DAY:
     if os.environ.get('ENGINE_QLD213', '0') == '1': _N23.append('v2.1.3 (27 Nov 2026 run on; approved by Damo 26 Nov): Queensland adds age and sex (age, 3yo and under, 7yo and over, filly or mare); Queensland display calibration refitted; Queensland kg scale unchanged.')
     if _N23: RELEASE_NOTE = ' '.join(_N23) + ' Ability ratings (opposition-aware, kg-equivalent) and time figures (margins converted to time; estimates, not measured times) remain separate inputs. Previously: ' + RELEASE_NOTE
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
+def _settings(m2, pfile):
+    """What produced a meeting's prediction (Batch 16 A2): the scorer's own record from 28 Nov 2026; for earlier files a verified
+    correction record if one exists (clearly marked as added afterwards); otherwise only what the file recorded."""
+    s_ = m2.get('settings')
+    if s_ and 'error' not in s_: return {'engine': s_['engine_version'], 'fingerprint': s_['settings_fingerprint'][:16], 'scale_per_kg': round(s_['rating_scale_model_units_per_kg'], 4), 'history_cutoff': s_['history_cutoff'],
+                   'rating_frame': s_['rating_build']['history_frame'].split('/')[-1], 'fallback': s_['fallback'] or 'none', 'output': s_['output'], 'source': 'recorded when scored'}
+    vf = os.path.join(os.path.dirname(os.path.dirname(pfile)), f"settings_verification_{os.path.basename(os.path.dirname(os.path.dirname(pfile)))}.json")
+    if os.path.exists(vf):
+        r_ = next((r for r in json.load(open(vf))['files'] if r['prediction_file'] == pfile.replace('_runners.csv', '_manifest.json')), None)
+        if r_: return {'engine': r_['engine_version'], 'fingerprint': r_['settings_fingerprint'][:16], 'scale_per_kg': round(r_['rating_scale_model_units_per_kg'], 4), 'history_cutoff': r_['history_cutoff'],
+                       'rating_frame': r_['rating_build']['history_frame'].split('/')[-1], 'fallback': 'none', 'output': r_['output'], 'source': 'verified afterwards by replay (' + os.path.basename(vf) + ')'}
+    return {'engine': m2.get('engine_release'), 'fingerprint': None, 'scale_per_kg': None, 'history_cutoff': m2.get('history_max_date'), 'rating_frame': None, 'fallback': 'not recorded', 'output': 'production', 'source': 'not recorded (before 28 Nov 2026)'}
 OPS = {'QLD': 'combined_v1 + national dynamic rating', 'NSW_VIC_ACT': 'nat_v2 (+ horse records)'}
 GROUP = {'Opposition-aware rating': ('ability', 'Ability: opposition-aware rating'), 'Recent ability figures': ('figures', 'Form figures and opposition faced'),
          'Ability figures': ('figures', 'Form figures and opposition faced'), 'Recent form': ('form', 'Recent form'), 'Closing sectionals': ('sectionals', 'Closing sectionals'),
@@ -268,7 +280,7 @@ for track, grp in v2rows.groupby('track', sort=False):
                                     'penetrometer': cond.get('penetrometer') or None, 'updated': cond.get('conditions_updated') or cond.get('track_information'), 'scratchings_close': cond.get('scratchings_close'),
                                     'scratchings_published': cond.get('scratchings_last_published')}.items()},
                      'sectionals': fam == 'QLD', 'snapshots': snap_list, 'default_snapshot': snap_list[-1]['id'], 'races': races,
-                     'provenance': {'engine_release': m2.get('engine_release'), 'v2_prediction_file': ix.file, 'v2_prediction_sha256': sha(ix.file)[:16], 'v1_prediction_sha256': m2['base_v1_sha256'][:16], 'engine_manifest_sha256': m2['engine_manifest_sha256'][:16], 'history_to': m2['history_max_date']}})
+                     'provenance': {'engine_release': m2.get('engine_release'), 'v2_prediction_file': ix.file, 'v2_prediction_sha256': sha(ix.file)[:16], 'v1_prediction_sha256': m2['base_v1_sha256'][:16], 'engine_manifest_sha256': m2['engine_manifest_sha256'][:16], 'history_to': m2['history_max_date'], 'settings': _settings(m2, ix.file)}})
 # ---- meetings whose fields were collected but whose horses lack enough history to rate: shown as fields only ----
 import glob
 CAL = json.load(open(f'collect/national/{D}/calendar.json')) if os.path.exists(f'collect/national/{D}/calendar.json') else {'meetings': []}
@@ -318,7 +330,18 @@ for i, r in enumerate(lb): r['day_rank'] = i + 1
 TRACKING = {'note': 'Tracked runs are shown for inspection. Only Queensland tracking feeds a model (the Queensland engine\'s closing-sectional and race-shape inputs); SA and Victorian tracking are not model inputs. Horses are matched by name, as the ratings are.'}
 try:
     from engine import tracking_view as TV
-    TRK, TRACKING['tables_present'] = TV.history('../history/history.duckdb', [h['horse'] for m in meetings for r in m.get('races', []) for h in r.get('runners', [])], DATE)
+    # the forecast's own information cutoff (history_to of its predictions), not the database as it stands at export (Batch 16 A5)
+    _cut = min([m['provenance']['history_to'] for m in meetings if (m.get('provenance') or {}).get('history_to')] or [str((pd.Timestamp(DATE) - pd.Timedelta(days=1)).date())])
+    _rel = None
+    for _mp in ('/tmp/ridb/MANIFEST.json', 'ops/db_config.json'):
+        try: _rel = json.load(open(_mp)).get('version'); break
+        except Exception: pass
+    _prev_rel = None
+    try: _prev_rel = (json.load(open(f'ui/data/racing_{DATE}.json')).get('tracking') or {}).get('database_release')
+    except Exception: pass
+    TRACKING.update({'cutoff': _cut, 'database_release': _prev_rel or _rel, 'database_release_now': _rel,
+                     'added_after_forecast': bool((_prev_rel and _rel and _prev_rel != _rel) or NOW.tz_convert('Australia/Brisbane').strftime('%Y-%m-%d') > DATE)})
+    TRK, TRACKING['tables_present'] = TV.history('../history/history.duckdb', [h['horse'] for m in meetings for r in m.get('races', []) for h in r.get('runners', [])], str((pd.Timestamp(_cut) + pd.Timedelta(days=1)).date()))
     for m in meetings:
         held, nrun, tot = {}, 0, 0
         for r in m.get('races', []):
@@ -369,7 +392,7 @@ ROI = {'status': 'waiting', 'selections': sel,
        'paper': {'selections': len(sel), 'priced': sum(1 for x in sel if x['price']), 'settled': 0}, 'realised': {'bets': 0}, 'groups': []}
 data = {'contract': {'name': 'racing-intelligence.daily', 'version': '1.0'}, 'date': DATE, 'weekday': pd.Timestamp(DATE).strftime('%A'), 'exported_utc': NOW.isoformat(),
         'snapshot_note': 'Read-only snapshot, republished after each successful refresh. Built only from predictions saved before racing.',
-        'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Previous engines (Engine v2.2 six states, Engine v2.1.1 Queensland) are scored every day as shadows from 27 Nov 2026; Engine v1 remains the first layer of every engine',
+        'engine': {'operational': ENGINE_VERSION + ('; Queensland: ' + sorted({m['engine_release'] for m in meetings if m.get('rated') and m.get('model_family') == 'QLD'})[0] if any(m.get('rated') and m.get('model_family') == 'QLD' for m in meetings) else ''), 'release_note': RELEASE_NOTE, 'released_utc': MAN['released_utc'], 'previous': 'Previous engines (Engine v2.2 six states, Engine v2.1.1 Queensland) are scored every day as shadows from 27 Nov 2026. The original Engine v1 is a frozen benchmark; each engine\'s v1-style first layer is refitted on its own rating and is not the original',
                    'scale': 'Ratings are kg-equivalent: model score divided by the score that 1 kg of opposition-aware rating is worth on average (Qld {:.3f}, NSW/Vic {:.3f} per kg). They are relative to the average runner in the race. Contributions use the same divisor and add up to the rating.'.format(KG_USED.get('QLD', MAN['families']['QLD']['score_per_kg_total']), KG_USED.get('NAT', MAN['families']['NSW_VIC_ACT']['score_per_kg_total'])) + ((' From 27 Nov 2026 (Engine v2.3) the NSW/Vic/ACT/SA/WA/Tas scale is {:.3f} per kg (Engine v2.2: {:.3f}), so the same performance reads about {:.0f}% smaller in kg: a change of units, not of ability. Compare kg ratings within one engine only.'.format(KG_USED['NAT'], MAN['families']['NSW_VIC_ACT']['score_per_kg_total'], 100 * (1 - MAN['families']['NSW_VIC_ACT']['score_per_kg_total'] / KG_USED['NAT']))) if KG_USED.get('NAT') and abs(KG_USED['NAT'] - MAN['families']['NSW_VIC_ACT']['score_per_kg_total']) > 1e-9 else ''),
                    'calibration': {k: {'races': v['races'], 'runners': v['runners'], 'top_pick_tiers': v['top_pick_tiers_2025_26'], 'terciles': v['top_pick_terciles'], 'deciles': v['deciles']} for k, v in {k_: CAL_USED.get(k_, v_) for k_, v_ in RC['families'].items()}.items()}},
         'meetings': meetings, 'leaderboard': lb,

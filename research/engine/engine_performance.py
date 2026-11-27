@@ -55,7 +55,7 @@ def build(day):
         prev = e[(e.prediction == 'previous_engine') & e.engine.astype(str).str.startswith(f['predecessor_label_prefix'])]
         by_engine = [{'engine': str(k), **_summary(g)} for k, g in prod.groupby('engine', sort=False)]
         by_engine.sort(key=lambda r: r['from'])
-        fams.append({**{k: f[k] for k in ['key', 'label', 'production', 'production_from', 'predecessor', 'predecessor_status', 'change', 'chain']},
+        fams.append({**{k: f[k] for k in ['key', 'label', 'production', 'production_from', 'predecessor', 'predecessor_status', 'change', 'chain']}, 'comparison_basis': f.get('comparison_basis'),
                      'identical_races': f.get('identical_races'), 'cumulative_note': f.get('cumulative_note'),
                      'since_release': _summary(cur) if len(cur) else None,
                      'vs_predecessor': _paired(cur, prev) if len(cur) and len(prev) else None,
@@ -70,7 +70,7 @@ def build(day):
             row['prospective'] = _summary(sh) if len(sh) else None
             row['vs_production'] = _paired(prod, sh) if len(sh) else None
         cands.append(row)
-    return {'updated': L['updated'], 'ledger_races_to': str(E.date.max()) if len(E) else None, 'families': fams, 'candidates': cands,
+    return {'updated': L['updated'], 'ledger_races_to': str(E.date.max()) if len(E) else None, 'families': fams, 'candidates': cands, 'checkpoints': L.get('checkpoints_proposed'),
             'notes': ['Fit = how much better than random the winner\'s chance was (log-likelihood against a field-size baseline), as in every research table. '
                       'Gains are log-likelihood per race on identical races, with a 95% interval.',
                       'Prospective = saved pre-race predictions judged on races run after the engine went live; never refitted on those races. '

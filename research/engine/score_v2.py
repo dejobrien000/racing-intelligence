@@ -9,11 +9,14 @@ from engine.lab import person_key, nk
 V21 = os.environ.get('ENGINE_V21', '1') == '1'   # Engine v2.1 (25 Nov 2026): Queensland on the v3 rating; NSW/Vic/ACT unchanged
 V22 = os.environ.get('ENGINE_V22', '1') == '1'   # Engine v2.2 (26 Nov 2026 run on): 14 Batch 10 terms for NSW/VIC/ACT/SA/WA/TAS (approved by Damo 25 Nov); Qld stays v2.1
 from engine import v22
-MAN = json.load(open('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'))
+BASE_MANP = 'benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json'
+MAN = json.load(open(BASE_MANP))
 C2 = os.environ.get('ENGINE_C2', '0') == '1'   # Engine v2.3 candidate for NSW/VIC/ACT/SA/WA/TAS only (benchmarks/engine_v2_3); Qld untouched; default off
-if C2: MAN['families']['NSW_VIC_ACT'] = json.load(open('benchmarks/engine_v2_3/engine_v2.json'))['families']['NSW_VIC_ACT']
 Q213 = os.environ.get('ENGINE_QLD213', '0') == '1' and V21   # Engine v2.1.3 candidate for Queensland only: v2.1.1 + Age & sex family (benchmarks/engine_v2_1_3); default off
-if Q213: MAN['families']['QLD'] = json.load(open('benchmarks/engine_v2_1_3/manifest.json'))['families']['QLD']
+# the file each family's settings were actually loaded from (fingerprints are taken from these, 27 Nov 2026 fix)
+FAMILY_FILE = {'NSW_VIC_ACT': 'benchmarks/engine_v2_3/engine_v2.json' if C2 else BASE_MANP, 'QLD': 'benchmarks/engine_v2_1_3/manifest.json' if Q213 else BASE_MANP}
+if C2: MAN['families']['NSW_VIC_ACT'] = json.load(open(FAMILY_FILE['NSW_VIC_ACT']))['families']['NSW_VIC_ACT']
+if Q213: MAN['families']['QLD'] = json.load(open(FAMILY_FILE['QLD']))['families']['QLD']
 SNAPDIR = os.environ.get('SNAPDIR', '/mnt/user-data/uploads/Downloads')   # override for cloud-collected bundles
 def find_bundle(name):
     """snapshot bundles live in the PC download folder (staged) or, for cloud-collected fields, collect/national/<date>/bundles"""
@@ -27,9 +30,11 @@ gband = lambda g: 'heavy' if 'heavy' in str(g).lower() else 'soft' if 'soft' in 
 dband = lambda m: 's' if m <= 1150 else 'm' if m <= 1450 else 'mi' if m <= 1750 else 'l'
 METRO = {'randwick', 'rosehill', 'warwick-farm', 'canterbury', 'flemington', 'caulfield', 'moonee-valley', 'sandown'}
 _U = {}
+def frame_path(fam):
+    return 'engine/frames/national_v3.parquet' if (V21 and fam == 'QLD') else ('engine/frames/national_c2.parquet' if C2 else 'engine/frames/national.parquet')
 def history(D, fam='NSW_VIC_ACT'):
     key = 'U3' if (V21 and fam == 'QLD') else 'U'
-    if key not in _U: _U[key] = pd.read_parquet('engine/frames/national_v3.parquet' if key == 'U3' else ('engine/frames/national_c2.parquet' if C2 else 'engine/frames/national.parquet'))
+    if key not in _U: _U[key] = pd.read_parquet(frame_path(fam))
     U = _U[key]; H_ = U[U.date < pd.Timestamp(D)]
     assert len(H_) == len(U), 'history holds results on/after the race date: not a pre-race run'
     return H_
@@ -138,6 +143,28 @@ def meeting_table(ix):
         assert np.allclose(W.dyn_nat.round(2), W.rating_kg_national.round(2), equal_nan=True), 'feature dump does not match the v1 prediction file'
     return W, fam, cond, mf
 
+_FSHA = {}
+def provenance(fam, ix, H_, m2, fallback):
+    """What actually produced this file (27 Nov 2026 fix): fingerprints come from the files and in-memory settings used, not a label."""
+    def fsha(p):
+        if p not in _FSHA: _FSHA[p] = sha(p)
+        return _FSHA[p]
+    F = MAN['families'][fam]; used22 = bool(V22 and fam != 'QLD')
+    files = {BASE_MANP: fsha(BASE_MANP), FAMILY_FILE[fam]: fsha(FAMILY_FILE[fam])}
+    if used22: files[os.path.relpath(v22.MPATH)] = fsha(v22.MPATH)
+    try:
+        m1 = json.load(open(ix.file.replace('_runners.csv', '_manifest.json')))
+        v1set = m1.get('model_manifest_sha256') or m1.get('model_manifests'); v1runs = m1.get('national_runs_sha256')
+    except Exception: v1set, v1runs = None, None
+    live = {'family': F, 'v22_terms': v22.M if used22 else None}
+    fp = hashlib.sha256(json.dumps(live, sort_keys=True, default=str).encode()).hexdigest()
+    return {'engine_version': m2['engine_release'], 'output': (os.environ.get('SHADOW_LABEL') or 'shadow: previous production engine (not live)') if SHADOW_PREV else 'production',
+            'settings_fingerprint': fp, 'settings_fingerprint_of': 'sha256 of the family settings and v2.2-term settings held in memory when this file was scored',
+            'settings_files_loaded': files, 'v1_layer_settings': v1set,
+            'rating_build': {'history_frame': frame_path(fam), 'history_frame_sha256': fsha(frame_path(fam)), 'history_rows': int(len(_U['U3' if (V21 and fam == 'QLD') else 'U'])), 'v1_national_runs_sha256': v1runs},
+            'rating_scale_model_units_per_kg': F['score_per_kg_total'], 'history_cutoff': str(H_.date.max().date()), 'generated_utc': m2['scored_utc'],
+            'fallback': fallback or False}
+
 if __name__ == '__main__':
     D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')
     PRED_ROOT = os.environ.get('PRED_ROOT', 'prospective/prerace'); SHADOW_PREV = PRED_ROOT != 'prospective/prerace'   # shadow root: ops/run_prev_shadow.sh only
@@ -147,13 +174,13 @@ if __name__ == '__main__':
     V22_ON = V22
     for _, ix in latest.iterrows():
         V22 = V22_ON                                              # each meeting starts on the release setting (a fallback applies to one meeting only)
-        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam)
+        W, fam, cond, mf = meeting_table(ix); H_ = history(D, fam); fallback = os.environ.get('ENGINE_FALLBACK') or None if fam != 'QLD' else None
         try:
             T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
         except Exception as ex:                                   # safety net: never lose a meeting's ratings to a v2.2 fault
             if not (V22 and fam != 'QLD'): raise
             print(f'WARNING Engine v2.2 failed for {ix.track} ({str(ex)[:120]}); scored with Engine v2.0 instead', file=sys.stderr)
-            V22 = False; T = new_raw(W, H_, fam); T, contrib = apply(T, fam)
+            V22 = False; T = new_raw(W, H_, fam); T, contrib = apply(T, fam); fallback = f'v2.2 terms failed ({str(ex)[:80]}); scored without them (Engine v2.0 terms only)'
         od = os.path.dirname(ix.file) if not SHADOW_PREV else os.path.join(PRED_ROOT, D, str(ix.track).replace(' ', '_')); os.makedirs(od, exist_ok=True); base = os.path.join(od, f"v2_{os.path.basename(ix.file).replace('_runners.csv', '')}_{stamp}")
         fams = [c for c in T.columns if c.startswith('v2+ ')]
         keep = ['race_id', 'race_no', 'saddlecloth', 'horse_name', 'barrier', 'weight_kg', 'claim_used_kg', 'weight_carried_kg', 'weight_basis', 'jockey', 'trainer', 'v2_rank', 'v2_chance_pct', 'v2_score', 'final_rating_kg_eq', 'v1_score', 'rank', 'chance_pct'] + \
@@ -163,9 +190,11 @@ if __name__ == '__main__':
         paths = {'runners': base + '_runners.csv', 'manifest': base + '_manifest.json'}
         with open(paths['runners'], 'x') as fh: out.to_csv(fh, index=False)
         m2 = {'scored_utc': pd.Timestamp.now(tz='UTC').isoformat(), 'engine': 'v2', 'family': fam, 'base_v1_file': ix.file, 'base_v1_sha256': sha(ix.file), 'snapshot_key': ix.snapshot_key,
-              'engine_manifest_sha256': sha('benchmarks/engine_v2_1_3/manifest.json' if (Q213 and fam == 'QLD') else ('benchmarks/engine_v2_1/manifest.json' if V21 else 'benchmarks/engine_v2/manifest.json')), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else (('Engine v2.3' if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
+              'engine_manifest_sha256': sha(FAMILY_FILE[fam]), 'engine_release': ((('Engine v2.1.3' if Q213 else MAN.get('version', 'Engine v2.1').split(' (')[0]) + ' (v3 rating)') if (V21 and fam == 'QLD') else (('Engine v2.3' if C2 else 'Engine v2.2') if V22 else 'Engine v2.0.x')), 'v22_manifest_sha256': (sha(v22.MPATH) if (V22 and fam != 'QLD') else None), 'engine_c2': bool(C2 and fam != 'QLD'), 'code_sha256': {p: sha(p) for p in ['engine/score_v2.py', 'engine/lab.py', 'prerace/score_national_prerace.py']},
               'history_max_date': str(H_.date.max().date()), 'notes': ['no result of these races existed when this file was written', 'v2 = v1 operational score + new terms; v1 file unchanged']}
         if SHADOW_PREV: m2['shadow'] = 'NOT LIVE: previous production engine, scored after publishing for rollback and prospective comparison; never on the dashboard, never ranked or settled'
+        try: m2['settings'] = provenance(fam, ix, H_, m2, fallback)      # record only: a failure here never stops scoring
+        except Exception as ex_: m2['settings'] = {'error': f'provenance not recorded: {str(ex_)[:120]}', 'fallback': fallback or False}
         with open(paths['manifest'], 'x') as fh: json.dump(m2, fh, indent=1)
         with open(os.path.join(PRED_ROOT, 'INDEX.csv'), 'a') as fh:
             for kind, pth in paths.items(): fh.write(f"{m2['scored_utc']},{D},{ix.track},{ix.snapshot_key},{pth},{sha(pth)}\n")

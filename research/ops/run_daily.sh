@@ -21,7 +21,7 @@ if [ -f ops/engine_c2_enabled ]; then
     ( export NAT_STATES=$NS NAT_QLD_BN=$QB WCREDIT=0.25 SPL_FIXED=0.170
       NAT_RUNS_ONLY=1 NAT_RUNS_OUT=national_runs_c2.parquet python3 national.py ../history/history.duckdb > /tmp/c2_nat.txt 2>&1 \
       && LAB_IN=national_runs_c2.parquet LAB_OUT=engine/frames/national_c2.parquet python3 engine/lab.py > /tmp/c2_lab.txt 2>&1 ) \
-      && log "Engine v2.3 frames built" || { log "WARNING Engine v2.3 frames failed: national meetings scored with Engine v2.2 today"; export ENGINE_C2=0; rm -f engine/frames/national_c2.parquet national_runs_c2.parquet; }
+      && log "Engine v2.3 frames built" || { log "WARNING Engine v2.3 frames failed: national meetings scored with Engine v2.2 today"; export ENGINE_C2=0 ENGINE_FALLBACK="Engine v2.3 rating frames failed to build; national meetings scored with Engine v2.2"; rm -f engine/frames/national_c2.parquet national_runs_c2.parquet; }
   fi
 fi
 # Engine v2.1.3 (Queensland candidate: v2.1.1 + Age & sex family; benchmarks/engine_v2_1_3). OFF unless ops/engine_qld213_enabled exists

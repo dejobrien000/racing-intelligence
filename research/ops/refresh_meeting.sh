@@ -5,7 +5,7 @@
 set -euo pipefail
 FAM=$1 SRC=$2 KEY=$3 REF=$4 TRACK=$5
 # same engine as the morning run (release switches; v2.3 only if its ratings were built this morning)
-if [ -f ops/engine_c2_enabled ] && [ -f engine/frames/national_c2.parquet ] && [ -f national_runs_c2.parquet ]; then export ENGINE_C2=1; else export ENGINE_C2=0; fi
+if [ -f ops/engine_c2_enabled ] && [ -f engine/frames/national_c2.parquet ] && [ -f national_runs_c2.parquet ]; then export ENGINE_C2=1; else export ENGINE_C2=0; [ -f ops/engine_c2_enabled ] && export ENGINE_FALLBACK="Engine v2.3 rating frames missing at refresh; scored with Engine v2.2"; fi
 if [ -f ops/engine_qld213_enabled ]; then export ENGINE_QLD213=1; else export ENGINE_QLD213=0; fi
 OUT=$(python3 collect/rescratch.py "$SRC" "$KEY" "$REF")
 echo "$OUT"

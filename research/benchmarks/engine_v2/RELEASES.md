@@ -160,3 +160,18 @@
   writes into the day file; the exporter now keeps it, and writes the day file atomically.
 - Checks: re-export of 27 Nov identical to the published file in every rating, chance, rank, price and selection (only wording and the
   new keys differ); headless render of every view and of 4 drawers per meeting on 27 Nov and 26 Nov data: no script errors.
+
+## Record-keeping fixes (27 Nov 2026, Batch 16 A1/A2/A5) - no rating, chance, rank or selection changed
+- Settings fingerprint (A2): engine/score_v2.py recorded engine_manifest_sha256 from the base file it loads first; under Engine v2.3 the
+  national family is replaced in memory by benchmarks/engine_v2_3/engine_v2.json, so the 27 Nov national files named the wrong file.
+  From the 28 Nov run each Engine v2 manifest has a 'settings' record: engine version, production or shadow, a fingerprint of the
+  settings held in memory, every settings file loaded with its sha256, the v1-layer settings, the rating frame and its sha256, kg scale,
+  history cutoff, generation time and fallback (run_daily.sh / refresh_meeting.sh pass ENGINE_FALLBACK when v2.3 frames are missing).
+  engine_manifest_sha256 now fingerprints the file that supplied the family. The record step can never stop scoring.
+- 27 Nov correction: prospective/prerace/20261127/settings_verification_20261127.json (originals unchanged). Replay of all 8
+  meetings from saved inputs under v2.3/v2.1.3 reproduced all 561 scores (max difference 4.4e-16); under the earlier settings the
+  national replays stop at the rating guard and Queensland differs by up to 0.51. The dashboard shows it as "verified afterwards".
+- Race list (A1): the run keeps TAB's race list (RACES lines) so a listed race that is not read shows as missing on the dashboard;
+  "SSC R8" of 27 Nov was a calendar misread (TAB lists 7 races). RACE lines gain TAB's raceClassConditions (collection only).
+- Tracking display (A5): runs shown are cut at the forecast's own history cutoff, with the database release that supplied them; a
+  later re-export says when tracking was added after the forecast; a read error is shown as an error, not as "no tracked runs".
