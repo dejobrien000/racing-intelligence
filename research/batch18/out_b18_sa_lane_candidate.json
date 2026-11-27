@@ -1,0 +1,10 @@
+{
+ "share_2024": [
+  0.513,
+  0.32,
+  0.706
+ ],
+ "calibration_runs": 6070,
+ "runs_adjusted": 16436,
+ "adj_sd_kg": 0.537
+}

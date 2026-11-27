@@ -11,6 +11,7 @@ def run(d, s, q, sig0, d0):
     TA, TN = (float(TAPER.split(',')[0]), float(TAPER.split(',')[1])) if TAPER else (0.0, 1.0); cnt = {}
     HOOK = ('perf_upd' in d) or GOOD != 1.0 or bool(TAPER)          # off in production: the original update line runs unchanged
     REF = os.environ.get('RATING_REF', '') == 'precision'
+    AGE_ = d['age'].fillna(0).values.astype(float) if (TAPER and 'age' in d) else None
     perf_r = d['perf_ref'].values if 'perf_ref' in d else None
     keys = d.race_key.values; starts = np.r_[0, np.flatnonzero(keys[1:] != keys[:-1]) + 1, len(d)]
     for a, b in zip(starts[:-1], starts[1:]):
@@ -25,7 +26,12 @@ def run(d, s, q, sig0, d0):
             if REF:                       # CANDIDATE ONLY (Batch 16 C13; off unless RATING_REF=precision): the race's level is set by the runners whose ratings are most certain
                 pv = vv_ + s * s; w = (1.0 / pv) / (1.0 / pv).sum(); inn = (pm - (w * pm).sum()) - (mm_ - (w * mm_).sum())
             elif 'perf_ref' in d:            # CANDIDATE ONLY (Batch 17 B10, RATING_CAP_SCOPE=reference): race level from capped figures, each horse's own figure as recorded
-                pr = perf_r[a:b][ok]; inn = (pm - pr.mean()) - (mm_ - mm_.mean()); pv = vv_ + s * s
+                pr = perf_r[a:b][ok]
+                if os.environ.get('RATING_CAP_SCOPE') == 'reference_others':   # Batch 18 D5: others measured against the capped race level; a capped horse keeps the race's own level
+                    ref_ = np.where(np.isclose(pr, pm), pr.mean(), pm.mean())
+                    inn = (pm - ref_) - (mm_ - mm_.mean())
+                else: inn = (pm - pr.mean()) - (mm_ - mm_.mean())
+                pv = vv_ + s * s
             else:
                 inn = (pm - pm.mean()) - (mm_ - mm_.mean()); pv = vv_ + s * s
             idx = np.arange(a, b)[ok]; innov[idx] = inn
@@ -33,7 +39,9 @@ def run(d, s, q, sig0, d0):
             if HOOK:                      # CANDIDATE ONLY (Batch 16 B9): update from the capped performance, good surprises x GOOD
                 pu = perf_u[a:b][ok]; iu = (pu - pu.mean()) - (mm_ - mm_.mean())
                 if TAPER:
-                    gx = 1.0 + TA * np.exp(-np.array([cnt.get(h_, 0) for h_ in hs[ok]], dtype=float) / TN); iu = np.where(iu > 0, gx * iu, iu)
+                    ne = np.array([cnt.get(h_, 0) for h_ in hs[ok]], dtype=float)
+                    if AGE_ is not None: ne = np.where(AGE_[a:b][ok] >= 5, np.maximum(ne, 24.0), ne)   # Batch 18 D2 (RATING_TAPER_AGEFLOOR): a 5yo+ counts as exposed whatever we hold
+                    gx = 1.0 + TA * np.exp(-ne / TN); iu = np.where(iu > 0, gx * iu, iu)
                     for h_ in hs[ok]: cnt[h_] = cnt.get(h_, 0) + 1
                 else: iu = np.where(iu > 0, GOOD * iu, iu)
                 m[ok] = mm_ + K * iu

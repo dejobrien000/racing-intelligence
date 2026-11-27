@@ -19,10 +19,16 @@ def prepare(df):
     if CAP and os.environ.get('RATING_CAP_SCOPE', 'update') == 'all':
         # 'all': the performance FIGURE used by the rating and by the form features built from it counts a defeat at most CAP lengths
         d['perf'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
-    elif CAP and os.environ.get('RATING_CAP_SCOPE') == 'reference':   # Batch 17 B10: the cap limits ONLY the race-level reference the other runners are measured against
+    elif CAP and os.environ.get('RATING_CAP_SCOPE') in ('reference', 'reference_others'):   # Batch 17 B10: the cap limits ONLY the race-level reference the other runners are measured against
         d['perf_ref'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
     elif CAP:                              # 'update': only the rating move is limited; the performance figure and its innovation stay as recorded
         d['perf_upd'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
+    ADJ = os.environ.get('RATING_PERF_ADJ')   # CANDIDATE ONLY (Batch 18 A5): parquet (race_key, horse, adj_kg) subtracted from the performance FIGURE used by the rating; margins untouched
+    if ADJ:
+        a_ = pd.read_parquet(ADJ); d = d.merge(a_[['race_key', 'horse', 'adj_kg']], on=['race_key', 'horse'], how='left'); d['perf'] = d.perf - d.adj_kg.fillna(0.0); d = d.drop(columns=['adj_kg'])
+    AGEF = os.environ.get('RATING_TAPER_AGEFLOOR')   # CANDIDATE ONLY (Batch 18 D2): parquet (race_key, horse, age) so the experience taper can treat 5yo+ as exposed
+    if AGEF:
+        g_ = pd.read_parquet(AGEF); d = d.merge(g_[['race_key', 'horse', 'age']].drop_duplicates(['race_key', 'horse']), on=['race_key', 'horse'], how='left')
     d = d.sort_values(['date', 'race_key', 'finish_pos'])
     return d
 

@@ -1,0 +1,109 @@
+{
+ "debuts": 26708,
+ "share_debuting_at_two": 0.314,
+ "trainers": 1858,
+ "debut_surprise_model": {
+  "n": 20444,
+  "two_year_old": [
+   -0.851,
+   -1.13,
+   -0.573
+  ],
+  "trainer_rarely_debuts_twos": [
+   0.162,
+   -0.169,
+   0.493
+  ],
+  "two_yo_from_such_trainer_extra": [
+   -0.621,
+   -1.06,
+   -0.182
+  ],
+  "trainer_form_per_kg": [
+   3.125,
+   2.851,
+   3.399
+  ]
+ },
+ "raw_means": {
+  "3yo | trainer often debuts twos": [
+   5869,
+   1.32
+  ],
+  "3yo | trainer rarely debuts twos": [
+   7773,
+   1.11
+  ],
+  "2yo | trainer often debuts twos": [
+   4353,
+   0.74
+  ],
+  "2yo | trainer rarely debuts twos": [
+   2449,
+   0.03
+  ]
+ },
+ "trainer_debut_residual_persistence": {
+  "trainers": 151,
+  "corr_2023_24_vs_2025_26": 0.375
+ },
+ "maturity_with_continuation": {
+  "population": {
+   "share_seen_at_4": 0.78,
+   "change_3_to_4_with_3plus_runs_each": 1.14
+  },
+  "per_incanto": [
+   {
+    "sire": "Per Incanto (USA)",
+    "three_yo": 64,
+    "share_seen_at_4": 0.859,
+    "change_3_to_4": 2.358,
+    "both_ages": 40.0
+   }
+  ],
+  "top_change_sires_40plus": [
+   {
+    "sire": "Justify (USA)",
+    "three_yo": 115,
+    "share_seen_at_4": 0.722,
+    "change_3_to_4": 2.69,
+    "both_ages": 58.0
+   },
+   {
+    "sire": "Brutal (NZ)",
+    "three_yo": 73,
+    "share_seen_at_4": 0.781,
+    "change_3_to_4": 2.652,
+    "both_ages": 43.0
+   },
+   {
+    "sire": "Per Incanto (USA)",
+    "three_yo": 64,
+    "share_seen_at_4": 0.859,
+    "change_3_to_4": 2.358,
+    "both_ages": 40.0
+   },
+   {
+    "sire": "Fiorente (IRE)",
+    "three_yo": 110,
+    "share_seen_at_4": 0.882,
+    "change_3_to_4": 2.276,
+    "both_ages": 59.0
+   },
+   {
+    "sire": "Needs Further (AUS)",
+    "three_yo": 80,
+    "share_seen_at_4": 0.862,
+    "change_3_to_4": 2.16,
+    "both_ages": 46.0
+   },
+   {
+    "sire": "Too Darn Hot (GB)",
+    "three_yo": 68,
+    "share_seen_at_4": 0.779,
+    "change_3_to_4": 2.094,
+    "both_ages": 40.0
+   }
+  ]
+ }
+}

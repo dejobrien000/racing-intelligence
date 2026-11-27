@@ -174,6 +174,26 @@ interstate connections; dynamic distance suitability; one experience-dependent l
 rate by track is not course geometry.
 
 
+## Batch 18 (27 Nov 2026): production corrections, scratchings, experience, sustainability, lane bias, trainer debuts
+Ledger: research/batch18/README.md. Report: https://claude.ai/artifact/UHk9gNXhht3HV3DVa8roVf. Production corrections A1-A3 effective
+28 Nov 7:30am (approved); dashboard common scale A4 (display). Batch 17 ledger: research/batch17/README.md.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| First-starter age/sex, metro definition, Qld course names | replays: 49 filled; SA/WA metro identical; Qld track history 0% -> 73%, Cairns course records 0% -> 88% | PRODUCTION from 28 Nov (switch files) |
+| Non-scratch TAB statuses shown as scratched | 41 Cairns "Reserve" runners (display only) | FIXED at root |
+| National emergencies that gain a start not scored | 26 Nov 3 incomplete races; 27 Nov 47 unscored | DECISION |
+| Qld shadows' emergency rule | 126/126 runners after fix (was 117) | FIXED |
+| Age floor on the experience taper (5yo+ exposed) | vs taper +0.0018 / +0.0025 (pre-stated test) | MEANINGFUL |
+| Age-aware taper limited to 1.3x | vs uniform 1.3x +0.0017 / +0.0046 (diagnostic; both periods seen) | DECISION: new frozen shadow |
+| Research harness baseline | hooks-off sandbox -0.0009 / -0.0002 vs production frame (figure tables) | Use hooks-off baseline; earlier "vs v2.3" gains slightly understated |
+| Sustainability of exceptional runs | emerging keep ~61%; exposed 38% -> 28%; one-offs 33% -> 27% | MEANINGFUL, descriptive |
+| Race-level-only heavy-defeat cap | +0.0022 / -0.0016 (vs hooks-off) | Not useful alone |
+| Same-day lane bias, Qld and SA | Qld +0.35, SA +0.59 per kg; next run -0.13 / -0.26; removing it: SA 2025-26 +0.0013 (clean), Qld +0.0002 to +0.0008 | SMALL GENUINE GAIN; DECISION (shadow candidate) |
+| Trainer debut record | +0.0010 / +0.0020; first-starter races +0.0036 / +0.0086; persistence r 0.38 | DECISION (not authorised) |
+| "Rarely debuts twos" selectivity proxy | their 2yo debutants -0.62 kg | Opposite of hypothesis |
+| Sire maturity with continuation | Per Incanto 86% continue, +2.36 kg vs 78%, +1.14 | MEANINGFUL, descriptive |
+
 ## Batch 16 (27 Nov 2026): rating foundations, national comparability, individual horse intelligence
 Ledger: research/batch16/README.md. Two shadows added (update rule, cap only); no production change.
 

@@ -1,0 +1,12 @@
+{
+ "runs_adjusted": 86348,
+ "calibration_share_pre2024": [
+  0.167,
+  0.044,
+  0.289
+ ],
+ "calibration_runs": 22214,
+ "adj_sd_kg": 0.153,
+ "adj_abs_mean_kg": 0.096,
+ "why_one_third": "Per kg of estimated lane help the run itself was 0.36 kg better (realised help) and the next run 0.13 kg worse. 0.13 / 0.36 = 0.36: about a third of the realised help was carried into the rating as ability, which is what a rating that moves about a third of the way towards each surprise (Kalman gain ~0.3-0.4 for an exposed horse) does with any surprise. It is a reading of the two slopes, not a separate estimate."
+}

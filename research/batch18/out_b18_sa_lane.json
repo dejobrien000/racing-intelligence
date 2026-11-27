@@ -1,0 +1,43 @@
+{
+ "coverage": {
+  "sa_tracked_runners": 18822,
+  "matched_to_rating_frame": 18822,
+  "match_share": 1.0,
+  "runs_used": 18661,
+  "with_lane": 0.882,
+  "meetings": 233,
+  "first": "2024-01-01",
+  "last": "2026-11-21"
+ },
+ "lane_help_sd_kg": 0.95,
+ "overall_lane_slope_kg_per_m": -0.006,
+ "this_run_per_kg_of_help_with_barrier_early_controls": [
+  0.592,
+  0.427,
+  0.757
+ ],
+ "this_run_runs": 16442,
+ "next_run_per_kg_of_help": [
+  -0.262,
+  -0.35,
+  -0.173
+ ],
+ "next_run_runs": 15666,
+ "next_surprise_by_quintile": {
+  "most harmed": 0.37,
+  "most helped": -0.2,
+  "q2": 0.14,
+  "q3": 0.04,
+  "q4": 0.0
+ },
+ "qld_reference": {
+  "this_run": 0.36,
+  "next_run": [
+   -0.132,
+   -0.177,
+   -0.086
+  ],
+  "lane_help_sd": 0.84
+ },
+ "carried_share": 0.44
+}

@@ -1,0 +1,519 @@
+{
+ "note": "Harness /tmp/cand (Engine v2.3 structure refitted; A = fit before 2024 judge 2024, B = fit before 2025 judge 2025-26, both periods re-used). Gains = mean per-race log-likelihood difference, race bootstrap 95%.",
+ "vs_v2_3": {
+  "U1": {
+   "definition": "cap 12 L in the figure (cap-only comparator)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00641,
+    "ci95": [
+     0.0045,
+     0.00832
+    ],
+    "top_pick_pts": 0.37
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00397,
+    "ci95": [
+     0.00233,
+     0.00554
+    ],
+    "top_pick_pts": 0.05
+   }
+  },
+  "U5": {
+   "definition": "cap + uniform 1.3x (update-rule shadow)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.0071,
+    "ci95": [
+     0.00506,
+     0.00915
+    ],
+    "top_pick_pts": 0.44
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00551,
+    "ci95": [
+     0.00381,
+     0.00716
+    ],
+    "top_pick_pts": 0.1
+   }
+  },
+  "U1B": {
+   "definition": "cap on the beaten horse own update only",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00423,
+    "ci95": [
+     0.00259,
+     0.00591
+    ],
+    "top_pick_pts": 0.16
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00123,
+    "ci95": [
+     -0.00015,
+     0.00256
+    ],
+    "top_pick_pts": 0.08
+   }
+  },
+  "RF": {
+   "definition": "cap on race reference only (Batch 17)",
+   "2024": {
+    "races": 12777,
+    "gain": -0.0006,
+    "ci95": [
+     -0.00234,
+     0.00113
+    ],
+    "top_pick_pts": 0.26
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.0034,
+    "ci95": [
+     -0.00485,
+     -0.00192
+    ],
+    "top_pick_pts": -0.2
+   }
+  },
+  "RO": {
+   "definition": "cap on race level for the others only; beaten horse own comparison unchanged (Batch 18 D5)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00134,
+    "ci95": [
+     -0.00021,
+     0.00291
+    ],
+    "top_pick_pts": 0.42
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.00181,
+    "ci95": [
+     -0.00317,
+     -0.00048
+    ],
+    "top_pick_pts": -0.17
+   }
+  },
+  "LN": {
+   "definition": "Qld lane help removed from the rating figure, share 0.167 (pre-2024 calibration)",
+   "2024": {
+    "races": 12777,
+    "gain": -0.00087,
+    "ci95": [
+     -0.00158,
+     -0.00014
+    ],
+    "top_pick_pts": -0.03
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.00023,
+    "ci95": [
+     -0.00077,
+     0.00035
+    ],
+    "top_pick_pts": 0.04
+   }
+  },
+  "LN2": {
+   "definition": "as LN, share 0.383 (2024 calibration)",
+   "2024": {
+    "races": 12777,
+    "gain": -0.00085,
+    "ci95": [
+     -0.00155,
+     -0.00015
+    ],
+    "top_pick_pts": -0.03
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.00023,
+    "ci95": [
+     -0.00077,
+     0.00038
+    ],
+    "top_pick_pts": 0.04
+   }
+  },
+  "U5E": {
+   "definition": "cap + experience taper 1+0.8exp(-runs/6) (Batch 17)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00457,
+    "ci95": [
+     0.00215,
+     0.00687
+    ],
+    "top_pick_pts": 0.46
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01046,
+    "ci95": [
+     0.00842,
+     0.01246
+    ],
+    "top_pick_pts": 0.17
+   }
+  },
+  "U5EA": {
+   "definition": "U5E with 5yo+ counted as exposed (Batch 18 D2 mechanism test)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00633,
+    "ci95": [
+     0.00366,
+     0.00899
+    ],
+    "top_pick_pts": 0.75
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01292,
+    "ci95": [
+     0.01067,
+     0.01513
+    ],
+    "top_pick_pts": 0.13
+   }
+  },
+  "U5EC": {
+   "definition": "cap + age-floored taper 1+0.3exp(-runs/6) (Batch 18 D4 diagnostic; designed after seeing both periods)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00877,
+    "ci95": [
+     0.00672,
+     0.01073
+    ],
+    "top_pick_pts": 0.49
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01014,
+    "ci95": [
+     0.00866,
+     0.01169
+    ],
+    "top_pick_pts": 0.27
+   }
+  },
+  "C2T+tr_debut": {
+   "definition": "v2.3 + trainer debut record input (Batch 18 E6)",
+   "2024": {
+    "races": 12777,
+    "gain": 0.00095,
+    "ci95": [
+     0.0001,
+     0.00187
+    ],
+    "top_pick_pts": 0.09
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00197,
+    "ci95": [
+     0.00127,
+     0.00267
+    ],
+    "top_pick_pts": 0.03
+   }
+  }
+ },
+ "vs_uniform_1_3x": {
+  "U5E": {
+   "2024": {
+    "races": 12777,
+    "gain": -0.00252,
+    "ci95": [
+     -0.00382,
+     -0.00113
+    ],
+    "top_pick_pts": 0.02
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00495,
+    "ci95": [
+     0.00369,
+     0.00625
+    ],
+    "top_pick_pts": 0.08
+   }
+  },
+  "U5EA": {
+   "2024": {
+    "races": 12777,
+    "gain": -0.00077,
+    "ci95": [
+     -0.00273,
+     0.00128
+    ],
+    "top_pick_pts": 0.31
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00741,
+    "ci95": [
+     0.00573,
+     0.0091
+    ],
+    "top_pick_pts": 0.03
+   }
+  },
+  "U5EC": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00167,
+    "ci95": [
+     0.00094,
+     0.00241
+    ],
+    "top_pick_pts": 0.05
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00463,
+    "ci95": [
+     0.00394,
+     0.00532
+    ],
+    "top_pick_pts": 0.18
+   }
+  }
+ },
+ "U5EA_vs_U5E": {
+  "2024": {
+   "races": 12777,
+   "gain": 0.00176,
+   "ci95": [
+    0.00039,
+    0.00309
+   ],
+   "top_pick_pts": 0.29
+  },
+  "2025-26": {
+   "races": 23729,
+   "gain": 0.00246,
+   "ci95": [
+    0.00155,
+    0.0034
+   ],
+   "top_pick_pts": -0.05
+  }
+ },
+ "baseline_note": "Hook variants are built in the sandbox, whose speed-figure tables differ slightly from the C2 frame (fig_n corr 0.984). The hooks-off sandbox frame (OFF) scores -0.0009 (2024) / -0.0002 (2025-26) vs C2, so gains vs C2 understate hook effects by about that much. Like-for-like = vs_hooks_off.",
+ "OFF_vs_C2": {
+  "2024": {
+   "races": 12777,
+   "gain": -0.00088,
+   "ci95": [
+    -0.00162,
+    -0.00017
+   ]
+  },
+  "2025-26": {
+   "races": 23729,
+   "gain": -0.00023,
+   "ci95": [
+    -0.0008,
+    0.00032
+   ]
+  }
+ },
+ "vs_hooks_off": {
+  "U1": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00728,
+    "ci95": [
+     0.00549,
+     0.00904
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.0042,
+    "ci95": [
+     0.00273,
+     0.00567
+    ]
+   }
+  },
+  "U5": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00797,
+    "ci95": [
+     0.00614,
+     0.00984
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00574,
+    "ci95": [
+     0.0042,
+     0.00722
+    ]
+   }
+  },
+  "U1B": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00511,
+    "ci95": [
+     0.00362,
+     0.00667
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.00147,
+    "ci95": [
+     0.00023,
+     0.00272
+    ]
+   }
+  },
+  "RF": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00028,
+    "ci95": [
+     -0.00134,
+     0.00184
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.00316,
+    "ci95": [
+     -0.00454,
+     -0.00185
+    ]
+   }
+  },
+  "RO": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00222,
+    "ci95": [
+     0.00074,
+     0.00358
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": -0.00157,
+    "ci95": [
+     -0.00282,
+     -0.00036
+    ]
+   }
+  },
+  "LN": {
+   "2024": {
+    "races": 12777,
+    "gain": 1e-05,
+    "ci95": [
+     -1e-05,
+     3e-05
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.0,
+    "ci95": [
+     -1e-05,
+     2e-05
+    ]
+   }
+  },
+  "LN2": {
+   "2024": {
+    "races": 12777,
+    "gain": 3e-05,
+    "ci95": [
+     -2e-05,
+     7e-05
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 1e-05,
+    "ci95": [
+     -3e-05,
+     4e-05
+    ]
+   }
+  },
+  "U5E": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00545,
+    "ci95": [
+     0.00323,
+     0.00767
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01069,
+    "ci95": [
+     0.00892,
+     0.01244
+    ]
+   }
+  },
+  "U5EA": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00721,
+    "ci95": [
+     0.00448,
+     0.00969
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01315,
+    "ci95": [
+     0.01103,
+     0.01538
+    ]
+   }
+  },
+  "U5EC": {
+   "2024": {
+    "races": 12777,
+    "gain": 0.00965,
+    "ci95": [
+     0.00775,
+     0.01157
+    ]
+   },
+   "2025-26": {
+    "races": 23729,
+    "gain": 0.01037,
+    "ci95": [
+     0.00893,
+     0.01181
+    ]
+   }
+  }
+ }
+}

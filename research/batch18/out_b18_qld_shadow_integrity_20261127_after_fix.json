@@ -1,0 +1,39 @@
+{
+ "c2": {
+  "runners": 126,
+  "production_runners": 126,
+  "unmatched": 0,
+  "races": 14,
+  "chance_sum_min": 100.0,
+  "chance_sum_max": 100.0,
+  "corr_with_v2_1_3": 0.881,
+  "same_top_pick_share": 0.5,
+  "largest_change_pts": 22.8
+ },
+ "served_missing_pct": {
+  "c_rec": 0.0,
+  "g_rec": 0.0,
+  "d_rec": 0.0,
+  "j_surp": 0.0,
+  "t_surp": 0.0,
+  "age_n": 0.0,
+  "female": 0.0,
+  "h2h": 50.8,
+  "surprise_last": 7.1,
+  "dyn_traj": 15.1,
+  "dist_change": 6.3,
+  "wt_change": 6.3,
+  "bm_change": 100.0
+ },
+ "c4": {
+  "runners": 126,
+  "production_runners": 126,
+  "unmatched": 0,
+  "races": 14,
+  "chance_sum_min": 100.0,
+  "chance_sum_max": 100.0,
+  "corr_with_v2_1_3": 0.881,
+  "same_top_pick_share": 0.5,
+  "largest_change_pts": 23.8
+ }
+}
