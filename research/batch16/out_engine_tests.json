@@ -1,5 +1,152 @@
 {
  "note": "Engine-level tests in the candidate harness (/tmp/cand). Gain = mean log-likelihood per race vs Engine v2.3 (res_C2_R) on the same races; A = 2024 validation (12,777 races), B = 2025-26 (23,729 races, re-used period). Point in time; no prices.",
- "STD_state_standardised_margins": {"what": "margins converted to seconds with each state's measured s/L (Qld 0.170, SA 0.1595, Vic 0.1619; NSW/WA/Tas/ACT left at the national figure, no assumption), then back to national lengths before the rating", "A": [-0.00115, -0.0019, -0.00041], "B": [-0.00062, -0.00122, -0.00005], "top_pick_pts": [-0.08, 0.0], "verdict": "slightly worse in both windows: do not introduce state margin corrections"},
- "C2S_plus_suit_kernel_distance_suitability": {"what": "horse's own past surprises weighted by closeness of distance (Gaussian, 150 m), shrunk with 3 pseudo-runs, added as one third-layer term", "coverage": 0.915, "coef_per_sd": {"A": -0.0012, "B": 0.0035}, "A": [0.00001, -0.00001, 0.00003], "B": [0.0, -0.00004, 0.00004], "verdict": "no gain: the engine's existing distance terms already carry it (the rating-level residual of +0.19 to +0.21 kg is absorbed)"}
+ "STD_state_standardised_margins": {
+  "what": "margins converted to seconds with each state's measured s/L (Qld 0.170, SA 0.1595, Vic 0.1619; NSW/WA/Tas/ACT left at the national figure, no assumption), then back to national lengths before the rating",
+  "A": [
+   -0.00115,
+   -0.0019,
+   -0.00041
+  ],
+  "B": [
+   -0.00062,
+   -0.00122,
+   -5e-05
+  ],
+  "top_pick_pts": [
+   -0.08,
+   0.0
+  ],
+  "verdict": "slightly worse in both windows: do not introduce state margin corrections",
+  "rerun_check": "re-run 27 Nov 11:46 as STD2 (explicitly on the v2.3 harness history): identical result; the harness sandbox always reads its own v2.3 history file, so the first run was like-for-like"
+ },
+ "C2S_plus_suit_kernel_distance_suitability": {
+  "what": "horse's own past surprises weighted by closeness of distance (Gaussian, 150 m), shrunk with 3 pseudo-runs, added as one third-layer term",
+  "coverage": 0.915,
+  "coef_per_sd": {
+   "A": -0.0012,
+   "B": 0.0035
+  },
+  "A": [
+   1e-05,
+   -1e-05,
+   3e-05
+  ],
+  "B": [
+   0.0,
+   -4e-05,
+   4e-05
+  ],
+  "verdict": "no gain: the engine's existing distance terms already carry it (the rating-level residual of +0.19 to +0.21 kg is absorbed)"
+ },
+ "C2X_plus_xstate_interstate_level_term": {
+  "what": "for a run whose previous run was in another state, the average rating error of earlier movers on that state pair (estimated only from runs before 2024, shrunk n/(n+200)); 0 otherwise",
+  "nonzero_share": 0.078,
+  "coef_per_sd": {
+   "A": 0.0272,
+   "B": 0.029
+  },
+  "A": [
+   0.00042,
+   -6e-05,
+   0.00089
+  ],
+  "B": [
+   0.00013,
+   -0.00023,
+   0.00048
+  ],
+  "verdict": "no material gain: interstate rating offsets exist at the rating level (SA, Qld and Tas horses rated about 0.4-1.5 kg high against Vic/NSW) but the engine already prices them; do not add state corrections"
+ },
+ "interstate_rating_offsets_by_frame": {
+  "C2 abs pair deviation (kg, weighted)": 0.39,
+  "STD": 0.388,
+  "update rule": 0.368,
+  "reading": "standardising margins does not change the interstate offsets (they are not a margin-unit effect); the update rule narrows them slightly"
+ },
+ "PW_precision_weighted_race_reference": {
+  "what": "a race's level set mainly by the runners whose ratings are most certain (weights 1 / (rating variance + run noise)), instead of every runner counted equally; otherwise Engine v2.3",
+  "A": [
+   0.00055,
+   -0.00032,
+   0.00136
+  ],
+  "B": [
+   0.00112,
+   0.00044,
+   0.00176
+  ],
+  "top_pick_pts": [
+   0.04,
+   0.05
+  ],
+  "verdict": "small gain, clear only in the re-used 2025-26 window; not a candidate on its own; tested on top of the update rule next"
+ },
+ "B8_class_change_input_bm_change": {
+  "what": "Engine v2.3 structure in the harness: (a) fitted with bm_change and judged with it present (as if served), (b) fitted with it, judged with it missing (as production serves it today), (c) retrained without it",
+  "b_vs_a": {
+   "A": [
+    0.00116,
+    0.00043,
+    0.00189
+   ],
+   "B": [
+    0.00072,
+    0.00034,
+    0.0011
+   ]
+  },
+  "c_vs_a": {
+   "A": [
+    0.00038,
+    -0.0003,
+    0.00106
+   ],
+   "B": [
+    0.00024,
+    -0.00011,
+    0.00057
+   ]
+  },
+  "c_vs_b_production_today": {
+   "A": [
+    -0.00078,
+    -0.00105,
+    -0.0005
+   ],
+   "B": [
+    -0.00048,
+    -0.00063,
+    -0.00033
+   ]
+  },
+  "verdict": "serving it would make chances worse (confirms Batch 15); but removing it from training is ALSO worse than today (-0.0008 / -0.0005, both clear): fitted with it, it acts as a training-only control that keeps the other inputs from soaking up class moves. Keep as is; record it as a training-only control. Reverses the earlier plan to drop it at the next release"
+ },
+ "U5PW_precision_reference_on_top_of_update_rule": {
+  "what": "update rule (cap 12 L in the figure, good runs 1.3x) plus the certainty-weighted race level",
+  "vs_U5": {
+   "A": [
+    0.00046,
+    0.00025,
+    0.00067
+   ],
+   "B": [
+    0.00037,
+    0.00021,
+    0.00054
+   ]
+  },
+  "vs_C2": {
+   "A": [
+    0.00756,
+    0.00549,
+    0.00959
+   ],
+   "B": [
+    0.00588,
+    0.00416,
+    0.00753
+   ]
+  },
+  "verdict": "small, clear in both windows, one pre-specified variant (no tuning): candidate to fold into the update rule at its next refit; the shadow is not changed now"
+ }
 }

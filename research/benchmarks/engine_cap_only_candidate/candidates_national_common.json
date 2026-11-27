@@ -1,0 +1,112 @@
+{
+ "frozen_utc": "2026-11-27T02:02:00.939159+00:00",
+ "scope": "NSW, Vic, ACT races (Breednet full fields; jump-outs excluded); fields of 6+",
+ "dynamic_rating_params": {
+  "s_kg": 4.5,
+  "q_kg2_per_day": 0.05,
+  "sig0_kg": 5.0,
+  "debut_offset_kg": 2.0
+ },
+ "records_k": 1,
+ "dev_sd_after_race_centring": {
+  "f_avgfp3": 0.20609063084593093,
+  "f_lastfp": 0.28852865391701343,
+  "f_lastlm": 0.8860274639089385,
+  "f_cwin": 0.13684957035698686,
+  "f_lstarts": 0.539614787470219,
+  "missform": 0.24011147185284168,
+  "a_rec": 4.73614234233392,
+  "a_best3": 5.378469882585727,
+  "a_fs3": 2.4442960407290104,
+  "a_wt_rel": 1.8140971043914986,
+  "missfig": 0.08381143070272737,
+  "r_firstup": 0.33134493678121946,
+  "r_7_13": 0.3576080790110633,
+  "r_28_59": 0.2853090636257563,
+  "r_quick": 0.2888508849157668,
+  "r_ldays": 0.8287468010512486,
+  "dyn_nat": 2.395646337934628,
+  "c_rec": 1.2064255128347603,
+  "g_rec": 1.450774697257716,
+  "d_rec": 1.422557254302659
+ },
+ "candidates": {
+  "nat_v1 (common + national rating)": {
+   "f_avgfp3": 0.11636644482498236,
+   "f_lastfp": 0.04409136873126772,
+   "f_lastlm": 0.09367678568281454,
+   "f_cwin": 0.009982371962279368,
+   "f_lstarts": -0.26313475406381587,
+   "missform": -0.0011724764552296983,
+   "a_rec": 0.11037219430759139,
+   "a_best3": 0.12287205782573046,
+   "a_fs3": 0.1198102664126867,
+   "a_wt_rel": 0.02233533847555616,
+   "missfig": -0.01704796440611464,
+   "r_firstup": 0.07710947312177933,
+   "r_7_13": -0.02820441225946655,
+   "r_28_59": 0.0010630555862224374,
+   "r_quick": 0.006989019340062636,
+   "r_ldays": -0.16328862896300655,
+   "dyn_nat": 0.42460239496869756
+  },
+  "nat_v2 (+ horse records)": {
+   "f_avgfp3": 0.07823683829043,
+   "f_lastfp": 0.037052018505930755,
+   "f_lastlm": 0.0849690891168864,
+   "f_cwin": 0.0015529725336598632,
+   "f_lstarts": -0.23910198748033848,
+   "missform": 0.018560736744124725,
+   "a_rec": 0.09993479797576732,
+   "a_best3": 0.11814166323558857,
+   "a_fs3": 0.11698367170434476,
+   "a_wt_rel": 0.01803076259422458,
+   "missfig": -0.016546168141104836,
+   "r_firstup": 0.07581126324745481,
+   "r_7_13": -0.027422294543879313,
+   "r_28_59": 0.0002667812581792799,
+   "r_quick": 0.007610620973850623,
+   "r_ldays": -0.1554425834059034,
+   "dyn_nat": 0.4237146236798307,
+   "c_rec": 0.06965304908556547,
+   "g_rec": 0.056432345978312676,
+   "d_rec": 0.04475376083283557
+  }
+ },
+ "eval_2025_26": {
+  "nat_v1": {
+   "races": 23729,
+   "fit_%": 11.09,
+   "top_pick_%": 26.5
+  },
+  "nat_v2": {
+   "races": 23729,
+   "fit_%": 11.36,
+   "top_pick_%": 26.7
+  }
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "fef47bcdd5d41cee",
+  "dyn_rating.py": "06b23a3145e47940",
+  "dyn_rating_innov.py": "b4d9b4ccee0430fc",
+  "national.py": "479bd9e057c0a7b3",
+  "freeze_b5_national_common.py": "4ef856a866d3d0bb"
+ },
+ "data_sha256_16": {
+  "national_runs.parquet": "4aa0756909a20254"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit",
+ "candidate_record": {
+  "candidate": "Cap-only comparator (NOT LIVE, shadow only)",
+  "built_utc": "2026-11-27T02:05:00Z",
+  "built_from": "Engine v2.3 release chain in a sandbox with the cap switched on (same chain as the update-rule candidate)",
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1"
+  },
+  "rule_in_words": "a defeat counts at most 12 lengths in the performance figure (the recorded margin is never changed); good runs move the rating as in Engine v2.3",
+  "approved": "Damo 27 Nov 2026 (Batch 16 brief s9): retain the simpler heavy-defeat-cap-only candidate for comparison"
+ }
+}

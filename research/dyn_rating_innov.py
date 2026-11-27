@@ -8,6 +8,7 @@ def run(d, s, q, sig0, d0):
     horses = d.horse.values; dates = d.date.values.astype('datetime64[D]').astype(np.int64); perf = d.perf.values
     import os; GOOD = float(os.environ.get('RATING_GOOD_X', '1')); perf_u = d['perf_upd'].values if 'perf_upd' in d else perf
     HOOK = ('perf_upd' in d) or GOOD != 1.0          # off in production: the original update line runs unchanged
+    REF = os.environ.get('RATING_REF', '') == 'precision'
     keys = d.race_key.values; starts = np.r_[0, np.flatnonzero(keys[1:] != keys[:-1]) + 1, len(d)]
     for a, b in zip(starts[:-1], starts[1:]):
         hs = horses[a:b]; t = dates[a]
@@ -18,7 +19,10 @@ def run(d, s, q, sig0, d0):
         ok = ~np.isnan(perf[a:b])
         if ok.sum() >= 2:
             pm, mm_, vv_ = perf[a:b][ok], m[ok], v[ok]
-            inn = (pm - pm.mean()) - (mm_ - mm_.mean()); pv = vv_ + s * s
+            if REF:                       # CANDIDATE ONLY (Batch 16 C13; off unless RATING_REF=precision): the race's level is set by the runners whose ratings are most certain
+                pv = vv_ + s * s; w = (1.0 / pv) / (1.0 / pv).sum(); inn = (pm - (w * pm).sum()) - (mm_ - (w * mm_).sum())
+            else:
+                inn = (pm - pm.mean()) - (mm_ - mm_.mean()); pv = vv_ + s * s
             idx = np.arange(a, b)[ok]; innov[idx] = inn
             K = vv_ / pv
             if HOOK:                      # CANDIDATE ONLY (Batch 16 B9): update from the capped performance, good surprises x GOOD

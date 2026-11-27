@@ -174,6 +174,27 @@ interstate connections; dynamic distance suitability; one experience-dependent l
 rate by track is not course geometry.
 
 
+## Batch 16 (27 Nov 2026): rating foundations, national comparability, individual horse intelligence
+Ledger: research/batch16/README.md. Two shadows added (update rule, cap only); no production change.
+
+| Finding | Evidence | Status |
+|---|---|---|
+| Update rule as built by the release chain | 2025-26 +0.0059 (0.0043-0.0076) vs v2.3 as built, every state positive, top pick unchanged; cap only +0.0043; 1.3x adds +0.0016 | SHADOW from 28 Nov (with cap-only comparator); promotion on prospective races |
+| The rule halves each known learning bias without propping up decliners | moderate poor run -0.61 -> -0.28; good run +1.20 -> +0.89; third poor run -0.25 -> -0.13 (cap only -0.40) | MEANINGFUL |
+| One heavy defeat flatters the rest of the field | others next run -0.58 kg (-0.62 to -0.53), 15% of races; -0.25 under the rule | MEANINGFUL; addressed by the rule |
+| Race level weighted by rating certainty | alone +0.0006 n.s. / +0.0011; on top of the rule +0.0005 / +0.0004 (both clear) | CANDIDATE for the rule's next refit |
+| Races of unexposed horses share their error | shared sd 0.45 kg (established fields) vs 1.19 (least certain); maidens 0.98 | MEANINGFUL, descriptive |
+| Erratic horses' big runs under-believed | +0.73 kg after controls under v2.3; gone under the rule (+0.01) | Explained by the rule |
+| Repeated best vs one-off peak | 0.11-0.13 vs 0.04-0.05 kg per kg | Redundant (engine already carries it) |
+| Distance suitability from the horse's own runs | +0.19-0.21 kg per kg at rating level; engine gain 0.0000 | Redundant |
+| Trainer change | first run -0.38 kg; receiving-trainer uplift persists (r 0.58, 57 trainers) | Decision: trainer-specific transfer term |
+| State seconds per length | Qld 0.170, SA 0.1595, Vic 0.162; standardising -0.0012 / -0.0006 | REJECTED (no state corrections) |
+| Interstate rating offsets | SA ~0.5 kg high vs Vic, Qld ~0.4 vs NSW, Tas ~1.5 vs Vic; engine term +0.0004 n.s. | Already priced; no correction |
+| Qld configurations vs v2.1.3 structure | common +0.0235 / +0.0160; + rule +0.0314 / +0.0204; rule alone +0.0096 / +0.0081; standardised +0.0005 / +0.0007 | Daily shadow to build (configs 4 and 2) |
+| bm_change | serving it -0.0012 / -0.0007; retraining without it -0.0008 / -0.0005 | Keep as training-only control (reverses B15 plan) |
+| Age & sex for first starters | missing live 9.2% vs 0.5% in training | Decision: serve from TAB's field |
+| Course geometry x late speed | -0.04 then +0.01 per 100 m | REJECTED |
+
 ## Batch 15 (27 Nov 2026): rating foundations, physical profiles, small improvements
 Ledger: research/batch15/README.md. Research only; no production change.
 

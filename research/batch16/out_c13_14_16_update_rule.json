@@ -1,0 +1,193 @@
+{
+ "c13_shared_next_run_error": {
+  "races": 46296,
+  "variance_of_race_mean_next_surprise": 2.49,
+  "expected_if_independent": 2.0,
+  "shared_component_kg_sd": 0.7
+ },
+ "c13_shared_error_by_field_uncertainty": {
+  "least certain": {
+   "races": 11574,
+   "shared_sd_kg": 0.968,
+   "mean_next": 0.332
+  },
+  "most certain": {
+   "races": 11574,
+   "shared_sd_kg": 0.437,
+   "mean_next": -0.234
+  },
+  "q2": {
+   "races": 11574,
+   "shared_sd_kg": 0.531,
+   "mean_next": -0.122
+  },
+  "q3": {
+   "races": 11574,
+   "shared_sd_kg": 0.607,
+   "mean_next": 0.032
+  }
+ },
+ "c13_shared_error_maiden_vs_other": {
+  "other": {
+   "races": 32597,
+   "shared_sd_kg": 0.616
+  },
+  "maiden": {
+   "races": 13699,
+   "shared_sd_kg": 0.749
+  }
+ },
+ "c13_others_next_surprise_when_race_had_a_15kg_plus_defeat": [
+  -0.25,
+  -0.426,
+  -0.074
+ ],
+ "c13_races_with_extreme_defeat_share": 0.007,
+ "c13_others_next_surprise_when_3plus_lightly_raced_improved": [
+  0.231,
+  0.097,
+  0.365
+ ],
+ "c13_lightly_raced_improvers_own_next_surprise": 1.329,
+ "c14_ceiling_2024": {
+  "top2_gap": [
+   0.134,
+   0.118,
+   0.15
+  ],
+  "isolated": [
+   0.084,
+   0.062,
+   0.106
+  ],
+  "typ_gap": [
+   -0.01,
+   -0.027,
+   0.008
+  ],
+  "near_top": [
+   0.061,
+   0.048,
+   0.075
+  ],
+  "np.log1p(since_top)": [
+   -0.134,
+   -0.167,
+   -0.102
+  ],
+  "logn": [
+   -0.701,
+   -0.758,
+   -0.643
+  ],
+  "n": 121829
+ },
+ "c14_ceiling_2025-26": {
+  "top2_gap": [
+   0.117,
+   0.106,
+   0.128
+  ],
+  "isolated": [
+   0.081,
+   0.064,
+   0.097
+  ],
+  "typ_gap": [
+   -0.005,
+   -0.018,
+   0.007
+  ],
+  "near_top": [
+   0.047,
+   0.038,
+   0.056
+  ],
+  "np.log1p(since_top)": [
+   -0.199,
+   -0.224,
+   -0.175
+  ],
+  "logn": [
+   -0.904,
+   -0.941,
+   -0.867
+  ],
+  "n": 229322
+ },
+ "c14_next_run_vs_last5_average_by_spread": {
+  "middle": {
+   "runs": 71360,
+   "perf_minus_last5_avg": -0.2,
+   "surprise_vs_rating": -0.42,
+   "sd_of_next_perf_around_avg": 3.95
+  },
+  "steady (like B)": {
+   "runs": 71360,
+   "perf_minus_last5_avg": -0.46,
+   "surprise_vs_rating": -0.5,
+   "sd_of_next_perf_around_avg": 3.66
+  },
+  "up-and-down (like A)": {
+   "runs": 71360,
+   "perf_minus_last5_avg": 0.29,
+   "surprise_vs_rating": -0.22,
+   "sd_of_next_perf_around_avg": 4.43
+  }
+ },
+ "c16_split_half_reliability": {
+  "horses": 16229,
+  "sd_corr": 0.312,
+  "skew_corr": 0.02
+ },
+ "c16_period_persistence": {
+  "horses": 4745,
+  "sd_corr_2022_24H1_vs_2025_26": 0.275,
+  "skew_corr": 0.019
+ },
+ "c16_controlled_inconsistent_vs_consistent": {
+  "after big defeat": [
+   -0.017,
+   -0.174,
+   0.14
+  ],
+  "extra after big run": [
+   0.005,
+   -0.234,
+   0.244
+  ]
+ },
+ "c16_next_surprise_after_big_surprise_by_consistency": {
+  "big defeat (-6 kg or worse) | consistent": [
+   6958,
+   -0.2,
+   0.05
+  ],
+  "big defeat (-6 kg or worse) | inconsistent": [
+   5798,
+   -0.1,
+   0.06
+  ],
+  "big defeat (-6 kg or worse) | middle": [
+   6593,
+   -0.34,
+   0.05
+  ],
+  "big run (+6 kg or more) | consistent": [
+   3726,
+   0.22,
+   0.06
+  ],
+  "big run (+6 kg or more) | inconsistent": [
+   4886,
+   0.27,
+   0.07
+  ],
+  "big run (+6 kg or more) | middle": [
+   4091,
+   0.18,
+   0.07
+  ]
+ },
+ "c16_rating_uncertainty_vs_variability_corr": 0.058
+}

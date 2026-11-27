@@ -184,8 +184,8 @@
    "name": "Common national framework for Queensland",
    "family": "QLD",
    "what": "One national methodology with Queensland coefficients",
-   "status": "Approved as a shadow (26 Nov); not built yet",
-   "evidence": "Research: 2024 +0.0424 (0.0262 to 0.0587), 2025-26 +0.0326 (0.0208 to 0.0435) vs v2.1.1"
+   "status": "Research done 27 Nov (five configurations); daily shadow not built yet",
+   "evidence": "Same harness vs v2.1.3 structure: 2024 +0.0235, 2025-26 +0.0160; with the update rule +0.0314 / +0.0204"
   },
   {
    "name": "Engine v2.4 candidate (handicap weight slope)",
@@ -201,8 +201,17 @@
    "family": "NAT",
    "what": "Engine v2.3 rebuilt in full: a defeat counts at most 12 lengths in the performance figure (the margin itself is never changed) and a run better than expected moves the rating 1.3 times as far",
    "status": "Shadow: scored every day from 28 Nov (not live). Built by the v2.3 release chain; on its own kg scale (0.315 per kg, v2.3 0.269)",
-   "evidence": "Research: +0.0071 (2024) and +0.0055 (2025-26) per race on v2.3; chosen with sight of both periods. Built-release check: see Batch 16 report",
+   "evidence": "Research: +0.0071 (2024) and +0.0055 (2025-26) on v2.3, chosen with sight of both periods. As built: 2025-26 +0.0059 (0.0043 to 0.0076) vs v2.3 as built, every state positive, top pick unchanged",
    "ledger_label_prefix": "Update-rule candidate",
+   "compare_with": "production"
+  },
+  {
+   "name": "Cap-only comparator",
+   "family": "NAT",
+   "what": "Engine v2.3 rebuilt with only the 12-length cap (good runs move the rating as now)",
+   "status": "Shadow: scored every day from 28 Nov (not live); kept to show what the 1.3x part adds",
+   "evidence": "As built: 2025-26 +0.0043 (0.0028 to 0.0058) vs v2.3; the full rule adds +0.0016 (0.0007 to 0.0026) over it",
+   "ledger_label_prefix": "Cap-only candidate",
    "compare_with": "production"
   }
  ],
