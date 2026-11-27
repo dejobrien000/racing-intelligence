@@ -25,7 +25,7 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Learning-speed rating (B9; v3) | Qld | Qld +0.0052; national -0.0026 | Pred. | PRODUCTION in Qld via the v3 rating | Qld v2.1.x | FORGOTTEN: B13 said re-test once Age & sex was live in Qld (live since 27 Nov) - not yet re-tested |
 | Display calibration, experience labels, data confidence (B9-B11) | all | | display | PRODUCTION | dashboard | - |
 | Metro from tier, Qld course-name map (B18) | SA/WA, Qld | Qld track history 0% -> 73% | correction | APPROVED CORRECTION from 28 Nov (switches) | serving | verify in the 28 Nov run |
-| National emergencies that gain a start (B18-B19) | national | 26 Nov 11/11; 27 Nov replay 45 | correction | APPROVED CORRECTION, activation pending tonight's check | ops/national_emergency_enabled | check after the 27 Nov results |
+| National emergencies that gain a start (B18-B19) | national | 26 Nov 11/11; 27 Nov 52 admitted and ran, 2 admitted then late-scratched, original rule missed 53 | correction | PRODUCTION from the 28 Nov run (switched on 27 Nov 11:10pm) | ops/national_emergency_enabled; benchmarks/engine_v2/RELEASES.md | keep checking daily |
 | Handicap weight slope = Engine v2.4 (B11-B15) | national | +0.0005 / +0.0015 built | Pred. | FROZEN SHADOW (from 27 Nov) | benchmarks/engine_v2_4_candidate | final recommendation Monday after TAB/Breednet class parity |
 | Heavy-defeat cap 12 L (B15-B16) | national | +0.0043 | Pred. | FROZEN SHADOW (cap-only) | benchmarks/engine_cap_only_candidate | superseded by the consolidated candidate if it wins prospectively |
 | Uniform 1.3x good-run response (B15-B16) | national | +0.0059 | Pred. | FROZEN SHADOW (update-rule) | benchmarks/engine_update_rule_candidate | as above |
@@ -66,7 +66,7 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Jockey distance specialisation, rider momentum, jockey workload (B14-B15) | Qld, SA | engine +0.0001; workload artifact | Pred./Desc. | REDUNDANT / DESCRIPTIVE | batch14-15 | frozen rider tables' prospective check not run |
 | Horse identity: suffix/sire/dam splits (B20-B22) | all | 56 splits | data | APPROVED CORRECTION (Monday 30 Nov, subject to checks) | ops/IDENTITY_CORRECTION_PLAN.md | Monday |
 | Qld start-count discrepancy (B19-B20) | Qld | measurement bug | data | FIXED (research script) | ops/form_enrichment.py | - |
-| Pre-race rail and track information (B21-B23) | Qld now | RQ publishes before the cutoff | data | COLLECTED from 28 Nov (not served) | ops/parse_rail.py; DAILY_RUN 5d | other states need an approved source |
+| Pre-race rail and track information (B21-B23) | Qld now | RQ publishes before the cutoff | data | COLLECTED from 28 Nov (not served) | ops/parse_rail.py; DAILY_RUN 5d | other states need a source that permits collection (RaceHub's robots file blocks Claude's crawlers: not used) |
 | Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | after the physical queue starts |
 | Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
 
