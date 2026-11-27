@@ -15,6 +15,12 @@ def prepare(df):
     ok = d.finish_pos.notna() & d.margin_l.notna() & d.weight_kg.notna()
     import os; WC = float(os.environ.get('WCREDIT', '1'))   # history weight credit per kg (production 1.0; candidate C2 0.25: benchmarks/candidate_national_weight)
     d['perf'] = np.where(ok, -d.margin_l.clip(upper=25) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
+    CAP = os.environ.get('RATING_CAP_L')   # CANDIDATE ONLY (Batch 16 B9; off unless set). The margin in the data is never changed.
+    if CAP and os.environ.get('RATING_CAP_SCOPE', 'update') == 'all':
+        # 'all': the performance FIGURE used by the rating and by the form features built from it counts a defeat at most CAP lengths
+        d['perf'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
+    elif CAP:                              # 'update': only the rating move is limited; the performance figure and its innovation stay as recorded
+        d['perf_upd'] = np.where(ok, -d.margin_l.clip(upper=float(CAP)) * d.kgpl + WC * (d.weight_kg - 57), np.nan)
     d = d.sort_values(['date', 'race_key', 'finish_pos'])
     return d
 

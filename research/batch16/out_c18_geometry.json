@@ -1,0 +1,155 @@
+{
+ "runs": 32846,
+ "courses": {
+  "Doomben": 6342,
+  "Eagle Farm": 7127,
+  "Ipswich": 5614,
+  "Sunshine Coast": 8660,
+  "Sunshine Coast Poly Track": 728,
+  "Toowoomba": 4375
+ },
+ "geometry": [
+  {
+   "course": "Eagle Farm",
+   "home_straight_m": 434,
+   "circumference_m": 2027.0
+  },
+  {
+   "course": "Doomben",
+   "home_straight_m": 350,
+   "circumference_m": 1715.0
+  },
+  {
+   "course": "Sunshine Coast",
+   "home_straight_m": 400,
+   "circumference_m": 1967.0
+  },
+  {
+   "course": "Sunshine Coast Poly Track",
+   "home_straight_m": 350,
+   "circumference_m": 1760.0
+  },
+  {
+   "course": "Toowoomba",
+   "home_straight_m": 360,
+   "circumference_m": 1750.0
+  },
+  {
+   "course": "Ipswich",
+   "home_straight_m": 300,
+   "circumference_m": 1746.0
+  },
+  {
+   "course": "Aquis Park Gold Coast",
+   "home_straight_m": 400,
+   "circumference_m": NaN
+  }
+ ],
+ "all": {
+  "late_z": [
+   0.021,
+   0.016,
+   0.025
+  ],
+  "late_z:straight_100m": [
+   -0.007,
+   -0.058,
+   0.044
+  ],
+  "early_z": [
+   0.169,
+   0.104,
+   0.234
+  ],
+  "early_z:straight_100m": [
+   -0.096,
+   -0.207,
+   0.016
+  ],
+  "n": 32786
+ },
+ "2022-24": {
+  "late_z": [
+   0.01,
+   0.001,
+   0.019
+  ],
+  "late_z:straight_100m": [
+   -0.039,
+   -0.071,
+   -0.006
+  ],
+  "early_z": [
+   0.2,
+   0.106,
+   0.294
+  ],
+  "early_z:straight_100m": [
+   0.017,
+   -0.146,
+   0.179
+  ],
+  "n": 15306
+ },
+ "2025-26": {
+  "late_z": [
+   0.026,
+   0.01,
+   0.042
+  ],
+  "late_z:straight_100m": [
+   0.012,
+   -0.03,
+   0.054
+  ],
+  "early_z": [
+   0.142,
+   0.052,
+   0.232
+  ],
+  "early_z:straight_100m": [
+   -0.183,
+   -0.331,
+   -0.034
+  ],
+  "n": 17480
+ },
+ "by_course_late_quartile_mean_inn": {
+  "Doomben": {
+   "early-fading": -0.1,
+   "q2": -0.22,
+   "q3": -0.15,
+   "late-finishing": -0.17
+  },
+  "Eagle Farm": {
+   "early-fading": -0.37,
+   "q2": -0.3,
+   "q3": -0.33,
+   "late-finishing": -0.05
+  },
+  "Ipswich": {
+   "early-fading": 0.04,
+   "q2": -0.1,
+   "q3": -0.04,
+   "late-finishing": -0.07
+  },
+  "Sunshine Coast": {
+   "early-fading": -0.23,
+   "q2": -0.34,
+   "q3": 0.11,
+   "late-finishing": 0.35
+  },
+  "Sunshine Coast Poly Track": {
+   "early-fading": -0.62,
+   "q2": 0.05,
+   "q3": -0.2,
+   "late-finishing": 0.12
+  },
+  "Toowoomba": {
+   "early-fading": -0.07,
+   "q2": -0.17,
+   "q3": 0.14,
+   "late-finishing": 0.19
+  }
+ }
+}

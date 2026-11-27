@@ -1,0 +1,14 @@
+state,course,configuration,circumference_m,home_straight_m,direction,source,notes
+QLD,Eagle Farm,turf,2027,434,clockwise,Wikipedia; racingandsports.com,
+QLD,Doomben,turf,1715,350,clockwise,racingandsports.com; horseracing.com.au,one source gives 320 m (kruzey.com.au); horseracing.com.au says anti-clockwise
+QLD,Sunshine Coast,turf (course proper),1967,400,clockwise,racingandsports.com; horseracing.com.au,6 m fall and rise; rise just before the straight
+QLD,Sunshine Coast Poly Track,synthetic,1760,350,clockwise,racingandsports.com,
+QLD,Toowoomba,synthetic (cushion track from 2009),1750,360,clockwise,horseracing.com.au; races.com.au,
+QLD,Ipswich,turf,1746,300,,racingandsports.com,straight given as "around 300 m"
+QLD,Aquis Park Gold Coast,turf,,400,,austadiums.com,circumference not found
+SA,Morphettville,turf (course proper),2307,340,,morphettville.com.au (club),racingandsports.com gives 2339 / 334
+SA,Morphettville Parks,turf (inner),2100,305,,morphettville.com.au (club),racingandsports.com gives 320
+VIC,Flemington,turf,2312,450,anti-clockwise,Wikipedia; theraceguide.com.au,1200 m straight course for sprints (Straight Six)
+VIC,Caulfield,turf,2080,367,,theraceguide.com.au,
+VIC,Moonee Valley (old track),turf,1805,173,,MVRC; austadiums.com,last raced at the 2025 Cox Plate (25 Oct 2025)
+VIC,Moonee Valley (new track),turf,1702,317,,MVRC; austadiums.com,new layout (realigned 90 degrees); planned return 2027; never the same course as the old track

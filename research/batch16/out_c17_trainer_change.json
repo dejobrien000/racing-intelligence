@@ -1,0 +1,131 @@
+{
+ "runs": 461685,
+ "trainer_changes": 22553,
+ "partnership_or_name_changes_excluded": 1452,
+ "first_run_new_stable_kg": [
+  -0.476,
+  -0.564,
+  -0.388
+ ],
+ "first_run_new_stable_kg_given_trainer_assessment": [
+  -0.381,
+  -0.469,
+  -0.293
+ ],
+ "t_surp_coef": [
+  0.522,
+  0.496,
+  0.548
+ ],
+ "first_run_new_stable_kg_2023-24": [
+  -0.297,
+  -0.424,
+  -0.171
+ ],
+ "first_run_new_stable_kg_2025-26": [
+  -0.448,
+  -0.57,
+  -0.326
+ ],
+ "runs_2_to_5_new_stable_kg_given_trainer_assessment": [
+  -0.146,
+  -0.193,
+  -0.099
+ ],
+ "first_run_by_trajectory": {
+  "declining": [
+   7028,
+   0.48,
+   0.08
+  ],
+  "improving": [
+   3786,
+   -0.34,
+   0.1
+  ],
+  "short history": [
+   90,
+   -0.86,
+   0.67
+  ],
+  "steady": [
+   11649,
+   -0.17,
+   0.06
+  ]
+ },
+ "first_run_by_age": {
+  "2-3": [
+   2727,
+   0.31
+  ],
+  "4-5": [
+   13678,
+   0.09
+  ],
+  "6-7": [
+   5100,
+   -0.34
+  ],
+  "8+": [
+   971,
+   -0.32
+  ]
+ },
+ "first_run_by_experience": {
+  "1-5": [
+   5504,
+   0.24
+  ],
+  "16-30": [
+   4819,
+   -0.23
+  ],
+  "31+": [
+   760,
+   -0.26
+  ],
+  "6-15": [
+   11470,
+   0.0
+  ]
+ },
+ "first_run_interstate_vs_same_state": {
+  "False": [
+   14553,
+   -0.08
+  ],
+  "True": [
+   8000,
+   0.15
+  ]
+ },
+ "first_run_after_spell_vs_not": {
+  "0": [
+   12726,
+   0.03
+  ],
+  "1": [
+   9827,
+   -0.04
+  ]
+ },
+ "declining_horses_change_vs_no_change_raw_mean_inn": {
+  "False": [
+   81519,
+   -0.13
+  ],
+  "True": [
+   7028,
+   -0.33
+  ]
+ },
+ "receiving_trainer_persistence": {
+  "trainers": 57,
+  "corr_first_run_uplift_2023_24_vs_2025_26": 0.581
+ },
+ "no_run_within_365_days_after_run": {
+  "first_run_for_new_stable": 0.076,
+  "other_runs": 0.063
+ }
+}

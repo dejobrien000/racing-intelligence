@@ -1,0 +1,715 @@
+{
+ "by_state": {
+  "QLD": {
+   "races": 7804,
+   "median_s_per_L": 0.1704,
+   "iqr": [
+    0.17,
+    0.178
+   ]
+  },
+  "SA": {
+   "races": 1524,
+   "median_s_per_L": 0.1595,
+   "iqr": [
+    0.155,
+    0.164
+   ]
+  },
+  "VIC": {
+   "races": 773,
+   "median_s_per_L": 0.1619,
+   "iqr": [
+    0.156,
+    0.167
+   ]
+  }
+ },
+ "by_state_year": {
+  "QLD 2022": {
+   "races": 177,
+   "median_s_per_L": 0.1915,
+   "iqr": [
+    0.182,
+    1.0
+   ]
+  },
+  "QLD 2023": {
+   "races": 1733,
+   "median_s_per_L": 0.1799,
+   "iqr": [
+    0.17,
+    0.187
+   ]
+  },
+  "QLD 2024": {
+   "races": 1850,
+   "median_s_per_L": 0.1706,
+   "iqr": [
+    0.17,
+    0.18
+   ]
+  },
+  "QLD 2025": {
+   "races": 2106,
+   "median_s_per_L": 0.1702,
+   "iqr": [
+    0.17,
+    0.171
+   ]
+  },
+  "QLD 2026": {
+   "races": 1938,
+   "median_s_per_L": 0.17,
+   "iqr": [
+    0.17,
+    0.17
+   ]
+  },
+  "SA 2024": {
+   "races": 501,
+   "median_s_per_L": 0.16,
+   "iqr": [
+    0.156,
+    0.165
+   ]
+  },
+  "SA 2025": {
+   "races": 564,
+   "median_s_per_L": 0.159,
+   "iqr": [
+    0.154,
+    0.163
+   ]
+  },
+  "SA 2026": {
+   "races": 459,
+   "median_s_per_L": 0.1592,
+   "iqr": [
+    0.155,
+    0.163
+   ]
+  },
+  "VIC 2026": {
+   "races": 773,
+   "median_s_per_L": 0.1619,
+   "iqr": [
+    0.156,
+    0.167
+   ]
+  }
+ },
+ "by_state_distance": {
+  "QLD 1151-1450": {
+   "races": 3906,
+   "median_s_per_L": 0.1704,
+   "iqr": [
+    0.17,
+    0.175
+   ]
+  },
+  "QLD 1451-1750": {
+   "races": 796,
+   "median_s_per_L": 0.1704,
+   "iqr": [
+    0.17,
+    0.172
+   ]
+  },
+  "QLD 1751+": {
+   "races": 636,
+   "median_s_per_L": 0.1706,
+   "iqr": [
+    0.17,
+    0.181
+   ]
+  },
+  "QLD <=1150": {
+   "races": 2466,
+   "median_s_per_L": 0.1705,
+   "iqr": [
+    0.17,
+    0.18
+   ]
+  },
+  "SA 1151-1450": {
+   "races": 527,
+   "median_s_per_L": 0.1595,
+   "iqr": [
+    0.155,
+    0.163
+   ]
+  },
+  "SA 1451-1750": {
+   "races": 345,
+   "median_s_per_L": 0.1602,
+   "iqr": [
+    0.156,
+    0.166
+   ]
+  },
+  "SA 1751+": {
+   "races": 213,
+   "median_s_per_L": 0.1602,
+   "iqr": [
+    0.158,
+    0.165
+   ]
+  },
+  "SA <=1150": {
+   "races": 439,
+   "median_s_per_L": 0.1578,
+   "iqr": [
+    0.153,
+    0.16
+   ]
+  },
+  "VIC 1151-1450": {
+   "races": 321,
+   "median_s_per_L": 0.1619,
+   "iqr": [
+    0.156,
+    0.167
+   ]
+  },
+  "VIC 1451-1750": {
+   "races": 160,
+   "median_s_per_L": 0.1623,
+   "iqr": [
+    0.158,
+    0.168
+   ]
+  },
+  "VIC 1751+": {
+   "races": 120,
+   "median_s_per_L": 0.165,
+   "iqr": [
+    0.161,
+    0.169
+   ]
+  },
+  "VIC <=1150": {
+   "races": 172,
+   "median_s_per_L": 0.1581,
+   "iqr": [
+    0.152,
+    0.163
+   ]
+  }
+ },
+ "by_course_year": {
+  "QLD Dalby 2025": [
+   35,
+   0.17
+  ],
+  "QLD Dalby 2026": [
+   47,
+   0.17
+  ],
+  "QLD Doomben 2023": [
+   284,
+   0.17
+  ],
+  "QLD Doomben 2024": [
+   248,
+   0.17
+  ],
+  "QLD Doomben 2025": [
+   264,
+   0.17
+  ],
+  "QLD Doomben 2026": [
+   243,
+   0.17
+  ],
+  "QLD Eagle Farm 2023": [
+   286,
+   0.1699
+  ],
+  "QLD Eagle Farm 2024": [
+   242,
+   0.17
+  ],
+  "QLD Eagle Farm 2025": [
+   299,
+   0.1701
+  ],
+  "QLD Eagle Farm 2026": [
+   287,
+   0.17
+  ],
+  "QLD Ipswich 2022": [
+   55,
+   0.1815
+  ],
+  "QLD Ipswich 2023": [
+   290,
+   0.1834
+  ],
+  "QLD Ipswich 2024": [
+   217,
+   0.1702
+  ],
+  "QLD Ipswich 2025": [
+   251,
+   0.1699
+  ],
+  "QLD Ipswich 2026": [
+   256,
+   0.17
+  ],
+  "QLD Kilcoy 2025": [
+   43,
+   0.17
+  ],
+  "QLD Kilcoy 2026": [
+   63,
+   0.17
+  ],
+  "QLD Ladbrokes Cannon Park 2023": [
+   45,
+   0.1815
+  ],
+  "QLD Ladbrokes Cannon Park 2024": [
+   70,
+   0.1703
+  ],
+  "QLD Ladbrokes Cannon Park 2025": [
+   87,
+   0.17
+  ],
+  "QLD Ladbrokes Cannon Park 2026": [
+   60,
+   0.17
+  ],
+  "QLD Mackay 2023": [
+   84,
+   0.1814
+  ],
+  "QLD Mackay 2024": [
+   139,
+   0.1701
+  ],
+  "QLD Mackay 2025": [
+   149,
+   0.1701
+  ],
+  "QLD Mackay 2026": [
+   112,
+   0.1703
+  ],
+  "QLD Picklebet Park Warwick 2025": [
+   37,
+   0.1701
+  ],
+  "QLD Picklebet Park Warwick 2026": [
+   56,
+   0.1701
+  ],
+  "QLD Rockhampton 2024": [
+   167,
+   0.1701
+  ],
+  "QLD Rockhampton 2025": [
+   195,
+   0.17
+  ],
+  "QLD Rockhampton 2026": [
+   153,
+   0.1701
+  ],
+  "QLD Sunshine Coast 2022": [
+   76,
+   1.0
+  ],
+  "QLD Sunshine Coast 2023": [
+   487,
+   0.1872
+  ],
+  "QLD Sunshine Coast 2024": [
+   315,
+   0.1868
+  ],
+  "QLD Sunshine Coast 2025": [
+   353,
+   0.1707
+  ],
+  "QLD Sunshine Coast 2026": [
+   278,
+   0.17
+  ],
+  "QLD Sunshine Coast Poly Track 2024": [
+   66,
+   0.1824
+  ],
+  "QLD Sunshine Coast Poly Track 2025": [
+   29,
+   0.1834
+  ],
+  "QLD Toowoomba 2022": [
+   46,
+   0.1831
+  ],
+  "QLD Toowoomba 2023": [
+   199,
+   0.1818
+  ],
+  "QLD Toowoomba 2024": [
+   221,
+   0.1814
+  ],
+  "QLD Toowoomba 2025": [
+   203,
+   0.1763
+  ],
+  "QLD Toowoomba 2026": [
+   162,
+   0.1698
+  ],
+  "QLD Townsville 2023": [
+   58,
+   0.1854
+  ],
+  "QLD Townsville 2024": [
+   165,
+   0.1701
+  ],
+  "QLD Townsville 2025": [
+   161,
+   0.17
+  ],
+  "QLD Townsville 2026": [
+   194,
+   0.1701
+  ],
+  "SA Gawler 2024": [
+   102,
+   0.162
+  ],
+  "SA Gawler 2025": [
+   79,
+   0.1672
+  ],
+  "SA Gawler 2026": [
+   56,
+   0.1607
+  ],
+  "SA Morphettville 2024": [
+   149,
+   0.1598
+  ],
+  "SA Morphettville 2025": [
+   181,
+   0.159
+  ],
+  "SA Morphettville 2026": [
+   163,
+   0.1591
+  ],
+  "SA Morphettville Parks 2024": [
+   102,
+   0.1599
+  ],
+  "SA Morphettville Parks 2025": [
+   130,
+   0.1561
+  ],
+  "SA Morphettville Parks 2026": [
+   92,
+   0.1558
+  ],
+  "SA Murray Bridge 2024": [
+   148,
+   0.1597
+  ],
+  "SA Murray Bridge 2025": [
+   174,
+   0.1568
+  ],
+  "SA Murray Bridge 2026": [
+   148,
+   0.1595
+  ],
+  "VIC ballarat 2026": [
+   41,
+   0.1594
+  ],
+  "VIC ballarat-synthetic 2026": [
+   89,
+   0.1629
+  ],
+  "VIC bendigo 2026": [
+   68,
+   0.1636
+  ],
+  "VIC caulfield 2026": [
+   83,
+   0.1603
+  ],
+  "VIC cranbourne 2026": [
+   57,
+   0.1632
+  ],
+  "VIC flemington 2026": [
+   91,
+   0.1604
+  ],
+  "VIC geelong 2026": [
+   81,
+   0.1638
+  ],
+  "VIC mornington 2026": [
+   57,
+   0.1654
+  ],
+  "VIC pakenham-synthetic 2026": [
+   64,
+   0.1535
+  ],
+  "VIC sandown-hillside 2026": [
+   66,
+   0.1646
+  ],
+  "VIC sandown-lakeside 2026": [
+   35,
+   0.1616
+  ]
+ },
+ "by_course": {
+  "VIC pakenham-synthetic": [
+   64,
+   0.1535
+  ],
+  "SA Morphettville Parks": [
+   324,
+   0.1582
+  ],
+  "SA Murray Bridge": [
+   470,
+   0.1593
+  ],
+  "SA Morphettville": [
+   493,
+   0.1594
+  ],
+  "VIC ballarat": [
+   41,
+   0.1594
+  ],
+  "VIC caulfield": [
+   83,
+   0.1603
+  ],
+  "VIC flemington": [
+   91,
+   0.1604
+  ],
+  "VIC ballarat-synthetic": [
+   89,
+   0.1629
+  ],
+  "VIC cranbourne": [
+   57,
+   0.1632
+  ],
+  "SA Gawler": [
+   237,
+   0.1636
+  ],
+  "VIC bendigo": [
+   68,
+   0.1636
+  ],
+  "VIC geelong": [
+   81,
+   0.1638
+  ],
+  "VIC sandown-hillside": [
+   66,
+   0.1646
+  ],
+  "VIC mornington": [
+   57,
+   0.1654
+  ],
+  "QLD Kilcoy": [
+   106,
+   0.17
+  ],
+  "QLD Doomben": [
+   1039,
+   0.17
+  ],
+  "QLD Dalby": [
+   82,
+   0.17
+  ],
+  "QLD Eagle Farm": [
+   1114,
+   0.17
+  ],
+  "QLD Rockhampton": [
+   515,
+   0.17
+  ],
+  "QLD Picklebet Park Warwick": [
+   93,
+   0.1701
+  ],
+  "QLD Townsville": [
+   578,
+   0.1702
+  ],
+  "QLD Ladbrokes Cannon Park": [
+   262,
+   0.1702
+  ],
+  "QLD Mackay": [
+   484,
+   0.1703
+  ],
+  "QLD Ipswich": [
+   1069,
+   0.1706
+  ],
+  "QLD Toowoomba": [
+   831,
+   0.1784
+  ],
+  "QLD Sunshine Coast Poly Track": [
+   114,
+   0.1806
+  ],
+  "QLD Sunshine Coast": [
+   1509,
+   0.1824
+  ]
+ },
+ "course_spread": {
+  "QLD": {
+   "courses": 13,
+   "min": 0.17,
+   "max": 0.1824
+  },
+  "SA": {
+   "courses": 4,
+   "min": 0.1582,
+   "max": 0.1636
+  },
+  "VIC": {
+   "courses": 10,
+   "min": 0.1535,
+   "max": 0.1654
+  }
+ },
+ "by_state_field": {
+  "QLD 12-14": {
+   "races": 1425,
+   "median_s_per_L": 0.1704,
+   "iqr": [
+    0.17,
+    0.182
+   ]
+  },
+  "QLD 15+": {
+   "races": 242,
+   "median_s_per_L": 0.1703,
+   "iqr": [
+    0.17,
+    0.171
+   ]
+  },
+  "QLD 9-11": {
+   "races": 3722,
+   "median_s_per_L": 0.1704,
+   "iqr": [
+    0.17,
+    0.177
+   ]
+  },
+  "QLD <=8": {
+   "races": 2415,
+   "median_s_per_L": 0.1705,
+   "iqr": [
+    0.17,
+    0.177
+   ]
+  },
+  "SA 12-14": {
+   "races": 517,
+   "median_s_per_L": 0.1597,
+   "iqr": [
+    0.155,
+    0.164
+   ]
+  },
+  "SA 15+": {
+   "races": 78,
+   "median_s_per_L": 0.1596,
+   "iqr": [
+    0.155,
+    0.164
+   ]
+  },
+  "SA 9-11": {
+   "races": 664,
+   "median_s_per_L": 0.1596,
+   "iqr": [
+    0.155,
+    0.164
+   ]
+  },
+  "SA <=8": {
+   "races": 265,
+   "median_s_per_L": 0.1584,
+   "iqr": [
+    0.154,
+    0.162
+   ]
+  },
+  "VIC 12-14": {
+   "races": 205,
+   "median_s_per_L": 0.1621,
+   "iqr": [
+    0.157,
+    0.167
+   ]
+  },
+  "VIC 9-11": {
+   "races": 360,
+   "median_s_per_L": 0.1615,
+   "iqr": [
+    0.156,
+    0.167
+   ]
+  },
+  "VIC <=8": {
+   "races": 179,
+   "median_s_per_L": 0.1629,
+   "iqr": [
+    0.156,
+    0.169
+   ]
+  }
+ },
+ "gap_per_length_by_margin_band": {
+  "QLD <1 L": 0.1786,
+  "QLD 1-3": 0.1711,
+  "QLD 3-6": 0.1705,
+  "QLD 6-10": 0.1703,
+  "QLD 10-20": 0.1702,
+  "QLD 20+": 0.1701,
+  "SA <1 L": 0.15,
+  "SA 1-3": 0.1586,
+  "SA 3-6": 0.1593,
+  "SA 6-10": 0.1597,
+  "SA 10-20": 0.1602,
+  "SA 20+": 0.1619,
+  "VIC <1 L": 0.15,
+  "VIC 1-3": 0.16,
+  "VIC 3-6": 0.1605,
+  "VIC 6-10": 0.162,
+  "VIC 10-20": 0.1661,
+  "VIC 20+": 0.1731
+ }
+}

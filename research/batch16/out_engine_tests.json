@@ -1,0 +1,5 @@
+{
+ "note": "Engine-level tests in the candidate harness (/tmp/cand). Gain = mean log-likelihood per race vs Engine v2.3 (res_C2_R) on the same races; A = 2024 validation (12,777 races), B = 2025-26 (23,729 races, re-used period). Point in time; no prices.",
+ "STD_state_standardised_margins": {"what": "margins converted to seconds with each state's measured s/L (Qld 0.170, SA 0.1595, Vic 0.1619; NSW/WA/Tas/ACT left at the national figure, no assumption), then back to national lengths before the rating", "A": [-0.00115, -0.0019, -0.00041], "B": [-0.00062, -0.00122, -0.00005], "top_pick_pts": [-0.08, 0.0], "verdict": "slightly worse in both windows: do not introduce state margin corrections"},
+ "C2S_plus_suit_kernel_distance_suitability": {"what": "horse's own past surprises weighted by closeness of distance (Gaussian, 150 m), shrunk with 3 pseudo-runs, added as one third-layer term", "coverage": 0.915, "coef_per_sd": {"A": -0.0012, "B": 0.0035}, "A": [0.00001, -0.00001, 0.00003], "B": [0.0, -0.00004, 0.00004], "verdict": "no gain: the engine's existing distance terms already carry it (the rating-level residual of +0.19 to +0.21 kg is absorbed)"}
+}
