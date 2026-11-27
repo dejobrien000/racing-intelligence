@@ -1,0 +1,167 @@
+{
+ "p75_starts_by_age_cap": {
+  "2": 2.0,
+  "3": 6.0,
+  "4": 13.0,
+  "5": 21.0,
+  "6": 27.0,
+  "7": 33.0,
+  "8": 33.25,
+  "9": 33.25,
+  "10": 33.25,
+  "11": 33.25,
+  "12": 33.25
+ },
+ "validation_runs": 88782,
+ "validation_horses": 5823,
+ "complete": {
+  "runs": 84378,
+  "horses": 5597,
+  "R0": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.42,
+   "over_by_5plus": 0.001,
+   "under_by_5plus": 0.028,
+   "mean_abs_m_error_gentle": 0.0021,
+   "mean_abs_m_error_strong": 0.0056
+  },
+  "R1": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.42,
+   "over_by_5plus": 0.001,
+   "under_by_5plus": 0.028,
+   "mean_abs_m_error_gentle": 0.0021,
+   "mean_abs_m_error_strong": 0.0056
+  },
+  "R2": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.42,
+   "over_by_5plus": 0.001,
+   "under_by_5plus": 0.028,
+   "mean_abs_m_error_gentle": 0.0021,
+   "mean_abs_m_error_strong": 0.0056
+  },
+  "R3": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.42,
+   "over_by_5plus": 0.001,
+   "under_by_5plus": 0.028,
+   "mean_abs_m_error_gentle": 0.0021,
+   "mean_abs_m_error_strong": 0.0056
+  }
+ },
+ "late_maiden": {
+  "runs": 1562,
+  "horses": 123,
+  "R0": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.79,
+   "over_by_5plus": 0.011,
+   "under_by_5plus": 0.017,
+   "mean_abs_m_error_gentle": 0.0049,
+   "mean_abs_m_error_strong": 0.0132
+  },
+  "R1": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.79,
+   "over_by_5plus": 0.011,
+   "under_by_5plus": 0.017,
+   "mean_abs_m_error_gentle": 0.0049,
+   "mean_abs_m_error_strong": 0.0132
+  },
+  "R2": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.79,
+   "over_by_5plus": 0.011,
+   "under_by_5plus": 0.017,
+   "mean_abs_m_error_gentle": 0.0049,
+   "mean_abs_m_error_strong": 0.0132
+  },
+  "R3": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 0.79,
+   "over_by_5plus": 0.011,
+   "under_by_5plus": 0.017,
+   "mean_abs_m_error_gentle": 0.0049,
+   "mean_abs_m_error_strong": 0.0132
+  }
+ },
+ "probably incomplete: import / older non-maiden": {
+  "runs": 625,
+  "horses": 47,
+  "R0": {
+   "median_diff": 6.0,
+   "mean_abs_diff": 7.42,
+   "over_by_5plus": 0.736,
+   "under_by_5plus": 0.016,
+   "mean_abs_m_error_gentle": 0.0251,
+   "mean_abs_m_error_strong": 0.0669
+  },
+  "R1": {
+   "median_diff": 6.0,
+   "mean_abs_diff": 6.7,
+   "over_by_5plus": 0.614,
+   "under_by_5plus": 0.083,
+   "mean_abs_m_error_gentle": 0.0248,
+   "mean_abs_m_error_strong": 0.0662
+  },
+  "R2": {
+   "median_diff": -9.0,
+   "mean_abs_diff": 10.55,
+   "over_by_5plus": 0.027,
+   "under_by_5plus": 0.902,
+   "mean_abs_m_error_gentle": 0.0852,
+   "mean_abs_m_error_strong": 0.2273
+  },
+  "R3": {
+   "median_diff": -1.5,
+   "mean_abs_diff": 4.1,
+   "over_by_5plus": 0.042,
+   "under_by_5plus": 0.245,
+   "mean_abs_m_error_gentle": 0.02,
+   "mean_abs_m_error_strong": 0.0534
+  }
+ },
+ "probably incomplete: left-censored": {
+  "runs": 2217,
+  "horses": 56,
+  "R0": {
+   "median_diff": 1.0,
+   "mean_abs_diff": 5.84,
+   "over_by_5plus": 0.223,
+   "under_by_5plus": 0.071,
+   "mean_abs_m_error_gentle": 0.007,
+   "mean_abs_m_error_strong": 0.0188
+  },
+  "R1": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 5.69,
+   "over_by_5plus": 0.116,
+   "under_by_5plus": 0.15,
+   "mean_abs_m_error_gentle": 0.007,
+   "mean_abs_m_error_strong": 0.0186
+  },
+  "R2": {
+   "median_diff": 0.0,
+   "mean_abs_diff": 5.63,
+   "over_by_5plus": 0.097,
+   "under_by_5plus": 0.179,
+   "mean_abs_m_error_gentle": 0.0068,
+   "mean_abs_m_error_strong": 0.0182
+  },
+  "R3": {
+   "median_diff": 0.5,
+   "mean_abs_diff": 5.42,
+   "over_by_5plus": 0.106,
+   "under_by_5plus": 0.133,
+   "mean_abs_m_error_gentle": 0.0068,
+   "mean_abs_m_error_strong": 0.0181
+  }
+ },
+ "runs_whose_value_the_cap_changes": {
+  "complete": 0,
+  "late_maiden": 0,
+  "probably incomplete: import / older non-maiden": 4854,
+  "probably incomplete: left-censored": 51469
+ }
+}

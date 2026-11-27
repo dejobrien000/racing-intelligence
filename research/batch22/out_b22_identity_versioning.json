@@ -1,0 +1,10 @@
+{
+ "coefficients_compared": 345,
+ "max_abs_change": 0.026052615422653476,
+ "median_rel_change": 0.00034659839568971227,
+ "share_rel_change_over_5pct": 0.043478260869565216,
+ "feature_rows_matched": 681998,
+ "rows_any_feature_moved_over_0.01sd": 0.489,
+ "over_0.1sd": 0.0709,
+ "over_0.5sd": 0.01108
+}

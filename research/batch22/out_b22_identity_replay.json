@@ -1,0 +1,40 @@
+{
+ "1 different horses sharing a name resolve to their own career": {
+  "cases": 112,
+  "passed": 112
+ },
+ "1 distinct careers per shared name (minimum)": 2,
+ "2 trainer transfers keep one career": {
+  "horses": 2000,
+  "trainer_rows": 4839,
+  "horses_resolving_to_one_identity": 2000,
+  "of_which_resolved": 2000
+ },
+ "3 pedigree spelling variants keep one career": {
+  "names": 25,
+  "dam_spellings_tested": 50,
+  "names_resolving_to_one_identity": 25,
+  "of_which_resolved": 25
+ },
+ "4 missing pedigree never assigns a career": {
+  "cases": 612,
+  "passed": 612
+ },
+ "5 flagged-uncertain identities use the fallback": {
+  "cases": 6,
+  "passed": 6
+ },
+ "6 reused name, different pedigree: no history": {
+  "cases": 1000,
+  "passed": 1000
+ },
+ "7 ordinary horses resolve to themselves": {
+  "cases": 3000,
+  "passed": 2999
+ },
+ "8 wrong age for the pedigree: fallback": {
+  "cases": 500,
+  "passed": 500
+ },
+ "failures_total": 1
+}
