@@ -42,6 +42,23 @@ if RR and len(O):
                      'left_out_but_started': int((~t[rule] & t.started).sum()), 'left_out_and_did_not_start': int((~t[rule] & ~t.started).sum())}
     res['original_rule'] = {'left_out_but_started': int(O[O.result_found].started.sum()), 'left_out_and_did_not_start': int((~O[O.result_found].started).sum())}
     res['no_result_found'] = int((~O.result_found).sum())
+    # Batch 20 H17: morning eligibility vs eventual participation. Main-field scratchings at capture vs by the results capture.
+    Rr = R.copy(); Rr['scr'] = Rr.status.fillna('').str.lower().isin(SCR)
+    Mm = M.copy(); Mm['scr'] = Mm.status.fillna('').str.lower().isin(SCR)
+    later = (Rr[~Rr.n.isin([])].merge(Mm[['ven', 'race', 'n', 'emergency', 'scr']], on=['ven', 'race', 'n'], suffixes=('', '_m')))
+    k_res = later[~later.emergency & later.scr].groupby(['ven', 'race']).size(); k_cap = later[~later.emergency & later.scr_m].groupby(['ven', 'race']).size()
+    O['main_scr_by_results'] = [int(k_res.get((v, r), 0)) for v, r in zip(O.ven, O.race)]
+    O['later_main_scratchings'] = O.main_scr_by_results - O.main_field_scratchings_at_capture
+    def reading(x):
+        if not x.result_found: return 'no result found'
+        if x.national_rule_gained and x.started: return 'eligible at capture (inferred) and ran'
+        if x.national_rule_gained and not x.started: return 'admitted but did not run: later scratching or misread (check)'
+        if (not x.national_rule_gained) and x.started: return ('gained a start after the capture (later scratchings; not knowable at cutoff)' if x.later_main_scratchings > 0 else 'ran although the rule left it out (rule miss)')
+        return 'not eligible at capture and did not run'
+    O['reading'] = O.apply(reading, axis=1); res['readings'] = O.reading.value_counts().to_dict()
+    per = later.groupby(['ven', 'race']).agg(scr_at_capture=('scr_m', 'sum'), scr_by_results=('scr', 'sum')).reset_index()
+    res['races'] = {'total': int(len(per)), 'with_scratchings_before_cutoff': int((per.scr_at_capture > 0).sum()), 'with_later_scratchings': int((per.scr_by_results > per.scr_at_capture).sum())}
+    res['note'] = 'eligibility at the morning cutoff is inferred from TAB statuses and emergency numbers (no official emergency order or field limit is read); participation comes from the results capture'
     res['by_state'] = {s: {'emergencies': int(len(g)), 'national_rule_correct': int((g.national_rule_gained == g.started).sum())} for s, g in O[O.result_found].groupby('state')}
 print(O.to_string(index=False) if len(O) else 'no unscratched emergencies'); print(json.dumps(res, indent=1))
 O.to_csv(f'outputs/emergency_check_{D}.csv', index=False); json.dump(res, open(f'outputs/emergency_check_{D}.json', 'w'), indent=1)

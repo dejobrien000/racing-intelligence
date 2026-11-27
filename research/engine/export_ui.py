@@ -254,6 +254,8 @@ for track, grp in v2rows.groupby('track', sort=False):
                          + (f"; {len(lt_)} lightly raced (1-2 rated runs)" if lt_ else '')}
         races.append({'no': int(rn), 'name': nice(fr.race_name), 'confidence': conf_, 'class': race_class(str(fr.race_name)), 'distance_m': int(fr.distance_m),
                       'time': t_local, 'tz': tz, 'time_brisbane_min': t_bris, 'field': n, 'label': label, 'top_cal': top['cal'], 'runners': rr, 'not_scored': ns,
+                      'emergencies_included': [{'n': int(f_['saddlecloth']), 'horse': nice(f_['horse']), 'basis': f_.get('emergency_basis')} for f_ in ((snap or {}).get('fields') or [])
+                                               if f_.get('emergency_gained_start') and int(f_.get('race_no', -1)) == int(rn)],   # Batch 19/20 A1: inferred eligibility shown, never presented as confirmed
                       'v1_top': next(x for x in rr if x['v1']['rank'] == 1)['horse']})
         for ro in rr: all_runners.append({'meeting': track, 'race': int(rn), **{k: ro[k] for k in ['n', 'horse', 'rank', 'rating', 'chance', 'cal', 'cal_lo', 'cal_hi', 'gap', 'class', 'qualified', 'reasons', 'market']}, 'evidence': ro['evidence']['score'], 'evidence_max': ro['evidence']['max'], 'time': t_local, 'tz': tz, 'tmin': t_bris, 'race_label': label})
     # rating change after last run: from the v2 daily ranking file built from this same prediction set

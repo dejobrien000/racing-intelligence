@@ -1,0 +1,29 @@
+{
+ "by_year": {
+  "2022": "no earlier data: 0",
+  "2023": {
+   "national_slope": -0.538,
+   "fit_runs": 2075
+  },
+  "2024": {
+   "national_slope": -1.121,
+   "fit_runs": 22544
+  },
+  "2025": {
+   "national_slope": -1.103,
+   "fit_runs": 52387
+  },
+  "2026": {
+   "national_slope": -1.001,
+   "fit_runs": 83343
+  }
+ },
+ "runs": {
+  "QLD": 88073,
+  "SA": 18822
+ },
+ "nonzero_share": {
+  "QLD": 0.927,
+  "SA": 0.956
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "runs_colliding": 946,
+ "identities_before": 51,
+ "identities_after": 98,
+ "affected_rating_change_mean_kg": 1.02,
+ "affected_median": 0.09,
+ "affected_max": 16.74,
+ "others_mean": 0.0102,
+ "races_with_affected": 942
+}

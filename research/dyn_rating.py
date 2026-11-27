@@ -26,6 +26,9 @@ def prepare(df):
     ADJ = os.environ.get('RATING_PERF_ADJ')   # CANDIDATE ONLY (Batch 18 A5): parquet (race_key, horse, adj_kg) subtracted from the performance FIGURE used by the rating; margins untouched
     if ADJ:
         a_ = pd.read_parquet(ADJ); d = d.merge(a_[['race_key', 'horse', 'adj_kg']], on=['race_key', 'horse'], how='left'); d['perf'] = d.perf - d.adj_kg.fillna(0.0); d = d.drop(columns=['adj_kg'])
+    NEFF = os.environ.get('RATING_TAPER_NEFF')   # CANDIDATE ONLY (Batch 20 B4): parquet (race_key, horse, n_eff) = experience to use for the taper at that run
+    if NEFF:
+        e_ = pd.read_parquet(NEFF); d = d.merge(e_[['race_key', 'horse', 'n_eff']].drop_duplicates(['race_key', 'horse']), on=['race_key', 'horse'], how='left')
     AGEF = os.environ.get('RATING_TAPER_AGEFLOOR')   # CANDIDATE ONLY (Batch 18 D2): parquet (race_key, horse, age) so the experience taper can treat 5yo+ as exposed
     if AGEF:
         g_ = pd.read_parquet(AGEF); d = d.merge(g_[['race_key', 'horse', 'age']].drop_duplicates(['race_key', 'horse']), on=['race_key', 'horse'], how='left')

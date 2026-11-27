@@ -1,0 +1,26 @@
+{
+ "OSCAR": {
+  "tab_career": 4,
+  "rq_rows": 8,
+  "rq_scratched": 5,
+  "rq_started": 3,
+  "breednet_rows": 4,
+  "distinct_dates_started": 4
+ },
+ "FACTNOT FICTION": {
+  "tab_career": 6,
+  "rq_rows": 5,
+  "rq_scratched": 2,
+  "rq_started": 3,
+  "breednet_rows": 5,
+  "distinct_dates_started": 5
+ },
+ "PAPARACHA": {
+  "tab_career": 7,
+  "rq_rows": 3,
+  "rq_scratched": 2,
+  "rq_started": 1,
+  "breednet_rows": 5,
+  "distinct_dates_started": 5
+ }
+}

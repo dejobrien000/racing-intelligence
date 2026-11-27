@@ -1,0 +1,752 @@
+ven,race,n,name,horse_key,tab_starts,held_starts,career,blinkers_state,blinkers_change
+CBY,1,1,REBEL ROYAL,REBELROYAL|PEARLCONGENIAL,1,1,"lightly raced, complete",off,no earlier capture
+CBY,1,2,STORM SEEKER,STORMSEEKER|GUSTOFWIND,0,0,first starter,off,no earlier capture
+CBY,1,3,AURIC STAR,AURICSTAR|GOLDEPONA,4,4,complete,off,no earlier capture
+CBY,1,4,DIVINE OFFERING,DIVINEOFFERING|HEAVENSGIFT,4,4,complete,off,no earlier capture
+CBY,1,5,SKY KIRK,SKYKIRK|MUSICBAY,0,0,first starter,off,unchanged
+CBY,1,6,THIS IS NOW,THISISNOW|FRANCALETTA,0,0,first starter,off,no earlier capture
+CBY,1,7,HATSUMOMO,HATSUMOMO|CONCUBINE,1,1,"lightly raced, complete",off,no earlier capture
+CBY,1,8,MISS GAMBIT,MISSGAMBIT|CHEQUERBOARD,2,2,"lightly raced, complete",off,no earlier capture
+CBY,2,1,AURORA BOOM,AURORABOOM|KOZAKOV,1,1,"lightly raced, complete",off,no earlier capture
+CBY,2,2,MENS REA,MENSREA|FULLOFBEANS,1,1,"lightly raced, complete",off,unchanged
+CBY,2,3,SACRED VOW,SACREDVOW|EQUALLOVE,2,2,"lightly raced, complete",on,no earlier capture
+CBY,2,4,BYBROOK,BYBROOK|COLERNE,0,0,first starter,off,no earlier capture
+CBY,2,5,DIVINE GAL,DIVINEGAL|KOOKIEGAL,0,0,first starter,off,no earlier capture
+CBY,2,6,POSH POMMERY,POSHPOMMERY|PRINCESSPOSH,2,2,"lightly raced, complete",off,no earlier capture
+CBY,2,7,ROCKET GIRL,ROCKETGIRL|MISSILEMANTRA,2,2,"lightly raced, complete",off,no earlier capture
+CBY,2,8,THYME TO GO,THYMETOGO|JOYATLAST,6,6,complete,off,unchanged
+CBY,3,1,BAVARIA,BAVARIA|MUSEO,1,1,"lightly raced, complete",off,no earlier capture
+CBY,3,2,BUREAU,BUREAU|LADYAZAMOUR,3,3,"lightly raced, complete",on,no earlier capture
+CBY,3,3,CADMEAN,CADMEAN|TEUMESSIAN,3,3,"lightly raced, complete",off,no earlier capture
+CBY,3,4,DARN SURE,DARNSURE|SUREKNEE,2,2,"lightly raced, complete",off,no earlier capture
+CBY,3,5,I REALLY THINK SO,IREALLYTHINKSO|SULTAH,0,0,first starter,on,no earlier capture
+CBY,3,6,SNITZEL A'LA ROUGE,SNITZELALAROUGE|MADAMROUGE,5,6,complete,off,no earlier capture
+CBY,3,7,STELLAR CIPHER,STELLARCIPHER|CRACKTHECODE,8,8,complete,on,no earlier capture
+CBY,3,8,ELDEST DAUGHTER,ELDESTDAUGHTER|PROVENCLASS,0,0,first starter,on,no earlier capture
+CBY,3,9,PALM TREE,PALMTREE|PALMATEER,4,4,complete,on,no earlier capture
+CBY,3,10,SNITZEL'S GIRL,SNITZELSGIRL|GLOBALGLAMOUR,6,6,complete,off,no earlier capture
+CBY,3,11,ENVIOUS,ENVIOUS|EMERALDBAY,2,2,"lightly raced, complete",off,no earlier capture
+CBY,3,12,NOT INEVITABLE,NOTINEVITABLE|GOLDENHIND,1,1,"lightly raced, complete",off,no earlier capture
+CBY,4,1,NEXT JEN,NEXTJEN|FASHIONSNIPTZ,11,11,complete,off,no earlier capture
+CBY,4,2,ROYAL CORPORAL,ROYALCORPORAL|ROYALHOOTENANNY,13,13,complete,off,no earlier capture
+CBY,4,3,MARCHON,MARCHON|MARCHENA,8,8,complete,on,no earlier capture
+CBY,4,4,THREESOME,THREESOME|TRIPLECHELSEA,4,4,complete,off,no earlier capture
+CBY,4,5,MISS SUPERNOVA,MISSSUPERNOVA|ALTAIRSGLOW,7,7,complete,off,no earlier capture
+CBY,4,6,TIME TO DANCE,TIMETODANCE|DONNAIMELDA,5,5,complete,off,no earlier capture
+CBY,4,7,LIPSTICK,LIPSTICK|ACCOUTREMENTS,12,12,complete,off,no earlier capture
+CBY,4,8,WAR BANNER,WARBANNER|HEATHERLY,1,1,"lightly raced, complete",on,no earlier capture
+CBY,4,9,REGAL,REGAL|LUNARTRAMP,3,3,"lightly raced, complete",off,no earlier capture
+CBY,4,10,SALMA'S STAR,SALMASSTAR|HOLLYWELL,11,11,complete,off,no earlier capture
+CBY,5,1,HALLOWED HALLS,HALLOWEDHALLS|DRAGONROBE,12,12,complete,off,no earlier capture
+CBY,5,2,COSMIC LAD,COSMICLAD|HALIMEDE,31,31,complete,off,no earlier capture
+CBY,5,3,AZARAX,AZARAX|SUNNYROSE,12,12,complete,off,no earlier capture
+CBY,5,4,MALBORK CASTLE,MALBORKCASTLE|FLIDAIS,23,23,complete,on,no earlier capture
+CBY,5,5,BONDI BLOSSOM,BONDIBLOSSOM|DEVILSARCADE,15,15,complete,on,no earlier capture
+CBY,5,6,DARN CUTE,DARNCUTE|SENNYO,20,20,complete,off,no earlier capture
+CBY,5,7,CABBUCIO,CABBUCIO|TRAPANI,9,9,complete,off,no earlier capture
+CBY,5,8,DANISH FORTUNE,DANISHFORTUNE|FOOTSTEPSOFGOD,73,73,complete,off,no earlier capture
+CBY,5,9,OUTTA LINE,OUTTALINE|BULLIONMANSION,9,8,incomplete history,off,unchanged
+CBY,5,10,AURA,AURA|MUSCATELS,16,15,incomplete history,off,no earlier capture
+CBY,6,1,MAWJOOD,MAWJOOD|MAYSOON,24,24,complete,off,no earlier capture
+CBY,6,2,IL PASSERO,ILPASSERO|BALLETBLANC,19,19,complete,on,no earlier capture
+CBY,6,3,STEEL MOVE,STEELMOVE|FLYINGICE,18,18,complete,off,no earlier capture
+CBY,6,4,FINE VINTAGE,FINEVINTAGE|WINESEARCH,31,31,complete,on,no earlier capture
+CBY,6,5,BRAVISSIMA,BRAVISSIMA|LIPIZZAN,25,25,complete,off,no earlier capture
+CBY,6,6,WHERE'STHEPROFIT,WHERESTHEPROFIT|RAZEENA,12,12,complete,off,no earlier capture
+CBY,6,7,BOJANGLES,BOJANGLES|HETTYHEIGHTS,26,26,complete,on,no earlier capture
+CBY,6,8,ANDALE ANDALE,ANDALEANDALE|LABELLAROSE,14,14,complete,on,no earlier capture
+CBY,6,9,IVAN'S HERO,IVANSHERO|KANIANA,46,46,complete,on,no earlier capture
+CBY,6,10,BODHI BOY,BODHIBOY|NODOUBTMAAM,16,16,complete,on,no earlier capture
+CBY,6,11,MAILATA,MAILATA|RIVERPEBBLES,20,20,complete,off,no earlier capture
+CBY,7,1,SHADY ROAD,SHADYROAD|SPANISHWHISPER,10,10,complete,off,no earlier capture
+CBY,7,2,SHOW BUSINESS,SHOWBUSINESS|ANOTHERSHOW,12,12,complete,off,no earlier capture
+CBY,7,3,ZOUNAKA,ZOUNAKA|RENAKA,19,19,complete,off,no earlier capture
+CBY,7,4,EMALYN,EMALYN|SHESCHOICE,14,14,complete,off,no earlier capture
+CBY,7,5,FLIGHTCREW,FLIGHTCREW|CORSAIRE,25,25,complete,on,no earlier capture
+CBY,7,6,SAPPHIRE ROSE,SAPPHIREROSE|ROCKETCOMMANDER,8,8,complete,off,no earlier capture
+CBY,7,7,BROWN SUGAR,BROWNSUGAR|FOX,6,6,complete,off,no earlier capture
+CBY,7,8,HELLENIC BELLE,HELLENICBELLE|BESIDEYOU,6,6,complete,off,no earlier capture
+CBY,7,9,LIGHTHOUSE LASS,LIGHTHOUSELASS|SHININGEAGLE,17,17,complete,off,no earlier capture
+CBY,7,10,SCURO STAR,SCUROSTAR|STARPROGENY,3,3,"lightly raced, complete",off,no earlier capture
+CBY,7,11,CELESTIAL CHARM,CELESTIALCHARM|IAMASTAR,2,2,"lightly raced, complete",unavailable,no earlier capture
+CBY,7,12,FROM ME TO YOU,FROMMETOYOU|SHOKO,1,1,"lightly raced, complete",off,no earlier capture
+CBY,7,13,OUTBACK ANGEL,OUTBACKANGEL|LOVEAROSE,20,20,complete,on,no earlier capture
+CBY,7,14,VITTOZZI,VITTOZZI|BIATHLON,12,12,complete,off,no earlier capture
+CBY,8,1,LUSKAIRE,LUSKAIRE|MILSEAIN,27,27,complete,off,no earlier capture
+CBY,8,2,KOMODO DRAGON,KOMODODRAGON|JALANJALAN,12,12,complete,on,no earlier capture
+CBY,8,3,SO SUAVE,SOSUAVE|OPULENCE,16,16,complete,off,no earlier capture
+CBY,8,4,CONGRESSMAN,CONGRESSMAN|TOPCUBAN,7,7,complete,on,no earlier capture
+CBY,8,5,O'SHEAMUS,OSHEAMUS|OREILLYSANGEL,13,13,complete,off,no earlier capture
+CBY,8,6,BIG TIGER,BIGTIGER|STORMYCHOICE,4,4,complete,on,no earlier capture
+CBY,8,7,UNUSUAL PROSPECT,UNUSUALPROSPECT|SHIBBOLETH,5,4,incomplete history,off,no earlier capture
+CBY,8,8,CHAPPY,CHAPPY|LISPENARD,8,8,complete,off,no earlier capture
+CBY,8,9,QUARTERBACK,QUARTERBACK|FLOATINGHEART,6,6,complete,off,no earlier capture
+CBY,8,11,EMERALD HILLS,EMERALDHILLS|BAYMEADOWS,5,5,complete,off,no earlier capture
+CBY,8,12,STEALTHFIRE,STEALTHFIRE|MCPHOEBE,7,4,incomplete history,off,no earlier capture
+CBY,8,13,ACHESON,ACHESON|VIRGINIABREEZE,32,32,complete,off,no earlier capture
+CBY,8,14,ALABAMA SHOWDOWN,ALABAMASHOWDOWN|OURRANSOMSTAR,9,8,incomplete history,on,unchanged
+CBY,8,15,IT'S A WONDER,ITSAWONDER|ALLEZWONDER,26,26,complete,on,no earlier capture
+CBY,8,16,STAR HALF,STARHALF|SCRUM,7,7,complete,off,no earlier capture
+QBY,1,1,ENTIRELY OAK,ENTIRELYOAK|ANACONNI,20,20,complete,off,no earlier capture
+QBY,1,2,HAZEL BAY,HAZELBAY|TWINSPIRIT,0,0,first starter,off,no earlier capture
+QBY,1,3,ISLE OF WIGHT,ISLEOFWIGHT|CICATRIX,4,4,complete,on,no earlier capture
+QBY,1,4,RISK AND FAMOUS,RISKANDFAMOUS|LOTSOFDIAMONDS,6,6,complete,on,no earlier capture
+QBY,1,5,JAMMED,JAMMED|WIDEAWAKE,4,4,complete,on,no earlier capture
+QBY,1,6,PONZI SCHEME,PONZISCHEME|DIAPASON,5,5,complete,on,no earlier capture
+QBY,1,7,STILL THE MOON,STILLTHEMOON|ICE,3,3,"lightly raced, complete",off,no earlier capture
+QBY,1,8,CAT'S EYE,CATSEYE|ISLANDGEM,1,1,"lightly raced, complete",on,no earlier capture
+QBY,1,9,DESIGNED SPINDLE,DESIGNEDSPINDLE|SILVERDESIGN,18,18,complete,off,no earlier capture
+QBY,1,10,LOUJEN FRANCAISE,LOUJENFRANCAISE|NOTATULLY,37,36,incomplete history,off,no earlier capture
+QBY,1,11,NAVY ROSE,NAVYROSE|ROSASMAGIC,1,1,"lightly raced, complete",on,no earlier capture
+QBY,1,12,SWORN,SWORN|ONAPROMISE,0,0,first starter,on,no earlier capture
+QBY,2,1,OBISANYA,OBISANYA|BRAZENWILDFIRE,1,1,"lightly raced, complete",off,no earlier capture
+QBY,2,2,ON THE FLY,ONTHEFLY|DOLOMITES,7,7,complete,off,no earlier capture
+QBY,2,3,BOY BRUTUS,BOYBRUTUS|SMARTNCUTE,4,4,complete,off,no earlier capture
+QBY,2,4,TOP PICK,TOPPICK|REDOUTESPICK,5,5,complete,off,no earlier capture
+QBY,2,5,AQUILINO,AQUILINO|MAGHRO,23,23,complete,off,no earlier capture
+QBY,2,6,BETTER BLOOM,BETTERBLOOM|SWEETLAVENDER,8,8,complete,on,no earlier capture
+QBY,2,7,JUSTWATCHHER,JUSTWATCHHER|CUPIDITY,11,11,complete,off,no earlier capture
+QBY,2,8,RAINING VIOLETS,RAININGVIOLETS|AMBITIONSREWARD,6,6,complete,on,no earlier capture
+QBY,2,9,RAWANO,RAWANO|ROSEHIP,40,40,complete,off,no earlier capture
+QBY,2,10,STAR OF MINE,STAROFMINE|SILVERTHREADS,3,3,"lightly raced, complete",off,no earlier capture
+QBY,2,11,TIGER TOM,TIGERTOM|LATIGRESA,3,3,"lightly raced, complete",off,no earlier capture
+QBY,2,12,WALKING UNDA STARS,WALKINGUNDASTARS|TIRONEMISS,7,7,complete,off,no earlier capture
+QBY,2,13,DEEL HEAD,DEELHEAD|WHATSTHEDEEL,5,5,complete,on,no earlier capture
+QBY,2,14,SON O' WAR,SONOWAR|OTRYST,32,32,complete,off,no earlier capture
+QBY,2,15,DID DUBAI ME EUROS,DIDDUBAIMEEUROS|MAGICDUBAI,12,12,complete,off,no earlier capture
+QBY,2,16,HELLCAT,HELLCAT|NORTHERNCATH,9,9,complete,on,no earlier capture
+QBY,3,1,FALSTAFFIAN,FALSTAFFIAN|MEMSAHIBLADY,9,9,complete,on,no earlier capture
+QBY,3,2,THE HARD ROAD,THEHARDROAD|SACREDVOYAGE,6,6,complete,off,no earlier capture
+QBY,3,3,AIN'T SEEN MARS,AINTSEENMARS|TASTEOFHONEY,5,5,complete,on,no earlier capture
+QBY,3,4,IN CIRCLES,INCIRCLES|LOPEDEFIELD,8,8,complete,off,no earlier capture
+QBY,3,5,OLE MISS,OLEMISS|TRANSMITTER,9,9,complete,on,no earlier capture
+QBY,3,6,PERUNO,PERUNO|NEXTTHEUNIVERSE,56,56,complete,on,no earlier capture
+QBY,3,7,WRITTEN STORY,WRITTENSTORY|NINGBO,15,15,complete,on,no earlier capture
+QBY,3,8,DELAGO SERG,DELAGOSERG|DELAGOTHUNDER,22,22,complete,off,no earlier capture
+QBY,3,9,PETOMAI,PETOMAI|ROSEOFFALVELON,4,4,complete,off,no earlier capture
+QBY,3,10,ALABAMA HUSSY,ALABAMAHUSSY|ZEITLIN,20,20,complete,off,no earlier capture
+QBY,3,11,GEOSTORM,GEOSTORM|JESSICASHOPE,101,101,complete,on,no earlier capture
+QBY,3,12,ADASITI,ADASITI|MEISHKA,19,19,complete,off,no earlier capture
+QBY,3,13,FLASHBACK TIME,FLASHBACKTIME|FLASHANNA,16,16,complete,on,no earlier capture
+QBY,3,14,LIAMENA AVENUE,LIAMENAAVENUE|LIAMENA,18,18,complete,off,no earlier capture
+QBY,3,15,KARUTA KING,KARUTAKING|INFLICTION,46,46,complete,on,no earlier capture
+QBY,3,16,BEOGRAD BOY,BEOGRADBOY|HOTELMOSKVA,56,56,complete,on,no earlier capture
+QBY,4,1,ALABASTER,ALABASTER|RESPECTING,0,0,first starter,off,no earlier capture
+QBY,4,2,MUCHOBOR,MUCHOBOR|ROCKTHEMOMENT,5,5,complete,off,no earlier capture
+QBY,4,3,WORLD WIDE,WORLDWIDE|SHADOWDANCER,5,5,complete,off,no earlier capture
+QBY,4,4,KING'S CHARM,KINGSCHARM|MAGICALCHARM,0,0,first starter,off,no earlier capture
+QBY,4,5,TEEMING,TEEMING|WEAREMANY,1,1,"lightly raced, complete",on,no earlier capture
+QBY,4,6,LADY COWAN,LADYCOWAN|FAITHINHAND,2,2,"lightly raced, complete",off,no earlier capture
+QBY,4,7,MADAM MOSAIC,MADAMMOSAIC|UBERCOUGAR,0,0,first starter,off,no earlier capture
+QBY,4,8,PASIFAE,PASIFAE|SOMAGIC,7,7,complete,on,no earlier capture
+QBY,4,9,GITTYA OWN,GITTYAOWN|LOVEYERSALL,0,0,first starter,off,no earlier capture
+QBY,4,10,TINTOELA,TINTOELA|MISSLOUISIANA,0,0,first starter,off,no earlier capture
+QBY,4,11,O'HATASKY,OHATASKY|POWEROHATA,4,4,complete,off,no earlier capture
+QBY,4,12,HUSSLAA,HUSSLAA|HUSSYMISS,5,5,complete,on,no earlier capture
+QBY,4,13,RISK AND FAMOUS,RISKANDFAMOUS|LOTSOFDIAMONDS,6,6,complete,on,no earlier capture
+QBY,4,14,NAVY ROSE,NAVYROSE|ROSASMAGIC,1,1,"lightly raced, complete",on,no earlier capture
+QBY,5,1,FAIR MASTER,FAIRMASTER|GREYGOWN,12,12,complete,on,no earlier capture
+QBY,5,2,BEHTAR,BEHTAR|BEHNASA,33,33,complete,off,no earlier capture
+QBY,5,3,KOSUKE,KOSUKE|INCHITA,22,22,complete,on,no earlier capture
+QBY,5,4,THINK I DO,THINKIDO|KARATA,21,21,complete,on,no earlier capture
+QBY,5,5,SPURLINE,SPURLINE|CRYSTALSPUR,39,39,complete,off,no earlier capture
+QBY,5,6,PURE MELODY,PUREMELODY|MINAMYA,14,14,complete,off,no earlier capture
+QBY,5,7,SORRY SUNSHINE,SORRYSUNSHINE|SUNWISP,46,46,complete,off,no earlier capture
+QBY,5,8,THE ADIGE,THEADIGE|PASSTHEPARCEL,10,10,complete,on,no earlier capture
+QBY,5,9,HARD GRUNT,HARDGRUNT|SOVITAL,25,25,complete,on,no earlier capture
+QBY,5,10,BULLA VINAKA,BULLAVINAKA|BULLABABY,36,36,complete,off,no earlier capture
+QBY,5,11,REVOKE,REVOKE|FALLACY,18,18,complete,off,no earlier capture
+QBY,6,1,SOOO CRAZY,SOOOCRAZY|CRAZYQUALITY,12,9,incomplete history,on,no earlier capture
+QBY,6,2,WRITTEN BY LUCY,WRITTENBYLUCY|GESTURE,13,13,complete,off,no earlier capture
+QBY,6,3,MISSILE DEFENCE,MISSILEDEFENCE|SOFFRAAJ,36,36,complete,on,no earlier capture
+QBY,6,4,STAR OF LILY,STAROFLILY|LILITH,7,7,complete,off,no earlier capture
+QBY,6,5,VELLA MAGIC,VELLAMAGIC|TWINSPIRIT,38,38,complete,off,no earlier capture
+QBY,6,6,SMASHING LULU,SMASHINGLULU|LUCYROSE,10,10,complete,on,no earlier capture
+QBY,6,7,ROYAL MEMORY,ROYALMEMORY|BOMBALURINA,20,20,complete,on,no earlier capture
+QBY,6,8,WONDERFUL MISTAKE,WONDERFULMISTAKE|WONDERFULTHING,11,11,complete,off,no earlier capture
+QBY,6,9,SANTOLINI,SANTOLINI|ALAMEIN,45,45,complete,on,no earlier capture
+QBY,6,10,STRAIGHT FIRE,STRAIGHTFIRE|READYFORYOU,28,28,complete,on,no earlier capture
+QBY,6,11,SELHURST PARK,SELHURSTPARK|PALAZZOCRISTALLO,59,59,complete,on,no earlier capture
+QBY,6,12,CURLY BEND,CURLYBEND|HAIRY,24,24,complete,on,no earlier capture
+QBY,6,13,FRED ASTERN,FREDASTERN|BALLERINAGIRL,7,7,complete,off,no earlier capture
+QBY,6,14,CHAIRMAN'S LIST,CHAIRMANSLIST|ARDECHE,65,65,complete,on,no earlier capture
+QBY,6,15,ZEEMA,ZEEMA|CHRISELLAINE,26,26,complete,off,no earlier capture
+QBY,7,1,VERMICELLA,VERMICELLA|SHEMAI,16,16,complete,on,no earlier capture
+QBY,7,2,BELLEISTIC KIDS,BELLEISTICKIDS|SHESBELLEISTIC,61,61,complete,on,no earlier capture
+QBY,7,3,MY LAST HOORAY,MYLASTHOORAY|VILLACORTONA,25,25,complete,on,no earlier capture
+QBY,7,4,ACHESON,ACHESON|VIRGINIABREEZE,32,32,complete,off,no earlier capture
+QBY,7,5,BLOW IN,BLOWIN|ROSEOFFALVELON,51,51,complete,on,no earlier capture
+QBY,7,6,GOOD PRIZE,GOODPRIZE|DOUBLEGOOD,35,35,complete,on,no earlier capture
+QBY,7,7,MISS STALWART,MISSSTALWART|AVOID,56,56,complete,off,no earlier capture
+QBY,7,8,BURGUNDY GIRL,BURGUNDYGIRL|CHABLIS,57,57,complete,off,no earlier capture
+QBY,7,9,SOUL LADY,SOULLADY|IMPOSITION,24,24,complete,off,no earlier capture
+QBY,7,10,LUNA ANGEL,LUNAANGEL|LUNULAE,54,53,incomplete history,on,no earlier capture
+QBY,7,11,BATTLE ABBEY,BATTLEABBEY|MADONNICA,53,53,complete,on,no earlier capture
+QBY,7,12,GOLD TRACKER,GOLDTRACKER|GRACEFULLYCHIC,60,60,complete,on,no earlier capture
+QBY,7,13,HARDAZHELL,HARDAZHELL|FIRMOPTION,47,47,complete,on,no earlier capture
+QBY,7,14,PEARLER,PEARLER|REDANLANE,25,25,complete,off,no earlier capture
+QBY,8,1,ACTION KING,ACTIONKING|ARABIANGIFT,27,38,complete,off,no earlier capture
+QBY,8,2,SUTTON VELLA,SUTTONVELLA|VELLABEL,25,25,complete,off,no earlier capture
+QBY,8,3,WINNING REVOLUTION,WINNINGREVOLUTION|BROUGHTONSFANCY,65,66,complete,on,no earlier capture
+QBY,8,4,LOS PADRES,LOSPADRES|MATILIJA,38,38,complete,on,no earlier capture
+QBY,8,5,MASSIRA,MASSIRA|MARRAKESH,26,26,complete,off,no earlier capture
+QBY,8,6,ALL ADORE,ALLADORE|ALLTOOREADY,11,11,complete,off,no earlier capture
+QBY,8,7,STARLIGHT GIRL,STARLIGHTGIRL|FAUSTINE,32,32,complete,off,no earlier capture
+QBY,8,8,ALABAMA HAMMER,ALABAMAHAMMER|ZAUBERFLOTE,4,4,complete,off,no earlier capture
+QBY,8,9,DESTRUCTIVE DIVA,DESTRUCTIVEDIVA|ATOMEVE,41,41,complete,on,no earlier capture
+QBY,8,10,METALLIC RULER,METALLICRULER|IRONMIZZ,29,29,complete,off,no earlier capture
+QBY,8,11,SMARTER THAN YOU,SMARTERTHANYOU|HOTCOMMODITY,41,41,complete,off,no earlier capture
+QBY,8,12,HELL OF A SHOW,HELLOFASHOW|MAGICIAM,34,34,complete,off,no earlier capture
+QBY,8,13,VAINSTREAM,VAINSTREAM|YASEYSAN,118,108,incomplete history,off,no earlier capture
+MUS,1,1,CAPTAINTHUNDERBOLT,CAPTAINTHUNDERBOLT|SHEERLIGHTNING,5,5,complete,on,no earlier capture
+MUS,1,2,ENVISIONED,ENVISIONED|IONYOU,8,8,complete,on,no earlier capture
+MUS,1,3,MOON DART,MOONDART|DYLANSDART,6,6,complete,on,no earlier capture
+MUS,1,4,SEDITIO,SEDITIO|LARECONQUISTA,2,2,"lightly raced, complete",on,no earlier capture
+MUS,1,5,TARRANT COUNTY,TARRANTCOUNTY|SASSYSTAR,18,18,complete,off,no earlier capture
+MUS,1,6,TOKE,TOKE|LEFTINMYWAKE,13,13,complete,off,no earlier capture
+MUS,1,7,VINTAGE BELL,VINTAGEBELL|SAUTERNES,2,2,"lightly raced, complete",off,no earlier capture
+MUS,1,8,UMBUSI,UMBUSI|AFRICANRAINBOW,2,2,"lightly raced, complete",on,no earlier capture
+MUS,1,9,VAGUELY RED,VAGUELYRED|VILLAROSA,1,1,"lightly raced, complete",off,no earlier capture
+MUS,1,10,BOBBIN BACK,BOBBINBACK|DANISHLACE,12,12,complete,on,no earlier capture
+MUS,1,11,LITTLE MISS SASS,LITTLEMISSSASS|OHLEARNEDONE,2,2,"lightly raced, complete",on,no earlier capture
+MUS,1,12,HONNIBALL DRIVE,HONNIBALLDRIVE|WAKATIPU,6,6,complete,on,no earlier capture
+MUS,1,13,SHEZA'S SHOW,SHEZASSHOW|UNKNOWNDESTINY,2,2,"lightly raced, complete",off,no earlier capture
+MUS,2,1,SHADASHI,SHADASHI|DASHIEDELUXE,11,10,incomplete history,off,no earlier capture
+MUS,2,2,DON'T TELL POLLY,DONTTELLPOLLY|PELONOMENA,8,8,complete,on,no earlier capture
+MUS,2,3,AFRICAN DIAMOND,AFRICANDIAMOND|AFRICANRAINBOW,9,9,complete,on,no earlier capture
+MUS,2,4,HONEST DOLL,HONESTDOLL|SUNDAYSTAR,3,4,"lightly raced, complete",off,no earlier capture
+MUS,2,5,SUNDAY PUNCH,SUNDAYPUNCH|CHUCHOTER,13,13,complete,off,no earlier capture
+MUS,2,6,LEICA QUEEN,LEICAQUEEN|LEICASLASS,11,11,complete,on,no earlier capture
+MUS,2,7,RING MY BELL,RINGMYBELL|MOVINOUT,18,18,complete,off,no earlier capture
+MUS,2,8,SIGSALY,SIGSALY|MOSTSECRETIVE,16,16,complete,off,no earlier capture
+MUS,2,9,ROCK'N ON UPTOWN,ROCKNONUPTOWN|UPTOWNROCK,25,24,incomplete history,on,no earlier capture
+MUS,3,1,CAPE COD,CAPECOD|SHOALS,2,2,"lightly raced, complete",off,no earlier capture
+MUS,3,2,AFRICAN DIAMOND,AFRICANDIAMOND|AFRICANRAINBOW,9,9,complete,on,no earlier capture
+MUS,3,3,ALBERT'S PICK,ALBERTSPICK|MERRILYMERRILY,19,19,complete,on,no earlier capture
+MUS,3,4,LIGHTENING KISS,LIGHTENINGKISS|OCEANNYMPH,2,2,"lightly raced, complete",off,no earlier capture
+MUS,3,5,DON'T TELL HARRY,DONTTELLHARRY|SEATTLELASS,17,17,complete,on,no earlier capture
+MUS,3,6,MODERNIST,MODERNIST|MODERNITY,5,5,complete,on,no earlier capture
+MUS,3,7,ABOVE BOARD,ABOVEBOARD|REDSTOCKINGS,5,5,complete,off,no earlier capture
+MUS,3,9,ALARTHILL,ALARTHILL|ALART,13,13,complete,on,no earlier capture
+MUS,4,1,PRIMA VECCHIO,PRIMAVECCHIO|PRIMAKLAIRE,3,3,"lightly raced, complete",off,no earlier capture
+MUS,4,2,NEAREST,NEAREST|PRINCESSNOIR,4,4,complete,off,no earlier capture
+MUS,4,3,CHIEF WILD EAGLE,CHIEFWILDEAGLE|ZAZEELA,4,4,complete,on,no earlier capture
+MUS,4,4,OCEAN PREDATOR,OCEANPREDATOR|SADE,3,3,"lightly raced, complete",on,no earlier capture
+MUS,4,5,ENTERPRISING,ENTERPRISING|MISSSHAMROCK,2,2,"lightly raced, complete",off,no earlier capture
+MUS,4,6,POST MARK,POSTMARK|POSTERESTANTE,3,3,"lightly raced, complete",on,no earlier capture
+MUS,4,7,ROYAL AND READY,ROYALANDREADY|SILKTRAIL,8,8,complete,on,no earlier capture
+MUS,4,8,VELASTRA,VELASTRA|STOCKTONABBEY,4,4,complete,off,no earlier capture
+MUS,4,9,SIMMERING,SIMMERING|REGIMENTALBAND,2,2,"lightly raced, complete",off,no earlier capture
+MUS,4,10,SPALPEEN,SPALPEEN|SOCIALORDER,4,4,complete,off,no earlier capture
+MUS,4,11,BABYFACED ASSASSIN,BABYFACEDASSASSIN|SILENTLY,18,18,complete,on,no earlier capture
+MUS,4,12,BOSCA BULLET,BOSCABULLET|VENECIA,5,5,complete,off,no earlier capture
+MUS,4,13,GREY BELIEF,GREYBELIEF|OUREMILYMIA,21,21,complete,on,no earlier capture
+MUS,4,14,SONHO DOURADO,SONHODOURADO|ZURELLA,4,4,complete,off,no earlier capture
+MUS,4,15,TENDI,TENDI|DEALORNODEAL,18,18,complete,off,no earlier capture
+MUS,5,1,CHARM DESTINATION,CHARMDESTINATION|MISSBEATRICE,4,4,complete,off,no earlier capture
+MUS,5,2,GOT HERE,GOTHERE|BROOKTONBLING,3,2,"lightly raced, incomplete history",off,unchanged
+MUS,5,3,SOUTHPORT,SOUTHPORT|MARIELLE,5,4,incomplete history,off,unchanged
+MUS,5,4,BOA VISTA,BOAVISTA|SERENABAY,10,10,complete,on,no earlier capture
+MUS,5,5,DANNY'S OCEAN,DANNYSOCEAN|INHINDSIGHT,0,0,first starter,off,no earlier capture
+MUS,5,6,JAYVEER,JAYVEER|RIAPINKA,0,0,first starter,on,no earlier capture
+MUS,5,7,NASA BLUEBERRY,NASABLUEBERRY|ASHRAMA,1,1,"lightly raced, complete",off,no earlier capture
+MUS,5,8,BRAVE ARCHIE,BRAVEARCHIE|IRONICMISS,1,1,"lightly raced, complete",off,no earlier capture
+MUS,5,9,NOT ASKING,NOTASKING|TONGUEANDGROOVE,2,2,"lightly raced, complete",off,no earlier capture
+MUS,5,10,RAPID DESCENT,RAPIDDESCENT|SCHUSS,0,0,first starter,off,no earlier capture
+MUS,5,11,WOOTTON TOUCH IT,WOOTTONTOUCHIT|MISSTEHERAN,2,1,"lightly raced, incomplete history",off,unchanged
+MUS,5,12,FROG ROCK,FROGROCK|JUDEM,6,6,complete,off,no earlier capture
+MUS,5,13,KNIGHTLY GIRL,KNIGHTLYGIRL|GENTLEMENSWORDS,1,1,"lightly raced, complete",off,no earlier capture
+MUS,5,14,KURSAAL,KURSAAL|CASSILIO,4,4,complete,off,no earlier capture
+MUS,5,15,FAKE FICTION,FAKEFICTION|TALEOFCHOICE,9,9,complete,on,no earlier capture
+MUS,5,16,FINAL GIFT,FINALGIFT|MISSGIGI,14,14,complete,off,no earlier capture
+MUS,5,17,HOT CHESTNUT,HOTCHESTNUT|NICCONILASS,24,24,complete,on,no earlier capture
+MUS,5,18,MORPETH,MORPETH|WOODBINEMISS,10,10,complete,on,no earlier capture
+MUS,6,1,MAGURTZ,MAGURTZ|HEYDORIS,9,9,complete,on,no earlier capture
+MUS,6,2,OVERZONE,OVERZONE|TESTZONE,5,5,complete,off,no earlier capture
+MUS,6,3,PENCILLER,PENCILLER|CLIPPER,9,9,complete,off,no earlier capture
+MUS,6,4,BIG BRAD,BIGBRAD|ROYALECROWN,4,4,complete,on,no earlier capture
+MUS,6,5,THUNDER LIGHTS,THUNDERLIGHTS|INVINCIBLETHUNDER,12,12,complete,on,no earlier capture
+MUS,6,6,PRINCE DE VEGA,PRINCEDEVEGA|PRINCESSLAYAN,13,13,complete,off,no earlier capture
+MUS,6,7,DEVILISH SUN,DEVILISHSUN|IWEARPRADA,9,9,complete,off,no earlier capture
+MUS,6,8,WARBRECCAN,WARBRECCAN|BURBIE,10,10,complete,off,no earlier capture
+MUS,6,9,THIRTY DEGREES,THIRTYDEGREES|JACQUELINE,15,15,complete,off,no earlier capture
+MUS,6,10,SOULS COMPANION,SOULSCOMPANION|NATIVERHYTHM,9,9,complete,on,no earlier capture
+MUS,6,11,DAYU,DAYU|WILDWOODDANCER,34,36,complete,on,no earlier capture
+MUS,7,1,JASON DARREN,JASONDARREN|DINKUMDIAMOND,28,28,complete,off,no earlier capture
+MUS,7,2,WEST HEAD,WESTHEAD|MISSDELVEEN,14,14,complete,off,no earlier capture
+MUS,7,3,RENOIR,RENOIR|THEARTIST,9,9,complete,off,no earlier capture
+MUS,7,4,PLANET NERO,PLANETNERO|LUCKYHELMET,1,1,"lightly raced, complete",off,no earlier capture
+MUS,7,5,KURITHEA,KURITHEA|IRITHEA,14,20,complete,on,no earlier capture
+MUS,7,6,IN ISO,INISO|CANNONSCROWN,46,46,complete,on,no earlier capture
+MUS,7,7,ICHIKA,ICHIKA|ONLYROSES,27,27,complete,off,no earlier capture
+MUS,7,8,LADY FELINA,LADYFELINA|REZONED,9,9,complete,off,no earlier capture
+MUS,7,9,GLORYESS,GLORYESS|ENCHANTEDGLORY,25,25,complete,on,no earlier capture
+MUS,7,10,EVER WAS,EVERWAS|NEARSILENUS,60,60,complete,off,no earlier capture
+MUS,7,11,TYCOON LAD,TYCOONLAD|LAZUMBA,44,44,complete,off,no earlier capture
+MUS,8,1,SHIHAB,SHIHAB|ROSEWEDGE,39,39,complete,off,no earlier capture
+MUS,8,2,SARATOGA POWER,SARATOGAPOWER|GINGERNRYE,24,25,complete,off,no earlier capture
+MUS,8,3,WHO EVER THOUGHT,WHOEVERTHOUGHT|EMPRESSREGNANT,26,26,complete,on,no earlier capture
+MUS,8,4,ENTERPRISE LEGEND,ENTERPRISELEGEND|CLOVERLANE,41,41,complete,off,no earlier capture
+MUS,8,5,SUPER SIOUX,SUPERSIOUX|SHIDEEZI,22,22,complete,off,no earlier capture
+MUS,8,6,NO STATEMENT,NOSTATEMENT|BERNINGAFFAIR,102,102,complete,on,no earlier capture
+MUS,8,7,ANGIE'S SISTER,ANGIESSISTER|SKULLASSISTER,11,11,complete,off,no earlier capture
+MUS,8,8,IRON HAT,IRONHAT|LEFTINMYWAKE,60,60,complete,on,no earlier capture
+MUS,8,9,VIERVILLE,VIERVILLE|MEADOWSPRITE,22,24,complete,off,no earlier capture
+MUS,8,10,DEBUSSY,DEBUSSY|SWEETESTMELODY,58,58,complete,on,no earlier capture
+MUS,8,11,IRISH JIG,IRISHJIG|ROCKMEBABY,21,22,complete,off,no earlier capture
+MUS,8,12,SMART AND DAPPER,SMARTANDDAPPER|BEAUTIFULDAPPER,33,34,complete,on,no earlier capture
+MUS,8,13,TELEGRAPH,TELEGRAPH|OURMISSJONES,51,53,complete,off,no earlier capture
+PAK,1,1,ACTIVATING,ACTIVATING|ACTING,2,2,"lightly raced, complete",on,no earlier capture
+PAK,1,2,ADHARA,ADHARA|SNITZERLAND,0,0,first starter,on,no earlier capture
+PAK,1,3,BOHEMIAN RHAPSODY,BOHEMIANRHAPSODY|INVINCIBLEGEM,4,4,complete,off,no earlier capture
+PAK,1,4,BRAZEN BOLD,BRAZENBOLD|MELOMELO,1,1,"lightly raced, complete",off,no earlier capture
+PAK,1,5,CAPITAL STORM,CAPITALSTORM|DONGXINGPRINCESS,2,2,"lightly raced, complete",off,no earlier capture
+PAK,1,6,LORD OF THE EARTH,LORDOFTHEEARTH|DRAKENSBERG,0,0,first starter,off,no earlier capture
+PAK,1,7,MAJESTIC SON,MAJESTICSON|RHAPSODYROSE,1,1,"lightly raced, complete",off,no earlier capture
+PAK,1,8,MR SAPPHIRE,MRSAPPHIRE|BELSAPPHIRE,4,4,complete,on,no earlier capture
+PAK,1,9,TIZ THE TYCOON,TIZTHETYCOON|TIZMYVIEW,1,1,"lightly raced, complete",off,no earlier capture
+PAK,2,1,ASSUNTA,ASSUNTA|DIORISSIMA,0,0,first starter,off,no earlier capture
+PAK,2,2,BLUE IVY,BLUEIVY|INDIRECT,1,1,"lightly raced, complete",off,no earlier capture
+PAK,2,3,BLUE JEANS TALK,BLUEJEANSTALK|UNFORGIVABLE,6,6,complete,off,no earlier capture
+PAK,2,4,DANCELL,DANCELL|VICENNALIA,2,2,"lightly raced, complete",off,no earlier capture
+PAK,2,5,EPPONNEE RAE,EPPONNEERAE|SPECIALEPISODE,4,4,complete,off,no earlier capture
+PAK,2,6,KENSINGTON,KENSINGTON|TRAGIC,1,1,"lightly raced, complete",off,no earlier capture
+PAK,2,7,MEDIA DARLING,MEDIADARLING|MEDIASENSATION,0,0,first starter,off,no earlier capture
+PAK,2,8,NYAD,NYAD|LAUGHENHARD,0,0,first starter,off,no earlier capture
+PAK,2,9,PLEASE PLEASE ME,PLEASEPLEASEME|CALIFORNIASURPRISE,0,0,first starter,off,no earlier capture
+PAK,2,10,RENECCA,RENECCA|KARMIC,0,0,first starter,off,no earlier capture
+PAK,2,11,SPIRIT NATURE,SPIRITNATURE|INVINCIBLENATURE,1,1,"lightly raced, complete",off,no earlier capture
+PAK,2,12,WOLFMAAMA,WOLFMAAMA|GHUMAAMA,1,1,"lightly raced, complete",off,no earlier capture
+PAK,2,13,AMBER QUEEN,AMBERQUEEN|VONA,1,1,"lightly raced, complete",off,no earlier capture
+PAK,3,1,ABYDOS,ABYDOS|DEVINELASS,3,3,"lightly raced, complete",on,no earlier capture
+PAK,3,2,BAROSSA BOURBON,BAROSSABOURBON|GIRLSGOTSPIRIT,5,5,complete,off,no earlier capture
+PAK,3,3,MAURIE'S PRIDE,MAURIESPRIDE|WILDNYMPH,1,1,"lightly raced, complete",off,no earlier capture
+PAK,3,4,SHY VELOCITY,SHYVELOCITY|SHYGIRL,2,2,"lightly raced, complete",off,no earlier capture
+PAK,3,5,SOUNDWAVE,SOUNDWAVE|MELODIOUS,8,5,incomplete history,off,no earlier capture
+PAK,3,6,ANOTHER POTHOLE,ANOTHERPOTHOLE|CHAQUINTA,0,0,first starter,off,no earlier capture
+PAK,3,7,FORT ROCK,FORTROCK|ROCKTHENIGHTAWAY,0,0,first starter,off,no earlier capture
+PAK,3,8,HURTADO,HURTADO|SHOWUSYOURTATTS,0,0,first starter,off,no earlier capture
+PAK,3,9,PERCIPIENT,PERCIPIENT|DUSKYQUEEN,1,1,"lightly raced, complete",off,no earlier capture
+PAK,3,10,POCKET WATCH,POCKETWATCH|TINGTING,1,1,"lightly raced, complete",off,no earlier capture
+PAK,3,11,RED TIDE,REDTIDE|HERMOSABEACH,4,4,complete,off,no earlier capture
+PAK,3,12,KOKESHI,KOKESHI|TRUEQUALITY,8,8,complete,off,no earlier capture
+PAK,3,13,GREY FLYER,GREYFLYER|GRISDAME,2,2,"lightly raced, complete",on,no earlier capture
+PAK,3,14,SHIPPING STEEL,SHIPPINGSTEEL|CARMELITES,2,2,"lightly raced, complete",off,no earlier capture
+PAK,3,15,RUSSIAN NIGHTS,RUSSIANNIGHTS|MUSICOFTHENIGHT,3,3,"lightly raced, complete",off,no earlier capture
+PAK,4,1,ALWAYS SHINING,ALWAYSSHINING|SUPERPOWER,16,16,complete,on,no earlier capture
+PAK,4,2,ARDAD NED,ARDADNED|STONECOUGAR,2,0,"lightly raced, incomplete history",on,no earlier capture
+PAK,4,3,ASPARAGUS,ASPARAGUS|JELLYLORUM,1,1,"lightly raced, complete",off,no earlier capture
+PAK,4,4,CHRONIC,CHRONIC|SOMETHINGSHOCKING,17,17,complete,on,no earlier capture
+PAK,4,5,FULL ZOOM,FULLZOOM|AHBELLE,1,1,"lightly raced, complete",off,no earlier capture
+PAK,4,6,MONTESQUIEU,MONTESQUIEU|PARISMATCH,4,4,complete,off,no earlier capture
+PAK,4,7,SEINFELD,SEINFELD|GOCARA,4,4,complete,off,no earlier capture
+PAK,4,8,TECKNOKING,TECKNOKING|ISMELUCKY,4,4,complete,on,no earlier capture
+PAK,4,9,TEQUILA'S BRO,TEQUILASBRO|PENSATION,0,0,first starter,on,no earlier capture
+PAK,4,10,WOLLEMI,WOLLEMI|LAKEMARION,1,1,"lightly raced, complete",off,no earlier capture
+PAK,4,11,ZAMETOVKA,ZAMETOVKA|YELLEN,1,1,"lightly raced, complete",off,no earlier capture
+PAK,4,12,FARO LADY,FAROLADY|TOORSINAA,1,1,"lightly raced, complete",on,no earlier capture
+PAK,5,1,TERRORTORIAN,TERRORTORIAN|MEZULLA,12,12,complete,off,no earlier capture
+PAK,5,2,UNTAPPED,UNTAPPED|SHESGIFTED,22,22,complete,off,no earlier capture
+PAK,5,3,MOUNT SABYINYO,MOUNTSABYINYO|FASCINO,8,8,complete,on,no earlier capture
+PAK,5,4,ALEXANDER THEGREAT,ALEXANDERTHEGREAT|PINKCRYSTAL,3,3,"lightly raced, complete",on,no earlier capture
+PAK,5,5,ARISTONOUS,ARISTONOUS|AGOSTA,44,37,incomplete history,on,no earlier capture
+PAK,5,6,CAELIUS,CAELIUS|SALINA,12,12,complete,off,no earlier capture
+PAK,5,7,ROGAN,ROGAN|TIARA,17,17,complete,off,no earlier capture
+PAK,5,8,CHILLIES,CHILLIES|CANNDIYARA,7,7,complete,on,no earlier capture
+PAK,5,9,HEY BELLA,HEYBELLA|EAGLESDESTINY,24,23,incomplete history,on,no earlier capture
+PAK,5,10,SO YOU EXCEL,SOYOUEXCEL|GOODTIMESROLL,10,10,complete,on,no earlier capture
+PAK,6,1,ZOURAIN,ZOURAIN|FORGETTHEWEATHER,29,29,complete,off,no earlier capture
+PAK,6,2,YUM,YUM|DREAMFOOD,14,14,complete,on,no earlier capture
+PAK,6,3,BLUE BANDIT,BLUEBANDIT|ONTHELOOSE,18,18,complete,off,no earlier capture
+PAK,6,4,SURPERB FROST,SURPERBFROST|ZAPURBLY,13,13,complete,off,no earlier capture
+PAK,6,5,DISCOVER LUPINO,DISCOVERLUPINO|LUPINO,5,5,complete,on,no earlier capture
+PAK,6,6,RUSSIAN FRONT,RUSSIANFRONT|UPFRONT,38,38,complete,off,no earlier capture
+PAK,6,7,SEABORN,SEABORN|NIKU,3,3,"lightly raced, complete",off,no earlier capture
+PAK,6,8,HOLA AMIGOS,HOLAAMIGOS|LOSTAMIGOS,22,22,complete,off,no earlier capture
+PAK,6,9,CHERRY HILLS,CHERRYHILLS|ZOMBIEWITNESS,3,3,"lightly raced, complete",off,no earlier capture
+PAK,6,10,THERE WERE ROSES,THEREWEREROSES|INDISCRETION,6,6,complete,off,no earlier capture
+PAK,6,11,VENETIAN CHOICE,VENETIANCHOICE|CHOISIRLANE,10,10,complete,off,no earlier capture
+PAK,6,12,PERFECT NIGHT,PERFECTNIGHT|PROMISETOREIGN,12,12,complete,on,no earlier capture
+PAK,6,13,POSH DIAMANTE,POSHDIAMANTE|POSHROCK,8,8,complete,off,no earlier capture
+PAK,6,14,TIGER FOX,TIGERFOX|FOXYFREE,7,7,complete,on,no earlier capture
+PAK,6,15,JETSETTER JACK,JETSETTERJACK|LADYJETSETTER,10,10,complete,off,no earlier capture
+PAK,6,16,KING MAYWIN,KINGMAYWIN|MAEWYN,12,12,complete,off,no earlier capture
+PAK,7,1,BARBARINO,BARBARINO|ELUSIVEFILLY,1,1,"lightly raced, complete",off,no earlier capture
+PAK,7,2,GENERAL BLU,GENERALBLU|DELTAGIRL,3,3,"lightly raced, complete",off,no earlier capture
+PAK,7,3,MIGHTY MYSTIC,MIGHTYMYSTIC|GOLDPHOENIX,2,2,"lightly raced, complete",off,no earlier capture
+PAK,7,4,SHARES,SHARES|FUTUREMISS,5,5,complete,off,no earlier capture
+PAK,7,5,HOOK 'N' SPUR,HOOKNSPUR|ADONAIS,9,9,complete,off,no earlier capture
+PAK,7,6,NGONGOTAHA,NGONGOTAHA|HEARTSLIFTED,5,5,complete,off,no earlier capture
+PAK,7,7,CIRCUS LIGHTS,CIRCUSLIGHTS|LANEY,3,3,"lightly raced, complete",off,no earlier capture
+PAK,7,8,ASTIQUER,ASTIQUER|NETTOYER,3,3,"lightly raced, complete",off,no earlier capture
+PAK,7,9,TITAN'S SPIRIT,TITANSSPIRIT|VIVACIOUSSPIRIT,11,11,complete,on,no earlier capture
+PAK,7,10,GLISK,GLISK|SHELLAC,7,5,incomplete history,off,unchanged
+PAK,7,11,PURE SILK,PURESILK|HAILIL,7,7,complete,off,no earlier capture
+PAK,7,12,ALL TORQUE,ALLTORQUE|REGLISSE,14,11,incomplete history,off,no earlier capture
+PAK,8,1,BARARI,BARARI|OMNEEYA,12,12,complete,off,no earlier capture
+PAK,8,2,HELLO ROMEO,HELLOROMEO|JULIETA,17,16,incomplete history,off,no earlier capture
+PAK,8,3,LANDMARK,LANDMARK|VALENTINEMISS,15,15,complete,off,no earlier capture
+PAK,8,4,MR TICKLES,MRTICKLES|MYHRO,49,49,complete,off,no earlier capture
+PAK,8,5,MAGNABELLE ROYALE,MAGNABELLEROYALE|EFFIGYBELLE,10,10,complete,off,no earlier capture
+PAK,8,6,MONIX,MONIX|SUBPRIME,23,23,complete,on,no earlier capture
+PAK,8,7,WEAPON CLEAR,WEAPONCLEAR|CULOTTES,15,15,complete,off,no earlier capture
+PAK,8,8,JAKIVY,JAKIVY|STILETTOROCK,31,31,complete,off,no earlier capture
+PAK,8,9,YOLO,YOLO|AKARI,20,20,complete,off,no earlier capture
+PAK,8,10,HEADBANGER,HEADBANGER|SISTONIC,10,11,complete,off,no earlier capture
+PAK,8,11,IT'S A YES,ITSAYES|TYPHOONJOLIE,17,17,complete,off,no earlier capture
+PAK,8,12,ROOM FOR BINGO,ROOMFORBINGO|MAHOGANYROOM,16,16,complete,on,no earlier capture
+PAK,8,13,SPIRIT OF WEALTH,SPIRITOFWEALTH|SILVERSPIRIT,11,11,complete,off,no earlier capture
+PAK,8,14,VIVID SUN,VIVIDSUN|RAINBOWSONG,6,6,complete,off,no earlier capture
+PAK,8,15,NOETZIE,NOETZIE|ROOIROE,6,6,complete,off,no earlier capture
+PAK,8,16,MONGOLIAN GOBI,MONGOLIANGOBI|MISSTRUM,9,9,complete,off,no earlier capture
+SSC,1,1,COOL ZUMBELINA,COOLZUMBELINA|ZUMBELINA,2,2,"lightly raced, complete",off,no earlier capture
+SSC,1,2,TAUTARA,TAUTARA|JETTARA,2,2,"lightly raced, complete",off,no earlier capture
+SSC,1,3,TEQUILA CHRISTMAS,TEQUILACHRISTMAS|MEDIA,0,0,first starter,on,no earlier capture
+SSC,1,4,WEATHERFORDRINKING,WEATHERFORDRINKING|QUENCHTHETHIRST,0,0,first starter,off,no earlier capture
+SSC,1,5,BRILLIANT DISGUISE,BRILLIANTDISGUISE|VISTABELLE,1,2,"lightly raced, complete",off,no earlier capture
+SSC,1,6,DIAMOND BOOM,DIAMONDBOOM|HIGHLYGEARED,1,1,"lightly raced, complete",off,no earlier capture
+SSC,1,7,VUKAS,VUKAS|DAYTONADANICA,1,2,"lightly raced, complete",off,no earlier capture
+SSC,1,8,CHARLIE CHOO CHOO,CHARLIECHOOCHOO|OOZESCLASS,2,3,"lightly raced, complete",off,no earlier capture
+SSC,1,9,DARN SAGA,DARNSAGA|SAGASGIFT,3,2,"lightly raced, incomplete history",off,no earlier capture
+SSC,1,10,MELODRAMA MISS,MELODRAMAMISS|COUNTESSMIA,0,0,first starter,off,no earlier capture
+SSC,1,11,SHEZA TRAP,SHEZATRAP|SHESAWILDCAT,0,0,first starter,off,no earlier capture
+SSC,1,12,SUNNY DOLL,SUNNYDOLL|BETTERTHANBEST,0,0,first starter,off,no earlier capture
+SSC,1,13,BOLD NOMAD,BOLDNOMAD|BOLDGYPSY,1,1,"lightly raced, complete",off,no earlier capture
+SSC,1,14,SHE'S HOTSTUFF,SHESHOTSTUFF|VIBRANT,4,7,complete,off,no earlier capture
+SSC,1,15,IMAGOODSORT,IMAGOODSORT|LICKEDY,3,3,"lightly raced, complete",off,no earlier capture
+SSC,2,1,YOU'VE GOT THIS,YOUVEGOTTHIS|FUNCKIA,0,2,first starter,off,no earlier capture
+SSC,2,2,FROSTY LOOKS,FROSTYLOOKS|IVEGOTTHELOOKS,1,1,"lightly raced, complete",off,no earlier capture
+SSC,2,3,RIESA,RIESA|CHINCH,1,2,"lightly raced, complete",off,no earlier capture
+SSC,2,4,MONOCRU,MONOCRU|CHAMPAGNEREADY,6,6,complete,off,no earlier capture
+SSC,2,5,ZOUBUCA SHOTS,ZOUBUCASHOTS|CARABLANCA,8,9,complete,off,no earlier capture
+SSC,2,6,SPLICED,SPLICED|SALLYSREALM,2,2,"lightly raced, complete",off,no earlier capture
+SSC,2,7,THE AVIATOR,THEAVIATOR|BAREFOOT,10,13,complete,off,no earlier capture
+SSC,2,8,FACTNOT FICTION,FACTNOTFICTION|SASIA,6,7,complete,off,no earlier capture
+SSC,2,9,SEAPHIRA,SEAPHIRA|SEAMARVISTA,4,5,complete,on,no earlier capture
+SSC,2,10,YOU DRIVE ME CRAZY,YOUDRIVEMECRAZY|DONTCALLMECRAZY,7,7,complete,on,no earlier capture
+SSC,2,11,RATIVA,RATIVA|ALTIVA,6,6,complete,off,no earlier capture
+SSC,2,12,TRAIL BOSS,TRAILBOSS|SHESFORRANSOM,10,8,incomplete history,off,no earlier capture
+SSC,3,1,LARUSSO,LARUSSO|TYPHOONJOLIE,14,20,complete,off,no earlier capture
+SSC,3,2,POOR OL' JOHNY RAY,POOROLJOHNYRAY|ZUZELA,17,19,complete,off,no earlier capture
+SSC,3,3,TAP HIGH,TAPHIGH|DELIGHTFULTAP,15,15,complete,off,no earlier capture
+SSC,3,4,CHANCE DE LUNE,CHANCEDELUNE|BIRDSOFTOKYO,22,26,complete,off,no earlier capture
+SSC,3,5,AUTUMN HEIR,AUTUMNHEIR|FORREEL,24,25,complete,on,no earlier capture
+SSC,3,6,HIGHLAND KITTY,HIGHLANDKITTY|MAGICKITTY,16,20,complete,off,no earlier capture
+SSC,3,7,ORMOND ROAD,ORMONDROAD|VANILLASPIN,32,34,complete,on,no earlier capture
+SSC,3,8,BLUEPRINT,BLUEPRINT|WILDSILK,36,40,complete,on,no earlier capture
+SSC,3,9,HE'S A SAINT,HESASAINT|SAINTED,24,29,complete,on,no earlier capture
+SSC,3,10,READY TO DRINK,READYTODRINK|READYTOPICK,14,18,complete,off,no earlier capture
+SSC,3,11,BOLERO,BOLERO|SYNCOPATEDGROOVE,41,45,complete,on,no earlier capture
+SSC,3,12,SHOWMAN,SHOWMAN|PRECIOUSJADE,38,42,complete,on,no earlier capture
+SSC,3,13,THINK I'M IRISH,THINKIMIRISH|OCOUNEY,35,35,complete,on,no earlier capture
+SSC,4,1,OUT OF TURN,OUTOFTURN|CANGINO,11,14,complete,off,no earlier capture
+SSC,4,2,SEA ADMIRAL,SEAADMIRAL|BEAUTYSCHOOL,11,11,complete,on,no earlier capture
+SSC,4,3,KING OF THE JUNGLE,KINGOFTHEJUNGLE|ROYALHUSSY,31,42,complete,off,no earlier capture
+SSC,4,4,SWEET HESITATION,SWEETHESITATION|LICORICESTICK,12,21,complete,off,no earlier capture
+SSC,4,5,TELLING,TELLING|NEVERDOUBTME,13,13,complete,off,no earlier capture
+SSC,4,6,CASINO BAY,CASINOBAY|SINOEAGLE,6,10,complete,off,no earlier capture
+SSC,4,7,HI BARBIE,HIBARBIE|OUTBACKBARBIE,11,12,complete,on,no earlier capture
+SSC,4,8,OSCAR,OSCAR|GALAAFFAIR,4,7,complete,on,no earlier capture
+SSC,4,9,RED FEATHER BOA,REDFEATHERBOA|PLUMAGE,18,31,complete,on,no earlier capture
+SSC,4,10,SHADWELL LANE,SHADWELLLANE|WORDFORWORD,8,10,complete,off,no earlier capture
+SSC,4,11,SIZZLEIST,SIZZLEIST|SIZZLEFLY,10,11,complete,off,no earlier capture
+SSC,4,12,TARA I AM,TARAIAM|JETTARA,9,12,complete,off,no earlier capture
+SSC,4,13,BELLE AFFAIR,BELLEAFFAIR|DONTPASSGEORGIA,10,15,complete,on,no earlier capture
+SSC,4,14,TRIPLE YES,TRIPLEYES|DANEHILLSMILE,21,21,complete,off,no earlier capture
+SSC,4,15,ZOUREKA,ZOUREKA|GWYNEDD,4,5,complete,off,no earlier capture
+SSC,4,16,STEEL KNIGHT,STEELKNIGHT|SYBELLA,11,11,complete,off,no earlier capture
+SSC,4,17,TORQUE TOO EASY,TORQUETOOEASY|TOOEASYSIS,7,8,complete,off,no earlier capture
+SSC,4,18,CYBER CITY,CYBERCITY|STARCOUNCIL,15,18,complete,off,no earlier capture
+SSC,5,1,VANDEVELDE,VANDEVELDE|MARLENEADELE,13,15,complete,on,no earlier capture
+SSC,5,2,OCEAN SYMPHONY,OCEANSYMPHONY|LEYTANA,10,9,incomplete history,on,no earlier capture
+SSC,5,3,TIVACIOUS,TIVACIOUS|THECEREMONY,2,2,"lightly raced, complete",off,no earlier capture
+SSC,5,4,STORMING HOME,STORMINGHOME|WHITEMOSS,4,6,complete,off,no earlier capture
+SSC,5,5,SIMPLY FUN,SIMPLYFUN|HARBOURFUN,28,31,complete,on,no earlier capture
+SSC,5,6,STAR OF PARIS,STAROFPARIS|STARZEL,6,7,complete,off,no earlier capture
+SSC,5,7,TALK ABOUT LAYLA,TALKABOUTLAYLA|TYCOONLAYLA,8,8,complete,off,no earlier capture
+SSC,5,8,TISANI JAMES,TISANIJAMES|TISANIROSE,10,11,complete,on,no earlier capture
+SSC,5,9,FLOP SHOT,FLOPSHOT|NEXTCHAPTER,13,18,complete,off,no earlier capture
+SSC,5,10,ESPOIR DA TAP,ESPOIRDATAP|MRSTAPPY,9,12,complete,on,no earlier capture
+SSC,5,11,INTERRO,INTERRO|INTERRAM,9,9,complete,off,no earlier capture
+SSC,5,12,STRIKE ME PINK,STRIKEMEPINK|LANGSLASS,14,24,complete,off,no earlier capture
+SSC,5,13,LORD DANILO,LORDDANILO|LADYDUPORTH,30,33,complete,off,no earlier capture
+SSC,5,14,LECAN,LECAN|CREATRIX,14,12,incomplete history,off,no earlier capture
+SSC,6,1,MEASURE UP,MEASUREUP|TEASPOON,4,4,complete,off,no earlier capture
+SSC,6,2,OLE BAZZLE,OLEBAZZLE|FAZZLE,18,19,complete,on,no earlier capture
+SSC,6,3,TULONG,TULONG|MIDNIGHTFURY,21,27,complete,on,no earlier capture
+SSC,6,4,QUEST OF QUESTS,QUESTOFQUESTS|JETLING,46,41,incomplete history,on,no earlier capture
+SSC,6,5,RUSSIAN ESCAPE,RUSSIANESCAPE|NOTTOBECAUGHT,17,17,complete,on,no earlier capture
+SSC,6,6,SIMPLY FUN,SIMPLYFUN|HARBOURFUN,28,31,complete,on,no earlier capture
+SSC,6,7,BUSKER,BUSKER|STREETMADE,21,30,complete,on,no earlier capture
+SSC,6,8,COPPER STAR,COPPERSTAR|KIBIRA,13,24,complete,off,no earlier capture
+SSC,6,9,RUMBLE TOWN,RUMBLETOWN|RUMBLEDOLL,18,20,complete,off,no earlier capture
+SSC,6,10,ENCRYPTED FEELING,ENCRYPTEDFEELING|FLEETINGFEELING,12,14,complete,off,no earlier capture
+SSC,6,11,FAR BEYOND,FARBEYOND|MOQUEEN,9,16,complete,on,no earlier capture
+SSC,6,12,XTRA LA VITA,XTRALAVITA|TIFFIN,13,18,complete,on,no earlier capture
+SSC,6,13,DAZZLING DIAMOND,DAZZLINGDIAMOND|FAMILYREUNION,17,23,complete,off,no earlier capture
+SSC,6,14,WORTHTHEADMISSION,WORTHTHEADMISSION|ADMISSION,5,9,complete,off,no earlier capture
+SSC,6,15,KEMAL,KEMAL|KAMILI,17,22,complete,off,no earlier capture
+SSC,6,16,PIGGIETALES,PIGGIETALES|PONYTALES,19,25,complete,on,no earlier capture
+SSC,6,17,CHANCE WITH WOLVES,CHANCEWITHWOLVES|EDNADEZ,77,89,complete,off,no earlier capture
+SSC,6,18,OAKFIELD MONTANA,OAKFIELDMONTANA|OAKFIELDTIME,18,16,incomplete history,on,no earlier capture
+SSC,6,19,ROARING SUCCESS,ROARINGSUCCESS|STREETALLURE,36,34,incomplete history,off,no earlier capture
+SSC,7,1,HARD KNOX,HARDKNOX|MNEMONIC,6,9,complete,on,no earlier capture
+SSC,7,2,FLASHING STAR,FLASHINGSTAR|WALTZ,2,5,"lightly raced, complete",on,no earlier capture
+SSC,7,3,MARTINDALE KID,MARTINDALEKID|DIVAOREILLY,3,4,"lightly raced, complete",off,no earlier capture
+SSC,7,4,ONLYYOUCANREAD,ONLYYOUCANREAD|SPECIALMISS,7,8,complete,off,no earlier capture
+SSC,7,5,SYMMETRIQUE,SYMMETRIQUE|SARISARA,3,5,"lightly raced, complete",on,no earlier capture
+SSC,7,6,HOT'N'SMART,HOTNSMART|SMARTERTHAN,1,2,"lightly raced, complete",on,no earlier capture
+SSC,7,7,ZOUCOUP,ZOUCOUP|SUCCEEDER,1,2,"lightly raced, complete",off,no earlier capture
+SSC,7,8,DAPPER VEE,DAPPERVEE|DAPPERONE,1,1,"lightly raced, complete",off,no earlier capture
+SSC,7,9,OLD NIFTY,OLDNIFTY|MONEEFA,2,2,"lightly raced, complete",on,no earlier capture
+SSC,7,10,CASTLEREAGH AFFAIR,CASTLEREAGHAFFAIR|ROMANTICAFFAIR,2,3,"lightly raced, complete",off,no earlier capture
+SSC,7,11,MYSTICISE,MYSTICISE|DREIMARG,1,4,"lightly raced, complete",on,no earlier capture
+SSC,7,12,TWICE BETTER,TWICEBETTER|BETTABETRED,2,3,"lightly raced, complete",off,no earlier capture
+SSC,7,13,BALTUSROL,BALTUSROL|TURNCOAT,4,5,complete,off,no earlier capture
+SSC,7,14,SHOWBIZ VEGA,SHOWBIZVEGA|SCISSORS,3,3,"lightly raced, complete",off,no earlier capture
+SSC,7,15,VIVA ESTELLA,VIVAESTELLA|CHARMINGESTELLE,0,0,first starter,on,no earlier capture
+SSC,7,16,WHITE SWAN,WHITESWAN|WHITULA,1,1,"lightly raced, complete",off,no earlier capture
+SSC,7,17,PURE AUDACITY,PUREAUDACITY|SCHEMEL,3,4,"lightly raced, complete",on,no earlier capture
+SSC,7,18,MISS KIT KAT,MISSKITKAT|FIRSTCLASSMISS,5,6,complete,on,no earlier capture
+SSC,7,19,ZARLA,ZARLA|LASARLA,5,6,complete,off,no earlier capture
+SSC,7,20,TAPPY'S STAR,TAPPYSSTAR|STARTINA,4,5,complete,on,no earlier capture
+SSC,7,21,ALARMED,ALARMED|MYSTICALBEL,5,5,complete,on,no earlier capture
+CNS,1,1,BALLANDELLA STREET,BALLANDELLASTREET|GAUTENGGAL,14,17,complete,on,no earlier capture
+CNS,1,2,FARNANHEIT,FARNANHEIT|ZUMOOROODA,14,15,complete,off,no earlier capture
+CNS,1,3,POWER CRUISE,POWERCRUISE|NEDSBYPASS,16,18,complete,on,no earlier capture
+CNS,1,4,ROTH AUTHORITY,ROTHAUTHORITY|MARNI,10,11,complete,off,no earlier capture
+CNS,1,5,LEUBOOM,LEUBOOM|LEUSATER,3,3,"lightly raced, complete",off,no earlier capture
+CNS,1,6,VOLARE,VOLARE|PLANETSPRINCESS,36,34,incomplete history,on,no earlier capture
+CNS,1,7,PRINCESS KNOWITALL,PRINCESSKNOWITALL|PRINCESSSIRI,3,5,"lightly raced, complete",off,no earlier capture
+CNS,2,1,CORPULENT,CORPULENT|STATUESQUELY,7,7,complete,off,no earlier capture
+CNS,2,2,ZIGGY STARCRAFT,ZIGGYSTARCRAFT|DORSETCLIFFS,24,23,incomplete history,on,no earlier capture
+CNS,2,3,THUNDER BLAZE,THUNDERBLAZE|REDCOLOUR,5,2,incomplete history,off,no earlier capture
+CNS,2,4,YOUMEANDDUPRE,YOUMEANDDUPRE|DUPRE,18,19,complete,off,no earlier capture
+CNS,2,5,FRILLY FILLY,FRILLYFILLY|FRILLY,4,2,incomplete history,off,no earlier capture
+CNS,2,6,TARIFF,TARIFF|CURZON,22,19,incomplete history,off,no earlier capture
+CNS,3,1,MR STRONG,MRSTRONG|MISSCHAPEAU,2,2,"lightly raced, complete",off,no earlier capture
+CNS,3,2,ROCKY CHEVAL,ROCKYCHEVAL|CALLME,0,0,first starter,off,no earlier capture
+CNS,3,3,UNCLE TREASURE,UNCLETREASURE|TREASUREGALLERY,1,1,"lightly raced, complete",on,no earlier capture
+CNS,3,4,DESIGN POWER,DESIGNPOWER|FOXYXENIA,2,2,"lightly raced, complete",on,no earlier capture
+CNS,3,5,SHORTS FURY,SHORTSFURY|MISSSTRATOPHONIC,1,1,"lightly raced, complete",off,no earlier capture
+CNS,3,6,TIME EFEX,TIMEEFEX|TICTOCTICTOC,0,0,first starter,off,no earlier capture
+CNS,3,7,MORNING GLORY,MORNINGGLORY|DAWNFIGHTER,1,1,"lightly raced, complete",off,no earlier capture
+CNS,3,8,GREY DEVIL,GREYDEVIL|HOUSEOFHINGIS,2,2,"lightly raced, complete",off,no earlier capture
+CNS,4,1,SMART MISSION,SMARTMISSION|EARLY,20,24,complete,off,no earlier capture
+CNS,4,2,WINCHESTER,WINCHESTER|SHAREDREFLECTIONS,13,13,complete,on,no earlier capture
+CNS,4,3,THE HONEY BADGER,THEHONEYBADGER|TASTEOFHONEY,17,15,incomplete history,on,no earlier capture
+CNS,4,4,VINCENTVANGEE,VINCENTVANGEE|CARAVELI,7,7,complete,off,no earlier capture
+CNS,4,5,CATCH A BREAK,CATCHABREAK|SURFCANDY,29,29,complete,off,no earlier capture
+CNS,4,6,DIAMOND LUCY,DIAMONDLUCY|LOVELUCILLE,38,38,complete,on,no earlier capture
+CNS,4,7,ZIGGY STARCRAFT,ZIGGYSTARCRAFT|DORSETCLIFFS,24,23,incomplete history,on,no earlier capture
+CNS,4,8,NOSEY NEO,NOSEYNEO|MEDDLER,22,26,complete,on,no earlier capture
+CNS,5,1,WORTHY GEM,WORTHYGEM|BEEBYGEM,8,8,complete,off,no earlier capture
+CNS,5,2,GOOD ONE CECIL,GOODONECECIL|BEGOOD,5,10,complete,off,no earlier capture
+CNS,5,3,DEE THREE,DEETHREE|MONDEUSE,6,6,complete,on,no earlier capture
+CNS,5,4,HEART OF VIENNA,HEARTOFVIENNA|QUILATE,5,7,complete,off,no earlier capture
+CNS,5,5,MONDAY CLOSE,MONDAYCLOSE|SUNDAYYUMCHA,8,12,complete,off,no earlier capture
+CNS,5,6,RUSSIAN FANTASY,RUSSIANFANTASY|MORETTI,3,7,"lightly raced, complete",on,no earlier capture
+CNS,5,7,BOOMING BELIEF,BOOMINGBELIEF|GOTNODOUBT,11,13,complete,on,no earlier capture
+CNS,5,8,BOOMIOUS,BOOMIOUS|RISINGBOOM,9,12,complete,on,no earlier capture
+CNS,6,1,MACHINE HEAD,MACHINEHEAD|THWAYYA,36,40,complete,on,no earlier capture
+CNS,6,2,COPPABELLA ROAD,COPPABELLAROAD|PALAZZOPUBBLICO,25,28,complete,on,no earlier capture
+CNS,6,3,TASSORTING,TASSORTING|SPORTINI,9,9,complete,on,no earlier capture
+CNS,6,4,THREEBROTHERS,THREEBROTHERS|KALAMITYJANE,33,29,incomplete history,off,no earlier capture
+CNS,6,5,GOLDEN OCTAVIAN,GOLDENOCTAVIAN|WECANDANCE,15,16,complete,off,no earlier capture
+CNS,6,6,DO A LITTLE DANCE,DOALITTLEDANCE|AUTUMNSPLENDOUR,6,8,complete,on,no earlier capture
+CNS,6,7,CARLANDO,CARLANDO|LOVEDELIGHT,5,5,complete,off,no earlier capture
+CNS,7,1,TURN BIRD,TURNBIRD|MISSIMAGICA,39,42,complete,on,no earlier capture
+CNS,7,2,HARTSHORN,HARTSHORN|KUCHINSKAYA,34,37,complete,on,no earlier capture
+CNS,7,3,OVERLORD,OVERLORD|REDTRACER,44,25,incomplete history,off,no earlier capture
+CNS,7,4,BRAVE AGENDA,BRAVEAGENDA|MORGANZA,37,39,complete,on,no earlier capture
+CNS,7,5,INCHING CLOSER,INCHINGCLOSER|INSURGENT,94,49,incomplete history,on,no earlier capture
+CNS,7,6,LINE 'EM UP LOUI,LINEEMUPLOUI|MISSDELIMA,26,13,incomplete history,off,no earlier capture
+CNS,7,7,CEREMONIOUS,CEREMONIOUS|SAVETHEDATE,32,29,incomplete history,on,no earlier capture
+MTG,1,1,CALM THE PRESS,CALMTHEPRESS|MEDITATE,16,16,complete,off,no earlier capture
+MTG,1,2,MALAWI MAN,MALAWIMAN|BELLALUCREZIA,17,17,complete,on,no earlier capture
+MTG,1,3,POWDER GUY,POWDERGUY|MISSOLIVIER,1,1,"lightly raced, complete",off,no earlier capture
+MTG,1,4,REBEL'S LEGACY,REBELSLEGACY|LADYTHREESHOES,0,0,first starter,off,no earlier capture
+MTG,1,5,EL PASO SENORITA,ELPASOSENORITA|HARTWARMING,1,1,"lightly raced, complete",off,no earlier capture
+MTG,1,6,GRANDSTRAZ,GRANDSTRAZ|RUBITROVE,15,14,incomplete history,off,no earlier capture
+MTG,1,7,GREEN AMBER,GREENAMBER|HENRYSCHOICE,21,21,complete,off,no earlier capture
+MTG,1,8,PIKLEMEGRANMOTHER,PIKLEMEGRANMOTHER|TOPSHOPPER,11,11,complete,off,no earlier capture
+MTG,1,9,SERILO,SERILO|MATERIALITY,4,4,complete,on,no earlier capture
+MTG,1,10,CHILLY SAV,CHILLYSAV|SAVANNABEEL,5,5,complete,off,no earlier capture
+MTG,1,11,HALFA PENNY,HALFAPENNY|MANDALONGANNIE,0,0,first starter,off,no earlier capture
+MTG,1,12,HARD AND FORST,HARDANDFORST|BIRDOFDUBAI,0,0,first starter,off,no earlier capture
+MTG,2,1,COLD TRAIN,COLDTRAIN|LAGAZELLE,29,29,complete,on,no earlier capture
+MTG,2,2,HASTA LA OINKERS,HASTALAOINKERS|DIFALCO,15,15,complete,on,no earlier capture
+MTG,2,3,MONEY WHEEL,MONEYWHEEL|ROULETTES,21,21,complete,off,no earlier capture
+MTG,2,4,PATH TO VICTORY,PATHTOVICTORY|ARAMOANA,7,7,complete,on,no earlier capture
+MTG,2,5,KING LEONIDAS,KINGLEONIDAS|PRESSERA,3,3,"lightly raced, complete",off,no earlier capture
+MTG,2,6,NORMANDY PEACE,NORMANDYPEACE|WESTCHESTER,4,4,complete,off,no earlier capture
+MTG,2,7,COCOA CHARM,COCOACHARM|KENYANGOLD,5,5,complete,on,no earlier capture
+MTG,2,8,IMMINENT TOUCH,IMMINENTTOUCH|STEADYHAND,4,4,complete,off,no earlier capture
+MTG,2,9,ISKADEEL,ISKADEEL|ISKANDER,3,3,"lightly raced, complete",off,no earlier capture
+MTG,2,10,NO NEED FOR TEARS,NONEEDFORTEARS|CRYIFIWANTTO,6,6,complete,off,no earlier capture
+MTG,2,11,REWARD DRAWER,REWARDDRAWER|FLYHIGHCLUB,10,10,complete,off,no earlier capture
+MTG,2,12,STUDIO ARTIST,STUDIOARTIST|TAVIBAY,11,9,incomplete history,on,no earlier capture
+MTG,3,1,VAN ROY,VANROY|OURHARMONY,56,46,incomplete history,off,no earlier capture
+MTG,3,2,FOX GEM,FOXGEM|SHEILARIZED,49,39,incomplete history,off,no earlier capture
+MTG,3,3,SYNTHESISE,SYNTHESISE|AMALGAMATE,14,14,complete,on,no earlier capture
+MTG,3,4,BLINDATO,BLINDATO|DANDESHA,5,5,complete,off,no earlier capture
+MTG,3,5,PARKRUN,PARKRUN|LEGLESS,16,16,complete,off,no earlier capture
+MTG,3,6,PIANTA,PIANTA|VANITYSKY,44,44,complete,on,no earlier capture
+MTG,3,7,BY NINE,BYNINE|PLEASELEAVE,31,26,incomplete history,off,no earlier capture
+MTG,3,8,DEFICIT,DEFICIT|TAQASEEM,84,70,incomplete history,on,no earlier capture
+MTG,3,9,FIFTH HUSBAND,FIFTHHUSBAND|FLINDERS,44,41,incomplete history,on,no earlier capture
+MTG,4,1,GUSTY WAY,GUSTYWAY|MELODIESWAY,40,40,complete,on,no earlier capture
+MTG,4,2,LOST HIS BEANS,LOSTHISBEANS|DREAMFREE,19,22,complete,off,no earlier capture
+MTG,4,3,FREE BEER,FREEBEER|WYUNA,31,31,complete,on,no earlier capture
+MTG,4,4,EMERALD REWARD,EMERALDREWARD|MARYLOU,27,27,complete,off,no earlier capture
+MTG,4,5,SINGLES MOMENT,SINGLESMOMENT|NAUGHTYMOMENTS,6,6,complete,off,no earlier capture
+MTG,4,6,ONE BOUND,ONEBOUND|CALLEFLORA,5,5,complete,off,no earlier capture
+MTG,4,7,CHILLI REAPER,CHILLIREAPER|HIGHLOWBET,13,13,complete,off,no earlier capture
+MTG,4,8,SALSBURY HILL,SALSBURYHILL|CHINKARADANCER,68,49,incomplete history,off,no earlier capture
+MTG,5,1,IN LOVE,INLOVE|EQUALLOVE,29,29,complete,off,no earlier capture
+MTG,5,2,POSITIVE IMAGE,POSITIVEIMAGE|ANGELFACE,8,8,complete,off,no earlier capture
+MTG,5,3,ELNAJEEB,ELNAJEEB|ROOBEENA,9,10,complete,on,no earlier capture
+MTG,5,4,HOLLOW TURF,HOLLOWTURF|PITCHPERFECT,10,10,complete,on,no earlier capture
+MTG,5,5,LIGHT FILLED,LIGHTFILLED|STARLIGHTANGEL,7,7,complete,off,no earlier capture
+MTG,5,6,FOX MAN,FOXMAN|FRENCHFOX,19,19,complete,off,no earlier capture
+MTG,5,7,MAGIC FIELD,MAGICFIELD|ITSTIMEFORMAGIC,25,25,complete,off,no earlier capture
+MTG,5,8,BOLSHOI BABE,BOLSHOIBABE|FOXYMISS,5,5,complete,on,no earlier capture
+MTG,5,9,STARSEATIC,STARSEATIC|LEILASSTAR,5,5,complete,off,no earlier capture
+MTG,5,10,ARTISTIC ANGEL,ARTISTICANGEL|SALOME,12,12,complete,off,no earlier capture
+MTG,5,11,NUDGE 'EM ALONG,NUDGEEMALONG|LESTYPRAYERS,38,36,incomplete history,on,no earlier capture
+MTG,5,12,SQUAGAGA,SQUAGAGA|FLYINGGAGA,35,34,incomplete history,off,no earlier capture
+MTG,6,1,AQUAHOLIC,AQUAHOLIC|ALLYOURS,27,33,complete,off,no earlier capture
+MTG,6,2,SIR RANDOLPH,SIRRANDOLPH|READYFORCATHERINE,31,34,complete,off,no earlier capture
+MTG,6,3,SOTOMAYOR,SOTOMAYOR|SPRINGALON,24,24,complete,on,no earlier capture
+MTG,6,4,WHATHAPPENSINVEGAS,WHATHAPPENSINVEGAS|MARLUCCIO,6,6,complete,on,no earlier capture
+MTG,6,5,RAMELLE,RAMELLE|BACKINTOWN,7,7,complete,off,no earlier capture
+MTG,6,6,MISTY EMOTIONS,MISTYEMOTIONS|VALHALLAWEDDING,17,17,complete,off,no earlier capture
+MTG,6,7,SWEET BUT SASSY,SWEETBUTSASSY|LUCANDSTAR,7,7,complete,off,no earlier capture
+MTG,6,8,FLUX,FLUX|FLYINGGAGA,44,43,incomplete history,off,no earlier capture
+MTG,6,9,LOVE 'N' GAMES,LOVENGAMES|LONESOME,17,18,complete,off,no earlier capture
+MTG,6,10,RATNARAJ,RATNARAJ|RUBYHEART,14,14,complete,on,no earlier capture
+MTG,6,11,SUNSET PRAYER,SUNSETPRAYER|KYRIEELEISON,15,15,complete,on,no earlier capture
+MTG,7,1,CORK HARBOUR,CORKHARBOUR|MARITIMO,90,83,incomplete history,off,no earlier capture
+MTG,7,2,SIMPLY EXCELS,SIMPLYEXCELS|SIMPLYSPITEFUL,19,22,complete,on,no earlier capture
+MTG,7,3,AHVEJAY,AHVEJAY|REMEMBRANCEDAY,23,23,complete,off,no earlier capture
+MTG,7,4,INFER,INFER|MINING,28,28,complete,off,no earlier capture
+MTG,7,5,LET IT RIDE,LETITRIDE|FLEURDAMOUR,18,13,incomplete history,on,no earlier capture
+MTG,7,6,TUDAYA,TUDAYA|MOSSTRIP,22,26,complete,on,no earlier capture
+MTG,7,7,ALBLAZER,ALBLAZER|BLAZINGARCHWAY,25,24,incomplete history,off,no earlier capture
+MTG,7,8,BARE TO WITNESS,BARETOWITNESS|BIDNBARE,32,30,incomplete history,on,no earlier capture
+MTG,7,9,QUIZLET,QUIZLET|LACONIC,31,30,incomplete history,on,no earlier capture
+MTG,7,10,STEELY HUSTLER,STEELYHUSTLER|HUSSTERICS,24,22,incomplete history,off,no earlier capture
+MTG,7,11,IT'S NOT OVER,ITSNOTOVER|ACTORSGUILD,6,6,complete,off,no earlier capture
+MTG,7,12,TURNED LOOSE,TURNEDLOOSE|DESERTFAIRY,24,24,complete,off,no earlier capture
+MTG,7,13,BACKFLIPS,BACKFLIPS|BELLSPATH,10,10,complete,off,no earlier capture
+MTG,7,14,HASTA LA AMNESTY,HASTALAAMNESTY|MOFAJAH,22,22,complete,off,no earlier capture
+MTG,7,15,BLACK BUGATTI,BLACKBUGATTI|HERSTORY,29,27,incomplete history,off,no earlier capture
+MTG,7,16,DRINK THEN KISS,DRINKTHENKISS|BELLAAVA,44,41,incomplete history,off,no earlier capture
+MTG,7,17,DANGEROUS SECRET,DANGEROUSSECRET|NEMESIS,30,30,complete,on,no earlier capture
+WOD,1,1,BOURNE LEGACY,BOURNELEGACY|SECRETSUCCESS,5,5,complete,on,no earlier capture
+WOD,1,2,COSMIC SNITZ,COSMICSNITZ|CELESTIALINSIGHT,0,0,first starter,off,no earlier capture
+WOD,1,3,KIPTUM,KIPTUM|LANIQUE,0,0,first starter,off,no earlier capture
+WOD,1,4,PRINCE OF GLAM,PRINCEOFGLAM|GLAMOURFOX,1,1,"lightly raced, complete",off,no earlier capture
+WOD,1,5,TOUGH REVELATION,TOUGHREVELATION|THEOPHANY,0,0,first starter,off,no earlier capture
+WOD,1,6,BORATA'S GIRL,BORATASGIRL|BAUBO,5,5,complete,off,no earlier capture
+WOD,1,7,MAGNA PEAK,MAGNAPEAK|TOPPEAK,1,1,"lightly raced, complete",off,no earlier capture
+WOD,1,8,ZOU OWE ME,ZOUOWEME|DEBTNDEFICIT,0,0,first starter,off,no earlier capture
+WOD,2,1,DAGGER ONE,DAGGERONE|GOLDENLUSTRE,5,5,complete,off,no earlier capture
+WOD,2,2,DOCTORATE,DOCTORATE|TAWARET,4,4,complete,off,no earlier capture
+WOD,2,3,MAGNUS MAXIMUS,MAGNUSMAXIMUS|MORNINGMOOD,6,6,complete,off,no earlier capture
+WOD,2,4,ORDINARY STAR,ORDINARYSTAR|THATSITTHATSALL,1,1,"lightly raced, complete",off,no earlier capture
+WOD,2,5,PRAY FOR ELEGANCE,PRAYFORELEGANCE|ESTEEMEDELEGANCE,2,2,"lightly raced, complete",on,no earlier capture
+WOD,2,6,SKADOODLE,SKADOODLE|SIMA,0,0,first starter,off,no earlier capture
+WOD,2,7,AZKA VELOCE,AZKAVELOCE|AZKADELLIA,0,0,first starter,off,no earlier capture
+WOD,2,8,IMA VIXEN,IMAVIXEN|CEFFYLMOR,0,0,first starter,on,no earlier capture
+WOD,2,9,MUDDY,MUDDY|MARIONTYPE,3,3,"lightly raced, complete",off,no earlier capture
+WOD,2,10,NEWS SCOOP,NEWSSCOOP|SHOOP,4,4,complete,on,no earlier capture
+WOD,2,11,REGAL BELLE,REGALBELLE|CORBLIMEY,0,0,first starter,on,no earlier capture
+WOD,2,12,WINNA'S SISTER,WINNASSISTER|ANUDDAWINNA,1,0,"lightly raced, incomplete history",off,no earlier capture
+WOD,2,13,ARTIES A STAR,ARTIESASTAR|STARPROJECT,9,9,complete,off,no earlier capture
+WOD,3,1,HE'S OUR BOY,HESOURBOY|FRIDAYARRIVAL,7,7,complete,off,no earlier capture
+WOD,3,2,SCORPION,SCORPION|NESSUNDORMA,10,10,complete,off,no earlier capture
+WOD,3,3,ACROMAN,ACROMAN|MANNYA,2,2,"lightly raced, complete",off,no earlier capture
+WOD,3,4,ASTATINE,ASTATINE|ALZORA,2,2,"lightly raced, complete",off,no earlier capture
+WOD,3,5,BOOTS OFF,BOOTSOFF|PENNYFLING,1,1,"lightly raced, complete",off,no earlier capture
+WOD,3,6,INNER LIGHT,INNERLIGHT|AWAKENING,2,1,"lightly raced, incomplete history",on,no earlier capture
+WOD,3,7,BAR LA LA,BARLALA|LALALAND,4,4,complete,on,no earlier capture
+WOD,3,8,ESTIVAL,ESTIVAL|ESTAGAL,8,8,complete,on,no earlier capture
+WOD,3,9,FIORE DARANCIO,FIOREDARANCIO|ORANGERIVER,8,8,complete,off,no earlier capture
+WOD,3,10,KATIE ON THE EDGE,KATIEONTHEEDGE|WAIWETULASS,0,0,first starter,off,no earlier capture
+WOD,3,11,MONEY BAGS,MONEYBAGS|ELUSIVEKASH,2,2,"lightly raced, complete",off,no earlier capture
+WOD,3,12,NINETYFIVEINAFIFTY,NINETYFIVEINAFIFTY|EXPRESSSTREET,10,10,complete,off,no earlier capture
+WOD,3,13,PRINCESS PRUSSIA,PRINCESSPRUSSIA|UNDERNOPRUSSIA,11,10,incomplete history,off,no earlier capture
+WOD,3,14,I'M CONFUSED,IMCONFUSED|LADYGRACE,0,0,first starter,off,no earlier capture
+WOD,3,15,VELOCE,VELOCE|BELLISSIMAMISS,2,2,"lightly raced, complete",off,no earlier capture
+WOD,3,16,LEGAL SIZE,LEGALSIZE|LARIMUS,3,3,"lightly raced, complete",off,no earlier capture
+WOD,3,17,COOKARDINIA MISS,COOKARDINIAMISS|WOOLSINFASHION,4,4,complete,off,no earlier capture
+WOD,4,1,JUST CALL ME JONNY,JUSTCALLMEJONNY|SLIMLINE,23,1,incomplete history,off,no earlier capture
+WOD,4,2,DARTBOARD,DARTBOARD|ANAMATO,45,29,incomplete history,off,no earlier capture
+WOD,4,3,STAR BLAZER,STARBLAZER|DEARNESS,32,32,complete,off,no earlier capture
+WOD,4,4,MISTRESSOFILLUSION,MISTRESSOFILLUSION|ILPALAZZO,25,19,incomplete history,off,no earlier capture
+WOD,4,5,QUAMBY,QUAMBY|ZEROICE,36,36,complete,off,no earlier capture
+WOD,4,6,SORRY SUNSHINE,SORRYSUNSHINE|SUNWISP,46,46,complete,off,no earlier capture
+WOD,4,7,DOC MARCH,DOCMARCH|AWESOMEIAM,25,25,complete,off,no earlier capture
+WOD,4,8,SHE'S STARGAZING,SHESSTARGAZING|METRONOME,10,10,complete,off,no earlier capture
+WOD,4,9,SURELY SPECIAL,SURELYSPECIAL|CLEARLYUNIQUE,59,56,incomplete history,off,no earlier capture
+WOD,4,10,UNDER THE HAT,UNDERTHEHAT|EXCEEDINGLYFRENCH,28,27,incomplete history,on,no earlier capture
+WOD,4,11,CARNIVAL RICHES,CARNIVALRICHES|NOVEMBER,12,12,complete,on,no earlier capture
+WOD,4,12,VICTRIX SWAN,VICTRIXSWAN|CYGNET,8,8,complete,on,no earlier capture
+WOD,4,13,MURGASTY,MURGASTY|DEEDRA,12,12,complete,off,no earlier capture
+WOD,4,14,PERFECTLY GOOD,PERFECTLYGOOD|AMERINDIA,32,32,complete,on,no earlier capture
+WOD,5,1,SHOTARO,SHOTARO|MARDI,6,6,complete,on,no earlier capture
+WOD,5,2,GIANT'S REPRIEVE,GIANTSREPRIEVE|GEORGIASREPRIEVE,5,5,complete,on,no earlier capture
+WOD,5,3,PALLADIUM,PALLADIUM|GOANNAGAGA,9,9,complete,on,no earlier capture
+WOD,5,4,SAN MARCO,SANMARCO|PIAZZA,34,11,incomplete history,off,no earlier capture
+WOD,5,5,SIR BASIL,SIRBASIL|DIVINEWAY,10,10,complete,off,no earlier capture
+WOD,5,6,STAR BUYER,STARBUYER|DWINDLE,58,57,incomplete history,off,no earlier capture
+WOD,5,7,SCOTTISH PEARL,SCOTTISHPEARL|PEARLOFTHENIGHT,20,21,complete,off,no earlier capture
+WOD,5,8,BOTTAS,BOTTAS|ORIENTALLILY,11,11,complete,on,no earlier capture
+WOD,5,9,ASHEN KNIGHT,ASHENKNIGHT|HONESTLADY,8,8,complete,on,no earlier capture
+WOD,5,10,MIDNIGHT EAGLE,MIDNIGHTEAGLE|LANIQUE,12,12,complete,on,no earlier capture
+WOD,5,11,RED LIGHT RACHEL,REDLIGHTRACHEL|HEAVENSENTME,8,8,complete,off,no earlier capture
+WOD,5,12,STRATEGIC DEFENSE,STRATEGICDEFENSE|ASIDO,24,24,complete,off,no earlier capture
+WOD,6,1,BUCCLEUCH,BUCCLEUCH|GOLDENFASTNET,12,12,complete,off,no earlier capture
+WOD,6,2,EL ROCKO,ELROCKO|BUTTERS,71,56,incomplete history,on,no earlier capture
+WOD,6,3,TUFF TU MUS,TUFFTUMUS|MOODLIGHTING,17,19,complete,off,no earlier capture
+WOD,6,4,EL SOLEADO,ELSOLEADO|SUNNYVALE,29,28,incomplete history,off,no earlier capture
+WOD,6,5,PRESSER,PRESSER|LADYPRIMROSE,38,34,incomplete history,on,no earlier capture
+WOD,6,6,SPACE RIDER,SPACERIDER|FUDDLEDEEDUDDLE,13,13,complete,on,no earlier capture
+WOD,6,7,BLACK STORM,BLACKSTORM|LADYBLIGH,28,19,incomplete history,on,no earlier capture
+WOD,6,8,BULLETS HIGH,BULLETSHIGH|SORORIA,29,29,complete,on,no earlier capture
+WOD,6,9,INDISPENSABLE,INDISPENSABLE|ESSENCE,71,71,complete,off,no earlier capture
+WOD,6,10,ITSUKUSHIMA,ITSUKUSHIMA|BARCHETTA,42,42,complete,on,no earlier capture
+WOD,6,11,EAMONN'S MEMORY,EAMONNSMEMORY|INMEMORYOF,92,91,incomplete history,on,no earlier capture
+WOD,6,12,EXPEETEE,EXPEETEE|REGALATTACK,30,29,incomplete history,off,no earlier capture
+WOD,6,13,MAKE IT SWEET,MAKEITSWEET|NEWPAGE,30,30,complete,off,no earlier capture
+WOD,6,14,SISTER SHAY,SISTERSHAY|SUPERSISTER,18,18,complete,off,no earlier capture
+WOD,6,15,FOX APPEAL,FOXAPPEAL|TENNESSEECHARM,54,53,incomplete history,off,no earlier capture
+WOD,6,16,MORNING DARLING,MORNINGDARLING|NATIVELAND,31,31,complete,off,no earlier capture
+WOD,6,17,GREY LAD,GREYLAD|GREYMIST,34,33,incomplete history,on,no earlier capture
+WOD,7,1,BRENLYN'S LEGACY,BRENLYNSLEGACY|ONEFORTHEKIDS,13,13,complete,off,no earlier capture
+WOD,7,2,PROJETO,PROJETO|SALASUN,14,13,incomplete history,on,no earlier capture
+WOD,7,3,THE SHAPER,THESHAPER|GLORYSGIRL,28,28,complete,on,no earlier capture
+WOD,7,4,BEFORE THE WAR,BEFORETHEWAR|LADYANTEBELLUM,29,29,complete,on,no earlier capture
+WOD,7,5,COMMANDS SUCCESS,COMMANDSSUCCESS|LITTLEELSA,40,39,incomplete history,off,no earlier capture
+WOD,7,6,FOREMAN'S GULLY,FOREMANSGULLY|LALALAND,23,23,complete,off,no earlier capture
+WOD,7,7,ABSTRUSE,ABSTRUSE|ARCANE,44,44,complete,off,no earlier capture
+WOD,7,8,FOURTHTIMELUCKY,FOURTHTIMELUCKY|ABBALANCHE,20,20,complete,off,no earlier capture
+WOD,7,9,HAZARDOUS,HAZARDOUS|OPEROSE,3,3,"lightly raced, complete",off,no earlier capture
+WOD,7,10,ROSIE'S PROPHECY,ROSIESPROPHECY|WAITAHAPROPHECY,25,25,complete,off,no earlier capture
+WOD,7,11,ROUSSILLON,ROUSSILLON|FITOU,27,27,complete,off,no earlier capture
+WOD,7,12,ALICE ALICE,ALICEALICE|IMPEACH,6,6,complete,off,no earlier capture
+WOD,7,13,MORE HIGHS ON ME,MOREHIGHSONME|ALLHIGHSONME,9,9,complete,off,no earlier capture
+WOD,7,14,PACIFIC GLAMOUR,PACIFICGLAMOUR|GLAMARAMA,14,13,incomplete history,off,no earlier capture
+WOD,7,15,PRANDIUM TEMPUS,PRANDIUMTEMPUS|OAMARU,14,14,complete,off,no earlier capture
+WOD,7,16,THREE MUSKETEERS,THREEMUSKETEERS|PARISIANROMANCE,25,25,complete,off,no earlier capture
+WOD,8,1,TANGANYIKA,TANGANYIKA|JEZIBABA,17,6,incomplete history,off,no earlier capture
+WOD,8,2,FUTURE FUND,FUTUREFUND|PUNCHTHECLOCK,24,24,complete,on,no earlier capture
+WOD,8,3,COPPERFIELD,COPPERFIELD|MISSCENTREFOLD,70,69,incomplete history,on,no earlier capture
+WOD,8,4,LORD OF VALOR,LORDOFVALOR|ILOVETHISLADY,8,8,complete,off,no earlier capture
+WOD,8,5,PAPARAZZO,PAPARAZZO|SHUTTERBUG,22,22,complete,off,no earlier capture
+WOD,8,6,SHOMA,SHOMA|BIGDREAMER,17,7,incomplete history,off,no earlier capture
+WOD,8,7,BLUSHING TYCOON,BLUSHINGTYCOON|CRIMSONKISS,51,36,incomplete history,on,no earlier capture
+WOD,8,8,DOUBTFREE,DOUBTFREE|LIBERATING,27,27,complete,off,no earlier capture
+WOD,8,9,DEELING ACES,DEELINGACES|STACEYLEE,10,10,complete,on,no earlier capture
+WOD,8,10,STEVE'S WAY,STEVESWAY|STEVESCHOICE,22,22,complete,on,no earlier capture

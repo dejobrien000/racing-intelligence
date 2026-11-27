@@ -1,3 +1,3 @@
 day,runners_expected,runners_retrieved,runners_malformed,runners_missing,past_start_lines,unique_past_starts,race_starts,trials,new_starts,enriched_held_starts,held_nothing_added,duplicates_unchanged,trials_new,new_stewards_comments,new_running_positions,race_starts_missing_positions,race_starts_missing_venue,past_start_barriers_given,blinkers_on,blinkers_off,blinkers_unavailable,blinkers_changed_vs_earlier_capture,career_first_starters,career_complete,career_incomplete_history,career_lightly_raced_complete,career_lightly_raced_incomplete,check_race_starts,check_lines
-20261126,317,317,0,0,2934,2934,2025,909,62,1951,12,0,909,766,1976,49,35,0,107,210,0,0,20,181,64,50,2,True,True
-20261127,753,751,0,2,6679,6609,4641,1968,107,4446,53,57,1946,1631,4494,112,56,12,265,485,1,0,50,488,78,129,6,True,True
+20261126,317,317,0,0,2934,2934,2025,909,62,1951,12,0,909,766,1976,49,35,0,107,210,0,0,20,171,74,50,2,True,True
+20261127,753,751,0,2,6679,6609,4641,1968,107,4446,53,57,1946,1631,4494,112,56,12,265,485,1,0,50,469,97,129,6,True,True

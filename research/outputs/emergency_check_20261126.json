@@ -20,6 +20,16 @@
   "left_out_and_did_not_start": 8
  },
  "no_result_found": 0,
+ "readings": {
+  "not eligible at capture and did not run": 8,
+  "eligible at capture (inferred) and ran": 3
+ },
+ "races": {
+  "total": 29,
+  "with_scratchings_before_cutoff": 21,
+  "with_later_scratchings": 4
+ },
+ "note": "eligibility at the morning cutoff is inferred from TAB statuses and emergency numbers (no official emergency order or field limit is read); participation comes from the results capture",
  "by_state": {
   "VIC": {
    "emergencies": 1,

@@ -55,7 +55,7 @@ keys = tuple(set(P.name_key.dropna()))
 held = con.execute(f"""select distinct name_key, meeting_date d from (
     select regexp_replace(upper(u.name_key), '[^A-Z0-9]', '', 'g') name_key, u.meeting_date from bn_runner u join bn_race r using (meeting_date, slug, race_no)
            where not coalesce(r.is_trial, false)
-    union all select regexp_replace(upper(name_key), '[^A-Z0-9]', '', 'g'), meeting_date from starter
+    union all select regexp_replace(upper(name_key), '[^A-Z0-9]', '', 'g'), meeting_date from starter where not coalesce(scratched, false)   -- Batch 20 A1 fix: Racing Queensland scratchings are not starts
     union all select regexp_replace(upper(name_key), '[^A-Z0-9]', '', 'g'), run_date from nsw_form_line where not coalesce(trial, false))
     where name_key in (select unnest(?))""", [list(keys)]).fetchdf()   # our tables keep spaces in name_key; compared letters/digits only
 con.close()

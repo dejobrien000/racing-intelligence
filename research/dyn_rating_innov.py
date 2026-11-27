@@ -13,6 +13,7 @@ def run(d, s, q, sig0, d0):
     REF = os.environ.get('RATING_REF', '') == 'precision'
     AGE_ = d['age'].fillna(0).values.astype(float) if (TAPER and 'age' in d) else None
     AGEMIN = float(os.environ.get('RATING_TAPER_AGEMIN', '5'))   # Batch 19 B6 sensitivity only; the frozen age-aware candidate uses 5
+    NEFF_ = d['n_eff'].values.astype(float) if (TAPER and 'n_eff' in d) else None   # Batch 20 B4 (RATING_TAPER_NEFF): candidate only
     perf_r = d['perf_ref'].values if 'perf_ref' in d else None
     keys = d.race_key.values; starts = np.r_[0, np.flatnonzero(keys[1:] != keys[:-1]) + 1, len(d)]
     for a, b in zip(starts[:-1], starts[1:]):
@@ -42,6 +43,7 @@ def run(d, s, q, sig0, d0):
                 if TAPER:
                     ne = np.array([cnt.get(h_, 0) for h_ in hs[ok]], dtype=float)
                     if AGE_ is not None: ne = np.where(AGE_[a:b][ok] >= AGEMIN, np.maximum(ne, 24.0), ne)   # Batch 18 D2 (RATING_TAPER_AGEFLOOR): a 5yo+ counts as exposed whatever we hold
+                    if NEFF_ is not None: ne = np.where(np.isnan(NEFF_[a:b][ok]), ne, NEFF_[a:b][ok])   # Batch 20 B4: experience from the history-completeness file where given
                     gx = 1.0 + TA * np.exp(-ne / TN); iu = np.where(iu > 0, gx * iu, iu)
                     for h_ in hs[ok]: cnt[h_] = cnt.get(h_, 0) + 1
                 else: iu = np.where(iu > 0, GOOD * iu, iu)
