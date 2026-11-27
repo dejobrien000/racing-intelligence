@@ -219,6 +219,7 @@ function freshBox(){
  const mins=F.latest_update_utc?Math.round((now-new Date(F.latest_update_utc))/60000):null;const stale=left>0&&mins!=null&&mins>(F.stale_after_min||90);
  const age=mins==null?'unknown':mins<60?mins+' min ago':Math.floor(mins/60)+' h '+(mins%60)+' min ago';
  return (stale?'<div class="warn"><b>Data may be stale.</b> The last successful update was '+esc(age)+' ('+esc(bris(F.latest_update_utc))+') and '+left+' race'+(left>1?'s are':' is')+' still to run. Scratchings or rider changes since then are not reflected.</div>':'')+
+  (IDX&&IDX.days&&IDX.days[0]&&D.date!==IDX.days[0].date?'<div class="info"><b>Earlier race day.</b> This is the '+esc(new Date(D.date+'T00:00:00').toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long'}))+' snapshot as published: predictions were saved before racing and are never re-created; later data is not added.</div>':'')+
   '<div class="fresh sm mute">Latest successful update <b>'+esc(F.latest_update_utc?bris(F.latest_update_utc):'–')+'</b> ('+esc(age)+') · page built '+esc(bris(D.exported_utc))+' · Brisbane time</div>';
 }
 function mktBox(){const M=D.markets||{};if(M.runners_priced)return '<div class="info"><b>Market prices:</b> '+esc(M.message||'')+' '+M.runners_priced+' runners priced.</div>';return '<div class="info"><b>Market prices:</b> '+esc(M.message||'No price feed connected.')+'<div style="margin-top:6px">'+(M.sources||[]).map(x=>'<span class="badge" style="margin:4px 6px 0 0" title="'+esc(x.detail||'')+'">'+esc(x.name)+': '+esc(x.status)+'</span>').join('')+'</div></div>'}
@@ -412,6 +413,10 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();if(e.key==='Enter'&&e.target.classList.contains('row'))e.target.click()});
 window.addEventListener('hashchange',route);
+// race-day selector (27 Nov 2026 fix: it listed the days but never loaded one). Each day file is shown exactly as published.
+document.addEventListener('change',async e=>{if(e.target.id!=='dateSel')return;const d=(IDX.days||[]).find(x=>x.date===e.target.value);if(!d||!d.file)return;
+ try{$('view').innerHTML='<p class="mute">Loading the saved predictions for '+esc(d.date)+'…</p>';D=await fetch('data/'+d.file).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()});
+  mSel=D.meetings[0]&&D.meetings[0].id;rSel=1;open=null;closeDrawer();render()}catch(err){$('view').innerHTML='<div class="wait"><h2>Could not load that day</h2><p>'+esc(err.message||err)+'</p></div>'}});
 load().then(d=>{D=d;setDates();mSel=D.meetings[0].id;
  $('foot').innerHTML='<p><b>'+esc(D.snapshot_note)+'</b> Exported '+esc(bris(D.exported_utc))+' (Brisbane). Data contract '+esc(D.contract.name)+' v'+esc(D.contract.version)+'. The model uses performance data only; prices are a separate, labelled display layer.</p><p>Operations at export: '+D.operations.map(o=>esc(o.item)+' — '+esc(o.status)+(o.note?' ('+esc(o.note)+')':'')).join('; ')+'.</p>';
  route()}).catch(err=>{$('view').innerHTML='<div class="wait"><h2>Could not load the prediction data</h2><p>'+esc(err.message||err)+'</p><p class="sm">This page reads data/index.json and the day file beside it. Opened straight from disk, use the self-contained copy instead.</p></div>'});

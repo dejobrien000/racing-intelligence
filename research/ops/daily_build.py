@@ -13,6 +13,8 @@ import sys, os, re, json, gzip, hashlib, datetime as dt
 from zoneinfo import ZoneInfo
 D, RAW = sys.argv[1], sys.argv[2]
 DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; base = f'collect/national/{D}'; os.makedirs(base, exist_ok=True)
+try: WDAY = dt.date.fromisoformat(DATE).strftime('%a')     # was hard-coded 'Wed' (fixed 27 Nov 2026); the Qld scorer reads only the date and time
+except ValueError: WDAY = 'Wed'
 STATE_TZ = {'QLD': 'Australia/Brisbane', 'NSW': 'Australia/Sydney', 'ACT': 'Australia/Sydney', 'VIC': 'Australia/Melbourne', 'TAS': 'Australia/Hobart',
             'SA': 'Australia/Adelaide', 'WA': 'Australia/Perth', 'NT': 'Australia/Darwin'}
 NAT, QLD = set(json.load(open('ops/db_config.json'))['national_states']), {'QLD'}   # states whose history is in the master DB's national rating (NSW/VIC/ACT until a release adds SA/WA/TAS)
@@ -79,7 +81,7 @@ if rq:
                 if sc: scr.append({'race_no': r['no'], 'horses': sc})
             v = {'kind': 'rqpre', 'date': D, 'meeting_code': code, 'track': meets[code]['name'], 'retrieved_utc': cap, 'fields_pdf_sha256': raw_sha,
                  'source': 'TAB racecards (fields, scratchings, track); Racing Queensland format for the Queensland model',
-                 'conditions': {'track_condition': nul(rs[0]['track']), 'rail': nul(rs[0]['rail']), 'scratchings_close': f"Wed {DATE[8:10]}/{DATE[5:7]}/{DATE[2:4]} 07:30am"},
+                 'conditions': {'track_condition': nul(rs[0]['track']), 'rail': nul(rs[0]['rail']), 'scratchings_close': f"{WDAY} {DATE[8:10]}/{DATE[5:7]}/{DATE[2:4]} 07:30am"},
                  'scratchings': scr, 'fields': fields}
             fh.write(json.dumps({'key': f'rqpre:{D}:{code}:{stamp}', 'value': v}) + '\n')
     print('rq bundle', out)
