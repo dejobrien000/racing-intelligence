@@ -1,0 +1,34 @@
+{
+ "least certain": {
+  "races": 5932,
+  "top_pick_expected": 0.336,
+  "top_pick_actual": 0.308,
+  "actual_over_expected": 0.916,
+  "loglik_gain_over_null": 0.341,
+  "calibration_top_decile_actual_over_expected": 0.896
+ },
+ "most certain": {
+  "races": 5933,
+  "top_pick_expected": 0.296,
+  "top_pick_actual": 0.264,
+  "actual_over_expected": 0.892,
+  "loglik_gain_over_null": 0.254,
+  "calibration_top_decile_actual_over_expected": 0.886
+ },
+ "q2": {
+  "races": 5932,
+  "top_pick_expected": 0.293,
+  "top_pick_actual": 0.278,
+  "actual_over_expected": 0.951,
+  "loglik_gain_over_null": 0.286,
+  "calibration_top_decile_actual_over_expected": 0.934
+ },
+ "q3": {
+  "races": 5932,
+  "top_pick_expected": 0.308,
+  "top_pick_actual": 0.29,
+  "actual_over_expected": 0.943,
+  "loglik_gain_over_null": 0.319,
+  "calibration_top_decile_actual_over_expected": 0.944
+ }
+}

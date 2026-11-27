@@ -1,0 +1,149 @@
+{
+ "reference_population": "2025 Benchmark 64-72 races, all states",
+ "versions": {
+  "Engine v2.2 rating": {
+   "reference_runs": 19767,
+   "raw_mean_kg": -1.93,
+   "raw_sd_kg": 3.81,
+   "scale_factor_to_display": 0.862,
+   "vs_v2_3_same_runner_same_day": {
+    "runs": 304624,
+    "raw_gap_mean_kg": 0.04,
+    "raw_gap_abs_mean_kg": 0.93,
+    "display_gap_mean_kg": 0.2,
+    "display_gap_abs_mean_kg": 0.8,
+    "display_gap_p90_abs_kg": 1.61,
+    "rank_corr_within_race": 0.919
+   }
+  },
+  "Engine v2.3 rating": {
+   "reference_runs": 19767,
+   "raw_mean_kg": -2.31,
+   "raw_sd_kg": 3.28,
+   "scale_factor_to_display": 1.0
+  },
+  "Queensland v3 rating": {
+   "reference_runs": 19767,
+   "raw_mean_kg": 5.58,
+   "raw_sd_kg": 3.69,
+   "scale_factor_to_display": 0.889,
+   "vs_v2_3_same_runner_same_day": {
+    "runs": 304624,
+    "raw_gap_mean_kg": 8.03,
+    "raw_gap_abs_mean_kg": 8.03,
+    "display_gap_mean_kg": 0.52,
+    "display_gap_abs_mean_kg": 1.4,
+    "display_gap_p90_abs_kg": 2.92,
+    "rank_corr_within_race": 0.877
+   }
+  },
+  "Update-rule candidate rating": {
+   "reference_runs": 19767,
+   "raw_mean_kg": 1.23,
+   "raw_sd_kg": 3.19,
+   "scale_factor_to_display": 1.028,
+   "vs_v2_3_same_runner_same_day": {
+    "runs": 304624,
+    "raw_gap_mean_kg": 3.66,
+    "raw_gap_abs_mean_kg": 3.67,
+    "display_gap_mean_kg": 0.03,
+    "display_gap_abs_mean_kg": 0.9,
+    "display_gap_p90_abs_kg": 1.86,
+    "rank_corr_within_race": 0.932
+   }
+  }
+ },
+ "display_sd_kg": 3.28,
+ "queensland_horses_v3_vs_v2_3": {
+  "runs": 66178,
+  "raw_gap_mean_kg": 7.77,
+  "display_gap_mean_kg": 0.21,
+  "display_gap_abs_mean_kg": 1.27
+ },
+ "examples": {
+  "established, high-rated": {
+   "horse": "AUTUMNGLOW",
+   "date": "2026-11-07",
+   "runs_before": 15,
+   "Engine v2.2 rating": {
+    "raw_kg": 16.1,
+    "display_kg": 15.6
+   },
+   "Engine v2.3 rating": {
+    "raw_kg": 14.7,
+    "display_kg": 17.0
+   },
+   "Queensland v3 rating": {
+    "raw_kg": 24.2,
+    "display_kg": 16.6
+   },
+   "Update-rule candidate rating": {
+    "raw_kg": 19.3,
+    "display_kg": 18.6
+   }
+  },
+  "established, ordinary": {
+   "horse": "VINARI",
+   "date": "2026-11-02",
+   "runs_before": 15,
+   "Engine v2.2 rating": {
+    "raw_kg": -7.2,
+    "display_kg": -4.6
+   },
+   "Engine v2.3 rating": {
+    "raw_kg": -6.9,
+    "display_kg": -4.6
+   },
+   "Queensland v3 rating": {
+    "raw_kg": 2.1,
+    "display_kg": -3.1
+   },
+   "Update-rule candidate rating": {
+    "raw_kg": -1.2,
+    "display_kg": -2.5
+   }
+  },
+  "lightly raced": {
+   "horse": "MYBOYCRIPPA",
+   "date": "2026-11-02",
+   "runs_before": 2,
+   "Engine v2.2 rating": {
+    "raw_kg": -14.5,
+    "display_kg": -10.8
+   },
+   "Engine v2.3 rating": {
+    "raw_kg": -15.0,
+    "display_kg": -12.7
+   },
+   "Queensland v3 rating": {
+    "raw_kg": -2.9,
+    "display_kg": -7.5
+   },
+   "Update-rule candidate rating": {
+    "raw_kg": -10.8,
+    "display_kg": -12.4
+   }
+  },
+  "Queensland": {
+   "horse": "CASTELLOGRANDE",
+   "date": "2026-11-03",
+   "runs_before": 14,
+   "Engine v2.2 rating": {
+    "raw_kg": -1.5,
+    "display_kg": 0.4
+   },
+   "Engine v2.3 rating": {
+    "raw_kg": -1.5,
+    "display_kg": 0.8
+   },
+   "Queensland v3 rating": {
+    "raw_kg": 7.8,
+    "display_kg": 2.0
+   },
+   "Update-rule candidate rating": {
+    "raw_kg": 2.7,
+    "display_kg": 1.5
+   }
+  }
+ }
+}
