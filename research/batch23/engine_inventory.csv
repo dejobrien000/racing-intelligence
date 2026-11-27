@@ -1,0 +1,128 @@
+engine,layer,family,input,coef_per_sd,input_sd,coef_per_unit
+national v2.3,1 common + rating (nat_v2),,f_avgfp3,0.11158885971596218,0.20609063084593093,0.5414552775054762
+national v2.3,1 common + rating (nat_v2),,f_lastfp,0.0363120053241201,0.28852865391701343,0.12585233678234312
+national v2.3,1 common + rating (nat_v2),,f_lastlm,0.09918923205310798,0.8860274639089385,0.11194825904776035
+national v2.3,1 common + rating (nat_v2),,f_cwin,0.004780138177904367,0.13684957035698686,0.0349298734766566
+national v2.3,1 common + rating (nat_v2),,f_lstarts,-0.235894641097249,0.539614787470219,-0.437153774460393
+national v2.3,1 common + rating (nat_v2),,missform,-0.0018455768403021836,0.24011147185284168,-0.0076863334602908584
+national v2.3,1 common + rating (nat_v2),,a_rec,0.09002562443933856,4.73614234233392,0.019008217644694965
+national v2.3,1 common + rating (nat_v2),,a_best3,0.1317507775745663,5.378469882585727,0.024495958971741314
+national v2.3,1 common + rating (nat_v2),,a_fs3,0.1406557489716281,2.4442960407290104,0.05754448177630627
+national v2.3,1 common + rating (nat_v2),,a_wt_rel,0.03195974154418556,1.8140971043914986,0.01761743705274575
+national v2.3,1 common + rating (nat_v2),,missfig,-0.017843062428704655,0.08381143070272737,-0.21289533276185932
+national v2.3,1 common + rating (nat_v2),,r_firstup,0.06663168808162301,0.33134493678121946,0.20109463186280285
+national v2.3,1 common + rating (nat_v2),,r_7_13,-0.026630426062119305,0.3576080790110633,-0.07446818912974122
+national v2.3,1 common + rating (nat_v2),,r_28_59,-0.0031016353984270684,0.2853090636257563,-0.01087114218879329
+national v2.3,1 common + rating (nat_v2),,r_quick,0.008936739701289756,0.2888508849157668,0.030938938282622334
+national v2.3,1 common + rating (nat_v2),,r_ldays,-0.14133036249183478,0.8287468010512486,-0.1705350323072862
+national v2.3,1 common + rating (nat_v2),,dyn_nat,0.39371104550760444,2.8353260968376257,0.13885917600332784
+national v2.3,1 common + rating (nat_v2),,c_rec,0.07145194078826674,1.4300516699020243,0.04996458679927422
+national v2.3,1 common + rating (nat_v2),,g_rec,0.04639899963729092,1.7421120971355246,0.026633762381641616
+national v2.3,1 common + rating (nat_v2),,d_rec,0.03285575097058085,1.7200972958769893,0.01910110029783483
+national v2.3,2 engine v2 family terms,Jockey & trainer,j_surp,0.1822585715755162,0.9999999999999999,0.18225857157551623
+national v2.3,2 engine v2 family terms,Jockey & trainer,t_surp,0.1765278733062332,0.9999999999999998,0.17652787330623324
+national v2.3,2 engine v2 family terms,Jockey & trainer,jt_surp,0.02648508103805671,1.0,0.02648508103805671
+national v2.3,2 engine v2 family terms,Jockey & trainer,j_change,0.025088800247469432,0.9440923672530709,0.026574518678154076
+national v2.3,2 engine v2 family terms,Age & sex,age_n,-0.18790988449869753,0.9980499731242348,-0.18827702976683208
+national v2.3,2 engine v2 family terms,Age & sex,young,0.029090564554053653,0.9980499731242348,0.0291474027728194
+national v2.3,2 engine v2 family terms,Age & sex,old,0.02844309411573166,0.9980499731242347,0.028498667282856723
+national v2.3,2 engine v2 family terms,Age & sex,female,-0.008004767571634768,0.9980499731242348,-0.008020407581974209
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,h2h,0.0401841819262553,0.7088284234230279,0.056690985573350006
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,abs_dist_change,-0.02746804489583861,0.9440941869077891,-0.029094602293660184
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,dist_change,-0.006474244713314781,0.9440941869077892,-0.006857625863071994
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,dyn_traj,-0.006714232417106512,0.8901545748172552,-0.007542771342252456
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,surprise_last,-0.03466870359042128,0.9437920761778612,-0.0367334124384912
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,bm_change,-0.021501364197533134,0.4705270555459288,-0.045696339762197495
+national v2.3,2 engine v2 family terms,Form changes & head-to-head,wt_change,-0.015746735948816745,0.9440923672530708,-0.016679232345277205
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x vic,0.012451083892426483,0.6276801143634675,0.019836670953090763
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x vic,0.008292606365007687,0.5628573758489348,0.014733050894998554
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x route,0.004342376996136823,0.6884868344350965,0.006307131493225639
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n x vic,0.007181442254244687,0.5513875236217136,0.013024310392579007
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x wet,-0.009928294219024403,0.6175436102799672,-0.016077073835357718
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x route,-0.027948975497951712,0.6860698065711607,-0.040737801358195734
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n x route,0.04084008376688285,0.7067161671774967,0.05778852340394468
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x wet,-0.020319260598742648,0.6042976509604867,-0.033624589747199375
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n x wet,0.023253970406055674,0.5867823334929813,0.03962963620194578
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x big_field,0.019294411527812673,0.5817997661267682,0.03316331949780918
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x big_field,0.011247101465528049,0.5707936524303029,0.01970432119845864
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x metro,0.009343777089234733,0.46486912397904884,0.02009980144359049
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n x big_field,0.013993874646748627,0.5967821284086555,0.023448883571738112
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x metro,-0.014615524299836489,0.4438261159184089,-0.032930744216330306
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n x metro,-0.01949259238718549,0.4322958785361213,-0.04509085872665046
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x t_surp,-0.007020173662358622,1.0126670774897522,-0.006932360909530668
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp squared,0.013618734497430006,1.5228438205128,0.008942962051646276
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x age_n,0.0011218662919486551,0.9232455720222779,0.001215133141111436
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),age_n squared,-0.4669032474430647,16.668758173212225,-0.028010679775378137
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_lstarts x t_surp,-0.014280180358501246,0.9985384810401856,-0.014301081660493912
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),j_surp x age_n,0.006432959779792512,0.9481767620718731,0.006784557518300459
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_avgfp3 x j_surp,-0.006463441713256092,0.9089897872154189,-0.007110576822932268
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_avgfp3 x age_n,0.015025168683939787,0.908654440743829,0.016535624556723798
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_lstarts x j_surp,0.0058720223931938015,0.9661573826378722,0.006077707937356526
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dist_change squared,-0.01423181553039246,1.7822810713079804,-0.007985168983446598
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x age_n,0.018013623211190235,0.9572842689446924,0.018817423199744422
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x j_surp,-0.008528727903071544,0.9887906381651184,-0.00862541328151949
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_lstarts x a_fs3,0.038288846026083456,0.844879381739969,0.04531871276966222
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_best3 x age_n,-0.00509792602389504,0.8978117705722745,-0.0056781679534515005
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_best3 x t_surp,0.0031614728202258415,0.9704898388768965,0.00325760527682028
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_avgfp3 x t_surp,-0.024739822842127186,0.9257740558405014,-0.026723391832001748
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),surprise_last x dyn_traj,0.06750967110912501,1.4134945200675095,0.04776082973841363
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x dist_change,0.016309206126062094,1.0551195590229412,0.015457211447359292
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_traj x j_surp,0.004669641615840254,0.8854598832382421,0.005273690772712104
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x a_wt_rel,-0.021297887064409018,0.9784897930438127,-0.021766079948731143
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_traj x t_surp,-0.0002541261106197626,0.9301699120772592,-0.0002732039677054778
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),surprise_last x age_n,-0.01539374828096805,0.8931415065826962,-0.017235508782776226
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),surprise_last x t_surp,-0.004987382080734043,0.960425813470033,-0.005192886333109432
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_traj x age_n,0.01250869251783389,0.8324844031410441,0.015025737984564497
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x t_surp,-0.02803721668872634,1.0680308135938037,-0.026251318156621583
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_avgfp3 x a_wt_rel,-0.019778676524251054,0.9143860365104541,-0.021630553983229956
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_best3 x a_wt_rel,-0.02543601823886055,0.9120452961354041,-0.027888985718845558
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_lstarts squared,-0.0399993830768335,1.5176714602602774,-0.026355758887350814
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_fs3 x surprise_last,-0.014085489040248051,0.9558072974188639,-0.014736745658131715
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x t_surp,0.030679577919388513,0.9283895278704212,0.03304601893750635
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),h2h x j_surp,-0.013958162617488343,0.6716723285872298,-0.02078120837112259
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x age_n,-0.04069380688925885,0.9330870951601502,-0.04361201339117693
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),surprise_last x j_surp,-0.0034277322476823436,0.9222569645548161,-0.0037166780836802344
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),ability x field strength,-0.009255378010842032,0.8508482103553219,-0.01087782509053748
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_avgfp3 x year,0.029271613245388576,0.8931298691142654,0.03277419584502063
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),f_lstarts x age_n,0.009990716874266227,1.0075956763979188,0.009915402684122577
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_best3 x r_ldays,-0.01776357272921456,0.8921576855530838,-0.01991079942129537
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_wt_rel x surprise_last,-0.005200748735579557,0.9028231851312198,-0.005760539628613614
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x route,0.024222664287466496,0.6684455286844644,0.03623730468380567
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_fs3 squared,0.009708587810049877,1.7204866561854883,0.005642931187606478
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_wt_rel x dyn_traj,0.003998594283878877,0.8366754065920488,0.004779146431668137
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),dyn_nat x f_avgfp3,-0.008831602826251356,1.1406743430714457,-0.007742440145073196
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_best3 x j_surp,-0.023343472614744044,0.9184485722431464,-0.025416200014043017
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays squared,0.0020108102551184954,1.4476757476648718,0.001388992154052432
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x route,-0.03428430880751967,0.5555159695833706,-0.061716153422614356
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x surprise_last,-0.03565181320302638,0.9180178780495868,-0.038835641500546726
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),r_ldays x j_surp,0.021577265586442927,0.923301460896107,0.02336968639202757
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_wt_rel x j_surp,-0.013896206173814997,0.9856905550069798,-0.014097939868883694
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),a_fs3 x dyn_traj,0.005844999292189956,0.9019482325536693,0.006480415484202589
+national v2.3,2 engine v2 family terms,Interactions (chosen on discovery data only),t_surp x dist_change,0.014525118956187223,0.9032052222362136,0.016081748199180027
+national v2.3,scale,,score_per_kg_total,0.26888022685942775,,
+Queensland v2.1.3,2 engine v2 family terms,Horse course/going/distance records,c_rec,0.016911744980701353,1.0,0.016911744980701353
+Queensland v2.1.3,2 engine v2 family terms,Horse course/going/distance records,g_rec,0.020114128726378053,1.0,0.020114128726378053
+Queensland v2.1.3,2 engine v2 family terms,Horse course/going/distance records,d_rec,-0.024737313566483524,0.9943021967059766,-0.024879069611266836
+Queensland v2.1.3,2 engine v2 family terms,Jockey & trainer,j_surp,0.13782146850032514,0.9939518435602492,0.13866010651648938
+Queensland v2.1.3,2 engine v2 family terms,Jockey & trainer,t_surp,0.19476980766923258,0.9920665755798296,0.19632735590894812
+Queensland v2.1.3,2 engine v2 family terms,Jockey & trainer,jt_surp,0.03777647258346701,1.0,0.03777647258346701
+Queensland v2.1.3,2 engine v2 family terms,Jockey & trainer,j_change,0.003621244539134882,0.9539211737961032,0.003796167480719857
+Queensland v2.1.3,2 engine v2 family terms,Age & sex,age_n,-0.20741529902275374,0.9907711193096582,-0.2093473406524758
+Queensland v2.1.3,2 engine v2 family terms,Age & sex,young,0.002382084432574307,0.9907711193096582,0.0024042731829265244
+Queensland v2.1.3,2 engine v2 family terms,Age & sex,old,0.019936289448721854,0.9907711193096583,0.020121992920638324
+Queensland v2.1.3,2 engine v2 family terms,Age & sex,female,0.04166837543729506,0.9907711193096582,0.04205650994987463
+Queensland v2.1.3,scale,,score_per_kg_total,0.22425646171954994,,
+national v2.3,3 engine v2.2 terms,Career shape and consistency,below_top3,0.05814308750938404,2.0387321484858956,0.028519238072821456
+national v2.3,3 engine v2.2 terms,Career shape and consistency,gap_long_z,-0.05914009279437306,0.31564835030844546,-0.18736069026365101
+national v2.3,3 engine v2.2 terms,Career shape and consistency,short_vs_long,-0.0779686453131825,1.8556835391442754,-0.04201613242155326
+national v2.3,3 engine v2.2 terms,Career shape and consistency,slope15,-0.012004038074294838,0.3296139011364507,-0.0364184824514592
+national v2.3,3 engine v2.2 terms,Career shape and consistency,neg_run,-0.018137628229157078,0.9869431189692046,-0.018377582132697377
+national v2.3,3 engine v2.2 terms,Career shape and consistency,recent_var_ratio,0.019685996387852348,0.21207636769112487,0.09282503563303052
+national v2.3,3 engine v2.2 terms,Career shape and consistency,hsd_x_rel,-0.05177989266706815,16.68485231116656,-0.0031034073122969013
+national v2.3,3 engine v2.2 terms,Career shape and consistency,early_prep_vs_usual,-0.0025474174342335534,2.2389981926565112,-0.0011377487675463959
+national v2.3,3 engine v2.2 terms,"Weight, spacing and venue class",quick_today,0.010520297099767923,0.28068830232161945,0.037480354588177715
+national v2.3,3 engine v2.2 terms,"Weight, spacing and venue class",venue_step,-0.08846151861352408,1.5446095246383253,-0.05727112076059326
+national v2.3,3 engine v2.2 terms,Career shape and consistency,recentform_x_established,0.016304879244666975,0.18331025346916682,0.08894690251142712
+national v2.3,3 engine v2.2 terms,"Weight, spacing and venue class",light_weight,0.022474823002281073,0.2807633274786622,0.08004899786632264
+national v2.3,3 engine v2.2 terms,Career shape and consistency,log_runs_held,0.0663684739912698,0.575234399664927,0.11537639965539147
+national v2.3,3 engine v2.2 terms,Career shape and consistency,rating_uncertainty,0.013970195734758158,0.6192832368724702,0.022558653137958355

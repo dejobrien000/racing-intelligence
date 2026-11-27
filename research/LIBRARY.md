@@ -3,6 +3,73 @@
 One line per hypothesis, newest first within each section. Evidence lives in the batch ledgers named. "Rejected" items stay
 here so they are not re-tested without materially different evidence. Market data never enters any rating input.
 
+## Reconciliation, 27 Nov 2026 night (Batch 23; supersedes the 26 Nov reconciliation below as the status of record)
+Checked against the code that runs, the manifests in benchmarks/, ops/run_shadow.sh and the switch files. Statuses: PRODUCTION; APPROVED
+CORRECTION (live from a stated run); FROZEN SHADOW; BUILT CANDIDATE (awaiting deployment); PROMISING RESEARCH; DESCRIPTIVE; REJECTED/REDUNDANT;
+AWAITING DATA; NOT YET INVESTIGATED. "Pred." = tested as a forecast input; "Desc." = describes horses, not tested as an input.
+Engine inputs, coefficients and served influence: batch23/engine_inventory.csv and batch23/out_b23_family_influence.json.
+
+| Finding (first batch) | Data / states | Main result | Type | Status | Where it lives / supersedes | Next action |
+|---|---|---|---|---|---|---|
+| Opposition-aware margin rating (B4) | all | strongest single input | Pred. | PRODUCTION (v2.3 national, v3 rating in Qld) | layer 1 dyn_nat | - |
+| Time figures, recent form, fitness/spacing (B1-B3) | all | core inputs | Pred. | PRODUCTION | layer 1 | - |
+| Closing sectionals, race shape, relative barrier, barrier x style (B2-B6) | Qld | ~2% of Qld score | Pred. | PRODUCTION (Qld only) | Qld v1 groups | pooled barrier would REPLACE relative barrier + barrier x style (B20-B22) |
+| Horse course/going/distance records (B5) | all | | Pred. | PRODUCTION | layer 1 nat_v2 / Qld v2 family | Qld duplicates with its T group (v2.1.2 shadow tests dropping it) |
+| Jockey & trainer, jockey change (B7) | all | | Pred. | PRODUCTION | layer 2 | trainer names need normalising before transfer work (B22 D) |
+| Age & sex (B7; Qld B13) | all | national +0.0129; Qld +0.0190/+0.0166 | Pred. | PRODUCTION (Qld v2.1.3 from 27 Nov) | layer 2 | first-starter age/sex from TAB: APPROVED CORRECTION from 28 Nov |
+| Form changes & head-to-head, interactions (B7) | national | | Pred. | PRODUCTION (national only; hurt Qld) | layer 2 | - |
+| 14 v2.2 terms: career shape, light weight, quick backup, venue class (B10) | national | +0.0125 | Pred. | PRODUCTION (national); never on Qld production | layer 3 | Qld gets them only via the common-framework shadows |
+| Weight credit 0.25 kg/kg + 0.170 s per length (B11-B13) | six states | +0.0095 | Pred. | PRODUCTION (Engine v2.3 from 27 Nov) | history figures | - |
+| Weight carried (claim deducted once) (B11) | national | definition match | Pred. | PRODUCTION (national); Qld keeps allocated (consistent) | serving | verify claim deducted once each morning (B23 A1) |
+| bm_change class change (B16) | national | serving it costs 0.0012/0.0007 | Pred. | PRODUCTION as a documented TRAINING-ONLY control | engine_v2_3/FEATURE_NOTES.md | only intentional train-not-serve input |
+| Learning-speed rating (B9; v3) | Qld | Qld +0.0052; national -0.0026 | Pred. | PRODUCTION in Qld via the v3 rating | Qld v2.1.x | FORGOTTEN: B13 said re-test once Age & sex was live in Qld (live since 27 Nov) - not yet re-tested |
+| Display calibration, experience labels, data confidence (B9-B11) | all | | display | PRODUCTION | dashboard | - |
+| Metro from tier, Qld course-name map (B18) | SA/WA, Qld | Qld track history 0% -> 73% | correction | APPROVED CORRECTION from 28 Nov (switches) | serving | verify in the 28 Nov run |
+| National emergencies that gain a start (B18-B19) | national | 26 Nov 11/11; 27 Nov replay 45 | correction | APPROVED CORRECTION, activation pending tonight's check | ops/national_emergency_enabled | check after the 27 Nov results |
+| Handicap weight slope = Engine v2.4 (B11-B15) | national | +0.0005 / +0.0015 built | Pred. | FROZEN SHADOW (from 27 Nov) | benchmarks/engine_v2_4_candidate | final recommendation Monday after TAB/Breednet class parity |
+| Heavy-defeat cap 12 L (B15-B16) | national | +0.0043 | Pred. | FROZEN SHADOW (cap-only) | benchmarks/engine_cap_only_candidate | superseded by the consolidated candidate if it wins prospectively |
+| Uniform 1.3x good-run response (B15-B16) | national | +0.0059 | Pred. | FROZEN SHADOW (update-rule) | benchmarks/engine_update_rule_candidate | as above |
+| Age-aware taper (B18-B19) | national | +0.0098 / +0.0104 vs v2.3 | Pred. | FROZEN SHADOW (brought forward to 28 Nov) | benchmarks/engine_age_aware_candidate | - |
+| History-completeness experience (B19-B23) | national | +0.0010 / +0.0008 over age-aware | Pred. | BUILT CANDIDATE (research form); folded into the consolidated candidate; gentle-rule freeze Monday | batch23/b23_experience_file.py (v4, with cap) | - |
+| Inferred-start cap (B22-B23) | national | cuts implausible inferred starts | data rule | APPROVED (in experience v4) | batch23/b23_experience_file.py | replace inferred by verified TAB counts as they accrue |
+| Stronger experience response 1+0.8exp(-n/6) (B18-B21) | national | best individual error | Pred. | in the CONSOLIDATED CANDIDATE | - | - |
+| Certainty-weighted race reference (B16-B21) | national | +0.0014 alone; +0.0016-0.0017 on top of the update rules | Pred. | in the CONSOLIDATED CANDIDATE | dyn_rating_innov RATING_REF (fixed inside the hook 27 Nov) | - |
+| Consolidated rating candidate (B23) | national | research: 24.64 kg2; +0.0116 / +0.0166 | Pred. | BUILT through the release chain tonight if parity passes -> FROZEN SHADOW from 28 Nov | benchmarks/engine_consolidated_candidate | prospective clock |
+| Common national framework for Qld, configs 2 and 4 (B13-B17) | Qld | +0.0424 / +0.0326 (research) | Pred. | FROZEN SHADOWS (from 28 Nov) | benchmarks/engine_qld_common_* | - |
+| Qld v2.1.2: drop last-start finish and T group (B11) | Qld | weak 2024 | Pred. | FROZEN SHADOW (since 26 Nov) | benchmarks/candidate_qld_v2_1_2 | decide on prospective races |
+| Trainer debut record (B18-B19) | national | +0.0004 / +0.0015 | Pred. | FROZEN SHADOW (brought forward to 28 Nov) | benchmarks/engine_trainer_debut_candidate | - |
+| Sire debut record (B21-B22) | national | debut error 0.38 kg2; race +0.0006 / +0.0013; with trainer +0.0008 / +0.0021 | Pred. | APPROVED, NOT BUILT (frozen shadow after current shadows settle) | batch21/b21_sire_debut.py | build after the 28-29 Nov shadows run clean |
+| Maternal siblings, damsire (B19-B21) | national | debut error 0.15 / 0.07 kg2 | Pred. (individual only) | PROMISING RESEARCH | batch21 | race-level test on top of sire + trainer |
+| Lane-adjusted ratings, Qld and SA (B18-B19) | Qld, SA | SA +0.0013; Qld +0.0008 | Pred. | BUILT CANDIDATE (research form), no shadow yet | batch19/b19_lane_candidate.py | shadow once the 28-29 Nov shadows are settled; test with the barrier term |
+| Pooled course x distance x rail barrier (B19-B22) | Qld, SA | Qld replacement +0.0022 / +0.0018; SA +0.0010 | Pred. | PROMISING RESEARCH (rail-dependent version provisional) | batch20/b20_barrier_feature.py | collect rail (from 28 Nov, Qld); morning-vs-results parity |
+| National bent barrier shape (B21) | Qld, SA | +0.010 kg2/run | Pred. | PROMISING RESEARCH | batch21 | include in the barrier candidate |
+| Absolute barrier number, going and field-size barrier factors (B21) | Qld, SA | worse out of sample | Pred. | REJECTED | batch21 | - |
+| Course-specific barrier effects, course_v1 (B4) | Qld | frozen 25 Nov, scored once | Pred. | REDUNDANT (superseded by the pooled barrier work) | benchmarks/course_v1 | - |
+| Race-layer x field inexperience / uncertainty (B20) | national | -0.0005 / 0.0000 | Pred. | REJECTED | - | do not reopen |
+| Field-experience brake on the update (B22) | national | good runs in inexperienced fields under-moved | Pred. | REJECTED | batch22 | study how unknown rivals' levels are set (B23 C8) |
+| Trainer change: under-reaction after transfer (B16, B20-B21) | national | +0.50 kg first run (controls) | Desc. -> Pred. next | PROMISING RESEARCH | batch21/b21_breakthroughs.py | normalise trainer names; test on top of the update rules |
+| Trainer-specific transfer record (B16, B21) | national | +0.13 (n.s.) beyond general trainer record | Pred. | REJECTED as tested | - | - |
+| Unfamiliar-distance breakthroughs (B20-B21) | national | step-up: +0.30 at new trip, -0.01 back | Desc. | PROMISING RESEARCH (distance-suitability framework) | batch21 | framework after Monday |
+| Continuous per-horse distance profile (B12), own-runs distance suitability (B16) | national | -0.0026; engine gain 0.0000 | Pred. | REJECTED / REDUNDANT as built | - | the new framework is a different method (ability vs suitability), not a retest |
+| Trainer early improvement 2nd-3rd start (B19-B20) | national | 0.17 kg/kg; harness 0.0000 | Pred. | DESCRIPTIVE | batch20 | - |
+| First-up own record (B19-B20) | national | 0.14; harness n.s. | Pred. | DESCRIPTIVE | batch20 | - |
+| Spacing preferences (B19) | national | chance level | Desc. | REJECTED | - | closed |
+| Supported vs unsupported big runs; sustainability (B18-B20) | national | descriptive | Desc. | DESCRIPTIVE | batch18-20 | - |
+| Sire maturity (B18-B19) | national | not replicated | Pred. | REJECTED as a general input | - | - |
+| Uneven last 600 precedes a better next run (B14) | Qld, SA | +0.26 kg per sd, replicated in SA | Desc. | PROMISING RESEARCH | batch14 | FORGOTTEN: bundle test +0.0034 / +0.0021 (n.s.) never followed up as its own Qld input |
+| Late fade within 1 L; stride shortening (B12) | Qld | -0.56 / -0.43 kg | Desc. | AWAITING DATA (prospective check) | batch12 | FORGOTTEN: the prospective check was never run; due once 28 Nov+ results are in the master |
+| Ordinary debut overrated; top-3 first starters underrated; lightly raced winners underrated (B11) | national | 0.75-0.80; 1.21-1.27; 1.19 | Desc. | AWAITING re-check | batch11 | FORGOTTEN: re-check under the update-rule and debut shadows (they may already explain it) |
+| Spread-aware chances (consistency) (B12) | national | 0.95 vs 1.05 | Desc. | PROMISING RESEARCH | batch12 | partly addressed by the update rule (erratic horses' big runs); re-check |
+| Ground covered inside the Qld rating (B12) | Qld | added input n.s. | Pred. | SUPERSEDED by the lane candidate (ground controlled there) | - | - |
+| Interstate connections / state offsets (B11, B16) | all | already priced in the engine | Pred. | REDUNDANT | - | - |
+| State seconds per length (B15-B16) | all | -0.0012 / -0.0006 | Pred. | REJECTED | - | - |
+| Jockey distance specialisation, rider momentum, jockey workload (B14-B15) | Qld, SA | engine +0.0001; workload artifact | Pred./Desc. | REDUNDANT / DESCRIPTIVE | batch14-15 | frozen rider tables' prospective check not run |
+| Horse identity: suffix/sire/dam splits (B20-B22) | all | 56 splits | data | APPROVED CORRECTION (Monday 30 Nov, subject to checks) | ops/IDENTITY_CORRECTION_PLAN.md | Monday |
+| Qld start-count discrepancy (B19-B20) | Qld | measurement bug | data | FIXED (research script) | ops/form_enrichment.py | - |
+| Pre-race rail and track information (B21-B23) | Qld now | RQ publishes before the cutoff | data | COLLECTED from 28 Nov (not served) | ops/parse_rail.py; DAILY_RUN 5d | other states need an approved source |
+| Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | after the physical queue starts |
+| Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
+
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|

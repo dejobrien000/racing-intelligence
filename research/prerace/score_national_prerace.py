@@ -153,7 +153,7 @@ for (date, venue), key in latest.items():
     mf = {'scored_utc': scored.isoformat(), 'snapshot': next(m for m in meta if m['snapshot_key'] == key), 'snapshot_bundle': os.path.basename(SNAP), 'snapshot_bundle_sha256': sha(SNAP),
           'not_scored': F[(F.snapshot_key == key) & (F.status != 'runner')][['race_no', 'saddlecloth', 'horse', 'status']].to_dict('records'), 'candidates': list(CANDS),
           'model_manifest_sha256': sha(MANP), 'engine_c2': C2, 'code_sha256': {f: sha(f) for f in ['prerace/score_national_prerace.py', 'dyn_rating.py', 'dyn_rating_innov.py']},
-          'history_cutoff': cut, 'national_runs_sha256': sha(RUNS), 'national_runs_file': RUNS, 'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X'] if os.environ.get(k)} or None,
+          'history_cutoff': cut, 'national_runs_sha256': sha(RUNS), 'national_runs_file': RUNS, 'rating_update_settings': {k: os.environ.get(k) for k in ['WCREDIT', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X', 'RATING_GOOD_TAPER', 'RATING_TAPER_AGEFLOOR', 'RATING_TAPER_NEFF', 'RATING_REF'] if os.environ.get(k)} or None,
           'notes': ['no result of these races existed when this file was written', 'no sectionals or running positions are used outside Queensland',
                     'acceptors with no saddlecloth number (emergencies or late entries) are listed in not_scored and excluded from the field until confirmed']}
     with open(paths['manifest'], 'x') as fh: json.dump(mf, fh, indent=1, default=str)

@@ -16,6 +16,11 @@ elif [ "${UR_VARIANT:-}" = ageaware ]; then
   R=${UR_ROOT:-prospective/shadow/age_aware}; CD=benchmarks/engine_age_aware_candidate; FR=engine/frames/national_age_aware.parquet; GX=1
   LBL="Age-aware update rule (not live)"; SLBL="shadow candidate: age-aware update rule (12 L cap; good runs 1+0.3exp(-n/6) times, 5yo+ counted as exposed), not live"; N="age-aware shadow"
   export RATING_GOOD_TAPER=0.3,6 RATING_TAPER_AGEFLOOR=engine/frames/age_at_run.parquet
+elif [ "${UR_VARIANT:-}" = consolidated ]; then
+  # Batch 23 C6 (approved by Damo 27 Nov 2026): consolidated rating candidate, own frozen files and prospective clock (from the 28 Nov run)
+  R=${UR_ROOT:-prospective/shadow/consolidated}; CD=benchmarks/engine_consolidated_candidate; FR=engine/frames/national_consolidated.parquet; GX=1
+  LBL="Consolidated rating candidate (not live)"; SLBL="shadow candidate: consolidated rating (12 L cap; good runs 1+0.8exp(-n/6), n = history-completeness experience with the inferred-start cap; certainty-weighted race reference), not live"; N="consolidated shadow"
+  export RATING_GOOD_TAPER=0.8,6 RATING_TAPER_NEFF=engine/frames/experience_at_run.parquet RATING_REF=precision
 else
   R=${UR_ROOT:-prospective/shadow/update_rule}; CD=benchmarks/engine_update_rule_candidate; FR=engine/frames/national_update_rule.parquet; GX=1.3
   LBL="Update-rule candidate (not live)"; SLBL="shadow candidate: rating update rule (12 L cap, 1.3x good runs), not live"; N="update-rule shadow"
@@ -27,7 +32,11 @@ export ENGINE_C2=1 WCREDIT=0.25 RATING_CAP_L=12 RATING_CAP_SCOPE=all RATING_GOOD
        ENGINE_CAND_LABEL="$LBL" SHADOW_LABEL="$SLBL"
 # its own rating frame, rebuilt (about a minute) whenever the Engine v2.3 history file is newer; same code as production plus the rule
 T=${UR_VARIANT:-ur}_${GX}   # log tag (keeps each shadow's logs apart)
-if [ ! -f $FR ] || [ $FR -ot national_runs_c2.parquet ]; then
+if [ ! -f $FR ] || [ $FR -ot national_runs_c2.parquet ] || { [ "${UR_VARIANT:-}" = consolidated ] && [ ! -f "${RATING_TAPER_NEFF:-}" ]; }; then
+  if [ "${UR_VARIANT:-}" = consolidated ]; then   # experience at each completed run (verified / observed / inferred with the cap), from the production frame
+    EXP_INFO_JSON=/tmp/exp_info_consolidated.json python3 batch23/b23_experience_file.py engine/frames/national_c2.parquet "$RATING_TAPER_NEFF" > /tmp/exp_consolidated.txt 2>&1 \
+      || { echo "WARNING $N: experience file failed (production unaffected): $(tail -1 /tmp/exp_consolidated.txt)"; exit 0; }
+  fi
   if [ "${UR_VARIANT:-}" = ageaware ]; then   # age at each completed run, from the production frame (fixed history; point in time)
     python3 -c "import pandas as pd;f=pd.read_parquet('engine/frames/national_c2.parquet',columns=['race','horse','age_n']).rename(columns={'race':'race_key','age_n':'age'}).dropna();f.to_parquet('$RATING_TAPER_AGEFLOOR')" \
       || { echo "WARNING $N: age file failed (production unaffected)"; exit 0; }
