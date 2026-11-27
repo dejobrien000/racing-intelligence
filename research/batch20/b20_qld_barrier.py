@@ -24,7 +24,7 @@ def v22(x, e, fm):
     return e + z[[t + '_z' for t in T22]].values @ b, dict(zip(T22, map(float, b)))
 os.makedirs('/tmp/qcfg', exist_ok=True)
 
-BH = pd.read_parquet('/tmp/cand/bar_h_qld.parquet').rename(columns={'q_race_id': 'race_id', 'q_horse_id': 'horse_id'})
+BH = pd.read_parquet(os.environ.get('BARH', '/tmp/cand/bar_h_qld.parquet')).rename(columns={'q_race_id': 'race_id', 'q_horse_id': 'horse_id'})
 BH['horse_id'] = BH.horse_id.astype(str); x0['horse_id_s'] = x0.horse_id.astype(str).str.replace(r'\.0$', '', regex=True)
 x0 = x0.merge(BH.rename(columns={'horse_id': 'horse_id_s'}).drop_duplicates(['race_id', 'horse_id_s']), on=['race_id', 'horse_id_s'], how='left'); x0['bar_h'] = x0.bar_h.fillna(0.0)
 print('bar_h coverage on Qld rows', round(float((x0.bar_h != 0).mean()), 3), flush=True)

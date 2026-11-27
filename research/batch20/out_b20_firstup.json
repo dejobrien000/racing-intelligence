@@ -1,0 +1,129 @@
+{
+ "definition": "fresh preference = first-up surprise minus mean surprise of runs 2-5 of the same preparation; own record shrunk with 3 pseudo-preparations",
+ "preparations_with_an_earlier_record": 50527,
+ "horses": 23687,
+ "fu_own_sd_kg": 1.58,
+ "(1) Batch 19 replication: fresh preference ~ own record": {
+  "n": 38111,
+  "fu_own": [
+   0.138,
+   0.096,
+   0.181
+  ],
+  "r2": 0.0013,
+  "others": {}
+ },
+ "(2a) first-up surprise ~ own record": {
+  "n": 50527,
+  "fu_own": [
+   0.151,
+   0.117,
+   0.185
+  ],
+  "r2": 0.0018,
+  "others": {}
+ },
+ "(2b) first-up surprise ~ own record + fitness terms": {
+  "n": 50505,
+  "fu_own": [
+   0.141,
+   0.09,
+   0.191
+  ],
+  "r2": 0.0205,
+  "others": {
+   "r_ldays": -0.869,
+   "gap_long_z0": 0.384,
+   "gap_long_miss": 0.879,
+   "runs_to_usual_peak": -0.202,
+   "prep_shape": -0.087
+  }
+ },
+ "(2b) by window: 2025-26": {
+  "n": 32114,
+  "fu_own": [
+   0.153,
+   0.089,
+   0.217
+  ],
+  "r2": 0.0271,
+  "others": {
+   "r_ldays": -1.002,
+   "gap_long_z0": 0.285,
+   "gap_long_miss": 1.221,
+   "runs_to_usual_peak": -0.225,
+   "prep_shape": -0.107
+  }
+ },
+ "(2b) by window: to 2024": {
+  "n": 18391,
+  "fu_own": [
+   0.126,
+   0.04,
+   0.211
+  ],
+  "r2": 0.0118,
+  "others": {
+   "r_ldays": -0.604,
+   "gap_long_z0": 0.693,
+   "gap_long_miss": 0.394,
+   "runs_to_usual_peak": -0.162,
+   "prep_shape": -0.064
+  }
+ },
+ "(2b) by record depth: 1 earlier preparation": {
+  "n": 26687,
+  "fu_own": [
+   0.107,
+   0.036,
+   0.177
+  ],
+  "r2": 0.0176,
+  "others": {
+   "r_ldays": -0.891,
+   "gap_long_z0": 0.256,
+   "gap_long_miss": 0.815,
+   "runs_to_usual_peak": -0.134,
+   "prep_shape": -0.047
+  }
+ },
+ "(2b) by record depth: 2-3 earlier": {
+  "n": 20557,
+  "fu_own": [
+   0.174,
+   0.094,
+   0.254
+  ],
+  "r2": 0.02,
+  "others": {
+   "r_ldays": -0.888,
+   "gap_long_z0": 0.472,
+   "gap_long_miss": 0.937,
+   "runs_to_usual_peak": -0.316,
+   "prep_shape": -0.155
+  }
+ },
+ "(2b) by record depth: 4+ earlier": {
+  "n": 3261,
+  "fu_own": [
+   0.239,
+   0.019,
+   0.46
+  ],
+  "r2": 0.0169,
+  "others": {
+   "r_ldays": -0.755,
+   "gap_long_z0": 0.607,
+   "gap_long_miss": 0.0,
+   "runs_to_usual_peak": -0.286,
+   "prep_shape": -0.135
+  }
+ },
+ "fitness_term_coverage": {
+  "r_ldays": 1.0,
+  "gap_long_z0": 1.0,
+  "gap_long_miss": 1.0,
+  "runs_to_usual_peak": 1.0,
+  "prep_shape": 1.0
+ }
+}

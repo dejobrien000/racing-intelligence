@@ -4,7 +4,10 @@ For each run with a barrier (Queensland tracking 2022-26, SA tracking 2024-26), 
 relative barrier position among the race's starters (0 inside .. 1 outside, centred within the race). Runs with no earlier data get the
 broader level's estimate, or 0. Barrier number is used only through its rank among starters (relative position), as before.
 Outputs: /tmp/cand/bar_h_qld.parquet (q_race_id, q_horse_id, bar_h) and /tmp/cand/bar_h_sa.parquet (race_id [frame key], horse, bar_h)
-Usage (from research/): python3 batch20/b20_barrier_feature.py"""
+NORAIL=1: the rail level is dropped (course x distance is the finest level) because the morning TAB capture carries no rail position;
+outputs then end _norail.
+Usage (from research/): [NORAIL=1] python3 batch20/b20_barrier_feature.py"""
+import os; NORAIL = os.environ.get('NORAIL') == '1'; SUF = '_norail' if NORAIL else ''
 import re, json, duckdb, numpy as np, pandas as pd
 con = duckdb.connect('../history/history.duckdb', read_only=True)
 rail = lambda s: 0.0 if re.match(r'(?i)\s*true', str(s)) else (float(re.search(r'\+\s*(\d+(?:\.\d+)?)', str(s)).group(1)) if re.search(r'\+\s*(\d+(?:\.\d+)?)', str(s)) else np.nan)
@@ -27,7 +30,7 @@ X['y'] = X.dyn_nat_inn - X.groupby('rid').dyn_nat_inn.transform('mean')
 X['dband'] = pd.cut(X.distance_m, [0, 1100, 1300, 1500, 1800, 9999], labels=['to1100', '1101-1300', '1301-1500', '1501-1800', '1801+']).astype(str)
 X['rband'] = pd.cut(X.rail.map(rail), [-0.1, 0.5, 3.5, 6.5, 99], labels=['true', '+1-3', '+4-6', '+7+']).astype(str)
 X['md'] = pd.to_datetime(X.meeting_date); X['yr'] = X.md.dt.year
-X['L0'] = 'all'; X['L1'] = X.st; X['L2'] = X.L1 + '|' + X.course; X['L3'] = X.L2 + '|' + X.dband; X['L4'] = X.L3 + '|' + X.rband; LV = ['L0', 'L1', 'L2', 'L3', 'L4']
+X['L0'] = 'all'; X['L1'] = X.st; X['L2'] = X.L1 + '|' + X.course; X['L3'] = X.L2 + '|' + X.dband; X['L4'] = X.L3 + ('' if NORAIL else '|' + X.rband); LV = ['L0', 'L1', 'L2', 'L3'] + ([] if NORAIL else ['L4'])
 def hier(d):
     d = d[(d.n >= 6) & d.y.notna()]; sig2 = float((d.y ** 2).mean()); post = {}; prev = None
     for L in LV:
@@ -42,10 +45,10 @@ X['slope'] = np.nan; info = {}
 for Y in sorted(X.yr.unique()):
     past = X[X.md < pd.Timestamp(f'{Y}-01-01')]; cur = X.yr == Y
     if len(past) < 2000: info[int(Y)] = 'no earlier data: 0'; continue
-    P = hier(past); s = X.loc[cur, 'L4'].map(P['L4'])
-    for up in ['L3', 'L2', 'L1', 'L0']: s = s.fillna(X.loc[cur, up].map(P[up]))
+    P = hier(past); s = X.loc[cur, LV[-1]].map(P[LV[-1]])
+    for up in LV[-2::-1]: s = s.fillna(X.loc[cur, up].map(P[up]))
     X.loc[cur, 'slope'] = s; info[int(Y)] = {'national_slope': round(P['L0']['all'], 3), 'fit_runs': int(len(past))}
 X['bar_h'] = (X.slope * X.x).fillna(0.0)
-X[X.st == 'QLD'][['q_race_id', 'q_horse_id', 'bar_h']].to_parquet('/tmp/cand/bar_h_qld.parquet'); X[X.st == 'SA'][['race_id', 'horse', 'bar_h']].to_parquet('/tmp/cand/bar_h_sa.parquet')
-json.dump({'by_year': info, 'runs': {s: int((X.st == s).sum()) for s in ['QLD', 'SA']}, 'nonzero_share': {s: round(float((X[X.st == s].bar_h != 0).mean()), 3) for s in ['QLD', 'SA']}}, open('batch20/out_b20_barrier_feature.json', 'w'), indent=1)
-print(json.load(open('batch20/out_b20_barrier_feature.json')))
+X[X.st == 'QLD'][['q_race_id', 'q_horse_id', 'bar_h']].to_parquet(f'/tmp/cand/bar_h_qld{SUF}.parquet'); X[X.st == 'SA'][['race_id', 'horse', 'bar_h']].to_parquet(f'/tmp/cand/bar_h_sa{SUF}.parquet')
+json.dump({'by_year': info, 'runs': {s: int((X.st == s).sum()) for s in ['QLD', 'SA']}, 'nonzero_share': {s: round(float((X[X.st == s].bar_h != 0).mean()), 3) for s in ['QLD', 'SA']}}, open(f'batch20/out_b20_barrier_feature{SUF}.json', 'w'), indent=1)
+print(json.load(open(f'batch20/out_b20_barrier_feature{SUF}.json')))

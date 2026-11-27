@@ -1,0 +1,10 @@
+{
+ "keys_with_two_suffixes_or_dams": 82,
+ "runs_under_those_keys": 1569,
+ "by_class": {
+  "different_country": 51,
+  "same_suffix_same_sire_dam_name_differs": 26,
+  "same_suffix_different_sire_and_dam": 5
+ },
+ "concurrent_careers": 4
+}

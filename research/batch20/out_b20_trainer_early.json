@@ -1,0 +1,432 @@
+{
+ "population": {
+  "genuine_debutants": 25820,
+  "runs_2nd_3rd_judged_2024_on": 37655,
+  "trainers": 1658
+ },
+ "record_sd_kg": {
+  "early_rec": 0.816,
+  "debut_rec": 1.432,
+  "t_surp": 0.605
+ },
+ "record_correlations": {
+  "early_rec": {
+   "early_rec": 1.0,
+   "debut_rec": 0.548,
+   "t_surp": 0.578,
+   "cont_rec": 0.224
+  },
+  "debut_rec": {
+   "early_rec": 0.548,
+   "debut_rec": 1.0,
+   "t_surp": 0.686,
+   "cont_rec": 0.409
+  },
+  "t_surp": {
+   "early_rec": 0.578,
+   "debut_rec": 0.686,
+   "t_surp": 1.0,
+   "cont_rec": 0.391
+  },
+  "cont_rec": {
+   "early_rec": 0.224,
+   "debut_rec": 0.409,
+   "t_surp": 0.391,
+   "cont_rec": 1.0
+  }
+ },
+ "models": {
+  "all | early record alone": {
+   "runs": 37655,
+   "early_rec": {
+    "coef": 0.753,
+    "ci95": [
+     0.671,
+     0.835
+    ]
+   }
+  },
+  "all | with general and debut records": {
+   "runs": 37651,
+   "early_rec": {
+    "coef": 0.209,
+    "ci95": [
+     0.096,
+     0.321
+    ]
+   },
+   "debut_rec": {
+    "coef": 0.029,
+    "ci95": [
+     -0.047,
+     0.106
+    ]
+   },
+   "t_surp": {
+    "coef": 1.205,
+    "ci95": [
+     1.017,
+     1.394
+    ]
+   }
+  },
+  "all | with all controls": {
+   "runs": 37442,
+   "early_rec": {
+    "coef": 0.168,
+    "ci95": [
+     0.055,
+     0.281
+    ]
+   },
+   "debut_rec": {
+    "coef": 0.002,
+    "ci95": [
+     -0.075,
+     0.078
+    ]
+   },
+   "t_surp": {
+    "coef": 1.219,
+    "ci95": [
+     1.036,
+     1.403
+    ]
+   },
+   "age3": {
+    "coef": 1.045,
+    "ci95": [
+     0.84,
+     1.25
+    ]
+   },
+   "female": {
+    "coef": -0.534,
+    "ci95": [
+     -0.655,
+     -0.412
+    ]
+   },
+   "debut_surp": {
+    "coef": -0.003,
+    "ci95": [
+     -0.015,
+     0.01
+    ]
+   },
+   "class_step": {
+    "coef": 0.505,
+    "ci95": [
+     0.445,
+     0.566
+    ]
+   },
+   "trainer_change": {
+    "coef": -0.203,
+    "ci95": [
+     -0.473,
+     0.066
+    ]
+   },
+   "spell": {
+    "coef": -0.077,
+    "ci95": [
+     -0.236,
+     0.083
+    ]
+   },
+   "start3": {
+    "coef": -0.066,
+    "ci95": [
+     -0.192,
+     0.06
+    ]
+   },
+   "cont_rec": {
+    "coef": 0.716,
+    "ci95": [
+     -2.162,
+     3.594
+    ]
+   }
+  },
+  "2024 and before | early record alone": {
+   "runs": 13215,
+   "early_rec": {
+    "coef": 0.609,
+    "ci95": [
+     0.481,
+     0.736
+    ]
+   }
+  },
+  "2024 and before | with general and debut records": {
+   "runs": 13215,
+   "early_rec": {
+    "coef": 0.022,
+    "ci95": [
+     -0.144,
+     0.188
+    ]
+   },
+   "debut_rec": {
+    "coef": -0.031,
+    "ci95": [
+     -0.145,
+     0.082
+    ]
+   },
+   "t_surp": {
+    "coef": 1.437,
+    "ci95": [
+     1.144,
+     1.73
+    ]
+   }
+  },
+  "2024 and before | with all controls": {
+   "runs": 13127,
+   "early_rec": {
+    "coef": -0.024,
+    "ci95": [
+     -0.193,
+     0.145
+    ]
+   },
+   "debut_rec": {
+    "coef": -0.052,
+    "ci95": [
+     -0.167,
+     0.064
+    ]
+   },
+   "t_surp": {
+    "coef": 1.506,
+    "ci95": [
+     1.221,
+     1.791
+    ]
+   },
+   "age3": {
+    "coef": 1.159,
+    "ci95": [
+     0.851,
+     1.467
+    ]
+   },
+   "female": {
+    "coef": -0.508,
+    "ci95": [
+     -0.715,
+     -0.301
+    ]
+   },
+   "debut_surp": {
+    "coef": -0.023,
+    "ci95": [
+     -0.045,
+     -0.001
+    ]
+   },
+   "class_step": {
+    "coef": 0.396,
+    "ci95": [
+     0.296,
+     0.495
+    ]
+   },
+   "trainer_change": {
+    "coef": -0.159,
+    "ci95": [
+     -0.636,
+     0.318
+    ]
+   },
+   "spell": {
+    "coef": -0.147,
+    "ci95": [
+     -0.409,
+     0.114
+    ]
+   },
+   "start3": {
+    "coef": -0.117,
+    "ci95": [
+     -0.32,
+     0.086
+    ]
+   },
+   "cont_rec": {
+    "coef": 1.88,
+    "ci95": [
+     -2.943,
+     6.704
+    ]
+   }
+  },
+  "2025-26 | early record alone": {
+   "runs": 24440,
+   "early_rec": {
+    "coef": 0.822,
+    "ci95": [
+     0.723,
+     0.921
+    ]
+   }
+  },
+  "2025-26 | with general and debut records": {
+   "runs": 24436,
+   "early_rec": {
+    "coef": 0.309,
+    "ci95": [
+     0.171,
+     0.447
+    ]
+   },
+   "debut_rec": {
+    "coef": 0.052,
+    "ci95": [
+     -0.037,
+     0.141
+    ]
+   },
+   "t_surp": {
+    "coef": 1.07,
+    "ci95": [
+     0.836,
+     1.303
+    ]
+   }
+  },
+  "2025-26 | with all controls": {
+   "runs": 24315,
+   "early_rec": {
+    "coef": 0.263,
+    "ci95": [
+     0.126,
+     0.401
+    ]
+   },
+   "debut_rec": {
+    "coef": 0.019,
+    "ci95": [
+     -0.071,
+     0.109
+    ]
+   },
+   "t_surp": {
+    "coef": 1.066,
+    "ci95": [
+     0.833,
+     1.299
+    ]
+   },
+   "age3": {
+    "coef": 0.98,
+    "ci95": [
+     0.739,
+     1.221
+    ]
+   },
+   "female": {
+    "coef": -0.55,
+    "ci95": [
+     -0.706,
+     -0.393
+    ]
+   },
+   "debut_surp": {
+    "coef": 0.008,
+    "ci95": [
+     -0.008,
+     0.024
+    ]
+   },
+   "class_step": {
+    "coef": 0.563,
+    "ci95": [
+     0.491,
+     0.635
+    ]
+   },
+   "trainer_change": {
+    "coef": -0.218,
+    "ci95": [
+     -0.552,
+     0.117
+    ]
+   },
+   "spell": {
+    "coef": -0.039,
+    "ci95": [
+     -0.236,
+     0.159
+    ]
+   },
+   "start3": {
+    "coef": -0.036,
+    "ci95": [
+     -0.184,
+     0.113
+    ]
+   },
+   "cont_rec": {
+    "coef": 0.303,
+    "ci95": [
+     -3.105,
+     3.711
+    ]
+   }
+  },
+  "subgroup | within first preparation": {
+   "runs": 26400,
+   "early_rec": {
+    "coef": 0.214,
+    "ci95": [
+     0.086,
+     0.342
+    ]
+   }
+  },
+  "subgroup | after a spell": {
+   "runs": 11042,
+   "early_rec": {
+    "coef": 0.063,
+    "ci95": [
+     -0.135,
+     0.262
+    ]
+   }
+  },
+  "subgroup | 2nd start": {
+   "runs": 19164,
+   "early_rec": {
+    "coef": 0.038,
+    "ci95": [
+     -0.117,
+     0.194
+    ]
+   }
+  },
+  "subgroup | 3rd start": {
+   "runs": 18278,
+   "early_rec": {
+    "coef": 0.308,
+    "ci95": [
+     0.166,
+     0.45
+    ]
+   }
+  },
+  "subgroup | trainer record on 20+ earlier starts": {
+   "runs": 25411,
+   "early_rec": {
+    "coef": 0.22,
+    "ci95": [
+     0.078,
+     0.362
+    ]
+   }
+  }
+ }
+}

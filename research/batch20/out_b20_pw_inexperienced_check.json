@@ -1,0 +1,28 @@
+{
+ "update_difference_PW2_minus_C2_kg": {
+  "established | ran above expectation": {
+   "runs": 61721,
+   "mean": -0.008
+  },
+  "established | ran below": {
+   "runs": 48384,
+   "mean": -0.01
+  },
+  "inexperienced | ran above expectation": {
+   "runs": 60170,
+   "mean": -0.0
+  },
+  "inexperienced | ran below": {
+   "runs": 46351,
+   "mean": 0.002
+  },
+  "mixed | ran above expectation": {
+   "runs": 65403,
+   "mean": -0.004
+  },
+  "mixed | ran below": {
+   "runs": 52173,
+   "mean": -0.003
+  }
+ }
+}
