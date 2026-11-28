@@ -103,6 +103,18 @@ function vAbout(){
   'It is a research tool, not betting advice. Nothing here guarantees a result.']));
 }
 """
+# 8 Batch 28 item 4 (approved): research-labelled performance range in the EXPANDED horse profile only (data from batch28/b28_profile_ranges.py)
+rep("""'</div><p class="sm faint" style="margin:6px 0 0">Each figure is one run measured against its field. '""",
+    """'</div>'+(p.range_research?rangeBox(p.range_research):'')+'<p class="sm faint" style="margin:6px 0 0">Each figure is one run measured against its field. '""")
+NEW_JS += r"""
+function rangeBox(r){
+ return '<div class="sm" style="margin:10px 0 0;padding:8px 10px;border:1px dashed rgba(127,140,160,.55);border-radius:8px"><span class="tag">Research</span> '+
+  '<b>Expected run today, against this field:</b> '+kg(r.expected_kg,1)+' kg &nbsp; <b>80% range:</b> '+kg(r.lo_kg,1)+' to '+kg(r.hi_kg,1)+' kg'+
+  (r.wide?' <span class="faint">(wider because: '+esc(r.wide)+')</span>':'')+
+  '<div class="faint" style="margin-top:4px">Where this horse\'s run is likely to land 8 times in 10, in kg better (+) or worse (−) than the average runner in this race. '+
+  'It is not a win chance: an 80% range is not an 80% chance of winning. On past races the range held about 78% of runs. Research display only; the engine does not use it.</div></div>';
+}
+"""
 rep("function render(){", NEW_JS + "function render(){")
 rep('<title>Racing Intelligence</title>', '<title>Horse Intel preview</title>')
 open('ui/preview/index.html', 'w', encoding='utf-8').write(src); print('ui/preview/index.html', len(src))

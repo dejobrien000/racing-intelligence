@@ -1,0 +1,59 @@
+{
+ "definition": "Batch 28 item 10: connected form lines / entire-field underestimation (research only; no hindsight).\nFor a runner today (date t): its LAST race R (date d < t). Its rivals in R have run again since; their surprises in those later runs\n(innovations against their own ratings, runs strictly after d and strictly before t) say whether R's field was underrated when R was rated.\n  fl_since = sum of those innovations over all rivals' later runs / (number of such runs + 5)      (kg; + = R's field since ran above its ratings)\n  fl_n     = number of such runs",
+ "rows_with_value": 500143,
+ "rows": 625526,
+ "fl_since_sd": 0.804,
+ "by_period": {
+  "to_2023": {
+   "runs": 100359,
+   "slope_kg_per_kg": 0.488,
+   "mean_surprise_by_fifth": [
+    -0.745,
+    -0.231,
+    -0.033,
+    0.098,
+    0.432
+   ]
+  },
+  "2024": {
+   "runs": 91512,
+   "slope_kg_per_kg": 0.284,
+   "mean_surprise_by_fifth": [
+    -0.349,
+    -0.206,
+    -0.085,
+    0.045,
+    0.249
+   ]
+  },
+  "2025_26": {
+   "runs": 168332,
+   "slope_kg_per_kg": 0.256,
+   "mean_surprise_by_fifth": [
+    -0.283,
+    -0.236,
+    -0.136,
+    0.018,
+    0.27
+   ]
+  }
+ },
+ "engine_test_consolidated_third_layer": {
+  "A": {
+   "races": 12777,
+   "gain": 0.00111,
+   "ci95": [
+    1e-05,
+    0.00215
+   ]
+  },
+  "B": {
+   "races": 23729,
+   "gain": -1e-05,
+   "ci95": [
+    -0.00074,
+    0.00076
+   ]
+  }
+ }
+}

@@ -441,6 +441,18 @@ Going suitability (item 8; preregistered)
 - Going-specific measure (Good/Soft/Heavy/Synthetic, k = 3): +0.12 / +0.18 kg per sd beyond form; going records add nothing.
 - Replacing the going record in the engine: +0.0001 / +0.0001 (n.s.). Passes the preregistered rule technically; negligible. Not added.
 
+Connected form lines (item 10; no hindsight)
+- fl_since = rivals from the horse's last race: their surprises in runs since, before today (shrunk, k = 5).
+- Descriptive: today's surprise rises with it (0.49 / 0.28 / 0.26 kg per kg in to-2023 / 2024 / 2025-26).
+- Engine (consolidated, third layer): +0.0011 (+0.00001 to +0.0022) / 0.0000 (-0.0007 to +0.0008). The signal is mostly already
+  captured (last-start surprise, trajectory). NOT ESTABLISHED. Output batch28/out_b28_form_lines.json.
+
+Performance ranges in horse profiles (item 4; approved, research-labelled)
+- Batch 27 P4 model as fitted on 2023: expected run against this field plus 80% range, with plain reasons when wider.
+- In the dashboard PREVIEW only (expanded profile; not the default race view; no confidence score). Says plainly that an 80% range is
+  not an 80% win chance. 28 Nov preview: 695 national runners, median width 10.2 kg. Queensland not fitted yet.
+- For the live dashboard after Damo's preview review: refit on the Engine v2.5 rating first (fitted on v2.3).
+
 Data and operations
 - "13 first starters" = 9 rated first starters + 4 Darwin (unrated); separately 7 experienced horses lacked age: 16 rated runners in all,
   all now on the 3b list (verified).
