@@ -396,13 +396,15 @@ try:
             for h in r.get('runners', []):
                 pr = None
                 if g_ is not None:
-                    try: q_ = g_.get_group(_nk(h['horse'])).perf.values
-                    except KeyError: q_ = np.array([])
+                    try: qd_ = g_.get_group(_nk(h['horse'])); q_ = qd_.perf.values
+                    except KeyError: qd_ = None; q_ = np.array([])
                     l6 = np.sort(q_[-6:]); l5 = q_[-5:]
                     pr = {'runs': int(len(q_)), 'latest': round(float(q_[-1]), 1) if len(q_) else None,
                           'typical_last5': round(float(np.median(l5)), 1) if len(l5) >= 3 else None, 'typical_n': int(len(l5)),
                           'repeatable_upper_last6': round(float(l6[-2]), 1) if len(l6) >= 3 else None, 'peak_last6': round(float(l6[-1]), 1) if len(l6) else None,
-                          'career_best': round(float(q_.max()), 1) if len(q_) else None, 'last6_n': int(len(l6))}
+                          'career_best': round(float(q_.max()), 1) if len(q_) else None, 'last6_n': int(len(l6)),
+                          # Batch 27 (display only): the last 8 held runs - date, that run's performance figure, the rating it carried in
+                          'recent': [] if qd_ is None else [[str(pd.Timestamp(d_).date()), round(float(p_), 1), round(float(r_), 1)] for d_, p_, r_ in zip(qd_.date.values[-8:], qd_.perf.values[-8:], qd_.dyn_nat.values[-8:])]}
                 h['profile'] = pr
     PROFILE['cutoff'] = _cut
     # ---- common national display scale (display only; Damo 27 Nov 2026, Batch 18 A4). Each rating version is mapped onto one scale with a
@@ -423,7 +425,9 @@ try:
         for r in m.get('races', []):
             for h in r.get('runners', []):
                 a_ = h.get('ability') or {}; a_['rating_common_kg'] = _cv(a_.get('rating_kg'), fam_)
-                if h.get('profile'): h['profile']['common'] = {k: _cv(h['profile'].get(k), fam_) for k in ['latest', 'typical_last5', 'repeatable_upper_last6', 'peak_last6', 'career_best']}
+                if h.get('profile'):
+                    h['profile']['common'] = {k: _cv(h['profile'].get(k), fam_) for k in ['latest', 'typical_last5', 'repeatable_upper_last6', 'peak_last6', 'career_best']}
+                    h['profile']['common']['recent'] = [[d_, _cv(p_, fam_), _cv(r_, fam_)] for d_, p_, r_ in (h['profile'].get('recent') or [])]
     PROFILE['scale'] = SCALE
 except Exception as ex_:
     PROFILE['error'] = str(ex_)[:200]; print('WARNING performance profile skipped (display only):', str(ex_)[:200])

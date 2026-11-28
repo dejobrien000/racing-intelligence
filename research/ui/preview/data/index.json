@@ -1,0 +1,12 @@
+{
+ "contract": {
+  "name": "racing-intelligence.daily",
+  "version": "1.0"
+ },
+ "days": [
+  {
+   "date": "2026-11-28",
+   "file": "racing_2026-11-28.json"
+  }
+ ]
+}
