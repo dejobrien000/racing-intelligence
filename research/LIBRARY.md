@@ -197,7 +197,7 @@ B. Meeting-specific physical performance (Qld RQ tracking 2022-26, SA tracking 2
 
 ## Batch 26 (28 Nov 2026 afternoon; Damo's 12:25pm brief): Saturday integrity, rating stability, national physical framework, returners, distance
 Research only. No engine, UI or switch change; no forecast re-scored or replaced; every frozen shadow untouched; no market data in any
-input. Scripts and outputs: batch26/b26_*.py -> batch26/out_b26_*.json. Harness: national cand_eval mode R (A = fit before 2024, judged
+input. Report: https://claude.ai/artifact/5ru88iaS7dpPukHKhVocYz. Scripts and outputs: batch26/b26_*.py -> batch26/out_b26_*.json. Harness: national cand_eval mode R (A = fit before 2024, judged
 2024, 12,777 races; B = fit before 2025, judged 2025-26, 23,729 races); gains are mean log-likelihood per race, paired, 95% bootstrap.
 
 1. Saturday 28 Nov integrity (b26_integrity, b26_inputs)
