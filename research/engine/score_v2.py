@@ -83,7 +83,10 @@ def new_raw(T, H_, fam, records=False):
         fp = os.environ.get('AGESEX_TAB_FILE') or f"collect/national/{D:%Y%m%d}/form_runners.csv"
         AGESEX_LOG.update({'file': fp, 'file_present': os.path.exists(fp)})
         if os.path.exists(fp):
-            fr = pd.read_csv(fp); fr['k'] = fr.name.map(nk); fr = fr.drop_duplicates(['race', 'n', 'k']).set_index(['race', 'n', 'k'])
+            fr = pd.read_csv(fp)
+            if os.environ.get('AGESEX_ASOF') and 'captured_utc' in fr:   # Batch 27: a re-export recomputes with the records held when the day was scored (later 5b records excluded)
+                fr = fr[pd.to_datetime(fr.captured_utc, utc=True) < pd.Timestamp(os.environ['AGESEX_ASOF'])]
+            fr['k'] = fr.name.map(nk); fr = fr.drop_duplicates(['race', 'n', 'k']).set_index(['race', 'n', 'k'])
             idx = list(zip(T.race_no.astype(int), T.saddlecloth.astype(int), T.horse)); miss = T.age_n.isna().values
             tab_age = np.array([fr.age.get(i, np.nan) for i in idx], dtype=float); tab_sex = np.array([fr.sex.get(i, None) for i in idx], dtype=object)
             T['age_source'] = np.where(miss & ~np.isnan(tab_age), 'TAB form record', np.where(T.age_n.notna(), 'history', 'unknown'))

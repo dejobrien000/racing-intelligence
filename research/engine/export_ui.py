@@ -20,6 +20,21 @@ if _REL:
     os.environ['ENGINE_QLD213'] = '1' if any(x.startswith('Engine v2.1.3') for x in _REL) else '0'
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
+# Batch 27 (28 Nov 2026, display correction): a runner with no runs held by us is called a first starter ONLY when TAB's own form
+# record, captured before its race, shows 0 career starts. TAB shows starts -> "has raced, none held"; no record -> "debut not confirmed".
+TABSTARTS = {}
+try:
+    _fr = pd.read_csv(f'collect/national/{D}/form_runners.csv', usecols=['race', 'n', 'name', 'career_starts', 'captured_utc'])
+    for _r in _fr.itertuples():
+        TABSTARTS.setdefault((int(_r.race), int(_r.n), S.nk(_r.name)), []).append((pd.Timestamp(_r.captured_utc), _r.career_starts))
+except Exception: pass
+def tab_starts_before(rn, sc, horse, start):
+    try: t0 = pd.Timestamp(start); t0 = t0.tz_localize('UTC') if t0.tzinfo is None else t0
+    except Exception: t0 = None
+    for t, cs in sorted(TABSTARTS.get((int(rn), int(sc), S.nk(horse)), []), key=lambda x: x[0]):
+        t = t.tz_localize('UTC') if t.tzinfo is None else t
+        if (t0 is None or t < t0) and cs == cs: return int(cs)
+    return None
 ENGINE_VERSION = 'Engine v2.1'; RELEASE_NOTE = 'v2.1 (25 Nov 2026, 12:17pm): Queensland ratings use the v3 rating, which expects lightly raced horses to improve (research/batch9 A; approved by Damo). NSW/Vic/ACT unchanged. v2.0.2 (12:06pm): win chances use the bent-line calibration. v2.0.1 (11:11am): Queensland scorer fix.'
 MAN = json.load(open('benchmarks/engine_v2/manifest.json')); RC = json.load(open('benchmarks/engine_v2/runner_calibration_v2.json' if os.path.exists('benchmarks/engine_v2/runner_calibration_v2.json') else 'benchmarks/engine_v2/runner_calibration.json'))
 RC_OLD = RC; RC22 = json.load(open('benchmarks/engine_v2_2/runner_calibration_v22.json'))   # v2.2: NSW/Vic family recalibrated on v2.2 chances; QLD family unchanged
@@ -169,6 +184,7 @@ for track, grp in v2rows.groupby('track', sort=False):
     if snap.get('source'): notes.append('Fields source: ' + snap['source'] + '.')
     # term-level v2 detail, recomputed from the same saved inputs; must equal the saved v2 score
     ixv1 = IX[IX.file == m2['base_v1_file']].iloc[0]
+    os.environ['AGESEX_ASOF'] = str(m2.get('scored_utc') or '')      # Batch 27: recompute with the form records held at scoring time
     T, _, _, _ = S.meeting_table(ixv1); T = S.new_raw(T, S.history(D, fam), fam); T, contrib = S.apply(T, fam)
     chk = pd.Series(T.v2_score.values, index=list(zip(T.race_no, T.saddlecloth))) - pd.Series(W.v2_score.values, index=list(zip(W.race_no, W.saddlecloth))).reindex(list(zip(T.race_no, T.saddlecloth))).values
     assert chk.abs().max() < 1e-6, f'recomputed v2 detail does not match the saved prediction ({chk.abs().max()})'
@@ -225,7 +241,10 @@ for track, grp in v2rows.groupby('track', sort=False):
             # Batch 11 (display only): say plainly when a runner has no demonstrated race rating. Its chance is a prior estimate
             # (jockey/trainer, weight, barrier, age/sex, population average for its experience), not measured ability.
             nr_ = ro['ability']['rated_runs']; prev_ = ro['ability']['last_run'] is not None or ro['ability']['days_since'] is not None
-            if nr_ == 0 and not prev_: exp_ = 'First starter · no demonstrated race rating'
+            tabst_ = tab_starts_before(rn, r.saddlecloth, r.horse, fr.start_time) if nr_ == 0 and not prev_ else None
+            if nr_ == 0 and not prev_ and tabst_ == 0: exp_ = 'First starter · no demonstrated race rating'
+            elif nr_ == 0 and not prev_ and tabst_: exp_ = f"Has raced ({tabst_} start{'s' if tabst_ != 1 else ''} per TAB), none held by us · no demonstrated race rating"
+            elif nr_ == 0 and not prev_: exp_ = 'No runs held by us (debut not confirmed) · no demonstrated race rating'
             elif nr_ == 0: exp_ = 'Has raced, but no rated runs held · no demonstrated race rating'
             elif fam == 'QLD' and not bool(r.has_prior_form): exp_ = 'Runs held only outside Queensland tracking · Queensland form inputs missing'
             elif nr_ <= 2: exp_ = f'Lightly raced · {nr_} rated run' + ('s' if nr_ > 1 else '')
