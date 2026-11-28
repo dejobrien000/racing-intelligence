@@ -1,0 +1,597 @@
+GOC|6|2026-11-28T02:49:13Z
+FORM|5|RHETORIC|4|Gelding|19|2|6|0|14|false|eq|HARRY ANGEL (IRE)|WORDCRAFT (GB)|RAY DART
+PS|LastStarts|2026-11-14|GCST|1050|BM58|2|6|0|2.0|4-4-3|Good|1:01.38|Jai Williams|Began awkwardly. Laid in under pressure over the final 100m.
+PS|LastStarts|2026-10-17|GCST|1400|BM0-60|3|9|0|0.5|7-6-5|Soft|1:25.68|Archie McColm|-
+PS|LastStarts|2026-10-09|CDRA|1400|BM65|6|10|0|3.9|6-8-8|Good|1:25.25|Adin Thompson|Raced wide throughout.
+PS|LastStarts|2026-09-19|GCST|1400|BM0-65|7|15|0|1.5|9-8-7|Good|1:22.48|Ryan Maloney|Raced three-wide with cover throughout.
+PS|LastStarts|2026-09-05|EFRM|1200|BM0-65|5|12|0|1.9|6-6-6|Soft|1:11.34|Ryan Maloney|-
+PS|LastStarts|2026-08-29|EFRM|1000|3-4YO BM68|6|7|0|1.9|6-6-7|Good|0:58.17|Ryan Maloney|-
+PS|LastStarts|2026-08-01|DOOR|1200|3YO+ CL3 CG|4|10|0|3.2|4-4-3|Good|1:10.56|Taylor Marshall|-
+PS|LastStarts|2026-07-26|CDRA|1000|CL1 CG|1|8|0|1.2|7-7-6|Good|0:58.25|Ryan Maloney|-
+PS|WinRun|2026-05-29|CDRA|1100|MDN|1|8|0|1.8|2-2-1|Good|1:06.27|Ben Thompson|-
+PS|Trial|2025-12-18|RKER|850|-|3|9|0|0.62|-|Good|0:51.19|TOMMY BERRY|-
+PS|Trial|2025-12-09|RKER|850|-|5|9|0|4.49|-|Good|0:49.63|TOMMY BERRY|-
+PS|Trial|2025-09-26|RAND|1045|-|7|10|0|4.42|-|Good|1:03.20|TOMMY BERRY|-
+GOC|6|2026-11-28T02:49:13Z
+FORM|6|BRECHEN|8|Gelding|29|3|12|0|14|false|dn|CAPITALIST|DE CHORUS|JESSE TOWNSEND
+PS|LastStarts|2026-11-14|IPSH|1100|BM65|9|10|0|5.0|8-8-7|Heavy|1:05.26|Jasper Franklin|-
+PS|LastStarts|2026-11-03|GCST|1150|BM58|2|7|0|2.3|5-5-4|Good|1:07.80|Danny Peisley|-
+PS|LastStarts|2026-10-07|GCST|1150|BM70|2|10|0|4.9|4-4-2|Good|1:06.18|Ashley Butler|-
+PS|LastStarts|2026-09-24|WRAW|1200|BM68|2|9|0|0.1|9-9-9|Good|1:09.60|Ashley Butler|-
+PS|LastStarts|2026-09-13|DALB|1400|OPEN|6|8|0|2.2|6-6-6|Good|1:22.00|Jade Hampson|Raced keenly in the early stages.
+PS|LastStarts|2026-09-05|GCST|1200|BM70|5|8|0|2.2|5-5-7|Good|1:10.12|Jade Hampson|Bumped on jumping. Cast its off-fore plate in running.
+PS|LastStarts|2026-08-22|TOOW|1300|BM62|8|10|0|5.8|1-1-1|Good|1:21.17|Dan McGillivray|-
+PS|Trial|2026-08-07|IPSH|800|OPEN|3|5|0|2.34|-|Good|0:46.40|GEORGINA CARTWRIGHT|-
+PS|LastStarts|2026-07-08|IPSH|1200|BM65|9|10|0|5.6|5-5-5|Soft|1:11.26|Taylor Marshall|-
+PS|Trial|2026-06-02|DOOM|1000|CL3|3|6|0|3.96|-|Soft|1:00.90|GEORGINA CARTWRIGHT|-
+PS|WinRun|2024-11-23|GCST|1150|BM62|1|9|0|0.1|6-6-6|Good|1:06.70|Kirk Matheson|-
+PS|Trial|2024-09-24|DOOM|840|CL3|1|6|0|0.5|-|Good|0:49.82|GEORGINA CARTWRIGHT|-
+GOC|6|2026-11-28T02:49:13Z
+FORM|7|EVER SO READY|3|Gelding|10|2|3|0|14|false|eq|BETTER THAN READY|I'M LOVELY|RICHARD LAMING
+PS|LastStarts|2026-11-14|DOOM|1200|3YO+ CL3|8|9|9.4|4-4-4|Soft|1:10.76|Martin Harley|-
+PS|LastStarts|2026-10-31|DOOM|1350|3YO OPEN|5|9|3.0|3-4-3|Soft|1:19.58|Kyle Wilson-Taylor|-
+PS|LastStarts|2026-10-13|GRAF|1175|BM58|3|11|3.6|5-5-5|Heavy|1:11.04|Matthew Palmer|Began only fairly.
+PS|LastStarts|2026-09-21|GRAF|1015|CL2|1|9|0.4|5-5-5|Good|0:58.38|Matthew Palmer|Bumped on jumping.
+PS|LastStarts|2026-09-10|WRAW|800|BM60|3|12|1.6|5|Good|0:45.52|Matthew Palmer|Passing the 300m shifted in to obtain clear running.
+PS|Trial|2026-08-27|BEAU|1050|OPEN|1|6|1.38|-|Soft|1:03.19|MATTHEW PALMER|-
+PS|Trial|2026-08-11|GCST|850|OPEN|1|6|0.5|-|Soft|0:50.83|MATTHEW PALMER|-
+PS|LastStarts|2026-05-21|IPSH|1100|2YO OPEN|6|9|4.7|4-4-4|Heavy|1:06.45|Jaden Lloyd|-
+PS|LastStarts|2026-04-22|DOOM|1110|2YO OPEN|7|9|6.5|2-2-2|Good|1:06.20|Ben Thompson|-
+PS|LastStarts|2026-04-11|DOOM|1110|2YO OPEN|4|9|1.6|3-3-2|Good|1:05.70|Ryan Maloney|-
+PS|WinRun|2025-12-13|GCST|1200|2YO MDN|1|6|1.6|1-1-1|Good|1:11.17|Jaden Lloyd|-
+PS|Trial|2025-12-02|GCST|800|OPEN|3|7|2.7|-|Good|0:46.57|JADEN LLOYD|-
+GOC|6|2026-11-28T02:49:13Z
+FORM|8|NATIONAL INTEREST|7|Gelding|30|3|7|0|21|true|dn|WINNING RUPERT|SMART AMELIA|G HEINRICH & B RODGERS
+PS|LastStarts|2026-11-07|GCST|1200|BM0-60|4|8|0|2.5|6-6-5|Good|1:11.13|Matthew Palmer|Slow to begin.
+PS|Trial|2026-10-29|GCST|1050|CL3|5|7|0|4.25|-|Good|1:01.08|MATTHEW PALMER|-
+PS|LastStarts|2026-07-08|IPSH|1200|BM65|6|10|0|3.1|7-7-8|Soft|1:10.84|Michael Rodd|Near the 50m steadied when racing in restricted room.
+PS|LastStarts|2026-06-20|GCST|1400|BM60|7|16|0|3.7|13-11-11|Soft|1:25.47|Adin Thompson|-
+PS|LastStarts|2026-06-06|GCST|1200|BM65|8|12|0|4.5|12-12-12|Good|1:10.55|Adin Thompson|Began awkwardly.
+PS|LastStarts|2026-05-10|CDRA|1200|CL3|6|10|0|4.2|7-7-7|Soft|1:12.44|Georgina Cartwright|Held up approaching the home turn.
+PS|LastStarts|2026-04-04|GCST|1200|BM65|8|11|0|2.2|9-9-7|Good|1:10.58|Dylan Turner|Began awkwardly. Near the 200m, shifted out to improve.
+PS|LastStarts|2026-03-06|IPSH|1200|BM0-60|1|6|0|0.8|4-4-4|Soft|1:10.96|Jasper Franklin|-
+PS|Trial|2026-02-24|GCST|1000|CL3|3|7|0|1.6|-|Soft|0:58.20|JAKE BAYLISS|-
+PS|Trial|2026-02-12|BEAU|1050|CL3|3|5|0|10.65|-|Soft|1:05.00|MICHAEL RODD|-
+PS|LastStarts|2025-11-01|GCST|1400|BM62|9|10|0|6.6|10-10-10|Soft|1:24.71|Matthew Palmer|-
+PS|WinRun|2025-10-05|BALL|1250|CL1|1|11|0|0.1|7-7-6|Good|1:14.17|Matthew Palmer|-
+GOC|6|2026-11-28T02:49:58Z
+FORM|9|VAREJAO|4|Gelding|17|1|9|0|15|false|eq|ANDERS|RAGING QUEEN|STUART & BAYLEY KENDRICK
+PS|LastStarts|2026-11-13|CDRA|1000|4YO+ MDN|1|12|0|0.5|7-7-7|Good|0:57.86|Jag Guthmann-Chester|-
+PS|LastStarts|2026-11-03|CDRA|1000|MDN|4|11|0|2.1|4-4-1|Soft|0:58.44|Ryan Wiggins|Lost its near-fore plate during the race.
+PS|LastStarts|2026-10-16|CDRA|1000|MDN|5|9|0|1.5|3-3-4|Soft|0:59.99|Jag Guthmann-Chester|-
+PS|LastStarts|2026-10-02|ROCK|1100|MDN|2|13|0|0.7|2-2-2|Good|1:03.36|Steph Tierney|Jumped away awkwardly and bumped with Early Edition.
+PS|LastStarts|2026-09-25|CDRA|1200|MDN CG|4|11|0|7.3|2-2-1|Soft|1:12.64|Steph Tierney|Raced wide until near the 800m.
+PS|LastStarts|2026-09-12|GCST|1000|MDN|8|10|0|6.4|4-4-6|Good|0:58.57|Archie McColm|-
+PS|Trial|2026-08-18|CDRA|850|MDN|1|6|0|0.11|-|Heavy|0:52.66|STEPHANIE TIERNEY|-
+PS|LastStarts|2025-11-28|CDRA|1000|MDN CG|10|10|0|10.1|5-5-5|Soft|1:00.44|Cejay Graham|Raced wide throughout.
+PS|LastStarts|2025-11-09|CDRA|1200|MDN CG|2|8|0|0.9|1-1-1|Good|1:12.46|Jasper Franklin|-
+PS|Trial|2025-04-29|CDRA|850|OPEN|2|6|0|0.2|-|Heavy|0:53.44|Stephanie Tierney|-
+PS|Trial|2025-01-07|CDRA|1000|OPEN|2|6|0|0.2|-|Good|1:01.52|KYLE WILSON-TAYLOR|-
+GOC|6|2026-11-28T02:49:58Z
+FORM|10|LOVE RAT|8|Gelding|63|8|13|0|15|false|eq|LOVE CONQUERS ALL|NAKOTA GIRL|CATHLEEN RODE
+PS|LastStarts|2026-11-13|CDRA|1200|BM0-58|10|15|0|6.0|8-8-7|Good|1:12.35|Jett Newman|-
+PS|LastStarts|2026-10-31|DOOM|1200|BM0-65|11|12|0|7.4|9-9-8|Soft|1:11.14|Olivia Kendal|Slow to begin. Raced wide.
+PS|LastStarts|2026-10-17|DOOM|1110|BM0-65|6|8|0|3.2|8-8-8|Soft|1:04.40|Jett Newman|Bumped at the start by Cardonette.
+PS|LastStarts|2026-10-03|EFRM|1200|BM70|10|10|0|7.5|7-7-8|Soft|1:11.61|Jake Bayliss|Began awkwardly and lost ground.
+PS|LastStarts|2026-09-19|GCST|1200|BM70|11|11|0|6.9|9-9-11|Good|1:10.79|Chelsea Baker|-
+PS|LastStarts|2026-06-30|TARE|1000|BM66|9|9|0|5.2|8-8-7|Heavy|1:01.54|Olivia Dalton|-
+PS|LastStarts|2026-06-03|COFF|1218|BM66|2|8|0|0.7|7-7-6|Heavy|1:17.20|Teighan Worsnop|-
+PS|LastStarts|2026-05-12|TARE|1007|BM74|3|10|0|1.2|9-9-8|Heavy|0:59.40|Olivia Dalton|Slow to begin.
+PS|WinRun|2026-04-09|TARE|1250|BM66|1|11|0|0.4|11-11-11|Soft|1:14.61|Liberty Smyth|-
+PS|Trial|2022-06-29|SCON|1000|BarrierTrialMDN|1|4|0|0.3|-|Soft|1:00.64|DYLAN GIBBONS|-
+PS|Trial|2022-06-14|SCON|1000|BarrierTrialOPEN|5|9|0|10.1|-|Good|0:58.73|AARON BULLOCK|-
+PS|Trial|2022-01-29|TAMW|1000|BarrierTrialOPEN|6|8|0|10.0|-|Good|0:57.17|BILLY CRAY|-
+GOC|6|2026-11-28T02:49:58Z
+FORM|11|QUANTUM OVERDRIVE|4|Gelding|3|1|0|0|29|false|dn|DEEP FIELD|DE GRAWIN|ANNABEL & ROB ARCHIBALD
+PS|LastStarts|2026-10-30|IPSH|1100|CL1|7|8|0|9.8|5-5-4|Soft|1:05.38|Jace McMurray|-
+PS|LastStarts|2026-10-06|KILC|1200|4YO+ MDN|1|8|0|1.0|3-3-4|Good|1:11.71|Ryan Houston|-
+PS|Trial|2026-09-22|DOOM|840|MDN|2|8|0|2.13|-|Good|0:51.61|BOB EL-ISSA|-
+PS|Trial|2026-07-14|DALB|800|OPEN|5|5|0|2.48|-|Good|0:47.08|MICHEAL HELLYER|-
+PS|LastStarts|2026-01-03|IPSH|1200|3YO MDN|6|9|0|12.4|4-4-4|Good|1:11.18|Heavelon Van Der Hoven|Began awkwardly.
+PS|Trial|2025-12-23|DEAG|1050|MDN|1|7|0|2.75|-|Soft|1:01.16|HEAVELON VAN DER HOVEN|-
+GOC|6|2026-11-28T02:49:58Z
+FORM|12|ZOUSLAYER|5|Gelding|21|2|3|0|22|false|up|ZOUSAIN|MAPILI|VISHAN VENKAYA
+PS|Trial|2026-11-24|DEAG|1050|CL3|8|8|0|4.7|-|Good|1:01.99|GEORGINA CARTWRIGHT|-
+PS|LastStarts|2026-11-06|GATT|1100|BM0-58 CG|9|11|0|12.0|7-7-10|Good|1:06.03|Dale Smith|-
+PS|LastStarts|2026-10-31|GCST|1200|BM0-58|10|11|0|11.5|7-7-6|Soft|1:12.72|Jackson Morris|Raced keenly during the early stages.
+PS|LastStarts|2026-08-11|DALB|1400|BM0-58|4|10|0|1.5|8-8-8|Good|1:25.26|Dan McGillivray|-
+PS|LastStarts|2026-08-07|IPSH|1350|BM0-58|9|12|0|6.2|12-12-12|Good|1:22.04|Dylan Turner|Began awkwardly and lost ground. Hung out throughout.
+PS|LastStarts|2026-08-02|CDRA|1000|BM0-58|3|10|0|1.5|10-10-10|Soft|1:00.42|Chris Meehan|Began awkwardly and lost ground. Over-raced in the early stages.
+PS|LastStarts|2026-07-22|DOOM|1650|BM68|6|7|0|5.2|3-1-1-2|Soft|1:42.22|Mark Du Plessis|Began awkwardly.
+PS|LastStarts|2026-07-16|IPSH|1350|BM0-58 CG|6|11|0|3.5|7-5-6|Good|1:21.75|Chris Meehan|-
+PS|LastStarts|2026-07-07|BEAU|1200|CL2 CG|5|6|0|5.4|6-6-6|Good|1:11.98|Karl Zechner|Slow to begin.
+PS|WinRun|2026-06-14|CDRA|1400|CL2|1|6|0|0.8|2-2-2|Heavy|1:26.41|Mark Du Plessis|-
+PS|Trial|2026-04-21|DOOM|1000|MDN|3|6|0|1.65|-|Good|1:00.64|GEORGINA CARTWRIGHT|-
+PS|Trial|2026-03-17|DOOM|840|MDN|3|4|0|1.01|-|Good|0:51.26|TAYLOR MARSHALL|-
+GOC|6|2026-11-28T02:50:46Z
+FORM|13|OVAL OFFICE|4|Gelding|10|1|1|0|195|true|eq|SHOOTING TO WIN|LADY LEWINSKY|JOHN GILMORE
+PS|Trial|2026-10-29|GCST|1050|CL3|5|8|0|2.75|-|Good|1:02.30|FREDERICK LARSON|-
+PS|LastStarts|2026-05-17|CDRA|2000|3YO+ CL1|8|10|0|17.7|7-6-7-7|Good|2:08.60|Luke Dempsey|-
+PS|LastStarts|2026-05-04|IPSH|1950|3YO+ CL1|8|10|0|8.1|3-7-6-7|Soft|2:04.48|Bella Youngberry|Began awkwardly. Over raced in the early and middle stages.
+PS|LastStarts|2026-04-23|IPSH|1700|CL1|7|11|0|7.5|7-7-7-8|Soft|1:45.72|Jett Newman|-
+PS|LastStarts|2026-04-11|BALL|1310|BM50|6|9|0|1.7|2-2-2|Soft|1:22.58|Kirk Matheson|-
+PS|LastStarts|2026-03-21|GCST|1300|BM0-58|11|15|0|7.2|10-10-10|Good|1:18.17|Jett Newman|-
+PS|LastStarts|2026-02-01|CDRA|1400|BM0-58|13|15|0|8.3|8-9-8|Good|1:26.18|Dylan Turner|-
+PS|LastStarts|2026-01-16|BALL|1400|CL2|6|6|0|9.4|5-5-6|Good|1:26.85|Luke Rolls|On jumping crowded, bumped between The Torque Express and Alabama Girl.
+PS|LastStarts|2025-12-26|BALL|1265|CL1|2|9|0|0.5|1-1-1|Good|1:17.36|Danny Peisley|-
+PS|Trial|2025-12-15|BEAU|1050|OPEN|2|5|0|0.34|-|Good|1:03.68|ANTHONY ALLEN|-
+PS|Trial|2025-12-02|GCST|1000|OPEN|5|5|0|3.9|-|Good|0:59.18|DYLAN TURNER|-
+PS|WinRun|2025-05-11|CDRA|1000|2YO MDN|1|7|0|0.2|7-7-7|Good|0:59.44|Boris Thornton|Bumped with Ship Happens, on jumping.
+GOC|6|2026-11-28T02:50:46Z
+FORM|14|ASTERN VILLA|8|Gelding|46|2|6|0|25|false|up|ASTERN|QUIPSTER|JOHN JOHNSTON
+PS|LastStarts|2026-11-03|CDRA|1000|BM0-55|9|11|0|5.6|9-9-11|Soft|0:59.67|Kayla Johnston|-
+PS|LastStarts|2026-06-30|KILC|1500|BM55|6|8|0|7.5|8-8-6|Soft|1:35.13|Kayla Johnston|-
+PS|LastStarts|2026-06-14|CDRA|1400|CL2|4|6|0|2.5|6-6-6|Heavy|1:26.83|Kayla Johnston|-
+PS|LastStarts|2026-06-07|CDRA|1200|CL3|4|7|0|3.9|4-4-5|Soft|1:12.43|Kayla Johnston|-
+PS|LastStarts|2026-05-01|CDRA|1000|BM55|4|10|0|4.7|10-10-10|Good|0:58.83|Kayla Johnston|Slow to begin.
+PS|LastStarts|2026-04-11|KILC|1200|BM0-58 CG|4|8|0|2.9|7-7-7|Soft|1:13.63|Kayla Johnston|-
+PS|LastStarts|2026-03-29|CDRA|1000|BM60|5|9|0|2.2|9-9-9|Soft|0:59.86|Kayla Johnston|-
+PS|LastStarts|2026-02-18|KILC|1200|BM55 CG|4|7|0|2.9|3-3-3|Soft|1:12.31|Kayla Johnston|-
+PS|Trial|2025-12-09|CDRA|850|CL3|6|7|0|11.5|-|Soft|0:51.62|KAYLA JOHNSTON|-
+PS|Trial|2025-03-04|CDRA|850|CL3|5|8|0|4.1|-|Good|0:51.63|KAYLA JOHNSTON|-
+PS|WinRun|2024-11-30|GOON|1000|BM50|1|11|0|0.3|5|Soft|1:00.44|Kayla Johnston|Raced wide for the majority of the event.
+PS|Trial|2023-08-22|CDRA|850|CL3|1|5|0|0.2|-|Good|0:50.20|LUKE TARRANT|-
+GOC|7|2026-11-28T02:50:46Z
+FORM|1|CAXTON LASS|6|Mare|32|3|9|0|42|true|dn|CAPITALIST|OUR PRIDE AND JOY|ROBERT HEATHCOTE
+PS|LastStarts|2026-10-17|GCST|1200|CL4|5|11|0|4.0|7-7-10|Soft|1:12.57|Micheal Hellyer|-
+PS|LastStarts|2026-10-03|GCST|1200|BM58 FM|3|9|0|3.1|8-8-6|Good|1:10.14|Amy Graham|-
+PS|LastStarts|2026-09-20|CDRA|1400|BM70|6|11|0|6.4|2-2-3|Good|1:24.95|Dan McGillivray|Over-raced in the early stages.
+PS|LastStarts|2026-09-02|IPSH|1100|BM65|7|8|0|1.9|5-5-5|Soft|1:04.82|Taylor Marshall|Held up over the concluding stages.
+PS|LastStarts|2026-08-16|CDRA|1000|BM62|3|8|0|0.4|1-1-1|Soft|0:58.65|Dan McGillivray|Laid in under pressure over the final 200m.
+PS|LastStarts|2026-08-02|CDRA|1000|BM65|5|7|0|7.7|6-6-6|Soft|1:00.06|Dan McGillivray|Began awkwardly and hampered by Kiwi Raider, losing ground as a result.
+PS|Trial|2026-07-28|DOOM|1000|CL3|1|6|0|1.09|-|Soft|0:59.40|DAN MCGILLIVRAY|-
+PS|LastStarts|2026-07-08|IPSH|1200|BM65|99|10|0|99.0|-|Soft|1:26.81|Ashley Butler|-
+PS|Trial|2026-06-30|DOOM|1000|CL3|3|8|0|2.74|-|Soft|1:00.43|ASHLEY BUTLER|-
+PS|LastStarts|2026-06-03|DOOM|1110|BM65|6|10|0|3.6|10-10-9|Good|1:06.06|Ashley Butler|Began awkwardly, hampered and lost ground.
+PS|Trial|2026-04-21|DOOM|1000|CL3|1|6|0|2.3|-|Good|0:59.40|CEJAY GRAHAM|-
+PS|WinRun|2025-11-22|GCST|1200|BM68|1|10|0|0.1|4-4-4|Soft|1:10.31|Anthony Allen|-
+GOC|7|2026-11-28T02:50:46Z
+FORM|2|DUCHESS DIFFICULT|4|Mare|6|1|2|0|23|true|eq|SPIRIT OF BOOM|MAYBE MARKLE|MATTHEW HOYSTED
+PS|LastStarts|2026-11-05|IPSH|1350|3-4YO BM60|8|9|-|11.2|1-1-1|Good|1:22.65|Fiona Sandkuhl|Over-raced during the early stages.
+PS|LastStarts|2026-10-28|EFRM|1200|MDN FM|1|11|-|1.5|1-1-1|Heavy|1:12.35|Jag Guthmann-Chester|-
+PS|LastStarts|2026-10-05|DOOM|1200|MDN|2|11|-|0.8|3-3-4|Good|1:10.14|Fiona Sandkuhl|-
+PS|LastStarts|2026-09-12|GCST|1000|MDN|5|10|-|2.3|8-8-8|Good|0:57.87|Fiona Sandkuhl|-
+PS|Trial|2026-08-25|DOOM|1000|MDN|1|8|-|1.88|-|Soft|1:00.41|FIONA SANDKUHL|-
+PS|Trial|2026-08-11|DOOM|840|CL1|1|5|-|0.47|-|Soft|0:52.00|FIONA SANDKUHL|-
+PS|LastStarts|2026-05-06|EFRM|1000|3YO MDN|7|10|-|11.0|5-5-6|Soft|0:59.77|Jag Guthmann-Chester|-
+PS|LastStarts|2026-04-25|CDRA|1000|3YO MDN|2|11|-|1.4|9-9-9|Heavy|1:00.55|Boris Thornton|-
+PS|Trial|2026-04-14|DEAG|1050|OPEN|4|8|-|0.9|-|Good|1:00.69|JAG GUTHMANN-CHESTER|-
+GOC|7|2026-11-28T02:51:30Z
+FORM|3|POSHY'S GIRL|5|Mare|6|1|3|0|16|false|eq|PIERRO|PRINCESS POSH|KRIS LEES
+PS|LastStarts|2026-11-12|PMAC|1100|CL1|5|10|0|5.5|7-7-6|Soft|1:06.17|Andrew Gibbons|Hampered on jumping when Be Someone shifted inward.
+PS|Trial|2026-10-28|GOSF|1000|OPEN|3|10|0|1.62|-|Soft|1:00.37|ANDREW GIBBONS|-
+PS|Trial|2026-10-12|NEWC|800|OPEN|7|7|0|2.9|-|Good|0:49.00|Ms Makaylah Fenwick|-
+PS|LastStarts|2026-07-11|NEWC|1300|BM64|8|10|0|4.6|4-2-4-4|Soft|1:21.61|Andrew Gibbons|-
+PS|LastStarts|2026-06-27|NEWC|1200|3YO+ MDN|1|6|0|0.1|4-4-4|Heavy|1:11.69|Jean Van Overmeire|On jumping bumped by Stability.
+PS|LastStarts|2026-06-05|TARE|1250|MDN|2|10|0|0.5|2-2-2|Heavy|1:16.99|Andrew Gibbons|-
+PS|LastStarts|2026-05-19|NEWC|1300|MDN|2|11|0|1.9|2-1-2-2|Soft|1:19.39|Dylan Gibbons|-
+PS|LastStarts|2026-04-24|COFF|1200|MDN|2|11|0|2.6|1-1-1|Heavy|1:13.62|Andrew Gibbons|Bumped on jumping.
+PS|Trial|2026-04-13|GOSF|800|MDN|5|8|0|2.31|-|Good|0:48.82|EMILY HARRISON|-
+GOC|7|2026-11-28T02:51:30Z
+FORM|4|HELL OF A HIGH|4|Mare|5|1|1|0|29|true|eq|ZOUSTAR|HELL OR HIGHWATER|JAMES HEALY
+PS|LastStarts|2026-10-30|IPSH|1100|CL1|6|8|0|8.7|7-7-7|Soft|1:05.18|Michael Rodd|-
+PS|Trial|2026-10-13|CDRA|850|CL3|2|5|0|0.46|-|Soft|0:53.40|MICHAEL RODD|-
+PS|LastStarts|2026-07-03|IPSH|1350|MDN|1|13|0|0.1|7-7-8|Good|1:21.22|Michael Rodd|Bumped at the start.
+PS|LastStarts|2026-06-21|CDRA|1400|MDN|2|7|0|0.8|1-1-2|Soft|1:27.57|Tiffani Brooker|Bumped on jumping.
+PS|LastStarts|2026-06-07|CDRA|1200|MDN|7|11|0|5.6|10-10-10|Soft|1:13.56|Tiffani Brooker|-
+PS|LastStarts|2026-05-22|GCST|1100|MDN|8|10|0|3.8|7-7-7|Soft|1:05.99|Rachel King|-
+PS|Trial|2026-05-07|DOOM|840|MDN|2|4|0|2.84|-|Soft|0:52.38|TIFFANI BROOKER|-
+PS|Trial|2025-12-15|HAWK|1000|MDN|3|8|0|1.44|-|Good|1:00.40|RACHEL KING|-
+GOC|7|2026-11-28T02:51:30Z
+FORM|5|RECONCILIATE|4|Mare|11|1|4|0|17|true|eq|INVADER|MEDIATION (GB)|TONY GOLLAN
+PS|LastStarts|2026-11-11|EFRM|1200|MDN FM|1|9|0.6|1-1-1|Good|1:10.74|Jade Hampson|-
+PS|LastStarts|2026-10-28|EFRM|1200|MDN FM|6|11|4.8|6-6-6|Heavy|1:13.16|Daniel Moor|Raced wide.
+PS|LastStarts|2026-10-05|DOOM|1200|MDN|3|11|0.9|5-5-5|Good|1:10.16|Daniel Moor|Raced wide.
+PS|LastStarts|2026-09-19|EFRM|1200|3YO+ MDN|3|12|2.8|5-5-6|Soft|1:11.03|Jade Hampson|-
+PS|LastStarts|2026-08-27|IPSH|1100|MDN|8|8|8.5|4-4-4|Soft|1:06.52|Daniel Moor|-
+PS|Trial|2026-08-11|GCST|1000|MDN|1|7|0.1|-|Soft|0:57.81|CHELSEA BAKER|-
+PS|Trial|2026-07-28|DOOM|1000|MDN|2|5|0.14|-|Soft|1:01.15|EMILY LANG|-
+PS|LastStarts|2026-03-18|DOOM|1200|MDN|5|9|5.2|6-6-6|Good|1:10.83|Angela Jones|On leaving the gates, tightened between Violaceous and Tappy's Star.
+PS|LastStarts|2026-02-25|DOOM|1110|3YO MDN|2|10|2.9|3-3-3|Good|1:04.93|Angela Jones|Raced wide for the majority.
+PS|Trial|2026-02-19|DEAG|1050|MDN|1|5|1.75|-|Soft|1:01.31|ANGELA JONES|-
+PS|LastStarts|2026-02-04|EFRM|1200|3YO MDN|10|12|4.0|2-2-2|Good|1:11.15|Angela Jones|-
+GOC|7|2026-11-28T02:51:30Z
+FORM|6|BOOMSHANKA|4|Mare|11|1|2|0|156|true|eq|SPIRIT OF BOOM|LOVELETTER|TONY GOLLAN
+PS|Trial|2026-10-29|GCST|685|OPEN|6|6|0|8.9|-|Good|0:37.47|BELLA YOUNGBERRY|-
+PS|LastStarts|2026-06-25|IPSH|1200|CL1|7|10|0|5.8|4-4-3|Soft|1:11.30|Bella Youngberry|Began awkwardly. Laid in under pressure near the 150m and bumped Metal Man.
+PS|LastStarts|2026-06-04|IPSH|1200|3YO+ CL2 FM|4|7|0|2.3|1-1-1|Soft|1:12.25|Ben Thompson|Bumped leaving the 200m by Seismic Boom.
+PS|LastStarts|2026-05-09|IPSH|1200|BM0-60|3|10|0|0.6|4-4-5|Soft|1:10.01|Bella Youngberry|Near the 900m, raced in restricted room.
+PS|Trial|2026-04-21|DOOM|1000|OPEN|2|6|0|2.31|-|Good|1:00.20|BEN THOMPSON|-
+PS|Trial|2026-04-14|DEAG|1050|OPEN|8|8|0|5.15|-|Good|1:00.69|BEN THOMPSON|-
+PS|LastStarts|2025-12-13|EFRM|1400|3YO BM70|6|9|0|2.9|6-6-6|Soft|1:23.68|Ben Thompson|-
+PS|LastStarts|2025-11-22|CDRA|1000|3YO Qlty|8|13|0|4.0|12-12-12|Good|0:58.37|Robbie Dolan|Slow to begin.
+PS|LastStarts|2025-09-27|TOOW|1200|3YO OPEN|6|9|0|8.9|2-2-4|Good|1:13.62|Ben Thompson|Bumped after the start.
+PS|LastStarts|2025-08-27|DOOM|1200|3YO MDN F|1|10|0|0.9|1-1-1|Good|1:10.42|Ben Thompson|-
+PS|LastStarts|2025-08-09|EFRM|1000|3YO OPEN|6|9|0|4.1|1-1-1|Soft|0:59.07|Ben Thompson|Laid out under pressure over the final 150m.
+GOC|7|2026-11-28T02:52:15Z
+FORM|7|ARISTOCRATIC GIRL|6|Mare|12|1|6|0|14|false|eq|TOP ECHELON|DAN'S PRINCESS|LINDSAY GOUGH
+PS|LastStarts|2026-11-14|IPSH|1100|MDN|1|9|0|0.1|4-4-3|Heavy|1:05.19|Tiffani Brooker|-
+PS|LastStarts|2026-10-28|EFRM|1200|MDN FM|4|11|0|2.4|3-3-3|Heavy|1:12.76|Georgina Cartwright|-
+PS|LastStarts|2026-10-05|DOOM|1200|MDN|6|11|0|3.0|7-7-8|Good|1:10.51|Jace McMurray|-
+PS|Trial|2026-09-22|DOOM|1000|MDN|2|6|0|1.02|-|Good|1:00.30|GEORGINA CARTWRIGHT|-
+PS|LastStarts|2026-05-13|IPSH|1200|MDN|3|10|0|0.4|1-1-1|Soft|1:11.45|Georgina Cartwright|Began awkwardly, shifted in and bumped Flashmaster.
+PS|LastStarts|2026-04-29|IPSH|1200|MDN|2|9|0|0.1|2-2-2|Soft|1:11.34|Georgina Cartwright|-
+PS|LastStarts|2026-04-15|DOOM|1200|MDN|3|10|0|2.1|1-1-2|Good|1:10.57|Georgina Cartwright|-
+PS|LastStarts|2026-03-25|EFRM|1000|MDN|3|6|0|3.5|5-5-5|Soft|0:57.76|Georgina Cartwright|Blundered on jumping away. Held up rounding the home turn until the 300m.
+PS|LastStarts|2026-03-11|DOOM|1110|MDN|2|9|0|0.5|6-6-5|Soft|1:04.99|Montana Philpot|-
+PS|Trial|2025-12-15|DOOM|840|MDN|3|5|0|1.55|-|Soft|0:50.19|GEORGINA CARTWRIGHT|-
+PS|Trial|2025-07-15|EFRM|1000|MDN|1|7|0|0.11|-|Soft|0:59.99|GEORGINA CARTWRIGHT|-
+GOC|7|2026-11-28T02:52:15Z
+FORM|8|JADA ROSE|4|Mare|5|1|1|0|21|false|dn|STREET BOSS (USA)|SHUDABEEN|DECLAN MAHER
+PS|LastStarts|2026-11-07|GCST|1200|BM0-60|8|8|0|5.9|1-1-1|Good|1:11.72|Jasper Franklin|Bumped on jumping.
+PS|LastStarts|2026-10-21|EFRM|1000|3YO+ CL1|5|7|0|2.8|7-7-7|Soft|0:58.54|Boris Thornton|-
+PS|Trial|2026-10-06|GCST|1000|CL3|2|7|0|0.2|-|Soft|0:58.20|BORIS THORNTON|-
+PS|LastStarts|2026-06-04|IPSH|1200|3YO+ CL2 FM|5|7|0|3.6|7-7-7|Soft|1:12.48|Boris Thornton|-
+PS|LastStarts|2026-05-21|IPSH|1100|CL1|3|7|0|2.3|6-6-6|Heavy|1:05.82|Jaden Lloyd|-
+PS|Trial|2026-05-12|DEAG|1050|CL3|1|7|0|0.21|-|Soft|1:03.12|GEORGINA CARTWRIGHT|-
+PS|LastStarts|2026-04-16|IPSH|800|MDN|1|8|0|1.6|3|Good|0:45.76|Jaden Lloyd|-
+PS|Trial|2026-03-19|BEAU|900|MDN|6|6|0|6.68|-|Good|0:56.90|SHAKIRA BAILEY|-
+GOC|7|2026-11-28T02:52:15Z
+FORM|9|MISHANI VISION|4|Mare|9|1|6|0|15|false|eq|SUN CITY|MISHANI KRISHNA|DONNA STANBRIDGE
+PS|LastStarts|2026-11-13|CDRA|1200|BM0-58|2|15|-|1.0|5-5-5|Good|1:11.51|Olivia Kendal|-
+PS|LastStarts|2026-10-30|IPSH|1100|MDN|1|10|-|2.0|7-7-6|Soft|1:04.49|Olivia Kendal|-
+PS|LastStarts|2026-10-16|GATT|1100|MDN|7|11|-|4.2|9-9-10|Soft|1:06.27|Jason Taylor|-
+PS|Trial|2026-09-25|BEAU|900|CL1|1|6|-|1.27|-|Good|0:54.98|OLIVIA KENDAL|-
+PS|LastStarts|2026-02-06|BEAU|1400|3YO MDN|3|12|-|4.4|4-1-1|Good|1:24.78|Kyle Wilson-Taylor|-
+PS|LastStarts|2026-01-22|WRAW|1350|3YO MDN|3|13|-|3.8|6-6-4|Soft|1:20.92|Chloe Lowe|Raced wide for the majority.
+PS|LastStarts|2026-01-03|IPSH|1200|3YO MDN|3|9|-|7.8|7-7-6|Good|1:10.40|Chloe Lowe|Near the 250m, shifted out.
+PS|LastStarts|2025-12-20|TOOW|1000|3YO MDN|2|10|-|0.2|4-4-4|Good|0:59.75|Kenji Yoshida|-
+PS|LastStarts|2025-12-07|CDRA|1000|3YO MDN|6|14|-|3.6|13-13-12|Good|0:58.42|Olivia Kendal|-
+PS|Trial|2025-11-03|GCST|1000|MDN|3|7|-|2.5|-|Soft|0:58.60|GEORGINA CARTWRIGHT|-
+PS|Trial|2025-10-14|WRAW|800|OPEN|1|6|-|0.24|-|Good|0:47.41|CHLOE LOWE|-
+GOC|7|2026-11-28T02:52:15Z
+FORM|10|ESTEE EMM|4|Mare|7|1|2|0|125|false|dn|AMERICAN PHAROAH (USA)|SO ARD|KELLY SCHWEIDA
+PS|Trial|2026-11-19|DOOM|1000|CL3|7|7|-|2.93|-|Soft|0:59.24|CEJAY GRAHAM|-
+PS|Trial|2026-10-30|DEAG|1050|CL3|7|8|-|2.8|-|Heavy|1:02.56|CEJAY GRAHAM|-
+PS|LastStarts|2026-07-26|CDRA|1000|CL1 FM|4|7|-|2.5|6-6-6|Good|0:58.75|Cejay Graham|-
+PS|LastStarts|2026-07-12|CDRA|1000|CL1|2|10|-|2.0|5-5-8|Soft|0:58.71|Robbie Dolan|Steadied from heels near the 600m.
+PS|LastStarts|2026-07-01|EFRM|1200|CL1|4|8|-|2.7|4-4-4|Soft|1:11.44|Taylor Marshall|-
+PS|LastStarts|2026-05-22|GCST|1300|CL1|7|16|-|7.4|2-2-2|Soft|1:19.46|Cejay Graham|-
+PS|LastStarts|2026-05-09|IPSH|1350|3YO+ CL1|7|10|-|4.2|3-4-4|Good|1:20.33|Leah Martyn|-
+PS|LastStarts|2026-04-25|CDRA|1000|3YO MDN|1|11|-|1.4|3-3-4|Heavy|1:00.32|Cody Collis|Shifted out under pressure over the concluding stages.
+PS|Trial|2026-04-14|DEAG|1050|MDN|1|6|-|2.61|-|Good|1:02.69|CEJAY GRAHAM|-
+PS|LastStarts|2025-03-12|EFRM|1200|2YO MDN|3|10|-|0.7|9-9-9|Soft|1:12.20|Cejay Graham|Approaching the 200m, shifted in momentarily.
+GOC|7|2026-11-28T02:53:00Z
+FORM|11|ODE TO BEAUTY|4|Mare|20|2|3|0|28|true|eq|TORONADO (IRE)|ODELIA|HELEN PAGE
+PS|LastStarts|2026-10-31|GCST|1200|BM0-58|7|11|0|5.0|4-4-4|Soft|1:11.63|Matthew Palmer|-
+PS|LastStarts|2026-10-17|GCST|1000|BM0-58|2|9|0|0.1|5-5-5|Soft|0:58.75|Matthew Palmer|-
+PS|LastStarts|2026-10-03|GCST|1200|BM58 FM|5|9|0|3.7|4-4-3|Good|1:10.24|Matthew Palmer|-
+PS|LastStarts|2026-09-19|EFRM|1200|3-4YO BM70|8|8|0|17.6|7-7-8|Soft|1:12.98|Tiffani Brooker|Raced wide in the early stages. Forced wider near the 700m by Royal Air Force.
+PS|LastStarts|2026-08-21|BEAU|1100|3-4YO BM60|4|9|0|2.2|1-1-2|Good|1:03.60|Olivia Kendal|-
+PS|LastStarts|2026-07-25|GCST|1200|3YO BM65|8|9|0|9.5|4-4-5|Soft|1:12.42|Fred Larson|For some distance after the 500m, laid out.
+PS|LastStarts|2026-07-11|GCST|1000|3YO BM65|5|9|0|2.4|5-5-6|Good|0:58.03|Tiffani Brooker|-
+PS|LastStarts|2026-06-25|IPSH|1100|BM0-62|2|9|0|0.8|2-2-2|Soft|1:04.22|Emily Lang|-
+PS|WinRun|2026-04-10|GCST|1000|CL1|1|10|0|0.5|7-7-7|Good|0:57.75|Taylor Marshall|Slow to begin.
+PS|Trial|2025-06-17|GCST|1000|OPEN|2|6|0|0.2|-|Soft|0:59.08|DYLAN TURNER|-
+PS|Trial|2025-05-20|GCST|1000|OPEN|3|7|0|3.2|-|Soft|0:59.14|DYLAN TURNER|-
+PS|Trial|2025-04-22|GCST|850|OPEN|4|7|0|8.2|-|Soft|0:49.10|DYLAN TURNER|-
+GOC|7|2026-11-28T02:53:00Z
+FORM|12|HOLD MY HAND|3|Filly|9|2|3|0|21|false|eq|JONKER|SAKURA STAR|NICHOLAS BECK
+PS|LastStarts|2026-11-07|CNHR|1200|BM60|1|6|-|2.0|2-2-2|Good|1:09.98|Isabel Jessop|Laid out rounding the home turn.
+PS|LastStarts|2026-10-31|TOOW|1110|3-4YO BM60|4|7|-|5.6|2-2-4|Soft|1:07.54|Les Tilley|-
+PS|LastStarts|2026-10-03|TOOW|1210|CL1 FM|2|8|-|2.1|5-5-4|Good|1:15.72|Karl Zechner|Raced keenly in the early stages. Near the 350m, shifted out marginally.
+PS|LastStarts|2026-09-20|CDRA|1000|3YO BM60|4|6|-|3.4|5-5-4|Good|0:57.99|Kelsey Lenton|-
+PS|LastStarts|2026-09-05|TOOW|1015|3-4YO BM65|2|6|-|1.6|4-4-6|Good|1:01.59|Kelsey Lenton|-
+PS|Trial|2026-08-25|WRAW|800|OPEN|2|4|-|1.08|-|Good|0:46.61|JESS EMMERSON|-
+PS|Trial|2026-08-12|WRAW|800|OPEN|3|5|-|5.94|-|Soft|0:46.04|JESS EMMERSON|-
+PS|LastStarts|2026-04-18|EFRM|1400|2YO OPEN|7|8|-|9.4|4-4-3|Soft|1:25.72|Mark Du Plessis|Obliged to steady passing the 1200m after being crossed by Zeddich.
+PS|LastStarts|2026-03-27|TOOW|1200|2YO OPEN|5|6|-|4.8|5-5-5|Good|1:14.23|Karl Zechner|Raced wide without cover throughout.
+PS|LastStarts|2026-03-03|DALB|1100|2YO MDN|1|7|-|2.9|3-3-3|Good|1:04.91|Karl Zechner|Began awkwardly.
+PS|Trial|2025-11-20|-|925|OPEN|6|7|-|5.64|-|Soft|0:57.92|Ms Jess Emmerson|-
+GOC|7|2026-11-28T02:53:00Z
+FORM|13|SUMMER STUNNER|3|Filly|5|1|1|0|21|false|dn|STAR TURN|THE SPELL|GARY DOUGHTY
+PS|LastStarts|2026-11-07|GCST|1200|BM0-60|2|8|-|0.4|7-7-7|Good|1:10.78|Fred Larson|Began awkwardly and lost ground.
+PS|LastStarts|2026-10-15|IPSH|1100|BM60 FM|5|10|-|2.2|8-8-7|Good|1:04.68|Archie McColm|Tightened for room shortly after the start.
+PS|LastStarts|2026-09-25|LISM|1210|CL1|4|10|-|2.1|5-5-3|Soft|1:12.96|Jade Hampson|Began awkwardly. Raced three wide without cover during the middle stages.
+PS|LastStarts|2026-09-10|LISM|1110|MDN FM|1|12|-|0.8|1-1-2|Soft|1:04.96|Archie McColm|-
+PS|LastStarts|2026-08-28|GCST|1000|3YO MDN|11|12|-|11.0|12-12-10|Good|0:58.58|Archie McColm|-
+PS|Trial|2026-08-11|GCST|1000|OPEN|3|4|-|0.2|-|Soft|0:58.81|ARCHIE MCCOLM|-
+GOC|7|2026-11-28T02:53:00Z
+FORM|14|EMBOLDEN|4|Mare|14|2|3|0|21|false|dn|BRAVE SMASH (JPN)|MRS DASH|GARRY HUTCHESSON
+PS|LastStarts|2026-11-07|ESK|1200|OPEN|7|9|0|6.1|-|Good|1:10.83|Sariah Champkin|-
+PS|LastStarts|2026-10-08|IPSH|800|CL2|6|8|0|4.4|7|Good|0:46.11|Danny Peisley|-
+PS|LastStarts|2026-06-20|KILC|1200|BM65|6|12|0|6.5|2-2-3|Soft|1:13.72|Bailie Baker|-
+PS|LastStarts|2026-06-12|BEAU|1200|3YO BM60|8|9|0|4.8|5-5-5|Heavy|1:16.11|Damien Boche|-
+PS|LastStarts|2026-05-22|KILC|1200|BM0-55|1|11|0|0.5|5-5-7|Soft|1:13.53|Danny Peisley|-
+PS|LastStarts|2026-05-07|WRAW|1200|BM0-55 FM|3|14|0|1.2|6-6-4|Good|1:12.12|Danny Peisley|Bumped on jumping.
+PS|LastStarts|2026-04-26|GATT|1100|3YO BM60|6|12|0|4.1|5-5-5|Good|1:05.39|Montana Philpot|-
+PS|LastStarts|2026-04-10|GATT|1100|BM62|6|12|0|3.1|10-10-10|Good|1:05.18|Montana Philpot|Slow to begin. Passing the 800m shifted in.
+PS|WinRun|2025-10-07|KILC|800|MDN|1|9|0|0.5|2|Good|0:44.73|Montana Philpot|-
+PS|Trial|2025-08-12|GCST|850|MDN|1|6|0|0.1|-|Soft|0:50.83|DANNY PEISLEY|-
+GOC|7|2026-11-28T02:53:48Z
+FORM|15|HAPPY WINS|5|Mare|6|1|2|0|7|false|eq|BRUTAL (NZ)|DAGNY (NZ)|JAMES MOORE
+PS|LastStarts|2026-11-21|BEAU|1100|BM0-55|5|11|0|5.2|4-4-4|Soft|1:04.66|Bobby El-Issa|Raced wide in the early stages.
+PS|Trial|2026-11-04|DOOM|850|CL3|6|7|0|3.26|-|Soft|0:51.15|BOBBY EL-ISSA|-
+PS|LastStarts|2026-03-12|BEAU|1200|BM0-60|3|6|0|1.7|4-4-4|Soft|1:11.50|Cejay Graham|Raced keenly in the early stages.
+PS|LastStarts|2026-02-18|KILC|1200|BM55 FM|2|7|0|1.4|2-2-2|Soft|1:12.51|Micheal Hellyer|-
+PS|LastStarts|2026-01-26|KILC|1200|2YO+ MDN|1|9|0|5.4|1-1-1|Good|1:11.39|Micheal Hellyer|-
+PS|Trial|2026-01-06|EFRM|1000|MDN|4|6|0|1.12|-|Good|0:59.29|HEAVELON VAN DER HOVEN|-
+PS|Trial|2025-12-23|DEAG|1050|MDN|3|6|0|0.71|-|Soft|1:00.67|HEAVELON VAN DER HOVEN|-
+PS|LastStarts|2025-05-21|IPSH|1200|MDN|5|10|0|3.9|6-6-4|Heavy|1:13.52|Andrew Mallyon|Bumped with Miss Wanted shortly after the start.
+PS|LastStarts|2025-04-30|IPSH|1200|MDN|4|7|0|0.8|5-5-5|Soft|1:11.79|Damien Thornton|-
+GOC|7|2026-11-28T02:53:48Z
+FORM|16|HALF MOON ROO|6|Mare|25|3|4|0|25|false|dn|WARHEAD|LITTLE MISS MOLLY|JOHN JOHNSTON
+PS|LastStarts|2026-11-03|CDRA|1400|3YO+ CL3|8|9|0|7.4|4-4-4|Soft|1:25.28|Kayla Johnston|-
+PS|LastStarts|2026-10-16|CDRA|1200|BM0-58|5|13|0|4.2|4-4-3|Soft|1:13.59|Kayla Johnston|Raced wide.
+PS|LastStarts|2026-09-25|CDRA|1400|BM0-60|2|12|0|2.0|3-2-2|Soft|1:25.18|Kayla Johnston|-
+PS|LastStarts|2026-09-06|CDRA|1200|BM0-55|1|13|0|0.7|2-2-2|Good|1:12.59|Kayla Johnston|-
+PS|LastStarts|2026-08-02|CDRA|1200|CL2|4|8|0|1.5|3-3-4|Soft|1:14.10|Kayla Johnston|Held up rounding the home turn until approaching the 100m.
+PS|Trial|2026-07-21|CDRA|850|CL3|5|8|0|3.36|-|Soft|0:54.80|KAYLA JOHNSTON|-
+PS|LastStarts|2026-02-28|GYMP|1470|BM50|4|7|0|12.3|-|Good|1:34.33|Kayla Johnston|-
+PS|LastStarts|2026-02-10|GATT|1400|BM0-55|7|11|0|4.4|9-10-9|Good|1:25.18|Kayla Johnston|-
+PS|LastStarts|2026-01-26|KILC|1500|BM50|4|9|0|2.4|7-9-5|Good|1:33.63|Kayla Johnston|-
+PS|WinRun|2025-05-17|NNGR|1600|BM50|1|12|0|1.7|-|Good|1:36.60|Kayla Johnston|Raced wide throughout.
+PS|Trial|2024-08-20|CDRA|850|CL1|1|6|0|0.1|-|Heavy|0:53.53|NATHAN THOMAS|-
+PS|Trial|2024-04-04|CDRA|850|MDN|1|6|0|4.0|-|Heavy|0:54.51|SAMANTHA COLLETT|-
+GOC|7|2026-11-28T02:53:48Z
+FORM|17|OAKFIELD MONTANA|4|Mare|19|2|2|0|1|true|eq|ALL TOO HARD|OAKFIELD TIME|VISHAN VENKAYA
+PS|LastStarts|2026-11-27|CDRA|1400|BM0-58|8|14|0|4.1|3-3-4|Good|1:25.09|Aidan Keeley|-
+PS|LastStarts|2026-11-06|GATT|1400|BM0-58 FM|7|8|0|7.8|2-2-2|Good|1:25.41|Georgina Cartwright|Raced keenly during the early stages.
+PS|LastStarts|2026-10-24|GCST|1540|BM60|10|11|0|15.0|2-1-2-7|Good|1:35.02|Girish Goomany|-
+PS|LastStarts|2026-10-16|GATT|1400|BM0-55|6|9|0|10.5|4-4-7|Soft|1:26.39|Georgina Cartwright|-
+PS|LastStarts|2026-10-08|IPSH|1350|BM0-58 FM|1|9|0|0.6|1-1-1|Good|1:20.67|Georgina Cartwright|-
+PS|LastStarts|2026-10-03|GCST|1200|BM58 FM|9|9|0|10.4|6-6-8|Good|1:11.38|Adin Thompson|Raced wide throughout.
+PS|Trial|2026-09-29|DEAG|1200|CL3|3|4|0|2.53|-|Soft|1:10.99|PERRIE CARTER|-
+PS|LastStarts|2026-09-12|NNGR|1200|BM0-50|7|12|0|7.2|-|Firm|1:12.17|Kenji Yoshida|Raced wide throughout. Laid out rounding the home turn.
+PS|LastStarts|2026-09-05|GOON|1000|BM0-50|7|9|0|6.2|-|Good|0:59.00|Bailie Baker|-
+PS|WinRun|2026-07-04|CHAR|1200|2YO+ MDN|1|9|0|0.1|-|Good|1:12.02|Darren Evans|Bumped shortly after the start was affected.
+PS|Trial|2026-01-28|WYON|1000|MDN|6|7|0|5.57|-|Good|0:59.46|AARON BULLOCK|-
+PS|Trial|2026-01-08|NEWC|800|MDN|2|7|0|0.26|-|Good|0:47.57|AARON BULLOCK|-
+GOC|7|2026-11-28T02:53:48Z
+FORM|18|STAR SEEKER|8|Mare|48|5|4|0|51|true|up|ZOUSTAR|FRIM AND FROME|KEVIN DEVINE
+PS|LastStarts|2026-10-08|IPSH|1350|BM0-58 FM|9|9|0|9.2|6-6-6|Good|1:22.24|Micheal Hellyer|-
+PS|LastStarts|2026-09-10|WRAW|1350|BM0-58 FM|13|14|0|9.9|13-13-14|Good|1:21.76|Sariah Champkin|Began awkwardly and was crowded for room shortly thereafter.
+PS|LastStarts|2026-08-29|GRAF|1410|BM50|5|11|0|4.4|10-10-9|Soft|1:25.72|Bailie Baker|-
+PS|LastStarts|2026-08-08|CASO|1200|BM50|5|10|0|3.0|4-4-4|Good|1:11.90|Bailie Baker|-
+PS|LastStarts|2026-07-24|GRAF|1200|BM58 FM|7|8|0|6.3|5-5-7|Good|1:10.46|Bailie Baker|-
+PS|Trial|2026-07-14|GCST|1000|OPEN|8|8|0|17.5|-|Soft|0:57.98|BAILIE BAKER|-
+PS|LastStarts|2025-10-19|LISM|1310|BM58 FM|9|9|0|11.1|7-7-8|Good|1:18.72|Sariah Champkin|Near the 900m directed in when insufficiently clear of Monte Tiana.
+PS|LastStarts|2025-08-18|CASO|1300|BM58|7|9|0|4.8|7-7-6|Heavy|1:21.27|Sariah Champkin|-
+PS|Trial|2025-07-15|GCST|1000|OPEN|6|8|0|7.6|-|Soft|0:57.75|SARIAH CHAMPKIN|-
+PS|Trial|2025-06-17|GCST|1000|OPEN|7|7|0|12.3|-|Soft|0:59.10|SARIAH CHAMPKIN|-
+PS|LastStarts|2025-05-26|BEAU|1400|BM0-58|13|13|0|23.2|9-10-13|Soft|1:26.87|Rikki Jamieson|Commenced to weaken leaving the 600m and eased down in the home straight.
+PS|WinRun|2024-08-09|IPSH|1350|BM0-58 FM|1|10|0|0.1|2-2-2|Soft|1:23.25|Rikki Jamieson|-
+GOC|8|2026-11-28T02:54:30Z
+FORM|1|CAMELIGHT|4|Gelding|5|1|1|0|31|true|eq|RUSSIAN CAMELOT (IRE)|LA MIA STELLA (NZ)|BARRY LOCKWOOD & EMMA-JANE VINCENT
+PS|Trial|2026-11-19|DOOM|1000|CL3|1|7|0|0.24|-|Soft|0:59.24|BRANDON LERENA|-
+PS|LastStarts|2026-10-28|EFRM|1400|3YO+ CL1|5|9|0|1.5|1-3-4|Heavy|1:26.74|Brandon Lerena|-
+PS|Trial|2026-10-06|DOOM|1000|CL3|4|6|0|0.0|-|Good|0:58.91|ANTHONY ALLEN|-
+PS|Trial|2026-09-22|DOOM|1000|CL3|4|7|0|4.15|-|Good|0:59.06|ANTHONY ALLEN|-
+PS|LastStarts|2026-06-07|CDRA|1400|3YO BM65|2|10|0|0.3|1-2-3|Soft|1:24.92|Jake Bayliss|-
+PS|LastStarts|2026-05-23|DOOM|1110|3YO OPEN|9|13|0|4.6|11-11-13|Soft|1:05.37|Tom Sherry|Began awkwardly.
+PS|LastStarts|2026-05-02|EFRM|1300|3YO Qlty|5|11|0|0.7|4-4-5|Heavy|1:18.29|Jake Bayliss|Shifted in on jumping away and bumped Queen Jeddah.
+PS|LastStarts|2025-12-14|CDRA|1200|3YO MDN CG|1|9|0|0.1|1-1-1|Good|1:12.51|Brandon Lerena|Began awkwardly.
+GOC|8|2026-11-28T02:54:30Z
+FORM|2|TIVACIOUS|4|Gelding|3|1|1|0|1|false|eq|TIVACI|THE CEREMONY|JAMES HEALY
+PS|LastStarts|2026-11-27|CDRA|1600|CL1|3|9|0|1.5|2-2-2-2|Good|1:37.98|Michael Rodd|-
+PS|LastStarts|2026-11-08|CDRA|1400|MDN|1|9|0|1.3|3-4-3|Soft|1:26.89|Michael Rodd|Bumped Martindale Kid near the 1200m.
+PS|LastStarts|2026-10-28|EFRM|1200|MDN CG|4|9|0|2.9|9-9-8|Heavy|1:13.78|Michael Rodd|Hampered at the start. Laid outward under pressure over the concluding stages.
+PS|Trial|2026-10-13|CDRA|1000|MDN|5|7|0|2.73|-|Soft|1:03.38|Maddy O?Grady|-
+PS|Trial|2026-05-14|KYNE|1200|JO|2|4|0|0.0|-|-|1:15.90|JOHN ROBERTSON|-
+PS|Trial|2026-04-24|KYNE|1200|JO|2|4|0|0.0|-|-|1:18.59|JOHN ROBERTSON|-
+GOC|8|2026-11-28T02:54:30Z
+FORM|3|OVEROPTOMYSTIC|4|Gelding|5|1|2|0|14|false|up|EXCEEDANCE|MYSTIC FIELD|JACK BRUCE
+PS|LastStarts|2026-11-14|GCST|1540|BM58|7|8|-|9.3|6-6-6|Good|1:34.58|McKenzie Apel|-
+PS|LastStarts|2026-11-03|GCST|1540|MDN|1|9|-|4.3|1-1-1|Good|1:33.25|Emily Pozman|-
+PS|LastStarts|2026-10-16|GATT|1400|MDN|3|11|-|0.2|5-5-4|Soft|1:24.65|Anthony Allen|Raced greenly under pressure in the home straight.
+PS|Trial|2026-10-06|DOOM|1000|MDN|4|4|-|2.28|-|Good|0:59.77|TAYLOR MARSHALL|-
+PS|Trial|2026-09-22|DOOM|1000|MDN|5|6|-|6.22|-|Good|1:00.30|ANTHONY ALLEN|-
+PS|LastStarts|2026-05-24|CDRA|1400|3YO MDN|9|12|-|10.6|12-11-11|Soft|1:29.41|Ryan Maloney|-
+PS|LastStarts|2026-05-07|WRAW|1350|3YO MDN|2|13|-|0.6|9-8-6|Soft|1:22.94|Taylor Marshall|-
+PS|Trial|2026-04-14|DEAG|1200|MDN|2|5|-|0.58|-|Good|1:12.09|RYAN MALONEY|-
+GOC|8|2026-11-28T02:54:30Z
+FORM|4|DUCHESS DIFFICULT|4|Mare|6|1|2|0|23|true|eq|SPIRIT OF BOOM|MAYBE MARKLE|MATTHEW HOYSTED
+PS|LastStarts|2026-11-05|IPSH|1350|3-4YO BM60|8|9|0|11.2|1-1-1|Good|1:22.65|Fiona Sandkuhl|Over-raced during the early stages.
+PS|LastStarts|2026-10-28|EFRM|1200|MDN FM|1|11|0|1.5|1-1-1|Heavy|1:12.35|Jag Guthmann-Chester|-
+PS|LastStarts|2026-10-05|DOOM|1200|MDN|2|11|0|0.8|3-3-4|Good|1:10.14|Fiona Sandkuhl|-
+PS|LastStarts|2026-09-12|GCST|1000|MDN|5|10|0|2.3|8-8-8|Good|0:57.87|Fiona Sandkuhl|-
+PS|Trial|2026-08-25|DOOM|1000|MDN|1|8|0|1.88|-|Soft|1:00.41|FIONA SANDKUHL|-
+PS|Trial|2026-08-11|DOOM|840|CL1|1|5|0|0.47|-|Soft|0:52.00|FIONA SANDKUHL|-
+PS|LastStarts|2026-05-06|EFRM|1000|3YO MDN|7|10|0|11.0|5-5-6|Soft|0:59.77|Jag Guthmann-Chester|-
+PS|LastStarts|2026-04-25|CDRA|1000|3YO MDN|2|11|0|1.4|9-9-9|Heavy|1:00.55|Boris Thornton|-
+PS|Trial|2026-04-14|DEAG|1050|OPEN|4|8|0|0.9|-|Good|1:00.69|JAG GUTHMANN-CHESTER|-
+GOC|8|2026-11-28T02:55:10Z
+FORM|5|SKELDERGATE|5|Gelding|7|1|1|0|14|false|up|NATIONAL DEFENSE (GB)|REGALITI|BRETT BAKER
+PS|LastStarts|2026-11-14|TOOW|1200|CL1|9|13|0|4.3|9-9-8|Soft|1:13.75|Jaden Lloyd|-
+PS|LastStarts|2026-09-12|TOOW|1650|BM58|4|12|0|2.2|12-12-11-12|Good|1:41.56|Nathan Fazackerley|-
+PS|LastStarts|2026-08-29|TOOW|1625|MDN|1|9|0|0.5|4-4-5|Good|1:41.05|Nathan Fazackerley|-
+PS|LastStarts|2026-08-11|DALB|1400|MDN|4|10|0|0.7|10-10-7|Good|1:25.92|Nathan Fazackerley|Began awkwardly.
+PS|LastStarts|2026-07-25|TOOW|1300|MDN|3|10|0|4.5|7-7-7|Good|1:22.02|Nathan Fazackerley|Slow to begin. Shifted in under pressure in the straight.
+PS|Trial|2026-06-02|-|925|MDN|3|6|0|7.24|-|Soft|0:59.75|NATHAN FAZACKERLEY|-
+PS|LastStarts|2026-03-07|TOOW|1100|MDN|10|10|0|20.0|10-10-10|Good|1:10.60|Ashley Butler|-
+PS|Trial|2026-02-24|GATT|860|MDN|1|3|0|0.07|-|Good|0:52.88|JAKE MOLLOY|-
+PS|Trial|2026-02-09|-|925|MDN|4|5|0|2.8|-|Good|0:57.50|STACEY CALLOW|-
+PS|LastStarts|2025-08-30|TOOW|1100|MDN|4|9|0|1.7|9-9-8|Good|1:07.79|Jackson Murphy|-
+GOC|8|2026-11-28T02:55:10Z
+FORM|6|EGMONT|3|Gelding|3|1|0|0|21|false|dn|HARRY ANGEL (IRE)|LI'L CASHY|CHRIS WALLER
+PS|LastStarts|2026-11-07|EFRM|1500|BM0-65|5|11|0|3.3|4-4-4|Good|1:29.41|Angela Jones|-
+PS|LastStarts|2026-10-24|EFRM|1200|3YO OPEN|4|8|0|1.8|8-8-8|Heavy|1:12.81|Jake Bayliss|Began awkwardly and lost ground.
+PS|LastStarts|2026-10-07|GCST|1150|MDN|1|12|0|1.7|7-7-5|Good|1:06.63|Andrew Mallyon|Began awkwardly.
+PS|Trial|2026-09-25|BEAU|1050|OPEN|3|7|0|2.66|-|Good|1:04.45|RYAN MALONEY|-
+GOC|8|2026-11-28T02:55:10Z
+FORM|7|HELL OF A HIGH|4|Mare|5|1|1|0|29|true|dn|ZOUSTAR|HELL OR HIGHWATER|JAMES HEALY
+PS|LastStarts|2026-10-30|IPSH|1100|CL1|6|8|0|8.7|7-7-7|Soft|1:05.18|Michael Rodd|-
+PS|Trial|2026-10-13|CDRA|850|CL3|2|5|0|0.46|-|Soft|0:53.40|MICHAEL RODD|-
+PS|LastStarts|2026-07-03|IPSH|1350|MDN|1|13|0|0.1|7-7-8|Good|1:21.22|Michael Rodd|Bumped at the start.
+PS|LastStarts|2026-06-21|CDRA|1400|MDN|2|7|0|0.8|1-1-2|Soft|1:27.57|Tiffani Brooker|Bumped on jumping.
+PS|LastStarts|2026-06-07|CDRA|1200|MDN|7|11|0|5.6|10-10-10|Soft|1:13.56|Tiffani Brooker|-
+PS|LastStarts|2026-05-22|GCST|1100|MDN|8|10|0|3.8|7-7-7|Soft|1:05.99|Rachel King|-
+PS|Trial|2026-05-07|DOOM|840|MDN|2|4|0|2.84|-|Soft|0:52.38|TIFFANI BROOKER|-
+PS|Trial|2025-12-15|HAWK|1000|MDN|3|8|0|1.44|-|Good|1:00.40|RACHEL KING|-
+GOC|8|2026-11-28T02:55:10Z
+FORM|8|COPPER STAR|4|Gelding|13|1|6|0|14|false|eq|NORTH PACIFIC|KIBIRA (FR)|JAMES MOORE
+PS|LastStarts|2026-11-14|TOOW|1200|CL1|5|13|0|2.1|3-3-3|Soft|1:13.38|Steph Tierney|Began awkwardly. Eased and shifted in near the 1000m away from Dani California.
+PS|Trial|2026-11-04|DOOM|1000|CL3|3|8|0|0.84|-|Soft|1:00.53|BOBBY EL-ISSA|-
+PS|LastStarts|2026-10-10|GCST|1400|CL1|2|8|0|1.7|1-1-1|Good|1:23.61|Bobby El-Issa|Began awkwardly.
+PS|LastStarts|2026-09-24|WRAW|1200|BM0-58|3|13|0|2.8|3-3-3|Good|1:10.54|Ashley Butler|-
+PS|LastStarts|2026-09-06|CDRA|1200|BM0-55|2|13|0|0.7|1-1-1|Good|1:12.71|Ben Thompson|-
+PS|LastStarts|2026-08-23|KILC|1200|BM0-55|2|9|0|0.5|3-3-4|Good|1:11.44|Dan McGillivray|-
+PS|LastStarts|2026-08-10|KILC|1200|BM0-55|3|11|0|1.5|1-1-3|Soft|1:13.30|Nick Heywood|Began awkwardly.
+PS|LastStarts|2026-07-24|GRAF|1200|BM58 CG|3|10|0|0.6|2-2-2|Good|1:10.78|Nick Heywood|-
+PS|LastStarts|2026-07-12|CDRA|1000|CL1|8|10|0|9.9|7-7-6|Soft|1:00.06|Ashley Butler|-
+PS|Trial|2026-06-18|DOOM|840|OPEN|5|5|0|5.76|-|Heavy|0:52.56|DAN MCGILLIVRAY|-
+PS|WinRun|2026-02-21|TOOW|1050|MDN|1|7|0|1.9|3-3-3|Good|1:02.93|Damien Boche|-
+PS|Trial|2026-01-27|GCST|1000|MDN|2|8|0|3.0|-|Good|0:57.22|JASPER FRANKLIN|-
+GOC|8|2026-11-28T02:55:47Z
+FORM|9|SAXON SPIRIT|3|Filly|5|1|2|0|14|false|dn|SAXON WARRIOR (JPN)|TIMID|CHRIS & COREY MUNCE
+PS|LastStarts|2026-11-14|DOOM|1350|3-4YO BM70|3|9|0|3.1|5-5-3|Soft|1:19.98|Cejay Graham|-
+PS|Trial|2026-11-04|DOOM|1000|OPEN|2|5|0|0.24|-|Soft|1:00.54|CEJAY GRAHAM|-
+PS|Trial|2026-10-06|DOOM|840|OPEN|1|5|0|0.09|-|Good|0:52.13|TAHLIA FENLON|-
+PS|LastStarts|2026-06-06|EFRM|1500|2YO LR|6|13|0|5.1|3-2-2|Soft|1:31.64|Cejay Graham|-
+PS|LastStarts|2026-05-21|IPSH|1350|2YO OPEN|2|8|0|1.1|7-7-6|Heavy|1:22.78|Cejay Graham|-
+PS|LastStarts|2026-05-09|IPSH|1350|2YO MDN|1|10|0|0.1|4-6-3|Soft|1:22.95|Bella Youngberry|Raced wide.
+PS|LastStarts|2026-04-15|DOOM|1110|2YO MDN|5|11|0|1.2|7-7-9|Good|1:05.75|Courtney Bellamy|Raced wide throughout.
+PS|Trial|2026-03-17|DOOM|840|OPEN|1|7|0|0.45|-|Good|0:52.66|TAHLIA FENLON|-
+GOC|8|2026-11-28T02:55:47Z
+FORM|10|THE EPIC JOURNEY|3|Gelding|1|1|0|0|41|false|up|THE ODYSSEY|MISS SILKY|PAUL SHAILER
+PS|LastStarts|2026-10-18|LISM|1420|MDN|1|9|0|0.5|4-6-4|Soft|1:26.76|Danny Peisley|Slow to begin.
+PS|Trial|2026-10-06|GCST|1000|MDN|4|7|0|6.0|-|Soft|0:57.55|DANNY PEISLEY|-
+PS|Trial|2026-09-25|BEAU|900|CL1|4|6|0|3.41|-|Good|0:54.98|WILLIAM GALLOWAY|-
+PS|Trial|2026-06-23|GCST|850|OPEN|3|5|0|1.1|-|Soft|0:52.20|JAI WILLIAMS|-
+GOC|8|2026-11-28T02:55:47Z
+FORM|11|SHE CAN SOAR|4|Mare|10|1|2|0|155|true|up|TRAPEZE ARTIST|SEDANZER|KELLY SCHWEIDA
+PS|Trial|2026-11-19|DOOM|1000|CL3|6|7|0|6.45|-|Soft|0:59.13|MARTIN HARLEY|-
+PS|Trial|2026-10-30|DEAG|1050|CL3|6|6|0|3.27|-|Heavy|1:03.71|EMILY POZMAN|-
+PS|LastStarts|2026-06-26|BEAU|2450|3YO+ CL1|3|7|0|1.6|3-3-4-2|Soft|2:40.51|Ashley Butler|-
+PS|LastStarts|2026-06-13|GCST|2200|MDN|1|10|0|2.4|1-2-3-2|Heavy|2:25.66|Ashley Butler|-
+PS|LastStarts|2026-06-06|GCST|1800|MDN|5|12|0|3.9|3-4-5-5|Good|1:51.40|Emily Lang|-
+PS|LastStarts|2026-05-21|IPSH|1690|3YO MDN|5|8|0|5.7|5-5-6-5|Heavy|1:46.84|Mark Du Plessis|-
+PS|Trial|2026-05-07|DOOM|1000|MDN|5|5|0|3.54|-|Soft|1:02.05|EMILY LANG|-
+PS|LastStarts|2026-04-08|EFRM|1400|3YO MDN|7|7|0|5.8|7-6-5|Good|1:24.34|Damien Thornton|Slow to begin.
+PS|LastStarts|2025-10-08|DOOM|1640|3YO MDN|3|6|0|4.6|5-5-5-5|Good|1:40.04|Mark Du Plessis|-
+PS|LastStarts|2025-09-24|EFRM|1830|MDN|5|8|0|4.0|7-7-8-7|Good|1:53.46|Mark Du Plessis|-
+PS|LastStarts|2025-09-06|GCST|1400|3YO MDN|9|13|0|5.7|13-13-12|Soft|1:24.79|Jai Williams|Slow to begin.
+GOC|8|2026-11-28T02:55:47Z
+FORM|12|HIDE THE PIERATA|3|Filly|5|1|0|0|14|true|eq|PIERATA|HIDDEN CODE|REX LIPP
+PS|LastStarts|2026-11-14|IPSH|1100|3YO BM65|7|7|0|5.9|5-5-5|Heavy|1:06.73|Georgina Cartwright|-
+PS|Trial|2026-10-30|-|925|OPEN|4|5|0|2.84|-|Heavy|0:57.80|KELSEY LENTON|-
+PS|Trial|2026-10-07|DALB|800|CL3|6|6|0|15.56|-|Good|0:46.26|KELSEY LENTON|-
+PS|LastStarts|2026-07-11|DOOM|1350|2YO OPEN|8|8|0|4.2|8-8-8|Good|1:21.48|Daniel Moor|-
+PS|LastStarts|2026-06-27|EFRM|1400|2YO LR|11|12|0|7.8|6-6-7|Soft|1:26.11|Daniel Moor|Began awkwardly and bumped Klocke.
+PS|LastStarts|2026-06-21|CDRA|1000|2YO OPEN|4|7|0|1.6|7-7-7|Soft|1:00.90|Daniel Moor|-
+PS|LastStarts|2026-06-06|TOOW|1050|2YO MDN|1|9|0|0.2|7-7-5|Good|1:04.63|Kelsey Lenton|-
+PS|Trial|2026-06-02|-|925|OPEN|2|6|0|0.43|-|Soft|0:59.74|KELSEY LENTON|-
+GOC|8|2026-11-28T02:56:33Z
+FORM|13|LIGHTS WILL GUIDE|4|Mare|8|1|1|0|151|false|up|RUSSIAN CAMELOT (IRE)|PAPILLON ROUGE|MICHAEL LAKEY
+PS|Trial|2026-11-19|DOOM|1000|CL3|6|6|0|5.88|-|Soft|1:00.10|Harry Cahill|-
+PS|Trial|2026-11-05|IPSH|800|OPEN|3|6|0|1.57|-|Good|0:47.03|Harry Cahill|-
+PS|LastStarts|2026-06-30|KILC|1900|BM0-58|5|10|0|3.3|3-5-5-6|Heavy|2:03.11|Archie McColm|-
+PS|LastStarts|2026-06-20|KILC|1500|MDN|1|10|0|5.1|1-1-1|Soft|1:32.43|Archie McColm|-
+PS|LastStarts|2026-06-03|DOOM|1200|MDN FM|4|7|0|5.6|2-2-2|Good|1:12.26|Emily Lang|Laid in under pressure in the home straight.
+PS|LastStarts|2026-05-04|IPSH|1666|MDN|11|12|0|17.2|2-2-2-3|Soft|1:44.69|Emily Lang|-
+PS|LastStarts|2026-04-22|DOOM|1350|MDN|3|9|0|1.0|2-2-2|Good|1:21.00|Emily Lang|Laid out under pressure in the home straight.
+PS|Trial|2026-04-07|DOOM|1000|OPEN|4|6|0|5.44|-|Soft|1:00.11|EMILY LANG|-
+PS|LastStarts|2026-03-11|DOOM|1650|3YO MDN|4|11|0|1.5|7-3-1-3|Soft|1:41.11|Montana Philpot|-
+PS|LastStarts|2026-02-21|GCST|1200|3YO MDN F|8|14|0|10.1|10-10-10|Good|1:11.57|Micheal Hellyer|-
+PS|LastStarts|2026-01-30|DALB|1000|MDN FM|4|10|0|1.1|9-9-7|Good|0:58.78|Emily Lang|-
+GOC|8|2026-11-28T02:56:33Z
+FORM|14|MISHANI CABELLO|3|Filly|6|1|3|0|28|false|eq|DUBIOUS|MISHANI MISS|DONNA STANBRIDGE
+PS|LastStarts|2026-10-31|TOOW|1300|3YO MDN|1|8|0|1.4|1-1-1|Soft|1:20.01|Olivia Kendal|Near the 1100m, shifted inward without being fully clear.
+PS|LastStarts|2026-10-06|KILC|1200|3YO MDN|3|10|0|0.1|2-2-2|Good|1:11.93|Jason Taylor|Shifted in and bumped Whiskey And Rose near the 400m.
+PS|LastStarts|2026-09-12|TOOW|1200|3YO MDN|2|10|0|0.8|5-5-3|Good|1:13.43|Olivia Kendal|-
+PS|LastStarts|2026-08-28|GCST|1000|3YO MDN|5|12|0|8.0|3-3-4|Good|0:58.06|Georgina Cartwright|Slow to begin.
+PS|LastStarts|2026-08-10|KILC|1200|3YO MDN|2|7|0|2.4|4-4-4|Soft|1:13.34|Olivia Kendal|Slow to begin. Laid out under pressure over the final 50m.
+PS|LastStarts|2026-07-15|EFRM|1000|2YO MDN F|8|10|0|7.9|9-9-7|Good|0:59.60|Olivia Kendal|Bumped on jumping. Raced wide throughout.
+PS|Trial|2026-07-07|BEAU|900|OPEN|3|5|0|3.39|-|Good|0:53.52|OLIVIA KENDAL|-
+GOC|8|2026-11-28T02:56:33Z
+FORM|15|WORTHTHEADMISSION|3|Filly|5|1|0|0|14|false|dn|PELTZER|ADMISSION|CHRIS & COREY MUNCE
+PS|LastStarts|2026-11-14|DOOM|1600|3YO OPEN|6|8|0|7.3|5-5-5-6|Soft|1:37.42|Tahlia Fenlon|Began awkwardly and bumped Spirit Of Torque.
+PS|LastStarts|2026-10-29|CASO|1400|MDN|1|4|0|2.5|1-1-1|Soft|1:27.40|Courtney Bellamy|-
+PS|LastStarts|2026-10-03|GCST|1000|MDN FM|5|7|0|5.5|7-7-7|Good|0:57.89|Benjamin Osmond|-
+PS|Trial|2026-09-22|DOOM|1000|MDN|2|7|0|5.3|-|Good|1:00.64|COURTNEY BELLAMY|-
+PS|LastStarts|2026-04-19|CDRA|1300|2YO MDN|8|10|0|7.5|5-5-6|Soft|1:20.66|Mark Du Plessis|-
+PS|LastStarts|2026-03-27|TOOW|1200|2YO OPEN|4|6|0|3.0|4-4-6|Good|1:13.93|Tahlia Fenlon|-
+PS|Trial|2026-03-17|DOOM|1000|OPEN|3|5|0|0.83|-|Good|1:00.66|MARTIN HARLEY|-
+PS|Trial|2026-02-24|DOOM|840|OPEN|2|6|0|0.09|-|Good|0:50.03|ANGELA JONES|-
+GOC|8|2026-11-28T02:56:33Z
+FORM|16|FAR BEYOND|4|Gelding|9|1|1|0|15|true|eq|FARNAN|MOQUEEN|CHRIS ANDERSON
+PS|LastStarts|2026-11-13|CDRA|1200|BM0-58|9|15|5.4|15-15-13|Good|1:12.25|Kyle Wilson-Taylor|-
+PS|LastStarts|2026-11-03|GCST|1150|BM58|4|7|3.7|7-7-7|Good|1:08.03|Jai Williams|Slow to muster early speed.
+PS|LastStarts|2026-10-24|GCST|1200|CL1|2|11|2.0|5-5-9|Good|1:10.71|Kyle Wilson-Taylor|Shifted inward under riding near the 200m, causing Icymiss to be steadied.
+PS|Trial|2026-09-29|DEAG|1050|CL3|5|7|1.44|-|Soft|1:01.29|MARK DU PLESSIS|-
+PS|LastStarts|2026-07-11|GCST|1000|BM0-58|6|10|6.8|9-9-9|Good|0:58.82|Courtney Bellamy|Slow to begin.
+PS|LastStarts|2026-06-21|CDRA|1000|CL1|8|10|7.5|10-10-10|Soft|1:01.02|Benjamin Osmond|Inconvenienced on jumping and lost ground.
+PS|LastStarts|2026-05-17|CDRA|1000|MDN|1|9|2.3|4-4-3|Good|0:58.38|McKenzie Apel|-
+PS|Trial|2026-04-21|DOOM|840|CL1|1|4|4.41|-|Good|0:50.78|MCKENZIE APEL|-
+PS|Trial|2026-04-07|DOOM|840|MDN|1|5|0.04|-|Soft|0:49.96|MCKENZIE APEL|-
+PS|LastStarts|2025-11-28|CDRA|1400|3YO MDN|14|16|15.0|12-12-12|Soft|1:28.11|Corey Sutherland|Slow to begin.
+PS|LastStarts|2025-11-13|IPSH|1350|MDN CG|8|10|5.4|9-9-10|Good|1:22.54|Micheal Hellyer|Slow to begin.
+GOC|8|2026-11-28T02:57:19Z
+FORM|17|MILITARY LEGEND|4|Mare|18|1|4|0|7|true|eq|RUSSIAN REVOLUTION|LOOK TO THE STARS|ALLAN CHAU
+PS|LastStarts|2026-11-21|BEAU|1400|3YO+ CL2|7|10|0|4.4|2-6-7|Good|1:23.38|Matthew Palmer|Raced wide throughout.
+PS|LastStarts|2026-11-09|LISM|1220|CL1|4|7|0|2.4|5-5-4|Good|1:10.22|William Galloway|Bumped shortly after the start. Carried wider rounding the home turn.
+PS|LastStarts|2026-11-03|GCST|1150|BM58|7|7|0|7.1|3-3-3|Good|1:08.61|Nozi Tomizawa|Raced three-wide without cover throughout.
+PS|LastStarts|2026-10-18|LISM|1120|BM58|4|8|0|1.3|7-7-7|Soft|1:06.56|William Galloway|Hung out under pressure in the straight.
+PS|LastStarts|2026-08-11|BALL|1400|MDN|1|8|0|0.1|3-3-4|Heavy|1:29.89|Anthony Allen|Held up for clear running rounding the home turn until inside the 200m.
+PS|LastStarts|2026-07-24|GRAF|1125|MDN|3|11|0|3.2|5-5-7|Good|1:05.27|Anthony Allen|Unable to improve rounding the home turn when held up on heels.
+PS|LastStarts|2026-07-07|BEAU|1100|MDN|7|10|0|1.3|8-8-7|Good|1:05.49|Nozi Tomizawa|-
+PS|LastStarts|2026-06-27|GCST|1000|MDN|3|8|0|4.1|5-5-5|Soft|0:58.45|Karl Zechner|-
+PS|Trial|2025-12-30|RAND|1050|MDN|7|10|0|4.31|-|Good|1:02.80|JASON COLLETT|-
+PS|Trial|2025-12-18|RKER|850|MDN|10|10|0|3.65|-|Good|0:50.82|TYLER SCHILLER|-
+PS|Trial|2025-07-11|RAND|1050|OPEN|1|10|0|0.29|-|Soft|1:05.02|TOM SHERRY|-
+GOC|8|2026-11-28T02:57:19Z
+FORM|18|SIR DON|4|Gelding|8|1|0|0|14|false|up|PRIZED ICON|INVIDENTIA|JOHN GILMORE
+PS|LastStarts|2026-11-14|IPSH|1350|BM0-58|6|8|0|8.9|2-2-3|Heavy|1:22.41|Yvette Lewis|-
+PS|LastStarts|2026-10-24|GCST|1200|CL1|9|11|0|6.6|8-8-7|Good|1:11.50|Archie McColm|Began awkwardly.
+PS|LastStarts|2026-10-08|IPSH|1350|BM0-58 CG|5|11|0|2.4|2-2-2|Good|1:21.17|Jett Newman|Brushed by Ludik passing the 50m.
+PS|LastStarts|2026-09-05|GCST|1400|BM0-60|12|13|0|11.2|5-5-8|Good|1:23.93|Grady Spokes|-
+PS|LastStarts|2026-08-21|MURW|1200|CL1|7|12|0|4.7|4-4-5|Soft|1:13.43|Yvette Lewis|Jumped awkwardly, shifted in and hampered Spicy Wings. Bumped near the 400m.
+PS|LastStarts|2026-08-01|GCST|1200|MDN CG|1|8|0|0.2|3-3-2|Soft|1:10.38|Yvette Lewis|Buffeted between runners at the start.
+PS|LastStarts|2026-07-24|GRAF|1125|MDN|4|11|0|4.2|9-9-9|Good|1:05.45|Yvette Lewis|-
+PS|Trial|2026-07-14|GCST|1000|MDN|3|6|0|1.0|-|Soft|0:59.19|YVETTE LEWIS|-
+PS|Trial|2026-01-27|GCST|850|MDN|1|7|0|0.2|-|Good|0:50.95|DYLAN TURNER|-
+PS|LastStarts|2025-12-19|LISM|1110|MDN|6|10|0|6.2|5-5-5|Good|1:04.85|Brandon Lerena|Raced keenly and laid out rounding the first turn.
+PS|Trial|2025-12-02|GCST|1000|MDN|7|8|0|4.0|-|Good|0:58.23|DANNY PEISLEY|-
+TWB|1|2026-11-28T02:57:19Z
+FORM|1|BOLE LE|5|Gelding|20|2|9|0|7|false|dn|CASTELVECCHIO|DREAM KISSES|PAUL WALLACE
+PS|LastStarts|2026-11-21|TOOW|1300|CL3|3|10|-|1.2|2-2-3|Good|1:19.57|Georgina Cartwright|-
+PS|LastStarts|2026-10-30|IPSH|1350|CL2|2|10|-|1.6|3-2-2|Soft|1:20.71|Cejay Graham|-
+PS|LastStarts|2026-10-03|TOOW|1640|BM58|2|8|-|2.0|1-1-1-2|Good|1:43.25|Les Tilley|Began awkwardly. Raced keenly in the lead.
+PS|LastStarts|2026-09-12|TOOW|1650|BM58|2|12|-|0.4|3-3-5-1|Good|1:41.24|Les Tilley|Raced keenly in the early stages.
+PS|LastStarts|2026-08-29|TOOW|1625|CL2|4|9|-|4.5|1-1-1-1|Good|1:39.95|Bailey Wheeler|-
+PS|LastStarts|2026-08-04|WRAW|1350|CL2|4|13|-|3.2|6-7-6|Good|1:20.81|Les Tilley|Bumped and taken out at the start.
+PS|LastStarts|2026-07-25|TOOW|1200|3YO+ CL3|3|8|-|2.2|8-8-8|Good|1:13.99|Danny Peisley|-
+PS|LastStarts|2026-04-25|BEAU|1650|3YO+ CL2|3|8|-|1.9|1-1-1-1|Heavy|1:43.02|Jaden Lloyd|-
+PS|WinRun|2026-03-17|MORE|1300|CL1|1|9|-|0.9|4-4-3|Good|1:17.30|Jake Pracey-Holmes|On jumping bumped High Security.
+PS|Trial|2025-07-29|DOOM|1000|MDN|1|5|-|0.03|-|Soft|1:00.06|ANTHONY ALLEN|-
+PS|Trial|2025-07-15|EFRM|1000|MDN|3|7|-|0.31|-|Soft|1:02.02|OLIVIA WEBB|-
+PS|Trial|2025-04-01|-|925|MDN|5|6|-|2.6|-|Soft|0:58.11|DYLAN BENNETT|-
+TWB|1|2026-11-28T02:57:19Z
+FORM|2|DUKE OF BANTRY|4|Gelding|9|1|2|0|0|false|up|POWER (GB)|BANTRY HOUSE|COREY & KYLIE GERAN
+PS|Trial|2026-11-24|-|925|CL3|6|6|0|5.38|-|Good|0:57.18|KAYLA BARKER|-
+PS|Trial|2026-06-23|-|925|CL3|4|7|0|1.95|-|Soft|0:59.86|KAYLA BARKER|-
+PS|Trial|2026-06-02|-|925|CL3|3|5|0|1.48|-|Soft|0:59.25|Akasha Beresford|-
+PS|LastStarts|2025-12-27|TOOW|2000|MDN|1|10|0|0.1|5-5-4-3|Good|2:06.61|Gary Geran|-
+PS|LastStarts|2025-12-20|TOOW|1890|MDN|4|9|0|3.1|4-5-4-3|Good|2:04.11|Gary Geran|Bumped on jumping. Raced keenly in the early stages.
+PS|LastStarts|2025-12-06|TOOW|2000|MDN|4|10|0|2.3|2-2-2-1|Good|2:08.61|Corey Sutherland|-
+PS|LastStarts|2025-11-22|TOOW|1890|MDN|5|7|0|1.3|1-2-2-1|Good|2:04.05|Chloe Lowe|-
+PS|LastStarts|2025-11-08|ESK|1460|3YO+ MDN|2|10|0|0.3|-|Good|1:30.62|Kenji Yoshida|-
+PS|LastStarts|2025-10-25|-|1580|3YO+ MDN|2|10|0|1.5|3|Firm|1:36.58|Kayla Barker|Slow to begin and then bumped with Margot's Star shortly after the start.
+PS|LastStarts|2025-10-18|TOOW|1300|MDN|5|9|0|8.4|4-4-5|Good|1:19.95|Kelsey Lenton|-
+PS|LastStarts|2025-10-06|TOOW|1200|MDN|8|11|0|6.2|11-11-11|Good|1:15.28|Nozi Tomizawa|-
+TWB|1|2026-11-28T02:58:12Z
+FORM|3|HELL TO THE LINE|4|Gelding|12|1|5|0|168|true|up|HELLBENT|PARALLEL LINES|COREY & KYLIE GERAN
+PS|Trial|2026-11-24|-|925|CL3|7|7|0|11.76|-|Good|0:56.52|GARY GERAN|-
+PS|LastStarts|2026-06-13|TOOW|2020|3YO+ CL1|4|9|0|11.9|1-1-1-2|Soft|2:11.40|Tiffani Brooker|-
+PS|LastStarts|2026-05-23|TOOW|1625|CL1|5|8|0|1.6|6-7-6-6|Good|1:44.58|Corey Sutherland|-
+PS|LastStarts|2026-05-02|TOOW|1890|MDN|1|7|0|0.3|5-5-5-4|Soft|2:03.42|Corey Sutherland|Leaving the 400m, shifted out to improve.
+PS|LastStarts|2026-04-28|WRAW|1500|MDN|4|9|0|1.3|6-7-5|Good|1:30.93|Gary Geran|Raced wide from the 800m.
+PS|LastStarts|2026-04-06|IPSH|1680|MDN|2|11|0|1.0|10-10-10-10|Good|1:44.18|Gary Geran|Bumped with Hopetoun Park shortly after the start.
+PS|LastStarts|2026-03-27|TOOW|1625|MDN|2|12|0|0.4|6-7-6-4|Good|1:39.81|Jake Bayliss|Laid in under pressure in the home straight.
+PS|LastStarts|2026-03-10|WRAW|1350|MDN CG|2|9|0|0.7|6-6-1|Soft|1:20.64|Gary Geran|-
+PS|LastStarts|2026-02-28|TOOW|1200|3YO MDN|8|11|0|8.6|10-10-8|Good|1:13.67|Rob Thorburn|Slow to begin.
+PS|Trial|2026-02-09|-|925|MDN|5|5|0|9.07|-|Good|0:57.00|GARY GERAN|-
+PS|Trial|2025-11-20|-|925|MDN|1|6|0|0.76|-|Soft|0:57.69|GARY GERAN|-
+TWB|1|2026-11-28T02:58:12Z
+FORM|4|LYRICAL GANGSTER|4|Gelding|9|1|3|0|7|false|eq|DEEP FIELD|KEEPING SCORE (NZ)|COREY & KYLIE GERAN
+PS|LastStarts|2026-11-21|TOOW|1300|BM0-55|2|9|0|1.2|4-4-4|Good|1:20.02|Karl Zechner|-
+PS|LastStarts|2026-11-06|GATT|1400|BM0-58 CG|6|9|0|5.3|5-5-5|Good|1:24.51|Gary Geran|-
+PS|LastStarts|2026-10-16|CDRA|1200|BM0-58|7|13|0|6.6|6-6-6|Soft|1:13.99|Gary Geran|-
+PS|LastStarts|2026-10-02|CDRA|1300|BM0-58|8|12|0|4.3|5-5-3|Good|1:19.55|Gary Geran|-
+PS|LastStarts|2026-09-20|CDRA|1200|CL1 CG|5|10|0|2.6|3-3-2|Good|1:12.76|Gary Geran|-
+PS|LastStarts|2026-08-22|TOOW|1300|MDN|1|10|0|1.7|1-1-1|Good|1:20.66|Gary Geran|-
+PS|LastStarts|2026-08-08|TOOW|1200|MDN|3|11|0|1.5|6-6-4|Good|1:14.89|Gary Geran|-
+PS|LastStarts|2026-07-25|TOOW|1300|MDN|5|10|0|5.7|5-5-1|Good|1:22.23|Gary Geran|-
+PS|Trial|2026-06-08|MURW|1010|OPEN|5|5|0|3.07|-|Heavy|1:06.66|ARCHIE MCCOLM|-
+PS|Trial|2026-03-09|CRAN|800|JO|2|8|0|0.0|-|-|0:47.02|DAKOTAH KEANE|-
+PS|Trial|2026-02-16|CRAN|800|JO|7|9|0|0.0|-|-|0:47.10|BEN MELHAM|-

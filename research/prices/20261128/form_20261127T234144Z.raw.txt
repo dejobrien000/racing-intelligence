@@ -1,0 +1,636 @@
+MPH|4|2026-11-27T23:32:07Z
+FORM|6|TOOK GARDNER|4|Gelding|4|1|2|0|133|true|up|SIR PRANCEALOT (IRE)|KATE'S DREAM|STUART PADMAN
+PS|Trial|2026-11-12|OAKB|1050|BM0-70|4|10|-|7.35|-|Good|1:03.44|KAYLA CROWTHER|-
+PS|LastStarts|2026-07-18|MORK|1400|CL2|4|12|-|3.7|5-6-5-5|Soft|1:26.85|Tala Hutchinson|Raced wide without cover throughout the event.
+PS|LastStarts|2026-07-07|MURB|1400|2YO+ MDN|1|12|-|0.1|2-1-2-1|Soft|1:26.77|Alysha Warren|-
+PS|LastStarts|2026-06-08|STBN|1350|2YO+ MDN|2|10|-|1.0|2-4-3|Soft|1:24.59|Alysha Warren|-
+PS|LastStarts|2026-05-13|GAWL|1100|2YO+ MDN CG|2|7|-|4.3|4-4-3|Soft|1:06.75|Alysha Warren|Laid out in the straight.
+PS|Trial|2026-05-07|MURB|1000|MDN|5|7|-|2.65|-|Soft|1:02.45|ALYSHA WARREN|-
+PS|Trial|2026-04-02|MORK|1000|MDN|1|6|-|1.06|-|Good|1:01.67|ALYSHA WARREN|-
+MPH|4|2026-11-27T23:32:07Z
+FORM|7|MAYSOONFLY|4|Mare|12|2|4|0|23|true|up|FLYING ARTIE|MAYSOON|ANDREW GLUYAS
+PS|LastStarts|2026-11-05|GAWL|1200|CL1|1|7|-|0.3|2-2-2|Good|1:11.31|Jason Holder|Inclined to lay out throughout.
+PS|LastStarts|2026-10-23|GAWL|1200|CL1|4|10|-|1.1|6-6-6|Good|1:11.79|Jason Holder|-
+PS|LastStarts|2026-10-05|GAWL|1100|CL1|2|9|-|1.1|7-7-7|Good|1:07.63|Jason Holder|-
+PS|LastStarts|2026-09-23|GAWL|1200|CL1|2|12|-|0.3|2-2-2|Good|1:10.80|Jason Holder|-
+PS|LastStarts|2026-09-09|MURB|1000|CL1|2|11|-|1.7|4-4-4|Good|0:59.54|Rose Hammond|-
+PS|Trial|2026-08-27|HALD|1000|BM0-70|6|6|-|3.94|-|Soft|1:01.48|TAYLOR JOHNSTONE|-
+PS|Trial|2026-08-18|MORK|800|JO|6|6|-|0.0|-|Soft|-|ROSE HAMMOND|-
+PS|LastStarts|2026-05-06|MURB|1200|BM62|4|10|-|3.0|4-4-4|Soft|1:13.67|Taylor Johnstone|-
+PS|LastStarts|2026-04-22|MURB|1400|CL1|12|12|-|12.9|3-3-1-4|Good|1:26.69|Jason Holder|-
+PS|LastStarts|2026-04-04|OAKB|1400|3YO OPEN|7|7|-|4.5|7-7-7|Good|1:30.51|Jason Holder|Jumped away awkwardly and slow into stride.
+PS|WinRun|2026-03-25|STBN|1200|2YO+ MDN|1|12|-|1.5|1-1-1|Good|1:13.62|Jason Holder|-
+PS|Trial|2026-01-19|MURB|1000|OPEN|3|7|-|2.47|-|Good|1:01.91|TAYLOR JOHNSTONE|-
+MPH|4|2026-11-27T23:32:07Z
+FORM|8|MUSICAL SUNSET|5|Mare|8|2|3|0|10|false|up|BARBADOS|MUSICAL QUERY|DARYL STONE
+PS|LastStarts|2026-11-18|GAWL|1200|BM56 FM|1|10|-|0.5|3-3-3|Good|1:09.78|Rochelle Milnes|Laid out in the straight.
+PS|LastStarts|2026-11-03|MORK|1050|BM56|4|9|-|1.0|3-3-3|Good|1:01.17|Rochelle Milnes|Laid in for a short distance near the 200m.
+PS|LastStarts|2026-10-14|BLVA|1050|BM56|12|13|-|6.0|10-10-11|Good|1:01.62|Rochelle Milnes|-
+PS|LastStarts|2026-09-30|BLVA|1050|BM58|3|10|-|3.4|6-7-5|Good|1:00.22|Rochelle Milnes|-
+PS|Trial|2026-09-15|MORK|600|JO|1|5|-|0.0|-|Good|-|ROCHELLE MILNES|-
+PS|LastStarts|2026-05-20|BLVA|1050|3YO+ MDN|1|12|-|0.2|1-1-1|Soft|1:01.15|Rochelle Milnes|-
+PS|LastStarts|2026-05-06|MURB|1000|2YO+ MDN|3|11|-|3.6|7-7-3|Soft|0:59.15|Rochelle Milnes|Raced wide without cover throughout the event.
+PS|LastStarts|2026-04-15|BLVA|1050|3YO+ MDN|2|10|-|0.2|1-1-1|Good|1:00.27|Todd Pannell|-
+PS|LastStarts|2025-06-04|BLVA|1050|2YO+ MDN|5|12|-|7.1|5-5-5|Good|1:00.12|Felicity Atkinson|-
+MPH|4|2026-11-27T23:32:07Z
+FORM|9|PRECIPICE|5|Gelding|11|1|4|0|129|true|up|EL ROCA|GIDDYUPKATE|CHRIS BIEG
+PS|Trial|2026-11-24|MORK|600|JO|1|4|-|0.0|-|Good|-|JASON HOLDER|-
+PS|Trial|2026-11-10|MORK|600|JO|2|6|-|0.0|-|Soft|-|FELICITY ATKINSON|-
+PS|LastStarts|2026-07-22|MURB|1100|CL1|10|11|-|6.2|6-6-6|Soft|1:08.53|Jason Holder|-
+PS|LastStarts|2026-07-08|MORK|1200|CL1|2|13|-|5.2|7-7-5|Soft|1:13.77|Jason Holder|-
+PS|LastStarts|2026-06-26|BLVA|1200|CL1|4|8|-|4.1|8-8-8|Soft|1:13.66|Jason Holder|-
+PS|LastStarts|2026-06-08|STBN|1100|CL1|8|9|-|5.7|8-8-7|Soft|1:09.10|Jason Holder|Improved onto heels near the 800m and was momentarily steadied.
+PS|Trial|2026-05-28|MORK|1000|BM0-70|4|7|-|4.67|-|Good|1:03.25|JASON HOLDER|-
+PS|LastStarts|2026-01-31|TRE|1200|3YO+ MAAT|3|6|-|2.63|3-3|Good|1:08.08|Ryan Elliot|Began awkwardly becoming unbalanced. Raced keenly through the early stages.
+PS|LastStarts|2026-01-08|TAUR|1200|3YO+ BM65|9|10|-|8.5|9-8|Good|1:10.71|WARREN KENNEDY|Began awkwardly losing ground.
+PS|LastStarts|2025-12-14|TRE|1200|3YO+ MDN|1|11|-|2.0|-|Soft|1:09.59|Craig Grylls|-
+PS|LastStarts|2025-11-30|OTK|1200|MDN|9|12|-|5.9|4-4|Good|1:11.80|Craig Grylls|Hampered near the 800m when Kodiac Bear shifted outwards.
+MPH|4|2026-11-27T23:32:52Z
+FORM|10|IMPACT STORM|4|Gelding|6|1|1|0|119|false|dn|FIERCE IMPACT (JPN)|Thine is the Power|MICHAEL HICKMOTT
+PS|Trial|2026-11-12|OAKB|1050|BM0-70|8|9|0|5.57|-|Good|1:04.35|TODD PANNELL|-
+PS|LastStarts|2026-08-01|MORK|1400|BM0-66|12|12|0|9.5|10-7-9-7|Soft|1:28.41|Rose Hammond|-
+PS|LastStarts|2026-06-20|MORK|1600|3YO BM68|9|10|0|7.3|6-6-6-6|Heavy|1:43.92|Ben Price|Raced keenly in the early stages of the event.
+PS|LastStarts|2026-05-30|MORK|1600|3YO BM68|8|14|0|8.6|6-6-4-4|Soft|1:44.16|Joe Bowditch|-
+PS|LastStarts|2026-05-20|BLVA|1400|CL1|2|9|0|0.1|3-2-2|Soft|1:24.35|Todd Pannell|Raced keenly in the early and middle stages of the event.
+PS|Trial|2026-04-27|MURB|600|JO|4|5|0|0.0|-|Good|0:00.00|TODD PANNELL|-
+PS|Trial|2026-04-13|MURB|600|JO|5|5|0|0.0|-|Soft|0:00.00|TODD PANNELL|-
+PS|LastStarts|2026-01-21|OAKB|1400|3YO+ MDN|1|8|0|1.0|4-4-3|Good|1:28.32|Todd Pannell|-
+PS|LastStarts|2025-12-24|STBN|1350|3YO+ MDN|5|12|0|1.9|7-7-7|Good|1:24.30|Todd Pannell|-
+MPH|4|2026-11-27T23:32:52Z
+FORM|11|SUNSET PRAYER|5|Mare|16|1|3|0|1|true|eq|THE AUTUMN SUN|KYRIE ELEISON (NZ)|DEAN SAXON
+PS|LastStarts|2026-11-27|MTGR|1300|BM56|2|10|0|1.5|-|Good|1:17.67|Brooke King|-
+PS|LastStarts|2026-11-13|BORD|1200|BM0-56|2|9|0|0.5|4-4-3|Soft|1:13.06|Brooke King|-
+PS|LastStarts|2026-10-28|MURB|1200|BM0-60|8|11|0|4.1|3-3-5|Good|1:11.24|Brooke King|-
+PS|LastStarts|2026-10-16|PENO|1300|BM0-54|8|12|0|8.5|7-8-8|Soft|1:22.19|Brooke King|-
+PS|LastStarts|2026-10-07|MTGR|900|BM0-56|7|11|0|3.9|11-11-11|Good|0:51.97|Brooke King|-
+PS|LastStarts|2026-09-20|MTGR|900|BM0-54|4|6|0|0.6|5-5-6|Soft|0:52.86|Brooke King|-
+PS|LastStarts|2026-05-22|MTGR|1400|BM0-54|14|14|0|16.8|6-10-14|Soft|1:31.57|Teagan Voorham|-
+PS|LastStarts|2026-05-01|BORD|1550|BM0-54|5|11|0|1.9|5-5-5-5|Good|1:35.74|Teagan Voorham|At the entrance to the straight, taken wider by Everythingisautumn.
+PS|WinRun|2025-11-28|MTGR|900|3YO+ MDN|1|10|0|0.5|4-4-4|Good|0:52.29|Alana Livesey|-
+PS|Trial|2025-11-14|BORD|1000|OPEN|3|6|0|3.74|-|Good|0:59.75|ALANA LIVESEY|-
+PS|Trial|2025-01-28|RAND|1050|MDN|7|8|0|6.72|-|Soft|1:02.97|R WHELAN|-
+PS|Trial|2025-01-14|RAND|1050|MDN|9|10|0|5.83|-|Soft|1:03.47|R P WHELAN|-
+MPH|5|2026-11-27T23:32:52Z
+FORM|1|COSTLESS|8|Gelding|57|8|9|0|21|false|eq|CAPITALIST|PERFECT TRUTH (IRE)|GARRET LYNCH
+PS|LastStarts|2026-11-07|MORK|1400|BM0-62|5|12|0|2.4|2-2-2-2|Good|1:23.10|Andrew Stead|-
+PS|LastStarts|2026-10-24|MORK|1200|BM0-62|4|11|0|4.1|2-2-1|Soft|1:10.69|Andrew Stead|-
+PS|LastStarts|2026-10-10|MORK|1200|BM0-64|7|14|0|3.1|3-3-11|Good|1:10.32|Stacey Metcalfe|Laid out under pressure in the home straight.
+PS|LastStarts|2026-09-26|MURB|1400|BM0-68|4|14|0|1.4|3-2-3-3|Good|1:23.77|Andrew Stead|-
+PS|LastStarts|2026-09-11|BORD|1200|BM64|5|10|0|3.2|1-1-2|Soft|1:12.68|Stacey Metcalfe|-
+PS|LastStarts|2026-09-05|MORK|1250|BM64|4|12|0|6.7|1-1-1|Soft|1:18.41|Stacey Metcalfe|-
+PS|LastStarts|2026-08-22|MORK|1250|4YO+ BM64|8|12|0|4.2|2-2-4|Soft|1:19.26|Stacey Metcalfe|-
+PS|LastStarts|2026-08-15|-|1200|BM58|2|7|0|1.0|-|Good|1:10.45|Jemma Gutte|-
+PS|WinRun|2026-07-15|BLVA|1200|BM56|1|9|0|0.9|1-1-1|Heavy|1:13.55|Stacey Metcalfe|-
+PS|Trial|2025-08-21|STBN|1200|OPEN|1|6|0|0.35|-|Soft|1:17.76|STACEY METCALFE|-
+PS|Trial|2025-08-04|MURB|1000|BM0-70|1|5|0|1.11|-|Soft|0:59.39|STACEY METCALFE|-
+PS|Trial|2024-09-27|STBN|1000|BM0-70|4|6|0|2.5|-|Soft|1:01.38|S METCALFE|-
+MPH|5|2026-11-27T23:32:52Z
+FORM|2|MORE THAN HOPE|4|Gelding|13|2|3|0|14|true|dn|I AM IMMORTAL|ANGEL OF HOPE|CODY REARDON
+PS|LastStarts|2026-11-14|MORK|1000|CL2|7|10|-|8.2|2-2-2|Good|0:58.41|Todd Pannell|-
+PS|LastStarts|2026-10-24|MORK|1200|CL2|7|9|-|2.9|1-1-1|Soft|1:10.33|Rochelle Milnes|-
+PS|Trial|2026-09-28|MORK|1000|BM0-70|3|9|-|0.63|-|Good|0:59.75|CONNOR MURTAGH|-
+PS|Trial|2026-09-15|MORK|600|JO|4|6|-|0.0|-|Good|0:00.00|CONNOR MURTAGH|-
+PS|LastStarts|2026-05-16|MORK|1550|3YO BM66|9|11|-|9.0|2-2-2-1|Soft|1:35.73|Connor Murtagh|Near the 250m, rolled our slightly.
+PS|LastStarts|2026-05-02|MORK|1600|3YO LR|13|14|-|15.4|1-1-1-7|Soft|1:40.66|Connor Murtagh|-
+PS|LastStarts|2026-04-18|MORK|1400|3YO LR|2|11|-|1.5|1-1-1-1|Good|1:24.28|Connor Murtagh|-
+PS|LastStarts|2026-03-21|MORK|1250|BM0-66|1|6|-|0.1|1-1-1|Good|1:14.96|Rochelle Milnes|-
+PS|LastStarts|2026-03-09|MORK|1050|3YO BM66|4|6|-|4.0|1-1-2|Good|1:01.50|Jason Holder|Laid in under pressure in the straight.
+PS|LastStarts|2026-02-21|MORK|1050|3YO BM64|3|9|-|2.5|1-1-1|Good|1:01.40|Jason Holder|Jumped away awkwardly.
+PS|Trial|2026-01-27|MORK|600|JO|1|5|-|0.0|-|Good|0:00.00|JASON HOLDER|-
+PS|WinRun|2025-08-13|MURB|1200|3YO+ MDN|1|13|-|2.2|1-1-1|Soft|1:12.83|Jason Holder|-
+MPH|5|2026-11-27T23:33:42Z
+FORM|3|MURPH|5|Gelding|18|3|4|0|14|true|dn|MAGNUS|BETALYK|PAUL CAREY
+PS|LastStarts|2026-11-14|MORK|1300|BM0-64|6|12|0|3.9|6-6-5|Soft|1:18.32|Rose Hammond|Raced keenly during the early stages and wide without cover throughout.
+PS|LastStarts|2026-11-01|NARA|1100|BM66|7|9|0|5.8|7-7-8|Good|1:05.62|Jacob Opperman|-
+PS|Trial|2026-10-19|MURB|600|JO|4|6|0|0.0|-|Good|0:00.00|STEPHANIE LACY|-
+PS|LastStarts|2026-06-27|MORK|1250|4YO+ BM66|5|12|0|1.5|8-8-7|Soft|1:17.53|Campbell Rawiller|-
+PS|Trial|2026-06-22|MURB|600|JO|2|3|0|0.0|-|-|0:00.00|STEPHANIE LACY|-
+PS|LastStarts|2026-06-13|MURB|1200|BM0-64 CG|4|14|0|1.8|3-3-2|Soft|1:13.63|Campbell Rawiller|Laid out under pressure in the straight.
+PS|LastStarts|2026-05-16|MORK|1250|BM64 CG|6|13|0|3.2|12-12-12|Soft|1:14.96|Campbell Rawiller|-
+PS|LastStarts|2026-05-02|MORK|1050|BM64 CG|6|12|0|3.7|11-11-12|Soft|1:01.79|Campbell Rawiller|-
+PS|Trial|2026-04-27|MURB|600|JO|5|6|0|0.0|-|Good|0:00.00|CAMPBELL RAWILLER|-
+PS|LastStarts|2026-04-11|MORK|1100|BM70|9|12|0|6.3|2-2-3|Soft|1:06.37|Campbell Rawiller|-
+PS|LastStarts|2025-11-22|MORK|1200|BM68 CG|4|15|0|0.8|6-6-5|Soft|1:12.74|Taylor Johnstone|-
+PS|WinRun|2025-11-08|MORK|1250|4YO+ CL2|1|8|0|0.1|4-4-3|Good|1:14.17|Taylor Johnstone|-
+MPH|5|2026-11-27T23:33:42Z
+FORM|4|WINE BARRON|7|Gelding|35|5|11|0|14|false|dn|VADAMOS (FR)|LA SOMMELIERE (NZ)|MICHAEL HICKMOTT
+PS|LastStarts|2026-11-14|MORK|1300|BM0-64|9|12|-|4.5|11-11-10|Soft|1:18.41|Will Price|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|6|10|-|6.16|-|Good|0:57.93|TODD PANNELL|-
+PS|LastStarts|2026-08-03|DARW|1600|BMNT|9|12|-|7.1|5-5|Good|1:36.30|Daniel Moor|Raced wide through the early stages.
+PS|LastStarts|2026-07-25|DARW|1600|BM0-70|3|6|-|1.5|3-4|Good|1:35.50|Paul Denton|Raced wide throughout.
+PS|LastStarts|2026-07-04|DARW|1600|BMNT|7|7|-|10.0|2-3|Good|1:36.52|Joe Bowditch|-
+PS|LastStarts|2026-06-20|DARW|1300|BM76|9|9|-|5.1|5-6|Good|1:14.96|Paul Denton|Raced wide from the 600m.
+PS|LastStarts|2026-05-30|MORK|1800|BM72|5|9|-|5.7|2-2-2-2|Soft|1:55.42|Todd Pannell|-
+PS|LastStarts|2026-05-02|MORK|1800|3YO+ BM70|1|15|-|0.8|4-4-1-1|Soft|1:51.12|Todd Pannell|Jumped away awkwardly.
+PS|LastStarts|2026-04-24|GAWL|1500|BM62|2|11|-|1.7|2-1-1-1|Good|1:31.57|Todd Pannell|-
+PS|Trial|2026-04-02|MORK|1000|BM0-70|6|7|-|4.06|-|Good|1:00.72|TEAGAN VOORHAM|-
+PS|Trial|2026-03-12|MURB|600|JO|4|6|-|0.0|-|Good|0:00.00|TODD PANNELL|-
+PS|WinRun|2025-09-20|MORK|1550|3YO+ BM64|1|12|-|1.5|3-3-3-3|Good|1:32.60|Todd Pannell|-
+MPH|5|2026-11-27T23:33:42Z
+FORM|5|JUSTA STAR|5|Gelding|16|2|7|0|17|true|up|JUSTIFY (USA)|STARMON (NZ)|ANDREW GLUYAS
+PS|LastStarts|2026-11-11|BLVA|1200|BM56|2|11|-|2.7|4-4-6|Good|1:10.68|Rose Hammond|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|4|9|-|1.83|-|Good|0:58.93|ROSE HAMMOND|-
+PS|Trial|2026-10-20|MORK|600|JO|4|6|-|0.0|-|Soft|-|JASON HOLDER|-
+PS|Trial|2026-10-13|MORK|600|JO|4|4|-|0.0|-|Good|-|WILL PRICE|-
+PS|LastStarts|2026-06-20|MORK|1800|4YO+ BM68|10|14|-|13.4|5-5-6-8|Heavy|1:58.55|Taylor Johnstone|-
+PS|LastStarts|2026-05-30|MORK|1600|BM0-64|6|13|-|5.2|8-9-7-7|Soft|1:44.53|Taylor Johnstone|-
+PS|LastStarts|2026-05-16|MORK|1400|CL2|5|10|-|5.3|4-4-4-4|Soft|1:25.58|Jacob Opperman|-
+PS|LastStarts|2026-04-18|MORK|1400|BM68|14|14|-|8.3|2-2-2-2|Good|1:26.16|Taylor Johnstone|-
+PS|LastStarts|2026-03-21|MORK|1000|4YO+ CL2|6|6|-|9.7|4-4-6|Good|1:00.70|Taylor Johnstone|-
+PS|LastStarts|2025-04-05|MORK|1400|3YO LR|3|7|-|4.4|3-3-3-2|Good|1:23.55|Todd Pannell|Raced keenly in the early and middle stages of the event.
+PS|LastStarts|2025-03-10|MORK|1600|3YO LR|3|11|-|5.4|1-1-1-1|Good|1:35.79|Taylor Johnstone|Raced keenly in the early and middle stages of the event.
+PS|WinRun|2025-02-15|MORK|1250|3YO BM68|1|9|-|0.4|2-2-2|Good|1:14.01|Taylor Johnstone|Laid out rounding the home turn and under pressure in the straight.
+MPH|5|2026-11-27T23:33:42Z
+FORM|6|ANNIHILATE|7|Gelding|54|6|13|0|119|false|eq|I AM INVINCIBLE|CRYSTAL WHIP|CHRIS BIEG
+PS|Trial|2026-11-24|MORK|600|JO|1|5|0|0.0|-|Good|0:00.00|TEAGAN VOORHAM|-
+PS|Trial|2026-11-10|MORK|600|JO|4|6|0|0.0|-|Soft|0:00.00|Ms Cheyenne Crane|-
+PS|LastStarts|2026-08-01|MORK|1400|BM0-66|8|12|0|6.1|8-9-8-9|Soft|1:27.87|Teagan Voorham|Had difficulty obtaining clear ground from the 400m until inside the 300m.
+PS|LastStarts|2026-07-11|MORK|1400|4YO+ BM66|4|7|0|3.5|4-4-5-7|Heavy|1:31.74|Campbell Rawiller|-
+PS|LastStarts|2026-06-27|MORK|1400|BM0-64|5|14|0|4.5|12-9-11-10|Soft|1:28.05|Campbell Rawiller|-
+PS|LastStarts|2026-06-06|MORK|1400|BM68|7|11|0|2.0|9-9-6|Heavy|1:26.87|Teagan Voorham|Began awkwardly.
+PS|LastStarts|2026-05-23|MURB|1400|BM70|3|15|0|2.7|14-15-14-8|Soft|1:25.02|Teagan Voorham|-
+PS|LastStarts|2026-05-02|MORK|1600|3YO+ BM74|11|14|0|6.3|6-6-6-7|Soft|1:38.92|Jason Holder|-
+PS|LastStarts|2026-04-18|MORK|1550|BM66|5|11|0|3.8|9-9-9-9|Good|1:36.61|Todd Pannell|-
+PS|LastStarts|2026-04-05|PENO|1600|BM78|4|6|0|2.5|6-6-6-6|Good|1:38.85|Dom Tourneur|Jumped away awkwardly and as a result slow to begin. Laid out in the straight.
+PS|WinRun|2026-02-28|MORK|1400|4YO+ BM0-66|1|8|0|0.7|7-6-7-7|Soft|1:25.77|Campbell Rawiller|Slow to begin and shortly after inconvenienced by Royal Scripture and Talisay.
+PS|Trial|2026-01-06|GAWL|1000|BM0-70|1|7|0|1.57|-|Good|1:01.28|MATT CHADWICK|-
+MPH|5|2026-11-27T23:34:28Z
+FORM|7|ICE SYMPHONY|7|Gelding|42|5|6|0|10|false|up|FROSTED (USA)|SYMPHONY MISS|SARAH RUTTEN
+PS|LastStarts|2026-11-18|GAWL|1200|BM56 CG|6|11|-|1.1|1-1-2|Good|1:10.24|Connor Murtagh|-
+PS|LastStarts|2026-10-23|GAWL|1100|BM64|9|9|-|5.9|1-1-5|Good|1:05.97|Caitlin Jones|Raced wide without cover throughout the race.
+PS|LastStarts|2026-10-10|MORK|1200|BM0-64|11|14|-|4.0|1-1-2|Good|1:10.46|Jackson Radley|-
+PS|Trial|2026-09-28|MORK|1000|BM0-70|1|9|-|2.78|-|Good|0:58.69|Stephy Wright|-
+PS|LastStarts|2026-05-30|MORK|1100|BM0-64 CG|12|12|-|9.1|1-1-1|Soft|1:09.51|Connor Murtagh|-
+PS|LastStarts|2026-05-01|BORD|1100|BM66|2|10|-|1.7|4-4-5|Good|1:05.07|Margaret Collett|-
+PS|LastStarts|2026-04-18|MORK|1250|BM0-64|6|14|-|2.2|2-2-2|Good|1:14.73|Margaret Collett|-
+PS|LastStarts|2026-03-28|MORK|1200|BM64|4|14|-|2.1|4-4-5|Good|1:10.98|Taylor Johnstone|-
+PS|LastStarts|2026-03-21|MORK|1000|BM62|7|12|-|3.8|9-9-10|Good|0:59.34|Taylor Johnstone|-
+PS|Trial|2026-01-19|MURB|800|OPEN|1|7|-|1.0|-|Good|0:48.45|Stephy Wright|-
+PS|WinRun|2025-09-12|BORD|1200|BM66|1|9|-|2.0|2-2-2|Good|1:11.61|Alana Livesey|Raced keenly in the early and middle stages of the event.
+PS|Trial|2025-09-01|MURB|600|JO|5|8|-|0.0|-|Soft|0:00.00|Caitlin Jones|-
+MPH|5|2026-11-27T23:34:28Z
+FORM|8|HARMONIC DANCER|4|Gelding|12|1|5|0|21|true|dn|PARIAH|SYMPHONETTE|PHILLIP & TOMMY STOKES
+PS|LastStarts|2026-11-07|MORK|1400|BM0-62|3|12|0|2.2|7-7-7-7|Good|1:23.07|Noel Callow|-
+PS|LastStarts|2026-10-17|MORK|1200|4YO+ BM0-64 G|3|12|0|5.7|7-7-5|Good|1:10.32|Noel Callow|-
+PS|LastStarts|2026-09-12|MORK|1050|4YO+ BM0-64|3|14|0|1.7|6-6-4|Good|1:02.02|Noel Callow|-
+PS|LastStarts|2026-08-29|MORK|1050|BM62|2|15|0|0.8|12-12-9|Soft|1:03.77|Noel Callow|-
+PS|Trial|2026-08-18|MORK|800|JO|2|5|0|0.0|-|Soft|0:00.00|HARRY GRACE|-
+PS|LastStarts|2026-06-13|MURB|1200|3YO OPEN|10|11|0|21.5|3-3-4|Soft|1:16.85|Harry Grace|-
+PS|LastStarts|2026-05-30|MORK|1100|BM0-64 CG|3|12|0|1.8|3-3-3|Soft|1:08.29|Harry Grace|-
+PS|Trial|2026-05-19|MORK|600|JO|1|4|0|0.0|-|Soft|0:00.00|HARRY GRACE|-
+PS|Trial|2026-05-07|MURB|800|OPEN|3|6|0|5.95|-|Soft|0:51.66|WILL PRICE|-
+PS|LastStarts|2026-01-03|GAWL|1107|3YO CL1|6|9|0|5.7|2-2-2|Good|1:06.06|Connor Murtagh|Raced keenly in the early and middle stages of the event.
+PS|LastStarts|2025-12-13|GAWL|1100|3YO CL1|6|9|0|4.3|4-4-3|Good|1:05.78|Jacob Opperman|-
+PS|WinRun|2025-11-04|MORK|1200|3YO MDN|1|13|0|5.1|3-3-2|Soft|1:11.79|Jacob Opperman|Contacted on jumping away.
+MPH|5|2026-11-27T23:34:28Z
+FORM|9|I'M A HOTTIE|6|Mare|18|3|4|0|13|false|dn|SIZZLING|JEN SEE SEE|WAYNE BROWN
+PS|LastStarts|2026-11-15|STBN|1350|BM70|8|14|0|3.4|4-3-1|Soft|1:25.17|Rose Hammond|-
+PS|LastStarts|2026-11-07|MORK|1250|BM68 FM|11|13|0|3.8|6-6-8|Good|1:13.69|Brooke King|-
+PS|LastStarts|2026-10-21|STBN|1350|BM56|1|13|0|0.3|4-6-7|Soft|1:23.81|Rose Hammond|-
+PS|LastStarts|2026-10-03|-|1340|BM58|4|5|0|3.4|-|Good|1:17.54|Alyssa Webb|Inclined to lay out under pressure in the straight.
+PS|LastStarts|2026-09-09|MURB|1200|BM56|5|11|0|4.7|3-3-2|Good|1:13.05|Stacey Metcalfe|-
+PS|Trial|2026-08-13|MURB|850|JO|3|5|0|0.0|-|Soft|0:00.00|STACEY METCALFE|-
+PS|LastStarts|2026-07-25|MORK|1200|CL2|7|9|0|2.2|1-1-1|Soft|1:15.38|Shayleigh Ingelse|-
+PS|LastStarts|2026-03-07|-|1200|BM56|1|7|0|0.5|-|Good|1:12.51|Polly Brewster|-
+PS|LastStarts|2026-02-22|BLVA|1400|3YO+ MDN|1|8|0|0.2|2-1-1-1|Good|1:24.38|Jason Holder|Raced keenly in the early and middle stages of the event.
+PS|Trial|2024-12-20|GUNN|900|MDN|3|5|0|3.27|-|Good|0:53.06|SHAE WILKES|-
+PS|Trial|2024-11-27|TAMW|950|MDN|3|7|0|1.11|-|Good|0:56.80|MICHAEL HEAGNEY|-
+MPH|5|2026-11-27T23:34:28Z
+FORM|10|LASTAR|8|Gelding|65|9|20|0|7|false|eq|ZOUSTAR|SPLAT|NICOLE IRWIN
+PS|LastStarts|2026-11-21|MORK|1100|BM70|12|14|-|5.9|11-11-9|Good|1:05.33|Alice Lindsay|Raced wide without cover throughout.
+PS|LastStarts|2026-11-13|BORD|1100|BM68|9|10|-|8.3|10-10-7|Soft|1:06.60|Alice Lindsay|Jumped awkwardly, shifted out and contacted Naralinga.
+PS|Trial|2026-11-09|MURB|900|JO|2|5|-|0.0|-|Good|0:00.00|ALICE LINDSAY|-
+PS|LastStarts|2026-04-27|HORS|1100|3YO+ BM0-62|4|11|-|1.8|10-10-10|Good|1:04.99|Stacey Metcalfe|Slow to begin. Held up for clear running from the 500m until passing the 200m.
+PS|LastStarts|2026-02-21|KING|1360|BM58|2|7|-|0.7|4-4-5|Good|1:23.20|Sophie Potter|-
+PS|LastStarts|2026-02-19|KING|1215|BM58|1|8|-|2.0|6-6-7|Good|1:11.84|Kyra Yuill|Slow into stride.
+PS|LastStarts|2026-02-11|GAWL|1208|BM0-58|4|11|-|1.1|8-8-7|Good|1:14.07|Sophie Potter|-
+PS|LastStarts|2026-02-01|STBN|1200|BM56|3|14|-|1.8|11-11-8|Good|1:13.64|Sophie Potter|Laid in under pressure over the concluding stages of the event.
+PS|LastStarts|2026-01-17|KING|1360|BM60|1|6|-|0.8|-|Good|1:23.55|Sophie Potter|-
+PS|WinRun|2025-10-01|BLVA|1050|BM56|1|11|-|0.3|7-7-4|Good|1:00.88|Sophie Potter|-
+PS|Trial|2021-01-28|GEEL|1000|BarrierTrialOPEN|5|8|-|0.8|-|Good|1:02.00|LUKE CURRIE|-
+MPH|5|2026-11-27T23:35:15Z
+FORM|11|KORATORA|5|Mare|21|3|5|0|7|true|dn|TORONADO (IRE)|OAK PARK GOBLET|TRAVIS DOUDLE
+PS|LastStarts|2026-11-21|MORK|1200|BM70 FM|7|14|0|3.9|1-1-1|Good|1:10.55|Rose Hammond|-
+PS|LastStarts|2026-11-03|MORK|1200|BM0-56|1|9|0|4.2|1-1-1|Good|1:10.04|Alyssa Webb|-
+PS|LastStarts|2026-10-31|MORK|1200|4YO+ BM0-62 M|4|9|0|2.6|2-2-2|Good|1:10.27|Kayla Crowther|-
+PS|LastStarts|2026-10-21|STBN|1200|BM0-56|2|11|0|0.4|1-1-1|Soft|1:14.82|Alyssa Webb|-
+PS|LastStarts|2026-10-03|-|1340|BM58|2|5|0|0.3|-|Good|1:17.04|Sophie Potter|-
+PS|LastStarts|2026-09-16|BLVA|1400|4YO+ BM0-56|3|12|0|5.2|1-2-1|Good|1:24.82|Ben Price|-
+PS|LastStarts|2026-08-30|STBN|1350|BM56|8|10|0|6.1|1-1-1|Soft|1:28.13|Caitlyn Munro|Shifted out on jumping away onto Trantoro.
+PS|LastStarts|2026-08-19|STBN|1350|BM56|2|14|0|1.0|1-1-1|Soft|1:27.04|Caitlyn Munro|Laid out under pressure in the straight.
+PS|Trial|2026-04-02|MORK|1000|BM0-70|3|7|0|0.34|-|Good|1:00.72|TAYLOR JOHNSTONE|-
+PS|Trial|2026-03-17|MORK|600|JO|2|3|0|0.0|-|Good|0:00.00|TAYLOR JOHNSTONE|-
+PS|WinRun|2025-08-03|GAWL|1100|CL1|1|9|0|3.2|2-2-1|Soft|1:07.55|Jacob Opperman|-
+PS|Trial|2025-06-12|MORK|1000|OPEN|2|5|0|0.79|-|Soft|1:03.47|ROCHELLE MILNES|-
+MPH|5|2026-11-27T23:35:15Z
+FORM|12|EXOTIC DANCER|5|Mare|20|4|3|0|10|true|eq|RUSSIAN REVOLUTION|DANCINGFORDIAMONDS|JESSICA TZAFERIS
+PS|LastStarts|2026-11-18|GAWL|1200|BM56 FM|6|10|0|3.0|1-1-1|Good|1:10.27|Polly Brewster|-
+PS|Trial|2026-11-09|MURB|900|JO|2|5|0|0.0|-|Good|0:00.00|POLLY BREWSTER|-
+PS|Trial|2026-10-29|MURB|800|OPEN|2|9|0|0.02|-|Good|0:49.07|TEAGAN VOORHAM|-
+PS|LastStarts|2026-04-15|BLVA|1200|BM58|1|10|0|3.4|1-1-2|Good|1:09.52|Teagan Voorham|-
+PS|LastStarts|2026-04-06|OAKB|1400|BM0-62|13|13|0|16.8|2-2-4|Soft|1:31.93|Kayla Crowther|-
+PS|LastStarts|2026-03-15|PLIN|1350|BM0-54|1|10|0|1.0|4-4-3|Good|1:22.56|Kayla Crowther|Near the 1100m taken out off its line by Flying Step. Laid in, in the straight.
+PS|Trial|2026-03-05|OAKB|1050|BM0-70|2|8|0|0.5|-|Good|1:03.73|TEAGAN VOORHAM|-
+PS|LastStarts|2026-02-21|KING|1360|BM58|4|7|0|3.3|7-7-4|Good|1:23.60|Polly Brewster|-
+PS|LastStarts|2026-02-19|KING|1215|BM58|6|8|0|5.1|5-5-5|Good|1:12.59|Polly Brewster|-
+PS|LastStarts|2026-02-08|NARA|1100|BM0-56|8|11|0|4.5|4-4-3|Good|1:06.73|Todd Pannell|-
+PS|LastStarts|2025-12-26|NHIL|1150|3YO+ BM56|5|10|0|1.8|2-2-2|Firm|1:08.56|Polly Brewster|Near the 50m, awkwardly placed on the heels of Hughie.
+PS|WinRun|2024-09-15|BATH|1200|BM58|1|13|0|0.2|2-2-2|Soft|1:09.72|Deanne Panya|-
+MPH|5|2026-11-27T23:35:15Z
+FORM|13|CORK HARBOUR|8|Gelding|91|9|9|0|1|false|eq|SNITZEL|MARITIMO (NZ)|DEAN SAXON
+PS|LastStarts|2026-11-27|MTGR|1550|BM0-54|8|13|0|7.0|-|Good|1:36.75|Brooke King|-
+PS|LastStarts|2026-11-14|MORK|1572|BM0-64|8|10|0|5.2|1-1-2-4|Good|1:36.35|Alysha Warren|-
+PS|LastStarts|2026-10-24|MORK|1600|BM0-62|7|12|0|3.9|5-4-5-8|Soft|1:38.55|Alysha Warren|-
+PS|LastStarts|2026-10-17|MORK|1200|4YO+ BM0-64 G|11|12|0|8.0|8-8-9|Good|1:10.68|Alysha Warren|-
+PS|LastStarts|2026-09-25|COLR|1300|3YO+ BM66|10|11|0|5.6|8-6-8-9|Good|1:18.84|Brooke King|Near the 900m, restrained when placed close to the heels of Shes Stargazing.
+PS|LastStarts|2026-09-19|MORK|1250|BM64|4|8|0|3.4|3-3-3|Good|1:15.49|Alysha Warren|-
+PS|LastStarts|2026-09-12|MORK|1050|4YO+ BM0-64|11|14|0|6.3|11-11-14|Good|1:02.77|Alysha Warren|-
+PS|LastStarts|2026-08-29|MORK|1050|BM62|7|15|0|5.9|11-11-15|Soft|1:04.59|Alysha Warren|-
+PS|WinRun|2026-03-14|MORK|1250|BM0-64|1|12|0|0.2|3-3-3|Good|1:14.46|Brooke King|-
+PS|Trial|2022-10-17|MURB|1000|OPEN|6|8|0|5.9|-|Good|0:59.82|BEN PRICE|-
+PS|Trial|2022-06-23|MURB|950|BarrierTrialOPEN|4|5|0|3.1|-|Good|1:01.08|BEN PRICE|-
+PS|Trial|2021-12-14|ROSE|900|BarrierTrialOPEN|5|8|0|3.9|-|Good|0:55.07|HUGH BOWMAN|-
+MPH|5|2026-11-27T23:35:15Z
+FORM|14|KINDRA PARK|6|Gelding|30|1|10|0|23|true|up|OUTREACH|THE BEE CHARMER|GEORGE DIMITROPOULOS
+PS|LastStarts|2026-11-05|GAWL|1100|BM0-56|3|9|1.2|2-2-2|Good|1:05.31|Stacey Metcalfe|Shifted outward and away from Whoops A Daisy approaching the finish.
+PS|LastStarts|2026-10-21|STBN|1200|BM0-56|3|11|1.8|2-2-2|Soft|1:15.04|Caitlin Tootell|-
+PS|LastStarts|2026-10-05|GAWL|1200|BM56|5|11|2.9|4-4-5|Good|1:11.93|Stacey Metcalfe|-
+PS|LastStarts|2026-09-16|BLVA|1050|BM0-56 CG|3|9|3.3|3-3-3|Good|1:01.56|Stacey Metcalfe|-
+PS|LastStarts|2025-11-06|GAWL|1500|BM0-56|12|13|6.7|2-1-2-1|Soft|1:35.06|Polly Brewster|Laid out in the straight.
+PS|LastStarts|2025-10-24|GAWL|1500|CL1|6|9|3.3|5-5-4|Soft|1:35.82|Matthew Chadwick|-
+PS|LastStarts|2025-10-10|MORK|1400|CL1|7|10|6.7|9-9-9-9|Good|1:25.96|Polly Brewster|Began very awkwardly and lost ground.
+PS|LastStarts|2025-09-28|STBN|1200|BM0-56|4|14|2.1|7-7-8|Good|1:14.23|Matthew Chadwick|Jumped away awkwardly. Held up for clear running to inside the 200m.
+PS|WinRun|2024-07-17|GAWL|1200|2YO+ MDN|1|12|2.8|1-1-1|Heavy|1:15.58|Caitlin Tootell|-
+PS|Trial|2023-09-10|GUND|1000|OPEN|3|6|0.63|-|Heavy|1:01.43|MS MOLLY BOURKE|-
+MPH|6|2026-11-27T23:35:58Z
+FORM|1|MAJOR RUMBLE|5|Gelding|11|2|3|0|140|false|dn|CAPITALIST|FANCY RUMBLE|WAYNE FRANCIS & GLEN KENT
+PS|Trial|2026-11-16|STBN|900|JO|1|5|0|0.0|-|Good|0:00.00|CONNOR MURTAGH|-
+PS|Trial|2026-10-22|STBN|900|JO|2|5|0|0.0|-|Soft|0:00.00|JAKE TOEROEK|-
+PS|LastStarts|2026-07-11|MORK|1250|BM64 CG|5|11|0|7.1|10-10-9|Heavy|1:21.75|Caitlin Tootell|-
+PS|LastStarts|2026-06-20|MORK|1200|BM0-68|7|13|0|1.8|5-5-5|Heavy|1:15.55|Lauren Stojakovic|-
+PS|LastStarts|2026-05-23|MURB|1100|4YO+ BM68|2|16|0|2.3|13-13-13|Soft|1:04.39|Tala Hutchinson|Began awkwardly and lost ground.
+PS|Trial|2026-05-07|MURB|800|OPEN|2|7|0|0.93|-|Soft|0:51.57|ANDREW STEAD|-
+PS|LastStarts|2026-02-21|MORK|1200|BM0-70|3|12|0|1.1|6-6-6|Good|1:11.28|Andrew Stead|-
+PS|LastStarts|2026-02-07|MORK|1200|BM68|3|13|0|2.0|4-4-4|Good|1:09.80|Kayla Crowther|-
+PS|LastStarts|2026-01-17|MURB|1200|4YO+ BM0-66 G|1|9|0|0.1|6-6-5|Good|1:10.56|Kayla Crowther|Shifted out on jumping away and contacted Deficit.
+PS|LastStarts|2026-01-03|GAWL|1107|CL2|4|8|0|2.4|4-4-5|Good|1:04.91|Todd Pannell|-
+PS|LastStarts|2025-12-20|MURB|1000|BM64|4|9|0|1.2|8-8-8|Good|0:59.18|Todd Pannell|Slow to begin.
+PS|WinRun|2025-07-02|MURB|900|2YO+ MDN|1|12|0|2.5|7-7-3|Good|0:52.77|Todd Pannell|-
+MPH|6|2026-11-27T23:35:58Z
+FORM|2|BABAYKA|8|Gelding|65|8|17|0|21|false|dn|MIKKI ISLE (JPN)|BABA YAGA|PAULA TRENWITH
+PS|LastStarts|2026-11-07|MORK|1000|BM0-64|6|10|0|6.7|9-9-9|Good|0:56.82|Caitlin Tootell|-
+PS|LastStarts|2026-10-24|MORK|1050|BM0-68|8|11|0|5.9|4-4-3|Soft|1:01.73|Rochelle Milnes|-
+PS|LastStarts|2026-08-15|MORK|1000|BM78|3|7|0|0.9|4-4-4|Heavy|1:00.81|Rochelle Milnes|-
+PS|LastStarts|2026-07-04|MURB|1100|BM64 CG|15|16|0|13.0|4-4-11|Soft|1:08.95|Caitlin Tootell|-
+PS|LastStarts|2026-06-20|MORK|1050|BM64|1|13|0|0.2|6-6-6|Heavy|1:04.94|Caitlin Tootell|Raced wide without cover throughout the event.
+PS|LastStarts|2026-06-06|MORK|1000|4YO+ BM0-62|5|13|0|0.7|9-9-9|Heavy|1:00.58|Rochelle Milnes|-
+PS|LastStarts|2026-05-20|BLVA|1050|BM56|1|12|0|1.5|3-3-3|Soft|1:01.52|Rochelle Milnes|-
+PS|LastStarts|2026-05-02|MORK|1050|BM64 CG|11|12|0|8.7|3-3-3|Soft|1:02.56|Alysha Warren|-
+PS|Trial|2026-04-28|MORK|600|JO|4|5|0|0.0|-|Good|0:00.00|ROCHELLE MILNES|-
+PS|WinRun|2025-02-22|KING|1050|BM58|1|10|0|0.1|1-1-1|Good|1:01.92|Stacey Metcalfe|-
+PS|Trial|2024-10-22|MORK|800|OPEN|2|5|0|0.5|-|Good|0:46.91|TAYLOR JOHNSTONE|-
+PS|Trial|2024-01-30|OAKB|1000|OPEN|2|6|0|1.5|-|Good|1:05.15|S METCALFE|-
+MPH|6|2026-11-27T23:35:58Z
+FORM|3|KATRINA'S LEGACY|4|Gelding|2|1|1|0|31|false|up|SANDBAR|NEYLABU|GEORGE DIMITROPOULOS
+PS|LastStarts|2026-10-28|MURB|1000|4YO+ MDN|1|8|0|1.8|3-3-3|Soft|0:57.69|Stacey Metcalfe|Began awkwardly. Raced greenly in the home straight.
+PS|Trial|2026-10-15|BLVA|1000|BM0-70|3|10|0|0.73|-|Good|0:57.90|STACEY METCALFE|-
+PS|LastStarts|2026-06-14|BLVA|1050|3YO+ MDN|2|12|0|1.0|1-1-2|Soft|1:01.96|Stacey Metcalfe|-
+PS|Trial|2026-06-04|MURB|950|MDN|3|6|0|0.88|-|Good|1:02.05|STACEY METCALFE|-
+MPH|6|2026-11-27T23:35:58Z
+FORM|4|FLUTTERING RUBY|5|Mare|5|2|0|0|14|false|dn|FLYING ARTIE|COMPLETE FINISH|PAULA TRENWITH
+PS|LastStarts|2026-11-14|MORK|1000|CL2|5|10|0|7.1|5-5-3|Good|0:58.24|Rochelle Milnes|-
+PS|Trial|2026-11-10|MORK|600|JO|1|6|0|0.0|-|Soft|0:00.00|JAKE TOEROEK|-
+PS|LastStarts|2026-01-10|MURB|1200|BM64|10|12|0|8.6|3-3-4|Good|1:13.02|Rochelle Milnes|Raced wide without cover throughout the event.
+PS|LastStarts|2025-12-27|MORK|1200|4YO+ CL2|7|10|0|2.2|3-3-4|Good|1:09.91|Rochelle Milnes|-
+PS|LastStarts|2025-12-12|MORK|1050|4YO+ CL1|1|10|0|0.2|2-2-2|Good|1:00.98|Jason Holder|-
+PS|LastStarts|2025-11-29|MORK|1000|3YO+ MDN|1|12|0|0.1|4-4-3|Soft|0:58.49|Rochelle Milnes|-
+PS|Trial|2025-11-11|MORK|600|JO|1|5|0|0.0|-|Good|0:00.00|ROCHELLE MILNES|-
+PS|Trial|2025-02-10|CRAN|1000|JO|3|9|0|0.0|-|-|1:00.50|THOMAS STOCKDALE|-
+MPH|6|2026-11-27T23:36:45Z
+FORM|5|ARTISSI|6|Mare|44|5|12|0|27|false|eq|SMART MISSILE|SHINY SHINKA|NICOLE IRWIN
+PS|LastStarts|2026-11-01|NARA|1100|BM66|5|9|0|3.8|5-5-5|Good|1:05.31|Stacey Metcalfe|-
+PS|LastStarts|2026-10-16|PENO|1075|BM68|3|9|0|2.0|7-7-6|Soft|1:04.70|Stacey Metcalfe|-
+PS|LastStarts|2026-05-30|MORK|1100|BM0-64 FM|3|13|0|2.0|13-13-13|Soft|1:08.67|Taylor Johnstone|-
+PS|LastStarts|2026-05-16|MORK|1000|BM78|7|11|0|4.2|9-9-9|Good|0:58.47|Stacey Metcalfe|-
+PS|LastStarts|2026-05-06|MURB|1200|BM62|5|10|0|3.1|6-6-9|Soft|1:13.70|Sophie Potter|Momentarily held up rounding the home turn.
+PS|LastStarts|2026-04-24|GAWL|1200|BM56 FM|1|11|0|1.5|7-7-7|Good|1:12.62|Sophie Potter|-
+PS|LastStarts|2026-04-11|MORK|1200|BM0-64|7|14|0|4.3|9-9-9|Soft|1:12.56|Stacey Metcalfe|-
+PS|LastStarts|2026-03-28|MORK|1200|BM64|11|14|0|3.3|14-13-14|Good|1:11.19|Stacey Metcalfe|Inconvenienced near the 800m by Casino Showgirl.
+PS|WinRun|2026-03-04|BLVA|1200|BM0-56|1|11|0|0.1|9-9-9|Soft|1:10.99|Stacey Metcalfe|-
+PS|Trial|2024-09-27|STBN|1000|MDN|4|8|0|2.7|-|Soft|1:02.87|Ms Sophie Potter|-
+MPH|6|2026-11-27T23:36:45Z
+FORM|6|FLIRT|4|Mare|10|2|3|0|17|false|eq|BLUE POINT (IRE)|LOVESTRUCK (GB)|AARON BAIN & NED TAYLOR
+PS|LastStarts|2026-11-11|BLVA|1050|BM0-60|2|10|0|0.8|3-3-4|Good|1:00.92|Tala Hutchinson|Shifted outward and away from So Polite over the concluding stages.
+PS|LastStarts|2026-10-11|HALD|1200|BM64|6|7|0|8.4|3-3-4|Firm|1:11.60|Jackson Murphy|-
+PS|LastStarts|2026-09-19|MORK|1000|CL2|3|6|0|2.9|2-2-3|Good|0:58.94|Jackson Murphy|Laid out under pressure in the straight.
+PS|LastStarts|2026-09-02|MURB|1000|BM58|3|13|0|0.5|1-1-1|Soft|1:00.33|Jackson Murphy|Inclined to shift ground under pressure in the straight.
+PS|Trial|2026-08-06|MURB|600|JO|3|6|0|0.0|-|Soft|0:00.00|JACKSON MURPHY|-
+PS|Trial|2026-07-16|HALD|1000|OPEN|4|7|0|4.14|-|Soft|1:03.27|TAYLOR JOHNSTONE|-
+PS|LastStarts|2026-03-09|MORK|1100|CL2|7|7|0|8.7|2-2-3|Good|1:06.21|Taylor Johnstone|-
+PS|LastStarts|2026-02-13|CLAR|1100|CL1|1|7|0|0.1|2-2-2|Good|1:05.77|Taylor Johnstone|-
+PS|LastStarts|2026-01-09|OAKB|1100|CL1|5|7|0|3.1|4-4-4|Good|1:05.36|Jason Holder|Began awkwardly and shifted out.
+PS|LastStarts|2025-12-19|OAKB|1050|3YO+ MDN|1|14|0|0.9|1-1-1|Good|1:01.54|Jason Holder|-
+PS|Trial|2025-12-11|MURB|850|OPEN|3|7|0|6.69|-|Good|0:49.57|JASON HOLDER|-
+MPH|6|2026-11-27T23:36:45Z
+FORM|7|MADAM JEANETTE|5|Mare|26|3|6|0|23|false|up|TOO DARN HOT (GB)|FINE SCENT|SHANE & CASSIE OXLADE
+PS|LastStarts|2026-11-05|GAWL|1100|BM0-56|1|9|-|0.2|1-1-1|Good|1:05.13|Lauren Stojakovic|-
+PS|LastStarts|2026-10-16|PENO|1075|BM68|7|9|-|5.6|2-2-3|Soft|1:05.22|Lauren Stojakovic|Raced wide without cover throughout.
+PS|LastStarts|2026-10-10|MORK|1050|BM0-68|10|11|-|6.7|1-1-2|Good|1:01.16|Lauren Stojakovic|-
+PS|LastStarts|2026-09-19|MORK|1000|CL2|2|6|-|2.7|1-1-1|Good|0:58.92|Kayla Crowther|Inclined to rear on jumping away.
+PS|LastStarts|2026-09-12|MORK|1050|CL2|6|10|-|2.0|2-2-2|Good|1:01.64|Lauren Stojakovic|-
+PS|LastStarts|2026-08-29|MORK|1050|BM62|10|15|-|6.9|4-4-6|Soft|1:04.75|Lauren Stojakovic|-
+PS|LastStarts|2026-08-01|MORK|1000|CL2|4|10|-|0.6|4-3-3|Soft|1:00.06|Lauren Stojakovic|-
+PS|LastStarts|2026-07-11|MORK|1250|BM64 FM|8|9|-|13.1|1-1-1|Heavy|1:23.35|Lauren Stojakovic|-
+PS|Trial|2026-06-01|STBN|900|JO|3|4|-|0.0|-|Heavy|0:00.00|Miss Maddi Cox|-
+PS|Trial|2026-05-18|STBN|900|JO|3|5|-|0.0|-|Soft|0:00.00|LAUREN STOJAKOVIC|-
+PS|Trial|2026-05-07|MURB|800|OPEN|3|7|-|1.23|-|Soft|0:51.57|LAUREN STOJAKOVIC|-
+PS|WinRun|2025-09-06|MORK|1000|NMW|1|12|-|0.3|2-2-2|Good|0:57.76|Teo Nugent|Shifted out on jumping away onto Streetcar Fury.
+MPH|6|2026-11-27T23:36:45Z
+FORM|8|ZATANNA|5|Mare|29|4|9|0|6|false|up|JUNGLE CAT (IRE)|BROOK MAGIC|SCOTT WHITTLE
+PS|LastStarts|2026-11-22|CLAR|1100|BM58|2|12|-|0.1|1-1-1|Good|1:05.46|Jemma Gutte|-
+PS|LastStarts|2026-11-11|BLVA|1050|BM0-60|4|10|-|1.1|2-2-2|Good|1:00.97|Jemma Gutte|Shifted outward and away from Flirt approaching the winning post.
+PS|LastStarts|2026-10-24|MORK|1050|BM0-68|11|11|-|13.7|3-3-4|Soft|1:02.97|Andrew Stead|Raced wide for most of the race.
+PS|LastStarts|2026-07-19|PAUG|1200|BM56|2|7|-|0.2|1-1-2|Good|1:11.36|Jemma Gutte|Shifted in and changed stride when it contacted the running rail near the 950m.
+PS|LastStarts|2026-07-05|PAUG|1200|BM64|1|7|-|1.2|1-1-2|Good|1:11.55|Jemma Gutte|-
+PS|LastStarts|2026-06-27|MORK|1000|BM62|13|14|-|12.1|5-5-6|Soft|1:01.82|Alysha Warren|-
+PS|LastStarts|2026-06-21|PAUG|1100|BM62|2|10|-|0.2|1-1-1|Good|1:04.91|Jemma Gutte|Hung out rounding the home turn and in the straight.
+PS|LastStarts|2026-06-07|PAUG|1200|BM66|3|11|-|6.3|2-2-2|Good|1:11.13|Ashvin Goindasamy|-
+PS|WinRun|2026-05-01|BORD|1100|BM66|1|10|-|1.7|1-1-1|Good|1:04.81|Alana Kelly|-
+PS|Trial|2026-03-12|MURB|600|JO|4|5|-|0.0|-|Good|0:00.00|ANDREW STEAD|-
+PS|Trial|2025-07-08|DEAG|1050|OPEN|4|4|-|6.81|-|Soft|1:04.09|KYLE WILSON-TAYLOR|-
+PS|Trial|2025-04-07|BEAU|900|OPEN|3|5|-|1.4|-|Heavy|0:54.59|DAMIEN THORNTON|-
+MPH|6|2026-11-27T23:37:30Z
+FORM|9|SHE'S XTRAVAGANT|6|Mare|28|4|3|0|220|false|up|XTRAVAGANT (NZ)|PURE EMOTION|PETER NOLAN
+PS|Trial|2026-11-12|OAKB|1050|BM0-70|1|10|0|3.7|-|Good|1:03.44|ANDREW STEAD|-
+PS|LastStarts|2026-04-22|MURB|900|BM56|11|12|0|8.7|7-7-5|Good|0:53.42|Alysha Warren|-
+PS|LastStarts|2026-04-10|MURB|900|BM56|4|16|0|4.4|7-9|Soft|0:53.86|Brooke King|-
+PS|LastStarts|2026-03-21|MORK|1000|BM62|12|12|0|8.5|7-7-6|Good|1:00.06|Will Price|Raced wide without cover throughout the event.
+PS|LastStarts|2026-03-07|MURB|1100|BM0-72|8|16|0|4.8|7-7-3|Good|1:06.28|Will Price|-
+PS|LastStarts|2026-02-21|MORK|1050|BM64|9|11|0|5.1|9-9-2|Good|1:02.54|Jackson Murphy|-
+PS|LastStarts|2026-02-07|MORK|1050|BM66|8|10|0|5.5|1-1-1|Good|1:00.97|Jackson Murphy|-
+PS|LastStarts|2025-03-10|MORK|1050|BM0-64|1|12|0|0.9|3-3-3|Good|1:00.45|Ben Price|-
+PS|LastStarts|2025-02-22|MORK|1050|BM64|4|10|0|1.9|4-4-4|Good|1:00.69|Ben Price|-
+PS|WinRun|2024-06-28|BALT|1000|BM58|1|11|0|0.8|5-5-5|Good|0:59.75|Fred Kersley|-
+MPH|6|2026-11-27T23:37:30Z
+FORM|10|SKADOOSH|4|Mare|11|1|4|0|140|false|eq|VALENTIA|VANDEHERE|RICHARD & CHANTELLE JOLLY
+PS|Trial|2026-11-10|MORK|600|JO|1|4|0|0.0|-|Soft|0:00.00|JAKE TOEROEK|-
+PS|LastStarts|2026-07-11|MORK|1250|BM64 FM|5|9|0|7.3|5-5-3|Heavy|1:22.38|Teagan Voorham|-
+PS|LastStarts|2026-06-27|MORK|1300|3YO BM66|8|11|0|5.4|10-10-10-9|Soft|1:21.07|Teagan Voorham|-
+PS|LastStarts|2026-06-06|MORK|1000|3YO BM64|3|7|0|1.7|7-7-7|Heavy|0:59.63|Teagan Voorham|-
+PS|Trial|2026-05-28|MORK|1000|OPEN|1|8|0|0.03|-|Good|1:05.05|TEAGAN VOORHAM|-
+PS|LastStarts|2026-05-02|MORK|1050|BM64 FM|11|11|0|12.3|9-9-11|Soft|1:03.66|Caitlyn Munro|Slow to begin.
+PS|LastStarts|2026-04-18|MORK|1000|3YO BM62|6|10|0|5.5|9-9-8|Good|0:58.25|Caitlyn Munro|-
+PS|Trial|2026-04-02|MORK|1000|OPEN|2|7|0|0.17|-|Good|1:00.75|CAITLYN MUNRO|-
+PS|LastStarts|2025-11-22|MORK|1200|3YO OPEN|6|9|0|1.7|9-9-7|Soft|1:10.39|Teagan Voorham|-
+PS|LastStarts|2025-11-08|MORK|1000|3YO+ MDN|1|8|0|1.1|5-5-4|Good|0:57.65|Teagan Voorham|-
+PS|LastStarts|2025-09-27|MORK|1000|3YO MDN|3|13|0|1.7|7-7-6|Good|0:58.80|Teagan Voorham|Reared on jumping away.
+MPH|6|2026-11-27T23:37:30Z
+FORM|11|DIRTY GOLD|3|Gelding|5|1|1|0|21|false|dn|DIRTY WORK|EXALTED GOLD|PETER & BELINDA BLANCH
+PS|LastStarts|2026-11-07|MORK|1000|BM0-64|8|10|0|7.1|5-5-4|Good|0:56.89|Jason Holder|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|1|7|0|0.37|-|Good|0:58.50|JASON HOLDER|-
+PS|Trial|2026-10-20|MORK|600|JO|1|6|0|0.0|-|Soft|0:00.00|JASON HOLDER|-
+PS|LastStarts|2026-07-11|MORK|1000|2YO CL1|3|7|0|3.2|3-3-1|Soft|1:02.25|Jason Holder|-
+PS|LastStarts|2026-07-01|MURB|900|2YO+ MDN|1|11|0|0.5|5-5-1|Heavy|0:53.23|Jason Holder|-
+PS|Trial|2026-06-16|MORK|600|JO|1|5|0|0.0|-|Heavy|0:00.00|JASON HOLDER|-
+PS|LastStarts|2026-05-06|MURB|1000|2YO+ MDN|4|11|0|4.3|9-9-9|Soft|0:59.25|Dom Tourneur|Slow to begin. Laid in under pressure in the straight.
+PS|LastStarts|2026-04-22|MURB|1100|2YO MDN|4|9|0|2.4|2-2-1|Good|1:04.97|Dom Tourneur|Began awkwardly and bumped Barnact.
+MPH|6|2026-11-27T23:37:30Z
+FORM|12|INHABIT|3|Filly|8|1|4|0|28|false|up|STAY INSIDE|JENGA|MICHAEL HICKMOTT
+PS|LastStarts|2026-10-31|MORK|1100|3YO BM68|4|8|-|1.4|1-1-2|Good|1:04.18|Shayleigh Ingelse|-
+PS|LastStarts|2026-10-17|MORK|1100|3YO BM66|3|6|-|1.5|1-1-1|Good|1:03.62|Shayleigh Ingelse|Hung out around the home turn.
+PS|LastStarts|2026-10-06|MILD|1000|3YO+ BM62|2|7|-|0.5|1-1-1|Good|0:58.86|Teagan Voorham|-
+PS|Trial|2026-09-14|MURB|600|JO|1|5|-|0.0|-|Good|0:00.00|JACOB OPPERMAN|-
+PS|LastStarts|2026-08-08|MORK|1050|3YO BM66|3|7|-|7.0|1-1-2|Soft|1:05.06|Todd Pannell|-
+PS|Trial|2026-06-15|MURB|1000|OPEN|1|8|-|0.67|-|Soft|1:00.73|TODD PANNELL|-
+PS|Trial|2026-05-28|MORK|800|OPEN|1|7|-|2.39|-|Good|0:48.31|TODD PANNELL|-
+PS|LastStarts|2026-01-17|GCST|1200|2YO LR|13|13|-|19.6|12-12-13|Good|1:13.03|Michael Rodd|Began awkwardly. Passing the 800m, shifted out whilst over-racing. Raced wide.
+PS|LastStarts|2026-01-10|GCST|1100|2YO OPEN F|9|10|-|6.3|2-2-2|Good|1:04.21|Todd Pannell|-
+PS|LastStarts|2025-12-06|MORK|1000|2YO OPEN|3|3|-|10.3|1-1-1|Good|1:00.55|Todd Pannell|-
+PS|LastStarts|2025-10-11|MURB|900|2YO OPEN|1|7|-|1.0|1-1|Good|0:52.39|Todd Pannell|-
+MPH|6|2026-11-27T23:38:16Z
+FORM|13|SCOOPED|4|Gelding|8|1|1|0|25|false|up|DERRYN|AMOUR CACHE|GORDON RICHARDS & DAMIEN MOYLE
+PS|LastStarts|2026-11-03|MORK|1050|3YO+ MDN CG|1|8|0|0.2|2-2-2|Good|1:01.64|Rochelle Milnes|-
+PS|LastStarts|2026-10-14|BLVA|1050|3YO+ MDN|4|7|0|2.7|2-2-2|Good|1:00.92|Taylor Johnstone|Laid in under pressure in the home straight.
+PS|LastStarts|2026-08-15|MORK|1000|3YO+ MDN|4|10|0|5.4|3-3-2|Heavy|1:01.90|Todd Pannell|Jumped away awkwardly.
+PS|LastStarts|2026-08-01|MORK|1000|CL2|6|10|0|1.5|5-5-4|Soft|1:00.19|Taylor Johnstone|-
+PS|LastStarts|2026-07-18|MORK|1000|3YO+ MDN|5|8|0|3.8|2-2-1|Soft|1:00.48|Taylor Johnstone|-
+PS|LastStarts|2026-07-08|MORK|1050|3YO+ MDN|2|13|0|1.3|1-1-3|Soft|1:04.22|Taylor Johnstone|-
+PS|LastStarts|2026-06-20|MORK|1050|3YO+ MDN|4|14|0|1.5|2-2-2|Heavy|1:04.97|Taylor Johnstone|Raced greenly under pressure in the straight.
+PS|Trial|2026-05-28|MORK|800|OPEN|2|7|0|0.24|-|Good|0:49.88|MATT CHADWICK|-
+PS|LastStarts|2025-12-27|MORK|1200|3YO MDN|7|9|0|5.1|1-1-1|Good|1:11.30|Alana Livesey|Laid out rounding the home turn and under pressure in the straight.
+PS|Trial|2025-12-16|MORK|600|JO|2|5|0|0.0|-|Good|0:00.00|ALANA LIVESEY|-
+PS|Trial|2025-09-18|MURB|1000|OPEN|3|5|0|0.38|-|Good|1:00.82|ALANA LIVESEY|-
+MPH|6|2026-11-27T23:38:16Z
+FORM|14|MYSTIC MIND|5|Mare|3|1|1|0|54|true|eq|NOSTRADAMUS|ON MY MIND|MARK W LEWIS
+PS|LastStarts|2026-10-05|GAWL|1100|CL1|3|9|-|1.4|2-2-2|Good|1:07.68|Will Price|-
+PS|LastStarts|2026-09-16|BLVA|1050|BM0-56 FM|1|12|-|0.1|2-2-2|Good|1:00.91|Will Price|-
+PS|Trial|2026-08-18|MORK|800|JO|5|6|-|0.0|-|Soft|-|WILL PRICE|-
+PS|Trial|2026-08-04|MORK|600|JO|1|5|-|0.0|-|Soft|-|DOM TOURNEUR|-
+PS|LastStarts|2026-05-13|GAWL|1100|2YO+ MDN FM|8|10|-|4.9|2-2-2|Soft|1:07.18|Dom Tourneur|Shortly after the start, shifted ground.
+PS|Trial|2026-05-07|MURB|800|MDN|4|8|-|2.01|-|Soft|0:52.43|ROCHELLE MILNES|-
+MPH|6|2026-11-27T23:38:16Z
+FORM|15|ECLAIR VITALITY|5|Gelding|22|3|7|0|31|true|eq|LORD KANALOA (JPN)|ECLAIR STARLIGHT|DAVID ALDRIDGE
+PS|LastStarts|2026-10-28|MURB|1000|BM56|8|11|0|4.3|6-6-7|Good|0:58.48|Caitlyn Munro|-
+PS|LastStarts|2026-10-03|-|1000|BM62|1|4|0|1.4|-|Good|0:57.77|Caitlyn Munro|-
+PS|LastStarts|2026-09-16|BLVA|1050|BM0-56 CG|4|9|0|4.5|5-5-5|Good|1:01.73|Connor Murtagh|-
+PS|LastStarts|2026-09-05|MILD|1008|3YO+ BM56|2|10|0|0.2|4-4-4|Soft|1:01.58|Neil Farley|-
+PS|Trial|2026-08-27|HALD|1000|BM0-70|2|7|0|0.1|-|Soft|1:01.58|CONNOR MURTAGH|-
+PS|Trial|2026-08-13|MURB|850|JO|6|6|0|0.0|-|Soft|0:00.00|CONNOR MURTAGH|-
+PS|LastStarts|2026-04-06|OAKB|1100|BM0-56|5|11|0|3.0|7-7-7|Soft|1:08.21|Connor Murtagh|Slow to begin.
+PS|LastStarts|2026-03-11|BLVA|1050|BM0-56|3|9|0|0.9|5-5-4|Good|1:02.21|Jason Holder|Blundered on jumping away.
+PS|LastStarts|2026-03-04|BLVA|1200|BM0-56|6|11|0|0.4|1-1-1|Soft|1:11.06|Campbell Rawiller|Bumped with Wadaana on jumping away and again shortly thereafter.
+PS|LastStarts|2026-02-14|MORK|1000|BM0-62|3|13|0|2.8|12-12-9|Good|0:57.31|Connor Murtagh|-
+PS|Trial|2025-12-11|MURB|850|OPEN|2|6|0|0.69|-|Good|0:49.27|STEPHANIE LACY|-
+PS|WinRun|2025-03-03|PMAC|1006|CL1|1|5|0|0.5|5-5-5|Good|0:59.17|Ben Looker|Laid inwards under pressure throughout the home straight.
+MPH|6|2026-11-27T23:38:16Z
+FORM|16|OLD TIME ROCK|9|Gelding|62|7|11|0|25|false|eq|PRIDE OF DUBAI|SARAH VEE|ANDREW CLARKEN
+PS|LastStarts|2026-11-03|MORK|1050|BM56|3|9|0|0.8|7-7-6|Good|1:01.15|Alysha Warren|-
+PS|LastStarts|2026-10-28|MURB|1000|BM56|3|11|0|1.5|3-3-3|Good|0:58.03|Noel Callow|-
+PS|LastStarts|2026-10-09|BALT|1000|3YO+ BM56|7|9|0|2.4|5-5-7|Good|0:59.32|John Allen|-
+PS|LastStarts|2026-09-20|MTGR|900|BM0-54|1|6|0|0.2|1-1-2|Soft|0:52.77|Harry Grace|-
+PS|LastStarts|2026-08-29|WRBL|1000|3YO+ BM0-56|6|7|0|3.2|2-2-2|Good|0:59.42|Will Gordon|-
+PS|Trial|2026-08-06|MURB|600|JO|1|5|0|0.0|-|Soft|0:00.00|TODD PANNELL|-
+PS|LastStarts|2026-05-24|BALT|1000|2YO+ BM62|9|10|0|7.4|2-2-1|Good|0:59.02|Dean Yendall|-
+PS|Trial|2026-05-07|MURB|1000|OPEN|2|9|0|1.28|-|Soft|1:00.85|ASHVIN GOINDASAMY|-
+PS|LastStarts|2026-04-22|MURB|900|BM56|6|12|0|4.9|3-3-3|Good|0:52.81|Campbell Rawiller|Bumped with She's Xtravagant on jumping away. Raced wide throughout the event.
+PS|LastStarts|2026-04-04|OAKB|1050|4YO+ BM0-66|10|15|0|4.8|3-3-4|Good|1:03.50|Harry Grace|-
+PS|Trial|2026-03-05|OAKB|1050|BM0-70|4|8|0|1.79|-|Good|1:03.73|ALYSHA WARREN|-
+PS|WinRun|2024-09-21|MORK|1000|BM0-64|1|10|0|0.2|1-1-1|Soft|0:58.93|Dakotah Keane|-
+MPH|7|2026-11-27T23:39:04Z
+FORM|1|SPANISH FOX|6|Gelding|22|5|7|0|168|true|up|TORONADO (IRE)|FOXLAGO|SARAH RUTTEN
+PS|Trial|2026-11-12|OAKB|1050|BM70+|1|5|0|0.97|-|Good|1:04.34|CONNOR MURTAGH|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|9|9|0|16.89|-|Good|0:58.60|Ms Maddi Cox|-
+PS|Trial|2026-10-19|MURB|600|JO|2|6|0|0.0|-|Good|0:00.00|CONNOR MURTAGH|-
+PS|LastStarts|2026-06-13|DARW|1200|OPEN|7|7|0|9.8|7-6|Good|1:09.63|Stan Tsaikos|-
+PS|LastStarts|2026-02-07|DOOM|1600|BM78|4|10|1|3.9|1-1-2-1|Good|1:36.55|Jasper Franklin|-
+PS|LastStarts|2026-01-28|EFRM|1600|CL5|3|8|2|1.6|1-3-3-3|Good|1:36.97|Jasper Franklin|Bumped with Mootessa shortly after the start.
+PS|LastStarts|2026-01-10|IPSH|1350|BM78|5|10|6|6.2|4-5-5|Good|1:19.60|Jasper Franklin|Raced wide.
+PS|LastStarts|2025-12-06|DOOM|1350|BM78|11|13|8|6.1|5-5-3|Good|1:19.37|Jasper Franklin|Blundered at the start. Raced wide for the majority.
+PS|LastStarts|2025-11-22|GCST|1200|OPEN|8|12|0|3.6|10-10-7|Soft|1:10.70|Brandon Lerena|Slow into stride.
+PS|LastStarts|2025-07-05|ROSE|1400|3YO+ BM78|8|13|0|4.9|2-2-2-2|Soft|1:26.44|Jace McMurray|-
+PS|LastStarts|2025-06-14|ROSE|1300|3YO+ BM78 CG|6|11|0|3.0|4-2-4-4|Soft|1:17.82|Jace McMurray|On straightening, shifted out to improve.
+PS|WinRun|2024-11-02|ROSE|1300|3YO+ BM78 CG|1|8|0|0.2|1-2-1-1|Good|1:17.38|Zac Wadick|-
+MPH|7|2026-11-27T23:39:04Z
+FORM|2|NICISH|6|Mare|36|6|15|0|70|true|eq|NICCONI|INISHMORE|PHILLIP & TOMMY STOKES
+PS|Trial|2026-10-29|MURB|800|OPEN|7|9|0|7.23|-|Good|0:49.07|Ms Madison Sanders|-
+PS|LastStarts|2026-09-19|MORK|1400|BM72|9|10|0|4.1|7-7-6-4|Good|1:25.51|Jordyn Weatherley|-
+PS|LastStarts|2026-09-05|MORK|1550|BM74|2|10|0|1.9|4-4-3-3|Soft|1:37.43|Brooke King|-
+PS|LastStarts|2026-08-15|MORK|1569|BM66|1|8|0|0.2|4-4-3-3|Heavy|1:40.41|Brooke King|-
+PS|LastStarts|2026-08-01|MORK|1561|BM68|2|10|0|0.9|4-4-4-3|Soft|1:37.96|Brooke King|Shifted in on jumping away, contacting Phineas.
+PS|LastStarts|2026-06-27|MORK|1250|4YO+ BM66|1|12|0|1.2|6-6-5|Soft|1:17.28|Brooke King|-
+PS|LastStarts|2026-06-06|MORK|1400|BM68|2|11|0|0.1|6-6-5|Heavy|1:26.56|Harry Grace|-
+PS|LastStarts|2026-05-23|MURB|1400|BM70|6|15|0|4.0|10-12-10-10|Soft|1:25.24|Harry Grace|Began awkwardly and lost ground.
+PS|LastStarts|2026-05-02|MORK|1200|3YO+ BM76|7|14|0|4.2|7-7-7|Soft|1:12.24|Jamie Melham|Had difficulty obtaining clear ground from the 300m to the 200m.
+PS|Trial|2026-02-12|MORK|1050|BM0-70|2|11|0|0.44|-|Good|1:04.82|DOM TOURNEUR|-
+PS|Trial|2026-01-27|MORK|600|JO|6|6|0|0.0|-|Good|0:00.00|JACOB OPPERMAN|-
+PS|WinRun|2025-09-27|MORK|1250|BM0-64|1|11|0|0.3|8-8-9|Good|1:14.48|Jacob Opperman|-
+MPH|7|2026-11-27T23:39:04Z
+FORM|3|VEXATIOUS DANCER|6|Mare|38|9|7|0|77|true|up|HUALALAI|CHOOSE TO DANCE|NICOLE IRWIN
+PS|LastStarts|2026-09-12|MORK|1100|BM68|1|10|0|0.4|2-2-2|Good|1:04.89|Campbell Rawiller|Inclined to shift about under pressure in the straight.
+PS|LastStarts|2026-09-05|MORK|1000|BM74|3|7|0|1.4|4-4-4|Soft|1:00.51|Stacey Metcalfe|Jumped away awkwardly.
+PS|LastStarts|2026-08-08|MORK|1100|4YO+ BM72|9|10|0|3.8|6-6-6|Soft|1:08.91|Connor Murtagh|-
+PS|LastStarts|2026-07-18|MORK|1000|BM76|2|12|0|0.3|7-7-7|Soft|0:59.38|Connor Murtagh|-
+PS|LastStarts|2026-03-21|MORK|1250|BM72|9|12|0|3.1|3-3-3|Good|1:15.53|Jackson Murphy|Raced wide without cover throughout the event.
+PS|LastStarts|2026-03-07|MURB|1400|BM82|6|9|0|6.4|4-4-4-3|Good|1:25.22|Taylor Johnstone|-
+PS|LastStarts|2026-02-14|MORK|1400|BM72|8|14|0|3.1|14-13-13-12|Good|1:24.06|Campbell Rawiller|Near the 200m had difficulty obtaining clear running for a short distance.
+PS|LastStarts|2026-02-07|MORK|1100|BM78|4|9|0|1.3|5-5-5|Good|1:03.75|Connor Murtagh|-
+PS|WinRun|2025-11-22|MORK|1200|BM70|1|13|0|1.1|4-4-5|Soft|1:10.94|Campbell Rawiller|Inclined to shift about under pressure in the straight.
+PS|Trial|2024-04-05|MURB|1000|OPEN|1|8|0|0.1|-|Good|1:00.07|CALLAN MURRAY|-
+PS|Trial|2023-10-26|MORK|1050|OPEN|2|11|0|0.5|-|Good|1:04.97|CALLAN MURRAY|-
+MPH|7|2026-11-27T23:39:04Z
+FORM|4|O'TYCOON|7|Gelding|44|10|8|0|7|true|up|WRITTEN TYCOON|MISS BALLANTINE|SCOTT WHITTLE
+PS|LastStarts|2026-11-21|MORK|1100|BM70|13|14|0|6.1|3-3-4|Good|1:05.35|Caitlin Tootell|-
+PS|LastStarts|2026-11-01|NARA|1100|BM66|3|9|0|1.3|2-2-1|Good|1:04.92|Jade Smith|-
+PS|LastStarts|2026-07-12|PRPK|1100|OPEN|6|6|0|4.3|4-4|Good|1:03.77|Hannah Le Blanc|-
+PS|LastStarts|2026-05-04|PRPK|1000|OPEN|5|7|0|6.0|4|Good|0:57.08|Paul Denton|Commenced awkwardly and bumped. Carried outwards over the concluding stages.
+PS|LastStarts|2026-05-02|PRPK|1200|OPEN|5|12|0|3.2|6-7|Good|1:08.08|Paul Denton|Bumped with another runner at the start.
+PS|LastStarts|2026-04-18|PRPK|1100|BM76|2|9|0|0.8|1-1|Good|1:03.42|Paul Denton|Raced wide early and middle stages before obtaining the lead passing the 650m.
+PS|LastStarts|2026-04-11|PRPK|1100|OPEN|4|6|0|5.0|2-3|Good|1:03.48|Paul Denton|Began awkwardly.
+PS|LastStarts|2026-03-28|PRPK|1200|OPEN|4|5|0|4.2|2-2|Good|1:09.04|Paul Denton|Began awkwardly.
+PS|WinRun|2025-10-26|PRPK|1100|OPEN|1|6|0|3.0|1-1|Good|1:03.42|Lek Maloney|-
+PS|Trial|2023-12-29|ROSE|900|OPEN|2|10|0|0.1|-|Soft|0:54.08|RACHEL KING|-
+PS|Trial|2023-12-18|ROSE|900|OPEN|1|6|0|0.23|-|Good|0:54.87|TOMMY BERRY|-
+PS|Trial|2023-05-19|ROSE|900|OPEN|1|10|0|0.03|-|Soft|0:54.55|MS RACHEL KING|-
+MPH|7|2026-11-27T23:39:50Z
+FORM|5|THOROS OF MYR|6|Gelding|26|8|7|0|64|false|up|FROSTED (USA)|ARACHNE|ANDREW CLARKEN
+PS|LastStarts|2026-09-25|LUAN|1120|BM76|9|9|0|23.0|1-1-2|Good|1:10.80|Hayley Spitse|Raced prominently until the 400m before giving ground rapidly.
+PS|LastStarts|2026-09-09|DVPT|1150|OPEN|3|6|0|2.9|1-1-1|Good|1:07.71|Erica Byrne Burke|-
+PS|LastStarts|2026-08-26|DVPT|1150|BM76|2|6|0|1.8|1-1-1|Good|1:07.39|Kirra-Lee Lane|-
+PS|Trial|2026-07-28|DVPT|1009|OPEN|2|4|0|1.0|-|Good|0:58.58|LUKE P DEMPSEY|-
+PS|LastStarts|2026-06-14|DVPT|1009|OPEN|7|7|0|9.5|2-2-1|Good|1:00.25|Bree Temple|-
+PS|LastStarts|2026-05-31|DVPT|1009|BM72|1|9|0|1.3|1-1-1|Good|0:59.32|Bree Temple|-
+PS|LastStarts|2026-05-03|DVPT|1150|BM72|3|7|0|5.8|1-1-1|Good|1:09.21|Christopher Pang|-
+PS|LastStarts|2026-04-17|LUAN|1120|BM76|5|5|0|3.8|1-1-1|Good|1:08.39|Christopher Pang|Jumped awkwardly.
+PS|Trial|2026-03-31|LUAN|800|OPEN|1|6|0|1.0|-|Good|0:46.93|Akimasa Phanthura|-
+PS|Trial|2026-03-17|MOWB|800|OPEN|1|5|0|0.5|-|Soft|0:46.76|Akimasa Phanthura|-
+PS|LastStarts|2025-11-12|LUAN|1100|CL6|1|4|0|0.5|1-1-1|Good|1:04.16|Erica Byrne Burke|-
+PS|WinRun|2025-10-03|LUAN|1100|BM72|1|7|0|0.1|1-1-1|Soft|1:04.51|Christopher Pang|-
+MPH|7|2026-11-27T23:39:50Z
+FORM|6|DEEPFLOAT DIVA|6|Gelding|28|5|10|0|14|false|up|DEEP FIELD|DIVA FOREVER|RICHARD & CHANTELLE JOLLY
+PS|LastStarts|2026-11-14|MORK|1000|BM70|4|7|-|3.5|3-3-7|Soft|0:58.30|Jake Toeroek|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|1|10|-|0.24|-|Good|0:57.93|JAKE TOEROEK|-
+PS|LastStarts|2026-09-05|MORK|1000|BM74|4|7|-|5.9|2-2-3|Soft|1:01.25|Jake Toeroek|-
+PS|LastStarts|2026-08-15|MORK|1000|BM78|2|7|-|0.7|3-3-2|Heavy|1:00.78|Noel Callow|-
+PS|LastStarts|2026-08-08|MORK|1100|4YO+ BM72|4|10|-|1.8|1-1-1|Soft|1:08.57|Jake Toeroek|-
+PS|LastStarts|2026-07-25|MORK|1100|4YO+ OPEN|3|6|-|0.9|2-2-2|Soft|1:07.17|Harry Grace|-
+PS|LastStarts|2026-06-27|MORK|1000|BM82|3|10|-|2.5|4-4-4|Soft|0:59.57|Harry Grace|-
+PS|LastStarts|2026-06-06|MORK|1000|BM70|4|9|-|2.6|6-6-7|Heavy|1:00.14|Rochelle Milnes|Began awkwardly and lost ground.
+PS|Trial|2026-05-28|MORK|1000|BM70+|2|10|-|1.44|-|Good|1:02.87|JACKSON MURPHY|-
+PS|LastStarts|2026-05-16|MORK|1000|BM78|10|11|-|4.9|6-6-6|Good|0:58.58|Todd Pannell|-
+PS|Trial|2026-04-10|FLEM|800|JO|3|6|-|0.0|-|-|0:47.34|LACHLAN NEINDORF|-
+PS|WinRun|2025-05-31|MORK|1050|BM76|1|12|-|0.1|8-8-8|Soft|1:02.04|Jake Toeroek|-
+MPH|7|2026-11-27T23:39:50Z
+FORM|7|HIGH ON SUGAR|6|Gelding|30|5|9|0|182|true|dn|OVERSHARE|A SWEETEE|WAYNE FRANCIS & GLEN KENT
+PS|Trial|2026-11-16|STBN|900|JO|1|5|0|0.0|-|Good|0:00.00|CONNOR MURTAGH|-
+PS|Trial|2026-10-29|MURB|1000|OPEN|2|10|0|0.24|-|Good|0:57.93|JADE DOYLE|-
+PS|Trial|2026-10-15|BLVA|1000|BM70+|2|2|0|0.49|-|Good|0:58.08|CONNOR MURTAGH|-
+PS|LastStarts|2026-05-30|MORK|1050|BM78|4|9|0|3.7|5-5-3|Soft|1:04.29|Tala Hutchinson|Raced wide without cover throughout the event.
+PS|LastStarts|2026-05-02|MORK|1200|3YO+ BM76|11|14|0|6.8|4-4-4|Soft|1:12.65|Ben Melham|-
+PS|LastStarts|2026-03-28|MORK|1100|4YO+ BM70|1|11|0|0.9|5-5-5|Good|1:04.75|Jake Toeroek|-
+PS|LastStarts|2026-03-07|MURB|1100|BM0-72|4|16|0|0.5|14-14-12|Good|1:05.61|Jake Toeroek|-
+PS|LastStarts|2026-02-14|MORK|1250|BM66|1|8|0|0.2|4-4-3|Good|1:13.76|Jake Toeroek|-
+PS|LastStarts|2026-01-31|MORK|1200|BM70|7|13|0|2.0|8-8-8|Good|1:09.96|Todd Pannell|-
+PS|LastStarts|2025-12-13|GAWL|1200|BM64|1|10|0|0.7|7-7-7|Good|1:10.65|Jake Toeroek|Held up from the vicinity of the 400m until inside the 200m.
+PS|LastStarts|2025-11-15|MORK|1000|BM0-64|9|13|0|4.0|12-12-11|Good|0:58.67|Campbell Rawiller|-
+PS|WinRun|2024-09-04|MURB|1400|CL1|1|12|0|0.7|2-2-2|Good|1:24.92|Kayla Crowther|-
+MPH|7|2026-11-27T23:40:37Z
+FORM|9|BARDIGRUB|4|Mare|10|3|5|0|126|false|dn|HEADWATER|RAINMOTH|RICHARD & CHANTELLE JOLLY
+PS|Trial|2026-11-24|MORK|600|JO|1|4|-|0.0|-|Good|-|TEAGAN VOORHAM|-
+PS|Trial|2026-11-10|MORK|600|JO|3|6|-|0.0|-|Soft|-|TEAGAN VOORHAM|-
+PS|LastStarts|2026-07-25|MORK|1050|2-3YO LR|3|10|-|4.6|3-3-2|Soft|1:04.33|Rochelle Milnes|Contacted on jumping away. Laid out under pressure in the straight.
+PS|LastStarts|2026-07-11|MORK|1000|3YO BM66|1|8|-|0.5|1-1-1|Heavy|1:02.88|Teagan Voorham|-
+PS|LastStarts|2026-06-27|MORK|1000|BM62|1|14|-|0.3|1-1-2|Soft|0:59.85|Teagan Voorham|-
+PS|LastStarts|2026-06-06|MORK|1000|3YO BM64|2|7|-|0.2|3-3-2|Heavy|0:59.36|Taylor Johnstone|-
+PS|Trial|2026-05-28|MORK|800|OPEN|1|7|-|0.24|-|Good|0:49.88|TEAGAN VOORHAM|-
+PS|LastStarts|2026-03-09|MORK|1050|3YO BM66|5|6|-|5.1|3-3-3|Good|1:01.66|Teagan Voorham|Raced keenly in the early and middle stages of the event.
+PS|LastStarts|2026-02-14|MORK|1000|3YO+ MDN|1|10|-|0.7|2-2-1|Good|0:57.27|Teagan Voorham|Laid out under pressure in the straight.
+PS|LastStarts|2026-01-10|MURB|1100|3YO+ MDN|2|11|-|0.3|1-1-1|Good|1:05.98|Caitlyn Munro|-
+PS|LastStarts|2025-12-20|MURB|1000|3YO+ MDN|2|8|-|0.2|3-3-2|Good|0:58.48|Teagan Voorham|-
+MPH|7|2026-11-27T23:40:37Z
+FORM|10|BRISTLER|7|Gelding|40|6|13|0|14|false|up|ZEBEDEE (GB)|JAALIPPY|GORDON RICHARDS & DAMIEN MOYLE
+PS|LastStarts|2026-11-14|MORK|1000|BM70|6|7|-|5.9|1-1-1|Soft|0:58.66|Isaac Sit|Began awkwardly.
+PS|Trial|2026-10-29|MURB|800|OPEN|3|10|-|1.49|-|Good|0:48.77|Isaac Sit|-
+PS|LastStarts|2026-09-26|MURB|1000|BM74|11|15|-|6.0|1-1-4|Good|0:58.64|Isaac Sit|Laid in under pressure in the straight.
+PS|LastStarts|2026-09-05|MORK|1000|BM74|1|7|-|1.0|1-1-1|Soft|1:00.29|Isaac Sit|Jumped away awkwardly.
+PS|LastStarts|2026-08-22|MORK|1000|BM70|8|11|-|8.7|3-3-2|Soft|1:01.66|Isaac Sit|-
+PS|LastStarts|2026-08-15|MORK|1000|BM78|4|7|-|1.5|1-1-1|Heavy|1:00.90|Isaac Sit|-
+PS|LastStarts|2026-08-01|MORK|1000|BM68|4|10|-|4.3|1-1-1|Soft|1:00.57|Isaac Sit|-
+PS|LastStarts|2026-07-18|MORK|1000|BM76|7|12|-|3.2|4-3-6|Soft|0:59.83|Isaac Sit|-
+PS|LastStarts|2026-04-18|MORK|1000|BM70|8|9|-|9.5|3-3-6|Good|0:58.84|Taylor Johnstone|-
+PS|WinRun|2026-03-14|MORK|1000|BM70|1|8|-|0.2|1-1-1|Good|0:57.76|Taylor Johnstone|Laid out under pressure in the straight.
+PS|Trial|2024-08-01|MORK|1050|OPEN|3|7|-|0.4|-|Soft|1:05.34|Jade Doyle|-
+PS|Trial|2024-07-11|BLVA|1050|BM70+|4|6|-|2.3|-|Soft|1:04.54|Jade Doyle|-
+MPH|7|2026-11-27T23:40:37Z
+FORM|11|SUPER ALANA|7|Mare|40|7|11|0|42|false|eq|BELARDO (IRE)|SUPER TROUPER (NZ)|WAYNE FRANCIS & GLEN KENT
+PS|Trial|2026-11-16|STBN|600|JO|1|3|-|0.0|-|Good|-|JAKE TOEROEK|-
+PS|LastStarts|2026-10-17|MORK|1050|BM80|4|13|-|0.6|2-2-1|Good|1:00.29|Rochelle Milnes|-
+PS|Trial|2026-09-29|STBN|600|JO|2|3|-|0.0|-|Good|-|ROCHELLE MILNES|-
+PS|LastStarts|2026-06-27|MORK|1000|BM82|5|10|-|4.7|1-1-3|Soft|0:59.90|Zac Spain|-
+PS|LastStarts|2026-06-13|MURB|1000|BM84|5|7|-|4.6|3-3-3|Soft|0:59.17|Taylor Johnstone|-
+PS|LastStarts|2026-06-06|MORK|1000|BM70|8|9|-|4.5|1-1-1|Heavy|1:00.45|Tala Hutchinson|-
+PS|Trial|2026-05-28|MORK|800|OPEN|3|7|-|0.33|-|Good|-|TALA HUTCHINSON|-
+PS|LastStarts|2026-05-16|MORK|1000|BM78|4|11|-|2.6|3-4-3|Good|0:58.24|Jacob Opperman|-
+PS|LastStarts|2025-11-22|MORK|1200|OPEN|9|10|-|4.0|1-1-1|Soft|1:11.89|Isaac Sit|-
+PS|LastStarts|2025-11-08|MORK|1000|BM68|1|14|-|0.7|1-1-1|Good|0:57.59|Isaac Sit|-
+PS|LastStarts|2025-11-01|MORK|1100|BM82|7|8|-|2.9|2-2-3|Good|1:03.93|Rochelle Milnes|Raced keenly in the early and middle stages of the event.
+PS|WinRun|2025-08-23|MORK|1000|BM72|1|8|-|2.0|1-1-1|Soft|0:58.02|Todd Pannell|-
+MPH|7|2026-11-27T23:40:37Z
+FORM|12|BOYD|4|Gelding|14|3|5|0|14|false|up|I AM INVINCIBLE|ISOLA BLU|STEPHEN THEODORE
+PS|LastStarts|2026-11-14|MORK|1000|BM70|3|7|-|2.0|5-5-4|Soft|0:58.06|Brad Rawiller|Held up for clear running from near the 400m until passing the 200m.
+PS|LastStarts|2026-10-24|MORK|1050|BM0-68|2|11|-|0.1|1-1-1|Soft|1:00.78|Jordyn Weatherley|Bumped with Over Yonder at the start.
+PS|LastStarts|2026-10-10|MORK|1050|BM0-68|4|11|-|0.7|2-2-1|Good|1:00.18|Harry Grace|Raced keenly during the early and middle stages.
+PS|LastStarts|2026-09-26|MURB|1000|BM74|2|15|-|1.3|4-4-1|Good|0:57.90|Harry Grace|-
+PS|LastStarts|2026-09-12|MORK|1050|CL2|1|10|-|1.1|1-1-1|Good|1:01.33|Harry Grace|-
+PS|LastStarts|2026-07-11|MORK|1000|3YO BM66|6|8|-|4.6|6-6-6|Heavy|1:03.64|Brad Rawiller|-
+PS|LastStarts|2026-06-26|BALT|1000|BM62|1|7|-|1.8|4-4-1|Good|0:59.50|Brad Rawiller|-
+PS|LastStarts|2026-06-07|SHIL|975|MDN|1|7|-|0.5|1-1-1|Soft|0:56.74|Harry Grace|-
+PS|Trial|2026-03-10|PAKM|800|JO|4|7|-|0.0|-|-|0:48.31|LUKE NOLEN|-
+PS|Trial|2026-03-03|PAKM|800|JO|4|7|-|0.0|-|-|0:48.86|Ms Shakira Pearson|-
+PS|Trial|2025-09-02|PAKM|800|JO|2|8|-|0.0|-|-|0:50.40|LUKE NOLEN|-
+MPH|7|2026-11-27T23:41:44Z
+FORM|13|TOBIKKO|4|Gelding|8|1|5|0|14|false|eq|HELLBENT|ROOI ROE|PHILLIP & TOMMY STOKES
+PS|LastStarts|2026-11-14|MORK|1000|CL2|2|10|0|2.2|4-4-4|Good|0:57.51|Teo Nugent|-
+PS|Trial|2026-10-29|MURB|800|OPEN|2|10|0|0.75|-|Good|0:48.77|NOEL CALLOW|-
+PS|LastStarts|2026-07-25|MORK|1100|BM0-64|4|11|0|3.8|10-10-7|Soft|1:08.80|Brooke King|-
+PS|LastStarts|2026-07-11|MORK|1000|3YO BM66|2|8|0|0.5|5-5-4|Heavy|1:02.95|Harry Grace|-
+PS|LastStarts|2026-06-27|MORK|1000|BM62|2|14|0|0.3|8-8-7|Soft|0:59.89|Harry Grace|Held up and unable to improve from near the 500m until passing the 300m.
+PS|LastStarts|2026-06-13|MURB|1100|CL1|4|13|0|0.6|8-8-7|Soft|1:06.01|Harry Grace|Raced keenly in the early and middle stages of the event.
+PS|LastStarts|2026-05-23|MURB|1100|3YO BM68|3|12|0|1.9|10-10-7|Soft|1:03.89|Kayla Crowther|-
+PS|Trial|2026-05-07|MURB|800|OPEN|2|6|0|0.78|-|Soft|0:51.66|JACOB OPPERMAN|-
+PS|Trial|2026-04-16|BLVA|1000|BM0-70|2|8|0|2.99|-|Good|0:59.58|JACOB OPPERMAN|-
+PS|LastStarts|2025-12-20|MURB|1000|3YO+ MDN|1|8|0|0.2|8-8-3|Good|0:58.45|Jacob Opperman|-
+PS|LastStarts|2025-11-29|MORK|1000|3YO+ MDN|3|12|0|0.6|12-12-9|Soft|0:58.58|Jacob Opperman|Jumped away awkwardly and slow into stride.
+MPH|7|2026-11-27T23:41:44Z
+FORM|14|BLANC VISAGE|6|Mare|26|3|6|0|21|false|eq|PARIAH|BRAVE JOURNEY|PETER & BELINDA BLANCH
+PS|LastStarts|2026-11-07|MORK|1000|BM0-64|2|10|-|5.0|8-8-8|Good|0:56.56|Todd Pannell|Began awkwardly.
+PS|LastStarts|2026-10-23|GAWL|1100|BM64|4|9|-|0.8|7-7-6|Good|1:05.16|Teagan Voorham|Laid outward rounding the home turn.
+PS|LastStarts|2026-10-10|MORK|1050|BM0-68|6|11|-|2.6|8-8-10|Good|1:00.48|Teagan Voorham|Jumped awkwardly. Laid out rounding the home turn.
+PS|LastStarts|2026-09-26|MURB|1100|BM0-64|2|12|-|0.1|7-7-7|Good|1:03.73|Teagan Voorham|-
+PS|Trial|2026-09-15|MORK|600|JO|1|6|-|0.0|-|Good|-|TEAGAN VOORHAM|-
+PS|LastStarts|2026-05-23|MURB|1100|4YO+ BM68|13|16|-|7.6|12-12-10|Soft|1:05.20|Teagan Voorham|-
+PS|Trial|2026-05-07|MURB|800|OPEN|1|7|-|0.93|-|Soft|0:51.57|TEAGAN VOORHAM|-
+PS|LastStarts|2026-03-28|MORK|1100|4YO+ BM70|6|11|-|1.7|6-6-7|Good|1:05.01|Teagan Voorham|Raced keenly in the early and middle stages of the event.
+PS|LastStarts|2026-03-07|MURB|1100|BM0-72|3|16|-|0.2|12-12-14|Good|1:05.56|Teagan Voorham|Laid in under pressure for the majority of the straight.
+PS|LastStarts|2026-02-21|MORK|1050|BM64|4|11|-|1.6|8-8-6|Good|1:01.98|Teagan Voorham|Jumped away awkwardly.
+PS|WinRun|2026-01-03|GAWL|1107|CL2|1|8|-|1.9|8-8-7|Good|1:04.52|Teagan Voorham|-
+PS|Trial|2025-12-09|MORK|600|JO|1|4|-|0.0|-|Good|-|TEAGAN VOORHAM|-
