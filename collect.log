@@ -1,0 +1,1083 @@
+2026-11-26T04:48:01Z fetching posts modified after 2022-10-01T00:00:00 | versions held 0
+2026-11-26T04:48:04Z page 1/1: 58 posts, new versions so far 46
+2026-11-26T04:48:04Z done | pages 1 | new versions 46 | posts held 46
+2026-11-26T04:49:48Z fetching posts modified after 2026-11-23T03:02:27 | versions held 46
+2026-11-26T04:49:49Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-26T04:49:51Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 9
+2026-11-26T04:49:56Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 67
+2026-11-26T04:50:01Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 113
+2026-11-26T04:50:07Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 132
+2026-11-26T04:50:13Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 150
+2026-11-26T04:50:18Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 160
+2026-11-26T04:50:24Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 174
+2026-11-26T04:50:29Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 194
+2026-11-26T04:50:35Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 217
+2026-11-26T04:50:40Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 245
+2026-11-26T04:50:46Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 269
+2026-11-26T04:50:51Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 283
+2026-11-26T04:50:56Z {'search': 'late gear change'} page 12/12: 78 posts, new versions so far 290
+2026-11-26T04:51:00Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 309
+2026-11-26T04:51:05Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 315
+2026-11-26T04:51:09Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 317
+2026-11-26T04:51:15Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 320
+2026-11-26T04:51:20Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 323
+2026-11-26T04:51:25Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 325
+2026-11-26T04:51:31Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 328
+2026-11-26T04:51:36Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 333
+2026-11-26T04:51:41Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 336
+2026-11-26T04:51:46Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 340
+2026-11-26T04:51:51Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 351
+2026-11-26T04:51:56Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 356
+2026-11-26T04:52:01Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 357
+2026-11-26T04:52:06Z {'search': 'gear change'} page 14/14: 97 posts, new versions so far 361
+2026-11-26T04:52:11Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 361
+2026-11-26T04:52:16Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 444
+2026-11-26T04:52:20Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 527
+2026-11-26T04:52:24Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 607
+2026-11-26T04:52:29Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 684
+2026-11-26T04:52:34Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 769
+2026-11-26T04:52:38Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 845
+2026-11-26T04:52:42Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 925
+2026-11-26T04:52:47Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 999
+2026-11-26T04:52:51Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 1068
+2026-11-26T04:52:56Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 1142
+2026-11-26T04:53:01Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 1208
+2026-11-26T04:53:06Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 1279
+2026-11-26T04:53:10Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 1365
+2026-11-26T04:53:15Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 1439
+2026-11-26T04:53:20Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 1513
+2026-11-26T04:53:24Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 1588
+2026-11-26T04:53:29Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 1648
+2026-11-26T04:53:33Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 1714
+2026-11-26T04:53:38Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 1784
+2026-11-26T04:53:42Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 1823
+2026-11-26T04:53:46Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 1824
+2026-11-26T04:53:50Z {'categories': 289} page 1/37: 100 posts, new versions so far 1829
+2026-11-26T04:53:53Z {'categories': 289} page 2/37: 100 posts, new versions so far 1843
+2026-11-26T04:53:57Z {'categories': 289} page 3/37: 100 posts, new versions so far 1853
+2026-11-26T04:54:00Z {'categories': 289} page 4/37: 100 posts, new versions so far 1857
+2026-11-26T04:54:04Z {'categories': 289} page 5/37: 100 posts, new versions so far 1867
+2026-11-26T04:54:07Z {'categories': 289} page 6/37: 100 posts, new versions so far 1882
+2026-11-26T04:54:11Z {'categories': 289} page 7/37: 100 posts, new versions so far 1882
+2026-11-26T04:54:14Z {'categories': 289} page 8/37: 100 posts, new versions so far 1889
+2026-11-26T04:54:17Z {'categories': 289} page 9/37: 100 posts, new versions so far 1899
+2026-11-26T04:54:20Z {'categories': 289} page 10/37: 100 posts, new versions so far 1915
+2026-11-26T04:54:24Z {'categories': 289} page 11/37: 100 posts, new versions so far 1922
+2026-11-26T04:54:27Z {'categories': 289} page 12/37: 100 posts, new versions so far 1928
+2026-11-26T04:54:31Z {'categories': 289} page 13/37: 100 posts, new versions so far 1935
+2026-11-26T04:54:34Z {'categories': 289} page 14/37: 100 posts, new versions so far 1939
+2026-11-26T04:54:38Z {'categories': 289} page 15/37: 100 posts, new versions so far 1945
+2026-11-26T04:54:42Z {'categories': 289} page 16/37: 100 posts, new versions so far 1955
+2026-11-26T04:54:45Z {'categories': 289} page 17/37: 100 posts, new versions so far 1959
+2026-11-26T04:54:48Z {'categories': 289} page 18/37: 100 posts, new versions so far 1965
+2026-11-26T04:54:52Z {'categories': 289} page 19/37: 100 posts, new versions so far 1968
+2026-11-26T04:54:56Z {'categories': 289} page 20/37: 100 posts, new versions so far 1975
+2026-11-26T04:54:59Z {'categories': 289} page 21/37: 100 posts, new versions so far 1977
+2026-11-26T04:55:02Z {'categories': 289} page 22/37: 100 posts, new versions so far 1979
+2026-11-26T04:55:06Z {'categories': 289} page 23/37: 100 posts, new versions so far 1987
+2026-11-26T04:55:10Z {'categories': 289} page 24/37: 100 posts, new versions so far 1994
+2026-11-26T04:55:14Z {'categories': 289} page 25/37: 100 posts, new versions so far 1996
+2026-11-26T04:55:17Z {'categories': 289} page 26/37: 100 posts, new versions so far 2000
+2026-11-26T04:55:21Z {'categories': 289} page 27/37: 100 posts, new versions so far 2003
+2026-11-26T04:55:24Z {'categories': 289} page 28/37: 100 posts, new versions so far 2007
+2026-11-26T04:55:28Z {'categories': 289} page 29/37: 100 posts, new versions so far 2012
+2026-11-26T04:55:32Z {'categories': 289} page 30/37: 100 posts, new versions so far 2013
+2026-11-26T04:55:35Z {'categories': 289} page 31/37: 100 posts, new versions so far 2017
+2026-11-26T04:55:39Z {'categories': 289} page 32/37: 100 posts, new versions so far 2018
+2026-11-26T04:55:43Z {'categories': 289} page 33/37: 100 posts, new versions so far 2025
+2026-11-26T04:55:47Z {'categories': 289} page 34/37: 100 posts, new versions so far 2028
+2026-11-26T04:55:51Z {'categories': 289} page 35/37: 100 posts, new versions so far 2033
+2026-11-26T04:55:54Z {'categories': 289} page 36/37: 100 posts, new versions so far 2051
+2026-11-26T04:55:58Z {'categories': 289} page 37/37: 25 posts, new versions so far 2053
+2026-11-26T04:56:01Z {'categories': 555} page 1/1: 12 posts, new versions so far 2054
+2026-11-26T04:56:04Z done | pages 87 | new versions 2054 | posts held 2100
+2026-11-26T04:56:25Z fetching posts modified after 2022-10-01T00:00:00 | versions held 2100
+2026-11-26T04:56:26Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-26T04:56:28Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T04:56:33Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-26T04:56:39Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-26T04:56:44Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-26T04:56:50Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-26T04:56:55Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-26T04:57:01Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-26T04:57:06Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-26T04:57:11Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-26T04:57:17Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-26T04:57:22Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-26T04:57:27Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-26T04:57:33Z {'search': 'late gear change'} page 12/12: 78 posts, new versions so far 0
+2026-11-26T04:57:38Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-26T04:57:43Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-26T04:57:49Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-26T04:57:53Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-26T04:57:58Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-26T04:58:04Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-26T04:58:09Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-26T04:58:15Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-26T04:58:20Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-26T04:58:24Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-26T04:58:29Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-26T04:58:34Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-26T04:58:40Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-26T04:58:45Z {'search': 'gear change'} page 14/14: 97 posts, new versions so far 0
+2026-11-26T04:58:50Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T04:58:54Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-26T04:58:59Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-26T04:59:04Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-26T04:59:08Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-26T04:59:13Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-26T04:59:17Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-26T04:59:22Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-26T04:59:26Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-26T04:59:31Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-26T04:59:36Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-26T04:59:40Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-26T04:59:45Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-26T04:59:50Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-26T04:59:55Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-26T04:59:59Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-26T05:00:04Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-26T05:00:08Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-26T05:00:13Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-26T05:00:18Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-26T05:00:23Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-26T05:00:27Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-26T05:00:31Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-26T05:00:35Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-26T05:00:38Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-26T05:00:42Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-26T05:00:45Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-26T05:00:49Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-26T05:00:52Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-26T05:00:56Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-26T05:01:00Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-26T05:01:03Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-26T05:01:07Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-26T05:01:11Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-26T05:01:14Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-26T05:01:18Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-26T05:01:22Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-26T05:01:25Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-26T05:01:29Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-26T05:01:32Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-26T05:01:36Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-26T05:01:40Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-26T05:01:43Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-26T05:01:46Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-26T05:01:50Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-26T05:01:53Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-26T05:01:57Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-26T05:02:01Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-26T05:02:04Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-26T05:02:07Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-26T05:02:11Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-26T05:02:14Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-26T05:02:18Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-26T05:02:22Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-26T05:02:26Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-26T05:02:30Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-26T05:02:33Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-26T05:02:36Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-26T05:02:40Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-26T05:02:43Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-26T05:02:47Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-26T06:01:46Z fetching posts modified after 2026-11-23T03:02:27 | versions held 2100
+2026-11-26T06:01:47Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-26T06:01:49Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 1
+2026-11-26T06:01:54Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 1
+2026-11-26T06:01:59Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 1
+2026-11-26T06:02:04Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 1
+2026-11-26T06:02:09Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 1
+2026-11-26T06:02:14Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 1
+2026-11-26T06:02:20Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 1
+2026-11-26T06:02:26Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 1
+2026-11-26T06:02:31Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 1
+2026-11-26T06:02:36Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 1
+2026-11-26T06:02:41Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 1
+2026-11-26T06:02:46Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 1
+2026-11-26T06:02:52Z {'search': 'late gear change'} page 12/12: 78 posts, new versions so far 1
+2026-11-26T06:02:56Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 1
+2026-11-26T06:03:01Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 1
+2026-11-26T06:03:06Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 1
+2026-11-26T06:03:12Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 1
+2026-11-26T06:03:17Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 1
+2026-11-26T06:03:23Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 1
+2026-11-26T06:03:28Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 1
+2026-11-26T06:03:33Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 1
+2026-11-26T06:03:38Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 1
+2026-11-26T06:03:43Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 1
+2026-11-26T06:03:49Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 1
+2026-11-26T06:03:54Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 1
+2026-11-26T06:03:59Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 1
+2026-11-26T06:04:04Z {'search': 'gear change'} page 14/14: 97 posts, new versions so far 1
+2026-11-26T06:04:08Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 1
+2026-11-26T06:04:13Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 1
+2026-11-26T06:04:18Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 1
+2026-11-26T06:04:23Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 1
+2026-11-26T06:04:27Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 1
+2026-11-26T06:04:32Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 1
+2026-11-26T06:04:37Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 1
+2026-11-26T06:04:42Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 1
+2026-11-26T06:04:46Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 1
+2026-11-26T06:04:51Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 1
+2026-11-26T06:04:56Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 1
+2026-11-26T06:05:00Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 1
+2026-11-26T06:05:05Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 1
+2026-11-26T06:05:10Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 1
+2026-11-26T06:05:15Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 1
+2026-11-26T06:05:19Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 1
+2026-11-26T06:05:24Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 1
+2026-11-26T06:05:29Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 1
+2026-11-26T06:05:33Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 1
+2026-11-26T06:05:38Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 1
+2026-11-26T06:05:43Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 1
+2026-11-26T06:05:47Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 1
+2026-11-26T06:05:51Z {'categories': 289} page 1/37: 100 posts, new versions so far 1
+2026-11-26T06:05:54Z {'categories': 289} page 2/37: 100 posts, new versions so far 1
+2026-11-26T06:05:57Z {'categories': 289} page 3/37: 100 posts, new versions so far 1
+2026-11-26T06:06:01Z {'categories': 289} page 4/37: 100 posts, new versions so far 1
+2026-11-26T06:06:05Z {'categories': 289} page 5/37: 100 posts, new versions so far 1
+2026-11-26T06:06:08Z {'categories': 289} page 6/37: 100 posts, new versions so far 1
+2026-11-26T06:06:11Z {'categories': 289} page 7/37: 100 posts, new versions so far 1
+2026-11-26T06:06:15Z {'categories': 289} page 8/37: 100 posts, new versions so far 1
+2026-11-26T06:06:18Z {'categories': 289} page 9/37: 100 posts, new versions so far 1
+2026-11-26T06:06:23Z {'categories': 289} page 10/37: 100 posts, new versions so far 1
+2026-11-26T06:06:26Z {'categories': 289} page 11/37: 100 posts, new versions so far 1
+2026-11-26T06:06:30Z {'categories': 289} page 12/37: 100 posts, new versions so far 1
+2026-11-26T06:06:33Z {'categories': 289} page 13/37: 100 posts, new versions so far 1
+2026-11-26T06:06:37Z {'categories': 289} page 14/37: 100 posts, new versions so far 1
+2026-11-26T06:06:40Z {'categories': 289} page 15/37: 100 posts, new versions so far 1
+2026-11-26T06:06:44Z {'categories': 289} page 16/37: 100 posts, new versions so far 1
+2026-11-26T06:06:47Z {'categories': 289} page 17/37: 100 posts, new versions so far 1
+2026-11-26T06:06:51Z {'categories': 289} page 18/37: 100 posts, new versions so far 1
+2026-11-26T06:06:54Z {'categories': 289} page 19/37: 100 posts, new versions so far 1
+2026-11-26T06:06:58Z {'categories': 289} page 20/37: 100 posts, new versions so far 1
+2026-11-26T06:07:01Z {'categories': 289} page 21/37: 100 posts, new versions so far 1
+2026-11-26T06:07:05Z {'categories': 289} page 22/37: 100 posts, new versions so far 1
+2026-11-26T06:07:09Z {'categories': 289} page 23/37: 100 posts, new versions so far 1
+2026-11-26T06:07:12Z {'categories': 289} page 24/37: 100 posts, new versions so far 1
+2026-11-26T06:07:16Z {'categories': 289} page 25/37: 100 posts, new versions so far 1
+2026-11-26T06:07:20Z {'categories': 289} page 26/37: 100 posts, new versions so far 1
+2026-11-26T06:07:23Z {'categories': 289} page 27/37: 100 posts, new versions so far 1
+2026-11-26T06:07:27Z {'categories': 289} page 28/37: 100 posts, new versions so far 1
+2026-11-26T06:07:31Z {'categories': 289} page 29/37: 100 posts, new versions so far 1
+2026-11-26T06:07:34Z {'categories': 289} page 30/37: 100 posts, new versions so far 1
+2026-11-26T06:07:37Z {'categories': 289} page 31/37: 100 posts, new versions so far 1
+2026-11-26T06:07:41Z {'categories': 289} page 32/37: 100 posts, new versions so far 1
+2026-11-26T06:07:44Z {'categories': 289} page 33/37: 100 posts, new versions so far 1
+2026-11-26T06:07:48Z {'categories': 289} page 34/37: 100 posts, new versions so far 1
+2026-11-26T06:07:52Z {'categories': 289} page 35/37: 100 posts, new versions so far 1
+2026-11-26T06:07:55Z {'categories': 289} page 36/37: 100 posts, new versions so far 1
+2026-11-26T06:07:58Z {'categories': 289} page 37/37: 25 posts, new versions so far 1
+2026-11-26T06:08:01Z {'categories': 555} page 1/1: 12 posts, new versions so far 1
+2026-11-26T06:08:04Z done | pages 87 | new versions 1 | posts held 2100
+2026-11-26T09:14:52Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-26T09:14:53Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-26T09:14:56Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T09:15:00Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-26T09:15:05Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-26T09:15:11Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-26T09:15:16Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-26T09:15:21Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-26T09:15:27Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-26T09:15:32Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-26T09:15:37Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-26T09:15:42Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-26T09:15:48Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-26T09:15:53Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-26T09:15:58Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-26T09:16:02Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-26T09:16:07Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-26T09:16:13Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-26T09:16:18Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-26T09:16:23Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-26T09:16:28Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-26T09:16:33Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-26T09:16:39Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-26T09:16:44Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-26T09:16:49Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-26T09:16:54Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-26T09:16:59Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-26T09:17:04Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-26T09:17:09Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-26T09:17:13Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T09:17:18Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-26T09:17:23Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-26T09:17:27Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-26T09:17:32Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-26T09:17:37Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-26T09:17:41Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-26T09:17:46Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-26T09:17:51Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-26T09:17:55Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-26T09:17:59Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-26T09:18:04Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-26T09:18:09Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-26T09:18:13Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-26T09:18:18Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-26T09:18:23Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-26T09:18:28Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-26T09:18:33Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-26T09:18:37Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-26T09:18:41Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-26T09:18:46Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-26T09:18:50Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-26T09:18:54Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-26T09:18:57Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-26T09:19:00Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-26T09:19:04Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-26T09:19:07Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-26T09:19:10Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-26T09:19:14Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-26T09:19:17Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-26T09:19:21Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-26T09:19:24Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-26T09:19:28Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-26T09:19:32Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-26T09:19:35Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-26T09:19:39Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-26T09:19:43Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-26T09:19:47Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-26T09:19:51Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-26T09:19:54Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-26T09:19:58Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-26T09:20:02Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-26T09:20:06Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-26T09:20:09Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-26T09:20:13Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-26T09:20:17Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-26T09:20:20Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-26T09:20:24Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-26T09:20:28Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-26T09:20:31Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-26T09:20:34Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-26T09:20:38Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-26T09:20:42Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-26T09:20:46Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-26T09:20:49Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-26T09:20:53Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-26T09:20:57Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-26T09:21:01Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-26T09:21:04Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-26T09:21:07Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-26T09:21:10Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-26T20:56:55Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-26T20:56:56Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-26T20:56:58Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T20:57:03Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-26T20:57:09Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-26T20:57:14Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-26T20:57:20Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-26T20:57:25Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-26T20:57:30Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-26T20:57:36Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-26T20:57:41Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-26T20:57:47Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-26T20:57:52Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-26T20:57:57Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-26T20:58:02Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-26T20:58:07Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-26T20:58:12Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-26T20:58:17Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-26T20:58:23Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-26T20:58:28Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-26T20:58:34Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-26T20:58:39Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-26T20:58:45Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-26T20:58:50Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-26T20:58:55Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-26T20:59:00Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-26T20:59:05Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-26T20:59:10Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-26T20:59:15Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-26T20:59:20Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-26T20:59:24Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-26T20:59:28Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-26T20:59:33Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-26T20:59:37Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-26T20:59:42Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-26T20:59:46Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-26T20:59:50Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-26T20:59:54Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-26T20:59:59Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-26T21:00:04Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-26T21:00:09Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-26T21:00:14Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-26T21:00:18Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-26T21:00:23Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-26T21:00:28Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-26T21:00:32Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-26T21:00:37Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-26T21:00:41Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-26T21:00:46Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-26T21:00:51Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-26T21:00:55Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-26T21:00:59Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-26T21:01:03Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-26T21:01:06Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-26T21:01:10Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-26T21:01:14Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-26T21:01:18Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-26T21:01:21Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-26T21:01:25Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-26T21:01:28Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-26T21:01:32Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-26T21:01:35Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-26T21:01:39Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-26T21:01:43Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-26T21:01:46Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-26T21:01:50Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-26T21:01:53Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-26T21:01:56Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-26T21:02:00Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-26T21:02:04Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-26T21:02:08Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-26T21:02:11Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-26T21:02:15Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-26T21:02:19Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-26T21:02:22Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-26T21:02:25Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-26T21:02:29Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-26T21:02:33Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-26T21:02:36Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-26T21:02:39Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-26T21:02:43Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-26T21:02:46Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-26T21:02:50Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-26T21:02:54Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-26T21:02:58Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-26T21:03:01Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-26T21:03:05Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-26T21:03:08Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-26T21:03:10Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-26T21:03:14Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-27T02:22:23Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-27T02:22:24Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-27T02:22:26Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T02:22:31Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-27T02:22:36Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-27T02:22:42Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-27T02:22:47Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-27T02:22:52Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-27T02:22:57Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-27T02:23:03Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-27T02:23:07Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-27T02:23:13Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-27T02:23:18Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-27T02:23:23Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-27T02:23:28Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-27T02:23:33Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-27T02:23:38Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-27T02:23:43Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-27T02:23:48Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-27T02:23:53Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-27T02:23:58Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-27T02:24:04Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-27T02:24:09Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-27T02:24:14Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-27T02:24:19Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-27T02:24:25Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-27T02:24:30Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-27T02:24:35Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-27T02:24:41Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-27T02:24:45Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T02:24:50Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-27T02:24:55Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-27T02:25:00Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-27T02:25:05Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-27T02:25:09Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-27T02:25:14Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-27T02:25:18Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-27T02:25:23Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-27T02:25:27Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-27T02:25:32Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-27T02:25:37Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-27T02:25:42Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-27T02:25:46Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-27T02:25:51Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-27T02:25:56Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-27T02:26:01Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-27T02:26:06Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-27T02:26:11Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-27T02:26:16Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-27T02:26:20Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-27T02:26:25Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-27T02:26:28Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-27T02:26:32Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-27T02:26:36Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-27T02:26:40Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-27T02:26:43Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-27T02:26:47Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-27T02:26:50Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-27T02:26:54Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-27T02:26:57Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-27T02:27:00Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-27T02:27:04Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-27T02:27:08Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-27T02:27:12Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-27T02:27:15Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-27T02:27:19Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-27T02:27:22Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-27T02:27:26Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-27T02:27:30Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-27T02:27:34Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-27T02:27:37Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-27T02:27:41Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-27T02:27:44Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-27T02:27:47Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-27T02:27:51Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-27T02:27:54Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-27T02:27:58Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-27T02:28:02Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-27T02:28:05Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-27T02:28:09Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-27T02:28:12Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-27T02:28:15Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-27T02:28:19Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-27T02:28:22Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-27T02:28:26Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-27T02:28:29Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-27T02:28:33Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-27T02:28:36Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-27T02:28:40Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-27T02:28:43Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-27T06:04:43Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-27T06:04:43Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-27T06:04:45Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T06:04:51Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-27T06:04:56Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-27T06:05:01Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-27T06:05:06Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-27T06:05:12Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-27T06:05:18Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-27T06:05:23Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-27T06:05:29Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-27T06:05:34Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-27T06:05:39Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-27T06:05:43Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-27T06:05:49Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-27T06:05:53Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-27T06:05:58Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-27T06:06:04Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-27T06:06:10Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-27T06:06:16Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-27T06:06:21Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-27T06:06:27Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-27T06:06:32Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-27T06:06:37Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-27T06:06:42Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-27T06:06:47Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-27T06:06:52Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-27T06:06:57Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-27T06:07:02Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-27T06:07:07Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T06:07:12Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-27T06:07:16Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-27T06:07:21Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-27T06:07:25Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-27T06:07:30Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-27T06:07:35Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-27T06:07:39Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-27T06:07:44Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-27T06:07:48Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-27T06:07:53Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-27T06:07:57Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-27T06:08:02Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-27T06:08:07Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-27T06:08:11Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-27T06:08:16Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-27T06:08:20Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-27T06:08:25Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-27T06:08:29Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-27T06:08:34Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-27T06:08:38Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-27T06:08:43Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-27T06:08:46Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-27T06:08:50Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-27T06:08:54Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-27T06:08:57Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-27T06:09:01Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-27T06:09:04Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-27T06:09:08Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-27T06:09:12Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-27T06:09:15Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-27T06:09:18Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-27T06:09:21Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-27T06:09:24Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-27T06:09:28Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-27T06:09:31Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-27T06:09:35Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-27T06:09:38Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-27T06:09:42Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-27T06:09:45Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-27T06:09:49Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-27T06:09:53Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-27T06:09:56Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-27T06:09:59Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-27T06:10:03Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-27T06:10:06Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-27T06:10:09Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-27T06:10:13Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-27T06:10:17Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-27T06:10:21Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-27T06:10:24Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-27T06:10:28Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-27T06:10:31Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-27T06:10:35Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-27T06:10:38Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-27T06:10:42Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-27T06:10:46Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-27T06:10:49Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-27T06:10:53Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-27T06:10:56Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-27T06:10:59Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-27T09:15:41Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-27T09:15:42Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-27T09:15:44Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T09:15:49Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-27T09:15:55Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-27T09:16:00Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-27T09:16:05Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-27T09:16:11Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-27T09:16:17Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-27T09:16:22Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-27T09:16:27Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-27T09:16:32Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-27T09:16:37Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-27T09:16:42Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-27T09:16:47Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-27T09:16:52Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-27T09:16:57Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-27T09:17:02Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-27T09:17:07Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-27T09:17:12Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-27T09:17:17Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-27T09:17:22Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-27T09:17:28Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-27T09:17:32Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-27T09:17:37Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-27T09:17:42Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-27T09:17:47Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-27T09:17:53Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-27T09:17:58Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-27T09:18:03Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T09:18:07Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-27T09:18:11Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-27T09:18:16Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-27T09:18:20Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-27T09:18:25Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-27T09:18:30Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-27T09:18:34Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-27T09:18:39Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-27T09:18:43Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-27T09:18:48Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-27T09:18:53Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-27T09:18:58Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-27T09:19:03Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-27T09:19:07Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-27T09:19:12Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-27T09:19:16Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-27T09:19:21Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-27T09:19:25Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-27T09:19:30Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-27T09:19:34Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-27T09:19:39Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-27T09:19:43Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-27T09:19:46Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-27T09:19:50Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-27T09:19:53Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-27T09:19:56Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-27T09:20:00Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-27T09:20:04Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-27T09:20:07Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-27T09:20:11Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-27T09:20:15Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-27T09:20:19Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-27T09:20:23Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-27T09:20:26Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-27T09:20:30Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-27T09:20:34Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-27T09:20:37Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-27T09:20:40Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-27T09:20:43Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-27T09:20:47Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-27T09:20:50Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-27T09:20:53Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-27T09:20:57Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-27T09:21:00Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-27T09:21:03Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-27T09:21:07Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-27T09:21:11Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-27T09:21:15Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-27T09:21:18Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-27T09:21:22Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-27T09:21:25Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-27T09:21:29Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-27T09:21:33Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-27T09:21:36Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-27T09:21:39Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-27T09:21:43Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-27T09:21:46Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-27T09:21:49Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-27T09:21:53Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-27T09:21:55Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-27T20:57:02Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-27T20:57:02Z stewards categories: [(289, 'Stewards', 3625), (555, "Stewards' Room", 12)]
+2026-11-27T20:57:05Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T20:57:10Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-27T20:57:16Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-27T20:57:21Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-27T20:57:27Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-27T20:57:32Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-27T20:57:37Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-27T20:57:43Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-27T20:57:48Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-27T20:57:53Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-27T20:57:59Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-27T20:58:04Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-27T20:58:08Z {'search': 'late gear change'} page 12/12: 79 posts, new versions so far 0
+2026-11-27T20:58:13Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-27T20:58:17Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-27T20:58:22Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-27T20:58:28Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-27T20:58:33Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-27T20:58:38Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-27T20:58:44Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-27T20:58:49Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-27T20:58:54Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-27T20:58:59Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-27T20:59:04Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-27T20:59:09Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-27T20:59:14Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-27T20:59:19Z {'search': 'gear change'} page 14/14: 98 posts, new versions so far 0
+2026-11-27T20:59:24Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-27T20:59:28Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-27T20:59:32Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-27T20:59:37Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-27T20:59:42Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-27T20:59:47Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-27T20:59:52Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-27T20:59:56Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-27T21:00:00Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-27T21:00:04Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-27T21:00:09Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-27T21:00:13Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-27T21:00:18Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-27T21:00:22Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-27T21:00:27Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-27T21:00:31Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-27T21:00:36Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-27T21:00:41Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-27T21:00:46Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-27T21:00:50Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-27T21:00:55Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-27T21:01:00Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-27T21:01:04Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-27T21:01:07Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-27T21:01:10Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-27T21:01:14Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-27T21:01:17Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-27T21:01:21Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-27T21:01:25Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-27T21:01:28Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-27T21:01:32Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-27T21:01:36Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-27T21:01:40Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-27T21:01:43Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-27T21:01:47Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-27T21:01:50Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-27T21:01:54Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-27T21:01:57Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-27T21:02:00Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-27T21:02:04Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-27T21:02:07Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-27T21:02:11Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-27T21:02:14Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-27T21:02:17Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-27T21:02:21Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-27T21:02:25Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-27T21:02:29Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-27T21:02:32Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-27T21:02:36Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-27T21:02:39Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-27T21:02:43Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-27T21:02:46Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-27T21:02:50Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-27T21:02:53Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-27T21:02:57Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-27T21:03:01Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-27T21:03:04Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-27T21:03:08Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-27T21:03:12Z {'categories': 289} page 37/37: 25 posts, new versions so far 0
+2026-11-27T21:03:15Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-27T21:03:18Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-28T02:18:55Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-28T02:18:56Z stewards categories: [(289, 'Stewards', 3626), (555, "Stewards' Room", 12)]
+2026-11-28T02:18:58Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T02:19:03Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-28T02:19:09Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-28T02:19:14Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-28T02:19:20Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-28T02:19:25Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-28T02:19:31Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-28T02:19:36Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-28T02:19:42Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-28T02:19:47Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-28T02:19:52Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-28T02:19:58Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-28T02:20:03Z {'search': 'late gear change'} page 12/12: 81 posts, new versions so far 0
+2026-11-28T02:20:07Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-28T02:20:12Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-28T02:20:17Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-28T02:20:23Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-28T02:20:28Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-28T02:20:33Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-28T02:20:39Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-28T02:20:45Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-28T02:20:50Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-28T02:20:55Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-28T02:21:00Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-28T02:21:05Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-28T02:21:09Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-28T02:21:14Z {'search': 'gear change'} page 14/14: 100 posts, new versions so far 0
+2026-11-28T02:21:19Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T02:21:23Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-28T02:21:27Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-28T02:21:32Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-28T02:21:36Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-28T02:21:41Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-28T02:21:45Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-28T02:21:50Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-28T02:21:54Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-28T02:21:59Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-28T02:22:04Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-28T02:22:08Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-28T02:22:13Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-28T02:22:17Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-28T02:22:22Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-28T02:22:27Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-28T02:22:31Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-28T02:22:36Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-28T02:22:41Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-28T02:22:45Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-28T02:22:50Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-28T02:22:54Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-28T02:22:57Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-28T02:23:01Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-28T02:23:05Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-28T02:23:08Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-28T02:23:12Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-28T02:23:16Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-28T02:23:20Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-28T02:23:23Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-28T02:23:27Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-28T02:23:30Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-28T02:23:33Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-28T02:23:37Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-28T02:23:40Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-28T02:23:44Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-28T02:23:47Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-28T02:23:50Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-28T02:23:54Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-28T02:23:58Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-28T02:24:01Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-28T02:24:04Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-28T02:24:08Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-28T02:24:11Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-28T02:24:15Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-28T02:24:18Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-28T02:24:21Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-28T02:24:25Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-28T02:24:28Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-28T02:24:32Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-28T02:24:35Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-28T02:24:39Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-28T02:24:42Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-28T02:24:45Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-28T02:24:49Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-28T02:24:53Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-28T02:24:56Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-28T02:25:00Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-28T02:25:03Z {'categories': 289} page 37/37: 26 posts, new versions so far 0
+2026-11-28T02:25:07Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-28T02:25:10Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-28T05:59:21Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-28T05:59:22Z stewards categories: [(289, 'Stewards', 3626), (555, "Stewards' Room", 12)]
+2026-11-28T05:59:24Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T05:59:30Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-28T05:59:35Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-28T05:59:41Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-28T05:59:46Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-28T05:59:52Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-28T05:59:58Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-28T06:00:03Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-28T06:00:09Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-28T06:00:14Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-28T06:00:20Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-28T06:00:25Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-28T06:00:30Z {'search': 'late gear change'} page 12/12: 81 posts, new versions so far 0
+2026-11-28T06:00:35Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-28T06:00:41Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-28T06:00:46Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-28T06:00:51Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-28T06:00:56Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-28T06:01:02Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-28T06:01:07Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-28T06:01:13Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-28T06:01:18Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-28T06:01:23Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-28T06:01:28Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-28T06:01:33Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-28T06:01:38Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-28T06:01:43Z {'search': 'gear change'} page 14/14: 100 posts, new versions so far 0
+2026-11-28T06:01:48Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T06:01:52Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-28T06:01:58Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-28T06:02:02Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-28T06:02:07Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-28T06:02:12Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-28T06:02:17Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-28T06:02:22Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-28T06:02:27Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-28T06:02:31Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-28T06:02:36Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-28T06:02:41Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-28T06:02:46Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-28T06:02:51Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-28T06:02:56Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-28T06:03:01Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-28T06:03:05Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-28T06:03:10Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-28T06:03:14Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-28T06:03:19Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-28T06:03:24Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-28T06:03:28Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-28T06:03:32Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-28T06:03:35Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-28T06:03:39Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-28T06:03:43Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-28T06:03:46Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-28T06:03:50Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-28T06:03:53Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-28T06:03:57Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-28T06:04:00Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-28T06:04:03Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-28T06:04:07Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-28T06:04:10Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-28T06:04:14Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-28T06:04:18Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-28T06:04:21Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-28T06:04:25Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-28T06:04:28Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-28T06:04:32Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-28T06:04:35Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-28T06:04:39Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-28T06:04:42Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-28T06:04:46Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-28T06:04:50Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-28T06:04:53Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-28T06:04:57Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-28T06:05:01Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-28T06:05:05Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-28T06:05:09Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-28T06:05:13Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-28T06:05:16Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-28T06:05:20Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-28T06:05:23Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-28T06:05:27Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-28T06:05:30Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-28T06:05:34Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-28T06:05:38Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-28T06:05:41Z {'categories': 289} page 37/37: 26 posts, new versions so far 0
+2026-11-28T06:05:44Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-28T06:05:48Z done | pages 87 | new versions 0 | posts held 2100
+2026-11-28T08:57:31Z fetching posts modified after 2026-11-23T05:29:33 | versions held 2101
+2026-11-28T08:57:33Z stewards categories: [(289, 'Stewards', 3626), (555, "Stewards' Room", 12)]
+2026-11-28T08:57:35Z {'search': 'stewards notifications'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T08:57:40Z {'search': 'late gear change'} page 1/12: 100 posts, new versions so far 0
+2026-11-28T08:57:46Z {'search': 'late gear change'} page 2/12: 100 posts, new versions so far 0
+2026-11-28T08:57:51Z {'search': 'late gear change'} page 3/12: 100 posts, new versions so far 0
+2026-11-28T08:57:57Z {'search': 'late gear change'} page 4/12: 100 posts, new versions so far 0
+2026-11-28T08:58:02Z {'search': 'late gear change'} page 5/12: 100 posts, new versions so far 0
+2026-11-28T08:58:07Z {'search': 'late gear change'} page 6/12: 100 posts, new versions so far 0
+2026-11-28T08:58:13Z {'search': 'late gear change'} page 7/12: 100 posts, new versions so far 0
+2026-11-28T08:58:18Z {'search': 'late gear change'} page 8/12: 100 posts, new versions so far 0
+2026-11-28T08:58:23Z {'search': 'late gear change'} page 9/12: 100 posts, new versions so far 0
+2026-11-28T08:58:29Z {'search': 'late gear change'} page 10/12: 100 posts, new versions so far 0
+2026-11-28T08:58:34Z {'search': 'late gear change'} page 11/12: 100 posts, new versions so far 0
+2026-11-28T08:58:40Z {'search': 'late gear change'} page 12/12: 81 posts, new versions so far 0
+2026-11-28T08:58:44Z {'search': 'gear change'} page 1/14: 100 posts, new versions so far 0
+2026-11-28T08:58:49Z {'search': 'gear change'} page 2/14: 100 posts, new versions so far 0
+2026-11-28T08:58:54Z {'search': 'gear change'} page 3/14: 100 posts, new versions so far 0
+2026-11-28T08:58:59Z {'search': 'gear change'} page 4/14: 100 posts, new versions so far 0
+2026-11-28T08:59:05Z {'search': 'gear change'} page 5/14: 100 posts, new versions so far 0
+2026-11-28T08:59:10Z {'search': 'gear change'} page 6/14: 100 posts, new versions so far 0
+2026-11-28T08:59:15Z {'search': 'gear change'} page 7/14: 100 posts, new versions so far 0
+2026-11-28T08:59:20Z {'search': 'gear change'} page 8/14: 100 posts, new versions so far 0
+2026-11-28T08:59:25Z {'search': 'gear change'} page 9/14: 100 posts, new versions so far 0
+2026-11-28T08:59:30Z {'search': 'gear change'} page 10/14: 100 posts, new versions so far 0
+2026-11-28T08:59:35Z {'search': 'gear change'} page 11/14: 100 posts, new versions so far 0
+2026-11-28T08:59:39Z {'search': 'gear change'} page 12/14: 100 posts, new versions so far 0
+2026-11-28T08:59:45Z {'search': 'gear change'} page 13/14: 100 posts, new versions so far 0
+2026-11-28T08:59:50Z {'search': 'gear change'} page 14/14: 100 posts, new versions so far 0
+2026-11-28T08:59:54Z {'search': 'notifications to stewards'} page 1/1: 58 posts, new versions so far 0
+2026-11-28T08:59:58Z {'search': 'stewards report'} page 1/21: 100 posts, new versions so far 0
+2026-11-28T09:00:02Z {'search': 'stewards report'} page 2/21: 100 posts, new versions so far 0
+2026-11-28T09:00:07Z {'search': 'stewards report'} page 3/21: 100 posts, new versions so far 0
+2026-11-28T09:00:12Z {'search': 'stewards report'} page 4/21: 100 posts, new versions so far 0
+2026-11-28T09:00:16Z {'search': 'stewards report'} page 5/21: 100 posts, new versions so far 0
+2026-11-28T09:00:21Z {'search': 'stewards report'} page 6/21: 100 posts, new versions so far 0
+2026-11-28T09:00:25Z {'search': 'stewards report'} page 7/21: 100 posts, new versions so far 0
+2026-11-28T09:00:30Z {'search': 'stewards report'} page 8/21: 100 posts, new versions so far 0
+2026-11-28T09:00:34Z {'search': 'stewards report'} page 9/21: 100 posts, new versions so far 0
+2026-11-28T09:00:38Z {'search': 'stewards report'} page 10/21: 100 posts, new versions so far 0
+2026-11-28T09:00:43Z {'search': 'stewards report'} page 11/21: 100 posts, new versions so far 0
+2026-11-28T09:00:48Z {'search': 'stewards report'} page 12/21: 100 posts, new versions so far 0
+2026-11-28T09:00:53Z {'search': 'stewards report'} page 13/21: 100 posts, new versions so far 0
+2026-11-28T09:00:58Z {'search': 'stewards report'} page 14/21: 100 posts, new versions so far 0
+2026-11-28T09:01:03Z {'search': 'stewards report'} page 15/21: 100 posts, new versions so far 0
+2026-11-28T09:01:08Z {'search': 'stewards report'} page 16/21: 100 posts, new versions so far 0
+2026-11-28T09:01:12Z {'search': 'stewards report'} page 17/21: 100 posts, new versions so far 0
+2026-11-28T09:01:16Z {'search': 'stewards report'} page 18/21: 100 posts, new versions so far 0
+2026-11-28T09:01:21Z {'search': 'stewards report'} page 19/21: 100 posts, new versions so far 0
+2026-11-28T09:01:26Z {'search': 'stewards report'} page 20/21: 100 posts, new versions so far 0
+2026-11-28T09:01:30Z {'search': 'stewards report'} page 21/21: 16 posts, new versions so far 0
+2026-11-28T09:01:34Z {'categories': 289} page 1/37: 100 posts, new versions so far 0
+2026-11-28T09:01:38Z {'categories': 289} page 2/37: 100 posts, new versions so far 0
+2026-11-28T09:01:41Z {'categories': 289} page 3/37: 100 posts, new versions so far 0
+2026-11-28T09:01:44Z {'categories': 289} page 4/37: 100 posts, new versions so far 0
+2026-11-28T09:01:48Z {'categories': 289} page 5/37: 100 posts, new versions so far 0
+2026-11-28T09:01:51Z {'categories': 289} page 6/37: 100 posts, new versions so far 0
+2026-11-28T09:01:55Z {'categories': 289} page 7/37: 100 posts, new versions so far 0
+2026-11-28T09:01:58Z {'categories': 289} page 8/37: 100 posts, new versions so far 0
+2026-11-28T09:02:02Z {'categories': 289} page 9/37: 100 posts, new versions so far 0
+2026-11-28T09:02:06Z {'categories': 289} page 10/37: 100 posts, new versions so far 0
+2026-11-28T09:02:10Z {'categories': 289} page 11/37: 100 posts, new versions so far 0
+2026-11-28T09:02:14Z {'categories': 289} page 12/37: 100 posts, new versions so far 0
+2026-11-28T09:02:18Z {'categories': 289} page 13/37: 100 posts, new versions so far 0
+2026-11-28T09:02:21Z {'categories': 289} page 14/37: 100 posts, new versions so far 0
+2026-11-28T09:02:24Z {'categories': 289} page 15/37: 100 posts, new versions so far 0
+2026-11-28T09:02:27Z {'categories': 289} page 16/37: 100 posts, new versions so far 0
+2026-11-28T09:02:31Z {'categories': 289} page 17/37: 100 posts, new versions so far 0
+2026-11-28T09:02:34Z {'categories': 289} page 18/37: 100 posts, new versions so far 0
+2026-11-28T09:02:38Z {'categories': 289} page 19/37: 100 posts, new versions so far 0
+2026-11-28T09:02:41Z {'categories': 289} page 20/37: 100 posts, new versions so far 0
+2026-11-28T09:02:45Z {'categories': 289} page 21/37: 100 posts, new versions so far 0
+2026-11-28T09:02:49Z {'categories': 289} page 22/37: 100 posts, new versions so far 0
+2026-11-28T09:02:53Z {'categories': 289} page 23/37: 100 posts, new versions so far 0
+2026-11-28T09:02:56Z {'categories': 289} page 24/37: 100 posts, new versions so far 0
+2026-11-28T09:03:00Z {'categories': 289} page 25/37: 100 posts, new versions so far 0
+2026-11-28T09:03:03Z {'categories': 289} page 26/37: 100 posts, new versions so far 0
+2026-11-28T09:03:07Z {'categories': 289} page 27/37: 100 posts, new versions so far 0
+2026-11-28T09:03:11Z {'categories': 289} page 28/37: 100 posts, new versions so far 0
+2026-11-28T09:03:15Z {'categories': 289} page 29/37: 100 posts, new versions so far 0
+2026-11-28T09:03:19Z {'categories': 289} page 30/37: 100 posts, new versions so far 0
+2026-11-28T09:03:22Z {'categories': 289} page 31/37: 100 posts, new versions so far 0
+2026-11-28T09:03:26Z {'categories': 289} page 32/37: 100 posts, new versions so far 0
+2026-11-28T09:03:29Z {'categories': 289} page 33/37: 100 posts, new versions so far 0
+2026-11-28T09:03:33Z {'categories': 289} page 34/37: 100 posts, new versions so far 0
+2026-11-28T09:03:36Z {'categories': 289} page 35/37: 100 posts, new versions so far 0
+2026-11-28T09:03:40Z {'categories': 289} page 36/37: 100 posts, new versions so far 0
+2026-11-28T09:03:43Z {'categories': 289} page 37/37: 26 posts, new versions so far 0
+2026-11-28T09:03:47Z {'categories': 555} page 1/1: 12 posts, new versions so far 0
+2026-11-28T09:03:51Z done | pages 87 | new versions 0 | posts held 2100
