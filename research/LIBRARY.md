@@ -318,6 +318,8 @@ input. Report: https://claude.ai/artifact/5ru88iaS7dpPukHKhVocYz. Scripts and ou
 Research and operational corrections only; no production engine, switch or frozen candidate changed; 28 Nov forecasts untouched.
 Windows A (fit before 2024, judged 2024) and B (fit before 2025, judged 2025-26) are both previously examined: research evidence only.
 Scripts/outputs: batch27/b27_*.py -> batch27/out_b27_*.json. Preregistration: preregistered/2026-11-28_b27_distance_combinations.md.
+Report (draft, finalised Monday): https://claude.ai/artifact/6EQWrCurxYnzPNR2PPUkZg. Dashboard preview (private): https://claude.ai/artifact/K5pFayyRRNZipUpUxT77n7.
+P6 (physical/tactical items, uneven final 600 m, late-weakening prospective check) not advanced this weekend; next actions unchanged in the status table.
 
 P1 Essential inputs (operational corrections, committed 28 Nov)
 - Cause of the 28 Nov gaps: (a) the 3b list followed the card's meeting order, not race times, and racecards took until 7:50am, so
