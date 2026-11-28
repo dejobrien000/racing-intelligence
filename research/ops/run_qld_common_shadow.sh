@@ -12,11 +12,14 @@ D=$1; export PYTHONPATH=.; BD=prospective/shadow/qld_common/bundles
 QB=$(python3 ops/qld_common_adapter.py "$D" "$BD" 2>/tmp/qcf_adapt.txt) || { echo "WARNING Qld common shadow: adapter failed (production unaffected): $(tail -1 /tmp/qcf_adapt.txt)"; exit 0; }
 [ -f "$QB" ] || { echo "Qld common shadow: no Queensland meetings"; exit 0; }
 for spec in "2 benchmarks/engine_qld_common_candidate engine/frames/national_c2.parquet prospective/shadow/qld_common" \
-            "4 benchmarks/engine_qld_common_update_candidate engine/frames/national_update_rule.parquet prospective/shadow/qld_common_update"; do
+            "4 benchmarks/engine_qld_common_update_candidate engine/frames/national_update_rule.parquet prospective/shadow/qld_common_update" \
+            "5 benchmarks/engine_qld_common_cons_candidate engine/frames/national_consolidated.parquet prospective/shadow/qld_common_cons"; do
   set -- $spec; C=$1; CD=$2; FR=$3; R=$4; N="Qld common shadow config $C"
   [ -f $CD/engine_v2.json ] && [ -f $CD/engine_v2_2.json ] && [ -f $CD/candidates_national_common.json ] || { echo "$N: no candidate files"; continue; }
   [ -f $FR ] || { echo "$N: rating frame $FR missing (the update-rule shadow builds it)"; continue; }
-  if [ $C = 4 ]; then HOOKS="RATING_CAP_L=12 RATING_CAP_SCOPE=all RATING_GOOD_X=1.3"; LBL="Qld common framework + update rule (not live)"; else HOOKS=""; LBL="Qld common framework (not live)"; fi
+  if [ $C = 4 ]; then HOOKS="RATING_CAP_L=12 RATING_CAP_SCOPE=all RATING_GOOD_X=1.3"; LBL="Qld common framework + update rule (not live)"
+  elif [ $C = 5 ]; then HOOKS="RATING_CAP_L=12 RATING_CAP_SCOPE=all RATING_GOOD_X=1 RATING_GOOD_TAPER=0.8,6 RATING_TAPER_NEFF=engine/frames/experience_at_run.parquet RATING_REF=precision"; LBL="Qld common framework on consolidated rating (not live)"   # Batch 28 s2 (28 Nov 2026): config 5
+  else HOOKS=""; LBL="Qld common framework (not live)"; fi
   mkdir -p $R
   env ENGINE_C2=1 WCREDIT=0.25 $HOOKS ENGINE_CAND_DIR=$CD ENGINE_CAND_FRAME=$FR ENGINE_CAND_LABEL="$LBL" METRO_FROM_TIER=1 SHADOW_LABEL="shadow candidate: $LBL" \
     PRED_ROOT=$R python3 prerace/score_national_prerace.py "$QB" ../history/history.duckdb "$D" > /tmp/qcf_v1_$C.txt 2>&1 \

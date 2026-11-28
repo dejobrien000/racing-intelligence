@@ -19,7 +19,6 @@ print('frame written', fout, 'gspec sd', round(float(np.nanstd(S.gspec.values)),
 if IND:
     rng = np.random.default_rng(288); T = S.reset_index(drop=True)
     T['k'] = T.groupby('horse').cumcount(); T['last3'] = T.groupby('horse').dyn_nat_inn.transform(lambda s: s.shift(1).rolling(3, min_periods=1).mean())
-    T['g_rec_old'] = pd.read_parquet(fin, columns=['g_rec']).g_rec.values[S.index.values] if False else F.loc[S.index, 'g_rec'] if False else np.nan
     O = pd.read_parquet(fin, columns=['race', 'horse', 'g_rec']).rename(columns={'g_rec': 'g_rec_old'}); T = T.merge(O, on=['race', 'horse'], how='left')
     T['win_'] = np.where(T.date < '2025-01-01', '2023-24', '2025-26'); base = (T.k >= 3) & T.dyn_nat_inn.notna() & (T.date >= '2023-07-01')
     def reg(Z, cols, boot=120):

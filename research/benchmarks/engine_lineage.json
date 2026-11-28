@@ -266,6 +266,15 @@
    "ledger_label_prefix": "Consolidated rating candidate",
    "compare_with": "production",
    "evidence": "Research vs Engine v2.3: 2024 +0.0116 (0.0089 to 0.0144), 2025-26 +0.0166 (0.0142 to 0.0190); individual error 26.6 -> 24.5 kg2"
+  },
+  {
+   "name": "Qld common framework on consolidated rating (config 5)",
+   "family": "QLD",
+   "what": "The national engine's structure with Queensland's own coefficients, on the consolidated rating (Engine v2.5's rating)",
+   "status": "Shadow: scored every day from the 29 Nov run (not live; own clock). Approved to build by Damo 28 Nov (Batch 28)",
+   "ledger_label_prefix": "Qld common framework on consolidated",
+   "compare_with": "production",
+   "evidence": "Built check 2025-26 (dev-fit, races not used to fit): +0.040 (+0.029 to +0.052) per race vs Queensland production v2.1.3 on 4,730 races; +0.011 (+0.007 to +0.016) vs config 2 built the same way. Both periods examined: not untouched"
   }
  ],
  "checkpoints_proposed": {

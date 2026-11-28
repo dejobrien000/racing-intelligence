@@ -36,7 +36,7 @@ CO = pd.read_csv('prospective/shadow/cap_only/INDEX.csv') if os.path.exists('pro
 NSX = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Batch 19 national shadows (own clocks)
        for d, lbl in [('age_aware', 'Age-aware update rule (not live)'), ('trainer_debut', 'Trainer debut record (not live)'), ('consolidated', 'Consolidated rating candidate (not live)'), ('v2_3_fallback', 'Engine v2.3 fallback (not live)')]}
 QCS = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Qld common framework shadows (Batch 17 B2, from 28 Nov 2026)
-       for d, lbl in [('qld_common', 'Qld common framework (not live)'), ('qld_common_update', 'Qld common framework + update rule (not live)')]}
+       for d, lbl in [('qld_common', 'Qld common framework (not live)'), ('qld_common_update', 'Qld common framework + update rule (not live)'), ('qld_common_cons', 'Qld common framework on consolidated rating (not live)')]}
 out = []
 for m in DJ['meetings']:
     if not m.get('rated'): continue

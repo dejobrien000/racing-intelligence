@@ -1,0 +1,152 @@
+{
+ "frozen_utc": "2026-11-28T05:32:02.666719+00:00",
+ "scope": "NSW, Vic, ACT races (Breednet full fields; jump-outs excluded); fields of 6+",
+ "dynamic_rating_params": {
+  "s_kg": 4.5,
+  "q_kg2_per_day": 0.05,
+  "sig0_kg": 5.0,
+  "debut_offset_kg": 2.0
+ },
+ "records_k": 1,
+ "dev_sd_after_race_centring": {
+  "f_avgfp3": 0.20499001986912527,
+  "f_lastfp": 0.2908213973391264,
+  "f_lastlm": 0.9151314942075927,
+  "f_cwin": 0.14210278122732686,
+  "f_lstarts": 0.5038264915376737,
+  "missform": 0.22431712988121502,
+  "a_rec": 4.871123232099569,
+  "a_best3": 5.696076488477872,
+  "a_fs3": 2.762693237767414,
+  "a_wt_rel": 1.8643116044624226,
+  "missfig": 0.048650611052053386,
+  "r_firstup": 0.3345793392587506,
+  "r_7_13": 0.35006779896530243,
+  "r_28_59": 0.3138053924103554,
+  "r_quick": 0.28767119704794614,
+  "r_ldays": 0.8134979642005625,
+  "dyn_nat": 2.65772352176371,
+  "c_rec": 1.3118571377554686,
+  "g_rec": 1.4397760457990285,
+  "d_rec": 1.418082821669677
+ },
+ "candidates": {
+  "nat_v1 (common + national rating)": {
+   "f_avgfp3": -0.002891629334382555,
+   "f_lastfp": 0.09039881268746565,
+   "f_lastlm": 0.022182639139683012,
+   "f_cwin": -0.0065215061690039175,
+   "f_lstarts": -0.09250254771912339,
+   "missform": 0.09331505730768888,
+   "a_rec": 0.17436448156864887,
+   "a_best3": 0.05983259364988304,
+   "a_fs3": 0.12747880965590003,
+   "a_wt_rel": 0.02318093790610562,
+   "missfig": 0.00517631910786984,
+   "r_firstup": 0.031852144030475454,
+   "r_7_13": -0.02178355950781011,
+   "r_28_59": 0.018917456510292106,
+   "r_quick": 0.009308315207347874,
+   "r_ldays": -0.08663157904680086,
+   "dyn_nat": 0.5323066815178246
+  },
+  "nat_v2 (+ horse records)": {
+   "f_avgfp3": -0.010711120294986979,
+   "f_lastfp": 0.08816366846320195,
+   "f_lastlm": 0.019367143528941477,
+   "f_cwin": -0.006771040192084085,
+   "f_lstarts": -0.08907655137583927,
+   "missform": 0.0955218560404516,
+   "a_rec": 0.17163414077264724,
+   "a_best3": 0.05914723570366482,
+   "a_fs3": 0.1290914079409653,
+   "a_wt_rel": 0.02189208211598454,
+   "missfig": 0.0048103070587302964,
+   "r_firstup": 0.03128016995771303,
+   "r_7_13": -0.02088824468149083,
+   "r_28_59": 0.01807975557127422,
+   "r_quick": 0.00966956660366694,
+   "r_ldays": -0.08265505798867478,
+   "dyn_nat": 0.5275589938001934,
+   "c_rec": 0.05683971172573844,
+   "g_rec": 0.023857498002548678,
+   "d_rec": -0.016862191705342606
+  }
+ },
+ "eval_2025_26": {
+  "nat_v1": {
+   "races": 6804,
+   "fit_%": 10.63,
+   "top_pick_%": 26.4
+  },
+  "nat_v2": {
+   "races": 6804,
+   "fit_%": 10.74,
+   "top_pick_%": 26.4
+  }
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "244ad25b0d775b4c",
+  "dyn_rating.py": "a3f1b5b96cbc8710",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c",
+  "national.py": "479bd9e057c0a7b3",
+  "freeze_b5_national_common.py": "c29850ad42b27aa5"
+ },
+ "data_sha256_16": {
+  "national_runs.parquet": "4aa0756909a20254"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit",
+ "candidate_record": {
+  "candidate": "Queensland common national framework on the consolidated rating, configuration 5 (NOT LIVE, shadow only)",
+  "built_utc": "2026-11-28T05:37:57+00:00",
+  "built_from": "the national release chain (freeze_b5_national_common.py -> engine/release_v2.py -> b10/scripts/build_v22.py) in a sandbox copy of the consolidated build (/tmp/cc), refitted on Queensland races only (QCF=1); the NSW_VIC_ACT family structure carries Queensland coefficients",
+  "rating": "consolidated rating (= Engine v2.5 national rating): 12 L cap, 1 + 0.8 exp(-n/6) good-run response with history-completeness experience, certainty-weighted reference; weight credit 0.25",
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1",
+   "RATING_GOOD_TAPER": "0.8,6",
+   "RATING_TAPER_NEFF": "engine/frames/experience_at_run.parquet",
+   "RATING_REF": "precision"
+  },
+  "approved": "Damo 28 Nov 2026 (Batch 28 s2): build the Queensland common framework on the consolidated foundation; start independent prospective assessment once ready; promotion a separate decision",
+  "built_check_2025_26": {
+   "built config 5 vs Qld production v2.1.3 frozen (2025-26)": {
+    "races": 4730,
+    "gain": 0.04047,
+    "ci95": [
+     0.02937,
+     0.05246
+    ]
+   },
+   "built config 5 vs Qld production structure refitted before 2025": {
+    "races": 4730,
+    "gain": 0.04047,
+    "ci95": [
+     0.02912,
+     0.05209
+    ]
+   },
+   "built config 5 vs built config 2 (same chain, 2025-26, all 6,804 Qld races)": {
+    "races": 6804,
+    "gain": 0.01145,
+    "ci95": [
+     0.00712,
+     0.01582
+    ]
+   },
+   "note": "First build attempt omitted the consolidated rating settings in the layer-1 freeze (which recomputes ratings); corrected and rebuilt 28 Nov 05:30Z. These are the corrected results."
+  },
+  "barrier": "rail-free pooled barrier NOT included in this build (the release chain has no barrier term yet); planned as a separate variant",
+  "qld_physical_inputs": "not used (Batch 26: no established gain); Queensland tracking stays in the data",
+  "training_only_inputs": {
+   "bm_change": "training-only control, served missing (as config 2)"
+  },
+  "source_files_sha256": {
+   "candidates_national_common.json": "546d504fdf9be244f35b2619448205a6ac76cde049ac8322bf2b1e8d34d46ccf",
+   "engine_v2.json": "3d032a62e8a7d02c185e6a2461c26fddd790df1d080104c76161b721e3b7da1a",
+   "engine_v2_2.json": "3961077a865d689a4a72685c7f4147772d4df3920e83807f6c1c9f2b359b07ce"
+  }
+ }
+}

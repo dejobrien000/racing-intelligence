@@ -130,6 +130,8 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
 5a. Shadow (NOT LIVE; approved by Damo 25 Nov 2026): right after publishing, run cd research && ops/run_shadow.sh <TODAY>
    (From 29 Nov it also scores the Engine v2.3 FALLBACK into prospective/shadow/v2_3_fallback/ while Engine v2.5 is live: expect
    "v2.3 fallback shadow scored (not live): N meetings". The consolidated candidate shadow keeps scoring with its own record.)
+   (From 29 Nov ops/run_qld_common_shadow.sh also scores Qld common CONFIG 5 - the national structure with Queensland coefficients on the
+   consolidated rating - into prospective/shadow/qld_common_cons/: expect "Qld common shadow config 5 scored (not live): N meetings".)
    (Queensland Engine v2.1.2-candidate beside production; from 27 Nov it first scores the PREVIOUS engines, v2.2 and v2.1.1, kept for
    rollback and prospective comparison via ops/run_prev_shadow.sh; about 13 minutes in all; writes only prospective/shadow/). It never
    changes the dashboard or production files. Copy its last line into the log; a WARNING there is not a failure of the run.

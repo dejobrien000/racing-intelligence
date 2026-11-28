@@ -1,23 +1,32 @@
 {
  "built config 5 vs Qld production v2.1.3 frozen (2025-26)": {
   "races": 4730,
-  "gain": 0.03094,
+  "gain": 0.04047,
   "ci95": [
-   0.01889,
-   0.04351
+   0.02937,
+   0.05246
   ]
  },
  "built config 5 vs Qld production structure refitted before 2025": {
   "races": 4730,
-  "gain": 0.03094,
+  "gain": 0.04047,
   "ci95": [
-   0.01804,
-   0.04318
+   0.02912,
+   0.05209
   ]
  },
  "mean lp": {
   "production frozen": -1.99021,
   "production refit": -1.99021,
-  "built config 5": -1.95927
- }
+  "built config 5": -1.94974
+ },
+ "built config 5 vs built config 2 (same chain, 2025-26, all 6,804 Qld races)": {
+  "races": 6804,
+  "gain": 0.01145,
+  "ci95": [
+   0.00712,
+   0.01582
+  ]
+ },
+ "note": "First build attempt omitted the consolidated rating settings in the layer-1 freeze (which recomputes ratings); corrected and rebuilt 28 Nov 05:30Z. These are the corrected results."
 }
