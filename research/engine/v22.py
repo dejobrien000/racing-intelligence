@@ -77,6 +77,7 @@ def raw(T, H_):
         T['hcp'] = [hcp_flag(st, c) for st, c in zip(T.state, T.race_class_tab)]
         T['b22_wt_x_hcp'] = T.a_wt_rel * T.hcp
     if 'tr_debut_g' in M['terms']: T['b22_tr_debut_g'] = trainer_debut(T, H_)   # trainer debut record candidate only (Batch 19 A3)
+    if 'sire_debut_x' in M['terms']: T['b22_sire_debut_x'] = sire_debut(T, H_)   # sire debut record, combined candidate only (Batch 28)
     return T
 def trainer_debut(T, H_, k=15.0):
     """Trainer debut record (CANDIDATE ONLY, Batch 19 A3; used only when a manifest lists the term 'tr_debut_g'): for a GENUINE debutant
@@ -88,6 +89,32 @@ def trainer_debut(T, H_, k=15.0):
     D['r'] = D.dyn_nat_inn - D['pop'].fillna(0); g = D.groupby('tkey').r.agg(['sum', 'count']); rec = g['sum'] / (g['count'] + k)
     genuine = (pd.to_numeric(T.b22_n_prior, errors='coerce').fillna(0) == 0) & pd.to_numeric(T.get('age_n'), errors='coerce').isin([2, 3])
     return np.where(genuine, T.tkey.map(rec).fillna(0.0).values, 0.0)
+def sire_debut(T, H_, k=30.0):
+    """Sire debut record (CANDIDATE ONLY, Batch 28 combined national candidate; used only when a manifest lists the term 'sire_debut_x'):
+    for a GENUINE debutant today (no runs held, aged 2 or 3), its sire's earlier genuine debutants' mean surprise on debut (first run held,
+    aged 2-3, from March 2023), shrunk k = 30 towards the mean of all such earlier debuts, minus that mean. Sire from TAB's form record held
+    before scoring (AGESEX_ASOF), else the pedigree held for the horse; 0 for every other runner and when no sire is known."""
+    import os, re, duckdb
+    nk_ = lambda s_: re.sub(r'[^A-Z0-9]', '', re.sub(r'\s*\([A-Z]{2,3}\)\s*$', '', str(s_).upper()))
+    con = duckdb.connect('../history/history.duckdb', read_only=True)
+    P = con.execute("select name_key, sire from bn_runner where sire is not null").fetchdf(); con.close()
+    P['horse'] = P.name_key.map(nk_); P['sk'] = P.sire.map(nk_); smap = P.groupby('horse').sk.agg(lambda s_: s_.mode().iloc[0])
+    h = H_[['horse', 'date', 'race', 'tkey', 'age_n', 'dyn_nat_inn']].sort_values(['horse', 'date', 'race']); kk = h.groupby('horse').cumcount()
+    Dd = h[(kk == 0) & h.age_n.isin([2, 3]) & (pd.to_datetime(h.date) >= pd.Timestamp('2023-03-01')) & h.dyn_nat_inn.notna() & h.tkey.notna()].copy()
+    Dd['sk'] = Dd.horse.map(smap); mu = float(Dd.dyn_nat_inn.mean()) if len(Dd) else 0.0
+    g = Dd.dropna(subset=['sk']).groupby('sk').dyn_nat_inn.agg(['sum', 'count']); sig = (g['sum'] + k * mu) / (g['count'] + k) - mu
+    tab = pd.Series([None] * len(T), index=T.index, dtype=object)
+    fp = f"collect/national/{pd.Timestamp(T.date.iloc[0]):%Y%m%d}/form_runners.csv"
+    if os.path.exists(fp):
+        fr = pd.read_csv(fp)
+        if os.environ.get('AGESEX_ASOF') and 'captured_utc' in fr: fr = fr[pd.to_datetime(fr.captured_utc, utc=True) < pd.Timestamp(os.environ['AGESEX_ASOF'])]
+        if 'sire' in fr:
+            fr['k'] = fr.name.map(nk_); fr = fr.drop_duplicates(['race', 'n', 'k']).set_index(['race', 'n', 'k']).sire
+            tab = pd.Series([fr.get((int(r_), int(n_), nk_(x_))) for r_, n_, x_ in zip(T.race_no, T.saddlecloth, T.horse)], index=T.index, dtype=object)
+    sk = tab.map(lambda s_: nk_(s_) if isinstance(s_, str) and s_.strip() not in ('', '-') else None)
+    sk = sk.where(sk.notna(), T.horse.map(lambda x_: smap.get(nk_(x_))))
+    genuine = (pd.to_numeric(T.b22_n_prior, errors='coerce').fillna(0) == 0) & pd.to_numeric(T.get('age_n'), errors='coerce').isin([2, 3])
+    return np.where(genuine, sk.map(sig).fillna(0.0).astype(float).values, 0.0)
 def terms(T, which='all_races'):
     C = M[f'coef_per_sd_{which}']; S = M[f'term_sd_{which}']; out = {}
     for c in M['terms']:

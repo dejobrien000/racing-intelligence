@@ -116,6 +116,18 @@ UN = UN.sort_values(['horse', 'date', 'race']).reset_index(drop=True)
 for key, nm in [('config', 'c_rec'), ('gband', 'g_rec'), ('dband', 'd_rec')]:
     v = UN.innov.fillna(0.0); c = UN.innov.notna().astype(int); grp = [UN.horse, UN[key]]
     UN[nm] = (v.groupby(grp).cumsum() - v) / ((c.groupby(grp).cumsum() - c) + man['records_k']); UN[nm + '_n'] = c.groupby(grp).cumsum() - c
+if man.get('d_rec_source') == 'dspec':   # Batch 28 combined candidate ONLY (never set for production files): the distance record slot carries the
+    # distance-specific suitability measure (Batch 26-27, preregistered): kernel h = 0.12 on log distance over the horse's EARLIER runs,
+    # dsuit = sum w*innov / (sum w + 3); gen = sum innov / (n + 3); dspec = dsuit - gen * ev / (ev + 3), ev = sum w. Today's runners only.
+    _today = np.flatnonzero(UN.rid.notna().values); _h = UN.horse.values; _ld = np.log(UN.distance_m.astype(float).values); _inn = UN.innov.values
+    _first = {}
+    for _i, _hh in enumerate(_h):
+        if _hh not in _first: _first[_hh] = _i
+    for _i in _today:
+        _j = np.arange(_first[_h[_i]], _i); _j = _j[~np.isnan(_inn[_j])] if len(_j) else _j
+        if len(_j) == 0: UN.at[_i, 'd_rec'] = 0.0; UN.at[_i, 'd_rec_n'] = 0; continue
+        _w = np.exp(-(_ld[_i] - _ld[_j]) ** 2 / (2 * 0.12 ** 2)); _ev = _w.sum()
+        UN.at[_i, 'd_rec'] = (_w * _inn[_j]).sum() / (_ev + 3.0) - (_inn[_j].sum() / (len(_j) + 3.0)) * _ev / (_ev + 3.0); UN.at[_i, 'd_rec_n'] = _ev
 R = R.merge(UN[UN.rid.notna()][['rid', 'horse', 'dyn_nat', 'dyn_sd', 'c_rec', 'g_rec', 'd_rec', 'c_rec_n']].rename(columns={'rid': 'race_id'}), on=['race_id', 'horse'], how='left')
 if os.environ.get('DUMP_FEATURES'):                       # engine v2 needs today's raw features; dump them and stop (writes no predictions)
     R.to_parquet(os.environ['DUMP_FEATURES']); print('features dumped', len(R)); sys.exit(0)

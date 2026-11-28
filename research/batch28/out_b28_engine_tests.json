@@ -1,0 +1,56 @@
+{
+ "going: replace going record with going-specific measure (consolidated)": {
+  "A": {
+   "races": 12777,
+   "gain": 0.0001,
+   "ci95": [
+    -7e-05,
+    0.00026
+   ]
+  },
+  "B": {
+   "races": 23729,
+   "gain": 0.0001,
+   "ci95": [
+    -4e-05,
+    0.00024
+   ]
+  }
+ },
+ "older horses: established x below-own-peak and x 6-run trend terms (consolidated)": {
+  "A": {
+   "races": 12777,
+   "gain": 0.00046,
+   "ci95": [
+    0.0002,
+    0.00072
+   ]
+  },
+  "B": {
+   "races": 23729,
+   "gain": 0.00131,
+   "ci95": [
+    0.00081,
+    0.0018
+   ]
+  }
+ },
+ "Qld: v3 learning-speed rating added to the common framework on consolidated": {
+  "A": {
+   "races": 3563,
+   "gain": 0.00143,
+   "ci95": [
+    0.00012,
+    0.00254
+   ]
+  },
+  "B": {
+   "races": 6804,
+   "gain": 0.00158,
+   "ci95": [
+    0.00064,
+    0.00261
+   ]
+  }
+ }
+}
