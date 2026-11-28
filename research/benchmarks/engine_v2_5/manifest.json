@@ -37,7 +37,7 @@
   "candidates_national_common.json": "4cc507023467ad67",
   "engine_v2.json": "9eb7fd537aa73ed2",
   "engine_v2_2.json": "2e0a54ee97bc14ed",
-  "runner_calibration.json": "79d4f994749e4f27"
+  "runner_calibration.json": "157ec407a111463a"
  },
  "identical_to": {
   "candidates_national_common.json": "4cc507023467ad67",
@@ -59,7 +59,7 @@
   "eligible_fields_and_cutoffs": "same morning snapshot, same scratchings/emergency rule, same history cutoff (23 Nov) as the shadow",
   "probability_normalisation": "every exported race sums to 100%",
   "export_and_ranking": "scratch export of the v2.5 day passed the exporter's own recompute check (v1 features and v2 scores reproduced exactly); daily ranking written; labels Engine v2.5; kg scale 0.3238 per kg",
-  "calibration": "display calibration refitted for v2.5 (bent line, out-of-sample 2025-26, 23,729 races): top decile model 31.8% / calibrated 30.6% / actual 30.4%",
+  "calibration": "display calibration refitted for v2.5 (bent line, same method as v2.2/v2.3) on the frozen candidate's own release-chain out-of-sample chances (dev-fit, 2025-26, 23,729 races): top decile model 31.8% / calibrated 30.6% / actual 30.4%",
   "settings_fingerprint": "recorded in each prediction file by the scorer (unchanged mechanism)",
   "default_paths": "re-export of Saturday (Engine v2.3) with the changed code reproduces the published day exactly (1,004 runners)"
  },
