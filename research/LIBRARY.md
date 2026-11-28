@@ -447,6 +447,16 @@ Connected form lines (item 10; no hindsight)
 - Engine (consolidated, third layer): +0.0011 (+0.00001 to +0.0022) / 0.0000 (-0.0007 to +0.0008). The signal is mostly already
   captured (last-start surprise, trajectory). NOT ESTABLISHED. Output batch28/out_b28_form_lines.json.
 
+Trainer transfer and missing careers on the consolidated rating (item 12)
+- Normalised transfers: a change counts only when old and new trainer share no surname word (1,915 of 31,169 changes were
+  partnerships or name variants). First run after a genuine transfer -0.2 to -0.3 kg; runs 2-5 about 0.
+- Engine terms (first run, runs 2-5): -0.0002 / +0.0001 (n.s.). The consolidated rating already absorbs the Batch 16-21 under-reaction.
+  NOT ESTABLISHED on consolidated.
+- First held run with history not complete: -1.1 kg against its starting rating in 2024 and 2025-26 (about 500 runs a year).
+  Genuine debutants +0.5 to +0.8 kg (kept distinct). Indicator term: -0.0004 (sig, worse) / +0.0001: NOT ESTABLISHED as a race term.
+  A rating-level starting expectation by history status (not a race term) is the remaining untested mechanism.
+- Output batch28/out_b28_trainer_missing.json.
+
 Performance ranges in horse profiles (item 4; approved, research-labelled)
 - Batch 27 P4 model as fitted on 2023: expected run against this field plus 80% range, with plain reasons when wider.
 - In the dashboard PREVIEW only (expanded profile; not the default race view; no confidence score). Says plainly that an 80% range is

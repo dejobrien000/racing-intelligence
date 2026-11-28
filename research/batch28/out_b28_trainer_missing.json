@@ -1,0 +1,123 @@
+{
+ "changes_all": 31169,
+ "changes_genuine": 29254,
+ "changes_variant_or_partnership": 1915,
+ "by_period": {
+  "2024": {
+   "genuine transfer, first run": [
+    7947,
+    -0.287
+   ],
+   "variant/partnership change, first run": [
+    525,
+    -0.018
+   ],
+   "2nd-5th run with new trainer": [
+    22460,
+    0.016
+   ],
+   "first held run, history incomplete": [
+    496,
+    -1.108
+   ],
+   "first held run, genuine debutant (complete, 2-3yo)": [
+    7297,
+    0.677
+   ],
+   "all runs": [
+    165227,
+    0.009
+   ]
+  },
+  "2025_26": {
+   "genuine transfer, first run": [
+    14174,
+    -0.451
+   ],
+   "variant/partnership change, first run": [
+    890,
+    -0.092
+   ],
+   "2nd-5th run with new trainer": [
+    41251,
+    -0.017
+   ],
+   "first held run, history incomplete": [
+    659,
+    -1.058
+   ],
+   "first held run, genuine debutant (complete, 2-3yo)": [
+    13080,
+    0.519
+   ],
+   "all runs": [
+    304151,
+    0.004
+   ]
+  },
+  "to_2023": {
+   "genuine transfer, first run": [
+    7123,
+    -0.205
+   ],
+   "variant/partnership change, first run": [
+    562,
+    -0.16
+   ],
+   "2nd-5th run with new trainer": [
+    16143,
+    0.006
+   ],
+   "first held run, history incomplete": [
+    6784,
+    -0.343
+   ],
+   "first held run, genuine debutant (complete, 2-3yo)": [
+    12080,
+    0.783
+   ],
+   "all runs": [
+    211730,
+    0.033
+   ]
+  }
+ },
+ "engine_tests_consolidated_third_layer": {
+  "trainer transfer (tr_new1 + tr_new2_5)": {
+   "A": {
+    "races": 12777,
+    "gain": -0.00018,
+    "ci95": [
+     -0.00052,
+     0.00023
+    ]
+   },
+   "B": {
+    "races": 23729,
+    "gain": 6e-05,
+    "ci95": [
+     -8e-05,
+     0.0002
+    ]
+   }
+  },
+  "missing-career first held run (miss_first)": {
+   "A": {
+    "races": 12777,
+    "gain": -0.00041,
+    "ci95": [
+     -0.0007,
+     -0.00012
+    ]
+   },
+   "B": {
+    "races": 23729,
+    "gain": 0.00014,
+    "ci95": [
+     0.0,
+     0.00027
+    ]
+   }
+  }
+ }
+}
