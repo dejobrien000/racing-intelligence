@@ -8,7 +8,8 @@ Usage: PYTHONPATH=. python3 engine/daily_ranking_v2.py 20261125"""
 import sys, os, re, json, html, hashlib, numpy as np, pandas as pd
 D = sys.argv[1]; stamp = pd.Timestamp.now(tz='UTC').strftime('%Y%m%dT%H%M%SZ')
 MAN = json.load(open('benchmarks/engine_v2/manifest.json')); sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
-IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.contains('/v2_') & IX.file.str.endswith('_runners.csv')]
+# RANK_PRED_ROOT / RANK_OUT_DIR: test overrides only (Batch 28 release check); defaults unchanged
+IX = pd.read_csv(os.environ.get('RANK_PRED_ROOT', 'prospective/prerace') + '/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.contains('/v2_') & IX.file.str.endswith('_runners.csv')]
 latest = IX.sort_values('scored_utc').groupby('track').tail(1)
 U = pd.read_parquet('engine/frames/national.parquet', columns=['horse', 'date', 'race', 'dyn_nat', 'dyn_nat_inn'])
 last = U.sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse')
@@ -16,9 +17,13 @@ last = U.sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse
 # engine/frames/national_c2.parquet); Engine v2.1.3 (Qld) uses its own manifest. Other meetings exactly as before.
 FAM_REL = {}   # family record (kg scale, top-pick calibration) of the engine that scored the meeting
 if os.path.exists('benchmarks/engine_v2_3/engine_v2.json'): FAM_REL['Engine v2.3'] = json.load(open('benchmarks/engine_v2_3/engine_v2.json'))['families']['NSW_VIC_ACT']
+if os.path.exists('benchmarks/engine_v2_5/engine_v2.json'): FAM_REL['Engine v2.5'] = json.load(open('benchmarks/engine_v2_5/engine_v2.json'))['families']['NSW_VIC_ACT']   # Engine v2.5 from 29 Nov 2026
 if os.path.exists('benchmarks/engine_v2_1_3/manifest.json'): FAM_REL['Engine v2.1.3'] = json.load(open('benchmarks/engine_v2_1_3/manifest.json'))['families']['QLD']
 _last_c2 = {}
 def last_for(release):
+    if release == 'Engine v2.5' and os.path.exists('engine/frames/national_consolidated.parquet'):   # Engine v2.5: its own rating history (consolidated frame)
+        if 'v25' not in _last_c2: _last_c2['v25'] = pd.read_parquet('engine/frames/national_consolidated.parquet', columns=['horse', 'date', 'race', 'dyn_nat']).sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse')
+        return _last_c2['v25']
     if release == 'Engine v2.3' and os.path.exists('engine/frames/national_c2.parquet'):
         if 'v' not in _last_c2: _last_c2['v'] = pd.read_parquet('engine/frames/national_c2.parquet', columns=['horse', 'date', 'race', 'dyn_nat']).sort_values(['date', 'race']).groupby('horse').tail(1).set_index('horse')
         return _last_c2['v']
@@ -68,7 +73,7 @@ for _, ix in latest.iterrows():
                       'v1_top_pick': g.sort_values('v1_rank').horse.iloc[0], 'changed_from_v1': t.v1_rank != 1, 'second_pick': g.horse.iloc[1], 'model_version': 'engine_v2', 'predicted_utc': m2['scored_utc']})
 R = pd.concat(rows, ignore_index=True); C = pd.DataFrame(races)
 C['day_rank'] = C.where(C.label != 'insufficient information').selection_strength_pct.rank(ascending=False, method='first'); C = C.sort_values(['day_rank', 'selection_strength_pct'], ascending=[True, False], na_position='last')
-od = os.path.join('prospective', 'daily', D); os.makedirs(od, exist_ok=True); base = os.path.join(od, f'ranking_v2_{stamp}')
+od = os.path.join(os.environ.get('RANK_OUT_DIR', os.path.join('prospective', 'daily')), D); os.makedirs(od, exist_ok=True); base = os.path.join(od, f'ranking_v2_{stamp}')
 with open(base + '_runners.csv', 'x') as fh: R.sort_values(['meeting', 'race_no', 'v2_rank']).to_csv(fh, index=False)
 with open(base + '_races.csv', 'x') as fh: C.to_csv(fh, index=False)
 e = lambda s: html.escape('' if s is None or (isinstance(s, float) and s != s) else str(s))

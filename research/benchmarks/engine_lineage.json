@@ -1,6 +1,6 @@
 {
  "about": "Engine lineage for the dashboard's Engine Performance tab (display only; read by engine/engine_performance.py). Update at every release. Figures are copied from benchmarks/engine_v2/RELEASES.md, the release manifests and gates, and the research ledgers named in 'source'. Log-likelihood gains are per race on identical races; fit = how much better than random the winner's chance was.",
- "updated": "2026-11-27 (Batch 19: age-aware update rule and trainer debut record shadows added, both start 29 Nov)",
+ "updated": "2026-11-28 (Engine v2.5 release, approved by Damo 28 Nov 2:38pm)",
  "families": [
   {
    "key": "QLD",
@@ -108,13 +108,13 @@
   {
    "key": "NAT",
    "label": "NSW, Vic, ACT, SA, WA, Tas",
-   "production": "Engine v2.3",
-   "production_label_prefix": "Engine v2.3",
-   "production_from": "2026-11-27",
-   "predecessor": "Engine v2.2",
-   "predecessor_label_prefix": "Engine v2.2",
-   "predecessor_status": "Scored every day since 27 Nov as a shadow (never shown or ranked); first results 28 Nov",
-   "change": "Past runs are read with 0.25 kg of credit per extra kg carried (was 1 kg) and margins become time at 0.170 s per length. kg scale 0.269 per kg (was 0.226): kg figures read about 16% smaller, a change of units, not ability.",
+   "production": "Engine v2.5",
+   "production_label_prefix": "Engine v2.5",
+   "production_from": "2026-11-29",
+   "predecessor": "Engine v2.3",
+   "predecessor_label_prefix": "Engine v2.3",
+   "predecessor_status": "Scored every morning from 29 Nov as the fallback shadow (never shown or ranked); first results 29 Nov",
+   "change": "Consolidated rating: a heavy defeat counts at most 12 lengths; lightly raced horses respond more to good runs (1 + 0.8 exp(-runs/6)), with experience counted from history completeness; each race reference weighs runners by how certain their ratings are. All three layers refitted. kg scale 0.324 per kg (was 0.269): kg figures are not comparable with Engine v2.3.",
    "chain": [
     {
      "version": "Engine v1",
@@ -163,6 +163,21 @@
      "gain_2024": 0.0105,
      "status": "Research period; 2024 helped choose the setting; first untouched evidence is races from 27 Nov 2026",
      "source": "benchmarks/engine_v2/RELEASES.md"
+    },
+    {
+     "version": "Engine v2.5",
+     "live": "2026-11-29",
+     "what": "Consolidated rating (12 L cap, experience-dependent response, history completeness, certainty-weighted reference)",
+     "vs": "Engine v2.3",
+     "test": "six states 2025-26, 23,729 races (2024 also tested)",
+     "gain": 0.01657,
+     "lo": 0.01419,
+     "hi": 0.01895,
+     "gain_2024": 0.01163,
+     "lo_2024": 0.00885,
+     "hi_2024": 0.01417,
+     "status": "Research period (examined in Batches 21-27); first untouched evidence: its frozen shadow from 28 Nov, production from 29 Nov",
+     "source": "batch27/out_b27_cons_review.json"
     }
    ],
    "identical_races": null,
@@ -242,6 +257,15 @@
    "evidence": "Harness +0.0004 (2024, not clear) / +0.0015 (2025-26); built check 2025-26 +0.0014 (+0.0009 to +0.0020), +0.0077 in races with a genuine debutant. Both periods examined: not untouched",
    "ledger_label_prefix": "Trainer debut record",
    "compare_with": "production"
+  },
+  {
+   "name": "Consolidated rating candidate",
+   "family": "NAT",
+   "what": "The frozen consolidated candidate (identical files to Engine v2.5), kept scoring with its own prospective record from 28 Nov",
+   "status": "Released as Engine v2.5 from the 29 Nov run; its frozen shadow keeps scoring (identical to production from 29 Nov)",
+   "ledger_label_prefix": "Consolidated rating candidate",
+   "compare_with": "production",
+   "evidence": "Research vs Engine v2.3: 2024 +0.0116 (0.0089 to 0.0144), 2025-26 +0.0166 (0.0142 to 0.0190); individual error 26.6 -> 24.5 kg2"
   }
  ],
  "checkpoints_proposed": {

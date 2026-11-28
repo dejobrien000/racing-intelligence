@@ -80,12 +80,14 @@ def _():
     return hit
 @guard('fingerprints')
 def _():
-    files = {sha(p): p for p in glob.glob('benchmarks/**/*.json', recursive=True)}
+    files = {}
+    for p in sorted(glob.glob('benchmarks/**/*.json', recursive=True)): files.setdefault(sha(p), []).append(p)
+    files = {k: (v[0] if len(v) == 1 else next((x for x in v if 'engine_v2_5' in x), v[0])) for k, v in files.items()}   # Engine v2.5 files are byte-identical copies of the consolidated candidate's
     rows = []
     for f in glob.glob(f'prospective/prerace/{D}/*/v2_pred_*_manifest.json'):
         m = json.load(open(f)); e = m.get('engine_manifest_sha256'); v = m.get('v22_manifest_sha256')
         rows.append({'meeting': f.split('/')[-2], 'engine_release': m.get('engine_release'), 'family_file': files.get(e, 'NOT FOUND'), 'v22_file': files.get(v, '-' if not v else 'NOT FOUND'), 'history_max_date': m.get('history_max_date')})
-    EXPECT = {'Engine v2.3': 'benchmarks/engine_v2_3/engine_v2.json', 'Engine v2.1.3': 'benchmarks/engine_v2_1_3/manifest.json'}   # family file each release must name (28 Nov on: scorer fix)
+    EXPECT = {'Engine v2.5': 'benchmarks/engine_v2_5/engine_v2.json', 'Engine v2.3': 'benchmarks/engine_v2_3/engine_v2.json', 'Engine v2.1.3': 'benchmarks/engine_v2_1_3/manifest.json'}   # family file each release must name (28 Nov on: scorer fix)
     for r in rows:
         if 'NOT FOUND' in (r['family_file'], r['v22_file']): WARN.append(f"{r['meeting']}: engine fingerprint does not match any settings file")
         ex = next((v for k, v in EXPECT.items() if str(r['engine_release']).startswith(k)), None)

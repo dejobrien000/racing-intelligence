@@ -398,6 +398,7 @@ P5 Course, data
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|
+| 29 Nov 2026 | Engine v2.5 (six states): the frozen consolidated rating candidate released unchanged (approved 28 Nov 2:38pm); Engine v2.3 scored daily as fallback | 2024 +0.0116 / 2025-26 +0.0166 vs v2.3; parity with the consolidated shadow on 28 Nov fields exact | benchmarks/engine_v2_5/, batch27/ |
 | 27 Nov 2026 | Engine v2.3 (six states): history weight credit 0.25 kg per kg + 0.170 s per length, full refit (approved 26 Nov 9:07pm) | 2025-26 +0.0095 (0.0076-0.0113) vs v2.2 as run; top pick +0.6 pts; v2.2 kept as daily previous-engine shadow | batch13/, benchmarks/engine_v2_3/ |
 | 27 Nov 2026 | Engine v2.1.3 (Qld): v2.1.1 + Age & sex (approved 26 Nov 9:07pm) | 2024 +0.0190, 2025-26 +0.0166; v2.1.1 kept as daily previous-engine shadow | batch13/, benchmarks/engine_v2_1_3/ |
 | 26 Nov 2026 | Weight carried (allocated minus apprentice claim) for the national model; Qld unchanged (consistent allocated) | Definition match with history; replay 1 top pick in 37 races | benchmarks/engine_v2/RELEASES.md |

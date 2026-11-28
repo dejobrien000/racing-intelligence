@@ -1,5 +1,15 @@
 # Engine v2 releases
 
+## Engine v2.5 (national) - approved by Damo 28 Nov 2026 2:38pm Brisbane; live from the 29 Nov 2026 7:30am run
+- What: NSW, VIC, ACT, SA, WA and TAS use the consolidated rating (12 L defeat cap; experience-dependent response with history-completeness
+  experience; certainty-weighted race reference), all three layers refitted - the frozen consolidated candidate released unchanged
+  (byte-identical files in benchmarks/engine_v2_5/). Queensland unchanged (Engine v2.1.3).
+- Evidence (research, both periods examined): vs Engine v2.3 +0.0116 (2024) / +0.0166 (2025-26) per race; individual error 26.6 -> 24.5 kg2.
+- Release checks (28 Nov fields): national re-score identical to the consolidated shadow (8 meetings, 695 runners); Qld unaffected;
+  export recompute and ranking pass; chances sum to 100% in every race; display calibration refitted. Details: benchmarks/engine_v2_5/manifest.json.
+- Fallback: Engine v2.3 scored daily (prospective/shadow/v2_3_fallback/). Rollback: delete ops/engine_v25_enabled.
+- History at release: history.duckdb 2c08284eec78828b (cutoff 23 Nov). Monday's master refresh and identity correction are separate updates.
+
 ## National emergency correction - switched on 27 Nov 2026 13:07Z (27 Nov 2026, 11:10pm Brisbane), effective from the 28 Nov 2026 7:30am run
 - What: in NSW, VIC, ACT, SA, WA and TAS fields, an emergency that has already gained a start at the morning capture (the number of
   main-field scratchings TAB lists reaches its place in the emergency order) is scored as a runner. Every other emergency stays out,

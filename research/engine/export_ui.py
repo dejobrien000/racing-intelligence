@@ -10,7 +10,7 @@ def _day_releases(day):
     import csv
     rel = set()
     try:
-        for r_ in csv.DictReader(open('prospective/prerace/INDEX.csv')):
+        for r_ in csv.DictReader(open(os.environ.get('EXPORT_PRED_ROOT', 'prospective/prerace') + '/INDEX.csv')):
             if str(r_['date']) == day and '/v2_' in r_['file'] and r_['file'].endswith('_manifest.json'): rel.add(str(json.load(open(r_['file'])).get('engine_release', '')))
     except Exception: pass
     return rel
@@ -18,6 +18,12 @@ _REL = _day_releases(sys.argv[1]) if len(sys.argv) > 1 else set()
 if _REL:
     os.environ['ENGINE_C2'] = '1' if 'Engine v2.3' in _REL else '0'
     os.environ['ENGINE_QLD213'] = '1' if any(x.startswith('Engine v2.1.3') for x in _REL) else '0'
+    if 'Engine v2.5' in _REL:   # Engine v2.5 (29 Nov 2026 run on): the consolidated candidate's frozen files and frame, exactly as scored
+        os.environ.update({'ENGINE_C2': '1', 'ENGINE_CAND_DIR': 'benchmarks/engine_v2_5', 'ENGINE_CAND_FRAME': 'engine/frames/national_consolidated.parquet', 'ENGINE_CAND_LABEL': 'Engine v2.5',
+                           'WCREDIT': '0.25', 'RATING_CAP_L': '12', 'RATING_CAP_SCOPE': 'all', 'RATING_GOOD_X': '1', 'RATING_GOOD_TAPER': '0.8,6',
+                           'RATING_TAPER_NEFF': 'engine/frames/experience_at_run.parquet', 'RATING_REF': 'precision'})   # the rating settings the v1 layer was scored with
+    else:
+        for _k in ['ENGINE_CAND_DIR', 'ENGINE_CAND_FRAME', 'ENGINE_CAND_LABEL', 'RATING_CAP_L', 'RATING_CAP_SCOPE', 'RATING_GOOD_X', 'RATING_GOOD_TAPER', 'RATING_TAPER_NEFF', 'RATING_REF']: os.environ.pop(_k, None)
 from engine import score_v2 as S
 D = sys.argv[1]; DATE = f'{D[:4]}-{D[4:6]}-{D[6:]}'; NOW = pd.Timestamp.now(tz='UTC')
 # Batch 27 (28 Nov 2026, display correction): a runner with no runs held by us is called a first starter ONLY when TAB's own form
@@ -44,15 +50,18 @@ RC23 = json.load(open('benchmarks/engine_v2_3/runner_calibration.json')) if os.p
 _q213 = 'benchmarks/engine_v2_1_3/manifest.json'; Q213F = json.load(open(_q213))['families']['QLD'] if os.path.exists(_q213) else None
 RC213 = json.load(open('benchmarks/engine_v2_1_3/runner_calibration.json')) if os.path.exists('benchmarks/engine_v2_1_3/runner_calibration.json') else None
 Q211F = json.load(open('benchmarks/engine_v2_1/manifest.json'))['families']['QLD']
+_c25 = 'benchmarks/engine_v2_5/engine_v2.json'; KG25 = json.load(open(_c25))['families']['NSW_VIC_ACT']['score_per_kg_total'] if os.path.exists(_c25) else None   # v2.5: its own kg scale
+RC25 = json.load(open('benchmarks/engine_v2_5/runner_calibration.json')) if os.path.exists('benchmarks/engine_v2_5/runner_calibration.json') else None
 _c23 = 'benchmarks/engine_v2_3/engine_v2.json'; KG23 = json.load(open(_c23))['families']['NSW_VIC_ACT']['score_per_kg_total'] if os.path.exists(_c23) else None   # v2.3 ratings are on its own kg scale
 KG_USED = {}; CAL_USED = {}
 V22_DAY = os.environ.get('ENGINE_V22', '1') == '1' and str(sys.argv[1]) >= os.environ.get('ENGINE_V22_FROM', '20261126')   # v2.2 predictions exist from the 26 Nov 2026 run; earlier days keep their own engine
 if V22_DAY:
-    RC = RC22; ENGINE_VERSION = 'Engine v2.3' if os.environ.get('ENGINE_C2', '0') == '1' else 'Engine v2.2'
+    RC = RC22; ENGINE_VERSION = ('Engine v2.5' if os.environ.get('ENGINE_CAND_LABEL') == 'Engine v2.5' else 'Engine v2.3') if os.environ.get('ENGINE_C2', '0') == '1' else 'Engine v2.2'
     RELEASE_NOTE = 'v2.2 (26 Nov 2026 run on; approved by Damo 25 Nov): NSW, Vic, ACT, SA, WA and Tas add 14 Batch 10 terms (horses below their own proven level, own consistency, hot start to a preparation, quick backups, light weights, runs on file, rating certainty, measured venue class) and a recalibrated chance curve. Queensland: Engine v2.1.1, the v2.1 model refitted with Queensland country history (915 more meetings) and ages. ' + RELEASE_NOTE   # v2 = bent line (25 Nov 2026)
     _N23 = []
     if os.environ.get('ENGINE_C2', '0') == '1': _N23.append('v2.3 (27 Nov 2026 run on; approved by Damo 26 Nov): NSW, Vic, ACT, SA, WA and Tas ratings read past runs with 0.25 kg of credit for each extra kg carried (was 1 kg), and past margins become time figures at a fixed 0.170 s per length (was from each race speed); every layer refitted, display calibration refitted. The kg scale for these states changes from 0.226 to 0.269 per kg, so kg ratings read about 16% smaller: a change of units, not of any horse ability. Compare kg ratings within one engine only.')
     if os.environ.get('ENGINE_QLD213', '0') == '1': _N23.append('v2.1.3 (27 Nov 2026 run on; approved by Damo 26 Nov): Queensland adds age and sex (age, 3yo and under, 7yo and over, filly or mare); Queensland display calibration refitted; Queensland kg scale unchanged.')
+    if os.environ.get('ENGINE_CAND_LABEL') == 'Engine v2.5': _N23.insert(0, 'v2.5 (29 Nov 2026 run on; approved by Damo 28 Nov): NSW, Vic, ACT, SA, WA and Tas use the consolidated rating - a heavy defeat counts at most 12 lengths, lightly raced horses respond more to good runs, experience counts history completeness, and each race reference weighs runners by how certain their ratings are; all three layers refitted. Engine v2.3 is scored every morning as the fallback.')
     if _N23: RELEASE_NOTE = ' '.join(_N23) + ' Ability ratings (opposition-aware, kg-equivalent) and time figures (margins converted to time; estimates, not measured times) remain separate inputs. Previously: ' + RELEASE_NOTE
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 def _settings(m2, pfile):
@@ -147,7 +156,8 @@ def mkt(meeting, rn, n):
 for q_ in sorted(QUOTES, key=lambda q: q['captured_utc']):
     k_ = (q_['meeting'], int(q_['race_no']), int(q_['saddlecloth'])); e_ = MKT.setdefault(k_, {'quotes': 0})
     e_[q_['kind']] = {'price': q_['price'], 'source': q_['source'], 'captured_utc': q_['captured_utc']}; e_['quotes'] += 1
-IX = pd.read_csv('prospective/prerace/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv')]
+# EXPORT_PRED_ROOT / EXPORT_UI_DIR: test overrides only (Batch 28 release check); defaults unchanged
+IX = pd.read_csv(os.environ.get('EXPORT_PRED_ROOT', 'prospective/prerace') + '/INDEX.csv'); IX = IX[(IX.date.astype(str) == D) & IX.file.str.endswith('_runners.csv')]
 v2rows = IX[IX.file.str.contains('/v2_')].sort_values('scored_utc'); H_ = S.history(D)
 U = pd.read_parquet('engine/frames/national.parquet', columns=['horse', 'date', 'race', 'dyn_nat', 'dyn_nat_inn'])
 runs = U[U.dyn_nat_inn.notna()].groupby('horse').size(); lastd = U.groupby('horse').date.max()
@@ -169,11 +179,12 @@ for track, grp in v2rows.groupby('track', sort=False):
     st = snap.get('state') or ('QLD' if fam == 'QLD' else 'NSW'); tz = snap.get('tz') or tz; notes = []
     _sc = (m2.get('settings') or {}).get('serving_corrections') or {}   # Batch 18: recompute with exactly the serving corrections in force for this meeting
     os.environ['SERVING_CORRECTIONS'] = ','.join([f for f, k in [('METRO_FROM_TIER', 'metro_from_tier'), ('QLD_COURSE_MAP', 'qld_course_map')] if _sc.get(k)] + (['AGESEX_TAB'] if _sc.get('first_starter_agesex') else []))
-    is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') in ('Engine v2.2', 'Engine v2.3'); S.V22 = is22
-    RC = RC23 if (is22 and m2.get('engine_release') == 'Engine v2.3') else (RC22 if is22 else RC_OLD)   # v2.3 = candidate C2 with its own calibration
+    is22 = V22_DAY and fam != 'QLD' and m2.get('engine_release') in ('Engine v2.2', 'Engine v2.3', 'Engine v2.5'); S.V22 = is22
+    RC = RC25 if (is22 and m2.get('engine_release') == 'Engine v2.5') else RC23 if (is22 and m2.get('engine_release') == 'Engine v2.3') else (RC22 if is22 else RC_OLD)   # v2.3 = candidate C2 with its own calibration
     is213 = fam == 'QLD' and str(m2.get('engine_release') or '').startswith('Engine v2.1.3')
     if fam == 'QLD' and S.V21: S.MAN['families']['QLD'] = Q213F if is213 else Q211F    # term detail recomputed with the family that scored this meeting
     if is213: RC = RC213
+    if is22 and m2.get('engine_release') == 'Engine v2.5': kg = KG25
     if is22 and m2.get('engine_release') == 'Engine v2.3': kg = KG23              # the divisor score_v2 used for this meeting's final_rating_kg_eq
     if is213: kg = Q213F['score_per_kg_total']
     KG_USED['QLD' if fam == 'QLD' else 'NAT'] = kg
@@ -361,7 +372,7 @@ try:
         try: _rel = json.load(open(_mp)).get('version'); break
         except Exception: pass
     _prev_rel = None
-    try: _prev_rel = (json.load(open(f'ui/data/racing_{DATE}.json')).get('tracking') or {}).get('database_release')
+    try: _prev_rel = (json.load(open(os.environ.get('EXPORT_UI_DIR', 'ui/data') + f'/racing_{DATE}.json')).get('tracking') or {}).get('database_release')
     except Exception: pass
     TRACKING.update({'cutoff': _cut, 'database_release': _prev_rel or _rel, 'database_release_now': _rel,
                      'added_after_forecast': bool((_prev_rel and _rel and _prev_rel != _rel) or NOW.tz_convert('Australia/Brisbane').strftime('%Y-%m-%d') > DATE)})
@@ -385,7 +396,8 @@ PROFILE = {'note': 'Performance figures are each run measured against its field,
 try:
     _cut = min([m['provenance']['history_to'] for m in meetings if (m.get('provenance') or {}).get('history_to')] or [str((pd.Timestamp(DATE) - pd.Timedelta(days=1)).date())])
     _fr = {}
-    for fam_, path_ in [('NSW_VIC_ACT', 'engine/frames/national_c2.parquet' if os.path.exists('engine/frames/national_c2.parquet') else 'engine/frames/national.parquet'), ('QLD', 'engine/frames/national_v3.parquet')]:
+    _NATF = os.environ['ENGINE_CAND_FRAME'] if os.environ.get('ENGINE_CAND_LABEL') == 'Engine v2.5' and os.path.exists(os.environ.get('ENGINE_CAND_FRAME', '')) else ('engine/frames/national_c2.parquet' if os.path.exists('engine/frames/national_c2.parquet') else 'engine/frames/national.parquet')   # Engine v2.5 days: its own rating history
+    for fam_, path_ in [('NSW_VIC_ACT', _NATF), ('QLD', 'engine/frames/national_v3.parquet')]:
         if os.path.exists(path_):
             F_ = pd.read_parquet(path_, columns=['horse', 'date', 'race', 'dyn_nat', 'dyn_nat_inn']); F_ = F_[(F_.date <= pd.Timestamp(_cut)) & F_.dyn_nat_inn.notna()]
             F_['perf'] = F_.dyn_nat + F_.dyn_nat_inn; _fr[fam_] = F_.sort_values(['horse', 'date', 'race']).groupby('horse')
@@ -411,7 +423,7 @@ try:
     # linear transform fixed on one reference population (every runner in 2025 Benchmark 64-72 races, all states): its mean reads 0 kg and
     # one standard deviation reads the Engine v2.3 spread on that population. Corrects both zero point and spread; engine numbers untouched.
     _ref = {}
-    for fam_, path_ in [('NSW_VIC_ACT', 'engine/frames/national_c2.parquet' if os.path.exists('engine/frames/national_c2.parquet') else 'engine/frames/national.parquet'), ('QLD', 'engine/frames/national_v3.parquet'),
+    for fam_, path_ in [('NSW_VIC_ACT', _NATF), ('QLD', 'engine/frames/national_v3.parquet'),
                         ('V23', 'engine/frames/national_c2.parquet')]:
         if os.path.exists(path_):
             R_ = pd.read_parquet(path_, columns=['date', 'class_label', 'bm', 'dyn_nat']); R_ = R_[(R_.date.dt.year == 2025) & (R_.class_label == 'Benchmark') & pd.to_numeric(R_.bm, errors='coerce').between(64, 72) & R_.dyn_nat.notna()]
@@ -494,7 +506,7 @@ def _clean(o):
     if isinstance(o, float) and o != o: return None
     return o
 data = _clean(data)
-os.makedirs('ui/data', exist_ok=True); out = f'ui/data/racing_{DATE}.json'
+_UD = os.environ.get('EXPORT_UI_DIR', 'ui/data'); os.makedirs(_UD, exist_ok=True); out = f'{_UD}/racing_{DATE}.json'
 if os.path.exists(out):
     try:
         _prev = json.load(open(out))
@@ -502,7 +514,7 @@ if os.path.exists(out):
     except Exception: pass
 json.dump(data, open(out + '.tmp', 'w'), separators=(',', ':'), allow_nan=False, default=lambda o: None if isinstance(o, float) and o != o else (int(o) if isinstance(o, (np.integer,)) else float(o) if isinstance(o, np.floating) else str(o)))
 os.replace(out + '.tmp', out)                                                  # atomic: a failed export never leaves a half-written day file
-idx = {'contract': data['contract'], 'days': sorted({*([d['date'] for d in json.load(open('ui/data/index.json'))['days']] if os.path.exists('ui/data/index.json') else []), DATE}, reverse=True)}
-idx['days'] = [{'date': d, 'file': f'racing_{d}.json'} for d in idx['days']]; json.dump(idx, open('ui/data/index.json', 'w'), indent=1)
+idx = {'contract': data['contract'], 'days': sorted({*([d['date'] for d in json.load(open(f'{_UD}/index.json'))['days']] if os.path.exists(f'{_UD}/index.json') else []), DATE}, reverse=True)}
+idx['days'] = [{'date': d, 'file': f'racing_{d}.json'} for d in idx['days']]; json.dump(idx, open(f'{_UD}/index.json', 'w'), indent=1)
 print('written', out, os.path.getsize(out), 'bytes |', sum(len(m['races']) for m in meetings), 'races |', len(all_runners), 'runners |', len(lb), 'qualified')
 for r in lb[:12]: print(r['day_rank'], r['meeting'], r['race'], r['horse'], r['cal'], r['class'], r['rank'])

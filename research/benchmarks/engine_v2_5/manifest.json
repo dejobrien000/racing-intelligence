@@ -1,0 +1,77 @@
+{
+ "version": "Engine v2.5",
+ "applies_to": [
+  "NSW",
+  "VIC",
+  "ACT",
+  "SA",
+  "WA",
+  "TAS"
+ ],
+ "not_applied_to": [
+  "QLD (Engine v2.1.3 unchanged)",
+  "NT (fields only)"
+ ],
+ "approved_by": "Damo 28 Nov 2026 2:38pm Brisbane (Batch 28 amendment: release tonight, effective from the 29 Nov morning run)",
+ "activation": {
+  "switch_created_utc": "2026-11-28T05:07:32Z",
+  "switch_file": "ops/engine_v25_enabled",
+  "effective_from": "the 29 Nov 2026 7:30am Brisbane run (no race already scored is changed)",
+  "confirmation_sent_to_Damo_before_activation": true
+ },
+ "what": "The frozen consolidated rating candidate (built 27 Nov 2026 12:34Z through the Engine v2.3 release chain), byte-identical files: candidates_national_common.json, engine_v2.json, engine_v2_2.json. Rule: heavy defeat counted at most 12 lengths; good runs move the rating 1 + 0.8 exp(-n/6) times as far, n = history-completeness experience (verified / observed / inferred with the cap); certainty-weighted race reference. All three layers refitted on its own ratings.",
+ "serving_settings": {
+  "ENGINE_C2": "1",
+  "WCREDIT": "0.25",
+  "RATING_CAP_L": "12",
+  "RATING_CAP_SCOPE": "all",
+  "RATING_GOOD_X": "1",
+  "RATING_GOOD_TAPER": "0.8,6",
+  "RATING_TAPER_NEFF": "engine/frames/experience_at_run.parquet",
+  "RATING_REF": "precision",
+  "ENGINE_CAND_DIR": "benchmarks/engine_v2_5",
+  "ENGINE_CAND_FRAME": "engine/frames/national_consolidated.parquet",
+  "ENGINE_CAND_LABEL": "Engine v2.5"
+ },
+ "files_sha256_16": {
+  "candidates_national_common.json": "4cc507023467ad67",
+  "engine_v2.json": "9eb7fd537aa73ed2",
+  "engine_v2_2.json": "2e0a54ee97bc14ed",
+  "runner_calibration.json": "79d4f994749e4f27"
+ },
+ "identical_to": {
+  "candidates_national_common.json": "4cc507023467ad67",
+  "engine_v2.json": "9eb7fd537aa73ed2",
+  "engine_v2_2.json": "2e0a54ee97bc14ed"
+ },
+ "history_version_at_release": {
+  "history.duckdb_sha256_16": "2c08284eec78828b",
+  "history.duckdb_modified_utc": "2026-11-26T07:03:53Z",
+  "history_cutoff": "2026-11-23",
+  "national_runs_c2.parquet_sha256_16": "4aa0756909a20254",
+  "national_consolidated.parquet_sha256_16": "20b7b624507f7dce",
+  "experience_at_run.parquet_sha256_16": "3c5529f02c65876f",
+  "national_c2.parquet_sha256_16": "dbac15ed18dd265e"
+ },
+ "release_checks_28_nov": {
+  "parity": "28 Nov fields re-scored with the production path and v2.5 settings (scratch folder, form records as held at scoring): all 8 national meetings, 695 runners, identical to the frozen consolidated shadow (max difference in score and chance 0.0)",
+  "queensland_unaffected": "3 Qld meetings, 267 runners re-scored under the same environment: identical to Saturday production (Engine v2.1.3)",
+  "eligible_fields_and_cutoffs": "same morning snapshot, same scratchings/emergency rule, same history cutoff (23 Nov) as the shadow",
+  "probability_normalisation": "every exported race sums to 100%",
+  "export_and_ranking": "scratch export of the v2.5 day passed the exporter's own recompute check (v1 features and v2 scores reproduced exactly); daily ranking written; labels Engine v2.5; kg scale 0.3238 per kg",
+  "calibration": "display calibration refitted for v2.5 (bent line, out-of-sample 2025-26, 23,729 races): top decile model 31.8% / calibrated 30.6% / actual 30.4%",
+  "settings_fingerprint": "recorded in each prediction file by the scorer (unchanged mechanism)",
+  "default_paths": "re-export of Saturday (Engine v2.3) with the changed code reproduces the published day exactly (1,004 runners)"
+ },
+ "fallback": "Engine v2.3 scored every morning into prospective/shadow/v2_3_fallback/ (ops/run_v23_fallback_shadow.sh); the ledger compares it with production as the previous engine. Engine v2.2 previous-engine shadow unchanged.",
+ "rollback": "delete ops/engine_v25_enabled -> the next run scores Engine v2.3 exactly as on 27-28 Nov. If frames fail to build, run_daily falls back to v2.3 automatically and logs it.",
+ "prospective_records_preserved": "all production files to 28 Nov (Engine v2.3) and every shadow, including the consolidated candidate (keeps scoring with its own record), untouched",
+ "evidence": "batch27/out_b27_cons_review.json; LIBRARY Batch 27 P2",
+ "known_concerns": [
+  "live evidence at activation: one settled day at most (28 Nov results settle in the 29 Nov run)",
+  "established 5yo+ horses slightly more overrated (A/E 0.932 -> 0.914 in research)",
+  "weaker gains in maidens and inexperienced fields (still positive in 2025-26)",
+  "kg figures are on a new scale (0.324 per kg vs 0.269) - not comparable with earlier days",
+  "Monday master refresh rebuilds the experience file and frame inside the run (~4 extra minutes); this path has run in the shadow but not yet in production"
+ ]
+}

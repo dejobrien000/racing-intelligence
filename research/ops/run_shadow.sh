@@ -13,6 +13,8 @@ print(max(t) if t else '')" 2>/dev/null)
 echo "shadow: form records as held at production scoring (AGESEX_ASOF=${AGESEX_ASOF:-unset})"
 # previous production engines kept for rollback and prospective comparison (Damo 26 Nov 2026); independent of the Qld v2.1.2 shadow below
 bash ops/run_prev_shadow.sh "$D" || echo "WARNING prev-engine shadow (production unaffected)"
+# Engine v2.3 fallback (Batch 28 amendment, 28 Nov 2026): scored every morning while Engine v2.5 is live
+bash ops/run_v23_fallback_shadow.sh "$D" || echo "WARNING v2.3 fallback shadow (production unaffected)"
 # Engine v2.4 candidate (v2.3 + handicap weight slope), shadow only (Batch 16 B7, 27 Nov 2026)
 bash ops/run_v24_shadow.sh "$D" || echo "WARNING v2.4 shadow (production unaffected)"
 # rating update rule candidate (12 L cap on the performance figure, good runs 1.3x), all three layers its own, shadow only (Batch 16 B9, 27 Nov 2026)

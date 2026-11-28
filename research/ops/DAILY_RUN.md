@@ -101,6 +101,10 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    rate (NT), and adds horses with held runs whose latest held run has no age; start 3b the moment step 2 finishes (before step 3), and
    fetch in parallel batches of 10. Cutoff moved 7:55 -> 8:05am (28 Nov: cards took until 7:50, leaving 3b four minutes; 13 missed). Step 5b reuses these records (form_manifest counts them as retrieved).
 4. Compute: cd research && ops/run_daily.sh <TODAY> <today raw> <YDAY> <results raw>  (prints each step; read it).
+   ENGINE v2.5 (from the 29 Nov run; approved by Damo 28 Nov 2:38pm): with ops/engine_v25_enabled present the six national states are
+   scored by Engine v2.5 (benchmarks/engine_v2_5). Expect "Engine v2.5 switch ON (national)" (and on a master-refresh day "Engine v2.5
+   experience file and rating frame rebuilt", ~4 extra minutes). "WARNING Engine v2.5 frames failed" = the day falls back to Engine v2.3:
+   log it as ATTENTION for Damo. Check that every national v2_pred manifest says engine_release "Engine v2.5" and Qld says "Engine v2.1.3".
    Execution allowance (Batch 26, after 28 Nov): run it in the BACKGROUND (nohup ... > /tmp/run_daily_<TODAY>.log 2>&1 &) and poll the
    log; never put a short timeout on it. Allowance = 6 minutes + 10 seconds per race listed (40 races ~13 min; 98 races ~22 min); a run
    over its allowance is investigated, not killed, unless the first race is less than 30 minutes away. 28 Nov took ~16 minutes.
@@ -124,6 +128,8 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    Then the QUEENSLAND COMMON FRAMEWORK shadows (ops/run_qld_common_shadow.sh; configs 2 and 4, Queensland fields restated in the national
    format by ops/qld_common_adapter.py). Expect "Qld common shadow config 2 scored (not live): N meetings" and the same for config 4 (~1 min).
 5a. Shadow (NOT LIVE; approved by Damo 25 Nov 2026): right after publishing, run cd research && ops/run_shadow.sh <TODAY>
+   (From 29 Nov it also scores the Engine v2.3 FALLBACK into prospective/shadow/v2_3_fallback/ while Engine v2.5 is live: expect
+   "v2.3 fallback shadow scored (not live): N meetings". The consolidated candidate shadow keeps scoring with its own record.)
    (Queensland Engine v2.1.2-candidate beside production; from 27 Nov it first scores the PREVIOUS engines, v2.2 and v2.1.1, kept for
    rollback and prospective comparison via ops/run_prev_shadow.sh; about 13 minutes in all; writes only prospective/shadow/). It never
    changes the dashboard or production files. Copy its last line into the log; a WARNING there is not a failure of the run.

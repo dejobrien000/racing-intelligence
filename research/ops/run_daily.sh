@@ -24,6 +24,22 @@ if [ -f ops/engine_c2_enabled ]; then
       && log "Engine v2.3 frames built" || { log "WARNING Engine v2.3 frames failed: national meetings scored with Engine v2.2 today"; export ENGINE_C2=0 ENGINE_FALLBACK="Engine v2.3 rating frames failed to build; national meetings scored with Engine v2.2"; rm -f engine/frames/national_c2.parquet national_runs_c2.parquet; }
   fi
 fi
+# Engine v2.5 (national consolidated rating; approved by Damo 28 Nov 2026 2:38pm, Batch 28 amendment, from the 29 Nov run): NSW/VIC/ACT/SA/
+# WA/TAS only, Queensland untouched. OFF unless ops/engine_v25_enabled exists and Engine v2.3 history is on. benchmarks/engine_v2_5 holds
+# byte-identical copies of the frozen consolidated candidate's files; same code, rating settings and frame as the consolidated shadow.
+# Rebuilds its experience file and rating frame when the v2.3 history is newer (~4 min). Any failure -> Engine v2.3 for the day, logged.
+# Rollback: delete ops/engine_v25_enabled (Engine v2.3 is also scored every morning as the fallback shadow).
+if [ -f ops/engine_v25_enabled ] && [ "${ENGINE_C2:-0}" = 1 ] && [ -f benchmarks/engine_v2_5/engine_v2.json ]; then
+  V25ENV="WCREDIT=0.25 RATING_CAP_L=12 RATING_CAP_SCOPE=all RATING_GOOD_X=1 RATING_GOOD_TAPER=0.8,6 RATING_TAPER_NEFF=engine/frames/experience_at_run.parquet RATING_REF=precision"
+  FR25=engine/frames/national_consolidated.parquet; OK25=1
+  if [ ! -f $FR25 ] || [ $FR25 -ot national_runs_c2.parquet ] || [ ! -f engine/frames/experience_at_run.parquet ]; then
+    ( export $V25ENV
+      EXP_INFO_JSON=/tmp/exp_info_v25.json python3 batch23/b23_experience_file.py engine/frames/national_c2.parquet engine/frames/experience_at_run.parquet > /tmp/v25_exp.txt 2>&1 \
+      && LAB_IN=national_runs_c2.parquet LAB_OUT=$FR25 python3 engine/lab.py > /tmp/v25_lab.txt 2>&1 ) && log "Engine v2.5 experience file and rating frame rebuilt" || OK25=0
+  fi
+  if [ $OK25 = 1 ]; then export $V25ENV ENGINE_CAND_DIR=benchmarks/engine_v2_5 ENGINE_CAND_FRAME=$FR25 ENGINE_CAND_LABEL="Engine v2.5"; log "Engine v2.5 switch ON (national)"
+  else log "WARNING Engine v2.5 frames failed: national meetings scored with Engine v2.3 today"; export ENGINE_FALLBACK="Engine v2.5 rating frames failed to build; national meetings scored with Engine v2.3"; fi
+fi
 # Engine v2.1.3 (Queensland candidate: v2.1.1 + Age & sex family; benchmarks/engine_v2_1_3). OFF unless ops/engine_qld213_enabled exists
 # (a release decision by Damo). No frames to build: same v3 history frame as v2.1.1. NSW/VIC/ACT/SA/WA/TAS untouched by this switch.
 if [ -f ops/engine_qld213_enabled ] && [ -f benchmarks/engine_v2_1_3/manifest.json ]; then export ENGINE_QLD213=1; log "Queensland: Engine v2.1.3 switch ON"; fi
