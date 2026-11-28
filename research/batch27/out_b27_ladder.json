@@ -448,5 +448,23 @@
     0.00155
    ]
   }
+ },
+ "secondary: retention x step up/down inside the distance candidate (consolidated)": {
+  "A": {
+   "races": 12777,
+   "gain": 0.00018,
+   "ci95": [
+    -0.00032,
+    0.00069
+   ]
+  },
+  "B": {
+   "races": 23729,
+   "gain": 0.00018,
+   "ci95": [
+    -0.00017,
+    0.00056
+   ]
+  }
  }
 }
