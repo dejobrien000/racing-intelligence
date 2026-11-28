@@ -1,0 +1,323 @@
+{
+ "note": "gain = variant minus reference, mean log-likelihood of the winner per race; refitted inside each window",
+ "mean_lp": {
+  "production frozen | A": -1.98268,
+  "production frozen | B": -1.99021,
+  "v3 (production) | A": -2.00086,
+  "v3 (production) | B": -1.99021,
+  "v3 without Age & sex | A": -2.01983,
+  "v3 without Age & sex | B": -2.00679,
+  "v3 without sectionals | A": -2.00239,
+  "v3 without sectionals | B": -1.98995,
+  "v3 without race shape + barrier | A": -2.00214,
+  "v3 without race shape + barrier | B": -1.99176,
+  "v3 without sectionals, shape, barrier | A": -2.00257,
+  "v3 without sectionals, shape, barrier | B": -1.99194,
+  "v3 without track/distance/going group | A": -1.99962,
+  "v3 without track/distance/going group | B": -1.98569,
+  "v3 without horse records | A": -2.00056,
+  "v3 without horse records | B": -1.99069,
+  "v2 (no learning speed) | A": -2.00377,
+  "v2 (no learning speed) | B": -1.99585,
+  "v2 without Age & sex | A": -2.02483,
+  "v2 without Age & sex | B": -2.01344,
+  "v2.3 (weight credit) | A": -1.99345,
+  "v2.3 (weight credit) | B": -1.98992,
+  "consolidated | A": -1.96267,
+  "consolidated | B": -1.96727,
+  "common framework on v2.3 ratings (config 2 research) | A": -1.95934,
+  "common framework on v2.3 ratings (config 2 research) | B": -1.95822,
+  "common framework on consolidated ratings | A": -1.94342,
+  "common framework on consolidated ratings | B": -1.94755
+ },
+ "comparisons": {
+  "v3 (production)  vs  production frozen": {
+   "A": {
+    "races": 2409,
+    "gain": -0.01818,
+    "ci95": [
+     -0.02328,
+     -0.01295
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "v2 (no learning speed)  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": -0.00291,
+    "ci95": [
+     -0.00636,
+     0.00046
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.00564,
+    "ci95": [
+     -0.00841,
+     -0.00278
+    ]
+   }
+  },
+  "v2.3 (weight credit)  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.00741,
+    "ci95": [
+     0.00137,
+     0.01321
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.00029,
+    "ci95": [
+     -0.00413,
+     0.00482
+    ]
+   }
+  },
+  "consolidated  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.03819,
+    "ci95": [
+     0.02881,
+     0.04755
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.02294,
+    "ci95": [
+     0.01587,
+     0.02999
+    ]
+   }
+  },
+  "v2 without Age & sex  vs  v3 without Age & sex": {
+   "A": {
+    "races": 2409,
+    "gain": -0.005,
+    "ci95": [
+     -0.00841,
+     -0.00158
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.00665,
+    "ci95": [
+     -0.00945,
+     -0.00384
+    ]
+   }
+  },
+  "v3 without Age & sex  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": -0.01897,
+    "ci95": [
+     -0.02491,
+     -0.01278
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.01658,
+    "ci95": [
+     -0.02131,
+     -0.01204
+    ]
+   }
+  },
+  "v3 without sectionals  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": -0.00153,
+    "ci95": [
+     -0.00335,
+     0.00023
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.00026,
+    "ci95": [
+     -0.00168,
+     0.00216
+    ]
+   }
+  },
+  "v3 without race shape + barrier  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": -0.00128,
+    "ci95": [
+     -0.00568,
+     0.00297
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.00155,
+    "ci95": [
+     -0.00422,
+     0.00116
+    ]
+   }
+  },
+  "v3 without sectionals, shape, barrier  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": -0.00171,
+    "ci95": [
+     -0.00653,
+     0.00326
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.00173,
+    "ci95": [
+     -0.00478,
+     0.00151
+    ]
+   }
+  },
+  "v3 without track/distance/going group  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.00124,
+    "ci95": [
+     -0.00348,
+     0.00602
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.00452,
+    "ci95": [
+     0.00132,
+     0.00765
+    ]
+   }
+  },
+  "v3 without horse records  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.0003,
+    "ci95": [
+     -0.00081,
+     0.00144
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": -0.00048,
+    "ci95": [
+     -0.00121,
+     0.00023
+    ]
+   }
+  },
+  "common framework on v2.3 ratings (config 2 research)  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.04152,
+    "ci95": [
+     0.02562,
+     0.05738
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.03199,
+    "ci95": [
+     0.02074,
+     0.04274
+    ]
+   }
+  },
+  "common framework on consolidated ratings  vs  v3 (production)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.05744,
+    "ci95": [
+     0.03989,
+     0.07384
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.04266,
+    "ci95": [
+     0.03128,
+     0.05358
+    ]
+   }
+  },
+  "common framework on v2.3 ratings (config 2 research)  vs  production frozen": {
+   "A": {
+    "races": 2409,
+    "gain": 0.02334,
+    "ci95": [
+     0.00667,
+     0.03988
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.03199,
+    "ci95": [
+     0.02013,
+     0.04289
+    ]
+   }
+  },
+  "common framework on consolidated ratings  vs  consolidated": {
+   "A": {
+    "races": 2409,
+    "gain": 0.01924,
+    "ci95": [
+     0.00535,
+     0.03214
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.01972,
+    "ci95": [
+     0.01098,
+     0.02861
+    ]
+   }
+  },
+  "common framework on consolidated ratings  vs  common framework on v2.3 ratings (config 2 research)": {
+   "A": {
+    "races": 2409,
+    "gain": 0.01592,
+    "ci95": [
+     0.00844,
+     0.02268
+    ]
+   },
+   "B": {
+    "races": 4730,
+    "gain": 0.01066,
+    "ci95": [
+     0.00553,
+     0.01618
+    ]
+   }
+  }
+ }
+}

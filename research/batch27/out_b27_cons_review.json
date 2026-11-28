@@ -1,0 +1,975 @@
+{
+ "race": {
+  "A": {
+   "all": {
+    "races": 12777,
+    "gain": 0.01163,
+    "ci95": [
+     0.00869,
+     0.0144
+    ]
+   },
+   "state=ACT": {
+    "races": 141,
+    "gain": 0.03382,
+    "ci95": [
+     0.01106,
+     0.05692
+    ]
+   },
+   "state=NSW": {
+    "races": 4792,
+    "gain": 0.01119,
+    "ci95": [
+     0.00666,
+     0.01523
+    ]
+   },
+   "state=SA": {
+    "races": 1349,
+    "gain": 0.01222,
+    "ci95": [
+     0.00402,
+     0.02026
+    ]
+   },
+   "state=TAS": {
+    "races": 518,
+    "gain": 0.01565,
+    "ci95": [
+     0.00413,
+     0.02775
+    ]
+   },
+   "state=VIC": {
+    "races": 3973,
+    "gain": 0.01238,
+    "ci95": [
+     0.00652,
+     0.01805
+    ]
+   },
+   "state=WA": {
+    "races": 2004,
+    "gain": 0.00818,
+    "ci95": [
+     0.00031,
+     0.0156
+    ]
+   },
+   "tier=country": {
+    "races": 6947,
+    "gain": 0.01054,
+    "ci95": [
+     0.00717,
+     0.01402
+    ]
+   },
+   "tier=metro": {
+    "races": 2844,
+    "gain": 0.01461,
+    "ci95": [
+     0.00767,
+     0.02141
+    ]
+   },
+   "tier=provincial": {
+    "races": 2986,
+    "gain": 0.01132,
+    "ci95": [
+     0.00552,
+     0.01707
+    ]
+   },
+   "cls=Benchmark": {
+    "races": 4385,
+    "gain": 0.01798,
+    "ci95": [
+     0.01361,
+     0.0221
+    ]
+   },
+   "cls=Maiden": {
+    "races": 4004,
+    "gain": 0.00453,
+    "ci95": [
+     -0.00099,
+     0.00962
+    ]
+   },
+   "cls=Open/Hcp/Stakes": {
+    "races": 1144,
+    "gain": 0.01319,
+    "ci95": [
+     0.00235,
+     0.02412
+    ]
+   },
+   "cls=Other/Class": {
+    "races": 3244,
+    "gain": 0.01125,
+    "ci95": [
+     0.00597,
+     0.01669
+    ]
+   },
+   "fieldb=13+": {
+    "races": 1746,
+    "gain": 0.01205,
+    "ci95": [
+     0.00449,
+     0.01975
+    ]
+   },
+   "fieldb=9-12": {
+    "races": 7475,
+    "gain": 0.01225,
+    "ci95": [
+     0.0085,
+     0.01603
+    ]
+   },
+   "fieldb=<=8": {
+    "races": 3556,
+    "gain": 0.01012,
+    "ci95": [
+     0.0047,
+     0.01524
+    ]
+   },
+   "distb=1101-1400": {
+    "races": 5384,
+    "gain": 0.01263,
+    "ci95": [
+     0.00825,
+     0.01708
+    ]
+   },
+   "distb=1401-1800": {
+    "races": 3009,
+    "gain": 0.01743,
+    "ci95": [
+     0.01223,
+     0.0232
+    ]
+   },
+   "distb=1800+": {
+    "races": 1449,
+    "gain": 0.00499,
+    "ci95": [
+     -0.00245,
+     0.01207
+    ]
+   },
+   "distb=<=1100": {
+    "races": 2931,
+    "gain": 0.00715,
+    "ci95": [
+     0.00107,
+     0.01341
+    ]
+   },
+   "inexpb=none": {
+    "races": 5250,
+    "gain": 0.01439,
+    "ci95": [
+     0.00985,
+     0.01865
+    ]
+   },
+   "inexpb=over 30%": {
+    "races": 3700,
+    "gain": 0.00348,
+    "ci95": [
+     -0.00212,
+     0.00903
+    ]
+   },
+   "inexpb=up to 30%": {
+    "races": 3827,
+    "gain": 0.01572,
+    "ci95": [
+     0.01072,
+     0.021
+    ]
+   }
+  },
+  "B": {
+   "all": {
+    "races": 23729,
+    "gain": 0.01657,
+    "ci95": [
+     0.01434,
+     0.01889
+    ]
+   },
+   "state=ACT": {
+    "races": 231,
+    "gain": 0.03578,
+    "ci95": [
+     0.01406,
+     0.05774
+    ]
+   },
+   "state=NSW": {
+    "races": 9026,
+    "gain": 0.01415,
+    "ci95": [
+     0.01076,
+     0.01763
+    ]
+   },
+   "state=SA": {
+    "races": 2531,
+    "gain": 0.0223,
+    "ci95": [
+     0.01509,
+     0.03016
+    ]
+   },
+   "state=TAS": {
+    "races": 925,
+    "gain": 0.02208,
+    "ci95": [
+     0.01155,
+     0.03348
+    ]
+   },
+   "state=VIC": {
+    "races": 7232,
+    "gain": 0.01892,
+    "ci95": [
+     0.01452,
+     0.02332
+    ]
+   },
+   "state=WA": {
+    "races": 3784,
+    "gain": 0.01152,
+    "ci95": [
+     0.00574,
+     0.01732
+    ]
+   },
+   "tier=country": {
+    "races": 12912,
+    "gain": 0.01673,
+    "ci95": [
+     0.01364,
+     0.01964
+    ]
+   },
+   "tier=metro": {
+    "races": 5150,
+    "gain": 0.01459,
+    "ci95": [
+     0.00927,
+     0.01958
+    ]
+   },
+   "tier=provincial": {
+    "races": 5667,
+    "gain": 0.01802,
+    "ci95": [
+     0.0133,
+     0.02325
+    ]
+   },
+   "cls=Benchmark": {
+    "races": 8363,
+    "gain": 0.01836,
+    "ci95": [
+     0.01463,
+     0.022
+    ]
+   },
+   "cls=Maiden": {
+    "races": 7342,
+    "gain": 0.01291,
+    "ci95": [
+     0.00848,
+     0.01759
+    ]
+   },
+   "cls=Open/Hcp/Stakes": {
+    "races": 2129,
+    "gain": 0.02616,
+    "ci95": [
+     0.01819,
+     0.03439
+    ]
+   },
+   "cls=Other/Class": {
+    "races": 5895,
+    "gain": 0.01513,
+    "ci95": [
+     0.0105,
+     0.01982
+    ]
+   },
+   "fieldb=13+": {
+    "races": 2830,
+    "gain": 0.02203,
+    "ci95": [
+     0.01519,
+     0.02818
+    ]
+   },
+   "fieldb=9-12": {
+    "races": 13782,
+    "gain": 0.01688,
+    "ci95": [
+     0.01363,
+     0.01964
+    ]
+   },
+   "fieldb=<=8": {
+    "races": 7117,
+    "gain": 0.01382,
+    "ci95": [
+     0.00983,
+     0.01798
+    ]
+   },
+   "distb=1101-1400": {
+    "races": 10188,
+    "gain": 0.01672,
+    "ci95": [
+     0.01327,
+     0.0203
+    ]
+   },
+   "distb=1401-1800": {
+    "races": 5516,
+    "gain": 0.01905,
+    "ci95": [
+     0.01457,
+     0.02368
+    ]
+   },
+   "distb=1800+": {
+    "races": 2582,
+    "gain": 0.01126,
+    "ci95": [
+     0.00434,
+     0.01754
+    ]
+   },
+   "distb=<=1100": {
+    "races": 5436,
+    "gain": 0.01633,
+    "ci95": [
+     0.01054,
+     0.02158
+    ]
+   },
+   "inexpb=none": {
+    "races": 10990,
+    "gain": 0.0182,
+    "ci95": [
+     0.01525,
+     0.02131
+    ]
+   },
+   "inexpb=over 30%": {
+    "races": 6837,
+    "gain": 0.01173,
+    "ci95": [
+     0.00665,
+     0.01715
+    ]
+   },
+   "inexpb=up to 30%": {
+    "races": 5902,
+    "gain": 0.01915,
+    "ci95": [
+     0.01432,
+     0.0237
+    ]
+   }
+  }
+ },
+ "calibration": {
+  "A": {
+   "v2.3": {
+    "bins": {
+     "(0.0, 0.02]": {
+      "runners": 15069,
+      "A/E": 0.942
+     },
+     "(0.02, 0.05]": {
+      "runners": 27619,
+      "A/E": 0.962
+     },
+     "(0.05, 0.1]": {
+      "runners": 36452,
+      "A/E": 0.963
+     },
+     "(0.1, 0.2]": {
+      "runners": 33747,
+      "A/E": 1.025
+     },
+     "(0.2, 0.35]": {
+      "runners": 12445,
+      "A/E": 1.014
+     },
+     "(0.35, 1.0]": {
+      "runners": 2528,
+      "A/E": 0.98
+     }
+    },
+    "ece_pct_pts": 0.258
+   },
+   "consolidated": {
+    "bins": {
+     "(0.0, 0.02]": {
+      "runners": 16108,
+      "A/E": 0.97
+     },
+     "(0.02, 0.05]": {
+      "runners": 27465,
+      "A/E": 0.95
+     },
+     "(0.05, 0.1]": {
+      "runners": 35911,
+      "A/E": 0.973
+     },
+     "(0.1, 0.2]": {
+      "runners": 33123,
+      "A/E": 1.021
+     },
+     "(0.2, 0.35]": {
+      "runners": 12596,
+      "A/E": 1.015
+     },
+     "(0.35, 1.0]": {
+      "runners": 2657,
+      "A/E": 0.982
+     }
+    },
+    "ece_pct_pts": 0.228
+   }
+  },
+  "B": {
+   "v2.3": {
+    "bins": {
+     "(0.0, 0.02]": {
+      "runners": 33759,
+      "A/E": 1.19
+     },
+     "(0.02, 0.05]": {
+      "runners": 50413,
+      "A/E": 1.086
+     },
+     "(0.05, 0.1]": {
+      "runners": 62131,
+      "A/E": 1.047
+     },
+     "(0.1, 0.2]": {
+      "runners": 57447,
+      "A/E": 1.019
+     },
+     "(0.2, 0.35]": {
+      "runners": 23660,
+      "A/E": 0.951
+     },
+     "(0.35, 1.0]": {
+      "runners": 6601,
+      "A/E": 0.901
+     }
+    },
+    "ece_pct_pts": 0.5
+   },
+   "consolidated": {
+    "bins": {
+     "(0.0, 0.02]": {
+      "runners": 33472,
+      "A/E": 1.109
+     },
+     "(0.02, 0.05]": {
+      "runners": 49529,
+      "A/E": 1.059
+     },
+     "(0.05, 0.1]": {
+      "runners": 62259,
+      "A/E": 0.997
+     },
+     "(0.1, 0.2]": {
+      "runners": 58663,
+      "A/E": 1.032
+     },
+     "(0.2, 0.35]": {
+      "runners": 23920,
+      "A/E": 0.963
+     },
+     "(0.35, 1.0]": {
+      "runners": 6168,
+      "A/E": 0.938
+     }
+    },
+    "ece_pct_pts": 0.344
+   }
+  }
+ },
+ "groups_actual_vs_expected_B": {
+  "ageb": {
+   "2yo": {
+    "runners": 6880,
+    "A/E v2.3": 0.883,
+    "A/E consolidated": 0.908
+   },
+   "3yo": {
+    "runners": 51427,
+    "A/E v2.3": 0.95,
+    "A/E consolidated": 0.983
+   },
+   "4yo": {
+    "runners": 64191,
+    "A/E v2.3": 1.039,
+    "A/E consolidated": 1.029
+   },
+   "5yo": {
+    "runners": 50010,
+    "A/E v2.3": 0.921,
+    "A/E consolidated": 0.914
+   },
+   "6yo+": {
+    "runners": 60580,
+    "A/E v2.3": 0.945,
+    "A/E consolidated": 0.916
+   }
+  },
+  "expb": {
+   "1-3 runs": {
+    "runners": 36259,
+    "A/E v2.3": 0.969,
+    "A/E consolidated": 1.004
+   },
+   "11-25": {
+    "runners": 82043,
+    "A/E v2.3": 0.969,
+    "A/E consolidated": 0.965
+   },
+   "26+": {
+    "runners": 38769,
+    "A/E v2.3": 1.046,
+    "A/E consolidated": 0.993
+   },
+   "4-10": {
+    "runners": 63599,
+    "A/E v2.3": 1.028,
+    "A/E consolidated": 1.035
+   },
+   "debut": {
+    "runners": 13341,
+    "A/E v2.3": 1.043,
+    "A/E consolidated": 1.017
+   }
+  },
+  "stage": {
+   "emerging (0-5 runs)": {
+    "runners": 70461,
+    "A/E v2.3": 1.009,
+    "A/E consolidated": 1.03
+   },
+   "established (15+ runs, 5yo+)": {
+    "runners": 81463,
+    "A/E v2.3": 0.932,
+    "A/E consolidated": 0.914
+   },
+   "middle": {
+    "runners": 82087,
+    "A/E v2.3": 1.04,
+    "A/E consolidated": 1.035
+   }
+  },
+  "gap": {
+   "120-364d": {
+    "runners": 26032,
+    "A/E v2.3": 1.014,
+    "A/E consolidated": 1.026
+   },
+   "14-59d": {
+    "runners": 132728,
+    "A/E v2.3": 0.995,
+    "A/E consolidated": 0.995
+   },
+   "365d+": {
+    "runners": 1579,
+    "A/E v2.3": 0.663,
+    "A/E consolidated": 0.732
+   },
+   "60-119d": {
+    "runners": 10493,
+    "A/E v2.3": 0.931,
+    "A/E consolidated": 0.927
+   },
+   "<14d": {
+    "runners": 49838,
+    "A/E v2.3": 1.02,
+    "A/E consolidated": 1.018
+   }
+  },
+  "hist": {
+   "complete": {
+    "runners": 221230,
+    "A/E v2.3": 0.997,
+    "A/E consolidated": 0.999
+   },
+   "late_maiden": {
+    "runners": 4244,
+    "A/E v2.3": 1.11,
+    "A/E consolidated": 1.058
+   },
+   "probable_incomplete": {
+    "runners": 8537,
+    "A/E v2.3": 1.052,
+    "A/E consolidated": 1.027
+   }
+  },
+  "state": {
+   "ACT": {
+    "runners": 2151,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   },
+   "NSW": {
+    "runners": 85751,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   },
+   "SA": {
+    "runners": 27074,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   },
+   "TAS": {
+    "runners": 8491,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   },
+   "VIC": {
+    "runners": 72130,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   },
+   "WA": {
+    "runners": 38414,
+    "A/E v2.3": 1.0,
+    "A/E consolidated": 1.0
+   }
+  }
+ },
+ "individual_common_target": {
+  "A": {
+   "all": {
+    "runs": 120702,
+    "error_kg2 v2.3": 26.28,
+    "slope v2.3": 0.806,
+    "error_kg2 consolidated": 24.93,
+    "slope consolidated": 0.959,
+    "rank_corr v2.3": 0.362,
+    "rank_corr consolidated": 0.417
+   }
+  },
+  "B": {
+   "all": {
+    "runs": 221580,
+    "error_kg2 v2.3": 26.57,
+    "slope v2.3": 0.729,
+    "error_kg2 consolidated": 24.46,
+    "slope consolidated": 0.947,
+    "rank_corr v2.3": 0.334,
+    "rank_corr consolidated": 0.4
+   },
+   "ageb=2yo": {
+    "runs": 3729,
+    "error_kg2 v2.3": 32.74,
+    "slope v2.3": 0.541,
+    "error_kg2 consolidated": 29.44,
+    "slope consolidated": 0.675,
+    "rank_corr v2.3": 0.315,
+    "rank_corr consolidated": 0.346
+   },
+   "ageb=3yo": {
+    "runs": 44153,
+    "error_kg2 v2.3": 28.52,
+    "slope v2.3": 0.698,
+    "error_kg2 consolidated": 25.85,
+    "slope consolidated": 0.892,
+    "rank_corr v2.3": 0.38,
+    "rank_corr consolidated": 0.422
+   },
+   "ageb=4yo": {
+    "runs": 62269,
+    "error_kg2 v2.3": 27.43,
+    "slope v2.3": 0.722,
+    "error_kg2 consolidated": 25.15,
+    "slope consolidated": 0.953,
+    "rank_corr v2.3": 0.325,
+    "rank_corr consolidated": 0.361
+   },
+   "ageb=5yo": {
+    "runs": 49829,
+    "error_kg2 v2.3": 24.85,
+    "slope v2.3": 0.738,
+    "error_kg2 consolidated": 23.39,
+    "slope consolidated": 0.954,
+    "rank_corr v2.3": 0.279,
+    "rank_corr consolidated": 0.316
+   },
+   "ageb=6yo+": {
+    "runs": 60696,
+    "error_kg2 v2.3": 25.38,
+    "slope v2.3": 0.775,
+    "error_kg2 consolidated": 23.39,
+    "slope consolidated": 1.019,
+    "rank_corr v2.3": 0.306,
+    "rank_corr consolidated": 0.338
+   },
+   "expb=1-3 runs": {
+    "runs": 36382,
+    "error_kg2 v2.3": 34.18,
+    "slope v2.3": 0.703,
+    "error_kg2 consolidated": 31.0,
+    "slope consolidated": 0.889,
+    "rank_corr v2.3": 0.4,
+    "rank_corr consolidated": 0.432
+   },
+   "expb=11-25": {
+    "runs": 82410,
+    "error_kg2 v2.3": 24.34,
+    "slope v2.3": 0.742,
+    "error_kg2 consolidated": 22.7,
+    "slope consolidated": 0.967,
+    "rank_corr v2.3": 0.284,
+    "rank_corr consolidated": 0.329
+   },
+   "expb=26+": {
+    "runs": 38947,
+    "error_kg2 v2.3": 22.04,
+    "slope v2.3": 0.763,
+    "error_kg2 consolidated": 20.56,
+    "slope consolidated": 0.985,
+    "rank_corr v2.3": 0.296,
+    "rank_corr consolidated": 0.318
+   },
+   "expb=4-10": {
+    "runs": 63841,
+    "error_kg2 v2.3": 27.88,
+    "slope v2.3": 0.725,
+    "error_kg2 consolidated": 25.4,
+    "slope consolidated": 0.963,
+    "rank_corr v2.3": 0.351,
+    "rank_corr consolidated": 0.39
+   },
+   "stage=emerging (1-5 runs)": {
+    "runs": 57320,
+    "error_kg2 v2.3": 32.17,
+    "slope v2.3": 0.709,
+    "error_kg2 consolidated": 29.13,
+    "slope consolidated": 0.909,
+    "rank_corr v2.3": 0.404,
+    "rank_corr consolidated": 0.438
+   },
+   "stage=established (15+ runs, 5yo+)": {
+    "runs": 81843,
+    "error_kg2 v2.3": 23.29,
+    "slope v2.3": 0.75,
+    "error_kg2 consolidated": 21.64,
+    "slope consolidated": 0.981,
+    "rank_corr v2.3": 0.303,
+    "rank_corr consolidated": 0.333
+   },
+   "stage=middle": {
+    "runs": 82417,
+    "error_kg2 v2.3": 25.94,
+    "slope v2.3": 0.734,
+    "error_kg2 consolidated": 24.02,
+    "slope consolidated": 0.964,
+    "rank_corr v2.3": 0.306,
+    "rank_corr consolidated": 0.35
+   },
+   "gap=120-364d": {
+    "runs": 26128,
+    "error_kg2 v2.3": 33.26,
+    "slope v2.3": 0.619,
+    "error_kg2 consolidated": 29.94,
+    "slope consolidated": 0.851,
+    "rank_corr v2.3": 0.256,
+    "rank_corr consolidated": 0.34
+   },
+   "gap=14-59d": {
+    "runs": 133261,
+    "error_kg2 v2.3": 25.5,
+    "slope v2.3": 0.74,
+    "error_kg2 consolidated": 23.56,
+    "slope consolidated": 0.953,
+    "rank_corr v2.3": 0.311,
+    "rank_corr consolidated": 0.374
+   },
+   "gap=365d+": {
+    "runs": 1581,
+    "error_kg2 v2.3": 67.06,
+    "slope v2.3": 0.47,
+    "error_kg2 consolidated": 53.24,
+    "slope consolidated": 0.98,
+    "rank_corr v2.3": NaN,
+    "rank_corr consolidated": NaN
+   },
+   "gap=60-119d": {
+    "runs": 10536,
+    "error_kg2 v2.3": 29.24,
+    "slope v2.3": 0.681,
+    "error_kg2 consolidated": 26.74,
+    "slope consolidated": 0.911,
+    "rank_corr v2.3": 0.273,
+    "rank_corr consolidated": 0.357
+   },
+   "gap=<14d": {
+    "runs": 50074,
+    "error_kg2 v2.3": 24.09,
+    "slope v2.3": 0.798,
+    "error_kg2 consolidated": 22.61,
+    "slope consolidated": 0.999,
+    "rank_corr v2.3": 0.325,
+    "rank_corr consolidated": 0.372
+   },
+   "hist=complete": {
+    "runs": 209266,
+    "error_kg2 v2.3": 26.5,
+    "slope v2.3": 0.72,
+    "error_kg2 consolidated": 24.39,
+    "slope consolidated": 0.938,
+    "rank_corr v2.3": 0.327,
+    "rank_corr consolidated": 0.392
+   },
+   "hist=late_maiden": {
+    "runs": 3910,
+    "error_kg2 v2.3": 33.25,
+    "slope v2.3": 0.884,
+    "error_kg2 consolidated": 31.24,
+    "slope consolidated": 1.125,
+    "rank_corr v2.3": 0.6,
+    "rank_corr consolidated": 0.52
+   },
+   "hist=probable_incomplete": {
+    "runs": 8404,
+    "error_kg2 v2.3": 25.36,
+    "slope v2.3": 0.84,
+    "error_kg2 consolidated": 23.17,
+    "slope consolidated": 1.061,
+    "rank_corr v2.3": 0.387,
+    "rank_corr consolidated": 0.424
+   },
+   "state=ACT": {
+    "runs": 2020,
+    "error_kg2 v2.3": 22.05,
+    "slope v2.3": 0.769,
+    "error_kg2 consolidated": 20.19,
+    "slope consolidated": 0.992,
+    "rank_corr v2.3": 0.376,
+    "rank_corr consolidated": 0.424
+   },
+   "state=NSW": {
+    "runs": 81005,
+    "error_kg2 v2.3": 25.27,
+    "slope v2.3": 0.669,
+    "error_kg2 consolidated": 22.8,
+    "slope consolidated": 0.894,
+    "rank_corr v2.3": 0.316,
+    "rank_corr consolidated": 0.387
+   },
+   "state=SA": {
+    "runs": 26319,
+    "error_kg2 v2.3": 30.82,
+    "slope v2.3": 0.767,
+    "error_kg2 consolidated": 28.79,
+    "slope consolidated": 1.014,
+    "rank_corr v2.3": 0.345,
+    "rank_corr consolidated": 0.401
+   },
+   "state=TAS": {
+    "runs": 8238,
+    "error_kg2 v2.3": 22.78,
+    "slope v2.3": 0.695,
+    "error_kg2 consolidated": 20.81,
+    "slope consolidated": 0.904,
+    "rank_corr v2.3": 0.344,
+    "rank_corr consolidated": 0.406
+   },
+   "state=VIC": {
+    "runs": 67169,
+    "error_kg2 v2.3": 28.0,
+    "slope v2.3": 0.748,
+    "error_kg2 consolidated": 25.84,
+    "slope consolidated": 0.973,
+    "rank_corr v2.3": 0.341,
+    "rank_corr consolidated": 0.409
+   },
+   "state=WA": {
+    "runs": 36829,
+    "error_kg2 v2.3": 24.9,
+    "slope v2.3": 0.804,
+    "error_kg2 consolidated": 23.56,
+    "slope consolidated": 0.971,
+    "rank_corr v2.3": 0.349,
+    "rank_corr consolidated": 0.41
+   },
+   "tier=country": {
+    "runs": 122321,
+    "error_kg2 v2.3": 28.69,
+    "slope v2.3": 0.757,
+    "error_kg2 consolidated": 26.67,
+    "slope consolidated": 0.981,
+    "rank_corr v2.3": 0.353,
+    "rank_corr consolidated": 0.408
+   },
+   "tier=metro": {
+    "runs": 50279,
+    "error_kg2 v2.3": 20.91,
+    "slope v2.3": 0.624,
+    "error_kg2 consolidated": 18.88,
+    "slope consolidated": 0.826,
+    "rank_corr v2.3": 0.274,
+    "rank_corr consolidated": 0.364
+   },
+   "tier=provincial": {
+    "runs": 48980,
+    "error_kg2 v2.3": 27.09,
+    "slope v2.3": 0.728,
+    "error_kg2 consolidated": 24.68,
+    "slope consolidated": 0.953,
+    "rank_corr v2.3": 0.344,
+    "rank_corr consolidated": 0.414
+   },
+   "cls=Benchmark": {
+    "runs": 82023,
+    "error_kg2 v2.3": 25.12,
+    "slope v2.3": 0.612,
+    "error_kg2 consolidated": 22.32,
+    "slope consolidated": 0.9,
+    "rank_corr v2.3": 0.245,
+    "rank_corr consolidated": 0.337
+   },
+   "cls=Maiden": {
+    "runs": 59910,
+    "error_kg2 v2.3": 31.45,
+    "slope v2.3": 0.828,
+    "error_kg2 consolidated": 30.12,
+    "slope consolidated": 1.002,
+    "rank_corr v2.3": 0.449,
+    "rank_corr consolidated": 0.483
+   },
+   "cls=Other": {
+    "runs": 79647,
+    "error_kg2 v2.3": 24.39,
+    "slope v2.3": 0.716,
+    "error_kg2 consolidated": 22.41,
+    "slope consolidated": 0.922,
+    "rank_corr v2.3": 0.325,
+    "rank_corr consolidated": 0.393
+   }
+  }
+ }
+}
