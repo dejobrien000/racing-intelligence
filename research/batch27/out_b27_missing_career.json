@@ -1,0 +1,54 @@
+{
+ "evidence of 1-4 earlier starts": {
+  "first_runs": 616,
+  "mean_surprise_kg": -1.29,
+  "sd_kg": 6.66,
+  "mean_age": 6.1
+ },
+ "evidence of 5+ earlier starts": {
+  "first_runs": 1057,
+  "mean_surprise_kg": -0.97,
+  "sd_kg": 6.72,
+  "mean_age": 6.9
+ },
+ "first held run, older, history complete": {
+  "first_runs": 9038,
+  "mean_surprise_kg": -0.38,
+  "sd_kg": 7.74,
+  "mean_age": 4.2
+ },
+ "genuine debutant (2-3yo, complete)": {
+  "first_runs": 28398,
+  "mean_surprise_kg": 0.39,
+  "sd_kg": 7.15,
+  "mean_age": 2.7
+ },
+ "other / unknown": {
+  "first_runs": 1529,
+  "mean_surprise_kg": -2.42,
+  "sd_kg": 8.12,
+  "mean_age": 5.7
+ },
+ "second_held_run_mean_surprise_kg": {
+  "evidence of 1-4 earlier starts": [
+   556,
+   -0.07
+  ],
+  "evidence of 5+ earlier starts": [
+   954,
+   0.11
+  ],
+  "first held run, older, history complete": [
+   8093,
+   0.36
+  ],
+  "genuine debutant (2-3yo, complete)": [
+   26164,
+   0.68
+  ],
+  "other / unknown": [
+   1308,
+   -0.79
+  ]
+ }
+}

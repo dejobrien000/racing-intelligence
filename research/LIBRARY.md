@@ -314,6 +314,85 @@ input. Report: https://claude.ai/artifact/5ru88iaS7dpPukHKhVocYz. Scripts and ou
 - Missing-career expectations, trainer/sire debut, prospective breakdowns, connected form lines, tactics/leadership, conditional
   consistency, physical development/deterioration, rediscovered (FORGOTTEN) items: carried forward; next after Monday.
 
+## Batch 27 (28-30 Nov 2026, weekend programme; Damo's 1:24pm brief): consolidation and Monday readiness
+Research and operational corrections only; no production engine, switch or frozen candidate changed; 28 Nov forecasts untouched.
+Windows A (fit before 2024, judged 2024) and B (fit before 2025, judged 2025-26) are both previously examined: research evidence only.
+Scripts/outputs: batch27/b27_*.py -> batch27/out_b27_*.json. Preregistration: preregistered/2026-11-28_b27_distance_combinations.md.
+
+P1 Essential inputs (operational corrections, committed 28 Nov)
+- Cause of the 28 Nov gaps: (a) the 3b list followed the card's meeting order, not race times, and racecards took until 7:50am, so
+  the 7:55 cutoff cut Gold Coast R1/R3 and Toowoomba R5 (Darwin, which we do not rate, used four fetches); (b) the 7 experienced horses
+  had no age on their LATEST held row (0.4% of recent history rows lack age; 68 currently-racing horses affected) and were never listed.
+  Production already fills ANY missing age/sex from a pre-race TAB record, so listing them is enough.
+- Fixes: race-start order, rated states only, held-but-no-age horses added, 3b straight after the cards, cutoff 8:05am
+  (ops/first_starter_todo.py, DAILY_RUN 3b); explicit per-runner record of missing essentials and the fallback applied
+  (ops/essential_inputs.py, step 5e); dashboard says "first starter" only when TAB's pre-race record shows 0 starts, else "has raced, none
+  held" or "debut not confirmed" (engine/export_ui.py; display only); collection sequence and each engine's inputs (ops/INPUTS_AND_SEQUENCE.md).
+- Found and fixed: a re-export after step 5b failed its own integrity check (recomputed scores used later form records). Re-exports and
+  shadows now use only the form records held at production scoring (AGESEX_ASOF). Checked 28 Nov: shadows had used the same records.
+- Shadows: 31 min on a 98-race day, after publishing, in the background; frames already cached by input-file age. No change.
+
+P2 Consolidated rating candidate - release review (harness K26 vs Engine v2.3 P26, same races; individual = Batch 20-21 common target)
+- Race accuracy +0.0116 (2024) / +0.0166 (2025-26); positive in every state, tier, class, field size, distance band and field-experience
+  band; weakest in maidens 2024 (+0.0045, n.s.) and fields with >30% inexperienced runners 2024 (+0.0035, n.s.).
+- Individual error 26.28 -> 24.93 (2024), 26.57 -> 24.46 kg2 (2025-26), lower in every age, experience, gap, state, tier and class group;
+  rating-gap slope 0.73-0.81 -> 0.95-0.96 (gaps now the right size); within-race rank correlation 0.334 -> 0.400. Exception: late
+  maidens' rank correlation 0.60 -> 0.52 (3,910 runs).
+- Calibration: error 0.50 -> 0.34 points (2025-26), 0.26 -> 0.23 (2024). A/E: 26+-run horses 1.046 -> 0.993, probable-incomplete
+  histories 1.052 -> 1.027, late maidens 1.11 -> 1.058, 365+ day returners 0.66 -> 0.73; established 5yo+ horses 0.932 -> 0.914 (slightly
+  more overrated - the one group that moves the wrong way).
+- Prospective: frozen shadow from 28 Nov (one day); runtime 4 min per 8 meetings + 3 min experience file after each master refresh.
+
+P2 Queensland (same Qld structure refitted inside each window; 2,409 / 4,730 races)
+- Rating mechanism inside the Qld structure, vs production v3: consolidated +0.038 / +0.023; v2.3 rating +0.0074 / +0.0003; v2 (no
+  learning speed) -0.0029 / -0.0056. Without Age & sex, v2 vs v3 is -0.0050 / -0.0067: Age & sex absorbs a little of the learning-speed
+  benefit but does NOT resolve it - learning speed still helps Qld on the older ratings.
+- Qld-specific inputs (leave-one-out): sectionals -0.0015 / +0.0003; race shape + barrier -0.0013 / -0.0016; all three -0.0017 / -0.0017
+  (all n.s.) - near redundant; track/distance/going group: removing it IMPROVES +0.0012 / +0.0045 (sig. in B) - redundant/harmful
+  (agrees with the v2.1.2 shadow's hypothesis); horse records ~0; Age & sex +0.019 / +0.017.
+- Common framework (national structure, Qld coefficients): on v2.3 ratings +0.042 / +0.032 vs production refitted (+0.023 / +0.032 vs
+  production frozen); on consolidated ratings +0.057 / +0.043; consolidated common framework beats the Qld structure on the same
+  consolidated rating by +0.019 / +0.020. So of the full gain, about two-thirds/half is the rating mechanism, the rest the national
+  families. Not yet tested: Qld sectionals/shape on top of the common framework; learning speed on top of consolidated.
+
+P3 Distance candidate and combinations (preregistered; all components on the national harness)
+- Neighbourhood (pre-2024 runs only): within-horse surprise correlation halves at a log-gap of 0.44 (sprints), 0.32 (middle), 0.27
+  (staying), 0.33 pooled - under the preregistered 50% threshold, so h = 0.12 kept everywhere (stayers' suitability is a little tighter).
+- Replacement of the distance record: v2.3 +0.0005 (+0.0001 to +0.0008) / +0.0002 (n.s.); consolidated +0.0003 (+0.00003 to +0.0005) /
+  +0.0002 (+0.00002 to +0.0003); Qld common framework -0.0002 (n.s.) / +0.0002 and on consolidated -0.0001 / -0.0002 (n.s.) - passes
+  nationally, fails in Qld. Retention x step up/down inside it: +0.0002 / +0.0002 (n.s.); untracked chances unchanged.
+- Ladder vs Engine v2.3: L1 consolidated +0.0116 / +0.0166; L2 + handicap slope +0.0013 / +0.0017 (complements: on v2.3 alone +0.0012 /
+  +0.0014); L3 + distance replacement +0.0003 / +0.0002; L4 + trainer and sire debut +0.0012 / +0.0023 -> L4 total +0.0145 / +0.0207.
+  Ablations from L4: every component costs when removed (consolidated -0.012 / -0.017; handicap -0.0013 / -0.0017; distance -0.0003 /
+  -0.0002; debut -0.0012 / -0.0023). No overlaps found. L5 + 365-day returner terms: 2024 -0.014 (only 20 such returns exist before
+  2024 to fit on - history starts Oct 2022), 2025-26 +0.0004 (sig.) - fails the preregistered rule; promising but incomplete.
+
+P4 Returners and uncertainty
+- 365+ day returners (2,298): 343 never ran again (first-up -6.7 kg), 608 ran 1-2 more (-4.1), 561 ran 3-5 (-3.3), 786 ran 6+ (-2.3).
+  Rating back within 0.5 kg of pre-break: 62% of those with 6 more runs but 42.8% of ALL returns; 44.2% stopped short of 6 runs without
+  getting back. CORRECTS Batch 26's recovery figure for long breaks: counting only horses that kept racing overstates recovery.
+- Uncertainty audit: the rating carries a posterior sd (A) and assumes 4.5 kg race noise; the engine already uses rating sd, horse
+  variability x rating, recent variance ratio and runs held. Variance model (fitted on 2023): rating variance x1.0, maiden race +4.7 kg2,
+  first time at the course +4.2, unfamiliar trip +2.9, incomplete history +1.0, horse variability x0.34, 120d+ spell 0 (the rating sd
+  already grows while idle). 80% performance intervals: coverage 78.3% (2024) / 78.1% (2025-26), 77-80% in every age, experience, class,
+  field and history group; a one-width interval covers 72% for 1-3-run horses, 83% for 26+-run horses and 60% for 365d+ returners.
+  Width ~9.5 kg (26+ runs) to 12.8 kg (1-3 runs). Engine chances are not miscalibrated by uncertainty (A/E by spread quintile 0.95-1.03).
+  Status: PROMISING (display/understanding; not an engine input).
+- Debut level 1.5 kg vs the frozen 2.0 kg (consolidated rule, full rebuild): -0.0007 (sig.) / +0.0004 (sig.) overall, worse in races
+  with a genuine debutant in both windows (-0.0015 / -0.0013). REJECTED; 2.0 kg kept. Trainer + sire debut terms on consolidated, races
+  with a debutant: +0.0061 / +0.0124.
+- Experienced horses with missing histories, first held run vs the debut expectation: evidence of 1-4 earlier starts -1.29 kg (616),
+  5+ earlier starts -0.97 (1,057), unknown older -2.42 (1,529); genuine debutants +0.39 (28,398). The debut treatment overrates them by
+  about 1 kg; the rating catches up after one run (second run -0.1 to +0.1). Next: a lower starting level (fitted before 2024) for
+  horses with evidence of earlier starts - a rating rebuild + harness test. PROMISING; nothing built.
+
+P5 Course, data
+- Rail-free pooled barrier (course x distance, shrunk; Batch 20 build): Qld common framework on consolidated +0.0018 (n.s.) / +0.0029
+  (+0.0014 to +0.0044); SA races in the national consolidated engine 2024 n/a (no earlier SA barrier data) / +0.0009 (+0.0004 to
+  +0.0016). Barriers are held only for Qld and SA tracking history, so no national test is possible. PROMISING (Qld common framework).
+- Daily results: staged design with validation and Monday reconciliation written (ops/DAILY_RESULTS_PLAN.md); NOT in use; first test
+  against Monday's master. Racing and Sports enquiry drafted for Damo (ops/drafts/racing_and_sports_enquiry.md; not sent).
+
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|

@@ -358,5 +358,95 @@
     0.0007
    ]
   }
+ },
+ "debut 1.5 kg vs 2.0 kg (consolidated)": {
+  "A": {
+   "races": 12777,
+   "gain": -0.00071,
+   "ci95": [
+    -0.00116,
+    -0.0003
+   ]
+  },
+  "B": {
+   "races": 23729,
+   "gain": 0.00044,
+   "ci95": [
+    0.00013,
+    0.00079
+   ]
+  }
+ },
+ "debut 1.5 kg vs 2.0 kg, races with a genuine debutant": {
+  "A": {
+   "races": 2431,
+   "gain": -0.0015,
+   "ci95": [
+    -0.00258,
+    -0.00028
+   ]
+  },
+  "B": {
+   "races": 4564,
+   "gain": -0.00125,
+   "ci95": [
+    -0.00231,
+    -0.00016
+   ]
+  }
+ },
+ "trainer/sire debut on consolidated 2.0 (races with a debutant)": {
+  "A": {
+   "races": 2431,
+   "gain": 0.00606,
+   "ci95": [
+    0.00047,
+    0.01101
+   ]
+  },
+  "B": {
+   "races": 4564,
+   "gain": 0.0124,
+   "ci95": [
+    0.00897,
+    0.01593
+   ]
+  }
+ },
+ "rail-free barrier, Qld common framework on consolidated": {
+  "A": {
+   "races": 3563,
+   "gain": 0.00183,
+   "ci95": [
+    -0.00021,
+    0.00394
+   ]
+  },
+  "B": {
+   "races": 6804,
+   "gain": 0.00286,
+   "ci95": [
+    0.00143,
+    0.0044
+   ]
+  }
+ },
+ "rail-free barrier, national consolidated (SA races)": {
+  "A": {
+   "races": 1349,
+   "gain": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "B": {
+   "races": 2531,
+   "gain": 0.00092,
+   "ci95": [
+    0.00039,
+    0.00155
+   ]
+  }
  }
 }
