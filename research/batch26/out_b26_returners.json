@@ -1,0 +1,309 @@
+{
+ "definition": "gap >= 120 days since the previous held run, 3+ held runs before, national states, surprise = dyn_nat_inn (Engine v2.3 rating)",
+ "returner_runs": 41414,
+ "mean_surprise_kg": -0.822,
+ "se": 0.028,
+ "by_gap_all_runs_k3plus": {
+  "<14": {
+   "runs": 101486,
+   "surprise_kg": 0.147,
+   "se": 0.015
+  },
+  "14-27": {
+   "runs": 197270,
+   "surprise_kg": 0.003,
+   "se": 0.011
+  },
+  "28-59": {
+   "runs": 48429,
+   "surprise_kg": -0.254,
+   "se": 0.024
+  },
+  "60-89": {
+   "runs": 9069,
+   "surprise_kg": -0.548,
+   "se": 0.058
+  },
+  "90-119": {
+   "runs": 9959,
+   "surprise_kg": -0.568,
+   "se": 0.052
+  },
+  "120-179": {
+   "runs": 24324,
+   "surprise_kg": -0.354,
+   "se": 0.034
+  },
+  "180-364": {
+   "runs": 15333,
+   "surprise_kg": -1.215,
+   "se": 0.048
+  },
+  "365+": {
+   "runs": 1757,
+   "surprise_kg": -3.877,
+   "se": 0.169
+  }
+ },
+ "by_gap_vs_usual_interval": {
+  "<3x usual": {
+   "runs": 358,
+   "surprise_kg": -0.413,
+   "se": 0.341
+  },
+  "3-6x": {
+   "runs": 3519,
+   "surprise_kg": -0.324,
+   "se": 0.092
+  },
+  "6-10x": {
+   "runs": 16006,
+   "surprise_kg": -0.468,
+   "se": 0.042
+  },
+  "10x+": {
+   "runs": 16112,
+   "surprise_kg": -1.584,
+   "se": 0.046
+  }
+ },
+ "by_age": {
+  "2-3": {
+   "runs": 5840,
+   "surprise_kg": 0.022,
+   "se": 0.072
+  },
+  "4": {
+   "runs": 13391,
+   "surprise_kg": 0.138,
+   "se": 0.047
+  },
+  "5": {
+   "runs": 10439,
+   "surprise_kg": -1.159,
+   "se": 0.055
+  },
+  "6": {
+   "runs": 6061,
+   "surprise_kg": -1.842,
+   "se": 0.073
+  },
+  "7+": {
+   "runs": 5551,
+   "surprise_kg": -2.405,
+   "se": 0.079
+  }
+ },
+ "by_experience": {
+  "3-7 runs": {
+   "runs": 19373,
+   "surprise_kg": -0.203,
+   "se": 0.041
+  },
+  "8-15": {
+   "runs": 13427,
+   "surprise_kg": -0.931,
+   "se": 0.048
+  },
+  "16-30": {
+   "runs": 7376,
+   "surprise_kg": -1.944,
+   "se": 0.063
+  },
+  "31+": {
+   "runs": 1238,
+   "surprise_kg": -2.658,
+   "se": 0.152
+  }
+ },
+ "by_preparation_number": {
+  "2nd prep": {
+   "runs": 12800,
+   "surprise_kg": -0.518,
+   "se": 0.05
+  },
+  "3rd": {
+   "runs": 14137,
+   "surprise_kg": -0.527,
+   "se": 0.047
+  },
+  "4th": {
+   "runs": 7972,
+   "surprise_kg": -1.146,
+   "se": 0.063
+  },
+  "5th+": {
+   "runs": 6505,
+   "surprise_kg": -1.666,
+   "se": 0.069
+  }
+ },
+ "by_distance_on_resumption_vs_last_start": {
+  "shorter by 200m+": {
+   "runs": 17440,
+   "surprise_kg": -1.056,
+   "se": 0.041
+  },
+  "within 200m": {
+   "runs": 23603,
+   "surprise_kg": -0.633,
+   "se": 0.038
+  },
+  "longer by 200m+": {
+   "runs": 367,
+   "surprise_kg": -1.972,
+   "se": 0.383
+  }
+ },
+ "by_pre_break_trajectory": {
+  "declining (last 5 below rating)": {
+   "runs": 8583,
+   "surprise_kg": -0.655,
+   "se": 0.07
+  },
+  "flat": {
+   "runs": 19503,
+   "surprise_kg": -1.109,
+   "se": 0.039
+  },
+  "improving": {
+   "runs": 13310,
+   "surprise_kg": -0.51,
+   "se": 0.047
+  }
+ },
+ "by_trainer_change_during_break": {
+  "same trainer": {
+   "runs": 33806,
+   "surprise_kg": -0.68,
+   "se": 0.03
+  },
+  "trainer changed": {
+   "runs": 7608,
+   "surprise_kg": -1.456,
+   "se": 0.075
+  }
+ },
+ "by_run_in_preparation_after_120d_break": {
+  "1": {
+   "runs": 41414,
+   "surprise_kg": -0.822
+  },
+  "2": {
+   "runs": 36549,
+   "surprise_kg": -0.113
+  },
+  "3": {
+   "runs": 31525,
+   "surprise_kg": 0.061
+  },
+  "4": {
+   "runs": 26227,
+   "surprise_kg": -0.006
+  },
+  "5": {
+   "runs": 20861,
+   "surprise_kg": 0.062
+  },
+  "6": {
+   "runs": 15939,
+   "surprise_kg": -0.021
+  },
+  "7": {
+   "runs": 44495,
+   "surprise_kg": -0.256
+  }
+ },
+ "performance_vs_pre_break_rating_by_run": {
+  "1": {
+   "runs": 41414,
+   "kg": -0.822
+  },
+  "2": {
+   "runs": 36549,
+   "kg": -0.342
+  },
+  "3": {
+   "runs": 31525,
+   "kg": 0.002
+  },
+  "4": {
+   "runs": 26227,
+   "kg": 0.149
+  },
+  "5": {
+   "runs": 20861,
+   "kg": 0.363
+  },
+  "6": {
+   "runs": 15939,
+   "kg": 0.386
+  },
+  "7": {
+   "runs": 44495,
+   "kg": 0.271
+  }
+ },
+ "preparations_with_4plus_runs": 26228,
+ "share_reaching_pre_break_level_within_6_runs": 0.888,
+ "share_first_up_below_but_later_recovered": 0.751,
+ "share_persistently_2kg_below_pre_break_runs_2_to_6": 0.058,
+ "repeatability": {
+  "returns_with_an_earlier_return": 17229,
+  "corr_with_earlier_first_up_mean": 0.024,
+  "mse_k=0.5": 42.053,
+  "mse_k=1": 37.733,
+  "mse_k=2": 34.426,
+  "mse_k=4": 32.567,
+  "mse_k=8": 31.771,
+  "mse_k=16": 31.498,
+  "mse_k=1e+09": 31.398,
+  "best_shrink_k": 1000000000.0
+ },
+ "engine_actual_vs_expected_wins_by_gap": {
+  "A": {
+   "<60": {
+    "runners": 99720,
+    "actual_vs_expected": 1.019
+   },
+   "60-119": {
+    "runners": 5804,
+    "actual_vs_expected": 0.892
+   },
+   "120-179": {
+    "runners": 8203,
+    "actual_vs_expected": 0.992
+   },
+   "180-364": {
+    "runners": 5802,
+    "actual_vs_expected": 0.809
+   },
+   "365+": {
+    "runners": 724,
+    "actual_vs_expected": 0.622
+   }
+  },
+  "B": {
+   "<60": {
+    "runners": 182566,
+    "actual_vs_expected": 1.001
+   },
+   "60-119": {
+    "runners": 10493,
+    "actual_vs_expected": 0.931
+   },
+   "120-179": {
+    "runners": 15629,
+    "actual_vs_expected": 1.009
+   },
+   "180-364": {
+    "runners": 10403,
+    "actual_vs_expected": 1.023
+   },
+   "365+": {
+    "runners": 1579,
+    "actual_vs_expected": 0.663
+   }
+  }
+ }
+}

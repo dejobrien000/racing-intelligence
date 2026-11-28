@@ -1,0 +1,26 @@
+{
+ "C2": {
+  "beta": 0.4651,
+  "rows_matched": 682430,
+  "corr_frame_vs_rerun": 1.0,
+  "mean_abs_diff_kg": 0.0,
+  "scale_by_year_end": {
+   "2022-12": 1.0,
+   "2023-12": 0.884,
+   "2024-12": 0.79,
+   "2025-12": 0.795
+  }
+ },
+ "CONS": {
+  "beta": 0.3971,
+  "rows_matched": 682430,
+  "corr_frame_vs_rerun": 1.0,
+  "mean_abs_diff_kg": 0.0,
+  "scale_by_year_end": {
+   "2022-12": 1.0,
+   "2023-12": 0.89,
+   "2024-12": 0.788,
+   "2025-12": 0.793
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "coverage_qld_rows_with_earlier_tracked_run_pct": 82.3,
+ "sectional family": {
+  "A (judge 2024, clean)": {
+   "existing refitted (control)": {
+    "races": 2409,
+    "lp": 0.00018,
+    "lp_lo": -0.00227,
+    "lp_hi": 0.00253,
+    "hit": 0.08,
+    "top3": -0.5
+   },
+   "new measures instead": {
+    "races": 2409,
+    "lp": 0.00028,
+    "lp_lo": -0.00456,
+    "lp_hi": 0.00522,
+    "hit": 0.0,
+    "top3": 0.04
+   },
+   "existing + new": {
+    "races": 2409,
+    "lp": 0.00174,
+    "lp_lo": -0.00296,
+    "lp_hi": 0.00621,
+    "hit": 0.42,
+    "top3": 0.12
+   },
+   "neither": {
+    "races": 2409,
+    "lp": -0.00154,
+    "lp_lo": -0.00453,
+    "lp_hi": 0.00155,
+    "hit": -0.21,
+    "top3": -0.42
+   }
+  },
+  "B (judge 2025-26, re-used)": {
+   "existing refitted (control)": {
+    "races": 4730,
+    "lp": 0.0011,
+    "lp_lo": -0.0006,
+    "lp_hi": 0.00301,
+    "hit": -0.11,
+    "top3": -0.11
+   },
+   "new measures instead": {
+    "races": 4730,
+    "lp": -0.00122,
+    "lp_lo": -0.00448,
+    "lp_hi": 0.0021,
+    "hit": -0.63,
+    "top3": -0.13
+   },
+   "existing + new": {
+    "races": 4730,
+    "lp": 0.00067,
+    "lp_lo": -0.00224,
+    "lp_hi": 0.00362,
+    "hit": -0.76,
+    "top3": -0.66
+   },
+   "neither": {
+    "races": 4730,
+    "lp": -0.00028,
+    "lp_lo": -0.00275,
+    "lp_hi": 0.00231,
+    "hit": -0.3,
+    "top3": -0.15
+   }
+  }
+ },
+ "sectional + race-shape families": {
+  "A (judge 2024, clean)": {
+   "existing refitted (control)": {
+    "races": 2409,
+    "lp": -0.00122,
+    "lp_lo": -0.00472,
+    "lp_hi": 0.00181,
+    "hit": -0.37,
+    "top3": -0.71
+   },
+   "new measures instead": {
+    "races": 2409,
+    "lp": -0.00136,
+    "lp_lo": -0.00648,
+    "lp_hi": 0.00419,
+    "hit": 0.25,
+    "top3": 0.21
+   },
+   "existing + new": {
+    "races": 2409,
+    "lp": 0.00028,
+    "lp_lo": -0.00503,
+    "lp_hi": 0.00474,
+    "hit": -0.04,
+    "top3": 0.37
+   },
+   "neither": {
+    "races": 2409,
+    "lp": -0.0031,
+    "lp_lo": -0.00731,
+    "lp_hi": 0.00108,
+    "hit": -0.37,
+    "top3": -0.62
+   }
+  },
+  "B (judge 2025-26, re-used)": {
+   "existing refitted (control)": {
+    "races": 4730,
+    "lp": 0.0018,
+    "lp_lo": -0.00056,
+    "lp_hi": 0.00423,
+    "hit": -0.13,
+    "top3": -0.19
+   },
+   "new measures instead": {
+    "races": 4730,
+    "lp": -0.00171,
+    "lp_lo": -0.00604,
+    "lp_hi": 0.00217,
+    "hit": -0.23,
+    "top3": 0.04
+   },
+   "existing + new": {
+    "races": 4730,
+    "lp": 0.0015,
+    "lp_lo": -0.00194,
+    "lp_hi": 0.00486,
+    "hit": -0.59,
+    "top3": -0.36
+   },
+   "neither": {
+    "races": 4730,
+    "lp": -0.00065,
+    "lp_lo": -0.00426,
+    "lp_hi": 0.00272,
+    "hit": 0.11,
+    "top3": -0.15
+   }
+  }
+ }
+}

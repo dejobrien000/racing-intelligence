@@ -49,7 +49,7 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Field-experience brake on the update (B22) | national | good runs in inexperienced fields under-moved | Pred. | REJECTED | batch22 | study how unknown rivals' levels are set (B23 C8) |
 | Trainer change: under-reaction after transfer (B16, B20-B21) | national | +0.50 kg first run (controls) | Desc. -> Pred. next | PROMISING RESEARCH | batch21/b21_breakthroughs.py | normalise trainer names; test on top of the update rules |
 | Trainer-specific transfer record (B16, B21) | national | +0.13 (n.s.) beyond general trainer record | Pred. | REJECTED as tested | - | - |
-| Unfamiliar-distance breakthroughs (B20-B21) | national | step-up: +0.30 at new trip, -0.01 back | Desc. | PROMISING RESEARCH (distance-suitability framework) | batch21 | framework after Monday |
+| Unfamiliar-distance breakthroughs (B20-B21) | national | step-up: +0.30 at new trip, -0.01 back | Desc. | SUPERSEDED by the B26 distance framework | batch21 | - |
 | Continuous per-horse distance profile (B12), own-runs distance suitability (B16) | national | -0.0026; engine gain 0.0000 | Pred. | REJECTED / REDUNDANT as built | - | the new framework is a different method (ability vs suitability), not a retest |
 | Trainer early improvement 2nd-3rd start (B19-B20) | national | 0.17 kg/kg; harness 0.0000 | Pred. | DESCRIPTIVE | batch20 | - |
 | First-up own record (B19-B20) | national | 0.14; harness n.s. | Pred. | DESCRIPTIVE | batch20 | - |
@@ -68,11 +68,19 @@ Engine inputs, coefficients and served influence: batch23/engine_inventory.csv a
 | Qld start-count discrepancy (B19-B20) | Qld | measurement bug | data | FIXED (research script) | ops/form_enrichment.py | - |
 | Pre-race rail and track information (B21-B23) | Qld, NSW/ACT | RQ and Racing NSW FreeFields publish before the cutoff | data | COLLECTED for 28 Nov (27 Nov night, Damo present; not served). The unattended optional task is blocked by per-URL approval (3 runs) | ops/parse_rail.py; DAILY_RUN 5d | after Saturday: supported persistent permission or PC collector; other states need a permitted source |
 | Field-strength-adjusted meeting time figure (B24 C8) | all | standalone ranking 0.238 vs 0.232; engines -0.0008/+0.0002 (v2.3), -0.0006/+0.0001 (consolidated) | Pred. | RETAINED AS RESEARCH MEASUREMENT (no engine gain; not independent of our ratings) | batch24/b24_meeting_speed.py | basis for the individual sectional / tempo / lane benchmarks |
-| Rating-scale drift (B24-B25) | national | production -0.54 kg/yr, consolidated +1.11 kg/yr on the official class scale; causes decomposed (B25 A) | Desc. | PRIORITY RESEARCH (scale stability stream) | batch25/out_b25_scale.json | time-figure anchor removes level drift (hold-out and class checks); spread anchor next |
+| Rating-scale drift (B24-B25) | national | production -0.54 kg/yr, consolidated +1.11 kg/yr on the official class scale; causes decomposed (B25 A) | Desc. | PRIORITY RESEARCH (scale stability stream) | batch25/out_b25_scale.json | superseded by the B26 row below |
+| Rating-scale stretching and level+spread anchors (B26 2) | national | BM78-BM58 gap 1.5 -> 7.9 kg (figures stable); anchors improve the rating's fit (+0.0024 to +0.0091) but cost the engines -0.0014 to -0.0059 | Desc./Pred. | COMPARISON SCALE = PROMISING RESEARCH; ENGINE USE REJECTED | batch26/out_b26_stretch.json, out_b26_scale_frames.json | build the stable scale for peaks, venue class, class ladder, returners (display/analysis only); longer Breednet history check |
 | In-mechanism drift prevention: conservative update, adaptive first-run level (B25) | national | drift barely moves; accuracy -0.004 to -0.028 | Pred. | REJECTED as tested | batch25/b25_scale.py | - |
-| Meeting-specific sectional benchmarks: 600-200 m, last 400, tempo cost (B25) | Qld, SA | +0.07 to +0.26 kg/sd next run, all three windows; Qld engine 0 | Pred. | GENUINE AGAINST THE RATING, REDUNDANT IN THE Qld ENGINE | batch25/b25_physical.py | national-engine test where tracking exists (SA, Vic) |
+| Meeting-specific sectional benchmarks: 600-200 m, last 400, tempo cost (B25-B26) | Qld, SA (Vic too thin) | +0.07 to +0.26 kg/sd next run; v2.3 -0.0009/-0.0002; consolidated -0.0007/-0.0001; Qld common framework +0.0003/+0.0013 (n.s.); Qld replace/combine within noise | Pred. | GENUINE AGAINST THE RATING; NO ESTABLISHED ENGINE GAIN (not added) | batch26/out_b26_national_phys.json, out_b26_qld_replace.json | re-test only on a longer prospective Qld window or real Vic coverage; M1 and M3 = one signal (B26 4) |
+| Why the physical measures work (B26 4) | Qld, SA | M1/M3 r 0.8 = one late-sustained-speed signal; tempo cost independent; retention negative; strongest 1800 m+, back/midfield, lightly raced | Desc. | DESCRIPTIVE (guides any future build) | batch26/out_b26_why.json | - |
+| Long-break returners (B26 5) | national | 41,414 runs -0.82 kg; temporary (run 3 = 0); not repeatable (r 0.02); engine A/E 365+ days 0.62/0.66, shorter gaps ~1.0 | Desc. -> Pred. next | PROMISING RESEARCH (365+ only) | batch26/out_b26_returners.json | 365+ days x age x experience term on top of v2.3; no blanket deduction |
+| Distance-specific suitability, separated from general ability (B26 6) | national | +0.26/+0.35 kg per sd beyond form and the distance record; replacing the distance record +0.0005 (+0.0001 to +0.0009) / +0.0002 (n.s.) | Pred. | PROMISING RESEARCH (replacement candidate) | batch26/out_b26_distance.json | preregister the replacement; test in the consolidated frame; then a shadow decision |
+| Speed retention x trip direction (B26 6) | Qld, SA | retention +0.15 kg/sd on step-ups, -0.35 on step-downs, 0 at similar trips | Desc. | PROMISING RESEARCH | batch26/out_b26_distance.json | include with the distance candidate where tracked; untracked must not be penalised |
+| Strong step-up implies further step-ups suit (B26 6) | national | again up +0.44 vs stay +0.61 vs down +0.18 kg | Desc. | REJECTED as a rule | batch26/out_b26_distance_b.json | - |
+| Daily run workload allowance + safe resume (B26 1) | ops | timeout was the command limit, not the run | ops | IN THE PROCEDURE (DAILY_RUN step 4, ops/resume_daily.sh) from 29 Nov | ops/DAILY_RUN.md | watch the 29 Nov run |
+| Saturday input completeness register (B26 1) | national + Qld | 962 starters: 49 no held run, 9 first starters missing age/sex, 249 TAB starts not held | data | DESCRIPTIVE (daily check candidate) | batch26/out_b26_inputs.json | Monday master update should close most of the 249 |
 | Leaders vs tactical leaders; stable racing styles; competition for position; cost of position; sit-and-sprint; tempo x position x bias (B23 G) | Qld, SA tracking | - | - | NOT YET INVESTIGATED (added to the physical/tactical family) | - | now part of the meeting-specific physical programme (Damo 28 Nov) |
-| Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | - | - | NOT YET INVESTIGATED | - | after Monday |
+| Economical cruising; acceleration and adjacent distances; cumulative demands; going tolerance; education and habits (B20-B23) | Qld, SA | adjacent distances partly answered in B26 6 (retention x trip direction) | - | NOT YET INVESTIGATED (rest) | - | after Monday |
 
 ## Batch 24 (27 Nov 2026 night): findings and newly registered research families
 Findings (research only; nothing served):
@@ -185,6 +193,126 @@ B. Meeting-specific physical performance (Qld RQ tracking 2022-26, SA tracking 2
   ratings (unlike the B24 field-strength-adjusted time figure).
 - Next in this stream: test M1/M3/tempo cost against the NATIONAL engines where tracking exists (SA now; Vic as its tracking accrues),
   where no physical terms exist yet; individual suitability (course shape, going, distance) from the same benchmarks.
+  -> done in Batch 26 (below).
+
+## Batch 26 (28 Nov 2026 afternoon; Damo's 12:25pm brief): Saturday integrity, rating stability, national physical framework, returners, distance
+Research only. No engine, UI or switch change; no forecast re-scored or replaced; every frozen shadow untouched; no market data in any
+input. Scripts and outputs: batch26/b26_*.py -> batch26/out_b26_*.json. Harness: national cand_eval mode R (A = fit before 2024, judged
+2024, 12,777 races; B = fit before 2025, judged 2025-26, 23,729 races); gains are mean log-likelihood per race, paired, 95% bootstrap.
+
+1. Saturday 28 Nov integrity (b26_integrity, b26_inputs)
+- 92 races scored once, 0 duplicates, forecasts stored 22:00-22:03Z (earliest race 3 h 17 min later), committed 22:12Z; ten shadows
+  (previous engines 92; six national shadows 66 each; three Qld shadows 26 each) scored 22:13-22:41Z, committed 22:42Z, all before any start.
+- The timeout was MY 590-second command limit stopping run_daily.sh after scoring (scoring itself had finished); the remaining steps were
+  resumed once, nothing re-scored. Fixed: run_daily.sh now runs in the background with an allowance of 6 min + 10 s per race and
+  checkpoint lines; ops/resume_daily.sh continues safely after "Engine v2 scored" and refuses if anything is inconsistent (DAILY_RUN step 4).
+- "1,232 form records" = 40 fetched before scoring (the 3b batch, used) + later helper batches (not used by the 28 Nov forecasts; for
+  checks and the master only). Of 962 starters: 49 had no held run; first starters missing age/sex 9 (Gold Coast R1 x4, R3 x4,
+  Toowoomba R5 x1); experienced horses missing age 7; TAB career starts equal to ours 554, TAB higher 247; 2 experienced horses with no
+  held run (Ramadan 13 starts, Son Sillage 1); 249 of 5,712 TAB-listed starts in the window not held (123 starters; 14 overseas; rising
+  in the most recent weeks = master lag); 1 starter with a run after the cutoff (Indifference, Tamworth 24 Nov - now flagged by
+  freshness_check); 15 jockeys "not notified"; 60 riders and 5 trainers with no history; pedigree not read by production.
+- Essential (changes a forecast): first-starter age/sex, recent runs, career starts for experience. Supplementary: pedigree, rider
+  history, overseas form. Original forecasts never replaced.
+
+2. Rating-scale stretching (b26_stretch, b26_scale_frames; national states, production rule P0 and consolidated rule C0)
+- Production ratings STRETCH: the BM78 minus BM58 field-average gap 1.46 kg (2022) -> 3.50 -> 5.48 -> 6.77 -> 7.94 (2026), while the
+  same classes' time-figure gap is stable (7.7, 7.7, 7.0, 7.0, 8.0 points). Rating per figure point 0.49 -> 0.72 (2023 -> 2026) in every
+  tier and state; rating sd 3.6 -> 5.6 kg while figure sd only 5.8 -> 6.2. Part is history burn-in (gap 2.0 -> 7.5 even for 20+-run horses).
+- Mechanism: the established-horse drain is concentrated in LOW grades where newcomers race (change per run BM58 -0.10 to -0.15 kg,
+  BM64 -0.16 to -0.22, BM70 -0.08 to -0.13, BM78 -0.06 to -0.10); same horses explain most of it (BM58 -3.88 kg of which same horses
+  -3.43). Horses moving up gain +0.34-0.53 kg, moving down lose 0.10-0.17. Consolidated rule: every grade inflates (+1.3 to +5.3 kg).
+  So: mechanical (zero-sum update x newcomer entry x grade movement), not genuine ability - the time figures and official classes do
+  not widen.
+- Kg per BM point (should be stable): 0.076 (2022) -> 0.403 (2026). Long-break returners: 90-179 days -0.42, 180-364 -1.22, 365+ -3.88
+  kg, of which the stale carried rating explains part (anchoring by update month: -0.28 / -0.94 / -3.26). Last-start field strength
+  vs today's for 180+ day returners: +0.94 kg raw -> +0.50 anchored (part of the "dropping in class" appearance is scale drift).
+- Level + spread anchors (point-in-time, time figures as the reference): improve the RATING's own fit (P0 +0.0024 / +0.0079; by
+  update month +0.0035 / +0.0091; anchoring to a fixed 2023 slope over-shrinks and is worse) but HURT THE ENGINES when the transformed
+  ratings are fed in and everything refitted: v2.3 -0.0028 / -0.0014 (by race month), -0.0037 / -0.0014 (by update month);
+  consolidated -0.0041 / -0.0019 and -0.0059 / -0.0023 (all intervals below 0).
+- Answer to "display only or reconstruct?": a level shift by race month is display-only (common to the race, forecasts unchanged); a
+  spread or update-month anchor reconstructs historical inputs and changes within-race differences - and that costs accuracy.
+  Conclusion: keep raw ratings for forecasting; a stabilised scale (level + spread, by update month) is the right one for peaks,
+  long-term form, venue strength, class ladders and returners. Status: DISPLAY/COMPARISON SCALE = PROMISING RESEARCH; ENGINE USE REJECTED.
+
+3. National physical framework (b26_phys_feat, b26_nat_compare, b26_qld_replace)
+- Inputs: M3 (600-200 m vs the day), M1 (last-400 vs the day), tempo cost, as shrunk priors of each horse's earlier tracked runs plus the
+  last value; 0 when untracked (no missing flag). Coverage of national runners with an earlier tracked run: SA 48.5%, Qld 73%, NSW 9.9%,
+  Vic 7.5% (Vic: only 111 runner rows from our own Vic tracking - a Vic test is not possible yet).
+- (A) Engine v2.3 + the three: 2024 -0.0009; 2025-26 -0.0002 (-0.0005 to +0.0001); SA -0.0013 (n.s.); half-tracked races -0.0010
+  (n.s.); races with no tracked runner +0.00003. (D) consolidated candidate + the three: -0.0007 (-0.0014 to -0.0001) / -0.0001 (n.s.).
+  (C) Qld common framework + the three: +0.0003 (n.s.) / +0.0013 (-0.0001 to +0.0027); half-tracked +0.0015 (+0.00002 to +0.0030).
+- Untracked horses are not weakened (mean chance 9.68% -> 9.68% national; 9.44% -> 9.51% Qld).
+- Qld replace/combine (production v2.1.3 offset): replacing the existing closing-sectional family with the new measures, combining
+  them, or removing both all move accuracy within noise (largest -0.0031 / -0.0007 when sectional AND race-shape families are removed).
+  The Qld engine's existing physical terms and the new measures are interchangeable carriers of the same information.
+- Status: GENUINE AGAINST THE RATING; NO ESTABLISHED ENGINE GAIN (national none; Qld common framework +0.0013, interval touches 0).
+  Not added. Re-test only with a longer prospective Qld window or real Vic coverage.
+
+4. Why the measures work (b26_why; next-run surprise vs the rating; Qld 2022-24 / Qld 2025-26 / SA 2024-26, ~13-36k runs each)
+- Overlap: M1 and M3 correlate 0.80-0.83; tempo cost is independent of both (r ~0). Alone (kg per sd): M1 +0.09 / +0.28 / +0.22;
+  M3 +0.17 / +0.17 / +0.13; tempo cost +0.07 / +0.10 / +0.10. Together, which of M1 or M3 carries the signal flips between windows
+  (2022-24 M3 +0.24, M1 -0.13; 2025-26 and SA M1 +0.24/+0.22, M3 ~0): they are ONE late-sustained-speed signal - use one, never both.
+  Horses strong on both get a little extra (M3 x M1 +0.12-0.13, all three). Tempo cost adds independently (+0.07-0.10, all three).
+- Is M3 sustained speed or just passing horses? With positions gained 600-200 m and mid-race rise controlled, M3 keeps +0.14 / +0.14 /
+  +0.12; it is stronger when the horse was gaining ground (+0.25 / +0.25 / +0.26) than not (+0.15 / +0.15 / +0.11). Mostly genuine
+  sustained speed.
+- Is the last-400 benchmark retention or favourable tempo? Controlling for speed retention and early speed, M1 rises (+0.32 / +0.36 /
+  +0.21) and retention is NEGATIVE (-0.26 / -0.18 / -0.04): late speed that came from merely holding pace overstates the horse. M1 holds
+  in tempo-neutral races (+0.10 / +0.33 / +0.20). It is not mainly favourable tempo.
+- Tempo x position identifies demanding runs (+0.07 / +0.10 / +0.10) and does not depend on how good this run's result was
+  (interaction with this run's surprise -0.01 to -0.02, n.s.).
+- Heterogeneity: stronger at 1800 m+ (all three measures, all three windows); back-markers and midfield +0.25-0.46, leaders/on-pace weak
+  or negative for M1/M3 but strongest for tempo cost (+0.15-0.20); lightly raced (<6 runs) strongest in 2025-26 and SA (M1 +0.59 / +0.78);
+  2-3yo strong in 2025-26 and SA, not 2022-24; little at Toowoomba and Morphettville.
+- Unsuccessful items stay registered: early speed vs the day, acceleration proxy, lane/position pattern, exceptional-against-tempo,
+  own-history development (B25). The acceleration PROXY failed; that is not proof acceleration has no value (no direct measure yet).
+  Do not retest without a new question.
+
+5. Long-break returners (b26_returners)
+- Definition: 120+ days since the previous HELD run, 3+ held runs before, national states; surprise = performance vs the rating.
+  41,414 runs, mean -0.82 kg (se 0.03).
+- By gap: 120-179 days -0.35; 180-364 -1.22; 365+ -3.88. Gap ten times the horse's usual interval or more -1.58, otherwise -0.3 to -0.5.
+  Age: 2-4yo about 0 (+0.02 / +0.14), 5yo -1.16, 6yo -1.84, 7+ -2.41. Experience 3-7 runs -0.20 ... 31+ -2.66. 4th preparation -1.15,
+  5th+ -1.67. Resuming shorter than last start -1.06 vs same -0.63. Flat pre-break trajectory -1.11 vs improving -0.51. Trainer change
+  during the break -1.46 vs same trainer -0.68.
+- Temporary: run 2 of the preparation -0.11, run 3 +0.06; performance vs the pre-break rating by run 1-6: -0.82, -0.34, 0.00, +0.15,
+  +0.36, +0.39. 88.8% reach their pre-break level within 6 runs; 75% of horses 1 kg+ below first-up later recover; only 5.8% stay 2 kg+
+  below. First-up surprise is NOT individually repeatable (correlation 0.024; best pooling = the population mean).
+- Engine (actual/expected wins): 120-179 days 0.99 / 1.01; 180-364 0.81 / 1.02; 365+ 0.62 / 0.66. Largely captured by the existing
+  spacing/first-up terms except for 365+-day gaps, where the engine still overrates them. Part of the raw deficit is stale-rating scale
+  drift (Part 2). Not a blanket deduction; nothing about injury or fitness is inferred from the gap.
+- Next: a gap-length x age x experience term for 365+ days only, tested on top of v2.3 (no blanket rule).
+
+6. Individual distance suitability (b26_distance, b26_distance_b; national states, 462,634 runs from Jul 2023)
+- Framework, all point in time: general ability = the rating; ability at distance d = kernel-smoothed (log distance, ~12%) shrunk mean
+  surprise of earlier runs near d (k = 3); evidence = effective runs near d; uncertainty sd ~5.4/sqrt(evidence+3); repeatable range =
+  distances with ability >= -1 kg on 2+ effective runs (median span 700 m, IQR 500-900 m, horses with 8+ runs); emerging = shrunk slope
+  of surprise on log distance over the last 6 runs.
+- Distance-specific part (ability at d minus what the horse's general surprise would give with the same evidence) predicts the next
+  run beyond general form and beyond the existing distance record: +0.26 kg per sd (0.23-0.30) 2023-24, +0.35 (0.31-0.38) 2025-26;
+  the existing distance record adds nothing once it is in (-0.02 / -0.05). Holds at every evidence level (+0.16 to +0.39 per sd).
+- New trips (25%+ from anything raced): ability at the nearest distances +0.27 kg per sd; the emerging trend matters for step-ups
+  (+0.36 per sd, 0.15-0.54) and reverses for drops back in trip (-0.62, -1.01 to -0.20).
+- Physical link (Qld/SA tracked horses): speed retention (M5) predicts handling a step UP of 15%+ (+0.15 kg per sd, 0.05-0.26) and
+  handling a step DOWN badly (-0.35, -0.49 to -0.20); M3 helps on a step down (+0.24); no effect at similar trips (+0.01).
+- Further step-ups: after a strong (+2 kg) run on a step up, the next run beats the rating by +0.44 kg (se 0.09, 3,287) if stepped up
+  again, +0.61 (23,712) at a similar trip, +0.18 (6,572) back down; after strong runs that were NOT step-ups the same choices give +0.31 /
+  +0.50 / -0.14. A strong longer run carries slightly more forward, but stepping up AGAIN is worse than staying at the trip: one strong
+  longer run does not show further increases suit.
+- Engine (v2.3 frame, refit): adding the distance-specific measure -0.00004 / +0.0002 (0.0000 to +0.0004); with the trend +0.0001 /
+  +0.0003 (+0.00003 to +0.0006); REPLACING the existing distance record with it +0.0005 (+0.0001 to +0.0009) / +0.0002 (n.s.).
+  Untracked horses' chances unchanged.
+- Batch 12's rejected distance profile smoothed raw surprises (general form leaking in); this separates general from distance-specific
+  ability, which is why it replicates. Status: PROMISING RESEARCH - small but consistent; candidate to REPLACE the distance record in a
+  future consolidated release (preregister, then shadow); not a release request.
+
+7. Other workstreams (status, not advanced in this batch unless stated)
+- Rail: Qld and NSW/ACT 28 Nov rail ingested after Damo's pull (12:30pm); unattended optional collection still blocked by per-URL approval.
+- Monday 30 Nov master update, identity correction, Vic tracking integration and TAB/Breednet class parity: unchanged, preserved.
+- Missing-career expectations, trainer/sire debut, prospective breakdowns, connected form lines, tactics/leadership, conditional
+  consistency, physical development/deterioration, rediscovered (FORGOTTEN) items: carried forward; next after Monday.
 
 ## In production
 | Since | What | Evidence | Ledger |
