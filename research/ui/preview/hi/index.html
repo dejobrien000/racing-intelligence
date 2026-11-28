@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070b10">
+<title>Horse Intel</title>
+<style>
+/* fonts bundled with the page (SIL Open Font License: Barlow Condensed, Inter) so it renders the same everywhere */
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/barlow-condensed-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/barlow-condensed-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/inter-latin-700-normal.woff2) format('woff2')}
+
+/* HORSE INTEL — mobile-first presentation layer (Batch 29 redesign preview). Reads the same daily data contract as the live dashboard
+   (data/index.json + data/racing_<date>.json). Display only: no score, chance, label or forecast is computed or changed here. */
+:root{color-scheme:dark;
+ --bg:#070b10;--s1:#0e141c;--s2:#131b26;--s3:#1a2432;--line:#222e3d;--line2:#2d3b4e;
+ --ink:#f3f6fa;--ink2:#c7d0dc;--mute:#8b99ab;--faint:#5b6a7c;
+ --acc:#3ee0a1;--sky:#5ea8ff;--slate:#7a889c;--amber:#e3b341;--coral:#ff7a6b;--violet:#a992ff;
+ --disp:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;--body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ --r:14px;--nav:62px;--top:52px}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:14.5px/1.45 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom) + 12px)}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--sky);text-decoration:none}
+h1,h2,h3,.disp{font-family:var(--disp);margin:0;letter-spacing:.01em}
+h1{font-size:30px;line-height:1.02;font-weight:700;text-transform:uppercase}
+h2{font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+h3{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+.num{font-variant-numeric:tabular-nums}
+.mute{color:var(--mute)}.faint{color:var(--faint)}.sm{font-size:12.5px}.xs{font-size:11.5px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+/* top bar */
+.top{position:sticky;top:0;z-index:30;height:calc(var(--top) + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);background:rgba(7,11,16,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{height:var(--top);display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--disp);font-weight:700;font-size:21px;letter-spacing:.12em;color:var(--ink);white-space:nowrap}
+.brand i{width:9px;height:9px;border-radius:2px;background:var(--acc);box-shadow:0 0 12px rgba(62,224,161,.6);transform:rotate(45deg)}
+.brand span{color:var(--acc)}
+.tnav{display:none;gap:4px;margin-left:18px}
+.tnav a{padding:8px 12px;border-radius:9px;color:var(--mute);font-weight:600;font-size:13.5px}
+.tnav a[aria-current=page]{color:var(--ink);background:var(--s2)}
+.tsp{flex:1}
+.tbtn{display:flex;align-items:center;gap:6px;height:34px;padding:0 10px;border-radius:10px;border:1px solid var(--line);background:var(--s1);font-size:12.5px;font-weight:600;color:var(--ink2);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--acc);flex:none}
+.dot.warn{background:var(--amber)}.dot.bad{background:var(--coral)}
+/* bottom nav */
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:30;height:calc(var(--nav) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:rgba(10,15,21,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
+.bnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--faint);font-size:11px;font-weight:600;letter-spacing:.02em}
+.bnav a svg{width:22px;height:22px}
+.bnav a[aria-current=page]{color:var(--ink)}
+.bnav a[aria-current=page] svg{color:var(--acc)}
+@media(min-width:960px){.bnav{display:none}.tnav{display:flex}body{padding-bottom:28px}h1{font-size:38px}.wrap{padding:0 24px}}
+/* layout */
+main{padding:14px 0 8px}
+.stack{display:grid;gap:12px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.card.flat{background:transparent;border-style:dashed}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.ch h2,.ch h3{min-width:0}
+.link{font-size:12.5px;font-weight:600;color:var(--sky);white-space:nowrap;background:none;border:0;padding:0}
+.grid{display:grid;gap:12px}
+@media(min-width:760px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:960px){.gside{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr)}}
+/* hero */
+.hero{padding:16px 14px;background:radial-gradient(120% 140% at 100% 0%,rgba(62,224,161,.14),transparent 55%),linear-gradient(180deg,var(--s2),var(--s1));border:1px solid var(--line);border-radius:18px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}
+.kpi b{display:block;font-family:var(--disp);font-size:26px;font-weight:700;line-height:1}
+.kpi span{display:block;font-size:11px;color:var(--mute);margin-top:3px;line-height:1.2}
+.status{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12.5px;color:var(--ink2);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;text-align:left}
+.status b{font-weight:600}
+.status .sp{flex:1}
+/* label breakdown */
+.lbar{display:flex;height:12px;border-radius:6px;overflow:hidden;background:var(--s3);margin:4px 0 10px}
+.lbar i{display:block;height:100%}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px}
+.legend div{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink2)}
+.legend b{font-family:var(--disp);font-size:18px;color:var(--ink);margin-left:auto}
+.sw{width:10px;height:10px;border-radius:3px;flex:none}
+@media(min-width:760px){.legend{grid-template-columns:repeat(5,minmax(0,1fr))}}
+/* chips */
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:32px;padding:0 12px;border-radius:16px;border:1px solid var(--line);background:var(--s1);color:var(--ink2);font-size:12.5px;font-weight:600;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--ink);color:#071018;border-color:var(--ink)}
+.chip small{font-weight:500;opacity:.7;margin-left:4px}
+/* pills */
+.pill{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 8px;border-radius:11px;font-size:11px;font-weight:700;letter-spacing:.02em;white-space:nowrap;border:1px solid transparent}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.p-strong{color:var(--acc);background:rgba(62,224,161,.12);border-color:rgba(62,224,161,.3)}
+.p-lead{color:var(--sky);background:rgba(94,168,255,.12);border-color:rgba(94,168,255,.3)}
+.p-none{color:var(--ink2);background:rgba(122,136,156,.12);border-color:rgba(122,136,156,.28)}
+.p-ins{color:var(--amber);background:rgba(227,179,65,.1);border-color:rgba(227,179,65,.28)}
+.p-fo{color:var(--faint);background:transparent;border-color:var(--line2)}
+.p-cont{color:var(--ink2);background:var(--s3)}
+.p-out{color:var(--coral);background:rgba(255,122,107,.1);border-color:rgba(255,122,107,.28)}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(169,146,255,.14);color:var(--violet);border:1px solid rgba(169,146,255,.3);vertical-align:2px}
+.tag.mk{background:rgba(227,179,65,.1);color:var(--amber);border-color:rgba(227,179,65,.3)}
+.sc{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 5px;border-radius:6px;background:var(--s3);border:1px solid var(--line2);font-size:11.5px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink);flex:none}
+/* assessment cards */
+.alist{display:grid;gap:8px}
+@media(min-width:760px){.alist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.acard{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 12px;background:var(--s1);border:1px solid var(--line);border-radius:12px;text-align:left;width:100%}
+.acard .rk{font-family:var(--disp);font-size:20px;font-weight:700;color:var(--faint);text-align:center}
+.acard .hn{font-weight:700;font-size:15px;line-height:1.2;overflow-wrap:anywhere}
+.acard .meta{font-size:12px;color:var(--mute);margin-top:2px}
+.acard .ch2{text-align:right}
+.acard .ch2 b{font-family:var(--disp);font-size:24px;font-weight:700;line-height:1;display:block}
+.band{position:relative;height:5px;border-radius:3px;background:var(--s3);margin-top:7px;overflow:hidden}
+.band i{position:absolute;top:0;bottom:0;border-radius:3px;opacity:.9}
+.band u{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+/* race list rows */
+.rrow{display:grid;grid-template-columns:54px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
+.rrow:last-child{border-bottom:0}
+.rrow .t{font-family:var(--disp);font-size:17px;font-weight:600;line-height:1}
+.rrow .t small{display:block;font-family:var(--body);font-size:10.5px;color:var(--faint);font-weight:500;margin-top:3px}
+.rrow .w{font-weight:600;line-height:1.25;overflow-wrap:anywhere}
+.rrow .w small{display:block;color:var(--mute);font-weight:400;font-size:12px}
+.rrow .r{text-align:right}
+/* meeting cards */
+.mgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media(min-width:760px){.mgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:960px){.gside .mgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mcard{padding:11px 12px;background:var(--s1);border:1px solid var(--line);border-radius:12px;text-align:left;width:100%}
+.mcard b{display:block;font-size:14.5px;line-height:1.2;overflow-wrap:anywhere}
+.mcard .sub{font-size:11.5px;color:var(--mute);margin-top:2px}
+.rdots{display:flex;flex-wrap:wrap;gap:3px;margin-top:9px}
+.rdots i{width:12px;height:12px;border-radius:3px;background:var(--s3);border:1px solid var(--line2)}
+.st{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--ink2);background:var(--s3);border-radius:4px;padding:1px 5px;margin-right:4px;vertical-align:1px}
+/* race view */
+.rhead{padding:14px;border-radius:18px;background:linear-gradient(180deg,var(--s2),var(--s1));border:1px solid var(--line)}
+.rhead .ttl{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.fact{font-size:12px;color:var(--ink2);background:var(--s3);border-radius:7px;padding:4px 8px;white-space:nowrap}
+.fact b{color:var(--ink)}
+.rtabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:12px 0 0;padding-bottom:2px}
+.rtabs::-webkit-scrollbar{display:none}
+.rtab{flex:none;width:52px;padding:7px 0 6px;border-radius:10px;border:1px solid var(--line);background:var(--s1);text-align:center}
+.rtab b{display:block;font-family:var(--disp);font-size:17px;line-height:1}
+.rtab small{display:block;font-size:10px;color:var(--mute);margin-top:2px}
+.rtab i{display:block;width:16px;height:3px;border-radius:2px;margin:5px auto 0;background:var(--s3)}
+.rtab[aria-pressed=true]{background:var(--ink);color:#071018;border-color:var(--ink)}
+.rtab[aria-pressed=true] small{color:#3a4656}
+.tbl{width:100%;border-collapse:collapse}
+.rt th{font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);text-align:right;padding:0 4px 8px;white-space:nowrap}
+.rt th:first-child{text-align:left;padding-left:0}
+.rt td{padding:10px 4px;border-top:1px solid var(--line);vertical-align:top;text-align:right}
+.rt td:first-child{text-align:left;padding-left:0}
+.rt tr.ru{cursor:pointer}
+.rt tr.ru.lead td{background:rgba(62,224,161,.06)}
+.rt tr.ru.lead td:first-child{box-shadow:inset 3px 0 0 var(--acc)}
+.rt .hn{display:flex;gap:7px;align-items:flex-start}
+.rt .hn b{font-size:14px;line-height:1.25;overflow-wrap:anywhere}
+.rt .hn small{display:block;color:var(--mute);font-size:11.5px;line-height:1.3;margin-top:2px}
+.rt .big{font-family:var(--disp);font-size:19px;font-weight:700;line-height:1}
+.rt .kgv{font-family:var(--disp);font-size:16px;font-weight:600;line-height:1}
+.rt .xr td{background:var(--s2);border-top:0;padding:10px}
+.evb{display:inline-grid;grid-template-columns:repeat(6,4px);gap:2px;vertical-align:middle}
+.evb i{height:12px;border-radius:1px;background:var(--line2)}
+.evb i.on{background:var(--acc)}
+.cl{display:block;margin-top:5px}
+.legendrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.legendrow div{font-size:11.5px;color:var(--mute);line-height:1.3}
+.legendrow b{display:block;color:var(--ink);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+@media(min-width:760px){.legendrow{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--mute);background:none;border:0;padding:0}
+.toggle i{width:30px;height:18px;border-radius:9px;background:var(--s3);border:1px solid var(--line2);position:relative}
+.toggle i::after{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:var(--mute);transition:.15s}
+.toggle[aria-pressed=true] i{background:rgba(227,179,65,.25);border-color:rgba(227,179,65,.5)}
+.toggle[aria-pressed=true] i::after{left:14px;background:var(--amber)}
+.mkt{font-size:11.5px;color:var(--amber);margin-top:3px}
+.btn{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:10px;border:1px solid var(--line2);background:var(--s3);font-size:12.5px;font-weight:600;color:var(--ink)}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#04130c}
+/* profile */
+.phead{padding:16px 14px;border-radius:18px;background:radial-gradient(130% 120% at 0% 0%,rgba(94,168,255,.16),transparent 55%),linear-gradient(180deg,var(--s2),var(--s1));border:1px solid var(--line)}
+.phead h1{font-size:32px;overflow-wrap:anywhere}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+@media(min-width:760px){.tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.tile{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:10px}
+.tile small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.tile b{display:block;font-family:var(--disp);font-size:28px;font-weight:700;line-height:1.05;margin-top:4px}
+.tile span{display:block;font-size:11.5px;color:var(--mute);margin-top:2px;line-height:1.3}
+.tile .evb{display:inline-grid;margin-top:6px}.tile .evb i{height:14px}
+.wf{display:grid;gap:7px}
+.wr{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 46px;gap:8px;align-items:center;font-size:12.5px}
+.wr .wb{position:relative;height:10px;border-radius:5px;background:var(--s3)}
+.wr .wb i{position:absolute;top:0;bottom:0;border-radius:5px}
+.wr .wb s{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--faint)}
+.wr.tot{border-top:1px solid var(--line);padding-top:8px;font-weight:700}
+.na{font-size:12.5px;color:var(--mute);background:var(--s2);border:1px dashed var(--line2);border-radius:10px;padding:10px}
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.kv div{font-size:13px}
+.kv small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
+ul.clean{margin:6px 0 0;padding-left:18px;display:grid;gap:5px}
+details summary{cursor:pointer;font-weight:600;font-size:13px;color:var(--ink2);list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";display:inline-block;width:16px;color:var(--mute)}
+details[open] summary::before{content:"–"}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dt th{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);text-align:left;padding:6px 8px;white-space:nowrap;border-bottom:1px solid var(--line)}
+.dt td{padding:8px;border-bottom:1px solid var(--line);font-size:12.5px;vertical-align:top}
+.dt .r{text-align:right}
+svg text{font-family:var(--body)}
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;max-height:86vh;overflow:auto;background:var(--s1);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;padding:8px 14px calc(16px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .22s}
+.sheet .grab{width:38px;height:4px;border-radius:2px;background:var(--line2);margin:4px auto 10px}
+.sheet{visibility:hidden}body.sh .scrim{display:block}body.sh .sheet{transform:none;visibility:visible}
+@media(min-width:960px){.sheet{left:auto;right:24px;bottom:auto;top:64px;width:440px;max-height:80vh;border-radius:16px;border:1px solid var(--line2)}}
+.srow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.srow:last-child{border-bottom:0}
+.srow .dot{margin-top:5px}
+.menu a{display:flex;align-items:center;gap:12px;padding:14px 4px;border-bottom:1px solid var(--line);color:var(--ink)}
+.menu a:last-child{border-bottom:0}
+.menu a svg{width:20px;height:20px;color:var(--mute);flex:none}
+.menu a b{display:block;font-weight:600}
+.menu a small{display:block;color:var(--mute);font-size:12px;margin-top:1px}
+.menu a .chev{margin-left:auto;color:var(--faint)}
+.search{display:flex;align-items:center;gap:8px;height:42px;padding:0 12px;border-radius:12px;border:1px solid var(--line);background:var(--s1)}
+.search input{flex:1;height:100%;background:none;border:0;outline:0;font-size:15px}
+.note{font-size:12px;color:var(--faint);line-height:1.45}
+.back{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--mute);margin-bottom:10px;background:none;border:0;padding:0}
+.preview{font-size:11px;color:var(--violet);border:1px dashed rgba(169,146,255,.4);border-radius:8px;padding:4px 9px;margin-bottom:10px;background:rgba(169,146,255,.06);text-align:center}
+.empty{padding:28px 14px;text-align:center;color:var(--mute)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <a class="brand" href="#today" aria-label="Horse Intel home"><i></i>HORSE <span>INTEL</span></a>
+ <nav class="tnav" aria-label="Main"><a href="#today" data-nav="today">Today</a><a href="#explore" data-nav="explore">Explore</a><a href="#perf" data-nav="perf">Performance</a><a href="#more" data-nav="more">More</a></nav>
+ <div class="tsp"></div>
+ <button class="tbtn" id="dateBtn" aria-label="Choose race day"></button>
+ <button class="tbtn" id="statusBtn" aria-label="Data status"><span class="dot" id="statusDot"></span><span id="statusTxt">Status</span></button>
+</div></header>
+<main class="wrap" id="view"><div class="empty">Loading today's assessments…</div></main>
+<nav class="bnav" aria-label="Main">
+ <a href="#today" data-nav="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/></svg>Today</a>
+ <a href="#explore" data-nav="explore"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>Explore</a>
+ <a href="#perf" data-nav="perf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Performance</a>
+ <a href="#more" data-nav="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="5.5" cy="12" r="1.4" fill="currentColor"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/><circle cx="18.5" cy="12" r="1.4" fill="currentColor"/></svg>More</a>
+</nav>
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Details"></aside>
+<script>
+'use strict';
+// ---------- formatting ----------
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const kg=(x,d=1)=>x==null||isNaN(x)?'–':(x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(d);
+const pc=(x,d=1)=>x==null||isNaN(x)?'–':(+x).toFixed(d)+'%';
+const bris=u=>{try{return new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Brisbane',weekday:'short',day:'numeric',month:'short',hour:'numeric',minute:'2-digit'}).format(new Date(u))}catch(e){return u||'–'}};
+const hm=u=>{try{return new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Brisbane',hour:'numeric',minute:'2-digit'}).format(new Date(u))}catch(e){return u||'–'}};
+const dlong=d=>new Date(d+'T00:00:00').toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long'});
+const dshort=d=>new Date(d+'T00:00:00').toLocaleDateString('en-AU',{day:'numeric',month:'short'});
+const $=id=>document.getElementById(id);
+const enc=encodeURIComponent;
+// ---------- the official selection labels (unchanged; colours only) ----------
+const LAB={'Strong selection':{cls:'p-strong',c:'var(--acc)'},'Leading contender':{cls:'p-lead',c:'var(--sky)'},'No clear selection':{cls:'p-none',c:'var(--slate)'},'Insufficient evidence':{cls:'p-ins',c:'var(--amber)'},'Not rated':{cls:'p-fo',c:'var(--line2)'},'Contender':{cls:'p-cont',c:'var(--slate)'},'Outsider':{cls:'p-cont',c:'var(--faint)'}};
+const ORDER=['Strong selection','Leading contender','No clear selection','Insufficient evidence','Not rated'];
+const pill=l=>'<span class="pill '+((LAB[l]||{}).cls||'p-cont')+'">'+esc(l==='Not rated'?'Fields only':l)+'</span>';
+const labc=l=>(LAB[l]||{}).c||'var(--slate)';
+const evb=(s,m)=>'<span class="evb" title="Evidence '+s+' of '+m+'">'+Array.from({length:m},(_,i)=>'<i class="'+(i<s?'on':'')+'"></i>').join('')+'</span>';
+const band=(v,lo,hi,col,mx=60)=>{const L=Math.min(98,lo/mx*100),W=Math.max(2,Math.min(100-L,(hi-lo)/mx*100));return '<div class="band" title="Calibrated chance '+pc(v)+', 80% band '+pc(lo,0)+'–'+pc(hi,0)+'"><i style="left:'+L+'%;width:'+W+'%;background:'+(col||'var(--slate)')+'"></i><u style="left:calc('+Math.min(99,v/mx*100)+'% - 1px)"></u></div>'};
+const ordinal=n=>n+(['th','st','nd','rd'][(n%100-20)%10]||['th','st','nd','rd'][n%100]||'th');
+const STATES=['NSW','VIC','QLD','SA','WA','TAS','ACT','NT'];
+// ---------- state ----------
+let D=null,IDX=null,fState='ALL',fMeet=null,lbN=10,showMkt=false,openRow=null,q='';
+const meeting=id=>D.meetings.find(m=>m.id===id);
+const meetingByName=n=>D.meetings.find(m=>m.name===n||m.id===n);
+const race=(m,no)=>m&&m.races.find(r=>r.no===no);
+const RM=()=>D.meetings.filter(m=>m.rated);
+const inState=m=>fState==='ALL'||m.state===fState;
+const day0=()=>new Date(D.date+'T00:00:00+10:00').getTime();
+const runnerCount=m=>m.races.reduce((a,r)=>a+r.runners.filter(x=>(x.status||'runner')==='runner').length,0);
+// ---------- data status: routine snapshot vs genuine problems ----------
+function dataStatus(){
+ const F=D.freshness||{},now=Date.now(),items=[];
+ const left=D.meetings.flatMap(m=>m.races).filter(r=>r.time_brisbane_min!=null&&day0()+r.time_brisbane_min*60000>now).length;
+ const mins=F.latest_update_utc?Math.round((now-new Date(F.latest_update_utc))/60000):null;
+ if(left>0&&mins!=null&&mins>(F.stale_after_min||90))items.push({lvl:'warn',t:'Data may be stale',d:'Last successful update '+bris(F.latest_update_utc)+' and '+left+' race'+(left>1?'s are':' is')+' still to run. Scratchings or rider changes since then are not reflected.'});
+ (D.completeness&&D.completeness.rows||[]).forEach(r=>{
+  if(r.races_collected<r.races_expected||r.fields===false)items.push({lvl:'bad',t:'Collection problem: '+r.meeting,d:'Fields collected for '+r.races_collected+' of '+r.races_expected+' races. '+(r.issues||[]).join('; ')});
+ });
+ (D.operations||[]).forEach(o=>{if(!/^(ok|done|complete)/i.test(o.status||''))items.push({lvl:'warn',t:o.item,d:(o.status||'')+(o.note?' ('+o.note+')':'')})});
+ if(D.tracking&&D.tracking.error)items.push({lvl:'bad',t:'Tracking tables not read',d:D.tracking.error});
+ const lvl=items.some(i=>i.lvl==='bad')?'bad':items.length?'warn':'ok';
+ return {lvl,items,left,mins};
+}
+function snapSummary(){
+ const s=D.meetings.map(m=>m.snapshots.find(x=>x.id===m.default_snapshot)).filter(Boolean);
+ const caps=[...new Set(s.map(x=>x.fields_captured_utc))];
+ return {n:s.length,first:caps.sort()[0],last:caps.sort().slice(-1)[0],kinds:[...new Set(s.map(x=>x.kind||x.label))]};
+}
+// ---------- charts (SVG, drawn from published numbers only) ----------
+function trajChart(rs,now){
+ if(!rs||rs.length<2)return '<div class="na">Fewer than two held runs: no trajectory to draw.</div>';
+ const W=340,H=150,L=30,R=34,T=10,B=24,vals=rs.flatMap(r=>[r[1],r[2]]).filter(v=>v!=null).concat(now!=null?[now]:[]);
+ let lo=Math.floor(Math.min(...vals)-1),hi=Math.ceil(Math.max(...vals)+1);if(hi-lo<4){hi+=2;lo-=2}
+ const x=i=>L+i*(W-L-R)/(rs.length-1),y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+ const step=Math.max(1,Math.round((hi-lo)/4));let grid='';
+ for(let v=Math.ceil(lo/step)*step;v<=hi;v+=step)grid+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="'+(v===0?'#3a4a60':'#1c2633')+'"'+(v===0?' stroke-dasharray="3 3"':'')+'/><text x="'+(L-6)+'" y="'+(y(v)+3.5)+'" font-size="9.5" fill="#5b6a7c" text-anchor="end">'+(v>0?'+':'')+v+'</text>';
+ const line=rs.map((r,i)=>r[2]==null?'':(i?'L':'M')+x(i).toFixed(1)+' '+y(r[2]).toFixed(1)).join(' ');
+ const area=line?line+' L'+x(rs.length-1).toFixed(1)+' '+(H-B)+' L'+x(0).toFixed(1)+' '+(H-B)+' Z':'';
+ const dots=rs.map((r,i)=>r[1]==null?'':'<circle cx="'+x(i).toFixed(1)+'" cy="'+y(r[1]).toFixed(1)+'" r="4" fill="#5ea8ff" stroke="#070b10" stroke-width="1.5"><title>'+esc(r[0])+': ran '+kg(r[1],1)+' kg; rating going in '+kg(r[2],1)+' kg</title></circle>').join('');
+ const lab=(i,a)=>'<text x="'+x(i)+'" y="'+(H-7)+'" font-size="9.5" fill="#5b6a7c" text-anchor="'+a+'">'+esc(dshort(rs[i][0]))+'</text>';
+ return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block" role="img" aria-label="Ability trajectory"><defs><linearGradient id="ga" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3ee0a1" stop-opacity=".22"/><stop offset="1" stop-color="#3ee0a1" stop-opacity="0"/></linearGradient></defs>'+grid+(area?'<path d="'+area+'" fill="url(#ga)"/>':'')+'<path d="'+line+'" fill="none" stroke="#3ee0a1" stroke-width="2"/>'+(now!=null&&rs[rs.length-1][2]!=null?'<path d="M'+x(rs.length-1).toFixed(1)+' '+y(rs[rs.length-1][2]).toFixed(1)+' L'+(W-8)+' '+y(now).toFixed(1)+'" stroke="#3ee0a1" stroke-width="2" stroke-dasharray="3 3" fill="none"/><circle cx="'+(W-8)+'" cy="'+y(now).toFixed(1)+'" r="4.5" fill="#3ee0a1"><title>Rating now '+kg(now,1)+' kg</title></circle><text x="'+(W-8)+'" y="'+(H-7)+'" font-size="9.5" fill="#3ee0a1" text-anchor="end">now</text>':'')+dots+lab(0,'start')+lab(rs.length-1,'end')+'</svg>'+
+  '<div class="xs mute" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:6px"><span><i class="sw" style="display:inline-block;background:#3ee0a1;width:14px;height:3px;vertical-align:3px"></i> Ability rating carried into each run</span><span><i class="sw" style="display:inline-block;background:#5ea8ff;border-radius:50%"></i> Performance in that run</span><span>dashed = to the rating now · kg, common national scale</span></div>';
+}
+function ladder(rows,now){
+ const v=rows.filter(r=>r[1]!=null).map(r=>r[1]).concat(now!=null?[now]:[]);if(!v.length)return '';
+ let lo=Math.floor(Math.min(...v)-1),hi=Math.ceil(Math.max(...v)+1);const X=x=>((x-lo)/(hi-lo)*100).toFixed(1)+'%';
+ return '<div style="display:grid;gap:9px">'+rows.map(r=>'<div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) 46px;gap:8px;align-items:center;font-size:12.5px"><div>'+esc(r[0])+(r[2]?'<div class="xs faint">'+esc(r[2])+'</div>':'')+'</div><div style="position:relative;height:14px;border-radius:7px;background:var(--s3)">'+(now!=null?'<s style="position:absolute;top:-3px;bottom:-3px;width:2px;background:#3ee0a1;left:'+X(now)+'"></s>':'')+(r[1]!=null?'<i style="position:absolute;top:2px;width:10px;height:10px;border-radius:50%;margin-left:-5px;background:'+(r[3]||'#5ea8ff')+';left:'+X(r[1])+'"></i>':'')+'</div><div class="num" style="text-align:right;font-weight:600">'+(r[1]!=null?kg(r[1],1):'<span class="faint xs">'+esc(r[4]||'–')+'</span>')+'</div></div>').join('')+
+  '<div class="xs mute"><i style="display:inline-block;width:2px;height:10px;background:#3ee0a1;vertical-align:-1px"></i> green line = ability rating now ('+kg(now,1)+' kg)</div></div>';
+}
+function rangeChart(r){
+ const lo=Math.min(-8,Math.floor(r.lo_kg-1)),hi=Math.max(8,Math.ceil(r.hi_kg+1)),X=v=>((v-lo)/(hi-lo)*100).toFixed(1)+'%';
+ return '<div style="position:relative;height:46px;margin:6px 0 2px"><div style="position:absolute;left:0;right:0;top:18px;height:10px;border-radius:5px;background:var(--s3)"></div>'+
+  '<div style="position:absolute;top:18px;height:10px;border-radius:5px;background:linear-gradient(90deg,rgba(169,146,255,.35),rgba(169,146,255,.75),rgba(169,146,255,.35));left:'+X(r.lo_kg)+';width:calc('+X(r.hi_kg)+' - '+X(r.lo_kg)+')"></div>'+
+  '<div style="position:absolute;top:12px;bottom:12px;width:2px;background:var(--faint);left:'+X(0)+'"></div><div class="xs faint" style="position:absolute;top:0;left:'+X(0)+';transform:translateX(-50%);white-space:nowrap">field average</div>'+
+  '<div style="position:absolute;top:14px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--violet);border:3px solid var(--s1);left:'+X(r.expected_kg)+'"></div>'+
+  '<div class="xs num mute" style="position:absolute;bottom:-2px;left:'+X(r.lo_kg)+';transform:translateX(-50%)">'+kg(r.lo_kg,1)+'</div><div class="xs num mute" style="position:absolute;bottom:-2px;left:'+X(r.hi_kg)+';transform:translateX(-50%)">'+kg(r.hi_kg,1)+'</div></div>';
+}
+function diverge(items){ // [label, value kg|null, sub]
+ const mx=Math.max(1,...items.map(i=>Math.abs(i[1]||0)));
+ return '<div style="display:grid;gap:9px">'+items.map(i=>'<div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.3fr) 46px;gap:8px;align-items:center;font-size:12.5px"><div>'+esc(i[0])+'<div class="xs faint">'+esc(i[2]||'')+'</div></div><div style="position:relative;height:10px;border-radius:5px;background:var(--s3)"><s style="position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--faint)"></s>'+(i[1]!=null&&i[1]!==0?'<i style="position:absolute;top:0;bottom:0;border-radius:5px;background:'+(i[1]>0?'var(--acc)':'var(--coral)')+';'+(i[1]>0?'left:50%':'right:50%')+';width:'+(Math.abs(i[1])/mx*50).toFixed(1)+'%"></i>':'')+'</div><div class="num" style="text-align:right;font-weight:600">'+(i[1]!=null?kg(i[1],1):'<span class="faint">–</span>')+'</div></div>').join('')+'</div>';
+}
+function gainChart(chain){ // historical gains vs previous version with 95% whiskers
+ const rows=chain.filter(c=>c.gain!=null);if(!rows.length)return '';
+ const mx=Math.max(...rows.map(c=>c.hi||c.gain))*1.1,mn=Math.min(0,...rows.map(c=>c.lo||c.gain));const X=v=>((v-mn)/(mx-mn)*100).toFixed(1)+'%';
+ return '<div style="display:grid;gap:10px">'+rows.map(c=>'<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) 58px;gap:8px;align-items:center;font-size:12.5px"><div><b style="font-weight:600">'+esc(c.version)+'</b><div class="xs faint">vs '+esc(c.vs||'previous')+'</div></div><div style="position:relative;height:14px"><s style="position:absolute;top:0;bottom:0;width:1px;background:var(--faint);left:'+X(0)+'"></s><i style="position:absolute;top:3px;height:8px;border-radius:4px;background:rgba(62,224,161,.55);left:'+X(0)+';width:calc('+X(c.gain)+' - '+X(0)+')"></i>'+(c.lo!=null?'<u style="position:absolute;top:6px;height:2px;background:var(--ink2);left:'+X(c.lo)+';width:calc('+X(c.hi)+' - '+X(c.lo)+')"></u>':'')+'</div><div class="num" style="text-align:right;font-weight:600">+'+c.gain.toFixed(4)+'</div></div>').join('')+'<div class="xs faint">Bar = gain in fit per race over the version before (log-likelihood); line = 95% interval. Past races (research), not live results.</div></div>';
+}
+function calChart(c){
+ if(!c||!c.deciles)return '';const W=320,H=180,L=34,B=26,T=8,R=8,mx=Math.max(.36,...c.deciles.map(d=>Math.max(d.actual,d.model_chance,d.calibrated||0)))*1.05;
+ const x=v=>L+v/mx*(W-L-R),y=v=>T+(1-v/mx)*(H-T-B);let g='';[0,.1,.2,.3].forEach(v=>{if(v<=mx)g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#1c2633"/><text x="'+(L-5)+'" y="'+(y(v)+3)+'" font-size="9.5" fill="#5b6a7c" text-anchor="end">'+v*100+'%</text><text x="'+x(v)+'" y="'+(H-10)+'" font-size="9.5" fill="#5b6a7c" text-anchor="middle">'+v*100+'%</text>'});
+ return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block" role="img" aria-label="Calibration">'+g+'<line x1="'+x(0)+'" y1="'+y(0)+'" x2="'+x(mx)+'" y2="'+y(mx)+'" stroke="#3a4a60" stroke-dasharray="4 4"/>'+
+  c.deciles.map(d=>'<circle cx="'+x(d.model_chance)+'" cy="'+y(d.actual)+'" r="3.5" fill="none" stroke="#7a889c"><title>Raw model chance '+pc(d.model_chance*100)+': won '+pc(d.actual*100)+'</title></circle>'+(d.calibrated!=null?'<circle cx="'+x(d.calibrated)+'" cy="'+y(d.actual)+'" r="4" fill="#3ee0a1"><title>Calibrated chance '+pc(d.calibrated*100)+': won '+pc(d.actual*100)+' ('+d.runners.toLocaleString()+' runners)</title></circle>':'')).join('')+
+  '<text x="'+(W-R)+'" y="'+(H-0)+'" font-size="9.5" fill="#8b99ab" text-anchor="end">chance given →</text><text x="'+(L+2)+'" y="'+(T+8)+'" font-size="9.5" fill="#8b99ab">actual win rate ↑</text></svg>'+
+  '<div class="xs mute" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:6px"><span><i class="sw" style="display:inline-block;background:#3ee0a1;border-radius:50%"></i> calibrated chance (shown on the site)</span><span><i class="sw" style="display:inline-block;border:1px solid #7a889c;border-radius:50%"></i> raw model chance</span><span>dashed = perfect</span></div>';
+}
+// ---------- TODAY ----------
+function vToday(){
+ const ds=dataStatus(),ss=snapSummary();const ms=D.meetings.filter(inState);const races=ms.flatMap(m=>m.races.map(r=>({m,r})));
+ const cnt=l=>races.filter(x=>(x.m.rated?x.r.label:'Not rated')===l).length;const tot=races.length||1;
+ const runners=ms.reduce((a,m)=>a+runnerCount(m),0);
+ const stateCounts=STATES.filter(s=>D.meetings.some(m=>m.state===s));
+ const now=Date.now();const upcoming=races.filter(x=>day0()+x.r.time_brisbane_min*60000>now).sort((a,b)=>a.r.time_brisbane_min-b.r.time_brisbane_min);
+ const sched=(upcoming.length?upcoming:races.slice().sort((a,b)=>a.r.time_brisbane_min-b.r.time_brisbane_min)).filter(x=>!fMeet||x.m.id===fMeet);
+ const lb=D.leaderboard.filter(e=>{const m=meetingByName(e.meeting);return m&&inState(m)&&(!fMeet||m.id===fMeet)});
+ const lbs=lbN==='all'?lb:lb.slice(0,lbN);
+ const isPast=IDX&&IDX.days&&IDX.days[0]&&D.date!==IDX.days[0].date;
+ const stTxt=ds.lvl==='ok'?'<b>All collections complete.</b> Morning snapshot: fields '+esc(hm(ss.last))+', scored before the first race':ds.items[0].t;
+ return '<div class="stack">'+
+  (isPast?'<div class="preview">Earlier race day: shown exactly as published before racing. Nothing is re-created.</div>':'')+
+  '<section class="hero"><div class="eyebrow">'+esc(D.weekday)+' · '+(isPast?'archived day':'today')+'</div><h1 style="margin-top:4px">'+esc(dlong(D.date).replace(/^\w+ /,''))+'</h1>'+
+  '<div class="kpis"><div class="kpi"><b>'+ms.length+'</b><span>meetings</span></div><div class="kpi"><b>'+races.length+'</b><span>races</span></div><div class="kpi"><b>'+runners+'</b><span>runners</span></div><div class="kpi"><b style="color:var(--acc)">'+races.filter(x=>x.m.rated).length+'</b><span>assessed</span></div></div>'+
+  '<button class="status" data-sheet="status"><span class="dot '+(ds.lvl==='ok'?'':ds.lvl)+'"></span><span>'+stTxt+'</span><span class="sp"></span><span class="faint">Details ›</span></button></section>'+
+  (ds.items.length?ds.items.filter(i=>i.lvl==='bad').map(i=>'<div class="card" style="border-color:rgba(255,122,107,.45)"><b style="color:var(--coral)">'+esc(i.t)+'</b><div class="sm mute" style="margin-top:3px">'+esc(i.d)+'</div></div>').join(''):'')+
+  '<div class="chips" role="group" aria-label="Jurisdiction"><button class="chip" data-state="ALL" aria-pressed="'+(fState==='ALL')+'">All states</button>'+stateCounts.map(s=>'<button class="chip" data-state="'+s+'" aria-pressed="'+(fState===s)+'">'+s+'<small>'+D.meetings.filter(m=>m.state===s).length+'</small></button>').join('')+'</div>'+
+  '<section class="card"><div class="ch"><h3>Race assessments</h3><span class="xs faint">'+races.length+' races</span></div><div class="lbar">'+ORDER.map(l=>'<i style="width:'+(cnt(l)/tot*100)+'%;background:'+labc(l)+'" title="'+esc(l)+': '+cnt(l)+'"></i>').join('')+'</div><div class="legend">'+ORDER.map(l=>'<div><i class="sw" style="background:'+labc(l)+'"></i>'+esc(l==='Not rated'?'Fields only':l)+'<b>'+cnt(l)+'</b></div>').join('')+'</div></section>'+
+  '<div class="grid gside">'+
+   '<section class="card"><div class="ch"><h2>Top assessments</h2><span class="xs faint">by calibrated win chance</span></div>'+
+    (fMeet?'<div class="sm mute" style="margin:-4px 0 10px">Showing '+esc(meeting(fMeet).name)+' only · <button class="link" data-meet="">show all meetings</button></div>':'')+
+    (lbs.length?'<div class="alist">'+lbs.map(e=>{const m=meetingByName(e.meeting);return '<button class="acard" data-go="horse/'+enc(m.id)+'/'+e.race+'/'+e.n+'"><div class="rk">'+e.day_rank+'</div><div><div class="hn">'+esc(e.horse)+'</div><div class="meta"><span class="st">'+esc(m.state)+'</span>'+esc(e.meeting)+' R'+e.race+' · <span class="num">'+esc(e.time)+'</span></div><div style="margin-top:6px">'+pill(e.class)+'</div></div><div class="ch2"><b class="num" style="color:'+labc(e.class)+'">'+(+e.cal).toFixed(0)+'%</b><span class="xs faint">win chance</span>'+band(e.cal,e.cal_lo,e.cal_hi,labc(e.class))+'</div></button>'}).join('')+'</div>':'<div class="empty">No qualified runners for this filter.</div>')+
+    (lb.length>10?'<div style="display:flex;justify-content:center;margin-top:12px">'+(lbN==='all'?'<button class="btn" data-lb="10">Show top 10</button>':'<button class="btn" data-lb="all">Show all '+lb.length+'</button>')+'</div>':'')+
+    '<p class="note" style="margin:12px 0 0">The calibrated win chance makes runners in different races comparable. The bar is its 80% band. Runners with no prior form are left off this list but shown in their race.</p></section>'+
+   '<div class="stack">'+
+    '<section class="card"><div class="ch"><h2>'+(upcoming.length?'Up next':'Race schedule')+'</h2><button class="link" data-go="explore">All races ›</button></div>'+sched.slice(0,8).map(x=>raceRow(x.m,x.r)).join('')+(sched.length?'':'<div class="empty">No races for this filter.</div>')+'</section>'+
+    '<section class="card"><div class="ch"><h2>Meetings</h2><span class="xs faint">tap to filter</span></div><div class="mgrid">'+ms.map(m=>'<button class="mcard" data-meet="'+esc(m.id)+'" aria-pressed="'+(fMeet===m.id)+'" style="'+(fMeet===m.id?'border-color:var(--ink)':'')+'"><b>'+esc(m.name)+'</b><div class="sub"><span class="st">'+esc(m.state)+'</span>'+m.races.length+' races'+(m.rated?(m.conditions.going?' · '+esc(m.conditions.going):''):' · fields only')+'</div><div class="rdots">'+m.races.map(r=>'<i style="background:'+(m.rated?labc(r.label):'transparent')+';border-color:'+(m.rated?labc(r.label):'var(--line2)')+'" title="R'+r.no+': '+esc(m.rated?r.label:'Fields only')+'"></i>').join('')+'</div></button>').join('')+'</div></section>'+
+   '</div></div></div>';
+}
+function raceRow(m,r){
+ const top=m.rated&&r.runners&&r.runners[0];
+ return '<button class="rrow" data-go="race/'+enc(m.id)+'/'+r.no+'"><div class="t num">'+esc(r.time.replace(/(am|pm)$/,''))+'<small>'+esc(r.time.slice(-2))+' '+esc(r.tz)+'</small></div><div class="w">'+esc(m.name)+' R'+r.no+'<small>'+(top?esc(top.horse):'Fields only')+' · '+r.distance_m+'m</small></div><div class="r" style="max-width:112px"><span class="disp num" style="font-size:19px;font-weight:700;color:'+(m.rated?labc(r.label):'var(--faint)')+'">'+(top?pc(top.cal,0):'–')+'</span><span class="xs" style="display:block;line-height:1.2;color:'+(m.rated?labc(r.label):'var(--faint)')+'">'+esc(m.rated?r.label:'Fields only')+'</span></div></button>';
+}
+// ---------- EXPLORE ----------
+function vExplore(mid){
+ const ms=D.meetings.filter(inState);const m=mid?meeting(mid):null;
+ const hits=q.length>=2?D.meetings.flatMap(mm=>mm.races.flatMap(r=>r.runners.filter(h=>h.horse&&h.horse.toLowerCase().includes(q.toLowerCase())).map(h=>({m:mm,r,h})))).slice(0,30):[];
+ return '<div class="stack"><div><h1>Explore</h1><div class="sm mute" style="margin-top:4px">Every meeting, race and runner for '+esc(dlong(D.date))+'.</div></div>'+
+  '<label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--faint)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" placeholder="Find a horse running today" value="'+esc(q)+'" autocomplete="off"></label>'+
+  (q.length>=2?'<section class="card"><div class="ch"><h3>Horses matching “'+esc(q)+'”</h3><span class="xs faint">'+hits.length+'</span></div>'+(hits.length?hits.map(x=>'<button class="rrow" data-go="'+(x.m.rated&&x.h.cal!=null?'horse/'+enc(x.m.id)+'/'+x.r.no+'/'+x.h.n:'race/'+enc(x.m.id)+'/'+x.r.no)+'"><div class="t num">'+esc(x.r.time.replace(/(am|pm)$/,''))+'<small>'+esc(x.r.time.slice(-2))+'</small></div><div class="w">'+esc(x.h.horse)+'<small>'+esc(x.m.name)+' R'+x.r.no+' · no. '+x.h.n+'</small></div><div class="r num">'+(x.h.cal!=null?pc(x.h.cal,0):'')+'</div></button>').join(''):'<div class="empty">No runner by that name today.</div>')+'</section>':'')+
+  '<div class="chips" role="group" aria-label="Jurisdiction"><button class="chip" data-state="ALL" aria-pressed="'+(fState==='ALL')+'">All states</button>'+STATES.filter(s=>D.meetings.some(x=>x.state===s)).map(s=>'<button class="chip" data-state="'+s+'" aria-pressed="'+(fState===s)+'">'+s+'</button>').join('')+'</div>'+
+  '<div class="chips" role="group" aria-label="Meeting">'+ms.map(x=>'<button class="chip" data-go="explore/'+enc(x.id)+'" aria-pressed="'+(m&&m.id===x.id)+'">'+esc(x.name)+'</button>').join('')+'</div>'+
+  (m?meetingPanel(m):ms.map(meetingPanel).join(''))+'</div>';
+}
+function meetingPanel(m){
+ const c=m.conditions||{},s=m.snapshots.find(x=>x.id===m.default_snapshot)||{};
+ return '<section class="card"><div class="ch"><div><h2>'+esc(m.name)+'</h2><div class="xs mute" style="margin-top:2px"><span class="st">'+esc(m.state)+'</span>'+m.races.length+' races'+(c.going?' · '+esc(c.going):'')+(c.rail?' · rail '+esc(c.rail):'')+(c.weather?' · '+esc(c.weather):'')+'</div></div>'+(m.rated?'':pill('Not rated'))+'</div>'+
+  (m.rated?'':'<div class="na" style="margin-bottom:8px">'+esc(m.reason||'Fields only.')+'</div>')+
+  m.races.map(r=>raceRow(m,r)).join('')+'<p class="note" style="margin:8px 0 0">Fields '+esc(s.fields_captured_utc?hm(s.fields_captured_utc):'–')+(s.v2_scored_utc?', scored '+esc(hm(s.v2_scored_utc)):'')+' (Brisbane). '+esc((m.notes||[])[0]||'')+'</p></section>';
+}
+// ---------- RACE ----------
+function vRace(m,r){
+ if(!m||!r)return '<div class="empty">Race not found.</div>';
+ const act=r.runners.filter(x=>(x.status||'runner')==='runner');const rated=m.rated;
+ const avgA=rated?r.runners.reduce((t,x)=>t+(x.ability?x.ability.rating_kg:0),0)/r.runners.length:0;
+ const head='<button class="back" data-go="explore/'+enc(m.id)+'">‹ '+esc(m.name)+'</button><section class="rhead"><div class="ttl"><div><div class="eyebrow">'+esc(m.name)+' · Race '+r.no+'</div><h1 style="font-size:26px;margin-top:4px;text-transform:none;letter-spacing:0">'+esc(r.name)+'</h1></div>'+(rated?pill(r.label):pill('Not rated'))+'</div>'+
+  '<div class="facts"><span class="fact"><b class="num">'+esc(r.time)+'</b> '+esc(r.tz)+'</span><span class="fact"><b>'+r.distance_m+'m</b></span>'+(r.class?'<span class="fact">'+esc(r.class)+'</span>':'')+(m.conditions.going?'<span class="fact">Track <b>'+esc(m.conditions.going)+'</b></span>':'')+'<span class="fact"><b>'+(rated?r.field:act.length)+'</b> runners</span>'+(r.confidence?'<span class="fact">Data <b>'+esc(r.confidence.level)+'</b></span>':'')+'</div>'+
+  '<div class="rtabs" role="group" aria-label="Races">'+m.races.map(x=>'<button class="rtab" data-go="race/'+enc(m.id)+'/'+x.no+'" aria-pressed="'+(x.no===r.no)+'"><b>R'+x.no+'</b><small class="num">'+esc(x.time.replace(/(am|pm)$/,''))+'</small><i style="background:'+(rated?labc(x.label):'var(--s3)')+'"></i></button>').join('')+'</div></section>';
+ if(!rated)return head+'<section class="card" style="margin-top:12px"><div class="na" style="margin-bottom:10px">Fields only: '+esc(m.reason||'')+(r.coverage?' '+r.coverage.with_history+' of '+r.coverage.runners+' runners have runs in our history.':'')+'</div><table class="tbl rt"><thead><tr><th>Runner</th><th>Bar</th><th>Wt</th></tr></thead><tbody>'+r.runners.map(h=>'<tr style="'+(h.status==='scratched'?'opacity:.45;text-decoration:line-through':'')+'"><td><div class="hn"><span class="sc">'+h.n+'</span><div><b>'+esc(h.horse)+'</b><small>'+esc(h.jockey||'jockey tba')+(h.trainer?' · '+esc(h.trainer):'')+(h.status&&h.status!=='runner'?' · '+esc(h.status):'')+'</small>'+(showMkt&&h.market&&h.market.fixed_win?'<div class="mkt">TAB $'+(+h.market.fixed_win.price).toFixed(2)+' <span class="faint">market · not used</span></div>':'')+'</div></div></td><td class="num">'+(h.barrier??'–')+'</td><td class="num">'+(h.weight??'–')+'</td></tr>').join('')+'</tbody></table></section>';
+ const rows=r.runners.map(h=>{const key=m.id+'|'+r.no+'|'+h.n,a=h.ability||{};const aRel=a.rated_runs?a.rating_kg-avgA:null;const mk=h.market&&h.market.fixed_win;
+  return '<tr class="ru'+(h.rank===1?' lead':'')+'" data-row="'+esc(key)+'"><td><div class="hn"><span class="sc">'+h.n+'</span><div><b>'+esc(h.horse)+'</b><small>'+esc(h.jockey||'jockey tba')+' · '+esc(h.trainer||'')+'</small>'+(h.experience?'<small style="color:var(--amber)">'+esc(h.experience)+'</small>':'')+(showMkt&&mk?'<div class="mkt">TAB $'+(+mk.price).toFixed(2)+' <span class="faint">market · not used</span></div>':'')+'</div></div></td>'+
+  '<td><span class="big num" style="color:'+(h.rank===1?labc(r.label):'var(--ink)')+'">'+(+h.cal).toFixed(0)+'%</span><span class="cl">'+band(h.cal,h.cal_lo,h.cal_hi,h.rank===1?labc(r.label):'var(--slate)',Math.max(60,Math.ceil((r.top_cal||40)/10)*10+10))+'</span></td>'+
+  '<td><span class="kgv num">'+(aRel!=null?kg(aRel,1):'<span class="xs faint">debut</span>')+'</span></td><td><span class="kgv num">'+kg(h.rating,1)+'</span></td><td>'+evb(h.evidence.score,h.evidence.max)+'</td></tr>'+
+  (openRow===key?'<tr class="xr"><td colspan="5">'+quick(m,r,h)+'</td></tr>':'')}).join('');
+ return head+'<section class="card" style="margin-top:12px"><div class="ch"><h3>Assessment</h3><button class="toggle" data-mkt="1" aria-pressed="'+showMkt+'"><i></i>Market prices</button></div>'+
+  '<div class="scroll"><table class="tbl rt"><thead><tr><th>Runner</th><th>Chance</th><th>Ability</th><th>Today</th><th>Evid.</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+  '<details style="margin-top:10px"><summary>What the columns mean</summary><div class="legendrow"><div><b>Chance</b>Calibrated win probability; bar = 80% band</div><div><b>Ability</b>Underlying rating vs this field\'s average (kg)</div><div><b>Today</b>Expected performance today vs this field, after all factors (kg-equivalent)</div><div><b>Evidence</b>How complete the information is (of 6 checks)</div></div><p class="note" style="margin:8px 0 0">Ability is what the horse has shown; Today adds weight, form, jockey, trainer, suitability and everything else the engine uses. Market prices, when shown, are TAB fixed odds for reference only; they are never used by the model.</p></details>'+
+  ((r.emergencies_included||[]).length?'<p class="note" style="margin:10px 0 0"><b>Emergencies included:</b> '+r.emergencies_included.map(x=>esc(x.n+'. '+x.horse)).join(' · ')+'. Inferred from the TAB scratchings at the morning capture; not an official confirmation.</p>':'')+
+  ((r.not_scored||[]).length?'<p class="note" style="margin:8px 0 0"><b>Not scored:</b> '+r.not_scored.map(x=>esc(x.n+'. '+x.horse)+' ('+esc(x.status)+')').join(' · ')+'.</p>':'')+'</section>'+
+  '<section class="card"><div class="ch"><h3>Field map</h3><span class="xs faint">expected performance today</span></div>'+rail(m,r)+'</section>';
+}
+function quick(m,r,h){
+ return '<div class="kv"><div><small>Helping most</small>'+(h.reasons&&h.reasons.length?esc(h.reasons.join(' · ')):'<span class="faint">nothing stands out</span>')+'</div><div><small>Holding it back</small>'+((h.against||[]).length?esc(h.against.join(' · ')):'–')+'</div><div><small>Barrier · weight</small>'+(h.barrier??'–')+' · '+(h.weight??'–')+'kg'+(h.claim?' (a'+h.claim+')':'')+'</div><div><small>Selection</small>'+esc(h.class)+' · '+ordinal(h.rank)+'</div></div><div style="margin-top:10px"><button class="btn pri" data-go="horse/'+enc(m.id)+'/'+r.no+'/'+h.n+'">Open horse profile ›</button></div>';
+}
+function rail(m,r){
+ const W=340,H=96,P=14,vals=r.runners.map(h=>h.rating);let lo=Math.floor(Math.min(...vals)-.5),hi=Math.ceil(Math.max(...vals)+.5);const x=v=>P+(v-lo)/(hi-lo)*(W-2*P),base=H-22;
+ const rows=[];const pos=r.runners.map(h=>{const px=x(h.rating);let k=0;while(rows[k]&&rows[k].some(p=>Math.abs(p-px)<20))k++;(rows[k]=rows[k]||[]).push(px);return {h,px,k}});
+ const step=Math.max(1,Math.round((hi-lo)/4));let t='';for(let v=Math.ceil(lo/step)*step;v<=hi;v+=step)t+='<text x="'+x(v)+'" y="'+(base+16)+'" fill="#5b6a7c" font-size="10" text-anchor="middle">'+(v>0?'+':'')+v+'</text>';
+ const Hh=Math.max(H,base+10)+Math.max(0,rows.length-3)*18;
+ return '<svg viewBox="0 '+(-Math.max(0,rows.length-3)*18)+' '+W+' '+Hh+'" style="width:100%;height:auto;display:block" role="img" aria-label="Field map"><line x1="'+P+'" x2="'+(W-P)+'" y1="'+base+'" y2="'+base+'" stroke="#2d3b4e" stroke-width="2"/>'+(lo<0&&hi>0?'<line x1="'+x(0)+'" x2="'+x(0)+'" y1="'+(-Math.max(0,rows.length-3)*18)+'" y2="'+base+'" stroke="#2d3b4e" stroke-dasharray="3 3"/>':'')+t+
+  pos.map(p=>{const y=base-14-p.k*18;const top=p.h.rank===1;return '<g data-go="horse/'+enc(m.id)+'/'+r.no+'/'+p.h.n+'" style="cursor:pointer"><title>'+esc(p.h.horse)+' '+kg(p.h.rating)+'</title><line x1="'+p.px+'" x2="'+p.px+'" y1="'+(y+8)+'" y2="'+base+'" stroke="#2d3b4e"/><circle cx="'+p.px+'" cy="'+y+'" r="9" fill="'+(top?'#3ee0a1':'#1a2432')+'" stroke="'+(top?'#3ee0a1':'#5b6a7c')+'"/><text x="'+p.px+'" y="'+(y+3.5)+'" font-size="9.5" font-weight="700" text-anchor="middle" fill="'+(top?'#04130c':'#f3f6fa')+'">'+p.h.n+'</text></g>'}).join('')+'</svg><p class="note" style="margin:6px 0 0">Each disc is a runner on the expected-performance scale (kg-equivalent, 0 = this field\'s average). Tap a disc for the horse.</p>';
+}
+// ---------- HORSE PROFILE ----------
+function vHorse(m,r,h){
+ if(!h)return '<div class="empty">Runner not found.</div>';
+ const a=h.ability||{},p=h.profile,rec=h.records||{},pe=h.people||{};const c=(p&&p.common)||{};
+ const avgA=r.runners.reduce((t,x)=>t+(x.ability?x.ability.rating_kg:0),0)/r.runners.length;
+ const nowC=a.rating_common_kg!=null?a.rating_common_kg:a.rating_kg;const useC=a.rating_common_kg!=null;
+ const fig=k=>c[k]!=null&&useC?c[k]:p?p[k]:null;
+ // waterfall
+ const sum=h.groups.reduce((t,g)=>t+g.kg,0);let cum=0;const steps=h.groups.map(g=>{const s=cum;cum+=g.kg;return {...g,s,e:cum}});
+ const lo=Math.min(0,...steps.map(s=>Math.min(s.s,s.e))),hi=Math.max(0,...steps.map(s=>Math.max(s.s,s.e)));const sp=(hi-lo)||1,X=v=>(v-lo)/sp*100;
+ const wf=steps.map(s=>'<div class="wr"><div>'+esc(s.label.replace(/ \(v2\.2\)$/,''))+'</div><div class="wb"><s style="left:'+X(0)+'%"></s><i style="left:'+X(Math.min(s.s,s.e))+'%;width:'+Math.max(1.5,Math.abs(s.e-s.s)/sp*100)+'%;background:'+(s.kg>=0?'var(--acc)':'var(--coral)')+'"></i></div><div class="num" style="text-align:right">'+kg(s.kg,2)+'</div></div>').join('')+'<div class="wr tot"><div>Expected today</div><div class="wb"><s style="left:'+X(0)+'%"></s><i style="left:'+X(Math.min(0,sum))+'%;width:'+Math.max(1.5,Math.abs(sum)/sp*100)+'%;background:var(--sky)"></i></div><div class="num" style="text-align:right">'+kg(h.rating,2)+'</div></div>';
+ const mk=h.market||{};const RG=p&&p.range_research;
+ const recentC=(p&&(useC&&c.recent?c.recent:p.recent))||[];
+ const ldr=p&&p.runs?ladder([['Career best','career_best','held runs','#a992ff'],['Best of last 6','peak_last6','','#5ea8ff'],['Repeatable upper','repeatable_upper_last6','2nd-best of last 6','#5ea8ff'],['Typical','typical_last5','median of last 5','#5ea8ff'],['Latest run','latest','','#f3f6fa']].map(x=>[x[0],fig(x[1]),x[2],x[3],x[1]==='typical_last5'||x[1]==='repeatable_upper_last6'?'needs 3 runs':'none']),useC?a.rating_common_kg:a.rating_kg):'';
+ const T=D.tracking||{},tr=h.tracking;
+ return '<button class="back" data-go="race/'+enc(m.id)+'/'+r.no+'">‹ '+esc(m.name)+' R'+r.no+'</button>'+
+ '<div class="stack"><section class="phead"><div style="display:flex;gap:10px;align-items:flex-start"><span class="sc" style="min-width:34px;height:34px;font-size:15px;border-radius:9px">'+h.n+'</span><div style="flex:1"><div class="eyebrow">'+esc(m.name)+' R'+r.no+' · '+r.distance_m+'m · '+esc(r.time)+' '+esc(r.tz)+'</div><h1 style="margin-top:3px">'+esc(h.horse)+'</h1><div class="sm mute" style="margin-top:4px">'+(h.age!=null?h.age+'yo'+(h.female?' mare/filly':'')+' · ':'')+esc(h.trainer||'trainer –')+' · '+esc(h.jockey||'jockey tba')+' · barrier '+(h.barrier??'–')+' · '+(h.weight??'–')+'kg'+(h.claim?' (a'+h.claim+')':'')+'</div><div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center">'+pill(h.class)+'<span class="xs mute">'+(h.rank===1?'Top-rated in this race':ordinal(h.rank)+' of '+r.field+' in this race')+'</span></div></div></div>'+
+  '<div class="tiles"><div class="tile"><small>Win chance</small><b class="num" style="color:'+labc(h.class)+'">'+pc(h.cal,0)+'</b><span>calibrated · 80% band '+(+h.cal_lo).toFixed(0)+'–'+(+h.cal_hi).toFixed(0)+'%</span></div>'+
+  '<div class="tile"><small>Ability rating</small><b class="num">'+(a.rated_runs?kg(nowC,1):'—')+'</b><span>'+(a.rated_runs?'kg, '+(useC?'common national scale':'engine scale')+' · '+kg(a.rating_kg-avgA,1)+' vs this field · '+a.rated_runs+' rated run'+(a.rated_runs>1?'s':''):'no rated runs yet')+'</span></div>'+
+  '<div class="tile"><small>Expected today</small><b class="num">'+kg(h.rating,1)+'</b><span>vs this field\'s average (kg-equivalent)</span></div>'+
+  '<div class="tile"><small>Evidence</small><b class="num">'+h.evidence.score+'<span style="display:inline;font-size:16px;color:var(--mute)">/'+h.evidence.max+'</span></b><span>'+evb(h.evidence.score,h.evidence.max)+'</span></div></div></section>'+
+ '<div class="grid g2">'+
+  '<section class="card"><div class="ch"><h3>Ability trajectory</h3><span class="xs faint">'+(recentC.length?'last '+recentC.length+' runs':'')+'</span></div>'+(p&&p.runs?trajChart(recentC,useC?a.rating_common_kg:a.rating_kg):'<div class="na">No rated runs held, so there is nothing to chart. A first starter is rated from population averages, trainer, age and sex, not from invented form.</div>')+'</section>'+
+  '<section class="card"><div class="ch"><h3>Demonstrated vs sustainable</h3></div>'+(ldr||'<div class="na">No rated runs held.</div>')+'<p class="note" style="margin:10px 0 0">Each figure is one run measured against its field. The rating, not the single best run, is the level the horse is expected to repeat.</p></section>'+
+  '<section class="card"><div class="ch"><h3>Expected performance range <span class="tag">Research</span></h3></div>'+(RG?rangeChart(RG)+'<div class="sm" style="margin-top:8px"><b>Expected run against this field: '+kg(RG.expected_kg,1)+' kg</b> · 80% range '+kg(RG.lo_kg,1)+' to '+kg(RG.hi_kg,1)+' kg'+(RG.wide?'<div class="xs mute" style="margin-top:2px">Wider because: '+esc(RG.wide)+'</div>':'')+'</div><p class="note" style="margin:8px 0 0">Where this run is likely to land 8 times in 10. An 80% range is not an 80% chance of winning. Research measurement; the engine does not use it.</p>':'<div class="na">'+(m.model_family==='QLD'?'Not available for Queensland yet: the range model has not been calibrated there.':'Not available for this runner.')+'</div>')+'</section>'+
+  '<section class="card"><div class="ch"><h3>Why this assessment</h3><span class="xs faint">adds up to Expected today</span></div><div class="wf">'+wf+'</div></section>'+
+  '<section class="card"><div class="ch"><h3>Suitability</h3><span class="xs faint">its own record vs its rating</span></div>'+diverge([['At '+m.name,rec.course&&rec.course.runs?rec.course.kg:null,rec.course&&rec.course.runs?rec.course.runs+' run'+(rec.course.runs>1?'s':''):'no runs here'],['This going band',rec.going&&rec.going.runs?rec.going.kg:null,rec.going&&rec.going.runs?rec.going.runs+' runs':'no runs'],['This distance band',rec.distance&&rec.distance.runs?rec.distance.kg:null,rec.distance&&rec.distance.runs?rec.distance.runs+' runs':'no runs']])+'<p class="note" style="margin:8px 0 0">Above (+) or below (−) its rating in these conditions, shrunk towards zero when there are few runs.</p></section>'+
+  '<section class="card"><div class="ch"><h3>Connections</h3><span class="xs faint">earlier runners vs their ratings</span></div>'+diverge([['Jockey',pe.jockey_kg,pe.jockey_kg!=null?(pe.jockey_rides||0).toLocaleString()+' rides':'not named / no history'],['Trainer',pe.trainer_kg,pe.trainer_kg!=null?(pe.trainer_runners||0).toLocaleString()+' runners':'no history'],['Jockey-trainer pair',pe.combo_kg,'']])+'</section>'+
+  '<section class="card"><div class="ch"><h3>Characteristics</h3></div><div class="kv"><div><small>Age · sex</small>'+(h.age!=null?h.age+'yo'+(h.female?' · mare/filly':''):'–')+'</div><div><small>Last run</small>'+(a.last_run?esc(dshort(a.last_run))+' · '+a.days_since+' days ago':'–')+'</div><div><small>Rating after last run</small>'+(a.change_after_last_run_kg!=null?kg(a.change_after_last_run_kg,1)+' kg':'–')+'</div><div><small>Rating uncertainty</small>'+(a.sd_kg!=null?'± '+a.sd_kg.toFixed(1)+' kg':'–')+'</div><div><small>Held runs</small>'+(p?p.runs:0)+'</div><div><small>First-layer rank</small>'+(h.v1?ordinal(h.v1.rank)+' ('+pc(h.v1.chance)+')':'–')+'</div></div>'+(h.experience?'<p class="sm" style="color:var(--amber);margin:10px 0 0">'+esc(h.experience)+'</p>':'')+'</section>'+
+  '<section class="card"><div class="ch"><h3>Evidence completeness</h3><span>'+evb(h.evidence.score,h.evidence.max)+'</span></div>'+(h.evidence.gaps.length?'<ul class="clean sm mute">'+h.evidence.gaps.map(g=>'<li>'+esc(g)+'</li>').join('')+'</ul>':'<p class="sm mute" style="margin:0">No important gaps.</p>')+'</section>'+
+  '<section class="card" style="border-color:rgba(227,179,65,.25)"><div class="ch"><h3>Market <span class="tag mk">not used by the model</span></h3></div>'+(mk.fixed_win?'<div class="kv"><div><small>TAB fixed win</small><span class="num" style="font-size:18px;font-weight:700">$'+(+mk.fixed_win.price).toFixed(2)+'</span></div><div><small>TAB fixed place</small><span class="num">'+(mk.fixed_place?'$'+(+mk.fixed_place.price).toFixed(2):'–')+'</span></div></div><p class="note" style="margin:8px 0 0">Captured '+esc(bris(mk.fixed_win.captured_utc))+'. Shown for reference only.</p>':'<p class="sm mute" style="margin:0">'+esc(mk.note||'No TAB price matched to this runner.')+'</p>')+'</section>'+
+ '</div>'+
+ (tr&&tr.runs&&tr.runs.length?'<section class="card"><details><summary>Measured runs (tracking): '+tr.runs.length+' held</summary><div class="scroll" style="margin-top:8px"><table class="tbl dt"><thead><tr><th>Date</th><th>Course</th><th class="r">Dist</th><th class="r">Fin</th><th class="r">Time</th><th class="r">L600</th><th class="r">L200</th></tr></thead><tbody>'+tr.runs.map(x=>'<tr><td class="num">'+esc(dshort(x.date))+'</td><td>'+esc(x.track)+'</td><td class="r num">'+(x.distance_m??'–')+'</td><td class="r num">'+(x.finish??'–')+'</td><td class="r num">'+x.time_s.toFixed(2)+(x.time_basis!=='measured'?'*':'')+'</td><td class="r num">'+(x.last600_s!=null?x.last600_s.toFixed(2):'–')+'</td><td class="r num">'+(x.last200_s!=null?x.last200_s.toFixed(2):'–')+'</td></tr>').join('')+'</tbody></table></div><p class="note">'+(m.model_family==='QLD'?'Queensland runs feed this engine; other states are shown for inspection only.':'Shown for inspection only: this engine uses no sectionals.')+' Seconds; * Victoria: sum of measured sections.</p></details></section>':'')+
+ '<section class="card"><details><summary>Advanced: individual model terms</summary><div class="wf" style="margin-top:8px">'+(h.terms.length?h.terms.map(t=>'<div class="wr" style="grid-template-columns:minmax(0,1fr) 56px"><div class="sm">'+esc(t.term)+'</div><div class="num sm" style="text-align:right;color:'+(t.kg>=0?'var(--acc)':'var(--coral)')+'">'+kg(t.kg,2)+'</div></div>').join(''):'<p class="sm">None above 0.005.</p>')+'</div><p class="note">Terms are race-relative and penalised; correlated terms share credit, so one term\'s size is not its importance on its own. '+esc(D.engine.scale)+'</p></details></section></div>';
+}
+// ---------- PERFORMANCE ----------
+function vPerf(){
+ const E=D.engine_performance;
+ const ck=300;
+ const fam=f=>{const s=f.since_release,v=f.vs_predecessor;const n=s?s.races:0;
+  return '<section class="card"><div class="ch"><div><div class="eyebrow">'+esc(f.label)+'</div><h2 style="margin-top:2px">'+esc(f.production)+'</h2></div><span class="xs faint">live from '+esc(f.production_from?dshort(f.production_from):'–')+'</span></div>'+
+  (s?'<div class="tiles" style="margin-top:0"><div class="tile"><small>Races</small><b class="num">'+s.races+'</b><span>'+s.days+' day'+(s.days>1?'s':'')+' since release</span></div><div class="tile"><small>Top pick won</small><b class="num">'+pc(s.top_pick_pct,0)+'</b><span>of '+s.races+' races</span></div><div class="tile"><small>Winner in top 3</small><b class="num">'+pc(s.top3_pct,0)+'</b><span>of '+s.races+' races</span></div><div class="tile"><small>Fit</small><b class="num">'+pc(s.fit,1)+'</b><span>better than random</span></div></div>':'<div class="na">No settled races since release yet. Each race day is judged the next morning.</div>')+
+  '<div style="margin-top:12px"><div class="xs mute" style="display:flex;justify-content:space-between"><span>Sample towards the first review ('+ck+' paired races)</span><span class="num">'+(v?v.races:0)+' / '+ck+'</span></div><div class="band" style="height:8px"><i style="left:0;width:'+Math.min(100,(v?v.races:0)/ck*100)+'%;background:var(--sky)"></i></div></div>'+
+  (v?'<div class="sm" style="margin-top:10px">Versus <b>'+esc(f.predecessor)+'</b> on the same '+v.races+' races: '+(v.gain_per_race>=0?'+':'−')+Math.abs(v.gain_per_race).toFixed(3)+' fit per race (95%: '+v.lo.toFixed(3)+' to '+v.hi.toFixed(3)+').<div class="xs mute" style="margin-top:3px">'+esc(v.status)+'</div></div>':'<p class="sm mute" style="margin:10px 0 0">No paired comparison with '+esc(f.predecessor)+' yet.</p>')+'</section>'};
+ const byEng=E&&E.families?E.families.flatMap(f=>(f.production_by_engine||[]).map(r=>({f,r}))):[];
+ return '<div class="stack"><div><h1>Performance</h1><div class="sm mute" style="margin-top:4px">Live results first; research on past races is kept separate below.</div></div>'+
+  '<section class="card" style="background:linear-gradient(180deg,rgba(94,168,255,.08),transparent)"><div class="ch"><h3>Live record · forward-looking only</h3></div><p class="sm mute" style="margin:0">Every assessment is saved before its race and never changed. These numbers are still small: a few days can swing either way, and a better fit does not mean proportionally more winners.</p></section>'+
+  (E&&E.families?'<div class="grid g2">'+E.families.map(fam).join('')+'</div>':'<div class="empty">Live figures appear once results are settled.</div>')+
+  (byEng.length?'<section class="card"><div class="ch"><h3>Live record by engine</h3><span class="xs faint">different races per row</span></div><table class="tbl dt"><thead><tr><th>Engine</th><th class="r">Races</th><th class="r">Top pick</th><th class="r">Top 3</th></tr></thead><tbody>'+byEng.map(x=>'<tr><td><b>'+esc(x.r.engine)+'</b><div class="xs faint">'+esc(x.f.key==='QLD'?'Qld':'National')+' · '+esc(dshort(x.r.from))+(x.r.to!==x.r.from?'–'+esc(dshort(x.r.to)):'')+' · fit '+pc(x.r.fit,1)+'</div></td><td class="r num">'+x.r.races+'</td><td class="r num">'+pc(x.r.top_pick_pct,0)+'</td><td class="r num">'+pc(x.r.top3_pct,0)+'</td></tr>').join('')+'</tbody></table></section>':'')+
+  '<div><div class="eyebrow" style="margin:8px 0 6px">Historical research · past races, not live performance</div></div>'+
+  '<div class="grid g2">'+(E&&E.families?E.families.map(f=>'<section class="card"><div class="ch"><h3>'+esc(f.label)+': release steps</h3></div>'+gainChart(f.chain||[])+'</section>').join(''):'')+
+   '<section class="card"><div class="ch"><h3>Are the chances honest?</h3><span class="xs faint">NSW/Vic, 2025–26</span></div>'+calChart(D.engine.calibration&&D.engine.calibration.NSW_VIC_ACT)+'<p class="note" style="margin:8px 0 0">'+((D.engine.calibration&&D.engine.calibration.NSW_VIC_ACT)?D.engine.calibration.NSW_VIC_ACT.runners.toLocaleString()+' runners in '+D.engine.calibration.NSW_VIC_ACT.races.toLocaleString()+' races the model was not fitted on, in ten groups by chance.':'')+'</p></section></div>'+
+  '<section class="card"><details><summary>Paper selections at TAB prices (evaluation only)</summary>'+roiBox()+'</details></section>'+
+  '<p class="note">Candidate engines, full release chains and technical records are in <a href="#more/lab">More › Research lab</a>.</p></div>';
+}
+function roiBox(){const R=D.roi;if(!R)return '<p class="sm mute">Not available for this day.</p>';
+ return '<p class="sm mute" style="margin:8px 0">'+R.paper.selections+' selections · '+R.paper.priced+' priced · '+R.paper.settled+' settled. Paper returns use the recorded TAB quote; prices never enter the ratings and every selection is recorded before racing.</p>'+
+ (R.paper.settled?'<div class="tiles" style="margin-top:0"><div class="tile"><small>Settled</small><b>'+R.paper.settled+'</b></div><div class="tile"><small>Winners</small><b>'+R.paper.winners+'</b></div><div class="tile"><small>Paper return</small><b>'+(R.paper.return_units>0?'+':'')+R.paper.return_units+'</b><span>units</span></div><div class="tile"><small>Paper ROI</small><b>'+(R.paper.roi_pct==null?'–':R.paper.roi_pct+'%')+'</b></div></div>':'')+
+ '<ul class="clean sm mute" style="margin-top:10px">'+R.rules.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'}
+// ---------- MORE ----------
+const ICON={about:'<path d="M12 8h.01M11 12h1v5h1"/><circle cx="12" cy="12" r="9"/>',method:'<path d="M4 6h16M4 12h10M4 18h7"/>',lab:'<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',results:'<path d="M5 13l4 4L19 7"/>',status:'<path d="M3 12h4l3-7 4 14 3-7h4"/>',archive:'<rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v10h14V9M10 13h4"/>'};
+const ic=k=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+ICON[k]+'</svg>';
+function vMore(){
+ const it=(k,t,s)=>'<a href="#more/'+k+'">'+ic(k)+'<div><b>'+t+'</b><small>'+s+'</small></div><span class="chev">›</span></a>';
+ return '<div class="stack"><div><h1>More</h1></div><section class="card menu" style="padding:2px 12px">'+it('about','About Horse Intel','What it is and how to read a horse')+it('method','How the ratings work','Method, calibration and versions')+it('lab','Research lab','Candidates under test and past-race research')+it('results','Results and records','Settled results, saved prediction fingerprints')+it('status','Data status','Coverage, captures, engines and warnings')+it('archive','Archive','Earlier race days as published')+'</section><p class="note">'+esc(D.snapshot_note)+' Data contract '+esc(D.contract.name)+' v'+esc(D.contract.version)+'.</p></div>';
+}
+const back=t=>'<button class="back" data-go="more">‹ More</button><h1 style="margin-bottom:12px">'+t+'</h1>';
+function vAbout(){
+ const sec=(t,b)=>'<section class="card"><div class="ch"><h3>'+t+'</h3></div>'+b+'</section>';const li=a=>'<ul class="clean sm">'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+ return back('About Horse Intel')+'<div class="stack">'+
+ sec('In one paragraph','<p class="sm" style="margin:0">Every racing morning Horse Intel rates each runner at Australian thoroughbred meetings from what horses have actually done on the track: margins, weights carried, times and the strength of the horses they met. It turns that into a chance for every runner, saves it before the race starts and later checks it against the result. It never uses betting prices, odds or market moves.</p>')+
+ sec('What makes it different',li(['<b>Ability measured against the opposition.</b> Ratings are in kilograms, built from margins and weights against the actual horses met.','<b>Each horse\'s own development.</b> Ratings move after every run, faster for lightly raced horses.','<b>Weights learned from evidence.</b> A factor is only used if it improved forecasts on races it was not fitted on.','<b>Jurisdiction-specific.</b> One national engine covers NSW, Victoria, the ACT, SA, WA and Tasmania; Queensland has its own engine that also uses official sectionals and race shape.','<b>Research kept apart from the live engine.</b> New measurements are adopted only once they improve forecasts.','<b>Independent of the market.</b> No prices, odds or market moves enter the ratings. TAB prices are shown for information only.','<b>Judged forward.</b> Assessments are saved before racing and settled afterwards; candidate engines are scored alongside, out of sight.']))+
+ sec('Reading a horse',li(['<b>Ability</b>: the underlying rating, from what the horse has shown, measured against its fields.','<b>Demonstrated vs sustainable</b>: single runs vary; the rating is the level it can be expected to repeat, not its best run.','<b>Expected today</b>: ability adjusted for today: distance, going, weight, jockey, trainer and time since its last run.','<b>Evidence</b>: how complete the information is. First starters have no demonstrated ability, only an estimate.','<b>Win chance</b>: a probability, not a prediction. A 25% chance loses three times in four.','<b>Expected range</b> (research): where today\'s run is likely to land 8 times in 10. It is not a win chance.']))+
+ sec('Current limitations',li(['Ratings use results up to the latest weekly history update.','Barrier and sectional history exist only for Queensland (and SA tracking research).','Northern Territory meetings are shown as fields only.','First starters and horses whose earlier races we do not hold are rated from population averages, trainer, jockey, age and sex, never from invented form.','It is a research tool, not betting advice.']))+'</div>';
+}
+function vMethod(){
+ const items=[['The historical database','Every runner in Queensland tracked races and national results from October 2022, linked by horse; trials excluded. Prices are never used.'],['Current ability','A dynamic, opposition-aware rating in kg that moves after each run by how far the horse beat or missed the ratings of the horses it met.'],['Form and figures','Recent finishing positions and margins, career shape, best and recent figures, field strength, and in Queensland closing sectionals and race shape.'],['Jockey and trainer','How far each jockey\'s and trainer\'s earlier runners beat their own ratings, shrunk when there is little history.'],['Suitability','Each horse\'s own record above or below its rating at this course, on this going and at this distance. General course biases were tested and not supported.'],['One rating','Every factor\'s weight is learned within races; correlated factors share credit. The final score breaks down exactly into its parts.'],['Selection strength','The chance is calibrated on races the model was not fitted on, by field size. Labels compare a race\'s top pick with that state group\'s history.']];
+ return back('How the ratings work')+'<div class="stack"><section class="card"><div class="sm mute" style="margin-bottom:10px">'+esc(D.engine.operational)+'. '+esc(D.engine.release_note||'')+'</div><ol class="sm" style="margin:0;padding-left:18px;display:grid;gap:9px">'+items.map(i=>'<li><b>'+esc(i[0])+'.</b> <span class="mute">'+esc(i[1])+'</span></li>').join('')+'</ol></section>'+
+ '<div class="grid g2">'+Object.entries(D.engine.calibration||{}).map(([k,c])=>'<section class="card"><div class="ch"><h3>Calibration · '+(k==='QLD'?'Queensland':'NSW/Vic/ACT')+'</h3></div>'+calChart(c)+'<p class="note" style="margin:8px 0 0">Top-pick tiers: '+(c.top_pick_tiers||[]).map(t=>esc(t.tier)+' '+pc(t.top_pick_won*100,0)+' won ('+t.races.toLocaleString()+' races)').join(', ')+'.</p></section>').join('')+'</div>'+
+ '<section class="card"><details><summary>Scale and versions</summary><p class="sm">'+esc(D.engine.scale)+'</p><p class="sm">'+esc(D.engine.previous||'')+'</p><p class="sm">'+((D.validation&&D.validation.caveats)||[]).map(esc).join(' ')+'</p></details></section></div>';
+}
+function vLab(){
+ const E=D.engine_performance;const gi=(g,lo,hi)=>g==null?'–':(g>=0?'+':'−')+Math.abs(g).toFixed(4)+(lo!=null?' <span class="faint">('+lo.toFixed(4)+' to '+hi.toFixed(4)+')</span>':'');
+ const cand=E&&E.candidates?E.candidates.map(c=>'<section class="card"><div class="ch"><div><b>'+esc(c.name)+'</b><div class="xs faint">'+(c.family==='QLD'?'Queensland':'NSW, Vic, ACT, SA, WA, Tas')+'</div></div><span class="tag">Shadow</span></div><p class="sm mute" style="margin:0">'+esc(c.what)+'</p><p class="xs" style="margin:6px 0 0;color:var(--ink2)">'+esc(c.status)+'</p>'+(c.vs_production?'<p class="xs mute" style="margin:4px 0 0">Live vs production: '+gi(c.vs_production.gain_per_race,c.vs_production.lo,c.vs_production.hi)+' per race · '+esc(c.vs_production.status)+'</p>':'')+'<p class="note" style="margin:6px 0 0">'+esc(c.evidence)+'</p></section>').join(''):'';
+ const chain=f=>'<section class="card"><div class="ch"><h3>'+esc(f.label)+'</h3></div><div class="scroll"><table class="tbl dt"><thead><tr><th>Version</th><th>Live</th><th>What changed</th><th class="r">Gain per race</th><th class="r">2024 check</th></tr></thead><tbody>'+f.chain.map(c=>'<tr><td><b>'+esc(c.version)+'</b>'+(c.version===f.production?' <span class="tag" style="color:var(--acc);border-color:rgba(62,224,161,.4);background:rgba(62,224,161,.1)">live</span>':'')+'</td><td class="num">'+esc(c.live?dshort(c.live):'–')+'</td><td style="min-width:200px">'+esc(c.what)+'<div class="xs faint">'+esc(c.test||'')+' · '+esc(c.status||'')+'</div></td><td class="r num">'+(c.gain!=null?gi(c.gain,c.lo,c.hi):'baseline')+'</td><td class="r num">'+(c.gain_2024!=null?gi(c.gain_2024,c.lo_2024,c.hi_2024):'–')+'</td></tr>').join('')+'</tbody></table></div>'+(f.cumulative_note?'<p class="note">'+esc(f.cumulative_note)+'</p>':'')+'</section>';
+ const H=D.history;const row=(k,o)=>'<tr><td>'+esc(k)+'</td><td class="r num">'+o.bets+'</td><td class="r num">'+o.wins+'</td><td class="r num">'+(o.return_units>0?'+':'')+o.return_units+'</td><td class="r num">'+(o.roi_pct>0?'+':'')+o.roi_pct+'%</td></tr>';
+ return back('Research lab')+'<div class="stack"><p class="sm mute" style="margin:0">Candidate engines under test and research on past races. Nothing here is a live assessment, and past-race results are not proof of future performance.</p>'+
+  '<div class="eyebrow">Shadow candidates</div><div class="grid g2">'+cand+'</div>'+
+  (E&&E.checkpoints?'<section class="card"><div class="ch"><h3>Review checkpoints</h3></div><p class="sm" style="margin:0">'+esc(E.checkpoints.rule)+'</p><p class="note">'+esc(E.checkpoints.why)+'</p></section>':'')+
+  '<div class="eyebrow">Release chains (past races)</div>'+(E&&E.families?E.families.map(chain).join(''):'')+
+  (H&&H.all?'<section class="card"><details><summary>Historical simulated returns (research only)</summary><p class="note">Level-stake simulations on past forecasts'+(H.from?' from '+esc(H.from):'')+'. Not used to build or judge any engine; past simulated returns say nothing reliable about future ones.</p><div class="scroll"><table class="tbl dt"><thead><tr><th></th><th class="r">Bets</th><th class="r">Wins</th><th class="r">Units</th><th class="r">Return</th></tr></thead><tbody>'+row('All',H.all)+Object.entries(H.by_strength||{}).map(([k,v])=>row(k,v)).join('')+Object.entries(H.by_model||{}).map(([k,v])=>row(k,v)).join('')+'</tbody></table></div></details></section>':'')+
+  (D.validation?'<section class="card"><details><summary>Archive: Engine v1 vs v2 release backtest</summary><p class="note">'+esc(D.validation.period)+'. '+(D.validation.caveats||[]).map(esc).join(' ')+'</p></details></section>':'')+
+  '<p class="note">'+((E&&E.notes)||[]).map(esc).join(' ')+'</p></div>';
+}
+function vResults(){
+ return back('Results and records')+'<div class="stack"><section class="card"><div class="ch"><h3>Results</h3><span class="pill '+(D.results.status==='evaluated'?'p-strong':'p-ins')+'">'+esc(D.results.status)+'</span></div><p class="sm mute" style="margin:0">'+esc(D.results.message)+'</p><p class="note">Saved predictions are compared with what happened; original predictions are never replaced. One loss is not evidence the model was wrong; patterns over many races are.</p></section>'+
+ '<section class="card"><div class="ch"><h3>Saved prediction fingerprints</h3></div><div class="scroll"><table class="tbl dt"><thead><tr><th>Meeting</th><th>Fields</th><th>Scored</th><th>Engine</th><th>Settings</th><th>History to</th><th>Prediction file</th></tr></thead><tbody>'+RM().map(m=>{const s=m.snapshots.find(x=>x.id===m.default_snapshot)||{},g=(m.provenance&&m.provenance.settings)||{};return '<tr><td><b>'+esc(m.name)+'</b></td><td class="num">'+esc(hm(s.fields_captured_utc))+'</td><td class="num">'+esc(hm(s.v2_scored_utc))+'</td><td>'+esc(g.engine||m.provenance.engine_release||'')+'</td><td class="num">'+esc(g.fingerprint||'–')+'</td><td class="num">'+esc(m.provenance.history_to||'–')+'</td><td class="num">'+esc(m.provenance.v2_prediction_sha256||'')+'</td></tr>'}).join('')+'</tbody></table></div><p class="note">SHA-256 prefixes of the write-once prediction files and of the engine settings held when each meeting was scored.</p></section></div>';
+}
+function statusBody(){
+ const ds=dataStatus(),ss=snapSummary(),C=D.completeness,F=D.freshness||{};
+ const T=C?C.rows.reduce((a,r)=>({e:a.e+r.races_expected,c:a.c+r.races_collected,n:a.n+r.runners,p:a.p+r.prices,q:a.q+r.races_rated}),{e:0,c:0,n:0,p:0,q:0}):null;
+ return '<div class="srow"><span class="dot '+(ds.lvl==='ok'?'':ds.lvl)+'"></span><div><b>'+(ds.lvl==='ok'?'No collection problems':ds.items.length+' item'+(ds.items.length>1?'s need':' needs')+' attention')+'</b><div class="mute">'+(ds.lvl==='ok'?'Every expected field was collected and scored.':'See below.')+'</div></div></div>'+
+ ds.items.map(i=>'<div class="srow"><span class="dot '+i.lvl+'"></span><div><b>'+esc(i.t)+'</b><div class="mute">'+esc(i.d)+'</div></div></div>').join('')+
+ '<div class="srow"><span class="dot" style="background:var(--sky)"></span><div><b>Morning snapshot (planned)</b><div class="mute">Fields captured '+esc(bris(ss.first))+(ss.last!==ss.first?' to '+esc(hm(ss.last)):'')+' for '+ss.n+' meetings, then scored once. Scratchings, rider changes and prices after that time are not reflected. This is by design, not a failure.</div></div></div>'+
+ '<div class="srow"><span class="dot" style="background:var(--violet)"></span><div><b>Engines</b><div class="mute">'+esc(D.engine.operational)+'. Released '+esc(bris(D.engine.released_utc))+'.</div></div></div>'+
+ (T?'<div class="srow"><span class="dot" style="background:var(--slate)"></span><div style="flex:1"><b>Coverage</b><div class="mute">'+T.c+' of '+T.e+' races collected · '+T.q+' rated · '+T.n+' runners · '+T.p+' priced</div><div class="scroll" style="margin-top:8px"><table class="tbl dt"><thead><tr><th>Meeting</th><th class="r">Races</th><th class="r">Rated</th><th>Notes</th></tr></thead><tbody>'+C.rows.map(r=>'<tr><td>'+esc(r.meeting)+' <span class="faint">'+esc(r.state)+'</span></td><td class="r num">'+r.races_collected+'/'+r.races_expected+'</td><td class="r num">'+r.races_rated+'</td><td class="mute">'+(r.issues.length?r.issues.map(esc).join('; '):'–')+'</td></tr>').join('')+'</tbody></table></div><div class="note" style="margin-top:6px">'+esc(C.calendar_source)+'. '+esc(C.act_nt||'')+'</div></div></div>':'')+
+ '<div class="srow"><span class="dot" style="background:var(--amber)"></span><div><b>Market display</b><div class="mute">'+(D.markets&&D.markets.runners_priced?D.markets.runners_priced+' runners with a TAB price. ':'')+'Prices are shown for reference only and never enter the model.</div></div></div>'+
+ (D.tracking&&D.tracking.note?'<div class="srow"><span class="dot" style="background:var(--slate)"></span><div><b>Tracking</b><div class="mute">'+esc(D.tracking.note)+' Database '+esc(D.tracking.database_release||'')+'.</div></div></div>':'')+
+ '<div class="srow"><span class="dot" style="background:var(--slate)"></span><div><b>Last successful update</b><div class="mute">'+esc(F.latest_update_utc?bris(F.latest_update_utc):'–')+' · page built '+esc(bris(D.exported_utc))+' (Brisbane)</div></div></div>';
+}
+function vStatus(){return back('Data status')+'<section class="card">'+statusBody()+'</section>'}
+function vArchive(){return back('Archive')+'<section class="card menu" style="padding:2px 12px">'+(IDX.days||[]).map(d=>'<a href="#" data-day="'+esc(d.date)+'">'+ic('archive')+'<div><b>'+esc(dlong(d.date))+'</b><small>'+(d.date===D.date?'showing now':'as published before racing')+'</small></div><span class="chev">›</span></a>').join('')+'</section>'}
+// ---------- sheet ----------
+function sheet(kind){
+ $('sheet').innerHTML='<div class="grab"></div>'+(kind==='status'?'<div class="ch"><h2>Data status</h2><button class="link" id="shx">Close</button></div>'+statusBody():
+  '<div class="ch"><h2>Race day</h2><button class="link" id="shx">Close</button></div><div class="menu">'+(IDX.days||[]).map(d=>'<a href="#" data-day="'+esc(d.date)+'">'+ic('archive')+'<div><b>'+esc(dlong(d.date))+'</b><small>'+(d.date===D.date?'showing now':'as published')+'</small></div></a>').join('')+'</div>');
+ document.body.classList.add('sh');
+}
+const closeSheet=()=>document.body.classList.remove('sh');
+// ---------- routing ----------
+function navTo(h){location.hash=h}
+function setNav(k){document.querySelectorAll('[data-nav]').forEach(a=>a.setAttribute('aria-current',a.dataset.nav===k?'page':'false'))}
+function header(){
+ const ds=dataStatus();$('statusDot').className='dot '+(ds.lvl==='ok'?'':ds.lvl);$('statusTxt').textContent='Status';
+ $('dateBtn').innerHTML='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17"/></svg>'+esc(new Date(D.date+'T00:00:00').toLocaleDateString('en-AU',{weekday:'short',day:'numeric',month:'short'}));
+}
+function route(){
+ let h=location.hash.slice(1);try{h=decodeURIComponent(h)}catch(e){}
+ const P=h.split('/');let html='',nav='today',mm;
+ if((mm=h.match(/^(.+?)-r(\d+)(?:-n(\d+))?$/))&&meeting(mm[1])){P.length=0;if(mm[3]){P.push('horse',mm[1],mm[2],mm[3])}else P.push('race',mm[1],mm[2])}   // links from the live dashboard keep working
+ if(P[0]==='explore'){nav='explore';html=vExplore(P[1]&&meeting(P[1])?P[1]:null)}
+ else if(P[0]==='race'){nav='explore';const m=meeting(P[1]);html=vRace(m,race(m,+P[2]))}
+ else if(P[0]==='horse'){nav='explore';const m=meeting(P[1]),r=race(m,+P[2]);html=vHorse(m,r,r&&r.runners.find(x=>x.n===+P[3]))}
+ else if(P[0]==='perf'){nav='perf';html=vPerf()}
+ else if(P[0]==='more'){nav='more';html=P[1]==='about'?vAbout():P[1]==='method'?vMethod():P[1]==='lab'?vLab():P[1]==='results'?vResults():P[1]==='status'?vStatus():P[1]==='archive'?vArchive():vMore()}
+ else html=vToday();
+ $('view').innerHTML='<div class="preview">Design preview for review · the live dashboard is unchanged</div>'+html;setNav(nav);header();window.scrollTo(0,0);
+}
+document.addEventListener('click',e=>{
+ const t=e.target.closest('[data-go],[data-state],[data-meet],[data-lb],[data-row],[data-mkt],[data-sheet],[data-day],#shx,#scrim,#statusBtn,#dateBtn');if(!t)return;
+ if(t.id==='statusBtn'){sheet('status');return}
+ if(t.id==='dateBtn'){sheet('date');return}
+ if(t.id==='shx'||t.id==='scrim'){closeSheet();return}
+ if(t.dataset.sheet){sheet(t.dataset.sheet);return}
+ if(t.dataset.day){e.preventDefault();loadDay(t.dataset.day);return}
+ if(t.dataset.go!==undefined&&t.dataset.go!==null&&t.hasAttribute('data-go')){closeSheet();navTo(t.dataset.go);return}
+ if(t.dataset.state){fState=t.dataset.state;fMeet=null;rerender();return}
+ if(t.hasAttribute('data-meet')){fMeet=t.dataset.meet&&fMeet!==t.dataset.meet?t.dataset.meet:null;rerender();return}
+ if(t.dataset.lb){lbN=t.dataset.lb==='all'?'all':+t.dataset.lb;rerender();return}
+ if(t.dataset.mkt){showMkt=!showMkt;rerender();return}
+ if(t.dataset.row){openRow=openRow===t.dataset.row?null:t.dataset.row;rerender();return}
+});
+document.addEventListener('input',e=>{if(e.target.id==='q'){q=e.target.value;const pos=e.target.selectionStart;rerender();const el=$('q');if(el){el.focus();try{el.setSelectionRange(pos,pos)}catch(x){}}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+function rerender(){const y=window.scrollY;route();window.scrollTo(0,y)}
+window.addEventListener('hashchange',()=>{openRow=null;route()});
+async function loadDay(date){
+ const d=(IDX.days||[]).find(x=>x.date===date);if(!d||!d.file){closeSheet();return}
+ try{$('view').innerHTML='<div class="empty">Loading the saved assessments for '+esc(date)+'…</div>';D=await fetch('data/'+d.file).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()});fMeet=null;closeSheet();navTo('today');route()}
+ catch(err){$('view').innerHTML='<div class="empty">Could not load that day: '+esc(err.message||err)+'</div>'}
+}
+(async()=>{
+ try{IDX=await fetch('data/index.json').then(r=>r.json());D=await fetch('data/'+IDX.days[0].file).then(r=>r.json());route()}
+ catch(err){$('view').innerHTML='<div class="empty">Could not load the assessment data: '+esc(err.message||err)+'</div>'}
+})();
+</script>
+</body>
+</html>
