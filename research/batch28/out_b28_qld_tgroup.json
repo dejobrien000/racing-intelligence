@@ -1,0 +1,272 @@
+{
+ "track starts + wins": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00034,
+   "ci95": [
+    -0.00255,
+    0.00304
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00207,
+   "ci95": [
+    0.00012,
+    0.00404
+   ]
+  }
+ },
+ "track-distance starts + wins": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00167,
+   "ci95": [
+    -0.00072,
+    0.00388
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00043,
+   "ci95": [
+    -0.00036,
+    0.00124
+   ]
+  }
+ },
+ "distance-band starts + wins": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00215,
+   "ci95": [
+    -0.00028,
+    0.00469
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00037,
+   "ci95": [
+    -0.0004,
+    0.00109
+   ]
+  }
+ },
+ "going": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00025,
+   "ci95": [
+    -0.00032,
+    0.00081
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 9e-05,
+   "ci95": [
+    -0.00016,
+    0.00033
+   ]
+  }
+ },
+ "distance change": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00212,
+   "ci95": [
+    -0.00055,
+    0.00532
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00089,
+   "ci95": [
+    -0.00062,
+    0.00234
+   ]
+  }
+ },
+ "t_trk_starts": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00156,
+   "ci95": [
+    0.00061,
+    0.00252
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00013,
+   "ci95": [
+    -0.00039,
+    0.0007
+   ]
+  }
+ },
+ "t_trk_win": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": -0.00098,
+   "ci95": [
+    -0.00368,
+    0.00176
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00191,
+   "ci95": [
+    -1e-05,
+    0.00374
+   ]
+  }
+ },
+ "t_td_starts": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00043,
+   "ci95": [
+    -2e-05,
+    0.00083
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": -6e-05,
+   "ci95": [
+    -0.00051,
+    0.00037
+   ]
+  }
+ },
+ "t_td_win": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00125,
+   "ci95": [
+    -0.0009,
+    0.00333
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.0005,
+   "ci95": [
+    -0.00013,
+    0.00123
+   ]
+  }
+ },
+ "t_db_starts": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 7e-05,
+   "ci95": [
+    -0.00125,
+    0.00131
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00026,
+   "ci95": [
+    -0.00026,
+    0.00079
+   ]
+  }
+ },
+ "t_db_win": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00209,
+   "ci95": [
+    -0.0004,
+    0.00429
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.00012,
+   "ci95": [
+    -0.00039,
+    0.00069
+   ]
+  }
+ },
+ "t_going": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00015,
+   "ci95": [
+    -0.00023,
+    0.00052
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 3e-05,
+   "ci95": [
+    -3e-05,
+    8e-05
+   ]
+  }
+ },
+ "missgoing": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.0001,
+   "ci95": [
+    -0.00036,
+    0.00055
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 6e-05,
+   "ci95": [
+    -0.00016,
+    0.00029
+   ]
+  }
+ },
+ "t_dchange": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": 0.00288,
+   "ci95": [
+    0.00095,
+    0.00488
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.0002,
+   "ci95": [
+    -0.0001,
+    0.00051
+   ]
+  }
+ },
+ "t_dchange_abs": {
+  "A": {
+   "races": 2409,
+   "gain_when_removed": -0.00067,
+   "ci95": [
+    -0.00243,
+    0.00102
+   ]
+  },
+  "B": {
+   "races": 4730,
+   "gain_when_removed": 0.0006,
+   "ci95": [
+    -0.00093,
+    0.00217
+   ]
+  }
+ }
+}
