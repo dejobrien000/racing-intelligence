@@ -30,3 +30,14 @@
 
 Proposed first retirements (for approval, not before the dates shown): update rule, cap-only, age-aware (all superseded by production
 v2.5), and the consolidated candidate shadow (duplicates production). Combined saving about 14 minutes on a Saturday.
+
+## Classification for Damo's review (Batch 29 item 10, 28 Nov 2026; nothing stopped)
+| Group | Candidates | Why |
+|---|---|---|
+| Scientifically superseded | Rating update rule; age-aware update rule; consolidated candidate (now production v2.5); Engine v2.4 candidate (handicap slope on v2.3: contained in the combined candidate); trainer debut (contained in the combined candidate); Qld config 4 (update rule: superseded by config 5) | A stronger mechanism contains each one and beat it on the same past races. Live evidence before stopping: 14 racing days or 300 settled races (rule 3). |
+| Still useful for a mechanism question | Cap-only comparator (isolates the 12 L cap: directly relevant to the Batch 29 heavy-defeat finding); Qld v2.1.2 (the only test of dropping last-start finish); Qld config 2 (separates the rating change from the framework change in Qld); Engine v2.3 fallback and previous engines (rollback and "did the release help") | Each answers a question nothing else in the shadow set answers. Keep. |
+| Needs more prospective evidence | Combined national candidate (v2.6, release pending checks); Qld config 5 (release preparation); older-horse terms candidate (preregistered, to start 30 Nov) | Live record only starts 29-30 Nov. |
+
+Proposed first stops, for approval and not before 12 Dec (14 racing days of v2.5): update rule, age-aware update rule, consolidated
+candidate shadow. Then, once the combined candidate has 14 live days: Engine v2.4 candidate and trainer debut. Qld config 4 once config 5
+has 14 days. Saved records stay exactly as written (rule 4).
