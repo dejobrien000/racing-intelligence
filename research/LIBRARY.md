@@ -399,6 +399,7 @@ P5 Course, data
 Engine v2.5 released for the 29 Nov 7:30am run (amendment; release record benchmarks/engine_v2_5/manifest.json, RELEASES.md).
 Saturday's forecasts and shadows untouched. Engine v2.3 scored daily as fallback (ops/run_v23_fallback_shadow.sh).
 Scripts/outputs: batch28/b28_*.py -> batch28/out_b28_*.json. Preregistration: preregistered/2026-11-28_b28_going_suitability.md.
+Report: https://claude.ai/artifact/8Aa1z3nxDzmXvBGMiQstbh. Dashboard preview (private): https://claude.ai/artifact/K5pFayyRRNZipUpUxT77n7.
 Windows A (fit before 2024, judged 2024) and B (fit before 2025, judged 2025-26) are both previously examined: research evidence only.
 
 Release checks (v2.5)
