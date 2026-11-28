@@ -88,3 +88,19 @@ layer, and then, if it passes, as a prospective shadow. Removal tests are not pr
 - generic excuses for poor runs
 - inferring injury or fitness from time between races
 - fitting a rule to the 2025-26 weakness and describing 2025-26 as confirmation
+
+## Amendment (28 Nov 2026, written after the first run of Part B; the hypotheses and splits are unchanged)
+
+1. **Target.** The preregistered target was the next run's engine innovation. That target applies the same 12 L cap to the next run
+   itself, so it cannot show overrating when the next run is also a heavy defeat. It was the wrong target for this question; I saw
+   this only after the first results.
+   - A second target is added: a common margin performance (margins to 25 L), field-relative, minus the field-relative rating
+     carried in times a slope fitted on all 2023 national runs (0.855).
+   - Both targets are reported. The second was chosen after seeing the first, so it is labelled as an amendment.
+2. **Preparation stage.** The first run computed preparation stage from a column that was mostly empty. It is now computed from race
+   dates (a new preparation after a 60+ day gap). No split was changed.
+3. **Development is too small.** Established horses (15+ held runs, 5yo+) barely exist before 2024, because the history starts in
+   October 2022: there were only 193 next runs after a >12 L defeat to the end of 2023. The preregistered rule (development first,
+   then 2024) therefore cannot be met for any hypothesis.
+   - Results for 2024 and 2025-26 are reported as they are.
+   - A mechanism now needs a new decision by Damo: either treat 2024 as development and test any mechanism prospectively, or wait.
