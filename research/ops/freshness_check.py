@@ -28,6 +28,8 @@ if P:
     ps = pd.read_csv(P[0]); ps['d'] = pd.to_datetime(ps.start_date, errors='coerce')
     after = ps[(ps.d > cutoff) & (ps.start_type.astype(str).str.lower() != 'trial')].groupby(['ven', 'race', 'n']).size().rename('form_lines_after_cutoff')
     T = T.join(after, on=['ven', 'race', 'n'])
+    # Batch 26 fix: TAB's days-since-last-run field missed most recent runs on 28 Nov; a listed race start after the cutoff also counts
+    T['recent_run_missing'] = T.recent_run_missing | (T.form_lines_after_cutoff.fillna(0) > 0) & ~T.listed_scratched
 out = T[['ven', 'race', 'n', 'name', 'days_since_last_run', 'tab_last_start', 'last_held', 'runs_held', 'career_starts', 'tab_minus_held', 'listed_scratched', 'recent_run_missing', 'backing_up_within_7d'] + (['form_lines_after_cutoff'] if P else [])]
 out.to_csv(f'collect/national/{D}/freshness.csv', index=False)
 print(f"freshness {D}: history cutoff {cutoff.date()}; {int(T.recent_run_missing.sum())} of {len(T)} runners have run since it (latest run not in ratings); "

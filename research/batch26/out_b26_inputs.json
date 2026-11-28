@@ -1,0 +1,133 @@
+{
+ "runner_lines_in_production_files": 962,
+ "page_status": {
+  "runner": 962
+ },
+ "scored_runners_not_scratched_at_capture": 962,
+ "races": 92,
+ "form_records_for_scored_runners": 802,
+ "form_records_before_scoring": 40,
+ "history_cutoff": {
+  "national_c2": "2026-11-23",
+  "national_v3_qld": "2026-11-23"
+ },
+ "first_starters_no_held_run": 49,
+ "first_starters_age_missing_in_production": 9,
+ "first_starters_sex_missing_in_production": 9,
+ "experienced_age_missing_in_production": 7,
+ "first_starters_age_missing_list": [
+  [
+   "TWB",
+   5,
+   4,
+   "Etta"
+  ],
+  [
+   "GOC",
+   1,
+   6,
+   "Hot Momma"
+  ],
+  [
+   "GOC",
+   1,
+   9,
+   "Tough Love"
+  ],
+  [
+   "GOC",
+   1,
+   8,
+   "Steph'S Ready"
+  ],
+  [
+   "GOC",
+   1,
+   7,
+   "My Mini Me"
+  ],
+  [
+   "GOC",
+   3,
+   8,
+   "Lieta Maria"
+  ],
+  [
+   "GOC",
+   3,
+   1,
+   "Ballistic Star"
+  ],
+  [
+   "GOC",
+   3,
+   12,
+   "Pollengetsyadizzy"
+  ],
+  [
+   "GOC",
+   3,
+   6,
+   "Bristol Bay"
+  ]
+ ],
+ "career_check_runners": 802,
+ "career_equal": 554,
+ "career_tab_more": 247,
+ "career_held_more": 1,
+ "experienced_but_no_held_run": [
+  [
+   "KEM",
+   6,
+   7,
+   "Son Sillage",
+   1.0
+  ],
+  [
+   "SAN",
+   8,
+   2,
+   "Ramadan",
+   13.0
+  ]
+ ],
+ "tab_listed_race_starts_in_window": 5712,
+ "of_which_not_held": 249,
+ "not_held_by_venue_code_top": {
+  "-": 52,
+  "BEGN": 21,
+  "WAGA": 20,
+  "WHPR": 10,
+  "NEWC": 9,
+  "YGLN": 8,
+  "GCST": 8,
+  "PRPK": 7,
+  "DENQ": 7,
+  "HK": 6,
+  "CANB": 6,
+  "TRE": 5,
+  "ELLS": 5,
+  "DARW": 5,
+  "LONG": 4
+ },
+ "runners_with_an_unheld_in_window_start": 123,
+ "race_starts_after_history_cutoff": 1,
+ "runners_with_a_start_after_cutoff": 1,
+ "runners_with_a_start_after_cutoff_list": [
+  [
+   "RSH",
+   6,
+   3,
+   "INDIFFERENCE",
+   "2026-11-24",
+   "TAMW"
+  ]
+ ],
+ "jockey_not_notified": 15,
+ "jockey_no_history_j_n0": 60,
+ "trainer_missing": 0,
+ "trainer_no_history_t_n0": 5,
+ "pedigree_read_by_production_scorers": [],
+ "pedigree_available_in_form_records": 802,
+ "production_no_prior_form": 66
+}
