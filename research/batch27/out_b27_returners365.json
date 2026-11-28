@@ -1,0 +1,117 @@
+{
+ "returns_365plus": 2298,
+ "later_runs_distribution": {
+  "0": 343,
+  "1": 347,
+  "2": 261,
+  "3": 215,
+  "4": 198,
+  "5": 148,
+  "6": 786
+ },
+ "first_up_surprise_by_continuation": {
+  "never ran again": {
+   "returns": 343,
+   "mean_kg": -6.69
+  },
+  "ran 1-2 more": {
+   "returns": 608,
+   "mean_kg": -4.1
+  },
+  "ran 3-5 more": {
+   "returns": 561,
+   "mean_kg": -3.32
+  },
+  "ran 6+ more": {
+   "returns": 786,
+   "mean_kg": -2.34
+  }
+ },
+ "rating_back_within_0_5kg_of_pre_break_level": {
+  "among_all_returns_pct": 42.8,
+  "among_those_with_6_more_runs_pct": 62.0,
+  "stopped_before_6_runs_without_getting_back_pct_of_all": 44.2
+ },
+ "before_2024": {
+  "runs": 20,
+  "mean_kg": -3.76,
+  "by_age": {
+   "4yo": [
+    5,
+    -3.3
+   ],
+   "5yo": [
+    7,
+    -4.35
+   ],
+   "6yo": [
+    4,
+    -2.61
+   ],
+   "7yo+": [
+    4,
+    -4.46
+   ]
+  },
+  "by_runs_before": {
+   "3-7": [
+    20,
+    -3.76
+   ]
+  },
+  "by_days_away": {
+   "365-450": [
+    20,
+    -3.76
+   ]
+  },
+  "by_gap_vs_usual": {
+   "10-20x": [
+    3,
+    -13.91
+   ],
+   "20-40x": [
+    17,
+    -1.97
+   ]
+  },
+  "by_pre_break_trajectory_kg": {
+   "declining": [
+    3,
+    -0.27
+   ],
+   "flat": [
+    2,
+    -2.82
+   ],
+   "improving": [
+    3,
+    -3.18
+   ]
+  },
+  "by_distance_change": {
+   "shorter": [
+    10,
+    -2.59
+   ],
+   "similar": [
+    9,
+    -5.58
+   ],
+   "longer": [
+    1,
+    0.86
+   ]
+  },
+  "trainer_change": {
+   "changed": [
+    10,
+    -1.67
+   ],
+   "same": [
+    10,
+    -5.86
+   ]
+  }
+ }
+}
