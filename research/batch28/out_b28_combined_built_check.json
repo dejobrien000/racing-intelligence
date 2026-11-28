@@ -1,0 +1,118 @@
+{
+ "ladder_2025_26": {
+  "L1 distance replacement (14 terms)": {
+   "coef_per_sd_dev_fit": {
+    "below_top3": 0.0344,
+    "gap_long_z": -0.0143,
+    "short_vs_long": -0.0261,
+    "slope15": -0.0096,
+    "neg_run": -0.0195,
+    "recent_var_ratio": 0.0198,
+    "hsd_x_rel": -0.0348,
+    "early_prep_vs_usual": -0.0049,
+    "quick_today": 0.0123,
+    "venue_step": -0.0829,
+    "recentform_x_established": 0.0251,
+    "light_weight": 0.0084,
+    "log_runs_held": 0.0675,
+    "rating_uncertainty": 0.0315
+   },
+   "vs_previous_step": {
+    "races": 23729,
+    "gain": 0.00017,
+    "lo95": 2e-05,
+    "hi95": 0.00033
+   }
+  },
+  "L2 + handicap weight slope": {
+   "coef_per_sd_dev_fit": {
+    "below_top3": 0.0353,
+    "gap_long_z": -0.0142,
+    "short_vs_long": -0.0257,
+    "slope15": -0.0096,
+    "neg_run": -0.0196,
+    "recent_var_ratio": 0.02,
+    "hsd_x_rel": -0.0315,
+    "early_prep_vs_usual": -0.0047,
+    "quick_today": 0.0119,
+    "venue_step": -0.0848,
+    "recentform_x_established": 0.0258,
+    "light_weight": -0.0006,
+    "log_runs_held": 0.0683,
+    "rating_uncertainty": 0.0332,
+    "wt_x_hcp": -0.0317
+   },
+   "vs_previous_step": {
+    "races": 23729,
+    "gain": 0.00173,
+    "lo95": 0.00137,
+    "hi95": 0.00207
+   }
+  },
+  "L3 + trainer and sire debut": {
+   "coef_per_sd_dev_fit": {
+    "below_top3": 0.0336,
+    "gap_long_z": -0.0125,
+    "short_vs_long": -0.025,
+    "slope15": -0.0102,
+    "neg_run": -0.0204,
+    "recent_var_ratio": 0.0204,
+    "hsd_x_rel": -0.0301,
+    "early_prep_vs_usual": -0.0048,
+    "quick_today": 0.0108,
+    "venue_step": -0.0853,
+    "recentform_x_established": 0.0275,
+    "light_weight": -0.0004,
+    "log_runs_held": 0.0723,
+    "rating_uncertainty": 0.0276,
+    "wt_x_hcp": -0.0317,
+    "tr_debut_g": 0.0302,
+    "sire_debut_x": 0.0228
+   },
+   "vs_previous_step": {
+    "races": 23729,
+    "gain": 0.00242,
+    "lo95": 0.00169,
+    "hi95": 0.00313
+   }
+  }
+ },
+ "combined_vs_v25_built": {
+  "races": 23729,
+  "gain": 0.00432,
+  "lo95": 0.00351,
+  "hi95": 0.00509
+ },
+ "combined_vs_v25_by_state": {
+  "NSW": {
+   "races": 9026,
+   "gain": 0.00415,
+   "lo95": 0.0027,
+   "hi95": 0.00565
+  },
+  "VIC": {
+   "races": 7232,
+   "gain": 0.00634,
+   "lo95": 0.00464,
+   "hi95": 0.00799
+  },
+  "SA": {
+   "races": 2531,
+   "gain": 0.00432,
+   "lo95": 0.00227,
+   "hi95": 0.00631
+  },
+  "WA": {
+   "races": 3784,
+   "gain": 0.00191,
+   "lo95": 0.00047,
+   "hi95": 0.00326
+  },
+  "TAS": {
+   "races": 925,
+   "gain": 0.00173,
+   "lo95": -0.00091,
+   "hi95": 0.00423
+  }
+ }
+}

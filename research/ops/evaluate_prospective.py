@@ -34,7 +34,7 @@ V4 = pd.read_csv('prospective/shadow/v2_4_candidate/INDEX.csv') if os.path.exist
 UR = pd.read_csv('prospective/shadow/update_rule/INDEX.csv') if os.path.exists('prospective/shadow/update_rule/INDEX.csv') else None   # rating update rule candidate shadow (Batch 16 B9, from 28 Nov 2026)
 CO = pd.read_csv('prospective/shadow/cap_only/INDEX.csv') if os.path.exists('prospective/shadow/cap_only/INDEX.csv') else None   # cap-only comparator shadow (Batch 16 B9)
 NSX = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Batch 19 national shadows (own clocks)
-       for d, lbl in [('age_aware', 'Age-aware update rule (not live)'), ('trainer_debut', 'Trainer debut record (not live)'), ('consolidated', 'Consolidated rating candidate (not live)'), ('v2_3_fallback', 'Engine v2.3 fallback (not live)')]}
+       for d, lbl in [('age_aware', 'Age-aware update rule (not live)'), ('trainer_debut', 'Trainer debut record (not live)'), ('consolidated', 'Consolidated rating candidate (not live)'), ('v2_3_fallback', 'Engine v2.3 fallback (not live)'), ('combined_national', 'Combined national candidate (not live)')]}
 QCS = {lbl: (pd.read_csv(f'prospective/shadow/{d}/INDEX.csv') if os.path.exists(f'prospective/shadow/{d}/INDEX.csv') else None)   # Qld common framework shadows (Batch 17 B2, from 28 Nov 2026)
        for d, lbl in [('qld_common', 'Qld common framework (not live)'), ('qld_common_update', 'Qld common framework + update rule (not live)'), ('qld_common_cons', 'Qld common framework on consolidated rating (not live)')]}
 out = []

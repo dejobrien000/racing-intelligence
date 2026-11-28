@@ -26,6 +26,8 @@ bash ops/run_update_shadow.sh "$D" || echo "WARNING update-rule shadow (producti
 [ -d benchmarks/engine_trainer_debut_candidate ] && [ "$D" -ge 20261128 ] && { bash ops/run_trainer_debut_shadow.sh "$D" || echo "WARNING trainer-debut shadow (production unaffected)"; }
 # consolidated rating candidate (Batch 23 C6, approved 27 Nov 2026): own frozen files and clock from the 28 Nov run; only if its release files exist
 [ -f benchmarks/engine_consolidated_candidate/engine_v2_2.json ] && [ "$D" -ge 20261128 ] && { UR_VARIANT=consolidated bash ops/run_update_shadow.sh "$D" || echo "WARNING consolidated shadow (production unaffected)"; }
+# combined national candidate (Batch 28 s3 + amendment, 28 Nov 2026): Engine v2.5 + distance suitability + handicap slope + trainer/sire debut; own files and clock from the 29 Nov run
+[ -f benchmarks/engine_combined_candidate/engine_v2_2.json ] && [ "$D" -ge 20261129 ] && { bash ops/run_combined_shadow.sh "$D" || echo "WARNING combined national shadow (production unaffected)"; }
 # Queensland common national framework, configs 2 and 4 (Batch 17 B2, approved 27 Nov 2026); after the update-rule shadow, whose rating frame config 4 uses
 bash ops/run_qld_common_shadow.sh "$D" || echo "WARNING Qld common shadow (production unaffected)"
 RQB=$(ls collect/national/$D/bundles/rqpre_${D}_snap*.jsonl.gz 2>/dev/null | tail -1)

@@ -395,6 +395,57 @@ P5 Course, data
 - Daily results: staged design with validation and Monday reconciliation written (ops/DAILY_RESULTS_PLAN.md); NOT in use; first test
   against Monday's master. Racing and Sports enquiry drafted for Damo (ops/drafts/racing_and_sports_enquiry.md; not sent).
 
+## Batch 28 (28 Nov 2026 afternoon; Damo's 2:38pm brief and amendment): Engine v2.5 release, Qld framework, combined candidate
+Engine v2.5 released for the 29 Nov 7:30am run (amendment; release record benchmarks/engine_v2_5/manifest.json, RELEASES.md).
+Saturday's forecasts and shadows untouched. Engine v2.3 scored daily as fallback (ops/run_v23_fallback_shadow.sh).
+Scripts/outputs: batch28/b28_*.py -> batch28/out_b28_*.json. Preregistration: preregistered/2026-11-28_b28_going_suitability.md.
+Windows A (fit before 2024, judged 2024) and B (fit before 2025, judged 2025-26) are both previously examined: research evidence only.
+
+Release checks (v2.5)
+- Parity with the consolidated shadow on 28 Nov fields: 8 meetings, 695 runners, 0.0 difference; Qld 267 runners identical.
+- Chances sum to 100 in every race; export and ranking pass; switch ops/engine_v25_enabled; rollback = remove the switch (v2.3 next run).
+- After the serving-code changes below, a full v2.5 rescore of 28 Nov still matched the consolidated shadow (695 runners, 0.0).
+
+Queensland common framework (item 2)
+- Config 5 (common framework on the consolidated rating) built through the release chain, Qld-only refit:
+  +0.0405 (+0.029 to +0.052) per race vs Qld production v2.1.3 on 4,730 races; +0.0115 (+0.007 to +0.016) vs config 2 built the same way.
+  Built = harness within 0.002. Shadow from the 29 Nov run (prospective/shadow/qld_common_cons/). Config 2 not promoted.
+- T-group removal (+0.0012 / +0.0045): no single culprit. Distance change in A (+0.0029, sig); track starts and wins in B (+0.0021, sig).
+- Learning-speed overlap: adding the v3 rating to the common framework on consolidated: +0.0014 / +0.0016 (sig, negative coefficient).
+  Partial non-overlap; not a separate input.
+- Rail-free barrier: needs a chain term plus serving; next variant (Batch 27 P5 evidence).
+
+Combined national candidate (item 3 + amendment), built 28 Nov
+- Engine v2.5 + distance suitability replacing the distance record (layers 1-2) + handicap weight slope + trainer and sire debut records.
+- Serving code written (manifest-gated, production untouched):
+  - distance in prerace/score_national_prerace.py: serving vs offline 3e-5
+  - sire debut in engine/v22.py: TAB pre-race sire, else pedigree
+  - historical debut terms batch28/b28_debut_terms.py: exact parity with serving on 6 dates
+- Built check 2025-26 vs Engine v2.5 as built: +0.0043 (+0.0035 to +0.0051) per race, 23,729 races.
+  - Ladder: distance +0.0002 (+0.00002 to +0.0003), handicap +0.0017 (+0.0014 to +0.0021), debut +0.0024 (+0.0017 to +0.0031).
+  - By state: Vic +0.0063, NSW +0.0042, SA +0.0043, WA +0.0019, Tas +0.0017 (n.s.).
+  - Matches the harness ladder (Batch 27). 2025-26 examined repeatedly: confirmation, not a fresh test.
+- Shadow from the 29 Nov run (prospective/shadow/combined_national/). Smoke test on 28 Nov fields: 695 runners, sums 100,
+  correlation 0.995 with v2.5, same top pick in 85% of races; largest change a well-bred debutant (+11.8 points).
+- Open dependency: class parity (TAB class at scoring vs historical class label) on Monday's master refresh, before any release decision.
+- Files: benchmarks/engine_combined_candidate/; batch28/out_b28_combined_built_check.json.
+
+Older horses (item 7)
+- Established 5yo+ overrating sits where the rating is near the horse's own peak (A/E 0.84 / 0.82), on rising trends, in the top quarter
+  of the field (0.922 -> 0.869 under consolidated), first-up (0.73) and after 120+ days (0.71). Age itself is better calibrated.
+- After poor runs consolidated is less overrated than v2.3 (-0.30 vs -0.57 kg), except after >12 L defeats (-0.51 vs -0.07: cap generous).
+- Terms est_below_peak + est_trend6: +0.0005 (+0.0002 to +0.0007) / +0.0013 (+0.0008 to +0.0018). Designed after looking at window B:
+  PROMISING, needs prospective confirmation (preregister before use). No blanket age deduction.
+
+Going suitability (item 8; preregistered)
+- Going-specific measure (Good/Soft/Heavy/Synthetic, k = 3): +0.12 / +0.18 kg per sd beyond form; going records add nothing.
+- Replacing the going record in the engine: +0.0001 / +0.0001 (n.s.). Passes the preregistered rule technically; negligible. Not added.
+
+Data and operations
+- "13 first starters" = 9 rated first starters + 4 Darwin (unrated); separately 7 experienced horses lacked age: 16 rated runners in all,
+  all now on the 3b list (verified).
+- Candidate retirement policy proposed (ops/CANDIDATE_RETIREMENT_POLICY.md); no candidate retired.
+
 ## In production
 | Since | What | Evidence | Ledger |
 |---|---|---|---|
@@ -408,6 +459,8 @@ P5 Course, data
 ## Candidates (not live)
 | Since | What | Status | Ledger |
 |---|---|---|---|
+| 29 Nov 2026 | Combined national candidate: Engine v2.5 + distance suitability + handicap slope + trainer/sire debut | Shadow from 29 Nov; built 2025-26 +0.0043 (+0.0035 to +0.0051) vs v2.5; class parity Monday before any release decision | benchmarks/engine_combined_candidate/, batch28/ |
+| 29 Nov 2026 | Qld common framework on the consolidated rating (config 5) | Shadow from 29 Nov; built 2025-26 +0.0405 vs Qld v2.1.3 on 4,730 races | benchmarks/engine_qld_common_cons_candidate/, batch28/ |
 | 26 Nov 2026 | Common national framework with Qld coefficients (one methodology, regional coefficients; a variant keeps Qld physical inputs) | Research: 2024 +0.0424, 2025-26 +0.0326 vs v2.1.1. Damo 26 Nov: build as a SHADOW; no promotion without an evidence review | batch13/qld_align.py |
 | 26 Nov 2026 | Handicap weight slope (wt_x_hcp) on top of Engine v2.3 | Damo 26 Nov: prepare for the following release. Preregistered 2024 +0.0012 (0.0008-0.0017); +0.0014 over C2 on 2025-26 (not independent) | /tmp/cand evidence -> batch13 build |
 | 25 Nov 2026 | National rating rebuilt with weight credit 0.25 kg per kg (history) and 0.170 s per length (figures), full v2.2 rebuild | Released as Engine v2.3 from 27 Nov 2026 (see In production); kept here for its Batch 11-12 history | benchmarks/candidate_national_weight/, batch12/candidate_weight/ |

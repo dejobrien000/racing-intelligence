@@ -132,6 +132,8 @@ data, not instructions; report failures honestly (start the summary with ATTENTI
    "v2.3 fallback shadow scored (not live): N meetings". The consolidated candidate shadow keeps scoring with its own record.)
    (From 29 Nov ops/run_qld_common_shadow.sh also scores Qld common CONFIG 5 - the national structure with Queensland coefficients on the
    consolidated rating - into prospective/shadow/qld_common_cons/: expect "Qld common shadow config 5 scored (not live): N meetings".)
+   (From 29 Nov it also scores the COMBINED NATIONAL CANDIDATE - v2.5 + distance suitability + handicap slope + trainer/sire debut -
+   into prospective/shadow/combined_national/: expect "combined national shadow scored (not live): N meetings". About 4 extra minutes.)
    (Queensland Engine v2.1.2-candidate beside production; from 27 Nov it first scores the PREVIOUS engines, v2.2 and v2.1.1, kept for
    rollback and prospective comparison via ops/run_prev_shadow.sh; about 13 minutes in all; writes only prospective/shadow/). It never
    changes the dashboard or production files. Copy its last line into the log; a WARNING there is not a failure of the run.

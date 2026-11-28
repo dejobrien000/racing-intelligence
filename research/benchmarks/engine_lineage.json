@@ -275,6 +275,15 @@
    "ledger_label_prefix": "Qld common framework on consolidated",
    "compare_with": "production",
    "evidence": "Built check 2025-26 (dev-fit, races not used to fit): +0.040 (+0.029 to +0.052) per race vs Queensland production v2.1.3 on 4,730 races; +0.011 (+0.007 to +0.016) vs config 2 built the same way. Both periods examined: not untouched"
+  },
+  {
+   "name": "Combined national candidate",
+   "family": "NAT",
+   "what": "Engine v2.5 plus distance suitability (replacing the distance record), the handicap weight slope, and trainer and sire debut records",
+   "status": "Shadow: scored every day from the 29 Nov run (not live; own clock). Approved to build by Damo 28 Nov (Batch 28); class parity check Monday before any release decision",
+   "ledger_label_prefix": "Combined national candidate",
+   "compare_with": "production",
+   "evidence": "Built check 2025-26 (dev-fit, races not used to fit): +0.0043 (+0.0035 to +0.0051) per race vs Engine v2.5 as built on 23,729 races; distance +0.0002, handicap slope +0.0017, debut records +0.0024. 2025-26 examined repeatedly: confirms the research, not a fresh test"
   }
  ],
  "checkpoints_proposed": {

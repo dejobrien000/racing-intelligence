@@ -1,0 +1,196 @@
+{
+ "frozen_utc": "2026-11-28T06:00:44.295415+00:00",
+ "scope": "NSW, Vic, ACT races (Breednet full fields; jump-outs excluded); fields of 6+",
+ "dynamic_rating_params": {
+  "s_kg": 4.5,
+  "q_kg2_per_day": 0.05,
+  "sig0_kg": 5.0,
+  "debut_offset_kg": 2.0
+ },
+ "records_k": 1,
+ "d_rec_source": "dspec",
+ "dev_sd_after_race_centring": {
+  "f_avgfp3": 0.20609063084593093,
+  "f_lastfp": 0.28852865391701343,
+  "f_lastlm": 0.8860274639089385,
+  "f_cwin": 0.13684957035698686,
+  "f_lstarts": 0.539614787470219,
+  "missform": 0.24011147185284168,
+  "a_rec": 4.73614234233392,
+  "a_best3": 5.378469882585727,
+  "a_fs3": 2.4442960407290104,
+  "a_wt_rel": 1.8140971043914986,
+  "missfig": 0.08381143070272737,
+  "r_firstup": 0.33134493678121946,
+  "r_7_13": 0.3576080790110633,
+  "r_28_59": 0.2853090636257563,
+  "r_quick": 0.2888508849157668,
+  "r_ldays": 0.8287468010512486,
+  "dyn_nat": 2.6345920811063834,
+  "c_rec": 1.192526454474393,
+  "g_rec": 1.4106409560020132,
+  "d_rec": 0.49580014222227736
+ },
+ "candidates": {
+  "nat_v1 (common + national rating)": {
+   "f_avgfp3": 0.0303357846490965,
+   "f_lastfp": 0.05291847593966884,
+   "f_lastlm": 0.07146231108517563,
+   "f_cwin": -0.03200905118237452,
+   "f_lstarts": -0.15631327613358345,
+   "missform": 0.07163335524550252,
+   "a_rec": 0.07930357494176314,
+   "a_best3": 0.10909252253346406,
+   "a_fs3": 0.11213493665294881,
+   "a_wt_rel": 0.026080011890124995,
+   "missfig": -0.01177921569823942,
+   "r_firstup": 0.039482571578975785,
+   "r_7_13": -0.0195722348242449,
+   "r_28_59": -0.012522587516070943,
+   "r_quick": 0.02144943097863753,
+   "r_ldays": -0.06970993027489632,
+   "dyn_nat": 0.5604920067766475
+  },
+  "nat_v2 (+ horse records)": {
+   "f_avgfp3": 0.014780657118539554,
+   "f_lastfp": 0.047841118844970144,
+   "f_lastlm": 0.0658061150698664,
+   "f_cwin": -0.03370478363737584,
+   "f_lstarts": -0.14830657868789393,
+   "missform": 0.08041842066734553,
+   "a_rec": 0.0733851739811703,
+   "a_best3": 0.1081996764625789,
+   "a_fs3": 0.11255720562548048,
+   "a_wt_rel": 0.02398368266086789,
+   "missfig": -0.012379846471675086,
+   "r_firstup": 0.0395642183054015,
+   "r_7_13": -0.019235254878211164,
+   "r_28_59": -0.01299828467838953,
+   "r_quick": 0.021848179853018394,
+   "r_ldays": -0.06663317437282494,
+   "dyn_nat": 0.5588669471758784,
+   "c_rec": 0.05320605426468104,
+   "g_rec": 0.027624904935262894,
+   "d_rec": 0.019165715235516283
+  }
+ },
+ "eval_2025_26": {
+  "nat_v1": {
+   "races": 23729,
+   "fit_%": 11.92,
+   "top_pick_%": 27.5
+  },
+  "nat_v2": {
+   "races": 23729,
+   "fit_%": 12.04,
+   "top_pick_%": 27.5
+  }
+ },
+ "code_sha256_16": {
+  "inv30_horse_suitability.py": "244ad25b0d775b4c",
+  "dyn_rating.py": "a3f1b5b96cbc8710",
+  "dyn_rating_innov.py": "a3d55022ee80bb4c",
+  "national.py": "479bd9e057c0a7b3",
+  "freeze_b5_national_common.py": "f5f1b1d0569b18d3"
+ },
+ "data_sha256_16": {
+  "national_runs.parquet": "4aa0756909a20254"
+ },
+ "prospective_rule": "only races dated 2026-11-25 or later count; no refit",
+ "candidate_record": {
+  "candidate": "Combined national candidate (NOT LIVE, shadow only)",
+  "built_utc": "2026-11-28T06:07:58+00:00",
+  "components": [
+   "Engine v2.5 consolidated rating (unchanged settings)",
+   "distance-specific suitability REPLACING the distance record in layers 1-2 (kernel h = 0.12 on log distance, k = 3; preregistered Batch 26-27)",
+   "handicap weight slope wt_x_hcp (third layer; preregistered Batch 12)",
+   "trainer debut record tr_debut_g and sire debut record sire_debut_x (third layer; genuine debutants aged 2-3 only)"
+  ],
+  "built_from": "the national release chain in a sandbox copy of the Engine v2.5 build (/tmp/cc): consolidated frame with the distance slot replaced (batch27/b27_dspec.py) -> freeze_b5_national_common.py with DREC_SOURCE=dspec -> engine/release_v2.py -> batch28/b28_build_combined.py (third layer; debut terms from batch28/b28_debut_terms.py)",
+  "rating_update_settings": {
+   "WCREDIT": "0.25",
+   "RATING_CAP_L": "12",
+   "RATING_CAP_SCOPE": "all",
+   "RATING_GOOD_X": "1",
+   "RATING_GOOD_TAPER": "0.8,6",
+   "RATING_TAPER_NEFF": "engine/frames/experience_at_run.parquet",
+   "RATING_REF": "precision"
+  },
+  "approved": "Damo 28 Nov 2026 (Batch 28 s3 and amendment): build the combined national candidate through the release chain and start the shadow once dependencies are satisfied; promotion a separate decision",
+  "built_check_2025_26_vs_engine_v2_5_built": {
+   "races": 23729,
+   "gain": 0.00432,
+   "lo95": 0.00351,
+   "hi95": 0.00509
+  },
+  "ladder_2025_26": {
+   "L1 distance replacement (14 terms)": {
+    "races": 23729,
+    "gain": 0.00017,
+    "lo95": 2e-05,
+    "hi95": 0.00033
+   },
+   "L2 + handicap weight slope": {
+    "races": 23729,
+    "gain": 0.00173,
+    "lo95": 0.00137,
+    "hi95": 0.00207
+   },
+   "L3 + trainer and sire debut": {
+    "races": 23729,
+    "gain": 0.00242,
+    "lo95": 0.00169,
+    "hi95": 0.00313
+   }
+  },
+  "by_state_2025_26": {
+   "NSW": {
+    "races": 9026,
+    "gain": 0.00415,
+    "lo95": 0.0027,
+    "hi95": 0.00565
+   },
+   "VIC": {
+    "races": 7232,
+    "gain": 0.00634,
+    "lo95": 0.00464,
+    "hi95": 0.00799
+   },
+   "SA": {
+    "races": 2531,
+    "gain": 0.00432,
+    "lo95": 0.00227,
+    "hi95": 0.00631
+   },
+   "WA": {
+    "races": 3784,
+    "gain": 0.00191,
+    "lo95": 0.00047,
+    "hi95": 0.00326
+   },
+   "TAS": {
+    "races": 925,
+    "gain": 0.00173,
+    "lo95": -0.00091,
+    "hi95": 0.00423
+   }
+  },
+  "serving": {
+   "distance": "prerace/score_national_prerace.py when d_rec_source = dspec (serving vs offline max diff 3e-5, 28 Nov, 695 runners)",
+   "trainer_debut": "engine/v22.py trainer_debut (parity with historical values exact on 6 sample dates)",
+   "sire_debut": "engine/v22.py sire_debut: sire from TAB's pre-race form record (as held at production scoring), else the pedigree held; parity exact on 6 sample dates",
+   "handicap": "engine/v22.py wt_x_hcp from TAB's race class field (BMnn -> Benchmark)"
+  },
+  "open_dependency": "class parity (TAB race class at scoring vs the historical class label) is checked on Monday's master refresh BEFORE any release decision; the shadow runs meanwhile",
+  "caveats": [
+   "2025-26 has been examined repeatedly in research; the built check confirms the harness rather than giving a fresh test",
+   "window 2024 is not a clean test of the layer-1/2 change (their dev fit includes 2024)",
+   "Queensland not in scope (national family only)"
+  ],
+  "source_files_sha256": {
+   "candidates_national_common.json": "45a9c1e87f31741f0ae7f3568d163d78a3a517b0f79d2f6864afb547630b4a65",
+   "engine_v2.json": "184119983673ff9e3939d3516f182a825572d04e84598a2b3526f050f313bf82",
+   "engine_v2_2.json": "0404323d687291893f28861b17fea6651aed7398b168dc795d7a5e345164d9f9"
+  }
+ }
+}
