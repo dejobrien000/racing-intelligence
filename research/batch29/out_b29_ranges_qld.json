@@ -1,0 +1,351 @@
+{
+ "audit": {
+  "in the rating": "posterior sd per horse (dyn_nat_sd; starts 5 kg, shrinks with runs, grows 0.05 kg2/day idle); assumed race noise s = 4.5 kg",
+  "in the engine (v2.2 terms)": "rating_uncertainty (= rating sd), hsd_x_rel (horse variability x relative rating), recent_var_ratio, log_runs_held - race probabilities already use A and B partly",
+  "on the dashboard": "rating sd shown as +/- on ability; experience label; evidence gaps list - no performance interval"
+ },
+ "mean_slope_b_fit2023": 0.709,
+ "variance_model_kg2": {
+  "constant": 1.0,
+  "A rating variance": 1.479,
+  "B horse variability": 0.392,
+  "C new trip": 0.0,
+  "C new course": 6.091,
+  "C 120d+ spell": 0.0,
+  "C maiden race": 6.156,
+  "D history incomplete": 0.883
+ },
+ "standardised_error_q10_q90_fit2023": [
+  -1.118,
+  1.041
+ ],
+ "coverage": {
+  "2024": {
+   "all": {
+    "runs": 32628,
+    "coverage_model_pct": 77.9,
+    "median_width_model_kg": 11.01,
+    "coverage_one_width_pct": 78.5,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=2yo": {
+    "runs": 979,
+    "coverage_model_pct": 78.3,
+    "median_width_model_kg": 12.66,
+    "coverage_one_width_pct": 74.9,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=3yo": {
+    "runs": 6016,
+    "coverage_model_pct": 79.2,
+    "median_width_model_kg": 12.31,
+    "coverage_one_width_pct": 76.1,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=4yo": {
+    "runs": 8653,
+    "coverage_model_pct": 78.2,
+    "median_width_model_kg": 11.23,
+    "coverage_one_width_pct": 78.2,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=5yo": {
+    "runs": 7630,
+    "coverage_model_pct": 78.1,
+    "median_width_model_kg": 10.53,
+    "coverage_one_width_pct": 80.0,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=6yo+": {
+    "runs": 8691,
+    "coverage_model_pct": 76.7,
+    "median_width_model_kg": 10.3,
+    "coverage_one_width_pct": 79.6,
+    "width_one_width_kg": 11.4
+   },
+   "expb=1-3 runs": {
+    "runs": 4678,
+    "coverage_model_pct": 78.5,
+    "median_width_model_kg": 13.51,
+    "coverage_one_width_pct": 71.4,
+    "width_one_width_kg": 11.4
+   },
+   "expb=11-25": {
+    "runs": 15891,
+    "coverage_model_pct": 77.2,
+    "median_width_model_kg": 10.1,
+    "coverage_one_width_pct": 80.9,
+    "width_one_width_kg": 11.4
+   },
+   "expb=26+": {
+    "runs": 1053,
+    "coverage_model_pct": 74.6,
+    "median_width_model_kg": 9.1,
+    "coverage_one_width_pct": 82.6,
+    "width_one_width_kg": 11.4
+   },
+   "expb=4-10": {
+    "runs": 11006,
+    "coverage_model_pct": 78.9,
+    "median_width_model_kg": 11.72,
+    "coverage_one_width_pct": 77.5,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Benchmark": {
+    "runs": 12079,
+    "coverage_model_pct": 77.1,
+    "median_width_model_kg": 10.36,
+    "coverage_one_width_pct": 79.9,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Maiden": {
+    "runs": 7486,
+    "coverage_model_pct": 78.2,
+    "median_width_model_kg": 12.98,
+    "coverage_one_width_pct": 72.9,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Other": {
+    "runs": 13063,
+    "coverage_model_pct": 78.3,
+    "median_width_model_kg": 10.57,
+    "coverage_one_width_pct": 80.4,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=13+": {
+    "runs": 4766,
+    "coverage_model_pct": 78.2,
+    "median_width_model_kg": 10.7,
+    "coverage_one_width_pct": 80.1,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=9-12": {
+    "runs": 20486,
+    "coverage_model_pct": 77.7,
+    "median_width_model_kg": 11.12,
+    "coverage_one_width_pct": 78.1,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=<=8": {
+    "runs": 7376,
+    "coverage_model_pct": 78.1,
+    "median_width_model_kg": 10.93,
+    "coverage_one_width_pct": 78.6,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=120-364d": {
+    "runs": 3653,
+    "coverage_model_pct": 82.3,
+    "median_width_model_kg": 13.8,
+    "coverage_one_width_pct": 74.7,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=60-119d": {
+    "runs": 2021,
+    "coverage_model_pct": 79.2,
+    "median_width_model_kg": 12.07,
+    "coverage_one_width_pct": 76.6,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=<60d": {
+    "runs": 26735,
+    "coverage_model_pct": 77.1,
+    "median_width_model_kg": 10.62,
+    "coverage_one_width_pct": 79.3,
+    "width_one_width_kg": 11.4
+   },
+   "hist=complete": {
+    "runs": 28673,
+    "coverage_model_pct": 78.1,
+    "median_width_model_kg": 11.09,
+    "coverage_one_width_pct": 78.5,
+    "width_one_width_kg": 11.4
+   },
+   "hist=incomplete/uncertain": {
+    "runs": 3955,
+    "coverage_model_pct": 76.4,
+    "median_width_model_kg": 10.47,
+    "coverage_one_width_pct": 78.4,
+    "width_one_width_kg": 11.4
+   }
+  },
+  "2025-26": {
+   "all": {
+    "runs": 61377,
+    "coverage_model_pct": 77.5,
+    "median_width_model_kg": 10.89,
+    "coverage_one_width_pct": 78.5,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=2yo": {
+    "runs": 1736,
+    "coverage_model_pct": 74.5,
+    "median_width_model_kg": 12.82,
+    "coverage_one_width_pct": 69.3,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=3yo": {
+    "runs": 11065,
+    "coverage_model_pct": 77.6,
+    "median_width_model_kg": 12.2,
+    "coverage_one_width_pct": 74.5,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=4yo": {
+    "runs": 16362,
+    "coverage_model_pct": 78.0,
+    "median_width_model_kg": 11.18,
+    "coverage_one_width_pct": 78.4,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=5yo": {
+    "runs": 14617,
+    "coverage_model_pct": 78.4,
+    "median_width_model_kg": 10.44,
+    "coverage_one_width_pct": 80.8,
+    "width_one_width_kg": 11.4
+   },
+   "ageb=6yo+": {
+    "runs": 17005,
+    "coverage_model_pct": 76.8,
+    "median_width_model_kg": 10.1,
+    "coverage_one_width_pct": 80.3,
+    "width_one_width_kg": 11.4
+   },
+   "expb=1-3 runs": {
+    "runs": 7737,
+    "coverage_model_pct": 76.9,
+    "median_width_model_kg": 13.58,
+    "coverage_one_width_pct": 69.1,
+    "width_one_width_kg": 11.4
+   },
+   "expb=11-25": {
+    "runs": 26036,
+    "coverage_model_pct": 77.7,
+    "median_width_model_kg": 10.36,
+    "coverage_one_width_pct": 80.7,
+    "width_one_width_kg": 11.4
+   },
+   "expb=26+": {
+    "runs": 10990,
+    "coverage_model_pct": 76.6,
+    "median_width_model_kg": 9.5,
+    "coverage_one_width_pct": 82.2,
+    "width_one_width_kg": 11.4
+   },
+   "expb=4-10": {
+    "runs": 16614,
+    "coverage_model_pct": 78.1,
+    "median_width_model_kg": 11.7,
+    "coverage_one_width_pct": 76.8,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Benchmark": {
+    "runs": 22119,
+    "coverage_model_pct": 76.5,
+    "median_width_model_kg": 10.21,
+    "coverage_one_width_pct": 79.7,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Maiden": {
+    "runs": 13713,
+    "coverage_model_pct": 77.6,
+    "median_width_model_kg": 12.92,
+    "coverage_one_width_pct": 72.0,
+    "width_one_width_kg": 11.4
+   },
+   "cls=Other": {
+    "runs": 25545,
+    "coverage_model_pct": 78.4,
+    "median_width_model_kg": 10.49,
+    "coverage_one_width_pct": 80.8,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=13+": {
+    "runs": 7367,
+    "coverage_model_pct": 78.2,
+    "median_width_model_kg": 10.61,
+    "coverage_one_width_pct": 80.5,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=9-12": {
+    "runs": 37285,
+    "coverage_model_pct": 77.0,
+    "median_width_model_kg": 10.91,
+    "coverage_one_width_pct": 77.9,
+    "width_one_width_kg": 11.4
+   },
+   "fieldb=<=8": {
+    "runs": 16725,
+    "coverage_model_pct": 78.3,
+    "median_width_model_kg": 10.97,
+    "coverage_one_width_pct": 78.8,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=120-364d": {
+    "runs": 6604,
+    "coverage_model_pct": 80.8,
+    "median_width_model_kg": 13.54,
+    "coverage_one_width_pct": 73.2,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=60-119d": {
+    "runs": 3775,
+    "coverage_model_pct": 76.4,
+    "median_width_model_kg": 11.86,
+    "coverage_one_width_pct": 73.8,
+    "width_one_width_kg": 11.4
+   },
+   "gapb=<60d": {
+    "runs": 50523,
+    "coverage_model_pct": 77.1,
+    "median_width_model_kg": 10.52,
+    "coverage_one_width_pct": 79.6,
+    "width_one_width_kg": 11.4
+   },
+   "hist=complete": {
+    "runs": 58505,
+    "coverage_model_pct": 77.6,
+    "median_width_model_kg": 10.91,
+    "coverage_one_width_pct": 78.5,
+    "width_one_width_kg": 11.4
+   },
+   "hist=incomplete/uncertain": {
+    "runs": 2872,
+    "coverage_model_pct": 75.9,
+    "median_width_model_kg": 10.61,
+    "coverage_one_width_pct": 77.4,
+    "width_one_width_kg": 11.4
+   }
+  }
+ },
+ "by_predicted_spread_quintile_2025_26": {
+  "0": {
+   "predicted_sd_kg": 3.99,
+   "realised_sd_kg": 4.13,
+   "coverage_pct": 77.3
+  },
+  "1": {
+   "predicted_sd_kg": 4.56,
+   "realised_sd_kg": 4.75,
+   "coverage_pct": 77.4
+  },
+  "2": {
+   "predicted_sd_kg": 5.05,
+   "realised_sd_kg": 5.06,
+   "coverage_pct": 77.8
+  },
+  "3": {
+   "predicted_sd_kg": 5.62,
+   "realised_sd_kg": 5.75,
+   "coverage_pct": 77.4
+  },
+  "4": {
+   "predicted_sd_kg": 6.66,
+   "realised_sd_kg": 6.68,
+   "coverage_pct": 77.6
+  }
+ },
+ "frame": "engine/frames/national_v3.parquet",
+ "states": "QLD"
+}
