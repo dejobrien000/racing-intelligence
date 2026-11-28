@@ -19,10 +19,11 @@ import re as _re, glob as _glob
 def hcp_flag(state, cls):
     """1 if TAB's own class field marks a Benchmark race as the training data did, 0 if not, NaN if the class is unknown.
     Training (Breednet 'class'): 'Benchmark NN' counted; WA's 'BenchMark NN+' did not (case-sensitive extraction in national.py), so WA
-    benchmark races are 0 here too. 'BM0-NN' (SA/Vic) counted provisionally: confirm with the Monday parity check (Batch 16 B7).
-    Never inferred from the race name (27 Nov 2026: names miss 15 of 25 benchmark races)."""
+    benchmark races are 0 here too. 'BM0-NN' (SA/Vic restricted benchmarks) is 0: Breednet labels them 'Restricted', so training never counted
+    them (Batch 29 class parity, 28 Nov 2026: 531 of 531 such runs; batch29/out_b29_class_parity.json). Never inferred from the race name."""
     if cls is None or (isinstance(cls, float) and cls != cls) or str(cls).strip() in ('', 'null', 'None'): return np.nan
     if str(state).upper() == 'WA': return 0.0
+    if _re.search(r'\bBM0-\d', str(cls).upper()): return 0.0
     return 1.0 if _re.search(r'\bBM\d', str(cls).upper()) else 0.0
 _slug = lambda t: _re.sub(r'[^a-z0-9]+', '-', str(t).lower().replace('&', 'and')).strip('-')
 def race_classes(D):

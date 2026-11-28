@@ -1,0 +1,55 @@
+{
+ "historical": {
+  "matched_runs": 10982,
+  "races": 7197,
+  "date_range": [
+   "2022-10-08",
+   "2026-11-22"
+  ],
+  "agreement": 0.9978,
+  "confusion": {
+   "train 0 / serve 0": 7037,
+   "train 0 / serve 1": 1,
+   "train 1 / serve 0": 23,
+   "train 1 / serve 1": 3921
+  },
+  "by_state": {
+   "ACT": {
+    "runs": 168,
+    "agreement": 1.0
+   },
+   "NSW": {
+    "runs": 4438,
+    "agreement": 1.0
+   },
+   "SA": {
+    "runs": 1059,
+    "agreement": 1.0
+   },
+   "TAS": {
+    "runs": 30,
+    "agreement": 1.0
+   },
+   "VIC": {
+    "runs": 3399,
+    "agreement": 0.9997
+   },
+   "WA": {
+    "runs": 1888,
+    "agreement": 0.9878
+   }
+  },
+  "disagreements_by_pattern": {
+   "nYO+ BMn+ | Benchmark | WA": 23,
+   "nYO+ BMn | Restricted | VIC": 1
+  },
+  "bm0_n_pattern": {
+   "runs": 531,
+   "agreement": 1.0
+  }
+ },
+ "live": {
+  "races_with_pre_race_class": 159,
+  "races_also_listed_later": 0
+ }
+}
