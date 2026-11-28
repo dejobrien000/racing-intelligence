@@ -4,6 +4,13 @@
 # production predictions, the ranking or the settlement. A failure here never affects production. Usage (from research/): ops/run_shadow.sh <YYYYMMDD>
 set -uo pipefail
 D=$1; export PYTHONPATH=.
+# Batch 27 (28 Nov): shadows see exactly the TAB form records production had when it scored (paired comparisons stay paired even if
+# step 5b's records are parsed before the shadows run). AGESEX_ASOF = latest production v2 scoring time today; unset -> as before.
+export AGESEX_ASOF=$(python3 -c "
+import json,glob
+t=[json.load(open(f)).get('scored_utc','') for f in glob.glob('prospective/prerace/$D/*/v2_*manifest.json')]
+print(max(t) if t else '')" 2>/dev/null)
+echo "shadow: form records as held at production scoring (AGESEX_ASOF=${AGESEX_ASOF:-unset})"
 # previous production engines kept for rollback and prospective comparison (Damo 26 Nov 2026); independent of the Qld v2.1.2 shadow below
 bash ops/run_prev_shadow.sh "$D" || echo "WARNING prev-engine shadow (production unaffected)"
 # Engine v2.4 candidate (v2.3 + handicap weight slope), shadow only (Batch 16 B7, 27 Nov 2026)

@@ -1,0 +1,57 @@
+ven,race_no,saddlecloth,horse,age_n,female,scored_utc,tab_career_starts_before_scoring,held_runs,history_status,missing,fallback
+AST,8,1,Ladies Pro,,,2026-11-27 22:00:27+00:00,,10.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+AST,9,2,Rey Magnerio,,,2026-11-27 22:00:27+00:00,,31.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+AST,9,3,Oscar'S Fortune,,,2026-11-27 22:00:27+00:00,,29.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+DBN,8,5,Kintyre,,,2026-11-27 22:00:27+00:00,,45.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+KGR,4,9,Virtuoso,3.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+KGR,4,12,Gekido,3.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+KGR,6,6,Lozano,3.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+KEM,1,8,Pride Of Erin,4.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+KEM,6,7,Son Sillage,3.0,1.0,2026-11-27 22:00:27+00:00,1.0,0.0,"has raced, none held (TAB starts > 0)",history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+MPH,1,2,Cool No More,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+MPH,1,6,Infinite Angel,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+MPH,1,4,Written Supreme,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+MPH,3,11,Prettilox,3.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+MPH,3,2,Drovers Dog,4.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,7,River Of Rome,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,11,Whisper,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,4,High Table,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,9,Infallible,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,8,Andrade,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,10,Sipsong,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,1,5,Hit The Summit,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+RSH,8,6,Narbold,,,2026-11-27 22:00:27+00:00,,27.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+SAN,3,8,Billycart,,,2026-11-27 22:00:27+00:00,,2.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+SAN,4,8,Blingaling,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,5,Odenkirk,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,11,Darn Spicy,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,2,In Eutopia,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,10,Crystal Affair,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,15,Rubitrix,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,9,Confection,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,3,Lewashaa,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,12,Hanseatic Girl,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,6,Soladin,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,14,Oversourced,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,4,13,Nissaki,2.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+SAN,8,2,Ramadan,5.0,0.0,2026-11-27 22:00:27+00:00,13.0,0.0,"has raced, none held (TAB starts > 0)",history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,1,2,Meteoric,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,1,5,Totatsu,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,1,6,Hot Momma,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,1,9,Tough Love,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,1,4,Rowdy Return,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,1,8,Steph'S Ready,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,1,3,Mishani Flyer,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,1,7,My Mini Me,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,1,1,Chayse 'N' Mishani,2.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+GOC,3,8,Lieta Maria,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,3,1,Ballistic Star,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,3,12,Pollengetsyadizzy,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,3,6,Bristol Bay,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+GOC,6,13,Oval Office,,,2026-11-27 22:00:27+00:00,,10.0,held runs,age;sex,age missing indicator - never guessed;sex missing indicator - never guessed
+TWB,5,4,Etta,,,2026-11-27 22:00:27+00:00,,0.0,no held runs; debut not confirmed (no TAB record before scoring),history;age;sex,engine no-form treatment (missing-form indicators; no demonstrated rating);age missing indicator - never guessed;sex missing indicator - never guessed
+WAG,5,10,Little Sister,3.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+YVL,1,4,Magica,4.0,1.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+YVL,3,7,Bruceismyname,3.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+YVL,3,8,Gozaimasu,3.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
+YVL,3,1,Bowdacious Gold,4.0,0.0,2026-11-27 22:00:27+00:00,0.0,0.0,first starter (TAB: 0 starts),history,engine no-form treatment (missing-form indicators; no demonstrated rating)
